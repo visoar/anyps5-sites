@@ -61,3 +61,7 @@ The approved board contains three illustrative rows and a first-screen footer. T
 ## Follow-up polish
 
 P3: generated imagery retains the composition rather than exact pixel identity with the original mock. The Inter letterforms and original logo are production assets, so their contours differ slightly from generated reference lettering. Additional game reports and independent native-speaker editorial reviews can be added through the documented content workflow.
+
+## Production confirmation
+
+Both HTTPS domains were opened in the browser after the Git deployment. The production layouts use the same source assets and components; single-button theme switching, PPSA03306 + Linux => Boot with local patches, one-result grammar, reset, and zero console warnings/errors were rechecked. Production screenshots are recorded in `docs/qa/production-cc-dark-full.jpg` and `production-games-dark-full.jpg`; public network checks cover all seven localized home routes and the key guide/game paths.
