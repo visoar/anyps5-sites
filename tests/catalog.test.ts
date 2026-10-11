@@ -25,3 +25,20 @@ test('unspecified patches stay unknown and homebrew observations retain source s
  assert.equal(doom.cpu,'AMD Ryzen 5 7600X');
  assert.equal(doom.benchmarks.length,0);
 });
+
+
+test('unreported popular games are unknown, searchable and excluded from measured platform filters',async()=>{
+ const {bestStage,stageNeedsPatches}=await import('../packages/content/games');
+ const game=filterGames('黑神话')[0];assert.equal(game.slug,'black-myth-wukong');assert.equal(game.titleId,null);assert.equal(game.reports.length,0);assert.equal(bestStage(game),'notTested');assert.equal(stageNeedsPatches(game),false);
+ assert.equal(filterGames('wukong',{stage:'notTested'}).length,1);
+ for(const filters of [{platform:'windows'},{platform:'linux'},{stage:'blocked'},{evidence:'official'},{evidence:'community'}])assert.equal(filterGames('wukong',filters).length,0);
+ assert.equal(filterGames('',{stage:'notTested'}).length,14);
+});
+
+test('a merged technical fix does not silently create a new game report',async()=>{
+ const {developmentNotes,developmentSource}=await import('../packages/content/github-progress');
+ const note=developmentNotes.find(n=>n.number===3176)!;assert.equal(developmentSource(note).state,'merged');assert.ok(developmentSource(note).commit);
+ assert.equal(games.find(g=>g.slug==='returnal')!.reports.length,0);
+ assert.equal(games.find(g=>g.slug==='cyberpunk-2077')!.reports[0].benchmarks.length,0);
+ const ratchet=games.find(g=>g.slug==='ratchet-clank-rift-apart')!;assert.equal(ratchet.reports.length,2);assert.equal(ratchet.reports.find(r=>r.id==='3338-linux')!.stage,'boot');
+});

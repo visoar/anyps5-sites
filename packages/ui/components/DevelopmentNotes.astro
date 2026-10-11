@@ -1,0 +1,9 @@
+---
+import Icon from './Icon.astro';
+import {developmentNotes,developmentSource} from '../../content/github-progress';
+import {gameCopy} from '../../content/game-copy';
+import {dateLabel,type Locale} from '../../content/locales';
+const {locale,gameSlug}=Astro.props as {locale:Locale;gameSlug?:string};
+const notes=gameSlug?developmentNotes.filter(n=>n.games.includes(gameSlug)):developmentNotes;
+---
+{notes.length>0&&<div class="development-notes"><p class="notice">{gameCopy.progressNote[locale]}</p>{notes.map(note=>{const source=developmentSource(note);const label=source.state==='merged'?'merged':source.state==='closed'?'closed':source.kind==='issue'?'issueOpen':'open';return <article class="development-note"><div class="development-note-meta"><span class:list={['badge',source.state==='merged'?'ingame':'unverified']}>{gameCopy[label][locale]}</span><bdi>{source.kind==='pr'?'PR':'Issue'} #{note.number}</bdi><time datetime={source.updated}>{dateLabel(source.updated,locale)}</time></div><h3><a href={source.url}>{note.title[locale]}<Icon/></a></h3><p>{note.summary[locale]}</p>{source.commit&&<p class="commit-reference"><bdi>main · <a href={'https://github.com/boykopovar/AnyPS5/commit/'+source.commit}>{source.commit.slice(0,8)}</a></bdi></p>}</article>})}</div>}

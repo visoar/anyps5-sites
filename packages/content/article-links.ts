@@ -1,0 +1,16 @@
+export const relatedArticles:Record<string,string[]>={
+ start:['downloads','requirements','guides/windows','guides/linux'],
+ downloads:['start','guides/build','guides/windows','guides/linux'],
+ requirements:['guides/build','guides/windows','guides/linux'],
+ 'guides/windows':['start','guides/input','guides/language-fonts','troubleshooting'],
+ 'guides/linux':['requirements','guides/input','guides/language-fonts','troubleshooting'],
+ 'guides/build':['requirements','downloads','development-notes'],
+ 'guides/input':['troubleshooting','development-notes'],
+ 'guides/language-fonts':['requirements','development-notes','troubleshooting'],
+ troubleshooting:['guides/windows','guides/linux','guides/input','guides/language-fonts'],
+ progress:['development-notes','updates','faq'],
+ updates:['downloads','development-notes','progress'],
+ faq:['start','downloads','methodology'],
+ 'development-notes':['guides/input','guides/language-fonts','troubleshooting','updates'],
+ methodology:['contribute','about'],contribute:['methodology'],
+};

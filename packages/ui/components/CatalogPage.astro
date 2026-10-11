@@ -1,0 +1,17 @@
+---
+import Layout from './Layout.astro';
+import Icon from './Icon.astro';
+import {games,bestStage,stageNeedsPatches} from '../../content/games';
+import {gameCopy} from '../../content/game-copy';
+import {editorial,media,gameName} from '../../content/game-editorial';
+import {t,localPath,origin,type Locale} from '../../content/locales';
+const {locale,tested}=Astro.props as {locale:Locale;tested:boolean};
+const selection=games.filter(g=>Boolean(g.reports.length)===tested);
+const path=tested?'/tested/':'/untested/';
+const title=tested?gameCopy.testedList[locale]:gameCopy.watchlist[locale];
+const description=tested?gameCopy.testedIntro[locale]:gameCopy.watchIntro[locale];
+const structured={'@context':'https://schema.org','@type':'CollectionPage',name:title,description,inLanguage:locale,url:origin('games')+localPath(path,locale),mainEntity:{'@type':'ItemList',numberOfItems:selection.length,itemListElement:selection.map((game,i)=>({'@type':'ListItem',position:i+1,url:origin('games')+localPath('/games/'+game.slug+'/',locale),name:gameName(game,locale)}))}};
+---
+<Layout {locale} site="games" {path} {title} {description} {structured}>
+ <div class="wrap catalog-page"><a class="back-link" href={localPath('/',locale)}><Icon name="arrowRight"/>{t(locale,'backGames')}</a><p class="eyebrow">AnyPS5 / PS5</p><h1>{title}<span class="heading-count">{selection.length}</span></h1><p class="lede">{description}</p><nav class="catalog-tabs"><a href={localPath('/',locale)}>{t(locale,'search')}<Icon name="search"/></a><a href={localPath(tested?'/untested/':'/tested/',locale)}>{tested?gameCopy.watchlist[locale]:gameCopy.testedList[locale]}<Icon/></a><a href={localPath('/methodology/',locale)}>{t(locale,'methodology')}<Icon/></a></nav><div class="game-card-grid">{selection.map(game=><article class="library-card"><a href={localPath('/games/'+game.slug+'/',locale)}>{media[game.slug]?.cover&&<img src={media[game.slug].cover!} alt={gameName(game,locale)} width="460" height="260" loading="lazy" decoding="async" referrerpolicy="no-referrer"/>}<span class:list={['badge',stageNeedsPatches(game)?'experimental':bestStage(game)]}>{t(locale,bestStage(game))}{stageNeedsPatches(game)&&' · '+t(locale,'localPatch')}</span><h2>{gameName(game,locale)}</h2><p>{editorial[game.slug].overview[locale]}</p><small>{t(locale,'readMore')}<Icon name="arrowRight"/></small></a></article>)}</div></div>
+</Layout>

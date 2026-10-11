@@ -13,6 +13,6 @@ export interface Report {
  os:string; cpu:string|null; gpu:string|null; driver:string|null; version:string|null;
  patched:boolean|null; summary:Text; benchmarks:Benchmark[]; media:string[];
 }
-export interface Game {slug:string;name:string;titleId:string;edition:string|null;reports:Report[]}
+export interface Game {slug:string;name:string;titleId:string|null;edition:string|null;reports:Report[]}
 export interface Section {id:string;title:Text;body:Text[];code?:string; links?:{label:string;url:string}[]}
 export interface Article {slug:string; title:Text; description:Text; sections:Section[]; sources:string[]}

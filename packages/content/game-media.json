@@ -1,0 +1,376 @@
+{
+  "marvels-spider-man-2": {
+    "source": "https://www.playstation.com/en-us/games/marvels-spider-man-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/1c7b75d8ed9271516546560d219ad0b22ee0a263b4537bd8.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-screenshot-story-duo-4k-legal-13jul23",
+      "https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-screenshot-miles-enhanced-venom-en-25may23.jpg"
+    ],
+    "checked": "2026-10-11"
+  },
+  "elden-ring": {
+    "source": "https://www.playstation.com/en-us/games/elden-ring/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/phvVT0qZfcRms5qDAk0SI3CM.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/elden-ring-screenshot-08-en-15jun21",
+      "https://gmedia.playstation.com/is/image/SIEPDC/elden-ring-screenshot-13-en-15jun21"
+    ],
+    "checked": "2026-10-11"
+  },
+  "black-myth-wukong": {
+    "source": "https://www.playstation.com/en-us/games/black-myth-wukong/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2117/bd406f42e9352fdb398efcf21a4ffe575b2306ac40089d21.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/black-myth-wukong-screenshot-01-en-24jan24",
+      "https://gmedia.playstation.com/is/image/SIEPDC/black-myth-wukong-screenshot-05-en-24jan24"
+    ],
+    "checked": "2026-10-11"
+  },
+  "god-of-war-ragnarok": {
+    "source": "https://www.playstation.com/en-us/games/god-of-war-ragnarok/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202503/2016/b69c06fb108299866057126b0d3a0530bdf96a39d2ce1cb9.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-watermark-screenshot-11-en-08sep21",
+      "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-watermark-screenshot-12-en-08sep21"
+    ],
+    "checked": "2026-10-11"
+  },
+  "cyberpunk-2077": {
+    "source": "https://www.playstation.com/en-us/games/cyberpunk-2077/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/cKZ4tKNFj9C00giTzYtH8PF1.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/cyberpunk-2077-screenshot-01-en-8jan24",
+      "https://gmedia.playstation.com/is/image/SIEPDC/cyberpunk-2077-screenshot-02-en-8jan24"
+    ],
+    "checked": "2026-10-11"
+  },
+  "horizon-forbidden-west": {
+    "source": "https://www.playstation.com/en-us/games/horizon-forbidden-west/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/HO8vkO9pfXhwbHi5WHECQJdN.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-screenshot-20-en-02feb22",
+      "https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-screenshot-18-en-02feb22"
+    ],
+    "checked": "2026-10-11"
+  },
+  "the-last-of-us-part-i": {
+    "source": "https://www.playstation.com/en-us/games/the-last-of-us-part-i/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/eEczyEMDd2BLa3dtkGJVE9Id.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-i-screenshot-11-en-17may22",
+      "https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-i-screenshot-03-en-17may22"
+    ],
+    "checked": "2026-10-11"
+  },
+  "the-last-of-us-part-ii-remastered": {
+    "source": "https://www.playstation.com/en-us/games/the-last-of-us-part-ii-remastered/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0117/315718bce7eed62e3cf3fb02d61b81ff1782d6b6cf850fa4.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-ii-remastered-wm-screenshot-10-en-21nov23",
+      "https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-ii-remastered-wm-screenshot-14-en-21nov23"
+    ],
+    "checked": "2026-10-11"
+  },
+  "final-fantasy-vii-rebirth": {
+    "source": "https://www.playstation.com/en-us/games/final-fantasy-vii-rebirth/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202308/3005/6de6b1c4b0c475b5c28fd2011655ab8206ed846926fa1671.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-vii-rebirth-screenshot-redxiii-22jun23",
+      "https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-vii-rebirth-screenshot-yuffie-red-team-attack-22jun23"
+    ],
+    "checked": "2026-10-11"
+  },
+  "final-fantasy-xvi": {
+    "source": "https://www.playstation.com/en-us/games/final-fantasy-xvi/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202211/2904/NspyF8og84Div2VMShXI4cV7.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-xvi-screenshot-15-en-01dec22",
+      "https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-xvi-screenshot-09-en-24nov22"
+    ],
+    "checked": "2026-10-11"
+  },
+  "gran-turismo-7": {
+    "source": "https://www.playstation.com/en-us/games/gran-turismo-7/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202511/0707/303f5701426596a09891f9f33fa93e49ae522d5295b26dce.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/gran-turismo-7-screenshot-07-en-09sept21",
+      "https://gmedia.playstation.com/is/image/SIEPDC/gran-turismo-7-screenshot-07-disclaimer-en-01oct20"
+    ],
+    "checked": "2026-10-11"
+  },
+  "hogwarts-legacy": {
+    "source": "https://www.playstation.com/en-us/games/hogwarts-legacy/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202208/0921/dR9KJAKDW2izPbptHQbh3rnj.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-legacy-screen-01-ps5-en-02oct20",
+      "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-legacy-screen-02-ps5-en-02oct20"
+    ],
+    "checked": "2026-10-11"
+  },
+  "helldivers-2": {
+    "source": "https://www.playstation.com/en-us/games/helldivers-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202608/0517/6d1f643eec5087e543287e54a123277ec3bcda956d5d5158.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/helldivers-2-screenshot-disclaimer-18-en-08sept23",
+      "https://gmedia.playstation.com/is/image/SIEPDC/helldivers-2-screenshot-disclaimer-02-en-24may23"
+    ],
+    "checked": "2026-10-11"
+  },
+  "resident-evil-4-remake": {
+    "source": "https://www.playstation.com/en-us/games/resident-evil-4-remake/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/resident-evil-4-remake-screen-06-ps5-en-01nov22",
+      "https://gmedia.playstation.com/is/image/SIEPDC/resident-evil-4-remake-screen-10-ps5-en-01nov22"
+    ],
+    "checked": "2026-10-11"
+  },
+  "returnal": {
+    "source": "https://www.playstation.com/en-us/games/returnal/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202011/1621/fYZQHZ42eXXUt7c6D5YjLrq5.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/returnal-screen-01-ps5-15jun20-en",
+      "https://gmedia.playstation.com/is/image/SIEPDC/returnal-screen-02-ps5-15jun20-en"
+    ],
+    "checked": "2026-10-11"
+  },
+  "palworld": {
+    "source": "https://www.playstation.com/en-us/games/palworld/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202607/1002/585fa2ede4c88fa20a773ec44b110e0c84c4a5baeb51ed5b.png",
+    "screenshots": [],
+    "checked": "2026-10-11"
+  },
+  "astro-bot": {
+    "source": "https://www.playstation.com/en-us/games/astro-bot/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0500/8f15268257b878597757fcc5f2c9545840867bc71fc863b1.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-06-en-24may24",
+      "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-02-en-24may24"
+    ],
+    "checked": "2026-10-11"
+  },
+  "astros-playroom": {
+    "source": "https://www.playstation.com/en-us/games/astros-playroom/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1908/3d17c33239dab88c7e2f24af50140b3f6fa555e6030d5704.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/astros-playroom-screenshot-15-disclaimer-en-06oct20",
+      "https://gmedia.playstation.com/is/image/SIEPDC/astros-playroom-screenshot-05-disclaimer-en-06oct20"
+    ],
+    "checked": "2026-10-11"
+  },
+  "demons-souls": {
+    "source": "https://www.playstation.com/en-us/games/demons-souls/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/img/rnd/202011/1717/GemRaOZaCMhGxQ9dRhnQQyT5.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/demons-souls-screenshot-15-disclaimer-en-09nov20",
+      "https://gmedia.playstation.com/is/image/SIEPDC/demons-souls-screenshot-16-disclaimer-en-09nov20"
+    ],
+    "checked": "2026-10-11"
+  },
+  "ghost-of-yotei": {
+    "source": "https://www.playstation.com/en-us/games/ghost-of-yotei/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2723/890df32c227f619c5bd80e9f34ba2be53d0fea4b1615adee.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/ghost-of-yotei-screenshot-03-en-04sep26",
+      "https://gmedia.playstation.com/is/image/SIEPDC/ghost-of-yotei-screenshot-01-en-04sep26"
+    ],
+    "checked": "2026-10-11"
+  },
+  "god-of-war-sons-of-sparta": {
+    "source": "https://www.playstation.com/en-us/games/god-of-war-sons-of-sparta/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202602/0519/7260437aae9056d5bd34225e4fce98ca8bb0ef1cd8e6471f.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-sons-of-sparta-screenshot-01-en-03feb26",
+      "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-sons-of-sparta-screenshot-05-en-03feb26"
+    ],
+    "checked": "2026-10-11"
+  },
+  "sonic-origins": {
+    "source": "https://www.playstation.com/en-us/games/sonic-origins/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1103/cMPUrcoTKvKYEmdXBOtcVHPi.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/sonic-origins-screenshot-02-en-7jun22",
+      "https://gmedia.playstation.com/is/image/SIEPDC/sonic-origins-screenshot-05-en-7jun22"
+    ],
+    "checked": "2026-10-11"
+  },
+  "stray": {
+    "source": "https://www.playstation.com/en-us/games/stray/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0300/E2vZwVaDJbhLZpJo7Q10IyYo.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/stray-screenshot-04-en-9jun22",
+      "https://gmedia.playstation.com/is/image/SIEPDC/stray-screenshot-03-ps5-en-23jun20"
+    ],
+    "checked": "2026-10-11"
+  },
+  "rise-of-the-ronin": {
+    "source": "https://www.playstation.com/en-us/games/rise-of-the-ronin/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0606/c7af83ff86dd8668568ad6583341ddb1d0c142535b491383.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/rise-of-the-ronin-screenshot-bamboo-4K-en-28mar23",
+      "https://gmedia.playstation.com/is/image/SIEPDC/rise-of-the-ronin-screenshot-yokohama-4K-en-28mar23"
+    ],
+    "checked": "2026-10-11"
+  },
+  "animal-well": {
+    "source": "https://store.steampowered.com/app/813230/",
+    "provider": "Steam / publisher",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813230/header.jpg?t=1788379439",
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813230/ss_87a9f2941e114a2bb834db6350ccbedc1ade794d.1920x1080.jpg?t=1788379439",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813230/ss_ca955f6bb4f0c164dcffa59082ae985fb530582a.1920x1080.jpg?t=1788379439"
+    ],
+    "checked": "2026-10-11"
+  },
+  "hollow-knight-silksong": {
+    "source": "https://store.steampowered.com/app/1030300/",
+    "provider": "Steam / publisher",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/7983574d464e6559ac7e24275727f73a8bcca1f3/header.jpg?t=1776125736",
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/26950369fe4b03c2268620eb9815c8a246aa0b06/ss_26950369fe4b03c2268620eb9815c8a246aa0b06.1920x1080.jpg?t=1776125736",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/09ccaa6c16f158f9df8298feb5d196098506a028/ss_09ccaa6c16f158f9df8298feb5d196098506a028.1920x1080.jpg?t=1776125736"
+    ],
+    "checked": "2026-10-11"
+  },
+  "silt": {
+    "source": "https://store.steampowered.com/app/1325890/",
+    "provider": "Steam / publisher",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325890/header.jpg?t=1724190031",
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325890/ss_c83edc9547f1bef9f6fc4166e7fb06f8ddd9a973.1920x1080.jpg?t=1724190031",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325890/ss_77ef903ea31575873e545ce2bead7934a62a9869.1920x1080.jpg?t=1724190031"
+    ],
+    "checked": "2026-10-11"
+  },
+  "balatro": {
+    "source": "https://store.steampowered.com/app/2379780/",
+    "provider": "Steam / publisher",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/7a85430784e4d613cdb0547414d8cf16ffa45747/header.jpg?t=1790693638",
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/96208723dbedef49d71bf1b0a74aee1689018c50/ss_96208723dbedef49d71bf1b0a74aee1689018c50.1920x1080.jpg?t=1790693638",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_4862112e5030f74a5818cd4c31347d699ac5adf3.1920x1080.jpg?t=1790693638"
+    ],
+    "checked": "2026-10-11"
+  },
+  "hades": {
+    "source": "https://store.steampowered.com/app/1145360/",
+    "provider": "Steam / publisher",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/header.jpg?t=1758127023",
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_c0fed447426b69981cf1721756acf75369801b31.1920x1080.jpg?t=1758127023",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_8a9f0953e8a014bd3df2789c2835cb787cd3764d.1920x1080.jpg?t=1758127023"
+    ],
+    "checked": "2026-10-11"
+  },
+  "hades-ii": {
+    "source": "https://store.steampowered.com/app/1145350/",
+    "provider": "Steam / publisher",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg?t=1779901265",
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/ss_ef0f63061d0a0a9a7e46f3b84f125d25330e8f19.1920x1080.jpg?t=1779901265",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/ss_f28befd916e59b8bf0a8a801b8a498b8adaa01eb.1920x1080.jpg?t=1779901265"
+    ],
+    "checked": "2026-10-11"
+  },
+  "epic-mickey-rebrushed": {
+    "source": "https://store.steampowered.com/app/1522160/",
+    "provider": "Steam / publisher",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1522160/header.jpg?t=1732714651",
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1522160/ss_5547153282f19773a61252ca5fe464a0ae38bfce.1920x1080.jpg?t=1732714651",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1522160/ss_9dc98c00e86f5888b8d21b1afffcf7f97d2e1951.1920x1080.jpg?t=1732714651"
+    ],
+    "checked": "2026-10-11"
+  },
+  "hello-kitty-island-adventure": {
+    "source": "https://store.steampowered.com/app/2495100/",
+    "provider": "Steam / publisher",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2495100/33b3efa148506359eb8d6e973f59a38cb95cc794/header.jpg?t=1791583386",
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2495100/ss_4b2dee4ba9d74ebff886cff692a718632db7ebfa.1920x1080.jpg?t=1791583386",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2495100/63ac4ec151b232b1c98cd824701085ac2f5891db/ss_63ac4ec151b232b1c98cd824701085ac2f5891db.1920x1080.jpg?t=1791583386"
+    ],
+    "checked": "2026-10-11"
+  },
+  "wobbly-life": {
+    "source": "https://store.steampowered.com/app/1211020/",
+    "provider": "Steam / publisher",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1211020/86c3e16dfbfec027053c733d929a61ecfd15278a/header.jpg?t=1761037189",
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1211020/82aee5b999f2706768f0c9085a0e8c5b84033a66/ss_82aee5b999f2706768f0c9085a0e8c5b84033a66.1920x1080.jpg?t=1761037189",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1211020/4ed173389eacc9e6e48d74d7c6c231121cf46233/ss_4ed173389eacc9e6e48d74d7c6c231121cf46233.1920x1080.jpg?t=1761037189"
+    ],
+    "checked": "2026-10-11"
+  },
+  "gta-v": {
+    "source": "https://www.playstation.com/en-us/games/grand-theft-auto-v/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202202/2816/mYn2ETBKFct26V9mJnZi4aSS.png",
+    "screenshots": [],
+    "checked": "2026-10-11"
+  },
+  "ratchet-clank-rift-apart": {
+    "source": "https://www.playstation.com/en-us/games/ratchet-and-clank-rift-apart/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202101/2921/DwVjpbKOsFOyPdNzmSTSWuxG.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-screenshot-14-26may21",
+      "https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-screenshot-15-26may21"
+    ],
+    "checked": "2026-10-11"
+  },
+  "dreaming-sarah": {
+    "source": "https://store.steampowered.com/app/296870/",
+    "provider": "Steam / publisher",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/296870/header.jpg?t=1759236577",
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/296870/ss_c7721e370e7d9b114e2beb56c076cf1c8c6d17c2.1920x1080.jpg?t=1759236577",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/296870/ss_ab17b8db216af0ffa2414bc2581af2db9192efde.1920x1080.jpg?t=1759236577"
+    ],
+    "checked": "2026-10-11"
+  },
+  "3d-mini-golf": {
+    "source": "https://store.steampowered.com/app/362830/",
+    "provider": "Steam / publisher",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362830/header.jpg?t=1726474795",
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362830/ss_31324c5170e9c5f67b7c9add7a1ede78f6a3fbc5.1920x1080.jpg?t=1726474795",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362830/ss_6ba0ff8dc4b2d440cbe66c77cfb2b8ccd431cabd.1920x1080.jpg?t=1726474795"
+    ],
+    "checked": "2026-10-11"
+  },
+  "star-wars-galactic-racer": {
+    "source": "https://www.playstation.com/en-us/games/star-wars-galactic-racer/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202602/1713/58ef6a7a23ea91e8b89e02f00792bde4c839daa63b90da0e.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-galactic-racer-screenshot-01-en-15dec25",
+      "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-galactic-racer-screenshot-04-en-15dec25"
+    ],
+    "checked": "2026-10-11"
+  }
+}

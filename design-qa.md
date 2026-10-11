@@ -21,11 +21,11 @@ Focused comparisons: `docs/qa/focus-cc-dark.jpg`, `focus-cc-light.jpg`, `focus-g
 
 ## Findings and comparison history
 
-1. **P1 — Flat first-screen composition and weak title hierarchy.** Initial implementation treated the hero as a detached section and used smaller type, losing the approved architectural depth. Fixed by generating separate canyon and storm/lighthouse raster assets, integrating the backdrop behind the header and first information sections, and using 108px desktop display type. The four final comparisons show the restored silhouettes, far light, tiny human figure, lighthouse and left-side negative space.
+1. **P1 — Flat first-screen composition and weak title hierarchy.** Initial implementation treated the hero as a detached section and used smaller type, losing the approved architectural depth. Fixed by generating separate canyon and storm/lighthouse raster assets, integrating the backdrop behind the header and first information sections, and using 108px desktop display type in the initial fidelity pass. The later reading revision below supersedes that display scale. The four final comparisons show the restored silhouettes, far light, tiny human figure, lighthouse and left-side negative space.
 2. **P2 — Hero light reduced lower text contrast.** The canyon shaft competed with the third entry. Fixed the background crop/height and top/bottom readability overlays. Steps now occupy a predominantly dark area in dark mode; their light-mode text uses dark ink. Post-fix evidence: both portal comparisons.
 3. **P2 — Narrow gutters and small entry controls drifted from the reference.** Fixed desktop home gutters to 52px at 1440px, enlarged navigation/actions, restored document/wrench/folder icons and vertical rules, and enlarged entry headings/body and compatibility rows. Post-fix evidence: all four comparisons and focused crops.
 4. **P2 — Lighthouse was clipped by the first background crop.** Fixed desktop/mobile focal alignment. It is visible above the right cliff, mirrored to the left in RTL. Post-fix evidence: both games comparisons and `games-mobile-ar.jpg`.
-5. **P2 — Theme control used unnecessary menu choices.** Replaced with one accessible sun/moon button per user instruction; it toggles light/dark and remembers the choice. System preference is only the initial default. Verified after reload and route navigation.
+5. **P2 — Theme control used unnecessary menu choices.** Replaced with one accessible sun/moon button per user instruction; it toggles light/dark and remembers the choice. The current initial defaults are light for .cc and dark for .games; an explicit saved choice takes precedence. Verified after reload and route navigation.
 6. **P2 — Filtered results could display the aggregate game stage.** Fixed stage/platform/evidence labels to come from the same matching reports. Linux Silt displays Boot; adding official evidence produces the empty state. Local patches are explicitly labeled in rows/details, and patched gameplay uses the experimental color rather than looking like an unpatched result.
 7. **P2 — Copy feedback was attached to the wrong container.** Fixed status lookup to the containing code block. Verified Chinese copy success and exact clipboard content.
 8. **P2 — Native RTL select painting with transparent backdrop.** Changed selects to opaque theme surfaces and removed their backdrop filter. Final Arabic mobile capture shows all three selected labels.
@@ -45,7 +45,7 @@ No actionable P0/P1/P2 findings remain in the checked views.
 
 ## Intentional production adaptations
 
-The approved board contains three illustrative rows and a first-screen footer. The product contains 24 games, individual report evidence, search plus platform/stage/evidence selectors, and complete guide sections below the hero; the footer therefore occurs after the full content. This additional content is retained to satisfy the requested catalog and detailed portal. The redesigned logo and single theme button follow explicit user instructions. Decorative marginal slogans are omitted in favor of the actual source/build scope. Menu/localized title lengths naturally vary.
+The approved board contains three illustrative rows and a first-screen footer. The product now contains 40 games, individual report evidence, search plus platform/stage/evidence selectors, and complete guide sections below the hero; the footer therefore occurs after the full content. This additional content is retained to satisfy the requested catalog and detailed portal. The redesigned logo and single theme button follow explicit user instructions. Decorative marginal slogans are omitted in favor of the actual source/build scope. Menu/localized title lengths naturally vary.
 
 ## Browser verification
 
@@ -56,7 +56,7 @@ The approved board contains three illustrative rows and a first-screen footer. T
 - Search by PPSA ID, conjunctive filters, result count, empty state, reset and copied share URL.
 - Report detail navigation, source links and patch qualifiers.
 - Local console/error logs checked: zero errors and zero warnings on both tabs.
-- Content/build validation: all seven locales, 17 articles, 24 games and 30 reports; 338 generated HTML pages, canonical/hreflang/internal links and assets verified. Six meaningful catalog/data tests pass.
+- Content/build validation: all seven locales, 18 articles, 40 games and 33 reports; 471 generated HTML pages, canonical/hreflang/internal links and assets verified. Eight meaningful catalog/data tests pass.
 
 ## Follow-up polish
 
@@ -69,3 +69,25 @@ Both HTTPS domains were opened in the browser after the Git deployment. The prod
 A source audit after production launch preserves Silt Linux patch status as null (not specified) and adds the DOOM homebrew CPU/local build while correcting AGC-to-CPU-scaler startup scope. The new regression check passes; no gameplay benchmark is inferred.
 
 The Arabic phone, tablet and detail evidence was recaptured from the production domain as exact viewport screenshots. The saved buffers were also displayed inline and inspected, avoiding a browser full-page tiling artifact during RTL viewport changes.
+
+
+## Reading and content revision — 2026-10-11
+
+The user's later instruction explicitly replaces the mock's large display scale and slogans with smaller typography and useful native-language copy. Fidelity is assessed against the remaining approved architecture, imagery, palette, spacing, thin rules and button treatment; the deliberate text/scale changes are not claimed to be pixel-identical to the mock.
+
+Current exact browser captures: `docs/qa/editorial-cc-light.jpg`, `editorial-cc-dark.jpg`, `editorial-games-dark.jpg`, `editorial-games-light.jpg`, `editorial-wukong-zh.jpg`, and `editorial-mobile-ar.jpg`. Desktop viewport is 1440 × 1028; phone is 390 × 844; tablet check is 768 × 1024. Source and implementation are combined in each `editorial-compare-{cc,games}-{light,dark}.jpg`, using the same 717px width and reference heights described above. Matching focused comparisons are `editorial-focus-*`. The normalized images were opened and inspected together, including the focused title/action and filter/data areas.
+
+Checked surfaces:
+- Typography: portal 68px and library 64px maximum desktop headings, 30–42px detail headings, 14–18px primary reading text. Tablet headings now scale to 46px at 768px instead of the obsolete 75px override. Mobile inputs/selects remain 16px to avoid iOS focus zoom; smaller headlines do not require tiny form text.
+- Layout: preserved panoramic hero, canyon shaft/lighthouse, header and first information sections over one scene. Entry rules, grid gutters, row alignment and genuine game cover thumbnails checked in both themes. Full game/guide content continues below the first screen.
+- Colors: readable dark/light ink and opaque selects. The site defaults are independent of operating-system theme, and one button persists a user's explicit choice through reload and routes.
+- Imagery: source design still governs decorative scenes. Game covers/gallery are selected publisher media, not fabricated runtime proof. 110 image URLs were checked for HTTP 200 and image content type; 38 games have artwork, with an icon fallback for the two without appropriate media.
+- Copy: useful setup and game-intent titles, Chinese 游戏库, native-language navigation, original seven-language introductions. Open PRs, merged commits and observed reports remain separate. The 14 games without reviewed reports have no invented platform/FPS/configuration results.
+
+P2 findings resolved in this revision: stale tablet display-size override, duplicate overview text in game headings, ambiguous “Test reports 26” label (now “Games with test reports”), small mobile form fonts, and full-size/thumbnail duplicate gallery images. There are no remaining actionable P0/P1/P2 findings in these checked surfaces.
+
+Browser checks: all 14 localized home routes have no horizontal overflow at 390px (`editorial-locale-checks.json`); Arabic dark phone detail and French/German/Spanish detail/category routes also pass. Search 悟空 yields one game; a Windows filter excludes it; the no-reviewed-report filter yields 14. Chinese input-guide copy status and clipboard match the actual INI example. Both reviewed tabs have no console errors or warnings.
+
+Content/build checks: 7 languages, 18 articles, 40 games, 33 reports, 12 development notes with 15 reviewed issue/PR sources. Eight regression tests pass. All 471 static pages pass links/assets/canonical/hreflang checks. The 469 indexable pages also have unique titles/descriptions, valid JSON-LD, and the correct per-site default theme. The update candidate collector was run against all 15 source threads with paginated comments; no changes were found since the editorial review, and it does not mutate published content.
+
+Remaining P3: source images retained remotely may change; their editorial provenance and refresh procedure are documented. Independent human native-speaker review remains a useful later editorial check; automated completeness and this language review are not presented as that certification.

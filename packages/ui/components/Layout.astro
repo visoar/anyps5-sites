@@ -11,27 +11,28 @@ import portalHero from '../assets/portal-hero.png';
 import gamesHero from '../assets/games-hero.png';
 import Icon from './Icon.astro';
 import {localeConfig,locales,localPath,origin,t,type Locale,type Site} from '../../content/locales';
-const {locale,site,path='/',title,description,structured,noindex=false}=Astro.props as {locale:Locale;site:Site;path?:string;title:string;description:string;structured?:unknown;noindex?:boolean};
+const {locale,site,path='/',title,description,structured,noindex=false,ogType='website',ogImage}=Astro.props as {locale:Locale;site:Site;path?:string;title:string;description:string;structured?:unknown;noindex?:boolean;ogType?:'website'|'article';ogImage?:string};
 const config=localeConfig[locale];
 const canonical=origin(site)+localPath(path,locale);
 const nav=site==='cc'?[['/start/','guide'],['/downloads/','downloads'],['/updates/','updates']]:[['/','compatibility'],['/methodology/','methodology'],['/contribute/','contribute']];
 const other:Site=site==='cc'?'games':'cc';
 const alternateLabel=t(locale,site==='cc'?'compatibility':'guide');
-const siteTitle=title+' · AnyPS5'+(site==='games'?' Games':'');
+const siteTitle=title.includes('AnyPS5')?title:title+' | AnyPS5'+(site==='games'?' Games':'');
+const defaultTheme=site==='cc'?'light':'dark';
 ---
 <!doctype html>
-<html lang={config.lang} dir={config.dir} data-theme="dark">
+<html lang={config.lang} dir={config.dir} data-theme={defaultTheme} data-default-theme={defaultTheme}>
  <head>
   <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <script is:inline>try{const p=localStorage.getItem('anyps5-theme')||'system';document.documentElement.dataset.theme=p==='system'?(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'):p}catch{document.documentElement.dataset.theme='dark'}</script>
+  <script is:inline>try{const p=localStorage.getItem('anyps5-theme');if(p==='light'||p==='dark')document.documentElement.dataset.theme=p}catch{}</script>
   <title>{siteTitle}</title><meta name="description" content={description}/>
   <link rel="canonical" href={canonical}/><link rel="icon" href="/favicon.png" sizes="32x32" type="image/png"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
-  <meta name="theme-color" content="#101720"/>
+  <meta name="theme-color" content={defaultTheme==='dark'?'#101720':'#f8f9f5'}/>
   {noindex&&<meta name="robots" content="noindex,follow"/>}
   {locales.map(l=><link rel="alternate" hreflang={localeConfig[l].lang} href={origin(site)+localPath(path,l)}/>)}
   <link rel="alternate" hreflang="x-default" href={origin(site)+path}/>
-  <meta property="og:type" content="website"/><meta property="og:site_name" content={site==='cc'?'AnyPS5':'AnyPS5 Games'}/><meta property="og:title" content={siteTitle}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:image" content={origin(site)+'/social.jpg'}/><meta property="og:locale" content={config.lang.replace('-','_')}/>
-  <meta name="twitter:card" content="summary_large_image"/>
+  <meta property="og:type" content={ogType}/><meta property="og:site_name" content={site==='cc'?'AnyPS5':'AnyPS5 Games'}/><meta property="og:title" content={siteTitle}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:image" content={ogImage||origin(site)+'/social.jpg'}/><meta property="og:locale" content={{en:'en_US',zh:'zh_CN',ar:'ar_SA',pt:'pt_PT',de:'de_DE',fr:'fr_FR',es:'es_ES'}[locale]}/>
+  <meta property="og:image:alt" content={siteTitle}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={siteTitle}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={ogImage||origin(site)+'/social.jpg'}/>{locales.filter(l=>l!==locale).map(l=><meta property="og:locale:alternate" content={{en:'en_US',zh:'zh_CN',ar:'ar_SA',pt:'pt_PT',de:'de_DE',fr:'fr_FR',es:'es_ES'}[l]}/>)}
   {structured&&<script type="application/ld+json" set:html={JSON.stringify(structured).replace(/</g,'\\u003c')}/>}
  </head>
  <body class:list={[path==='/'?'home-atlas':null,'site-'+site]}>

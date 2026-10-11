@@ -1,0 +1,128 @@
+[
+  {
+    "heading": "AnyPS5 setup and guides",
+    "overflow": false,
+    "theme": "light",
+    "themeButtons": 1,
+    "themeSelects": 0,
+    "url": "http://localhost:4403/",
+    "width": 390
+  },
+  {
+    "heading": "PS5 games on AnyPS5",
+    "overflow": false,
+    "theme": "light",
+    "themeButtons": 1,
+    "themeSelects": 0,
+    "url": "http://localhost:4404/",
+    "width": 390
+  },
+  {
+    "heading": "AnyPS5 使用指南",
+    "overflow": false,
+    "theme": "light",
+    "themeButtons": 1,
+    "themeSelects": 0,
+    "url": "http://localhost:4403/zh/",
+    "width": 390
+  },
+  {
+    "heading": "AnyPS5 游戏库",
+    "overflow": false,
+    "theme": "light",
+    "themeButtons": 1,
+    "themeSelects": 0,
+    "url": "http://localhost:4404/zh/",
+    "width": 390
+  },
+  {
+    "heading": "إعداد AnyPS5 وأدلة الاستخدام",
+    "overflow": false,
+    "theme": "light",
+    "themeButtons": 1,
+    "themeSelects": 0,
+    "url": "http://localhost:4403/ar/",
+    "width": 390
+  },
+  {
+    "heading": "ألعاب PS5 على AnyPS5",
+    "overflow": false,
+    "theme": "light",
+    "themeButtons": 1,
+    "themeSelects": 0,
+    "url": "http://localhost:4404/ar/",
+    "width": 390
+  },
+  {
+    "heading": "Configuração e guias do AnyPS5",
+    "overflow": false,
+    "theme": "light",
+    "themeButtons": 1,
+    "themeSelects": 0,
+    "url": "http://localhost:4403/pt/",
+    "width": 390
+  },
+  {
+    "heading": "Jogos PS5 no AnyPS5",
+    "overflow": false,
+    "theme": "light",
+    "themeButtons": 1,
+    "themeSelects": 0,
+    "url": "http://localhost:4404/pt/",
+    "width": 390
+  },
+  {
+    "heading": "AnyPS5 einrichten und nutzen",
+    "overflow": false,
+    "theme": "light",
+    "themeButtons": 1,
+    "themeSelects": 0,
+    "url": "http://localhost:4403/de/",
+    "width": 390
+  },
+  {
+    "heading": "PS5-Spiele mit AnyPS5",
+    "overflow": false,
+    "theme": "light",
+    "themeButtons": 1,
+    "themeSelects": 0,
+    "url": "http://localhost:4404/de/",
+    "width": 390
+  },
+  {
+    "heading": "Configurer et utiliser AnyPS5",
+    "overflow": false,
+    "theme": "light",
+    "themeButtons": 1,
+    "themeSelects": 0,
+    "url": "http://localhost:4403/fr/",
+    "width": 390
+  },
+  {
+    "heading": "Les jeux PS5 sur AnyPS5",
+    "overflow": false,
+    "theme": "light",
+    "themeButtons": 1,
+    "themeSelects": 0,
+    "url": "http://localhost:4404/fr/",
+    "width": 390
+  },
+  {
+    "heading": "Configurar y usar AnyPS5",
+    "overflow": false,
+    "theme": "light",
+    "themeButtons": 1,
+    "themeSelects": 0,
+    "url": "http://localhost:4403/es/",
+    "width": 390
+  },
+  {
+    "heading": "Juegos de PS5 en AnyPS5",
+    "overflow": false,
+    "theme": "light",
+    "themeButtons": 1,
+    "themeSelects": 0,
+    "url": "http://localhost:4404/es/",
+    "width": 390
+  }
+]
