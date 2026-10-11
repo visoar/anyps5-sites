@@ -6,7 +6,7 @@ import '@fontsource/noto-sans-arabic/800.css';
 import '../styles/site.css';
 import '../styles/atlas.css';
 import {Image} from 'astro:assets';
-import brand from '../assets/brand-mark.png';
+import brand from '../assets/brand-mark.svg';
 import portalHero from '../assets/portal-hero.png';
 import gamesHero from '../assets/games-hero.png';
 import Icon from './Icon.astro';
@@ -26,20 +26,20 @@ const defaultTheme=site==='cc'?'light':'dark';
   <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
   <script is:inline>try{const p=localStorage.getItem('anyps5-theme');if(p==='light'||p==='dark')document.documentElement.dataset.theme=p}catch{}</script>
   <title>{siteTitle}</title><meta name="description" content={description}/>
-  <link rel="canonical" href={canonical}/><link rel="icon" href="/favicon.ico?v=2" sizes="16x16 32x32 48x48" type="image/x-icon"/><link rel="icon" href="/favicon.png?v=2" sizes="32x32" type="image/png"/><link rel="icon" href="/favicon-96.png?v=2" sizes="96x96" type="image/png"/><link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" sizes="180x180"/>
+  <link rel="canonical" href={canonical}/><link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48" type="image/x-icon"/><link rel="icon" href="/favicon.png?v=3" sizes="32x32" type="image/png"/><link rel="icon" href="/favicon-96.png?v=3" sizes="96x96" type="image/png"/><link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" sizes="180x180"/>
   <meta name="theme-color" content={defaultTheme==='dark'?'#101720':'#f8f9f5'}/>
   {noindex&&<meta name="robots" content="noindex,follow"/>}
   {locales.map(l=><link rel="alternate" hreflang={localeConfig[l].lang} href={origin(site)+localPath(path,l)}/>)}
   <link rel="alternate" hreflang="x-default" href={origin(site)+path}/>
-  <meta property="og:type" content={ogType}/><meta property="og:site_name" content={site==='cc'?'AnyPS5':'AnyPS5 Games'}/><meta property="og:title" content={siteTitle}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:image" content={ogImage||origin(site)+'/social-v2.jpg'}/><meta property="og:locale" content={{en:'en_US',zh:'zh_CN',ar:'ar_SA',pt:'pt_PT',de:'de_DE',fr:'fr_FR',es:'es_ES'}[locale]}/>
-  <meta property="og:image:alt" content={siteTitle}/>{!ogImage&&<><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image:type" content="image/jpeg"/></>}<meta name="twitter:image:alt" content={siteTitle}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={siteTitle}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={ogImage||origin(site)+'/social-v2.jpg'}/>{locales.filter(l=>l!==locale).map(l=><meta property="og:locale:alternate" content={{en:'en_US',zh:'zh_CN',ar:'ar_SA',pt:'pt_PT',de:'de_DE',fr:'fr_FR',es:'es_ES'}[l]}/>)}
+  <meta property="og:type" content={ogType}/><meta property="og:site_name" content={site==='cc'?'AnyPS5':'AnyPS5 Games'}/><meta property="og:title" content={siteTitle}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:image" content={ogImage||origin(site)+'/social-v3.jpg'}/><meta property="og:locale" content={{en:'en_US',zh:'zh_CN',ar:'ar_SA',pt:'pt_PT',de:'de_DE',fr:'fr_FR',es:'es_ES'}[locale]}/>
+  <meta property="og:image:alt" content={siteTitle}/>{!ogImage&&<><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image:type" content="image/jpeg"/></>}<meta name="twitter:image:alt" content={siteTitle}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={siteTitle}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={ogImage||origin(site)+'/social-v3.jpg'}/>{locales.filter(l=>l!==locale).map(l=><meta property="og:locale:alternate" content={{en:'en_US',zh:'zh_CN',ar:'ar_SA',pt:'pt_PT',de:'de_DE',fr:'fr_FR',es:'es_ES'}[l]}/>)}
   {structured&&<script type="application/ld+json" set:html={JSON.stringify(structured).replace(/</g,'\\u003c')}/>}
  </head>
  <body class:list={[path==='/'?'home-atlas':null,'site-'+site]}>
   {path==='/'&&<div class="atlas-background" aria-hidden="true"><Image src={site==='cc'?portalHero:gamesHero} alt="" width={1920} format="webp" quality={88} loading="eager" fetchpriority="high"/><div class="atlas-shade"/></div>}
   <a class="skip" href="#main">{t(locale,'skip')}</a>
   <header class="site-header"><div class="wrap header-inner">
-   <a class="brand" href={localPath('/',locale)} aria-label={'AnyPS5 '+t(locale,'home')}><span class="mark"><Image src={brand} alt="" width={42} height={42} format="webp" quality={90}/></span><span>AnyPS5<small>{site==='cc'?'.cc':'.games'}</small></span></a>
+   <a class="brand" href={localPath('/',locale)} aria-label={'AnyPS5 '+t(locale,'home')}><span class="mark"><img src={brand.src} alt="" width="42" height="42"/></span><span>AnyPS5<small>{site==='cc'?'.cc':'.games'}</small></span></a>
    <nav class="desktop-nav" aria-label={t(locale,'menu')}>
     {nav.map(([url,key])=><a href={localPath(url,locale)} aria-current={path===url?'page':undefined}>{t(locale,key as Parameters<typeof t>[1])}</a>)}
     <a class="cross-link" href={origin(other)+localPath('/',locale)}>{alternateLabel}<Icon name="arrow"/></a>
@@ -51,7 +51,7 @@ const defaultTheme=site==='cc'?'light':'dark';
    </div>
   </div></header>
   <main id="main"><slot/></main>
-  <footer class="site-footer wrap"><div class="footer-top"><a class="brand" href={localPath('/',locale)}><span class="mark"><Image src={brand} alt="" width={34} height={34} format="webp"/></span><span>AnyPS5<small>{site==='cc'?'.cc':'.games'}</small></span></a><p>{t(locale,'independent')}</p><div class="footer-links">{['about','privacy','terms'].map(key=><a href={localPath('/'+key+'/',locale)}>{t(locale,key as Parameters<typeof t>[1])}</a>)}<a href="https://github.com/visoar/anyps5-sites">GitHub<Icon/></a></div></div><div class="footer-bottom"><p>{t(locale,'footerNote')}</p><a href={origin(other)+localPath('/',locale)}>AnyPS5.{other}<Icon/></a></div></footer>
+  <footer class="site-footer wrap"><div class="footer-top"><a class="brand" href={localPath('/',locale)}><span class="mark"><img src={brand.src} alt="" width="34" height="34"/></span><span>AnyPS5<small>{site==='cc'?'.cc':'.games'}</small></span></a><p>{t(locale,'independent')}</p><div class="footer-links">{['about','privacy','terms'].map(key=><a href={localPath('/'+key+'/',locale)}>{t(locale,key as Parameters<typeof t>[1])}</a>)}<a href="https://github.com/visoar/anyps5-sites">GitHub<Icon/></a></div></div><div class="footer-bottom"><p>{t(locale,'footerNote')}</p><a href={origin(other)+localPath('/',locale)}>AnyPS5.{other}<Icon/></a></div></footer>
   <script>
    import '../client';
   </script>
