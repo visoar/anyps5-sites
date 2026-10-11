@@ -17,6 +17,8 @@ npm run build
 
 Each app has its own build configuration, public assets, domain and output. Shared components, design tokens and interactions are in `packages/ui`; curated content and report models are in `packages/content`. There is no runtime database or external API dependency. Search runs locally and shareable filters are stored in the URL. Light/dark theme follows the system until a user toggles the single button, then persists on that domain.
 
+Production traffic and key interactions are measured with separate self-hosted Umami websites. See [analytics setup and event definitions](docs/analytics.md) for domain isolation, query exclusion and the iteration metrics. Analytics is optional for site functionality.
+
 ## Content
 
 English, Simplified Chinese, Arabic (RTL), Portuguese (Portugal), German, French and Spanish are published for every content route. There are 17 guide/policy articles, 24 game pages and 30 source reports; the two apps generate 338 HTML pages including their 404 pages. Each page has canonical metadata, seven language alternates, an x-default alternate and a sitemap entry. Fonts are served locally.

@@ -7,8 +7,9 @@ import '../styles/site.css';
 import '../styles/atlas.css';
 import {Image} from 'astro:assets';
 import brand from '../assets/brand-mark.svg';
-import portalHero from '../assets/portal-hero.png';
-import gamesHero from '../assets/games-hero.png';
+import canyonHero from '../assets/portal-hero.png';
+import coastHero from '../assets/games-hero.png';
+import {umamiSites} from '../analytics';
 import Icon from './Icon.astro';
 import {localeConfig,locales,localPath,origin,t,type Locale,type Site} from '../../content/locales';
 const {locale,site,path='/',title,description,structured,noindex=false,ogType='website',ogImage}=Astro.props as {locale:Locale;site:Site;path?:string;title:string;description:string;structured?:unknown;noindex?:boolean;ogType?:'website'|'article';ogImage?:{src:string;width:number;height:number;type:string}};
@@ -21,6 +22,7 @@ const siteTitle=title.includes('AnyPS5')?title:title+' | AnyPS5'+(site==='games'
 const defaultTheme=site==='cc'?'light':'dark';
 const shareImage=ogImage||{src:'/social-v4.webp',width:1200,height:630,type:'image/webp'};
 const shareImageUrl=new URL(shareImage.src,origin(site)).href;
+const analytics=umamiSites[site];
 ---
 <!doctype html>
 <html lang={config.lang} dir={config.dir} data-theme={defaultTheme} data-default-theme={defaultTheme}>
@@ -30,6 +32,7 @@ const shareImageUrl=new URL(shareImage.src,origin(site)).href;
   <title>{siteTitle}</title><meta name="description" content={description}/>
   <link rel="canonical" href={canonical}/><link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48" type="image/x-icon"/><link rel="icon" href="/favicon.png?v=3" sizes="32x32" type="image/png"/><link rel="icon" href="/favicon-96.png?v=3" sizes="96x96" type="image/png"/><link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" sizes="180x180"/>
   <meta name="theme-color" content={defaultTheme==='dark'?'#101720':'#f8f9f5'}/>
+  <script is:inline defer src="https://track.pixmiller.com/script.js" data-website-id={analytics.id} data-domains={analytics.domain+',www.'+analytics.domain} data-exclude-search="true" data-exclude-hash="true" data-do-not-track="true"/>
   {noindex&&<meta name="robots" content="noindex,follow"/>}
   {locales.map(l=><link rel="alternate" hreflang={localeConfig[l].lang} href={origin(site)+localPath(path,l)}/>)}
   <link rel="alternate" hreflang="x-default" href={origin(site)+path}/>
@@ -37,8 +40,8 @@ const shareImageUrl=new URL(shareImage.src,origin(site)).href;
   <meta property="og:image:alt" content={siteTitle}/><meta property="og:image:width" content={shareImage.width}/><meta property="og:image:height" content={shareImage.height}/><meta property="og:image:type" content={shareImage.type}/><meta name="twitter:image:alt" content={siteTitle}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={siteTitle}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={shareImageUrl}/>{locales.filter(l=>l!==locale).map(l=><meta property="og:locale:alternate" content={{en:'en_US',zh:'zh_CN',ar:'ar_SA',pt:'pt_PT',de:'de_DE',fr:'fr_FR',es:'es_ES'}[l]}/>)}
   {structured&&<script type="application/ld+json" set:html={JSON.stringify(structured).replace(/</g,'\\u003c')}/>}
  </head>
- <body class:list={[path==='/'?'home-atlas':null,'site-'+site]}>
-  {path==='/'&&<div class="atlas-background" aria-hidden="true"><Image src={site==='cc'?portalHero:gamesHero} alt="" width={1920} format="webp" quality={88} loading="eager" fetchpriority="high"/><div class="atlas-shade"/></div>}
+ <body class:list={[path==='/'?'home-atlas':null,'site-'+site]} data-site={site} data-locale={locale}>
+  {path==='/'&&<div class="atlas-background" aria-hidden="true"><Image src={site==='cc'?coastHero:canyonHero} alt="" width={1920} format="webp" quality={88} loading="eager" fetchpriority="high"/><div class="atlas-shade"/></div>}
   <a class="skip" href="#main">{t(locale,'skip')}</a>
   <header class="site-header"><div class="wrap header-inner">
    <a class="brand" href={localPath('/',locale)} aria-label={'AnyPS5 '+t(locale,'home')}><span class="mark"><img src={brand.src} alt="" width="42" height="42"/></span><span>AnyPS5<small>{site==='cc'?'.cc':'.games'}</small></span></a>

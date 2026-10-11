@@ -1,12 +1,16 @@
 import {readFile,readdir,stat} from 'node:fs/promises';
 import {parse} from 'node-html-parser';
 import path from 'node:path';
+import {umamiSites} from '../packages/ui/analytics';
 const roots={'anyps5.cc':path.resolve('anyps5.cc/dist'),'anyps5.games':path.resolve('anyps5.games/dist')};
 async function walk(dir:string):Promise<string[]>{const entries=await readdir(dir,{withFileTypes:true});return (await Promise.all(entries.map(e=>e.isDirectory()?walk(path.join(dir,e.name)):Promise.resolve([path.join(dir,e.name)])))).flat()}
 let pages=0;const problems:string[]=[];
 const indexableUrls=new Map(Object.keys(roots).map(host=>[host,new Set<string>()]));
 for(const [host,root]of Object.entries(roots))for(const file of (await walk(root)).filter(f=>f.endsWith('.html'))){
  const dom=parse(await readFile(file,'utf8'));const rel=path.relative(root,file);const url='https://'+host+'/'+rel.replace(/index\.html$/,'');pages++;
+ const analytics=host==='anyps5.cc'?umamiSites.cc:umamiSites.games;
+ const trackers=dom.querySelectorAll('script[src="https://track.pixmiller.com/script.js"]');
+ if(trackers.length!==1||trackers[0].getAttribute('data-website-id')!==analytics.id||trackers[0].getAttribute('data-domains')!==host+',www.'+host||!trackers[0].hasAttribute('defer')||['data-exclude-search','data-exclude-hash','data-do-not-track'].some(key=>trackers[0].getAttribute(key)!=='true'))problems.push(`${host}/${rel}: invalid Umami tracker configuration`);
  if(!dom.querySelector('html')?.getAttribute('lang')||!dom.querySelector('title')?.textContent||!dom.querySelector('meta[name=description]')?.getAttribute('content'))problems.push(rel+': missing metadata');
  const canonical=dom.querySelector('link[rel=canonical]')?.getAttribute('href');if(!canonical?.startsWith('https://'+host+'/'))problems.push(rel+': invalid canonical');
  if(canonical&&!dom.querySelector('meta[name=robots]')?.getAttribute('content')?.includes('noindex'))indexableUrls.get(host)!.add(canonical);
@@ -46,6 +50,8 @@ async function sitemapUrls(host:string,root:string,filename:string):Promise<stri
  }))).flat();
 }
 for(const [host,root] of Object.entries(roots)){
+ const nginx=await readFile(`deploy/nginx-${host==='anyps5.cc'?'cc':'games'}.conf`,'utf8');
+ if(!/script-src[^;]*https:\/\/track\.pixmiller\.com/.test(nginx)||!/connect-src[^;]*https:\/\/track\.pixmiller\.com/.test(nginx))problems.push(`${host}: CSP blocks Umami`);
  const expected=indexableUrls.get(host)!;
  for(const file of ['sitemap.xml','sitemap-index.xml']){
   const urls=await sitemapUrls(host,root,file);
@@ -55,4 +61,4 @@ for(const [host,root] of Object.entries(roots)){
  if(!robots.includes(`Sitemap: https://${host}/sitemap.xml`))problems.push(`${host}: robots.txt must reference /sitemap.xml`);
 }
 if(problems.length)throw Error([...new Set(problems)].join('\n'));
-console.log(`Verified ${pages} static pages: metadata, seven-language alternates, internal links/assets, and both sitemap entrypoints.`);
+console.log(`Verified ${pages} static pages: metadata, seven-language alternates, internal links/assets, both sitemap entrypoints, and Umami configuration/CSP.`);
