@@ -24,3 +24,11 @@ External verification covers 28 checks: all seven localized home routes per site
 A final documentation push is used to verify automatic Git-triggered deployment on both services. No duplicate services or manually uploaded deployment is used.
 
 The `c542893` documentation push produced Git deployments `6acb57a1da7cf920c2638788` (cc) and `6acb57a5da7cf920c263878a` (games), both referencing that exact commit and `refs/heads/main`. This proves the push binding beyond the initial deployment. Later content corrections use the same trigger. To verify any release, compare the latest deployment `commitSHA` with `git rev-parse HEAD` and require `RUNNING`.
+
+## Reading/content release — 2026-10-11
+
+Content commit `68493dbaecb890fe1aac289dbc92e65f6ce3582c` triggered the existing Git-bound services: cc deployment `6acb6622da7cf920c2638aa9` and games deployment `6acb6627da7cf920c2638aab`. Both reached RUNNING with that exact commit. Cloudflare's two apex A records and two www CNAME records were re-read and remain proxied.
+
+The release includes 40 games / 33 reviewed reports / 14 games without reviewed reports, seven-language native-purpose copy, detailed guide supplements, 12 source-scoped development notes and per-site light/dark defaults. Browser production evidence is `docs/qa/editorial-production-cc-light.jpg`, `editorial-production-games-dark.jpg`, and `editorial-production-wukong-zh.jpg`. Both selected Wukong gallery images load under the production CSP; no console errors or warnings appear. A previously saved explicit theme still takes precedence over the new default.
+
+The 28 baseline external HTTP checks passed again, including both www redirects with path/query preservation and all seven localized roots. Additional release checks cover the new game states, guide example, development-note statuses, native metadata and 469 indexable sitemap entries. The documentation/evidence follow-up uses the same automatic push trigger; always verify its latest commit too rather than relying on the content commit's status.
