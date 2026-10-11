@@ -37,5 +37,5 @@ for(const site of ['cc','games']){
  await writeFile(dir+'/social-v2.jpg',social);
  // Preserve the previously public URL for existing shares.
  await writeFile(dir+'/social.jpg',social);
- await writeFile(dir+'/robots.txt',`User-agent: *\nAllow: /\nSitemap: https://anyps5.${site}/sitemap-index.xml\n`);
+ await writeFile(dir+'/robots.txt',`User-agent: *\nAllow: /\nSitemap: https://anyps5.${site}/sitemap.xml\n`);
 }
