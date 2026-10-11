@@ -32,6 +32,7 @@ for(const site of ['cc','games']){
  await writeFile(dir+'/apple-touch-icon.png',await icon(180,20));
  const artwork=await sharp(`packages/ui/assets/${site==='cc'?'portal':'games'}-social.png`).composite([{input:socialBadge(site),left:site==='cc'?274:330,top:site==='cc'?180:219}]).png().toBuffer();
  const social=await sharp(artwork).resize(1200,630,{fit:'cover'}).jpeg({quality:88,mozjpeg:true}).toBuffer();
+ await writeFile(dir+'/social-v4.webp',await sharp(artwork).resize(1200,630,{fit:'cover'}).webp({quality:85,effort:5}).toBuffer());
  await writeFile(dir+'/social-v3.jpg',social);
  // Update previously published URLs so old shares also receive the new icon.
  await writeFile(dir+'/social-v2.jpg',social);

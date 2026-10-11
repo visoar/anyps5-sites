@@ -1,0 +1,1362 @@
+{
+  "marvels-spider-man-2": {
+    "cover": {
+      "file": "marvels-spider-man-2/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/1c7b75d8ed9271516546560d219ad0b22ee0a263b4537bd8.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/1c7b75d8ed9271516546560d219ad0b22ee0a263b4537bd8.png",
+      "sourceSha256": "58beaf6e89643cd96a7eff659eeccf09d87797c8100a915c2bf3a4a5039cfa55",
+      "sourceBytes": 114633,
+      "sha256": "866396902da995205572b822a5b30ae097522a920ffb1268faaf4f71cb1de4f0",
+      "bytes": 63988,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "marvels-spider-man-2/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-screenshot-story-duo-4k-legal-13jul23",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-screenshot-story-duo-4k-legal-13jul23?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "65101fcbd5781b6b1d950098b23c17a5bdcd818ecacd7488dfcdc10fc4921b6f",
+        "sourceBytes": 445442,
+        "sha256": "2019be9f7930d656c0d81fe8b611321b2be423b634e600a6038b86e0eb0603b7",
+        "bytes": 180910,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "marvels-spider-man-2/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-screenshot-miles-enhanced-venom-en-25may23.jpg",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-screenshot-miles-enhanced-venom-en-25may23.jpg?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "7cb0a77bb140e6d3dc835aee8343b6881cef6ba52628b84513fb96970fe2faf7",
+        "sourceBytes": 350934,
+        "sha256": "c4c7d427616a0fe063950ba15b9f7fa314012902cefa8a10e56b9d1c96b54ef0",
+        "bytes": 128224,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "elden-ring": {
+    "cover": {
+      "file": "elden-ring/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/phvVT0qZfcRms5qDAk0SI3CM.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/phvVT0qZfcRms5qDAk0SI3CM.png",
+      "sourceSha256": "372f7c09adde352cd6819a34e056152238d5f3d9a2ac6a21b2089bf2e2c6f8b9",
+      "sourceBytes": 148288,
+      "sha256": "8a60b3f7a33416ff19a9b6abc3d28f51169f1bba70c4a194d87847486eb275ef",
+      "bytes": 85424,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "elden-ring/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/elden-ring-screenshot-08-en-15jun21",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/elden-ring-screenshot-08-en-15jun21?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "a486ad2e2d56fb6b93a081c90f29469ca25efe0d1ef1f76298f10d88ac0d4d17",
+        "sourceBytes": 637682,
+        "sha256": "4a0bec150fe97f0f077fd5f0b37507416d9cd3e8b620bc3b60cade08d9491b2c",
+        "bytes": 367318,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "elden-ring/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/elden-ring-screenshot-13-en-15jun21",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/elden-ring-screenshot-13-en-15jun21?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "412b5139766df1d6efde8874fe9357ad0b0fc0f062393cdb1d12735f356371af",
+        "sourceBytes": 425847,
+        "sha256": "051831b4e5d5527ffc48e3eb55a9a8e780be9d5d4d38ab5d167898085428f535",
+        "bytes": 193020,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "black-myth-wukong": {
+    "cover": {
+      "file": "black-myth-wukong/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2117/bd406f42e9352fdb398efcf21a4ffe575b2306ac40089d21.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2117/bd406f42e9352fdb398efcf21a4ffe575b2306ac40089d21.png",
+      "sourceSha256": "61095f57d8d68223e4d8bff1a68dff1d6996161f4ea79aff415116a50b3d87ea",
+      "sourceBytes": 130486,
+      "sha256": "1cc6ba586e19f96a779658cb552fc1f118bd5e81cb451cf138010285cb727dd9",
+      "bytes": 74484,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "black-myth-wukong/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/black-myth-wukong-screenshot-01-en-24jan24",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/black-myth-wukong-screenshot-01-en-24jan24?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "1fa32dcc8e188fd52487d5dcc2df4fe093a1468e643e9798114f2b61b13d2396",
+        "sourceBytes": 527062,
+        "sha256": "af9ea3ef31575588ef89d28052765249dfaf14555cd6daee1d9f47e47979e067",
+        "bytes": 285172,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "black-myth-wukong/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/black-myth-wukong-screenshot-05-en-24jan24",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/black-myth-wukong-screenshot-05-en-24jan24?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "657bd25863f4b6a9dbc878c63f1ddf47f8fcf2b20a15d118fd431dd5cea7fb6f",
+        "sourceBytes": 302584,
+        "sha256": "4214f053e29810d411ff928803846efaab8d264351d36dd9b4de783339841da9",
+        "bytes": 122674,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "god-of-war-ragnarok": {
+    "cover": {
+      "file": "god-of-war-ragnarok/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202503/2016/b69c06fb108299866057126b0d3a0530bdf96a39d2ce1cb9.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202503/2016/b69c06fb108299866057126b0d3a0530bdf96a39d2ce1cb9.png",
+      "sourceSha256": "06dbc88985ddecd11b7b1c6e365ef3390fa5d60b6649ec5815b8a17a98013110",
+      "sourceBytes": 215624,
+      "sha256": "120afdaec4a1668e5bf03ca87f8beecf1080ecf14b65bf6a00afe3c1e1fc5844",
+      "bytes": 132658,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "god-of-war-ragnarok/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-watermark-screenshot-11-en-08sep21",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-watermark-screenshot-11-en-08sep21?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "f8c876f28e5b89511624c02987ac43168831085a0b8885bfea7f617cbbcd4aa0",
+        "sourceBytes": 492855,
+        "sha256": "e10fe81f87aadaa56be1484b434b47545d0f8bbea18646a1c32f992a407c7dad",
+        "bytes": 261920,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "god-of-war-ragnarok/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-watermark-screenshot-12-en-08sep21",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-watermark-screenshot-12-en-08sep21?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "00da1c08425147fee8d600bd7db5be52a263b13f3d43ed5b040fe990dd56a8b9",
+        "sourceBytes": 660362,
+        "sha256": "accd9d41bdce9c67ca4dba486abf4cca1c4e4a68d0b34a58a1df87d4caa702c7",
+        "bytes": 382050,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "cyberpunk-2077": {
+    "cover": {
+      "file": "cyberpunk-2077/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/cKZ4tKNFj9C00giTzYtH8PF1.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/cKZ4tKNFj9C00giTzYtH8PF1.png",
+      "sourceSha256": "aa5c360872d6e5a66516bff73ccf59cafd5aad24da2baf1a5782f27fd0cc0b9f",
+      "sourceBytes": 180710,
+      "sha256": "6744a3a3d3c8b7c3575a32708378dd41b2fc4569e1b854002fde2bbbf2cfcfb1",
+      "bytes": 108304,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "cyberpunk-2077/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/cyberpunk-2077-screenshot-01-en-8jan24",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/cyberpunk-2077-screenshot-01-en-8jan24?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "5395d3d1c606b54ab212f5ab87e95396d797b212d63d7eb8c90ba86f34c4675c",
+        "sourceBytes": 362989,
+        "sha256": "ae9502789956096a0620232de9c8de6b2667c2ee1f07ba041142e4ccb8e263ae",
+        "bytes": 151562,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "cyberpunk-2077/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/cyberpunk-2077-screenshot-02-en-8jan24",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/cyberpunk-2077-screenshot-02-en-8jan24?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "61d02422f0a41c4c3e7c0979cc3a7ecbe40ec9fb12a043277ba4e8c2320291d8",
+        "sourceBytes": 245843,
+        "sha256": "db49cd815a5612a561b137c95235a2ed3b4467eb8960e31ac3898cae1713a9e0",
+        "bytes": 89294,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "horizon-forbidden-west": {
+    "cover": {
+      "file": "horizon-forbidden-west/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/HO8vkO9pfXhwbHi5WHECQJdN.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/HO8vkO9pfXhwbHi5WHECQJdN.png",
+      "sourceSha256": "07bdeae4c908d2312f4b33733d52d5eb224559ca0e67c4519f3d1c542416b022",
+      "sourceBytes": 267970,
+      "sha256": "2a5e78964bc193367a87ea657ed1c590f523b35eef9258ebd3ac32c5891a0a09",
+      "bytes": 180104,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "horizon-forbidden-west/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-screenshot-20-en-02feb22",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-screenshot-20-en-02feb22?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "f9f9c0111db422cdc092cc9afd3eb4ce1e13a15d20d0e598553a088c1591840c",
+        "sourceBytes": 328820,
+        "sha256": "c9fea5ee6901145bb8d7ddbc2dd0a83607d917b415c3de89ed829360ab9a36a3",
+        "bytes": 128214,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "horizon-forbidden-west/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-screenshot-18-en-02feb22",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-screenshot-18-en-02feb22?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "f9dc6371eac45fbb32919facd4350ebc9f4a52ce778cbe731ce0416f7cca3c4a",
+        "sourceBytes": 625791,
+        "sha256": "cc021d525d69967506a046cd99f0e11299cc09c2d50e01a594ad1fbbb5d890ac",
+        "bytes": 364064,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "the-last-of-us-part-i": {
+    "cover": {
+      "file": "the-last-of-us-part-i/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/eEczyEMDd2BLa3dtkGJVE9Id.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/eEczyEMDd2BLa3dtkGJVE9Id.png",
+      "sourceSha256": "5aea272bb46b62bb155449e0c4dc0a6ae02a0398336866ce005b643cb70de9d9",
+      "sourceBytes": 165209,
+      "sha256": "d12bb26219b3571ae73e488948efb987316cd2490f466021298e345c4e37e68f",
+      "bytes": 87864,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "the-last-of-us-part-i/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-i-screenshot-11-en-17may22",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-i-screenshot-11-en-17may22?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "dba711e2e0487fc9fbf2b4f57d3066dccab4cd27fc2be3e3aad268a02b5b4409",
+        "sourceBytes": 239775,
+        "sha256": "6c6ec4b569f12a3e7c68b93ca56bedd66d01392dfee5d616e1bd7a7b8ba7b832",
+        "bytes": 63924,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "the-last-of-us-part-i/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-i-screenshot-03-en-17may22",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-i-screenshot-03-en-17may22?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "2ec31daeb88105e174d8ac5c8b4c82a4d590d879525b38a87f95ae0d6f21b864",
+        "sourceBytes": 331373,
+        "sha256": "7908e59960726368be445e15d29232c041f99f122c56d9ce7ec23acfb76bd0f7",
+        "bytes": 107792,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "the-last-of-us-part-ii-remastered": {
+    "cover": {
+      "file": "the-last-of-us-part-ii-remastered/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0117/315718bce7eed62e3cf3fb02d61b81ff1782d6b6cf850fa4.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0117/315718bce7eed62e3cf3fb02d61b81ff1782d6b6cf850fa4.png",
+      "sourceSha256": "f1c0691e29a564a0c656b14cae06194ca93d65dd653af07b9dd50311f65391b6",
+      "sourceBytes": 191783,
+      "sha256": "aa63f0eef7817f3258ffe3b014325a865d90daf520dd037d4d2bb5c4f9d3b8d6",
+      "bytes": 110000,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "the-last-of-us-part-ii-remastered/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-ii-remastered-wm-screenshot-10-en-21nov23",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-ii-remastered-wm-screenshot-10-en-21nov23?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "b674f6644c297bcf98bbd0fd2e0c0d6ebab50f2f7e780ee0ce0202636beb0a65",
+        "sourceBytes": 174538,
+        "sha256": "3776347e49966fc947c54f0582a12d75e27953cedf98fe905cbf4b1fedf0b296",
+        "bytes": 45994,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "the-last-of-us-part-ii-remastered/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-ii-remastered-wm-screenshot-14-en-21nov23",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-ii-remastered-wm-screenshot-14-en-21nov23?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "2aa0c249843cc1cf8914f67e0a5d7875409bc96d0ca979b159ecf749018ac002",
+        "sourceBytes": 427354,
+        "sha256": "4bd76c5e9b3cfa1f7aabe1189bd0a8f9300f1fba6e45aab65b69d34835dc6626",
+        "bytes": 207216,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "final-fantasy-vii-rebirth": {
+    "cover": {
+      "file": "final-fantasy-vii-rebirth/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202308/3005/6de6b1c4b0c475b5c28fd2011655ab8206ed846926fa1671.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202308/3005/6de6b1c4b0c475b5c28fd2011655ab8206ed846926fa1671.png",
+      "sourceSha256": "c088c6086582f3fefdcdf717942315532de41d589f6f8e0c33a36216a220300e",
+      "sourceBytes": 77524,
+      "sha256": "83515b454ff5b5680d9001bb5855d3c3fb8aa166f2a039019269e7fac5f7bb42",
+      "bytes": 44532,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "final-fantasy-vii-rebirth/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-vii-rebirth-screenshot-redxiii-22jun23",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-vii-rebirth-screenshot-redxiii-22jun23?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "6640429e2047e75fd3aa2d3af08d2470cd97b22f6881ac647080ef93c3f083b9",
+        "sourceBytes": 297024,
+        "sha256": "e95bccf9aa6ebbd62d19e84d54990a91b4d069078e221a2d245d0af5e7df9faf",
+        "bytes": 117140,
+        "width": 1920,
+        "height": 1075
+      },
+      {
+        "file": "final-fantasy-vii-rebirth/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-vii-rebirth-screenshot-yuffie-red-team-attack-22jun23",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-vii-rebirth-screenshot-yuffie-red-team-attack-22jun23?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "c3e330d0150c76e0faa47612b6ce11b73c4fc693319cff66c8d9a88b0afdc745",
+        "sourceBytes": 677752,
+        "sha256": "b081eee73102c55e2bb3409cc25feb0370a23f8ecafd139382bf39a4ed0e1b3d",
+        "bytes": 409882,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "final-fantasy-xvi": {
+    "cover": {
+      "file": "final-fantasy-xvi/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202211/2904/NspyF8og84Div2VMShXI4cV7.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/2904/NspyF8og84Div2VMShXI4cV7.png",
+      "sourceSha256": "ad5f4bfe764b3732cc60a0d0f0182fb9e378a9c7e7535e10e1209cfed2a125c5",
+      "sourceBytes": 211937,
+      "sha256": "d4997c015e8db33cfb99aea46340d6d27002a6ad034fea415aff32404c791bdc",
+      "bytes": 138102,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "final-fantasy-xvi/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-xvi-screenshot-15-en-01dec22",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-xvi-screenshot-15-en-01dec22?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "5591d2e1c48dc16fb32e30603d695e0853968649e84d2af2c7362e20128041e7",
+        "sourceBytes": 212527,
+        "sha256": "549e528366550bf2a5e12f9ba33317af416ad7e1eb47f8815b5c2a6cd28ce961",
+        "bytes": 66940,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "final-fantasy-xvi/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-xvi-screenshot-09-en-24nov22",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-xvi-screenshot-09-en-24nov22?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "0b95a8be7bbf352938cd3074c6b178beee81c89b3e5bb08845abbea92203cdb8",
+        "sourceBytes": 396098,
+        "sha256": "98c6e39cdda269e8179ff69ffd9760154ea581f327b05c6004d48f89e49a8967",
+        "bytes": 179102,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "gran-turismo-7": {
+    "cover": {
+      "file": "gran-turismo-7/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202511/0707/303f5701426596a09891f9f33fa93e49ae522d5295b26dce.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202511/0707/303f5701426596a09891f9f33fa93e49ae522d5295b26dce.png",
+      "sourceSha256": "0098f0a109b04b900abd455fc4023dfb75c7ac4548380a8bfd80028af5811018",
+      "sourceBytes": 203322,
+      "sha256": "f4de8b16f8fec96c4d7674f90df0e0304ed688bdb8d71f8432c12e7bdec0b1a3",
+      "bytes": 112878,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "gran-turismo-7/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/gran-turismo-7-screenshot-07-en-09sept21",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/gran-turismo-7-screenshot-07-en-09sept21?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "8a999e1a304de6c4efb3eeeb704b9232ab6735188bc83051acd331f8b76477be",
+        "sourceBytes": 433117,
+        "sha256": "e4aa922ead91eac8a09590b7a55f7b51dc9751b11311d038f1ce551e06db6a15",
+        "bytes": 207152,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "gran-turismo-7/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/gran-turismo-7-screenshot-07-disclaimer-en-01oct20",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/gran-turismo-7-screenshot-07-disclaimer-en-01oct20?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "396647d40025fac4657f76e33b3d03393d66a3357c2c724bf1b0630ecf6ffa10",
+        "sourceBytes": 425648,
+        "sha256": "26b6a901908a0f23609aec36b8c8f0e883b0820568ef62fc46cde3241e0360f2",
+        "bytes": 198562,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "hogwarts-legacy": {
+    "cover": {
+      "file": "hogwarts-legacy/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202208/0921/dR9KJAKDW2izPbptHQbh3rnj.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/0921/dR9KJAKDW2izPbptHQbh3rnj.png",
+      "sourceSha256": "f9e92ee8484f54a17508fab320fd7600a56210c80c95285337290373b4a0fcbf",
+      "sourceBytes": 190947,
+      "sha256": "7f30e6352e048bc18def24ebf7a929c55b416b695691c34ce92d983536869430",
+      "bytes": 118882,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "hogwarts-legacy/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-legacy-screen-01-ps5-en-02oct20",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-legacy-screen-01-ps5-en-02oct20?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "dda7c6881648a855c57cb582b1f5b6e97eeff0456853bc77f7bb5604aee4255b",
+        "sourceBytes": 314544,
+        "sha256": "5c9eee7249e90a2ff3e8b403bd036dd3f36d40aa04431a9e37c0c26973fd491b",
+        "bytes": 114858,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "hogwarts-legacy/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-legacy-screen-02-ps5-en-02oct20",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-legacy-screen-02-ps5-en-02oct20?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "1e1f3470bb9d73db37e06556b3552dcc833a53bd8726b98b579edaef4c1143eb",
+        "sourceBytes": 464628,
+        "sha256": "d9f96e80b16d30a7d303b9cc0bf63612e6d928b9675a61199d6917e275086a2d",
+        "bytes": 214246,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "helldivers-2": {
+    "cover": {
+      "file": "helldivers-2/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202608/0517/6d1f643eec5087e543287e54a123277ec3bcda956d5d5158.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202608/0517/6d1f643eec5087e543287e54a123277ec3bcda956d5d5158.png",
+      "sourceSha256": "bc2d31a8182e7454f4b9f282a85209cc10d58bce4b32bbc6543b51b0ab31bd0b",
+      "sourceBytes": 205136,
+      "sha256": "32c5af1fd8b59951716276f076df0a45e8dcd293611e6ca4a3bc933d63242f94",
+      "bytes": 119832,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "helldivers-2/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/helldivers-2-screenshot-disclaimer-18-en-08sept23",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/helldivers-2-screenshot-disclaimer-18-en-08sept23?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "ee2ea03808e8c9b511061fd8757a25598eaab59cf6e52528ab0e073ddd51b17c",
+        "sourceBytes": 442631,
+        "sha256": "b44d30d517a22b9b67cfcf56fe6e7edd86868b1d3f89a42cb35a433106be37ef",
+        "bytes": 232878,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "helldivers-2/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/helldivers-2-screenshot-disclaimer-02-en-24may23",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/helldivers-2-screenshot-disclaimer-02-en-24may23?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "1833687ddc86360f0cdab94f39595ce91957ff57e5e4cdd00f1c69de64aab46e",
+        "sourceBytes": 216413,
+        "sha256": "af0821ed0ada9e48af22e82e8b657cf71834146fe19296f49ed10d39a5fb83da",
+        "bytes": 69354,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "resident-evil-4-remake": {
+    "cover": {
+      "file": "resident-evil-4-remake/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png",
+      "sourceSha256": "d78e9a9bdfd92d8723dd68b97489c43054328ec5f8dcb175887af080fefb6e31",
+      "sourceBytes": 147599,
+      "sha256": "dd82212f98a2c18164df8f4ae9b61887a0b777d985b0cdc75e19f1b7544b5b79",
+      "bytes": 86018,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "resident-evil-4-remake/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/resident-evil-4-remake-screen-06-ps5-en-01nov22",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/resident-evil-4-remake-screen-06-ps5-en-01nov22?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "bf02f90278fb3945b582aba5e3a5402b806bf0f3852b309137b8515bbb95ab03",
+        "sourceBytes": 324212,
+        "sha256": "149ace11ae5981543b3e64a44ef07d0235c0172f4d041ad81047489e9e7fca51",
+        "bytes": 128188,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "resident-evil-4-remake/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/resident-evil-4-remake-screen-10-ps5-en-01nov22",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/resident-evil-4-remake-screen-10-ps5-en-01nov22?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "30f1cbf559020fb2e892f02e9e489b3736b3059dcfe0f311cbdfac8155ed45ec",
+        "sourceBytes": 288096,
+        "sha256": "8d28c28a3ccbe5160ac82e9851e727da5877e856c74ad48491abbf516b98ea90",
+        "bytes": 110374,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "returnal": {
+    "cover": {
+      "file": "returnal/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202011/1621/fYZQHZ42eXXUt7c6D5YjLrq5.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202011/1621/fYZQHZ42eXXUt7c6D5YjLrq5.png",
+      "sourceSha256": "0815904e156acb67f000af831f9b0fd60d70f5a52acd75814bc328cccaeb6bb2",
+      "sourceBytes": 241318,
+      "sha256": "e1e3a2d74ed229ef3b5ffd38bd9e277c99bb02fa6aa95216164f5598201e17f9",
+      "bytes": 154276,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "returnal/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/returnal-screen-01-ps5-15jun20-en",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/returnal-screen-01-ps5-15jun20-en?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "a6196423ed8789f2f602019e359a6847ed14ed631900227792f42466df0fd981",
+        "sourceBytes": 425950,
+        "sha256": "8ddc22dcc7349139003c2bb7bcf7466e8e342b65686ccad4ae57f78f533d4ba6",
+        "bytes": 201406,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "returnal/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/returnal-screen-02-ps5-15jun20-en",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/returnal-screen-02-ps5-15jun20-en?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "0709dfe7574d11d063369681f538fbf2f8e3ca57aa1c4e2a62a003a8f90a8be7",
+        "sourceBytes": 434970,
+        "sha256": "8b43b581bc32fefaf1736e32f73880613b5c3db0480cc17e92d82980b4bac2a4",
+        "bytes": 206088,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "palworld": {
+    "cover": {
+      "file": "palworld/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202607/1002/585fa2ede4c88fa20a773ec44b110e0c84c4a5baeb51ed5b.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/1002/585fa2ede4c88fa20a773ec44b110e0c84c4a5baeb51ed5b.png",
+      "sourceSha256": "d9017ecda50922beca949ea84c8835234ffe1b52e618a7a052f48af6d21e0730",
+      "sourceBytes": 245624,
+      "sha256": "ad14fc2d7a5367def0396c1997af23cac8b8103db1966b482b8e786d06654e20",
+      "bytes": 151218,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "astro-bot": {
+    "cover": {
+      "file": "astro-bot/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0500/8f15268257b878597757fcc5f2c9545840867bc71fc863b1.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0500/8f15268257b878597757fcc5f2c9545840867bc71fc863b1.png",
+      "sourceSha256": "19e37c8f055deef9c1dd418cd8e0bd178f33c988a8393d4d3cd58c25d03a4e15",
+      "sourceBytes": 178278,
+      "sha256": "67a5123197c636600509c2a76f0c575d01d6f1a5e4bf0da945e1b497644ca8eb",
+      "bytes": 98912,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "astro-bot/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-06-en-24may24",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-06-en-24may24?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "1c98b888583465b6737a7b004b8d3dcc0c7e9d8f812a8c1d3fd96d6629214a8c",
+        "sourceBytes": 219041,
+        "sha256": "68ffdd9c4feee2beac383cc841f872c3cb0760510c46aa258abb58d7d4c60159",
+        "bytes": 88900,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "astro-bot/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-02-en-24may24",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-02-en-24may24?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "43e9b730c38c5d93fe5c1664cc68cc285fca6f660e06ec9f25a7c217156b6382",
+        "sourceBytes": 572164,
+        "sha256": "824c130a6317f1f4ae8abf2cdab2756ee20c4f6398f4a8f531a46191f322403f",
+        "bytes": 323298,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "astros-playroom": {
+    "cover": {
+      "file": "astros-playroom/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1908/3d17c33239dab88c7e2f24af50140b3f6fa555e6030d5704.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1908/3d17c33239dab88c7e2f24af50140b3f6fa555e6030d5704.png",
+      "sourceSha256": "299246be93faef3069527616c322432e801cfc3bf8501ccb34e658d1cb1441f4",
+      "sourceBytes": 94245,
+      "sha256": "960ccf2f1764e024a5ff4195abf99f6b49cbeee0a9660f54ca0e98bfaefc5965",
+      "bytes": 42816,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "astros-playroom/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/astros-playroom-screenshot-15-disclaimer-en-06oct20",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/astros-playroom-screenshot-15-disclaimer-en-06oct20?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "b0d1cd932a5f636de80f2066fd2072a8e7675b3d94351b6c75e40462747a9cde",
+        "sourceBytes": 399533,
+        "sha256": "29d198b957a689672b61f02f72b4da131abff0f304fdae80190b3e91c1d07868",
+        "bytes": 183234,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "astros-playroom/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/astros-playroom-screenshot-05-disclaimer-en-06oct20",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/astros-playroom-screenshot-05-disclaimer-en-06oct20?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "ab2e3e1986ac04264bfc57a116693ab606552c763d22adfd8ae4a6e8f06be92c",
+        "sourceBytes": 311473,
+        "sha256": "6f4628145bae3db46273226aa41c66efecf80b4bb52790391dda149e53172a96",
+        "bytes": 137188,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "demons-souls": {
+    "cover": {
+      "file": "demons-souls/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202011/1717/GemRaOZaCMhGxQ9dRhnQQyT5.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/img/rnd/202011/1717/GemRaOZaCMhGxQ9dRhnQQyT5.png",
+      "sourceSha256": "0ad4126d16cbb34a0edcafe93dc55762c9e8df88a87c8a172e3c5c202de4b8e6",
+      "sourceBytes": 228373,
+      "sha256": "0a94fb3e5fa4186596b008e7203016e51a469ae4346fe033bf5ae5f60ab7903e",
+      "bytes": 156056,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "demons-souls/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/demons-souls-screenshot-15-disclaimer-en-09nov20",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/demons-souls-screenshot-15-disclaimer-en-09nov20?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "f2d4bb368992f915ea4c495abe742c8c7988760f95050e760c7d4a357c7fae05",
+        "sourceBytes": 535658,
+        "sha256": "74ee6e0381c943e69433ac079451d8ab90599848231426751751cb221c9fd186",
+        "bytes": 284764,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "demons-souls/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/demons-souls-screenshot-16-disclaimer-en-09nov20",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/demons-souls-screenshot-16-disclaimer-en-09nov20?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "ad787f9e2059de6096bd7e7f46a20cffa6e08ba9379ec7de179ea9023ddcf005",
+        "sourceBytes": 439403,
+        "sha256": "940c1de15c500ad8d02ea3536f496a0349d5d05c72374b5aa9842de008753685",
+        "bytes": 201980,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "ghost-of-yotei": {
+    "cover": {
+      "file": "ghost-of-yotei/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2723/890df32c227f619c5bd80e9f34ba2be53d0fea4b1615adee.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2723/890df32c227f619c5bd80e9f34ba2be53d0fea4b1615adee.png",
+      "sourceSha256": "86a4a9ec89b3027a19c2ca8789e8736c6c37d06224a7cfee5d87bd738675f6e0",
+      "sourceBytes": 229762,
+      "sha256": "31d0b59a84d973e823fc2b7f0cb7255c352a3071541600f41c3cd0fcfecbdfbb",
+      "bytes": 156710,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "ghost-of-yotei/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/ghost-of-yotei-screenshot-03-en-04sep26",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ghost-of-yotei-screenshot-03-en-04sep26?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "8c6c32583841071a0c42d80adb9f5c3066bd88ab742b033f31a3a40cbd05306f",
+        "sourceBytes": 111002,
+        "sha256": "b3eae70d8c14f3c026ed45fc0a9b485a636bb9ab6b2d570c3c622ace31d9393d",
+        "bytes": 34476,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "ghost-of-yotei/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/ghost-of-yotei-screenshot-01-en-04sep26",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ghost-of-yotei-screenshot-01-en-04sep26?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "47e4965b5cd862b06c7434eff28f031a327b18b1b69569dc66bc8b307c2070bf",
+        "sourceBytes": 257497,
+        "sha256": "474d7c8d8f9ab2cceacb290806830172e7d0cf162a7aa1810fbdf488c7203f84",
+        "bytes": 97140,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "god-of-war-sons-of-sparta": {
+    "cover": {
+      "file": "god-of-war-sons-of-sparta/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202602/0519/7260437aae9056d5bd34225e4fce98ca8bb0ef1cd8e6471f.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202602/0519/7260437aae9056d5bd34225e4fce98ca8bb0ef1cd8e6471f.png",
+      "sourceSha256": "52cfb897fb38393edebfd2e68859f95498a82b39cb40ae801ad340eae3ce2fbc",
+      "sourceBytes": 181021,
+      "sha256": "bbaaa683e288e6843b67824e6bf5c3905c8b674e7a57ef3099beca8e24fcaefc",
+      "bytes": 99502,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "god-of-war-sons-of-sparta/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-sons-of-sparta-screenshot-01-en-03feb26",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-sons-of-sparta-screenshot-01-en-03feb26?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "b75a4181b2babff0a3de916a719b265d4ee98922cc9512c0e64a5c8bc7f2c0c0",
+        "sourceBytes": 298788,
+        "sha256": "9c52f36f3d9af3e8e38196b3071d95a9f8f1cd464c88006d19b3d6c03cb15a3f",
+        "bytes": 107016,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "god-of-war-sons-of-sparta/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-sons-of-sparta-screenshot-05-en-03feb26",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-sons-of-sparta-screenshot-05-en-03feb26?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "706f8051ee77218645b401e270ce41f35fa404097d8cfefb051da0b48e7f1043",
+        "sourceBytes": 227414,
+        "sha256": "7b2cda0021e4eec0819822815df467164dccdc8f3c2e91d619a5823f427699f5",
+        "bytes": 75536,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "sonic-origins": {
+    "cover": {
+      "file": "sonic-origins/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1103/cMPUrcoTKvKYEmdXBOtcVHPi.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1103/cMPUrcoTKvKYEmdXBOtcVHPi.png",
+      "sourceSha256": "2a9b6a70a6e9014a841110206498bef1a082aed5020988c03d0266fa51d79866",
+      "sourceBytes": 161358,
+      "sha256": "0015833427674fce9f9909e805b36e11851f9829012bb019b8f668f1df562089",
+      "bytes": 87318,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "sonic-origins/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/sonic-origins-screenshot-02-en-7jun22",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/sonic-origins-screenshot-02-en-7jun22?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "933feab0bbbbd9c3b7df1f7af1859faac7c8071e139f929145e937e808e0267b",
+        "sourceBytes": 446221,
+        "sha256": "07a8eaa03503abbf8a83fc35ac46a79c265fe8884cefa8b7f154cc925de1beb3",
+        "bytes": 206746,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "sonic-origins/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/sonic-origins-screenshot-05-en-7jun22",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/sonic-origins-screenshot-05-en-7jun22?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "0b767951c91326f95e9e4c85040db05989eb9b7bd9a4cafd172683e7b0fc90ad",
+        "sourceBytes": 403746,
+        "sha256": "4c2aa0b345fc5aabb9d635a096ae4d7f10e795c6bdb0641ed315c2e881f2fd37",
+        "bytes": 185854,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "stray": {
+    "cover": {
+      "file": "stray/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0300/E2vZwVaDJbhLZpJo7Q10IyYo.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0300/E2vZwVaDJbhLZpJo7Q10IyYo.png",
+      "sourceSha256": "e53b2217683c89ea98786fe032f7409faf2d54085de57a77b84da61e152373b1",
+      "sourceBytes": 125699,
+      "sha256": "5443bd4963018c278635be0115b29f391ca8cd5b0397ddfbaccf608c18e38387",
+      "bytes": 66878,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "stray/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/stray-screenshot-04-en-9jun22",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/stray-screenshot-04-en-9jun22?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "f4fce178633fcd39db262c5234e409dd66e9744b519e4ab4d6c6d94ac42e03ba",
+        "sourceBytes": 196482,
+        "sha256": "48d7f5e22dd59f25498bc2c49362b990d5838e14853f025b13d141cbd49cbef4",
+        "bytes": 70624,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "stray/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/stray-screenshot-03-ps5-en-23jun20",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/stray-screenshot-03-ps5-en-23jun20?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "321d4af2120973be30922996f135169d6ff1dd30f3e0e3a40a4bddb047fbfe94",
+        "sourceBytes": 449287,
+        "sha256": "1bc376fe8f801a68400525a801d96ef5767020fa9dbe94576b69cdc2cee1b858",
+        "bytes": 190232,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "rise-of-the-ronin": {
+    "cover": {
+      "file": "rise-of-the-ronin/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0606/c7af83ff86dd8668568ad6583341ddb1d0c142535b491383.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0606/c7af83ff86dd8668568ad6583341ddb1d0c142535b491383.png",
+      "sourceSha256": "0ba53745a50bd60dfdb897242c358abbd2c378f1dbb8da3a8a13f4b23091f95b",
+      "sourceBytes": 150116,
+      "sha256": "6d0d2b8bf0e89b81ce7d13f826f7c3ece6d7334bac5db854a4572a532d5bb625",
+      "bytes": 76184,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "rise-of-the-ronin/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/rise-of-the-ronin-screenshot-bamboo-4K-en-28mar23",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/rise-of-the-ronin-screenshot-bamboo-4K-en-28mar23?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "4426bc48a2c3f21560d8c40f2e98bd5ee52ceb821948621884dd2a012baf8cd8",
+        "sourceBytes": 457399,
+        "sha256": "1306135a117a20806b0f4521cf00b9364a518eee0ff4f0c693e9a84293443c0e",
+        "bytes": 213380,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "rise-of-the-ronin/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/rise-of-the-ronin-screenshot-yokohama-4K-en-28mar23",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/rise-of-the-ronin-screenshot-yokohama-4K-en-28mar23?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "dc3f3211b40a3c7234f20ef238c37fe72bdf780ca6690ff2ce6a690054856517",
+        "sourceBytes": 405195,
+        "sha256": "cfad2cb8c5cca0f836194de389f3fcedae4aa9a4be11cd4cbdf972621be996c3",
+        "bytes": 180742,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "animal-well": {
+    "cover": {
+      "file": "animal-well/cover.webp",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813230/header.jpg?t=1788379439",
+      "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813230/header.jpg?t=1788379439",
+      "sourceSha256": "24c8d61aca57514263cd1290036881a55684762d898028d5d439185c795ee18f",
+      "sourceBytes": 42168,
+      "sha256": "0c46ebffaa8d51e881e1be22d4ee3dced8837d8291baab88038a23abc10ba3f2",
+      "bytes": 14826,
+      "width": 460,
+      "height": 215
+    },
+    "screenshots": [
+      {
+        "file": "animal-well/screenshot-1.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813230/ss_87a9f2941e114a2bb834db6350ccbedc1ade794d.1920x1080.jpg?t=1788379439",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813230/ss_87a9f2941e114a2bb834db6350ccbedc1ade794d.1920x1080.jpg?t=1788379439",
+        "sourceSha256": "11db717ae9d3c6007ee05cd7bf1998cbcb1ba1a67a389fa7330b71afff366042",
+        "sourceBytes": 445532,
+        "sha256": "cc34f6009497ca86a7cd989a489deaf3fd9c8ed0af143eb3e9657b334388fad8",
+        "bytes": 127010,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "animal-well/screenshot-2.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813230/ss_ca955f6bb4f0c164dcffa59082ae985fb530582a.1920x1080.jpg?t=1788379439",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813230/ss_ca955f6bb4f0c164dcffa59082ae985fb530582a.1920x1080.jpg?t=1788379439",
+        "sourceSha256": "aca541048003efc09767da77cbd6d176bd469e528df1d7786189087f2380c176",
+        "sourceBytes": 570222,
+        "sha256": "36e63ce1c284ec312a775c5cc18fcd18fd5f2d2809fb80df53f11602eec67093",
+        "bytes": 184178,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "hollow-knight-silksong": {
+    "cover": {
+      "file": "hollow-knight-silksong/cover.webp",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/7983574d464e6559ac7e24275727f73a8bcca1f3/header.jpg?t=1776125736",
+      "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/7983574d464e6559ac7e24275727f73a8bcca1f3/header.jpg?t=1776125736",
+      "sourceSha256": "28eafbb11718c4905cb6a253471dcb5f909bbec1fd7589725bb903a9c1406918",
+      "sourceBytes": 47955,
+      "sha256": "2f61a8270801ed297bab82e336d2249b4ea1196605f78d5e8ff5aaade68d4e90",
+      "bytes": 20626,
+      "width": 460,
+      "height": 215
+    },
+    "screenshots": [
+      {
+        "file": "hollow-knight-silksong/screenshot-1.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/26950369fe4b03c2268620eb9815c8a246aa0b06/ss_26950369fe4b03c2268620eb9815c8a246aa0b06.1920x1080.jpg?t=1776125736",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/26950369fe4b03c2268620eb9815c8a246aa0b06/ss_26950369fe4b03c2268620eb9815c8a246aa0b06.1920x1080.jpg?t=1776125736",
+        "sourceSha256": "b9a340c0689fd45029be4622f64b920f7f835da3d9aa7d6d2ebc6160531570c9",
+        "sourceBytes": 477817,
+        "sha256": "17e98a807086b22b09589d3a932a1ba0e17057475c5ad4bc3b3a28242ca50f66",
+        "bytes": 158648,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "hollow-knight-silksong/screenshot-2.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/09ccaa6c16f158f9df8298feb5d196098506a028/ss_09ccaa6c16f158f9df8298feb5d196098506a028.1920x1080.jpg?t=1776125736",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/09ccaa6c16f158f9df8298feb5d196098506a028/ss_09ccaa6c16f158f9df8298feb5d196098506a028.1920x1080.jpg?t=1776125736",
+        "sourceSha256": "cc5d37b2f7f177768b540959def7db610aa406d67f658775842fade459ebcc88",
+        "sourceBytes": 401772,
+        "sha256": "c0b71d36f72c39b3c9ac82d84535b856c434f7e57c523bddf4a4c23ccb485aed",
+        "bytes": 125142,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "silt": {
+    "cover": {
+      "file": "silt/cover.webp",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325890/header.jpg?t=1724190031",
+      "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325890/header.jpg?t=1724190031",
+      "sourceSha256": "f3e70613868a7fdc174b887310635e3d334fc2d8cf001ba8314f7d6eb85f219b",
+      "sourceBytes": 15653,
+      "sha256": "00d4b08e94ccc2df567127ef0e71941f2b6e9395b584919a0fb238a05734aa4e",
+      "bytes": 6004,
+      "width": 460,
+      "height": 215
+    },
+    "screenshots": [
+      {
+        "file": "silt/screenshot-1.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325890/ss_c83edc9547f1bef9f6fc4166e7fb06f8ddd9a973.1920x1080.jpg?t=1724190031",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325890/ss_c83edc9547f1bef9f6fc4166e7fb06f8ddd9a973.1920x1080.jpg?t=1724190031",
+        "sourceSha256": "22ff6eaf715df7160119442bc3769a68564181ef22eb34c525b0c451bcac375f",
+        "sourceBytes": 137733,
+        "sha256": "d7aad6dd6fce65e534d4b80d46992dcee21e80e316663aa474e027b286fd3fd8",
+        "bytes": 49426,
+        "width": 1244,
+        "height": 700
+      },
+      {
+        "file": "silt/screenshot-2.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325890/ss_77ef903ea31575873e545ce2bead7934a62a9869.1920x1080.jpg?t=1724190031",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325890/ss_77ef903ea31575873e545ce2bead7934a62a9869.1920x1080.jpg?t=1724190031",
+        "sourceSha256": "01562d0bdef4e69f43a949a9b84e360a52d1f642d19449c20cc3a85fac61c5bf",
+        "sourceBytes": 252918,
+        "sha256": "5611bf438b97fad20662a87efa3c5b86e4a130ff3eeb054c95cd3ca5bf74a9e6",
+        "bytes": 153518,
+        "width": 1244,
+        "height": 700
+      }
+    ]
+  },
+  "balatro": {
+    "cover": {
+      "file": "balatro/cover.webp",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/7a85430784e4d613cdb0547414d8cf16ffa45747/header.jpg?t=1790693638",
+      "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/7a85430784e4d613cdb0547414d8cf16ffa45747/header.jpg?t=1790693638",
+      "sourceSha256": "42103ce1a28589de7167b5e010028c17bf53b60b393b19d70bc9da5ed10a7d3b",
+      "sourceBytes": 46709,
+      "sha256": "f75649091c9b6dcc303d8759cd4fcb0f598c6dc073f24537803dc74f8d6d536b",
+      "bytes": 18402,
+      "width": 460,
+      "height": 215
+    },
+    "screenshots": [
+      {
+        "file": "balatro/screenshot-1.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/96208723dbedef49d71bf1b0a74aee1689018c50/ss_96208723dbedef49d71bf1b0a74aee1689018c50.1920x1080.jpg?t=1790693638",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/96208723dbedef49d71bf1b0a74aee1689018c50/ss_96208723dbedef49d71bf1b0a74aee1689018c50.1920x1080.jpg?t=1790693638",
+        "sourceSha256": "da065969a1295607d29f52db4a868ec2973655384c64d34443f14a92a82e3faa",
+        "sourceBytes": 446484,
+        "sha256": "d30cd34340a03b1b14992448011e104a3847e7d0a570c571681a1e51ad5edeff",
+        "bytes": 148022,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "balatro/screenshot-2.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_4862112e5030f74a5818cd4c31347d699ac5adf3.1920x1080.jpg?t=1790693638",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_4862112e5030f74a5818cd4c31347d699ac5adf3.1920x1080.jpg?t=1790693638",
+        "sourceSha256": "c05b09c45a93c43df70c3f17b49a59d9d28442726661a6534e6d7a22167ec918",
+        "sourceBytes": 332820,
+        "sha256": "0168d2c076afcd5946975d0e3ff483c1a2277530e006db5d50276c46a5210344",
+        "bytes": 111092,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "hades": {
+    "cover": {
+      "file": "hades/cover.webp",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/header.jpg?t=1758127023",
+      "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/header.jpg?t=1758127023",
+      "sourceSha256": "5014ec1d84ae967cf4226826824628d44963655fa8ac5f6575ca53a759b5cb3f",
+      "sourceBytes": 56368,
+      "sha256": "38ddd010f4ef24291063f117caca1590b0c22f7033fcf22c93fd831516791f6c",
+      "bytes": 23486,
+      "width": 460,
+      "height": 215
+    },
+    "screenshots": [
+      {
+        "file": "hades/screenshot-1.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_c0fed447426b69981cf1721756acf75369801b31.1920x1080.jpg?t=1758127023",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_c0fed447426b69981cf1721756acf75369801b31.1920x1080.jpg?t=1758127023",
+        "sourceSha256": "e52c7a48405b5a280603ebeb980b63f33454bc914c9fb777fb82a71835d71b47",
+        "sourceBytes": 599333,
+        "sha256": "55f73acbe5332cf7878b3c98d7aedb90b0d67414497a45bd503b2a59896378be",
+        "bytes": 217264,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "hades/screenshot-2.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_8a9f0953e8a014bd3df2789c2835cb787cd3764d.1920x1080.jpg?t=1758127023",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_8a9f0953e8a014bd3df2789c2835cb787cd3764d.1920x1080.jpg?t=1758127023",
+        "sourceSha256": "169a5866d8cd3a448cb61ece1ee5c356838e815cb90cee65b1e3136f97e175d3",
+        "sourceBytes": 511687,
+        "sha256": "424d064930b6c223f413372fb3cd9d52ada15b5ff9740d0c035f9c4fe79c4ba2",
+        "bytes": 186708,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "hades-ii": {
+    "cover": {
+      "file": "hades-ii/cover.webp",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg?t=1779901265",
+      "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg?t=1779901265",
+      "sourceSha256": "9dde3b52db16a73d52d83352a5353fc145eba58e5a466977755e733ee8977efe",
+      "sourceBytes": 53376,
+      "sha256": "4411ed9cfa33c9912191b6f15b2ae5f0a6c7b4e39da12e54b23605ae055be49f",
+      "bytes": 24510,
+      "width": 460,
+      "height": 215
+    },
+    "screenshots": [
+      {
+        "file": "hades-ii/screenshot-1.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/ss_ef0f63061d0a0a9a7e46f3b84f125d25330e8f19.1920x1080.jpg?t=1779901265",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/ss_ef0f63061d0a0a9a7e46f3b84f125d25330e8f19.1920x1080.jpg?t=1779901265",
+        "sourceSha256": "32608044933fa2a4bf912586ef78aced58ccf2c02c754a209394d6fb659a5ac7",
+        "sourceBytes": 527902,
+        "sha256": "14d3cc0d698166e8c60d93f1c89ebbe732d53a8e5ea8bbc4a92aefeb85c04140",
+        "bytes": 234470,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "hades-ii/screenshot-2.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/ss_f28befd916e59b8bf0a8a801b8a498b8adaa01eb.1920x1080.jpg?t=1779901265",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/ss_f28befd916e59b8bf0a8a801b8a498b8adaa01eb.1920x1080.jpg?t=1779901265",
+        "sourceSha256": "566a78ffa9706838e77a75698ad480f811c1d2bfba31b999e8dc9834ee693fd0",
+        "sourceBytes": 499838,
+        "sha256": "0d9e98302a7ee6e3b36f19b8b61805061630db14520d0bd53a333eca2365a5dd",
+        "bytes": 191776,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "epic-mickey-rebrushed": {
+    "cover": {
+      "file": "epic-mickey-rebrushed/cover.webp",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1522160/header.jpg?t=1732714651",
+      "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1522160/header.jpg?t=1732714651",
+      "sourceSha256": "f20c0a39796942dbda988b4895ed701fce4c4523e4ff3f65a227fdcb119738ec",
+      "sourceBytes": 37405,
+      "sha256": "91458f57762e38bb63873cc26358def96944c62501b64fcf15a85b5a8586e0ec",
+      "bytes": 14558,
+      "width": 460,
+      "height": 215
+    },
+    "screenshots": [
+      {
+        "file": "epic-mickey-rebrushed/screenshot-1.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1522160/ss_5547153282f19773a61252ca5fe464a0ae38bfce.1920x1080.jpg?t=1732714651",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1522160/ss_5547153282f19773a61252ca5fe464a0ae38bfce.1920x1080.jpg?t=1732714651",
+        "sourceSha256": "4486aa93a5af64b6f587148769ce0a13d38707ed175f3d62b480817fc9cedb69",
+        "sourceBytes": 555749,
+        "sha256": "8eaa91c850651332f490a2e835fde1c54e95ae522a1da1466b4cc85edf7787a7",
+        "bytes": 191810,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "epic-mickey-rebrushed/screenshot-2.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1522160/ss_9dc98c00e86f5888b8d21b1afffcf7f97d2e1951.1920x1080.jpg?t=1732714651",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1522160/ss_9dc98c00e86f5888b8d21b1afffcf7f97d2e1951.1920x1080.jpg?t=1732714651",
+        "sourceSha256": "c7914c56e185b84b60b1f16cc7935be0e44cb04e99e65bae0e7a22207413ea09",
+        "sourceBytes": 649121,
+        "sha256": "31ed865091f6f9e6b2f2f1d0f65708c943ab35e277d5854b49160eeaac5243f2",
+        "bytes": 256186,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "hello-kitty-island-adventure": {
+    "cover": {
+      "file": "hello-kitty-island-adventure/cover.webp",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2495100/33b3efa148506359eb8d6e973f59a38cb95cc794/header.jpg?t=1791583386",
+      "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2495100/33b3efa148506359eb8d6e973f59a38cb95cc794/header.jpg?t=1791583386",
+      "sourceSha256": "0f027ec082c9f55cf81a26c382bd46614c8fb22e9067eabee1e6fd739eed3ed2",
+      "sourceBytes": 59735,
+      "sha256": "1c2544176a39e6127d9b8d058869d76563f27f14a3ed473d0c9013a389161229",
+      "bytes": 25628,
+      "width": 460,
+      "height": 215
+    },
+    "screenshots": [
+      {
+        "file": "hello-kitty-island-adventure/screenshot-1.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2495100/ss_4b2dee4ba9d74ebff886cff692a718632db7ebfa.1920x1080.jpg?t=1791583386",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2495100/ss_4b2dee4ba9d74ebff886cff692a718632db7ebfa.1920x1080.jpg?t=1791583386",
+        "sourceSha256": "1fa2be57da03c283311364bce89281426aac0054c909db0322e6e741809f9b7c",
+        "sourceBytes": 589813,
+        "sha256": "92f90d1a45fbb74d00269c2dbc3a93d3ba977165be7951b361c4d41587be46fb",
+        "bytes": 203010,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "hello-kitty-island-adventure/screenshot-2.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2495100/63ac4ec151b232b1c98cd824701085ac2f5891db/ss_63ac4ec151b232b1c98cd824701085ac2f5891db.1920x1080.jpg?t=1791583386",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2495100/63ac4ec151b232b1c98cd824701085ac2f5891db/ss_63ac4ec151b232b1c98cd824701085ac2f5891db.1920x1080.jpg?t=1791583386",
+        "sourceSha256": "eacaa5d61656affc545cc0b3632051522d6192f76638a14828398d3990db1279",
+        "sourceBytes": 672472,
+        "sha256": "a328ea7fb62ec801917bdefcd5707a7f0a9b8f115355c823516289703dc88a5b",
+        "bytes": 253048,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "wobbly-life": {
+    "cover": {
+      "file": "wobbly-life/cover.webp",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1211020/86c3e16dfbfec027053c733d929a61ecfd15278a/header.jpg?t=1761037189",
+      "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1211020/86c3e16dfbfec027053c733d929a61ecfd15278a/header.jpg?t=1761037189",
+      "sourceSha256": "a452d1e71f2710dc621fb7b552a1818d3e2018920e8ec43eb2d58595a71f95ff",
+      "sourceBytes": 58080,
+      "sha256": "cc8633cfaf7d1024cbe7615977e32f86955a9a48141fb86dd4dda4636582acc8",
+      "bytes": 24374,
+      "width": 460,
+      "height": 215
+    },
+    "screenshots": [
+      {
+        "file": "wobbly-life/screenshot-1.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1211020/82aee5b999f2706768f0c9085a0e8c5b84033a66/ss_82aee5b999f2706768f0c9085a0e8c5b84033a66.1920x1080.jpg?t=1761037189",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1211020/82aee5b999f2706768f0c9085a0e8c5b84033a66/ss_82aee5b999f2706768f0c9085a0e8c5b84033a66.1920x1080.jpg?t=1761037189",
+        "sourceSha256": "a44bc92e48f4afdde30c173581e14bd6335160a2db4f108f67e3e0541ddcc302",
+        "sourceBytes": 406482,
+        "sha256": "2b2069aae08af9387bf5a8a551b850e1c4d4b20fad1b6e5e444b8e3cfe08693d",
+        "bytes": 148482,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "wobbly-life/screenshot-2.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1211020/4ed173389eacc9e6e48d74d7c6c231121cf46233/ss_4ed173389eacc9e6e48d74d7c6c231121cf46233.1920x1080.jpg?t=1761037189",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1211020/4ed173389eacc9e6e48d74d7c6c231121cf46233/ss_4ed173389eacc9e6e48d74d7c6c231121cf46233.1920x1080.jpg?t=1761037189",
+        "sourceSha256": "7094766eb54b4f4196d37931957ad5d2125a3d63ef072dd170dfdbcf805c4641",
+        "sourceBytes": 382522,
+        "sha256": "d2a0bd69c5ce1b5215f98a333152e75341f302db920a132672e231f2daed4626",
+        "bytes": 135402,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "gta-v": {
+    "cover": {
+      "file": "gta-v/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202202/2816/mYn2ETBKFct26V9mJnZi4aSS.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202202/2816/mYn2ETBKFct26V9mJnZi4aSS.png",
+      "sourceSha256": "5f81df85a8e7bedd873c40b552fb9e5534d81ba0460021668c54f22e2c165a08",
+      "sourceBytes": 258644,
+      "sha256": "2811cc131cbf70bbb1207182e65e22a4e847ac812d339cf0c77ea9d9baed6274",
+      "bytes": 154710,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "ratchet-clank-rift-apart": {
+    "cover": {
+      "file": "ratchet-clank-rift-apart/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202101/2921/DwVjpbKOsFOyPdNzmSTSWuxG.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202101/2921/DwVjpbKOsFOyPdNzmSTSWuxG.png",
+      "sourceSha256": "c86903d2fbba0d14f30091e760373414217e7b32185f16488a46d250f33ec3cc",
+      "sourceBytes": 238804,
+      "sha256": "50b82c95032308bb7d38a872e773ec407dbb296636b3d4635c8e6fd5f06554a6",
+      "bytes": 143580,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "ratchet-clank-rift-apart/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-screenshot-14-26may21",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-screenshot-14-26may21?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "cb4cbd91eed0824f61369d04f7787d77bebc99a9a80a15516e49351dcef39200",
+        "sourceBytes": 514096,
+        "sha256": "b299407c52eacf53da594908b33b7d920438f4182bb00c78c8f2c97a7981391e",
+        "bytes": 252270,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "ratchet-clank-rift-apart/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-screenshot-15-26may21",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-screenshot-15-26may21?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "3c381e1b838a311b7e37d6bc03455dc13eef134d842444021d8574651aaef433",
+        "sourceBytes": 473652,
+        "sha256": "26712915198cd243d4cefcc10a41052e607380ffd34a9609b9c6129b4babe1cb",
+        "bytes": 227298,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "dreaming-sarah": {
+    "cover": {
+      "file": "dreaming-sarah/cover.webp",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/296870/header.jpg?t=1759236577",
+      "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/296870/header.jpg?t=1759236577",
+      "sourceSha256": "985f2ab50d33347f79a2d1674f01832702e25fbcd1625d673aa5d64601f5c79b",
+      "sourceBytes": 15824,
+      "sha256": "911c50e02115809aadaafa646e28db846d4f0601b3fced3709b5d0710360e22e",
+      "bytes": 5880,
+      "width": 460,
+      "height": 215
+    },
+    "screenshots": [
+      {
+        "file": "dreaming-sarah/screenshot-1.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/296870/ss_c7721e370e7d9b114e2beb56c076cf1c8c6d17c2.1920x1080.jpg?t=1759236577",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/296870/ss_c7721e370e7d9b114e2beb56c076cf1c8c6d17c2.1920x1080.jpg?t=1759236577",
+        "sourceSha256": "22afe8982a8ec05c3fff5d3181a18483bbbafcf180c277df1a1785eec3b9e6fd",
+        "sourceBytes": 144622,
+        "sha256": "e5e6d6e6d3ddec05554a9f03ad1312d6725bb0a3d1796b82736174dc84ff71c2",
+        "bytes": 43406,
+        "width": 1366,
+        "height": 768
+      },
+      {
+        "file": "dreaming-sarah/screenshot-2.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/296870/ss_ab17b8db216af0ffa2414bc2581af2db9192efde.1920x1080.jpg?t=1759236577",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/296870/ss_ab17b8db216af0ffa2414bc2581af2db9192efde.1920x1080.jpg?t=1759236577",
+        "sourceSha256": "131bdb11d1fcab0d1b9c00e6fc7039dbbdbff0d695270a93ef94c17758a9f3d2",
+        "sourceBytes": 57763,
+        "sha256": "e733223db8738230707bfe1136e8cb6e9b58b441570706c777c1d3be264c895c",
+        "bytes": 12488,
+        "width": 1366,
+        "height": 768
+      }
+    ]
+  },
+  "3d-mini-golf": {
+    "cover": {
+      "file": "3d-mini-golf/cover.webp",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362830/header.jpg?t=1726474795",
+      "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362830/header.jpg?t=1726474795",
+      "sourceSha256": "94975c5d8161c528e157a09fa710ee12cc577a886ff1595dce4ef3a48f3d7151",
+      "sourceBytes": 33863,
+      "sha256": "b5d712af01053a44533a105428e9f44c2cd2a7442f340aa1e287049ce14fc8be",
+      "bytes": 13970,
+      "width": 460,
+      "height": 215
+    },
+    "screenshots": [
+      {
+        "file": "3d-mini-golf/screenshot-1.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362830/ss_31324c5170e9c5f67b7c9add7a1ede78f6a3fbc5.1920x1080.jpg?t=1726474795",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362830/ss_31324c5170e9c5f67b7c9add7a1ede78f6a3fbc5.1920x1080.jpg?t=1726474795",
+        "sourceSha256": "3785b5f4ae8f243a88ba5d08d25bfee7301d25c192b1f88d520d5017cee9d79a",
+        "sourceBytes": 474187,
+        "sha256": "d37f4d19cc0b59fea2f85a6cdbbdf15443916756c336bc3685eea4da926d5c65",
+        "bytes": 179994,
+        "width": 1366,
+        "height": 768
+      },
+      {
+        "file": "3d-mini-golf/screenshot-2.webp",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362830/ss_6ba0ff8dc4b2d440cbe66c77cfb2b8ccd431cabd.1920x1080.jpg?t=1726474795",
+        "downloadUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362830/ss_6ba0ff8dc4b2d440cbe66c77cfb2b8ccd431cabd.1920x1080.jpg?t=1726474795",
+        "sourceSha256": "155123edfae732ec01f432c746bb2017836ac766742cbca28f3490fd543125c6",
+        "sourceBytes": 432833,
+        "sha256": "9462711c615a6a376c1ab7f45d86b852aea43f6b1365a518140ab72ac21698f5",
+        "bytes": 156498,
+        "width": 1366,
+        "height": 768
+      }
+    ]
+  },
+  "star-wars-galactic-racer": {
+    "cover": {
+      "file": "star-wars-galactic-racer/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202602/1713/58ef6a7a23ea91e8b89e02f00792bde4c839daa63b90da0e.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202602/1713/58ef6a7a23ea91e8b89e02f00792bde4c839daa63b90da0e.png",
+      "sourceSha256": "f0d33d9195051be50e0fe7bbec6572dee93cd5db0a63b630ae3718ce4d8f350c",
+      "sourceBytes": 123628,
+      "sha256": "5319b81f4dc3a97b46d501823e724335fff329b3e5dfddc5fd4222955744edf2",
+      "bytes": 74370,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "star-wars-galactic-racer/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-galactic-racer-screenshot-01-en-15dec25",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-galactic-racer-screenshot-01-en-15dec25?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "af9d433068f398a7dd2e075a5cda330d98bfee653bd75a3feb63229354d37c67",
+        "sourceBytes": 215849,
+        "sha256": "da3c1c88e52800d48dbd94b167f69b2b2b181887ad425d9f55680df65f21609b",
+        "bytes": 58518,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "star-wars-galactic-racer/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-galactic-racer-screenshot-04-en-15dec25",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-galactic-racer-screenshot-04-en-15dec25?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "0315f42609ee568263e7832b9dae9478daf8443fe4fd0d67fa8d4bab1ec2bf2f",
+        "sourceBytes": 389721,
+        "sha256": "a5fcd08949245b93d95613f59d030c4bd9b5dc106277fe3f2f3b9984cc208518",
+        "bytes": 166304,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}

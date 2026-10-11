@@ -10,8 +10,21 @@ for(const [host,root]of Object.entries(roots))for(const file of (await walk(root
  if(!dom.querySelector('html')?.getAttribute('lang')||!dom.querySelector('title')?.textContent||!dom.querySelector('meta[name=description]')?.getAttribute('content'))problems.push(rel+': missing metadata');
  const canonical=dom.querySelector('link[rel=canonical]')?.getAttribute('href');if(!canonical?.startsWith('https://'+host+'/'))problems.push(rel+': invalid canonical');
  if(canonical&&!dom.querySelector('meta[name=robots]')?.getAttribute('content')?.includes('noindex'))indexableUrls.get(host)!.add(canonical);
- for(const node of dom.querySelectorAll('a[href],link[rel=alternate][href],img[src],script[src],link[rel=stylesheet][href]')){
-  const raw=node.getAttribute('href')||node.getAttribute('src')!;if(!raw||raw.startsWith('#'))continue;
+ for(const image of dom.querySelectorAll('img[src]')){
+  const src=image.getAttribute('src')!;
+  const target=new URL(src,url);
+  if(target.origin!=='https://'+host)problems.push(`${host}/${rel}: external image ${src}`);
+  if(!/\.(webp|svg)$/.test(target.pathname))problems.push(`${host}/${rel}: image must be WebP or SVG ${src}`);
+  for(const candidate of (image.getAttribute('srcset')||'').split(',').filter(Boolean)){
+   const src=candidate.trim().split(/\s+/)[0];
+   const target=new URL(src,url);
+   if(target.origin!=='https://'+host||!target.pathname.endsWith('.webp'))problems.push(`${host}/${rel}: invalid image variant ${src}`);
+   try{await stat(path.join(root,target.pathname))}catch{problems.push(`${host}/${rel}: missing image variant ${src}`)}
+  }
+ }
+ for(const node of dom.querySelectorAll('a[href],link[rel=alternate][href],img[src],script[src],link[rel=stylesheet][href],meta[property="og:image"],meta[name="twitter:image"]')){
+  const raw=node.getAttribute('href')||node.getAttribute('src')||node.getAttribute('content');if(!raw||raw.startsWith('#'))continue;
+  if(node.tagName==='META'&&(new URL(raw).hostname!==host||!new URL(raw).pathname.endsWith('.webp')))problems.push(`${host}/${rel}: share image must use local WebP`);
   const target=new URL(raw,url);const targetRoot=roots[target.hostname as keyof typeof roots];if(!targetRoot)continue;
   const filename=path.join(targetRoot,decodeURIComponent(target.pathname),target.pathname.endsWith('/')?'index.html':'');
   try{await stat(filename)}catch{if(target.pathname!=='/404.html')problems.push(`${host}/${rel}: broken link ${raw}`)}

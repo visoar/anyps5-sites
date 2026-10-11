@@ -14,7 +14,8 @@
     "build:cc": "npm run check && npm run build --workspace=anyps5.cc",
     "build:games": "npm run check && npm run build --workspace=anyps5.games",
     "build": "npm run build:cc && npm run build:games && tsx scripts/verify-sites.ts",
-    "test": "tsx --test tests/*.test.ts"
+    "test": "tsx --test tests/*.test.ts",
+    "media:sync": "tsx scripts/sync-game-media.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",

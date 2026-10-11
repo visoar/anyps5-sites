@@ -3,6 +3,10 @@ import {articles} from '../packages/content/articles';
 import {extraArticles,policyArticles} from '../packages/content/extra-articles';
 import {games} from '../packages/content/games';
 import {editorial,media} from '../packages/content/game-editorial';
+import {localMedia} from '../packages/content/game-media-assets';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import sharp from 'sharp';
 import {gameCopy,genres} from '../packages/content/game-copy';
 import {developmentArticle} from '../packages/content/development-article';
 import {developmentNotes,developmentSource} from '../packages/content/github-progress';
@@ -24,6 +28,16 @@ for(const [label,text]of Object.entries(gameCopy))checkText(text,label);
 for(const [slug,source]of Object.entries(media)){
  if(!ids.has(slug)||!source.source.startsWith('https://')||!source.checked)throw Error('Invalid media provenance '+slug);
  for(const url of [source.cover,...source.screenshots].filter(Boolean))if(!['image.api.playstation.com','gmedia.playstation.com','shared.akamai.steamstatic.com'].includes(new URL(url!).hostname))throw Error('Unexpected media host '+url);
+ const assets=localMedia[slug];
+ if(!assets||Boolean(assets.cover)!==Boolean(source.cover)||assets.screenshots.length!==source.screenshots.length)throw Error('Local media inventory mismatch '+slug);
+ const pairs=[...(source.cover?[[source.cover,assets.cover!] as const]:[]),...source.screenshots.map((url,index)=>[url,assets.screenshots[index]] as const)];
+ for(const [url,asset] of pairs){
+  if(asset.source!==url||!asset.downloadUrl||!asset.downloadUrl.startsWith('https://')||new URL(asset.downloadUrl).hostname!==new URL(url).hostname||!new RegExp('^'+slug+'/[a-z0-9-]+\\.webp$').test(asset.file))throw Error('Invalid local media provenance '+slug);
+  const data=await readFile(new URL('../packages/ui/assets/games/'+asset.file,import.meta.url));
+  const metadata=await sharp(data).metadata();
+  if(metadata.format!=='webp'||metadata.width!==asset.width||metadata.height!==asset.height||data.length!==asset.bytes||createHash('sha256').update(data).digest('hex')!==asset.sha256)throw Error('Local media integrity mismatch '+asset.file);
+ }
 }
+for(const slug of Object.keys(localMedia))if(!media[slug])throw Error('Orphaned local media '+slug);
 for(const note of developmentNotes){checkText(note.title,'development '+note.number);checkText(note.summary,'development '+note.number);const source=developmentSource(note);if(!source?.reviewed||!source.url.startsWith('https://github.com/boykopovar/AnyPS5/'))throw Error('Missing development provenance');if(source.state==='merged'&&!source.commit)throw Error('Merged source lacks commit');for(const slug of note.games)if(!ids.has(slug))throw Error('Unknown development game '+slug)}
 console.log(`Validated ${locales.length} languages, ${slugs.size} articles, ${games.length} games, ${games.reduce((n,g)=>n+g.reports.length,0)} reports.`);

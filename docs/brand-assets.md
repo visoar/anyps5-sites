@@ -18,10 +18,10 @@ Run `npx tsx scripts/prepare-assets.ts` after changing the mark. This rasterizes
 
 The same script deterministically composites the exact SVG on a pale rounded badge over the former generated symbol in both social canvases. `portal-social.png` and `games-social.png` preserve the generated architectural/lighthouse scene and typography as source canvases; these originals are not served as social images. The script's explicit badge bounds fully replace their former symbol. Background-generation provenance remains in `design/brand-refresh-v2-prompts.json`; the current icon is an upstream library asset, not generated artwork.
 
-Outputs are 1200×630 JPEGs. The default OG/Twitter URL is `/social-v3.jpg`, and page icons use `?v=3`. Previously public `/social.jpg` and `/social-v2.jpg` paths are also overwritten with the current export so earlier links remain usable. A new default URL allows share fetchers to discover the current artwork; external services may still retain their own cached previews.
+Outputs include 1200×630 WebP and compatibility JPEGs. The default OG/Twitter URL is `/social-v4.webp`, and page icons use `?v=3`. Previously public `/social.jpg`, `/social-v2.jpg` and `/social-v3.jpg` paths are also overwritten with the current export so earlier links remain usable. A new default URL allows share fetchers to discover the current artwork; external services may still retain their own cached previews.
 
 ## Metadata and validation
 
-Default branded OG images declare JPEG type and 1200×630 dimensions. Game pages with an explicit official game cover retain their game-specific image without declaring the branded artwork's dimensions. OG/Twitter text remains localized; the branded images use domain names and technical identifiers without language-specific slogans.
+Default branded OG images declare WebP type and 1200×630 dimensions. Game pages use self-hosted WebP game covers with the cover's actual width and height. OG/Twitter text remains localized; the branded images use domain names and technical identifiers without language-specific slogans.
 
 Run `npm run build` to validate the full set of 471 static pages and their asset/metadata references. Verify both themes and mobile header padding in the browser, then confirm deployment of the same Git commit to both sites and compare public icon/share assets to local exports. Generated decorative imagery remains separate from official game promotional material and runtime-report evidence.

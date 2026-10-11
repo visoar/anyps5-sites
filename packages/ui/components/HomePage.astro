@@ -1,7 +1,9 @@
 ---
 import Layout from './Layout.astro';
 import Icon from './Icon.astro';
-import {media,gameName,editorial,genreLabel} from '../../content/game-editorial';
+import {Image} from 'astro:assets';
+import {gameArtwork,imageWidths} from '../game-media';
+import {gameName,editorial,genreLabel} from '../../content/game-editorial';
 import {gameCopy} from '../../content/game-copy';
 import {localPath,origin,t,dateLabel,reportCount,resultFormats,type Locale,type Site} from '../../content/locales';
 import {games,bestStage,stageNeedsPatches} from '../../content/games';
@@ -19,6 +21,7 @@ const pending=games.length-tested;
 const guideSlugs=['guides/windows','guides/linux','guides/build','guides/input','guides/language-fonts','requirements'];
 const faq=extraArticles.find(a=>a.slug==='faq')!;
 const structured={'@context':'https://schema.org','@type':'WebSite',name:portal?'AnyPS5.cc':'AnyPS5.games',url:origin(site)+localPath('/',locale),description:intro,inLanguage:locale};
+const artwork=Object.fromEntries(games.map(game=>[game.slug,gameArtwork(game.slug)]));
 ---
 <Layout {locale} {site} {title} description={intro} {structured}>
  <section class:list={['hero',portal?'portal-hero':'games-hero']}>
@@ -41,7 +44,7 @@ const structured={'@context':'https://schema.org','@type':'WebSite',name:portal?
    <nav class="catalog-tabs"><a href={localPath('/tested/',locale)}>{gameCopy.testedList[locale]} <span>{tested}</span></a><a href={localPath('/untested/',locale)}>{gameCopy.watchlist[locale]} <span>{pending}</span></a></nav>
    <p class="filter-help">{t(locale,'filterHelp')}</p><div class="catalog-status"><p id="result-count" role="status" aria-live="polite">{resultFormats[locale].other.replace('{count}',String(games.length))}</p><span id="share-status" role="status" aria-live="polite"/></div>
    <div class="game-table"><div class="table-header" aria-hidden="true"><span>{t(locale,'game')}</span><span>{t(locale,'platform')}</span><span>{t(locale,'stage')}</span><span>{t(locale,'evidence')}</span><span/></div>
-    {ordered.map((game,i)=><a class="game-row" href={localPath('/games/'+game.slug+'/',locale)} data-game={game.slug} data-search={game.name+' '+(game.titleId||'')+' '+(editorial[game.slug]?.chineseName||'')}><span class="game-cell"><span class="game-thumbnail">{media[game.slug]?.cover?<img src={media[game.slug].cover!} alt="" width="48" height="56" loading="lazy" decoding="async" referrerpolicy="no-referrer"/>:<Icon name="gamepad"/>}</span><span><strong dir="auto">{gameName(game,locale)}</strong><small>{game.titleId&&<><bdi>{game.titleId}</bdi> · </>}{game.reports.length?reportCount(locale,game.reports.length):'PS5 · '+genreLabel(game.slug,locale)}</small></span></span><span class="platform-cell">{!game.reports.length&&<span class="unknown">—</span>}{Array.from(new Set(game.reports.map(r=>r.platform))).map(p=><span class="platform-chip" data-platform={p}>{p==='windows'?'Windows':'Linux'}</span>)}</span><span><span data-stage class:list={['badge',stageNeedsPatches(game)?'experimental':bestStage(game)]}>{t(locale,bestStage(game))}</span><small class="patch-note" data-patch hidden={!stageNeedsPatches(game)}>{t(locale,'localPatch')}</small></span><span class="evidence-cell"><Icon name="book"/><span data-evidence-label>{!game.reports.length?gameCopy.details[locale]:t(locale,game.reports.some(r=>r.evidence==='official')?'official':'community')}</span></span><Icon/></a>)}
+    {ordered.map((game,i)=><a class="game-row" href={localPath('/games/'+game.slug+'/',locale)} data-game={game.slug} data-search={game.name+' '+(game.titleId||'')+' '+(editorial[game.slug]?.chineseName||'')}><span class="game-cell"><span class="game-thumbnail">{artwork[game.slug]?.cover?<Image src={artwork[game.slug]!.cover!} alt="" width={96} height={112} fit="cover" widths={imageWidths(artwork[game.slug]!.cover!,[48,96])} sizes="(max-width: 600px) 34px, 44px" format="webp" quality={82} loading="lazy" decoding="async"/>:<Icon name="gamepad"/>}</span><span><strong dir="auto">{gameName(game,locale)}</strong><small>{game.titleId&&<><bdi>{game.titleId}</bdi> · </>}{game.reports.length?reportCount(locale,game.reports.length):'PS5 · '+genreLabel(game.slug,locale)}</small></span></span><span class="platform-cell">{!game.reports.length&&<span class="unknown">—</span>}{Array.from(new Set(game.reports.map(r=>r.platform))).map(p=><span class="platform-chip" data-platform={p}>{p==='windows'?'Windows':'Linux'}</span>)}</span><span><span data-stage class:list={['badge',stageNeedsPatches(game)?'experimental':bestStage(game)]}>{t(locale,bestStage(game))}</span><small class="patch-note" data-patch hidden={!stageNeedsPatches(game)}>{t(locale,'localPatch')}</small></span><span class="evidence-cell"><Icon name="book"/><span data-evidence-label>{!game.reports.length?gameCopy.details[locale]:t(locale,game.reports.some(r=>r.evidence==='official')?'official':'community')}</span></span><Icon/></a>)}
    </div>
    <div id="empty-state" class="empty-state" hidden><Icon name="search"/><h3>{t(locale,'noResults')}</h3><p>{t(locale,'noResultsText')}</p><button type="button" id="empty-reset" class="button secondary">{t(locale,'reset')}</button></div>
    <noscript><p class="notice">{t(locale,'noResultsText')} · <a href={localPath('/methodology/',locale)}>{t(locale,'methodology')}</a></p></noscript>

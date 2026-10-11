@@ -11,7 +11,7 @@ import portalHero from '../assets/portal-hero.png';
 import gamesHero from '../assets/games-hero.png';
 import Icon from './Icon.astro';
 import {localeConfig,locales,localPath,origin,t,type Locale,type Site} from '../../content/locales';
-const {locale,site,path='/',title,description,structured,noindex=false,ogType='website',ogImage}=Astro.props as {locale:Locale;site:Site;path?:string;title:string;description:string;structured?:unknown;noindex?:boolean;ogType?:'website'|'article';ogImage?:string};
+const {locale,site,path='/',title,description,structured,noindex=false,ogType='website',ogImage}=Astro.props as {locale:Locale;site:Site;path?:string;title:string;description:string;structured?:unknown;noindex?:boolean;ogType?:'website'|'article';ogImage?:{src:string;width:number;height:number;type:string}};
 const config=localeConfig[locale];
 const canonical=origin(site)+localPath(path,locale);
 const nav=site==='cc'?[['/start/','guide'],['/downloads/','downloads'],['/updates/','updates']]:[['/','compatibility'],['/methodology/','methodology'],['/contribute/','contribute']];
@@ -19,6 +19,8 @@ const other:Site=site==='cc'?'games':'cc';
 const alternateLabel=t(locale,site==='cc'?'compatibility':'guide');
 const siteTitle=title.includes('AnyPS5')?title:title+' | AnyPS5'+(site==='games'?' Games':'');
 const defaultTheme=site==='cc'?'light':'dark';
+const shareImage=ogImage||{src:'/social-v4.webp',width:1200,height:630,type:'image/webp'};
+const shareImageUrl=new URL(shareImage.src,origin(site)).href;
 ---
 <!doctype html>
 <html lang={config.lang} dir={config.dir} data-theme={defaultTheme} data-default-theme={defaultTheme}>
@@ -31,8 +33,8 @@ const defaultTheme=site==='cc'?'light':'dark';
   {noindex&&<meta name="robots" content="noindex,follow"/>}
   {locales.map(l=><link rel="alternate" hreflang={localeConfig[l].lang} href={origin(site)+localPath(path,l)}/>)}
   <link rel="alternate" hreflang="x-default" href={origin(site)+path}/>
-  <meta property="og:type" content={ogType}/><meta property="og:site_name" content={site==='cc'?'AnyPS5':'AnyPS5 Games'}/><meta property="og:title" content={siteTitle}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:image" content={ogImage||origin(site)+'/social-v3.jpg'}/><meta property="og:locale" content={{en:'en_US',zh:'zh_CN',ar:'ar_SA',pt:'pt_PT',de:'de_DE',fr:'fr_FR',es:'es_ES'}[locale]}/>
-  <meta property="og:image:alt" content={siteTitle}/>{!ogImage&&<><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image:type" content="image/jpeg"/></>}<meta name="twitter:image:alt" content={siteTitle}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={siteTitle}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={ogImage||origin(site)+'/social-v3.jpg'}/>{locales.filter(l=>l!==locale).map(l=><meta property="og:locale:alternate" content={{en:'en_US',zh:'zh_CN',ar:'ar_SA',pt:'pt_PT',de:'de_DE',fr:'fr_FR',es:'es_ES'}[l]}/>)}
+  <meta property="og:type" content={ogType}/><meta property="og:site_name" content={site==='cc'?'AnyPS5':'AnyPS5 Games'}/><meta property="og:title" content={siteTitle}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:image" content={shareImageUrl}/><meta property="og:locale" content={{en:'en_US',zh:'zh_CN',ar:'ar_SA',pt:'pt_PT',de:'de_DE',fr:'fr_FR',es:'es_ES'}[locale]}/>
+  <meta property="og:image:alt" content={siteTitle}/><meta property="og:image:width" content={shareImage.width}/><meta property="og:image:height" content={shareImage.height}/><meta property="og:image:type" content={shareImage.type}/><meta name="twitter:image:alt" content={siteTitle}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={siteTitle}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={shareImageUrl}/>{locales.filter(l=>l!==locale).map(l=><meta property="og:locale:alternate" content={{en:'en_US',zh:'zh_CN',ar:'ar_SA',pt:'pt_PT',de:'de_DE',fr:'fr_FR',es:'es_ES'}[l]}/>)}
   {structured&&<script type="application/ld+json" set:html={JSON.stringify(structured).replace(/</g,'\\u003c')}/>}
  </head>
  <body class:list={[path==='/'?'home-atlas':null,'site-'+site]}>
