@@ -67,3 +67,5 @@ P3: generated imagery retains the composition rather than exact pixel identity w
 Both HTTPS domains were opened in the browser after the Git deployment. The production layouts use the same source assets and components; single-button theme switching, PPSA03306 + Linux => Boot with local patches, one-result grammar, reset, and zero console warnings/errors were rechecked. Production screenshots are recorded in `docs/qa/production-cc-dark-full.jpg` and `production-games-dark-full.jpg`; public network checks cover all seven localized home routes and the key guide/game paths.
 
 A source audit after production launch preserves Silt Linux patch status as null (not specified) and adds the DOOM homebrew CPU/local build while correcting AGC-to-CPU-scaler startup scope. The new regression check passes; no gameplay benchmark is inferred.
+
+The Arabic phone, tablet and detail evidence was recaptured from the production domain as exact viewport screenshots. The saved buffers were also displayed inline and inspected, avoiding a browser full-page tiling artifact during RTL viewport changes.
