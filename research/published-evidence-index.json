@@ -1,0 +1,979 @@
+{
+  "scope": "Published editorial evidence, not a complete upstream report inventory or independent reproduction.",
+  "games": [
+    {
+      "slug": "dreaming-sarah",
+      "name": "Dreaming Sarah",
+      "titleId": "PPSA02929",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "official-sarah-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/blob/main/docs/user/COMPATIBILITY.md",
+          "sourceUpdated": null,
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "official",
+          "version": null,
+          "build": null,
+          "patched": false
+        },
+        {
+          "id": "3018-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/3018",
+          "sourceUpdated": "2026-10-11T13:39:19Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": null,
+          "build": "379d8b4e + 8acd0113",
+          "patched": true
+        },
+        {
+          "id": "3003-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/3003",
+          "sourceUpdated": "2026-10-10T20:17:32Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": null,
+          "build": "v0.1.1",
+          "patched": false
+        },
+        {
+          "id": "3018-windows-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/3018#discussioncomment-18864073",
+          "sourceUpdated": "2026-10-11T13:39:19Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": null,
+          "build": "main a11c8f7f",
+          "patched": false
+        }
+      ]
+    },
+    {
+      "slug": "animal-well",
+      "name": "Animal Well",
+      "titleId": "PPSA22520",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "966-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/966",
+          "sourceUpdated": "2026-10-11T06:14:51Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "01.000.011",
+          "build": "2ba993a8",
+          "patched": false
+        }
+      ]
+    },
+    {
+      "slug": "hollow-knight-silksong",
+      "name": "Hollow Knight: Silksong",
+      "titleId": "PPSA12544",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "1996-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/1996",
+          "sourceUpdated": "2026-10-09T13:11:27Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "01.000.010",
+          "build": "d70b8998 + open PRs + APS5_STORE_AT_FLIP=1",
+          "patched": true
+        },
+        {
+          "id": "726-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/726",
+          "sourceUpdated": "2026-10-11T14:46:47Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "01.000.010",
+          "build": "main + PR stack",
+          "patched": true
+        },
+        {
+          "id": "1519-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/1519",
+          "sourceUpdated": "2026-10-11T17:04:56Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "menu",
+          "evidence": "community",
+          "version": null,
+          "build": "296d68a3 + test/silksong-linux",
+          "patched": true
+        },
+        {
+          "id": "726-windows-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/726#discussioncomment-18864480",
+          "sourceUpdated": "2026-10-11T14:46:47Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": null,
+          "build": "main a11c8f7f",
+          "patched": false
+        },
+        {
+          "id": "1519-linux-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/1519",
+          "sourceUpdated": "2026-10-11T17:04:56Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": null,
+          "build": "main a11c8f7f",
+          "patched": false
+        },
+        {
+          "id": "3731-linux-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/3731",
+          "sourceUpdated": "2026-10-11T18:07:38Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "menu",
+          "evidence": "community",
+          "version": "1.0.30021",
+          "build": "main a11c8f7f7 + guest-asset modifications",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "silt",
+      "name": "Silt",
+      "titleId": "PPSA03306",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "2810-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2810",
+          "sourceUpdated": "2026-10-10T18:50:27Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "01.003.000",
+          "build": "ba2a0a31 + 4 local changes",
+          "patched": true
+        },
+        {
+          "id": "2126-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2126",
+          "sourceUpdated": "2026-10-10T14:47:49Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "boot",
+          "evidence": "community",
+          "version": null,
+          "build": null,
+          "patched": null
+        }
+      ]
+    },
+    {
+      "slug": "balatro",
+      "name": "Balatro",
+      "titleId": "PPSA21402",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "1142-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/1142",
+          "sourceUpdated": "2026-10-11T03:03:36Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "1.0.1o-FULL",
+          "build": "PRs #1020 / #1038 + local flip/depth fixes",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "hades",
+      "name": "Hades",
+      "titleId": "PPSA03355",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "3234-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/3234",
+          "sourceUpdated": "2026-10-11T02:47:38Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "menu",
+          "evidence": "community",
+          "version": null,
+          "build": "aac0f1b81",
+          "patched": false
+        }
+      ]
+    },
+    {
+      "slug": "hades-ii",
+      "name": "Hades II",
+      "titleId": "PPSA36082",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "1965-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/1965",
+          "sourceUpdated": "2026-10-11T06:51:11Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": null,
+          "build": "961b25fe + PR stack",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "astro-bot",
+      "name": "ASTRO BOT",
+      "titleId": "PPSA21564",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "357-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/357",
+          "sourceUpdated": "2026-10-11T11:35:39Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "01.007.000",
+          "build": "astrobot b58df66c + #637",
+          "patched": true
+        },
+        {
+          "id": "3480-linux-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/3480",
+          "sourceUpdated": "2026-10-11T18:08:14Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "blocked",
+          "evidence": "community",
+          "version": "01.007.000",
+          "build": "main 1be0a7ce + unrelated fchdir commit",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "astros-playroom",
+      "name": "ASTRO’s PLAYROOM",
+      "titleId": "PPSA01325",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "3232-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/3232",
+          "sourceUpdated": "2026-10-11T18:41:12Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "boot",
+          "evidence": "community",
+          "version": null,
+          "build": "d31b57a4c + #3186 / #3214 / #3222",
+          "patched": true
+        },
+        {
+          "id": "3232-linux-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/3232#discussioncomment-18868130",
+          "sourceUpdated": "2026-10-11T18:41:12Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "menu",
+          "evidence": "community",
+          "version": "01.905.000",
+          "build": "main a11c8f7f + #3669 / #425 / #3750 / #3878",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "demons-souls",
+      "name": "Demon’s Souls",
+      "titleId": "PPSA01341",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "1283-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/1283",
+          "sourceUpdated": "2026-10-11T18:32:07Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": null,
+          "build": "df16c4c2 + PRs + local changes",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "ghost-of-yotei",
+      "name": "Ghost of Yōtei",
+      "titleId": "PPSA26344",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "675-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/675",
+          "sourceUpdated": "2026-10-11T04:07:09Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "boot",
+          "evidence": "community",
+          "version": "1.008",
+          "build": "main + experimental stacks",
+          "patched": true
+        },
+        {
+          "id": "2884-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2884",
+          "sourceUpdated": "2026-10-11T15:23:37Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "boot",
+          "evidence": "community",
+          "version": null,
+          "build": "main + #1940 / #757 / #758 + local shader fix",
+          "patched": true
+        },
+        {
+          "id": "2884-linux-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2884#discussioncomment-18864628",
+          "sourceUpdated": "2026-10-11T15:23:37Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "blocked",
+          "evidence": "community",
+          "version": null,
+          "build": "main a11c8f7f + #757 / #758 rebased locally",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "god-of-war-sons-of-sparta",
+      "name": "God of War: Sons of Sparta",
+      "titleId": "PPSA28997",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "1742-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/1742",
+          "sourceUpdated": "2026-10-11T04:10:50Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": null,
+          "build": "PR stack including #1534 / #1479",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "gta-v",
+      "name": "Grand Theft Auto V",
+      "titleId": "PPSA04264",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "1203-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/1203",
+          "sourceUpdated": "2026-10-10T13:58:28Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "01.005",
+          "build": "gta-v/testing fork",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "epic-mickey-rebrushed",
+      "name": "Disney Epic Mickey: Rebrushed",
+      "titleId": "PPSA15657",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "2255-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2255",
+          "sourceUpdated": "2026-10-10T20:01:33Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": null,
+          "build": "local test stack + APS5_NO_HOST_IMPORT=1",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "3d-mini-golf",
+      "name": "3D MiniGolf",
+      "titleId": "PPSA03647",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "2431-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2431",
+          "sourceUpdated": "2026-10-09T22:28:37Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "01.000.000",
+          "build": "8b393b6e + local integration",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "hello-kitty-island-adventure",
+      "name": "Hello Kitty Island Adventure",
+      "titleId": "PPSA18176",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "2690-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2690",
+          "sourceUpdated": "2026-10-10T10:57:08Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "menu",
+          "evidence": "community",
+          "version": null,
+          "build": "adf64086 (base 5cb747c1)",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "minecraft-preview",
+      "name": "Minecraft Preview",
+      "titleId": "PPSA19639",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "1277-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/1277",
+          "sourceUpdated": "2026-10-11T11:58:21Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "1.21.40.22",
+          "build": "d4c196c2 + local patch",
+          "patched": true
+        },
+        {
+          "id": "1277-windows-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/1277#discussioncomment-18863062",
+          "sourceUpdated": "2026-10-11T11:58:21Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": null,
+          "build": "integration checkpoint b5f5362d + 22-file local diff",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "sonic-origins",
+      "name": "Sonic Origins",
+      "titleId": "PPSA05324",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "2021-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2021",
+          "sourceUpdated": "2026-10-10T01:06:32Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "02.002.000",
+          "build": "f1451396 + PRs + 4 fork branches",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "stray",
+      "name": "Stray",
+      "titleId": "PPSA02100",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "2461-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2461",
+          "sourceUpdated": "2026-10-09T22:05:25Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "menu",
+          "evidence": "community",
+          "version": "1.05",
+          "build": "8b393b6e + PR stack",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "wobbly-life",
+      "name": "Wobbly Life",
+      "titleId": "PPSA29413",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "2211-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2211",
+          "sourceUpdated": "2026-10-11T11:13:41Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "boot",
+          "evidence": "community",
+          "version": "01.160.000",
+          "build": null,
+          "patched": true
+        },
+        {
+          "id": "2211-linux-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2211",
+          "sourceUpdated": "2026-10-11T11:13:41Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "01.160.000",
+          "build": "main 9a9bd3fb3 + #3462",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "rise-of-the-ronin",
+      "name": "Rise of the Rōnin",
+      "titleId": "PPSA04540",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "2171-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2171",
+          "sourceUpdated": "2026-10-10T13:22:03Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "blocked",
+          "evidence": "community",
+          "version": null,
+          "build": "43972e69 + PR stack",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "ratchet-clank-rift-apart",
+      "name": "Ratchet & Clank: Rift Apart",
+      "titleId": "PPSA01474",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "2172-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2172",
+          "sourceUpdated": "2026-10-09T13:36:13Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "blocked",
+          "evidence": "community",
+          "version": null,
+          "build": "43972e69 + PR stack",
+          "patched": true
+        },
+        {
+          "id": "3338-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/3338",
+          "sourceUpdated": "2026-10-11T09:57:21Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "boot",
+          "evidence": "community",
+          "version": "01.005.003",
+          "build": "f1ae427b + local fixes (#3272)",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "star-wars-galactic-racer",
+      "name": "STAR WARS: Galactic Racer",
+      "titleId": "PPSA28416",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "3086-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/3086",
+          "sourceUpdated": "2026-10-10T22:22:03Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "boot",
+          "evidence": "community",
+          "version": "01.003.001",
+          "build": "CnRJay/AnyPS5 · port/ppsa28416",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "doom-homebrew",
+      "name": "DOOM · PS5 homebrew port",
+      "titleId": "PPSA99666",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "2475-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2475",
+          "sourceUpdated": "2026-10-10T17:57:54Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "boot",
+          "evidence": "community",
+          "version": "PS5 DOOM v1.1.1",
+          "build": "025a911 + local 55be23de (unpublished)",
+          "patched": true
+        },
+        {
+          "id": "690-windows-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/pull/690#issuecomment-6092797207",
+          "sourceUpdated": "2026-10-11T08:57:14Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "01.001.001 · homebrew v1.1.1",
+          "build": "main 2edaf7f4 + open PR integration",
+          "patched": true
+        },
+        {
+          "id": "690-linux-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/pull/690#issuecomment-6056797307",
+          "sourceUpdated": "2026-10-11T08:57:14Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "01.001.001 · homebrew v1.1.1",
+          "build": "main 0e173a46 + #1278 / #1279 / #1307",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "marvels-spider-man-2",
+      "name": "Marvel’s Spider-Man 2",
+      "titleId": null,
+      "reviewed": "2026-10-11",
+      "reports": []
+    },
+    {
+      "slug": "elden-ring",
+      "name": "Elden Ring",
+      "titleId": null,
+      "reviewed": "2026-10-11",
+      "reports": []
+    },
+    {
+      "slug": "black-myth-wukong",
+      "name": "Black Myth: Wukong",
+      "titleId": null,
+      "reviewed": "2026-10-11",
+      "reports": []
+    },
+    {
+      "slug": "god-of-war-ragnarok",
+      "name": "God of War Ragnarök",
+      "titleId": null,
+      "reviewed": "2026-10-11",
+      "reports": []
+    },
+    {
+      "slug": "cyberpunk-2077",
+      "name": "Cyberpunk 2077",
+      "titleId": "PPSA04029",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "3308-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/3308",
+          "sourceUpdated": "2026-10-11T08:28:17Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "blocked",
+          "evidence": "community",
+          "version": "02.120.000",
+          "build": "main 961b25fe",
+          "patched": false
+        }
+      ]
+    },
+    {
+      "slug": "horizon-forbidden-west",
+      "name": "Horizon Forbidden West",
+      "titleId": null,
+      "reviewed": "2026-10-11",
+      "reports": []
+    },
+    {
+      "slug": "the-last-of-us-part-i",
+      "name": "The Last of Us Part I",
+      "titleId": null,
+      "reviewed": "2026-10-11",
+      "reports": []
+    },
+    {
+      "slug": "the-last-of-us-part-ii-remastered",
+      "name": "The Last of Us Part II Remastered",
+      "titleId": "PPSA15508",
+      "reviewed": "2026-10-11",
+      "reports": [
+        {
+          "id": "2883-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/2883",
+          "sourceUpdated": "2026-10-10T17:25:52Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "blocked",
+          "evidence": "community",
+          "version": "01.002.000",
+          "build": "5edae353 + diagnostic exports 7a030e58",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "final-fantasy-vii-rebirth",
+      "name": "Final Fantasy VII Rebirth",
+      "titleId": null,
+      "reviewed": "2026-10-11",
+      "reports": []
+    },
+    {
+      "slug": "final-fantasy-xvi",
+      "name": "Final Fantasy XVI",
+      "titleId": null,
+      "reviewed": "2026-10-11",
+      "reports": []
+    },
+    {
+      "slug": "gran-turismo-7",
+      "name": "Gran Turismo 7",
+      "titleId": null,
+      "reviewed": "2026-10-11",
+      "reports": []
+    },
+    {
+      "slug": "hogwarts-legacy",
+      "name": "Hogwarts Legacy",
+      "titleId": null,
+      "reviewed": "2026-10-11",
+      "reports": []
+    },
+    {
+      "slug": "helldivers-2",
+      "name": "Helldivers 2",
+      "titleId": null,
+      "reviewed": "2026-10-11",
+      "reports": []
+    },
+    {
+      "slug": "resident-evil-4-remake",
+      "name": "Resident Evil 4",
+      "titleId": null,
+      "reviewed": "2026-10-11",
+      "reports": []
+    },
+    {
+      "slug": "returnal",
+      "name": "Returnal",
+      "titleId": "PPSA01285",
+      "reviewed": "2026-10-11",
+      "reports": []
+    },
+    {
+      "slug": "palworld",
+      "name": "Palworld",
+      "titleId": "PPSA23126",
+      "reviewed": "2026-10-12",
+      "reports": []
+    },
+    {
+      "slug": "big-helmet-heroes",
+      "name": "Big Helmet Heroes",
+      "titleId": "PPSA19943",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "3873-linux-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/3873",
+          "sourceUpdated": "2026-10-11T18:22:46Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "01.000.400",
+          "build": "main a11c8f7f + integration ed2c56d41",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "hot-shots-golf-2",
+      "name": "Hot Shots Golf 2",
+      "titleId": "PPSA06699",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "3839-windows-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/3839",
+          "sourceUpdated": "2026-10-11T17:44:29Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": "01.000.004",
+          "build": "main a11c8f7f7 + locally rebased open PR stack",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "vampire-survivors",
+      "name": "Vampire Survivors",
+      "titleId": "PPSA21703",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "3745-windows-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/3745",
+          "sourceUpdated": "2026-10-11T16:18:40Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "blocked",
+          "evidence": "community",
+          "version": "01.016.107",
+          "build": "main a11c8f7f7",
+          "patched": false
+        }
+      ]
+    },
+    {
+      "slug": "killing-floor-3",
+      "name": "Killing Floor 3",
+      "titleId": "PPSA08427",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "3413-linux-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/3413",
+          "sourceUpdated": "2026-10-11T11:11:12Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "menu",
+          "evidence": "community",
+          "version": "02.011.000",
+          "build": "2026-10-11 main + wip/ppsa08427-sync-fix",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "pac-man-world-re-pac",
+      "name": "PAC-MAN WORLD Re-PAC",
+      "titleId": "PPSA06399",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "3443-windows-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/3443",
+          "sourceUpdated": "2026-10-11T10:42:10Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": null,
+          "build": "main 4f8d4017 + local 10-file patch",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "demons-souls-ppsa01342",
+      "name": "Demon’s Souls · PPSA01342",
+      "titleId": "PPSA01342",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "1283-windows-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/1283#discussioncomment-18867979",
+          "sourceUpdated": "2026-10-11T18:32:07Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "menu",
+          "evidence": "community",
+          "version": "01.005.000",
+          "build": "main 961b25fe + 82 commits · ebf884ce",
+          "patched": true
+        }
+      ]
+    },
+    {
+      "slug": "stray-ppsa02101",
+      "name": "Stray · PPSA02101",
+      "titleId": "PPSA02101",
+      "reviewed": "2026-10-12",
+      "reports": [
+        {
+          "id": "3504-linux-review-20261012",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/3504",
+          "sourceUpdated": "2026-10-11T19:00:03Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "blocked",
+          "evidence": "community",
+          "version": "01.002",
+          "build": "main 8ec0e131",
+          "patched": false
+        }
+      ]
+    }
+  ]
+}

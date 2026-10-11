@@ -22,7 +22,7 @@ for(const game of games){
  const info=editorial[game.slug];if(!info||!genres[info.genre])throw Error('Missing editorial information '+game.slug);
  checkText(info.overview,game.slug);checkText(info.editionNote,game.slug);
  for(const related of info.related)if(!games.some(g=>g.slug===related)||related===game.slug)throw Error('Invalid related game '+related);
- for(const r of game.reports){checkText(r.summary,game.slug);if(!r.source.startsWith('https://github.com/'))throw Error('Missing original source');if(r.evidence==='official'&&r.patched)throw Error('Official patch misclassification');for(const b of r.benchmarks)checkText(b.context,game.slug)}
+ for(const r of game.reports){checkText(r.summary,game.slug);if(!r.source.startsWith('https://github.com/'))throw Error('Missing original source');if(r.evidence==='official'&&r.patched)throw Error('Official patch misclassification');for(const b of r.benchmarks){checkText(b.context,game.slug);if(typeof b.fps!=='string')checkText(b.fps,game.slug+' FPS')}}
 }
 for(const [label,text]of Object.entries(gameCopy))checkText(text,label);
 for(const [slug,source]of Object.entries(media)){

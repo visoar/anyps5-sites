@@ -1,16 +1,16 @@
 # Self-hosted game media
 
-Updated 2026-10-11. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
+Updated 2026-10-12. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
 
 ## Sources and asset inventory
 
-- 38 games have official/publisher artwork: 38 covers and 72 promotional screenshots (110 source assets).
+- 45 game/edition pages have official/publisher artwork: 45 covers and 78 promotional screenshots (123 source assets).
 - `packages/content/game-media.json` retains the original page, provider, image URLs and editorial review date.
 - `packages/content/game-media-local.json` maps each source to its exported file, actual download URL, source/export SHA-256, byte counts and actual dimensions.
 - Committed WebP masters live in `packages/ui/assets/games/<slug>/`. Astro imports them and emits hashed, same-origin images under `/_astro/`, including responsive variants. Production builds do not fetch remote media.
 - Two games still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
 
-The downloaded high-resolution source set totals 32.62 MiB; the exported masters total 14.69 MiB, a 55.0% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
+The downloaded high-resolution source set totals 36.12 MiB; the exported masters total 16.44 MiB, a 54.5% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
 
 ## Update command
 

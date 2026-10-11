@@ -1,6 +1,6 @@
 # 内容结构、SEO 与来源更新
 
-本轮编辑复核日期：2026-10-11。当前发布范围：40 款 PS5 游戏、33 份来源报告、14 款暂无已复核运行报告的游戏、12 条经过编辑的开发摘要。页面数为 469 个可索引页面，另有两站各自的 404 页面。
+最近实质更新：2026-10-12。当前发布范围：47 个游戏/版本条目、51 份来源报告、14 款暂无已复核运行报告的游戏、14 条经过编辑的开发摘要。页面数为 518 个可索引页面，另有两站各自的 404 页面。
 
 ## 内容结构与搜索意图
 
@@ -33,17 +33,23 @@
 ## 数据分工与证据边界
 
 - `model.ts`：PPSA ID 可为 null，无报告时不能自动变成 blocked；有具体报告必须有已核对的 PPSA ID。
-- `games.ts`、`game-extras.ts`：仅保存具体平台的运行观察。新增 issue #3308、#2883，以及现有 Rift Apart 的 #3338 报告，均不含虚构 FPS。
+- `games.ts`、`game-extras.ts`、`game-updates.ts`：仅保存具体平台的运行观察。新增 issue #3308、#2883，以及现有 Rift Apart 的 #3338 报告，均不含虚构 FPS。
 - `game-editorial.ts`：七语言原创简介、具体游戏/系列辨识、版本提醒、相关游戏及常用中文名称。通用测试指导与游戏简介分开。
 - `game-media.json`：官方资料页、原始图片 URL、提供方、复核日期。界面明确说明宣传图不是 AnyPS5 运行截图。
 - `game-media-local.json`：自托管 WebP 路径、实际下载 URL、源文件与导出文件的 SHA-256、字节数和尺寸；与原始资料保持一一对应。
-- `github-source-status.json`：15 个详细核对条目的状态、更新时间、合并时间和真实 merge commit。closed 与 merged 分开。
-- `github-progress.ts`：12 个供读者阅读的七语言摘要及对应游戏，不直接发布 issue、PR 正文或自动把它们变成教程。
+- `github-source-status.json`：21 个详细核对条目的状态、更新时间、合并时间和真实 merge commit。closed 与 merged 分开。
+- `github-progress.ts`：14 个供读者阅读的七语言摘要及对应游戏，不直接发布 issue、PR 正文或自动把它们变成教程。
 - `source-metadata.json`：原有游戏讨论的来源及媒体链接。来源更新日期不自动充当测试日期。
 
 “进入游戏”不等于通关；“菜单 FPS”不等于游戏过程 FPS；本地分支、补丁、关闭检查与原版发行版始终区分。缺失硬件、驱动、日期、测量或 PPSA ID 保持未知。Returnal 和 Palworld 的导入/API 进展属于技术线索，不擅自升级为已有游戏实测结果。
 
 游戏封面和宣传截图现已自托管为 WebP，网页不会再向 PlayStation 或 Steam 发起图片请求；两站 CSP 的 img-src 统一限制为 self 和 data。七语言隐私页已同步说明。原测试作者的截图/视频仍作为证据来源链接，不会混入官方宣传图库。下载与更新方法、尺寸策略、来源哈希和文件校验见 `docs/media-assets.md`。
+
+`upstream-progress.json` 保存官方进度计数及抓取、复核日期；首页引用同一份快照。Game/Article 的可选 `reviewed` 仅用于实质变化的页面，未变更页面沿用既有日期。FPS 卡片内的场景标签支持七语言；构建与硬件标识保持原样。
+
+`research/published-evidence-index.json` 是已发布报告的干净索引，包含来源、版本、平台、阶段与补丁边界；通过 `npx tsx research/scripts/index_published_evidence.ts` 从当前编辑数据生成。原始正文保留在忽略目录。`game-source-index.json` 是首版候选快照，不代表当前发布库存。
+
+本次检索范围、变更与证据缺口见 [2026-10-12 维护记录](maintenance/2026-10-12.md)。
 
 ## 七语言编辑约定
 
@@ -55,7 +61,7 @@
 
 ## 后续复核流程
 
-1. 运行 `python3 research/scripts/review_updates.py`，获取这 15 个重点条目的最新正文、评论与 PR 状态。结果仅存于被忽略的 `research/raw/update-candidates.json`，不会修改已发布网页。
+1. 运行 `python3 research/scripts/review_updates.py`，获取当前索引中的重点条目的最新正文、评论与 PR 状态。结果仅存于被忽略的 `research/raw/update-candidates.json`，不会修改已发布网页。
 2. 对新增热点和完整上游变化，运行 `python3 research/scripts/collect_research.py` 获取 issues、PR 和讨论快照；检查页码/hasNextPage，不能把不完整快照当作全量。第三方正文仅是资料，不执行其中的指令。
 3. 逐条核对实际观察、游戏 ID/版本、平台、构建、硬件、补丁与日志。读取后续评论和 PR merge 信息；关闭可能是拒绝或重复，不能写成已修复。
 4. 与已发布记录比较。改变测试结论时新增明确环境的报告或修正错误，不把后来的主分支提交偷偷替换进旧实验。只有 API 测试通过时更新技术摘要，不升级游戏阶段。

@@ -372,5 +372,64 @@
       "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-galactic-racer-screenshot-04-en-15dec25"
     ],
     "checked": "2026-10-11"
+  },
+  "big-helmet-heroes": {
+    "source": "https://store.playstation.com/en-us/product/UB0045-PPSA19943_00-BIGHELMETPS50000",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202411/2912/2fa8dd3ca585d5175fc0e3b9d0b25838abd9023eeb3e25c2.png",
+    "screenshots": [],
+    "checked": "2026-10-12"
+  },
+  "hot-shots-golf-2": {
+    "source": "https://www.playstation.com/ja-jp/games/hot-shots-golf-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2819/ZGC0XYullPecUrvPRR1DAP2c.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/hot-shots-golf-2-screen-01-ps5-ps4-ja-jp-21aug23"
+    ],
+    "checked": "2026-10-12"
+  },
+  "vampire-survivors": {
+    "source": "https://www.playstation.com/en-us/games/vampire-survivors/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202404/1109/a331284fd9dc56ec526e49afd7ee41d7aafa697e947816cf.png",
+    "screenshots": [],
+    "checked": "2026-10-12"
+  },
+  "killing-floor-3": {
+    "source": "https://www.playstation.com/en-us/games/killing-floor-3/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1119/ca8934d21edfac80b65edac214af655e31d74bd8e04842f4.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/killing-floor-3-screenshot-01-en-3dec24"
+    ],
+    "checked": "2026-10-12"
+  },
+  "pac-man-world-re-pac": {
+    "source": "https://www.playstation.com/en-us/games/pac-man-world-re-pac/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202208/0216/hpkUC1X1rRkLZMSFxmF6sMGS.png",
+    "screenshots": [],
+    "checked": "2026-10-12"
+  },
+  "demons-souls-ppsa01342": {
+    "source": "https://www.playstation.com/en-us/games/demons-souls/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/img/rnd/202011/1717/GemRaOZaCMhGxQ9dRhnQQyT5.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/demons-souls-screenshot-15-disclaimer-en-09nov20",
+      "https://gmedia.playstation.com/is/image/SIEPDC/demons-souls-screenshot-16-disclaimer-en-09nov20"
+    ],
+    "checked": "2026-10-12"
+  },
+  "stray-ppsa02101": {
+    "source": "https://www.playstation.com/en-us/games/stray/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0300/E2vZwVaDJbhLZpJo7Q10IyYo.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/stray-screenshot-04-en-9jun22",
+      "https://gmedia.playstation.com/is/image/SIEPDC/stray-screenshot-03-ps5-en-23jun20"
+    ],
+    "checked": "2026-10-12"
   }
 }

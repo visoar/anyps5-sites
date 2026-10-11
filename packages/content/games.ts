@@ -1,5 +1,6 @@
 import metadata from './source-metadata.json';
 import {additionalGames,additionalReports} from './game-extras';
+import {updatedGames,updatedReports} from './game-updates';
 import {editorial} from './game-editorial';
 import {L,sourceDoc,type Game,type Report,type Text,type Platform,type Stage} from './model';
 const m=metadata as Record<string,{url:string;updated:string;media:string[]}>;
@@ -41,7 +42,14 @@ const reportedGames:Game[]=[
  G('doom-homebrew','DOOM · PS5 homebrew port','PPSA99666',R(2475,'windows','boot','025a911 + local 55be23de (unpublished)','Windows','AMD Ryzen 5 7600X','NVIDIA RTX 3060','PS5 DOOM v1.1.1',L('This is the classic DOOM homebrew port, not a retail PS5 edition. The modified local build reached startup and Vulkan-window logs; the first AGC presentation frame failed and the port switched to its CPU scaler. Visual gameplay, movement, firing and audio were not verified.','这是经典 DOOM 的自制移植版，并非 PS5 商业版本。修改后的本地构建出现启动与 Vulkan 窗口日志；首个 AGC 呈现帧失败后，程序切换到 CPU scaler。尚未验证画面中的实际游戏、移动、射击或音频。','هذا منفذ homebrew للعبة DOOM الكلاسيكية، وليس إصدار PS5 تجارياً. وصل البناء المحلي المعدل إلى سجلات بدء التشغيل ونافذة Vulkan؛ فشل إطار عرض AGC الأول فتحول المنفذ إلى CPU scaler. اللعب المرئي والحركة وإطلاق النار والصوت غير متحقق منها.','É o port homebrew de DOOM clássico, não uma edição comercial para PS5. A compilação local modificada chegou aos registos de arranque e à janela Vulkan; o primeiro fotograma de apresentação AGC falhou e o port passou ao CPU scaler. Não foram verificados jogo visível, movimento, disparos ou áudio.','Dies ist der Homebrew-Port des klassischen DOOM, keine PS5-Handelsversion. Der veränderte lokale Build erreichte Start- und Vulkan-Fenster-Logs. Der erste AGC-Präsentationsframe scheiterte; danach wechselte der Port zum CPU scaler. Sichtbares Gameplay, Bewegung, Schießen und Audio wurden nicht geprüft.','Il s’agit du port homebrew de DOOM classique, pas d’une édition commerciale PS5. La version locale modifiée a atteint les journaux de démarrage et de fenêtre Vulkan ; la première présentation AGC a échoué, puis le port est passé au CPU scaler. Le jeu visible, les déplacements, les tirs et l’audio n’ont pas été vérifiés.','Es el port homebrew de DOOM clásico, no una edición comercial para PS5. La compilación local modificada llegó a los registros de inicio y de ventana Vulkan; falló el primer fotograma de presentación AGC y el port pasó al CPU scaler. No se verificaron juego visible, movimiento, disparos ni audio.'))),
 ];
 
-export const games:Game[]=[...reportedGames.map(g=>({...g,reports:[...g.reports,...(additionalReports[g.slug]||[])]})),...additionalGames];
+export const games:Game[]=[
+ ...reportedGames.map(g=>({...g,reports:[...g.reports,...(additionalReports[g.slug]||[])]})),
+ ...additionalGames,
+].map(g=>({
+ ...g,
+ ...(updatedReports[g.slug]||['cyberpunk-2077','ratchet-clank-rift-apart','palworld'].includes(g.slug)?{reviewed:'2026-10-12'}:{}),
+ reports:[...g.reports,...(updatedReports[g.slug]||[])],
+})).concat(updatedGames);
 
 const stageRank:Record<Stage,number>={blocked:0,boot:1,menu:2,ingame:3};
 export function bestStage(game:Game):Stage|'notTested'{if(!game.reports.length)return 'notTested';return game.reports.reduce((stage,r)=>stageRank[r.stage]>stageRank[stage]?r.stage:stage,'blocked' as Stage)}

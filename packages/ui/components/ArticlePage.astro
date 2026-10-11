@@ -11,7 +11,7 @@ import {localPath,origin,t,dateLabel,codeLabel,type Locale,type Site} from '../.
 import {REVIEW_DATE,type Article} from '../../content/model';
 const {article,locale,site}=Astro.props as {article:Article;locale:Locale;site:Site};
 const path='/'+article.slug+'/';
-const reviewDate=article.slug==='privacy'?'2026-10-12':REVIEW_DATE;
+const reviewDate=article.reviewed||(article.slug==='privacy'?'2026-10-12':REVIEW_DATE);
 const allArticles=[...articles,...extraArticles,developmentArticle,...policyArticles];
 const related=(relatedArticles[article.slug]||[]).filter(slug=>site==='cc'||policyArticles.some(a=>a.slug===slug)).map(slug=>allArticles.find(a=>a.slug===slug)!);
 ---

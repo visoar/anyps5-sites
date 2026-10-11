@@ -42,3 +42,26 @@ test('a merged technical fix does not silently create a new game report',async()
  assert.equal(games.find(g=>g.slug==='cyberpunk-2077')!.reports[0].benchmarks.length,0);
  const ratchet=games.find(g=>g.slug==='ratchet-clank-rift-apart')!;assert.equal(ratchet.reports.length,2);assert.equal(ratchet.reports.find(r=>r.id==='3338-linux')!.stage,'boot');
 });
+
+test('regional PPSA reports remain separate in search and platform filters',()=>{
+ assert.equal(filterGames('PPSA01342',{platform:'windows',stage:'menu'})[0]?.slug,'demons-souls-ppsa01342');
+ assert.equal(filterGames('PPSA01342',{platform:'linux'}).length,0);
+ assert.equal(filterGames('PPSA02101',{stage:'menu'}).length,0);
+ assert.equal(filterGames('PPSA02101',{platform:'linux',stage:'blocked'})[0]?.slug,'stray-ppsa02101');
+ assert.equal(filterGames('PPSA02100',{stage:'menu'})[0]?.slug,'stray');
+});
+
+test('new menu and software-rendered results retain their experimental scope',()=>{
+ const silk=games.find(g=>g.slug==='hollow-knight-silksong')!;
+ const menu=silk.reports.find(r=>r.source.endsWith('/issues/3731'))!;
+ assert.equal(menu.stage,'menu');
+ assert.equal(menu.patched,true);
+ const doom=games.find(g=>g.slug==='doom-homebrew')!;
+ const software=doom.reports.find(r=>r.gpu?.includes('llvmpipe'))!;
+ assert.equal(software.patched,true);
+ assert.equal(software.evidence,'community');
+ assert.equal(software.testDate,null);
+ assert.ok(software.build?.includes('0e173a46'));
+ assert.equal(doom.reports[0].stage,'boot');
+ assert.ok(!doom.reports[0].build?.includes('0e173a46'));
+});
