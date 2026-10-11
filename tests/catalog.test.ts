@@ -16,3 +16,12 @@ test('official evidence and patched gameplay are classified separately',async()=
  assert.equal(stageNeedsPatches(games.find(g=>g.slug==='dreaming-sarah')!),false);
  assert.equal(stageNeedsPatches(games.find(g=>g.slug==='astro-bot')!),true);
 });
+
+test('unspecified patches stay unknown and homebrew observations retain source scope',()=>{
+ const silt=games.find(g=>g.slug==='silt')!.reports.find(r=>r.platform==='linux')!;
+ assert.equal(silt.patched,null);
+ const doom=games.find(g=>g.slug==='doom-homebrew')!.reports[0];
+ assert.equal(doom.stage,'boot');
+ assert.equal(doom.cpu,'AMD Ryzen 5 7600X');
+ assert.equal(doom.benchmarks.length,0);
+});

@@ -1,6 +1,6 @@
 const data=document.getElementById('catalog-data');
 if(data){
- const parsed=JSON.parse(data.textContent||'{}') as {games:{slug:string;reports:{platform:string;stage:string;evidence:string;patched:boolean}[]}[];resultFormats:{one:string;two:string;other:string};labels:Record<string,string>};
+ const parsed=JSON.parse(data.textContent||'{}') as {games:{slug:string;reports:{platform:string;stage:string;evidence:string;patched:boolean|null}[]}[];resultFormats:{one:string;two:string;other:string};labels:Record<string,string>};
  const reports=new Map(parsed.games.map(g=>[g.slug,g.reports]));
  const search=document.querySelector<HTMLInputElement>('#q')!;
  const form=document.querySelector<HTMLFormElement>('#game-search')!;

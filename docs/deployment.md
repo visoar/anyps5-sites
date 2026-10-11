@@ -22,3 +22,5 @@ Cloudflare DNS was re-read after creation: four web records are proxied; each zo
 External verification covers 28 checks: all seven localized home routes per site, Chinese Windows guide, Arabic game detail, HTTPS, www path/query-preserving 301 redirects, robots/sitemaps, health checks and genuine 404 status with noindex. Browser production checks cover both themes, toggle persistence, source-scoped PPSA search/filter/reset and zero console warnings/errors.
 
 A final documentation push is used to verify automatic Git-triggered deployment on both services. No duplicate services or manually uploaded deployment is used.
+
+The `c542893` documentation push produced Git deployments `6acb57a1da7cf920c2638788` (cc) and `6acb57a5da7cf920c263878a` (games), both referencing that exact commit and `refs/heads/main`. This proves the push binding beyond the initial deployment. Later content corrections use the same trigger. To verify any release, compare the latest deployment `commitSHA` with `git rev-parse HEAD` and require `RUNNING`.

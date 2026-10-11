@@ -11,7 +11,7 @@ export interface Report {
  id:string; platform:Platform; stage:Stage; evidence:'official'|'community';
  source:string; updated:string|null; testDate:string|null; build:string|null;
  os:string; cpu:string|null; gpu:string|null; driver:string|null; version:string|null;
- patched:boolean; summary:Text; benchmarks:Benchmark[]; media:string[];
+ patched:boolean|null; summary:Text; benchmarks:Benchmark[]; media:string[];
 }
 export interface Game {slug:string;name:string;titleId:string;edition:string|null;reports:Report[]}
 export interface Section {id:string;title:Text;body:Text[];code?:string; links?:{label:string;url:string}[]}
