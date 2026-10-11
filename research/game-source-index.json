@@ -1,0 +1,662 @@
+{
+  "source_collected_at": "2026-10-11T08:08:06.139144+00:00",
+  "unique_reported_title_ids": 25,
+  "game_discussions": 30,
+  "all_discussions": 49,
+  "games": [
+    {
+      "name": "3DMiniGolf",
+      "reported_title_id": "PPSA03647",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/2431",
+          "source_title": "3DMiniGolf (PPSA03647) on Windows with NVIDIA",
+          "discussion_number": 2431,
+          "posted_at": "2026-10-09T19:36:57Z",
+          "updated_at": "2026-10-09T22:28:37Z",
+          "source_excerpt_for_review": "\r\n<img width=\"769\" height=\"458\" alt=\"{C2F80F10-9AB8-4D1E-9C1D-C7F3747A16D7}\" src=\"https://github.com/user-attachments/assets/e160a05c-8973-42f7-a430-ca7c91154dc6\" />\r\n<img width=\"770\" height=\"452\" alt=\"{F872464A-4D1B-4BAA-8E64-161FF26D1B00}\" src=\"https://github.com/user-attachments/assets/3464e80a-7bc9-4239-9ff8-7b61146547ce\" />\r\n\r\n\r\n## Tested\r\n\r\n- **Title:** 3DMiniGolf, **PPSA03647**, v01.000.000. Title ID and version checked against `sce_sys/param.json`.\r\n- **Host:** Windows 11 Pro, Ryzen 7 8845HS, NVIDIA RTX 3050 6 GB Laptop GPU, WinLibs GCC 15.2.0, Release.\r\n- **Development base:** `main` **8b393b6e**, with the integrations below. The first hole was completed on this updated base with the original quality asset and a 1920 x 1080 render configuration. Earlier profiling used `main` ae3d5f95 plus the local integration.\r\n- **Last update:** 2026-10-09.\r\n- Investigated with Codex assistance; observations and tests were collected on this machine.\r\n\r\n## Status\r\n\r\n**In-game progress on an experimental local integration; performance, audio quality and rendering correctness remain open.** Menus and the first course render, input works, and the first hole has been completed. This is still short of a fully playable compatibility result.\r\n\r\nThe integration includes an earlier sampler revision. Its in-game results do not establish compatibility with the current head of #2092 or stock `main`. Current #2092 correctly retains rejection of unsupported anisotropic encodings. A supported stack using validated sampler behavior still needs to be established.\r\n\r\n## Integrations being tested\r\n\r\nThe table records relevant patch areas. The minimal dependency set remains unverified; existing contributors retain credit for their changes.\r\n\r\n| Area | References |\r\n|---|---|\r\n| Relinking and runt",
+          "comments_count": 1,
+          "media_links": [],
+          "attachment_links": [
+            "https://github.com/user-attachments/assets/3464e80a-7bc9-4239-9ff8-7b61146547ce",
+            "https://github.com/user-attachments/assets/e160a05c-8973-42f7-a430-ca7c91154dc6"
+          ],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Animal Well",
+      "reported_title_id": "PPSA22520",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/966",
+          "source_title": "Animal Well (PPSA22520)",
+          "discussion_number": 966,
+          "posted_at": "2026-10-06T20:33:35Z",
+          "updated_at": "2026-10-11T06:14:51Z",
+          "source_excerpt_for_review": "## Tested\n\n- **Title:** Animal Well, PPSA22520, 01.000.011\n- **Host:** Windows 11, Ryzen 5 5600XT, RTX 4070 SUPER. Relinked with `--windows`, WinLibs GCC 15.2.0 r7.\n- **Last update:** 2026-10-10 (`main` 2ba993a8)\n\n## Status\n\n**In game, playable** at 60 FPS. Music, ambience, panning and reverb seemingly match the PC release, and the jump reverb matches a PS5 recording within about 0.5 dB over its first 120 ms.\n\n## Pull requests\n\n<details><summary>11 pull requests, all merged</summary>\n\n| PR | Fixes | State |\n|---|---|---|\n| #955 | Choppy audio | Merged |\n| #956 | Intermittent startup failure (`vkCreateInstance` -9) | Merged |\n| #957 | Startup: libc heap flag 0x8000 | Merged |\n| #963 | Startup: `sceAgcDriverGetResourceRegistrationMaxNameLength` | Merged |\n| #962 | NGS2 imports unresolved (title imports `libSceNgs2`) | Merged |\n| #958 | Startup: NGS2 rack and voice info | Merged |\n| #961 | Master volume | Merged |\n| #959 | Panning | Merged |\n| #2336 | Reverb | Merged |\n| #964 | Silent title music | Merged |\n| #2337 | Matrix levels clamped to ±4 | Merged |\n\n</details>\n\n## Open blockers\n\nNone.\n",
+          "comments_count": 1,
+          "media_links": [],
+          "attachment_links": [
+            "https://github.com/user-attachments/assets/f68e1337-571c-4d39-9027-51ff666fcab6"
+          ],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Astro Bot",
+      "reported_title_id": "PPSA21564",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/357",
+          "source_title": "Astro Bot (PPSA21564)",
+          "discussion_number": 357,
+          "posted_at": "2026-10-02T12:30:16Z",
+          "updated_at": "2026-10-10T16:50:36Z",
+          "source_excerpt_for_review": "## Tested\n\n- Title: Astro Bot, PPSA21564, v01.007.000\n- Host: Windows 11, Intel Core Ultra 9 285K, RTX 5080. Relinked with `--windows --to-intel`.\n- Last update: 2026-10-02\n\n## Status\n\nNot in game on Windows. With the stacks below, the title resolves all its imports, reaches `main()`, loads fonts and configuration, finishes PlayGo, creates the Vulkan device, compiles shaders and submits frames. It then stops within about 10 seconds on blocker A or B. The updates below give the cause of both, and the first frames on screen.\n\nOn Linux, the public [`astrobot`](https://github.com/oneandonlydean/AnyPS5/tree/astrobot) integration branch reports the tutorial as playable.\n\n## Open blockers\n\n| | Stop | Seen |\n|---|---|---|\n| A | `shared mapping outside the guest arena` | 2 launches out of 4, within the first 2 seconds |\n| B | Access violation on guest thread `SceSndzAudioOutMain` | 2 launches out of 4, about 10 seconds in |\n\nNo open issue or pull request mentioned either of them when this was posted. Not established at that point: whether they are specific to Windows, to Intel hosts or to this version of the title.\n\n<details>\n<summary>A and B as first observed</summary>\n\n**A.** Thrown at `core/libs/prx/libc/src/GuestArena.cpp:177`, before any output on stdout; the process aborts. The check is on `main`. Not established: whether #286, which touches `GuestArena`, plays a part (without it the title stops earlier, so the two could not be compared). Hypothesis: an address space layout that varies between launches, like the `VirtualAlloc fixed failed` of stack 1.\n\n**B.** Always in the same loop: an audio mixing loop in the title's own code, with no system function in the captured call stack. The loop takes its destination pointers from a table on the stack, and that table does not hol",
+          "comments_count": 31,
+          "media_links": [],
+          "attachment_links": [
+            "https://github.com/user-attachments/assets/51a6d9cd-6334-4110-b7bb-9f7b804d7188",
+            "https://github.com/user-attachments/assets/77e1cdeb-1358-45f4-aef3-7d8ee6ba4aee",
+            "https://github.com/user-attachments/assets/9759997c-18e9-44d7-9288-f2e3851cb0a0",
+            "https://github.com/user-attachments/assets/cd9b1c3a-1d5f-4453-9d28-581b00919c4f",
+            "https://github.com/user-attachments/assets/d94b608f-9c22-45e2-8111-1acc3755fa9f",
+            "https://github.com/user-attachments/assets/e1ce04ce-a9fb-478e-809b-da8eb4dcb5b5",
+            "https://github.com/user-attachments/assets/f2a6ab70-6b78-45dd-a665-3c400e2f029a"
+          ],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Astro's Playroom",
+      "reported_title_id": "PPSA01325",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/3232",
+          "source_title": "Astro's Playroom (PPSA01325)",
+          "discussion_number": 3232,
+          "posted_at": "2026-10-11T02:40:35Z",
+          "updated_at": "2026-10-11T02:52:13Z",
+          "source_excerpt_for_review": "Title: Astro's Playroom, PPSA01325, 01.905.000\nHost: Arch Linux, RTX 5080 (NVIDIA 615.78), 31 GiB RAM, GCC 16.2.1\n\nOn `main` d31b57a4c it does not load: the title imports `libSceJobManager.prx` and does not ship it (#2476). With the changes below on top of `main` it gets through start-up and stops in the font code about 50 s in. Each one removed the stop next to it, in this order. None of the three PRs is specific to this title: the first is a system library any title that imports it and does not ship it needs, the second changes how every system library is linked on Linux, and the third is a recompiler case measured on hardware and covered by its own test.\n\n- #3186, the library itself: the title loads.\n- #3214: `sceLibcInternalHeapErrorReportForGame_nid_postfix not implemented` at 40 s. The title's libc was reporting heap damage done by the dynamic linker running on a 2 KiB fiber stack.\n- #3222: `image descriptor is incompatible with the static runtime image interface: descriptor format 71`, a 2D `image_sample` on a 1D T#.\n- Substitute fonts in `anyps5-fonts/` as `docs/user/USAGE.md` describes. Without them every `sceFontOpenFontSet` fails and the title asserts `Out of Global Heap Memory` with its heap half empty: it sizes a font surface from a width it never got and asks for 2 GiB.\n\nCurrent stop, 4 of 4 runs: `sceFontWritingLineWritesOrder: writing attribute 250 is not modelled`. I have no source for what that attribute does on the console, so I have not implemented anything for it.\n\nOn screen, in the one run I captured with fonts in place: the window stays almost black, the frame counter in the window title stops at 120 around 30 s, and the title ends on the font error at about 48 s.\n",
+          "comments_count": 1,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Balatro",
+      "reported_title_id": "PPSA21402",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/1142",
+          "source_title": "Balatro (PPSA21402)",
+          "discussion_number": 1142,
+          "posted_at": "2026-10-07T13:51:26Z",
+          "updated_at": "2026-10-11T03:03:36Z",
+          "source_excerpt_for_review": "# Balatro (PPSA21402)\r\n\r\n**Status: playable on Windows** with the patches below. It boots, reaches the menu, and plays with music and sound effects at a steady 60 FPS, with no flicker or crashes in my testing.\r\n\r\n## Setup\r\n\r\n- Version: EU, `EP3495-PPSA21402`, game build 1.0.1o-FULL\r\n- Windows 11 Pro, NVIDIA GeForce RTX 5070, AMD Ryzen 7 7800X3D\r\n- Built with MinGW-w64 GCC 15.2.0 (WinLibs UCRT r7)\r\n- Converted with `relinker --windows` (no `--to-intel` needed on AMD)\r\n\r\n## What it needs on top of `main`\r\n\r\n| Area | Change |\r\n|---|---|\r\n| Sound effects | #1020, `sceNgs2ParseWaveformFile` and 16-bit PCM parsing (all 80 sound files are 48 kHz 16-bit PCM) |\r\n| Music | #1038, streaming 16-bit PCM through appended waveform blocks (flag `0x2`) |\r\n| Stability / flicker | Local patch: limit GPU flips to 2 pending (below, see #1034) |\r\n\r\n## The flip-depth change\r\n\r\nThis one isn't a PR. It's a two-line local patch to `libSceVideoOut`:\r\n\r\n```diff\r\n--- a/core/libs/prx/libSceVideoOut/include/VideoOutDriver.hpp\r\n+++ b/core/libs/prx/libSceVideoOut/include/VideoOutDriver.hpp\r\n static constexpr std::size_t VIDEO_OUT_FLIP_QUEUE_CAPACITY = 16;\r\n+static constexpr std::size_t VIDEO_OUT_GPU_FLIP_DEPTH = 2;\r\n\r\n--- a/core/libs/prx/libSceVideoOut/src/VideoOutDriver.cpp\r\n+++ b/core/libs/prx/libSceVideoOut/src/VideoOutDriver.cpp\r\n void WaitForFlipRoom() override {\r\n     ...\r\n-        ... || queue->reservations.load() < VIDEO_OUT_FLIP_QUEUE_CAPACITY;\r\n+        ... || queue->reservations.load() < VIDEO_OUT_GPU_FLIP_DEPTH;",
+          "comments_count": 1,
+          "media_links": [
+            "https://cdn.discordapp.com/attachments/1556655480590442578/1557382889669398668/2026-10-07_14-20-05.mp4?backend=b2&ex=6ac79957&is=6ac647d7&hm=cd7a03f2b0c496115be1488778f6dd6dbdebd3fd838d2c078633fb685adb9a97&"
+          ],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "DOOM homebrew (PS5 port)",
+      "reported_title_id": "PPSA99666",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/2475",
+          "source_title": "DOOM homebrew (PPSA99666 v1.1.1) on Windows / RTX 3060: startup reproduction and AGC CPU fallback",
+          "discussion_number": 2475,
+          "posted_at": "2026-10-09T22:36:45Z",
+          "updated_at": "2026-10-10T17:57:54Z",
+          "source_excerpt_for_review": "I reproduced startup of lowbit's public PS5 DOOM homebrew with AnyPS5 on Windows. The guest executable reached its entry point, created a Vulkan window on an RTX 3060, and subsequently logged DOOM shareware initialization. The first AGC presentation frame failed and the port switched to its CPU scaler.\r\n\r\n**Scope: startup and log observations only.** I have not visually verified rendering, tested movement/firing, heard the audio, or established sustained gameplay stability. The window-title FPS counter is not a gameplay benchmark. This is the homebrew port of classic DOOM, not a retail PS5 DOOM title.\r\n\r\n### Existing work\r\n\r\nThis is an additional reproduction, not a first-run claim. I searched Discussions for DOOM and found no matching discussion, but the issue history already contains relevant results:\r\n\r\n- #1578: LeandroLP23 reports ps5-doom running on Windows as an import-audit control.\r\n- #1497: hikazey reports Linux gameplay and the same first-frame/CPU-scaler fallback; that thread also covers bundled libc shim binding and references #690 and #1529.\r\n- #2433 is related PS4/PS5 container research. Container extraction alone does not establish PS4 runtime compatibility.\r\n\r\n### Sample and build\r\n\r\n- Public release: [lowbit/ps5-doom v1.1.1](https://github.com/lowbit/ps5-doom/releases/tag/v1.1.1), title PPSA99666.\r\n- Corresponding source: commit ba6e305bd315828c0980ff93eb54e35c8ebf397b.\r\n- Release ZIP SHA-256: 4d8e5b785b61696fbf1988c2d0d87c5c977734ff60b1ce11cc49134b0e711b5f.\r\n- Reconstructed eboot ELF SHA-256: 62d4cfe60815afbbebbd1916eb6b08fa5bd53e36d3ced68d9b62a6488bb37378; it matches the digest recorded in the plaintext FSELF container.\r\n- Windows, Ryzen 5 7600X, NVIDIA RTX 3060, MinGW-w64 GCC 15.2.0.\r\n- AnyPS5 upstream base: 025a911360a91b22fb316baf67c6b660dd42d736. ",
+          "comments_count": 2,
+          "media_links": [],
+          "attachment_links": [
+            "https://github.com/user-attachments/assets/a8331c44-08ac-44cc-b9a5-87b2189e6635",
+            "https://github.com/user-attachments/assets/ac271f28-45aa-4c98-af98-68e8cebfc3dc",
+            "https://github.com/user-attachments/assets/c60ccfc9-558e-4005-856d-c0f0ec300919"
+          ],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Demon's Souls",
+      "reported_title_id": "PPSA01341",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/1283",
+          "source_title": "Demon's Souls (PPSA01341)",
+          "discussion_number": 1283,
+          "posted_at": "2026-10-07T21:58:50Z",
+          "updated_at": "2026-10-11T04:10:56Z",
+          "source_excerpt_for_review": "## Tested\n\n- Title: Demon's Souls, PPSA01341, v1.07 (Bluepoint engine).\n- Host: Linux 7.2 (Nobara 44), AMD Ryzen 5 7600X (6 cores / 12 threads), NVIDIA RTX 5070 Ti (driver 595.91.07), 32 GB, GCC 16.2.\n- Build: `main` at `df16c4c2` plus #861, #864, #157, #1201/#1202, #1184, #1071 and the local changes listed below.\n- Last update: 2026-10-08\n\n## Status\n\nIn game on Linux, but not playable. A new game reaches the tutorial level (Outpost Passage) with the HUD drawn. The level runs at about 2.0-2.2 fps, and the 3D scene renders wrong (blocker B).\n\nEverything before that works: SIE logo, PS Studios movie, language, brightness and subtitle setup, the opening cinematic (33-40 fps), the title screen (50-53 fps), the main menu, \"Continue Offline\" at the online prompt, character creation (about 10 fps) and the new-game intro. Online fails cleanly and offers offline play. The name entry dialog returns its default text, so the character is named \"Slayer\".\n\n**Shortcut to the level.** `+ds_enableDebugStartMenu=true` in `app0/PackageCmdLineArgs.txt` (next to the shipped `+cp11_callHomeLockDownEnabled=false`) opens the game's debug start menu instead of the logos and title. Walk Through, then page 6 of the map list, \"(T-1) Tutorial (Fort Entrance)\", loads the level with the default loadout about 2 minutes after launch, with no character creation or intro. It needs more bindless slots than the normal route (`APS5_BINDLESS_SLOTS=128`, see C). It starts at a different spot from a new game, so fps from the two routes isn't comparable.\n\n![Main menu](https://raw.githubusercontent.com/fisherjoey/AnyPS5/pr-assets/demons-souls/main-menu.png)\n![Character creation](https://raw.githubusercontent.com/fisherjoey/AnyPS5/pr-assets/demons-souls/character-creation.png)\n![Debug start menu](https://raw.gith",
+          "comments_count": 5,
+          "media_links": [
+            "https://raw.githubusercontent.com/fisherjoey/AnyPS5/pr-assets/demons-souls/character-creation.png",
+            "https://raw.githubusercontent.com/fisherjoey/AnyPS5/pr-assets/demons-souls/debug-start-menu.png",
+            "https://raw.githubusercontent.com/fisherjoey/AnyPS5/pr-assets/demons-souls/level-cold-cache.png",
+            "https://raw.githubusercontent.com/fisherjoey/AnyPS5/pr-assets/demons-souls/level-rendering.png",
+            "https://raw.githubusercontent.com/fisherjoey/AnyPS5/pr-assets/demons-souls/main-menu.png"
+          ],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Disney Epic Mickey: Rebrushed",
+      "reported_title_id": "PPSA15657",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/2255",
+          "source_title": "Disney Epic Mickey: Rebrushed (PPSA15657) on Linux",
+          "discussion_number": 2255,
+          "posted_at": "2026-10-09T13:24:16Z",
+          "updated_at": "2026-10-10T20:01:33Z",
+          "source_excerpt_for_review": "## Tested\n\n- Title: Disney Epic Mickey: Rebrushed, PPSA15657 (EU), v01.000.000 (master 01.02). Unreal Engine 4, FMOD, Bink 2. Relinked with its own `sce_module` and `prx` (libfmod, libfmodstudio).\n- Host: Ubuntu 24.04.5 (kernels 6.8 and 7.0), Intel Core i3-12100, AMD Radeon RX 7600 (RADV, Mesa 25.2.8), 32 GB, GCC 13.3 Release build. Headless Xwayland at 1920x1080. Input is injected with XTest; audio is captured with SDL's disk driver.\n- Last update: 2026-10-09\n\n## Status\n\n**Reaches the first level and gameplay on Linux.** Warnings, logos and the opening cinematic play. \"Press X to start\" opens the main menu, and Continue loads Dark Beauty Castle. The in-engine opening scene in the Mad Doctor's lab plays with sound, and then gameplay starts with Mickey in the third-person camera. One run stayed in the level for 44 minutes without an error, until the test script's time limit stopped it.\n\nTwo things are needed for that today:\n- `APS5_NO_HOST_IMPORT=1`. With host import on, pressing Cross at the title ends in an Unreal fatal error in most runs (#2365, open issue E).\n- The testing-only stand-ins listed under How to run it.\n\nThe image fills only the middle 1152x648 of the 1920x1080 window (open issue G).\n\n| | |\n|---|---|\n| ![Opening scene](https://raw.githubusercontent.com/johnmaia/AnyPS5/mickey-assets/level-lab-eye.jpg) | ![The Mad Doctor](https://raw.githubusercontent.com/johnmaia/AnyPS5/mickey-assets/level-mad-doctor.jpg) |\n\n![Gameplay](https://raw.githubusercontent.com/johnmaia/AnyPS5/mickey-assets/level-gameplay.jpg)\n\nClips with sound (2.5 min each, about 5 fps): [opening scene](https://raw.githubusercontent.com/johnmaia/AnyPS5/mickey-assets/level-cutscene.mp4), [gameplay](https://raw.githubusercontent.com/johnmaia/AnyPS5/mickey-assets/level-gameplay.mp4).\n\nEarlier scree",
+          "comments_count": 2,
+          "media_links": [
+            "https://raw.githubusercontent.com/johnmaia/AnyPS5/mickey-assets/disney-intro.png",
+            "https://raw.githubusercontent.com/johnmaia/AnyPS5/mickey-assets/intro-cinematic.png",
+            "https://raw.githubusercontent.com/johnmaia/AnyPS5/mickey-assets/level-cutscene.mp4",
+            "https://raw.githubusercontent.com/johnmaia/AnyPS5/mickey-assets/level-gameplay.jpg",
+            "https://raw.githubusercontent.com/johnmaia/AnyPS5/mickey-assets/level-gameplay.mp4",
+            "https://raw.githubusercontent.com/johnmaia/AnyPS5/mickey-assets/level-lab-eye.jpg",
+            "https://raw.githubusercontent.com/johnmaia/AnyPS5/mickey-assets/level-mad-doctor.jpg",
+            "https://raw.githubusercontent.com/johnmaia/AnyPS5/mickey-assets/main-menu.png",
+            "https://raw.githubusercontent.com/johnmaia/AnyPS5/mickey-assets/title-screen.png"
+          ],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Dreaming Sarah",
+      "reported_title_id": "PPSA02929",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/3018",
+          "source_title": "Dreaming Sarah (PPSA02929) on Windows: boots to first render, crashes in amdvlk64 on RX 6700 XT",
+          "discussion_number": 3018,
+          "posted_at": "2026-10-10T20:44:16Z",
+          "updated_at": "2026-10-11T00:04:06Z",
+          "source_excerpt_for_review": "### Environment\n* **OS:** Windows 11 Pro 23H2 (build 22631)\n* **AnyPS5:** built from `main` `57f96fd`, WinLibs GCC 15.2.0 r7 (15.2.0posix-14.0.0-ucrt-r7), Ninja, Release, `BUILD_TESTING=ON`\n* **Game/Executable:** Dreaming Sarah (`PPSA02929-app0/eboot.bin`)\n* **GPU:** AMD Radeon RX 6700 XT (Navi 22, device 0x73df, Adrenalin 25.10.45.05, driver 32.0.21045.5002 dated 2026-08-16, Vulkan 1.4.315), the only Vulkan device, auto-selected\n\n### Conversion\n\n`relinker --windows eboot.bin game.exe` succeeds. 815 NID input references. The bundled `sce_module/libc.prx` converts as a guest module. One dumping-tool note: the dumper left decrypted ELF copies as `eboot.bin.esbak`/`libc.prx.esbak` beside the encrypted files, and the `.esbak` inside `sce_module/` is scanned as a second guest module, failing with `Ambiguous guest dependency name: libc.prx` (both files carry SONAME `libc.prx`). Moving the `.esbak` files out of the module directory is enough.\n\nImport audit (exit 0): 553 unique imports, 918 references - 367 implemented, 16 stub, **0 absent**, 170 module (the title's own libc.prx). The 16 stubs are capture/diagnostics functions (`sceAgcDcb*`/`sceAgcAcb*` capture, `sceAgcDriverRequestCapture*`, backtrace/heap-report postfixes, `__tls_get_addr` postfix).\n\n### Runtime\n\nThe title boots through the whole stack: ELF entry, guest threads, save data mount (`mount3` -> `/savedata0`), full Vulkan device init on the RX 6700 XT, shader disk cache creation, resource loading (language files, `media/error.flac` background load), render target allocation up to 14 MiB and texture creation (1280x720 storage images, 320x512/980x347/250x250 textures). It then crashes at the first real graphics submission:\n\n```\nFATAL: unhandled exception 0xc0000005 on thread 15024 ''\n  rip 0x00007ffbeacdef34 amdvlk6",
+          "comments_count": 1,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        },
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/3003",
+          "source_title": "Dreaming Sarah (PPSA02929) - Windows 11, Ryzen 5 3600X + RTX 3070",
+          "discussion_number": 3003,
+          "posted_at": "2026-10-10T20:17:32Z",
+          "updated_at": "2026-10-10T20:17:32Z",
+          "source_excerpt_for_review": "Status: in game, playable.\r\n~58 FPS avg over 2 min (frame counter), 0 stalled samples, ~6% GPU 3D, ~0.35 CPU cores, ~450 MB VRAM, ~630 MB RAM. Capped at 60, so not load-bound.\r\nSetup: AnyPS5 release v0.1.1, relinker --windows --windows-diagnostics --registry (no --to-intel, AMD CPU), libs from the same release. NVIDIA driver 32.0.15.9636.\r\n\r\nThings I noticed in the logs:\r\n- stdout: `[libSceSysmodule/Export.cpp:125 sceSysmoduleLoadModule] unknown id: 272`\r\n- stderr: `Could not open file /app0/shaders/waterbg.vert.`\r\n- stderr, repeated: `[gpu] storage image 0x... guest memory changed while GPU results were pending; keeping the CPU's blocks` and `... destroyed with GPU results pending`\r\n\r\nHappy to test patches or provide more logs!",
+          "comments_count": 0,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Ghost of Yōtei",
+      "reported_title_id": "PPSA26344",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/675",
+          "source_title": "Ghost of Yōtei (PPSA26344)",
+          "discussion_number": 675,
+          "posted_at": "2026-10-05T14:20:37Z",
+          "updated_at": "2026-10-11T04:07:09Z",
+          "source_excerpt_for_review": "## Tested\r\n\r\n- **Title:** Ghost of Yōtei, PPSA26344, v1.008\r\n- **Host:**\r\n  - Windows 11 Pro, Intel Core i9-11900H (Tiger Lake, 8 cores), 32 GB RAM, 32-64 GB page file.\r\n  - NVIDIA RTX 3080 Laptop GPU 16 GB, driver 610.62.\r\n  - Relinked with `--windows --to-intel`. Built with MinGW-w64 GCC 15.2.0.\r\n- **Last update:** 2026-10-05. 24 of the 26 pull requests below are merged; #648 and #653 are open.\r\n\r\n## Status\r\n\r\nNot in game. With the pull requests below on `main`, the title:\r\n- resolves all its imports (its own `libc.prx` included);\r\n- reaches its entry point, starts its job threads and opens its `/app0/cache_ps5` files;\r\n- allocates 13.5 GiB of direct memory and makes 835 fixed mappings up to 0xFC_0000_0000;\r\n- creates its AudioOut2 graph: two 7.1.4 beds, 38 object ports, pad speaker and vibration;\r\n- registers DCC display buffers, creates the Vulkan device and runs its first compute passes.\r\n\r\nIts first frame submission (8440 dwords, ending in a FLIP) is accepted and starts executing. It then stops in the \"Tiled Decals\" compute pass (blocker A). No frame has been presented yet.\r\n\r\n## Open blockers\r\n\r\n| | Stop | Seen |\r\n|---|---|---|\r\n| A | `compute shader 0x80003aa700: GetImageResource dword 0 is not a valid runtime value`. The image descriptor is loaded from a descriptor table at an offset computed from the thread id inside a loop. | Every launch, a few seconds in |\r\n| B | `[gpu] skipped draw: unsupported PA_CL_CLIP_CNTL flags (register 0x204 = 0x01080000)`. Draws are skipped; not fatal. | Every launch. Covered by #678 (merged) |\r\n| C | Tessellation. The `tessellationAvailable=0` log line was printed before the feature was read (#687 (merged)); the device has it. The native LS/HS/DS path is not complete: no lowering of the HS/DS ring and LDS accesses, no tessellation",
+          "comments_count": 24,
+          "media_links": [
+            "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-06/boot-sie-presents.png",
+            "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-06/dcc-frame028-235s-ps-studios-intro.png",
+            "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-06/dcc-frame046-373s-sucker-punch-logo.png",
+            "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-06/dcc-window-0241s-fps1.30.png",
+            "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-07/digital-deluxe-bonus.png",
+            "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-07/gamma-screen.png",
+            "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-07/pre-order-bonus.png",
+            "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-07/ps-studios-montage.png",
+            "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-07/ps-symbols.png",
+            "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-07/world-cinematic-embers.png",
+            "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-07/world-firelit-trunks-crop.png",
+            "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-08/world-burning-trunk.png",
+            "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-08/world-contact-sheet.png",
+            "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-08/world-lit-vs-before.png"
+          ],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        },
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/2884",
+          "source_title": "Ghost of Yōtei (PPSA26344) on Linux — Let's talk and see what you are having in trouble and we can help each other.",
+          "discussion_number": 2884,
+          "posted_at": "2026-10-10T17:34:35Z",
+          "updated_at": "2026-10-11T02:21:03Z",
+          "source_excerpt_for_review": "A Linux-focused status update on this title, with the numbers behind it and where each number came from.\nShort version: **two real walls are gone, and the title now boots far enough to create a swapchain.** It\nstill does not reach gameplay, and the two walls that remain are a software-rasteriser device limit and a\nmemory ceiling — neither is a correctness bug in the emulator.\n\n(General discussion of the title lives in #675; this thread is the Linux-facing update.)\n\n### The stack these numbers come from\n\n**Latest `main` plus three *open* PRs stacked locally** — **#1940** (aperture — **mine**), **#757** and\n**#758** (image/sampler tables and 64-bit table pointers — **@Celegans12**'s) — together with\n**@pipodi93**'s fix for relocated shader headers.\n\nTwo honesty notes, because they change how you read this:\n\n- **None of those three PRs is merged upstream.** I merged them into a local test build. If you want the\n  same run, you stack them yourself.\n- **`44a80d4f` is not a commit in my branch.** I took @pipodi93's change and re-applied its hunk by hand\n  in `ShaderRegistry.cpp` (`SameHeader`). The code under test is his change; the commit in my stack is\n  authored by me. Credit where it is due, and blame where it is due.\n\n### What changed\n\n- **The structurizer spin is gone on current `main`**, and it looks like a performance pathology rather\n  than a correctness failure. An older stack I was running spun for 20+ minutes inside\n  `ShaderRecompiler::Structurizer::computePostDominators`. The merged **#2105** (compute post-dominators\n  visiting successors first) and **#2276** (look dominance up by binary search) landed after that stack\n  was cut — and a rebuild from `main` no longer spins. If you still see that spin, you are on old code.\n- **The replaced-shader-header wall is fi",
+          "comments_count": 7,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "God of War: Sons of Sparta",
+      "reported_title_id": "PPSA28997",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/1742",
+          "source_title": "God of War: Sons of Sparta (PPSA28997) on Windows",
+          "discussion_number": 1742,
+          "posted_at": "2026-10-08T18:05:56Z",
+          "updated_at": "2026-10-11T04:10:50Z",
+          "source_excerpt_for_review": "# God of War: Sons of Sparta (PPSA28997) on Windows\r\n\r\nBring-up notes and compatibility report for **God of War: Sons of Sparta (`UP9000-PPSA28997_00-SONSOFSPARTAPS50`) on Windows 11**.\r\n\r\n> Tested and verified on Windows 11 x64, AMD Ryzen CPU, AMD Radeon RX 6800 XT (24.x Adrenalin drivers), MinGW WinLibs toolchain (GCC 14 / Clang), Vulkan 1.3.\r\n\r\n---\r\n\r\n## Status (October 2026)\r\n\r\n- ✅ **Fully Playable**: Boots from cold start, plays all intro logo movies (Sony Interactive Entertainment, Mega Cat Studios, PlayStation Studios), passes the Title / Start Screen (\"PRESS ANY BUTTON TO START\"), watches cutscenes, and enters full gameplay.\r\n- ✅ **Boss & Combat Verified**: Successfully fought through the intro stages, defeated the first Cyclops boss encounter, advanced through the River area (`Scenes/River.bank`), and reached the first in-game save altar/checkpoint.\r\n- ✅ **Graphics & Shaders Clean**: The severe bloom / LCD-bleed \"render vomit\" that previously saturated the screen with blinding white/yellow light blobs has been completely eliminated through rasterized stencil replace and MRT color retention (PR #1534 / #1479).\r\n- ✅ **Persistent Save Data**: Full save-data lifecycle verified across `GOWSOSSAVE999` (global settings) and `GOWSOSSAVE0` (player save slot), with correct directory validation and multi-threaded stream decompression.\r\n- ✅ **Audio**: 100% functional audio through FMOD Studio, FMOD Core, and Resonance Audio with real Master and level banks.\r\n- ✅ **True Fullscreen & AFMF**: Launches in true hardware exclusive fullscreen, enabling AMD Fluid Motion Frames (AFMF / AFMF 2) for smooth high-framerate frame generation.\r\n\r\n### Screenshots\r\n\r\n![God of War: Sons of Sparta - Gameplay 1](https://raw.githubusercontent.com/nahshongraham97/AnyPS5/main/docs/images/Screensh",
+          "comments_count": 1,
+          "media_links": [
+            "https://raw.githubusercontent.com/nahshongraham97/AnyPS5/main/docs/images/Screenshot_327.png",
+            "https://raw.githubusercontent.com/nahshongraham97/AnyPS5/main/docs/images/Screenshot_328.png",
+            "https://raw.githubusercontent.com/nahshongraham97/AnyPS5/main/docs/images/Screenshot_329.png"
+          ],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Grand Theft Auto V",
+      "reported_title_id": "PPSA04264",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/1203",
+          "source_title": "Grand Theft Auto V (PPSA04264)",
+          "discussion_number": 1203,
+          "posted_at": "2026-10-07T17:29:49Z",
+          "updated_at": "2026-10-10T13:58:28Z",
+          "source_excerpt_for_review": "## Tested\n\n- Title: Grand Theft Auto V, PPSA04264, v01.005. Relinked with its own `sce_module`.\n- Host: Windows 11 Pro, AMD Ryzen 5 7600, NVIDIA GeForce RTX 5080 (driver 32.0.16.1074), 32 GB DDR5-5600, MinGW-w64 GCC 15.2.0.\n- Last update: 2026-10-09\n\n## Status\n\n**On the [`gta-v/testing`](https://github.com/MichonGoddijn231849/AnyPS5-fork/tree/gta-v/testing) branch** (based on `main` from before #639): in game on Windows. \"Resume Story\" starts the North Yankton prologue, which plays with rendering, reflections, music, speech, sound effects and the HUD working.\n\n**On current `main`** (d70b8998, 2026-10-09): stops at boot. With the open pull requests under \"Needed on current main\" below it presents its first frames (the start screens), then stops on a T# read from a material table (bindless image tables, #1184). Getting it in game on `main` is what I am working on now.\n\n![GTA V prologue, Performance mode](https://raw.githubusercontent.com/MichonGoddijn231849/AnyPS5-fork/pr-assets/gta-prologue-performance.png)\n\n| Graphics mode (`gta-v/testing`) | State |\n|---|---|\n| Performance | Playable, around 27-28 fps in the bank (was 20-23) |\n| Fidelity, Performance RT | Renders correctly since #919, but only a few fps. The ray tracing passes are being worked on. |\n\nOnly tested in the prologue, in the bank. The frame rate drops a bit depending on where you are and where you look.\n\nStory Mode is an add-on entitlement. Listing `GTAVSTORYMODE001` in `anyps5-entitlements.ini` (#153) enables \"Resume Story\".\n\n## Needed on current main\n\nSince #639, `main` needs these open pull requests to get this far, in the order of the stops they fix:\n- #2293 prim states whose patch topology and HS_EN disagree (fix by @CouchRiv)\n- the image heap capacity of #1789 (candidate by @CouchRiv on [`fix-shader-sa",
+          "comments_count": 2,
+          "media_links": [
+            "https://raw.githubusercontent.com/MichonGoddijn231849/AnyPS5-fork/pr-assets/gta-prologue-performance.png"
+          ],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Hades",
+      "reported_title_id": "PPSA03355",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/3234",
+          "source_title": "Hades (PPSA03355) on Linux",
+          "discussion_number": 3234,
+          "posted_at": "2026-10-11T02:47:38Z",
+          "updated_at": "2026-10-11T02:47:38Z",
+          "source_excerpt_for_review": "Title: Hades, PPSA03355, 01.003.000\nHost: Arch Linux, RTX 5080 (NVIDIA 615.78), GCC 16.2.1, `main` aac0f1b81, 31 GiB RAM\n\nOn unmodified `main` it boots to the main menu (Play / Options) and the window title reads 59.9 fps there. No error line in the log over 30 s, two runs. In game not tested, sound not checked. Nothing set in the environment; substitute fonts are in `anyps5-fonts/`.",
+          "comments_count": 0,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Hades II",
+      "reported_title_id": "PPSA36082",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/1965",
+          "source_title": "Hades II (PPSA36082)",
+          "discussion_number": 1965,
+          "posted_at": "2026-10-09T03:05:28Z",
+          "updated_at": "2026-10-11T06:51:11Z",
+          "source_excerpt_for_review": "### Tested\n**Title:** Hades II, PPSA36082, v01.006.000\n**Host:**\nLinux (CachyOS, kernel 7.2.9), Ryzen 7 7800X3D, 32 GB RAM.\nRTX 4090 24 GB on the NVIDIA proprietary driver 615.71.09.\nRelinked for Linux with the relinker from #1249, built with GCC 16.2.1.\n**Last update:** 2026-10-11 (evening)\n\n### Status\n**Playable, with warm shader caches.** On main 961b25fe with the PRs below, it boots, loads a game and plays, with no skipped draws. Standing in the hub it now sits at the 60 fps cap (p95 frame 16.7 ms) with pipelined draws from #1201 on (`APS5_PIPELINED_DRAWS=1`). That's the original executable with its 512 MiB upload pool, no patches.\n\nThe level-load crash from yesterday is gone on main: #2647 gives guest threads their host stack room back. The one catch left is that **it only boots when the shader caches are warm**. More on that below.\n\nSome things worth knowing about how the game runs:\n- It ships its own `libc.prx`, `libSceJobManager.prx`, `libSceNpCppWebApi.prx`, `libSceFontGsm.prx`, `libScePfs.prx` and FMOD (`libfmod.prx`, `libfmodstudio.prx`). All of them load as guest modules from `sce_module`.\n- Its bundled libc replaces malloc with an mspace over 1 GiB of direct memory, mapped CPU-only (`3`).\n- It maps 6784 MiB of GPU memory (`0x32`): a 512 MiB upload pool, a 6 GiB heap and another 128 MiB.\n- The upload pool is the tricky part. The loader only frees it after a GPU fence, so anything that slows the fences down makes it overflow during startup. With everything below and warm caches, it peaks at 330-390 MiB out of 512.\n\nYou need an import budget of at least 6784 MiB, so either #290 or `APS5_HOST_IMPORT_MIB=8192`. I run with the env var, since #290 doesn't merge cleanly with current main.\n\n### Everything it needs right now\nAll open unless marked otherwise.\n\n| Neede",
+          "comments_count": 0,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Hello Kitty Island Adventure",
+      "reported_title_id": "PPSA18176",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/2690",
+          "source_title": "Hello Kitty Island Adventure (PPSA18176) on Windows / NVIDIA: bring-up and rendering blockers",
+          "discussion_number": 2690,
+          "posted_at": "2026-10-10T10:57:08Z",
+          "updated_at": "2026-10-10T10:57:08Z",
+          "source_excerpt_for_review": "Hello Kitty Island Adventure, **PPSA18176**, content version **02.000.000**, in-game version **2.6.100**.\r\n\r\nThis is a work-in-progress bring-up report, not a verified compatibility result.\r\n\r\n### Environment and scope\r\n\r\nWindows 11 Pro build 26300, NVIDIA RTX 3060, driver 32.0.16.1714, MinGW-w64 GCC 15.2, Release. This is a local selective-integration fork branch, **not unmodified current upstream main**. Its common ancestor with the upstream snapshot is `5cb747c146c67ffd498ab7ebaced9395035a50f6`; local committed head is `adf64086`.\r\n\r\n### Current observations\r\n\r\n- Startup reaches the animated title screen repeatedly. Logo, text and the start prompt are readable; the 3D background has extensive black speckling and excessive brightness. This was visually checked, not inferred from logs.\r\n- Three runs before and three after the latest legacy-arithmetic integrations were logged. The inspected before captures and all three after captures show the same visible problem; screenshot coverage before the integrations is incomplete. The title-screen runs were bounded; they do not demonstrate sustained gameplay, saves or audible audio.\r\n- The existing synchronous sampled-texture-upload diagnostic (`APS5_SYNC_TEXTURE_UPLOAD=1`) also leaves the visible corruption. That is one diagnostic observation, not proof that every synchronization path is correct.\r\n- Automated Return/Space presses did not visibly advance the start prompt in the latest probe. Input and gameplay remain unverified; this is not yet an established title-side deadlock.\r\n\r\n### Relevant upstream work and verification\r\n\r\nThe branch includes the folded vertex/instance offset correction from #2285. The GPU execution test passes, but installing the patched AGC driver did not resolve the pictured corruption.\r\n\r\nThe measured",
+          "comments_count": 0,
+          "media_links": [],
+          "attachment_links": [
+            "https://github.com/user-attachments/assets/13c42e5b-9477-4b3f-8a94-b4b4b828a96e"
+          ],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Hollow Knight: Silksong",
+      "reported_title_id": "PPSA12544",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/1996",
+          "source_title": "Hollow Knight: Silksong (PPSA12544) on Windows with NVIDIA",
+          "discussion_number": 1996,
+          "posted_at": "2026-10-09T04:14:36Z",
+          "updated_at": "2026-10-09T13:11:27Z",
+          "source_excerpt_for_review": "Bring-up notes for **Hollow Knight: Silksong (PPSA12544) on Windows with an NVIDIA GPU**. #726 covers Windows on AMD (RX 9070 XT). On NVIDIA with current `main`, the title needs a few open PRs and one opt-in switch to reach playable gameplay. With them it runs at **a steady 60 fps**.\n\n> Investigated with Claude Code (AI); the runs are on my machine and I checked the result in game.\n\n## Status (updated 2026-10-09, `main` d70b8998)\n\n- ✅ **Playable at 60 fps.** It boots, plays the intro, and gets through the title menu, profile select and the opening sequence into gameplay (`tut_01`, then `tut_02`). Backgrounds, HUD, prompts and menu text render correctly.\n- 📈 **Frame rate in gameplay:** 600 presents per 10 s.\n- ⚠️ **It needs one switch,** `APS5_STORE_AT_FLIP=1` (below). Without it, the backgrounds are garbled or the title crashes while loading `tut_01`.\n\n**Setup:** Windows 11 Pro, Ryzen 7 9800X3D, RTX 5090 (driver 617.42), WinLibs GCC 15.2.0 r7, Release, keyboard input.\n\n## Patches on top of `main` d70b8998\n\n| | For |\n|---|---|\n| #846 | `--module-dir`: the Unity plugins in `Media/Plugins` (PSN, SaveData, CommonDialog, ...) are relinked and started with their start arguments |\n| #425 | depth surfaces sampled as textures |\n| #1836 | a type 4 shader header without a program address: `missing static shader ABI register 201` |\n| #1599 | boxed menu glyphs (#865) |\n| #1968 | the primitive restart index counted as a vertex: `vertex fetch exceeds descriptor record count` |\n| #1969 | a null V# vertex attribute: `unsupported vertex format 0` |\n| #1995 | `APS5_STORE_AT_FLIP=1`: garbled backgrounds and the `tut_01` crash (#1970) |\n\n## What the switch fixes\n\n**Garbled backgrounds and the `tut_01` crash (`APS5_STORE_AT_FLIP=1`, #1970).** Unity frees render targets and its allocator reus",
+          "comments_count": 0,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        },
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/1519",
+          "source_title": "Hollow Knight: Silksong (PPSA12544) on Linux",
+          "discussion_number": 1519,
+          "posted_at": "2026-10-08T10:53:11Z",
+          "updated_at": "2026-10-08T18:17:49Z",
+          "source_excerpt_for_review": "Bring-up notes for **Hollow Knight: Silksong (PPSA12544) on Linux**, kept separate from the Windows thread (#726). Everything below can be reproduced from a ready-made branch.\n\n> This work was done and written up by Claude Code (AI), and posted by me after review.\n\n## Status (2026-10-08)\n- ✅ Loads, reaches the **title screen**, save select, the screen-size calibration screen, and **New Game plays the intro cinematic**.\n- ❌ At the end of the intro cinematic, the game ends with `Terminating due to uncaught exception of type Il2CppExceptionWrapper`. This is being investigated; I will post updates here.\n- ⚠️ 8–23 fps, and some flickering with short \"rollbacks\" during the cinematic. The likely suspect is the storage-image write-back workaround (`guest memory changed while GPU results were pending; keeping the CPU's blocks`, #865), but that is not confirmed.\n\nTest machine: Arch Linux, i7-8750H, GTX 1050 Ti Max-Q 4 GB, NVIDIA 580.178.04, Wayland (Hyprland), GCC.\n\n## Ready-made branch\n**[`awake-devel/AnyPS5@test/silksong-linux`](https://github.com/awake-devel/AnyPS5/tree/test/silksong-linux)** (fbb383ea). It is `main` 296d68a3 plus the open PRs below and one local workaround. It is a test stack, not a PR.\n\n```sh\ngit clone --recursive -b test/silksong-linux https://github.com/awake-devel/AnyPS5\ncd AnyPS5\ncmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF\ncmake --build build && cmake --build build --target libs\n```\n\n## What is in it, in the order each one became necessary\n\n| Stop on Linux | What fixes it |\n|---|---|\n| Crash with no output while modules load: the bundled `sce_module/libc.prx`'s `malloc` returns NULL inside `Il2cppUserAssemblies.prx` | Regression from #1156, reported in **#1500**. The branch carries a local workaround (a6b64396, undoes the ",
+          "comments_count": 4,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        },
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/726",
+          "source_title": "Hollow Knight: Silksong (PPSA12544)",
+          "discussion_number": 726,
+          "posted_at": "2026-10-05T18:01:49Z",
+          "updated_at": "2026-10-08T11:07:38Z",
+          "source_excerpt_for_review": "## Tested\n\n- **Title:** Hollow Knight: Silksong, PPSA12544, content version 01.000.010 (master 01.02, SDK 0x11000000). Unity, IL2CPP, FMOD.\n- **Host:** Windows 11 Pro, AMD Ryzen 7 9800X3D, Radeon RX 9070 XT. Relinked with `--windows --module-dir Media/Plugins` (no `--to-intel`). Built with WinLibs GCC 15.2.0 r7.\n- **Dump:** fake-signed SELFs (`eboot.bin`, `sce_module/*.prx`, `Media/Modules/*.prx`, `Media/Plugins/*.prx`), unwrapped to plain ELF before relinking.\n- **Last update:** 2026-10-08\n\n## Status\n\n**Playable at 60 fps.** On the stack below, the game boots. Menus, audio (no crackle) and keyboard input work. The intro cinematic plays, a new game reaches gameplay, and room transitions work.\n\n- **Dark layer stuck after room changes:** fixed by #903. Draws into a fast-cleared render target left its DCC keys at the clear code, so the title's next fast clear with the same code went unseen. Analysis in #865.\n- **Boxed menu glyphs:** still open, cause found (#865). CPU stamps on the unaligned glyph atlas's edge pages don't change any bytes, but the write-back keeps those edge blocks for the CPU and drops the GPU's glyphs. A byte-wise merge fixes it locally at 60 fps. An edge-only merge is proposed in #865. Worked around locally with eager write-back of the glyph images.\n- **Unity TLSF allocator crash** (heap corruption while assets stream): seen about 4 times in a dozen runs on 2026-10-06, not seen in about 20 runs on 2026-10-08. Cause not found.\n\n**Correction (2026-10-06):** an earlier version of this post, and a comment on #648, said the output looked correct. I had not checked it: every presented frame was black. The cause was draws skipped for `PA_SC_MODE_CNTL_1` bit 17 (#840).\n\n## Still needed beyond `main`\n\n| | For | |\n|---|---|---|\n| #846 | `DllNotFoundException: Una",
+          "comments_count": 4,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Minecraft Preview",
+      "reported_title_id": "PPSA19639",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/1277",
+          "source_title": "Minecraft Preview (PPSA19639)",
+          "discussion_number": 1277,
+          "posted_at": "2026-10-07T21:22:53Z",
+          "updated_at": "2026-10-08T16:37:13Z",
+          "source_excerpt_for_review": "# Minecraft Preview (PPSA19639)\r\n\r\n## Tested\r\n\r\n- Title: Minecraft Preview 1.21.40.22 (PPSA19639), RenderDragon renderer\r\n- Host: Windows 11 Pro (build 26200), Intel i9-9900K (8 cores / 16 threads), NVIDIA RTX 2080 Ti\r\n- Build: `main` at `d4c196c2` plus a local patch (below), WinLibs MinGW-w64 GCC 15.2, Ninja, Release\r\n\r\n## Status\r\n\r\n- Boots to the title screen at 60 fps. Creating a world, loading a world, walking around, and Save & Quit all work, and the save shows up in the world list afterwards.\r\n- In-world at the game's default render distance (36 chunks, `gfx_viewdistance:576`), the game issues 2,000–4,000 draws per frame.\r\n  - On `main`: about **7 fps**, because the queue worker spends 76–80 µs of CPU per draw.\r\n  - With the patch: **31 fps** (30.8–31.7 over two runs, ~3,970 draws per frame). Lower render distances reach the 60 fps cap.\r\n- Keyboard input works. Audio works.\r\n\r\n<img width=\"1486\" height=\"867\" alt=\"mc_5toV9pzSLp\" src=\"https://github.com/user-attachments/assets/cbdb28f1-3386-4ef1-acc1-17cf26e6ab67\" />\r\n<img width=\"1486\" height=\"867\" alt=\"mc_btF1DDXRnI\" src=\"https://github.com/user-attachments/assets/ebb798ea-9f30-4052-ac93-2f8da1c51fe8\" />\r\n\r\n## Stops on `main`, in the order they are hit\r\n\r\nEach one is fixed or worked around in my patch. Some are stubs and not ready to merge as they are.\r\n\r\n1. **Network.** `sceHttp2SendRequestAsync` must return 0 (the failure belongs at `WaitAsync`). With a synchronous `ERROR_NETWORK`, the game throws `bad_weak_ptr` on its \"REST Thread\".\r\n2. **NetCtl / NpManager callbacks.** NetCtl must store the callback argument and deliver the state from `sceNetCtlCheckCallback`. NpManager must register the state callbacks and deliver SIGNED_OUT once from `sceNpCheckCallback`.\r\n3. **SaveData title search.** `sceSaveDataDirNameSearc",
+          "comments_count": 1,
+          "media_links": [],
+          "attachment_links": [
+            "https://github.com/user-attachments/assets/cbdb28f1-3386-4ef1-acc1-17cf26e6ab67",
+            "https://github.com/user-attachments/assets/ebb798ea-9f30-4052-ac93-2f8da1c51fe8",
+            "https://github.com/user-attachments/files/33177714/minecraft-overlay-latest.patch"
+          ],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Ratchet & Clank: Rift Apart",
+      "reported_title_id": "PPSA01474",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/2172",
+          "source_title": "Ratchet & Clank: Rift Apart (PPSA01474) on Linux",
+          "discussion_number": 2172,
+          "posted_at": "2026-10-09T10:38:37Z",
+          "updated_at": "2026-10-09T13:36:13Z",
+          "source_excerpt_for_review": "## Tested\n\n- **Title:** Ratchet & Clank: Rift Apart, PPSA01474, v01.003.001, dumped from the contributor's own console. The fake-signed SELF containers have plaintext segments and were unwrapped to plain ELF before relinking, with no decryption:\n  - `eboot.bin`;\n  - `sce_module/{libc,libSceJobManager,libSceNpCppWebApi}.prx`;\n  - the title's own modules at the root of the app (`libcohtml.Prospero`, `libChakraCore`, `libRenoirCore.PS5`, `HttpServer.Prospero`), relinked from `prx/`.\n- **Host:** CachyOS (Linux 7.2.9), Ryzen 7 7800X3D, RX 9070 XT (RDNA4), RADV / Mesa 26.2.4. Runs are headless in gamescope with scripted input.\n- **Build:** Release, GCC, `main` 43972e69.\n- **Last update:** 2026-10-09.\n\n## Status\n\nNot in game. No frame has been presented yet.\n\n| Stack (on `main`) | Where it stops |\n|---|---|\n| `main` | Doesn't load: `libChakraCore.prx.guest.prx: undefined symbol: mTBZfEal2Bw` (`mlock`); `munlock` (`OG4RsDwLguo`) is missing too |\n| + #1673 + a throwing placeholder for `munlock` | about 9 s: `sceVideoOutUnknown00 not implemented` (`kP2L8t3j-aM`) |\n| + #1339 + #1836 + #1837 | about 19 s: SIGSEGV in title code |\n\n### Current stop\n\n- The crash is on the main thread, in title code, at `cmpq $0x0,(%rbx)` with `rbx = 0`.\n- The function before it calls what looks like an allocator, `(allocator = arg3, size, name, 16)`, with a null allocator. So a pointer the title expected to be set up earlier is null.\n- The last library log line before the crash is `[libSceSysmodule] sceSysmoduleLoadModule unknown id: 267`. 267 (0x10b) is not in `ModuleTable.hpp`, and the call returns success without loading anything. I haven't confirmed that the two are related.\n- 16 shaders are deferred by #1836 because their program address registers are missing from the header.\n\n*Tested and written",
+          "comments_count": 3,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Rise of the Ronin",
+      "reported_title_id": "PPSA04540",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/2171",
+          "source_title": "Rise of the Ronin (PPSA04540) on Linux",
+          "discussion_number": 2171,
+          "posted_at": "2026-10-09T10:38:24Z",
+          "updated_at": "2026-10-10T13:22:03Z",
+          "source_excerpt_for_review": "## Tested\n\n- **Title:** Rise of the Ronin, PPSA04540, v01.009.000, dumped from the contributor's own console. The dump's `eboot.bin` and `sce_module/{libc,libSceNpCppWebApi}.prx` are fake-signed SELF containers whose segments are plaintext, so they were unwrapped to plain ELF before relinking. There is no decryption.\n- **Host:** CachyOS (Linux 7.2.9), Ryzen 7 7800X3D, RX 9070 XT (RDNA4), RADV / Mesa 26.2.4. Runs are headless in gamescope with scripted input.\n- **Build:** Release, GCC, `main` 43972e69.\n- **Last update:** 2026-10-09.\n\n## Status\n\nNot in game. No frame has been presented yet.\n\n| Stack (on `main`) | Where it stops |\n|---|---|\n| `main` | Doesn't load: 13 imports are not exported (list below) |\n| + #2153 + throwing placeholders for the other imports | about 9 s: `s_swappc_b64 call target at program counter 0x00000074 is not statically resolvable` (#1817) |\n| + #1836 + #1837 | no stop in 6 min; the main thread stays in `Structurize` → `computePostDominators` and gets through 1 to 6 registrations per 10 s |\n| + #2105 | about 3 min 40 s: `AGC driver: unsupported registered shader type` |\n| + #1893 | about 4 min 40 s: `NGS2: system option flags are not implemented` |\n\n### Imports missing on `main`\n\n- **libSceUlt:** `_sceUltUlthreadRuntimeOptParamInitialize`, `_sceUltUlthreadRuntimeCreate`, `_sceUltUlthreadCreate`, `sceUltUlthreadTryJoin`, `sceUltUlthreadRuntimeDestroy`. Covered by #2153. The title calls them during its first second.\n- **libSceJson2:** `sce::Json::Array::Array(const Array&)`, `Array::clear`, `Array::front`, `Array::iterator::operator->`, `Parser::parse(Value&, int (*)(char&, void*), void*)`\n- **libSceSaveData:** `sceSaveDataCancel`\n- **libSceNgs2:** `sceNgs2ReportRegisterHandler`, `sceNgs2ReportUnregisterHandler`\n- **libSceNet:** `sceNetShowNetstat",
+          "comments_count": 1,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "SAROS",
+      "reported_title_id": "PPSA07631",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/1504",
+          "source_title": "SAROS - PPSA07631",
+          "discussion_number": 1504,
+          "posted_at": "2026-10-08T10:17:18Z",
+          "updated_at": "2026-10-10T05:41:41Z",
+          "source_excerpt_for_review": "I will update as I go",
+          "comments_count": 3,
+          "media_links": [],
+          "attachment_links": [
+            "https://github.com/user-attachments/assets/018ee7be-e12c-48e8-9a34-994c411191e7"
+          ],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "STAR WARS: Galactic Racer",
+      "reported_title_id": "PPSA28416",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/3086",
+          "source_title": "STAR WARS: Galactic Racer (PPSA28416)",
+          "discussion_number": 3086,
+          "posted_at": "2026-10-10T21:52:22Z",
+          "updated_at": "2026-10-10T22:22:03Z",
+          "source_excerpt_for_review": "## Tested\n\n- **Title:** STAR WARS: Galactic Racer, PPSA28416, v01.003.001 (Unreal Engine 5)\n- **Host:**\n  - Windows 11 Pro, AMD Ryzen 9 9950X3D (16 cores), 64 GB RAM.\n  - NVIDIA GeForce RTX 4080 16 GB, driver 617.14.\n  - Relinked with `--windows --registry`. Built with WinLibs GCC 15.2.0 r7, Release, `ANYPS5_ENABLE_SPIRV_TOOLS=OFF` (with SPIR-V validation on, the per-shader cost makes UE's hang watchdog fire).\n- **Last update:** 2026-10-10. 2 of the 11 pull requests opened for this title are merged; the rest are open, as are #423, #425 and #2076 by other contributors, which the title also needs. Several later fixes are still local only (see \"Local only\").\n\n## Testing the branch\n\nEverything below, merged, open and local only, is combined on [`CnRJay/AnyPS5` `port/ppsa28416`](https://github.com/CnRJay/AnyPS5/tree/port/ppsa28416). It is a test branch, not for review: it carries work-in-progress commits, one shim (`ZVZ++68nNI8`) and a debug probe (`[probe-indirect]` lines in the log).\n\nEvery stop in the table below is handled on the branch, and everything under \"Local only\" is on it:\n- the pull requests opened for this title are on it as the same commits, and #2471 is merged in;\n- #425 and #2076 (other contributors) are **not** on it; the depth and stencil storage-image stop uses a local commit instead (`2f9cee4d6`: storage-image writes to a depth surface's planes are copied into its depth image);\n- #423 is **not** on it; clip and cull distances are accepted and ignored (`704dec9f8`), so geometry is not clipped by them.\n\n```\ngit clone --recursive -b port/ppsa28416 https://github.com/CnRJay/AnyPS5.git\ncmake -S AnyPS5 -B AnyPS5/build -G Ninja -DCMAKE_BUILD_TYPE=Release -DANYPS5_ENABLE_SPIRV_TOOLS=OFF\ncmake --build AnyPS5/build\n```\n\nRelink the title with `--windows --registry`",
+          "comments_count": 1,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Silt",
+      "reported_title_id": "PPSA03306",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/2810",
+          "source_title": "Silt ps5 (PPSA03306) on windows: boots and plays with four local changes”",
+          "discussion_number": 2810,
+          "posted_at": "2026-10-10T15:42:12Z",
+          "updated_at": "2026-10-10T18:50:27Z",
+          "source_excerpt_for_review": "**Status:** boots, reaches the main menu, starts a new game and plays through several areas on Windows with four local changes, with sound. Open: no antialiasing (workaround) and one rendering artefact.\r\n\r\n<img width=\"1536\" height=\"864\" alt=\"silt-gameplay\" src=\"https://github.com/user-attachments/assets/63dae670-0f13-49f1-82c8-d9170e77fdcd\" />\r\n\r\n**Setup**\r\n- Title: Silt, PPSA03306 (`EP2520-PPSA03306_00-SIEESILTFULLGAME`), version 01.003.000, master 01.00. Unity (IL2CPP), FMOD.\r\n- AnyPS5: main at `ba2a0a31` plus the attached patch (12 files), built with WinLibs GCC 15.2.0 r7 (x86_64-ucrt-posix-seh).\r\n- Host: Windows 10.0.26200, AMD Radeon RX 5700 XT. The window title shows 44 to 52 FPS in game.\r\n- Inputs: eboot.bin and all modules unwrapped from SELF to plain ELF. `Media/Modules/*.prx` copied into `sce_module/`, `Media/Plugins/*.prx` copied into `prx/`.\r\n- Command: `relinker --windows --windows-diagnostics --registry eboot.elf app.exe`, run with `APS5_IGNORE_MSAA=1` (added by the patch).\r\n- Sound: audible in the menu and in game.\r\n\r\n**What works with the patch**\r\n- All 15 bundled modules and every system library load; no absent imports.\r\n- FMOD opens its four banks and audio plays.\r\n- Save data mounts and `GameSave.bin` is written.\r\n- Menu, new game, gameplay, and area transitions.\r\n\r\n**1. Multisampling**\r\n\r\nUnpatched, the first scene draw is rejected:\r\n\r\n```\r\n[videoout] presentation failed: multisampling or coverage conversion is unsupported (register 0x2f8 = 0x0020c002)\r\n```\r\n\r\nThe scene target is 4x (2x once the saved settings load: `0x00108001`), uncompressed: `CB_COLOR_INFO 0x00040718`, `CB_COLOR_ATTRIB 0x00012000`. Each frame ends the scene with a hardware resolve, `CB_COLOR_CONTROL 0x00cc0030` (mode 3), from color 0 to a single-sample color 1 that the bloom chain",
+          "comments_count": 2,
+          "media_links": [],
+          "attachment_links": [
+            "https://github.com/user-attachments/assets/63dae670-0f13-49f1-82c8-d9170e77fdcd",
+            "https://github.com/user-attachments/assets/b4b00988-3da6-40cd-bff0-176a481b89c8",
+            "https://github.com/user-attachments/files/33285124/anyps5-silt-bringup.patch",
+            "https://github.com/user-attachments/files/33285217/silt-run7-trimmed.log"
+          ],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        },
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/2126",
+          "source_title": "Slit (PPSA03306) on Linux",
+          "discussion_number": 2126,
+          "posted_at": "2026-10-09T09:34:05Z",
+          "updated_at": "2026-10-10T14:47:49Z",
+          "source_excerpt_for_review": "The game crashes after showing the window.\r\nIt's a unity engine game\r\n\r\nIl2CppUserAssemblies.prx.guest.prx: undefined symbol: 1xvtUVx1-Sg\r\n\r\n\r\nThe ELF has dependency on these two-\r\n1.Il2CppUserAssemblies.prx\r\n2.PS5Util.prx ",
+          "comments_count": 1,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Sonic Origins Plus",
+      "reported_title_id": "PPSA05324",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/2021",
+          "source_title": "Sonic Origins Plus (PPSA05324) on Linux",
+          "discussion_number": 2021,
+          "posted_at": "2026-10-09T05:13:32Z",
+          "updated_at": "2026-10-10T01:06:32Z",
+          "source_excerpt_for_review": "## Tested\n\n- **Title:** Sonic Origins, PPSA05324, v02.002.000. Base game only: no add-on entitlements configured, so the Plus content is not tested.\n- **Host:**\n  - Ubuntu 26.04.1 (GNOME, Wayland; the window goes through XWayland), Intel Core i7-14700KF (28 threads), 14 GB RAM.\n  - AMD Radeon R9 380 2 GB (Tonga, GFX8, subgroup 64), RADV / Mesa 26.0.8. It has no `shaderResourceMinLod` and no `shaderFloat16`.\n  - Relinked for Linux with no options. Release build, GCC 15.2, `main` f1451396.\n  - The dump's `eboot.bin` and `sce_module/{libc,libSceNpCppWebApi}.prx` are fake-signed SELF containers. Their segments are plaintext and uncompressed, so they were unwrapped to plain ELF with a small script before relinking (no decryption).\n- **Last update:** 2026-10-09, [update 5](https://github.com/boykopovar/AnyPS5/discussions/2021#discussioncomment-18844907). #2004 is merged, #2022 is approved, #2023 has the fix PRs #2133 and #2140, and #2357 fixes the white screen. Four speed changes are branches on my fork, since the PR intake rule closes new PRs (#2479 was the first): [`fix/agc-alias-one-slice-array`](https://github.com/NahuelGenchi/AnyPS5/tree/fix/agc-alias-one-slice-array), [`perf/agc-share-one-slice-image`](https://github.com/NahuelGenchi/AnyPS5/tree/perf/agc-share-one-slice-image), [`fix/agc-resident-present-uint`](https://github.com/NahuelGenchi/AnyPS5/tree/fix/agc-resident-present-uint) and [`perf/agc-device-pool-heap-budget`](https://github.com/NahuelGenchi/AnyPS5/tree/perf/agc-device-pool-heap-budget).\n\n## Status\n\nIn game, Sonic 1 only so far. The title runs with the open pull requests below, a local workaround for A, and a larger GTT on the host. It reaches its main menu, and Sonic 1 plays at 51 to 60 fps, where 60 is full speed: Green Hill Zone and Marble Zone Act 1 w",
+          "comments_count": 5,
+          "media_links": [
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/autosave-notice.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/boot-sequence-2.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/boot-sequence.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/character-select.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/green-hill-1.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/green-hill-2.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/green-hill-3.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/green-hill-act2-2.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/green-hill-title-card.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/knuckles-green-hill-1.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/knuckles-green-hill-2.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/main-menu-start.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/marble-zone-1.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/marble-zone-2.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/marble-zone-3.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/marble-zone-4.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/sega-logo.png",
+            "https://raw.githubusercontent.com/NahuelGenchi/AnyPS5/bringup-media/sonic/2026-10-09/title-screen.png"
+          ],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Stray",
+      "reported_title_id": "PPSA02100",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/2461",
+          "source_title": "Stray (PPSA02100) on Linux",
+          "discussion_number": 2461,
+          "posted_at": "2026-10-09T22:05:14Z",
+          "updated_at": "2026-10-09T22:05:25Z",
+          "source_excerpt_for_review": "## Tested\n\n- Title: Stray, PPSA02100 v1.05, Unreal Engine 4. Relinked with its own `sce_module` (libc, libSceFace, libSceFaceTracker, libSceJobManager, libSceNpCppWebApi, libScePfs). Fresh save data.\n- Host: Nobara Linux 44 (kernel 7.2), Ryzen 5 7600X, RTX 5070 Ti (NVIDIA 595.91.07), 32 GB, GCC 16 Release build.\n- Last update: 2026-10-09\n\n## Status\n\n**`main` only (8b393b6e):** it stops 9 s after launch, after the Vulkan device and shader disk cache come up and before any window opens, with `computed/data-dependent s_swappc_b64 call target at program counter 0x00000074 is not statically resolvable` (#1817).\n\n**`main` + the PRs below:** it boots to the first-boot brightness calibration screen (\"Adjust the value until the image on the left disappears...\"), which renders correctly and holds 57 to 58 fps. Two 10-minute runs had no crash (about 20,000 frames each). I didn't send input, so nothing past that screen was tested. Shader registration takes most of the first 3.5 minutes before the window appears.\n\n## How to run it\n\nThere's no public branch yet. Apply these to `main` 8b393b6e in this order: #1836, #2282, #2141, #1893, #1904 with #1934, #1902, #1928, #1837, #425, #2076, #1077, then the `PA_CL_VS_OUT_CNTL` preparation change (see F below). Several of these conflict with each other (see the open issues), and I resolved the conflicts locally.\n\n## Performance\n\n| | Today, `main` only | Today, `main` + the PRs below |\n|---|---|---|\n| Furthest point | stops at 9 s, no window | brightness calibration screen (first boot) |\n| fps | none | 57-58, steady for 10 min |\n\n## Open issues\n\n| | Issue | Status |\n|---|---|---|\n| A | Compute shaders that call through a computed `s_swappc_b64` target (#1817) | Deferred by #1836 |\n| B | Image heap capacity (#1789): the storage heap of 4 and ",
+          "comments_count": 0,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    },
+    {
+      "name": "Wobbly Life",
+      "reported_title_id": "PPSA29413",
+      "identity_scope": "Reported upstream title ID; edition/region still requires review.",
+      "reports": [
+        {
+          "source_url": "https://github.com/boykopovar/AnyPS5/discussions/2211",
+          "source_title": "Wobbly Life (PPSA29413) on Linux",
+          "discussion_number": 2211,
+          "posted_at": "2026-10-09T11:45:01Z",
+          "updated_at": "2026-10-10T13:44:10Z",
+          "source_excerpt_for_review": "# Wobbly Life (PPSA29413) on Linux\n\n## Tested\n\n- **Title:** Wobbly Life, PPSA29413 (`UP7742-PPSA29413_00-WOBBLYLIFEEUUSXX`), content version 01.160.000. Unity 2022.3.62f2, IL2CPP, FMOD, EOS (Epic Online Services plugins + vendored C# SDK), Rewired input, UMod arcade mods.\n- **Host:** Linux x86-64 (CachyOS), Intel i5-12400, NVIDIA GeForce RTX 3060 Ti. Relinked with `--registry --module-dir Media/Plugins --to-intel` (`--to-intel` required: the title ships AMD-only `insertq`, fatal SIGILL on Intel otherwise).\n- **Last update:** 2026-10-10\n\n## Status\n\n**Boots into arcade content streaming with rendering.** Unity bootstrap, IL2CPP metadata, Addressables catalogs, FMOD banks (Master/Loading/PS5/Game), PSN/EOS/FMOD/burst plugins load with start arguments, GC stop-the-world via SIGUSR1 works, ~80+ shader-cache hits, 1920x1080 targets present. Import audit: 0 absent, 443 implemented, 19 stubs, 152 module-bound.\n\n**Open problem: one managed `System.FormatException: \"Unrecognized Guid format.\"`** deterministically ~60–90 s in, while streaming arcade bundles (right after `resources.assets`), terminating the run. Forensics so far: no missing files (extraction verified complete), no network sockets, no save/prefs I/O, no directory enumeration, no `sceNpAuth` ticket requests, Rewired (`ControllerElementIdentifier`, `hardwareGuid`/`deviceInstanceGuid` machinery) and game-code `*GuidStr` fields (jobs/mods/arcade: `miningAreaGuidStr`, `ModGUIDComponent`, …) adjacent in the managed heap, EOSSDK loads shortly before the crash window. The Guid input string is not stored in the exception object; caller not yet identified.\n\n## Still needed beyond `main`\n\nUpdate: #1102, #1503, #1534, #1902 and #1928 have merged since. The local patch is 42 lines in one relinker file (#2212); everything else is",
+          "comments_count": 0,
+          "media_links": [],
+          "attachment_links": [],
+          "publication_state": "Pending structured editorial review; not independently reproduced.",
+          "media_policy": "Reference original source; verify attribution/permission before displaying media. No generated images presented as gameplay."
+        }
+      ]
+    }
+  ],
+  "pagination_complete": true
+}

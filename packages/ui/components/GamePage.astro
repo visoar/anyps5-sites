@@ -1,0 +1,26 @@
+---
+import Layout from './Layout.astro';
+import Icon from './Icon.astro';
+import {localPath,origin,t,dateLabel,reportCount,type Locale} from '../../content/locales';
+import {bestStage,stageNeedsPatches} from '../../content/games';
+import {REVIEW_DATE,type Game} from '../../content/model';
+const {game,locale}=Astro.props as {game:Game;locale:Locale};
+const path='/games/'+game.slug+'/';
+const description=game.name+' · '+game.titleId+' · '+t(locale,'conditions');
+const structured={'@context':'https://schema.org','@type':'Article',headline:game.name+' · AnyPS5 '+t(locale,'compatibility'),description,inLanguage:locale,url:origin('games')+localPath(path,locale),dateModified:REVIEW_DATE,about:{'@type':'VideoGame',name:game.name,identifier:game.titleId},citation:game.reports.map(r=>r.source),author:{'@type':'Organization',name:'AnyPS5 community resources'}};
+---
+<Layout {locale} site="games" {path} title={game.name+' · '+t(locale,'compatibility')} {description} {structured}>
+ <div class="wrap game-detail"><a class="back-link" href={localPath('/',locale)}><Icon name="arrowRight"/>{t(locale,'backGames')}</a><header class="game-heading"><div><p class="eyebrow"><bdi>{game.titleId}</bdi> / {t(locale,'compatibility')}</p><h1 dir="auto">{game.name}</h1><p class="lede">{t(locale,'conditions')}</p></div><span class:list={['badge','large',stageNeedsPatches(game)?'experimental':bestStage(game)]}>{t(locale,bestStage(game))}{stageNeedsPatches(game)&&' · '+t(locale,'localPatch')}<Icon name="git"/></span></header>
+ <div class="game-meta"><span>{reportCount(locale,game.reports.length)}</span><span><Icon name="clock"/>{t(locale,'lastReview')} {dateLabel(REVIEW_DATE,locale)}</span><a href={localPath('/methodology/',locale)}>{t(locale,'methodology')}<Icon/></a></div>
+ <div class="game-layout"><aside class="toc game-toc"><p class="eyebrow">{t(locale,'onThisPage')}</p><nav>{game.reports.map(r=><a href={'#report-'+r.id}>{t(locale,r.platform)} · {t(locale,r.evidence)}</a>)}<a href="#identity">{t(locale,'identity')}</a><a href="#media">{t(locale,'media')}</a></nav><p>{t(locale,'sourceOnly')}</p></aside><div class="reports">
+  {game.reports.map(report=><section class="report-card" id={'report-'+report.id}><div class="report-heading"><div><p class="eyebrow">{t(locale,report.evidence)} · {t(locale,report.platform)}</p><h2>{t(locale,report.stage)}</h2></div><span class:list={['badge',report.patched?'experimental':'unverified']}>{t(locale,report.patched?'experimental':'reported')}</span></div><p class="report-summary">{report.summary[locale]}</p>
+   <dl class="report-fields">{[[t(locale,'build'),report.build],[t(locale,'platform'),report.os],[t(locale,'version'),report.version],[t(locale,'cpu'),report.cpu],[t(locale,'gpu'),report.gpu],[t(locale,'driver'),report.driver],[t(locale,'testDate'),report.testDate?dateLabel(report.testDate,locale):null]].map(([label,value])=><div><dt>{label}</dt><dd>{value?<bdi>{value}</bdi>:<span class="unknown">{t(locale,'unknown')}</span>}</dd></div>)}</dl>
+   <div class="benchmark-section"><h3>{t(locale,'benchmarks')}</h3>{report.benchmarks.length?report.benchmarks.map(b=><div class="benchmark"><strong dir="ltr">{b.fps}<small>FPS</small></strong><p><bdi>{b.gpu}</bdi><br/><span><bdi>{b.cpu||t(locale,'unknown')}</bdi></span></p><span class="benchmark-source">{t(locale,'reported')}</span></div>):<p class="muted">{t(locale,'noBenchmark')}</p>}</div>
+   <details class="scope-detail"><summary>{t(locale,'scope')}<Icon name="caret"/></summary><p>{report.summary[locale]}</p><p>{t(locale,'sourceOnly')} {t(locale,'experimentalNote')}</p></details>
+   <div class="report-source"><a href={report.source}>{t(locale,'viewSource')}<Icon/></a><span>{t(locale,'sourceDate')} {report.updated?<time datetime={report.updated}>{dateLabel(report.updated,locale)}</time>:t(locale,'unknown')}</span></div>
+  </section>)}
+  <section id="identity" class="detail-section"><h2>{t(locale,'identity')}</h2><dl class="report-fields"><div><dt>{t(locale,'game')}</dt><dd dir="auto">{game.name}</dd></div><div><dt>{t(locale,'titleId')}</dt><dd><bdi>{game.titleId}</bdi></dd></div><div><dt>{t(locale,'edition')}</dt><dd>{game.edition||t(locale,'unknown')}</dd></div></dl></section>
+  <section id="media" class="detail-section"><h2>{t(locale,'media')}</h2><p>{t(locale,'sourceOnly')}</p><ul class="source-list">{game.reports.map(report=><li><a href={report.source}><span>{t(locale,report.platform)} · {t(locale,report.evidence)} · {t(locale,'viewSource')}</span><Icon/></a>{report.media.slice(0,3).map((url,index)=><a class="media-reference" href={url}><span>{t(locale,'media')} · {index+1} · <bdi>{new URL(url).hostname}</bdi></span><Icon/></a>)}</li>)}</ul><p class="muted">{t(locale,'sourcePolicy')} · <a href={localPath('/methodology/#corrections',locale)}>{t(locale,'readMore')}</a></p></section>
+  <section class="contribute-banner compact"><div><h2>{t(locale,'contribute')}</h2><p>{t(locale,'conditions')}</p></div><a class="button primary" href={localPath('/contribute/',locale)}>{t(locale,'reportTemplate')}<Icon/></a></section>
+ </div></div></div>
+</Layout>

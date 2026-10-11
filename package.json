@@ -1,0 +1,36 @@
+{
+  "name": "anyps5-sites",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "anyps5.cc",
+    "anyps5.games"
+  ],
+  "scripts": {
+    "dev:cc": "npm run dev --workspace=anyps5.cc",
+    "dev:games": "npm run dev --workspace=anyps5.games",
+    "check": "tsx scripts/validate-content.ts",
+    "build:cc": "npm run check && npm run build --workspace=anyps5.cc",
+    "build:games": "npm run check && npm run build --workspace=anyps5.games",
+    "build": "npm run build:cc && npm run build:games && tsx scripts/verify-sites.ts",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.4",
+    "@fontsource-variable/inter": "5.3.0",
+    "@fontsource/noto-sans-arabic": "^5.2.0",
+    "@phosphor-icons/core": "2.1.1",
+    "astro": "7.3.8",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "node-html-parser": "^9.0.4",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

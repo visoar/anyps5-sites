@@ -1,0 +1,53 @@
+{
+  "created_at": "2026-10-11T08:18:35.423650+00:00",
+  "upstream_tree_observed": "6170ce820cfc53c764da8d88a789765cadb7b96e",
+  "snapshot_note": "Live main and API endpoints were read over a collection interval; raw files are dated snapshots, not one atomic commit snapshot.",
+  "official_markdown_documents": 11,
+  "issues_and_prs": 3267,
+  "unique_api_objects": 3267,
+  "issues_excluding_prs": 394,
+  "pull_requests": 2873,
+  "discussions": 49,
+  "game_discussions": 30,
+  "reported_game_ids": 25,
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "published_at_utc": "2026-09-28T23:34:39Z",
+      "url": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "published_at_utc": "2026-09-28T21:53:19Z",
+      "url": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.0"
+    }
+  ],
+  "repository_snapshot": {
+    "stargazers_count": 27709,
+    "forks_count": 2344,
+    "open_issues_count": 287,
+    "pushed_at": "2026-10-11T08:07:22Z"
+  },
+  "progress_snapshot": {
+    "libraries": {
+      "done": 2839,
+      "total": 3318,
+      "percent": 85.56
+    },
+    "shaders": {
+      "done": 1166,
+      "total": 1166,
+      "percent": 100.0
+    }
+  },
+  "current_link_checks": [
+    {
+      "url": "https://github.com/OverkillLabs/DeadCells-PS5-Native",
+      "result": "GitHub API and current web read returned 404; cached search result remains. Do not use as verified active download."
+    },
+    {
+      "url": "https://github.com/boykopovar/AnyPS5/issues/38",
+      "result": "Current GitHub API returned 404; cached search result remains. Historical coverage only."
+    }
+  ]
+}

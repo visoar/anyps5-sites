@@ -1,0 +1,9 @@
+---
+import {getRoutes} from '../../../packages/content/routes';
+import HomePage from '../../../packages/ui/components/HomePage.astro';
+import ArticlePage from '../../../packages/ui/components/ArticlePage.astro';
+import GamePage from '../../../packages/ui/components/GamePage.astro';
+export function getStaticPaths(){return getRoutes('games')}
+const {locale,kind,article,game}=Astro.props;
+---
+{kind==='home'?<HomePage {locale} site="games"/>:kind==='game'?<GamePage {locale} {game}/>:<ArticlePage {locale} {article} site="games"/>}

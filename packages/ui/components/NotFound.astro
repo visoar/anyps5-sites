@@ -1,0 +1,8 @@
+---
+import Layout from './Layout.astro';
+import {t} from '../../content/locales';
+const {site}=Astro.props;
+---
+<Layout locale="en" {site} title={t('en','notFound')} description={t('en','notFoundText')} noindex>
+ <div class="wrap empty-state"><p class="eyebrow">404 / AnyPS5</p><h1>{t('en','notFound')}</h1><p>{t('en','notFoundText')}</p><a href="/" class="button primary">{t('en','home')}</a></div>
+</Layout>

@@ -1,0 +1,1043 @@
+{
+  "captured_date": "2026-10-11",
+  "query": "AnyPS5",
+  "type": "Search term",
+  "category": "All categories",
+  "search_type": "Google Web Search",
+  "geography": "Worldwide",
+  "source": "https://trends.google.com/trends/explore?date=today%201-m&q=AnyPS5",
+  "methodology": "https://support.google.com/trends/answer/4365533?hl=en",
+  "limitation": "Regional 0–100 indices describe query share of all local searches, not absolute search counts. Blank exports are unavailable, not zero. Each time window is independently normalized. Sampling, partial current day and country/search-language mismatch limit language-demand inference.",
+  "windows": {
+    "30d": {
+      "export_header": [
+        "国家/地区",
+        "AnyPS5: (2026/9/11 - 2026/10/11)"
+      ],
+      "ranked_regions": [
+        {
+          "country_zh": "巴林",
+          "relative_interest": 100
+        },
+        {
+          "country_zh": "突尼斯",
+          "relative_interest": 97
+        },
+        {
+          "country_zh": "约旦",
+          "relative_interest": 93
+        },
+        {
+          "country_zh": "阿尔巴尼亚",
+          "relative_interest": 89
+        },
+        {
+          "country_zh": "摩洛哥",
+          "relative_interest": 86
+        },
+        {
+          "country_zh": "葡萄牙",
+          "relative_interest": 79
+        },
+        {
+          "country_zh": "罗马尼亚",
+          "relative_interest": 75
+        },
+        {
+          "country_zh": "阿尔及利亚",
+          "relative_interest": 75
+        },
+        {
+          "country_zh": "巴基斯坦",
+          "relative_interest": 74
+        },
+        {
+          "country_zh": "立陶宛",
+          "relative_interest": 74
+        },
+        {
+          "country_zh": "伊拉克",
+          "relative_interest": 70
+        },
+        {
+          "country_zh": "科威特",
+          "relative_interest": 67
+        },
+        {
+          "country_zh": "黎巴嫩",
+          "relative_interest": 58
+        },
+        {
+          "country_zh": "塞尔维亚",
+          "relative_interest": 56
+        },
+        {
+          "country_zh": "爱沙尼亚",
+          "relative_interest": 55
+        },
+        {
+          "country_zh": "波斯尼亚和黑塞哥维那",
+          "relative_interest": 55
+        },
+        {
+          "country_zh": "以色列",
+          "relative_interest": 55
+        },
+        {
+          "country_zh": "新西兰",
+          "relative_interest": 54
+        },
+        {
+          "country_zh": "阿曼",
+          "relative_interest": 54
+        },
+        {
+          "country_zh": "沙特阿拉伯",
+          "relative_interest": 53
+        },
+        {
+          "country_zh": "保加利亚",
+          "relative_interest": 52
+        },
+        {
+          "country_zh": "匈牙利",
+          "relative_interest": 52
+        },
+        {
+          "country_zh": "希腊",
+          "relative_interest": 51
+        },
+        {
+          "country_zh": "塞浦路斯",
+          "relative_interest": 51
+        },
+        {
+          "country_zh": "挪威",
+          "relative_interest": 50
+        },
+        {
+          "country_zh": "捷克",
+          "relative_interest": 50
+        },
+        {
+          "country_zh": "加拿大",
+          "relative_interest": 49
+        },
+        {
+          "country_zh": "尼泊尔",
+          "relative_interest": 48
+        },
+        {
+          "country_zh": "斯洛文尼亚",
+          "relative_interest": 48
+        },
+        {
+          "country_zh": "荷兰",
+          "relative_interest": 45
+        },
+        {
+          "country_zh": "克罗地亚",
+          "relative_interest": 44
+        },
+        {
+          "country_zh": "瑞典",
+          "relative_interest": 43
+        },
+        {
+          "country_zh": "澳大利亚",
+          "relative_interest": 43
+        },
+        {
+          "country_zh": "格鲁吉亚",
+          "relative_interest": 43
+        },
+        {
+          "country_zh": "芬兰",
+          "relative_interest": 43
+        },
+        {
+          "country_zh": "拉脱维亚",
+          "relative_interest": 41
+        },
+        {
+          "country_zh": "阿拉伯联合酋长国",
+          "relative_interest": 41
+        },
+        {
+          "country_zh": "斯洛伐克",
+          "relative_interest": 40
+        },
+        {
+          "country_zh": "丹麦",
+          "relative_interest": 38
+        },
+        {
+          "country_zh": "比利时",
+          "relative_interest": 34
+        },
+        {
+          "country_zh": "德国",
+          "relative_interest": 34
+        },
+        {
+          "country_zh": "埃及",
+          "relative_interest": 34
+        },
+        {
+          "country_zh": "奥地利",
+          "relative_interest": 33
+        },
+        {
+          "country_zh": "多米尼加共和国",
+          "relative_interest": 32
+        },
+        {
+          "country_zh": "乌拉圭",
+          "relative_interest": 32
+        },
+        {
+          "country_zh": "瑞士",
+          "relative_interest": 31
+        },
+        {
+          "country_zh": "中国",
+          "relative_interest": 31
+        },
+        {
+          "country_zh": "英国",
+          "relative_interest": 31
+        },
+        {
+          "country_zh": "爱尔兰",
+          "relative_interest": 31
+        },
+        {
+          "country_zh": "波兰",
+          "relative_interest": 30
+        },
+        {
+          "country_zh": "新加坡",
+          "relative_interest": 29
+        },
+        {
+          "country_zh": "西班牙",
+          "relative_interest": 29
+        },
+        {
+          "country_zh": "意大利",
+          "relative_interest": 29
+        },
+        {
+          "country_zh": "斯里兰卡",
+          "relative_interest": 28
+        },
+        {
+          "country_zh": "哥斯达黎加",
+          "relative_interest": 27
+        },
+        {
+          "country_zh": "孟加拉国",
+          "relative_interest": 26
+        },
+        {
+          "country_zh": "南非",
+          "relative_interest": 26
+        },
+        {
+          "country_zh": "马来西亚",
+          "relative_interest": 25
+        },
+        {
+          "country_zh": "美国",
+          "relative_interest": 23
+        },
+        {
+          "country_zh": "智利",
+          "relative_interest": 21
+        },
+        {
+          "country_zh": "菲律宾",
+          "relative_interest": 19
+        },
+        {
+          "country_zh": "法国",
+          "relative_interest": 19
+        },
+        {
+          "country_zh": "阿根廷",
+          "relative_interest": 19
+        },
+        {
+          "country_zh": "巴西",
+          "relative_interest": 18
+        },
+        {
+          "country_zh": "香港",
+          "relative_interest": 18
+        },
+        {
+          "country_zh": "土耳其",
+          "relative_interest": 16
+        },
+        {
+          "country_zh": "印度",
+          "relative_interest": 15
+        },
+        {
+          "country_zh": "俄罗斯",
+          "relative_interest": 14
+        },
+        {
+          "country_zh": "印度尼西亚",
+          "relative_interest": 14
+        },
+        {
+          "country_zh": "韩国",
+          "relative_interest": 13
+        },
+        {
+          "country_zh": "肯尼亚",
+          "relative_interest": 13
+        },
+        {
+          "country_zh": "乌克兰",
+          "relative_interest": 11
+        },
+        {
+          "country_zh": "越南",
+          "relative_interest": 10
+        },
+        {
+          "country_zh": "哈萨克斯坦",
+          "relative_interest": 10
+        },
+        {
+          "country_zh": "哥伦比亚",
+          "relative_interest": 9
+        },
+        {
+          "country_zh": "伊朗",
+          "relative_interest": 9
+        },
+        {
+          "country_zh": "委内瑞拉",
+          "relative_interest": 9
+        },
+        {
+          "country_zh": "泰国",
+          "relative_interest": 8
+        },
+        {
+          "country_zh": "墨西哥",
+          "relative_interest": 8
+        },
+        {
+          "country_zh": "尼日利亚",
+          "relative_interest": 7
+        },
+        {
+          "country_zh": "秘鲁",
+          "relative_interest": 5
+        },
+        {
+          "country_zh": "台湾",
+          "relative_interest": 4
+        },
+        {
+          "country_zh": "日本",
+          "relative_interest": 2
+        }
+      ],
+      "no_numeric_result": [
+        "北马其顿",
+        "科索沃",
+        "马耳他",
+        "马尔代夫",
+        "卢森堡",
+        "苏里南",
+        "毛里求斯",
+        "巴勒斯坦",
+        "利比亚",
+        "黑山",
+        "特立尼达和多巴哥",
+        "文莱",
+        "波多黎各",
+        "冰岛",
+        "卡塔尔",
+        "摩尔多瓦",
+        "马达加斯加",
+        "牙买加",
+        "博茨瓦纳",
+        "柬埔寨",
+        "留尼汪",
+        "阿塞拜疆",
+        "亚美尼亚",
+        "蒙古",
+        "叙利亚",
+        "也门",
+        "赞比亚",
+        "巴拉圭",
+        "洪都拉斯",
+        "加纳",
+        "塔吉克斯坦",
+        "古巴",
+        "危地马拉",
+        "埃塞俄比亚",
+        "萨尔瓦多",
+        "塞内加尔",
+        "玻利维亚",
+        "厄瓜多尔",
+        "巴拿马",
+        "尼加拉瓜",
+        "白俄罗斯",
+        "津巴布韦",
+        "乌兹别克斯坦",
+        "吉尔吉斯斯坦",
+        "坦桑尼亚",
+        "缅甸",
+        "乌干达",
+        "圣赫勒拿",
+        "阿富汗",
+        "阿鲁巴",
+        "列支敦士登",
+        "圣卢西亚",
+        "澳门",
+        "法属圣马丁",
+        "安哥拉",
+        "摩纳哥",
+        "圣基茨和尼维斯",
+        "基里巴斯",
+        "泽西岛",
+        "英属印度洋领地",
+        "马绍尔群岛",
+        "马恩岛",
+        "马里",
+        "海地",
+        "赫德岛和麦克唐纳群岛",
+        "圭亚那",
+        "关岛",
+        "北马里亚纳群岛",
+        "莫桑比克",
+        "毛里塔尼亚",
+        "蒙特塞拉特",
+        "马提尼克",
+        "法属圭亚那",
+        "马拉维",
+        "格陵兰",
+        "马约特",
+        "纳米比亚",
+        "新喀里多尼亚",
+        "尼日尔",
+        "诺福克岛",
+        "格林纳达",
+        "赤道几内亚",
+        "纽埃",
+        "几内亚比绍",
+        "冈比亚",
+        "瓜德罗普",
+        "瑙鲁",
+        "几内亚",
+        "直布罗陀",
+        "根西岛",
+        "加蓬",
+        "皮特凯恩群岛",
+        "密克罗尼西亚",
+        "法罗群岛",
+        "帕劳",
+        "巴布亚新几内亚",
+        "福克兰群岛（马尔维纳斯群岛）",
+        "斐济",
+        "朝鲜",
+        "西撒哈拉",
+        "厄立特里亚",
+        "多米尼克",
+        "法属波利尼西亚",
+        "吉布提",
+        "开曼群岛",
+        "圣诞岛",
+        "库拉索",
+        "卢旺达",
+        "佛得角",
+        "苏丹",
+        "科摩罗",
+        "库克群岛",
+        "南乔治亚和南桑威奇群岛",
+        "刚果（布）",
+        "斯瓦尔巴和扬马延",
+        "所罗门群岛",
+        "塞拉利昂",
+        "刚果（金）",
+        "圣马力诺",
+        "索马里",
+        "圣皮埃尔和密克隆群岛",
+        "喀麦隆",
+        "南苏丹",
+        "圣多美和普林西比",
+        "科特迪瓦",
+        "科科斯（基林）群岛",
+        "中非共和国",
+        "布韦岛",
+        "斯威士兰",
+        "荷属圣马丁",
+        "塞舌尔",
+        "不丹",
+        "特克斯和凯科斯群岛",
+        "乍得",
+        "多哥",
+        "巴巴多斯",
+        "百慕大",
+        "托克劳",
+        "土库曼斯坦",
+        "东帝汶",
+        "汤加",
+        "伯利兹",
+        "圣巴泰勒米",
+        "巴哈马",
+        "图瓦卢",
+        "布基纳法索",
+        "荷属加勒比区",
+        "贝宁",
+        "布隆迪",
+        "美国本土外小岛屿",
+        "安提瓜和巴布达",
+        "法属南部领地",
+        "南极洲",
+        "梵蒂冈",
+        "圣文森特和格林纳丁斯",
+        "美属萨摩亚",
+        "英属维尔京群岛",
+        "美属维尔京群岛",
+        "安道尔",
+        "瓦努阿图",
+        "瓦利斯和富图纳",
+        "萨摩亚",
+        "奥兰群岛",
+        "安圭拉",
+        "利比里亚",
+        "老挝",
+        "莱索托"
+      ]
+    },
+    "7d": {
+      "export_header": [
+        "国家/地区",
+        "AnyPS5: (2026/10/4 16:05 - 2026/10/11 16:05)"
+      ],
+      "ranked_regions": [
+        {
+          "country_zh": "突尼斯",
+          "relative_interest": 100
+        },
+        {
+          "country_zh": "巴林",
+          "relative_interest": 95
+        },
+        {
+          "country_zh": "阿尔巴尼亚",
+          "relative_interest": 93
+        },
+        {
+          "country_zh": "约旦",
+          "relative_interest": 92
+        },
+        {
+          "country_zh": "摩洛哥",
+          "relative_interest": 92
+        },
+        {
+          "country_zh": "北马其顿",
+          "relative_interest": 79
+        },
+        {
+          "country_zh": "葡萄牙",
+          "relative_interest": 78
+        },
+        {
+          "country_zh": "巴基斯坦",
+          "relative_interest": 77
+        },
+        {
+          "country_zh": "伊拉克",
+          "relative_interest": 75
+        },
+        {
+          "country_zh": "科威特",
+          "relative_interest": 75
+        },
+        {
+          "country_zh": "罗马尼亚",
+          "relative_interest": 74
+        },
+        {
+          "country_zh": "阿尔及利亚",
+          "relative_interest": 73
+        },
+        {
+          "country_zh": "立陶宛",
+          "relative_interest": 72
+        },
+        {
+          "country_zh": "黎巴嫩",
+          "relative_interest": 60
+        },
+        {
+          "country_zh": "爱沙尼亚",
+          "relative_interest": 57
+        },
+        {
+          "country_zh": "新西兰",
+          "relative_interest": 56
+        },
+        {
+          "country_zh": "塞尔维亚",
+          "relative_interest": 55
+        },
+        {
+          "country_zh": "阿曼",
+          "relative_interest": 55
+        },
+        {
+          "country_zh": "沙特阿拉伯",
+          "relative_interest": 55
+        },
+        {
+          "country_zh": "挪威",
+          "relative_interest": 53
+        },
+        {
+          "country_zh": "尼泊尔",
+          "relative_interest": 52
+        },
+        {
+          "country_zh": "保加利亚",
+          "relative_interest": 51
+        },
+        {
+          "country_zh": "巴勒斯坦",
+          "relative_interest": 51
+        },
+        {
+          "country_zh": "以色列",
+          "relative_interest": 50
+        },
+        {
+          "country_zh": "斯洛文尼亚",
+          "relative_interest": 50
+        },
+        {
+          "country_zh": "塞浦路斯",
+          "relative_interest": 48
+        },
+        {
+          "country_zh": "波斯尼亚和黑塞哥维那",
+          "relative_interest": 48
+        },
+        {
+          "country_zh": "加拿大",
+          "relative_interest": 48
+        },
+        {
+          "country_zh": "荷兰",
+          "relative_interest": 48
+        },
+        {
+          "country_zh": "捷克",
+          "relative_interest": 47
+        },
+        {
+          "country_zh": "匈牙利",
+          "relative_interest": 47
+        },
+        {
+          "country_zh": "瑞典",
+          "relative_interest": 46
+        },
+        {
+          "country_zh": "希腊",
+          "relative_interest": 46
+        },
+        {
+          "country_zh": "克罗地亚",
+          "relative_interest": 45
+        },
+        {
+          "country_zh": "格鲁吉亚",
+          "relative_interest": 44
+        },
+        {
+          "country_zh": "澳大利亚",
+          "relative_interest": 44
+        },
+        {
+          "country_zh": "阿拉伯联合酋长国",
+          "relative_interest": 42
+        },
+        {
+          "country_zh": "芬兰",
+          "relative_interest": 42
+        },
+        {
+          "country_zh": "斯洛伐克",
+          "relative_interest": 40
+        },
+        {
+          "country_zh": "丹麦",
+          "relative_interest": 39
+        },
+        {
+          "country_zh": "拉脱维亚",
+          "relative_interest": 37
+        },
+        {
+          "country_zh": "德国",
+          "relative_interest": 36
+        },
+        {
+          "country_zh": "比利时",
+          "relative_interest": 35
+        },
+        {
+          "country_zh": "瑞士",
+          "relative_interest": 34
+        },
+        {
+          "country_zh": "埃及",
+          "relative_interest": 34
+        },
+        {
+          "country_zh": "奥地利",
+          "relative_interest": 34
+        },
+        {
+          "country_zh": "中国",
+          "relative_interest": 34
+        },
+        {
+          "country_zh": "波多黎各",
+          "relative_interest": 33
+        },
+        {
+          "country_zh": "英国",
+          "relative_interest": 33
+        },
+        {
+          "country_zh": "爱尔兰",
+          "relative_interest": 32
+        },
+        {
+          "country_zh": "新加坡",
+          "relative_interest": 31
+        },
+        {
+          "country_zh": "乌拉圭",
+          "relative_interest": 30
+        },
+        {
+          "country_zh": "波兰",
+          "relative_interest": 30
+        },
+        {
+          "country_zh": "多米尼加共和国",
+          "relative_interest": 29
+        },
+        {
+          "country_zh": "意大利",
+          "relative_interest": 27
+        },
+        {
+          "country_zh": "南非",
+          "relative_interest": 27
+        },
+        {
+          "country_zh": "哥斯达黎加",
+          "relative_interest": 27
+        },
+        {
+          "country_zh": "西班牙",
+          "relative_interest": 27
+        },
+        {
+          "country_zh": "斯里兰卡",
+          "relative_interest": 26
+        },
+        {
+          "country_zh": "马来西亚",
+          "relative_interest": 26
+        },
+        {
+          "country_zh": "孟加拉国",
+          "relative_interest": 25
+        },
+        {
+          "country_zh": "美国",
+          "relative_interest": 24
+        },
+        {
+          "country_zh": "法国",
+          "relative_interest": 20
+        },
+        {
+          "country_zh": "智利",
+          "relative_interest": 19
+        },
+        {
+          "country_zh": "阿根廷",
+          "relative_interest": 18
+        },
+        {
+          "country_zh": "菲律宾",
+          "relative_interest": 17
+        },
+        {
+          "country_zh": "香港",
+          "relative_interest": 16
+        },
+        {
+          "country_zh": "叙利亚",
+          "relative_interest": 16
+        },
+        {
+          "country_zh": "巴西",
+          "relative_interest": 15
+        },
+        {
+          "country_zh": "土耳其",
+          "relative_interest": 15
+        },
+        {
+          "country_zh": "印度",
+          "relative_interest": 15
+        },
+        {
+          "country_zh": "印度尼西亚",
+          "relative_interest": 15
+        },
+        {
+          "country_zh": "肯尼亚",
+          "relative_interest": 14
+        },
+        {
+          "country_zh": "俄罗斯",
+          "relative_interest": 13
+        },
+        {
+          "country_zh": "韩国",
+          "relative_interest": 13
+        },
+        {
+          "country_zh": "乌克兰",
+          "relative_interest": 10
+        },
+        {
+          "country_zh": "越南",
+          "relative_interest": 10
+        },
+        {
+          "country_zh": "哥伦比亚",
+          "relative_interest": 9
+        },
+        {
+          "country_zh": "泰国",
+          "relative_interest": 9
+        },
+        {
+          "country_zh": "委内瑞拉",
+          "relative_interest": 8
+        },
+        {
+          "country_zh": "伊朗",
+          "relative_interest": 8
+        },
+        {
+          "country_zh": "哈萨克斯坦",
+          "relative_interest": 8
+        },
+        {
+          "country_zh": "尼日利亚",
+          "relative_interest": 7
+        },
+        {
+          "country_zh": "墨西哥",
+          "relative_interest": 7
+        },
+        {
+          "country_zh": "秘鲁",
+          "relative_interest": 5
+        },
+        {
+          "country_zh": "台湾",
+          "relative_interest": 4
+        },
+        {
+          "country_zh": "日本",
+          "relative_interest": 1
+        }
+      ],
+      "no_numeric_result": [
+        "西撒哈拉",
+        "马耳他",
+        "马尔代夫",
+        "卢森堡",
+        "黑山",
+        "科索沃",
+        "文莱",
+        "利比亚",
+        "冰岛",
+        "摩尔多瓦",
+        "特立尼达和多巴哥",
+        "毛里求斯",
+        "卡塔尔",
+        "留尼汪",
+        "牙买加",
+        "柬埔寨",
+        "阿塞拜疆",
+        "亚美尼亚",
+        "蒙古",
+        "巴拉圭",
+        "马达加斯加",
+        "埃塞俄比亚",
+        "赞比亚",
+        "也门",
+        "塞内加尔",
+        "加纳",
+        "巴拿马",
+        "危地马拉",
+        "洪都拉斯",
+        "白俄罗斯",
+        "玻利维亚",
+        "萨尔瓦多",
+        "吉尔吉斯斯坦",
+        "厄瓜多尔",
+        "坦桑尼亚",
+        "尼加拉瓜",
+        "乌兹别克斯坦",
+        "乌干达",
+        "圣赫勒拿",
+        "阿鲁巴",
+        "津巴布韦",
+        "圣卢西亚",
+        "列支敦士登",
+        "阿富汗",
+        "莱索托",
+        "圣基茨和尼维斯",
+        "基里巴斯",
+        "泽西岛",
+        "澳门",
+        "法属圣马丁",
+        "英属印度洋领地",
+        "摩纳哥",
+        "马恩岛",
+        "海地",
+        "赫德岛和麦克唐纳群岛",
+        "圭亚那",
+        "马绍尔群岛",
+        "关岛",
+        "马里",
+        "法属圭亚那",
+        "缅甸",
+        "格陵兰",
+        "格林纳达",
+        "北马里亚纳群岛",
+        "莫桑比克",
+        "毛里塔尼亚",
+        "蒙特塞拉特",
+        "马提尼克",
+        "赤道几内亚",
+        "马拉维",
+        "几内亚比绍",
+        "马约特",
+        "纳米比亚",
+        "新喀里多尼亚",
+        "尼日尔",
+        "诺福克岛",
+        "冈比亚",
+        "瓜德罗普",
+        "纽埃",
+        "几内亚",
+        "直布罗陀",
+        "根西岛",
+        "瑙鲁",
+        "加蓬",
+        "密克罗尼西亚",
+        "法罗群岛",
+        "福克兰群岛（马尔维纳斯群岛）",
+        "皮特凯恩群岛",
+        "斐济",
+        "厄立特里亚",
+        "帕劳",
+        "巴布亚新几内亚",
+        "多米尼克",
+        "吉布提",
+        "朝鲜",
+        "开曼群岛",
+        "圣诞岛",
+        "库拉索",
+        "法属波利尼西亚",
+        "古巴",
+        "佛得角",
+        "科摩罗",
+        "库克群岛",
+        "卢旺达",
+        "刚果（布）",
+        "苏丹",
+        "刚果（金）",
+        "喀麦隆",
+        "南乔治亚和南桑威奇群岛",
+        "科特迪瓦",
+        "斯瓦尔巴和扬马延",
+        "所罗门群岛",
+        "塞拉利昂",
+        "科科斯（基林）群岛",
+        "圣马力诺",
+        "索马里",
+        "圣皮埃尔和密克隆群岛",
+        "中非共和国",
+        "南苏丹",
+        "圣多美和普林西比",
+        "苏里南",
+        "博茨瓦纳",
+        "布韦岛",
+        "不丹",
+        "斯威士兰",
+        "荷属圣马丁",
+        "塞舌尔",
+        "巴巴多斯",
+        "特克斯和凯科斯群岛",
+        "乍得",
+        "多哥",
+        "百慕大",
+        "塔吉克斯坦",
+        "托克劳",
+        "土库曼斯坦",
+        "东帝汶",
+        "汤加",
+        "伯利兹",
+        "圣巴泰勒米",
+        "巴哈马",
+        "图瓦卢",
+        "布基纳法索",
+        "荷属加勒比区",
+        "贝宁",
+        "布隆迪",
+        "美国本土外小岛屿",
+        "安提瓜和巴布达",
+        "法属南部领地",
+        "南极洲",
+        "梵蒂冈",
+        "圣文森特和格林纳丁斯",
+        "美属萨摩亚",
+        "英属维尔京群岛",
+        "美属维尔京群岛",
+        "安道尔",
+        "瓦努阿图",
+        "瓦利斯和富图纳",
+        "萨摩亚",
+        "奥兰群岛",
+        "安圭拉",
+        "利比里亚",
+        "老挝",
+        "安哥拉"
+      ]
+    }
+  }
+}

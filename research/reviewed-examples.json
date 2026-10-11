@@ -1,0 +1,79 @@
+{
+  "editorial_review_date": "2026-10-11",
+  "local_game_tests_performed": false,
+  "records": [
+    {
+      "game": "Dreaming Sarah",
+      "reported_title_id": "PPSA02929",
+      "platform": "Windows",
+      "evidence": "official_table",
+      "milestone": "in_game",
+      "source_conclusion": "playable",
+      "source_url": "https://github.com/boykopovar/AnyPS5/blob/main/docs/user/COMPATIBILITY.md",
+      "anyps5_build": null,
+      "game_version": null,
+      "test_date": null,
+      "benchmarks": [
+        {
+          "cpu": "Intel i5-7500 3.4 GHz",
+          "gpu": "GTX 1050 Ti",
+          "reported_fps": 60
+        },
+        {
+          "cpu": "Intel i5-7200 2.5 GHz",
+          "gpu": "Intel HD Graphics 620",
+          "reported_fps": 36
+        }
+      ],
+      "limitations": [
+        "Hardware-specific source reports, not our measurements.",
+        "Linux is unknown in the official table.",
+        "No full-game-completion claim."
+      ]
+    },
+    {
+      "game": "Dreaming Sarah",
+      "reported_title_id": "PPSA02929",
+      "platform": "Windows 11 23H2",
+      "evidence": "community_report",
+      "milestone": "in_game",
+      "source_conclusion": "Opening forest area reportedly runs at about 60 FPS with a local fix.",
+      "source_url": "https://github.com/boykopovar/AnyPS5/discussions/3018",
+      "anyps5_build": "379d8b4e + 8acd0113",
+      "gpu": "AMD Radeon RX 6700 XT",
+      "driver": "Adrenalin 25.10.45.05",
+      "test_date": null,
+      "source_update_date": "2026-10-11",
+      "source_history": "Earlier unpatched run crashed in amdvlk64.dll at the first graphics submission.",
+      "limitations": [
+        "Local patched tree.",
+        "Only opening area tested by the reporter.",
+        "No independent reproduction."
+      ]
+    },
+    {
+      "game": "Silt",
+      "reported_title_id": "PPSA03306",
+      "content_id": "EP2520-PPSA03306_00-SIEESILTFULLGAME",
+      "game_version": "01.003.000",
+      "platform": "Windows 11, build 10.0.26200",
+      "evidence": "community_report",
+      "milestone": "in_game",
+      "source_url": "https://github.com/boykopovar/AnyPS5/discussions/2810",
+      "anyps5_build": "ba2a0a31 plus four local changes",
+      "gpu": "AMD Radeon RX 5700 XT",
+      "reported_fps_range": [
+        44,
+        52
+      ],
+      "source_update_date": "2026-10-10",
+      "test_date": null,
+      "source_conclusion": "Menu, gameplay, area transitions and sound reported with the patch.",
+      "limitations": [
+        "No antialiasing due to workaround.",
+        "Rendering artefact remains.",
+        "Community experimental result; no official playable claim."
+      ]
+    }
+  ]
+}

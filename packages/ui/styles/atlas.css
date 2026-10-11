@@ -1,0 +1,84 @@
+/* The approved atlas composition spans the header, hero and first data section. */
+.home-atlas{position:relative;isolation:isolate}
+.atlas-background{position:absolute;z-index:-1;inset:0 0 auto;height:740px;overflow:hidden;pointer-events:none}
+.atlas-background>img{width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.atlas-shade{position:absolute;inset:0;background:linear-gradient(90deg,#091420ba 0%,#09142048 43%,#09142008 75%),linear-gradient(0deg,var(--bg) 0%,#10172000 67%),linear-gradient(180deg,#091420a8 0%,#09142000 24%)}
+[dir=rtl] .atlas-background>img{transform:scaleX(-1)}
+[dir=rtl] .atlas-shade{background:linear-gradient(270deg,#091420ba 0%,#09142048 43%,#09142008 75%),linear-gradient(0deg,var(--bg) 0%,#10172000 67%),linear-gradient(180deg,#091420a8 0%,#09142000 24%)}
+.home-atlas .wrap{width:calc(100% - 104px);max-width:1440px}
+.home-atlas .site-header{background:transparent;border-bottom:0}
+.home-atlas .brand{font-size:38px;letter-spacing:-.055em}
+.home-atlas .brand .mark{height:33px;width:33px;background:#eef3e9e0;border-radius:6px}
+.home-atlas .brand .mark img{height:31px;width:31px}
+.home-atlas .desktop-nav{gap:34px;font-size:19px}
+.home-atlas .header-tools{padding-inline-start:19px;border-inline-start:1px solid #9babba36;gap:18px}
+.home-atlas .hero{background:transparent;border:0;overflow:visible}
+.home-atlas .hero-inner{padding-block:30px 37px;min-height:470px}
+.home-atlas .hero .eyebrow{margin-bottom:19px;font-size:13px;color:#d8e2e8;letter-spacing:.17em}
+.home-atlas .live-dot{display:none}
+.home-atlas .portal-hero h1{font-size:clamp(72px,7.8vw,108px);line-height:.98;font-weight:800;letter-spacing:-.065em;max-width:750px;margin-bottom:20px;text-shadow:0 2px 28px #0002}
+.home-atlas .hero-description{font-size:28px;color:#e2e9ee;line-height:1.65;max-width:650px}
+.home-atlas .hero-actions{margin-top:24px;gap:30px;align-items:center}
+.home-atlas .hero-actions .primary{background:#d4f181;font-size:22px;min-height:70px;padding-inline:26px;border-radius:3px;box-shadow:0 0 30px #d4f18108}
+.home-atlas .hero-actions .secondary{border:0;border-radius:0;padding:10px 0;background:transparent;font-size:22px;min-height:44px;text-decoration:underline;text-underline-offset:5px;text-decoration-color:#e2e9ee80;color:#eff3f6}
+.home-atlas .hero-actions .secondary:hover{background:transparent;color:#d4f181!important}
+.home-atlas .hero-note{font-size:10px;margin-top:18px;color:#bbc7d3}
+.home-atlas .steps{border-block:1px solid #899eaf55;padding-block:30px 33px;gap:0;background:#0a17231a}
+.home-atlas .step{padding-inline:28px;border-inline-end:1px solid #899eaf55;gap:13px;flex-direction:column}
+.home-atlas .step:first-child{padding-inline-start:0}.home-atlas .step:last-child{border-inline-end:0;padding-inline-end:0}
+.home-atlas .step h2{font-size:32px;font-weight:650;letter-spacing:-.035em;margin-bottom:9px}
+.home-atlas .step h2 .icon{opacity:.85;height:19px;width:19px}
+.home-atlas .step p{font-size:22px;color:#d1dce5;line-height:1.5}
+.home-atlas .step-number{color:#e3eaf0}.home-atlas .step-number>.icon{width:36px;height:36px}
+.home-atlas .release-strip{background:#0b182726;border:0;border-bottom:1px solid #899eaf55;border-radius:0;margin-block:0 70px;padding:21px 0}
+.home-atlas .release-pill{font-size:20px;border:0;border-inline-end:1px solid #899eaf55;padding:0 24px 0 0;border-radius:0;font-weight:500}
+.home-atlas .release-strip strong{font-size:17px;font-weight:500}.home-atlas .release-strip small{font-size:14px;color:#b1c0ce}.home-atlas .release-strip>a{font-size:17px;color:#e2e9ee}
+.home-atlas .guide-section{padding-top:3px}.home-atlas .guide-card{background:transparent}
+.site-games .atlas-background{height:900px}.site-games .atlas-background>img{object-position:100% 30%}
+.site-games .atlas-shade{background:linear-gradient(90deg,#06131ddd,#07172069 63%,#07172000),linear-gradient(0deg,var(--bg) 0%,#10172000 65%)}
+.home-atlas .games-hero .hero-inner{padding-block:55px 22px;min-height:357px}
+.home-atlas .games-hero h1{font-size:clamp(55px,7.5vw,108px);font-weight:800;letter-spacing:-.057em;line-height:1.04;max-width:1070px;margin-bottom:15px;text-shadow:0 2px 28px #0004}
+.home-atlas .games-hero .hero-description{font-size:24px;max-width:750px}
+.home-atlas .search-form{margin-top:24px;max-width:940px;border-color:#8398a56b;background:#0715219e;border-radius:4px;box-shadow:none;padding:0 0 0 18px;gap:16px;backdrop-filter:blur(6px)}
+.home-atlas .search-form input{min-height:64px;font-size:17px}.home-atlas .search-form button{min-height:64px;border-radius:0 3px 3px 0;padding-inline:29px;font-size:17px;background:#d4f181}.home-atlas .search-form button .icon{display:none}
+.home-atlas .catalog-content{padding-top:18px}.home-atlas .catalog .section-heading h2{font-size:22px}.home-atlas .catalog .section-heading{margin-bottom:17px}.home-atlas .catalog .section-heading .eyebrow{margin-bottom:7px;font-size:10px}
+.home-atlas .filter-bar{border-top:0;border-bottom:0;padding-block:2px 8px;gap:15px}.home-atlas .filter-bar label{color:#b5c6d4}.home-atlas .filter-bar select{background:#142332;border-color:#8296a761;color:#e8eef3;backdrop-filter:none;min-height:41px;border-radius:4px}.home-atlas .filter-bar select option{background:var(--surface);color:var(--ink)}
+.home-atlas .filter-help{color:#b8c8d5;font-size:10px;margin-top:5px}.home-atlas .catalog-status{margin-block:15px 7px}.home-atlas .table-header{padding-inline:0;color:#cbd7e1;border-color:#899eaf55}.home-atlas .game-row{padding:17px 0;border-color:#899eaf55;min-height:77px}.home-atlas .game-row:hover{background:#13273ca6}.home-atlas .game-cell strong{font-size:15px;font-weight:600;letter-spacing:-.02em}.home-atlas .game-cell small{color:#b4c4d4}.home-atlas .game-index{color:#a3b6c8}.home-atlas .platform-chip{background:#0c1a2866;border-color:#738a9e60;color:#dce6ee}.home-atlas .evidence-cell{color:#c8d6e2}.home-atlas .game-row>.icon{color:#cfdae3}
+.home-atlas .game-table{border-color:var(--line)}.home-atlas .notice{color:var(--muted)}
+:root[data-theme=light] .atlas-background>img{filter:saturate(.32) brightness(1.5);opacity:.42}
+:root[data-theme=light] .atlas-shade{background:linear-gradient(90deg,#f8faf1e8 0%,#f4f8edd0 40%,#f4f8ed20 78%),linear-gradient(0deg,var(--bg) 0%,#f8f9f500 46%)}
+:root[data-theme=light][dir=rtl] .atlas-shade{transform:scaleX(-1)}
+:root[data-theme=light] .home-atlas .hero .eyebrow{color:#273944}
+:root[data-theme=light] .home-atlas .hero-description{color:#253946}
+:root[data-theme=light] .home-atlas .hero-actions .primary{background:#09251c;color:#fff;box-shadow:none}
+:root[data-theme=light] .home-atlas .hero-actions .primary:hover{background:#174832;color:#fff!important}
+:root[data-theme=light] .home-atlas .hero-actions .secondary{color:#173226;text-decoration-color:#334d3780}
+:root[data-theme=light] .home-atlas .hero-actions .secondary:hover{color:#446925!important}
+:root[data-theme=light] .home-atlas .hero-note{color:#47616c}
+:root[data-theme=light] .home-atlas .steps,:root[data-theme=light] .home-atlas .release-strip{background:transparent;border-color:#8ca09066}
+:root[data-theme=light] .home-atlas .step{border-color:#8ca09066}
+:root[data-theme=light] .home-atlas .step p,:root[data-theme=light] .home-atlas .step-number,:root[data-theme=light] .home-atlas .release-strip small{color:#405664}
+:root[data-theme=light] .home-atlas .release-pill{border-color:#8ca09066}
+:root[data-theme=light] .home-atlas .release-strip>a{color:#183127}
+:root[data-theme=light] .home-atlas .search-form{background:#f7fbf1b0;border-color:#516e5466}
+:root[data-theme=light] .home-atlas .search-form input{color:#172c31}
+:root[data-theme=light] .home-atlas .search-form button{background:#09251c;color:#fff}
+:root[data-theme=light] .home-atlas .filter-bar label,:root[data-theme=light] .home-atlas .filter-help{color:#506472}
+:root[data-theme=light] .home-atlas .filter-bar select{background:#f4f7ef;color:#203a32;border-color:#58725780}
+:root[data-theme=light] .home-atlas .table-header{color:#31474f;border-color:#8ca09066}
+:root[data-theme=light] .home-atlas .game-row{border-color:#8ca09066}
+:root[data-theme=light] .home-atlas .game-row:hover{background:#f3f7eaaf}
+:root[data-theme=light] .home-atlas .game-cell small,:root[data-theme=light] .home-atlas .game-index,:root[data-theme=light] .home-atlas .evidence-cell,:root[data-theme=light] .home-atlas .game-row>.icon{color:#486270}
+:root[data-theme=light] .home-atlas .platform-chip{color:#2e4943;background:#f6faf099;border-color:#55725860}
+@media(max-width:1150px){.home-atlas .wrap{width:calc(100% - 56px)}.home-atlas .desktop-nav{font-size:14px}.home-atlas .hero-description{font-size:22px}.home-atlas .hero-actions .primary,.home-atlas .hero-actions .secondary{font-size:17px}.home-atlas .hero-actions .primary{min-height:58px}.home-atlas .step h2{font-size:23px}.home-atlas .step p{font-size:15px}.home-atlas .desktop-nav{gap:22px}.home-atlas .brand{font-size:27px}.home-atlas .header-tools{gap:13px}.home-atlas .portal-hero h1{max-width:660px}.home-atlas .hero-description{max-width:620px}}
+@media(max-width:900px){.home-atlas .portal-hero h1{font-size:75px;max-width:550px}.home-atlas .hero-inner{padding-block:39px 30px}.atlas-background{height:1000px}.home-atlas .step{padding-inline:19px;gap:8px}.home-atlas .step h2{font-size:17px}.home-atlas .step p{font-size:12px}.home-atlas .games-hero h1{font-size:62px}.home-atlas .games-hero .hero-description{font-size:16px}.home-atlas .search-form{max-width:740px}}
+@media(max-width:600px){.home-atlas .wrap{width:calc(100% - 36px)}.home-atlas .brand{font-size:24px}.home-atlas .brand .mark{width:29px;height:29px}.home-atlas .brand .mark img{width:27px;height:27px}.home-atlas .header-tools{padding-inline-start:8px;gap:5px}.atlas-background{height:1100px}.atlas-background>img{object-position:61% center;opacity:.72}.atlas-shade{background:linear-gradient(90deg,#091420c9,#0914204f),linear-gradient(0deg,var(--bg) 0%,#10172000 60%)}.home-atlas .hero-inner{padding-block:41px 33px;min-height:430px}.home-atlas .hero .eyebrow{font-size:9px;letter-spacing:.13em}.home-atlas .portal-hero h1{font-size:clamp(53px,15.5vw,68px);max-width:100%;line-height:1.01;letter-spacing:-.065em;margin-bottom:21px}.home-atlas .hero-description{font-size:15px;line-height:1.75;max-width:340px}.home-atlas .hero-actions{gap:17px;margin-top:24px;flex-wrap:wrap}.home-atlas .hero-actions .primary{font-size:12px;min-height:47px;padding-inline:19px}.home-atlas .hero-actions .secondary{font-size:12px;gap:8px}.home-atlas .hero-note{font-size:9px;margin-top:20px}.home-atlas .steps{grid-template-columns:1fr;padding-block:3px;gap:0;border-top:1px solid #899eaf55}.home-atlas .step,.home-atlas .step:first-child,.home-atlas .step:last-child{padding:22px 0;border-inline-end:0;gap:13px;flex-direction:row}.home-atlas .step-number>.icon{width:23px;height:23px}.home-atlas .step h2{font-size:18px}.home-atlas .step p{font-size:12px;line-height:1.75}.home-atlas .release-strip{padding-block:22px;margin-bottom:45px;gap:15px}.home-atlas .release-strip>a{font-size:12px}.home-atlas .release-pill{font-size:14px;padding-inline-end:17px}.home-atlas .guide-section{padding-top:0}.site-games .atlas-background{height:1100px}.site-games .atlas-background>img{object-position:100% 30%;opacity:.72}.home-atlas .games-hero .hero-inner{padding-block:37px 22px;min-height:355px}.home-atlas .games-hero h1{font-size:clamp(43px,12.7vw,57px);line-height:1.04;max-width:380px;margin-bottom:17px}.home-atlas .games-hero .hero-description{font-size:14px;line-height:1.75}.home-atlas .search-form{margin-top:23px;padding-inline-start:12px;gap:9px}.home-atlas .search-form input{font-size:11px;min-height:47px}.home-atlas .search-form button{font-size:12px;min-height:47px;padding-inline:17px}.home-atlas .filter-bar{gap:13px}.home-atlas .filter-bar select{font-size:11px;min-height:43px}.home-atlas .catalog .section-heading h2{font-size:25px}.home-atlas .catalog .section-heading .eyebrow{font-size:9px}.home-atlas .game-row{padding-block:20px}.home-atlas .game-cell strong{font-size:14px}.home-atlas .game-cell small{font-size:9px}.home-atlas .platform-chip{font-size:9px}.home-atlas .filter-help{font-size:10px}:root[data-theme=light] .atlas-background>img{opacity:.35}:root[data-theme=light] .atlas-shade{background:linear-gradient(90deg,#f8faf1ee,#f4f8ed99),linear-gradient(0deg,var(--bg) 0%,#f8f9f500 65%)}}
+
+html[lang=ar] .home-atlas .hero h1{letter-spacing:0;line-height:1.4;font-size:clamp(43px,6.1vw,84px)}
+@media(max-width:600px){html[lang=ar] .home-atlas .hero h1{font-size:41px;line-height:1.4}}
+
+.home-atlas .game-cell strong{font-size:26px}.home-atlas .game-cell small{font-size:16px}.home-atlas .table-header{font-size:18px}.home-atlas .platform-chip,.home-atlas .evidence-cell{font-size:18px}.home-atlas .badge{font-size:16px}
+@media(max-width:900px){.home-atlas .game-cell strong{font-size:16px}.home-atlas .game-cell small,.home-atlas .platform-chip,.home-atlas .badge{font-size:10px}}
+@media(max-width:600px){.home-atlas .game-cell strong{font-size:14px}.home-atlas .game-cell small,.home-atlas .platform-chip,.home-atlas .badge{font-size:9px}.home-atlas .hero-actions .primary,.home-atlas .hero-actions .secondary{font-size:12px}.home-atlas .hero-actions .primary{min-height:47px}.home-atlas .step p{font-size:12px}}
+
+@media(min-width:1151px){.home-atlas .games-hero .eyebrow{display:none}.home-atlas .games-hero .hero-inner{padding-top:65px}.home-atlas .game-row{min-height:94px}.home-atlas .search-form input,.home-atlas .search-form button{font-size:22px;min-height:70px}.home-atlas .filter-bar{font-size:13px}.home-atlas .filter-bar select{font-size:14px}.home-atlas .catalog-status,.home-atlas .filter-help{font-size:13px}}

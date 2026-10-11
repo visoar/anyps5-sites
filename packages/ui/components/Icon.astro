@@ -1,0 +1,23 @@
+---
+import arrow from '@phosphor-icons/core/assets/regular/arrow-up-right.svg?raw';
+import arrowRight from '@phosphor-icons/core/assets/regular/arrow-right.svg?raw';
+import search from '@phosphor-icons/core/assets/regular/magnifying-glass.svg?raw';
+import moon from '@phosphor-icons/core/assets/regular/moon.svg?raw';
+import sun from '@phosphor-icons/core/assets/regular/sun.svg?raw';
+import globe from '@phosphor-icons/core/assets/regular/globe.svg?raw';
+import menu from '@phosphor-icons/core/assets/regular/list.svg?raw';
+import download from '@phosphor-icons/core/assets/regular/download-simple.svg?raw';
+import check from '@phosphor-icons/core/assets/regular/check-circle.svg?raw';
+import git from '@phosphor-icons/core/assets/regular/git-branch.svg?raw';
+import copy from '@phosphor-icons/core/assets/regular/copy.svg?raw';
+import clock from '@phosphor-icons/core/assets/regular/clock.svg?raw';
+import caret from '@phosphor-icons/core/assets/regular/caret-down.svg?raw';
+import book from '@phosphor-icons/core/assets/regular/book-open.svg?raw';
+import gamepad from '@phosphor-icons/core/assets/regular/game-controller.svg?raw';
+import file from '@phosphor-icons/core/assets/regular/file-text.svg?raw';
+import wrench from '@phosphor-icons/core/assets/regular/wrench.svg?raw';
+import folder from '@phosphor-icons/core/assets/regular/folder.svg?raw';
+const icons={file,wrench,folder,arrow,arrowRight,search,moon,sun,globe,menu,download,check,git,copy,clock,caret,book,gamepad};
+const {name='arrow',class:className=''}=Astro.props as {name?:keyof typeof icons;class?:string};
+---
+<span class:list={['icon',className]} aria-hidden="true" set:html={icons[name]} />
