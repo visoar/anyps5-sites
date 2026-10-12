@@ -11,6 +11,8 @@ import canyonHero from '../assets/portal-hero.png';
 import coastHero from '../assets/games-hero.png';
 import {umamiSites} from '../analytics';
 import {agentPolicy} from '../../content/agent-policy';
+import {getRoutes} from '../../content/routes';
+import {languageNotice} from '../../content/language-notice';
 import {contactLabel,contactLink} from '../../content/contact';
 import Icon from './Icon.astro';
 import {localeConfig,locales,localPath,origin,t,type Locale,type Site} from '../../content/locales';
@@ -25,6 +27,9 @@ const defaultTheme=site==='cc'?'light':'dark';
 const shareImage=ogImage||{src:'/social-v4.webp',width:1200,height:630,type:'image/webp'};
 const shareImageUrl=new URL(shareImage.src,origin(site)).href;
 const analytics=umamiSites[site];
+const publishedPaths=new Set(getRoutes(site).map(route=>'/'+(route.params.path?route.params.path+'/':'')));
+const pageLocales=noindex?[]:locales.filter(l=>publishedPaths.has(localPath(path,l)));
+const notice=languageNotice(locale);
 ---
 <!doctype html>
 <html lang={config.lang} dir={config.dir} data-theme={defaultTheme} data-default-theme={defaultTheme}>
@@ -38,8 +43,8 @@ const analytics=umamiSites[site];
   <meta name="theme-color" content={defaultTheme==='dark'?'#101720':'#f8f9f5'}/>
   <script is:inline defer src="https://track.pixmiller.com/script.js" data-website-id={analytics.id} data-domains={analytics.domain+',www.'+analytics.domain} data-exclude-search="true" data-exclude-hash="true" data-do-not-track="true"/>
   {noindex&&<meta name="robots" content="noindex,follow"/>}
-  {locales.map(l=><link rel="alternate" hreflang={localeConfig[l].lang} href={origin(site)+localPath(path,l)}/>)}
-  <link rel="alternate" hreflang="x-default" href={origin(site)+path}/>
+  {pageLocales.map(l=><link rel="alternate" hreflang={localeConfig[l].lang} href={origin(site)+localPath(path,l)}/>)}
+  {pageLocales.includes('en')&&<link rel="alternate" hreflang="x-default" href={origin(site)+path}/>}
   <meta property="og:type" content={ogType}/><meta property="og:site_name" content={site==='cc'?'AnyPS5':'AnyPS5 Games'}/><meta property="og:title" content={siteTitle}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:image" content={shareImageUrl}/><meta property="og:locale" content={{en:'en_US',zh:'zh_CN',ar:'ar_SA',pt:'pt_PT',de:'de_DE',fr:'fr_FR',es:'es_ES'}[locale]}/>
   <meta property="og:image:alt" content={siteTitle}/><meta property="og:image:width" content={shareImage.width}/><meta property="og:image:height" content={shareImage.height}/><meta property="og:image:type" content={shareImage.type}/><meta name="twitter:image:alt" content={siteTitle}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={siteTitle}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={shareImageUrl}/>{locales.filter(l=>l!==locale).map(l=><meta property="og:locale:alternate" content={{en:'en_US',zh:'zh_CN',ar:'ar_SA',pt:'pt_PT',de:'de_DE',fr:'fr_FR',es:'es_ES'}[l]}/>)}
   {structured&&<script type="application/ld+json" set:html={JSON.stringify(structured).replace(/</g,'\\u003c')}/>}
@@ -55,10 +60,11 @@ const analytics=umamiSites[site];
    </nav>
    <div class="header-tools">
     <button type="button" class="theme-toggle" id="theme-button" aria-label={t(locale,'theme')} aria-pressed="false" data-light={t(locale,'light')} data-dark={t(locale,'dark')}><span class="theme-sun"><Icon name="sun"/></span><span class="theme-moon"><Icon name="moon"/></span></button>
-    <details class="language-picker"><summary aria-label={t(locale,'language')}><Icon name="globe"/><span>{config.name}</span><Icon name="caret"/></summary><div class="language-options">{locales.map(l=><a href={localPath(path,l)} lang={localeConfig[l].lang} hreflang={localeConfig[l].lang} aria-current={l===locale?'true':undefined}>{localeConfig[l].name}{l===locale&&<Icon name="check"/>}</a>)}</div></details>
+    {pageLocales.length>0&&<details class="language-picker"><summary aria-label={t(locale,'language')}><Icon name="globe"/><span>{config.name}</span><Icon name="caret"/></summary><div class="language-options">{pageLocales.map(l=><a href={localPath(path,l)} data-language-choice={l} lang={localeConfig[l].lang} hreflang={localeConfig[l].lang} aria-current={l===locale?'true':undefined}>{localeConfig[l].name}{l===locale&&<Icon name="check"/>}</a>)}</div></details>}
     <details class="mobile-nav"><summary aria-label={t(locale,'menuToggle')}><Icon name="menu"/></summary><nav aria-label={t(locale,'navigation')}>{nav.map(([url,key])=><a href={localPath(url,locale)}>{t(locale,key as Parameters<typeof t>[1])}</a>)}<a href={origin(other)+localPath('/',locale)}>{alternateLabel}<Icon/></a></nav></details>
    </div>
   </div></header>
+  {locale!=='en'&&pageLocales.includes('en')&&<aside id="language-notice" class="language-notice" hidden><div class="wrap language-notice-inner"><p>{notice.switched}<span aria-hidden="true"> · </span><a href={path} data-language-choice="en" hreflang="en">{notice.returnEnglish}</a></p><button type="button" data-language-dismiss aria-label={t(locale,'close')}><Icon name="close"/></button></div></aside>}
   <main id="main"><slot/></main>
   <footer class="site-footer wrap"><div class="footer-top"><a class="brand" href={localPath('/',locale)}><span class="mark"><img src={brand.src} alt="" width="34" height="34"/></span><span>AnyPS5<small>{site==='cc'?'.cc':'.games'}</small></span></a><p>{t(locale,'independent')}</p><div class="footer-links">{['about','privacy','terms'].map(key=><a href={localPath('/'+key+'/',locale)}>{t(locale,key as Parameters<typeof t>[1])}</a>)}<a href={contactLink.url}>{contactLabel[locale]}<Icon/></a></div></div><div class="footer-bottom"><p>{t(locale,'footerNote')}</p><a href={origin(other)+localPath('/',locale)}>AnyPS5.{other}<Icon/></a></div></footer>
   <script>

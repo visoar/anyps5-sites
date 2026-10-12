@@ -1,4 +1,6 @@
 import {trackEvent} from './analytics';
+import {initLanguageNavigation} from './language';
+initLanguageNavigation();
 const theme = document.querySelector<HTMLButtonElement>('#theme-button');
 const defaultTheme=document.documentElement.dataset.defaultTheme||'dark';
 let preference=defaultTheme;
@@ -17,7 +19,7 @@ document.addEventListener('click',event=>{
  const url=new URL(link.href);
  if(!['http:','https:'].includes(url.protocol)||link.getAttribute('href')?.startsWith('#'))return;
  const placement=link.closest('header.site-header')?'header':link.closest('footer')?'footer':link.closest('.hero')?'hero':link.closest('.steps')?'steps':link.closest('.related-links')?'related':'content';
- if(link.closest('.language-options')){trackEvent('locale_change',{to_locale:link.hreflang||link.lang});return}
+ if(link.hasAttribute('data-language-choice')){trackEvent('locale_change',{to_locale:link.hreflang||link.lang});return}
  if(['anyps5.cc','anyps5.games'].includes(url.hostname)&&url.hostname!==location.hostname){trackEvent('cross_site_click',{destination:url.hostname,placement});return}
  if(url.origin!==location.origin){
   if(url.hostname==='github.com'&&url.pathname.includes('/releases/download/'))trackEvent('download_click',{file:url.pathname.split('/').at(-1)!,placement});
