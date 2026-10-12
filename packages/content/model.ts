@@ -15,5 +15,5 @@ export interface Report {
 }
 export interface Game {slug:string;name:string;titleId:string|null;edition:string|null;reports:Report[];reviewed?:string}
 export interface PlatformConclusion {platform:Platform;reportIds:string[];reviewed:string}
-export interface Section {id:string;title:Text;body:Text[];code?:string|Text; links?:{label:string;url:string}[]}
+export interface Section {id:string;title:Text;body:Text[];code?:string|Text; links?:{label:string|Text;url:string}[]}
 export interface Article {slug:string; title:Text; description:Text; sections:Section[]; sources:string[];reviewed?:string}

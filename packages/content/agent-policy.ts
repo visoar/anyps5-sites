@@ -9,7 +9,7 @@ export const agentPolicy={
 export function renderLlms(site:Site):string{
  const title=site==='cc'?'AnyPS5.cc':'AnyPS5.games';
  const summary=site==='cc'?'Independent community guides for AnyPS5 setup, downloads, builds and troubleshooting.':'Independent community catalog of PS5 games and sourced AnyPS5 compatibility reports.';
- const links=site==='cc'?[['Getting started','/start/'],['Downloads','/downloads/'],['Updates','/updates/']]:[['Reviewed reports','/tested/'],['Games without reviewed reports','/untested/'],['Review methodology','/methodology/'],['Contribute a report','/contribute/']];
+ const links=site==='cc'?[['Getting started','/start/'],['Frequently asked questions','/faq/'],['How AnyPS5 works','/how-it-works/'],['Downloads','/downloads/'],['Updates','/updates/']]:[['Reviewed reports','/tested/'],['Games without reviewed reports','/untested/'],['Review methodology','/methodology/'],['Contribute a report','/contribute/']];
  return `# ${title}
 
 > ${summary} Not affiliated with the upstream AnyPS5 project or Sony Interactive Entertainment.

@@ -1,5 +1,5 @@
 export const relatedArticles:Record<string,string[]>={
- start:['downloads','requirements','guides/windows','guides/linux'],
+ start:['how-it-works','faq','downloads','requirements','guides/windows','guides/linux'],
  downloads:['start','guides/build','guides/windows','guides/linux'],
  requirements:['guides/build','guides/windows','guides/linux'],
  'guides/windows':['start','guides/input','guides/language-fonts','troubleshooting'],
@@ -10,7 +10,8 @@ export const relatedArticles:Record<string,string[]>={
  troubleshooting:['guides/windows','guides/linux','guides/input','guides/language-fonts'],
  progress:['development-notes','updates','faq'],
  updates:['downloads','development-notes','progress'],
- faq:['start','downloads','methodology'],
+ faq:['how-it-works','start','downloads','requirements','methodology'],
+ 'how-it-works':['faq','start','downloads','requirements'],
  'development-notes':['guides/input','guides/language-fonts','troubleshooting','updates'],
  methodology:['contribute','about'],contribute:['methodology'],
 };
