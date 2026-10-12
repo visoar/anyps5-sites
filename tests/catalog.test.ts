@@ -65,3 +65,18 @@ test('new menu and software-rendered results retain their experimental scope',()
  assert.equal(doom.reports[0].stage,'boot');
  assert.ok(!doom.reports[0].build?.includes('0e173a46'));
 });
+
+test('localized titles and established aliases remain searchable alongside canonical names',async()=>{
+ const {gameName,gameSearchText}=await import('../packages/content/game-editorial');
+ for(const query of ['Uma Dimensão à Parte','Una dimensión aparte','Rift Apart'])assert.equal(filterGames(query)[0]?.slug,'ratchet-clank-rift-apart');
+ assert.equal(filterGames('L’Héritage de Poudlard')[0]?.slug,'hogwarts-legacy');
+ for(const query of ['黯海','淤泥','SILT'])assert.equal(filterGames(query)[0]?.slug,'silt');
+ for(const query of ['Sala de Jogos do ASTRO','ASTRO’s PLAYROOM','宇宙机器人无线控制器使用指南'])assert.equal(filterGames(query)[0]?.slug,'astros-playroom');
+ const ratchet=games.find(g=>g.slug==='ratchet-clank-rift-apart')!;
+ assert.equal(gameName(ratchet,'pt'),'Ratchet & Clank: Uma Dimensão à Parte');
+ assert.equal(gameName(ratchet,'de'),ratchet.name);
+ assert.ok(gameSearchText(ratchet).includes(ratchet.titleId!));
+ const regional=games.find(g=>g.slug==='demons-souls-ppsa01342')!;
+ assert.ok(gameName(regional,'zh').includes('PPSA01342'));
+ assert.equal(gameName(regional,'en'),regional.name);
+});

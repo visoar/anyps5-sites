@@ -14,13 +14,13 @@ import type {Text} from '../packages/content/model';
 validateLocales();
 function checkText(text:Text,label:string){for(const l of locales)if(!text[l]?.trim())throw Error(`Missing ${l}: ${label}`)}
 const slugs=new Set<string>();
-for(const article of [...articles,...extraArticles,developmentArticle,...policyArticles]){if(slugs.has(article.slug))throw Error('Duplicate article '+article.slug);slugs.add(article.slug);checkText(article.title,article.slug);checkText(article.description,article.slug);for(const section of article.sections){checkText(section.title,article.slug);section.body.forEach(p=>checkText(p,article.slug))}}
+for(const article of [...articles,...extraArticles,developmentArticle,...policyArticles]){if(slugs.has(article.slug))throw Error('Duplicate article '+article.slug);slugs.add(article.slug);checkText(article.title,article.slug);checkText(article.description,article.slug);for(const section of article.sections){checkText(section.title,article.slug);section.body.forEach(p=>checkText(p,article.slug));if(section.code&&typeof section.code!=='string')checkText(section.code,article.slug+' template')}}
 const ids=new Set<string>();
 for(const game of games){
  if(ids.has(game.slug)||(game.titleId!==null&&!/^PPSA\d{5}$/.test(game.titleId))||(game.reports.length>0&&!game.titleId))throw Error('Invalid game '+game.slug);
  ids.add(game.slug);
  const info=editorial[game.slug];if(!info||!genres[info.genre])throw Error('Missing editorial information '+game.slug);
- checkText(info.overview,game.slug);checkText(info.editionNote,game.slug);
+ checkText(info.overview,game.slug);checkText(info.editionNote,game.slug);for(const [locale,name]of Object.entries(info.names))if(!locales.includes(locale as typeof locales[number])||!name.trim())throw Error('Invalid localized game name '+game.slug);
  for(const related of info.related)if(!games.some(g=>g.slug===related)||related===game.slug)throw Error('Invalid related game '+related);
  for(const r of game.reports){checkText(r.summary,game.slug);if(!r.source.startsWith('https://github.com/'))throw Error('Missing original source');if(r.evidence==='official'&&r.patched)throw Error('Official patch misclassification');for(const b of r.benchmarks){checkText(b.context,game.slug);if(typeof b.fps!=='string')checkText(b.fps,game.slug+' FPS')}}
 }
