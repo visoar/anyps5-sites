@@ -3,6 +3,10 @@ import {type Game,type Platform,type PlatformConclusion} from './model';
 
 // Select representative evidence explicitly; never infer a current verdict from the highest stage.
 const selections:Record<string,{reviewed:string;reportIds:string[]}>={
+ 'horizon-forbidden-west':{reviewed:'2026-10-13',reportIds:['1616-linux']},
+ 'resident-evil-4-remake':{reviewed:'2026-10-13',reportIds:['2776-windows']},
+ 'returnal':{reviewed:'2026-10-13',reportIds:['4239-windows']},
+ 'palworld':{reviewed:'2026-10-13',reportIds:['3832-windows']},
  'dreaming-sarah':{reviewed:'2026-10-12',reportIds:['3018-windows-review-20261012','official-sarah-windows','3180-linux-main']},
  'animal-well':{reviewed:'2026-10-12',reportIds:['966-windows']},
  'hollow-knight-silksong':{reviewed:'2026-10-12',reportIds:['726-windows-review-20261012','1996-windows','1519-linux-review-20261012','3731-linux-review-20261012']},
@@ -27,7 +31,7 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  'ratchet-clank-rift-apart':{reviewed:'2026-10-12',reportIds:['3338-linux']},
  'star-wars-galactic-racer':{reviewed:'2026-10-12',reportIds:['3086-windows']},
  'doom-homebrew':{reviewed:'2026-10-12',reportIds:['690-windows-review-20261012','690-linux-review-20261012']},
- 'cyberpunk-2077':{reviewed:'2026-10-12',reportIds:['3308-linux']},
+ 'cyberpunk-2077':{reviewed:'2026-10-13',reportIds:['3308-linux-main-review-20261013']},
  'the-last-of-us-part-ii-remastered':{reviewed:'2026-10-12',reportIds:['2883-windows']},
  'big-helmet-heroes':{reviewed:'2026-10-12',reportIds:['3873-linux-review-20261012']},
  'hot-shots-golf-2':{reviewed:'2026-10-12',reportIds:['3839-windows-review-20261012']},

@@ -32,15 +32,48 @@ test('unreported popular games are unknown, searchable and excluded from measure
  const game=filterGames('黑神话')[0];assert.equal(game.slug,'black-myth-wukong');assert.equal(game.titleId,null);assert.equal(game.reports.length,0);assert.equal(bestStage(game),'notTested');assert.equal(stageNeedsPatches(game),false);
  assert.equal(filterGames('wukong',{stage:'notTested'}).length,1);
  for(const filters of [{platform:'windows'},{platform:'linux'},{stage:'blocked'},{evidence:'official'},{evidence:'community'}])assert.equal(filterGames('wukong',filters).length,0);
- assert.equal(filterGames('',{stage:'notTested'}).length,14);
+ assert.equal(filterGames('',{stage:'notTested'}).length,10);
 });
 
 test('a merged technical fix does not silently create a new game report',async()=>{
  const {developmentNotes,developmentSource}=await import('../packages/content/github-progress');
  const note=developmentNotes.find(n=>n.number===3176)!;assert.equal(developmentSource(note).state,'merged');assert.ok(developmentSource(note).commit);
- assert.equal(games.find(g=>g.slug==='returnal')!.reports.length,0);
+ const returnal=games.find(g=>g.slug==='returnal')!;
+ assert.equal(returnal.reports.length,1);
+ assert.ok(returnal.reports[0].source.endsWith('/issues/4239'));
+ assert.equal(returnal.reports[0].stage,'blocked');
  assert.equal(games.find(g=>g.slug==='cyberpunk-2077')!.reports[0].benchmarks.length,0);
  const ratchet=games.find(g=>g.slug==='ratchet-clank-rift-apart')!;assert.equal(ratchet.reports.length,2);assert.equal(ratchet.reports.find(r=>r.id==='3338-linux')!.stage,'boot');
+});
+
+test('new source reviews distinguish setup screens, patched integrations and actual gameplay',async()=>{
+ const {conclusionReports}=await import('../packages/content/game-conclusions');
+ const {gameResearch}=await import('../packages/content/game-research');
+ for(const [slug,platform,stage,patched]of [
+  ['horizon-forbidden-west','linux','menu',true],
+  ['resident-evil-4-remake','windows','blocked',false],
+  ['returnal','windows','blocked',false],
+  ['palworld','windows','menu',true],
+ ]as const){
+  const game=games.find(g=>g.slug===slug)!;
+  const report=conclusionReports(game,platform)[0];
+  assert.equal(report.stage,stage);assert.equal(report.patched,patched);
+  assert.equal(report.testDate,null);assert.equal(report.benchmarks.length,0);
+  assert.equal(filterGames(game.titleId!,{stage:'ingame'}).length,0);
+  assert.equal(conclusionReports(game,platform==='windows'?'linux':'windows').length,0);
+  assert.ok(gameResearch[slug]);
+ }
+ for(const slug of ['elden-ring','marvels-spider-man-2','gran-turismo-7','black-myth-wukong']){
+  const game=games.find(g=>g.slug===slug)!;
+  assert.equal(game.titleId,null);assert.equal(game.reports.length,0);
+ }
+ assert.equal(filterGames('PPSA01341').some(game=>game.slug==='marvels-spider-man-2'),false);
+ assert.equal(filterGames('PPSA25380').length,0);
+ const cyberpunk=games.find(g=>g.slug==='cyberpunk-2077')!;
+ assert.equal(cyberpunk.reports.length,2);
+ assert.equal(cyberpunk.reports[0].build,'main 961b25fe');
+ assert.equal(conclusionReports(cyberpunk,'linux')[0].build,'main a11c8f7f');
+ assert.equal(conclusionReports(cyberpunk,'linux')[0].stage,'blocked');
 });
 
 test('regional PPSA reports remain separate in search and platform filters',()=>{
@@ -91,7 +124,7 @@ test('a Linux fix notice preserves failed runs without creating a gameplay resul
  assert.equal(filterGames('PPSA02929',{platform:'linux',stage:'boot'}).length,1);
  const experimental=sarah.reports.find(r=>r.id==='3291-windows-title')!;
  assert.equal(experimental.stage,'boot');assert.equal(experimental.patched,true);
- assert.equal(experimental.benchmarks[0].fps.zh,'标题画面 60');
+ const fps=experimental.benchmarks[0].fps;assert.ok(typeof fps!=='string');assert.equal(fps.zh,'标题画面 60');
 });
 
 test('editorial platform summaries choose evidence explicitly rather than historical maximum',async()=>{

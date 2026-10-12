@@ -15,11 +15,18 @@ import {discoveryCopy} from '../packages/content/discovery-copy';
 import {gameConclusions,recentEvidence} from '../packages/content/game-conclusions';
 import {releaseAssets} from '../packages/content/release-assets';
 import {relinkerFlow} from '../packages/content/relinker-flow';
+import {gameResearch,researchCopy} from '../packages/content/game-research';
 validateLocales();
 function checkText(text:Text,label:string){for(const l of locales)if(!text[l]?.trim())throw Error(`Missing ${l}: ${label}`)}
 const slugs=new Set<string>();
 for(const article of [...articles,...extraArticles,developmentArticle,...policyArticles]){if(slugs.has(article.slug))throw Error('Duplicate article '+article.slug);slugs.add(article.slug);checkText(article.title,article.slug);checkText(article.description,article.slug);for(const section of article.sections){checkText(section.title,article.slug);section.body.forEach(p=>checkText(p,article.slug));if(section.code&&typeof section.code!=='string')checkText(section.code,article.slug+' template');for(const link of section.links||[])if(typeof link.label!=='string')checkText(link.label,article.slug+' link')}}
 for(const [label,text]of Object.entries(relinkerFlow))checkText(text,'relinker flow '+label);
+for(const [label,text]of Object.entries(researchCopy))checkText(text,'research '+label);
+for(const [slug,review]of Object.entries(gameResearch)){
+ if(!games.some(game=>game.slug===slug)||!/^\d{4}-\d{2}-\d{2}$/.test(review.checked)||!review.sources.length)throw Error('Invalid game research '+slug);
+ for(const field of ['edition','finding','nextTest'] as const)checkText(review[field],slug+' '+field);
+ for(const source of review.sources)if(!source.label||!source.url.startsWith('https://'))throw Error('Invalid research provenance '+slug);
+}
 const ids=new Set<string>();
 for(const game of games){
  if(ids.has(game.slug)||(game.titleId!==null&&!/^PPSA\d{5}$/.test(game.titleId))||(game.reports.length>0&&!game.titleId))throw Error('Invalid game '+game.slug);

@@ -665,7 +665,7 @@
       "slug": "ratchet-clank-rift-apart",
       "name": "Ratchet & Clank: Rift Apart",
       "titleId": "PPSA01474",
-      "reviewed": "2026-10-12",
+      "reviewed": "2026-10-13",
       "reports": [
         {
           "id": "2172-linux",
@@ -682,7 +682,7 @@
         {
           "id": "3338-linux",
           "source": "https://github.com/boykopovar/AnyPS5/issues/3338",
-          "sourceUpdated": "2026-10-11T09:57:21Z",
+          "sourceUpdated": "2026-10-11T23:27:10Z",
           "testDate": null,
           "platform": "linux",
           "stage": "boot",
@@ -761,40 +761,40 @@
       "slug": "marvels-spider-man-2",
       "name": "Marvel’s Spider-Man 2",
       "titleId": null,
-      "reviewed": "2026-10-11",
+      "reviewed": "2026-10-13",
       "reports": []
     },
     {
       "slug": "elden-ring",
       "name": "Elden Ring",
       "titleId": null,
-      "reviewed": "2026-10-11",
+      "reviewed": "2026-10-13",
       "reports": []
     },
     {
       "slug": "black-myth-wukong",
       "name": "Black Myth: Wukong",
       "titleId": null,
-      "reviewed": "2026-10-11",
+      "reviewed": "2026-10-13",
       "reports": []
     },
     {
       "slug": "god-of-war-ragnarok",
       "name": "God of War Ragnarök",
       "titleId": null,
-      "reviewed": "2026-10-11",
+      "reviewed": "2026-10-13",
       "reports": []
     },
     {
       "slug": "cyberpunk-2077",
       "name": "Cyberpunk 2077",
       "titleId": "PPSA04029",
-      "reviewed": "2026-10-12",
+      "reviewed": "2026-10-13",
       "reports": [
         {
           "id": "3308-linux",
           "source": "https://github.com/boykopovar/AnyPS5/issues/3308",
-          "sourceUpdated": "2026-10-11T08:28:17Z",
+          "sourceUpdated": "2026-10-12T11:39:37Z",
           "testDate": null,
           "platform": "linux",
           "stage": "blocked",
@@ -802,33 +802,58 @@
           "version": "02.120.000",
           "build": "main 961b25fe",
           "patched": false
+        },
+        {
+          "id": "3308-linux-main-review-20261013",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/3308#issuecomment-6113518117",
+          "sourceUpdated": "2026-10-12T11:39:37Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "blocked",
+          "evidence": "community",
+          "version": "02.120.000",
+          "build": "main a11c8f7f",
+          "patched": false
         }
       ]
     },
     {
       "slug": "horizon-forbidden-west",
       "name": "Horizon Forbidden West",
-      "titleId": null,
-      "reviewed": "2026-10-11",
-      "reports": []
+      "titleId": "PPSA01521",
+      "reviewed": "2026-10-13",
+      "reports": [
+        {
+          "id": "1616-linux",
+          "source": "https://github.com/boykopovar/AnyPS5/pull/1616",
+          "sourceUpdated": "2026-10-10T15:04:31Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "menu",
+          "evidence": "community",
+          "version": null,
+          "build": "local integration described in #1616 (game-test commit unspecified)",
+          "patched": true
+        }
+      ]
     },
     {
       "slug": "the-last-of-us-part-i",
       "name": "The Last of Us Part I",
       "titleId": null,
-      "reviewed": "2026-10-11",
+      "reviewed": "2026-10-13",
       "reports": []
     },
     {
       "slug": "the-last-of-us-part-ii-remastered",
       "name": "The Last of Us Part II Remastered",
       "titleId": "PPSA15508",
-      "reviewed": "2026-10-11",
+      "reviewed": "2026-10-13",
       "reports": [
         {
           "id": "2883-windows",
           "source": "https://github.com/boykopovar/AnyPS5/issues/2883",
-          "sourceUpdated": "2026-10-10T17:25:52Z",
+          "sourceUpdated": "2026-10-11T23:25:50Z",
           "testDate": null,
           "platform": "windows",
           "stage": "blocked",
@@ -843,57 +868,96 @@
       "slug": "final-fantasy-vii-rebirth",
       "name": "Final Fantasy VII Rebirth",
       "titleId": null,
-      "reviewed": "2026-10-11",
+      "reviewed": "2026-10-13",
       "reports": []
     },
     {
       "slug": "final-fantasy-xvi",
       "name": "Final Fantasy XVI",
       "titleId": null,
-      "reviewed": "2026-10-11",
+      "reviewed": "2026-10-13",
       "reports": []
     },
     {
       "slug": "gran-turismo-7",
       "name": "Gran Turismo 7",
       "titleId": null,
-      "reviewed": "2026-10-11",
+      "reviewed": "2026-10-13",
       "reports": []
     },
     {
       "slug": "hogwarts-legacy",
       "name": "Hogwarts Legacy",
       "titleId": null,
-      "reviewed": "2026-10-11",
+      "reviewed": "2026-10-13",
       "reports": []
     },
     {
       "slug": "helldivers-2",
       "name": "Helldivers 2",
       "titleId": null,
-      "reviewed": "2026-10-11",
+      "reviewed": "2026-10-13",
       "reports": []
     },
     {
       "slug": "resident-evil-4-remake",
       "name": "Resident Evil 4",
-      "titleId": null,
-      "reviewed": "2026-10-11",
-      "reports": []
+      "titleId": "PPSA07411",
+      "reviewed": "2026-10-13",
+      "reports": [
+        {
+          "id": "2776-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/2776",
+          "sourceUpdated": "2026-10-12T09:34:34Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "blocked",
+          "evidence": "community",
+          "version": null,
+          "build": "main c36fd0a0e",
+          "patched": false
+        }
+      ]
     },
     {
       "slug": "returnal",
       "name": "Returnal",
       "titleId": "PPSA01285",
-      "reviewed": "2026-10-11",
-      "reports": []
+      "reviewed": "2026-10-13",
+      "reports": [
+        {
+          "id": "4239-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/4239",
+          "sourceUpdated": "2026-10-12T13:28:40Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "blocked",
+          "evidence": "community",
+          "version": null,
+          "build": "main ffa198407",
+          "patched": false
+        }
+      ]
     },
     {
       "slug": "palworld",
       "name": "Palworld",
       "titleId": "PPSA23126",
-      "reviewed": "2026-10-12",
-      "reports": []
+      "reviewed": "2026-10-13",
+      "reports": [
+        {
+          "id": "3832-windows",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/3832",
+          "sourceUpdated": "2026-10-11T22:09:07Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "menu",
+          "evidence": "community",
+          "version": "01.102.999",
+          "build": "main a11c8f7f7 + palworld/integration + local changes",
+          "patched": true
+        }
+      ]
     },
     {
       "slug": "big-helmet-heroes",

@@ -23,7 +23,7 @@ Production traffic and key interactions are measured with separate self-hosted U
 
 ## Content
 
-English, Simplified Chinese, Arabic (RTL), Portuguese (Portugal), German, French and Spanish are published for every content route. There are 19 guide/policy articles, 47 game/edition pages and 56 source reports; the two apps generate 527 HTML pages including their 404 pages. Each page has canonical metadata, seven language alternates, an x-default alternate and a sitemap entry. Fonts are served locally.
+English, Simplified Chinese, Arabic (RTL), Portuguese (Portugal), German, French and Spanish are published for every content route. There are 19 guide/policy articles, 47 game/edition pages and 61 source reports; the two apps generate 527 HTML pages including their 404 pages. Each page has canonical metadata, seven language alternates, an x-default alternate and a sitemap entry. Fonts are served locally.
 
 Reports distinguish Windows/Linux, official/community evidence, run stage, local patches, exact build and hardware. Missing fields remain unknown, including an unspecified patch status. Review date, source update date and test date are distinct. An in-game report does not imply full-game completion or unpatched release compatibility. FPS observations remain attached to their hardware and source context. Media links point to original evidence; this repository does not redistribute game files, firmware or keys. No game benchmarks have been performed by this site.
 
@@ -48,7 +48,7 @@ Deployment identifiers are recorded in [CLAUDE.md](CLAUDE.md). Do not store cred
 
 ## Content and editorial maintenance
 
-The current edition has 47 game/edition pages per language, 56 scoped reports and 14 games without a reviewed run result. A no-report entry is searchable but never classified as a startup failure, given invented hardware/FPS, or matched to a specific tested platform. Chinese searches also recognise the curated local game names.
+The current edition has 47 game/edition pages per language, 61 scoped reports and 10 games without a reviewed run result. A no-report entry is searchable but never classified as a startup failure, given invented hardware/FPS, or matched to a specific tested platform. Chinese searches also recognise the curated local game names.
 
 See [content and source maintenance](docs/content-and-source-maintenance.md) for page intent, multilingual conventions, issue/PR evidence rules, image provenance and the review workflow. `python3 research/scripts/review_updates.py` fetches candidate changes without auto-publishing them. After editing reports, regenerate the clean publication index with `npx tsx research/scripts/index_published_evidence.ts`. The existing Git push deployment remains the release path. Latest research scope and evidence gaps: [2026-10-12 maintenance](docs/maintenance/2026-10-12.md).
 
@@ -63,3 +63,5 @@ Platform summaries explicitly select reviewed report IDs in `packages/content/ga
 Both sites offer a keyboard-accessible game search in the header, including localized names and PPSA IDs. Cross-site results retain the current locale. Catalog ordering distinguishes editorial review dates from explicitly recorded test dates; unknown test dates sort last. The home counts refer to catalog entries, including separately listed editions.
 
 Verified release assets, their byte sizes and check date live in `packages/content/release-assets.ts`. Download groups pair each platform’s conversion tool and runtime libraries with its setup guide. The update page presents selected, source-linked development notes alongside the existing release record. See [2026-10-12 evidence and discovery changes](docs/maintenance/2026-10-12-discovery.md).
+
+The 2026-10-13 source review adds edition-specific evidence and test requirements for the original 14 pending games. Four now have bounded source reports (menu/loading or startup failure), with no new playable classification. See [edition and guide review](docs/maintenance/2026-10-13-evidence-quality.md).

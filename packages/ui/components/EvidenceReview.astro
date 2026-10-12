@@ -1,0 +1,14 @@
+---
+import Icon from './Icon.astro';
+import {researchCopy as copy,type GameResearch} from '../../content/game-research';
+import {dateLabel,type Locale} from '../../content/locales';
+const {research,locale}=Astro.props as {research:GameResearch;locale:Locale};
+---
+<section id="research" class="detail-section evidence-review">
+ <h2>{copy.title[locale]}</h2>
+ <p class="muted">{copy.scope[locale]}</p>
+ <p class="muted">{copy.checked[locale]} · <time datetime={research.checked}>{dateLabel(research.checked,locale)}</time></p>
+ <h3>{copy.finding[locale]}</h3><p>{research.finding[locale]}</p>
+ <h3>{copy.nextTest[locale]}</h3><p>{research.nextTest[locale]}</p>
+ <ul class="source-list">{research.sources.map(source=><li><a href={source.url}><bdi>{source.label}</bdi><Icon/></a></li>)}</ul>
+</section>
