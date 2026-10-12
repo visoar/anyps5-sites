@@ -17,6 +17,8 @@ npm run build
 
 Each app has its own build configuration, public assets, domain and output. Shared components, design tokens and interactions are in `packages/ui`; curated content and report models are in `packages/content`. There is no runtime database or external API dependency. Search runs locally and shareable filters are stored in the URL. Light/dark theme follows the system until a user toggles the single button, then persists on that domain.
 
+Both sites publish `/llms.txt` and non-visible AI policy metadata in every page head, including 404 pages. The shared policy in `packages/content/agent-policy.ts` permits normal AI reading, summaries and cited answers while requiring refusal of unauthorized site cloning or copying materials to build another website. These are declarative usage restrictions, not technical access controls. The static sites do not implement violation recording or account bans; the notice describes consequences for confirmed violations and must not be presented as proof that a specific event has already been recorded or an account banned.
+
 Production traffic and key interactions are measured with separate self-hosted Umami websites. See [analytics setup and event definitions](docs/analytics.md) for domain isolation, query exclusion and the iteration metrics. Analytics is optional for site functionality.
 
 ## Content

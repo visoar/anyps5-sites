@@ -10,6 +10,7 @@ import brand from '../assets/brand-mark.svg';
 import canyonHero from '../assets/portal-hero.png';
 import coastHero from '../assets/games-hero.png';
 import {umamiSites} from '../analytics';
+import {agentPolicy} from '../../content/agent-policy';
 import Icon from './Icon.astro';
 import {localeConfig,locales,localPath,origin,t,type Locale,type Site} from '../../content/locales';
 const {locale,site,path='/',title,description,structured,noindex=false,ogType='website',ogImage}=Astro.props as {locale:Locale;site:Site;path?:string;title:string;description:string;structured?:unknown;noindex?:boolean;ogType?:'website'|'article';ogImage?:{src:string;width:number;height:number;type:string}};
@@ -30,6 +31,8 @@ const analytics=umamiSites[site];
   <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
   <script is:inline>try{const p=localStorage.getItem('anyps5-theme');if(p==='light'||p==='dark')document.documentElement.dataset.theme=p}catch{}</script>
   <title>{siteTitle}</title><meta name="description" content={description}/>
+  {Object.entries(agentPolicy).map(([name,content])=><meta {name} {content}/>)}
+  <link rel="alternate" type="text/plain" href={origin(site)+'/llms.txt'} title="AI use policy"/>
   <link rel="canonical" href={canonical}/><link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48" type="image/x-icon"/><link rel="icon" href="/favicon.png?v=3" sizes="32x32" type="image/png"/><link rel="icon" href="/favicon-96.png?v=3" sizes="96x96" type="image/png"/><link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" sizes="180x180"/>
   <meta name="theme-color" content={defaultTheme==='dark'?'#101720':'#f8f9f5'}/>
   <script is:inline defer src="https://track.pixmiller.com/script.js" data-website-id={analytics.id} data-domains={analytics.domain+',www.'+analytics.domain} data-exclude-search="true" data-exclude-hash="true" data-do-not-track="true"/>

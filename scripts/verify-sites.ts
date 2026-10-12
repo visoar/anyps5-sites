@@ -2,6 +2,7 @@ import {readFile,readdir,stat} from 'node:fs/promises';
 import {parse} from 'node-html-parser';
 import path from 'node:path';
 import {umamiSites} from '../packages/ui/analytics';
+import {agentPolicy,renderLlms} from '../packages/content/agent-policy';
 const roots={'anyps5.cc':path.resolve('anyps5.cc/dist'),'anyps5.games':path.resolve('anyps5.games/dist')};
 async function walk(dir:string):Promise<string[]>{const entries=await readdir(dir,{withFileTypes:true});return (await Promise.all(entries.map(e=>e.isDirectory()?walk(path.join(dir,e.name)):Promise.resolve([path.join(dir,e.name)])))).flat()}
 let pages=0;const problems:string[]=[];
@@ -12,6 +13,11 @@ for(const [host,root]of Object.entries(roots))for(const file of (await walk(root
  const trackers=dom.querySelectorAll('script[src="https://track.pixmiller.com/script.js"]');
  if(trackers.length!==1||trackers[0].getAttribute('data-website-id')!==analytics.id||trackers[0].getAttribute('data-domains')!==host+',www.'+host||!trackers[0].hasAttribute('defer')||['data-exclude-search','data-exclude-hash','data-do-not-track'].some(key=>trackers[0].getAttribute(key)!=='true'))problems.push(`${host}/${rel}: invalid Umami tracker configuration`);
  if(!dom.querySelector('html')?.getAttribute('lang')||!dom.querySelector('title')?.textContent||!dom.querySelector('meta[name=description]')?.getAttribute('content'))problems.push(rel+': missing metadata');
+ for(const [name,content] of Object.entries(agentPolicy)){
+  const metas=dom.querySelectorAll(`head meta[name="${name}"]`);
+  if(metas.length!==1||metas[0].getAttribute('content')!==content)problems.push(`${host}/${rel}: missing or inconsistent ${name}`);
+ }
+ if(dom.querySelector('head link[rel=alternate][type="text/plain"]')?.getAttribute('href')!==`https://${host}/llms.txt`)problems.push(`${host}/${rel}: missing AI use policy link`);
  const canonical=dom.querySelector('link[rel=canonical]')?.getAttribute('href');if(!canonical?.startsWith('https://'+host+'/'))problems.push(rel+': invalid canonical');
  if(canonical&&!dom.querySelector('meta[name=robots]')?.getAttribute('content')?.includes('noindex'))indexableUrls.get(host)!.add(canonical);
  for(const image of dom.querySelectorAll('img[src]')){
@@ -59,6 +65,12 @@ for(const [host,root] of Object.entries(roots)){
  }
  const robots=await readFile(path.join(root,'robots.txt'),'utf8');
  if(!robots.includes(`Sitemap: https://${host}/sitemap.xml`))problems.push(`${host}: robots.txt must reference /sitemap.xml`);
+ const llms=await readFile(path.join(root,'llms.txt'),'utf8');
+ if(llms!==renderLlms(host==='anyps5.cc'?'cc':'games'))problems.push(`${host}: llms.txt does not match the shared AI use policy`);
+ for(const [,href] of llms.matchAll(/\]\((https:\/\/[^)]+)\)/g)){
+  const target=new URL(href);const targetRoot=roots[target.hostname as keyof typeof roots];if(!targetRoot)continue;
+  try{await stat(path.join(targetRoot,target.pathname,'index.html'))}catch{problems.push(`${host}/llms.txt: broken link ${href}`)}
+ }
 }
 if(problems.length)throw Error([...new Set(problems)].join('\n'));
-console.log(`Verified ${pages} static pages: metadata, seven-language alternates, internal links/assets, both sitemap entrypoints, and Umami configuration/CSP.`);
+console.log(`Verified ${pages} static pages: metadata, AI use policy/llms.txt, seven-language alternates, internal links/assets, both sitemap entrypoints, and Umami configuration/CSP.`);
