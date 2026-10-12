@@ -1,0 +1,8 @@
+---
+import Icon from './Icon.astro';
+import {releaseAssets as release} from '../../content/release-assets';
+import {discoveryCopy as copy} from '../../content/discovery-copy';
+import {localPath,t,dateLabel,type Locale} from '../../content/locales';
+const {locale}=Astro.props as {locale:Locale};
+---
+<div class="download-pairs"><p class="notice">{copy.pairedFiles[locale]}</p><div class="download-platform-grid">{(['windows','linux'] as const).map(platform=><section class="download-platform"><h3>{t(locale,platform)} <small>{release.tag}</small></h3>{release.files.filter(file=>file.platform===platform).map(file=><a class="download-file" href={file.url}><span><strong>{copy[file.kind][locale]}</strong><bdi>{file.name}</bdi></span><small>{(file.bytes/1024/1024).toLocaleString(locale,{maximumFractionDigits:1})} MiB</small><Icon name="download"/></a>)}<a class="text-link" href={localPath('/guides/'+platform+'/',locale)}>{t(locale,platform)} · {t(locale,'guide')}<Icon name="arrowRight"/></a></section>)}</div><p class="download-checked"><a href={release.source}>{copy.releaseSource[locale]}<Icon/></a><span>{t(locale,'reviewed')} <time datetime={release.checked}>{dateLabel(release.checked,locale)}</time></span></p></div>

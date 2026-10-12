@@ -1,0 +1,18 @@
+---
+import Icon from './Icon.astro';
+import {conclusionReports,gameConclusions} from '../../content/game-conclusions';
+import {discoveryCopy as copy} from '../../content/discovery-copy';
+import {t,dateLabel,type Locale} from '../../content/locales';
+import {type Game,type Platform} from '../../content/model';
+const {game,locale}=Astro.props as {game:Game;locale:Locale};
+---
+<section class="platform-summary" id="platform-summary" aria-labelledby="platform-summary-heading">
+ <h2 id="platform-summary-heading">{copy.platformSummary[locale]}</h2><p class="muted summary-scope">{copy.summaryScope[locale]}</p>
+ <div class="platform-summary-grid">{(['windows','linux'] as Platform[]).map(platform=>{
+  const reports=conclusionReports(game,platform);
+  const conclusion=gameConclusions[game.slug]?.find(c=>c.platform===platform);
+  return <article class="platform-summary-card"><header><h3>{t(locale,platform)}</h3>{conclusion&&<small>{t(locale,'reviewed')} <time datetime={conclusion.reviewed}>{dateLabel(conclusion.reviewed,locale)}</time></small>}</header>
+   {reports.length?reports.map(report=><div class="summary-result"><span class:list={['badge',report.patched?'experimental':report.stage]}>{t(locale,report.stage)}{report.patched&&' · '+t(locale,'localPatch')}</span><p>{report.summary[locale]}</p><p class="summary-build"><span>{t(locale,'build')}</span><bdi>{report.build||t(locale,'unknown')}</bdi></p><a class="text-link" href={'#report-'+report.id}>{copy.summaryEvidence[locale]} · {t(locale,report.evidence)}<Icon name="arrowRight"/></a></div>):<p class="muted">{copy.noPlatformReport[locale]}</p>}
+  </article>;
+ })}</div>
+</section>

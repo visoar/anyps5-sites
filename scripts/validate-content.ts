@@ -11,6 +11,9 @@ import {gameCopy,genres} from '../packages/content/game-copy';
 import {developmentArticle} from '../packages/content/development-article';
 import {developmentNotes,developmentSource} from '../packages/content/github-progress';
 import type {Text} from '../packages/content/model';
+import {discoveryCopy} from '../packages/content/discovery-copy';
+import {gameConclusions,recentEvidence} from '../packages/content/game-conclusions';
+import {releaseAssets} from '../packages/content/release-assets';
 validateLocales();
 function checkText(text:Text,label:string){for(const l of locales)if(!text[l]?.trim())throw Error(`Missing ${l}: ${label}`)}
 const slugs=new Set<string>();
@@ -25,6 +28,17 @@ for(const game of games){
  for(const r of game.reports){checkText(r.summary,game.slug);if(!r.source.startsWith('https://github.com/'))throw Error('Missing original source');if(r.evidence==='official'&&r.patched)throw Error('Official patch misclassification');for(const b of r.benchmarks){checkText(b.context,game.slug);if(typeof b.fps!=='string')checkText(b.fps,game.slug+' FPS')}}
 }
 for(const [label,text]of Object.entries(gameCopy))checkText(text,label);
+for(const [label,text]of Object.entries(discoveryCopy))checkText(text,label);
+for(const game of games){
+ const conclusions=gameConclusions[game.slug]||[];
+ for(const platform of new Set(game.reports.map(r=>r.platform)))if(!conclusions.some(c=>c.platform===platform))throw Error('Missing platform conclusion '+game.slug+' '+platform);
+ for(const conclusion of conclusions){
+  if(!conclusion.reviewed||!conclusion.reportIds.length||new Set(conclusion.reportIds).size!==conclusion.reportIds.length)throw Error('Invalid conclusion '+game.slug);
+  for(const id of conclusion.reportIds)if(!game.reports.some(r=>r.id===id&&r.platform===conclusion.platform))throw Error('Conclusion crosses platform scope '+id);
+ }
+}
+for(const item of recentEvidence)if(!games.find(g=>g.slug===item.slug)?.reports.some(r=>r.id===item.reportId))throw Error('Invalid recent evidence '+item.slug);
+for(const file of releaseAssets.files)if(!file.url.startsWith('https://github.com/boykopovar/AnyPS5/releases/download/'+releaseAssets.tag+'/')||file.url.split('/').at(-1)!==file.name||file.bytes<=0)throw Error('Invalid release asset '+file.name);
 for(const [slug,source]of Object.entries(media)){
  if(!ids.has(slug)||!source.source.startsWith('https://')||!source.checked)throw Error('Invalid media provenance '+slug);
  for(const url of [source.cover,...source.screenshots].filter(Boolean))if(!['image.api.playstation.com','gmedia.playstation.com','shared.akamai.steamstatic.com'].includes(new URL(url!).hostname))throw Error('Unexpected media host '+url);

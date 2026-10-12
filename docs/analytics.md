@@ -33,3 +33,7 @@ Custom events include `site` and the content `locale`. Umami also records the cu
 Use result counts to find unsuccessful searches, filters to prioritise platform coverage, game/guide clicks to choose content, and cross-site clicks to assess the setup-to-game journey. Review events and properties in each website's Umami dashboard; compare content locale with the automatic browser language to assess localisation.
 
 Validation: `npm test` and `npm run build` verify content plus the single tracker, per-site ID, domain/privacy flags and both CSPs across all generated pages. After a release, verify actual `/api/send` responses and matching events through the authenticated Umami API.
+
+## Discovery additions — 2026-10-12
+
+Header search emits `global_game_search` with query length and result count, and `global_game_open` with the selected game slug and query length. Raw queries are excluded. Existing catalog events now also include `order` (`featured`, `name`, `reviewed`, or `tested`). Production-domain isolation and tracker failure handling stay in the shared analytics helper.

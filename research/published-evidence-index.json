@@ -54,6 +54,66 @@
           "version": null,
           "build": "main a11c8f7f",
           "patched": false
+        },
+        {
+          "id": "2663-windows-regression",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/2663",
+          "sourceUpdated": "2026-10-10T18:08:41Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "blocked",
+          "evidence": "community",
+          "version": null,
+          "build": "Reporter-built main; exact commit not provided",
+          "patched": null
+        },
+        {
+          "id": "2663-windows-fix",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/2663#issuecomment-6097511276",
+          "sourceUpdated": "2026-10-10T18:08:41Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": null,
+          "build": "DavidSamir/fix/relinker-module-search-skips-sce-sys · 3d831a99",
+          "patched": true
+        },
+        {
+          "id": "3180-linux-release",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/3180",
+          "sourceUpdated": "2026-10-11T23:26:32Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "blocked",
+          "evidence": "community",
+          "version": null,
+          "build": "v0.1.1",
+          "patched": false
+        },
+        {
+          "id": "3180-linux-main",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/3180#issuecomment-6108006291",
+          "sourceUpdated": "2026-10-11T23:26:32Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "boot",
+          "evidence": "community",
+          "version": null,
+          "build": "main c60c123f",
+          "patched": false
+        },
+        {
+          "id": "3291-windows-title",
+          "source": "https://github.com/boykopovar/AnyPS5/issues/3291",
+          "sourceUpdated": "2026-10-11T17:46:46Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "boot",
+          "evidence": "community",
+          "version": null,
+          "build": "main + fix/bda-span-read-split; initial fix 870b8bdf",
+          "patched": true
         }
       ]
     },

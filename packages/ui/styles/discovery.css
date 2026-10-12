@@ -1,0 +1,80 @@
+.site-header{position:relative;z-index:30}
+.global-game-search>summary{display:flex;align-items:center;justify-content:center;cursor:pointer;list-style:none;width:44px;height:44px;border-radius:6px}
+.global-game-search>summary::-webkit-details-marker{display:none}
+.global-game-search>summary>span:not(.icon){position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.global-game-search[open]>summary{background:var(--raised);color:var(--ink)}
+.global-search-panel{position:absolute;inset-inline-end:max(18px,calc((100vw - var(--max))/2));top:calc(100% - 4px);width:min(440px,calc(100vw - 36px));padding:20px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:8px;box-shadow:0 16px 36px #0003;z-index:40}
+.global-search-panel label{font-size:14px;font-weight:600;display:block;margin-bottom:10px}
+.global-search-input{display:flex;border:1px solid var(--line);border-radius:5px;background:var(--bg)}
+.global-search-input input{flex:1;min-width:0;border:0;background:transparent;color:var(--ink);padding:12px;font:inherit;font-size:15px}
+.global-search-input button{display:flex;align-items:center;justify-content:center;width:44px;min-height:44px;border:0;background:var(--accent);color:var(--accent-ink);border-radius:0 4px 4px 0;cursor:pointer}
+[dir=rtl] .global-search-input button{border-radius:4px 0 0 4px}
+#global-search-help{font-size:12px;line-height:1.6;margin-block:10px}
+#global-search-results{list-style:none;padding:0;margin-block:14px;border-block:1px solid var(--line);max-height:320px;overflow:auto}
+#global-search-results a{display:flex;flex-direction:column;gap:5px;padding:12px;min-height:56px;line-height:1.5}
+#global-search-results strong{font-size:14px;font-weight:600}
+#global-search-results small{font-size:12px;color:var(--muted)}
+#global-search-results li+li{border-top:1px solid var(--line)}
+#global-search-results li[aria-selected=true],#global-search-results li:hover{background:var(--raised)}
+#global-search-status{font-size:13px;line-height:1.7;margin-block:12px}
+.global-search-panel .text-link{font-size:13px;min-height:32px}
+.evidence-stats{display:flex;flex-wrap:wrap;gap:16px;margin-top:24px;max-width:760px}
+.evidence-stats>a,.evidence-stats>div{display:flex;flex-direction:column;gap:6px;flex:1;min-width:145px;padding:15px 18px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:6px}
+.evidence-stats strong{font-size:24px;font-weight:650;line-height:1.3}
+.evidence-stats time{font-size:17px}
+.evidence-stats span{font-size:12px;color:var(--muted);line-height:1.5}
+.catalog-entry-scope{margin-top:0}
+.recent-evidence{padding-block:22px 38px}
+.recent-evidence .section-heading h2{font-size:25px}
+.recent-evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.recent-evidence-grid article{padding:22px;background:var(--surface);border:1px solid var(--line);border-radius:6px}
+.recent-evidence-grid h3{font-size:18px;margin-block:9px 12px}
+.recent-evidence-grid h3 a{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.recent-evidence-grid article>p:not(.eyebrow){font-size:14px;line-height:1.75;color:var(--muted)}
+.recent-evidence-grid .text-link{font-size:12px;margin-top:12px}
+.sort-help{margin-block:12px 18px;line-height:1.7}
+.platform-summary{padding-block:26px 8px}
+.platform-summary>h2{font-size:25px;margin-bottom:12px}
+.summary-scope{font-size:14px;line-height:1.75;margin-bottom:20px;max-width:850px}
+.platform-summary-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.platform-summary-card{padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:6px}
+.platform-summary-card>header{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:20px;flex-wrap:wrap}
+.platform-summary-card h3{font-size:20px;margin:0}
+.platform-summary-card header small{font-size:12px;color:var(--muted)}
+.platform-summary-card p{font-size:14px;line-height:1.8;margin-block:12px}
+.summary-result+.summary-result{border-top:1px solid var(--line);margin-top:20px;padding-top:20px}
+.summary-result .text-link{font-size:12px;line-height:1.7}
+.platform-summary-card .summary-build{font-size:12px;display:flex;flex-direction:column;gap:4px;color:var(--muted);overflow-wrap:anywhere;margin-block:15px}
+.download-pairs>.notice{font-size:14px;line-height:1.75}
+.download-platform-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-block:20px}
+.download-platform{padding:20px;border:1px solid var(--line);border-radius:6px;background:var(--surface);min-width:0}
+.download-platform h3{font-size:21px;display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.download-platform h3 small{font-size:12px;color:var(--muted)}
+.download-file{display:flex;align-items:center;gap:10px;padding-block:16px;border-top:1px solid var(--line);font-size:12px}
+.download-file>span{display:flex;flex-direction:column;gap:7px;min-width:0;flex:1}
+.download-file strong{font-size:14px;font-weight:600}
+.download-file bdi{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+.download-file>small{color:var(--muted);white-space:nowrap}
+.download-platform>.text-link{margin-top:14px;font-size:13px}
+.download-checked{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.download-checked>a{display:flex;align-items:center;gap:8px}
+.update-game-links{margin-block:14px}
+@media(max-width:900px){
+ .platform-summary-grid,.download-platform-grid{grid-template-columns:1fr}
+ .platform-summary-card{padding:20px}
+ .header-tools{gap:10px}
+}
+@media(max-width:600px){
+ .global-search-panel{padding:18px}
+ .evidence-stats{gap:10px}
+ .evidence-stats>a{min-width:calc(50% - 10px)}
+ .evidence-stats>div{min-width:100%}
+ .evidence-stats>a,.evidence-stats>div{padding:13px 15px}
+ .recent-evidence-grid{grid-template-columns:1fr}
+ .recent-evidence-grid article{padding:18px}
+ .recent-evidence-grid h3{font-size:17px}
+ .platform-summary>h2{font-size:22px}
+ .header-tools{gap:6px}
+ .download-file{gap:7px}
+ .filter-bar label:last-of-type{min-width:calc(50% - 10px);flex-basis:auto}
+}

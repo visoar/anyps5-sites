@@ -2,8 +2,10 @@
 import Icon from './Icon.astro';
 import {developmentNotes,developmentSource} from '../../content/github-progress';
 import {gameCopy} from '../../content/game-copy';
-import {dateLabel,type Locale} from '../../content/locales';
-const {locale,gameSlug}=Astro.props as {locale:Locale;gameSlug?:string};
-const notes=gameSlug?developmentNotes.filter(n=>n.games.includes(gameSlug)):developmentNotes;
+import {games} from '../../content/games';
+import {gameName} from '../../content/game-editorial';
+import {dateLabel,localPath,origin,type Locale} from '../../content/locales';
+const {locale,gameSlug,numbers}=Astro.props as {locale:Locale;gameSlug?:string;numbers?:number[]};
+const notes=developmentNotes.filter(n=>(!gameSlug||n.games.includes(gameSlug))&&(!numbers||numbers.includes(n.number)));
 ---
-{notes.length>0&&<div class="development-notes"><p class="notice">{gameCopy.progressNote[locale]}</p>{notes.map(note=>{const source=developmentSource(note);const label=source.state==='merged'?'merged':source.state==='closed'?'closed':source.kind==='issue'?'issueOpen':'open';return <article class="development-note"><div class="development-note-meta"><span class:list={['badge',source.state==='merged'?'ingame':'unverified']}>{gameCopy[label][locale]}</span><bdi>{source.kind==='pr'?'PR':'Issue'} #{note.number}</bdi><time datetime={source.updated}>{dateLabel(source.updated,locale)}</time></div><h3><a href={source.url}>{note.title[locale]}<Icon/></a></h3><p>{note.summary[locale]}</p>{source.commit&&<p class="commit-reference"><bdi>main · <a href={'https://github.com/boykopovar/AnyPS5/commit/'+source.commit}>{source.commit.slice(0,8)}</a></bdi></p>}</article>})}</div>}
+{notes.length>0&&<div class="development-notes"><p class="notice">{gameCopy.progressNote[locale]}</p>{notes.map(note=>{const source=developmentSource(note);const label=source.state==='merged'?'merged':source.state==='closed'?'closed':source.kind==='issue'?'issueOpen':'open';return <article class="development-note"><div class="development-note-meta"><span class:list={['badge',source.state==='merged'?'ingame':'unverified']}>{gameCopy[label][locale]}</span><bdi>{source.kind==='pr'?'PR':'Issue'} #{note.number}</bdi><time datetime={source.updated}>{dateLabel(source.updated,locale)}</time></div><h3><a href={source.url}>{note.title[locale]}<Icon/></a></h3><p>{note.summary[locale]}</p>{numbers&&<div class="update-game-links">{note.games.map(slug=><a class="text-link" href={origin('games')+localPath('/games/'+slug+'/',locale)+'#platform-summary'}>{gameName(games.find(g=>g.slug===slug)!,locale)}<Icon name="arrowRight"/></a>)}</div>}{source.commit&&<p class="commit-reference"><bdi>main · <a href={'https://github.com/boykopovar/AnyPS5/commit/'+source.commit}>{source.commit.slice(0,8)}</a></bdi></p>}</article>})}</div>}

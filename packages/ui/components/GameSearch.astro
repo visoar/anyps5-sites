@@ -1,0 +1,21 @@
+---
+import Icon from './Icon.astro';
+import {games} from '../../content/games';
+import {gameName,gameSearchText} from '../../content/game-editorial';
+import {discoveryCopy as copy} from '../../content/discovery-copy';
+import {localPath,origin,t,type Locale,type Site} from '../../content/locales';
+const {locale,site}=Astro.props as {locale:Locale;site:Site};
+const root=(site==='games'?'':origin('games'))+localPath('/',locale);
+const data=games.map(game=>({name:gameName(game,locale),search:gameSearchText(game),titleId:game.titleId,hasReports:game.reports.length>0,url:(site==='games'?'':origin('games'))+localPath('/games/'+game.slug+'/',locale),slug:game.slug}));
+---
+<details class="global-game-search" id="global-game-search"><summary aria-label={copy.searchGames[locale]}><Icon name="search"/><span>{copy.searchGames[locale]}</span></summary>
+ <div class="global-search-panel"><form action={root} role="search" id="global-search-form">
+  <label for="global-query">{t(locale,'searchLabel')}</label><div class="global-search-input"><input id="global-query" name="q" type="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="global-search-results" aria-describedby="global-search-help" autocomplete="off" placeholder={t(locale,'searchPlaceholder')}/><button type="submit" aria-label={t(locale,'search')}><Icon name="arrowRight"/></button></div>
+  <p id="global-search-help" class="muted">{copy.searchHelp[locale]}</p>
+ </form><ul id="global-search-results" role="listbox" aria-label={copy.suggestions[locale]} hidden/>
+ <p id="global-search-status" role="status" aria-live="polite"/><a class="text-link" id="global-search-all" href={root}>{t(locale,'explore')}<Icon name="arrowRight"/></a></div>
+</details>
+<script id="global-search-data" type="application/json" set:html={JSON.stringify({games:data,labels:{withReports:copy.reviewedEntries[locale],withoutReports:t(locale,'notTested'),noResults:t(locale,'noResults')},root}).replace(/</g,'\\u003c')}/>
+<script>
+ import '../game-search';
+</script>

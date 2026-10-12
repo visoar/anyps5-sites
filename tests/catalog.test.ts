@@ -80,3 +80,39 @@ test('localized titles and established aliases remain searchable alongside canon
  assert.ok(gameName(regional,'zh').includes('PPSA01342'));
  assert.equal(gameName(regional,'en'),regional.name);
 });
+
+test('a Linux fix notice preserves failed runs without creating a gameplay result',()=>{
+ const sarah=games.find(g=>g.slug==='dreaming-sarah')!;
+ assert.equal(sarah.reports.find(r=>r.id==='3180-linux-release')!.build,'v0.1.1');
+ const main=sarah.reports.find(r=>r.id==='3180-linux-main')!;
+ assert.equal(main.stage,'boot');assert.equal(main.build,'main c60c123f');assert.equal(main.testDate,null);
+ assert.equal(filterGames('PPSA02929',{platform:'linux',stage:'ingame'}).length,0);
+ assert.equal(filterGames('PPSA02929',{platform:'linux',evidence:'official'}).length,0);
+ assert.equal(filterGames('PPSA02929',{platform:'linux',stage:'boot'}).length,1);
+ const experimental=sarah.reports.find(r=>r.id==='3291-windows-title')!;
+ assert.equal(experimental.stage,'boot');assert.equal(experimental.patched,true);
+ assert.equal(experimental.benchmarks[0].fps.zh,'标题画面 60');
+});
+
+test('editorial platform summaries choose evidence explicitly rather than historical maximum',async()=>{
+ const {conclusionReports}=await import('../packages/content/game-conclusions');
+ const silk=games.find(g=>g.slug==='hollow-knight-silksong')!;
+ assert.equal(conclusionReports(silk,'windows')[0].id,'726-windows-review-20261012');
+ assert.equal(conclusionReports(silk,'linux')[0].id,'1519-linux-review-20261012');
+ assert.deepEqual(conclusionReports(games.find(g=>g.slug==='black-myth-wukong')!,'windows'),[]);
+ const ghost=conclusionReports(games.find(g=>g.slug==='ghost-of-yotei')!,'linux');
+ assert.equal(ghost[0].id,'2884-linux-review-20261012');assert.equal(ghost[0].stage,'blocked');
+});
+
+test('catalog order keeps test dates separate from review dates and puts unknown tests last',async()=>{
+ const {compareCatalogEntries}=await import('../packages/content/catalog-order');
+ const data=[
+  {name:'A',index:0,reviewed:'2026-10-12',reports:[{testDate:null}]},
+  {name:'B',index:1,reviewed:'2026-10-10',reports:[{testDate:'2026-10-09'}]},
+  {name:'C',index:2,reviewed:'2026-10-11',reports:[{testDate:'2026-10-08'},{testDate:'2026-10-10'}]},
+ ];
+ assert.deepEqual([...data].sort((a,b)=>compareCatalogEntries(a,b,'reviewed','en')).map(g=>g.name),['A','C','B']);
+ assert.deepEqual([...data].sort((a,b)=>compareCatalogEntries(a,b,'tested','en')).map(g=>g.name),['C','B','A']);
+ assert.equal(compareCatalogEntries({...data[2],reports:[{testDate:'2026-10-08'}]},data[1],'tested','en')>0,true);
+ assert.deepEqual([...data].reverse().sort((a,b)=>compareCatalogEntries(a,b,'featured','en')).map(g=>g.name),['A','B','C']);
+});
