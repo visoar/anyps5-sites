@@ -3,11 +3,19 @@ import {type Game,type Platform,type PlatformConclusion} from './model';
 
 // Select representative evidence explicitly; never infer a current verdict from the highest stage.
 const selections:Record<string,{reviewed:string;reportIds:string[]}>={
+ 'ready-or-not':{reviewed:'2026-10-13',reportIds:["4184-windows-review-20261013"]},
+ 'phasmophobia':{reviewed:'2026-10-13',reportIds:["4680-windows-review-20261013"]},
+ 'blasphemous-2':{reviewed:'2026-10-13',reportIds:["4687-linux-review-20261013"]},
+ 'nhl-27':{reviewed:'2026-10-13',reportIds:["4275-windows-review-20261013"]},
+ 'ghost-of-tsushima-directors-cut':{reviewed:'2026-10-13',reportIds:["4461-windows-review-20261013"]},
+ 'lost-soul-aside':{reviewed:'2026-10-13',reportIds:["4387-windows-review-20261013"]},
+ 'minecraft':{reviewed:'2026-10-13',reportIds:["4216-linux-review-20261013"]},
+ 'gran-turismo-7':{reviewed:'2026-10-13',reportIds:["4697-windows-review-20261013"]},
  'horizon-forbidden-west':{reviewed:'2026-10-13',reportIds:['1616-linux']},
  'resident-evil-4-remake':{reviewed:'2026-10-13',reportIds:['2776-windows']},
  'returnal':{reviewed:'2026-10-13',reportIds:['4239-windows']},
  'palworld':{reviewed:'2026-10-13',reportIds:['3832-windows']},
- 'dreaming-sarah':{reviewed:'2026-10-12',reportIds:['3018-windows-review-20261012','official-sarah-windows','3180-linux-main']},
+ 'dreaming-sarah':{reviewed:'2026-10-13',reportIds:["3018-windows-review-20261012", "official-sarah-windows", "3180-linux-review-20261013"]},
  'animal-well':{reviewed:'2026-10-12',reportIds:['966-windows']},
  'hollow-knight-silksong':{reviewed:'2026-10-12',reportIds:['726-windows-review-20261012','1996-windows','1519-linux-review-20261012','3731-linux-review-20261012']},
  'silt':{reviewed:'2026-10-12',reportIds:['2810-windows','2126-linux']},
@@ -30,8 +38,8 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  'rise-of-the-ronin':{reviewed:'2026-10-12',reportIds:['2171-linux']},
  'ratchet-clank-rift-apart':{reviewed:'2026-10-12',reportIds:['3338-linux']},
  'star-wars-galactic-racer':{reviewed:'2026-10-12',reportIds:['3086-windows']},
- 'doom-homebrew':{reviewed:'2026-10-12',reportIds:['690-windows-review-20261012','690-linux-review-20261012']},
- 'cyberpunk-2077':{reviewed:'2026-10-13',reportIds:['3308-linux-main-review-20261013']},
+ 'doom-homebrew':{reviewed:'2026-10-13',reportIds:["4312-windows-rdna4", "4312-windows-rdna2", "2475-linux-intel-review-20261013","2475-linux-nvidia-archived-review-20261013","2475-linux-amd-archived-review-20261013"]},
+ 'cyberpunk-2077':{reviewed:'2026-10-13',reportIds:["4634-linux-main", "4634-linux-4216"]},
  'the-last-of-us-part-ii-remastered':{reviewed:'2026-10-12',reportIds:['2883-windows']},
  'big-helmet-heroes':{reviewed:'2026-10-12',reportIds:['3873-linux-review-20261012']},
  'hot-shots-golf-2':{reviewed:'2026-10-12',reportIds:['3839-windows-review-20261012']},
@@ -55,8 +63,8 @@ export const conclusionReports=(game:Game,platform:Platform)=>{
 };
 
 export const recentEvidence=[
- {slug:'dreaming-sarah',reportId:'3180-linux-main'},
+ {slug:'dreaming-sarah',reportId:'3180-linux-review-20261013'},
  {slug:'hollow-knight-silksong',reportId:'726-windows-review-20261012'},
  {slug:'wobbly-life',reportId:'2211-linux-review-20261012'},
- {slug:'doom-homebrew',reportId:'690-linux-review-20261012'},
+ {slug:'doom-homebrew',reportId:'2475-linux-intel-review-20261013'},
 ];

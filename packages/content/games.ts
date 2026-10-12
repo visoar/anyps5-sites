@@ -1,4 +1,5 @@
 import metadata from './source-metadata.json';
+import {maintenanceReports,maintenanceGames} from './maintenance-evidence';
 import {discoveryReports} from './discovery-evidence';
 import {additionalGames,additionalReports} from './game-extras';
 import {updatedGames,updatedReports} from './game-updates';
@@ -52,13 +53,15 @@ export const games:Game[]=[
  reviewed:g.reviewed||'2026-10-11',
  ...(updatedReports[g.slug]||['cyberpunk-2077','ratchet-clank-rift-apart','palworld'].includes(g.slug)?{reviewed:'2026-10-12'}:{}),
  reports:[...g.reports,...(updatedReports[g.slug]||[])],
-})).concat(updatedGames).map(g=>({
+})).concat(updatedGames).map<Game>(g=>({
  ...g,
- reports:[...g.reports,...(discoveryReports[g.slug]||[])],
+ reports:[...g.reports,...(discoveryReports[g.slug]||[]),...(maintenanceReports[g.slug]||[])],
  ...(discoveryReports[g.slug]?{reviewed:'2026-10-12'}:{}),
  ...(gameResearch[g.slug]?{reviewed:gameResearch[g.slug].checked}:{}),
  ...(['cyberpunk-2077','ratchet-clank-rift-apart','the-last-of-us-part-ii-remastered'].includes(g.slug)?{reviewed:'2026-10-13'}:{}),
-}));
+ ...(maintenanceReports[g.slug]?{reviewed:'2026-10-13'}:{}),
+ ...(g.slug==='gran-turismo-7'?{titleId:'PPSA01317',edition:'PS5 · PPSA01317'}:{}),
+})).concat(maintenanceGames);
 
 const stageRank:Record<Stage,number>={blocked:0,boot:1,menu:2,ingame:3};
 export function bestStage(game:Game):Stage|'notTested'{if(!game.reports.length)return 'notTested';return game.reports.reduce((stage,r)=>stageRank[r.stage]>stageRank[stage]?r.stage:stage,'blocked' as Stage)}

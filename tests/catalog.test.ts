@@ -32,7 +32,7 @@ test('unreported popular games are unknown, searchable and excluded from measure
  const game=filterGames('黑神话')[0];assert.equal(game.slug,'black-myth-wukong');assert.equal(game.titleId,null);assert.equal(game.reports.length,0);assert.equal(bestStage(game),'notTested');assert.equal(stageNeedsPatches(game),false);
  assert.equal(filterGames('wukong',{stage:'notTested'}).length,1);
  for(const filters of [{platform:'windows'},{platform:'linux'},{stage:'blocked'},{evidence:'official'},{evidence:'community'}])assert.equal(filterGames('wukong',filters).length,0);
- assert.equal(filterGames('',{stage:'notTested'}).length,10);
+ assert.equal(filterGames('',{stage:'notTested'}).length,9);
 });
 
 test('a merged technical fix does not silently create a new game report',async()=>{
@@ -63,16 +63,17 @@ test('new source reviews distinguish setup screens, patched integrations and act
   assert.equal(conclusionReports(game,platform==='windows'?'linux':'windows').length,0);
   assert.ok(gameResearch[slug]);
  }
- for(const slug of ['elden-ring','marvels-spider-man-2','gran-turismo-7','black-myth-wukong']){
+ for(const slug of ['elden-ring','marvels-spider-man-2','black-myth-wukong']){
   const game=games.find(g=>g.slug===slug)!;
   assert.equal(game.titleId,null);assert.equal(game.reports.length,0);
  }
  assert.equal(filterGames('PPSA01341').some(game=>game.slug==='marvels-spider-man-2'),false);
  assert.equal(filterGames('PPSA25380').length,0);
  const cyberpunk=games.find(g=>g.slug==='cyberpunk-2077')!;
- assert.equal(cyberpunk.reports.length,2);
+ assert.equal(cyberpunk.reports.length,4);
  assert.equal(cyberpunk.reports[0].build,'main 961b25fe');
- assert.equal(conclusionReports(cyberpunk,'linux')[0].build,'main a11c8f7f');
+ assert.equal(cyberpunk.reports.find(r=>r.id==='3308-linux-main-review-20261013')!.build,'main a11c8f7f');
+ assert.equal(conclusionReports(cyberpunk,'linux')[0].build,'main d592d54e');
  assert.equal(conclusionReports(cyberpunk,'linux')[0].stage,'blocked');
 });
 
@@ -114,14 +115,16 @@ test('localized titles and established aliases remain searchable alongside canon
  assert.equal(gameName(regional,'en'),regional.name);
 });
 
-test('a Linux fix notice preserves failed runs without creating a gameplay result',()=>{
+test('a Linux follow-up preserves failed builds and keeps unpinned success bounded',()=>{
  const sarah=games.find(g=>g.slug==='dreaming-sarah')!;
  assert.equal(sarah.reports.find(r=>r.id==='3180-linux-release')!.build,'v0.1.1');
  const main=sarah.reports.find(r=>r.id==='3180-linux-main')!;
  assert.equal(main.stage,'boot');assert.equal(main.build,'main c60c123f');assert.equal(main.testDate,null);
- assert.equal(filterGames('PPSA02929',{platform:'linux',stage:'ingame'}).length,0);
+ assert.equal(filterGames('PPSA02929',{platform:'linux',stage:'ingame'}).length,1);
  assert.equal(filterGames('PPSA02929',{platform:'linux',evidence:'official'}).length,0);
  assert.equal(filterGames('PPSA02929',{platform:'linux',stage:'boot'}).length,1);
+ const followup=sarah.reports.find(r=>r.id==='3180-linux-review-20261013')!;
+ assert.equal(followup.build,null);assert.equal(followup.patched,null);assert.equal(followup.benchmarks.length,0);assert.equal(followup.testDate,null);
  const experimental=sarah.reports.find(r=>r.id==='3291-windows-title')!;
  assert.equal(experimental.stage,'boot');assert.equal(experimental.patched,true);
  const fps=experimental.benchmarks[0].fps;assert.ok(typeof fps!=='string');assert.equal(fps.zh,'标题画面 60');
@@ -148,4 +151,10 @@ test('catalog order keeps test dates separate from review dates and puts unknown
  assert.deepEqual([...data].sort((a,b)=>compareCatalogEntries(a,b,'tested','en')).map(g=>g.name),['C','B','A']);
  assert.equal(compareCatalogEntries({...data[2],reports:[{testDate:'2026-10-08'}]},data[1],'tested','en')>0,true);
  assert.deepEqual([...data].reverse().sort((a,b)=>compareCatalogEntries(a,b,'featured','en')).map(g=>g.name),['A','B','C']);
+});
+
+test('menu racing and black presentation do not become gameplay results',()=>{
+ const gt=filterGames('PPSA01317')[0];assert.equal(gt.slug,'gran-turismo-7');assert.equal(filterGames('PPSA01317',{stage:'ingame'}).length,0);assert.equal(gt.reports[0].stage,'menu');assert.equal(gt.reports[0].patched,true);
+ const ghost=filterGames('PPSA02225')[0];assert.equal(ghost.reports[0].stage,'boot');assert.equal(ghost.reports[0].benchmarks.length,0);assert.equal(ghost.reports[0].testDate,'2026-10-11');
+ assert.equal(filterGames('PPSA17221')[0]?.slug,'minecraft');assert.equal(filterGames('PPSA19639')[0]?.slug,'minecraft-preview');assert.equal(filterGames('PPSA17221',{platform:'windows'}).length,0);
 });

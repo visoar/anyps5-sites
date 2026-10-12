@@ -3,7 +3,8 @@ export type Text = Record<Locale,string>;
 export const L = (en:string,zh:string,ar:string,pt:string,de:string,fr:string,es:string):Text => Object.fromEntries(locales.map((locale,i)=>[locale,[en,zh,ar,pt,de,fr,es][i]])) as Text;
 export const UPSTREAM = 'https://github.com/boykopovar/AnyPS5';
 export const REVIEW_DATE = '2026-10-12';
-export const sourceDoc = (name:string) => `${UPSTREAM}/blob/main/docs/user/${name}.md`;
+export const ARCHIVED_COMPATIBILITY = `${UPSTREAM}/blob/a60f52e3189003f049299206d2a6d99e55ee4260/docs/user/COMPATIBILITY.md`;
+export const sourceDoc = (name:string) => name==='COMPATIBILITY'?ARCHIVED_COMPATIBILITY:`${UPSTREAM}/blob/main/docs/user/${name}.md`;
 export type Stage = 'ingame'|'menu'|'boot'|'blocked';
 export type Platform = 'windows'|'linux';
 export interface Benchmark {cpu:string|null;gpu:string;fps:string|Text;context:Text}

@@ -41,12 +41,13 @@
   },
   "2475": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/2475",
-    "updated": "2026-10-10T17:57:54Z",
+    "updated": "2026-10-12T19:13:22Z",
     "media": [
       "https://github.com/user-attachments/assets/a8331c44-08ac-44cc-b9a5-87b2189e6635",
       "https://github.com/user-attachments/assets/ac271f28-45aa-4c98-af98-68e8cebfc3dc",
       "https://github.com/user-attachments/assets/c60ccfc9-558e-4005-856d-c0f0ec300919"
-    ]
+    ],
+    "reviewed": "2026-10-13"
   },
   "1283": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/1283",
@@ -285,8 +286,9 @@
   },
   "3180": {
     "url": "https://github.com/boykopovar/AnyPS5/issues/3180",
-    "updated": "2026-10-11T23:26:32Z",
-    "media": []
+    "updated": "2026-10-12T17:29:55Z",
+    "media": [],
+    "reviewed": "2026-10-13"
   },
   "3291": {
     "url": "https://github.com/boykopovar/AnyPS5/issues/3291",
@@ -312,5 +314,78 @@
     "url": "https://github.com/boykopovar/AnyPS5/issues/3832",
     "updated": "2026-10-11T22:09:07Z",
     "media": []
+  },
+  "4312": {
+    "url": "https://github.com/boykopovar/AnyPS5/pull/4312",
+    "updated": "2026-10-12T19:32:14Z",
+    "media": [],
+    "reviewed": "2026-10-13"
+  },
+  "4634": {
+    "url": "https://github.com/boykopovar/AnyPS5/issues/4634",
+    "updated": "2026-10-12T17:05:41Z",
+    "media": [],
+    "reviewed": "2026-10-13"
+  },
+  "4216": {
+    "url": "https://github.com/boykopovar/AnyPS5/pull/4216",
+    "updated": "2026-10-12T18:49:09Z",
+    "media": [],
+    "reviewed": "2026-10-13"
+  },
+  "4387": {
+    "url": "https://github.com/boykopovar/AnyPS5/issues/4387",
+    "updated": "2026-10-12T17:59:25Z",
+    "media": [
+      "https://github.com/eljackjoestar-cmd/AnyPS5/releases/download/issue-evidence-lost-soul-aside-green-20261012/lost-soul-aside-green-artifacts.png"
+    ],
+    "reviewed": "2026-10-13"
+  },
+  "4184": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/4184",
+    "updated": "2026-10-12T19:20:56Z",
+    "media": [
+      "https://github.com/user-attachments/assets/0919b769-cebb-4db6-b55d-e44c474af759",
+      "https://github.com/user-attachments/assets/1e7f747a-fc3b-479d-bda5-880e5bd6075f",
+      "https://github.com/user-attachments/assets/8105a8f0-d659-4d54-b456-1362409a7619",
+      "https://github.com/user-attachments/assets/c90299e5-8db9-42e6-a0f0-9bf1097f103b"
+    ],
+    "reviewed": "2026-10-13"
+  },
+  "4680": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/4680",
+    "updated": "2026-10-12T19:17:33Z",
+    "media": [],
+    "reviewed": "2026-10-13"
+  },
+  "4687": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/4687",
+    "updated": "2026-10-12T19:03:11Z",
+    "media": [],
+    "reviewed": "2026-10-13"
+  },
+  "4275": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/4275",
+    "updated": "2026-10-12T17:49:11Z",
+    "media": [],
+    "reviewed": "2026-10-13"
+  },
+  "4461": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/4461",
+    "updated": "2026-10-12T17:21:07Z",
+    "media": [],
+    "reviewed": "2026-10-13"
+  },
+  "4697": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/4697",
+    "updated": "2026-10-12T19:31:23Z",
+    "media": [
+      "https://github.com/user-attachments/assets/3b502aa4-4ce4-4039-ab3c-2d49150533c1",
+      "https://github.com/user-attachments/assets/3e51babf-5613-4a5d-a167-a994b367b540",
+      "https://github.com/user-attachments/assets/79efb9f8-dd46-4142-ac1b-9ad5cdbbd6bb",
+      "https://github.com/user-attachments/assets/a182b04e-8181-4bfa-b747-b3cec025e25f",
+      "https://github.com/user-attachments/assets/b9dab57d-e0ec-4f49-8e04-0c3a07d84283"
+    ],
+    "reviewed": "2026-10-13"
   }
 }

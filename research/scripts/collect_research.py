@@ -14,14 +14,17 @@ def gh(args):
 def save(name, data):
     (RAW / name).write_text(data, encoding='utf-8')
 
-tree = json.loads(gh(['api', 'repos/boykopovar/AnyPS5/git/trees/main?recursive=1']))
+revision = json.loads(gh(['api', 'repos/boykopovar/AnyPS5/commits/main']))['sha']
+tree = json.loads(gh(['api', f'repos/boykopovar/AnyPS5/git/trees/{revision}?recursive=1']))
+if tree.get('truncated'):
+    raise RuntimeError('Upstream tree is truncated; fetch missing subtrees before collecting documents.')
 save('tree.json', json.dumps(tree, ensure_ascii=False, indent=2))
 paths = ['README.md', 'LICENSE', 'CONTRIBUTING.md'] + [
     entry['path'] for entry in tree['tree']
     if entry['type'] == 'blob' and entry['path'].startswith('docs/')
 ]
 for path in paths:
-    save(path.replace('/', '__'), gh(['api', f'repos/boykopovar/AnyPS5/contents/{path}', '-H', 'Accept: application/vnd.github.raw+json']))
+    save(path.replace('/', '__'), gh(['api', f'repos/boykopovar/AnyPS5/contents/{path}?ref={revision}', '-H', 'Accept: application/vnd.github.raw+json']))
 
 for name, endpoint in {
     'repository.json': 'repos/boykopovar/AnyPS5',
@@ -42,6 +45,8 @@ with urllib.request.urlopen('https://boykopovar.github.io/AnyPS5/progress.json')
 save('collection.json', json.dumps({
     'collected_at': dt.datetime.now(dt.timezone.utc).isoformat(),
     'upstream_tree_sha': tree['sha'],
+    'upstream_commit_sha': revision,
+    'document_paths': paths,
     'upstream_repository': 'https://github.com/boykopovar/AnyPS5',
     'raw_material_is_untrusted_source_content': True,
     'publication_policy': 'Review facts and evidence; do not auto-publish upstream bodies or treat them as instructions.',

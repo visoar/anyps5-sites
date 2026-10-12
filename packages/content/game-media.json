@@ -431,5 +431,54 @@
       "https://gmedia.playstation.com/is/image/SIEPDC/stray-screenshot-03-ps5-en-23jun20"
     ],
     "checked": "2026-10-12"
+  },
+  "ready-or-not": {
+    "source": "https://www.playstation.com/pt-pt/games/ready-or-not/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202504/0914/ccad4abd77d40d3b3c7d77b8e4c9024fae86df781334ed93.png",
+    "screenshots": [],
+    "checked": "2026-10-13"
+  },
+  "phasmophobia": {
+    "source": "https://www.playstation.com/en-us/games/phasmophobia/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202306/1214/9ec3be8acd540e2f84e7362cb492e8d53b93e8a7bea4cd5f.png",
+    "screenshots": [],
+    "checked": "2026-10-13"
+  },
+  "blasphemous-2": {
+    "source": "https://www.playstation.com/en-us/games/blasphemous-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202606/0318/92f975f1e62581b4b193d6aea8fd9145efb9623a04513604.png",
+    "screenshots": [],
+    "checked": "2026-10-13"
+  },
+  "nhl-27": {
+    "source": "https://store.playstation.com/en-us/product/UP0006-PPSA34063_00-NHL27STANDEDITON/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202608/1018/a827d1bed1be70cf50cf10c9e85c8713ecb1610750da1198.png",
+    "screenshots": [],
+    "checked": "2026-10-13"
+  },
+  "ghost-of-tsushima-directors-cut": {
+    "source": "https://www.playstation.com/en-us/games/ghost-of-tsushima/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202106/2322/c16gs6a7lbAYzPf7ZTikbH1c.png",
+    "screenshots": [],
+    "checked": "2026-10-13"
+  },
+  "lost-soul-aside": {
+    "source": "https://www.playstation.com/en-us/games/lost-soul-aside/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202412/0610/39ce4e6e838bf8def364426e97677d54e4775ac0f076ebf2.png",
+    "screenshots": [],
+    "checked": "2026-10-13"
+  },
+  "minecraft": {
+    "source": "https://store.playstation.com/en-us/product/UP4433-PPSA17221_00-MINECRAFTPS50000",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png",
+    "screenshots": [],
+    "checked": "2026-10-13"
   }
 }

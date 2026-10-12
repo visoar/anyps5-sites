@@ -1526,5 +1526,103 @@
         "height": 1080
       }
     ]
+  },
+  "ready-or-not": {
+    "cover": {
+      "file": "ready-or-not/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202504/0914/ccad4abd77d40d3b3c7d77b8e4c9024fae86df781334ed93.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202504/0914/ccad4abd77d40d3b3c7d77b8e4c9024fae86df781334ed93.png",
+      "sourceSha256": "6470fc4f1c11f570eeb837a636ca2e81cb8e80d47c5978f86e02ac56b0843a76",
+      "sourceBytes": 188596,
+      "sha256": "8c217572f43075c23e1e6a7ff44a0299f1b0b36d5a5e439354a7e588310ed166",
+      "bytes": 103730,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "phasmophobia": {
+    "cover": {
+      "file": "phasmophobia/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202306/1214/9ec3be8acd540e2f84e7362cb492e8d53b93e8a7bea4cd5f.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202306/1214/9ec3be8acd540e2f84e7362cb492e8d53b93e8a7bea4cd5f.png",
+      "sourceSha256": "d611bc9bd43aa4201e913d3a7b38ae1be4e494fb7fd82cbdda30efd42fb7fa76",
+      "sourceBytes": 91249,
+      "sha256": "e30ea75aff8e65f12fe93a63b104fc6914ca563dd83c41e86b273440f7bec47d",
+      "bytes": 46662,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "blasphemous-2": {
+    "cover": {
+      "file": "blasphemous-2/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202606/0318/92f975f1e62581b4b193d6aea8fd9145efb9623a04513604.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202606/0318/92f975f1e62581b4b193d6aea8fd9145efb9623a04513604.png",
+      "sourceSha256": "82cb17e917aa3dd4f96d474d510052eba197d5e7f157a4b5d35ebf2ea0ae6646",
+      "sourceBytes": 207162,
+      "sha256": "be2e5237eefc2678122686e1ba7de454362ed798404de52f1845069b20f5387a",
+      "bytes": 120992,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "nhl-27": {
+    "cover": {
+      "file": "nhl-27/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202608/1018/a827d1bed1be70cf50cf10c9e85c8713ecb1610750da1198.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202608/1018/a827d1bed1be70cf50cf10c9e85c8713ecb1610750da1198.png",
+      "sourceSha256": "f5b4d3376567ac0864a2e71ac264fbb7e79fe01f6025f3121f22348d05b7a7ee",
+      "sourceBytes": 200963,
+      "sha256": "cccd6c7913c12d107e949f79407e3681d8a04851211b87d34d560c0ce23d4234",
+      "bytes": 123788,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "ghost-of-tsushima-directors-cut": {
+    "cover": {
+      "file": "ghost-of-tsushima-directors-cut/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202106/2322/c16gs6a7lbAYzPf7ZTikbH1c.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202106/2322/c16gs6a7lbAYzPf7ZTikbH1c.png",
+      "sourceSha256": "dd820854f8a7e1f556d247ecba8cffa1c2d6d208d012a6e1918814bdffa97f30",
+      "sourceBytes": 210030,
+      "sha256": "75ae20a071bfa1595ac5eb1b06617f63d132e752a9c39be16d4556e48bb58843",
+      "bytes": 133248,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "lost-soul-aside": {
+    "cover": {
+      "file": "lost-soul-aside/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202412/0610/39ce4e6e838bf8def364426e97677d54e4775ac0f076ebf2.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202412/0610/39ce4e6e838bf8def364426e97677d54e4775ac0f076ebf2.png",
+      "sourceSha256": "8e8e8510f36b5e2d788cb42a7db40e44bc6712785e2c3c15a54fb5d4c8a297cb",
+      "sourceBytes": 214799,
+      "sha256": "a2540659d24fb54f1f20f01247539c68e2b9d81e6635a264097d46106133c4ee",
+      "bytes": 133838,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "minecraft": {
+    "cover": {
+      "file": "minecraft/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png",
+      "sourceSha256": "e187efc9390dafbe43e4133aad32af3499a2af98f035f57ffef359d4e450a6f4",
+      "sourceBytes": 196489,
+      "sha256": "ebeb9e41874e43204f51505a38065aeb9c70b8d04a8d89f09ff72aeadb4e9139",
+      "bytes": 109892,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
   }
 }
