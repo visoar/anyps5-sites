@@ -1,6 +1,6 @@
 ---
 const {text}=Astro.props as {text:string};
-const tokens=text.split(/(--macos|--to-rosetta|\/_sd|\/download0|\b_sd\b|\bapp0\/|\blibs\/|x86-64)/g);
+const tokens=text.split(/(--macos --to-rosetta|\/_sd|\/download0|\b_sd\b|\bapp0\/|\blibs\/|x86-64)/g);
 ---
 {tokens.map((token,index)=>index%2?<bdi dir="ltr"><code>{token}</code></bdi>:token)}
 <style>code{font-size:.92em;white-space:nowrap;overflow-wrap:normal}</style>
