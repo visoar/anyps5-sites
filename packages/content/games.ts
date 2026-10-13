@@ -1,5 +1,5 @@
 import metadata from './source-metadata.json';
-import {maintenanceReports,maintenanceGames} from './maintenance-evidence';
+import {maintenanceReports,maintenanceGames,maintenanceReviewed} from './maintenance-evidence';
 import {discoveryReports} from './discovery-evidence';
 import {additionalGames,additionalReports} from './game-extras';
 import {updatedGames,updatedReports} from './game-updates';
@@ -59,7 +59,8 @@ export const games:Game[]=[
  ...(discoveryReports[g.slug]?{reviewed:'2026-10-12'}:{}),
  ...(gameResearch[g.slug]?{reviewed:gameResearch[g.slug].checked}:{}),
  ...(['cyberpunk-2077','ratchet-clank-rift-apart','the-last-of-us-part-ii-remastered','hades-ii'].includes(g.slug)?{reviewed:'2026-10-13'}:{}),
- ...(maintenanceReports[g.slug]?{reviewed:'2026-10-13'}:{}),
+ ...(maintenanceReports[g.slug]?{reviewed:maintenanceReviewed[g.slug]||'2026-10-13'}:{}),
+ ...(g.slug==='black-myth-wukong'?{titleId:'PPSA23226',edition:'PS5 · PPSA23226'}:{}),
  ...(g.slug==='gran-turismo-7'?{titleId:'PPSA01317',edition:'PS5 · PPSA01317'}:{}),
 })).concat(maintenanceGames);
 

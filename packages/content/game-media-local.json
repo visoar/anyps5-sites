@@ -1624,5 +1624,419 @@
       "height": 1024
     },
     "screenshots": []
+  },
+  "resident-evil-village": {
+    "cover": {
+      "file": "resident-evil-village/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202101/0812/FkzwjnJknkrFlozkTdeQBMub.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202101/0812/FkzwjnJknkrFlozkTdeQBMub.png",
+      "sourceSha256": "6e508b972c7d09a72d128fc488bb0ae81187e34b49fa8de92716a21e5302a1ca",
+      "sourceBytes": 197019,
+      "sha256": "9fb35b0d09376371b944b15589bb780d191a88323964400e45515fdf87d8e560",
+      "bytes": 138720,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "death-stranding-2": {
+    "cover": {
+      "file": "death-stranding-2/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2115/ae183c63bbeb38d05ecce96aa7f693b4a3769a1835020b63.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2115/ae183c63bbeb38d05ecce96aa7f693b4a3769a1835020b63.png",
+      "sourceSha256": "3a99a8e4dffcb50f26057b3a79565f398a2947d7397b3ab18ef270715f01f9bd",
+      "sourceBytes": 215628,
+      "sha256": "5f08557cb3e7a0b9b7ad9b4aa337f2c4ea3b2d2ab45b4c3d86371b812f2e2dea",
+      "bytes": 128756,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "diablo-ii-resurrected": {
+    "cover": {
+      "file": "diablo-ii-resurrected/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202602/0317/13004a1e1f9f7a90933604ec069bd725173b446dfb8dc1c0.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202602/0317/13004a1e1f9f7a90933604ec069bd725173b446dfb8dc1c0.png",
+      "sourceSha256": "e39ad1aab008c2778b3f0fa7c324ebbecd3881039c4e1547430fd9aaca103fa9",
+      "sourceBytes": 120543,
+      "sha256": "4d9bb26f06a74fd2c4b604e78758f34a22a908013c00955754c81ef12447d793",
+      "bytes": 65742,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "sonic-superstars": {
+    "cover": {
+      "file": "sonic-superstars/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202307/2416/9fb7d209dbb62357ddd5c305f6019a97238fc1bd1b540560.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202307/2416/9fb7d209dbb62357ddd5c305f6019a97238fc1bd1b540560.png",
+      "sourceSha256": "fb08c33f70865a91f95099e7d6ae262e4e2918c3ec2db3de162e708d1cd975e8",
+      "sourceBytes": 253157,
+      "sha256": "26b684456347f253fb57ce5571fbbf483105eb0e63754bd16c68df4714a8145b",
+      "bytes": 153702,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "tourist-bus-simulator": {
+    "cover": {
+      "file": "tourist-bus-simulator/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202111/0909/BCSiHbUcNnMpqK1kWhRhMvr6.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202111/0909/BCSiHbUcNnMpqK1kWhRhMvr6.png",
+      "sourceSha256": "bc11b2b06f083c24e74307bcb0369221b6e86d3490b3e4ab8d7c849aa6757b26",
+      "sourceBytes": 236061,
+      "sha256": "e6cbf04d09cfbec332557213b00567fb2f61b22f98874df089a784ba6e82ca60",
+      "bytes": 148324,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "planet-coaster": {
+    "cover": {
+      "file": "planet-coaster/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202312/1210/74c6a0f1ff2e677bf816a649fc8666346af62537ce5ea7ab.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202312/1210/74c6a0f1ff2e677bf816a649fc8666346af62537ce5ea7ab.png",
+      "sourceSha256": "823e52df142815e144360768734526aa1051b931404080353d2172d759324761",
+      "sourceBytes": 274874,
+      "sha256": "48544572b65aa3e8adaefe7e3ee4a14b6dc3e6b1e23ea59881f9d10e5c115582",
+      "bytes": 182094,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "remnant-2": {
+    "cover": {
+      "file": "remnant-2/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202402/1420/449bd276cdf2e237c35d7e76bedc1da2a532adcb65cedf69.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202402/1420/449bd276cdf2e237c35d7e76bedc1da2a532adcb65cedf69.png",
+      "sourceSha256": "4e2453db989a56355290fca4c464299a7f511701a87824dd043a8f28bf495a2f",
+      "sourceBytes": 231292,
+      "sha256": "0bde7d1d62ed59755a91ceb32529680cecc06c74010e7667e83356efba82ae99",
+      "bytes": 147208,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "olliolli-world": {
+    "cover": {
+      "file": "olliolli-world/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202106/0321/aOY1Fb5Tcw3Zti8m3qfZeIDM.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202106/0321/aOY1Fb5Tcw3Zti8m3qfZeIDM.png",
+      "sourceSha256": "77d9831819f03693801b2df728989f2e9f4f0d981d0267d568fae3c6aba54f4e",
+      "sourceBytes": 310766,
+      "sha256": "7c34071f86e2cefec2d35dda1702c2e2a46ca4a8c1819b99231a6be054d7c179",
+      "bytes": 199276,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "mgs-peace-walker": {
+    "cover": {
+      "file": "mgs-peace-walker/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2108/53d647ca088206df40b106def99dc9e23818bbff18283059.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2108/53d647ca088206df40b106def99dc9e23818bbff18283059.png",
+      "sourceSha256": "217e480a886b50d6848f0c87223aa23979608a69b47a64c3edabf57c80865a85",
+      "sourceBytes": 277560,
+      "sha256": "87015f8d493ae3aaa164f5819f4e9252c142c689719daf040531cb0dd3744b80",
+      "bytes": 204746,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "red-dead-redemption": {
+    "cover": {
+      "file": "red-dead-redemption/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202511/1714/51f72f7876824968728fa5b711f48632ec453706fa46e07a.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202511/1714/51f72f7876824968728fa5b711f48632ec453706fa46e07a.png",
+      "sourceSha256": "350430f478f8b6bd6500a9302423db7623b60bd424ed993ca4a480993c5411e7",
+      "sourceBytes": 189383,
+      "sha256": "0f6bfe19a0c3f3de70fe7941a56097fe93de3760cbf31a2770d3eb3481939d1c",
+      "bytes": 104168,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "dragon-quest-iii-hd2d": {
+    "cover": {
+      "file": "dragon-quest-iii-hd2d/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1508/2d8a60c46eb99acc83c22ebd4024acec0beee526c5acb0cf.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1508/2d8a60c46eb99acc83c22ebd4024acec0beee526c5acb0cf.png",
+      "sourceSha256": "326d946a83bbebf885ac476c4b637f12c4797b650bba02451890783100565758",
+      "sourceBytes": 382977,
+      "sha256": "3617ea3f2c900e6228abd47bc55ef832e9576a3fdebd623eecbef0471bc21c37",
+      "bytes": 297962,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "nhl-26": {
+    "cover": {
+      "file": "nhl-26/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2815/9fa5df17cf1b0c95f3ff39d1142365537961d987c5ed03f7.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2815/9fa5df17cf1b0c95f3ff39d1142365537961d987c5ed03f7.png",
+      "sourceSha256": "5ddcefb7522f2825161130d8284cd950bc5d21c53d8b4716c0a55cbcb1cd0813",
+      "sourceBytes": 175642,
+      "sha256": "dfaeab8a1974ba77d43c25b76cc4554b6841ad90e58ee99f0646473e57de2730",
+      "bytes": 101212,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "call-of-duty-black-ops": {
+    "cover": {
+      "file": "call-of-duty-black-ops/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202606/2618/ee7d4a20243804f08a3c4a4eb1b4346dbe29dbce0fb59751.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202606/2618/ee7d4a20243804f08a3c4a4eb1b4346dbe29dbce0fb59751.png",
+      "sourceSha256": "5e01e4732c09927fe64bae5b4263d866c11d69e1b16234e06981352e04c91c51",
+      "sourceBytes": 173558,
+      "sha256": "35c856d7444d2dbebf8023560ee07dcd7afea305efa4df65c085b9d55c7dea33",
+      "bytes": 115266,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "void-terrarium-plus": {
+    "cover": {
+      "file": "void-terrarium-plus/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202103/2319/g3F1T7uHqK7YUZu6AxIpkSkg.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202103/2319/g3F1T7uHqK7YUZu6AxIpkSkg.png",
+      "sourceSha256": "86cbb735c52fd72e11d0fae022a04f754ff2e494d091571059aceacf36c5ab5c",
+      "sourceBytes": 138835,
+      "sha256": "db1438aafe9449961912c7bc261a77f023c369b3aa09140a98f672758c16d529",
+      "bytes": 69048,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "kena-bridge-of-spirits": {
+    "cover": {
+      "file": "kena-bridge-of-spirits/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202102/2307/kQzDCY5RCrSXCeeFjPGUzkGI.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202102/2307/kQzDCY5RCrSXCeeFjPGUzkGI.png",
+      "sourceSha256": "cb8c705966e7c91d9536b9e2dc2ea830c03ead760b3e2ce2deb6ea67aa0fa524",
+      "sourceBytes": 145597,
+      "sha256": "1e29e78e607f9670d55fff5610dd6fa4eb9bcc1164fe634bcb6a94cdc289b6ee",
+      "bytes": 79572,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "dead-cells": {
+    "cover": {
+      "file": "dead-cells/cover.webp",
+      "source": "https://image.api.playstation.com/cdn/UP4016/CUSA11253_00/ZB7o35lDBOMRJ5ErVtx9OUJP88jSmC2R.png",
+      "downloadUrl": "https://image.api.playstation.com/cdn/UP4016/CUSA11253_00/ZB7o35lDBOMRJ5ErVtx9OUJP88jSmC2R.png",
+      "sourceSha256": "9a3846765b381f1cf415ecf64c50dff3dd0027625e1e0f006360b72ad5e7450a",
+      "sourceBytes": 166343,
+      "sha256": "7f1ef319d12dee9c124ab5f4308278df81940b9eb86d5543ef9358a6a174cc59",
+      "bytes": 82762,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "ride-4": {
+    "cover": {
+      "file": "ride-4/cover.webp",
+      "source": "https://gmedia.playstation.com/is/image/SIEPDC/ride-4-listing-thumb-01-ps4-en-02oct20?$facebook$",
+      "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ride-4-listing-thumb-01-ps4-en-02oct20?%24facebook%24=&wid=1920&fmt=jpg&qlt=90",
+      "sourceSha256": "58e7095cc6fc98b16220073ceecebbe2d6031b3a09082a67f8c1c82f54495d0d",
+      "sourceBytes": 232960,
+      "sha256": "0a9f8cba09844021af314195ecfad7e45183fdf9627d7695d316bfee66b97b0d",
+      "bytes": 40332,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "high-on-life": {
+    "cover": {
+      "file": "high-on-life/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202305/3101/21b540176f9adb924f1396e89d406416fa2baa602b5e1492.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202305/3101/21b540176f9adb924f1396e89d406416fa2baa602b5e1492.png",
+      "sourceSha256": "19dad4b71daebe227fc51e615b3c2f59b4699b4db29bff5e3441bbdc1dfd43d5",
+      "sourceBytes": 222098,
+      "sha256": "f0ff3bd296c82e7db4e9e1caa87fd209d9f263e6b5e0d432dc9243481b0533c5",
+      "bytes": 127846,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "slay-the-princess": {
+    "cover": {
+      "file": "slay-the-princess/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202412/1700/f6fd7b91f373b30aa257dd524564315419dc6689fdd5a50b.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202412/1700/f6fd7b91f373b30aa257dd524564315419dc6689fdd5a50b.png",
+      "sourceSha256": "eee8bcc74ede1dfc825eaec7bfb36c5182a0b02474bce87213c3622c9ef780a0",
+      "sourceBytes": 252319,
+      "sha256": "dc83dd8940d2fbfdab0e54d4bf09ca319c9cfdfa2dfcbdfdd740b0e007f8dec1",
+      "bytes": 174510,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "dying-light-2": {
+    "cover": {
+      "file": "dying-light-2/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202501/3115/3c17bf3bb4c9b5b572f69217554f0afdebade3a37959bac3.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202501/3115/3c17bf3bb4c9b5b572f69217554f0afdebade3a37959bac3.png",
+      "sourceSha256": "8926a85dacad1c18abd3dec3b554a747e42478be90caa1a0ed95ada08dbf0e36",
+      "sourceBytes": 236561,
+      "sha256": "da1355503d59ce420fbc4734be9d0565e7412406871b41216eb803c0da97797e",
+      "bytes": 164022,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "sifu": {
+    "cover": {
+      "file": "sifu/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202201/1616/THJbARAq2YiRVUv5abCQ8GYQ.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/img/rnd/202201/1616/THJbARAq2YiRVUv5abCQ8GYQ.png",
+      "sourceSha256": "638e666ec23bb3a4caf000834923b1afa59a9a5816fb0e747ed6477e5f37300a",
+      "sourceBytes": 101849,
+      "sha256": "f0d298acf64502d7de7df1d2c655569bc6da90beb103f7fa1de238b0e6f4a34e",
+      "bytes": 46796,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "sword-of-the-sea": {
+    "cover": {
+      "file": "sword-of-the-sea/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0601/b80905acc0f6f97dc3b85a36f787eed88120e92afea56f34.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0601/b80905acc0f6f97dc3b85a36f787eed88120e92afea56f34.png",
+      "sourceSha256": "26ecfefeed81ec70a129a1bc1d303c78532733d3a97542d9244390214bb1a9c1",
+      "sourceBytes": 230040,
+      "sha256": "9765382d3dee997fca2a477f0e4734d95c55c880e156023b04903725eec39840",
+      "bytes": 140012,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "ccleste-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "astro-bot-ppsa21567": {
+    "cover": {
+      "file": "astro-bot-ppsa21567/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0500/8f15268257b878597757fcc5f2c9545840867bc71fc863b1.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0500/8f15268257b878597757fcc5f2c9545840867bc71fc863b1.png",
+      "sourceSha256": "19e37c8f055deef9c1dd418cd8e0bd178f33c988a8393d4d3cd58c25d03a4e15",
+      "sourceBytes": 178278,
+      "sha256": "67a5123197c636600509c2a76f0c575d01d6f1a5e4bf0da945e1b497644ca8eb",
+      "bytes": 98912,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "astro-bot-ppsa21567/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-06-en-24may24",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-06-en-24may24?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "1c98b888583465b6737a7b004b8d3dcc0c7e9d8f812a8c1d3fd96d6629214a8c",
+        "sourceBytes": 219041,
+        "sha256": "68ffdd9c4feee2beac383cc841f872c3cb0760510c46aa258abb58d7d4c60159",
+        "bytes": 88900,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "astro-bot-ppsa21567/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-02-en-24may24",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-02-en-24may24?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "43e9b730c38c5d93fe5c1664cc68cc285fca6f660e06ec9f25a7c217156b6382",
+        "sourceBytes": 572164,
+        "sha256": "824c130a6317f1f4ae8abf2cdab2756ee20c4f6398f4a8f531a46191f322403f",
+        "bytes": 323298,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "astro-bot-ppsa21559": {
+    "cover": {
+      "file": "astro-bot-ppsa21559/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0500/8f15268257b878597757fcc5f2c9545840867bc71fc863b1.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0500/8f15268257b878597757fcc5f2c9545840867bc71fc863b1.png",
+      "sourceSha256": "19e37c8f055deef9c1dd418cd8e0bd178f33c988a8393d4d3cd58c25d03a4e15",
+      "sourceBytes": 178278,
+      "sha256": "67a5123197c636600509c2a76f0c575d01d6f1a5e4bf0da945e1b497644ca8eb",
+      "bytes": 98912,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": [
+      {
+        "file": "astro-bot-ppsa21559/screenshot-1.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-06-en-24may24",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-06-en-24may24?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "1c98b888583465b6737a7b004b8d3dcc0c7e9d8f812a8c1d3fd96d6629214a8c",
+        "sourceBytes": 219041,
+        "sha256": "68ffdd9c4feee2beac383cc841f872c3cb0760510c46aa258abb58d7d4c60159",
+        "bytes": 88900,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "astro-bot-ppsa21559/screenshot-2.webp",
+        "source": "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-02-en-24may24",
+        "downloadUrl": "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-02-en-24may24?wid=1920&fmt=jpg&qlt=90",
+        "sourceSha256": "43e9b730c38c5d93fe5c1664cc68cc285fca6f660e06ec9f25a7c217156b6382",
+        "sourceBytes": 572164,
+        "sha256": "824c130a6317f1f4ae8abf2cdab2756ee20c4f6398f4a8f531a46191f322403f",
+        "bytes": 323298,
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "pragmata": {
+    "cover": {
+      "file": "pragmata/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2605/3d57b6ae9b22a4982f0272ef1c716ebbfee59b7ea1fe60af.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2605/3d57b6ae9b22a4982f0272ef1c716ebbfee59b7ea1fe60af.png",
+      "sourceSha256": "465af16acb4811089d41b8459a69ef2593ec01ae030dcc1be0dc970c5d1b8650",
+      "sourceBytes": 158138,
+      "sha256": "8b4785d51bf6fcb755135eb28e38e5e6aa511f910e52a89cdb3dafcfcccfa352",
+      "bytes": 94666,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "tomba-2": {
+    "cover": {
+      "file": "tomba-2/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202511/0620/ae339a3598ae670b44c9346696f894294993b2fce92bff89.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202511/0620/ae339a3598ae670b44c9346696f894294993b2fce92bff89.png",
+      "sourceSha256": "928fc125787d4e3fea4af58c5cd3c7b42f94ba07c3dc6c51a50a966109287e17",
+      "sourceBytes": 286242,
+      "sha256": "24b9327b774fa4a287cf575455ebd0e1e8a64f8282c4283df242db44bb35d66b",
+      "bytes": 179952,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
   }
 }

@@ -480,5 +480,200 @@
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png",
     "screenshots": [],
     "checked": "2026-10-13"
+  },
+  "resident-evil-village": {
+    "source": "https://www.playstation.com/en-us/games/resident-evil-village/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202101/0812/FkzwjnJknkrFlozkTdeQBMub.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "death-stranding-2": {
+    "source": "https://www.playstation.com/en-us/games/death-stranding-2-on-the-beach/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2115/ae183c63bbeb38d05ecce96aa7f693b4a3769a1835020b63.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "diablo-ii-resurrected": {
+    "source": "https://www.playstation.com/en-us/games/diablo-ii-resurrected/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202602/0317/13004a1e1f9f7a90933604ec069bd725173b446dfb8dc1c0.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "sonic-superstars": {
+    "source": "https://www.playstation.com/en-us/games/sonic-superstars/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202307/2416/9fb7d209dbb62357ddd5c305f6019a97238fc1bd1b540560.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "tourist-bus-simulator": {
+    "source": "https://store.playstation.com/en-us/product/UP3003-PPSA04434_00-3617739867935463/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202111/0909/BCSiHbUcNnMpqK1kWhRhMvr6.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "planet-coaster": {
+    "source": "https://www.playstation.com/en-us/games/planet-coaster-console-edition/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202312/1210/74c6a0f1ff2e677bf816a649fc8666346af62537ce5ea7ab.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "remnant-2": {
+    "source": "https://www.playstation.com/en-us/games/remnant-from-the-ashes-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202402/1420/449bd276cdf2e237c35d7e76bedc1da2a532adcb65cedf69.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "olliolli-world": {
+    "source": "https://www.playstation.com/en-us/games/olliolli-world/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202106/0321/aOY1Fb5Tcw3Zti8m3qfZeIDM.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "mgs-peace-walker": {
+    "source": "https://store.playstation.com/en-us/product/UP0101-PPSA18216_00-METALGEARSOLIDPW",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2108/53d647ca088206df40b106def99dc9e23818bbff18283059.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "red-dead-redemption": {
+    "source": "https://www.playstation.com/en-us/games/red-dead-redemption/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202511/1714/51f72f7876824968728fa5b711f48632ec453706fa46e07a.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "dragon-quest-iii-hd2d": {
+    "source": "https://www.playstation.com/en-us/games/dragon-quest-iii/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1508/2d8a60c46eb99acc83c22ebd4024acec0beee526c5acb0cf.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "nhl-26": {
+    "source": "https://www.playstation.com/en-us/games/ea-sports-nhl/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2815/9fa5df17cf1b0c95f3ff39d1142365537961d987c5ed03f7.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "call-of-duty-black-ops": {
+    "source": "https://store.playstation.com/en-us/product/UP0002-PPSA34501_00-CODBO1GAME000001",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202606/2618/ee7d4a20243804f08a3c4a4eb1b4346dbe29dbce0fb59751.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "void-terrarium-plus": {
+    "source": "https://store.playstation.com/en-us/product/UP1063-PPSA03061_00-VOIDTERRARIUMPS5",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202103/2319/g3F1T7uHqK7YUZu6AxIpkSkg.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "kena-bridge-of-spirits": {
+    "source": "https://www.playstation.com/en-us/games/kena-bridge-of-spirits/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202102/2307/kQzDCY5RCrSXCeeFjPGUzkGI.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "dead-cells": {
+    "source": "https://store.playstation.com/en-us/product/UP4016-PPSA15552_00-DEADCELLSPS5SIEA/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/cdn/UP4016/CUSA11253_00/ZB7o35lDBOMRJ5ErVtx9OUJP88jSmC2R.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "ride-4": {
+    "source": "https://www.playstation.com/en-us/games/ride-4/",
+    "provider": "PlayStation",
+    "cover": "https://gmedia.playstation.com/is/image/SIEPDC/ride-4-listing-thumb-01-ps4-en-02oct20?$facebook$",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "high-on-life": {
+    "source": "https://www.playstation.com/en-us/games/high-on-life/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202305/3101/21b540176f9adb924f1396e89d406416fa2baa602b5e1492.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "slay-the-princess": {
+    "source": "https://store.playstation.com/en-us/product/UP0604-PPSA24423_00-0301710383857745/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202412/1700/f6fd7b91f373b30aa257dd524564315419dc6689fdd5a50b.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "dying-light-2": {
+    "source": "https://www.playstation.com/en-us/games/dying-light-2-stay-human/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202501/3115/3c17bf3bb4c9b5b572f69217554f0afdebade3a37959bac3.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "sifu": {
+    "source": "https://www.playstation.com/en-us/games/sifu/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/img/rnd/202201/1616/THJbARAq2YiRVUv5abCQ8GYQ.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "sword-of-the-sea": {
+    "source": "https://www.playstation.com/en-gb/games/sword-of-the-sea/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0601/b80905acc0f6f97dc3b85a36f787eed88120e92afea56f34.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "ccleste-homebrew": {
+    "source": "https://github.com/darkxex/PS5_Celeste",
+    "provider": "ccleste PS5 author",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "astro-bot-ppsa21567": {
+    "source": "https://www.playstation.com/en-us/games/astro-bot/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0500/8f15268257b878597757fcc5f2c9545840867bc71fc863b1.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-06-en-24may24",
+      "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-02-en-24may24"
+    ],
+    "checked": "2026-10-14"
+  },
+  "astro-bot-ppsa21559": {
+    "source": "https://www.playstation.com/en-us/games/astro-bot/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0500/8f15268257b878597757fcc5f2c9545840867bc71fc863b1.png",
+    "screenshots": [
+      "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-06-en-24may24",
+      "https://gmedia.playstation.com/is/image/SIEPDC/Astro-Bot-key-features-screenshot-02-en-24may24"
+    ],
+    "checked": "2026-10-14"
+  },
+  "pragmata": {
+    "source": "https://www.playstation.com/en-us/games/pragmata/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2605/3d57b6ae9b22a4982f0272ef1c716ebbfee59b7ea1fe60af.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
+  },
+  "tomba-2": {
+    "source": "https://store.playstation.com/en-gb/product/UP6893-PPSA29866_00-0481747241856795",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202511/0620/ae339a3598ae670b44c9346696f894294993b2fce92bff89.png",
+    "screenshots": [],
+    "checked": "2026-10-14"
   }
 }

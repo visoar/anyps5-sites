@@ -29,10 +29,10 @@ test('unspecified patches stay unknown and homebrew observations retain source s
 
 test('unreported popular games are unknown, searchable and excluded from measured platform filters',async()=>{
  const {bestStage,stageNeedsPatches}=await import('../packages/content/games');
- const game=filterGames('黑神话')[0];assert.equal(game.slug,'black-myth-wukong');assert.equal(game.titleId,null);assert.equal(game.reports.length,0);assert.equal(bestStage(game),'notTested');assert.equal(stageNeedsPatches(game),false);
- assert.equal(filterGames('wukong',{stage:'notTested'}).length,1);
- for(const filters of [{platform:'windows'},{platform:'linux'},{stage:'blocked'},{evidence:'official'},{evidence:'community'}])assert.equal(filterGames('wukong',filters).length,0);
- assert.equal(filterGames('',{stage:'notTested'}).length,9);
+ const game=filterGames('艾尔登法环')[0];assert.equal(game.slug,'elden-ring');assert.equal(game.titleId,null);assert.equal(game.reports.length,0);assert.equal(bestStage(game),'notTested');assert.equal(stageNeedsPatches(game),false);
+ assert.equal(filterGames('elden ring',{stage:'notTested'}).length,1);
+ for(const filters of [{platform:'windows'},{platform:'linux'},{stage:'blocked'},{evidence:'official'},{evidence:'community'}])assert.equal(filterGames('elden ring',filters).length,0);
+ assert.equal(filterGames('',{stage:'notTested'}).length,8);
 });
 
 test('a merged technical fix does not silently create a new game report',async()=>{
@@ -63,7 +63,7 @@ test('new source reviews distinguish setup screens, patched integrations and act
   assert.equal(conclusionReports(game,platform==='windows'?'linux':'windows').length,0);
   assert.ok(gameResearch[slug]);
  }
- for(const slug of ['elden-ring','marvels-spider-man-2','black-myth-wukong']){
+ for(const slug of ['elden-ring','marvels-spider-man-2']){
   const game=games.find(g=>g.slug===slug)!;
   assert.equal(game.titleId,null);assert.equal(game.reports.length,0);
  }
@@ -133,11 +133,14 @@ test('a Linux follow-up preserves failed builds and keeps unpinned success bound
 test('editorial platform summaries choose evidence explicitly rather than historical maximum',async()=>{
  const {conclusionReports}=await import('../packages/content/game-conclusions');
  const silk=games.find(g=>g.slug==='hollow-knight-silksong')!;
- assert.equal(conclusionReports(silk,'windows')[0].id,'726-windows-review-20261012');
+ assert.equal(conclusionReports(silk,'windows')[0].id,'1996-windows-review-20261014');
+ assert.equal(conclusionReports(silk,'windows')[0].patched,false);
+ assert.notEqual(silk.reports.find(r=>r.id==='726-windows-review-20261012')!.build,conclusionReports(silk,'windows')[0].build);
  assert.equal(conclusionReports(silk,'linux')[0].id,'1519-linux-review-20261012');
- assert.deepEqual(conclusionReports(games.find(g=>g.slug==='black-myth-wukong')!,'windows'),[]);
+ assert.equal(conclusionReports(games.find(g=>g.slug==='black-myth-wukong')!,'windows')[0].stage,'blocked');
  const ghost=conclusionReports(games.find(g=>g.slug==='ghost-of-yotei')!,'linux');
- assert.equal(ghost[0].id,'2884-linux-review-20261012');assert.equal(ghost[0].stage,'blocked');
+ assert.equal(ghost[0].id,'675-linux-review-20261014');assert.equal(ghost[0].stage,'boot');
+ assert.equal(games.find(g=>g.slug==='ghost-of-yotei')!.reports.find(r=>r.id==='2884-linux-review-20261012')!.stage,'blocked');
 });
 
 test('catalog order keeps test dates separate from review dates and puts unknown tests last',async()=>{
@@ -178,4 +181,18 @@ test('new follow-ups do not turn scene timing or startup into stock gameplay',as
  assert.equal(startup.stage,'boot');assert.equal(startup.patched,false);assert.equal(startup.build,'main 59a2167a9');
  assert.equal(startup.version,'01.001.000 · DOOM Shareware');assert.deepEqual(startup.benchmarks,[]);
  assert.equal(filterGames('PPSA36082')[0].reports[0].version,'01.006.000');
+});
+
+test('new regional reports and cutscene results do not become universal gameplay',async()=>{
+ const {conclusionReports}=await import('../packages/content/game-conclusions');
+ assert.equal(filterGames('PPSA21559',{stage:'ingame'}).length,0);
+ assert.equal(filterGames('PPSA21567',{platform:'windows',stage:'ingame'}).length,1);
+ assert.equal(filterGames('PPSA21567',{platform:'linux'}).length,0);
+ const village=games.find(g=>g.slug==='resident-evil-village')!;
+ assert.equal(conclusionReports(village,'windows')[0].stage,'menu');
+ assert.equal(village.reports[0].benchmarks.length,0);
+ const wukong=games.find(g=>g.slug==='black-myth-wukong')!;
+ assert.equal(wukong.titleId,'PPSA23226');assert.equal(wukong.reports[0].stage,'blocked');
+ assert.equal(wukong.reports[0].version,null);assert.equal(wukong.reports[0].gpu,null);assert.equal(wukong.reports[0].testDate,null);
+ assert.equal(filterGames('wukong',{stage:'notTested'}).length,0);
 });
