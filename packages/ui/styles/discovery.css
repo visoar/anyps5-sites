@@ -78,3 +78,5 @@
  .download-file{gap:7px}
  .filter-bar label:last-of-type{min-width:calc(50% - 10px);flex-basis:auto}
 }
+
+.identity-check{font-size:13px;line-height:1.8;max-width:88ch;margin-block:20px 26px;color:var(--muted)}

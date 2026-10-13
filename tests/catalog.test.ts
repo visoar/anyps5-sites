@@ -153,8 +153,29 @@ test('catalog order keeps test dates separate from review dates and puts unknown
  assert.deepEqual([...data].reverse().sort((a,b)=>compareCatalogEntries(a,b,'featured','en')).map(g=>g.name),['A','B','C']);
 });
 
-test('menu racing and black presentation do not become gameplay results',()=>{
- const gt=filterGames('PPSA01317')[0];assert.equal(gt.slug,'gran-turismo-7');assert.equal(filterGames('PPSA01317',{stage:'ingame'}).length,0);assert.equal(gt.reports[0].stage,'menu');assert.equal(gt.reports[0].patched,true);
+test('historical menus, new race evidence and black presentation keep distinct scope',()=>{
+ const gt=filterGames('PPSA01317')[0];assert.equal(gt.slug,'gran-turismo-7');assert.equal(filterGames('PPSA01317',{stage:'ingame'}).length,1);assert.equal(gt.reports[0].stage,'menu');assert.equal(gt.reports[0].patched,true);
  const ghost=filterGames('PPSA02225')[0];assert.equal(ghost.reports[0].stage,'boot');assert.equal(ghost.reports[0].benchmarks.length,0);assert.equal(ghost.reports[0].testDate,'2026-10-11');
  assert.equal(filterGames('PPSA17221')[0]?.slug,'minecraft');assert.equal(filterGames('PPSA19639')[0]?.slug,'minecraft-preview');assert.equal(filterGames('PPSA17221',{platform:'windows'}).length,0);
+});
+
+
+test('new follow-ups do not turn scene timing or startup into stock gameplay',async()=>{
+ const {conclusionReports}=await import('../packages/content/game-conclusions');
+ const gt=filterGames('PPSA01317')[0];
+ const race=conclusionReports(gt,'windows')[0];
+ assert.equal(race.id,'4697-windows-music-rally-review-20261013');
+ assert.equal(race.stage,'ingame');assert.equal(race.patched,true);
+ assert.equal(race.version,null);assert.equal(race.testDate,null);assert.equal(race.gpu,null);assert.deepEqual(race.benchmarks,[]);
+ assert.equal(filterGames('PPSA01317',{stage:'ingame',evidence:'official'}).length,0);
+ assert.equal(filterGames('PPSA01317',{platform:'linux'}).length,0);
+ const astro=filterGames('PPSA21564')[0];
+ const linux=conclusionReports(astro,'linux')[0];
+ assert.equal(linux.id,'357-linux-integration-review-20261013');assert.equal(linux.patched,true);
+ assert.deepEqual(linux.benchmarks,[]);assert.equal(astro.reports.find(r=>r.id==='3480-linux-review-20261012')?.stage,'blocked');
+ const doom=filterGames('PPSA99666')[0];
+ const startup=doom.reports.find(r=>r.id==='2475-windows-nvidia-startup-review-20261013')!;
+ assert.equal(startup.stage,'boot');assert.equal(startup.patched,false);assert.equal(startup.build,'main 59a2167a9');
+ assert.equal(startup.version,'01.001.000 · DOOM Shareware');assert.deepEqual(startup.benchmarks,[]);
+ assert.equal(filterGames('PPSA36082')[0].reports[0].version,'01.006.000');
 });

@@ -1,7 +1,7 @@
 export const releaseAssets={
   "tag": "v0.1.1",
   "published": "2026-09-28T23:34:39Z",
-  "checked": "2026-10-12",
+  "checked": "2026-10-13",
   "source": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.1",
   "files": [
     {

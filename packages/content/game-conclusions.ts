@@ -10,7 +10,7 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  'ghost-of-tsushima-directors-cut':{reviewed:'2026-10-13',reportIds:["4461-windows-review-20261013"]},
  'lost-soul-aside':{reviewed:'2026-10-13',reportIds:["4387-windows-review-20261013"]},
  'minecraft':{reviewed:'2026-10-13',reportIds:["4216-linux-review-20261013"]},
- 'gran-turismo-7':{reviewed:'2026-10-13',reportIds:["4697-windows-review-20261013"]},
+ 'gran-turismo-7':{reviewed:'2026-10-13',reportIds:["4697-windows-music-rally-review-20261013"]},
  'horizon-forbidden-west':{reviewed:'2026-10-13',reportIds:['1616-linux']},
  'resident-evil-4-remake':{reviewed:'2026-10-13',reportIds:['2776-windows']},
  'returnal':{reviewed:'2026-10-13',reportIds:['4239-windows']},
@@ -21,8 +21,8 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  'silt':{reviewed:'2026-10-12',reportIds:['2810-windows','2126-linux']},
  'balatro':{reviewed:'2026-10-12',reportIds:['1142-windows']},
  'hades':{reviewed:'2026-10-12',reportIds:['3234-linux']},
- 'hades-ii':{reviewed:'2026-10-12',reportIds:['1965-linux']},
- 'astro-bot':{reviewed:'2026-10-12',reportIds:['357-windows','3480-linux-review-20261012']},
+ 'hades-ii':{reviewed:'2026-10-13',reportIds:['1965-linux']},
+ 'astro-bot':{reviewed:'2026-10-13',reportIds:['357-windows','357-linux-integration-review-20261013']},
  'astros-playroom':{reviewed:'2026-10-12',reportIds:['3232-linux-review-20261012']},
  'demons-souls':{reviewed:'2026-10-12',reportIds:['1283-linux']},
  'ghost-of-yotei':{reviewed:'2026-10-12',reportIds:['675-windows','2884-linux-review-20261012']},
@@ -38,7 +38,7 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  'rise-of-the-ronin':{reviewed:'2026-10-12',reportIds:['2171-linux']},
  'ratchet-clank-rift-apart':{reviewed:'2026-10-12',reportIds:['3338-linux']},
  'star-wars-galactic-racer':{reviewed:'2026-10-12',reportIds:['3086-windows']},
- 'doom-homebrew':{reviewed:'2026-10-13',reportIds:["4312-windows-rdna4", "4312-windows-rdna2", "2475-linux-intel-review-20261013","2475-linux-nvidia-archived-review-20261013","2475-linux-amd-archived-review-20261013"]},
+ 'doom-homebrew':{reviewed:'2026-10-13',reportIds:["4312-windows-rdna4", "4312-windows-rdna2", "2475-windows-nvidia-startup-review-20261013", "2475-linux-intel-review-20261013","2475-linux-nvidia-archived-review-20261013","2475-linux-amd-archived-review-20261013"]},
  'cyberpunk-2077':{reviewed:'2026-10-13',reportIds:["4634-linux-main", "4634-linux-4216"]},
  'the-last-of-us-part-ii-remastered':{reviewed:'2026-10-12',reportIds:['2883-windows']},
  'big-helmet-heroes':{reviewed:'2026-10-12',reportIds:['3873-linux-review-20261012']},
@@ -63,6 +63,8 @@ export const conclusionReports=(game:Game,platform:Platform)=>{
 };
 
 export const recentEvidence=[
+ {slug:'gran-turismo-7',reportId:'4697-windows-music-rally-review-20261013'},
+ {slug:'astro-bot',reportId:'357-linux-integration-review-20261013'},
  {slug:'dreaming-sarah',reportId:'3180-linux-review-20261013'},
  {slug:'hollow-knight-silksong',reportId:'726-windows-review-20261012'},
  {slug:'wobbly-life',reportId:'2211-linux-review-20261012'},

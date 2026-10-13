@@ -305,7 +305,7 @@
       "slug": "hades-ii",
       "name": "Hades II",
       "titleId": "PPSA36082",
-      "reviewed": "2026-10-11",
+      "reviewed": "2026-10-13",
       "reports": [
         {
           "id": "1965-linux",
@@ -315,7 +315,7 @@
           "platform": "linux",
           "stage": "ingame",
           "evidence": "community",
-          "version": null,
+          "version": "01.006.000",
           "build": "961b25fe + PR stack",
           "patched": true
         }
@@ -325,12 +325,12 @@
       "slug": "astro-bot",
       "name": "ASTRO BOT",
       "titleId": "PPSA21564",
-      "reviewed": "2026-10-12",
+      "reviewed": "2026-10-13",
       "reports": [
         {
           "id": "357-windows",
           "source": "https://github.com/boykopovar/AnyPS5/discussions/357",
-          "sourceUpdated": "2026-10-11T11:35:39Z",
+          "sourceUpdated": "2026-10-12T22:41:42Z",
           "testDate": null,
           "platform": "windows",
           "stage": "ingame",
@@ -349,6 +349,18 @@
           "evidence": "community",
           "version": "01.007.000",
           "build": "main 1be0a7ce + unrelated fchdir commit",
+          "patched": true
+        },
+        {
+          "id": "357-linux-integration-review-20261013",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/357#discussioncomment-18889584",
+          "sourceUpdated": "2026-10-12T22:41:41Z",
+          "testDate": null,
+          "platform": "linux",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": null,
+          "build": "astro-main/integration-1013a bdb0ba35 · main 682ef0c1 + PR stack",
           "patched": true
         }
       ]
@@ -714,7 +726,7 @@
         {
           "id": "3086-windows",
           "source": "https://github.com/boykopovar/AnyPS5/discussions/3086",
-          "sourceUpdated": "2026-10-10T22:22:03Z",
+          "sourceUpdated": "2026-10-11T20:23:35Z",
           "testDate": null,
           "platform": "windows",
           "stage": "boot",
@@ -734,7 +746,7 @@
         {
           "id": "2475-windows",
           "source": "https://github.com/boykopovar/AnyPS5/discussions/2475",
-          "sourceUpdated": "2026-10-12T19:13:22Z",
+          "sourceUpdated": "2026-10-12T19:53:08Z",
           "testDate": null,
           "platform": "windows",
           "stage": "boot",
@@ -825,6 +837,18 @@
           "evidence": "community",
           "version": "01.001.001 · homebrew v1.1.1",
           "build": "main a11c8f7f7",
+          "patched": false
+        },
+        {
+          "id": "2475-windows-nvidia-startup-review-20261013",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/2475#discussioncomment-18887166",
+          "sourceUpdated": "2026-10-12T19:53:08Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "boot",
+          "evidence": "community",
+          "version": "01.001.000 · DOOM Shareware",
+          "build": "main 59a2167a9",
           "patched": false
         }
       ]
@@ -983,13 +1007,25 @@
         {
           "id": "4697-windows-review-20261013",
           "source": "https://github.com/boykopovar/AnyPS5/discussions/4697",
-          "sourceUpdated": "2026-10-12T19:31:23Z",
+          "sourceUpdated": "2026-10-13T03:39:15Z",
           "testDate": null,
           "platform": "windows",
           "stage": "menu",
           "evidence": "community",
           "version": "01.710.000",
           "build": "main 6741e90a1c + 95 local commits + uncommitted driver/recompiler changes",
+          "patched": true
+        },
+        {
+          "id": "4697-windows-music-rally-review-20261013",
+          "source": "https://github.com/boykopovar/AnyPS5/discussions/4697#discussioncomment-18892537",
+          "sourceUpdated": "2026-10-13T02:47:34Z",
+          "testDate": null,
+          "platform": "windows",
+          "stage": "ingame",
+          "evidence": "community",
+          "version": null,
+          "build": "Same local integration as #4697; race-test revision and full patch set not pinned",
           "patched": true
         }
       ]
