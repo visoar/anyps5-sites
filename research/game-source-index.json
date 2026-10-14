@@ -658,5 +658,13 @@
       ]
     }
   ],
-  "pagination_complete": true
+  "pagination_complete": true,
+  "latestReview": {
+    "reviewed": "2026-10-15",
+    "sourceCommit": "411e5e6d9fe3e09206490ccc0d260229851c2310",
+    "discussions": 126,
+    "completeNestedPagination": true,
+    "record": "docs/maintenance/2026-10-15-nightly.md",
+    "sourceReviewOnly": true
+  }
 }

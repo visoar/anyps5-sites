@@ -50,7 +50,7 @@ Deployment identifiers are recorded in [CLAUDE.md](CLAUDE.md). Do not store cred
 
 ## Content and editorial maintenance
 
-The current edition has 81 game/edition pages per language, 124 scoped reports and 8 games without a reviewed run result. A no-report entry is searchable but never classified as a startup failure, given invented hardware/FPS, or matched to a specific tested platform. Chinese searches also recognise the curated local game names.
+The current edition has 105 game/edition pages per language, 187 scoped reports and 8 games without a reviewed run result. A no-report entry is searchable but never classified as a startup failure, given invented hardware/FPS, or matched to a specific tested platform. Chinese searches also recognise the curated local game names.
 
 See [content and source maintenance](docs/content-and-source-maintenance.md) for page intent, multilingual conventions, issue/PR evidence rules, image provenance and the review workflow. `python3 research/scripts/review_updates.py` fetches candidate changes without auto-publishing them. After editing reports, regenerate the clean publication index with `npx tsx research/scripts/index_published_evidence.ts`. The existing Git push deployment remains the release path. Latest research scope and evidence gaps: [2026-10-14 nightly maintenance](docs/maintenance/2026-10-14-nightly.md).
 

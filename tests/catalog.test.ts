@@ -159,21 +159,21 @@ test('catalog order keeps test dates separate from review dates and puts unknown
 test('historical menus, new race evidence and black presentation keep distinct scope',()=>{
  const gt=filterGames('PPSA01317')[0];assert.equal(gt.slug,'gran-turismo-7');assert.equal(filterGames('PPSA01317',{stage:'ingame'}).length,1);assert.equal(gt.reports[0].stage,'menu');assert.equal(gt.reports[0].patched,true);
  const ghost=filterGames('PPSA02225')[0];assert.equal(ghost.reports[0].stage,'boot');assert.equal(ghost.reports[0].benchmarks.length,0);assert.equal(ghost.reports[0].testDate,'2026-10-11');
- assert.equal(filterGames('PPSA17221')[0]?.slug,'minecraft');assert.equal(filterGames('PPSA19639')[0]?.slug,'minecraft-preview');assert.equal(filterGames('PPSA17221',{platform:'windows'}).length,0);
+ assert.equal(filterGames('PPSA17221')[0]?.slug,'minecraft');assert.equal(filterGames('PPSA19639')[0]?.slug,'minecraft-preview');assert.equal(filterGames('PPSA17221',{platform:'windows',stage:'ingame'}).length,1);
 });
 
 
 test('new follow-ups do not turn scene timing or startup into stock gameplay',async()=>{
  const {conclusionReports}=await import('../packages/content/game-conclusions');
  const gt=filterGames('PPSA01317')[0];
- const race=conclusionReports(gt,'windows')[0];
+ const race=gt.reports.find(r=>r.id==='4697-windows-music-rally-review-20261013')!;
  assert.equal(race.id,'4697-windows-music-rally-review-20261013');
  assert.equal(race.stage,'ingame');assert.equal(race.patched,true);
  assert.equal(race.version,null);assert.equal(race.testDate,null);assert.equal(race.gpu,null);assert.deepEqual(race.benchmarks,[]);
  assert.equal(filterGames('PPSA01317',{stage:'ingame',evidence:'official'}).length,0);
  assert.equal(filterGames('PPSA01317',{platform:'linux'}).length,0);
  const astro=filterGames('PPSA21564')[0];
- const linux=conclusionReports(astro,'linux')[0];
+ const linux=astro.reports.find(r=>r.id==='357-linux-integration-review-20261013')!;
  assert.equal(linux.id,'357-linux-integration-review-20261013');assert.equal(linux.patched,true);
  assert.deepEqual(linux.benchmarks,[]);assert.equal(astro.reports.find(r=>r.id==='3480-linux-review-20261012')?.stage,'blocked');
  const doom=filterGames('PPSA99666')[0];
@@ -187,7 +187,7 @@ test('new regional reports and cutscene results do not become universal gameplay
  const {conclusionReports}=await import('../packages/content/game-conclusions');
  assert.equal(filterGames('PPSA21559',{stage:'ingame'}).length,0);
  assert.equal(filterGames('PPSA21567',{platform:'windows',stage:'ingame'}).length,1);
- assert.equal(filterGames('PPSA21567',{platform:'linux'}).length,0);
+ assert.equal(filterGames('PPSA21567',{platform:'linux',stage:'ingame'}).length,0);
  const village=games.find(g=>g.slug==='resident-evil-village')!;
  assert.equal(conclusionReports(village,'windows')[0].stage,'menu');
  assert.equal(village.reports[0].benchmarks.length,0);
@@ -195,4 +195,41 @@ test('new regional reports and cutscene results do not become universal gameplay
  assert.equal(wukong.titleId,'PPSA23226');assert.equal(wukong.reports[0].stage,'blocked');
  assert.equal(wukong.reports[0].version,null);assert.equal(wukong.reports[0].gpu,null);assert.equal(wukong.reports[0].testDate,null);
  assert.equal(filterGames('wukong',{stage:'notTested'}).length,0);
+});
+
+test('new edition follow-ups retain older observations without crossing PPSA or main/fork scope',async()=>{
+ const {conclusionReports}=await import('../packages/content/game-conclusions');
+ const maintenance=filterGames('PPSA03912')[0];
+ assert.ok(maintenance.reports.some(r=>r.id==='5146-linux-review-20261014'));
+ assert.ok(conclusionReports(maintenance,'linux').some(r=>r.id==='5146-linux-review-20261015'&&!r.patched));
+ const astro=filterGames('PPSA21567')[0];
+ assert.ok(astro.reports.some(r=>r.version==='01.018.000'&&r.stage==='ingame'));
+ const clean=astro.reports.find(r=>r.id==='357-windows-review-20261015')!;
+ const fork=astro.reports.find(r=>r.id==='357-windows-fork-review-20261015')!;
+ assert.equal(clean.stage,'boot');assert.equal(clean.patched,false);
+ assert.equal(fork.stage,'blocked');assert.equal(fork.patched,true);
+ assert.equal(fork.version,clean.version);assert.deepEqual(fork.benchmarks,[]);
+ assert.ok(!filterGames('PPSA21564')[0].reports.some(r=>r.id===clean.id));
+ assert.notEqual(filterGames('PPSA03042')[0].slug,filterGames('PPSA03061')[0].slug);
+});
+
+test('automatic demos and menu counters do not establish interactive gameplay',()=>{
+ for(const ppsa of ['PPSA21444','PPSA26525','PPSA47402']){
+  const game=filterGames(ppsa)[0];
+  assert.equal(filterGames(ppsa,{stage:'ingame'}).length,0);
+  assert.ok(game.reports.some(r=>r.stage==='menu'));
+  assert.ok(game.reports.every(r=>r.testDate===null));
+ }
+ const ufc=filterGames('PPSA23566')[0].reports[0];
+ assert.equal(ufc.testDate,'2026-10-14');assert.equal(ufc.patched,true);
+ assert.equal(ufc.benchmarks[0].fps,'≈2.07');
+ assert.ok(ufc.summary.en.includes('sped-up 60 FPS video'));
+});
+
+test('technical source updates cannot refresh the dates of historical game observations',()=>{
+ const re4=filterGames('PPSA07411')[0].reports.find(r=>r.id==='2776-windows')!;
+ const returnal=filterGames('PPSA01285')[0].reports.find(r=>r.id==='4239-windows')!;
+ assert.equal(re4.updated,'2026-10-13T05:28:32Z');
+ assert.equal(returnal.updated,'2026-10-12T13:28:40Z');
+ assert.equal(re4.build,'main c36fd0a0e');assert.equal(returnal.build,'main ffa198407');
 });

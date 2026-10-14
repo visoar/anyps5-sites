@@ -675,5 +675,173 @@
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202511/0620/ae339a3598ae670b44c9346696f894294993b2fce92bff89.png",
     "screenshots": [],
     "checked": "2026-10-14"
+  },
+  "ea-sports-ufc-6": {
+    "source": "https://www.ea.com/games/ufc/ufc-6",
+    "provider": "EA",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "syobon-action-homebrew": {
+    "source": "https://github.com/kvaps/syobon-action-ps5",
+    "provider": "Source author",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "dave-the-diver": {
+    "source": "https://www.playstation.com/en-us/games/dave-the-diver/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202401/2508/f194dc023adef481689d90db93f343b73f5b4c5741925556.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "marvels-wolverine": {
+    "source": "https://www.playstation.com/en-us/games/marvels-wolverine/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2215/a69481c5fa50fe19f42896d84fb7cbf37ab8646801a93322.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "resident-evil-2-remake": {
+    "source": "https://www.playstation.com/en-us/games/resident-evil-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0204/uDFoGvnMTTCLVmTwjj0njGWC.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "doom-doom-ii": {
+    "source": "https://store.playstation.com/en-us/concept/10010353/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202407/2516/014e7a2470206a12a9130665689cf20c687738b5b6944b56.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "heretic-hexen": {
+    "source": "https://store.playstation.com/en-us/product/UP1003-PPSA26525_00-MEDUSA0000000000/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202507/2420/65555a3fa1cf46179402fc33a6c54750facb09bc3e647aee.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "castlevania-belmonts-curse": {
+    "source": "https://www.playstation.com/en-us/games/castlevania-belmonts-curse/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2005/4074e46383e491ab25df83141a556f69aa7c005fa92ffa4b.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "onimusha-way-of-the-sword": {
+    "source": "https://www.playstation.com/en-us/games/onimusha-way-of-the-sword/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/79a186e6a055909cfeb66264230ad3d76915587b0269cd0d.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "cat-quest-iii": {
+    "source": "https://www.playstation.com/en-us/games/cat-quest-iii/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202308/3013/02b1e714b0f267f2ef62fc7f0ef934de009483f4e9335713.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "withering-rooms": {
+    "source": "https://store.playstation.com/en-us/concept/10010291/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1317/2eae8e39b8fde7cf5cab8b22c98f6555b8dfa3cd1d3518f4.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "007-first-light": {
+    "source": "https://www.playstation.com/en-us/games/007-first-light/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202610/0213/2a446965c0e8537af78302782417b0353a73ff1b19ebfeb4.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "void-terrarium-ppsa03042": {
+    "source": "https://store.playstation.com/en-us/product/UP1063-PPSA03061_00-VOIDTERRARIUMPS5",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202103/2319/g3F1T7uHqK7YUZu6AxIpkSkg.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "hollow-knight-voidheart": {
+    "source": "https://www.playstation.com/en-us/games/hollow-knight-voidheart-edition/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202601/1505/1425e65d043da63396a10ccf87d5e4af50175464e64cda30.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "marvel-cosmic-invasion": {
+    "source": "https://www.playstation.com/en-us/games/marvel-cosmic-invasion/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202510/2212/542f13adf581e38321a86470764dbc0ac1b157ed80e1f8b5.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "mgs4-master-collection": {
+    "source": "https://www.playstation.com/en-us/games/metal-gear-solid-master-collection-vol-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202601/2201/10c1fc1cb379073791df85ad3bd235930896bfa9b20fa1f1.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "saros": {
+    "source": "https://www.playstation.com/en-us/games/saros/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202509/2318/78549217df5077bea107700e077d04be6a9a4b0dfbcd821a.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "fifa-21": {
+    "source": "https://blog.playstation.com/2020/11/24/fifa-21-on-ps5-first-gameplay-details/",
+    "provider": "PlayStation",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "lies-of-p": {
+    "source": "https://www.playstation.com/en-us/games/lies-of-p/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2308/06b354c8015b3c71e54f43aa883aab4641285d4a91734681.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "ghostrunner": {
+    "source": "https://www.playstation.com/en-us/games/ghostrunner/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202108/2600/hdoOAnRlmDSm5kCcgggrXnIT.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "guardians-of-the-galaxy": {
+    "source": "https://www.playstation.com/en-us/games/marvels-guardians-of-the-galaxy/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202106/0215/Pw9cWnyqkix3EoCOGqrN1cgN.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "hello-neighbor-2": {
+    "source": "https://www.playstation.com/en-us/games/hello-neighbor-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0613/249503ec6c4aa1d4c2fd6fbc5350fadaa32a13697c5bb2fc.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "steins-gate-reboot": {
+    "source": "https://www.playstation.com/ja-jp/games/steins-gate-reboot/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202606/3010/5c0e8aba2cd653c7b9a35e7b64b6983ea1150aefd0350005.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
+  },
+  "resonance-plague-tale-legacy": {
+    "source": "https://www.playstation.com/en-us/games/resonance-a-plague-tale-legacy/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1510/346857c01378e194d77def3f3029d79489509c541aa761d6.png",
+    "screenshots": [],
+    "checked": "2026-10-15"
   }
 }

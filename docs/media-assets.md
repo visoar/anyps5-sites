@@ -1,16 +1,16 @@
 # Self-hosted game media
 
-Updated 2026-10-14. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
+Updated 2026-10-15. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
 
 ## Sources and asset inventory
 
-- 78 game/edition pages have official/publisher artwork: 78 covers and 82 promotional screenshots (160 source assets).
+- 99 game/edition pages have official/publisher artwork: 99 covers and 82 promotional screenshots (181 source assets).
 - `packages/content/game-media.json` retains the original page, provider, image URLs and editorial review date.
 - `packages/content/game-media-local.json` maps each source to its exported file, actual download URL, source/export SHA-256, byte counts and actual dimensions.
 - Committed WebP masters live in `packages/ui/assets/games/<slug>/`. Astro imports them and emits hashed, same-origin images under `/_astro/`, including responsive variants. Production builds do not fetch remote media.
-- Three games still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
+- Six games still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
 
-The downloaded high-resolution source set totals 44.19 MiB; the exported masters total 21.19 MiB, a 52.0% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
+The downloaded high-resolution source set totals 48.68 MiB; the exported masters total 23.99 MiB, a 50.7% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
 
 ## Update command
 
@@ -38,3 +38,5 @@ Before release, inspect a PlayStation gallery, Steam/publisher artwork, catalog 
 Blasphemous 2’s current publisher artwork carries The Third Sin branding. Its edition note explicitly preserves the report’s unknown content version and does not infer that expansion or Mea Culpa was tested. Artwork does not identify the reported region/PPSA.
 
 The nightly addition includes 26 covers and four edition-gallery copies. ASTRO artwork is shared promotional material, not evidence of the separately reported PPSA versions. Tourist Bus Simulator links US artwork PPSA04434 while its report is PPSA04433; that distinction is explicit. Diablo II artwork does not establish later expansions in the 01.039.000 report. ccleste retains an icon and links its original PS5 source-port repository.
+
+The 15 October maintenance adds 21 identity-checked covers for 24 new entries. UFC 6, FIFA 21 and Syobon Action retain icons. Withering Rooms artwork is a different regional PPSA; Void Terrarium artwork is shared between separately catalogued PPSA03042/03061; MGS4 uses the collection’s promotional art; 007 cover DLC branding does not identify tested content. All retain explicit edition notes.

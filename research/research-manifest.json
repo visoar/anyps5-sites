@@ -49,5 +49,36 @@
       "url": "https://github.com/boykopovar/AnyPS5/issues/38",
       "result": "Current GitHub API returned 404; cached search result remains. Historical coverage only."
     }
-  ]
+  ],
+  "latestReview": {
+    "reviewed": "2026-10-15",
+    "incrementSince": "2026-10-13T18:30:00Z",
+    "nextSuccessfulCutoff": "2026-10-14T19:44:00Z",
+    "sourceCommit": "411e5e6d9fe3e09206490ccc0d260229851c2310",
+    "documents": 104,
+    "issuesAndPRs": 59,
+    "issuePRPages": 59,
+    "discussions": 126,
+    "discussionPages": 7,
+    "completeNestedPagination": true,
+    "releasesIncludingPrereleases": 3,
+    "latestRelease": {
+      "tag": "v0.1.2",
+      "published": "2026-10-14T08:56:52Z",
+      "url": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.2"
+    },
+    "issueCommentPages": 27,
+    "issueComments": 2693,
+    "reviewCommentPages": 1,
+    "reviewComments": 3,
+    "commentThreads": 1224,
+    "unavailableThreads": [],
+    "changes": {
+      "newEntries": 24,
+      "newReports": 63
+    },
+    "record": "docs/maintenance/2026-10-15-nightly.md",
+    "rawDirectory": "research/raw/daily-2026-10-15/",
+    "sourceReviewOnly": true
+  }
 }

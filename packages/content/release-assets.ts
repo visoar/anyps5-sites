@@ -1,36 +1,36 @@
 export const releaseAssets={
-  "tag": "v0.1.1",
-  "published": "2026-09-28T23:34:39Z",
-  "checked": "2026-10-13",
-  "source": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.1",
+  "tag": "v0.1.2",
+  "published": "2026-10-14T08:56:52Z",
+  "checked": "2026-10-15",
+  "source": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.2",
   "files": [
     {
       "platform": "windows",
       "kind": "tool",
-      "name": "relinker-v0.1.1.exe",
-      "url": "https://github.com/boykopovar/AnyPS5/releases/download/v0.1.1/relinker-v0.1.1.exe",
-      "bytes": 4190264
+      "name": "relinker-v0.1.2.exe",
+      "url": "https://github.com/boykopovar/AnyPS5/releases/download/v0.1.2/relinker-v0.1.2.exe",
+      "bytes": 5093386
     },
     {
       "platform": "windows",
       "kind": "libraries",
-      "name": "prx-windows-v0.1.1.zip",
-      "url": "https://github.com/boykopovar/AnyPS5/releases/download/v0.1.1/prx-windows-v0.1.1.zip",
-      "bytes": 10092350
+      "name": "prx-windows-v0.1.2.zip",
+      "url": "https://github.com/boykopovar/AnyPS5/releases/download/v0.1.2/prx-windows-v0.1.2.zip",
+      "bytes": 82043276
     },
     {
       "platform": "linux",
       "kind": "tool",
-      "name": "relinker-v0.1.1",
-      "url": "https://github.com/boykopovar/AnyPS5/releases/download/v0.1.1/relinker-v0.1.1",
-      "bytes": 3460088
+      "name": "relinker-v0.1.2",
+      "url": "https://github.com/boykopovar/AnyPS5/releases/download/v0.1.2/relinker-v0.1.2",
+      "bytes": 4257560
     },
     {
       "platform": "linux",
       "kind": "libraries",
-      "name": "prx-linux-v0.1.1.tar.gz",
-      "url": "https://github.com/boykopovar/AnyPS5/releases/download/v0.1.1/prx-linux-v0.1.1.tar.gz",
-      "bytes": 6838060
+      "name": "prx-linux-v0.1.2.tar.gz",
+      "url": "https://github.com/boykopovar/AnyPS5/releases/download/v0.1.2/prx-linux-v0.1.2.tar.gz",
+      "bytes": 88339740
     }
   ]
 } as const;
