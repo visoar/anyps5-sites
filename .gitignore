@@ -9,3 +9,4 @@ research/raw/
 *.log
 .DS_Store
 docs/qa/*.png
+.cache/

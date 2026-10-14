@@ -1,0 +1,28 @@
+---
+import Layout from './Layout.astro';
+import Icon from './Icon.astro';
+import {reportGames,reportReviewed,compatibilityReport} from '../../content/compatibility-report';
+import {conclusionReports,gameConclusions} from '../../content/game-conclusions';
+import {growthCopy as copy,caseNotes} from '../../content/growth-content';
+import {gameName} from '../../content/game-editorial';
+import {localPath,origin,t,dateLabel,type Locale} from '../../content/locales';
+import type {Platform} from '../../content/model';
+const {locale}=Astro.props as {locale:Locale};
+const path='/compatibility-report/';
+const title=copy.reportTitle[locale];const description=copy.reportDescription[locale];
+const structured={'@context':'https://schema.org','@type':'Article',headline:title,description,inLanguage:locale,url:origin('games')+localPath(path,locale),dateModified:reportReviewed,author:{'@type':'Organization',name:'AnyPS5 community resources'},citation:[...new Set(compatibilityReport.games.flatMap(game=>game.platforms.flatMap(platform=>platform.reports.map(report=>report.source))))]};
+---
+<Layout {locale} site="games" {path} {title} {description} {structured} ogType="article">
+ <div class="wrap article-shell">
+  <aside class="toc"><a class="back-link" href={localPath('/',locale)}><Icon name="arrowRight"/>{t(locale,'backGames')}</a><p class="eyebrow">{t(locale,'onThisPage')}</p><nav>{reportGames.map(game=><a href={'#'+game.slug}>{gameName(game,locale)}</a>)}<a href="#citation">{t(locale,'sources')}</a></nav></aside>
+  <article class="article"><header class="article-heading"><p class="eyebrow">AnyPS5 / {t(locale,'reports')}</p><h1>{title}</h1><p class="lede">{description}</p><p class="meta">{t(locale,'reviewed')} · <time datetime={reportReviewed}>{dateLabel(reportReviewed,locale)}</time></p></header>
+   <section class="article-section"><p>{copy.reportScope[locale]}</p><nav class="related-links"><a href="/compatibility-report.json" download>{copy.export[locale]}<Icon name="download"/></a><a href={localPath('/methodology/',locale)}>{t(locale,'methodology')}<Icon/></a><a href={localPath('/tested/',locale)}>{t(locale,'viewAll')}<Icon/></a></nav></section>
+   {reportGames.map(game=><section class="article-section" id={game.slug}><h2><a href={localPath('/games/'+game.slug+'/',locale)}>{gameName(game,locale)}<Icon/></a></h2><p><bdi>{game.titleId}</bdi>{game.edition!==game.titleId&&<> · <bdi>{game.edition||t(locale,'unknown')}</bdi></>}</p>
+    <p>{caseNotes[game.slug as keyof typeof caseNotes][locale]}</p>
+    {(['windows','linux'] as Platform[]).map(platform=>{const reports=conclusionReports(game,platform);const conclusion=gameConclusions[game.slug].find(c=>c.platform===platform);return <div class="evidence-platform"><h3>{t(locale,platform)}</h3>{conclusion&&<p class="muted">{t(locale,'reviewed')} {dateLabel(conclusion.reviewed,locale)}</p>}{reports.length?reports.map(report=><article class="report-card"><p class="eyebrow">{t(locale,report.evidence)}</p><p><span class:list={['badge',report.patched?'experimental':report.stage]}>{t(locale,report.stage)}</span> · {report.patched===null?copy.unknownPatch[locale]:report.patched? t(locale,'localPatch'):copy.unpatched[locale]}</p><p class="report-summary">{report.summary[locale]}</p><dl class="report-fields">{[[t(locale,'build'),report.build],[t(locale,'version'),report.version],[t(locale,'cpu'),report.cpu],[t(locale,'gpu'),report.gpu],[t(locale,'driver'),report.driver],[t(locale,'testDate'),report.testDate?dateLabel(report.testDate,locale):null]].map(([label,value])=><div><dt>{label}</dt><dd><bdi>{value||t(locale,'unknown')}</bdi></dd></div>)}</dl><div class="report-source"><a href={report.source}>{t(locale,'viewSource')}<Icon/></a><a href={localPath('/games/'+game.slug+'/',locale)+'#report-'+report.id}>{t(locale,'scope')}<Icon/></a></div></article>):<p>{copy.noReport[locale]}</p>}</div>})}
+   </section>)}
+   <section class="article-section" id="citation"><h2>{t(locale,'sources')}</h2><p>{copy.cite[locale]}</p><p>{t(locale,'experimentalNote')}</p><a class="text-link" href={localPath('/methodology/#corrections',locale)}>{t(locale,'methodology')}<Icon/></a></section>
+  </article>
+ </div>
+</Layout>
+<style>.evidence-platform{margin-top:25px}.evidence-platform>h3{font-size:19px;margin-bottom:10px}.evidence-platform>p{font-size:12px;margin-bottom:16px}.evidence-platform .report-summary{margin-top:16px}.article-section h2 a{display:flex;align-items:center;gap:10px}.article-section h2 .icon{width:18px;flex-shrink:0}</style>

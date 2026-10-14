@@ -21,9 +21,11 @@ Both sites publish `/llms.txt` and non-visible AI policy metadata in every page 
 
 Production traffic and key interactions are measured with separate self-hosted Umami websites. See [analytics setup and event definitions](docs/analytics.md) for domain isolation, query exclusion and the iteration metrics. Analytics is optional for site functionality.
 
+The seven-language `/compatibility-report/` on the game site provides five source-scoped case studies and a JSON export. It reuses the explicitly selected platform evidence, preserves missing data and test dates, and is a curated source report rather than an independent benchmark. Search descriptions use those platform selections instead of a historical maximum. Publishing also triggers [IndexNow notifications](docs/deployment.md#search-notifications-after-publishing) after the public build matches; search-engine receipt does not guarantee indexing.
+
 ## Content
 
-English, Simplified Chinese, Arabic (RTL), Portuguese (Portugal), German, French and Spanish are published for every content route. There are 19 guide/policy articles, 81 game/edition pages and 124 source reports; the two apps generate 765 HTML pages including their 404 pages. Each page has canonical metadata, seven language alternates, an x-default alternate and a sitemap entry. Fonts are served locally.
+English, Simplified Chinese, Arabic (RTL), Portuguese (Portugal), German, French and Spanish are published for every content route. There are 19 guide/policy articles, 81 game/edition pages and 124 source reports; the two apps generate 772 HTML pages including their 404 pages. Each page has canonical metadata, seven language alternates, an x-default alternate and a sitemap entry. Fonts are served locally.
 
 Reports distinguish Windows/Linux, official/community evidence, run stage, local patches, exact build and hardware. Missing fields remain unknown, including an unspecified patch status. Review date, source update date and test date are distinct. An in-game report does not imply full-game completion or unpatched release compatibility. FPS observations remain attached to their hardware and source context. Media links point to original evidence; this repository does not redistribute game files, firmware or keys. No game benchmarks have been performed by this site.
 

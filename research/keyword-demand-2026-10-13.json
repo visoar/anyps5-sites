@@ -1,0 +1,517 @@
+{
+  "captured_date": "2026-10-13",
+  "trends": {
+    "queries": [
+      "ps5 pc",
+      "ps5 on pc",
+      "ps5 emulator",
+      "anyps5 emulator",
+      "AnyPS5"
+    ],
+    "geography": "Worldwide",
+    "category": "All categories",
+    "search_type": "Google Web Search",
+    "term_type": "Search term",
+    "source": "https://trends.google.com/trends/explore?date=today%201-m&q=ps5%20pc,ps5%20on%20pc,ps5%20emulator,anyps5%20emulator,AnyPS5",
+    "longer_window_source": "https://trends.google.com/trends/explore?date=today%203-m&q=ps5%20pc,ps5%20on%20pc,ps5%20emulator,anyps5%20emulator,AnyPS5",
+    "methodology": "https://support.google.com/trends/answer/4365533?hl=en",
+    "capture_method": "Browser accessible chart table. Thirty complete daily rows transcribed; recent-seven-day means checked against the browser calculation. Longer-window means computed from its accessible table.",
+    "start": "2026-09-13",
+    "end": "2026-10-12",
+    "excluded_partial_date": "2026-10-13",
+    "complete_day_mean_indices": [
+      49.8,
+      10.63,
+      6.13,
+      0.3,
+      11.2
+    ],
+    "recent_7_day_mean_indices": [
+      50.43,
+      13.86,
+      12.86,
+      1.29,
+      43.29
+    ],
+    "recent_7_days": [
+      "2026-10-06",
+      "2026-10-12"
+    ],
+    "longer_window": {
+      "ui_preset": "Past 90 days; resolves to today 3-m",
+      "start": "2026-07-13",
+      "end": "2026-10-12",
+      "complete_day_mean_indices": [
+        54.24,
+        10.43,
+        3.84,
+        0.1,
+        3.65
+      ],
+      "raw_timeline_preserved": false
+    },
+    "timeline": [
+      {
+        "date": "2026-09-13",
+        "values": [
+          47,
+          12,
+          4,
+          0,
+          0
+        ]
+      },
+      {
+        "date": "2026-09-14",
+        "values": [
+          60,
+          9,
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "date": "2026-09-15",
+        "values": [
+          68,
+          10,
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "date": "2026-09-16",
+        "values": [
+          50,
+          8,
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "date": "2026-09-17",
+        "values": [
+          64,
+          9,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "date": "2026-09-18",
+        "values": [
+          56,
+          10,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "date": "2026-09-19",
+        "values": [
+          92,
+          13,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "date": "2026-09-20",
+        "values": [
+          100,
+          15,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "date": "2026-09-21",
+        "values": [
+          69,
+          8,
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "date": "2026-09-22",
+        "values": [
+          39,
+          9,
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "date": "2026-09-23",
+        "values": [
+          34,
+          8,
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "date": "2026-09-24",
+        "values": [
+          33,
+          8,
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "date": "2026-09-25",
+        "values": [
+          35,
+          9,
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "date": "2026-09-26",
+        "values": [
+          45,
+          11,
+          2,
+          0,
+          4
+        ]
+      },
+      {
+        "date": "2026-09-27",
+        "values": [
+          46,
+          11,
+          3,
+          0,
+          4
+        ]
+      },
+      {
+        "date": "2026-09-28",
+        "values": [
+          34,
+          8,
+          15,
+          0,
+          4
+        ]
+      },
+      {
+        "date": "2026-09-29",
+        "values": [
+          34,
+          8,
+          5,
+          0,
+          2
+        ]
+      },
+      {
+        "date": "2026-09-30",
+        "values": [
+          34,
+          8,
+          4,
+          0,
+          1
+        ]
+      },
+      {
+        "date": "2026-10-01",
+        "values": [
+          33,
+          8,
+          4,
+          0,
+          2
+        ]
+      },
+      {
+        "date": "2026-10-02",
+        "values": [
+          37,
+          9,
+          5,
+          0,
+          2
+        ]
+      },
+      {
+        "date": "2026-10-03",
+        "values": [
+          49,
+          11,
+          8,
+          0,
+          2
+        ]
+      },
+      {
+        "date": "2026-10-04",
+        "values": [
+          46,
+          11,
+          7,
+          0,
+          3
+        ]
+      },
+      {
+        "date": "2026-10-05",
+        "values": [
+          36,
+          9,
+          7,
+          0,
+          5
+        ]
+      },
+      {
+        "date": "2026-10-06",
+        "values": [
+          40,
+          10,
+          10,
+          0,
+          7
+        ]
+      },
+      {
+        "date": "2026-10-07",
+        "values": [
+          45,
+          13,
+          12,
+          1,
+          32
+        ]
+      },
+      {
+        "date": "2026-10-08",
+        "values": [
+          48,
+          14,
+          14,
+          2,
+          55
+        ]
+      },
+      {
+        "date": "2026-10-09",
+        "values": [
+          56,
+          15,
+          15,
+          2,
+          70
+        ]
+      },
+      {
+        "date": "2026-10-10",
+        "values": [
+          61,
+          17,
+          15,
+          2,
+          63
+        ]
+      },
+      {
+        "date": "2026-10-11",
+        "values": [
+          56,
+          16,
+          12,
+          1,
+          43
+        ]
+      },
+      {
+        "date": "2026-10-12",
+        "values": [
+          47,
+          12,
+          12,
+          1,
+          33
+        ]
+      }
+    ],
+    "rising_queries_observed": {
+      "ps5 pc": [
+        "anyps5",
+        "anyps5 github"
+      ],
+      "ps5 on pc": [
+        "anyps5",
+        "anyps5 github"
+      ],
+      "ps5 emulator": [
+        "anyps5 emulator",
+        "anyps5"
+      ],
+      "anyps5 emulator": [
+        "ps5 emulator",
+        "ps5 emulator pc",
+        "ps5 pc",
+        "github ps5 emulator"
+      ],
+      "AnyPS5": [
+        "anyps5 github",
+        "ps5 pc",
+        "anyps5 games"
+      ]
+    },
+    "limitations": [
+      "Relative normalized indices are not search counts, monthly search volumes or site visits.",
+      "Unquoted terms have broad matching and overlapping intent; query indices must not be added.",
+      "Zero may reflect low volume; rising or breakout labels do not prove large absolute volume.",
+      "Independent windows are normalized separately; compare values within the same capture.",
+      "Sampling, noise and recent brand interest limit predictions."
+    ]
+  },
+  "gsc": {
+    "anyps5.cc": {
+      "property": "sc-domain:anyps5.cc",
+      "start": "2026-09-15",
+      "end": "2026-10-12",
+      "data_state": "all",
+      "metadata": {
+        "firstIncompleteDate": null,
+        "firstIncompleteHour": null
+      },
+      "returned_query_rows": 51,
+      "target_query_rows": [
+        {
+          "keys": [
+            "anyps5 download"
+          ],
+          "clicks": 10,
+          "impressions": 87,
+          "ctr": 0.11494252873563218,
+          "position": 5.7011494252873565
+        },
+        {
+          "keys": [
+            "anyps5 installation"
+          ],
+          "clicks": 1,
+          "impressions": 4,
+          "ctr": 0.25,
+          "position": 7.25
+        },
+        {
+          "keys": [
+            "anyps5 how to install"
+          ],
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 8.833333333333332
+        },
+        {
+          "keys": [
+            "anyps5 install"
+          ],
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 11.5
+        },
+        {
+          "keys": [
+            "anyps5 installieren"
+          ],
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 3.3333333333333335
+        },
+        {
+          "keys": [
+            "anyps5 setup"
+          ],
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": 7.230769230769231
+        },
+        {
+          "keys": [
+            "anyps5 setup guide"
+          ],
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 8.666666666666668
+        },
+        {
+          "keys": [
+            "download anyps5"
+          ],
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 8.333333333333332
+        },
+        {
+          "keys": [
+            "how to download anyps5"
+          ],
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 15.5
+        },
+        {
+          "keys": [
+            "how to install anyps5"
+          ],
+          "clicks": 0,
+          "impressions": 29,
+          "ctr": 0,
+          "position": 9.517241379310345
+        },
+        {
+          "keys": [
+            "how to setup anyps5"
+          ],
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 8.833333333333332
+        }
+      ],
+      "limitation": "Returned query rows omit anonymized searches. Missing rows do not establish zero searches or zero impressions."
+    },
+    "anyps5.games": {
+      "property": "sc-domain:anyps5.games",
+      "start": "2026-09-15",
+      "end": "2026-10-12",
+      "data_state": "all",
+      "metadata": {
+        "firstIncompleteDate": null,
+        "firstIncompleteHour": null
+      },
+      "returned_query_rows": 78,
+      "target_query_rows": [],
+      "limitation": "Returned query rows omit anonymized searches. Missing rows do not establish zero searches or zero impressions."
+    }
+  },
+  "decision": "Strengthen existing PC and emulator intent pages, keep installation/download intent, preserve seven localized routes, and avoid duplicate keyword pages or claims of universal compatibility."
+}

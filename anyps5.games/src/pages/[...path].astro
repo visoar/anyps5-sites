@@ -1,5 +1,6 @@
 ---
 import {getRoutes} from '../../../packages/content/routes';
+import CompatibilityReport from '../../../packages/ui/components/CompatibilityReport.astro';
 import HomePage from '../../../packages/ui/components/HomePage.astro';
 import ArticlePage from '../../../packages/ui/components/ArticlePage.astro';
 import CatalogPage from '../../../packages/ui/components/CatalogPage.astro';
@@ -7,4 +8,4 @@ import GamePage from '../../../packages/ui/components/GamePage.astro';
 export function getStaticPaths(){return getRoutes('games')}
 const {locale,kind,article,game}=Astro.props;
 ---
-{kind==='home'?<HomePage {locale} site="games"/>:kind==='catalog'?<CatalogPage {...Astro.props}/>:kind==='game'?<GamePage {locale} {game}/>:<ArticlePage {locale} {article} site="games"/>}
+{kind==='home'?<HomePage {locale} site="games"/>:kind==='compatibility-report'?<CompatibilityReport {locale}/>:kind==='catalog'?<CatalogPage {...Astro.props}/>:kind==='game'?<GamePage {locale} {game}/>:<ArticlePage {locale} {article} site="games"/>}
