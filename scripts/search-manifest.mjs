@@ -29,7 +29,7 @@ export async function createSearchManifest(root,host,sourceRoot){
  }
  // Hash build inputs rather than a Git SHA: the Docker build has no .git directory.
  const hash=createHash('sha256');
- const inputs=[path.join(sourceRoot,'package.json'),path.join(sourceRoot,'package-lock.json'),...await files(path.join(sourceRoot,'packages')),...await files(path.join(sourceRoot,host)),path.join(sourceRoot,'scripts/search-manifest.mjs'),path.join(sourceRoot,'scripts/sitemap-compat.mjs')].sort();
+ const inputs=[path.join(sourceRoot,'package.json'),path.join(sourceRoot,'package-lock.json'),...await files(path.join(sourceRoot,'packages')),...await files(path.join(sourceRoot,host)),path.join(sourceRoot,'deploy',host==='anyps5.cc'?'nginx-cc.conf':'nginx-games.conf'),path.join(sourceRoot,'scripts/search-manifest.mjs'),path.join(sourceRoot,'scripts/sitemap-compat.mjs')].sort();
  for(const file of inputs)hash.update(path.relative(sourceRoot,file)).update('\0').update(await readFile(file)).update('\0');
  const manifest={host,revision:hash.digest('hex'),pages};
  await writeFile(path.join(root,'search-manifest.json'),JSON.stringify(manifest));

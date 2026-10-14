@@ -7,7 +7,7 @@ Instance: https://track.pixmiller.com. Each production site has its own website 
 | AnyPS5.cc | `60f340a2-4cd3-49fd-a95c-25f01ab47701` |
 | AnyPS5.games | `7f69f436-bf20-4bb1-8fdb-bf34e74ae085` |
 
-The shared layout loads the deferred tracker once on every page. Domain restrictions exclude localhost and previews. Pageviews omit query strings and fragments; changing catalog filters therefore does not create additional pageviews. Both Nginx CSPs allow script loading and reporting only to this Umami origin. Browser Do Not Track and Umami's `umami.disabled` preference are respected.
+The shared layout loads the deferred tracker once on every page. Domain restrictions exclude localhost and previews. Pageviews omit query strings and fragments; changing catalog filters therefore does not create additional pageviews. Both Nginx CSPs allow the Umami script and reporting to this origin. Cloudflare also injects its existing Web Analytics performance beacon at the edge; its script origin is allowed separately, and reporting on these proxied sites uses the same-origin `/cdn-cgi/rum` endpoint. Browser Do Not Track and Umami's `umami.disabled` preference apply to Umami; they are not described as a shared control for Cloudflare.
 
 Custom events include `site` and the content `locale`. Umami also records the current page path, referrer and browser/device context. No accounts or distinct user IDs are used. Search text and copied code are never event properties; only search length is recorded. External source paths exclude query strings and fragments.
 
@@ -37,3 +37,7 @@ Validation: `npm test` and `npm run build` verify content plus the single tracke
 ## Discovery additions — 2026-10-12
 
 Header search emits `global_game_search` with query length and result count, and `global_game_open` with the selected game slug and query length. Raw queries are excluded. Existing catalog events now also include `order` (`featured`, `name`, `reviewed`, or `tested`). Production-domain isolation and tracker failure handling stay in the shared analytics helper.
+
+## CDN performance beacon — 2026-10-15
+
+Production verification found Cloudflare’s already-enabled injected beacon blocked by the origin CSP. Only `https://static.cloudflareinsights.com` was added to `script-src`; `connect-src` stays limited to self and Umami because both sites are proxied. No second beacon is inserted into the Astro templates. The seven-language privacy page separately explains Cloudflare performance measurement. See [Cloudflare data collection](https://developers.cloudflare.com/web-analytics/data-metrics/data-origin-and-collection/).

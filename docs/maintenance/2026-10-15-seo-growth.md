@@ -36,3 +36,7 @@ Bing 两站已验证，但性能和抓取报表没有返回数据；四个 URL �
 原有 03:40 定时任务已要求 commit、push 和两站部署；本次补强了每轮盘点已授权但尚未发布的修改、隔离分支合入 main、PR 检查后合并，以及上轮未完成发布优先继续。不得以本地检查、分支 push 或历史 RUNNING 代替本次 main SHA 的双站上线。
 
 内容校验、现有测试、新增报告范围与 IndexNow 边界测试、双站构建和全部静态页面校验是发布前检查。线上验收、对应部署 SHA 和 IndexNow 返回码保存在忽略目录 `research/raw/growth-2026-10-15/`。检查安装／下载、七语言报告、游戏摘要、JSON、sitemap、验证文件、健康检查与 www 跳转。索引和排名仍需后续 GSC/Bing 数据验证。
+
+## 生产验收补充
+
+首轮部署和 IndexNow 工作流通过后，生产浏览器发现既有 Cloudflare 性能脚本被 CSP 拦截。仅为 script-src 增加实际注入脚本的精确 origin；两站由 Cloudflare 代理，性能上报使用已有 self 范围内的 /cdn-cgi/rum，不增加其他 connect-src。七语言隐私说明与统计文档同步，模板不重复插入 beacon。随后重新 push 并对最终提交完成双站部署和通知验收。
