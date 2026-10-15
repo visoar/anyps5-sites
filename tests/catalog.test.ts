@@ -43,7 +43,8 @@ test('a merged technical fix does not silently create a new game report',async()
  assert.ok(returnal.reports[0].source.endsWith('/issues/4239'));
  assert.equal(returnal.reports[0].stage,'blocked');
  assert.equal(games.find(g=>g.slug==='cyberpunk-2077')!.reports[0].benchmarks.length,0);
- const ratchet=games.find(g=>g.slug==='ratchet-clank-rift-apart')!;assert.equal(ratchet.reports.length,2);assert.equal(ratchet.reports.find(r=>r.id==='3338-linux')!.stage,'boot');
+ const ratchet=games.find(g=>g.slug==='ratchet-clank-rift-apart')!;assert.equal(ratchet.reports.find(r=>r.id==='3338-linux')!.stage,'boot');
+ assert.ok(ratchet.reports.every(report=>report.stage!=='ingame'));
 });
 
 test('new source reviews distinguish setup screens, patched integrations and actual gameplay',async()=>{
@@ -70,11 +71,12 @@ test('new source reviews distinguish setup screens, patched integrations and act
  assert.equal(filterGames('PPSA01341').some(game=>game.slug==='marvels-spider-man-2'),false);
  assert.equal(filterGames('PPSA25380').length,0);
  const cyberpunk=games.find(g=>g.slug==='cyberpunk-2077')!;
- assert.equal(cyberpunk.reports.length,4);
+ assert.equal(cyberpunk.reports.length,5);
  assert.equal(cyberpunk.reports[0].build,'main 961b25fe');
  assert.equal(cyberpunk.reports.find(r=>r.id==='3308-linux-main-review-20261013')!.build,'main a11c8f7f');
- assert.equal(conclusionReports(cyberpunk,'linux')[0].build,'main d592d54e');
- assert.equal(conclusionReports(cyberpunk,'linux')[0].stage,'blocked');
+ assert.ok(conclusionReports(cyberpunk,'linux')[0].build?.startsWith('main 799982fac'));
+ assert.equal(conclusionReports(cyberpunk,'linux')[0].stage,'boot');
+ assert.equal(conclusionReports(cyberpunk,'linux')[0].benchmarks.length,0);
 });
 
 test('regional PPSA reports remain separate in search and platform filters',()=>{
@@ -133,13 +135,13 @@ test('a Linux follow-up preserves failed builds and keeps unpinned success bound
 test('editorial platform summaries choose evidence explicitly rather than historical maximum',async()=>{
  const {conclusionReports}=await import('../packages/content/game-conclusions');
  const silk=games.find(g=>g.slug==='hollow-knight-silksong')!;
- assert.equal(conclusionReports(silk,'windows')[0].id,'1996-windows-review-20261014');
+ assert.equal(conclusionReports(silk,'windows')[0].id,'726-windows-review-20261016');
  assert.equal(conclusionReports(silk,'windows')[0].patched,false);
  assert.notEqual(silk.reports.find(r=>r.id==='726-windows-review-20261012')!.build,conclusionReports(silk,'windows')[0].build);
  assert.equal(conclusionReports(silk,'linux')[0].id,'1519-linux-review-20261012');
  assert.equal(conclusionReports(games.find(g=>g.slug==='black-myth-wukong')!,'windows')[0].stage,'blocked');
  const ghost=conclusionReports(games.find(g=>g.slug==='ghost-of-yotei')!,'linux');
- assert.equal(ghost[0].id,'675-linux-review-20261014');assert.equal(ghost[0].stage,'boot');
+ assert.equal(ghost[0].id,'675-linux-review-20261016');assert.equal(ghost[0].stage,'menu');assert.equal(ghost[0].patched,true);
  assert.equal(games.find(g=>g.slug==='ghost-of-yotei')!.reports.find(r=>r.id==='2884-linux-review-20261012')!.stage,'blocked');
 });
 
@@ -171,7 +173,8 @@ test('new follow-ups do not turn scene timing or startup into stock gameplay',as
  assert.equal(race.stage,'ingame');assert.equal(race.patched,true);
  assert.equal(race.version,null);assert.equal(race.testDate,null);assert.equal(race.gpu,null);assert.deepEqual(race.benchmarks,[]);
  assert.equal(filterGames('PPSA01317',{stage:'ingame',evidence:'official'}).length,0);
- assert.equal(filterGames('PPSA01317',{platform:'linux'}).length,0);
+ assert.equal(filterGames('PPSA01317',{platform:'linux',stage:'ingame'}).length,0);
+ assert.equal(filterGames('PPSA01317',{platform:'linux',stage:'blocked'}).length,1);
  const astro=filterGames('PPSA21564')[0];
  const linux=astro.reports.find(r=>r.id==='357-linux-integration-review-20261013')!;
  assert.equal(linux.id,'357-linux-integration-review-20261013');assert.equal(linux.patched,true);
@@ -189,7 +192,10 @@ test('new regional reports and cutscene results do not become universal gameplay
  assert.equal(filterGames('PPSA21567',{platform:'windows',stage:'ingame'}).length,1);
  assert.equal(filterGames('PPSA21567',{platform:'linux',stage:'ingame'}).length,0);
  const village=games.find(g=>g.slug==='resident-evil-village')!;
- assert.equal(conclusionReports(village,'windows')[0].stage,'menu');
+ assert.equal(village.reports[0].stage,'menu');
+ assert.equal(conclusionReports(village,'windows')[0].stage,'ingame');
+ assert.equal(conclusionReports(village,'windows')[0].patched,true);
+ assert.ok(conclusionReports(village,'windows')[0].summary.en.includes('Exact final head unpinned'));
  assert.equal(village.reports[0].benchmarks.length,0);
  const wukong=games.find(g=>g.slug==='black-myth-wukong')!;
  assert.equal(wukong.titleId,'PPSA23226');assert.equal(wukong.reports[0].stage,'blocked');
@@ -218,7 +224,7 @@ test('automatic demos and menu counters do not establish interactive gameplay',(
   const game=filterGames(ppsa)[0];
   assert.equal(filterGames(ppsa,{stage:'ingame'}).length,0);
   assert.ok(game.reports.some(r=>r.stage==='menu'));
-  assert.ok(game.reports.every(r=>r.testDate===null));
+  assert.ok(game.reports.filter(r=>r.id.endsWith('20261015')).every(r=>r.testDate===null));
  }
  const ufc=filterGames('PPSA23566')[0].reports[0];
  assert.equal(ufc.testDate,'2026-10-14');assert.equal(ufc.patched,true);

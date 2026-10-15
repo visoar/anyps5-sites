@@ -2,14 +2,137 @@ import {L,type Text} from './model';
 import metadata from './github-source-status.json';
 export interface DevelopmentNote {number:number;title:Text;summary:Text;games:string[]}
 export const developmentNotes:DevelopmentNote[]=[
+{
+ "number": 1202,
+ "games": [
+  "astro-bot",
+  "wobbly-life"
+ ],
+ "title": {
+  "en": "Pipelined draw work merged on main",
+  "zh": "流水化绘制工作已合入 main",
+  "ar": "دمج الرسم المتداخل في main",
+  "pt": "Desenho em pipeline integrado no main",
+  "de": "Pipelined Draws in main integriert",
+  "fr": "Rendu en pipeline intégré à main",
+  "es": "Dibujo en pipeline integrado en main"
+ },
+ "summary": {
+  "en": "#1202 merged on 15 October at 8856f180c after v0.1.2. New Wobbly main observations and ASTRO branch comparisons keep separate environments. A single idle-scene pair or another GPU’s no-gain result cannot become a universal performance claim.",
+  "zh": "#1202 在 10月15日于 8856f180c 合入，晚于 v0.1.2。新 Wobbly main 观察与 ASTRO 分支对照保留独立环境；单组静止场景或另一 GPU 的无增益结果不能变成普遍提速。",
+  "ar": "#1202 مدمج بعدv0.1.2؛ تجارب Wobbly وASTRO منفصلة. زوج ساكن أو غياب مكسب علىGPU آخر لا يثبت أداءً عاماً.",
+  "pt": "#1202 integrado apósv0.1.2; Wobbly/ASTRO mantêm ambientes separados. Par parado ou ausência de ganho noutraGPU não define desempenho geral.",
+  "de": "#1202 nachv0.1.2 integriert; Wobbly/ASTRO-Umgebungen separat. Ein Idle-Paar oder kein Gewinn auf andererGPU erlaubt keine allgemeine Aussage.",
+  "fr": "#1202 intégré aprèsv0.1.2 ; environnements Wobbly/ASTRO distincts. Une paire immobile ou aucun gain sur autreGPU ne prouve pas un gain général.",
+  "es": "#1202 integrado trasv0.1.2; entornos Wobbly/ASTRO separados. Par inmóvil o ausencia de mejora en otraGPU no prueba rendimiento general."
+ }
+},
+{
+ "number": 6236,
+ "games": [
+  "high-on-life",
+  "epic-mickey-rebrushed",
+  "sackboy-big-adventure",
+  "kena-bridge-of-spirits"
+ ],
+ "title": {
+  "en": "Missing PlayGo data needs title-scoped answers",
+  "zh": "缺少 PlayGo 数据需按游戏区分回答",
+  "ar": "إجابات PlayGo بحسب اللعبة",
+  "pt": "Respostas PlayGo por título",
+  "de": "PlayGo-Antworten je Titel prüfen",
+  "fr": "Réponses PlayGo selon le titre",
+  "es": "Respuestas PlayGo por título"
+ },
+ "summary": {
+  "en": "Open #6236 proposes installed/absent for dumps missing PlayGo metadata; unset still refuses. High on Life and Sackboy need opposite answers. Epic Mickey’s patched level test and Kena’s log-only startup are different evidence. Not a v0.1.2 feature or a universal installed-chunks workaround.",
+  "zh": "开放的 #6236 为缺 PlayGo 元数据的 dump 提出 installed／absent，未设仍拒绝。High on Life 与 Sackboy 所需回答相反；Mickey 补丁关卡与 Kena 仅日志启动分别记录。不是 v0.1.2 功能或通用 installed 绕行。",
+  "ar": "#6236 مفتوح يقترح installed/absent؛ الافتراضي يرفض. High on Life وSackboy مختلفان، Mickey لعب وKena سجل فقط. ليسv0.1.2 أو حلاً عاماً.",
+  "pt": "#6236 aberto propõe installed/absent; predefinição recusa. High on Life/Sackboy opostos, Mickey nível eKena só log. Não év0.1.2 ou solução universal.",
+  "de": "#6236 offen: installed/absent, Standard verweigert. High on Life/Sackboy brauchen Gegenteile, Mickey-Level undKena-Log separat. Keinv0.1.2-Feature/allgemeiner Fix.",
+  "fr": "#6236 ouvert : installed/absent, défaut refuse. High on Life/Sackboy opposés, niveau Mickey et logKena distincts. Pasv0.1.2 ni solution universelle.",
+  "es": "#6236 abierto: installed/absent, defecto rechaza. High on Life/Sackboy opuestos, nivel Mickey y logKena separados. Nov0.1.2 ni solución universal."
+ }
+},
+{
+ "number": 6291,
+ "games": [
+  "olliolli-world"
+ ],
+ "title": {
+  "en": "Pixel helper-lane fix is still a proposal",
+  "zh": "像素 helper-lane 修正仍为提案",
+  "ar": "إصلاح helper lanes مقترح",
+  "pt": "Correção helper lanes ainda proposta",
+  "de": "Pixel-Helper-Lane-Fix bleibt Vorschlag",
+  "fr": "Correctif helper lanes encore proposé",
+  "es": "Corrección helper lanes sigue propuesta"
+ },
+ "summary": {
+  "en": "Open #6291 preserves active pixel-quad helper bits when EXEC is read as a value. Synthetic derivative tests and a 215-second OlliOlli saved-game check support the scoped texture fix. Fresh-start MSAA reuse, audio and performance remain separate; not merged or in v0.1.2.",
+  "zh": "开放的 #6291 在将 EXEC 读取为值时保留活动像素 quad 的 helper 位。导数合成测试与 215秒 OlliOlli 已有存档运行支持局部纹理修正；全新启动 MSAA 复用、声音和性能另算，尚未合入或进入 v0.1.2。",
+  "ar": "#6291 مفتوح يحفظ helper bits؛ اختبارات ومشاهدة215ث تدعم إصلاحاً محدداً. MSAA البدء والصوت والأداء منفصلة؛ غير مدمج أوv0.1.2.",
+  "pt": "#6291 aberto preserva helper bits; testes e215s de save apoiam correção limitada. MSAA inicial, áudio/desempenho separados; não integrado nemv0.1.2.",
+  "de": "#6291 offen erhält Helper-Bits; Tests und215s-Spielstand stützen begrenzten Texturfix. Frischstart-MSAA/Ton/Leistung separat; kein Merge/v0.1.2.",
+  "fr": "#6291 ouvert conserve helper bits ; tests et215s de sauvegarde soutiennent correction limitée. MSAA initial/son/performance distincts ; non intégré, pasv0.1.2.",
+  "es": "#6291 abierto conserva helper bits; pruebas y215s de partida apoyan corrección limitada. MSAA inicial/audio/rendimiento separados; sin merge niv0.1.2."
+ }
+},
  {"number": 5580, "title": {"en": "Windows HID fix is included in v0.1.2", "zh": "v0.1.2 已包含 Windows HID 修复", "ar": "إصلاح HID Windows ضمن v0.1.2", "pt": "Correção HID Windows incluída em v0.1.2", "de": "Windows-HID-Fix in v0.1.2 enthalten", "fr": "Correctif HID Windows inclus en v0.1.2", "es": "Arreglo HID Windows incluido en v0.1.2"}, "summary": {"en": "#1050 closed in favour of #5580, which merged as d7bb2fee3 at 01:02 UTC and is an ancestor of the v0.1.2 tag. It disables DirectInput joystick enumeration by default to address the reproduced vendor-HID hang before video output. XInput and HIDAPI remain available; DirectInput-only controllers are not detected and were not tested. SDL_DIRECTINPUT_ENABLED can override the default. This is a device-specific startup fix, not a game compatibility result.", "zh": "#1050 关闭并转由 #5580 接续；后者在 01:02 UTC 于 d7bb2fee3 合入，已核验属于 v0.1.2 tag 的祖先。默认禁用 DirectInput 手柄枚举，处理已复现的厂商 HID 导致的显示初始化挂起。XInput 与 HIDAPI 仍可用，仅 DirectInput 手柄不被检测、也未实测；SDL_DIRECTINPUT_ENABLED 可覆盖默认。这是设备相关启动修复，不是游戏兼容结果。", "ar": "#1050 أُغلق لصالح #5580، دمج d7bb2fee3 في01:02 UTC وهو سلف tag v0.1.2. يعطل تعداد DirectInput افتراضياً لعطل HID عند فتح العرض. XInput/HIDAPI متاحان؛ أجهزة DirectInput فقط لا تكتشف ولم تختبر. SDL_DIRECTINPUT_ENABLED يتجاوز الافتراضي. إصلاح جهاز، لا توافق لعبة.", "pt": "#1050 fechada em favor de #5580, integrada d7bb2fee3 às01:02 UTC, antepassado do tag v0.1.2. Desativa enumeração DirectInput por defeito para bloqueio HID no arranque. XInput/HIDAPI mantidos; comandos só DirectInput não detetados nem testados. SDL_DIRECTINPUT_ENABLED altera o padrão. Correção específica, não resultado de jogo.", "de": "#1050 zugunsten #5580 geschlossen, Merge d7bb2fee3 um01:02 UTC, Vorfahr von v0.1.2. DirectInput-Enumeration standardmäßig aus gegen reproduzierten HID-Startblock. XInput/HIDAPI bleiben, reine DirectInput-Pads nicht erkannt/ungeprüft. SDL_DIRECTINPUT_ENABLED überschreibt Standard. Gerätefix, kein Spielkompatibilitätsbeleg.", "fr": "#1050 fermé pour #5580, merge d7bb2fee3 à01:02 UTC, ancêtre du tag v0.1.2. Énumération DirectInput désactivée par défaut contre blocage HID au démarrage. XInput/HIDAPI conservés ; pads DirectInput-only non détectés/non testés. SDL_DIRECTINPUT_ENABLED surcharge le défaut. Correctif appareil, pas résultat de jeu.", "es": "#1050 cerrada por #5580, merge d7bb2fee3 a01:02 UTC, ancestro de v0.1.2. Desactiva enumeración DirectInput por defecto contra bloqueo HID inicial. XInput/HIDAPI siguen; pads solo DirectInput no detectados/sin probar. SDL_DIRECTINPUT_ENABLED cambia defecto. Arreglo de dispositivo, no compatibilidad de juego."}, "games": []},
  {"number": 5511, "games": [], "title": {"en": "Shader traversal copying reduced", "zh": "减少 shader 遍历复制", "ar": "تقليل نسخ مرور shader", "pt": "Menos cópias no percurso shader", "de": "Weniger Shader-Traversal-Kopien", "fr": "Moins de copies de parcours shader", "es": "Menos copias al recorrer shaders"}, "summary": {"en": "#5511 merged at 18:38 UTC after v0.1.2. Scoped traversal preserves ancestor reuse and sibling isolation while reducing value-map copies. This source optimization is not evidence of a measured game FPS gain or a v0.1.2 binary change.", "zh": "#5511 在 v0.1.2 后的 18:38 UTC 合入；作用域遍历减少值映射复制，同时保留祖先复用与同级隔离。这项源码优化不证明已测游戏 FPS 提升或 v0.1.2 二进制变化。", "ar": "دمج #5511 في18:38 UTC بعد v0.1.2؛ يقلل نسخ الخرائط مع العزل وإعادة الاستخدام. لا FPS لعبة مقاس أو تغيير ملف الإصدار مثبت.", "pt": "#5511 integrada18:38 UTC após v0.1.2; menos cópias com isolamento/reutilização. Não comprova ganho FPS de jogo nem mudança binária v0.1.2.", "de": "#5511 um18:38 UTC nach v0.1.2 gemergt; weniger Mapskopien bei Isolation/Wiederverwendung. Kein gemessener Spiel-FPS-Gewinn/Release-Binärwechsel.", "fr": "#5511 intégré18:38 UTC après v0.1.2 ; moins de copies avec isolation/réutilisation. Aucun gain FPS mesuré ni changement binaire release.", "es": "#5511 integrada18:38 UTC tras v0.1.2; menos copias con aislamiento/reutilización. Sin ganancia FPS medida ni cambio binario release."}},
- {"number": 5971, "games": ["astro-bot"], "title": {"en": "AudioOut2 lifetime proposal remains open", "zh": "AudioOut2 生命周期提案仍未合入", "ar": "اقتراح عمر AudioOut2 مفتوح", "pt": "Proposta AudioOut2 por integrar", "de": "AudioOut2-Lebensdauer-Vorschlag offen", "fr": "Proposition AudioOut2 ouverte", "es": "Propuesta AudioOut2 abierta"}, "summary": {"en": "The open proposal retains callback vectors and the mutex for the required lifetime. Five dummy-audio cases and paired standing ASTRO hub closes are reported; two original aborts versus two repaired zero exits do not establish new controls, scene FPS or a released audio fix.", "zh": "未合入提案保留 callback vector 和 mutex 所需生命周期。报告五项 dummy audio 测试及 ASTRO 站立基地成对退出；两次原始异常与两次修复后零退出，不证明新操作、场景 FPS 或发行音频修复。", "ar": "الاقتراح يحتفظ vectors/mutex بعمر مناسب. خمس حالات صوت dummy وإغلاق ASTRO واقف؛ تعطلان مقابل خروجين صفر ليسا تحكماً أو FPS أو إصلاح إصدار.", "pt": "Proposta mantém vectors/mutex durante vida necessária. Cinco testes dummy e fechos ASTRO parado; dois abortos contra dois zeros não provam comandos/FPS/fix release.", "de": "Vorschlag hält Vektoren/Mutex lange genug. Fünf Dummy-Audiotests und ASTRO-Standhub-Closes; zwei Abbrüche gegen zwei Null-Exits belegen keine Steuerung/FPS/Releasefix.", "fr": "Proposition conserve vectors/mutex. Cinq tests dummy et fermetures ASTRO immobile ; deux crashes contre deux sorties zéro ne prouvent pas commandes/FPS/fix release.", "es": "Propuesta mantiene vectors/mutex. Cinco tests dummy y cierres ASTRO quieto; dos abortos frente a dos ceros no prueban controles/FPS/fix release."}},
+ {
+ "number": 5971,
+ "games": [
+  "astro-bot"
+ ],
+ "title": {
+  "en": "Audio lifetime proposal closed for another fix",
+  "zh": "音频生命周期提案关闭，转用另一修复",
+  "ar": "إغلاق اقتراح الصوت لصالح إصلاح آخر",
+  "pt": "Proposta áudio encerrada por outra correção",
+  "de": "Audio-Lebensdauervorschlag zugunsten anderem Fix geschlossen",
+  "fr": "Proposition audio fermée pour un autre correctif",
+  "es": "Propuesta audio cerrada por otra solución"
+ },
+ "summary": {
+  "en": "#5971 closed without merging because #6000 instead parks guest audio callers before static destruction. #6000 merged after v0.1.2. Historical paired ASTRO closes keep their original integration; this is shutdown ordering, not new gameplay, FPS or audio-quality evidence.",
+  "zh": "#5971 未合入而关闭，改由 #6000 在静态析构前停放游戏音频调用线程。#6000 在 v0.1.2 之后合入；旧 ASTRO 成对关闭实验保留原整合基点。这是退出顺序，不是新游戏、FPS 或音质证据。",
+  "ar": "#5971 مغلق دون دمج لصالح #6000 الذي يوقف مستدعي الصوت قبل الهدم، مدمج بعدv0.1.2. تجارب ASTRO القديمة تبقى ببنائها؛ ترتيب خروج لا لعب/FPS/صوت جديد.",
+  "pt": "#5971 fechado sem merge por #6000, que pausa chamadas áudio antes da destruição, apósv0.1.2. Ensaios ASTRO mantêm bases antigas; ordem de saída, não jogo/FPS/qualidade áudio.",
+  "de": "#5971 ungemergt für #6000 geschlossen, das Audioaufrufer vor Destruktion parkt, nachv0.1.2 integriert. Alte ASTRO-Tests behalten Basis; Shutdown, kein neues Gameplay/FPS/Tonurteil.",
+  "fr": "#5971 fermé sans merge pour #6000 qui arrête les appelants audio avant destruction, intégré aprèsv0.1.2. Anciens essais ASTRO conservent leur base ; arrêt, pas nouveau jeu/FPS/son.",
+  "es": "#5971 cerrado sin merge por #6000 que pausa llamadas audio antes de destruir, integrado trasv0.1.2. Ensayos ASTRO conservan base; salida, no juego/FPS/audio nuevo."
+ }
+},
  {"number": 757, "games": ["astro-bot", "ghost-of-yotei", "demons-souls"], "title": {"en": "Runtime descriptor tables merged after v0.1.2", "zh": "运行时描述表在 v0.1.2 后合入", "ar": "دمج جداول الأوصاف بعد v0.1.2", "pt": "Tabelas integradas após v0.1.2", "de": "Runtime-Tabellen nach v0.1.2 gemergt", "fr": "Tables intégrées après v0.1.2", "es": "Tablas integradas tras v0.1.2"}, "summary": {"en": "#757 and #758 merged on 14 October at 15:48 and 15:53 UTC. They plan indexed and pointer-loaded image/sampler tables, with invalid selected entries still faulting; disk formats advance to 32/33. Focused API/cache tests do not confirm a new clean-main title result. Older local stacks retain their original commits.", "zh": "#757 与 #758 于 10 月 14 日 15:48／15:53 UTC 合入，支持索引及指针加载图像／采样器表，非法被选条目仍报错；磁盘格式推进至 32／33。专项 API／缓存测试不证明新干净 main 游戏结果，旧本地栈保留原提交。", "ar": "دمج #757/#758 في14 أكتوبر15:48/15:53 UTC لجداول الصور والسامبلر المفهرسة/المؤشرات؛ المدخلات غير الصالحة تفشل والصيغ32/33. اختبارات API ليست تشغيل لعبة main جديداً؛ البناءات القديمة محفوظة.", "pt": "#757/#758 integradas14 outubro15:48/15:53 UTC para tabelas indexadas/ponteiros; entradas inválidas falham, formatos32/33. Testes API/cache não comprovam título main novo; stacks antigos mantêm commits.", "de": "#757/#758 am14.Oktober15:48/15:53 UTC für Index-/Pointertabellen gemergt; ungültige Einträge faulten, Formate32/33. API-/Cachetests belegen keinen neuen main-Titellauf; alte Stacks behalten Commits.", "fr": "#757/#758 intégrés14 octobre15:48/15:53 UTC pour tables indexées/pointeurs ; entrées invalides échouent, formats32/33. Tests API/cache ne valident pas nouveau jeu main ; anciennes piles gardent commits.", "es": "#757/#758 integradas14 octubre15:48/15:53 UTC para tablas indexadas/punteros; inválidas fallan, formatos32/33. Tests API/cache no prueban nuevo juego main; pilas previas conservan commits."}},
  {"number": 5588, "games": ["hollow-knight-voidheart"], "title": {"en": "Unwrap already-decrypted containers", "zh": "解包已解密容器", "ar": "فك حاويات مفكوكة التشفير", "pt": "Extrair contentores já decifrados", "de": "Bereits entschlüsselte Container entpacken", "fr": "Extraire conteneurs déjà déchiffrés", "es": "Extraer contenedores ya descifrados"}, "summary": {"en": "#5588 adds tools/unwrap_self.py on main after v0.1.2. It reconstructs clean ELF offsets/alignment and refuses apparent encrypted inputs; it does not decrypt games. Hollow Knight output matched the previously working ELF, rather than testing a new runtime build.", "zh": "#5588 在 v0.1.2 之后的 main 加入 tools/unwrap_self.py，重建干净 ELF 偏移与对齐，拒绝看似加密的输入，不会解密游戏。Hollow Knight 输出与先前可用 ELF 一致，不是新 runtime 构建实测。", "ar": "#5588 بعد v0.1.2 يعيد ELF ومحاذاته ويرفض المدخل المشفر، لا يفك تشفير الألعاب. خرج Hollow Knight يطابق ELF سابقاً، ليس اختبار runtime جديد.", "pt": "#5588 após v0.1.2 reconstrói ELF/alinhamento e recusa entrada cifrada, não decifra jogos. Hollow Knight igual ao ELF anterior, não teste de runtime novo.", "de": "#5588 nach v0.1.2 rekonstruiert ELF/Alignment, lehnt verschlüsselte Eingaben ab, entschlüsselt nicht. Hollow Knight entspricht früherem ELF, kein neuer Runtime-Test.", "fr": "#5588 après v0.1.2 reconstruit ELF/alignement, refuse entrée chiffrée, ne déchiffre pas. Hollow Knight identique à ELF antérieur, pas nouveau runtime testé.", "es": "#5588 tras v0.1.2 reconstruye ELF/alineación, rechaza cifrado, no descifra juegos. Hollow Knight igual al ELF previo, no test de runtime nuevo."}},
  {"number": 5443, "games": ["mgs-peace-walker"], "title": {"en": "Multi-executable modules now share on Linux", "zh": "Linux 多程序模块共享已修正", "ar": "مشاركة الوحدات على Linux", "pt": "Módulos partilhados no Linux", "de": "Modulteilung auf Linux korrigiert", "fr": "Partage des modules Linux corrigé", "es": "Compartir módulos Linux corregido"}, "summary": {"en": "Merged after v0.1.2, #5443 makes guest-module dependencies independent of an executable’s system-library order. Windows output is unchanged and macOS was not run. Peace Walker’s Linux follow-up now creates the game process but still stops on image interfaces, not verified gameplay.", "zh": "v0.1.2 之后合入的 #5443 让游戏模块依赖不再随程序系统库顺序变化；Windows 输出不变、macOS 未运行。Peace Walker 的 Linux 补充现能创建游戏进程，但仍在图像接口停止，未验证游戏过程。", "ar": "بعد v0.1.2 يفصل #5443 تبعيات الوحدات عن ترتيب مكتبات البرنامج. Windows ثابت وmacOS غير مختبر. Peace Walker Linux ينشئ العملية لكن يتوقف بالصورة، لا لعب موثق.", "pt": "Após v0.1.2, #5443 separa dependências da ordem do executável. Windows igual, macOS não testado. Peace Walker Linux cria processo, mas para na imagem, sem jogo validado.", "de": "Nach v0.1.2 trennt #5443 Modulabhängigkeiten von Programm-Libreihenfolge. Windows gleich, macOS ungeprüft. Peace Walker Linux startet Prozess, stoppt aber an Bildschnittstellen, kein Gameplay.", "fr": "Après v0.1.2 #5443 sépare dépendances modules de l’ordre du programme. Windows inchangé, macOS non testé. Peace Walker Linux lance processus, puis refuse image, jeu non validé.", "es": "Tras v0.1.2 #5443 separa dependencias de orden del ejecutable. Windows igual, macOS sin probar. Peace Walker Linux crea proceso, para en imagen, juego sin verificar."}},
  {"number": 5738, "games": ["dreaming-sarah", "onimusha-way-of-the-sword"], "title": {"en": "VideoOut stub reverted after the release", "zh": "发行后回退 VideoOut stub", "ar": "تراجع VideoOut بعد الإصدار", "pt": "Stub VideoOut revertido após release", "de": "VideoOut-Stub nach Release revertiert", "fr": "Stub VideoOut révoqué après release", "es": "Stub VideoOut revertido tras release"}, "summary": {"en": "#5738 merged at 08:58:38 UTC, after v0.1.2 at 08:56:52. It reverts #5608’s throwing YNw9Xk5iNWo VideoOut export, with two Linux Sarah runs on the reverted baseline. The v0.1.2 binary still needs the reported Mouse preload workaround; the merge does not implement Onimusha’s unknown function.", "zh": "#5738 于 08:58:38 UTC 合入，晚于 v0.1.2 的 08:56:52。回退 #5608 会抛错的 VideoOut 导出 YNw9Xk5iNWo，回退基线上有两次 Linux Sarah 运行。v0.1.2 二进制仍需来源中的 Mouse preload 绕行；合入并未实现鬼武者的未知函数。", "ar": "دمج #5738 في 08:58:38 بعد v0.1.2 في 08:56:52 UTC؛ يتراجع عن export VideoOut الرامي YNw9Xk5iNWo مع تجربتي Sarah Linux. ملف الإصدار يحتاج Mouse preload؛ الدالة المجهولة Onimusha غير منفذة.", "pt": "Merge #5738 às08:58:38 depois de v0.1.2 às08:56:52 UTC: reverte export VideoOut YNw9Xk5iNWo que lança erro, com dois testes Sarah Linux. Release exige Mouse preload; função Onimusha não implementada.", "de": "Merge #5738 um08:58:38 nach v0.1.2 um08:56:52 UTC revertiert werfenden VideoOut-Export YNw9Xk5iNWo mit zwei Sarah-Linux-Läufen. Release braucht Mouse-Preload; unbekannte Onimusha-Funktion nicht implementiert.", "fr": "Merge #5738 à08:58:38 après v0.1.2 à08:56:52 UTC révoque export VideoOut YNw9Xk5iNWo qui lève une erreur, avec deux essais Sarah Linux. Release demande Mouse preload ; fonction Onimusha non implémentée.", "es": "Merge #5738 a08:58:38 tras v0.1.2 a08:56:52 UTC revierte export VideoOut YNw9Xk5iNWo que lanza error, con dos pruebas Sarah Linux. Release necesita Mouse preload; función Onimusha sin implementar."}},
- {number:4949,games:["resident-evil-4-remake", "resident-evil-village"],title:L("Sample-location defaults merged","采样位置默认值已合入","دمج قيم مواقع العينات","Valores de amostras integrados","Sample-Defaults gemergt","Valeurs d’échantillons intégrées","Valores de muestras integrados"),summary:L("#4949 initializes context registers 0x2fe–0x30d to documented clear-state values and merged as dacd78525e. It addresses the first-frame register refusal seen in RE4/Village. It is not a new release or a clean-main gameplay retest; Village’s local opening still crashes before its first controllable scene.","#4949 将上下文寄存器 0x2fe–0x30d 初始化为文档清除状态值，已于 dacd78525e 合入。针对 RE4／Village 的首帧寄存器拒绝，不是新发行版或原始 main 游戏复测；Village 本地开场仍在首个可操作场景前崩溃。","#4949 يهيئ 0x2fe–0x30d بقيم clear-state ودمج dacd78525e ،لمشكلة أول إطار RE4/Village. ليس إصداراً أو اختبار لعب main ؛ افتتاحية Village المحلية تتعطل قبل التحكم.","#4949 inicia0x2fe–0x30d com valores clear-state, merge dacd78525e, para recusa inicial RE4/Village. Não é release/teste main; abertura local Village falha antes de controlo.","#4949 setzt0x2fe–0x30d auf Clear-State, Merge dacd78525e, gegen RE4/Village-Erstbildfehler. Kein Release/main-Gameplaytest; Village-Intro lokal scheitert vor Steuerung.","#4949 initialise0x2fe–0x30d au clear-state, merge dacd78525e, pour premier cadre RE4/Village. Pas de release/test main ; ouverture Village locale plante avant contrôle.","#4949 inicia0x2fe–0x30d al clear-state, merge dacd78525e, para primer frame RE4/Village. No release/test main; apertura Village local falla antes de control.")},
+ {
+ "number": 4949,
+ "games": [
+  "resident-evil-4-remake",
+  "resident-evil-village"
+ ],
+ "title": {
+  "en": "Sample-location defaults merged",
+  "zh": "采样位置默认值已合入",
+  "ar": "دمج قيم مواقع العينات",
+  "pt": "Valores de amostras integrados",
+  "de": "Sample-Defaults gemergt",
+  "fr": "Valeurs d’échantillons intégrées",
+  "es": "Valores de muestras integrados"
+ },
+ "summary": {
+  "en": "#4949 merged the sample-location defaults as dacd78525e. It resolves a particular register refusal, not the whole game. The later Village local stack separately reports first player control with #6146 and many other changes; neither result is an unmodified v0.1.2 gameplay test.",
+  "zh": "#4949 于 dacd78525e 合入采样位置默认值，解决特定寄存器拒绝而非整个游戏。后来的 Village 本地栈配 #6146 等多项改动报告首个可操作场景；两者都不是未修改 v0.1.2 的游戏实测。",
+  "ar": "#4949 يدمج افتراضات sampling، لا اللعبة كاملة. Village لاحق يبلغ التحكم مع #6146 وتغييرات كثيرة؛ لا اختبار لعبv0.1.2 عادي.",
+  "pt": "#4949 integra valores sampling, não o jogo inteiro. Village posterior chega ao controlo com #6146 e muitas alterações; não é testev0.1.2 normal.",
+  "de": "#4949 integriert Sampling-Vorgaben, nicht das ganze Spiel. Späterer Village-Stack erreicht Steuerung mit #6146 und weiteren Änderungen; kein Stock-v0.1.2-Spieltest.",
+  "fr": "#4949 intègre valeurs sampling, pas tout le jeu. Village ultérieur atteint le contrôle avec #6146 et nombreux changements ; pas de testv0.1.2 standard.",
+  "es": "#4949 integra valores sampling, no todo el juego. Village posterior alcanza control con #6146 y más cambios; no prueba juegov0.1.2 estándar."
+ }
+},
  {number:4216,games:["minecraft", "cyberpunk-2077"],title:L("Allocation lookup optimization is now on main","分配查找优化现已进入 main","تحسين بحث الذاكرة على main","Otimização de procura já em main","Allokationssuche jetzt auf main","Recherche mémoire désormais sur main","Búsqueda de memoria ya en main"),summary:L("#4216 merged as 50578eb936. Address-indexed lookups reduce registry copies and full mapping walks; the author’s Linux Minecraft result still includes its other PR dependencies. Keep the earlier Cyberpunk cold/warm failures on their recorded local build. No new Windows or clean-main title performance is established by the merge.","#4216 已于 50578eb936 合入。按地址索引减少注册表复制和全映射遍历，作者 Linux Minecraft 结果仍有其他 PR 依赖。Cyberpunk 旧冷／暖失败继续对应原本地构建；合入不证明新的 Windows 或原始 main 游戏性能。","#4216 دمج 50578eb936 ويقلل نسخ السجل والبحث. Minecraft Linux ما زال بتبعيات PR أخرى؛ فشل Cyberpunk السابق على بنائه. لا أداء لعبة Windows/main جديد بسبب الدمج.","#4216 integrado50578eb936, reduz cópias/procura. Minecraft Linux mantém outras PR; falhas antigas Cyberpunk conservam build. Merge não estabelece novo desempenho Windows/main.","#4216 gemergt50578eb936, weniger Kopien/Suche. Minecraft-Linux bleibt mit PR-Abhängigkeiten; alte Cyberpunk-Fehler behalten Build. Merge belegt keine neue Windows/main-Leistung.","#4216 intégré50578eb936, moins de copies/parcours. Minecraft Linux garde dépendances ; anciens échecs Cyberpunk conservent build. Merge ne valide pas performance Windows/main.","#4216 integrado50578eb936, reduce copias/recorridos. Minecraft Linux conserva dependencias; fallos antiguos Cyberpunk su build. Merge no valida rendimiento Windows/main.")},
  {number:4554,games:["palworld", "high-on-life"],title:L("DCC writers are synchronized before sampled keys","采样 DCC key 前同步写入","مزامنة الكتابات قبل مفاتيح DCC","Sincronizar escritas antes das chaves DCC","DCC-Schreiber vor Keys synchronisieren","Synchroniser les écritures avant clés DCC","Sincronizar escrituras antes de claves DCC"),summary:L("#4554 merged as 8bf10e51f4 after review added uniform-key writer coverage. Synthetic regression evidence is separate from title rendering. Palworld’s world colours were still wrong in the source investigation, and there is no new clean-main Palworld run; do not present this merge as full compatibility.","#4554 在补充 uniform-key 写入覆盖后于 8bf10e51f4 合入。合成回归证据与实际渲染分开；来源调查中帕鲁世界颜色仍错，也没有新原始 main 帕鲁运行，不能将合入当作完整兼容。","#4554 دمج 8bf10e51f4 بعد تغطية uniform-key. اختبارات اصطناعية ليست رسم لعبة؛ ألوان Palworld بقيت خاطئة ولا تشغيل main جديد. ليس توافقاً كاملاً.","#4554 integrado8bf10e51f4 após cobertura uniform-key. Regressões sintéticas não são jogo; Palworld ainda com cores erradas e sem reteste main. Não é compatibilidade completa.","#4554 gemergt8bf10e51f4 mit Uniform-Key-Abdeckung. Synthetik ist kein Spielrendering; Palworld-Farben noch falsch, kein main-Retest. Keine Vollkompatibilität.","#4554 intégré8bf10e51f4 avec couverture uniform-key. Synthétique distinct du jeu ; couleurs Palworld encore fausses, pas de retest main. Pas de compatibilité complète.","#4554 integrado8bf10e51f4 con cobertura uniform-key. Sintético distinto del juego; colores Palworld aún erróneos, sin retest main. No compatibilidad completa.")},
  {"number": 5381, "games": [], "title": {"en": "Browser pin updated; pairing still unresolved", "zh": "在线库已更新，版本配对仍未解决", "ar": "تحديث النسخة مع بقاء الاقتران", "pt": "Bibliotecas atualizadas, emparelhamento por resolver", "de": "Browser-Pin neu, Paarung offen", "fr": "Pin web actualisé, appariement ouvert", "es": "Pin web actualizado, pareja pendiente"}, "summary": {"en": "The live manifest now pins v0.1.2. It still pairs release libraries with main-built WASM, so #5381 remains open. New libraries resolve many imports but Windows setbuf binding has a named-library caveat. #5409 and #5710 closed without merging under the PR intake limit; closure is not a pairing fix.", "zh": "在线清单现固定 v0.1.2，但仍把发行库与 main 构建的 WASM 配对，#5381 未结。新库解决多项导入，Windows setbuf 的命名库绑定仍有边界；#5409、#5710 因 PR 接收限制关闭未合入，不等于配对修复。", "ar": "البيان v0.1.2 لكن WASM من main، فـ#5381 مفتوح. مكتبات جديدة تحل واردات عديدة مع قيد setbuf Windows. #5409/#5710 أغلقت دون دمج لحد الاستقبال، لا إصلاح اقتران.", "pt": "Manifesto v0.1.2, WASM de main: #5381 aberto. Libs resolvem vários imports, setbuf Windows tem limite de associação. #5409/#5710 fechadas sem merge por limite de PR, não correção.", "de": "Manifest v0.1.2, WASM von main: #5381 offen. Neue Libs lösen viele Imports, Windows-setbuf hat Bindungsgrenze. #5409/#5710 wegen PR-Limit ungemergt geschlossen, kein Paarungsfix.", "fr": "Manifest v0.1.2, WASM de main : #5381 ouvert. Libs résolvent plusieurs imports, setbuf Windows garde un problème de liaison. #5409/#5710 fermés sans merge pour limite PR, aucun correctif.", "es": "Manifest v0.1.2, WASM de main: #5381 abierto. Libs resuelven varios imports, setbuf Windows tiene límite de enlace. #5409/#5710 cerradas sin merge por límite PR, no arreglo."}},

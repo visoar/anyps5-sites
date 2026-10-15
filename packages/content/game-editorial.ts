@@ -115,6 +115,486 @@ editorial["steins-gate-reboot"]=E("adventure",{"en": "The science-fiction story�
 editorial["resonance-plague-tale-legacy"]=E("action",{"en": "Sophia’s Plague Tale adventure blends combat and puzzles; unresolved startup APIs remain the report boundary.", "zh": "Sophia 的瘟疫传说冒险结合战斗与解谜；未实现的启动 API 仍是报告边界。", "ar": "مغامرة Sophia تجمع القتال والألغاز؛ API البدء غير المحققة حد التقرير.", "pt": "A aventura de Sophia junta combate e puzzles; APIs iniciais por resolver limitam o relato.", "de": "Sophias Abenteuer verbindet Kampf/Rätsel; ungelöste Start-APIs begrenzen den Bericht.", "fr": "L’aventure de Sophia mêle combat et énigmes ; APIs de démarrage non résolues bornent le rapport.", "es": "La aventura de Sophia mezcla combate y puzles; APIs iniciales pendientes limitan el informe."},["resident-evil-village", "ghost-of-tsushima-directors-cut"],{});
 
 editorial["007-first-light"].editionNote={"en": "The report is PPSA11386 v01.018.000. The current promotional cover advertises DLC; it does not establish that content was tested.", "zh": "报告为 PPSA11386 v01.018.000；当前宣传封面带有 DLC 广告，不证明已测试该内容。", "ar": "التقرير PPSA11386 v01.018.000؛ الغلاف الحالي يعلن DLC ولا يثبت اختبارها.", "pt": "Relato PPSA11386 v01.018.000; capa anuncia DLC e não comprova o seu teste.", "de": "Bericht PPSA11386 v01.018.000; Cover wirbt für DLC und belegt keinen Test davon.", "fr": "Rapport PPSA11386 v01.018.000 ; couverture annonce un DLC sans preuve de test.", "es": "Informe PPSA11386 v01.018.000; portada anuncia DLC sin prueba de haberlo probado."};
+Object.assign(editorial,{
+ "puyo-puyo-tetris-2": {
+  "genre": "puzzle",
+  "overview": {
+   "en": "Puyo chains and falling Tetriminos share a puzzle crossover; matching its PS5 region matters for module and shader reports.",
+   "zh": "气泡连锁与俄罗斯方块结合的益智作品；核对 PS5 地区版本后再比较模块／着色器问题。",
+   "ar": "لعبة ألغاز تجمع سلاسل Puyo وTetriminos؛ تحقق من منطقة PS5 للمقارنة.",
+   "pt": "Puzzles combinam cadeias Puyo e Tetriminos; confirme a região PS5 ao comparar falhas.",
+   "de": "Puyo-Ketten und Tetriminos treffen aufeinander; PS5-Region vor Fehlervergleichen prüfen.",
+   "fr": "Chaînes Puyo et Tetriminos se croisent ; vérifiez la région PS5 avant comparaison.",
+   "es": "Combina cadenas Puyo y Tetriminos; verifica la región PS5 al comparar fallos."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA01530. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA01530；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA01530؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA01530; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA01530; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA01530 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA01530; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "魔法气泡 俄罗斯方块 2"
+  },
+  "related": [
+   "hollow-knight-silksong",
+   "dreaming-sarah"
+  ]
+ },
+ "ea-sports-fc-27": {
+  "genre": "sports",
+  "overview": {
+   "en": "EA’s football game has a large bundled-module stack. A rendered splash says little about matches or online services.",
+   "zh": "EA 足球作品带有大量自带模块；显示启动画面不能说明比赛或在线服务可用。",
+   "ar": "لعبة كرة قدم بوحدات كثيرة؛ شاشة البداية لا تثبت مباريات أو خدمات شبكة.",
+   "pt": "Futebol com muitos módulos incluídos; ecrã inicial não comprova partidas ou serviços online.",
+   "de": "Fußball mit vielen Gastmodulen; Startbild belegt weder Matches noch Onlinedienste.",
+   "fr": "Football et nombreux modules fournis ; un écran initial ne prouve pas matchs ou services en ligne.",
+   "es": "Fútbol con muchos módulos incluidos; pantalla inicial no prueba partidos ni servicios online."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA34015. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA34015；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA34015؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA34015; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA34015; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA34015 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA34015; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "EA SPORTS FC 27"
+  },
+  "related": [
+   "astro-bot",
+   "stray"
+  ]
+ },
+ "tevi": {
+  "genre": "platform",
+  "overview": {
+   "en": "Tevi explores connected areas with melee combos and bullet patterns. Track room changes and controller responses alongside frame counters.",
+   "zh": "Tevi 在相连区域探索，结合近战连招和弹幕；计数之外也需核对过房间和手柄响应。",
+   "ar": "تستكشف Tevi مناطق مترابطة بقتال ومقذوفات؛ افحص انتقال الغرف والتحكم مع العدّاد.",
+   "pt": "Tevi explora áreas ligadas entre combos e projéteis; confirme transições e comandos além do contador.",
+   "de": "Tevi erkundet verbundene Gebiete mit Combos und Projektilen; Raumwechsel und Steuerung neben FPS prüfen.",
+   "fr": "Tevi explore des zones reliées entre combos et projectiles ; vérifiez transitions et commandes au-delà du compteur.",
+   "es": "Tevi explora zonas conectadas entre combos y proyectiles; comprueba transiciones y controles además del contador."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA21112. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA21112；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA21112؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA21112; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA21112; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA21112 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA21112; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "TEVI"
+  },
+  "related": [
+   "hollow-knight-silksong",
+   "dreaming-sarah"
+  ]
+ },
+ "quake": {
+  "genre": "shooter",
+  "overview": {
+   "en": "The enhanced Quake release revisits its first-person campaign. This PS5 title is separate from vkQuake homebrew and compile-only shader studies.",
+   "zh": "强化版 Quake 重现第一人称战役；此 PS5 作品与 vkQuake 自制版及纯着色器编译研究分开。",
+   "ar": "إصدار Quake المحسن منفصل عن vkQuake homebrew ودراسات ترجمة shaders فقط.",
+   "pt": "Quake melhorado é separado do homebrew vkQuake e dos estudos só de compilação.",
+   "de": "Die erweiterte Quake-Fassung bleibt getrennt von vkQuake-Homebrew und reinen Shaderstudien.",
+   "fr": "Quake amélioré reste distinct du homebrew vkQuake et des études de compilation seules.",
+   "es": "Quake mejorado se separa de vkQuake homebrew y de estudios solo de compilación."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA01880. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA01880；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA01880؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA01880; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA01880; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA01880 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA01880; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "雷神之锤"
+  },
+  "related": [
+   "astro-bot",
+   "stray"
+  ]
+ },
+ "lodoss-deedlit": {
+  "genre": "platform",
+  "overview": {
+   "en": "Deedlit explores a connected fantasy labyrinth with spirit-assisted combat. Readable story pages are an early step before movement and battles.",
+   "zh": "蒂德莉特借精灵之力探索幻想迷宫并战斗；可读故事页只是移动、战斗之前的早期阶段。",
+   "ar": "تستكشف Deedlit متاهة بخوض قتال مع الأرواح؛ القصة المقروءة تسبق الحركة والمعارك.",
+   "pt": "Deedlit explora um labirinto com espíritos; história legível precede movimento e batalhas.",
+   "de": "Deedlit erkundet ein Labyrinth mit Geisterkräften; lesbare Erzählseiten liegen vor Bewegung und Kämpfen.",
+   "fr": "Deedlit explore un labyrinthe avec les esprits ; récit lisible précède déplacements et combats.",
+   "es": "Deedlit explora un laberinto con espíritus; historia legible precede movimiento y combate."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA05347. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA05347；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA05347؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA05347; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA05347; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA05347 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA05347; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "罗德斯岛战记：蒂德莉特的奇境迷宫冒险"
+  },
+  "related": [
+   "hollow-knight-silksong",
+   "dreaming-sarah"
+  ]
+ },
+ "super-mario-sunshine-homebrew": {
+  "genre": "platform",
+  "overview": {
+   "en": "This community PS5 port has its own low-address memory and user-disc requirements. It is not an official Sony or Nintendo PS5 release.",
+   "zh": "社区 PS5 移植版有低地址内存和用户光盘数据要求，并非 Sony 或任天堂的官方 PS5 发行版。",
+   "ar": "نقل PS5 مجتمعي بمتطلبات ذاكرة وقرص المستخدم؛ ليس إصدار Sony أو Nintendo رسمي.",
+   "pt": "Port comunitário com memória baixa e disco próprio; não é edição PS5 oficial Sony/Nintendo.",
+   "de": "Community-Port mit niedrigem Adressraum und eigener Disc; keine offizielle Sony-/Nintendo-PS5-Ausgabe.",
+   "fr": "Port communautaire avec mémoire basse et disque personnel ; pas d’édition PS5 officielle Sony/Nintendo.",
+   "es": "Port comunitario con memoria baja y disco propio; no es edición PS5 oficial Sony/Nintendo."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA99312. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA99312；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA99312؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA99312; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA99312; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA99312 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA99312; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "超级马力欧阳光 · PS5 自制移植版"
+  },
+  "related": [
+   "hollow-knight-silksong",
+   "dreaming-sarah"
+  ]
+ },
+ "goosebumps-terror-little-creek": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Sloane investigates Little Creek through puzzles and encounters inspired by Goosebumps. A save-tutorial crash needs a successful reload check before stronger claims.",
+   "zh": "Sloane 通过谜题和怪物遭遇调查 Little Creek；存档教程崩溃仍需成功读档证据后再下更强结论。",
+   "ar": "تحقق Sloane في Little Creek بألغاز ومخلوقات؛ فشل تعليم الحفظ يحتاج إعادة تحميل ناجحة.",
+   "pt": "Sloane investiga Little Creek com puzzles e monstros; falha no tutorial de save pede recarga verificada.",
+   "de": "Sloane untersucht Little Creek mit Rätseln und Monstern; Speicher-Tutorialfehler braucht bestätigte Ladeprüfung.",
+   "fr": "Sloane enquête à Little Creek entre énigmes et monstres ; échec au tutoriel de sauvegarde exige un rechargement vérifié.",
+   "es": "Sloane investiga Little Creek con puzles y monstruos; fallo en tutorial de guardado requiere recarga verificada."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA27305. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA27305；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA27305؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA27305; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA27305; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA27305 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA27305; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "Goosebumps: Terror in Little Creek"
+  },
+  "related": [
+   "astro-bot",
+   "stray"
+  ]
+ },
+ "plants-vs-zombies-replanted": {
+  "genre": "puzzle",
+  "overview": {
+   "en": "Plant-based defenses protect lanes from zombie waves in this remaster. The PS5 report covers actual planting and combat, with completion still unclaimed.",
+   "zh": "重制版以植物防线抵御僵尸；PS5 报告涉及实际种植和战斗，但未宣称通关。",
+   "ar": "دفاعات نباتية ضد موجات زومبي؛ تقرير PS5 يوثق زراعة وقتالاً لا إكمالاً.",
+   "pt": "Defesas vegetais enfrentam zombies; relato PS5 cobre plantar e combater, sem conclusão integral.",
+   "de": "Pflanzen verteidigen gegen Zombie-Wellen; PS5-Bericht zeigt Pflanzen und Kampf, kein Durchspielen.",
+   "fr": "Les plantes défendent contre les zombies ; rapport PS5 couvre plantation et combat, sans fin complète.",
+   "es": "Plantas defienden de oleadas zombis; informe PS5 cubre plantar y combatir, sin completar."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA29802. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA29802；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA29802؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA29802; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA29802; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA29802 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA29802; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "植物大战僵尸：重植版"
+  },
+  "related": [
+   "hollow-knight-silksong",
+   "dreaming-sarah"
+  ]
+ },
+ "code-violet": {
+  "genre": "action",
+  "overview": {
+   "en": "Violet navigates a dinosaur-filled science-fiction survival setting. Broken menu geometry and slow counters precede any campaign verdict.",
+   "zh": "Violet 在恐龙出没的科幻环境求生；破碎菜单几何与低速计数仍不足以下战役结论。",
+   "ar": "بقاء خيال علمي وديناصورات؛ هندسة القائمة المكسورة والبطء تسبقان تقييم الحملة.",
+   "pt": "Sobrevivência de ficção científica com dinossauros; geometria de menu e lentidão precedem qualquer veredito da campanha.",
+   "de": "Science-Fiction-Survival mit Dinosauriern; kaputte Menügeometrie und niedrige Zähler erlauben kein Kampagnenurteil.",
+   "fr": "Survie de science-fiction avec dinosaures ; géométrie de menu brisée et lenteur précèdent tout verdict campagne.",
+   "es": "Supervivencia de ciencia ficción con dinosaurios; geometría rota de menú y lentitud impiden valorar campaña."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA26528. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA26528；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA26528؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA26528; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA26528; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA26528 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA26528; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "Code Violet"
+  },
+  "related": [
+   "astro-bot",
+   "stray"
+  ]
+ },
+ "blasphemous-2-ppsa13580": {
+  "genre": "platform",
+  "overview": {
+   "en": "This separately catalogued US edition follows the Penitent One through connected combat areas. Its opening boss test does not establish later expansion content.",
+   "zh": "单独收录的美版随忏悔者探索战斗区域；开场 Boss 测试不能证明后续扩展内容。",
+   "ar": "إصدار أمريكي منفصل لمغامرة التائب؛ أول زعيم لا يثبت محتوى التوسعات.",
+   "pt": "Edição americana separada da aventura do Penitente; primeiro chefe não prova expansões.",
+   "de": "Separat erfasste US-Ausgabe um den Büßer; erster Boss belegt keine Erweiterungen.",
+   "fr": "Édition américaine distincte du Pénitent ; premier boss ne prouve pas les extensions.",
+   "es": "Edición estadounidense separada del Penitente; primer jefe no prueba expansiones."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA13580. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA13580；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA13580؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA13580; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA13580; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA13580 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA13580; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "渎神 2 · PPSA13580"
+  },
+  "related": [
+   "hollow-knight-silksong",
+   "dreaming-sarah"
+  ]
+ },
+ "little-nightmares-enhanced": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Six’s unsettling puzzle adventure is the Enhanced Edition here. Keep its PS5 executable and saves separate from the original PS4 game.",
+   "zh": "这里收录 Six 的诡异解谜冒险增强版；PS5 程序和存档与原 PS4 游戏分开。",
+   "ar": "مغامرة Six بنسختها المحسنة؛ افصل برنامج وحفظ PS5 عن PS4 الأصلي.",
+   "pt": "Aventura de Six na Enhanced Edition; executável e saves PS5 separados do PS4 original.",
+   "de": "Six’ Abenteuer als Enhanced Edition; PS5-Programm und Speicherstände getrennt von PS4.",
+   "fr": "Aventure de Six en Enhanced Edition ; programme et sauvegardes PS5 distincts de PS4.",
+   "es": "Aventura de Six en Enhanced Edition; ejecutable y partidas PS5 separados del PS4 original."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA10737. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA10737；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA10737؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA10737; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA10737; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA10737 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA10737; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "小小梦魇：增强版"
+  },
+  "related": [
+   "astro-bot",
+   "stray"
+  ]
+ },
+ "horizon-call-of-the-mountain": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Ryas climbs and fights in a PS VR2 adventure. A desktop Vulkan window cannot replace headset tracking, stereoscopic rendering or Sense controls.",
+   "zh": "Ryas 在 PS VR2 冒险中攀爬战斗；桌面 Vulkan 窗口不能代替头显追踪、立体渲染和 Sense 操作。",
+   "ar": "مغامرة Ryas في PS VR2؛ نافذة Vulkan لا تعوض تتبع النظارة أو الرؤية المجسمة وSense.",
+   "pt": "Aventura PS VR2 de Ryas; janela Vulkan não substitui rastreio, estereoscopia ou Sense.",
+   "de": "Ryas’ PS-VR2-Abenteuer; Vulkan-Fenster ersetzt weder Tracking, Stereoskopie noch Sense.",
+   "fr": "Aventure PS VR2 de Ryas ; fenêtre Vulkan ne remplace ni suivi, stéréoscopie ni Sense.",
+   "es": "Aventura PS VR2 de Ryas; ventana Vulkan no sustituye seguimiento, estereoscopía ni Sense."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA05666. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA05666；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA05666؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA05666; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA05666; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA05666 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA05666; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "地平线：山之呼唤"
+  },
+  "related": [
+   "astro-bot",
+   "stray"
+  ]
+ },
+ "mxgp-26": {
+  "genre": "racing",
+  "overview": {
+   "en": "The 2026 motocross game focuses on changing track surfaces and rider control. Loading-screen shader failures do not measure racing performance.",
+   "zh": "2026 越野摩托作品关注变化的赛道与骑手控制；加载屏着色器失败不能测出比赛性能。",
+   "ar": "موتوكروس2026 بحلبات متغيرة؛ فشل shader بالتحميل لا يقيس السباق.",
+   "pt": "Motocross2026 em pistas variáveis; falha shader na carga não mede corridas.",
+   "de": "Motocross2026 mit veränderlichen Strecken; Lade-Shaderfehler messen keine Rennleistung.",
+   "fr": "Motocross2026 et pistes changeantes ; échecs shader au chargement ne mesurent pas les courses.",
+   "es": "Motocross2026 con pistas cambiantes; fallos shader cargando no miden carreras."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA30839. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA30839；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA30839؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA30839; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA30839; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA30839 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA30839; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "MXGP 26"
+  },
+  "related": [
+   "astro-bot",
+   "stray"
+  ]
+ },
+ "borderlands-4": {
+  "genre": "shooter",
+  "overview": {
+   "en": "The loot-focused shooter has a distinct PS5 pipeline workload. A driver compile crash must be separated from an in-game rendering or frame-rate result.",
+   "zh": "刷宝射击的 PS5 pipeline 工作负载需要独立核对；驱动编译崩溃与游戏渲染／帧数结果分开。",
+   "ar": "تصويب وغنائم بعبء PS5 خاص؛ انهيار ترجمة التعريف ليس نتيجة رسم أو FPS لعب.",
+   "pt": "Shooter de saque com carga PS5 própria; falha de compilação do driver não é resultado gráfico/FPS de jogo.",
+   "de": "Loot-Shooter mit eigener PS5-Pipelinelast; Treiber-Kompilierabsturz getrennt von Rendering-/FPS-Spielergebnissen.",
+   "fr": "Tir et butin avec pipelines PS5 propres ; plantage de compilation pilote distinct du rendu/FPS en jeu.",
+   "es": "Shooter de botín con pipelines PS5 propios; fallo de compilación del driver separado de renderizado/FPS jugables."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA01494. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA01494；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA01494؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA01494; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA01494; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA01494 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA01494; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "无主之地 4"
+  },
+  "related": [
+   "astro-bot",
+   "stray"
+  ]
+ },
+ "sackboy-big-adventure": {
+  "genre": "platform",
+  "overview": {
+   "en": "Sackboy’s platform stages require working geometry and input after startup. Missing mesh-shader support remains a concrete limit on the reported RX 5700 XT.",
+   "zh": "麻布仔的平台关卡需在启动后核对几何与操作；报告中的 RX5700XT 缺 mesh shader 仍是明确限制。",
+   "ar": "منصات Sackboy تحتاج رسماً وتحكماً بعد البدء؛ غياب mesh على RX5700XT قيد موثق.",
+   "pt": "Plataformas Sackboy precisam de geometria/comandos após arranque; ausência mesh na RX5700XT é limite concreto.",
+   "de": "Sackboy braucht nach dem Start Geometrie und Eingaben; fehlende Mesh-Unterstützung auf RX5700XT bleibt Grenze.",
+   "fr": "Sackboy requiert géométrie/commandes après démarrage ; absence mesh sur RX5700XT reste une limite.",
+   "es": "Sackboy necesita geometría/controles tras inicio; ausencia mesh en RX5700XT sigue siendo límite."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA01289. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA01289；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA01289؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA01289; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA01289; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA01289 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA01289; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "麻布仔大冒险"
+  },
+  "related": [
+   "hollow-knight-silksong",
+   "dreaming-sarah"
+  ]
+ },
+ "sonic-unleashed-recompiled": {
+  "genre": "platform",
+  "overview": {
+   "en": "This community PS5 adaptation of a recompiled Sonic project remains a conditional bring-up. Component tests and loading movies are separate from running a level.",
+   "zh": "重编译索尼克项目的社区 PS5 适配仍是条件启动实验；组件测试、加载电影与实际关卡分开。",
+   "ar": "تكييف PS5 مجتمعي لمشروع Sonic معاد الترجمة؛ اختبارات المكونات والفيلم ليست لعب مستوى.",
+   "pt": "Adaptação PS5 comunitária de Sonic recompilado; testes e filme não são um nível jogado.",
+   "de": "Community-PS5-Adaption eines Sonic-Rekompilats; Komponententests und Film sind kein gespielter Level.",
+   "fr": "Adaptation PS5 communautaire de Sonic recompilé ; tests et film distincts d’un niveau joué.",
+   "es": "Adaptación PS5 comunitaria de Sonic recompilado; pruebas y vídeo separados de jugar un nivel."
+  },
+  "editionNote": {
+   "en": "Reports on this page identify PPSA99902. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA99902；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA99902؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA99902; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA99902; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA99902 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA99902; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "names": {
+   "zh": "索尼克世界大冒险 重编译 · PS5 自制版"
+  },
+  "related": [
+   "hollow-knight-silksong",
+   "dreaming-sarah"
+  ]
+ }
+});
+
+for(const [slug,note] of Object.entries({
+ "blasphemous-2-ppsa13580": {
+  "en": "The promotional cover carries The Third Sin branding; it does not establish that the reported build contains or tests that content.",
+  "zh": "宣传封面带有 The Third Sin 标识；不能据此判定报告包含或测试该内容。",
+  "ar": "الغلاف يحمل The Third Sin؛ لا يثبت وجود أو اختبار ذلك المحتوى.",
+  "pt": "A capa mostra The Third Sin; não prova esse conteúdo no teste.",
+  "de": "Das Werbecover trägt The Third Sin; kein Nachweis dieses Inhalts im Test.",
+  "fr": "La couverture porte The Third Sin ; contenu non établi dans le test.",
+  "es": "La portada muestra The Third Sin; no prueba ese contenido en el test."
+ },
+ "borderlands-4": {
+  "en": "The promotional cover carries Super Deluxe Edition branding; it does not establish that the reported build contains or tests that content.",
+  "zh": "宣传封面带有 Super Deluxe Edition 标识；不能据此判定报告包含或测试该内容。",
+  "ar": "الغلاف يحمل Super Deluxe Edition؛ لا يثبت وجود أو اختبار ذلك المحتوى.",
+  "pt": "A capa mostra Super Deluxe Edition; não prova esse conteúdo no teste.",
+  "de": "Das Werbecover trägt Super Deluxe Edition; kein Nachweis dieses Inhalts im Test.",
+  "fr": "La couverture porte Super Deluxe Edition ; contenu non établi dans le test.",
+  "es": "La portada muestra Super Deluxe Edition; no prueba ese contenido en el test."
+ },
+ "puyo-puyo-tetris-2": {
+  "en": "Report PPSA01530; the linked promotional Store artwork is PPSA01937. Shared branding is not a region or runtime test.",
+  "zh": "报告为 PPSA01530；链接商店宣传图为 PPSA01937。相同品牌不代表同地区或运行实测。",
+  "ar": "التقرير PPSA01530 والفن PPSA01937؛ العلامة لا تثبت المنطقة أو التشغيل.",
+  "pt": "Relato PPSA01530, arte PPSA01937; marca igual não prova região/teste.",
+  "de": "Bericht PPSA01530, Werbung PPSA01937; gleiche Marke belegt keine Region/Laufprüfung.",
+  "fr": "Rapport PPSA01530, illustration PPSA01937 ; marque commune ne prouve pas région/test.",
+  "es": "Informe PPSA01530, arte PPSA01937; marca común no prueba región/test."
+ }
+})){for(const locale of Object.keys(note) as (keyof Text)[]){editorial[slug].editionNote[locale]+=" "+note[locale];}}
 export const media=sources as Record<string,{source:string;provider:string;cover:string|null;screenshots:string[];checked:string}>;
 export const genreLabel=(slug:string,locale:keyof Text)=>genres[editorial[slug].genre][locale];
 export const gameName=(game:{slug:string;name:string},locale:keyof Text)=>editorial[game.slug]?.names[locale]||game.name;

@@ -7,7 +7,7 @@ const link=(url:string,label:ReturnType<typeof L>)=>({url,label});
 const section=(id:string,title:ReturnType<typeof L>,body:ReturnType<typeof L>,links:Section['links']=[]):Section=>({id,title,body:[body],...(links.length?{links}:{})});
 
 export const faqArticle:Article={
- slug:'faq',reviewed:'2026-10-15',
+ slug:'faq',reviewed:'2026-10-16',
  title:L('AnyPS5 frequently asked questions','AnyPS5 常见问题','أسئلة شائعة عن AnyPS5','Perguntas frequentes sobre o AnyPS5','Häufige Fragen zu AnyPS5','Questions fréquentes sur AnyPS5','Preguntas frecuentes sobre AnyPS5'),
  description:L("Answers to AnyPS5 emulator and PS5 on PC questions: how conversion works, whether a console is needed, game files, setup, Mac support and saves.","解答 AnyPS5 模拟器与 PS5 在 PC 上运行的常见问题：转换原理、是否需要主机、游戏文件、安装设置、Mac 支持和存档。","إجابات عن محاكي AnyPS5 وPS5 على الكمبيوتر: التحويل والحاجة إلى جهاز وملفات الألعاب والإعداد ودعم Mac والحفظ.","Respostas sobre o emulador AnyPS5 e PS5 no PC: conversão, necessidade de consola, ficheiros, configuração, suporte Mac e dados guardados.","Antworten zu AnyPS5-Emulator und PS5 auf dem PC: Konvertierung, benötigte Konsole, Spieldateien, Einrichtung, Mac-Unterstützung und Spielstände.","Réponses sur l’émulateur AnyPS5 et la PS5 sur PC : conversion, console nécessaire, fichiers, configuration, support Mac et sauvegardes.","Respuestas sobre el emulador AnyPS5 y PS5 en PC: conversión, necesidad de consola, archivos, configuración, soporte Mac y partidas guardadas."),
  sources:[UPSTREAM,UPSTREAM+'/discussions/1742',UPSTREAM+'/releases/tag/v0.1.2',sourceDoc('USAGE'),sourceDoc('COMPATIBILITY'),build,reviewedSource+'core/libs/prx/libSceSaveData/SaveDataCore.hpp',reviewedSource+'core/libs/prx/libc/src/General.cpp'],
@@ -49,15 +49,55 @@ export const faqArticle:Article={
    "Resultados oficiales de tabla archivada a60f52e318 con Dreaming Sarah/DOOM Shareware homebrew. Proyecto usa ahora informes públicos. Archivo histórico, no censo actual. Informes conservan builds/patches; ninguna categoría prueba finalización completa."
   ),[link('/methodology/',L('How we review evidence','我们如何复核证据','كيف نراجع الأدلة','Como revemos as provas','So prüfen wir Belege','Comment nous vérifions les preuves','Cómo revisamos las pruebas')),link(sourceDoc('COMPATIBILITY'),L('Upstream compatibility table','上游兼容表','جدول التوافق الأصلي','Tabela de compatibilidade original','Originale Kompatibilitätstabelle','Table de compatibilité originale','Tabla de compatibilidad original'))]),
   section('compatibility-archive',L("Where did the upstream compatibility table go?","上游兼容表迁到哪里了？","أين انتقل جدول التوافق؟","Para onde foi a tabela de compatibilidade?","Wohin wurde die Kompatibilitätstabelle verschoben?","Où est passée la table de compatibilité ?","¿Dónde está ahora la tabla de compatibilidad?"),L("Merged #4686 removes the old compatibility table and its duplicate README claims. Previous Sarah/DOOM reports are archived in discussion #2475; README now points to a community blocker map and title discussions. Archive dates and original environments remain evidence, while an automatically assembled map is a discovery aid. This does not change old tests or release v0.1.1.","已合并 #4686 删除旧兼容表及 README 的重复结论，Sarah／DOOM 原报告归档到 #2475；README 改指社区阻碍地图和游戏讨论。归档日期与原环境仍是证据，自动汇总地图只用于发现线索。这不会改写旧实验，也不是 v0.1.1 新发行。","يحذف #4686 المدمج جدول التوافق وادعاءات README المكررة. أرشفت تقارير Sarah/DOOM في #2475؛ README يشير لخريطة عوائق مجتمعية ونقاشات الألعاب. تحفظ تواريخ وبيئات الأصل؛ الخريطة أداة اكتشاف لا تجربة جديدة ولا إصدار v0.1.1 جديد.","#4686 integrado remove a tabela e afirmações duplicadas do README. Sarah/DOOM estão arquivados em #2475; README aponta para mapa comunitário e discussões. Datas e ambientes originais mantêm-se como prova; mapa automático é descoberta, não altera testes nem publica v0.1.1 novo.","Das gemergte #4686 entfernt Tabelle und doppelte README-Aussagen. Sarah/DOOM sind in #2475 archiviert; README verweist auf Community-Blockerkarte und Diskussionen. Ursprungsdaten und Bedingungen bleiben Belege; die automatische Karte dient zur Suche, nicht als neuer Test oder neuer v0.1.1-Release.","#4686 fusionné supprime la table et les affirmations README répétées. Sarah/DOOM sont archivés dans #2475 ; README renvoie à une carte communautaire et aux discussions. Dates et environnements originaux restent des preuves ; la carte automatique sert à découvrir, sans modifier les tests ni publier un nouveau v0.1.1.","#4686 fusionada elimina la tabla y afirmaciones duplicadas del README. Sarah/DOOM están archivados en #2475; README apunta a mapa comunitario y debates. Fechas y entornos originales siguen como evidencia; el mapa automático sirve para descubrir, sin alterar pruebas ni publicar nuevo v0.1.1."),[link('https://github.com/boykopovar/AnyPS5/discussions/2475#discussioncomment-18886410',L('Archived source reports','归档的来源报告','تقارير المصدر المؤرشفة','Relatos de origem arquivados','Archivierte Quellberichte','Rapports sources archivés','Informes fuente archivados')),link('https://github.com/boykopovar/AnyPS5#compatibility',L('Current upstream guidance','当前上游说明','الإرشادات الأصلية الحالية','Orientações atuais do projeto','Aktuelle Projektanleitung','Conseils actuels du projet','Guía actual del proyecto'))]),
-  section('mac',L('Can I use an M1 Mac or another Apple silicon Mac?','M1 或其他 Apple 芯片 Mac 能用吗？','هل يمكنني استخدام Mac بمعالج M1 أو Apple silicon آخر؟','Posso usar um Mac M1 ou outro Mac com Apple silicon?','Kann ich einen M1-Mac oder anderen Apple-Silicon-Mac nutzen?','Puis-je utiliser un Mac M1 ou un autre Mac Apple silicon ?','¿Puedo usar un Mac M1 u otro Mac con Apple silicon?'),L(
-   "Main documents x86-64 Mach-O output with --macos --to-rosetta. The community macos-runtime fork reports a 30-minute Sons of Sparta run on an M1 Pro, but does not pin its exact build; its 18–25 FPS cannot define general Mac requirements. Matching runtime libraries and title evidence remain separate from conversion. v0.1.2 supplies Windows/Linux assets and no macOS library archive.",
-   "main 记录 --macos --to-rosetta 的 x86-64 Mach-O 输出。社区 macos-runtime 分支报告 M1 Pro 上《Sons of Sparta》运行 30 分钟，但未固定准确构建；18–25 FPS 不能定义通用 Mac 配置要求。配套 runtime 库及游戏证据与转换能力分开；v0.1.2 提供 Windows／Linux 附件，没有 macOS 库包。",
-   "يوثق main إخراج Mach-O x86-64 بخياري --macos --to-rosetta. فرع macos-runtime يذكر Sons of Sparta لـ30 دقيقة على M1 Pro دون بناء محدد؛ 18–25 FPS ليست متطلبات Mac عامة. المكتبات واللعبة مستقلتان عن التحويل. v0.1.2 ملفات Windows/Linux دون أرشيف مكتبات macOS.",
-   "Main documenta Mach-O x86-64 com --macos --to-rosetta. Fork macos-runtime relata Sons of Sparta por 30 min no M1 Pro sem fixar build; 18–25 FPS não definem requisitos Mac gerais. Libs/teste distintos da conversão. v0.1.2 fornece Windows/Linux, sem arquivo libs macOS.",
-   "Main dokumentiert x86-64-Mach-O mit --macos --to-rosetta. macos-runtime-Fork meldet 30 min Sons of Sparta auf M1 Pro ohne exakten Build; 18–25 FPS sind keine allgemeinen Mac-Anforderungen. Libs/Spielbelege getrennt von Konvertierung. v0.1.2 liefert Windows/Linux, kein macOS-Libarchiv.",
-   "Main documente Mach-O x86-64 via --macos --to-rosetta. Fork macos-runtime rapporte 30 min Sons of Sparta sur M1 Pro sans build précis ; 18–25 FPS ne définissent pas les prérequis Mac. Libs/tests distincts de conversion. v0.1.2 propose Windows/Linux, sans archive libs macOS.",
-   "Main documenta Mach-O x86-64 con --macos --to-rosetta. Fork macos-runtime reporta Sons of Sparta 30 min en M1 Pro sin build exacto; 18–25 FPS no definen requisitos Mac generales. Libs/pruebas aparte de conversión. v0.1.2 ofrece Windows/Linux, sin archivo libs macOS."
-  ),[link(sourceDoc('USAGE'),L('Current conversion options','当前转换选项','خيارات التحويل الحالية','Opções de conversão atuais','Aktuelle Konvertierungsoptionen','Options de conversion actuelles','Opciones de conversión actuales')),link('/downloads/',L('Available release files','现有发行文件','ملفات الإصدارات المتاحة','Ficheiros de versões disponíveis','Verfügbare Release-Dateien','Fichiers de versions disponibles','Archivos de versiones disponibles'))]),
+  {
+ "id": "mac",
+ "title": {
+  "en": "Can I use an M1 Mac or another Apple silicon Mac?",
+  "zh": "M1 或其他 Apple 芯片 Mac 能用吗？",
+  "ar": "هل يمكنني استخدام Mac بمعالج M1 أو Apple silicon آخر؟",
+  "pt": "Posso usar um Mac M1 ou outro Mac com Apple silicon?",
+  "de": "Kann ich einen M1-Mac oder anderen Apple-Silicon-Mac nutzen?",
+  "fr": "Puis-je utiliser un Mac M1 ou un autre Mac Apple silicon ?",
+  "es": "¿Puedo usar un Mac M1 u otro Mac con Apple silicon?"
+ },
+ "body": [
+  {
+   "en": "Main already documents --macos --to-rosetta conversion, and further Rosetta ANDN/scalar-compare fixes have merged after v0.1.2. The M1 Pro macos-runtime author now reports 36–45 FPS at 1080p, but the exact new head is still unspecified and a local precision trade-off is disclosed. Do not turn this into a general Mac requirement or main-only test. Full runtime porting remains in progress; v0.1.2 has no Mac library archive.",
+   "zh": "main 已记录 --macos --to-rosetta 转换，v0.1.2 之后又合入 Rosetta ANDN／标量比较修正。M1 Pro macos-runtime 作者更新为 1080p 约 36–45 FPS，但未固定新 head，且披露本地精度取舍；不能推导通用 Mac 要求或普通 main 实测。完整运行时移植仍在推进，v0.1.2 无 Mac 库包。",
+   "ar": "main يوثق التحويل ودمج إصلاحات Rosetta بعدv0.1.2. يذكر مؤلف macos-runtime علىM1 Pro الآن36–45FPS بدقة1080p بلا head جديد محدد ومع مقايضة دقة محلية. لا متطلبات Mac عامة أو اختبار main؛ النقل الكامل جار ولا أرشيف Mac فيv0.1.2.",
+   "pt": "Main documenta conversão e integra correções Rosetta apósv0.1.2. Autor macos-runtime noM1 Pro relata36–45FPS a1080p, sem novo head exato e com compromisso local de precisão. Não define requisitos Mac nem teste main. Port completo em curso; v0.1.2 sem arquivo Mac.",
+   "de": "main dokumentiert Konvertierung und weitere Rosetta-Fixes nachv0.1.2. macos-runtime-Autor aufM1 Pro nennt36–45FPS bei1080p ohne exakten neuen Head und mit lokalem Präzisionskompromiss. Kein allgemeiner Mac-Mindestwert oder Stock-main-Test. Portierung läuft, v0.1.2 ohne Mac-Archiv.",
+   "fr": "Main documente conversion et correctifs Rosetta aprèsv0.1.2. Auteur macos-runtime surM1 Pro annonce36–45FPS en1080p sans nouveau head exact, avec compromis local de précision. Ni exigences Mac générales ni test main seul. Port complet en cours, pas d’archive Mac v0.1.2.",
+   "es": "Main documenta conversión y correcciones Rosetta trasv0.1.2. Autor macos-runtime enM1 Pro indica36–45FPS a1080p sin nuevo head exacto y con compromiso local de precisión. No requisitos Mac generales ni prueba main solo. Port completo en curso, sin archivo Mac v0.1.2."
+  }
+ ],
+ "links": [
+  {
+   "url": "https://github.com/boykopovar/AnyPS5/blob/main/docs/user/USAGE.md",
+   "label": {
+    "en": "Current conversion options",
+    "zh": "当前转换选项",
+    "ar": "خيارات التحويل الحالية",
+    "pt": "Opções de conversão atuais",
+    "de": "Aktuelle Konvertierungsoptionen",
+    "fr": "Options de conversion actuelles",
+    "es": "Opciones de conversión actuales"
+   }
+  },
+  {
+   "url": "/downloads/",
+   "label": {
+    "en": "Available release files",
+    "zh": "现有发行文件",
+    "ar": "ملفات الإصدارات المتاحة",
+    "pt": "Ficheiros de versões disponíveis",
+    "de": "Verfügbare Release-Dateien",
+    "fr": "Fichiers de versions disponibles",
+    "es": "Archivos de versiones disponibles"
+   }
+  }
+ ]
+},
   section('saves',L('Where are save files stored?','存档保存在哪？','أين تُخزّن ملفات الحفظ؟','Onde ficam os dados guardados?','Wo werden Spielstände gespeichert?','Où sont stockées les sauvegardes ?','¿Dónde se guardan las partidas?'),L(
    'The main source reviewed on 12 October 2026 uses the guest path /_sd for the SaveData service, normally mapped to an _sd folder under the runtime working directory. Some games use other paths, such as the DOOM homebrew’s /download0, so the location depends on the game and build. Launch from your runtime folder, check which directories were written, and back them up with their metadata before changing builds. Test both saving and loading; reaching gameplay does not prove that either works.',
    '2026 年 10 月 12 日复核的 main 源码将 SaveData 服务的游戏内路径设为 /_sd，通常映射到运行工作目录下的 _sd 文件夹。部分游戏使用其他路径，例如 DOOM 自制版的 /download0，因此实际位置取决于游戏与构建。从运行目录启动，核对新写入的文件夹，更新构建前连同元数据一起备份。存档与读档都要测试，进入游戏不能证明二者可用。',

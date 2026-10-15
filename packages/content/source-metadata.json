@@ -12,7 +12,9 @@
     "updated": "2026-10-11T06:14:51Z",
     "media": [
       "https://github.com/user-attachments/assets/f68e1337-571c-4d39-9027-51ff666fcab6"
-    ]
+    ],
+    "latestUpdated": "2026-10-15T06:48:46Z",
+    "reviewed": "2026-10-16"
   },
   "357": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/357",
@@ -26,8 +28,8 @@
       "https://github.com/user-attachments/assets/9759997c-18e9-44d7-9288-f2e3851cb0a0",
       "https://github.com/user-attachments/assets/d94b608f-9c22-45e2-8111-1acc3755fa9f"
     ],
-    "reviewed": "2026-10-15",
-    "latestUpdated": "2026-10-14T13:50:12Z",
+    "reviewed": "2026-10-16",
+    "latestUpdated": "2026-10-15T17:53:02Z",
     "published": "2026-10-02T12:30:16Z"
   },
   "3232": {
@@ -121,8 +123,8 @@
       "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-08/world-contact-sheet.png",
       "https://raw.githubusercontent.com/Celegans12/AnyPS5/bringup-media/yotei/2026-10-08/world-lit-vs-before.png"
     ],
-    "reviewed": "2026-10-15",
-    "latestUpdated": "2026-10-14T14:58:46Z",
+    "reviewed": "2026-10-16",
+    "latestUpdated": "2026-10-15T18:31:56Z",
     "published": "2026-10-05T14:20:37Z"
   },
   "2884": {
@@ -149,7 +151,9 @@
   "3234": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/3234",
     "updated": "2026-10-11T02:47:38Z",
-    "media": []
+    "media": [],
+    "latestUpdated": "2026-10-15T14:01:09Z",
+    "reviewed": "2026-10-16"
   },
   "1965": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/1965",
@@ -179,7 +183,9 @@
     "updated": "2026-10-11T14:46:47Z",
     "media": [
       "https://cdn.discordapp.com/attachments/1557615587981795378/1558853226952921158/compressO-2026-10-11_16-22-21.mp4?ex=6accf2b3&is=6acba133&hm=91540ceb9dd7903c67f971ae5466ae32a5c6b30f8e62c3cd3d4344239a40e24b&"
-    ]
+    ],
+    "latestUpdated": "2026-10-15T16:50:29Z",
+    "reviewed": "2026-10-16"
   },
   "1277": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/1277",
@@ -193,7 +199,9 @@
   "2172": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/2172",
     "updated": "2026-10-09T13:36:13Z",
-    "media": []
+    "media": [],
+    "latestUpdated": "2026-10-15T13:46:12Z",
+    "reviewed": "2026-10-16"
   },
   "2171": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/2171",
@@ -206,8 +214,8 @@
     "media": [
       "https://github.com/user-attachments/assets/018ee7be-e12c-48e8-9a34-994c411191e7"
     ],
-    "latestUpdated": "2026-10-14T07:45:51Z",
-    "reviewed": "2026-10-15",
+    "latestUpdated": "2026-10-15T13:52:10Z",
+    "reviewed": "2026-10-16",
     "published": "2026-10-08T10:17:18Z"
   },
   "3086": {
@@ -267,8 +275,8 @@
     "url": "https://github.com/boykopovar/AnyPS5/discussions/2211",
     "updated": "2026-10-13T19:38:08Z",
     "media": [],
-    "reviewed": "2026-10-15",
-    "latestUpdated": "2026-10-14T10:20:59Z",
+    "reviewed": "2026-10-16",
+    "latestUpdated": "2026-10-15T10:44:03Z",
     "published": "2026-10-09T11:45:01Z"
   },
   "3873": {
@@ -354,7 +362,8 @@
     "url": "https://github.com/boykopovar/AnyPS5/issues/4634",
     "updated": "2026-10-12T17:05:41Z",
     "media": [],
-    "reviewed": "2026-10-13"
+    "reviewed": "2026-10-16",
+    "latestUpdated": "2026-10-15T11:31:40Z"
   },
   "4216": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/4216",
@@ -395,7 +404,8 @@
     "url": "https://github.com/boykopovar/AnyPS5/discussions/4687",
     "updated": "2026-10-12T19:03:11Z",
     "media": [],
-    "reviewed": "2026-10-13"
+    "reviewed": "2026-10-16",
+    "latestUpdated": "2026-10-15T12:54:28Z"
   },
   "4275": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/4275",
@@ -444,13 +454,15 @@
     "url": "https://github.com/boykopovar/AnyPS5/discussions/5169",
     "updated": "2026-10-13T19:42:29Z",
     "media": [],
-    "reviewed": "2026-10-14"
+    "reviewed": "2026-10-16",
+    "latestUpdated": "2026-10-14T23:31:00Z"
   },
   "5424": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/5424",
     "updated": "2026-10-13T19:36:21Z",
     "media": [],
-    "reviewed": "2026-10-14"
+    "reviewed": "2026-10-16",
+    "latestUpdated": "2026-10-15T02:33:40Z"
   },
   "5146": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/5146",
@@ -464,7 +476,8 @@
     "url": "https://github.com/boykopovar/AnyPS5/discussions/5382",
     "updated": "2026-10-13T18:24:31Z",
     "media": [],
-    "reviewed": "2026-10-14"
+    "reviewed": "2026-10-16",
+    "latestUpdated": "2026-10-15T16:54:27Z"
   },
   "5346": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/5346",
@@ -488,16 +501,16 @@
     "url": "https://github.com/boykopovar/AnyPS5/discussions/5316",
     "updated": "2026-10-13T17:03:30Z",
     "media": [],
-    "reviewed": "2026-10-15",
-    "latestUpdated": "2026-10-14T09:22:10Z",
+    "reviewed": "2026-10-16",
+    "latestUpdated": "2026-10-15T09:16:54Z",
     "published": "2026-10-13T17:03:30Z"
   },
   "5268": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/5268",
     "updated": "2026-10-13T16:06:03Z",
     "media": [],
-    "reviewed": "2026-10-15",
-    "latestUpdated": "2026-10-14T15:41:38Z",
+    "reviewed": "2026-10-16",
+    "latestUpdated": "2026-10-15T11:56:55Z",
     "published": "2026-10-13T16:06:03Z"
   },
   "5345": {
@@ -516,7 +529,8 @@
     "url": "https://github.com/boykopovar/AnyPS5/issues/5398",
     "updated": "2026-10-13T19:44:30Z",
     "media": [],
-    "reviewed": "2026-10-14"
+    "reviewed": "2026-10-16",
+    "latestUpdated": "2026-10-15T19:14:52Z"
   },
   "5389": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/5389",
@@ -546,7 +560,8 @@
     "url": "https://github.com/boykopovar/AnyPS5/issues/3468",
     "updated": "2026-10-13T14:55:33Z",
     "media": [],
-    "reviewed": "2026-10-14"
+    "reviewed": "2026-10-16",
+    "latestUpdated": "2026-10-15T07:06:23Z"
   },
   "4736": {
     "url": "https://github.com/boykopovar/AnyPS5/issues/4736",
@@ -578,13 +593,15 @@
     "url": "https://github.com/boykopovar/AnyPS5/discussions/5436",
     "updated": "2026-10-13T19:53:08Z",
     "media": [],
-    "reviewed": "2026-10-14"
+    "reviewed": "2026-10-16",
+    "latestUpdated": "2026-10-14T20:21:48Z"
   },
   "5079": {
     "url": "https://github.com/boykopovar/AnyPS5/issues/5079",
     "updated": "2026-10-13T13:01:22Z",
     "media": [],
-    "reviewed": "2026-10-14"
+    "reviewed": "2026-10-16",
+    "latestUpdated": "2026-10-15T07:02:04Z"
   },
   "3043": {
     "url": "https://github.com/boykopovar/AnyPS5/issues/3043",
@@ -613,8 +630,8 @@
       "https://github.com/user-attachments/assets/f207a411-d2c1-4835-b29e-d48c41a2c883",
       "https://github.com/user-attachments/assets/86c8889a-4fc0-49b3-ad9a-ddc1da29171a"
     ],
-    "latestUpdated": "2026-10-14T18:38:42Z",
-    "reviewed": "2026-10-15",
+    "latestUpdated": "2026-10-15T12:25:42Z",
+    "reviewed": "2026-10-16",
     "published": "2026-10-14T18:38:42Z"
   },
   "5932": {
@@ -637,8 +654,8 @@
     "url": "https://github.com/boykopovar/AnyPS5/discussions/5516",
     "updated": "2026-10-14T16:40:53Z",
     "media": [],
-    "latestUpdated": "2026-10-14T16:40:53Z",
-    "reviewed": "2026-10-15",
+    "latestUpdated": "2026-10-15T16:49:39Z",
+    "reviewed": "2026-10-16",
     "published": "2026-10-13T22:02:05Z"
   },
   "5935": {
@@ -647,16 +664,16 @@
     "media": [
       "https://github.com/user-attachments/assets/bac75bfc-0852-467f-8b6f-833b0f3a455a"
     ],
-    "latestUpdated": "2026-10-14T16:21:50Z",
-    "reviewed": "2026-10-15",
+    "latestUpdated": "2026-10-15T18:45:09Z",
+    "reviewed": "2026-10-16",
     "published": "2026-10-14T16:21:50Z"
   },
   "5921": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/5921",
     "updated": "2026-10-14T15:55:40Z",
     "media": [],
-    "latestUpdated": "2026-10-14T15:55:40Z",
-    "reviewed": "2026-10-15",
+    "latestUpdated": "2026-10-15T12:53:09Z",
+    "reviewed": "2026-10-16",
     "published": "2026-10-14T15:55:40Z"
   },
   "5912": {
@@ -671,16 +688,16 @@
     "url": "https://github.com/boykopovar/AnyPS5/discussions/5832",
     "updated": "2026-10-14T15:46:36Z",
     "media": [],
-    "latestUpdated": "2026-10-14T15:46:36Z",
-    "reviewed": "2026-10-15",
+    "latestUpdated": "2026-10-14T22:25:24Z",
+    "reviewed": "2026-10-16",
     "published": "2026-10-14T12:52:08Z"
   },
   "5769": {
     "url": "https://github.com/boykopovar/AnyPS5/discussions/5769",
     "updated": "2026-10-14T15:40:47Z",
     "media": [],
-    "latestUpdated": "2026-10-14T15:40:47Z",
-    "reviewed": "2026-10-15",
+    "latestUpdated": "2026-10-15T18:35:03Z",
+    "reviewed": "2026-10-16",
     "published": "2026-10-14T09:55:09Z"
   },
   "6006": {
@@ -907,5 +924,173 @@
     "latestUpdated": "2026-10-14T07:02:27Z",
     "reviewed": "2026-10-15",
     "published": "2026-10-13T21:02:15Z"
+  },
+  "6421": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/6421",
+    "updated": "2026-10-15T19:23:39Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T19:23:39Z",
+    "reviewed": "2026-10-16"
+  },
+  "6344": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/6344",
+    "updated": "2026-10-15T19:16:44Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T19:16:44Z",
+    "reviewed": "2026-10-16"
+  },
+  "6496": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/6496",
+    "updated": "2026-10-15T17:32:56Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T17:32:56Z",
+    "reviewed": "2026-10-16"
+  },
+  "6477": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/6477",
+    "updated": "2026-10-15T16:55:23Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T16:55:23Z",
+    "reviewed": "2026-10-16"
+  },
+  "6460": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/6460",
+    "updated": "2026-10-15T16:39:54Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T16:39:54Z",
+    "reviewed": "2026-10-16"
+  },
+  "6468": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/6468",
+    "updated": "2026-10-15T16:30:57Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T16:30:57Z",
+    "reviewed": "2026-10-16"
+  },
+  "6434": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/6434",
+    "updated": "2026-10-15T15:01:58Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T15:01:58Z",
+    "reviewed": "2026-10-16"
+  },
+  "6404": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/6404",
+    "updated": "2026-10-15T14:23:22Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T14:23:22Z",
+    "reviewed": "2026-10-16"
+  },
+  "6256": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/6256",
+    "updated": "2026-10-15T13:11:56Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T13:11:56Z",
+    "reviewed": "2026-10-16"
+  },
+  "6275": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/6275",
+    "updated": "2026-10-15T08:47:18Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T08:47:18Z",
+    "reviewed": "2026-10-16"
+  },
+  "6214": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/6214",
+    "updated": "2026-10-15T04:04:37Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T04:04:37Z",
+    "reviewed": "2026-10-16"
+  },
+  "6284": {
+    "url": "https://github.com/boykopovar/AnyPS5/issues/6284",
+    "updated": "2026-10-15T15:05:16Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T15:05:16Z",
+    "reviewed": "2026-10-16"
+  },
+  "6350": {
+    "url": "https://github.com/boykopovar/AnyPS5/issues/6350",
+    "updated": "2026-10-15T17:08:50Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T17:08:50Z",
+    "reviewed": "2026-10-16"
+  },
+  "6151": {
+    "url": "https://github.com/boykopovar/AnyPS5/issues/6151",
+    "updated": "2026-10-15T17:51:02Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T17:51:02Z",
+    "reviewed": "2026-10-16"
+  },
+  "6206": {
+    "url": "https://github.com/boykopovar/AnyPS5/issues/6206",
+    "updated": "2026-10-15T11:28:43Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T11:28:43Z",
+    "reviewed": "2026-10-16"
+  },
+  "6172": {
+    "url": "https://github.com/boykopovar/AnyPS5/issues/6172",
+    "updated": "2026-10-15T00:32:14Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T00:32:14Z",
+    "reviewed": "2026-10-16"
+  },
+  "6536": {
+    "url": "https://github.com/boykopovar/AnyPS5/issues/6536",
+    "updated": "2026-10-15T19:19:48Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T19:19:48Z",
+    "reviewed": "2026-10-16"
+  },
+  "6236": {
+    "url": "https://github.com/boykopovar/AnyPS5/pull/6236",
+    "updated": "2026-10-15T18:37:09Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T18:37:09Z",
+    "reviewed": "2026-10-16"
+  },
+  "6205": {
+    "url": "https://github.com/boykopovar/AnyPS5/issues/6205",
+    "updated": "2026-10-15T18:37:10Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T18:37:10Z",
+    "reviewed": "2026-10-16"
+  },
+  "6526": {
+    "url": "https://github.com/boykopovar/AnyPS5/issues/6526",
+    "updated": "2026-10-15T18:46:39Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T18:46:39Z",
+    "reviewed": "2026-10-16"
+  },
+  "6117": {
+    "url": "https://github.com/boykopovar/AnyPS5/issues/6117",
+    "updated": "2026-10-14T23:54:05Z",
+    "media": [],
+    "latestUpdated": "2026-10-14T23:54:05Z",
+    "reviewed": "2026-10-16"
+  },
+  "6294": {
+    "url": "https://github.com/boykopovar/AnyPS5/issues/6294",
+    "updated": "2026-10-15T09:33:00Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T09:33:00Z",
+    "reviewed": "2026-10-16"
+  },
+  "4443": {
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/4443",
+    "updated": "2026-10-15T18:53:29Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T18:53:29Z",
+    "reviewed": "2026-10-16"
+  },
+  "5485": {
+    "url": "https://github.com/boykopovar/AnyPS5/issues/5485",
+    "updated": "2026-10-15T04:52:07Z",
+    "media": [],
+    "latestUpdated": "2026-10-15T04:52:07Z",
+    "reviewed": "2026-10-16"
   }
 }

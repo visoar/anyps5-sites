@@ -2344,5 +2344,209 @@
       "height": 1024
     },
     "screenshots": []
+  },
+  "puyo-puyo-tetris-2": {
+    "cover": {
+      "file": "puyo-puyo-tetris-2/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0718/AUtNlbgma7fjJwmet5jwwv6R.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0718/AUtNlbgma7fjJwmet5jwwv6R.png",
+      "sourceSha256": "93c57c710db5301658cf90a825dbc849f5af943e76648752ad2509d4b02c9a8f",
+      "sourceBytes": 193829,
+      "sha256": "d7d30f9d67175d36ae3aee3545c18448aca8150379afd22db9e830826db2313d",
+      "bytes": 97922,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "ea-sports-fc-27": {
+    "cover": {
+      "file": "ea-sports-fc-27/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png",
+      "sourceSha256": "601830968a774359d519d7e677495a5f35209787e6e780c6f74b0486ee19f6fa",
+      "sourceBytes": 269443,
+      "sha256": "156a058e84802f8c328d6b82135c96ba4bd5546733b3a9947c35f76f904c5658",
+      "bytes": 189782,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "tevi": {
+    "cover": {
+      "file": "tevi/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202404/1017/949364c99be9604657fa36ff04a093a92968e41c06d8e3dd.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202404/1017/949364c99be9604657fa36ff04a093a92968e41c06d8e3dd.png",
+      "sourceSha256": "bdc6ff00c79872b2cdd21af7ac99182399c12ab6957eab7edba723cf5abe6d00",
+      "sourceBytes": 132149,
+      "sha256": "8d4bde92f1121c3b92483fbc71d3d8524393ca055a485de2b3705bf024942a60",
+      "bytes": 60916,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "quake": {
+    "cover": {
+      "file": "quake/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202108/0404/MqhhoiKkeruDNT1cwDhLcYrx.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202108/0404/MqhhoiKkeruDNT1cwDhLcYrx.png",
+      "sourceSha256": "ecab05ee30a59b4583ac0accbd6eb85bfc2d15d38c44a623c3b35bdee3000055",
+      "sourceBytes": 191823,
+      "sha256": "0bf1a68f0753ca557635ade0a9489db6474ca022060a9b9612fb00a87a46b5b2",
+      "bytes": 121092,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "lodoss-deedlit": {
+    "cover": {
+      "file": "lodoss-deedlit/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202111/2908/14TpY95J6Q09zvv4StFdsQAK.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202111/2908/14TpY95J6Q09zvv4StFdsQAK.png",
+      "sourceSha256": "ee46a9526ff783813d53695fd1c54580e412d853aac9ee994c0e00f1e0b4c20d",
+      "sourceBytes": 249730,
+      "sha256": "0d47fab09a2e71e9947592fc7f2ef1cf2460c9a25ea027be1248adc3e41393db",
+      "bytes": 160198,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "super-mario-sunshine-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "goosebumps-terror-little-creek": {
+    "cover": {
+      "file": "goosebumps-terror-little-creek/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0913/b9060b383ef5387c7e82059206246afaff942215a3e75a9b.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0913/b9060b383ef5387c7e82059206246afaff942215a3e75a9b.png",
+      "sourceSha256": "2d81b059b47394d59683fbfa569a2b53ea46e6ce3110b80e7d1099fb3771e448",
+      "sourceBytes": 246568,
+      "sha256": "ffb173b1a78ca66aa2d6d7a65afbb1e39e5db547e6003f08a823f58dfa2b96d0",
+      "bytes": 152508,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "plants-vs-zombies-replanted": {
+    "cover": {
+      "file": "plants-vs-zombies-replanted/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202507/1618/d84ce02b74d8d0ac02fd7b4ce1db6ce501aafa0f332c854d.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202507/1618/d84ce02b74d8d0ac02fd7b4ce1db6ce501aafa0f332c854d.png",
+      "sourceSha256": "d4e34352f4adf89c1ceffbf87045e5171ef0c13e4ca89e58d38ac1b36fda5426",
+      "sourceBytes": 252290,
+      "sha256": "c37b000d42e92ca309acf8490aea1dfd6ea990dd8e6859c70aed8d66fd4cab5b",
+      "bytes": 155128,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "code-violet": {
+    "cover": {
+      "file": "code-violet/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202512/0221/8f2d0f07d57f878568ea58f2476fc3822622b50de0ce19b0.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/0221/8f2d0f07d57f878568ea58f2476fc3822622b50de0ce19b0.png",
+      "sourceSha256": "6252783b5e0dc191fc51006ec7daa2db2978f4b4d8012181e2837285e724efb5",
+      "sourceBytes": 106569,
+      "sha256": "c9740484f7b832e432136d9e6cf01ef75c55ffbb01d467d2d02409d6d7f39155",
+      "bytes": 62168,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "blasphemous-2-ppsa13580": {
+    "cover": {
+      "file": "blasphemous-2-ppsa13580/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202606/0318/92f975f1e62581b4b193d6aea8fd9145efb9623a04513604.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202606/0318/92f975f1e62581b4b193d6aea8fd9145efb9623a04513604.png",
+      "sourceSha256": "82cb17e917aa3dd4f96d474d510052eba197d5e7f157a4b5d35ebf2ea0ae6646",
+      "sourceBytes": 207162,
+      "sha256": "be2e5237eefc2678122686e1ba7de454362ed798404de52f1845069b20f5387a",
+      "bytes": 120992,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "little-nightmares-enhanced": {
+    "cover": {
+      "file": "little-nightmares-enhanced/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0619/7f642e38bf8bdba7c6f6a91895f4d1d9e0e5c6f000faf749.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0619/7f642e38bf8bdba7c6f6a91895f4d1d9e0e5c6f000faf749.png",
+      "sourceSha256": "8947da55056b5ad57951e4556975fe500121da3f9964a1392d6c26a9773b23d8",
+      "sourceBytes": 125104,
+      "sha256": "77f0830c5617ad20684076469106f1ccceef49e02b08524edd0abaa53649102f",
+      "bytes": 64804,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "horizon-call-of-the-mountain": {
+    "cover": {
+      "file": "horizon-call-of-the-mountain/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202207/0615/eicVspHDlt11H1xtnsw5dgkz.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202207/0615/eicVspHDlt11H1xtnsw5dgkz.png",
+      "sourceSha256": "3bfc9704ab3484056f15bbc175c8e3e7d0619dbb6be3194a48d953aaf32dadb0",
+      "sourceBytes": 285246,
+      "sha256": "768c5a718a2f67f994504fe5fbfa5b9e2b78898333bf0fc6bc2d1d156e0c08cc",
+      "bytes": 192532,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "mxgp-26": {
+    "cover": {
+      "file": "mxgp-26/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202607/1014/3d8f163859e7f3d6ed0fa8cd48696c8b93f39a1a7bdd05eb.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/1014/3d8f163859e7f3d6ed0fa8cd48696c8b93f39a1a7bdd05eb.png",
+      "sourceSha256": "bd40da0006ae355af9c0e3f81f2d9e147a72f90aa1f11448898a143cae601bea",
+      "sourceBytes": 271615,
+      "sha256": "8bb2dac29ba6fc49b903fdd560afda98ad2f62c5967620c9e4da7982483b03be",
+      "bytes": 190370,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "borderlands-4": {
+    "cover": {
+      "file": "borderlands-4/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0210/f6d5bad2e5f3ac0e4955c13922699c918917d271fada7fbb.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0210/f6d5bad2e5f3ac0e4955c13922699c918917d271fada7fbb.png",
+      "sourceSha256": "669c910074f2b7c47311223a09ec5e308e9ed3c9aaf886ada9095413f0ba6e8e",
+      "sourceBytes": 272481,
+      "sha256": "2c26cb08412cbbfadaadcf6a8f22292fc8f32ba40069ee2713ce608bedd8a2ae",
+      "bytes": 182040,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "sackboy-big-adventure": {
+    "cover": {
+      "file": "sackboy-big-adventure/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202010/1614/TJiBEQMJ9qa93lWBu4sKScY9.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/img/rnd/202010/1614/TJiBEQMJ9qa93lWBu4sKScY9.png",
+      "sourceSha256": "ad76570d91629e35deb8829a898a44e8b2a9558eefa538a9b22acf640e38c3dc",
+      "sourceBytes": 358941,
+      "sha256": "c903e7c88c484ebbf8bd61bfd82005af06b80d817d421deb36de35bb5a6b550c",
+      "bytes": 268256,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "sonic-unleashed-recompiled": {
+    "cover": null,
+    "screenshots": []
   }
 }

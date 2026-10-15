@@ -57,10 +57,10 @@
     "url": "https://github.com/boykopovar/AnyPS5/pull/674",
     "kind": "pr",
     "state": "open",
-    "updated": "2026-10-11T11:53:07Z",
+    "updated": "2026-10-15T18:27:21Z",
     "mergedAt": null,
     "commit": null,
-    "reviewed": "2026-10-12"
+    "reviewed": "2026-10-16"
   },
   "3338": {
     "url": "https://github.com/boykopovar/AnyPS5/issues/3338",
@@ -345,10 +345,10 @@
     "url": "https://github.com/boykopovar/AnyPS5/issues/4260",
     "kind": "issue",
     "state": "open",
-    "updated": "2026-10-14T04:35:37Z",
+    "updated": "2026-10-15T10:22:17Z",
     "mergedAt": null,
     "commit": null,
-    "reviewed": "2026-10-15"
+    "reviewed": "2026-10-16"
   },
   "4366": {
     "url": "https://github.com/boykopovar/AnyPS5/issues/4366",
@@ -453,10 +453,10 @@
     "url": "https://github.com/boykopovar/AnyPS5/issues/4634",
     "kind": "issue",
     "state": "open",
-    "updated": "2026-10-12T17:05:41Z",
+    "updated": "2026-10-15T11:31:40Z",
     "mergedAt": null,
     "commit": null,
-    "reviewed": "2026-10-13"
+    "reviewed": "2026-10-16"
   },
   "4387": {
     "url": "https://github.com/boykopovar/AnyPS5/issues/4387",
@@ -471,10 +471,10 @@
     "url": "https://github.com/boykopovar/AnyPS5/issues/1794",
     "kind": "issue",
     "state": "open",
-    "updated": "2026-10-13T11:55:44Z",
+    "updated": "2026-10-15T01:23:09Z",
     "mergedAt": null,
     "commit": null,
-    "reviewed": "2026-10-14"
+    "reviewed": "2026-10-16"
   },
   "5381": {
     "url": "https://github.com/boykopovar/AnyPS5/issues/5381",
@@ -525,10 +525,10 @@
     "url": "https://github.com/boykopovar/AnyPS5/issues/5398",
     "kind": "issue",
     "state": "open",
-    "updated": "2026-10-14T17:12:58Z",
+    "updated": "2026-10-15T19:14:52Z",
     "mergedAt": null,
     "commit": null,
-    "reviewed": "2026-10-15"
+    "reviewed": "2026-10-16"
   },
   "5409": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/5409",
@@ -552,10 +552,10 @@
     "url": "https://github.com/boykopovar/AnyPS5/pull/5431",
     "kind": "pr",
     "state": "open",
-    "updated": "2026-10-14T11:43:07Z",
+    "updated": "2026-10-15T19:26:30Z",
     "mergedAt": null,
     "commit": null,
-    "reviewed": "2026-10-15"
+    "reviewed": "2026-10-16"
   },
   "4949": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/4949",
@@ -579,10 +579,10 @@
     "url": "https://github.com/boykopovar/AnyPS5/issues/3468",
     "kind": "issue",
     "state": "closed",
-    "updated": "2026-10-14T18:46:03Z",
+    "updated": "2026-10-15T07:06:23Z",
     "mergedAt": null,
     "commit": null,
-    "reviewed": "2026-10-15"
+    "reviewed": "2026-10-16"
   },
   "5030": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/5030",
@@ -596,11 +596,11 @@
   "5055": {
     "url": "https://github.com/boykopovar/AnyPS5/issues/5055",
     "kind": "issue",
-    "state": "open",
-    "updated": "2026-10-14T02:45:34Z",
+    "state": "closed",
+    "updated": "2026-10-15T02:34:25Z",
     "mergedAt": null,
     "commit": null,
-    "reviewed": "2026-10-15"
+    "reviewed": "2026-10-16"
   },
   "4551": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/4551",
@@ -642,10 +642,10 @@
     "url": "https://github.com/boykopovar/AnyPS5/issues/5079",
     "kind": "issue",
     "state": "open",
-    "updated": "2026-10-13T13:01:22Z",
+    "updated": "2026-10-15T07:02:04Z",
     "mergedAt": null,
     "commit": null,
-    "reviewed": "2026-10-14"
+    "reviewed": "2026-10-16"
   },
   "5335": {
     "url": "https://github.com/boykopovar/AnyPS5/issues/5335",
@@ -714,10 +714,10 @@
     "url": "https://github.com/boykopovar/AnyPS5/pull/757",
     "kind": "pr",
     "state": "merged",
-    "updated": "2026-10-14T19:11:57Z",
+    "updated": "2026-10-14T23:05:18Z",
     "mergedAt": "2026-10-14T15:48:32Z",
     "commit": "763ad20fc1927a3f677d544537618b17e061fc9f",
-    "reviewed": "2026-10-15"
+    "reviewed": "2026-10-16"
   },
   "5588": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/5588",
@@ -731,20 +731,20 @@
   "5660": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/5660",
     "kind": "pr",
-    "state": "open",
-    "updated": "2026-10-14T10:46:56Z",
-    "mergedAt": null,
-    "commit": null,
-    "reviewed": "2026-10-15"
+    "state": "merged",
+    "updated": "2026-10-15T12:54:21Z",
+    "mergedAt": "2026-10-15T12:54:20Z",
+    "commit": "e890b4a38506f5d2e51e677f7483c72e1643e0fb",
+    "reviewed": "2026-10-16"
   },
   "5139": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/5139",
     "kind": "pr",
-    "state": "open",
-    "updated": "2026-10-14T08:19:21Z",
-    "mergedAt": null,
-    "commit": null,
-    "reviewed": "2026-10-15"
+    "state": "merged",
+    "updated": "2026-10-15T02:34:24Z",
+    "mergedAt": "2026-10-15T02:34:23Z",
+    "commit": "a077a88df5bc4ec26a3049aa721ac37ec8f02305",
+    "reviewed": "2026-10-16"
   },
   "5710": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/5710",
@@ -768,10 +768,10 @@
     "url": "https://github.com/boykopovar/AnyPS5/pull/5797",
     "kind": "pr",
     "state": "open",
-    "updated": "2026-10-14T19:59:55Z",
+    "updated": "2026-10-15T18:39:19Z",
     "mergedAt": null,
     "commit": null,
-    "reviewed": "2026-10-15"
+    "reviewed": "2026-10-16"
   },
   "5511": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/5511",
@@ -812,11 +812,11 @@
   "5892": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/5892",
     "kind": "pr",
-    "state": "open",
-    "updated": "2026-10-14T19:11:35Z",
-    "mergedAt": null,
-    "commit": null,
-    "reviewed": "2026-10-15"
+    "state": "merged",
+    "updated": "2026-10-14T22:05:10Z",
+    "mergedAt": "2026-10-14T22:05:10Z",
+    "commit": "922abe6a4e2b5030ef5308c25a51c1a478c3c1f2",
+    "reviewed": "2026-10-16"
   },
   "5443": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/5443",
@@ -830,29 +830,29 @@
   "5906": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/5906",
     "kind": "pr",
-    "state": "open",
-    "updated": "2026-10-14T19:11:37Z",
-    "mergedAt": null,
-    "commit": null,
-    "reviewed": "2026-10-15"
+    "state": "merged",
+    "updated": "2026-10-14T22:50:30Z",
+    "mergedAt": "2026-10-14T21:10:07Z",
+    "commit": "0ae1deb850a3f97b5d6bb0d542ef33a49bbb4437",
+    "reviewed": "2026-10-16"
   },
   "5971": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/5971",
     "kind": "pr",
-    "state": "open",
-    "updated": "2026-10-14T19:12:21Z",
+    "state": "closed",
+    "updated": "2026-10-14T23:14:07Z",
     "mergedAt": null,
     "commit": null,
-    "reviewed": "2026-10-15"
+    "reviewed": "2026-10-16"
   },
   "5916": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/5916",
     "kind": "pr",
     "state": "open",
-    "updated": "2026-10-14T20:00:17Z",
+    "updated": "2026-10-15T19:12:44Z",
     "mergedAt": null,
     "commit": null,
-    "reviewed": "2026-10-15"
+    "reviewed": "2026-10-16"
   },
   "5488": {
     "url": "https://github.com/boykopovar/AnyPS5/issues/5488",
@@ -885,10 +885,10 @@
     "url": "https://github.com/boykopovar/AnyPS5/issues/5692",
     "kind": "issue",
     "state": "open",
-    "updated": "2026-10-14T14:49:53Z",
+    "updated": "2026-10-15T17:53:00Z",
     "mergedAt": null,
     "commit": null,
-    "reviewed": "2026-10-15"
+    "reviewed": "2026-10-16"
   },
   "5580": {
     "url": "https://github.com/boykopovar/AnyPS5/pull/5580",
@@ -898,5 +898,50 @@
     "mergedAt": "2026-10-14T01:02:29Z",
     "commit": "d7bb2fee3dd44bd64b00572147d79eea1966725b",
     "reviewed": "2026-10-15"
+  },
+  "1202": {
+    "url": "https://github.com/boykopovar/AnyPS5/pull/1202",
+    "kind": "pr",
+    "state": "merged",
+    "updated": "2026-10-15T10:30:29Z",
+    "mergedAt": "2026-10-15T10:30:29Z",
+    "commit": "8856f180ca0b5605574842666ffbc8b0bb69cc4d",
+    "reviewed": "2026-10-16"
+  },
+  "6236": {
+    "url": "https://github.com/boykopovar/AnyPS5/pull/6236",
+    "kind": "pr",
+    "state": "open",
+    "updated": "2026-10-15T18:37:09Z",
+    "mergedAt": null,
+    "commit": null,
+    "reviewed": "2026-10-16"
+  },
+  "6291": {
+    "url": "https://github.com/boykopovar/AnyPS5/pull/6291",
+    "kind": "pr",
+    "state": "open",
+    "updated": "2026-10-15T19:29:14Z",
+    "mergedAt": null,
+    "commit": null,
+    "reviewed": "2026-10-16"
+  },
+  "5784": {
+    "url": "https://github.com/boykopovar/AnyPS5/pull/5784",
+    "kind": "pr",
+    "state": "merged",
+    "updated": "2026-10-15T17:25:07Z",
+    "mergedAt": "2026-10-15T17:25:07Z",
+    "commit": "3bb409b6037e5e38b7f11323d1c1b2066851e4cb",
+    "reviewed": "2026-10-16"
+  },
+  "6000": {
+    "url": "https://github.com/boykopovar/AnyPS5/pull/6000",
+    "kind": "pr",
+    "state": "merged",
+    "updated": "2026-10-15T13:13:55Z",
+    "mergedAt": "2026-10-14T23:13:05Z",
+    "commit": "31557fef77728b49c10bf2c14b6f7ab1989d6858",
+    "reviewed": "2026-10-16"
   }
 }

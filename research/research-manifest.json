@@ -51,15 +51,20 @@
     }
   ],
   "latestReview": {
-    "reviewed": "2026-10-15",
-    "incrementSince": "2026-10-13T18:30:00Z",
-    "nextSuccessfulCutoff": "2026-10-14T19:44:00Z",
-    "sourceCommit": "411e5e6d9fe3e09206490ccc0d260229851c2310",
+    "reviewed": "2026-10-16",
+    "incrementSince": "2026-10-14T18:30:00Z",
+    "nextSuccessfulCutoff": "2026-10-15T19:43:00Z",
+    "sourceCommit": "44df21632125dbe3113a19173e7ebb879da53003",
     "documents": 104,
-    "issuesAndPRs": 59,
-    "issuePRPages": 59,
-    "discussions": 126,
-    "discussionPages": 7,
+    "changedDocuments": 23,
+    "issuesAndPRs": 6374,
+    "issuePRPages": 64,
+    "incrementIssuesAndPRs": 1087,
+    "incrementPages": 11,
+    "commits": 507,
+    "commitPages": 6,
+    "discussions": 145,
+    "discussionPages": 8,
     "completeNestedPagination": true,
     "releasesIncludingPrereleases": 3,
     "latestRelease": {
@@ -67,18 +72,22 @@
       "published": "2026-10-14T08:56:52Z",
       "url": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.2"
     },
-    "issueCommentPages": 27,
-    "issueComments": 2693,
+    "issueCommentPages": 22,
+    "issueComments": 2149,
     "reviewCommentPages": 1,
-    "reviewComments": 3,
-    "commentThreads": 1224,
+    "reviewComments": 2,
+    "commentThreads": 1043,
     "unavailableThreads": [],
     "changes": {
-      "newEntries": 24,
-      "newReports": 63
+      "newEntries": 16,
+      "newReports": 61
     },
-    "record": "docs/maintenance/2026-10-15-nightly.md",
-    "rawDirectory": "research/raw/daily-2026-10-15/",
-    "sourceReviewOnly": true
+    "record": "docs/maintenance/2026-10-16-nightly.md",
+    "rawDirectory": "research/raw/daily-2026-10-16/",
+    "sourceReviewOnly": true,
+    "recoveredOlderParentThreads": [
+      4953,
+      4981
+    ]
   }
 }

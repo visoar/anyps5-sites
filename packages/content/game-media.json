@@ -843,5 +843,117 @@
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1510/346857c01378e194d77def3f3029d79489509c541aa761d6.png",
     "screenshots": [],
     "checked": "2026-10-15"
+  },
+  "puyo-puyo-tetris-2": {
+    "source": "https://store.playstation.com/en-us/product/UP0177-PPSA01937_00-TENPEXTENPEX0000/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0718/AUtNlbgma7fjJwmet5jwwv6R.png",
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "ea-sports-fc-27": {
+    "source": "https://www.playstation.com/en-us/games/ea-sports-fc/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png",
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "tevi": {
+    "source": "https://store.playstation.com/en-us/concept/10010229",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202404/1017/949364c99be9604657fa36ff04a093a92968e41c06d8e3dd.png",
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "quake": {
+    "source": "https://www.playstation.com/en-us/games/quake/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202108/0404/MqhhoiKkeruDNT1cwDhLcYrx.png",
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "lodoss-deedlit": {
+    "source": "https://www.playstation.com/ja-jp/games/record-of-lodoss-war-deedlit-in-wonder-labyrinth/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202111/2908/14TpY95J6Q09zvv4StFdsQAK.png",
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "super-mario-sunshine-homebrew": {
+    "source": "https://github.com/griches/PS5_Sunshine",
+    "provider": "Community PS5 port",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "goosebumps-terror-little-creek": {
+    "source": "https://store.playstation.com/en-us/concept/10013351",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0913/b9060b383ef5387c7e82059206246afaff942215a3e75a9b.png",
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "plants-vs-zombies-replanted": {
+    "source": "https://www.playstation.com/en-us/games/plants-v-zombies-replanted/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202507/1618/d84ce02b74d8d0ac02fd7b4ce1db6ce501aafa0f332c854d.png",
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "code-violet": {
+    "source": "https://store.playstation.com/en-us/product/UP5503-PPSA26528_00-0656994000407395",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202512/0221/8f2d0f07d57f878568ea58f2476fc3822622b50de0ce19b0.png",
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "blasphemous-2-ppsa13580": {
+    "source": "https://www.playstation.com/en-us/games/blasphemous-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202606/0318/92f975f1e62581b4b193d6aea8fd9145efb9623a04513604.png",
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "little-nightmares-enhanced": {
+    "source": "https://www.playstation.com/en-us/games/little-nightmares/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0619/7f642e38bf8bdba7c6f6a91895f4d1d9e0e5c6f000faf749.png",
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "horizon-call-of-the-mountain": {
+    "source": "https://www.playstation.com/en-us/games/horizon-call-of-the-mountain/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202207/0615/eicVspHDlt11H1xtnsw5dgkz.png",
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "mxgp-26": {
+    "source": "https://store.playstation.com/en-us/product/EP6665-PPSA30839_00-MXGP200000000000/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202607/1014/3d8f163859e7f3d6ed0fa8cd48696c8b93f39a1a7bdd05eb.png",
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "borderlands-4": {
+    "source": "https://www.playstation.com/en-us/games/borderlands-4/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0210/f6d5bad2e5f3ac0e4955c13922699c918917d271fada7fbb.png",
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "sackboy-big-adventure": {
+    "source": "https://www.playstation.com/en-us/games/sackboy-a-big-adventure/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/img/rnd/202010/1614/TJiBEQMJ9qa93lWBu4sKScY9.png",
+    "screenshots": [],
+    "checked": "2026-10-16"
+  },
+  "sonic-unleashed-recompiled": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/4443",
+    "provider": "Community PS5 port",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-16"
   }
 }

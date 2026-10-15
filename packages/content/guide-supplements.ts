@@ -45,3 +45,91 @@ guideSupplements["guides/linux"].push({id:"display-backends",title:L("Choose the
 guideSupplements.requirements.push({id:"release-scope",title:{"en": "Match the release and reported environment", "zh": "匹配发行版与报告环境", "ar": "طابق الإصدار والبيئة", "pt": "Comparar versão e ambiente", "de": "Release und Umgebung abgleichen", "fr": "Comparer version et environnement", "es": "Compara versión y entorno"},body:[{"en": "v0.1.2 distributes Windows and Linux runtime archives. The source’s macOS conversion target and the community macos-runtime fork are separate experiments; an M1 Pro report with an unpinned build is not a general Mac requirement. Vulkan header/SDK versions used to compile the runtime are also distinct from a tested driver requirement. Match a game report’s actual GPU, driver, settings and build.", "zh": "v0.1.2 分发 Windows 与 Linux runtime 包。源码的 macOS 转换目标与社区 macos-runtime 分支属于独立实验，构建未固定的 M1 Pro 报告不是通用 Mac 配置要求。编译使用的 Vulkan 头文件／SDK 版本也不同于已实测驱动要求；应匹配具体游戏的 GPU、驱动、设置及构建。", "ar": "v0.1.2 يوزع Windows/Linux. هدف macOS وفرع المجتمع تجارب مستقلة؛ تقرير M1 Pro دون بناء محدد ليس متطلبات عامة. نسخة Vulkan SDK للبناء مختلفة عن متطلبات برنامج التشغيل المختبرة. طابق GPU والبرنامج والإعدادات والبناء.", "pt": "v0.1.2 distribui Windows/Linux. Alvo macOS/fork são experiências separadas; M1 Pro sem build fixo não define requisitos. Versões Vulkan SDK de compilação distintas de driver testado. Compare GPU, driver, opções e build.", "de": "v0.1.2 verteilt Windows/Linux. macOS-Ziel/Fork getrennte Experimente; M1 Pro ohne Buildpin keine allgemeinen Anforderungen. Vulkan-SDK-Version zum Bauen ist nicht getestete Treiberanforderung. GPU, Treiber, Einstellungen/Build abgleichen.", "fr": "v0.1.2 distribue Windows/Linux. Cible macOS/fork sont des expériences séparées ; M1 Pro sans build précis ne définit pas de prérequis. SDK Vulkan de compilation distinct du pilote testé. Comparer GPU, pilote, réglages/build.", "es": "v0.1.2 distribuye Windows/Linux. Destino macOS/fork son experimentos separados; M1 Pro sin build fijo no define requisitos. SDK Vulkan al compilar distinto de driver probado. Compara GPU, driver, ajustes/build."}],links:[{label:"v0.1.2",url:"https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.2"},{label:"macOS · FAQ",url:"/faq/#mac"}]});
 
 guideSupplements["guides/windows"].push({"id": "hid-enumeration", "title": {"en": "Windows HID fix is included in v0.1.2", "zh": "v0.1.2 已包含 Windows HID 修复", "ar": "إصلاح HID Windows ضمن v0.1.2", "pt": "Correção HID Windows incluída em v0.1.2", "de": "Windows-HID-Fix in v0.1.2 enthalten", "fr": "Correctif HID Windows inclus en v0.1.2", "es": "Arreglo HID Windows incluido en v0.1.2"}, "body": [{"en": "#1050 closed in favour of #5580, which merged as d7bb2fee3 at 01:02 UTC and is an ancestor of the v0.1.2 tag. It disables DirectInput joystick enumeration by default to address the reproduced vendor-HID hang before video output. XInput and HIDAPI remain available; DirectInput-only controllers are not detected and were not tested. SDL_DIRECTINPUT_ENABLED can override the default. This is a device-specific startup fix, not a game compatibility result.", "zh": "#1050 关闭并转由 #5580 接续；后者在 01:02 UTC 于 d7bb2fee3 合入，已核验属于 v0.1.2 tag 的祖先。默认禁用 DirectInput 手柄枚举，处理已复现的厂商 HID 导致的显示初始化挂起。XInput 与 HIDAPI 仍可用，仅 DirectInput 手柄不被检测、也未实测；SDL_DIRECTINPUT_ENABLED 可覆盖默认。这是设备相关启动修复，不是游戏兼容结果。", "ar": "#1050 أُغلق لصالح #5580، دمج d7bb2fee3 في01:02 UTC وهو سلف tag v0.1.2. يعطل تعداد DirectInput افتراضياً لعطل HID عند فتح العرض. XInput/HIDAPI متاحان؛ أجهزة DirectInput فقط لا تكتشف ولم تختبر. SDL_DIRECTINPUT_ENABLED يتجاوز الافتراضي. إصلاح جهاز، لا توافق لعبة.", "pt": "#1050 fechada em favor de #5580, integrada d7bb2fee3 às01:02 UTC, antepassado do tag v0.1.2. Desativa enumeração DirectInput por defeito para bloqueio HID no arranque. XInput/HIDAPI mantidos; comandos só DirectInput não detetados nem testados. SDL_DIRECTINPUT_ENABLED altera o padrão. Correção específica, não resultado de jogo.", "de": "#1050 zugunsten #5580 geschlossen, Merge d7bb2fee3 um01:02 UTC, Vorfahr von v0.1.2. DirectInput-Enumeration standardmäßig aus gegen reproduzierten HID-Startblock. XInput/HIDAPI bleiben, reine DirectInput-Pads nicht erkannt/ungeprüft. SDL_DIRECTINPUT_ENABLED überschreibt Standard. Gerätefix, kein Spielkompatibilitätsbeleg.", "fr": "#1050 fermé pour #5580, merge d7bb2fee3 à01:02 UTC, ancêtre du tag v0.1.2. Énumération DirectInput désactivée par défaut contre blocage HID au démarrage. XInput/HIDAPI conservés ; pads DirectInput-only non détectés/non testés. SDL_DIRECTINPUT_ENABLED surcharge le défaut. Correctif appareil, pas résultat de jeu.", "es": "#1050 cerrada por #5580, merge d7bb2fee3 a01:02 UTC, ancestro de v0.1.2. Desactiva enumeración DirectInput por defecto contra bloqueo HID inicial. XInput/HIDAPI siguen; pads solo DirectInput no detectados/sin probar. SDL_DIRECTINPUT_ENABLED cambia defecto. Arreglo de dispositivo, no compatibilidad de juego."}], "links": [{"label": "PR #5580", "url": "https://github.com/boykopovar/AnyPS5/pull/5580"}, {"label": "Issue #1042", "url": "https://github.com/boykopovar/AnyPS5/issues/1042"}]});
+
+for(const slug of ["start","downloads"]){guideSupplements[slug].push({
+ "id": "browser-folder-output",
+ "title": {
+  "en": "Browser folder output and incomplete conversions",
+  "zh": "浏览器目录输出与未完成转换",
+  "ar": "مجلد إخراج المتصفح والتحويل الناقص",
+  "pt": "Pasta do navegador e conversões incompletas",
+  "de": "Browser-Ordnerausgabe und unvollständige Konvertierung",
+  "fr": "Dossier navigateur et conversions incomplètes",
+  "es": "Carpeta del navegador y conversiones incompletas"
+ },
+ "body": [
+  {
+   "en": "The current web path can write uncompressed Linux output to a new folder in supported browsers. It refuses an existing destination and attempts to remove its new folder after cancellation or failure. If cleanup is blocked, inspect the named partial folder before using it. This live-web behavior is separate from the v0.1.2 offline assets and does not resolve the open import-pairing issue.",
+   "zh": "当前网页流程可在支持的浏览器向新目录输出未压缩 Linux 文件，不覆盖已有目标；取消／失败后尝试删除新建目录。若清理受阻，使用前核对错误提示中的残留目录。这是 live 网页行为，与 v0.1.2 离线资产分开，也未解决仍开放的导入配对问题。",
+   "ar": "مسار الويب الحالي يكتب Linux غير مضغوط إلى مجلد جديد في متصفح مدعوم، ويرفض الموجود ويحاول التنظيف بعد فشل/إلغاء. افحص المجلد الجزئي المسمى إذا تعذر حذفه. سلوك الويب منفصل عن v0.1.2 ولا يحل مشكلة اقتران الاستيراد.",
+   "pt": "O fluxo web atual grava Linux sem compressão numa pasta nova em navegadores compatíveis. Recusa destino existente e tenta remover a pasta após falha/cancelamento. Se não conseguir, confira a pasta parcial indicada. É comportamento web separado dos ficheiros v0.1.2 e não resolve a associação de imports.",
+   "de": "Der aktuelle Webpfad schreibt Linux unkomprimiert in einen neuen Ordner unterstützter Browser. Bestehende Ziele werden abgelehnt, neue Ordner nach Abbruch/Fehler möglichst entfernt. Bei blockierter Bereinigung den genannten Teilordner prüfen. Separat von v0.1.2-Dateien; Import-Paarungsproblem bleibt offen.",
+   "fr": "Le flux web actuel écrit Linux non compressé dans un nouveau dossier des navigateurs compatibles. Il refuse un dossier existant et tente de nettoyer après annulation/échec. Si cela échoue, vérifiez le dossier partiel indiqué. Distinct des fichiers v0.1.2 ; problème d’association des imports toujours ouvert.",
+   "es": "El flujo web actual escribe Linux sin comprimir en carpeta nueva en navegadores compatibles. Rechaza destinos existentes e intenta limpiar tras error/cancelación. Si no puede, revisa la carpeta parcial indicada. Separado de archivos v0.1.2; sigue abierto el problema de emparejar imports."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/44df21632125dbe3113a19173e7ebb879da53003/docs/user/USAGE.md"
+  }
+ ]
+});}
+for(const slug of ["guides/windows","guides/linux","guides/build"]){guideSupplements[slug].push({
+ "id": "original-metadata",
+ "title": {
+  "en": "Keep the title’s original metadata and ELF modules",
+  "zh": "保留游戏原元数据及 ELF 模块",
+  "ar": "احتفظ ببيانات اللعبة ووحدات ELF الأصلية",
+  "pt": "Conserve metadata e módulos ELF originais",
+  "de": "Originale Metadaten und ELF-Module behalten",
+  "fr": "Conserver métadonnées et modules ELF originaux",
+  "es": "Conserva metadatos y módulos ELF originales"
+ },
+ "body": [
+  {
+   "en": "Preserve app0/sce_sys/param.json from your own title, including its titleId and localized titleName. Main uses it for metadata and directory creation; do not change budgets to imitate another report. For import_audit.py --modules use original unwrapped ELF modules, plus every generated registry as positional input. Converted .guest.prx files on Windows are PE output, not those audit inputs.",
+   "zh": "保留自己游戏的 app0/sce_sys/param.json，包括 titleId 和本地化 titleName。main 依它获取元数据并创建目录，不要为模仿报告修改预算。import_audit.py --modules 传原始解包 ELF 模块，所有生成 registry 作为位置参数；Windows 转换后的 .guest.prx 是 PE 输出，不是该审计输入。",
+   "ar": "احفظ param.json الأصلي ومعرّف titleId وtitleName؛ يستخدمه main للبيانات والمجلدات ولا تغيّر الميزانيات لتقليد تقرير. --modules في import_audit.py يأخذ ELF الأصلية المفكوكة مع كل registry كوسيط. .guest.prx المحولة في Windows مخرجات PE وليست مدخلات التدقيق.",
+   "pt": "Conserve param.json original com titleId/titleName; main usa-o para metadata e pastas. Não altere orçamentos para imitar relatos. --modules recebe ELF originais desembrulhados e todos os registos como argumentos. .guest.prx convertido no Windows é saída PE, não entrada dessa auditoria.",
+   "de": "Originales param.json mit titleId/titleName behalten; main nutzt es für Metadaten/Ordner. Budgets nicht für Berichtsnachahmung ändern. --modules bekommt ursprüngliche entpackte ELF-Module, alle Registries als Argumente. Konvertierte Windows-.guest.prx sind PE-Ausgaben, keine solchen Prüfeingaben.",
+   "fr": "Gardez param.json original avec titleId/titleName ; main l’utilise pour métadonnées/dossiers. Ne changez pas les budgets pour imiter un rapport. --modules reçoit les ELF originaux déballés et tous les registres en arguments. Les .guest.prx Windows convertis sont des sorties PE, pas ces entrées d’audit.",
+   "es": "Conserva param.json original con titleId/titleName; main lo usa para metadatos/carpetas. No cambies presupuestos para imitar informes. --modules recibe ELF originales desempaquetados y todos los registros como argumentos. Los .guest.prx Windows convertidos son salidas PE, no esas entradas de auditoría."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/44df21632125dbe3113a19173e7ebb879da53003/docs/user/USAGE.md"
+  }
+ ]
+});}
+guideSupplements["guides/linux"].push({
+ "id": "execute-and-cache",
+ "title": {
+  "en": "Executable permissions and rebuildable shader caches",
+  "zh": "可执行权限与可重建着色器缓存",
+  "ar": "أذونات التنفيذ وذاكرة التظليل المؤقتة",
+  "pt": "Permissões de execução e cache reconstruível",
+  "de": "Ausführungsrechte und erneuerbare Shader-Caches",
+  "fr": "Permissions et caches de shaders reconstruisibles",
+  "es": "Permisos y cachés de shaders reconstruibles"
+ },
+ "body": [
+  {
+   "en": "After-release main marks every generated executable executable. Browser downloads or copies may lose that mode: chmod +x each listed executable, including launchers’ child programs. Shaders are cached beside the output under shader_cache/ unless ANYPS5_SHADER_CACHE_DIR changes it. Deleting that cache triggers recompilation; a cold/warm timing difference is not itself a game fix.",
+   "zh": "发行后的 main 为每个生成程序设置可执行权限；浏览器下载／复制可能丢失权限，应对列出的每个程序 chmod +x，包括启动器子程序。着色器默认缓存在输出旁 shader_cache/，可用 ANYPS5_SHADER_CACHE_DIR 改位置。删除会重编译，冷／预热时间差本身不是游戏修复。",
+   "ar": "main بعد الإصدار يحدد إذن التنفيذ لكل ملف؛ تنزيل/نسخ المتصفح قد يفقده، فطبّق chmod +x على كل برنامج ومنها الأبناء. shader_cache/ بجانب الإخراج قابل لتغيير المسار بـANYPS5_SHADER_CACHE_DIR. حذفه يعيد الترجمة؛ فرق البارد/الدافئ ليس إصلاح لعبة.",
+   "pt": "Main após o release dá permissão a cada executável; transferências/cópias podem perdê-la: chmod +x em todos, incluindo programas filhos. shader_cache/ fica junto da saída, alterável por ANYPS5_SHADER_CACHE_DIR. Apagar recompila; diferença frio/quente não é correção do jogo.",
+   "de": "main nach dem Release setzt Ausführungsrechte für alle Programme. Downloads/Kopien können sie verlieren: chmod +x für jedes, auch Kindprogramme. shader_cache/ liegt neben der Ausgabe, per ANYPS5_SHADER_CACHE_DIR verlegbar. Löschen erzwingt Neukompilierung; kalt/warm allein kein Spiel-Fix.",
+   "fr": "Main après publication définit les permissions de chaque programme ; téléchargements/copies peuvent les perdre : chmod +x sur chacun, y compris programmes enfants. shader_cache/ près de la sortie, configurable par ANYPS5_SHADER_CACHE_DIR. Supprimer recompile ; écart froid/chaud seul n’est pas un correctif.",
+   "es": "Main posterior al release da permisos a cada ejecutable; descargas/copias pueden perderlos: chmod +x en todos, incluidos hijos. shader_cache/ queda junto a salida, configurable por ANYPS5_SHADER_CACHE_DIR. Borrar recompila; diferencia frío/caliente no es solución del juego."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/44df21632125dbe3113a19173e7ebb879da53003/docs/user/USAGE.md"
+  }
+ ]
+});
