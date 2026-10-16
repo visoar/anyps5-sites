@@ -595,6 +595,708 @@ for(const [slug,note] of Object.entries({
   "es": "Informe PPSA01530, arte PPSA01937; marca común no prueba región/test."
  }
 })){for(const locale of Object.keys(note) as (keyof Text)[]){editorial[slug].editionNote[locale]+=" "+note[locale];}}
+Object.assign(editorial,{
+ "hot-wheels-infinite-rush": {
+  "genre": "racing",
+  "overview": {
+   "en": "Toy-car racing across islands; compare garage and race scenes separately.",
+   "zh": "玩具车跨岛竞速；车库与赛道画面分别比较。",
+   "ar": "سباقات سيارات مصغرة؛ قارن المرآب والسباق منفصلين.",
+   "pt": "Corridas de miniaturas; compare garagem e pista separadamente.",
+   "de": "Spielzeugautorennen; Garage und Strecke getrennt vergleichen.",
+   "fr": "Courses miniatures ; distinguez garage et piste.",
+   "es": "Carreras en miniatura; compara garaje y pista por separado."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA22408; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA22408；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA22408؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA22408; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA22408; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA22408 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA22408; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "风火轮 Infinite Rush"
+  }
+ },
+ "silent-hill-f": {
+  "genre": "action",
+  "overview": {
+   "en": "Horror exploration needs readable terrain beyond the title menu.",
+   "zh": "恐怖探索需要菜单之外可读的地形画面。",
+   "ar": "استكشاف رعب يتطلب أرضاً مقروءة بعد القائمة.",
+   "pt": "Exploração de terror exige terreno legível além do menu.",
+   "de": "Horrorerkundung braucht lesbares Gelände hinter dem Menü.",
+   "fr": "L’horreur exige un terrain lisible au-delà du menu.",
+   "es": "Exploración de terror requiere terreno legible tras el menú."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA21159; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA21159；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA21159؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA21159; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA21159; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA21159 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA21159; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "寂静岭 f"
+  }
+ },
+ "mlb-the-show-26": {
+  "genre": "sports",
+  "overview": {
+   "en": "Baseball matches require a rendered field, players and responsive controls.",
+   "zh": "棒球比赛需验证球场、球员画面及操作响应。",
+   "ar": "مباريات البيسبول تحتاج ملعباً ولاعبين وتحكماً.",
+   "pt": "Basebol exige campo, jogadores e comandos funcionais.",
+   "de": "Baseball benötigt Spielfeld, Spieler und funktionierende Eingaben.",
+   "fr": "Le baseball exige terrain, joueurs et commandes fonctionnels.",
+   "es": "Béisbol requiere campo, jugadores y controles funcionales."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA30630; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA30630；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA30630؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA30630; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA30630; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA30630 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA30630; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "MLB The Show 26"
+  }
+ },
+ "toem": {
+  "genre": "puzzle",
+  "overview": {
+   "en": "A photographic adventure; test camera interactions and progression, not just a counter.",
+   "zh": "摄影冒险需测试相机交互和推进，不能只看计数。",
+   "ar": "مغامرة تصوير؛ اختبر الكاميرا والتقدم لا العدّاد فقط.",
+   "pt": "Aventura fotográfica; teste câmara e progressão além do contador.",
+   "de": "Fotoabenteuer; Kamera und Fortschritt neben Zählern prüfen.",
+   "fr": "Aventure photographique ; testez appareil et progression au-delà du compteur.",
+   "es": "Aventura fotográfica; prueba cámara y progreso además del contador."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA04354; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA04354；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA04354؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA04354; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA04354; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA04354 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA04354; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "TOEM"
+  }
+ },
+ "ship-of-fools": {
+  "genre": "roguelike",
+  "overview": {
+   "en": "A seafaring roguelike; combat and cooperative sessions need their own evidence.",
+   "zh": "航海Roguelike；战斗与合作游玩需独立证据。",
+   "ar": "روغلايك بحري؛ القتال والتعاون يحتاجان أدلة مستقلة.",
+   "pt": "Roguelike marítimo; combate e cooperação pedem provas próprias.",
+   "de": "Seefahrts-Roguelike; Kampf und Koop brauchen eigene Belege.",
+   "fr": "Roguelike maritime ; combat et coopération exigent des preuves distinctes.",
+   "es": "Roguelike marítimo; combate y cooperación requieren pruebas propias."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA07582; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA07582；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA07582؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA07582; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA07582; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA07582 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA07582; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "Ship of Fools"
+  }
+ },
+ "yakuza-0-directors-cut": {
+  "genre": "action",
+  "overview": {
+   "en": "Story and combat begin after menu setup; loading is a separate milestone.",
+   "zh": "剧情与战斗在菜单设置后开始，加载另算一个阶段。",
+   "ar": "القصة والقتال بعد القائمة؛ التحميل مرحلة منفصلة.",
+   "pt": "História/combate após menu; carga é etapa separada.",
+   "de": "Geschichte/Kampf folgen Menü; Laden ist eigener Meilenstein.",
+   "fr": "Histoire/combat après menu ; chargement distinct.",
+   "es": "Historia/combate tras menú; carga es etapa distinta."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA31327; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA31327；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA31327؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA31327; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA31327; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA31327 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA31327; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "如龙 0 Director’s Cut"
+  }
+ },
+ "mandragora": {
+  "genre": "rpg",
+  "overview": {
+   "en": "Side-scrolling action RPG; introductory video speed cannot describe combat performance.",
+   "zh": "横版动作RPG；片头视频速度不能代表战斗性能。",
+   "ar": "أكشنRPG جانبي؛ سرعة المقدمة لا تصف القتال.",
+   "pt": "RPG lateral; velocidade da intro não mede combate.",
+   "de": "Seitliches Action-RPG; Introtempo misst keine Kampfleistung.",
+   "fr": "Action-RPG latéral ; vitesse d’intro ne mesure pas combat.",
+   "es": "RPG lateral; velocidad de intro no mide combate."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA06960; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA06960；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA06960؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA06960; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA06960; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA06960 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA06960; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "Mandragora"
+  }
+ },
+ "gris": {
+  "genre": "platform",
+  "overview": {
+   "en": "A visual platform adventure; track movement, sound and save continuity together.",
+   "zh": "视觉平台冒险；同时核对移动、声音和存档连续性。",
+   "ar": "مغامرة منصات بصرية؛ تحقق من الحركة والصوت والحفظ.",
+   "pt": "Aventura visual; confira movimento, som e continuidade.",
+   "de": "Visuelles Plattformabenteuer; Bewegung, Ton und Speicherfortsetzung prüfen.",
+   "fr": "Aventure visuelle ; vérifiez mouvement, son et sauvegarde.",
+   "es": "Aventura visual; comprueba movimiento, sonido y continuidad."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA09804; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA09804；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA09804؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA09804; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA09804; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA09804 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA09804; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "GRIS"
+  }
+ },
+ "soul-hackers-2": {
+  "genre": "turnBasedRpg",
+  "overview": {
+   "en": "Field exploration and turn-based combat have different frame-time workloads.",
+   "zh": "场地探索与回合制战斗的帧时间负载不同。",
+   "ar": "الاستكشاف والقتال بالأدوار لهما حمل مختلف.",
+   "pt": "Exploração e combate por turnos têm cargas distintas.",
+   "de": "Erkundung und Rundenkampf haben verschiedene Bildzeitlasten.",
+   "fr": "Exploration et combat par tours ont des charges distinctes.",
+   "es": "Exploración y combate por turnos tienen cargas distintas."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA03743; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA03743；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA03743؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA03743; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA03743; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA03743 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA03743; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "灵魂骇客 2"
+  }
+ },
+ "double-dragon-gaiden": {
+  "genre": "action",
+  "overview": {
+   "en": "Character selection precedes beat-em-up stages; verify attacks and enemy encounters.",
+   "zh": "选人之后才是清版战斗关卡，需核验攻击和敌人遭遇。",
+   "ar": "اختيار الشخصية يسبق القتال؛ تحقق من الهجمات والأعداء.",
+   "pt": "Seleção precede combate; verifique ataques e inimigos.",
+   "de": "Figurenwahl liegt vor Kämpfen; Angriffe und Gegner prüfen.",
+   "fr": "Sélection avant combat ; vérifiez attaques et ennemis.",
+   "es": "Selección antes del combate; verifica ataques y enemigos."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA16018; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA16018；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA16018؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA16018; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA16018; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA16018 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA16018; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "双截龙外传：双龙出海"
+  }
+ },
+ "dragon-ball-xenoverse-2": {
+  "genre": "action",
+  "overview": {
+   "en": "Dragon Ball battles require working scenes after logos and menus.",
+   "zh": "七龙珠战斗需在Logo和菜单之后验证实际场景。",
+   "ar": "قتال Dragon Ball يحتاج مشاهد بعد الشعارات والقوائم.",
+   "pt": "Batalhas Dragon Ball exigem cenas após logótipos/menus.",
+   "de": "Dragon-Ball-Kämpfe benötigen Szenen nach Logos/Menüs.",
+   "fr": "Combats Dragon Ball exigent scènes après logos/menus.",
+   "es": "Batallas Dragon Ball requieren escenas tras logos/menús."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA08587; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA08587；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA08587؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA08587; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA08587; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA08587 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA08587; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "七龙珠 异战 2"
+  }
+ },
+ "eternights": {
+  "genre": "rpg",
+  "overview": {
+   "en": "Action and story scenes may stress different paths; autosave recovery matters.",
+   "zh": "动作与剧情场景负载不同，自动存档恢复也需核对。",
+   "ar": "الأكشن والقصة مختلفان؛ تحقق من استعادة الحفظ الآلي.",
+   "pt": "Ação e história diferem; recuperação de autosave importa.",
+   "de": "Action und Geschichte unterscheiden sich; Autosave-Wiederherstellung prüfen.",
+   "fr": "Action et récit diffèrent ; vérifiez récupération autosave.",
+   "es": "Acción e historia difieren; comprueba recuperación autosave."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA08270; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA08270；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA08270؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA08270; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA08270; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA08270 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA08270; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "永夜"
+  }
+ },
+ "evergate": {
+  "genre": "platform",
+  "overview": {
+   "en": "Puzzle platforming needs visible levels; black-frame counters are not progress.",
+   "zh": "解谜平台关卡需要可见画面；黑帧计数不是游戏进展。",
+   "ar": "منصات ألغاز تحتاج مشهداً؛ عداد الأسود ليس تقدماً.",
+   "pt": "Puzzles/plataformas precisam de imagem; contador preto não é progresso.",
+   "de": "Rätselplattformen brauchen Bild; Schwarzbildzähler ist kein Fortschritt.",
+   "fr": "Plateformes/énigmes exigent image ; compteur noir pas progrès.",
+   "es": "Puzles/plataformas necesitan imagen; contador negro no es progreso."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA01886; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA01886；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA01886؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA01886; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA01886; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA01886 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA01886; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "Evergate"
+  }
+ },
+ "quake-ii": {
+  "genre": "shooter",
+  "overview": {
+   "en": "The enhanced retail PS5 release is separate from Yamagi Quake II homebrew.",
+   "zh": "PS5零售增强版与Yamagi Quake II自制版分开。",
+   "ar": "إصدار PS5 التجاري منفصل عن Yamagi homebrew.",
+   "pt": "Edição PS5 comercial separada de Yamagi homebrew.",
+   "de": "PS5-Retailausgabe getrennt von Yamagi-Homebrew.",
+   "fr": "Édition PS5 commerciale distincte de Yamagi homebrew.",
+   "es": "Edición PS5 comercial separada de Yamagi homebrew."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA09477; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA09477；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA09477؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA09477; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA09477; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA09477 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA09477; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "quake",
+   "doom-homebrew"
+  ],
+  "names": {
+   "zh": "雷神之锤 II"
+  }
+ },
+ "love-is-all-around": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Interactive live-action storytelling; video output, choices and save continuity are separate checks.",
+   "zh": "真人互动叙事需分别核验视频、选项及存档连续性。",
+   "ar": "سرد تفاعلي مصور؛ الفيديو والخيارات والحفظ فحوص منفصلة.",
+   "pt": "Narrativa filmada interativa; vídeo, escolhas e saves são verificações distintas.",
+   "de": "Interaktiver Realfilm; Video, Entscheidungen und Speichern separat prüfen.",
+   "fr": "Récit filmé interactif ; vidéo, choix et sauvegarde à vérifier séparément.",
+   "es": "Narrativa filmada interactiva; vídeo, decisiones y guardado se verifican aparte."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA22999; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA22999；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA22999؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA22999; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA22999; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA22999 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA22999; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "完蛋！我被美女包围了！"
+  }
+ },
+ "cocoon": {
+  "genre": "puzzle",
+  "overview": {
+   "en": "World-carrying puzzles need interaction beyond shader and driver test fixtures.",
+   "zh": "携带世界的解谜交互需实际验证，不能用着色器／驱动用例替代。",
+   "ar": "ألغاز العوالم تحتاج تفاعلاً لا اختبارات shader فقط.",
+   "pt": "Puzzles de mundos exigem interação além dos testes shader.",
+   "de": "Weltenrätsel brauchen Interaktion über Shader-Tests hinaus.",
+   "fr": "Énigmes de mondes exigent interaction au-delà des tests shader.",
+   "es": "Puzles de mundos requieren interacción además de tests shader."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA08766; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA08766；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA08766؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA08766; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA08766; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA08766 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA08766; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "茧 COCOON"
+  }
+ },
+ "uncharted-legacy-of-thieves": {
+  "genre": "action",
+  "overview": {
+   "en": "The boat and orphanage observations cover Uncharted 4; developer level select is not campaign completion.",
+   "zh": "船与孤儿院观察针对神秘海域4；开发者选关不代表战役通关。",
+   "ar": "القارب والميتم منUncharted4؛ اختيار المطور ليس إكمال الحملة.",
+   "pt": "Barco/orfanato deUncharted4; seleção de nível não conclui campanha.",
+   "de": "Boot/Waisenhaus ausUncharted4; Levelwahl ist kein Kampagnenabschluss.",
+   "fr": "Bateau/orphelinat d’Uncharted4 ; sélection de niveau pas fin de campagne.",
+   "es": "Barco/orfanato deUncharted4; selección de nivel no completa campaña."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA05684; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA05684；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA05684؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA05684; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA05684; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA05684 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA05684; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "神秘海域：盗贼传奇合辑"
+  }
+ },
+ "star-wars-dark-forces-remaster": {
+  "genre": "shooter",
+  "overview": {
+   "en": "First-person missions; a completed opening mission does not validate later missions or PDA stability.",
+   "zh": "第一人称任务；完成首任务不能证明后续任务或PDA稳定性。",
+   "ar": "مهمات تصويب؛ أول مهمة لا تثبت البقية أو استقرارPDA.",
+   "pt": "Missões de tiro; primeira missão não valida restantes ouPDA.",
+   "de": "Shooter-Missionen; erste Mission bestätigt weder Rest nochPDA-Stabilität.",
+   "fr": "Missions de tir ; première mission ne valide pas suite ouPDA.",
+   "es": "Misiones de disparos; primera misión no valida resto niPDA."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA19728; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA19728；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA19728؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA19728; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA19728; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA19728 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA19728; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "quake",
+   "doom-homebrew"
+  ],
+  "names": {
+   "zh": "星球大战：黑暗原力 重制版"
+  }
+ },
+ "xashps5-homebrew": {
+  "genre": "shooter",
+  "overview": {
+   "en": "Community engine port requiring user Half-Life data; not an official PS5 Half-Life release.",
+   "zh": "需用户Half-Life数据的社区引擎移植，并非官方PS5半条命发行版。",
+   "ar": "نقل مجتمعي يحتاج بيانات Half-Life الخاصة، لا إصدار PS5 رسمي.",
+   "pt": "Port comunitário exige dados próprios Half-Life, não edição PS5 oficial.",
+   "de": "Community-Port mit eigenen Half-Life-Daten, keine offizielle PS5-Ausgabe.",
+   "fr": "Port communautaire exige données Half-Life personnelles, pas édition PS5 officielle.",
+   "es": "Port comunitario requiere datos Half-Life propios, no edición PS5 oficial."
+  },
+  "editionNote": {
+   "en": "Community homebrew PPSA19111, separate from official retail releases; content version is unknown unless stated in a report.",
+   "zh": "社区自制版PPSA19111，与官方零售发行版分开；未在报告注明的内容版本保持未知。",
+   "ar": "Homebrew مجتمعي PPSA19111 لا retail؛ النسخة مجهولة إن لم تُذكر.",
+   "pt": "Homebrew comunitário PPSA19111, separado de retail; versão desconhecida se omitida.",
+   "de": "Community-Homebrew PPSA19111, getrennt von Retail; Version unbekannt falls nicht genannt.",
+   "fr": "Homebrew communautaire PPSA19111, distinct du commerce ; version inconnue si absente.",
+   "es": "Homebrew comunitario PPSA19111, separado de retail; versión desconocida si ausente."
+  },
+  "related": [
+   "quake",
+   "doom-homebrew"
+  ],
+  "names": {
+   "zh": "XashPS5 · 社区移植版"
+  }
+ },
+ "prospero-puzzles-homebrew": {
+  "genre": "puzzle",
+  "overview": {
+   "en": "Open-source puzzle collection using a PS5 OpenGL layer and multisampled canvas.",
+   "zh": "使用PS5 OpenGL层和多重采样画布的开源解谜合集。",
+   "ar": "ألغاز مفتوحة المصدر بطبقة PS5 OpenGL وMSAA.",
+   "pt": "Puzzles abertos com PS5 OpenGL e canvas MSAA.",
+   "de": "Offene Rätselsammlung mit PS5-OpenGL und MSAA.",
+   "fr": "Énigmes libres avec PS5 OpenGL et canvas MSAA.",
+   "es": "Puzles abiertos con PS5 OpenGL y lienzo MSAA."
+  },
+  "editionNote": {
+   "en": "Community homebrew PPSA99006, separate from official retail releases; content version is unknown unless stated in a report.",
+   "zh": "社区自制版PPSA99006，与官方零售发行版分开；未在报告注明的内容版本保持未知。",
+   "ar": "Homebrew مجتمعي PPSA99006 لا retail؛ النسخة مجهولة إن لم تُذكر.",
+   "pt": "Homebrew comunitário PPSA99006, separado de retail; versão desconhecida se omitida.",
+   "de": "Community-Homebrew PPSA99006, getrennt von Retail; Version unbekannt falls nicht genannt.",
+   "fr": "Homebrew communautaire PPSA99006, distinct du commerce ; version inconnue si absente.",
+   "es": "Homebrew comunitario PPSA99006, separado de retail; versión desconocida si ausente."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "ProsperoPuzzles · 自制游戏"
+  }
+ },
+ "capy-mobile-homebrew": {
+  "genre": "puzzle",
+  "overview": {
+   "en": "Catalog homebrew with a snake game; Intel GPU evidence is scoped to the named display setup.",
+   "zh": "包含贪吃蛇的目录自制游戏；Intel证据仅限所列显示配置。",
+   "ar": "Homebrew بلعبة snake؛ دليل Intel محدد بإعداد العرض.",
+   "pt": "Homebrew com snake; prova Intel limitada ao ecrã indicado.",
+   "de": "Homebrew mit Snake; Intel-Beleg gilt für genanntes Displaysetup.",
+   "fr": "Homebrew avec snake ; preuve Intel limitée à cet affichage.",
+   "es": "Homebrew con snake; prueba Intel limitada al entorno de pantalla."
+  },
+  "editionNote": {
+   "en": "Community homebrew PPSA92280, separate from official retail releases; content version is unknown unless stated in a report.",
+   "zh": "社区自制版PPSA92280，与官方零售发行版分开；未在报告注明的内容版本保持未知。",
+   "ar": "Homebrew مجتمعي PPSA92280 لا retail؛ النسخة مجهولة إن لم تُذكر.",
+   "pt": "Homebrew comunitário PPSA92280, separado de retail; versão desconhecida se omitida.",
+   "de": "Community-Homebrew PPSA92280, getrennt von Retail; Version unbekannt falls nicht genannt.",
+   "fr": "Homebrew communautaire PPSA92280, distinct du commerce ; version inconnue si absente.",
+   "es": "Homebrew comunitario PPSA92280, separado de retail; versión desconocida si ausente."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "CapyMobile · 自制游戏"
+  }
+ },
+ "yamagi-quake-ii-homebrew": {
+  "genre": "shooter",
+  "overview": {
+   "en": "Community Quake II port; its package and display workarounds differ from retail PPSA09477.",
+   "zh": "社区Quake II移植，包和显示绕行与零售PPSA09477不同。",
+   "ar": "نقل QuakeII مجتمعي؛ الحزمة والعرض غير retail09477.",
+   "pt": "Port QuakeII comunitário; pacote/ecrã distintos de retail09477.",
+   "de": "Community-QuakeII; Paket/Display getrennt von Retail09477.",
+   "fr": "QuakeII communautaire ; paquet/affichage distincts de retail09477.",
+   "es": "QuakeII comunitario; paquete/pantalla distintos de retail09477."
+  },
+  "editionNote": {
+   "en": "Community homebrew PPSA99007, separate from official retail releases; content version is unknown unless stated in a report.",
+   "zh": "社区自制版PPSA99007，与官方零售发行版分开；未在报告注明的内容版本保持未知。",
+   "ar": "Homebrew مجتمعي PPSA99007 لا retail؛ النسخة مجهولة إن لم تُذكر.",
+   "pt": "Homebrew comunitário PPSA99007, separado de retail; versão desconhecida se omitida.",
+   "de": "Community-Homebrew PPSA99007, getrennt von Retail; Version unbekannt falls nicht genannt.",
+   "fr": "Homebrew communautaire PPSA99007, distinct du commerce ; version inconnue si absente.",
+   "es": "Homebrew comunitario PPSA99007, separado de retail; versión desconocida si ausente."
+  },
+  "related": [
+   "quake",
+   "doom-homebrew"
+  ],
+  "names": {
+   "zh": "Yamagi Quake II · 自制移植版"
+  }
+ },
+ "lego-batman-legacy-dark-knight": {
+  "genre": "action",
+  "overview": {
+   "en": "Exploration, object smashing and stud collection need testing beyond a menu-only boot.",
+   "zh": "探索、砸物与收集studs需超出菜单启动验证。",
+   "ar": "استكشاف وتحطيم وجمع studs تحتاج اختباراً بعد القائمة.",
+   "pt": "Exploração, destruir objetos e recolher studs além do menu.",
+   "de": "Erkunden, Objekte zerschlagen und Studs sammeln über Menü hinaus prüfen.",
+   "fr": "Explorer, détruire et collecter des studs au-delà du menu.",
+   "es": "Explorar, destruir y recoger studs más allá del menú."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA16833; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA16833；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA16833؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA16833; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA16833; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA16833 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA16833; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "乐高蝙蝠侠：黑暗骑士传奇"
+  }
+ },
+ "broken-sword-reforged": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Adventure remaster; an audio-decoder stop alone does not identify a visible game stage.",
+   "zh": "冒险重制版；仅音频解码停止不能确定可见游戏阶段。",
+   "ar": "مغامرة معاد صنعها؛ توقف decoder لا يحدد مشهداً مرئياً.",
+   "pt": "Aventura refeita; falha decoder não identifica fase visível.",
+   "de": "Adventure-Remaster; Decoder-Stopp bestimmt keine sichtbare Spielphase.",
+   "fr": "Aventure remasterisée ; arrêt decoder ne définit pas une phase visible.",
+   "es": "Aventura remasterizada; fallo decoder no identifica fase visible."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA21480; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA21480；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA21480؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA21480; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA21480; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA21480 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA21480; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "断剑：圣堂武士之谜 Reforged"
+  }
+ },
+ "ea-sports-ufc-5": {
+  "genre": "sports",
+  "overview": {
+   "en": "Mixed martial arts; an animated loading badge cannot establish a working fight.",
+   "zh": "综合格斗；动态加载图标不能证明实际比赛可用。",
+   "ar": "فنون قتالية؛ رمز تحميل متحرك لا يثبت مباراة.",
+   "pt": "Artes marciais; ícone animado não prova combate.",
+   "de": "Kampfsport; animiertes Ladesymbol belegt keinen Kampf.",
+   "fr": "Arts martiaux ; icône animée ne prouve pas combat.",
+   "es": "Artes marciales; icono animado no prueba combate."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA03541; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA03541；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA03541؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA03541; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA03541; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA03541 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA03541; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "related": [
+   "astro-bot",
+   "animal-well"
+  ],
+  "names": {
+   "zh": "EA SPORTS UFC 5"
+  }
+ }
+});
 export const media=sources as Record<string,{source:string;provider:string;cover:string|null;screenshots:string[];checked:string}>;
 export const genreLabel=(slug:string,locale:keyof Text)=>genres[editorial[slug].genre][locale];
 export const gameName=(game:{slug:string;name:string},locale:keyof Text)=>editorial[game.slug]?.names[locale]||game.name;

@@ -955,5 +955,180 @@
     "cover": null,
     "screenshots": [],
     "checked": "2026-10-16"
+  },
+  "hot-wheels-infinite-rush": {
+    "source": "https://www.playstation.com/en-us/games/hot-wheels-infinite-rush/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2509/b304ac4fea73474605efb22161edd7943565533ec3dab802.png",
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "silent-hill-f": {
+    "source": "https://www.playstation.com/en-us/games/silent-hill-f/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202505/0704/e81b1e0b80b2001d8a5070c5c465cbc7246e02d1da39fe76.png",
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "mlb-the-show-26": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/6864",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "toem": {
+    "source": "https://www.playstation.com/en-us/games/toem/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202108/1213/jQITReCsnpS5ATrg2jrHF2w5.png",
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "ship-of-fools": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/6749",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "yakuza-0-directors-cut": {
+    "source": "https://www.playstation.com/en-us/games/yakuza-0-directors-cut/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202509/2215/31a9fca9e8c20f1e509a3e55f6af2d0f1d281d85bfc690c8.png",
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "mandragora": {
+    "source": "https://www.playstation.com/en-us/games/mandragora/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202507/2314/e64e79300664769660cf4ec47a420f31785b3a768381c76a.png",
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "gris": {
+    "source": "https://www.playstation.com/en-us/games/gris/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2621/erwvzuQhwWYIg8EJYkxawE8a.png",
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "soul-hackers-2": {
+    "source": "https://www.playstation.com/en-us/games/soul-hackers-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202202/1003/nirpJVcfTE8kK5KARPJ0RiLY.png",
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "double-dragon-gaiden": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/6562",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "dragon-ball-xenoverse-2": {
+    "source": "https://www.playstation.com/en-us/games/dragon-ball-xenoverse-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202312/2208/e4b4b4b9bba306e560f5ea1a6ea985692cce579f8b826c0b.png",
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "eternights": {
+    "source": "https://www.playstation.com/en-us/games/eternights/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0216/5M7ooS8SwsIcIODL5KS1s7gG.png",
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "evergate": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/6561",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "quake-ii": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/6554",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "love-is-all-around": {
+    "source": "https://store.playstation.com/en-ca/product/HB0767-PPSA22999_00-0661741115244729",
+    "provider": "PlayStation",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "cocoon": {
+    "source": "https://www.playstation.com/en-us/games/cocoon/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0320/edce2d3e20cb874ad82bbf54f00c9e2a3adf7f5bf77665ca.png",
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "uncharted-legacy-of-thieves": {
+    "source": "https://www.playstation.com/en-us/games/uncharted-legacy-of-thieves-collection/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202111/2000/gTUWTlvPHzxFJ2JAxtDyI2eS.png",
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "star-wars-dark-forces-remaster": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/4310",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "xashps5-homebrew": {
+    "source": "https://github.com/GordonProsperoMan/xash3d-ps5/releases/tag/v1.3",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "prospero-puzzles-homebrew": {
+    "source": "https://github.com/blackbearreloaded/ProsperoPuzzles",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "capy-mobile-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/5745",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "yamagi-quake-ii-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/5745",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "lego-batman-legacy-dark-knight": {
+    "source": "https://www.playstation.com/en-us/games/lego-batman-legacy-of-the-dark-knight/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1316/3302f35b66691aa405aee31624c0c95fe73081be8e0c75bb.png",
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "broken-sword-reforged": {
+    "source": "https://www.playstation.com/en-us/games/broken-sword-shadow-of-the-templars-reforged/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202408/0508/fea1c4c6ec899c23fb483eae2f5c417b0de92cd173ce2ab7.png",
+    "screenshots": [],
+    "checked": "2026-10-17"
+  },
+  "ea-sports-ufc-5": {
+    "source": "https://www.playstation.com/en-us/games/ea-sports-ufc-5/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202309/0421/418704276d35ce02e8cb532c6ca3826cf866ad2ec66c0b17.png",
+    "screenshots": [],
+    "checked": "2026-10-17"
   }
 }

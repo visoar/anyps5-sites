@@ -2548,5 +2548,245 @@
   "sonic-unleashed-recompiled": {
     "cover": null,
     "screenshots": []
+  },
+  "hot-wheels-infinite-rush": {
+    "cover": {
+      "file": "hot-wheels-infinite-rush/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2509/b304ac4fea73474605efb22161edd7943565533ec3dab802.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2509/b304ac4fea73474605efb22161edd7943565533ec3dab802.png",
+      "sourceSha256": "e1c818fc5b9715350173954ce70a452f6635678c399e32988d47fdcb861f7f6c",
+      "sourceBytes": 375161,
+      "sha256": "4bc994568937b4e8a0b28756a316a4e51cd1fbf0a5490d926ce337c437fb1e43",
+      "bytes": 276558,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "silent-hill-f": {
+    "cover": {
+      "file": "silent-hill-f/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202505/0704/e81b1e0b80b2001d8a5070c5c465cbc7246e02d1da39fe76.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202505/0704/e81b1e0b80b2001d8a5070c5c465cbc7246e02d1da39fe76.png",
+      "sourceSha256": "ac0f01d79f8b7ada8922c486c625a7a62a514bcc854e3b4487f61aeefe985448",
+      "sourceBytes": 197041,
+      "sha256": "701f8fe8018bb09753b59544d07443044e531f7cefa2098da71e8a3d9cf7a779",
+      "bytes": 113164,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "mlb-the-show-26": {
+    "cover": null,
+    "screenshots": []
+  },
+  "toem": {
+    "cover": {
+      "file": "toem/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202108/1213/jQITReCsnpS5ATrg2jrHF2w5.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202108/1213/jQITReCsnpS5ATrg2jrHF2w5.png",
+      "sourceSha256": "846dfbcd73887eb9085f03c0842182c18dba36eddaf55d797dbb9ba629491d12",
+      "sourceBytes": 179100,
+      "sha256": "010660710243dc9d15413fffeab930bba5f738ce37e3c90ba5dfaeafd4986402",
+      "bytes": 107388,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "ship-of-fools": {
+    "cover": null,
+    "screenshots": []
+  },
+  "yakuza-0-directors-cut": {
+    "cover": {
+      "file": "yakuza-0-directors-cut/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202509/2215/31a9fca9e8c20f1e509a3e55f6af2d0f1d281d85bfc690c8.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202509/2215/31a9fca9e8c20f1e509a3e55f6af2d0f1d281d85bfc690c8.png",
+      "sourceSha256": "cb6ce713200cdcad0778f9eba42bd05a10d1ea6c482f93e88c5f0b1e5eb794da",
+      "sourceBytes": 177825,
+      "sha256": "415b66e7bbc1c73fb3e260d2b861d1c8de1866d43e8c310dfef0886561245631",
+      "bytes": 103700,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "mandragora": {
+    "cover": {
+      "file": "mandragora/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202507/2314/e64e79300664769660cf4ec47a420f31785b3a768381c76a.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202507/2314/e64e79300664769660cf4ec47a420f31785b3a768381c76a.png",
+      "sourceSha256": "670bce65507b4592cc02814eb5c3fbce27649091e11527212e95ba397a587589",
+      "sourceBytes": 208105,
+      "sha256": "4eb4972460bd2015a392d59197848ac05c9627b2b4c6d4c7cb63d503d6af949a",
+      "bytes": 128404,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "gris": {
+    "cover": {
+      "file": "gris/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2621/erwvzuQhwWYIg8EJYkxawE8a.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2621/erwvzuQhwWYIg8EJYkxawE8a.png",
+      "sourceSha256": "f2ca1c91a9995858fead1e540c076ebc618128a67bd7e2540544afa2b1117fa5",
+      "sourceBytes": 255021,
+      "sha256": "af6868cf36b592690a7c63771c4d1d5569c8d5470a28dd27f6da1b79c80bd570",
+      "bytes": 161348,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "soul-hackers-2": {
+    "cover": {
+      "file": "soul-hackers-2/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202202/1003/nirpJVcfTE8kK5KARPJ0RiLY.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202202/1003/nirpJVcfTE8kK5KARPJ0RiLY.png",
+      "sourceSha256": "dfa8b91108c942bc0b9518264807261abe4d04c06e8e676351397171c5acae70",
+      "sourceBytes": 241299,
+      "sha256": "441c3df81178f15a855396e13cb2e12ca7971bc2ad8f8e84a0c87428e482d7ec",
+      "bytes": 145542,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "double-dragon-gaiden": {
+    "cover": null,
+    "screenshots": []
+  },
+  "dragon-ball-xenoverse-2": {
+    "cover": {
+      "file": "dragon-ball-xenoverse-2/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202312/2208/e4b4b4b9bba306e560f5ea1a6ea985692cce579f8b826c0b.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202312/2208/e4b4b4b9bba306e560f5ea1a6ea985692cce579f8b826c0b.png",
+      "sourceSha256": "d6a2d66e936958db4e718348128d611a95878fac219f6fa5b60c8cf1d1f8e01d",
+      "sourceBytes": 338039,
+      "sha256": "959fadf7867355430ac7aa4d7ed6032282e96a2d8c42133600bf55c3278f8456",
+      "bytes": 216462,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "eternights": {
+    "cover": {
+      "file": "eternights/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0216/5M7ooS8SwsIcIODL5KS1s7gG.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0216/5M7ooS8SwsIcIODL5KS1s7gG.png",
+      "sourceSha256": "28e5d822464e7448f10c9589d752f59d520a336b26100190459ce8e20e88a79b",
+      "sourceBytes": 185204,
+      "sha256": "adcfcc66f5f6bc664c25d82f1831fecd6cc8240d838b4b74e847b1be0c1b49c2",
+      "bytes": 101912,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "evergate": {
+    "cover": null,
+    "screenshots": []
+  },
+  "quake-ii": {
+    "cover": null,
+    "screenshots": []
+  },
+  "love-is-all-around": {
+    "cover": null,
+    "screenshots": []
+  },
+  "cocoon": {
+    "cover": {
+      "file": "cocoon/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0320/edce2d3e20cb874ad82bbf54f00c9e2a3adf7f5bf77665ca.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0320/edce2d3e20cb874ad82bbf54f00c9e2a3adf7f5bf77665ca.png",
+      "sourceSha256": "4012f53e294cd29d287f1bf6333d3a00d1565f40a18f87c68db195e4e674a050",
+      "sourceBytes": 109232,
+      "sha256": "6bb1b68666ad7f6c1903857bfe64bface0293392d3a61e4a4a7201eb4b9b6387",
+      "bytes": 54390,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "uncharted-legacy-of-thieves": {
+    "cover": {
+      "file": "uncharted-legacy-of-thieves/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202111/2000/gTUWTlvPHzxFJ2JAxtDyI2eS.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202111/2000/gTUWTlvPHzxFJ2JAxtDyI2eS.png",
+      "sourceSha256": "1ed1ca84ffeeed5ff4c59adc070d516436c92cd35fa9094bdf66bf0d095d3281",
+      "sourceBytes": 266910,
+      "sha256": "66d3e644f80b778bfeb70d1a213dd4faab9f3b2b8f35df2741d4f945203f5a8f",
+      "bytes": 184588,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "star-wars-dark-forces-remaster": {
+    "cover": null,
+    "screenshots": []
+  },
+  "xashps5-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "prospero-puzzles-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "capy-mobile-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "yamagi-quake-ii-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "lego-batman-legacy-dark-knight": {
+    "cover": {
+      "file": "lego-batman-legacy-dark-knight/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1316/3302f35b66691aa405aee31624c0c95fe73081be8e0c75bb.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1316/3302f35b66691aa405aee31624c0c95fe73081be8e0c75bb.png",
+      "sourceSha256": "2bb7663eb61d98946a584d8caf45bd2b83804a6d8f9b02b745bbaf94f3b65970",
+      "sourceBytes": 153072,
+      "sha256": "b9c400a29633adab13ad1d81e84b81bb9ec13a2f4e5cd26d35234d16e4d07b33",
+      "bytes": 81388,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "broken-sword-reforged": {
+    "cover": {
+      "file": "broken-sword-reforged/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202408/0508/fea1c4c6ec899c23fb483eae2f5c417b0de92cd173ce2ab7.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202408/0508/fea1c4c6ec899c23fb483eae2f5c417b0de92cd173ce2ab7.png",
+      "sourceSha256": "e456b898931ae986a48c70c4994153b07632995e32217d0b1adae705e24d11d6",
+      "sourceBytes": 213897,
+      "sha256": "695961d632bb2441f89697fb6cf39295c9a0c88dd72b306950b9a2ff1bd184ba",
+      "bytes": 127396,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "ea-sports-ufc-5": {
+    "cover": {
+      "file": "ea-sports-ufc-5/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202309/0421/418704276d35ce02e8cb532c6ca3826cf866ad2ec66c0b17.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202309/0421/418704276d35ce02e8cb532c6ca3826cf866ad2ec66c0b17.png",
+      "sourceSha256": "ffd5932e4a97bb3334e54dbe2e1e9f146ee29089f993a36ccd711472f6ee0226",
+      "sourceBytes": 142937,
+      "sha256": "cede6ff5db721fd4f1ee64524df83e36d62b0a6b9301c89834640ee62b689b67",
+      "bytes": 76218,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
   }
 }

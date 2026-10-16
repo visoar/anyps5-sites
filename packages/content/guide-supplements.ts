@@ -133,3 +133,273 @@ guideSupplements["guides/linux"].push({
   }
  ]
 });
+
+guideSupplements["start"].push({
+ "id": "app0-archive",
+ "title": {
+  "en": "Optional app0 archive on current main",
+  "zh": "当前main的可选app0压缩包",
+  "ar": "أرشيف app0 اختياري على main",
+  "pt": "Arquivo app0 opcional no main",
+  "de": "Optionales app0-Archiv auf main",
+  "fr": "Archive app0 optionnelle sur main",
+  "es": "Archivo app0 opcional en main"
+ },
+ "body": [
+  {
+   "en": "After v0.1.2, main adds read-only app0.zar beside app0/, rooted at app0. Loose files win; keep the executable, sce_module and sce_sys loose. Reads/seeks/stat are supported, but directory listing and several other calls still refuse archive-only paths. A damaged archive stops on access. This is not a v0.1.2 feature or a reason to replace a working loose-file setup.",
+   "zh": "v0.1.2之后main加入与app0/并列、根为app0的只读app0.zar。松散文件优先，程序、sce_module及sce_sys仍留在磁盘。支持读／定位／stat，目录枚举等调用仍拒绝仅压缩包路径；损坏包在访问时停止。这不是v0.1.2功能，也不必替换可用的松散文件配置。",
+   "ar": "بعد v0.1.2 يضيف main أرشيف app0.zar للقراءة بجانب app0/ وبجذر app0. الملفات العادية أولاً؛ أبقِ البرنامج وsce_module وsce_sys خارج الأرشيف. قراءة/seek/stat مدعومة، سرد الأدلة ونداءات أخرى ترفض المسار المؤرشف. التالف يتوقف عند الوصول؛ ليس ميزة v0.1.2.",
+   "pt": "Após v0.1.2, main aceita app0.zar só de leitura junto de app0/, com raiz app0. Ficheiros soltos prevalecem; programa, sce_module e sce_sys ficam soltos. Leitura/seek/stat suportados; listar diretórios e outras chamadas recusam caminhos só no arquivo. Arquivo danificado falha ao aceder; não é funcionalidade v0.1.2.",
+   "de": "Nach v0.1.2 unterstützt main app0.zar schreibgeschützt neben app0/, mit Wurzel app0. Lose Dateien haben Vorrang; Programm, sce_module und sce_sys bleiben lose. Lesen/Seek/stat unterstützt; Verzeichnislisten und weitere Aufrufe verweigern Archivpfade. Beschädigung stoppt beim Zugriff; kein v0.1.2-Feature.",
+   "fr": "Après v0.1.2, main accepte app0.zar en lecture seule à côté d’app0/, racine app0. Fichiers libres prioritaires ; programme, sce_module et sce_sys restent libres. Lecture/seek/stat pris en charge ; listes de répertoires et autres appels refusent les chemins archivés. Archive endommagée arrêtée à l’accès ; pas v0.1.2.",
+   "es": "Tras v0.1.2, main admite app0.zar de solo lectura junto a app0/, raíz app0. Archivos sueltos prevalecen; programa, sce_module y sce_sys quedan sueltos. Lectura/seek/stat admitidos; listar directorios y otras llamadas rechazan rutas archivadas. Archivo dañado falla al acceder; no es función v0.1.2."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/b260d8d792c81a21a638340979ae2f98243547d5/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["downloads"].push({
+ "id": "app0-archive",
+ "title": {
+  "en": "Optional app0 archive on current main",
+  "zh": "当前main的可选app0压缩包",
+  "ar": "أرشيف app0 اختياري على main",
+  "pt": "Arquivo app0 opcional no main",
+  "de": "Optionales app0-Archiv auf main",
+  "fr": "Archive app0 optionnelle sur main",
+  "es": "Archivo app0 opcional en main"
+ },
+ "body": [
+  {
+   "en": "After v0.1.2, main adds read-only app0.zar beside app0/, rooted at app0. Loose files win; keep the executable, sce_module and sce_sys loose. Reads/seeks/stat are supported, but directory listing and several other calls still refuse archive-only paths. A damaged archive stops on access. This is not a v0.1.2 feature or a reason to replace a working loose-file setup.",
+   "zh": "v0.1.2之后main加入与app0/并列、根为app0的只读app0.zar。松散文件优先，程序、sce_module及sce_sys仍留在磁盘。支持读／定位／stat，目录枚举等调用仍拒绝仅压缩包路径；损坏包在访问时停止。这不是v0.1.2功能，也不必替换可用的松散文件配置。",
+   "ar": "بعد v0.1.2 يضيف main أرشيف app0.zar للقراءة بجانب app0/ وبجذر app0. الملفات العادية أولاً؛ أبقِ البرنامج وsce_module وsce_sys خارج الأرشيف. قراءة/seek/stat مدعومة، سرد الأدلة ونداءات أخرى ترفض المسار المؤرشف. التالف يتوقف عند الوصول؛ ليس ميزة v0.1.2.",
+   "pt": "Após v0.1.2, main aceita app0.zar só de leitura junto de app0/, com raiz app0. Ficheiros soltos prevalecem; programa, sce_module e sce_sys ficam soltos. Leitura/seek/stat suportados; listar diretórios e outras chamadas recusam caminhos só no arquivo. Arquivo danificado falha ao aceder; não é funcionalidade v0.1.2.",
+   "de": "Nach v0.1.2 unterstützt main app0.zar schreibgeschützt neben app0/, mit Wurzel app0. Lose Dateien haben Vorrang; Programm, sce_module und sce_sys bleiben lose. Lesen/Seek/stat unterstützt; Verzeichnislisten und weitere Aufrufe verweigern Archivpfade. Beschädigung stoppt beim Zugriff; kein v0.1.2-Feature.",
+   "fr": "Après v0.1.2, main accepte app0.zar en lecture seule à côté d’app0/, racine app0. Fichiers libres prioritaires ; programme, sce_module et sce_sys restent libres. Lecture/seek/stat pris en charge ; listes de répertoires et autres appels refusent les chemins archivés. Archive endommagée arrêtée à l’accès ; pas v0.1.2.",
+   "es": "Tras v0.1.2, main admite app0.zar de solo lectura junto a app0/, raíz app0. Archivos sueltos prevalecen; programa, sce_module y sce_sys quedan sueltos. Lectura/seek/stat admitidos; listar directorios y otras llamadas rechazan rutas archivadas. Archivo dañado falla al acceder; no es función v0.1.2."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/b260d8d792c81a21a638340979ae2f98243547d5/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"].push({
+ "id": "app0-archive",
+ "title": {
+  "en": "Optional app0 archive on current main",
+  "zh": "当前main的可选app0压缩包",
+  "ar": "أرشيف app0 اختياري على main",
+  "pt": "Arquivo app0 opcional no main",
+  "de": "Optionales app0-Archiv auf main",
+  "fr": "Archive app0 optionnelle sur main",
+  "es": "Archivo app0 opcional en main"
+ },
+ "body": [
+  {
+   "en": "After v0.1.2, main adds read-only app0.zar beside app0/, rooted at app0. Loose files win; keep the executable, sce_module and sce_sys loose. Reads/seeks/stat are supported, but directory listing and several other calls still refuse archive-only paths. A damaged archive stops on access. This is not a v0.1.2 feature or a reason to replace a working loose-file setup.",
+   "zh": "v0.1.2之后main加入与app0/并列、根为app0的只读app0.zar。松散文件优先，程序、sce_module及sce_sys仍留在磁盘。支持读／定位／stat，目录枚举等调用仍拒绝仅压缩包路径；损坏包在访问时停止。这不是v0.1.2功能，也不必替换可用的松散文件配置。",
+   "ar": "بعد v0.1.2 يضيف main أرشيف app0.zar للقراءة بجانب app0/ وبجذر app0. الملفات العادية أولاً؛ أبقِ البرنامج وsce_module وsce_sys خارج الأرشيف. قراءة/seek/stat مدعومة، سرد الأدلة ونداءات أخرى ترفض المسار المؤرشف. التالف يتوقف عند الوصول؛ ليس ميزة v0.1.2.",
+   "pt": "Após v0.1.2, main aceita app0.zar só de leitura junto de app0/, com raiz app0. Ficheiros soltos prevalecem; programa, sce_module e sce_sys ficam soltos. Leitura/seek/stat suportados; listar diretórios e outras chamadas recusam caminhos só no arquivo. Arquivo danificado falha ao aceder; não é funcionalidade v0.1.2.",
+   "de": "Nach v0.1.2 unterstützt main app0.zar schreibgeschützt neben app0/, mit Wurzel app0. Lose Dateien haben Vorrang; Programm, sce_module und sce_sys bleiben lose. Lesen/Seek/stat unterstützt; Verzeichnislisten und weitere Aufrufe verweigern Archivpfade. Beschädigung stoppt beim Zugriff; kein v0.1.2-Feature.",
+   "fr": "Après v0.1.2, main accepte app0.zar en lecture seule à côté d’app0/, racine app0. Fichiers libres prioritaires ; programme, sce_module et sce_sys restent libres. Lecture/seek/stat pris en charge ; listes de répertoires et autres appels refusent les chemins archivés. Archive endommagée arrêtée à l’accès ; pas v0.1.2.",
+   "es": "Tras v0.1.2, main admite app0.zar de solo lectura junto a app0/, raíz app0. Archivos sueltos prevalecen; programa, sce_module y sce_sys quedan sueltos. Lectura/seek/stat admitidos; listar directorios y otras llamadas rechazan rutas archivadas. Archivo dañado falla al acceder; no es función v0.1.2."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/b260d8d792c81a21a638340979ae2f98243547d5/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "pipeline-journal",
+ "title": {
+  "en": "Warm pipeline replay has its own cache",
+  "zh": "流水线预热有独立缓存",
+  "ar": "إعادة pipelines بذاكرة خاصة",
+  "pt": "Replay de pipelines com cache própria",
+  "de": "Pipeline-Replay mit eigenem Cache",
+  "fr": "Relecture pipelines avec cache propre",
+  "es": "Reproducción pipelines con caché propia"
+ },
+ "body": [
+  {
+   "en": "Current main journals exact graphics/compute pipelines in pipelines.journal, then replays them in background on the next run. GPU/driver or format changes reset it; deleting it loses that head start, not game saves. APS5_NO_PIPELINE_JOURNAL=1 disables it. APS5_PIPELINE_JOURNAL_THREADS defaults to half the CPU threads; 0 records without replay. APS5_PIPELINE_JOURNAL_ENTRIES, APS5_PIPELINE_STORE_ENTRIES and APS5_PIPELINE_JOURNAL_MAX_MIB default to 1024. Warm-cache differences are not a measured universal FPS gain.",
+   "zh": "当前main将精确图形／计算流水线写入pipelines.journal，下次后台重放。GPU／驱动或格式变更会重置，删除只失去预热，不影响游戏存档。APS5_NO_PIPELINE_JOURNAL=1禁用；APS5_PIPELINE_JOURNAL_THREADS默认半数CPU线程，0仅记录不重放。APS5_PIPELINE_JOURNAL_ENTRIES、APS5_PIPELINE_STORE_ENTRIES、APS5_PIPELINE_JOURNAL_MAX_MIB默认1024；缓存差异不等于普遍FPS增益。",
+   "ar": "main يسجل pipelines.journal ويعيده بالخلفية لاحقاً. تغييرGPU/تعريف/صيغة يعيده؛ الحذف لا يمس الحفظ. APS5_NO_PIPELINE_JOURNAL=1 يعطله. APS5_PIPELINE_JOURNAL_THREADS نصف خيوطCPU،0 يسجل فقط. APS5_PIPELINE_JOURNAL_ENTRIES وAPS5_PIPELINE_STORE_ENTRIES وAPS5_PIPELINE_JOURNAL_MAX_MIB افتراضها1024. ليس مكسب FPS عاماً.",
+   "pt": "Main regista pipelines.journal e repete em fundo no arranque seguinte. GPU/driver/formato reinicia; apagar não elimina saves. APS5_NO_PIPELINE_JOURNAL=1 desativa. APS5_PIPELINE_JOURNAL_THREADS usa metade dos threads;0 só regista. APS5_PIPELINE_JOURNAL_ENTRIES, APS5_PIPELINE_STORE_ENTRIES e APS5_PIPELINE_JOURNAL_MAX_MIB valem1024. Cache quente não prova ganho FPS geral.",
+   "de": "main protokolliert pipelines.journal für Hintergrund-Replay beim nächsten Start. GPU/Treiber/Formatwechsel setzen zurück; Löschen berührt keine Spielstände. APS5_NO_PIPELINE_JOURNAL=1 deaktiviert. APS5_PIPELINE_JOURNAL_THREADS: halbe CPU-Threads,0 nur Aufzeichnen. APS5_PIPELINE_JOURNAL_ENTRIES, APS5_PIPELINE_STORE_ENTRIES und APS5_PIPELINE_JOURNAL_MAX_MIB:1024. Kein allgemeiner FPS-Nachweis.",
+   "fr": "Main enregistre pipelines.journal puis relit en arrière-plan au prochain lancement. ChangementGPU/pilote/format réinitialise ; suppression sans perte des sauvegardes. APS5_NO_PIPELINE_JOURNAL=1 désactive. APS5_PIPELINE_JOURNAL_THREADS : moitié des threadsCPU,0 enregistre seulement. APS5_PIPELINE_JOURNAL_ENTRIES, APS5_PIPELINE_STORE_ENTRIES et APS5_PIPELINE_JOURNAL_MAX_MIB :1024. Aucun gain FPS universel prouvé.",
+   "es": "Main registra pipelines.journal y reproduce en segundo plano al iniciar después. CambioGPU/driver/formato reinicia; borrar no afecta partidas. APS5_NO_PIPELINE_JOURNAL=1 desactiva. APS5_PIPELINE_JOURNAL_THREADS: mitad de hilosCPU,0 solo registra. APS5_PIPELINE_JOURNAL_ENTRIES, APS5_PIPELINE_STORE_ENTRIES y APS5_PIPELINE_JOURNAL_MAX_MIB:1024. No demuestra mejora FPS universal."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/b260d8d792c81a21a638340979ae2f98243547d5/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "submission-stall-diagnostics",
+ "title": {
+  "en": "Collect bounded stall evidence",
+  "zh": "收集有界卡死证据",
+  "ar": "تشخيص توقف محدود",
+  "pt": "Diagnóstico limitado de bloqueios",
+  "de": "Begrenzte Stall-Diagnose",
+  "fr": "Diagnostic borné des blocages",
+  "es": "Diagnóstico acotado de bloqueos"
+ },
+ "body": [
+  {
+   "en": "Current-main APS5_PM4_RING keeps16 submissions per queue by default, up to512 dwords each; 0 disables, maximum4096. APS5_STALL_WATCHDOG_SECS defaults to0; a positive value up to86400 dumps once per stalled wait and continues waiting. It is distinct from the Windows aborting hang dump. Invalid settings stop at submission. The new TRACING reference lists diagnostic switches; tracing changes timing, so retain an ordinary control run.",
+   "zh": "当前main默认APS5_PM4_RING每队列留16次提交、各最多512个dword，0禁用、最多4096。APS5_STALL_WATCHDOG_SECS默认0，正值最多86400，每次停滞等待只输出一次并继续等待，区别于Windows中止型hang dump。无效设置在提交时停止。新TRACING列出诊断开关；追踪会影响计时，应保留普通对照。",
+   "ar": "APS5_PM4_RING يحتفظ16submission/طابور،512dword؛0 تعطيل وحد4096. APS5_STALL_WATCHDOG_SECS افتراضي0، حتى86400 يطبع مرة لكل انتظار ثم يستمر، مختلف عن hang dump الموقف في Windows. الإعداد الخاطئ يتوقف. TRACING يشرح التشخيص؛ احتفظ بتجربة عادية لأن التتبع يغير الزمن.",
+   "pt": "APS5_PM4_RING guarda16submissões/fila,512dwords;0 desativa, máximo4096. APS5_STALL_WATCHDOG_SECS predefinido0, até86400 imprime uma vez e continua à espera, diferente do hang dump Windows que aborta. Valor inválido para. TRACING lista opções; mantenha controlo normal pois traçar altera tempos.",
+   "de": "APS5_PM4_RING behält16Einreichungen/Queue,512Dwords;0 aus, maximal4096. APS5_STALL_WATCHDOG_SECS standard0, bis86400: einmal ausgeben und weiter warten, anders als abbrechender Windows-Hangdump. Ungültige Werte stoppen. TRACING erläutert Optionen; normale Kontrolle behalten, Tracing verändert Timing.",
+   "fr": "APS5_PM4_RING garde16soumissions/file,512dwords ;0 désactive, maximum4096. APS5_STALL_WATCHDOG_SECS défaut0, jusqu’à86400 : affiche une fois et continue d’attendre, distinct du hang dump Windows qui termine. Valeurs invalides arrêtent. TRACING détaille options ; gardez contrôle normal, traces modifient temps.",
+   "es": "APS5_PM4_RING guarda16envíos/cola,512dwords;0 desactiva, máximo4096. APS5_STALL_WATCHDOG_SECS defecto0, hasta86400: muestra una vez y sigue esperando, distinto del hang dump Windows que aborta. Valores inválidos paran. TRACING detalla opciones; conserva control normal, trazas cambian tiempos."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/b260d8d792c81a21a638340979ae2f98243547d5/docs/user/USAGE.md"
+  },
+  {
+   "label": "TRACING",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/b260d8d792c81a21a638340979ae2f98243547d5/docs/dev/TRACING.md"
+  }
+ ]
+});
+
+guideSupplements["guides/linux"].push({
+ "id": "app0-archive",
+ "title": {
+  "en": "Optional app0 archive on current main",
+  "zh": "当前main的可选app0压缩包",
+  "ar": "أرشيف app0 اختياري على main",
+  "pt": "Arquivo app0 opcional no main",
+  "de": "Optionales app0-Archiv auf main",
+  "fr": "Archive app0 optionnelle sur main",
+  "es": "Archivo app0 opcional en main"
+ },
+ "body": [
+  {
+   "en": "After v0.1.2, main adds read-only app0.zar beside app0/, rooted at app0. Loose files win; keep the executable, sce_module and sce_sys loose. Reads/seeks/stat are supported, but directory listing and several other calls still refuse archive-only paths. A damaged archive stops on access. This is not a v0.1.2 feature or a reason to replace a working loose-file setup.",
+   "zh": "v0.1.2之后main加入与app0/并列、根为app0的只读app0.zar。松散文件优先，程序、sce_module及sce_sys仍留在磁盘。支持读／定位／stat，目录枚举等调用仍拒绝仅压缩包路径；损坏包在访问时停止。这不是v0.1.2功能，也不必替换可用的松散文件配置。",
+   "ar": "بعد v0.1.2 يضيف main أرشيف app0.zar للقراءة بجانب app0/ وبجذر app0. الملفات العادية أولاً؛ أبقِ البرنامج وsce_module وsce_sys خارج الأرشيف. قراءة/seek/stat مدعومة، سرد الأدلة ونداءات أخرى ترفض المسار المؤرشف. التالف يتوقف عند الوصول؛ ليس ميزة v0.1.2.",
+   "pt": "Após v0.1.2, main aceita app0.zar só de leitura junto de app0/, com raiz app0. Ficheiros soltos prevalecem; programa, sce_module e sce_sys ficam soltos. Leitura/seek/stat suportados; listar diretórios e outras chamadas recusam caminhos só no arquivo. Arquivo danificado falha ao aceder; não é funcionalidade v0.1.2.",
+   "de": "Nach v0.1.2 unterstützt main app0.zar schreibgeschützt neben app0/, mit Wurzel app0. Lose Dateien haben Vorrang; Programm, sce_module und sce_sys bleiben lose. Lesen/Seek/stat unterstützt; Verzeichnislisten und weitere Aufrufe verweigern Archivpfade. Beschädigung stoppt beim Zugriff; kein v0.1.2-Feature.",
+   "fr": "Après v0.1.2, main accepte app0.zar en lecture seule à côté d’app0/, racine app0. Fichiers libres prioritaires ; programme, sce_module et sce_sys restent libres. Lecture/seek/stat pris en charge ; listes de répertoires et autres appels refusent les chemins archivés. Archive endommagée arrêtée à l’accès ; pas v0.1.2.",
+   "es": "Tras v0.1.2, main admite app0.zar de solo lectura junto a app0/, raíz app0. Archivos sueltos prevalecen; programa, sce_module y sce_sys quedan sueltos. Lectura/seek/stat admitidos; listar directorios y otras llamadas rechazan rutas archivadas. Archivo dañado falla al acceder; no es función v0.1.2."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/b260d8d792c81a21a638340979ae2f98243547d5/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "pipeline-journal",
+ "title": {
+  "en": "Warm pipeline replay has its own cache",
+  "zh": "流水线预热有独立缓存",
+  "ar": "إعادة pipelines بذاكرة خاصة",
+  "pt": "Replay de pipelines com cache própria",
+  "de": "Pipeline-Replay mit eigenem Cache",
+  "fr": "Relecture pipelines avec cache propre",
+  "es": "Reproducción pipelines con caché propia"
+ },
+ "body": [
+  {
+   "en": "Current main journals exact graphics/compute pipelines in pipelines.journal, then replays them in background on the next run. GPU/driver or format changes reset it; deleting it loses that head start, not game saves. APS5_NO_PIPELINE_JOURNAL=1 disables it. APS5_PIPELINE_JOURNAL_THREADS defaults to half the CPU threads; 0 records without replay. APS5_PIPELINE_JOURNAL_ENTRIES, APS5_PIPELINE_STORE_ENTRIES and APS5_PIPELINE_JOURNAL_MAX_MIB default to 1024. Warm-cache differences are not a measured universal FPS gain.",
+   "zh": "当前main将精确图形／计算流水线写入pipelines.journal，下次后台重放。GPU／驱动或格式变更会重置，删除只失去预热，不影响游戏存档。APS5_NO_PIPELINE_JOURNAL=1禁用；APS5_PIPELINE_JOURNAL_THREADS默认半数CPU线程，0仅记录不重放。APS5_PIPELINE_JOURNAL_ENTRIES、APS5_PIPELINE_STORE_ENTRIES、APS5_PIPELINE_JOURNAL_MAX_MIB默认1024；缓存差异不等于普遍FPS增益。",
+   "ar": "main يسجل pipelines.journal ويعيده بالخلفية لاحقاً. تغييرGPU/تعريف/صيغة يعيده؛ الحذف لا يمس الحفظ. APS5_NO_PIPELINE_JOURNAL=1 يعطله. APS5_PIPELINE_JOURNAL_THREADS نصف خيوطCPU،0 يسجل فقط. APS5_PIPELINE_JOURNAL_ENTRIES وAPS5_PIPELINE_STORE_ENTRIES وAPS5_PIPELINE_JOURNAL_MAX_MIB افتراضها1024. ليس مكسب FPS عاماً.",
+   "pt": "Main regista pipelines.journal e repete em fundo no arranque seguinte. GPU/driver/formato reinicia; apagar não elimina saves. APS5_NO_PIPELINE_JOURNAL=1 desativa. APS5_PIPELINE_JOURNAL_THREADS usa metade dos threads;0 só regista. APS5_PIPELINE_JOURNAL_ENTRIES, APS5_PIPELINE_STORE_ENTRIES e APS5_PIPELINE_JOURNAL_MAX_MIB valem1024. Cache quente não prova ganho FPS geral.",
+   "de": "main protokolliert pipelines.journal für Hintergrund-Replay beim nächsten Start. GPU/Treiber/Formatwechsel setzen zurück; Löschen berührt keine Spielstände. APS5_NO_PIPELINE_JOURNAL=1 deaktiviert. APS5_PIPELINE_JOURNAL_THREADS: halbe CPU-Threads,0 nur Aufzeichnen. APS5_PIPELINE_JOURNAL_ENTRIES, APS5_PIPELINE_STORE_ENTRIES und APS5_PIPELINE_JOURNAL_MAX_MIB:1024. Kein allgemeiner FPS-Nachweis.",
+   "fr": "Main enregistre pipelines.journal puis relit en arrière-plan au prochain lancement. ChangementGPU/pilote/format réinitialise ; suppression sans perte des sauvegardes. APS5_NO_PIPELINE_JOURNAL=1 désactive. APS5_PIPELINE_JOURNAL_THREADS : moitié des threadsCPU,0 enregistre seulement. APS5_PIPELINE_JOURNAL_ENTRIES, APS5_PIPELINE_STORE_ENTRIES et APS5_PIPELINE_JOURNAL_MAX_MIB :1024. Aucun gain FPS universel prouvé.",
+   "es": "Main registra pipelines.journal y reproduce en segundo plano al iniciar después. CambioGPU/driver/formato reinicia; borrar no afecta partidas. APS5_NO_PIPELINE_JOURNAL=1 desactiva. APS5_PIPELINE_JOURNAL_THREADS: mitad de hilosCPU,0 solo registra. APS5_PIPELINE_JOURNAL_ENTRIES, APS5_PIPELINE_STORE_ENTRIES y APS5_PIPELINE_JOURNAL_MAX_MIB:1024. No demuestra mejora FPS universal."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/b260d8d792c81a21a638340979ae2f98243547d5/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "submission-stall-diagnostics",
+ "title": {
+  "en": "Collect bounded stall evidence",
+  "zh": "收集有界卡死证据",
+  "ar": "تشخيص توقف محدود",
+  "pt": "Diagnóstico limitado de bloqueios",
+  "de": "Begrenzte Stall-Diagnose",
+  "fr": "Diagnostic borné des blocages",
+  "es": "Diagnóstico acotado de bloqueos"
+ },
+ "body": [
+  {
+   "en": "Current-main APS5_PM4_RING keeps16 submissions per queue by default, up to512 dwords each; 0 disables, maximum4096. APS5_STALL_WATCHDOG_SECS defaults to0; a positive value up to86400 dumps once per stalled wait and continues waiting. It is distinct from the Windows aborting hang dump. Invalid settings stop at submission. The new TRACING reference lists diagnostic switches; tracing changes timing, so retain an ordinary control run.",
+   "zh": "当前main默认APS5_PM4_RING每队列留16次提交、各最多512个dword，0禁用、最多4096。APS5_STALL_WATCHDOG_SECS默认0，正值最多86400，每次停滞等待只输出一次并继续等待，区别于Windows中止型hang dump。无效设置在提交时停止。新TRACING列出诊断开关；追踪会影响计时，应保留普通对照。",
+   "ar": "APS5_PM4_RING يحتفظ16submission/طابور،512dword؛0 تعطيل وحد4096. APS5_STALL_WATCHDOG_SECS افتراضي0، حتى86400 يطبع مرة لكل انتظار ثم يستمر، مختلف عن hang dump الموقف في Windows. الإعداد الخاطئ يتوقف. TRACING يشرح التشخيص؛ احتفظ بتجربة عادية لأن التتبع يغير الزمن.",
+   "pt": "APS5_PM4_RING guarda16submissões/fila,512dwords;0 desativa, máximo4096. APS5_STALL_WATCHDOG_SECS predefinido0, até86400 imprime uma vez e continua à espera, diferente do hang dump Windows que aborta. Valor inválido para. TRACING lista opções; mantenha controlo normal pois traçar altera tempos.",
+   "de": "APS5_PM4_RING behält16Einreichungen/Queue,512Dwords;0 aus, maximal4096. APS5_STALL_WATCHDOG_SECS standard0, bis86400: einmal ausgeben und weiter warten, anders als abbrechender Windows-Hangdump. Ungültige Werte stoppen. TRACING erläutert Optionen; normale Kontrolle behalten, Tracing verändert Timing.",
+   "fr": "APS5_PM4_RING garde16soumissions/file,512dwords ;0 désactive, maximum4096. APS5_STALL_WATCHDOG_SECS défaut0, jusqu’à86400 : affiche une fois et continue d’attendre, distinct du hang dump Windows qui termine. Valeurs invalides arrêtent. TRACING détaille options ; gardez contrôle normal, traces modifient temps.",
+   "es": "APS5_PM4_RING guarda16envíos/cola,512dwords;0 desactiva, máximo4096. APS5_STALL_WATCHDOG_SECS defecto0, hasta86400: muestra una vez y sigue esperando, distinto del hang dump Windows que aborta. Valores inválidos paran. TRACING detalla opciones; conserva control normal, trazas cambian tiempos."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/b260d8d792c81a21a638340979ae2f98243547d5/docs/user/USAGE.md"
+  },
+  {
+   "label": "TRACING",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/b260d8d792c81a21a638340979ae2f98243547d5/docs/dev/TRACING.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "lazy-preparation",
+ "title": {
+  "en": "Lazy preparation remains opt-in",
+  "zh": "延迟准备仍需显式启用",
+  "ar": "تحضير lazy اختياري",
+  "pt": "Preparação lazy opcional",
+  "de": "Lazy-Vorbereitung bleibt optional",
+  "fr": "Préparation lazy optionnelle",
+  "es": "Preparación lazy opcional"
+ },
+ "body": [
+  {
+   "en": "Main APS5_LAZY_SHADER_PREPARE=1 still validates and decodes shaders at registration, but defers preparation until use; explicit ABI preparation remains. Default off. This moves work and can cause first-use stalls; one memory-constrained title reaching an intro is not a universal RAM minimum or gameplay fix. Relinker-only --macos output is x86-64 Mach-O; released runtime libraries remain Windows/Linux.",
+   "zh": "main的APS5_LAZY_SHADER_PREPARE=1仍在注册时验证／解码，延后准备到使用时，显式ABI准备仍执行，默认关闭。它会转移工作、可能首次使用卡顿；单个内存受限游戏到片头不能推导通用内存要求或游戏修复。relinker-only的--macos输出x86-64 Mach-O，发行运行时库仍为Windows/Linux。",
+   "ar": "APS5_LAZY_SHADER_PREPARE=1 يؤجل التحضير لا التحقق/فك الترميز؛ ABI الصريح يبقى، والافتراضي مغلق. قد يؤخر أول استخدام؛ مقدمة لعبة لا تثبت RAM دنيا أو إصلاحاً عاماً. --macos relinker-only ينتج x86-64 Mach-O؛ مكتبات الإصدار Windows/Linux.",
+   "pt": "APS5_LAZY_SHADER_PREPARE=1 adia preparação, não validação/descodificação; ABI explícita mantém-se, predefinido desligado. Pode pausar no primeiro uso; intro não define RAM mínima/fix geral. --macos relinker-only gera x86-64 Mach-O; bibliotecas lançadas Windows/Linux.",
+   "de": "APS5_LAZY_SHADER_PREPARE=1 verschiebt Vorbereitung, nicht Validierung/Dekodierung; explizites ABI bleibt, standardmäßig aus. Erstnutzung kann stocken; Intro belegt keine RAM-Mindestwerte/allgemeinen Fix. --macos relinker-only erzeugt x86-64 Mach-O; Releasebibliotheken Windows/Linux.",
+   "fr": "APS5_LAZY_SHADER_PREPARE=1 diffère préparation, pas validation/décodage ; ABI explicite conservée, défaut désactivé. Premier usage peut bloquer ; intro ne définit pas RAM minimale/fix général. --macos relinker-only produit x86-64 Mach-O ; bibliothèques publiées Windows/Linux.",
+   "es": "APS5_LAZY_SHADER_PREPARE=1 aplaza preparación, no validación/decodificación; ABI explícita permanece, defecto apagado. Primer uso puede pausar; intro no define RAM mínima/arreglo general. --macos relinker-only genera x86-64 Mach-O; bibliotecas publicadas Windows/Linux."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/b260d8d792c81a21a638340979ae2f98243547d5/docs/dev/ARCHITECTURE.md"
+  }
+ ]
+});

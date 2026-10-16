@@ -3,6 +3,149 @@ import metadata from './github-source-status.json';
 export interface DevelopmentNote {number:number;title:Text;summary:Text;games:string[]}
 export const developmentNotes:DevelopmentNote[]=[
 {
+ "number": 5835,
+ "games": [],
+ "title": {
+  "en": "Read-only app0 archives merged",
+  "zh": "只读app0压缩包已合入",
+  "ar": "دمج أرشيف app0 للقراءة",
+  "pt": "Arquivo app0 só de leitura integrado",
+  "de": "app0-Lesearchiv integriert",
+  "fr": "Archive app0 en lecture intégrée",
+  "es": "Archivo app0 de lectura integrado"
+ },
+ "summary": {
+  "en": "#5835 merged at9158f031c after v0.1.2. app0.zar supplements loose files; directory and non-read paths still have explicit gaps. Upstream tested archive APIs, not a game. Keep executable/modules/metadata loose and do not translate this into general game support.",
+  "zh": "#5835在v0.1.2之后于9158f031c合入。app0.zar补充松散文件，目录及非读取路径仍有明确缺口。上游验证压缩包API，未实测游戏；程序／模块／元数据留在磁盘，不能据此提升游戏结论。",
+  "ar": "#5835 مدمج بعدv0.1.2؛ app0.zar يكمل الملفات، مع فجوات أدلة/نداءات. اختبارات API لا لعبة؛ أبقِ البرنامج/modules/metadata خارج الأرشيف.",
+  "pt": "#5835 integrado após v0.1.2; app0.zar complementa ficheiros com lacunas em diretórios/chamadas. Testes API, sem jogo; programa/modules/metadata soltos.",
+  "de": "#5835 nach v0.1.2 integriert; app0.zar ergänzt Dateien, Verzeichnis-/Aufruflücken bleiben. API-Tests ohne Spiel; Programm/Module/Metadaten lose halten.",
+  "fr": "#5835 intégré après v0.1.2 ; app0.zar complète fichiers, lacunes répertoires/appels. Tests API sans jeu ; programme/modules/métadonnées libres.",
+  "es": "#5835 integrado tras v0.1.2; app0.zar complementa archivos, quedan lagunas de directorios/llamadas. Tests API sin juego; programa/modules/metadata sueltos."
+ }
+},
+{
+ "number": 5875,
+ "games": [
+  "olliolli-world"
+ ],
+ "title": {
+  "en": "Pipeline journal replays warm work",
+  "zh": "流水线日志重放已见工作",
+  "ar": "إعادة عمل pipelines المسجل",
+  "pt": "Diário repete pipelines anteriores",
+  "de": "Pipeline-Journal spielt Vorarbeit ab",
+  "fr": "Journal rejoue pipelines précédents",
+  "es": "Diario reproduce pipelines anteriores"
+ },
+ "summary": {
+  "en": "#5875 merged at0615cd2b8. The GPU/driver-specific journal prebuilds previously materialized pipelines; #6784 subsequently fixes mesh recipe serialization and resets the format. This is a current-main cache mechanism, not a promise of higher FPS or inclusion in v0.1.2.",
+  "zh": "#5875于0615cd2b8合入，GPU／驱动专属日志提前构建已出现过的流水线；后续#6784修复mesh配方序列化并升级格式。这是main缓存机制，不承诺FPS提升，也不属于v0.1.2。",
+  "ar": "#5875 مدمج؛ journal خاصGPU/تعريف يعيد pipelines. #6784 يصلح mesh ويغير الصيغة. آلية main لا وعدFPS أوv0.1.2.",
+  "pt": "#5875 integrado; journal porGPU/driver repete pipelines. #6784 corrige mesh/formato. Cache main, sem promessaFPS ouv0.1.2.",
+  "de": "#5875 integriert; GPU-/Treiber-Journal baut bekannte Pipelines. #6784 korrigiert Mesh/Format. main-Cache, kein FPS-Versprechen/v0.1.2.",
+  "fr": "#5875 intégré ; journalGPU/pilote reconstruit pipelines. #6784 corrige mesh/format. Cache main, aucune promesseFPS/v0.1.2.",
+  "es": "#5875 integrado; journalGPU/driver reconstruye pipelines. #6784 corrige mesh/formato. Caché main, sin promesaFPS/v0.1.2."
+ }
+},
+{
+ "number": 5872,
+ "games": [
+  "demons-souls",
+  "ghost-of-yotei"
+ ],
+ "title": {
+  "en": "Lazy shader preparation stays optional",
+  "zh": "延迟着色器准备保持可选",
+  "ar": "تحضير shaders المؤجل اختياري",
+  "pt": "Preparação lazy continua opcional",
+  "de": "Lazy-Shader bleiben optional",
+  "fr": "Préparation lazy reste optionnelle",
+  "es": "Preparación lazy sigue opcional"
+ },
+ "summary": {
+  "en": "#5872 merged at127e5bf82. Opt-in delays preparation, while registration validation/decoding and explicit ABI work remain. Demon’s Souls reports still carry their tested local stack and version; lower boot memory can trade for first-use stalls and does not prove a whole playable level.",
+  "zh": "#5872于127e5bf82合入。显式启用后延后准备，注册验证／解码及显式ABI工作仍保留。恶魔之魂报告继续保留实测本地栈和版本；启动内存降低可转化为首次使用停顿，不能证明完整可玩关卡。",
+  "ar": "#5872 مدمج، يؤجل التحضير لا التحقق/ABI. تقارير Demon’s Souls تحتفظ ببنائها؛ ذاكرة أقل قد تؤخر الاستخدام ولا تثبت مستوى قابلاً للعب.",
+  "pt": "#5872 integrado adia preparação, não validação/ABI. Demon’s Souls mantém build; menor memória pode pausar primeiro uso, sem nível jogável provado.",
+  "de": "#5872 integriert verschiebt Vorbereitung, nicht Prüfung/ABI. Demon’s-Souls-Berichte behalten Build; weniger Bootspeicher kann Erstnutzung verzögern, kein Levelbeleg.",
+  "fr": "#5872 intégré diffère préparation, pas validation/ABI. Rapports Demon’s Souls gardent build ; moins de mémoire peut retarder premier usage, sans niveau prouvé.",
+  "es": "#5872 integrado aplaza preparación, no validación/ABI. Demon’s Souls conserva build; menor memoria puede pausar primer uso, sin nivel jugable demostrado."
+ }
+},
+{
+ "number": 4855,
+ "games": [],
+ "title": {
+  "en": "Bounded GPU submission diagnostics merged",
+  "zh": "有界GPU提交诊断已合入",
+  "ar": "دمج تشخيص إرسال GPU محدود",
+  "pt": "Diagnóstico GPU limitado integrado",
+  "de": "Begrenzte GPU-Submit-Diagnose integriert",
+  "fr": "Diagnostic GPU borné intégré",
+  "es": "Diagnóstico GPU acotado integrado"
+ },
+ "summary": {
+  "en": "#4855 merged ata4782fe11. Submission rings retain recent packet prefixes; the stall watchdog prints once and keeps waiting. It differs from the Windows aborting hang dump. Captured packets narrow an investigation but do not identify a cause or fix every stall.",
+  "zh": "#4855于a4782fe11合入，提交环保留近期包前缀；卡死看门狗只输出一次并继续等待，区别于Windows中止型hang dump。包记录缩小排查范围，不能直接确定原因或修复所有卡死。",
+  "ar": "#4855 مدمج؛ حلقات حديثة وwatchdog يطبع ثم ينتظر، مختلف عن Windows abort. الحزم أدلة لا سبب أو إصلاح عام.",
+  "pt": "#4855 integrado; ring recente e watchdog imprime/espera, distinto de abort Windows. Pacotes ajudam diagnóstico, não provam causa/fix geral.",
+  "de": "#4855 integriert; Ring und weiterwartender Watchdog, anders als Windows-Abbruch. Pakete grenzen Suche ein, kein Ursachen-/Fixbeweis.",
+  "fr": "#4855 intégré ; ring récent et watchdog continue d’attendre, distinct de l’abandon Windows. Paquets aident enquête sans cause/fix universel.",
+  "es": "#4855 integrado; ring reciente y watchdog sigue esperando, distinto de abort Windows. Paquetes acotan investigación, no prueban causa/arreglo general."
+ }
+},
+{
+ "number": 5405,
+ "games": [
+  "ghost-of-yotei"
+ ],
+ "title": {
+  "en": "Spanned compute waves merged as opt-in",
+  "zh": "跨子组计算wave以可选模式合入",
+  "ar": "دمج spanned compute اختيارياً",
+  "pt": "Spanned compute integrado opcionalmente",
+  "de": "Spanned Compute optional integriert",
+  "fr": "Spanned compute intégré en option",
+  "es": "Spanned compute integrado opcionalmente"
+ },
+ "summary": {
+  "en": "#5405 merged atdb7d9de5e with APS5_SPANNED_WAVE=1 off by default. It targets eligible64-invocation compute groups on32-lane hosts, not every wave64 shader or pixel lane63 failure. A scoped device-loss correction is not proof that Ghost of Yōtei now plays; title reports retain their original modes.",
+  "zh": "#5405于db7d9de5e合入，APS5_SPANNED_WAVE=1默认关闭，仅针对32lane主机上符合条件的64调用计算组，不覆盖所有wave64或像素lane63故障。局部设备丢失修正不证明羊蹄山已可玩，报告保留原模式。",
+  "ar": "#5405 مدمج opt-in افتراضي مغلق؛ compute64 مؤهل على32lane فقط، لا كلwave64 أوpixel63. تصحيح محدود لا يثبت لعب Yōtei.",
+  "pt": "#5405 integrado opt-in desligado; compute64 elegível em32lanes, não todowave64/pixel63. Correção limitada não prova Yōtei jogável.",
+  "de": "#5405 optional integriert, standard aus; geeignete Compute64 auf32Lanes, nicht allewave64/Pixel63. Begrenzter Fix belegt kein Yōtei-Gameplay.",
+  "fr": "#5405 intégré en option désactivée ; compute64 éligible sur32lanes, pas toutwave64/pixel63. Correctif limité ne prouve pas Yōtei jouable.",
+  "es": "#5405 integrado opcional apagado; compute64 elegible en32lanes, no todowave64/pixel63. Corrección limitada no prueba Yōtei jugable."
+ }
+},
+{
+ "number": 5905,
+ "games": [
+  "hades",
+  "hades-ii",
+  "astro-bot"
+ ],
+ "title": {
+  "en": "Linux dma-buf first-use work moved",
+  "zh": "Linux dma-buf首次使用工作转移",
+  "ar": "نقل أول استخدام dma-buf على Linux",
+  "pt": "Primeiro uso dma-buf deslocado no Linux",
+  "de": "Linux-dma-buf-Erstnutzung verlagert",
+  "fr": "Premier usage dma-buf déplacé sous Linux",
+  "es": "Primer uso dma-buf trasladado en Linux"
+ },
+ "summary": {
+  "en": "#5905 merged atdaf891312. Imports of at least1MiB are settled on a secondary queue at map/import time, moving kernel mapping latency away from first use. Upstream Hades observations do not erase the separately unstable Hades II result, and large maps can now block the mapping caller.",
+  "zh": "#5905于daf891312合入，至少1MiB导入在映射／导入时由次级队列settle，将内核映射延迟从首次使用转移。上游Hades观察不能覆盖Hades II另一个不稳定结果，大映射仍可能阻塞映射调用线程。",
+  "ar": "#5905 مدمج؛ dma-buf≥1MiB يستقر عند map/import بطابور ثان. ينقل التأخير؛ Hades لا يثبت HadesII، وقد يحجب المتصل.",
+  "pt": "#5905 integrado; dma-buf≥1MiB estabiliza ao map/import noutra fila. Move latência; Hades não prova HadesII, pode bloquear chamador.",
+  "de": "#5905 integriert; dma-buf≥1MiB bei Map/Import auf Nebenqueue vorbereitet. Latenz verlagert; Hades belegt nicht HadesII, Aufrufer kann warten.",
+  "fr": "#5905 intégré ; dma-buf≥1MiB préparé au map/import sur autre file. Latence déplacée ; Hades ne prouve pas HadesII, appelant peut attendre.",
+  "es": "#5905 integrado; dma-buf≥1MiB preparado al map/import en otra cola. Mueve latencia; Hades no prueba HadesII, puede bloquear llamador."
+ }
+},
+{
  "number": 1202,
  "games": [
   "astro-bot",

@@ -138,7 +138,7 @@ test('editorial platform summaries choose evidence explicitly rather than histor
  assert.equal(conclusionReports(silk,'windows')[0].id,'726-windows-review-20261016');
  assert.equal(conclusionReports(silk,'windows')[0].patched,false);
  assert.notEqual(silk.reports.find(r=>r.id==='726-windows-review-20261012')!.build,conclusionReports(silk,'windows')[0].build);
- assert.equal(conclusionReports(silk,'linux')[0].id,'1519-linux-review-20261012');
+ assert.equal(conclusionReports(silk,'linux')[0].id,'1519-linux-review-20261017');
  assert.equal(conclusionReports(games.find(g=>g.slug==='black-myth-wukong')!,'windows')[0].stage,'blocked');
  const ghost=conclusionReports(games.find(g=>g.slug==='ghost-of-yotei')!,'linux');
  assert.equal(ghost[0].id,'675-linux-review-20261016');assert.equal(ghost[0].stage,'menu');assert.equal(ghost[0].patched,true);
@@ -190,7 +190,9 @@ test('new regional reports and cutscene results do not become universal gameplay
  const {conclusionReports}=await import('../packages/content/game-conclusions');
  assert.equal(filterGames('PPSA21559',{stage:'ingame'}).length,0);
  assert.equal(filterGames('PPSA21567',{platform:'windows',stage:'ingame'}).length,1);
- assert.equal(filterGames('PPSA21567',{platform:'linux',stage:'ingame'}).length,0);
+ assert.equal(filterGames('PPSA21567',{platform:'linux',stage:'ingame'}).length,1);
+ const astroLinux=conclusionReports(filterGames('PPSA21567')[0],'linux');
+ assert.ok(astroLinux.some(r=>r.id==='357-linux-review-20261017'&&r.patched&&r.build?.includes('#6353')));
  const village=games.find(g=>g.slug==='resident-evil-village')!;
  assert.equal(village.reports[0].stage,'menu');
  assert.equal(conclusionReports(village,'windows')[0].stage,'ingame');
