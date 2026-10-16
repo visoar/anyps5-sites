@@ -21,7 +21,7 @@ Both sites publish `/llms.txt` and non-visible AI policy metadata in every page 
 
 Production traffic and key interactions are measured with separate self-hosted Umami websites. See [analytics setup and event definitions](docs/analytics.md) for domain isolation, query exclusion and the iteration metrics. Analytics is optional for site functionality.
 
-The seven-language `/compatibility-report/` on the game site provides five source-scoped case studies and a JSON export. It reuses the explicitly selected platform evidence, preserves missing data and test dates, and is a curated source report rather than an independent benchmark. Search descriptions use those platform selections instead of a historical maximum. Publishing also triggers [IndexNow notifications](docs/deployment.md#search-notifications-after-publishing) after the public build matches; search-engine receipt does not guarantee indexing.
+The seven-language `/compatibility-report/` on the game site provides five source-scoped case studies and a JSON export. It reuses the explicitly selected platform evidence, preserves missing data and test dates, and is a curated source report rather than an independent benchmark. Search descriptions use those platform selections instead of a historical maximum. Search-engine notifications are handled by the existing Cloudflare configuration; this repository only validates and builds the sites in CI. See [deployment verification](docs/deployment.md#search-discovery-and-ci).
 
 ## Content
 
