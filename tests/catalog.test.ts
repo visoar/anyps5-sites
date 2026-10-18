@@ -60,7 +60,7 @@ test('new source reviews distinguish setup screens, patched integrations and act
   const report=conclusionReports(game,platform)[0];
   assert.equal(report.stage,stage);assert.equal(report.patched,patched);
   assert.equal(report.testDate,null);assert.equal(report.benchmarks.length,0);
-  assert.equal(filterGames(game.titleId!,{stage:'ingame'}).length,0);
+  assert.equal(filterGames(game.titleId!,{stage:'ingame'}).length,slug==='palworld'?1:0);
   assert.equal(conclusionReports(game,platform==='windows'?'linux':'windows').length,0);
   assert.ok(gameResearch[slug]);
  }
@@ -209,7 +209,7 @@ test('new edition follow-ups retain older observations without crossing PPSA or 
  const {conclusionReports}=await import('../packages/content/game-conclusions');
  const maintenance=filterGames('PPSA03912')[0];
  assert.ok(maintenance.reports.some(r=>r.id==='5146-linux-review-20261014'));
- assert.ok(conclusionReports(maintenance,'linux').some(r=>r.id==='5146-linux-review-20261015'&&!r.patched));
+ assert.ok(conclusionReports(maintenance,'linux').some(r=>r.id==='5146-linux-review-20261018'&&!r.patched));
  const astro=filterGames('PPSA21567')[0];
  assert.ok(astro.reports.some(r=>r.version==='01.018.000'&&r.stage==='ingame'));
  const clean=astro.reports.find(r=>r.id==='357-windows-review-20261015')!;

@@ -2788,5 +2788,165 @@
       "height": 1024
     },
     "screenshots": []
+  },
+  "devil-may-cry-5-special-edition": {
+    "cover": {
+      "file": "devil-may-cry-5-special-edition/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202009/1710/UUnpHLJqLAIJX5HioswiPuAm.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202009/1710/UUnpHLJqLAIJX5HioswiPuAm.png",
+      "sourceSha256": "c14e5d3094d8ec7644c9aea0cf7e580fa820523fd4d1597be17d855c94db80ac",
+      "sourceBytes": 317287,
+      "sha256": "8a33e00f9185d2ba30df7b7616a8a946f18783b56601f2114855de81c188e36f",
+      "bytes": 230284,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "mgs-delta-snake-eater": {
+    "cover": {
+      "file": "mgs-delta-snake-eater/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0513/d35b305652ee922a72b4020bd5d6ef36675cf526dd4945d1.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0513/d35b305652ee922a72b4020bd5d6ef36675cf526dd4945d1.png",
+      "sourceSha256": "f2c5fbe448b9858c27996c25da23e0dab7c4b4b4153c8235077be0e0bae20ebd",
+      "sourceBytes": 214802,
+      "sha256": "963e401121b93c3ccfb3b46851be68f4f8cfa6fa5ccc85b82b6fae6ae108c169",
+      "bytes": 156390,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "middle-ages-ping-pong-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "silent-hill-short-message": {
+    "cover": {
+      "file": "silent-hill-short-message/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202209/1505/5cSwXCtCnItDE46iYGcaXtAm.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202209/1505/5cSwXCtCnItDE46iYGcaXtAm.png",
+      "sourceSha256": "f1d1fe4d369c020297c3547d02c46f2ec6844916b503b21bc611ff72879f1b39",
+      "sourceBytes": 193263,
+      "sha256": "a5dcf556603fe2cf455bfcb34dc0dfb8c47861fce53ff8046c605f947a4d5305",
+      "bytes": 115444,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "alan-wake-2": {
+    "cover": {
+      "file": "alan-wake-2/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2420/c3daf3037feb797d9e71b81618e3b5ff3ff1f9609db5a4a2.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2420/c3daf3037feb797d9e71b81618e3b5ff3ff1f9609db5a4a2.png",
+      "sourceSha256": "53de32a3514b40d3fb7cb57e164e803af5c68b602885579f26ed2dae0c37e29e",
+      "sourceBytes": 231709,
+      "sha256": "5d939be5935fe3352277ffba00766bd37a3c630e628333db9a95a60f6df48213",
+      "bytes": 135950,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "control-resonant": {
+    "cover": {
+      "file": "control-resonant/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2212/9fedf57ea1649249a0e3ac24770ea9afa6f4bfa795b5fd05.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2212/9fedf57ea1649249a0e3ac24770ea9afa6f4bfa795b5fd05.png",
+      "sourceSha256": "7ff5f9c19477b76e27c0cee48c961eca4944d9e9228d7eff956dcd192cd90535",
+      "sourceBytes": 164111,
+      "sha256": "f5f2f5376873ec84f3678781c21bcc0a967d12f8aff5022d484f98ccf97871e1",
+      "bytes": 79150,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "infliction-extended-cut": {
+    "cover": null,
+    "screenshots": []
+  },
+  "samurai-maiden": {
+    "cover": null,
+    "screenshots": []
+  },
+  "demon-slayer-hinokami": {
+    "cover": null,
+    "screenshots": []
+  },
+  "override-2": {
+    "cover": null,
+    "screenshots": []
+  },
+  "love-is-all-around-2": {
+    "cover": null,
+    "screenshots": []
+  },
+  "hello-neighbor": {
+    "cover": {
+      "file": "hello-neighbor/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202603/1811/3f246e54d304f6fa9f4d2c79f82a8121422d57777d7b21b5.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202603/1811/3f246e54d304f6fa9f4d2c79f82a8121422d57777d7b21b5.png",
+      "sourceSha256": "34fe1a62ad82a7dfea3f76d25380dee920cbd97dd3fb398ba190f8a8e71a5508",
+      "sourceBytes": 163129,
+      "sha256": "7ae5ebae3bac0c34524f08b5efada64477eb1e09fc5bdce4820378905edfb3cb",
+      "bytes": 82868,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "dragon-quest-vii-reimagined": {
+    "cover": {
+      "file": "dragon-quest-vii-reimagined/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2811/b2e2d208028f8ab569e95d58f3903a9e7147ea8708b6d9c3.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2811/b2e2d208028f8ab569e95d58f3903a9e7147ea8708b6d9c3.png",
+      "sourceSha256": "5a91064800d0216939d19015476216fa2479e23cfc6309153c22fd6103a357d7",
+      "sourceBytes": 312598,
+      "sha256": "4062ac0fe996884ca0b986a7281117fdb2753288130bf6244a9de434d981214c",
+      "bytes": 222876,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "gta-iii-definitive": {
+    "cover": null,
+    "screenshots": []
+  },
+  "furi": {
+    "cover": null,
+    "screenshots": []
+  },
+  "one-night-stand": {
+    "cover": null,
+    "screenshots": []
+  },
+  "lego-horizon-adventures": {
+    "cover": {
+      "file": "lego-horizon-adventures/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202409/2013/96a84262e4562c459c213515a9dfd53d82547603b86a2c6a.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202409/2013/96a84262e4562c459c213515a9dfd53d82547603b86a2c6a.png",
+      "sourceSha256": "d621b5644ee0a227f5e02e842bf3daa42cdddf8a9ca658414ad7ae511cf6abba",
+      "sourceBytes": 295801,
+      "sha256": "3b001cbc15f79a38372fd8fa3f54ae7892bd206508eb6ebfa11f742e57b06b55",
+      "bytes": 191728,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "rekhcom-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "resident-evil-4-ppsa07412": {
+    "cover": null,
+    "screenshots": []
+  },
+  "tekken-dark-resurrection": {
+    "cover": null,
+    "screenshots": []
   }
 }

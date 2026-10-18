@@ -403,3 +403,265 @@ guideSupplements["guides/build"].push({
   }
  ]
 });
+
+guideSupplements["start"].push({
+ "id": "playgo-metadata-policy",
+ "title": {
+  "en": "Choose PlayGo answers by title",
+  "zh": "按游戏选择PlayGo回答",
+  "ar": "إجابات PlayGo حسب اللعبة",
+  "pt": "Respostas PlayGo por jogo",
+  "de": "PlayGo-Antworten je Spiel",
+  "fr": "Réponses PlayGo par jeu",
+  "es": "Respuestas PlayGo por juego"
+ },
+ "body": [
+  {
+   "en": "After v0.1.2, merged #6236 adds APS5_PLAYGO_UNLISTED_CHUNKS for dumps without playgo-chunk.dat and playgo-scenario.json. Unset still stops on unknown nonzero IDs. installed helps High on Life save loading; absent ends the Sifu and Demon Slayer searches. installed can make Demon Slayer allocate without end. Metadata-bearing dumps are unaffected. These are emulator observations, not console validation; preserve the exact tested build.",
+   "zh": "v0.1.2之后合入的#6236为缺playgo-chunk.dat及playgo-scenario.json的dump增加APS5_PLAYGO_UNLISTED_CHUNKS；未设仍在未知非零ID停止。installed有助High on Life读档，absent让Sifu／鬼灭结束搜索，鬼灭用installed可能无限分配。有元数据的dump不受影响。这些是模拟运行观察，未经主机验证，需保留实测构建。",
+   "ar": "بعدv0.1.2 يضيف#6236 APS5_PLAYGO_UNLISTED_CHUNKS للنسخ بلا الملفين. الافتراضي يوقف ID غير معروف؛ installed يساعد حفظ High on Life، absent ينهي بحث Sifu/Demon Slayer. installed قد يخصص بلا نهاية. النسخ بmetadata لا تتأثر؛ ملاحظات محاكاة لا تحقق كونسول.",
+   "pt": "Após v0.1.2, #6236 integra APS5_PLAYGO_UNLISTED_CHUNKS para dumps sem os dois ficheiros PlayGo. Predefinição recusa IDs desconhecidos; installed ajuda saves High on Life, absent termina buscas Sifu/Demon Slayer. installed pode alocar indefinidamente neste último. Metadata presente não muda; observações do emulador, não da consola.",
+   "de": "Nach v0.1.2 ergänzt #6236 APS5_PLAYGO_UNLISTED_CHUNKS bei fehlenden PlayGo-Dateien. Unset verweigert unbekannte IDs; installed hilft High-on-Life-Spielständen, absent beendet Sifu/Demon-Slayer-Suche. installed kann dort endlos allokieren. Mit Metadaten unverändert; Emulatorbeobachtungen ohne Konsolenprüfung.",
+   "fr": "Après v0.1.2, #6236 ajoute APS5_PLAYGO_UNLISTED_CHUNKS sans les deux fichiers PlayGo. Défaut refuse IDs inconnus ; installed aide les sauvegardes High on Life, absent termine les recherches Sifu/Demon Slayer. installed peut surallouer ce dernier. Métadonnées présentes inchangées ; observations émulateur, pas console.",
+   "es": "Tras v0.1.2, #6236 añade APS5_PLAYGO_UNLISTED_CHUNKS sin ambos archivos PlayGo. Defecto rechaza IDs desconocidos; installed ayuda saves High on Life, absent termina búsquedas Sifu/Demon Slayer. installed puede asignar sin fin en este último. Con metadata no cambia; observación de emulador, no consola."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/5229b5b829881ab3cef400aa351db197aec032c3/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["downloads"].push({
+ "id": "playgo-metadata-policy",
+ "title": {
+  "en": "Choose PlayGo answers by title",
+  "zh": "按游戏选择PlayGo回答",
+  "ar": "إجابات PlayGo حسب اللعبة",
+  "pt": "Respostas PlayGo por jogo",
+  "de": "PlayGo-Antworten je Spiel",
+  "fr": "Réponses PlayGo par jeu",
+  "es": "Respuestas PlayGo por juego"
+ },
+ "body": [
+  {
+   "en": "After v0.1.2, merged #6236 adds APS5_PLAYGO_UNLISTED_CHUNKS for dumps without playgo-chunk.dat and playgo-scenario.json. Unset still stops on unknown nonzero IDs. installed helps High on Life save loading; absent ends the Sifu and Demon Slayer searches. installed can make Demon Slayer allocate without end. Metadata-bearing dumps are unaffected. These are emulator observations, not console validation; preserve the exact tested build.",
+   "zh": "v0.1.2之后合入的#6236为缺playgo-chunk.dat及playgo-scenario.json的dump增加APS5_PLAYGO_UNLISTED_CHUNKS；未设仍在未知非零ID停止。installed有助High on Life读档，absent让Sifu／鬼灭结束搜索，鬼灭用installed可能无限分配。有元数据的dump不受影响。这些是模拟运行观察，未经主机验证，需保留实测构建。",
+   "ar": "بعدv0.1.2 يضيف#6236 APS5_PLAYGO_UNLISTED_CHUNKS للنسخ بلا الملفين. الافتراضي يوقف ID غير معروف؛ installed يساعد حفظ High on Life، absent ينهي بحث Sifu/Demon Slayer. installed قد يخصص بلا نهاية. النسخ بmetadata لا تتأثر؛ ملاحظات محاكاة لا تحقق كونسول.",
+   "pt": "Após v0.1.2, #6236 integra APS5_PLAYGO_UNLISTED_CHUNKS para dumps sem os dois ficheiros PlayGo. Predefinição recusa IDs desconhecidos; installed ajuda saves High on Life, absent termina buscas Sifu/Demon Slayer. installed pode alocar indefinidamente neste último. Metadata presente não muda; observações do emulador, não da consola.",
+   "de": "Nach v0.1.2 ergänzt #6236 APS5_PLAYGO_UNLISTED_CHUNKS bei fehlenden PlayGo-Dateien. Unset verweigert unbekannte IDs; installed hilft High-on-Life-Spielständen, absent beendet Sifu/Demon-Slayer-Suche. installed kann dort endlos allokieren. Mit Metadaten unverändert; Emulatorbeobachtungen ohne Konsolenprüfung.",
+   "fr": "Après v0.1.2, #6236 ajoute APS5_PLAYGO_UNLISTED_CHUNKS sans les deux fichiers PlayGo. Défaut refuse IDs inconnus ; installed aide les sauvegardes High on Life, absent termine les recherches Sifu/Demon Slayer. installed peut surallouer ce dernier. Métadonnées présentes inchangées ; observations émulateur, pas console.",
+   "es": "Tras v0.1.2, #6236 añade APS5_PLAYGO_UNLISTED_CHUNKS sin ambos archivos PlayGo. Defecto rechaza IDs desconocidos; installed ayuda saves High on Life, absent termina búsquedas Sifu/Demon Slayer. installed puede asignar sin fin en este último. Con metadata no cambia; observación de emulador, no consola."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/5229b5b829881ab3cef400aa351db197aec032c3/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"].push({
+ "id": "playgo-metadata-policy",
+ "title": {
+  "en": "Choose PlayGo answers by title",
+  "zh": "按游戏选择PlayGo回答",
+  "ar": "إجابات PlayGo حسب اللعبة",
+  "pt": "Respostas PlayGo por jogo",
+  "de": "PlayGo-Antworten je Spiel",
+  "fr": "Réponses PlayGo par jeu",
+  "es": "Respuestas PlayGo por juego"
+ },
+ "body": [
+  {
+   "en": "After v0.1.2, merged #6236 adds APS5_PLAYGO_UNLISTED_CHUNKS for dumps without playgo-chunk.dat and playgo-scenario.json. Unset still stops on unknown nonzero IDs. installed helps High on Life save loading; absent ends the Sifu and Demon Slayer searches. installed can make Demon Slayer allocate without end. Metadata-bearing dumps are unaffected. These are emulator observations, not console validation; preserve the exact tested build.",
+   "zh": "v0.1.2之后合入的#6236为缺playgo-chunk.dat及playgo-scenario.json的dump增加APS5_PLAYGO_UNLISTED_CHUNKS；未设仍在未知非零ID停止。installed有助High on Life读档，absent让Sifu／鬼灭结束搜索，鬼灭用installed可能无限分配。有元数据的dump不受影响。这些是模拟运行观察，未经主机验证，需保留实测构建。",
+   "ar": "بعدv0.1.2 يضيف#6236 APS5_PLAYGO_UNLISTED_CHUNKS للنسخ بلا الملفين. الافتراضي يوقف ID غير معروف؛ installed يساعد حفظ High on Life، absent ينهي بحث Sifu/Demon Slayer. installed قد يخصص بلا نهاية. النسخ بmetadata لا تتأثر؛ ملاحظات محاكاة لا تحقق كونسول.",
+   "pt": "Após v0.1.2, #6236 integra APS5_PLAYGO_UNLISTED_CHUNKS para dumps sem os dois ficheiros PlayGo. Predefinição recusa IDs desconhecidos; installed ajuda saves High on Life, absent termina buscas Sifu/Demon Slayer. installed pode alocar indefinidamente neste último. Metadata presente não muda; observações do emulador, não da consola.",
+   "de": "Nach v0.1.2 ergänzt #6236 APS5_PLAYGO_UNLISTED_CHUNKS bei fehlenden PlayGo-Dateien. Unset verweigert unbekannte IDs; installed hilft High-on-Life-Spielständen, absent beendet Sifu/Demon-Slayer-Suche. installed kann dort endlos allokieren. Mit Metadaten unverändert; Emulatorbeobachtungen ohne Konsolenprüfung.",
+   "fr": "Après v0.1.2, #6236 ajoute APS5_PLAYGO_UNLISTED_CHUNKS sans les deux fichiers PlayGo. Défaut refuse IDs inconnus ; installed aide les sauvegardes High on Life, absent termine les recherches Sifu/Demon Slayer. installed peut surallouer ce dernier. Métadonnées présentes inchangées ; observations émulateur, pas console.",
+   "es": "Tras v0.1.2, #6236 añade APS5_PLAYGO_UNLISTED_CHUNKS sin ambos archivos PlayGo. Defecto rechaza IDs desconocidos; installed ayuda saves High on Life, absent termina búsquedas Sifu/Demon Slayer. installed puede asignar sin fin en este último. Con metadata no cambia; observación de emulador, no consola."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/5229b5b829881ab3cef400aa351db197aec032c3/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "cache-budgets",
+ "title": {
+  "en": "Larger caches can reduce performance",
+  "zh": "更大缓存可能降低性能",
+  "ar": "الذاكرة الأكبر قد تبطئ",
+  "pt": "Caches maiores podem abrandar",
+  "de": "Größere Caches können bremsen",
+  "fr": "Des caches plus grands peuvent ralentir",
+  "es": "Cachés mayores pueden ralentizar"
+ },
+ "body": [
+  {
+   "en": "Current main dynamically budgets sampled textures and storage images against available device memory. Leave APS5_TEXTURE_CACHE_MIB unset unless a same-card measurement supports overriding it: oversized caches can spill to host memory and slow PCIe reads. Shader-cache current-version entries have no size cap and are not aged out; monitor free disk space. Large host-import budgets and experimental settle-floor patches are also hardware/title-specific, not universal FPS settings.",
+   "zh": "当前main按可用显存动态调整采样纹理及存储图像预算。除非同卡测量支持覆盖，否则保持APS5_TEXTURE_CACHE_MIB未设；过大缓存可溢出到主机内存，使PCIe读取变慢。当前版本着色器缓存无大小上限，也不会因陈旧清理，应关注磁盘余量。大导入预算及实验settle下限同样依赖硬件／游戏，不是通用提速配置。",
+   "ar": "main يضبط ميزانيات الصور حسب ذاكرةGPU. اترك APS5_TEXTURE_CACHE_MIB دون ضبط إلا بقياس على نفس البطاقة؛ الكبير قد ينتقل لذاكرة المضيف ويبطئ PCIe. cache shaders الحالي بلا حد أو حذف بالعمر، راقب القرص. import/floor تجريبي ليس ضبط FPS عاماً.",
+   "pt": "Main ajusta texturas/imagens à memória GPU. Deixe APS5_TEXTURE_CACHE_MIB por definir sem medição na mesma placa; exceder pode usar RAM e atrasar PCIe. Shader cache da versão atual não tem limite nem expira; vigie disco. Budgets import/floor experimentais dependem do jogo/placa.",
+   "de": "Main budgetiert Texturen/Storageimages nach verfügbarem VRAM. APS5_TEXTURE_CACHE_MIB ohne Vergleichsmessung ungesetzt lassen; Übergröße kann RAM/PCIe nutzen und bremsen. Aktuelle Shadercache-Version ohne Größenlimit/Alterslöschung; freien Speicher prüfen. Importbudgets/experimentelle Floors sind spiel-/hardwareabhängig.",
+   "fr": "Main ajuste textures/images au budget GPU. Laissez APS5_TEXTURE_CACHE_MIB absent sans mesure sur la même carte ; débordement RAM/PCIe peut ralentir. Cache shaders courant sans limite ni expiration ; surveillez le disque. Budgets import/seuils expérimentaux dépendent du jeu et matériel.",
+   "es": "Main ajusta texturas/imágenes al presupuesto GPU. Deja APS5_TEXTURE_CACHE_MIB sin definir sin medir en la misma tarjeta; desbordar a RAM/PCIe puede ralentizar. Caché shader actual sin límite ni caducidad; vigila disco. Budgets import/umbrales experimentales dependen de juego/hardware."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/5229b5b829881ab3cef400aa351db197aec032c3/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "touch-and-audit",
+ "title": {
+  "en": "Touchpad input and dependency diagnosis",
+  "zh": "触控板输入与依赖诊断",
+  "ar": "إدخال اللمس وتشخيص الاعتمادات",
+  "pt": "Touchpad e diagnóstico de dependências",
+  "de": "Touchpad und Abhängigkeitsdiagnose",
+  "fr": "Touchpad et diagnostic des dépendances",
+  "es": "Touchpad y diagnóstico de dependencias"
+ },
+ "body": [
+  {
+   "en": "Current main pad_input.py accepts touch-left/touch-right. Default keyboard touch halves are Backspace/Tab; L2 has no built-in key. Import audit now follows host-library dependencies transitively and accepts literal ELF symbol names before hashed NIDs. A passing audit proves dependency discovery, not correct API behavior or gameplay. Profiling and trace buffers alter timing/memory; retain ordinary control runs.",
+   "zh": "当前main的pad_input.py支持touch-left／touch-right；默认键盘两半为Backspace／Tab，L2无内置按键。导入审计会递归追踪主机库依赖，先匹配ELF符号原名再匹配NID。审计通过只证明依赖发现，不证明API行为正确或游戏可玩。性能分析／追踪缓存会影响时间和内存，应保留普通运行对照。",
+   "ar": "pad_input.py يدعم touch-left/right؛ Backspace/Tab افتراضياً، L2 بلا زر. audit يتبع اعتماد المكتبات ويطابق ELF الحرفي قبل NID؛ النجاح ليس صحة API أو لعباً. trace يغير الزمن/الذاكرة، أبق تجارب عادية.",
+   "pt": "pad_input.py aceita touch-left/right; Backspace/Tab, L2 sem tecla. Audit segue dependências e símbolos ELF antes de NID; passar não prova API/jogo. Perfil/trace altera tempo/memória; mantenha controlo normal.",
+   "de": "pad_input.py unterstützt touch-left/right; Backspace/Tab, L2 ohne Taste. Audit verfolgt Bibliotheken und prüft ELF-Namen vor NIDs; Erfolg belegt keine API-/Spielkorrektheit. Profiling/Tracing verändert Zeit/Speicher; normale Kontrolle behalten.",
+   "fr": "pad_input.py accepte touch-left/right ; Backspace/Tab, L2 sans touche. Audit suit dépendances et noms ELF avant NID ; succès ne prouve pas API/jeu. Profilage/traces changent temps/mémoire ; gardez contrôle normal.",
+   "es": "pad_input.py acepta touch-left/right; Backspace/Tab, L2 sin tecla. Audit sigue dependencias y nombres ELF antes de NID; pasar no prueba API/juego. Perfil/trazas cambian tiempo/memoria; conserva control normal."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/5229b5b829881ab3cef400aa351db197aec032c3/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/linux"].push({
+ "id": "playgo-metadata-policy",
+ "title": {
+  "en": "Choose PlayGo answers by title",
+  "zh": "按游戏选择PlayGo回答",
+  "ar": "إجابات PlayGo حسب اللعبة",
+  "pt": "Respostas PlayGo por jogo",
+  "de": "PlayGo-Antworten je Spiel",
+  "fr": "Réponses PlayGo par jeu",
+  "es": "Respuestas PlayGo por juego"
+ },
+ "body": [
+  {
+   "en": "After v0.1.2, merged #6236 adds APS5_PLAYGO_UNLISTED_CHUNKS for dumps without playgo-chunk.dat and playgo-scenario.json. Unset still stops on unknown nonzero IDs. installed helps High on Life save loading; absent ends the Sifu and Demon Slayer searches. installed can make Demon Slayer allocate without end. Metadata-bearing dumps are unaffected. These are emulator observations, not console validation; preserve the exact tested build.",
+   "zh": "v0.1.2之后合入的#6236为缺playgo-chunk.dat及playgo-scenario.json的dump增加APS5_PLAYGO_UNLISTED_CHUNKS；未设仍在未知非零ID停止。installed有助High on Life读档，absent让Sifu／鬼灭结束搜索，鬼灭用installed可能无限分配。有元数据的dump不受影响。这些是模拟运行观察，未经主机验证，需保留实测构建。",
+   "ar": "بعدv0.1.2 يضيف#6236 APS5_PLAYGO_UNLISTED_CHUNKS للنسخ بلا الملفين. الافتراضي يوقف ID غير معروف؛ installed يساعد حفظ High on Life، absent ينهي بحث Sifu/Demon Slayer. installed قد يخصص بلا نهاية. النسخ بmetadata لا تتأثر؛ ملاحظات محاكاة لا تحقق كونسول.",
+   "pt": "Após v0.1.2, #6236 integra APS5_PLAYGO_UNLISTED_CHUNKS para dumps sem os dois ficheiros PlayGo. Predefinição recusa IDs desconhecidos; installed ajuda saves High on Life, absent termina buscas Sifu/Demon Slayer. installed pode alocar indefinidamente neste último. Metadata presente não muda; observações do emulador, não da consola.",
+   "de": "Nach v0.1.2 ergänzt #6236 APS5_PLAYGO_UNLISTED_CHUNKS bei fehlenden PlayGo-Dateien. Unset verweigert unbekannte IDs; installed hilft High-on-Life-Spielständen, absent beendet Sifu/Demon-Slayer-Suche. installed kann dort endlos allokieren. Mit Metadaten unverändert; Emulatorbeobachtungen ohne Konsolenprüfung.",
+   "fr": "Après v0.1.2, #6236 ajoute APS5_PLAYGO_UNLISTED_CHUNKS sans les deux fichiers PlayGo. Défaut refuse IDs inconnus ; installed aide les sauvegardes High on Life, absent termine les recherches Sifu/Demon Slayer. installed peut surallouer ce dernier. Métadonnées présentes inchangées ; observations émulateur, pas console.",
+   "es": "Tras v0.1.2, #6236 añade APS5_PLAYGO_UNLISTED_CHUNKS sin ambos archivos PlayGo. Defecto rechaza IDs desconocidos; installed ayuda saves High on Life, absent termina búsquedas Sifu/Demon Slayer. installed puede asignar sin fin en este último. Con metadata no cambia; observación de emulador, no consola."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/5229b5b829881ab3cef400aa351db197aec032c3/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "cache-budgets",
+ "title": {
+  "en": "Larger caches can reduce performance",
+  "zh": "更大缓存可能降低性能",
+  "ar": "الذاكرة الأكبر قد تبطئ",
+  "pt": "Caches maiores podem abrandar",
+  "de": "Größere Caches können bremsen",
+  "fr": "Des caches plus grands peuvent ralentir",
+  "es": "Cachés mayores pueden ralentizar"
+ },
+ "body": [
+  {
+   "en": "Current main dynamically budgets sampled textures and storage images against available device memory. Leave APS5_TEXTURE_CACHE_MIB unset unless a same-card measurement supports overriding it: oversized caches can spill to host memory and slow PCIe reads. Shader-cache current-version entries have no size cap and are not aged out; monitor free disk space. Large host-import budgets and experimental settle-floor patches are also hardware/title-specific, not universal FPS settings.",
+   "zh": "当前main按可用显存动态调整采样纹理及存储图像预算。除非同卡测量支持覆盖，否则保持APS5_TEXTURE_CACHE_MIB未设；过大缓存可溢出到主机内存，使PCIe读取变慢。当前版本着色器缓存无大小上限，也不会因陈旧清理，应关注磁盘余量。大导入预算及实验settle下限同样依赖硬件／游戏，不是通用提速配置。",
+   "ar": "main يضبط ميزانيات الصور حسب ذاكرةGPU. اترك APS5_TEXTURE_CACHE_MIB دون ضبط إلا بقياس على نفس البطاقة؛ الكبير قد ينتقل لذاكرة المضيف ويبطئ PCIe. cache shaders الحالي بلا حد أو حذف بالعمر، راقب القرص. import/floor تجريبي ليس ضبط FPS عاماً.",
+   "pt": "Main ajusta texturas/imagens à memória GPU. Deixe APS5_TEXTURE_CACHE_MIB por definir sem medição na mesma placa; exceder pode usar RAM e atrasar PCIe. Shader cache da versão atual não tem limite nem expira; vigie disco. Budgets import/floor experimentais dependem do jogo/placa.",
+   "de": "Main budgetiert Texturen/Storageimages nach verfügbarem VRAM. APS5_TEXTURE_CACHE_MIB ohne Vergleichsmessung ungesetzt lassen; Übergröße kann RAM/PCIe nutzen und bremsen. Aktuelle Shadercache-Version ohne Größenlimit/Alterslöschung; freien Speicher prüfen. Importbudgets/experimentelle Floors sind spiel-/hardwareabhängig.",
+   "fr": "Main ajuste textures/images au budget GPU. Laissez APS5_TEXTURE_CACHE_MIB absent sans mesure sur la même carte ; débordement RAM/PCIe peut ralentir. Cache shaders courant sans limite ni expiration ; surveillez le disque. Budgets import/seuils expérimentaux dépendent du jeu et matériel.",
+   "es": "Main ajusta texturas/imágenes al presupuesto GPU. Deja APS5_TEXTURE_CACHE_MIB sin definir sin medir en la misma tarjeta; desbordar a RAM/PCIe puede ralentizar. Caché shader actual sin límite ni caducidad; vigila disco. Budgets import/umbrales experimentales dependen de juego/hardware."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/5229b5b829881ab3cef400aa351db197aec032c3/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "touch-and-audit",
+ "title": {
+  "en": "Touchpad input and dependency diagnosis",
+  "zh": "触控板输入与依赖诊断",
+  "ar": "إدخال اللمس وتشخيص الاعتمادات",
+  "pt": "Touchpad e diagnóstico de dependências",
+  "de": "Touchpad und Abhängigkeitsdiagnose",
+  "fr": "Touchpad et diagnostic des dépendances",
+  "es": "Touchpad y diagnóstico de dependencias"
+ },
+ "body": [
+  {
+   "en": "Current main pad_input.py accepts touch-left/touch-right. Default keyboard touch halves are Backspace/Tab; L2 has no built-in key. Import audit now follows host-library dependencies transitively and accepts literal ELF symbol names before hashed NIDs. A passing audit proves dependency discovery, not correct API behavior or gameplay. Profiling and trace buffers alter timing/memory; retain ordinary control runs.",
+   "zh": "当前main的pad_input.py支持touch-left／touch-right；默认键盘两半为Backspace／Tab，L2无内置按键。导入审计会递归追踪主机库依赖，先匹配ELF符号原名再匹配NID。审计通过只证明依赖发现，不证明API行为正确或游戏可玩。性能分析／追踪缓存会影响时间和内存，应保留普通运行对照。",
+   "ar": "pad_input.py يدعم touch-left/right؛ Backspace/Tab افتراضياً، L2 بلا زر. audit يتبع اعتماد المكتبات ويطابق ELF الحرفي قبل NID؛ النجاح ليس صحة API أو لعباً. trace يغير الزمن/الذاكرة، أبق تجارب عادية.",
+   "pt": "pad_input.py aceita touch-left/right; Backspace/Tab, L2 sem tecla. Audit segue dependências e símbolos ELF antes de NID; passar não prova API/jogo. Perfil/trace altera tempo/memória; mantenha controlo normal.",
+   "de": "pad_input.py unterstützt touch-left/right; Backspace/Tab, L2 ohne Taste. Audit verfolgt Bibliotheken und prüft ELF-Namen vor NIDs; Erfolg belegt keine API-/Spielkorrektheit. Profiling/Tracing verändert Zeit/Speicher; normale Kontrolle behalten.",
+   "fr": "pad_input.py accepte touch-left/right ; Backspace/Tab, L2 sans touche. Audit suit dépendances et noms ELF avant NID ; succès ne prouve pas API/jeu. Profilage/traces changent temps/mémoire ; gardez contrôle normal.",
+   "es": "pad_input.py acepta touch-left/right; Backspace/Tab, L2 sin tecla. Audit sigue dependencias y nombres ELF antes de NID; pasar no prueba API/juego. Perfil/trazas cambian tiempo/memoria; conserva control normal."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/5229b5b829881ab3cef400aa351db197aec032c3/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "relinker-build-scope",
+ "title": {
+  "en": "Browser relinker build is not a browser runtime",
+  "zh": "浏览器转换器构建不等于网页运行时",
+  "ar": "بناء محول الويب ليس runtime",
+  "pt": "Build do conversor não é execução web",
+  "de": "Browser-Konverter ist keine Browser-Laufzeit",
+  "fr": "Construire le convertisseur ne crée pas un runtime web",
+  "es": "Compilar conversor no es runtime web"
+ },
+ "body": [
+  {
+   "en": "Current main adds ANYPS5_BUILD_WASM=ON for the relinker_web target, using Emscripten emcmake and BUILD_TESTING=OFF. It converts executables; it does not run PS5 games in a browser. Relinker regression tests require Python3.9+. Upstream also documents a Bitdefender-specific guest_raise_exception test hang; review its scoped diagnosis rather than disabling antivirus globally.",
+   "zh": "当前main增加ANYPS5_BUILD_WASM=ON构建relinker_web，需Emscripten emcmake与BUILD_TESTING=OFF；它转换程序，并非浏览器运行PS5游戏。转换器回归测试需Python3.9+。上游还记录Bitdefender特定guest_raise_exception测试卡死，应查针对性诊断，不全局关闭杀毒。",
+   "ar": "ANYPS5_BUILD_WASM=ON يبني relinker_web مع emcmake وBUILD_TESTING=OFF؛ تحويل لا تشغيل ألعاب بالمتصفح. اختبارات relinker تحتاج Python3.9+. تشخيص Bitdefender محدد لا تعطيل شامل للحماية.",
+   "pt": "ANYPS5_BUILD_WASM=ON compila relinker_web com emcmake/BUILD_TESTING=OFF; converte, não executa jogos no navegador. Testes exigem Python3.9+. Diagnóstico Bitdefender específico, sem desativar proteção global.",
+   "de": "ANYPS5_BUILD_WASM=ON baut relinker_web mit emcmake/BUILD_TESTING=OFF; Konvertierung, keine Browserspiele. Tests brauchen Python3.9+. Bitdefender-Hinweis betrifft bestimmten Test, kein pauschales Abschalten.",
+   "fr": "ANYPS5_BUILD_WASM=ON construit relinker_web avec emcmake/BUILD_TESTING=OFF ; conversion, pas jeux dans le navigateur. Tests exigent Python3.9+. Diagnostic Bitdefender ciblé, pas désactivation globale.",
+   "es": "ANYPS5_BUILD_WASM=ON compila relinker_web con emcmake/BUILD_TESTING=OFF; convierte, no ejecuta juegos web. Tests requieren Python3.9+. Diagnóstico Bitdefender específico, sin desactivar protección global."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/5229b5b829881ab3cef400aa351db197aec032c3/docs/dev/BUILD.md"
+  }
+ ]
+});

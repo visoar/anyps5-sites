@@ -3,6 +3,100 @@ import metadata from './github-source-status.json';
 export interface DevelopmentNote {number:number;title:Text;summary:Text;games:string[]}
 export const developmentNotes:DevelopmentNote[]=[
 {
+ "number": 7332,
+ "games": [],
+ "title": {
+  "en": "Apple Silicon integration remains an open PR",
+  "zh": "Apple Silicon整合仍为开放PR",
+  "ar": "تكامل Apple Silicon طلب مفتوح",
+  "pt": "Integração Apple Silicon ainda em PR",
+  "de": "Apple-Silicon-Integration bleibt offen",
+  "fr": "Intégration Apple Silicon en PR ouverte",
+  "es": "Integración Apple Silicon sigue abierta"
+ },
+ "summary": {
+  "en": "Open #7332 combines Rosetta2/MoltenVK support on M1, macOS26.6.2. The author reports1381/1381 general tests when isolated but18 GPU failures among669, plus intermittent parallel-test failures. No named game was unblocked. It is not a released macOS runtime, native ARM64 execution or confirmed game compatibility.",
+  "zh": "开放的#7332整合M1、macOS26.6.2下Rosetta2／MoltenVK。作者报告一般测试隔离后1381/1381，但669个GPU测试有18失败，另有并行偶发失败。未解除具体游戏阻碍，不是已发行macOS运行时、原生ARM64执行或游戏兼容证明。",
+  "ar": "#7332 مفتوح يجمع Rosetta2/MoltenVK على M1؛1381 اختبار عام مع18 فشلGPU من669 ومشكلات توازٍ. لا لعبة مؤكدة أو runtime منشور أو ARM64 أصلي.",
+  "pt": "#7332 aberto reúne Rosetta2/MoltenVK no M1;1381 testes gerais,18 falhasGPU em669 e intermitências paralelas. Sem jogo desbloqueado/runtime lançado/ARM64 nativo.",
+  "de": "#7332 offen bündelt Rosetta2/MoltenVK auf M1;1381 allgemeine Tests,18 GPU-Fehler von669 und parallele Ausfälle. Kein belegtes Spiel/Release/natives ARM64.",
+  "fr": "#7332 ouvert réunit Rosetta2/MoltenVK sur M1 ;1381 tests généraux,18 échecsGPU sur669 et intermittences parallèles. Pas jeu débloqué/runtime publié/ARM64 natif.",
+  "es": "#7332 abierto reúne Rosetta2/MoltenVK en M1;1381 tests generales,18 fallosGPU de669 e intermitencias paralelas. Sin juego desbloqueado/runtime publicado/ARM64 nativo."
+ }
+},
+{
+ "number": 6652,
+ "games": [],
+ "title": {
+  "en": "iOS interpreter progress is not PS5 execution",
+  "zh": "iOS解释器进展不等于PS5运行",
+  "ar": "تقدم مفسر iOS ليس تشغيل PS5",
+  "pt": "Intérprete iOS não executa PS5",
+  "de": "iOS-Interpreter ist keine PS5-Ausführung",
+  "fr": "Interpréteur iOS sans exécution PS5",
+  "es": "Intérprete iOS no ejecuta PS5"
+ },
+ "summary": {
+  "en": "The updated fork report claims2047 compiler-generated compatibility cases plus guest-memory/loading/relocation prototypes. It explicitly cannot run PS5 games, and physical iOS ARM64 execution remains unshown. These are author-reported interpreter checks, not game tests, a release or independently reproduced performance.",
+  "zh": "分支更新报告2047项编译生成兼容用例，以及guest内存／加载／重定位原型；明确仍不能运行PS5游戏，真实iOS ARM64执行尚未展示。这是作者解释器测试，不是游戏实测、发行版或本站独立性能验证。",
+  "ar": "الفرع يذكر2047 حالة مترجم وذاكرة/تحميل/relocation أولية. لا يشغل ألعاب PS5 ولم يعرض iOS فعلياً. اختبارات مؤلف لا لعبة أو إصدار أو أداء مستقل.",
+  "pt": "Fork relata2047 casos compilados e memória/loader/relocation. Não executa PS5 nem demonstra iOS físico. Testes do autor, sem jogo/release/desempenho independente.",
+  "de": "Fork meldet2047 Compilerfälle und Speicher/Loader/Relokation. Keine PS5-Spiele oder physische iOS-Ausführung. Autorentests, kein Spiel/Release/unabhängiger Benchmark.",
+  "fr": "Fork annonce2047 cas compilés et mémoire/loader/relocation. Pas jeux PS5 ni démonstration iOS physique. Tests d’auteur, pas jeu/release/performance indépendante.",
+  "es": "Fork reporta2047 casos compilados y memoria/loader/relocation. Sin juegos PS5 ni iOS físico demostrado. Tests del autor, no juego/release/rendimiento independiente."
+ }
+},
+{
+ "number": 6060,
+ "games": [
+  "sword-of-the-sea",
+  "mandragora",
+  "soul-hackers-2"
+ ],
+ "title": {
+  "en": "Windows private-import tracking merged",
+  "zh": "Windows私有导入追踪已合入",
+  "ar": "دمج تتبع imports الخاصة Windows",
+  "pt": "Tracking de importações Windows integrado",
+  "de": "Windows-Importtracking integriert",
+  "fr": "Suivi des imports Windows intégré",
+  "es": "Seguimiento de imports Windows integrado"
+ },
+ "summary": {
+  "en": "#6060 merged at0afa6a607 after v0.1.2. A successful write-watch probe and a second graphics queue allow private imports to remain watched after settling; other devices retain comparisons. The merged implementation has no NO_WATCHED_PRIVATE_IMPORTS switch. Later64KiB-floor measurements are local experiments; #6678 remains open and depends on #6455, not a released speedup.",
+  "zh": "#6060在v0.1.2之后于0afa6a607合入。write-watch探测成功且有第二图形队列时，私有导入settle后仍可追踪，其余设备继续比较。最终代码无NO_WATCHED_PRIVATE_IMPORTS开关；后续64KiB下限数据是本地实验，#6678仍开放且依赖#6455，不是发行提速。",
+  "ar": "#6060 مدمج بعدv0.1.2 مع probe وطابور ثان للتتبع؛ غيرها تقارن. لا مفتاح NO_WATCHED_PRIVATE_IMPORTS نهائي. floor64KiB تجربة محلية؛#6678 مفتوح ويحتاج#6455.",
+  "pt": "#6060 integrado após v0.1.2 com probe/segunda fila; restantes comparam. Sem switch NO_WATCHED_PRIVATE_IMPORTS final. Floor64KiB experimental;#6678 aberto depende#6455.",
+  "de": "#6060 nach v0.1.2 integriert: Probe/Zweitqueue erlauben Tracking, sonst Vergleiche. Kein finaler NO_WATCHED_PRIVATE_IMPORTS-Schalter.64KiB lokal;#6678 offen benötigt#6455.",
+  "fr": "#6060 intégré après v0.1.2 : probe/seconde file permettent suivi, sinon comparaisons. Pas option finale NO_WATCHED_PRIVATE_IMPORTS.64KiB local ;#6678 ouvert dépend#6455.",
+  "es": "#6060 integrado tras v0.1.2: probe/segunda cola permiten tracking, resto compara. Sin opción final NO_WATCHED_PRIVATE_IMPORTS.64KiB local;#6678 abierto depende#6455."
+ }
+},
+{
+ "number": 7294,
+ "games": [
+  "sonic-unleashed-recompiled"
+ ],
+ "title": {
+  "en": "3D layout support is not a title unblock",
+  "zh": "3D布局支持不等于游戏解除阻碍",
+  "ar": "دعم تخطيط3D لا يثبت تشغيل اللعبة",
+  "pt": "Layout3D não desbloqueia o jogo",
+  "de": "3D-Layout ist kein Spielfix",
+  "fr": "Layout3D ne débloque pas tout le jeu",
+  "es": "Layout3D no desbloquea el juego"
+ },
+ "summary": {
+  "en": "#7294 merged at bd5856170, adding thick4KiB standard-XOR volume layouts. Decoder/view follow-up #7310 is still open. Sonic’s frozen4c2cab875 run predates this merge and stops on an HTILE guard in a3D opening cutscene. Synthetic draw/readback controls do not establish interactive gameplay or remove that title refusal.",
+  "zh": "#7294于bd5856170合入厚4KiB standard-XOR体积布局，解码／视图后续#7310仍开放。Sonic固定4c2cab875实测早于此次合并，在3D片头因HTILE校验停止；合成绘制／回读通过不等于互动游玩或清除此游戏故障。",
+  "ar": "#7294 مدمج لتخطيطات3D،#7310 decoder/view مفتوح. Sonic4c2 قبل الدمج يتوقف HTILE بالمقدمة. الاختبارات الاصطناعية لا تثبت اللعب أو إزالة الرفض.",
+  "pt": "#7294 integra layouts3D, #7310 decoder/view aberto. Sonic4c2 anterior falha HTILE na intro. Testes sintéticos não provam jogo/desbloqueio.",
+  "de": "#7294 integriert3D-Layouts, #7310 Decoder/View offen. Sonic4c2 davor stoppt HTILE im Intro. Synthetische Tests belegen kein Gameplay/Unblock.",
+  "fr": "#7294 intègre layouts3D, #7310 décodeur/vue ouvert. Sonic4c2 antérieur arrêté HTILE en intro. Tests synthétiques sans preuve de jeu/déblocage.",
+  "es": "#7294 integra layouts3D, #7310 decoder/view abierto. Sonic4c2 anterior falla HTILE en intro. Tests sintéticos no prueban juego/desbloqueo."
+ }
+},
+{
  "number": 5835,
  "games": [],
  "title": {
@@ -174,27 +268,27 @@ export const developmentNotes:DevelopmentNote[]=[
  "number": 6236,
  "games": [
   "high-on-life",
-  "epic-mickey-rebrushed",
-  "sackboy-big-adventure",
-  "kena-bridge-of-spirits"
+  "sifu",
+  "demon-slayer-hinokami",
+  "sackboy-big-adventure"
  ],
  "title": {
-  "en": "Missing PlayGo data needs title-scoped answers",
-  "zh": "缺少 PlayGo 数据需按游戏区分回答",
-  "ar": "إجابات PlayGo بحسب اللعبة",
-  "pt": "Respostas PlayGo por título",
-  "de": "PlayGo-Antworten je Titel prüfen",
-  "fr": "Réponses PlayGo selon le titre",
-  "es": "Respuestas PlayGo por título"
+  "en": "PlayGo policy merged after v0.1.2",
+  "zh": "PlayGo策略在v0.1.2之后合入",
+  "ar": "دمج سياسة PlayGo بعدv0.1.2",
+  "pt": "Política PlayGo integrada após v0.1.2",
+  "de": "PlayGo-Regel nach v0.1.2 integriert",
+  "fr": "Politique PlayGo intégrée après v0.1.2",
+  "es": "Política PlayGo integrada tras v0.1.2"
  },
  "summary": {
-  "en": "Open #6236 proposes installed/absent for dumps missing PlayGo metadata; unset still refuses. High on Life and Sackboy need opposite answers. Epic Mickey’s patched level test and Kena’s log-only startup are different evidence. Not a v0.1.2 feature or a universal installed-chunks workaround.",
-  "zh": "开放的 #6236 为缺 PlayGo 元数据的 dump 提出 installed／absent，未设仍拒绝。High on Life 与 Sackboy 所需回答相反；Mickey 补丁关卡与 Kena 仅日志启动分别记录。不是 v0.1.2 功能或通用 installed 绕行。",
-  "ar": "#6236 مفتوح يقترح installed/absent؛ الافتراضي يرفض. High on Life وSackboy مختلفان، Mickey لعب وKena سجل فقط. ليسv0.1.2 أو حلاً عاماً.",
-  "pt": "#6236 aberto propõe installed/absent; predefinição recusa. High on Life/Sackboy opostos, Mickey nível eKena só log. Não év0.1.2 ou solução universal.",
-  "de": "#6236 offen: installed/absent, Standard verweigert. High on Life/Sackboy brauchen Gegenteile, Mickey-Level undKena-Log separat. Keinv0.1.2-Feature/allgemeiner Fix.",
-  "fr": "#6236 ouvert : installed/absent, défaut refuse. High on Life/Sackboy opposés, niveau Mickey et logKena distincts. Pasv0.1.2 ni solution universelle.",
-  "es": "#6236 abierto: installed/absent, defecto rechaza. High on Life/Sackboy opuestos, nivel Mickey y logKena separados. Nov0.1.2 ni solución universal."
+  "en": "#6236 merged at e751dd205. APS5_PLAYGO_UNLISTED_CHUNKS chooses installed/absent only when PlayGo metadata is missing; unset still refuses. High on Life save loading needs installed, Sifu and Demon Slayer terminate discovery with absent. Opposite title needs rule out a universal workaround; old reports keep their actual patch stack.",
+  "zh": "#6236于e751dd205合入，APS5_PLAYGO_UNLISTED_CHUNKS仅在缺PlayGo元数据时选择installed／absent，未设仍拒绝。High on Life读档需installed，Sifu和鬼灭用absent结束搜索；不同游戏需求相反，不能通用套用，旧报告仍保留实际补丁栈。",
+  "ar": "#6236 مدمج e751dd205؛ installed/absent عند غياب metadata فقط، الافتراضي يرفض. High on Life للحفظ installed، Sifu/Demon Slayer absent. ليست وصفة عامة، التقارير القديمة تحتفظ ببنائها.",
+  "pt": "#6236 integrado e751dd205; installed/absent só sem metadata, predefinição recusa. High on Life saves installed, Sifu/Demon Slayer absent. Sem solução universal; relatos antigos mantêm stack.",
+  "de": "#6236 integriert e751dd205; installed/absent nur ohne Metadaten, Standard verweigert. High on Life Laden installed, Sifu/Demon Slayer absent. Kein allgemeiner Fix; alte Berichte behalten Stack.",
+  "fr": "#6236 intégré e751dd205 ; installed/absent sans métadonnées seulement, défaut refuse. High on Life sauvegardes installed, Sifu/Demon Slayer absent. Pas solution universelle ; anciens rapports gardent stack.",
+  "es": "#6236 integrado e751dd205; installed/absent solo sin metadata, defecto rechaza. High on Life saves installed, Sifu/Demon Slayer absent. Sin arreglo universal; informes antiguos conservan stack."
  }
 },
 {

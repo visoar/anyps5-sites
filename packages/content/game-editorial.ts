@@ -1297,6 +1297,572 @@ Object.assign(editorial,{
   }
  }
 });
+Object.assign(editorial,{
+ "devil-may-cry-5-special-edition": {
+  "genre": "action",
+  "overview": {
+   "en": "Action scenes expose missing geometry; a prologue image does not prove responsive combat.",
+   "zh": "动作场景会暴露几何缺失；序章画面不能证明战斗响应。",
+   "ar": "مشاهد الأكشن تكشف هندسة ناقصة؛ المقدمة لا تثبت القتال.",
+   "pt": "Cenas de ação expõem geometria ausente; a intro não prova combate.",
+   "de": "Actionszenen zeigen Geometriefehler; ein Intro bestätigt keinen Kampf.",
+   "fr": "Les scènes révèlent la géométrie absente ; une intro ne prouve pas le combat.",
+   "es": "La acción revela geometría ausente; la intro no demuestra combate."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA01442; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA01442；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA01442 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA01442 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA01442 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA01442 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA01442 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "鬼泣5 特别版"
+  }
+ },
+ "mgs-delta-snake-eater": {
+  "genre": "action",
+  "overview": {
+   "en": "Opening cinematics and player-controlled stealth require separate evidence.",
+   "zh": "开场过场与可操作潜行需分别验证。",
+   "ar": "المقدمة والتسلل المتحكم يحتاجان أدلة منفصلة.",
+   "pt": "Cinemáticas e furtividade controlável exigem provas distintas.",
+   "de": "Intro und steuerbares Schleichen brauchen getrennte Belege.",
+   "fr": "Cinématiques et infiltration contrôlée exigent des preuves distinctes.",
+   "es": "Cinemáticas y sigilo controlable requieren pruebas distintas."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA15304; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA15304；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA15304 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA15304 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA15304 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA15304 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA15304 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "合金装备Δ：食蛇者"
+  }
+ },
+ "middle-ages-ping-pong-homebrew": {
+  "genre": "sports",
+  "overview": {
+   "en": "A homebrew ball game; score changes establish more than a static menu.",
+   "zh": "自制球类游戏；比分变化比静态菜单更能说明交互。",
+   "ar": "لعبة كرة منزلية؛ تغير النتيجة يثبت أكثر من القائمة.",
+   "pt": "Jogo caseiro de bola; a pontuação prova mais que um menu.",
+   "de": "Homebrew-Ballspiel; Punktwechsel belegen mehr als ein Menü.",
+   "fr": "Jeu de balle amateur ; le score prouve davantage qu’un menu.",
+   "es": "Juego casero de pelota; el marcador prueba más que un menú."
+  },
+  "editionNote": {
+   "en": "Community homebrew PPSA28319, separate from official retail releases. A catalog tag is not the tested content version.",
+   "zh": "社区自制版PPSA28319，与官方零售版分开；目录标签不是实测内容版本。",
+   "ar": "Homebrew PPSA28319 منفصل عن الإصدار الرسمي؛ وسم الكتالوج ليس نسخة المحتوى.",
+   "pt": "Homebrew PPSA28319 separado de retail; tag de catálogo não é versão testada.",
+   "de": "Homebrew PPSA28319 getrennt von Retail; Katalogtag ist keine getestete Version.",
+   "fr": "Homebrew PPSA28319 distinct du commerce ; tag du catalogue pas version testée.",
+   "es": "Homebrew PPSA28319 separado de retail; etiqueta no es versión probada."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "Middle Ages Ping Pong · 自制游戏"
+  }
+ },
+ "silent-hill-short-message": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Walking and door interactions are verified within a short run, without completion evidence.",
+   "zh": "短时运行验证走动和开门，未证明通关。",
+   "ar": "مشي وأبواب موثقة لفترة قصيرة، بلا إكمال.",
+   "pt": "Caminhar e portas verificados numa sessão curta, sem conclusão.",
+   "de": "Gehen und Türen kurz bestätigt, kein Abschluss.",
+   "fr": "Marche et portes vérifiées brièvement, sans preuve de fin.",
+   "es": "Caminar y puertas verificados brevemente, sin completar."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA10112; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA10112；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA10112 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA10112 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA10112 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA10112 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA10112 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "寂静岭：短讯"
+  }
+ },
+ "alan-wake-2": {
+  "genre": "adventure",
+  "overview": {
+   "en": "An agreement screen is distinct from playable horror exploration.",
+   "zh": "协议界面与可操作恐怖探索分开。",
+   "ar": "شاشة الاتفاق منفصلة عن استكشاف قابل للعب.",
+   "pt": "Ecrã de acordo distinto de exploração jogável.",
+   "de": "Zustimmungsbildschirm getrennt von spielbarer Erkundung.",
+   "fr": "Écran d’accord distinct de l’exploration jouable.",
+   "es": "Pantalla de acuerdo separada de exploración jugable."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA02572; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA02572；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA02572 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA02572 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA02572 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA02572 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA02572 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "心灵杀手2"
+  }
+ },
+ "control-resonant": {
+  "genre": "action",
+  "overview": {
+   "en": "Setup responsiveness does not establish a rendered combat encounter.",
+   "zh": "设置响应不能证明实际战斗场景。",
+   "ar": "استجابة الإعداد لا تثبت مشهد قتال.",
+   "pt": "Configuração responsiva não prova combate.",
+   "de": "Reagierendes Setup bestätigt keinen Kampf.",
+   "fr": "Réactivité des réglages ne prouve pas le combat.",
+   "es": "Configuración reactiva no demuestra combate."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA34547; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA34547；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA34547 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA34547 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA34547 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA34547 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA34547 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "CONTROL Resonant"
+  }
+ },
+ "infliction-extended-cut": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Room objectives can advance while dark lighting still obscures the scene.",
+   "zh": "房间目标可推进，但昏暗照明仍影响画面可读性。",
+   "ar": "أهداف الغرفة تتقدم مع إضاءة مظلمة تعيق الرؤية.",
+   "pt": "Objetivos avançam, mas a luz escura dificulta a leitura.",
+   "de": "Raumziele schreiten fort, dunkle Beleuchtung bleibt.",
+   "fr": "Les objectifs avancent malgré une lumière très sombre.",
+   "es": "Objetivos avanzan pese a iluminación muy oscura."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA02688; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA02688；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA02688 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA02688 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA02688 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA02688 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA02688 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "Infliction: Extended Cut"
+  }
+ },
+ "samurai-maiden": {
+  "genre": "action",
+  "overview": {
+   "en": "Unresponsive key art and a present counter do not establish a functioning menu.",
+   "zh": "无响应主视觉加呈现计数不构成可用菜单。",
+   "ar": "صورة ساكنة وعدّاد لا يثبتان قائمة عاملة.",
+   "pt": "Arte sem resposta e contador não provam menu funcional.",
+   "de": "Starres Motiv und Zähler belegen kein nutzbares Menü.",
+   "fr": "Visuel inerte et compteur ne prouvent pas un menu fonctionnel.",
+   "es": "Arte inmóvil y contador no demuestran menú funcional."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA04132; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA04132；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA04132 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA04132 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA04132 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA04132 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA04132 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "SAMURAI MAIDEN"
+  }
+ },
+ "demon-slayer-hinokami": {
+  "genre": "action",
+  "overview": {
+   "en": "Early fights run slowly; opening-movie speed and first-action stalls differ.",
+   "zh": "早期战斗运行缓慢；片头速度与首次动作停顿分别记录。",
+   "ar": "قتال مبكر بطيء؛ المقدمة وتوقف أول حركة مختلفان.",
+   "pt": "Combates iniciais lentos; intro e pausa da primeira ação diferem.",
+   "de": "Frühe Kämpfe langsam; Intro und Erstaktionspausen getrennt.",
+   "fr": "Combats initiaux lents ; intro et pauses initiales distinctes.",
+   "es": "Combates iniciales lentos; intro y pausas de primera acción distintas."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA03490; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA03490；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA03490 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA03490 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA03490 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA03490 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA03490 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "鬼灭之刃 火之神血风谭"
+  }
+ },
+ "override-2": {
+  "genre": "action",
+  "overview": {
+   "en": "Training input works, but severe geometry corruption remains in manual play.",
+   "zh": "训练输入可用，但手动游玩仍有严重几何损坏。",
+   "ar": "تحكم التدريب يعمل مع فساد هندسي شديد في اللعب.",
+   "pt": "Treino responde, mas jogo manual mantém geometria corrompida.",
+   "de": "Training reagiert, manuelles Spiel mit starken Geometriefehlern.",
+   "fr": "Entraînement réactif, jeu manuel avec géométrie très corrompue.",
+   "es": "Entrenamiento responde, juego manual con geometría corrupta."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA01907; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA01907；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA01907 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA01907 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA01907 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA01907 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA01907 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "Override 2: Super Mech League"
+  }
+ },
+ "love-is-all-around-2": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Interactive video progress needs separate checks for choices, sound and saves.",
+   "zh": "互动影像推进还需分别核验选项、声音和存档。",
+   "ar": "تقدم الفيديو يحتاج فحص الخيارات والصوت والحفظ.",
+   "pt": "Vídeo interativo exige verificar escolhas, som e saves.",
+   "de": "Interaktiver Film braucht Prüfungen für Auswahl, Ton und Speichern.",
+   "fr": "Vidéo interactive : vérifier choix, son et sauvegarde.",
+   "es": "Vídeo interactivo requiere comprobar elecciones, audio y guardado."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA31909; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA31909；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA31909 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA31909 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA31909 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA31909 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA31909 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "完蛋！我被美女包围了！2"
+  }
+ },
+ "hello-neighbor": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Continue-based street measurements do not retest the failing second cutscene.",
+   "zh": "Continue街道测量不会重测出错的第二过场。",
+   "ar": "قياس الشارع عبر Continue لا يعيد فحص انهيار المقدمة الثانية.",
+   "pt": "Medições de rua via Continue não repetem a segunda cinemática.",
+   "de": "Continue-Straßentests wiederholen nicht die zweite Cutscene.",
+   "fr": "Mesures de rue via Continue sans retest de la deuxième cinématique.",
+   "es": "Mediciones de calle con Continue no repiten segunda cinemática."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA35154; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA35154；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA35154 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA35154 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA35154 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA35154 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA35154 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "你好邻居"
+  }
+ },
+ "dragon-quest-vii-reimagined": {
+  "genre": "rpg",
+  "overview": {
+   "en": "Area exploration and menus have different speeds; black opening video remains a gap.",
+   "zh": "区域探索与菜单速度不同，开场视频黑屏仍是缺口。",
+   "ar": "المنطقة والقائمة بسرعات مختلفة، الافتتاحية سوداء.",
+   "pt": "Exploração e menus com velocidades distintas; intro preta.",
+   "de": "Erkundung und Menü verschieden schnell, Intro schwarz.",
+   "fr": "Exploration et menus à vitesses distinctes ; intro noire.",
+   "es": "Exploración y menús a velocidades distintas; intro negra."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA17942; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA17942；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA17942 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA17942 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA17942 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA17942 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA17942 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "勇者斗恶龙VII Reimagined"
+  }
+ },
+ "gta-iii-definitive": {
+  "genre": "action",
+  "overview": {
+   "en": "Continuous black presents do not establish Liberty City exploration.",
+   "zh": "持续黑帧呈现不能证明自由城探索。",
+   "ar": "إطارات سوداء مستمرة لا تثبت استكشاف المدينة.",
+   "pt": "Apresentações pretas não provam exploração da cidade.",
+   "de": "Schwarze Presents belegen keine Stadterkundung.",
+   "fr": "Images noires continues ne prouvent pas l’exploration.",
+   "es": "Imágenes negras continuas no demuestran exploración."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA03527; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA03527；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA03527 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA03527 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA03527 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA03527 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA03527 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "侠盗猎车手III 最终版"
+  }
+ },
+ "furi": {
+  "genre": "action",
+  "overview": {
+   "en": "A tutorial encounter precedes a repeatable audio-engine crash.",
+   "zh": "教程遭遇后仍有可重复的音频引擎崩溃。",
+   "ar": "مواجهة تدريب قبل انهيار محرك صوت متكرر.",
+   "pt": "Encontro tutorial antes de crash de áudio repetível.",
+   "de": "Tutorialbegegnung vor wiederholbarem Audioabsturz.",
+   "fr": "Rencontre du tutoriel avant un plantage audio reproductible.",
+   "es": "Encuentro tutorial antes de fallo de audio repetible."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA06147; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA06147；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA06147 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA06147 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA06147 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA06147 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA06147 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "Furi"
+  }
+ },
+ "one-night-stand": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Dialogue and a save prompt are visible; a full save/load cycle remains untested.",
+   "zh": "对话与存档提示可见，完整存读档往返未测。",
+   "ar": "حوار وحفظ ظاهران، دورة حفظ/تحميل غير مختبرة.",
+   "pt": "Diálogo e aviso de save visíveis; recarga não testada.",
+   "de": "Dialog und Speicherhinweis sichtbar, Laden ungeprüft.",
+   "fr": "Dialogue et invite de sauvegarde visibles, rechargement non testé.",
+   "es": "Diálogo y aviso de guardado visibles, recarga sin probar."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA03030; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA03030；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA03030 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA03030 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA03030 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA03030 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA03030 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "One Night Stand"
+  }
+ },
+ "lego-horizon-adventures": {
+  "genre": "action",
+  "overview": {
+   "en": "Brief stick movement verifies control while missing body parts remain.",
+   "zh": "短暂摇杆移动验证操作，但身体部件仍缺失。",
+   "ar": "حركة عصا قصيرة تثبت التحكم مع أجزاء جسم ناقصة.",
+   "pt": "Breve movimento confirma controlo, com partes ausentes.",
+   "de": "Kurze Stickbewegung bestätigt Eingaben, Körperteile fehlen.",
+   "fr": "Bref mouvement confirme le contrôle, parties du corps absentes.",
+   "es": "Breve movimiento confirma control, faltan partes del cuerpo."
+  },
+  "editionNote": {
+   "en": "Reports identify PPSA14632; retain each content version, build and patches. Promotional art is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA14632；保留各次内容版本、构建与补丁，宣传图不是AnyPS5实测。",
+   "ar": "تقارير PPSA14632 بنسخها وبنائها وترقيعها؛ الدعاية ليست تصوير AnyPS5.",
+   "pt": "Relatos PPSA14632 mantêm versão, build e patches; arte não é captura AnyPS5.",
+   "de": "Berichte PPSA14632 behalten Version, Build und Patches; Werbung ist keine AnyPS5-Aufnahme.",
+   "fr": "Rapports PPSA14632 avec version, build et patches ; publicité pas capture AnyPS5.",
+   "es": "Informes PPSA14632 conservan versión, build y parches; publicidad no es captura AnyPS5."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "乐高地平线大冒险"
+  }
+ },
+ "rekhcom-homebrew": {
+  "genre": "action",
+  "overview": {
+   "en": "A community recompilation; surviving a brief GPU probe is not gameplay.",
+   "zh": "社区重编译版；短时GPU探测未崩溃不等于游玩。",
+   "ar": "إعادة ترجمة مجتمعية؛ بقاء اختبار GPU ليس لعباً.",
+   "pt": "Recompilação comunitária; sobreviver a prova GPU não é jogar.",
+   "de": "Community-Rekompilat; kurzer GPU-Test ist kein Gameplay.",
+   "fr": "Recompilation communautaire ; survivre au test GPU ne prouve pas le jeu.",
+   "es": "Recompilación comunitaria; sobrevivir a prueba GPU no es jugar."
+  },
+  "editionNote": {
+   "en": "Community homebrew PPSA98511, separate from official retail releases. A catalog tag is not the tested content version.",
+   "zh": "社区自制版PPSA98511，与官方零售版分开；目录标签不是实测内容版本。",
+   "ar": "Homebrew PPSA98511 منفصل عن الإصدار الرسمي؛ وسم الكتالوج ليس نسخة المحتوى.",
+   "pt": "Homebrew PPSA98511 separado de retail; tag de catálogo não é versão testada.",
+   "de": "Homebrew PPSA98511 getrennt von Retail; Katalogtag ist keine getestete Version.",
+   "fr": "Homebrew PPSA98511 distinct du commerce ; tag du catalogue pas version testée.",
+   "es": "Homebrew PPSA98511 separado de retail; etiqueta no es versión probada."
+  },
+  "related": [
+   "mgs-peace-walker",
+   "hades"
+  ],
+  "names": {
+   "zh": "ReKHCoM · 社区重编译版"
+  }
+ }
+});
+Object.assign(editorial,{
+ "resident-evil-4-ppsa07412": {
+  "genre": "action",
+  "overview": {
+   "en": "A separately identified PS5 edition; a shader stop does not inherit another PPSA’s result.",
+   "zh": "单独标识的PS5版本；着色器故障不继承另一PPSA结果。",
+   "ar": "نسخة PS5 مستقلة؛ فشل shader لا يرث نتيجة PPSA آخر.",
+   "pt": "Edição PS5 distinta; falha shader não herda outro PPSA.",
+   "de": "Eigene PS5-Ausgabe; Shaderstopp übernimmt kein anderes PPSA-Ergebnis.",
+   "fr": "Édition PS5 distincte ; arrêt shader sans reprendre un autre PPSA.",
+   "es": "Edición PS5 distinta; fallo shader no hereda otro PPSA."
+  },
+  "editionNote": {
+   "en": "PPSA07412; content version and region are not supplied. Keep separate from PPSA07411.",
+   "zh": "PPSA07412，来源未给内容版本或地区，与PPSA07411分开。",
+   "ar": "PPSA07412؛ النسخة والمنطقة غير مذكورتين، منفصل07411.",
+   "pt": "PPSA07412; versão/região omitidas, separado07411.",
+   "de": "PPSA07412; Version/Region fehlen, getrennt07411.",
+   "fr": "PPSA07412 ; version/région absentes, distinct07411.",
+   "es": "PPSA07412; versión/región ausentes, separado07411."
+  },
+  "related": [
+   "resident-evil-4-remake",
+   "resident-evil-village"
+  ],
+  "names": {
+   "zh": "生化危机4 · PPSA07412"
+  }
+ }
+});
+Object.assign(editorial,{
+ "tekken-dark-resurrection": {
+  "genre": "action",
+  "overview": {
+   "en": "The PS5 PSPHD reissue stops after its controller prompt; an internal RUNNING label is not gameplay.",
+   "zh": "PS5 PSPHD重发行版在手柄提示后停止，内部RUNNING标签不代表游戏过程。",
+   "ar": "إعادة إصدارPSPHD علىPS5 تتوقف بعد المطالبة، RUNNING ليس لعباً.",
+   "pt": "ReediçãoPSPHD naPS5 para após prompt, RUNNING não é jogo.",
+   "de": "PS5-PSPHD-Neuauflage stoppt nach Eingabehinweis; RUNNING kein Gameplay.",
+   "fr": "RééditionPSPHD surPS5 arrêtée après invite ; RUNNING pas jeu.",
+   "es": "ReediciónPSPHD enPS5 para tras aviso; RUNNING no es juego."
+  },
+  "editionNote": {
+   "en": "PPSA31371 v01.000.002 is the reported PS5 package; it is not evidence from an independent PSP emulator.",
+   "zh": "报告PS5包为PPSA31371 v01.000.002，不是独立PSP模拟器结果。",
+   "ar": "حزمةPS5 PPSA31371 v01.000.002، ليست اختبار محاكيPSP مستقل.",
+   "pt": "PacotePS5 PPSA31371 v01.000.002, não teste de emuladorPSP independente.",
+   "de": "PS5-Paket PPSA31371 v01.000.002, kein separater PSP-Emulatortest.",
+   "fr": "PaquetPS5 PPSA31371 v01.000.002, pas émulateurPSP indépendant.",
+   "es": "PaquetePS5 PPSA31371 v01.000.002, no emuladorPSP independiente."
+  },
+  "related": [
+   "demon-slayer-hinokami",
+   "mgs-peace-walker"
+  ],
+  "names": {
+   "zh": "铁拳 DARK RESURRECTION"
+  }
+ }
+});
 export const media=sources as Record<string,{source:string;provider:string;cover:string|null;screenshots:string[];checked:string}>;
 export const genreLabel=(slug:string,locale:keyof Text)=>genres[editorial[slug].genre][locale];
 export const gameName=(game:{slug:string;name:string},locale:keyof Text)=>editorial[game.slug]?.names[locale]||game.name;

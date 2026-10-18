@@ -1130,5 +1130,145 @@
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202309/0421/418704276d35ce02e8cb532c6ca3826cf866ad2ec66c0b17.png",
     "screenshots": [],
     "checked": "2026-10-17"
+  },
+  "devil-may-cry-5-special-edition": {
+    "source": "https://www.playstation.com/en-us/games/devil-may-cry-5-special-edition/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202009/1710/UUnpHLJqLAIJX5HioswiPuAm.png",
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "mgs-delta-snake-eater": {
+    "source": "https://www.playstation.com/en-us/games/metal-gear-solid-delta-snake-eater/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0513/d35b305652ee922a72b4020bd5d6ef36675cf526dd4945d1.png",
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "middle-ages-ping-pong-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/7315",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "silent-hill-short-message": {
+    "source": "https://www.playstation.com/en-us/games/silent-hill-the-short-message/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202209/1505/5cSwXCtCnItDE46iYGcaXtAm.png",
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "alan-wake-2": {
+    "source": "https://www.playstation.com/en-us/games/alan-wake-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2420/c3daf3037feb797d9e71b81618e3b5ff3ff1f9609db5a4a2.png",
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "control-resonant": {
+    "source": "https://www.playstation.com/en-us/games/control-resonant/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2212/9fedf57ea1649249a0e3ac24770ea9afa6f4bfa795b5fd05.png",
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "infliction-extended-cut": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/6996",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "samurai-maiden": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/7265",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "demon-slayer-hinokami": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/7257",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "override-2": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/6933",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "love-is-all-around-2": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/7219",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "hello-neighbor": {
+    "source": "https://www.playstation.com/en-us/games/hello-neighbor/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202603/1811/3f246e54d304f6fa9f4d2c79f82a8121422d57777d7b21b5.png",
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "dragon-quest-vii-reimagined": {
+    "source": "https://www.playstation.com/en-us/games/dragon-quest-vii-reimagined/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2811/b2e2d208028f8ab569e95d58f3903a9e7147ea8708b6d9c3.png",
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "gta-iii-definitive": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/6994",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "furi": {
+    "source": "https://www.playstation.com/en-us/games/furi/",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "one-night-stand": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/6979",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "lego-horizon-adventures": {
+    "source": "https://www.playstation.com/en-us/games/lego-horizon-adventures/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202409/2013/96a84262e4562c459c213515a9dfd53d82547603b86a2c6a.png",
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "rekhcom-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/7013",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "resident-evil-4-ppsa07412": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/7345",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-18"
+  },
+  "tekken-dark-resurrection": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/7118",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-18"
   }
 }

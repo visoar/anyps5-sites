@@ -44,3 +44,7 @@ As requested on 2026-10-16, active search-engine notifications are handled by th
 `.github/workflows/ci.yml` runs the existing tests and full site build on Ubuntu after pushes to main or manual dispatch, with read-only repository permissions. It does not wait for production or submit URLs. Canonical metadata, hreflang, robots.txt and both sitemap entrypoints remain part of the build and its verification.
 
 Deployment acceptance still requires both Zeabur deployments to be RUNNING at the pushed main SHA, followed by public content, asset, health, redirect and sitemap checks. CI success confirms validation and build success; deployment acceptance is recorded separately. Active search-engine notifications are no longer a release requirement.
+
+## Source maintenance — 2026-10-18
+
+The20-entry/65-report update uses the same normal main Git trigger and both existing services. The[maintenance record](maintenance/2026-10-18-nightly.md) records source boundaries and checks; ignored daily release receipts hold the exact main SHA, both RUNNING deployment IDs, normal validation CI and public acceptance. Search notifications remain delegated to Cloudflare.
