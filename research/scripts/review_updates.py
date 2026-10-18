@@ -7,6 +7,7 @@ import subprocess
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 PUBLISHED = json.loads((ROOT / 'packages/content/github-source-status.json').read_text())
+ISSUE_PR_SOURCES = {number: source for number, source in PUBLISHED.items() if source['kind'] in {'issue', 'pr'}}
 
 def api(endpoint):
     return json.loads(subprocess.check_output(['gh', 'api', endpoint], text=True))
@@ -26,7 +27,7 @@ def review(number):
     return number, candidate, changed
 
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-    results = list(pool.map(review, PUBLISHED))
+    results = list(pool.map(review, ISSUE_PR_SOURCES))
 raw = ROOT / 'research/raw'
 raw.mkdir(exist_ok=True)
 output = raw / 'update-candidates.json'

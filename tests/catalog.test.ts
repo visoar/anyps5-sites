@@ -81,7 +81,7 @@ test('new source reviews distinguish setup screens, patched integrations and act
 
 test('regional PPSA reports remain separate in search and platform filters',()=>{
  assert.equal(filterGames('PPSA01342',{platform:'windows',stage:'menu'})[0]?.slug,'demons-souls-ppsa01342');
- assert.equal(filterGames('PPSA01342',{platform:'linux'}).length,0);
+ assert.equal(filterGames('PPSA01342',{platform:'linux',stage:'ingame'})[0]?.slug,'demons-souls-ppsa01342');
  assert.equal(filterGames('PPSA02101',{stage:'menu'}).length,0);
  assert.equal(filterGames('PPSA02101',{platform:'linux',stage:'blocked'})[0]?.slug,'stray-ppsa02101');
  assert.equal(filterGames('PPSA02100',{stage:'menu'})[0]?.slug,'stray');

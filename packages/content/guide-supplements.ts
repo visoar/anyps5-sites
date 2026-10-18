@@ -665,3 +665,355 @@ guideSupplements["guides/build"].push({
   }
  ]
 });
+
+guideSupplements["start"].push({
+ "id": "explicit-module-root",
+ "title": {
+  "en": "Explicit module roots and backup files",
+  "zh": "显式模块目录与备份文件",
+  "ar": "جذور الوحدات والنسخ الاحتياطية",
+  "pt": "Diretórios explícitos e backups",
+  "de": "Explizite Modulordner und Backups",
+  "fr": "Dossiers explicites et sauvegardes",
+  "es": "Directorios explícitos y copias"
+ },
+ "body": [
+  {
+   "en": "Current main accepts a title with no standard module directory only when --module-dir is explicit; homebrew root libraries can use --module-dir . without empty placeholder folders. The CLI skips a backup ELF only beside another ELF with the same SONAME; a lone ELF backup beside a SELF still converts. Keep original relative module paths and matching runtime libraries.",
+   "zh": "当前main仅在显式给出--module-dir时允许没有标准模块目录；根目录库可用--module-dir .，不用造空占位目录。CLI仅在旁边还有相同SONAME的ELF时跳过ELF备份；SELF旁唯一ELF备份仍转换。保留模块相对路径，并配套运行库。",
+   "ar": "main يسمح بغياب مجلد معياري فقط مع--module-dir؛ مكتبات الجذر تستخدم--module-dir . بلا مجلدات فارغة. يتجاوز ELF احتياطياً بجوار ELF بنفسSONAME فقط؛ الوحيد بجوارSELF يحول. احفظ المسارات والمكتبات المطابقة.",
+   "pt": "Main permite faltar diretório padrão só com--module-dir; libs na raiz usam--module-dir . sem pastas vazias. Backup ELF só é saltado junto de outroELF com mesmoSONAME; sozinho juntoSELF converte. Preserve caminhos/libs.",
+   "de": "Main erlaubt fehlenden Standardordner nur mit--module-dir; Rootlibs nutzen--module-dir . ohne Leerordner. ELF-Backup nur neben anderemELF gleicherSONAME übersprungen; einzelnes nebenSELF wird konvertiert. Pfade/Runtime beibehalten.",
+   "fr": "Main accepte absence de dossier standard seulement avec--module-dir ; libs racine utilisent--module-dir . sans dossiers vides. BackupELF ignoré seulement près d’un autreELF mêmeSONAME ; seul prèsSELF converti. Gardez chemins/libs associés.",
+   "es": "Main permite faltar carpeta estándar solo con--module-dir; libs raíz usan--module-dir . sin carpetas vacías. BackupELF se omite solo junto a otroELF mismoSONAME; único juntoSELF se convierte. Conserva rutas/libs."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/48d61f53b46f1d0726889e4dd39c5ef2b3eb30cd/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["downloads"].push({
+ "id": "explicit-module-root",
+ "title": {
+  "en": "Explicit module roots and backup files",
+  "zh": "显式模块目录与备份文件",
+  "ar": "جذور الوحدات والنسخ الاحتياطية",
+  "pt": "Diretórios explícitos e backups",
+  "de": "Explizite Modulordner und Backups",
+  "fr": "Dossiers explicites et sauvegardes",
+  "es": "Directorios explícitos y copias"
+ },
+ "body": [
+  {
+   "en": "Current main accepts a title with no standard module directory only when --module-dir is explicit; homebrew root libraries can use --module-dir . without empty placeholder folders. The CLI skips a backup ELF only beside another ELF with the same SONAME; a lone ELF backup beside a SELF still converts. Keep original relative module paths and matching runtime libraries.",
+   "zh": "当前main仅在显式给出--module-dir时允许没有标准模块目录；根目录库可用--module-dir .，不用造空占位目录。CLI仅在旁边还有相同SONAME的ELF时跳过ELF备份；SELF旁唯一ELF备份仍转换。保留模块相对路径，并配套运行库。",
+   "ar": "main يسمح بغياب مجلد معياري فقط مع--module-dir؛ مكتبات الجذر تستخدم--module-dir . بلا مجلدات فارغة. يتجاوز ELF احتياطياً بجوار ELF بنفسSONAME فقط؛ الوحيد بجوارSELF يحول. احفظ المسارات والمكتبات المطابقة.",
+   "pt": "Main permite faltar diretório padrão só com--module-dir; libs na raiz usam--module-dir . sem pastas vazias. Backup ELF só é saltado junto de outroELF com mesmoSONAME; sozinho juntoSELF converte. Preserve caminhos/libs.",
+   "de": "Main erlaubt fehlenden Standardordner nur mit--module-dir; Rootlibs nutzen--module-dir . ohne Leerordner. ELF-Backup nur neben anderemELF gleicherSONAME übersprungen; einzelnes nebenSELF wird konvertiert. Pfade/Runtime beibehalten.",
+   "fr": "Main accepte absence de dossier standard seulement avec--module-dir ; libs racine utilisent--module-dir . sans dossiers vides. BackupELF ignoré seulement près d’un autreELF mêmeSONAME ; seul prèsSELF converti. Gardez chemins/libs associés.",
+   "es": "Main permite faltar carpeta estándar solo con--module-dir; libs raíz usan--module-dir . sin carpetas vacías. BackupELF se omite solo junto a otroELF mismoSONAME; único juntoSELF se convierte. Conserva rutas/libs."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/48d61f53b46f1d0726889e4dd39c5ef2b3eb30cd/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"].push({
+ "id": "explicit-module-root",
+ "title": {
+  "en": "Explicit module roots and backup files",
+  "zh": "显式模块目录与备份文件",
+  "ar": "جذور الوحدات والنسخ الاحتياطية",
+  "pt": "Diretórios explícitos e backups",
+  "de": "Explizite Modulordner und Backups",
+  "fr": "Dossiers explicites et sauvegardes",
+  "es": "Directorios explícitos y copias"
+ },
+ "body": [
+  {
+   "en": "Current main accepts a title with no standard module directory only when --module-dir is explicit; homebrew root libraries can use --module-dir . without empty placeholder folders. The CLI skips a backup ELF only beside another ELF with the same SONAME; a lone ELF backup beside a SELF still converts. Keep original relative module paths and matching runtime libraries.",
+   "zh": "当前main仅在显式给出--module-dir时允许没有标准模块目录；根目录库可用--module-dir .，不用造空占位目录。CLI仅在旁边还有相同SONAME的ELF时跳过ELF备份；SELF旁唯一ELF备份仍转换。保留模块相对路径，并配套运行库。",
+   "ar": "main يسمح بغياب مجلد معياري فقط مع--module-dir؛ مكتبات الجذر تستخدم--module-dir . بلا مجلدات فارغة. يتجاوز ELF احتياطياً بجوار ELF بنفسSONAME فقط؛ الوحيد بجوارSELF يحول. احفظ المسارات والمكتبات المطابقة.",
+   "pt": "Main permite faltar diretório padrão só com--module-dir; libs na raiz usam--module-dir . sem pastas vazias. Backup ELF só é saltado junto de outroELF com mesmoSONAME; sozinho juntoSELF converte. Preserve caminhos/libs.",
+   "de": "Main erlaubt fehlenden Standardordner nur mit--module-dir; Rootlibs nutzen--module-dir . ohne Leerordner. ELF-Backup nur neben anderemELF gleicherSONAME übersprungen; einzelnes nebenSELF wird konvertiert. Pfade/Runtime beibehalten.",
+   "fr": "Main accepte absence de dossier standard seulement avec--module-dir ; libs racine utilisent--module-dir . sans dossiers vides. BackupELF ignoré seulement près d’un autreELF mêmeSONAME ; seul prèsSELF converti. Gardez chemins/libs associés.",
+   "es": "Main permite faltar carpeta estándar solo con--module-dir; libs raíz usan--module-dir . sin carpetas vacías. BackupELF se omite solo junto a otroELF mismoSONAME; único juntoSELF se convierte. Conserva rutas/libs."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/48d61f53b46f1d0726889e4dd39c5ef2b3eb30cd/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "performance-overlay",
+ "title": {
+  "en": "Read the performance overlay in context",
+  "zh": "按场景解读性能叠加层",
+  "ar": "اقرأ طبقة الأداء في سياقها",
+  "pt": "Leia a sobreposição no contexto",
+  "de": "Leistungsanzeige im Kontext lesen",
+  "fr": "Lire la surimpression en contexte",
+  "es": "Lee la superposición en contexto"
+ },
+ "body": [
+  {
+   "en": "Post-v0.1.2 main adds F10 or ANYPS5_OVERLAY=1, with tl/tr/bl/br positions. FPS counts every present, including black/loading frames. PROFILED marks runs with GPU/draw profiling: compare against an ordinary control. GPU timings overlap and can exceed frame time; RAM excludes shared direct memory. The overlay adds a render pass, not an FPS boost. Invalid nonempty settings stop at first presentation.",
+   "zh": "v0.1.2之后的main支持F10或ANYPS5_OVERLAY=1，位置tl／tr／bl／br。FPS统计所有呈现，包括黑屏／加载帧；PROFILED表示启用了GPU／draw分析，需保留普通运行对照。GPU计时可重叠并超过帧时间，RAM不含共享直接内存。叠加层增加渲染pass，并非提速开关；非空无效设置会在首次呈现停止。",
+   "ar": "main بعدv0.1.2 يضيف F10 أوANYPS5_OVERLAY=1 ومواضعtl/tr/bl/br. FPS يشمل السواد/التحميل؛ PROFILED يحتاج ضبطاً عادياً. أزمنةGPU متداخلة وRAM لا يشمل direct المشترك. الطبقة تزيد pass لا سرعة؛ إعداد غير صالح يوقف العرض الأول.",
+   "pt": "Main após v0.1.2 oferece F10/ANYPS5_OVERLAY=1 e posições tl/tr/bl/br. FPS inclui preto/carregamento; PROFILED exige controlo normal. TemposGPU sobrepõem-se, RAM exclui direct partilhada. Adiciona pass, não velocidade; opção inválida para na primeira apresentação.",
+   "de": "Main nach v0.1.2 bietet F10/ANYPS5_OVERLAY=1 und tl/tr/bl/br. FPS zählt schwarze/Ladebilder; PROFILED mit normaler Kontrolle vergleichen. GPU-Zeiten überlappen, RAM ohne gemeinsamen Direktspeicher. Zusätzlicher Renderpass, kein Boost; ungültige Werte stoppen erste Präsentation.",
+   "fr": "Main après v0.1.2 ajoute F10/ANYPS5_OVERLAY=1 et tl/tr/bl/br. FPS inclut noir/chargement ; PROFILED exige contrôle ordinaire. TempsGPU se chevauchent, RAM exclut mémoire directe partagée. Passe supplémentaire, pas gain ; réglage invalide arrête première présentation.",
+   "es": "Main tras v0.1.2 añade F10/ANYPS5_OVERLAY=1 y tl/tr/bl/br. FPS incluye negro/carga; PROFILED requiere control normal. TiemposGPU solapados, RAM excluye memoria directa compartida. Añade pass, no velocidad; ajuste inválido para primera presentación."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/48d61f53b46f1d0726889e4dd39c5ef2b3eb30cd/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "local-trophies",
+ "title": {
+  "en": "Local trophies have explicit limits",
+  "zh": "本地奖杯的支持边界",
+  "ar": "حدود الجوائز المحلية",
+  "pt": "Limites dos troféus locais",
+  "de": "Grenzen lokaler Trophäen",
+  "fr": "Limites des trophées locaux",
+  "es": "Límites de trofeos locales"
+ },
+ "body": [
+  {
+   "en": "Current main stores unlocks in _trophy/<userid>_<label>.txt and statistics in .stats.txt, using original trophy/UDS UCP data. Only latest uint32/uint64 statistics and simple event rules are supported. Missing data uses placeholders; icons still throw. No trophy notifications, callbacks or PSN sync. Corrupt saved records stop rather than silently reset; retain a backup when reporting a failure.",
+   "zh": "当前main用_trophy/<userid>_<label>.txt存解锁，.stats.txt存统计，读取原始trophy／UDS UCP数据；仅支持最新uint32／uint64统计和简单事件规则。缺数据用占位，图标仍抛错；没有通知、回调或PSN同步。损坏记录会停止，不会静默重置，报告故障时保留备份。",
+   "ar": "main يخزن الفتح في_trophy/<userid>_<label>.txt والإحصاءات.stats.txt من بيانات trophy/UDS الأصلية. أحدثuint32/64 وقواعد بسيطة فقط؛ بيانات ناقصة placeholders وأيقونات ترمي. لا إشعار/رد نداء/PSN؛ السجل التالف يوقف، احفظ نسخة.",
+   "pt": "Main guarda desbloqueios em_trophy/<userid>_<label>.txt e estatísticas.stats.txt com dados trophy/UDS originais. Só último uint32/64 e regras simples; faltas usam placeholders, ícones falham. Sem notificações/callbacks/PSN; registos corrompidos param, preserve backup.",
+   "de": "Main speichert Freischaltungen in_trophy/<userid>_<label>.txt und Statistik.stats.txt mit originalen Trophy/UDS-Daten. Nur neueste uint32/64 und einfache Regeln; Platzhalter bei fehlenden Daten, Icons werfen Fehler. Keine Benachrichtigungen/Callbacks/PSN; beschädigte Daten stoppen, Backup behalten.",
+   "fr": "Main garde déblocages dans_trophy/<userid>_<label>.txt et statistiques.stats.txt avec données trophy/UDS originales. Derniers uint32/64 et règles simples seuls ; placeholders si données absentes, icônes échouent. Pas notifications/callbacks/PSN ; corruption arrête, gardez copie.",
+   "es": "Main guarda desbloqueos en_trophy/<userid>_<label>.txt y estadísticas.stats.txt con datos trophy/UDS originales. Solo últimos uint32/64 y reglas simples; faltas usan placeholders, iconos fallan. Sin notificaciones/callbacks/PSN; corrupción detiene, conserva copia."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/48d61f53b46f1d0726889e4dd39c5ef2b3eb30cd/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/linux"].push({
+ "id": "explicit-module-root",
+ "title": {
+  "en": "Explicit module roots and backup files",
+  "zh": "显式模块目录与备份文件",
+  "ar": "جذور الوحدات والنسخ الاحتياطية",
+  "pt": "Diretórios explícitos e backups",
+  "de": "Explizite Modulordner und Backups",
+  "fr": "Dossiers explicites et sauvegardes",
+  "es": "Directorios explícitos y copias"
+ },
+ "body": [
+  {
+   "en": "Current main accepts a title with no standard module directory only when --module-dir is explicit; homebrew root libraries can use --module-dir . without empty placeholder folders. The CLI skips a backup ELF only beside another ELF with the same SONAME; a lone ELF backup beside a SELF still converts. Keep original relative module paths and matching runtime libraries.",
+   "zh": "当前main仅在显式给出--module-dir时允许没有标准模块目录；根目录库可用--module-dir .，不用造空占位目录。CLI仅在旁边还有相同SONAME的ELF时跳过ELF备份；SELF旁唯一ELF备份仍转换。保留模块相对路径，并配套运行库。",
+   "ar": "main يسمح بغياب مجلد معياري فقط مع--module-dir؛ مكتبات الجذر تستخدم--module-dir . بلا مجلدات فارغة. يتجاوز ELF احتياطياً بجوار ELF بنفسSONAME فقط؛ الوحيد بجوارSELF يحول. احفظ المسارات والمكتبات المطابقة.",
+   "pt": "Main permite faltar diretório padrão só com--module-dir; libs na raiz usam--module-dir . sem pastas vazias. Backup ELF só é saltado junto de outroELF com mesmoSONAME; sozinho juntoSELF converte. Preserve caminhos/libs.",
+   "de": "Main erlaubt fehlenden Standardordner nur mit--module-dir; Rootlibs nutzen--module-dir . ohne Leerordner. ELF-Backup nur neben anderemELF gleicherSONAME übersprungen; einzelnes nebenSELF wird konvertiert. Pfade/Runtime beibehalten.",
+   "fr": "Main accepte absence de dossier standard seulement avec--module-dir ; libs racine utilisent--module-dir . sans dossiers vides. BackupELF ignoré seulement près d’un autreELF mêmeSONAME ; seul prèsSELF converti. Gardez chemins/libs associés.",
+   "es": "Main permite faltar carpeta estándar solo con--module-dir; libs raíz usan--module-dir . sin carpetas vacías. BackupELF se omite solo junto a otroELF mismoSONAME; único juntoSELF se convierte. Conserva rutas/libs."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/48d61f53b46f1d0726889e4dd39c5ef2b3eb30cd/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "performance-overlay",
+ "title": {
+  "en": "Read the performance overlay in context",
+  "zh": "按场景解读性能叠加层",
+  "ar": "اقرأ طبقة الأداء في سياقها",
+  "pt": "Leia a sobreposição no contexto",
+  "de": "Leistungsanzeige im Kontext lesen",
+  "fr": "Lire la surimpression en contexte",
+  "es": "Lee la superposición en contexto"
+ },
+ "body": [
+  {
+   "en": "Post-v0.1.2 main adds F10 or ANYPS5_OVERLAY=1, with tl/tr/bl/br positions. FPS counts every present, including black/loading frames. PROFILED marks runs with GPU/draw profiling: compare against an ordinary control. GPU timings overlap and can exceed frame time; RAM excludes shared direct memory. The overlay adds a render pass, not an FPS boost. Invalid nonempty settings stop at first presentation.",
+   "zh": "v0.1.2之后的main支持F10或ANYPS5_OVERLAY=1，位置tl／tr／bl／br。FPS统计所有呈现，包括黑屏／加载帧；PROFILED表示启用了GPU／draw分析，需保留普通运行对照。GPU计时可重叠并超过帧时间，RAM不含共享直接内存。叠加层增加渲染pass，并非提速开关；非空无效设置会在首次呈现停止。",
+   "ar": "main بعدv0.1.2 يضيف F10 أوANYPS5_OVERLAY=1 ومواضعtl/tr/bl/br. FPS يشمل السواد/التحميل؛ PROFILED يحتاج ضبطاً عادياً. أزمنةGPU متداخلة وRAM لا يشمل direct المشترك. الطبقة تزيد pass لا سرعة؛ إعداد غير صالح يوقف العرض الأول.",
+   "pt": "Main após v0.1.2 oferece F10/ANYPS5_OVERLAY=1 e posições tl/tr/bl/br. FPS inclui preto/carregamento; PROFILED exige controlo normal. TemposGPU sobrepõem-se, RAM exclui direct partilhada. Adiciona pass, não velocidade; opção inválida para na primeira apresentação.",
+   "de": "Main nach v0.1.2 bietet F10/ANYPS5_OVERLAY=1 und tl/tr/bl/br. FPS zählt schwarze/Ladebilder; PROFILED mit normaler Kontrolle vergleichen. GPU-Zeiten überlappen, RAM ohne gemeinsamen Direktspeicher. Zusätzlicher Renderpass, kein Boost; ungültige Werte stoppen erste Präsentation.",
+   "fr": "Main après v0.1.2 ajoute F10/ANYPS5_OVERLAY=1 et tl/tr/bl/br. FPS inclut noir/chargement ; PROFILED exige contrôle ordinaire. TempsGPU se chevauchent, RAM exclut mémoire directe partagée. Passe supplémentaire, pas gain ; réglage invalide arrête première présentation.",
+   "es": "Main tras v0.1.2 añade F10/ANYPS5_OVERLAY=1 y tl/tr/bl/br. FPS incluye negro/carga; PROFILED requiere control normal. TiemposGPU solapados, RAM excluye memoria directa compartida. Añade pass, no velocidad; ajuste inválido para primera presentación."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/48d61f53b46f1d0726889e4dd39c5ef2b3eb30cd/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "local-trophies",
+ "title": {
+  "en": "Local trophies have explicit limits",
+  "zh": "本地奖杯的支持边界",
+  "ar": "حدود الجوائز المحلية",
+  "pt": "Limites dos troféus locais",
+  "de": "Grenzen lokaler Trophäen",
+  "fr": "Limites des trophées locaux",
+  "es": "Límites de trofeos locales"
+ },
+ "body": [
+  {
+   "en": "Current main stores unlocks in _trophy/<userid>_<label>.txt and statistics in .stats.txt, using original trophy/UDS UCP data. Only latest uint32/uint64 statistics and simple event rules are supported. Missing data uses placeholders; icons still throw. No trophy notifications, callbacks or PSN sync. Corrupt saved records stop rather than silently reset; retain a backup when reporting a failure.",
+   "zh": "当前main用_trophy/<userid>_<label>.txt存解锁，.stats.txt存统计，读取原始trophy／UDS UCP数据；仅支持最新uint32／uint64统计和简单事件规则。缺数据用占位，图标仍抛错；没有通知、回调或PSN同步。损坏记录会停止，不会静默重置，报告故障时保留备份。",
+   "ar": "main يخزن الفتح في_trophy/<userid>_<label>.txt والإحصاءات.stats.txt من بيانات trophy/UDS الأصلية. أحدثuint32/64 وقواعد بسيطة فقط؛ بيانات ناقصة placeholders وأيقونات ترمي. لا إشعار/رد نداء/PSN؛ السجل التالف يوقف، احفظ نسخة.",
+   "pt": "Main guarda desbloqueios em_trophy/<userid>_<label>.txt e estatísticas.stats.txt com dados trophy/UDS originais. Só último uint32/64 e regras simples; faltas usam placeholders, ícones falham. Sem notificações/callbacks/PSN; registos corrompidos param, preserve backup.",
+   "de": "Main speichert Freischaltungen in_trophy/<userid>_<label>.txt und Statistik.stats.txt mit originalen Trophy/UDS-Daten. Nur neueste uint32/64 und einfache Regeln; Platzhalter bei fehlenden Daten, Icons werfen Fehler. Keine Benachrichtigungen/Callbacks/PSN; beschädigte Daten stoppen, Backup behalten.",
+   "fr": "Main garde déblocages dans_trophy/<userid>_<label>.txt et statistiques.stats.txt avec données trophy/UDS originales. Derniers uint32/64 et règles simples seuls ; placeholders si données absentes, icônes échouent. Pas notifications/callbacks/PSN ; corruption arrête, gardez copie.",
+   "es": "Main guarda desbloqueos en_trophy/<userid>_<label>.txt y estadísticas.stats.txt con datos trophy/UDS originales. Solo últimos uint32/64 y reglas simples; faltas usan placeholders, iconos fallan. Sin notificaciones/callbacks/PSN; corrupción detiene, conserva copia."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/48d61f53b46f1d0726889e4dd39c5ef2b3eb30cd/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "guest-time-scale",
+ "title": {
+  "en": "Guest time scaling changes timing, not throughput",
+  "zh": "guest时间缩放改变计时，不提高吞吐",
+  "ar": "تحجيم الوقت لا يزيد الإنتاجية",
+  "pt": "Escala de tempo não aumenta desempenho",
+  "de": "Zeitskalierung erhöht keinen Durchsatz",
+  "fr": "Échelle temporelle sans gain de débit",
+  "es": "Escala temporal sin aumentar rendimiento"
+ },
+ "body": [
+  {
+   "en": "APS5_TIME_SCALE accepts a positive factor, otherwise1. It scales guest processTime/TSC-derived clocks from the first observation and Windows monotonic time; Linux native clocks, hardware rdtsc, reported TSC frequency and host waits remain unscaled. It does not accelerate CPU/GPU work. Scripted input uses scaled durations/polling: at0.02, a one-second press lasts50 real seconds and reload polling can take five. Always disclose the factor in a run report.",
+   "zh": "APS5_TIME_SCALE接受正因子，否则为1；从首次读取起缩放guest processTime／TSC派生时钟及Windows单调时钟。Linux原生时钟、硬件rdtsc、报告TSC频率及主机等待不缩放；不会加快CPU／GPU工作。脚本输入时长／轮询也缩放：0.02下1秒按键持续实际50秒，重载轮询可到5秒。报告必须写明因子。",
+   "ar": "APS5_TIME_SCALE موجب وإلا1؛ يحجم processTime/ساعةTSC وضبطWindows، لا ساعةLinux الأصلية/rdtsc/التردد/انتظارالمضيف. لا يسرعCPU/GPU؛ إدخال0.02 يجعل ضغطة1ث=50ث حقيقية وpoll خمس ثوان. سجّل العامل.",
+   "pt": "APS5_TIME_SCALE positivo, senão1; escala processTime/relógioTSC e monotónicoWindows, não Linux nativo/rdtsc/frequência/esperas. Não aceleraCPU/GPU. Input0,02: pressão1s dura50s reais, reload poll até5s. Declare fator.",
+   "de": "APS5_TIME_SCALE positiv, sonst1; skaliert processTime/TSC-Uhr und Windows-monoton, nicht Linux-Uhr/rdtsc/Frequenz/Hostwarten. Kein CPU/GPU-Boost. Bei0,02 dauert1s-Skripttaste50s real, Reloadpoll bis5s. Faktor angeben.",
+   "fr": "APS5_TIME_SCALE positif sinon1 ; scale processTime/horlogeTSC et monotoneWindows, pas Linux natif/rdtsc/fréquence/attentes. N’accélère pasCPU/GPU. À0,02, touche1s dure50s réelles, reload poll jusqu’à5s. Indiquez facteur.",
+   "es": "APS5_TIME_SCALE positivo, si no1; escala processTime/relojTSC y monótonoWindows, no Linux nativo/rdtsc/frecuencia/esperas. No aceleraCPU/GPU. A0,02, tecla1s dura50s reales, reload poll hasta5s. Declara factor."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/48d61f53b46f1d0726889e4dd39c5ef2b3eb30cd/docs/dev/BUILD.md"
+  }
+ ]
+});
+
+guideSupplements["guides/linux"].push({
+ "id": "sparse-import-capability",
+ "title": {
+  "en": "Check sparse import capability before changing kernel limits",
+  "zh": "调内核上限前先检查稀疏导入能力",
+  "ar": "افحص الاستيراد sparse قبل الحد",
+  "pt": "Verifique import sparse antes dos limites",
+  "de": "Sparse-Importfähigkeit vor Limits prüfen",
+  "fr": "Vérifier import sparse avant limites",
+  "es": "Comprueba import sparse antes de límites"
+ },
+ "body": [
+  {
+   "en": "The reviewed main documents a sparse fallback for imports above64 MiB when the device supports sparse blocks of at most64 KiB. This is a device capability condition, not proof that every oversized import succeeds. Permission, actual udmabuf limit and unsupported driver paths remain separate checks; preserve the failing build before comparing a newer main.",
+   "zh": "本次复核main说明：超过64MiB的导入，在设备支持不大于64KiB稀疏块时可用稀疏回退。这是设备能力条件，不保证所有超大导入成功。权限、实际udmabuf上限及驱动路径仍需分别检查，比较新main前保留原失败构建。",
+   "ar": "main يصف fallback sparse فوق64MiB إذا كانت الكتلة≤64KiB. شرط جهاز لا ضمان كل import؛ الصلاحية وحدudmabuf ومسار المشغل فحوص منفصلة، احفظ بناء الفشل.",
+   "pt": "Main documenta fallback sparse acima64MiB com blocos≤64KiB; capacidade não garante todos os imports. Permissão/limiteudmabuf/driver separados, preserve build falhado.",
+   "de": "Main dokumentiert Sparse-Fallback über64MiB bei Blöcken≤64KiB; Fähigkeit garantiert nicht jeden Import. Rechte/udmabuf-Limit/Treiber getrennt prüfen, Fehlerbuild behalten.",
+   "fr": "Main documente fallback sparse au-delà64MiB si blocs≤64KiB ; capacité ne garantit pas chaque import. Droits/limiteudmabuf/pilote distincts, garder build fautif.",
+   "es": "Main documenta fallback sparse sobre64MiB si bloques≤64KiB; capacidad no garantiza cada import. Permiso/límiteudmabuf/driver separados, guarda build fallido."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/48d61f53b46f1d0726889e4dd39c5ef2b3eb30cd/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"].push({
+ "id": "windows-crash-stack-bytes",
+ "title": {
+  "en": "Bound Windows crash stack diagnostics",
+  "zh": "限制Windows崩溃栈诊断范围",
+  "ar": "حد تشخيص stack Windows",
+  "pt": "Limite diagnóstico stack Windows",
+  "de": "Windows-Stackdiagnose begrenzen",
+  "fr": "Limiter diagnostic stack Windows",
+  "es": "Limita diagnóstico stack Windows"
+ },
+ "body": [
+  {
+   "en": "APS5_CRASH_STACK_BYTES accepts decimal or hexadecimal up to1048576 bytes. It expands stack and pointed-object diagnostics, not a crash fix. Review logs for personal paths and captured memory before sharing, and keep build/driver details with the earliest exception.",
+   "zh": "APS5_CRASH_STACK_BYTES接受十进制或十六进制，最多1048576字节；扩大栈及指向对象诊断，不是崩溃修复。分享前检查个人路径和捕获内存，连同构建／驱动记录最早异常。",
+   "ar": "APS5_CRASH_STACK_BYTES عشري/hex حتى1048576؛ يوسع التشخيص لا يصلح العطل. راجع المسارات/الذاكرة قبل المشاركة وسجل البناء/المشغل وأول خطأ.",
+   "pt": "APS5_CRASH_STACK_BYTES decimal/hex até1048576 amplia diagnóstico, não corrige crash. Reveja caminhos/memória antes de partilhar, registe build/driver/primeira exceção.",
+   "de": "APS5_CRASH_STACK_BYTES dezimal/hex bis1048576 erweitert Diagnose, behebt keinen Absturz. Pfade/Speicher vor Teilen prüfen, Build/Treiber/erste Ausnahme festhalten.",
+   "fr": "APS5_CRASH_STACK_BYTES décimal/hex jusqu’à1048576 étend diagnostic, pas correctif. Vérifiez chemins/mémoire avant partage, notez build/pilote/première exception.",
+   "es": "APS5_CRASH_STACK_BYTES decimal/hex hasta1048576 amplía diagnóstico, no arregla fallo. Revisa rutas/memoria antes de compartir, registra build/driver/primera excepción."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/48d61f53b46f1d0726889e4dd39c5ef2b3eb30cd/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "mac-converter-runtime-boundary",
+ "title": {
+  "en": "Mac converter and experimental runtime have different scope",
+  "zh": "Mac转换器与实验运行时范围不同",
+  "ar": "نطاق محول Mac وruntime تجريبي مختلف",
+  "pt": "Conversor Mac e runtime experimental distintos",
+  "de": "Mac-Konverter und experimentelle Runtime getrennt",
+  "fr": "Convertisseur Mac et runtime expérimental distincts",
+  "es": "Conversor Mac y runtime experimental distintos"
+ },
+ "body": [
+  {
+   "en": "README now states that the relinker-only build runs on macOS, including Apple silicon. The combined Rosetta2/MoltenVK runtime remains open #7332; its M4 Pro title reports use disclosed PR/local changes and retain rendering defects. It is not included in v0.1.2. Converter availability, a general test-suite pass and a specific title run are separate evidence.",
+   "zh": "README现说明仅relinker构建可在macOS及Apple silicon运行；组合Rosetta2／MoltenVK运行时仍为开放#7332。其M4 Pro游戏报告带PR／本地改动且仍有渲染缺陷，不包含在v0.1.2。转换器可用、一般测试通过与具体游戏运行需分别判断。",
+   "ar": "README يدعم relinker وحده علىmacOS/Apple silicon؛ runtime Rosetta2/MoltenVK في#7332 المفتوح، تقاريرM4Pro بترقيعات وعيوب. ليسv0.1.2، المحول والاختبارات واللعبة أدلة منفصلة.",
+   "pt": "README permite relinker isolado emmacOS/Apple silicon; runtime Rosetta2/MoltenVK é#7332 aberto, M4Pro com patches/defeitos. Não incluído v0.1.2; conversor/suite/jogo separados.",
+   "de": "README bestätigt reinen Relinker aufmacOS/Apple silicon; Rosetta2/MoltenVK-Runtime bleibt#7332 offen, M4Pro mit Patches/Bildfehlern. Nichtv0.1.2; Konverter/Suite/Spiel getrennte Belege.",
+   "fr": "README confirme relinker seul surmacOS/Apple silicon ; runtime Rosetta2/MoltenVK reste#7332 ouvert, M4Pro avec patches/défauts. Pasv0.1.2 ; convertisseur/suite/jeu distincts.",
+   "es": "README confirma relinker solo enmacOS/Apple silicon; runtime Rosetta2/MoltenVK sigue#7332 abierto, M4Pro con parches/defectos. No v0.1.2; conversor/suite/juego separados."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/48d61f53b46f1d0726889e4dd39c5ef2b3eb30cd/README.md"
+  }
+ ]
+});

@@ -25,7 +25,7 @@ The seven-language `/compatibility-report/` on the game site provides five sourc
 
 ## Content
 
-English, Simplified Chinese, Arabic (RTL), Portuguese (Portugal), German, French and Spanish are published for every content route. There are 19 guide/policy articles, 166 game/edition pages and 365 source reports; the two apps generate 1367 HTML pages including their 404 pages. Each page has canonical metadata, seven language alternates, an x-default alternate and a sitemap entry. Fonts are served locally.
+English, Simplified Chinese, Arabic (RTL), Portuguese (Portugal), German, French and Spanish are published for every content route. There are 19 guide/policy articles, 179 game/edition pages and 401 source reports; the two apps generate 1458 HTML pages including their 404 pages. Each page has canonical metadata, seven language alternates, an x-default alternate and a sitemap entry. Fonts are served locally.
 
 Reports distinguish Windows/Linux, official/community evidence, run stage, local patches, exact build and hardware. Missing fields remain unknown, including an unspecified patch status. Review date, source update date and test date are distinct. An in-game report does not imply full-game completion or unpatched release compatibility. FPS observations remain attached to their hardware and source context. Media links point to original evidence; this repository does not redistribute game files, firmware or keys. No game benchmarks have been performed by this site.
 
@@ -50,9 +50,9 @@ Deployment identifiers are recorded in [CLAUDE.md](CLAUDE.md). Do not store cred
 
 ## Content and editorial maintenance
 
-The current edition has 166 game/edition pages per language, 365 scoped reports and 8 games without a reviewed run result. A no-report entry is searchable but never classified as a startup failure, given invented hardware/FPS, or matched to a specific tested platform. Chinese searches also recognise the curated local game names.
+The current edition has 179 game/edition pages per language, 401 scoped reports and 8 games without a reviewed run result. A no-report entry is searchable but never classified as a startup failure, given invented hardware/FPS, or matched to a specific tested platform. Chinese searches also recognise the curated local game names.
 
-See [content and source maintenance](docs/content-and-source-maintenance.md) for page intent, multilingual conventions, issue/PR evidence rules, image provenance and the review workflow. `python3 research/scripts/review_updates.py` fetches candidate changes without auto-publishing them. After editing reports, regenerate the clean publication index with `npx tsx research/scripts/index_published_evidence.ts`. The existing Git push deployment remains the release path. Latest research scope and evidence gaps: [2026-10-17 nightly maintenance](docs/maintenance/2026-10-17-nightly.md).
+See [content and source maintenance](docs/content-and-source-maintenance.md) for page intent, multilingual conventions, issue/PR evidence rules, image provenance and the review workflow. `python3 research/scripts/review_updates.py` fetches candidate changes without auto-publishing them. After editing reports, regenerate the clean publication index with `npx tsx research/scripts/index_published_evidence.ts`. The existing Git push deployment remains the release path. Latest research scope and evidence gaps: [2026-10-19 nightly maintenance](docs/maintenance/2026-10-19-nightly.md).
 
 Default appearance is light on AnyPS5.cc and dark on AnyPS5.games. The single theme button saves an explicit choice per origin. A prior saved choice is retained; browser system appearance does not replace the site default.
 

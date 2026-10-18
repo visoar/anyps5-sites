@@ -2948,5 +2948,107 @@
   "tekken-dark-resurrection": {
     "cover": null,
     "screenshots": []
+  },
+  "mgs-master-vol2-bonus": {
+    "cover": null,
+    "screenshots": []
+  },
+  "warhammer-40k-boltgun": {
+    "cover": {
+      "file": "warhammer-40k-boltgun/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202303/2314/c5e10e76ff39458aba617e8c889c22ad12f3b495bbee2af4.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202303/2314/c5e10e76ff39458aba617e8c889c22ad12f3b495bbee2af4.png",
+      "sourceSha256": "258529affa20dfbbe9867ee034a7daa78d70ad50d3f680a313b337cd707f93bf",
+      "sourceBytes": 239984,
+      "sha256": "5a6d3b571c51186fcd8d2a621f72db9e0aabe3d901f19fbeebedab8eaa6fedce",
+      "bytes": 143210,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "ea-sports-fc-25": {
+    "cover": null,
+    "screenshots": []
+  },
+  "robocop-unfinished-business": {
+    "cover": null,
+    "screenshots": []
+  },
+  "assassins-creed-mirage": {
+    "cover": {
+      "file": "assassins-creed-mirage/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1718/phwiQjbJddEg979YucUoP3Vr.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1718/phwiQjbJddEg979YucUoP3Vr.png",
+      "sourceSha256": "95f194167c31ca89bdd7fab7c9c2562c1a1de2aee1876e7ecdd3422c7693b0b3",
+      "sourceBytes": 191207,
+      "sha256": "154ec90761c335491c7a633b1637dd7ef68ecdb1819afcc968fb1b0106b0b761",
+      "bytes": 117536,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "mafia-old-country": {
+    "cover": {
+      "file": "mafia-old-country/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202504/2416/06f677b905f8794395b855a0de3e9fcb42b567e78c50aaed.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202504/2416/06f677b905f8794395b855a0de3e9fcb42b567e78c50aaed.png",
+      "sourceSha256": "9f14eb5082cb8fc1a42b50105c5617fdeeecd6a54636d4d00a2fe5f7c2c6268a",
+      "sourceBytes": 187527,
+      "sha256": "4f3d842f4fe72db9fd694146591fb5660a81d4d00e53101035ea84d39367d57a",
+      "bytes": 112240,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "snoopy-great-mystery-club": {
+    "cover": null,
+    "screenshots": []
+  },
+  "jurassic-park-classic-collection": {
+    "cover": null,
+    "screenshots": []
+  },
+  "anger-foot": {
+    "cover": null,
+    "screenshots": []
+  },
+  "absolum": {
+    "cover": {
+      "file": "absolum/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202510/1316/8d3bfb88ab72525a9084ed3ce6d4a8e5527b58491a4bd251.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202510/1316/8d3bfb88ab72525a9084ed3ce6d4a8e5527b58491a4bd251.png",
+      "sourceSha256": "0e76ded7aef7cd2118fcb7aef7490c9516241fd7a504cb9a903edce84b396907",
+      "sourceBytes": 219043,
+      "sha256": "36cb4cdfa261feaf76e087b54ca76e2fef2ea7ed45ad50a52f2eea810cf131f9",
+      "bytes": 121322,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "sao-last-recollection": {
+    "cover": {
+      "file": "sao-last-recollection/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202301/0606/LcJQRl73VBrwvkb2gVWXCysA.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202301/0606/LcJQRl73VBrwvkb2gVWXCysA.png",
+      "sourceSha256": "bdbbfde06a072c9db49a3367817a4f58c0b18bb24192054e5eef29b545e9e000",
+      "sourceBytes": 261762,
+      "sha256": "b976bf6808de753fb324bac1825ab7e974d302b8cbccb42a5389418af3af17e9",
+      "bytes": 167930,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "gta-v-ppsa04263": {
+    "cover": null,
+    "screenshots": []
+  },
+  "rogue-prince-of-persia": {
+    "cover": null,
+    "screenshots": []
   }
 }

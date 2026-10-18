@@ -1,11 +1,11 @@
 {
   "source": "https://boykopovar.github.io/AnyPS5/progress.json",
-  "fetchedAt": "2026-10-18T01:21:33.474563+00:00",
-  "reviewed": "2026-10-18",
+  "fetchedAt": "2026-10-18T19:43:06.611657+00:00",
+  "reviewed": "2026-10-19",
   "libraries": {
-    "done": 3390,
-    "total": 3765,
-    "percent": 90.04
+    "done": 3515,
+    "total": 3873,
+    "percent": 90.76
   },
   "shaders": {
     "done": 1166,

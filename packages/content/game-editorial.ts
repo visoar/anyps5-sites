@@ -1863,6 +1863,372 @@ Object.assign(editorial,{
   }
  }
 });
+Object.assign(editorial,{
+ "mgs-master-vol2-bonus": {
+  "genre": "action",
+  "overview": {
+   "en": "Bonus Content is a separate application; its failed boot cannot rate every collection game.",
+   "zh": "Bonus Content是独立应用，启动失败不能给整个合集内游戏评级。",
+   "ar": "Bonus Content تطبيق منفصل؛ فشله لا يقيم كل المجموعة.",
+   "pt": "Bonus Content é aplicação distinta; falhar não classifica toda a coleção.",
+   "de": "Bonus Content ist eine eigene App; ihr Startfehler bewertet nicht alle Sammlungsspiele.",
+   "fr": "Bonus Content est une application distincte ; son échec ne classe pas toute la collection.",
+   "es": "Bonus Content es una aplicación distinta; su fallo no valora toda la colección."
+  },
+  "names": {
+   "zh": "合金装备 大师合集Vol.2 Bonus Content"
+  },
+  "related": [
+   "quake-ii",
+   "hades"
+  ],
+  "editionNote": {
+   "en": "Report package PPSA24040. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA24040；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA24040، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA24040; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA24040; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA24040 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA24040; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  }
+ },
+ "warhammer-40k-boltgun": {
+  "genre": "action",
+  "overview": {
+   "en": "Audio and save reload strengthen this short gameplay report, while nine minutes leave later levels open.",
+   "zh": "声音和存读档增加短时游玩证据，但九分钟仍不能说明后续关卡。",
+   "ar": "الصوت وإعادة الحفظ يدعمان اللعب القصير، لا المراحل اللاحقة.",
+   "pt": "Som e recarga reforçam sessão curta, não níveis posteriores.",
+   "de": "Ton und Laden stützen den Kurztest, spätere Level bleiben offen.",
+   "fr": "Son et rechargement renforcent le test court, pas les niveaux suivants.",
+   "es": "Audio y recarga refuerzan el test corto, no niveles posteriores."
+  },
+  "names": {
+   "zh": "战锤40,000：爆矢枪"
+  },
+  "related": [
+   "quake-ii",
+   "hades"
+  ],
+  "editionNote": {
+   "en": "Report package PPSA07247. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA07247；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA07247، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA07247; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA07247; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA07247 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA07247; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  }
+ },
+ "ea-sports-fc-25": {
+  "genre": "sports",
+  "overview": {
+   "en": "An animated stadium menu is not a tested football match.",
+   "zh": "动态球场菜单不等于实测足球比赛。",
+   "ar": "قائمة ملعب متحركة ليست مباراة مختبرة.",
+   "pt": "Menu animado não é uma partida testada.",
+   "de": "Animiertes Stadionmenü ist kein getestetes Match.",
+   "fr": "Menu de stade animé sans match testé.",
+   "es": "Menú de estadio animado sin partido probado."
+  },
+  "names": {
+   "zh": "EA SPORTS FC 25"
+  },
+  "related": [
+   "quake-ii",
+   "hades"
+  ],
+  "editionNote": {
+   "en": "Report package PPSA20049. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA20049；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA20049، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA20049; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA20049; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA20049 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA20049; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  }
+ },
+ "robocop-unfinished-business": {
+  "genre": "action",
+  "overview": {
+   "en": "A loaded save proves scene access; cold preparation and menu rendering still need separate checks.",
+   "zh": "加载存档证明场景可达，冷启动准备与菜单渲染仍需分别检查。",
+   "ar": "الحفظ يثبت بلوغ المشهد، والتحضير البارد والقائمة فحصان منفصلان.",
+   "pt": "Save prova acesso à cena; preparação fria e menu separados.",
+   "de": "Spielstand belegt Szenenzugang; kalte Vorbereitung und Menü getrennt prüfen.",
+   "fr": "Save prouve l’accès à la scène ; préparation froide et menu distincts.",
+   "es": "Save prueba acceso a escena; preparación fría y menú separados."
+  },
+  "names": {
+   "zh": "机械战警：暴戾都市 未竟之事"
+  },
+  "related": [
+   "quake-ii",
+   "hades"
+  ],
+  "editionNote": {
+   "en": "Report package PPSA28329. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA28329；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA28329، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA28329; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA28329; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA28329 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA28329; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  }
+ },
+ "assassins-creed-mirage": {
+  "genre": "action",
+  "overview": {
+   "en": "Passing publisher videos does not demonstrate entry to the world.",
+   "zh": "通过发行商视频不能证明进入游戏世界。",
+   "ar": "اجتياز الفيديو لا يثبت دخول العالم.",
+   "pt": "Passar vídeos não prova entrada no mundo.",
+   "de": "Publisher-Videos belegen keinen Weltzugang.",
+   "fr": "Passer les vidéos ne prouve pas l’accès au monde.",
+   "es": "Pasar vídeos no prueba entrada al mundo."
+  },
+  "names": {
+   "zh": "刺客信条：幻景"
+  },
+  "related": [
+   "quake-ii",
+   "hades"
+  ],
+  "editionNote": {
+   "en": "Report package PPSA13960. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA13960；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA13960، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA13960; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA13960; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA13960 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA13960; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  }
+ },
+ "mafia-old-country": {
+  "genre": "action",
+  "overview": {
+   "en": "HDR setup responsiveness is useful evidence but remains distinct from gameplay rendering.",
+   "zh": "HDR设置响应有参考价值，仍需与游戏过程渲染分开。",
+   "ar": "استجابة HDR مفيدة لكنها ليست رسم اللعب.",
+   "pt": "Resposta HDR é útil mas distinta de jogo.",
+   "de": "Reagierendes HDR-Setup ist hilfreich, bleibt getrennt vom Gameplay.",
+   "fr": "Réglage HDR réactif utile, distinct du jeu.",
+   "es": "Ajuste HDR reactivo útil, distinto del juego."
+  },
+  "names": {
+   "zh": "四海兄弟：故乡"
+  },
+  "related": [
+   "quake-ii",
+   "hades"
+  ],
+  "editionNote": {
+   "en": "Report package PPSA14299. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA14299；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA14299، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA14299; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA14299; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA14299 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA14299; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  }
+ },
+ "snoopy-great-mystery-club": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Picking up an item is distinct from verifying it survives a save reload.",
+   "zh": "拾取道具与验证存读档后道具仍在，是两种证据。",
+   "ar": "التقاط عنصر لا يثبت بقاءه بعد تحميل الحفظ.",
+   "pt": "Apanhar item não confirma persistência após carregar.",
+   "de": "Aufheben belegt keine Persistenz nach Laden.",
+   "fr": "Ramasser ne prouve pas la persistance après rechargement.",
+   "es": "Recoger no prueba persistencia al recargar."
+  },
+  "names": {
+   "zh": "史努比与神秘大侦探"
+  },
+  "related": [
+   "quake-ii",
+   "hades"
+  ],
+  "editionNote": {
+   "en": "Report package PPSA28795. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA28795；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA28795، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA28795; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA28795; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA28795 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA28795; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  }
+ },
+ "jurassic-park-classic-collection": {
+  "genre": "action",
+  "overview": {
+   "en": "A collection result covers the tested portions, not automatically every included game.",
+   "zh": "合集结果只覆盖所测片段，不自动扩展到所有内含游戏。",
+   "ar": "نتيجة مجموعة تشمل الأجزاء المختبرة فقط.",
+   "pt": "Resultado da coleção cobre só partes testadas.",
+   "de": "Sammlungsergebnis gilt nur für getestete Teile.",
+   "fr": "Résultat de collection limité aux portions testées.",
+   "es": "Resultado de colección limitado a partes probadas."
+  },
+  "names": {
+   "zh": "侏罗纪公园 经典游戏合集"
+  },
+  "related": [
+   "quake-ii",
+   "hades"
+  ],
+  "editionNote": {
+   "en": "Report package PPSA17217. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA17217；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA17217، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA17217; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA17217; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA17217 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA17217; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  }
+ },
+ "anger-foot": {
+  "genre": "action",
+  "overview": {
+   "en": "Walking is reached, but profiling a draw bottleneck does not demonstrate a speedup.",
+   "zh": "已经到走动，但分析出绘制瓶颈不等于已实现提速。",
+   "ar": "المشي متاح، تشخيص الاختناق لا يثبت التسريع.",
+   "pt": "Andar confirmado; perfil não prova melhoria.",
+   "de": "Gehen erreicht, Profilbefund belegt keinen Geschwindigkeitsgewinn.",
+   "fr": "Marche atteinte, profil sans gain de vitesse démontré.",
+   "es": "Caminar alcanzado, perfil sin mejora demostrada."
+  },
+  "names": {
+   "zh": "愤怒的大脚"
+  },
+  "related": [
+   "quake-ii",
+   "hades"
+  ],
+  "editionNote": {
+   "en": "Report package PPSA29043. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA29043；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA29043، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA29043; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA29043; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA29043 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA29043; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  }
+ },
+ "absolum": {
+  "genre": "action",
+  "overview": {
+   "en": "A license prompt responds, while combat remains behind an untested transition.",
+   "zh": "许可提示可响应，战斗仍在未测试的后续流程。",
+   "ar": "الترخيص يستجيب، القتال لم يختبر.",
+   "pt": "Licença responde, combate ainda não testado.",
+   "de": "Lizenz reagiert, Kampf bleibt ungeprüft.",
+   "fr": "Licence réactive, combat encore non testé.",
+   "es": "Licencia reactiva, combate sin probar."
+  },
+  "names": {
+   "zh": "Absolum"
+  },
+  "related": [
+   "quake-ii",
+   "hades"
+  ],
+  "editionNote": {
+   "en": "Report package PPSA28311. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA28311；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA28311، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA28311; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA28311; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA28311 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA28311; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  }
+ },
+ "sao-last-recollection": {
+  "genre": "rpg",
+  "overview": {
+   "en": "Opening cinematics and the first playable scene have different measured rates.",
+   "zh": "开场过场与首个游戏场景的测量速度不同。",
+   "ar": "المقدمة وأول مشهد لعب لهما سرعتان مختلفتان.",
+   "pt": "Intro e primeira cena têm taxas distintas.",
+   "de": "Intro und erste Spielszene haben verschiedene Raten.",
+   "fr": "Introduction et première scène ont des débits distincts.",
+   "es": "Intro y primera escena tienen tasas distintas."
+  },
+  "names": {
+   "zh": "刀剑神域 异绊集结"
+  },
+  "related": [
+   "quake-ii",
+   "hades"
+  ],
+  "editionNote": {
+   "en": "Report package PPSA06958. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA06958；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA06958، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA06958; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA06958; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA06958 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA06958; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  }
+ },
+ "gta-v-ppsa04263": {
+  "genre": "action",
+  "overview": {
+   "en": "This EU package has its own version and an unidentified patch; results cannot be transferred to another PPSA.",
+   "zh": "此欧版包有独立版本且补丁身份未明，不能把结果转移到另一PPSA。",
+   "ar": "حزمة EU بنسختها وترقيع مجهول، لا تنقل النتيجة لPPSA آخر.",
+   "pt": "Pacote EU com versão/patch próprio, sem transferir a outroPPSA.",
+   "de": "EU-Paket mit eigener Version/unbekanntem Patch, keine Übertragung auf anderes PPSA.",
+   "fr": "Paquet EU avec version/patch propre, sans transfert à autre PPSA.",
+   "es": "Paquete EU con versión/parche propio, sin trasladar a otro PPSA."
+  },
+  "names": {
+   "zh": "侠盗猎车手V · 欧版"
+  },
+  "related": [
+   "quake-ii",
+   "hades"
+  ],
+  "editionNote": {
+   "en": "Report package PPSA04263. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA04263；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA04263، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA04263; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA04263; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA04263 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA04263; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  }
+ },
+ "rogue-prince-of-persia": {
+  "genre": "action",
+  "overview": {
+   "en": "Preparation fails before runtime: no rendering or play result can be inferred.",
+   "zh": "运行前准备失败，不能据此推断画面或游玩结果。",
+   "ar": "التحضير يفشل قبل التشغيل، لا يستنتج رسم أو لعب.",
+   "pt": "Preparação falha antes de executar, sem inferir imagem/jogo.",
+   "de": "Vorbereitung scheitert vor Laufzeit, kein Rendering/Gameplay ableitbar.",
+   "fr": "Préparation échoue avant exécution, aucun rendu/jeu déduit.",
+   "es": "Preparación falla antes de ejecutar, sin deducir imagen/juego."
+  },
+  "names": {
+   "zh": "波斯王子：Rogue"
+  },
+  "related": [
+   "quake-ii",
+   "hades"
+  ],
+  "editionNote": {
+   "en": "Report package PPSA28155. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA28155；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA28155، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA28155; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA28155; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA28155 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA28155; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  }
+ }
+});
 export const media=sources as Record<string,{source:string;provider:string;cover:string|null;screenshots:string[];checked:string}>;
 export const genreLabel=(slug:string,locale:keyof Text)=>genres[editorial[slug].genre][locale];
 export const gameName=(game:{slug:string;name:string},locale:keyof Text)=>editorial[game.slug]?.names[locale]||game.name;

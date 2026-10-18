@@ -3,25 +3,116 @@ import metadata from './github-source-status.json';
 export interface DevelopmentNote {number:number;title:Text;summary:Text;games:string[]}
 export const developmentNotes:DevelopmentNote[]=[
 {
- "number": 7332,
+ "number": 7636,
  "games": [],
  "title": {
-  "en": "Apple Silicon integration remains an open PR",
-  "zh": "Apple Silicon整合仍为开放PR",
-  "ar": "تكامل Apple Silicon طلب مفتوح",
-  "pt": "Integração Apple Silicon ainda em PR",
-  "de": "Apple-Silicon-Integration bleibt offen",
-  "fr": "Intégration Apple Silicon en PR ouverte",
-  "es": "Integración Apple Silicon sigue abierta"
+  "en": "Linux preinit regression remains scoped",
+  "zh": "Linux preinit回归需按程序判断",
+  "ar": "تراجع Linux preinit محدود",
+  "pt": "Regressão preinit Linux por aplicação",
+  "de": "Linux-Preinit-Regression nach Programm",
+  "fr": "Régression preinit Linux par programme",
+  "es": "Regresión preinit Linux por programa"
  },
  "summary": {
-  "en": "Open #7332 combines Rosetta2/MoltenVK support on M1, macOS26.6.2. The author reports1381/1381 general tests when isolated but18 GPU failures among669, plus intermittent parallel-test failures. No named game was unblocked. It is not a released macOS runtime, native ARM64 execution or confirmed game compatibility.",
-  "zh": "开放的#7332整合M1、macOS26.6.2下Rosetta2／MoltenVK。作者报告一般测试隔离后1381/1381，但669个GPU测试有18失败，另有并行偶发失败。未解除具体游戏阻碍，不是已发行macOS运行时、原生ARM64执行或游戏兼容证明。",
-  "ar": "#7332 مفتوح يجمع Rosetta2/MoltenVK على M1؛1381 اختبار عام مع18 فشلGPU من669 ومشكلات توازٍ. لا لعبة مؤكدة أو runtime منشور أو ARM64 أصلي.",
-  "pt": "#7332 aberto reúne Rosetta2/MoltenVK no M1;1381 testes gerais,18 falhasGPU em669 e intermitências paralelas. Sem jogo desbloqueado/runtime lançado/ARM64 nativo.",
-  "de": "#7332 offen bündelt Rosetta2/MoltenVK auf M1;1381 allgemeine Tests,18 GPU-Fehler von669 und parallele Ausfälle. Kein belegtes Spiel/Release/natives ARM64.",
-  "fr": "#7332 ouvert réunit Rosetta2/MoltenVK sur M1 ;1381 tests généraux,18 échecsGPU sur669 et intermittences parallèles. Pas jeu débloqué/runtime publié/ARM64 natif.",
-  "es": "#7332 abierto reúne Rosetta2/MoltenVK en M1;1381 tests generales,18 fallosGPU de669 e intermitencias paralelas. Sin juego desbloqueado/runtime publicado/ARM64 nativo."
+  "en": "After #6112, a97-title homebrew catalog on376c04029 reports duplicate destructor registration. #7639 alone advances Wind Waker/Xash/Ruffle only to duplicate atexit-count abort. MXGP26 on400baa252b runs2/2 to140s, so “every Linux title” is not established. Exact callbacks/module initialization remain under investigation.",
+  "zh": "#6112后，376c04029上的97项自制目录报告重复析构注册；#7639单独仅让Wind Waker／Xash／Ruffle推进到重复atexit-count中止。MXGP26在400baa252b两次到140秒，不能称全部Linux游戏失败；回调／模块初始化仍在调查。",
+  "ar": "كتالوج97 homebrew يذكر تكرار التسجيل بعد#6112؛#7639 وحده يصل لخطأatexit التالي. MXGP26 يمر2/2 إلى140ث على400baa، فلا يعمم لكلLinux.",
+  "pt": "Catálogo97homebrew relata registo duplicado pós#6112;#7639 só avança ao erroatexit. MXGP26 passa2/2 até140s em400baa, sem generalizar Linux.",
+  "de": "97Homebrew-Katalog meldet doppelte Registrierung nach#6112;#7639 führt nur zum nächsten Atexitfehler. MXGP26 läuft2/2 bis140s auf400baa, kein allgemeiner Linuxausfall.",
+  "fr": "Catalogue97homebrew signale doublon après#6112 ;#7639 avance seulement à erreuratexit. MXGP26 passe2/2 jusqu’à140s sur400baa, pas panne Linux générale.",
+  "es": "Catálogo97homebrew reporta registro duplicado tras#6112;#7639 solo avanza al erroratexit. MXGP26 pasa2/2 hasta140s en400baa, sin generalizar Linux."
+ }
+},
+{
+ "number": 7623,
+ "games": [],
+ "title": {
+  "en": "AMD exec-mask proposal has ISA evidence",
+  "zh": "AMD exec掩码提案有ISA证据",
+  "ar": "دليل ISA لاقتراح AMD exec",
+  "pt": "Proposta AMD exec com ISA",
+  "de": "AMD-Exec-Vorschlag mit ISA",
+  "fr": "Proposition AMD exec avec ISA",
+  "es": "Propuesta AMD exec con ISA"
+ },
+ "summary": {
+  "en": "Open #7623 addresses RX6700XT Windows driver32.0.21045.5002 miscompilation of an empty exec-mask check; author ISA and tests support that case. Layered-volume failures involve cache order separately. Main retains its AMD-proprietary robustness exclusion; RADV and title gameplay gains are not demonstrated.",
+  "zh": "开放#7623针对RX6700XT Windows驱动32.0.21045.5002对空exec掩码检查的错误编译，作者ISA及测试支持此个案；分层体积失败另涉及缓存顺序。main保留AMD专有驱动robustness排除，未证明RADV或游戏提速。",
+  "ar": "#7623 مفتوح لعطل exec علىRX6700XT Windows32.0.21045.5002 بدليلISA؛ volume/cache منفصل. استثناءmain باق، لا دليلRADV أو تسريع لعبة.",
+  "pt": "#7623 aberto trata exec RX6700XT Windows32.0.21045.5002 comISA; volume/cache separado. Exclusão main permanece, sem ganhoRADV/jogo.",
+  "de": "#7623 offen für Exec-Fehler RX6700XT Windows32.0.21045.5002 mitISA; Volume/Cache getrennt. Main-Ausnahme bleibt, kein RADV-/Spielgewinn.",
+  "fr": "#7623 ouvert corrige exec RX6700XT Windows32.0.21045.5002 avecISA ; volume/cache distincts. Exclusion main reste, pas gainRADV/jeu.",
+  "es": "#7623 abierto trata exec RX6700XT Windows32.0.21045.5002 conISA; volumen/caché separado. Exclusión main sigue, sin gananciaRADV/juego."
+ }
+},
+{
+ "number": 6012,
+ "games": [],
+ "title": {
+  "en": "Optional overlay merged after v0.1.2",
+  "zh": "可选叠加层在v0.1.2后合入",
+  "ar": "دمج طبقة اختيارية بعدv0.1.2",
+  "pt": "Sobreposição integrada apósv0.1.2",
+  "de": "Overlay nachv0.1.2 integriert",
+  "fr": "Surimpression intégrée aprèsv0.1.2",
+  "es": "Superposición integrada trasv0.1.2"
+ },
+ "summary": {
+  "en": "#6012 merged4ed044d51 with F10/ANYPS5_OVERLAY. Presents include loading/black output; PROFILED and overlapping GPU sums must be interpreted in context. Extra render pass, not a title speedup or compatibility test.",
+  "zh": "#6012于4ed044d51合入F10／ANYPS5_OVERLAY。呈现计数含加载／黑屏，PROFILED及重叠GPU总时长需按场景解读；增加渲染pass，非游戏提速或兼容实测。",
+  "ar": "#6012 مدمج4ed044d51؛ FPS يشمل السواد/التحميل وGPU متداخل، pass إضافي لا تسريع/اختبار لعبة.",
+  "pt": "#6012 integrado4ed044d51; FPS inclui preto/carga eGPU sobreposto, pass extra não ganho/teste jogo.",
+  "de": "#6012 integriert4ed044d51; FPS zählt Schwarz/Laden undGPU überlappt, Zusatzpass kein Spielgewinn/-test.",
+  "fr": "#6012 intégré4ed044d51 ; FPS inclut noir/charge etGPU chevauche, passe extra sans gain/test jeu.",
+  "es": "#6012 integrado4ed044d51; FPS incluye negro/carga yGPU solapa, pass extra sin ganancia/test juego."
+ }
+},
+{
+ "number": 7335,
+ "games": [],
+ "title": {
+  "en": "Local trophy statistics merged",
+  "zh": "本地奖杯统计已合入",
+  "ar": "دمج إحصاءات الجوائز المحلية",
+  "pt": "Estatísticas de troféus integradas",
+  "de": "Lokale Trophäenstatistik integriert",
+  "fr": "Statistiques trophées intégrées",
+  "es": "Estadísticas trofeos integradas"
+ },
+ "summary": {
+  "en": "#7335 mergedc4fea909a and #7262 merged199e2ceb2. Local trophy/UDS persistence handles latest integer stats and simple rules; icons, notifications, callbacks and PSN sync remain unsupported. API implementation does not certify a title’s trophy progression.",
+  "zh": "#7335合入c4fea909a，#7262合入199e2ceb2。本地trophy／UDS持久化覆盖最新整数统计和简单规则；图标、通知、回调和PSN同步仍不支持。API实现不能证明具体游戏奖杯推进。",
+  "ar": "#7335/#7262 مدمجان؛ إحصاء صحيح وقواعد بسيطة محلياً، بلا أيقونات/إشعار/callback/PSN. API ليست إثبات جوائز لعبة.",
+  "pt": "#7335/#7262 integrados; inteiros/regras simples locais, sem ícones/notificações/callback/PSN. API não certifica troféus de jogo.",
+  "de": "#7335/#7262 integriert; lokale Integer/einfache Regeln, keine Icons/Meldungen/Callbacks/PSN. API bestätigt keine Spieltrophäen.",
+  "fr": "#7335/#7262 intégrés ; entiers/règles simples locaux, sans icônes/notifications/callback/PSN. API ne valide pas trophées d’un jeu.",
+  "es": "#7335/#7262 integrados; enteros/reglas simples locales, sin iconos/notificaciones/callback/PSN. API no certifica trofeos de juego."
+ }
+},
+{
+ "number": 7332,
+ "games": [
+  "god-of-war-sons-of-sparta",
+  "ccleste-homebrew"
+ ],
+ "title": {
+  "en": "Open Mac integration has scoped M4 Pro title reports",
+  "zh": "开放Mac整合新增M4 Pro游戏报告",
+  "ar": "تقارير M4 Pro محدودة لتكامل Mac المفتوح",
+  "pt": "PR Mac aberto tem testes M4 Pro",
+  "de": "Offene Mac-Integration mit M4-Pro-Berichten",
+  "fr": "PR Mac ouvert avec rapports M4 Pro",
+  "es": "PR Mac abierto con informes M4 Pro"
+ },
+ "summary": {
+  "en": "Open #7332 is Rosetta2/MoltenVK, not native ARM64 or a release. On M4 Pro16-core/24GB, macOS27.0.1, MoltenVK1.4.2, head690c044a6 +maina62c724c3: Lana PPSA19450 v01.010.000 reaches a corrupt≈10 FPS menu only with local RTLD_GLOBAL; Sparta PPSA28997 v01.008.001 also needs #6842, reaches gameplay≈15 FPS with sound/keyboard and background corruption. ccleste1.00 PPSA59322 stops at barycentrics. Laterdf24fc821 +main376c04029 passes1455 general tests with GPU skipped; titles/GPU not replayed on that head.",
+  "zh": "开放#7332属于Rosetta2／MoltenVK，非原生ARM64或发行版。M4 Pro16核GPU／24GB、macOS27.0.1、MoltenVK1.4.2，690c044a6+maina62c724c3：Lana PPSA19450 v01.010.000需本地RTLD_GLOBAL才到约10FPS且背景损坏的菜单；Sparta PPSA28997 v01.008.001另需#6842，到约15FPS游玩，声音／键盘有效但背景损坏。ccleste1.00 PPSA59322停于重心坐标。较新df24fc821+main376c04029一般测试1455通过但GPU跳过，该头未重测游戏／GPU。",
+  "ar": "#7332 مفتوح Rosetta2/MoltenVK لاARM64 أصلي/إصدار. M4Pro16GPU/24GB macOS27.0.1 MVK1.4.2،690c044a6+maina62c: Lana19450 v01.010.000 قائمة10 معRTLD_GLOBAL محلي وفساد؛ Sparta28997 v01.008.001 +#6842 لعب15 وصوت/لوحة مع فساد؛ ccleste59322 v1.00 يتوقف barycentrics. df24+main376 يمر1455 عامة وGPU متجاوز، بلا إعادة ألعاب عليه.",
+  "pt": "#7332 aberto Rosetta2/MoltenVK, nãoARM64 nativo/release. M4Pro16GPU/24GB macOS27.0.1 MVK1.4.2,690c044a6+maina62c: Lana19450 v01.010.000 menu10 corrompido comRTLD_GLOBAL local; Sparta28997 v01.008.001 +#6842 jogo15/som/teclado com corrupção; ccleste59322 v1.00 falha barycentrics. df24+main376 passa1455 gerais comGPU ignorada, sem repetir jogos.",
+  "de": "#7332 offen, Rosetta2/MoltenVK statt nativemARM64/Release. M4Pro16GPU/24GB macOS27.0.1 MVK1.4.2,690c044a6+maina62c: Lana19450 v01.010.000 fehlerhaftes Menü10 mit lokalemRTLD_GLOBAL; Sparta28997 v01.008.001 +#6842 Gameplay15/Ton/Tastatur mit Bildfehlern; ccleste59322 v1.00 Baryzentrikstopp. df24+main376 besteht1455 allgemeine Tests, GPU übersprungen, Spiele nicht erneut geprüft.",
+  "fr": "#7332 ouvert Rosetta2/MoltenVK, pasARM64 natif/release. M4Pro16GPU/24GB macOS27.0.1 MVK1.4.2,690c044a6+maina62c : Lana19450 v01.010.000 menu10 corrompu avecRTLD_GLOBAL local ; Sparta28997 v01.008.001 +#6842 jeu15/son/clavier avec corruption ; ccleste59322 v1.00 arrêt barycentriques. df24+main376 passe1455 généraux, GPU ignoré, jeux non rejoués.",
+  "es": "#7332 abierto Rosetta2/MoltenVK, noARM64 nativo/release. M4Pro16GPU/24GB macOS27.0.1 MVK1.4.2,690c044a6+maina62c: Lana19450 v01.010.000 menú10 corrupto conRTLD_GLOBAL local; Sparta28997 v01.008.001 +#6842 juego15/audio/teclado con corrupción; ccleste59322 v1.00 falla baricéntricas. df24+main376 pasa1455 generales, GPU omitida, juegos sin repetir."
  }
 },
 {
@@ -54,22 +145,22 @@ export const developmentNotes:DevelopmentNote[]=[
   "soul-hackers-2"
  ],
  "title": {
-  "en": "Windows private-import tracking merged",
-  "zh": "Windows私有导入追踪已合入",
-  "ar": "دمج تتبع imports الخاصة Windows",
-  "pt": "Tracking de importações Windows integrado",
-  "de": "Windows-Importtracking integriert",
-  "fr": "Suivi des imports Windows intégré",
-  "es": "Seguimiento de imports Windows integrado"
+  "en": "Windows import tracking and settle follow-ups merged",
+  "zh": "Windows导入追踪及settle后续已合入",
+  "ar": "دمج تتبع imports ومتابعات settle",
+  "pt": "Tracking e settle Windows integrados",
+  "de": "Windows-Tracking und Settle integriert",
+  "fr": "Suivi Windows et settle intégrés",
+  "es": "Tracking Windows y settle integrados"
  },
  "summary": {
-  "en": "#6060 merged at0afa6a607 after v0.1.2. A successful write-watch probe and a second graphics queue allow private imports to remain watched after settling; other devices retain comparisons. The merged implementation has no NO_WATCHED_PRIVATE_IMPORTS switch. Later64KiB-floor measurements are local experiments; #6678 remains open and depends on #6455, not a released speedup.",
-  "zh": "#6060在v0.1.2之后于0afa6a607合入。write-watch探测成功且有第二图形队列时，私有导入settle后仍可追踪，其余设备继续比较。最终代码无NO_WATCHED_PRIVATE_IMPORTS开关；后续64KiB下限数据是本地实验，#6678仍开放且依赖#6455，不是发行提速。",
-  "ar": "#6060 مدمج بعدv0.1.2 مع probe وطابور ثان للتتبع؛ غيرها تقارن. لا مفتاح NO_WATCHED_PRIVATE_IMPORTS نهائي. floor64KiB تجربة محلية؛#6678 مفتوح ويحتاج#6455.",
-  "pt": "#6060 integrado após v0.1.2 com probe/segunda fila; restantes comparam. Sem switch NO_WATCHED_PRIVATE_IMPORTS final. Floor64KiB experimental;#6678 aberto depende#6455.",
-  "de": "#6060 nach v0.1.2 integriert: Probe/Zweitqueue erlauben Tracking, sonst Vergleiche. Kein finaler NO_WATCHED_PRIVATE_IMPORTS-Schalter.64KiB lokal;#6678 offen benötigt#6455.",
-  "fr": "#6060 intégré après v0.1.2 : probe/seconde file permettent suivi, sinon comparaisons. Pas option finale NO_WATCHED_PRIVATE_IMPORTS.64KiB local ;#6678 ouvert dépend#6455.",
-  "es": "#6060 integrado tras v0.1.2: probe/segunda cola permiten tracking, resto compara. Sin opción final NO_WATCHED_PRIVATE_IMPORTS.64KiB local;#6678 abierto depende#6455."
+  "en": "#6060 merged at0afa6a607 after v0.1.2; successful write-watch probing and a second graphics queue enable watched private imports. #6678 merged755fecb33 and #6455 merged4566cc337 on October18. Historical local64KiB-floor tests retain their own builds and are not automatically current-main or released speedups.",
+  "zh": "#6060在v0.1.2之后于0afa6a607合入，write-watch探测成功及第二图形队列允许追踪私有导入。10月18日#6678合入755fecb33、#6455合入4566cc337。历史本地64KiB下限测量保留原构建，不自动变为当前main或发行版提速。",
+  "ar": "#6060 مدمج بعدv0.1.2؛ probe وطابور ثان للتتبع. #6678 و#6455 دمجا18أكتوبر؛ قياسات64KiB المحلية تبقى ببنائها ولا تصبح سرعة main/إصدار.",
+  "pt": "#6060 integrado apósv0.1.2 com probe/segunda fila. #6678/#6455 integrados18outubro; medições64KiB locais mantêm build, não viram ganho main/release.",
+  "de": "#6060 nachv0.1.2 mit Probe/Zweitqueue integriert. #6678/#6455 am18.Oktober integriert; lokale64KiB-Tests behalten Builds, kein automatischer Main-/Releasegewinn.",
+  "fr": "#6060 intégré aprèsv0.1.2 avec probe/seconde file. #6678/#6455 intégrés18octobre ; tests64KiB locaux gardent builds, pas gain main/release automatique.",
+  "es": "#6060 integrado trasv0.1.2 con probe/segunda cola. #6678/#6455 integrados18octubre; tests64KiB locales conservan builds, sin ganancia main/release automática."
  }
 },
 {
@@ -78,22 +169,22 @@ export const developmentNotes:DevelopmentNote[]=[
   "sonic-unleashed-recompiled"
  ],
  "title": {
-  "en": "3D layout support is not a title unblock",
-  "zh": "3D布局支持不等于游戏解除阻碍",
-  "ar": "دعم تخطيط3D لا يثبت تشغيل اللعبة",
-  "pt": "Layout3D não desbloqueia o jogo",
-  "de": "3D-Layout ist kein Spielfix",
-  "fr": "Layout3D ne débloque pas tout le jeu",
-  "es": "Layout3D no desbloquea el juego"
+  "en": "Sonic gameplay requires its composed fork",
+  "zh": "Sonic游玩证据属于组合分支",
+  "ar": "لعب Sonic على فرع مركب",
+  "pt": "Sonic joga num fork composto",
+  "de": "Sonic-Gameplay auf zusammengesetztem Fork",
+  "fr": "Sonic jouable sur fork composé",
+  "es": "Sonic jugable en fork compuesto"
  },
  "summary": {
-  "en": "#7294 merged at bd5856170, adding thick4KiB standard-XOR volume layouts. Decoder/view follow-up #7310 is still open. Sonic’s frozen4c2cab875 run predates this merge and stops on an HTILE guard in a3D opening cutscene. Synthetic draw/readback controls do not establish interactive gameplay or remove that title refusal.",
-  "zh": "#7294于bd5856170合入厚4KiB standard-XOR体积布局，解码／视图后续#7310仍开放。Sonic固定4c2cab875实测早于此次合并，在3D片头因HTILE校验停止；合成绘制／回读通过不等于互动游玩或清除此游戏故障。",
-  "ar": "#7294 مدمج لتخطيطات3D،#7310 decoder/view مفتوح. Sonic4c2 قبل الدمج يتوقف HTILE بالمقدمة. الاختبارات الاصطناعية لا تثبت اللعب أو إزالة الرفض.",
-  "pt": "#7294 integra layouts3D, #7310 decoder/view aberto. Sonic4c2 anterior falha HTILE na intro. Testes sintéticos não provam jogo/desbloqueio.",
-  "de": "#7294 integriert3D-Layouts, #7310 Decoder/View offen. Sonic4c2 davor stoppt HTILE im Intro. Synthetische Tests belegen kein Gameplay/Unblock.",
-  "fr": "#7294 intègre layouts3D, #7310 décodeur/vue ouvert. Sonic4c2 antérieur arrêté HTILE en intro. Tests synthétiques sans preuve de jeu/déblocage.",
-  "es": "#7294 integra layouts3D, #7310 decoder/view abierto. Sonic4c2 anterior falla HTILE en intro. Tests sintéticos no prueban juego/desbloqueo."
+  "en": "#7294 volume layouts and #7573 placeholder-MSAA support merged; #7310 remains open. Earlier4c2cab875 stopped in the intro. Later completed0b06cc662 on main39ff296960 plus many PRs/adaptations reaches controllable daytime play/one ring for3600s. No clock edits; dialogue1.03–1.05 counter is not sustained-play FPS. Newer0e7fba38 replay is unfinished.",
+  "zh": "#7294体积布局及#7573占位MSAA已合入，#7310仍开放。旧4c2cab875停于片头；后来的0b06cc662基于main39ff296960并组合多PR／适配，完成3600秒到可操作白天关卡及1枚环。无时钟改动，对话1.03–1.05计数非持续游玩FPS，更新0e7fba38重放未完成。",
+  "ar": "#7294/#7573 مدمجان و#7310 مفتوح. القديم4c2 يتوقف بالمقدمة؛0b06 علىmain39ff مع تعديلات متعددة يبلغ لعباً/حلقة3600ث بلا تعديل ساعة. عداد الحوار ليس FPS لعب، replay أحدث غير مكتمل.",
+  "pt": "#7294/#7573 integrados, #7310 aberto. Antigo4c2 falha intro;0b06 emmain39ff com stack chega a jogo/anel3600s sem clock edit. Contador diálogo não é FPS sustentado; replay novo incompleto.",
+  "de": "#7294/#7573 integriert, #7310 offen. Alter4c2 stoppt Intro;0b06 aufmain39ff mit Stack erreicht Spiel/Ring3600s ohne Uhränderung. Dialogzähler kein Dauer-FPS, neuer Replay unvollständig.",
+  "fr": "#7294/#7573 intégrés, #7310 ouvert. Ancien4c2 arrêté intro ;0b06 surmain39ff avec stack atteint jeu/anneau3600s sans horloge modifiée. Compteur dialogue pas FPS durable, replay récent incomplet.",
+  "es": "#7294/#7573 integrados, #7310 abierto. Antiguo4c2 falla intro;0b06 enmain39ff con stack llega a juego/anillo3600s sin reloj modificado. Contador diálogo no FPS sostenido, replay nuevo incompleto."
  }
 },
 {

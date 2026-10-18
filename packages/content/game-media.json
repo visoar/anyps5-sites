@@ -1270,5 +1270,96 @@
     "cover": null,
     "screenshots": [],
     "checked": "2026-10-18"
+  },
+  "mgs-master-vol2-bonus": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/7621",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-19"
+  },
+  "warhammer-40k-boltgun": {
+    "source": "https://www.playstation.com/en-us/games/warhammer-40000-boltgun/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202303/2314/c5e10e76ff39458aba617e8c889c22ad12f3b495bbee2af4.png",
+    "screenshots": [],
+    "checked": "2026-10-19"
+  },
+  "ea-sports-fc-25": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/7607",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-19"
+  },
+  "robocop-unfinished-business": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/7578",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-19"
+  },
+  "assassins-creed-mirage": {
+    "source": "https://www.playstation.com/en-us/games/assassins-creed-mirage/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1718/phwiQjbJddEg979YucUoP3Vr.png",
+    "screenshots": [],
+    "checked": "2026-10-19"
+  },
+  "mafia-old-country": {
+    "source": "https://www.playstation.com/en-us/games/mafia-the-old-country/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202504/2416/06f677b905f8794395b855a0de3e9fcb42b567e78c50aaed.png",
+    "screenshots": [],
+    "checked": "2026-10-19"
+  },
+  "snoopy-great-mystery-club": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/7382",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-19"
+  },
+  "jurassic-park-classic-collection": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/7387",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-19"
+  },
+  "anger-foot": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/7379",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-19"
+  },
+  "absolum": {
+    "source": "https://www.playstation.com/en-us/games/absolum/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202510/1316/8d3bfb88ab72525a9084ed3ce6d4a8e5527b58491a4bd251.png",
+    "screenshots": [],
+    "checked": "2026-10-19"
+  },
+  "sao-last-recollection": {
+    "source": "https://www.playstation.com/en-us/games/sword-art-online-last-recollection/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202301/0606/LcJQRl73VBrwvkb2gVWXCysA.png",
+    "screenshots": [],
+    "checked": "2026-10-19"
+  },
+  "gta-v-ppsa04263": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/1203#discussioncomment-19019041",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-19"
+  },
+  "rogue-prince-of-persia": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/7547",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-19"
   }
 }

@@ -48,3 +48,7 @@ Deployment acceptance still requires both Zeabur deployments to be RUNNING at th
 ## Source maintenance — 2026-10-18
 
 The20-entry/65-report update uses the same normal main Git trigger and both existing services. The[maintenance record](maintenance/2026-10-18-nightly.md) records source boundaries and checks; ignored daily release receipts hold the exact main SHA, both RUNNING deployment IDs, normal validation CI and public acceptance. Search notifications remain delegated to Cloudflare.
+
+## Source maintenance — 2026-10-19
+
+The13-entry/36-observation update follows the same normal main trigger and both existing services. See the[maintenance record](maintenance/2026-10-19-nightly.md); ignored daily receipts retain exact SHA, official deployment verification, CI and complete public acceptance. An initial CLI401 is not treated as proof of a failed deployment. Cloudflare handles active search notifications.
