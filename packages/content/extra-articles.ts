@@ -7,7 +7,7 @@ export const extraArticles:Article[]=[
  S('input',L('Before the window opens','窗口出现之前','قبل ظهور النافذة','Antes de aparecer a janela','Vor dem ersten Fenster','Avant l’ouverture de la fenêtre','Antes de abrirse la ventana'),L('Confirm the input is clean ELF, the relinker targets the right operating system, and libs/ contains matching host-native libraries. Windows error 193 suggests a format mismatch; 126 can indicate a missing dependent DLL. On Linux, an undefined symbol points to a missing export or mismatched library. Rebuild the explicit libs target after changing source.','确认输入是干净 ELF，转换目标与系统一致，libs/ 中是配套主机原生库。Windows 错误 193 提示格式错配，126 可能缺少依赖 DLL；Linux 的 undefined symbol 指向缺失导出或库版本错配。修改源码后记得显式重建 libs。','تأكد أن الإدخال ELF نظيف وأن النظام الهدف صحيح وأن libs/ تضم المكتبات المتوافقة. يشير 193 في Windows إلى صيغة خاطئة، و126 إلى DLL تابعة محتملة. في Linux يدل undefined symbol على تصدير مفقود أو مكتبة غير متوافقة. أعد بناء libs بعد تغيير المصدر.','Confirme que a entrada é ELF limpo, o destino é o sistema correto e libs/ contém bibliotecas correspondentes. No Windows, 193 sugere formato errado e 126 uma possível DLL dependente em falta. No Linux, undefined symbol indica exportação ausente ou biblioteca incompatível. Reconstrua libs depois de alterar o código.','Prüfe unverpacktes ELF, das richtige Zielsystem und passende Hostbibliotheken in libs/. Unter Windows deutet 193 auf das Format, 126 eventuell auf eine abhängige DLL. Unter Linux steht undefined symbol für einen fehlenden Export oder unpassende Bibliotheken. Baue nach Quelländerungen das libs-Ziel neu.','Vérifiez l’ELF non encapsulé, le bon système cible et les bibliothèques adaptées dans libs/. Sous Windows, 193 suggère un mauvais format et 126 une DLL dépendante absente. Sous Linux, undefined symbol indique un export manquant ou une bibliothèque incompatible. Recompilez libs après modification du code.','Comprueba el ELF limpio, el sistema de destino y las bibliotecas adecuadas en libs/. En Windows, 193 sugiere formato incorrecto y 126 una posible DLL dependiente ausente. En Linux, undefined symbol apunta a una exportación ausente o biblioteca incompatible. Reconstruye libs tras cambiar el código.')),
  S('graphics',L('After the window opens','窗口出现之后','بعد ظهور النافذة','Depois de aparecer a janela','Nach dem ersten Fenster','Après l’ouverture de la fenêtre','Después de abrirse la ventana'),L('Check the selected Vulkan device in the log. An allocation error, unsupported shader operation, mixed DCC keys and a missing resource file are different failures. Keep the exact message, build hash, patches and scene. Read reports for your platform and GPU; do not apply a workaround from an unrelated game without understanding what it disables.','从日志确认 Vulkan 设备。内存分配错误、不支持的着色器操作、mixed DCC keys 与缺失资源文件是不同问题。保留原始消息、构建哈希、补丁和场景，参考对应平台与显卡的报告；使用其他游戏的绕过参数前，先理解它关闭了什么检查。','تحقق من جهاز Vulkan في السجل. أخطاء التخصيص وعمليات المظللات غير المدعومة وmixed DCC keys والملفات المفقودة مشكلات مختلفة. احفظ النص الدقيق والبناء والتعديلات والمشهد. راجع تقارير نظامك وبطاقتك، وافهم ما يعطله أي حل من لعبة أخرى.','Confirme o dispositivo Vulkan no registo. Falhas de alocação, operações de shaders não suportadas, mixed DCC keys e recursos em falta são problemas distintos. Guarde a mensagem, o commit, os patches e a cena. Consulte relatórios do seu sistema e GPU e compreenda o que um contorno de outro jogo desativa.','Prüfe das ausgewählte Vulkan-Gerät im Log. Speicherfehler, nicht unterstützte Shaderoperationen, mixed DCC keys und fehlende Ressourcen sind verschiedene Probleme. Notiere Meldung, Commit, Patches und Szene. Nutze Berichte deiner Plattform und GPU und verstehe vor fremden Workarounds, welche Prüfung sie abschalten.','Vérifiez le périphérique Vulkan dans le journal. Échec d’allocation, shader non pris en charge, mixed DCC keys et ressource absente sont des problèmes distincts. Gardez le message exact, le commit, les correctifs et la scène. Consultez les rapports de votre plateforme et GPU et comprenez ce que désactive un contournement provenant d’un autre jeu.','Comprueba el dispositivo Vulkan en el registro. Los fallos de asignación, operaciones de shader no admitidas, mixed DCC keys y recursos ausentes son problemas distintos. Guarda el mensaje exacto, commit, parches y escena. Consulta informes de tu sistema y GPU y entiende qué desactiva un apaño de otro juego.')),
  S('report',L('Make a reproducible report','提交可复现的报告','اكتب تقريراً قابلاً للتكرار','Escreva um relatório reproduzível','Schreibe einen reproduzierbaren Bericht','Rédigez un rapport reproductible','Redacta un informe reproducible'),L("Compare one change at a time. Separate a clean baseline from a patched run and keep logs for both. Include steps, expected behavior, actual stop, test duration and any screenshots or video. Remove personal paths and unrelated sensitive information before sharing. Submit game tests to the matching upstream discussion; email catalog corrections to " + contactEmail + ".","每次只比较一项改动，将干净基线与补丁结果分开，并保留两份日志。附上步骤、预期行为、实际停止位置、时长与截图或视频，分享前移除个人路径和无关敏感信息。游戏测试请提交到上游对应讨论；目录更正请邮件联系 " + contactEmail + "。","قارن تغييراً واحداً كل مرة وافصل الأساس النظيف عن التشغيل المعدّل مع سجليهما. أضف الخطوات والمتوقع ونقطة التوقف والمدة وصوراً أو فيديو. احذف المسارات الشخصية والمعلومات الحساسة غير اللازمة. انشر اختبارات الألعاب في النقاش الأصلي المناسب؛ وأرسل تصحيحات الفهرس إلى " + contactEmail + ".","Compare uma alteração de cada vez. Separe a base limpa do teste modificado e guarde os dois registos. Inclua passos, comportamento esperado, paragem, duração e imagens ou vídeo. Remova caminhos pessoais e dados sensíveis irrelevantes. Publique os testes na discussão original adequada; envie correções do catálogo para " + contactEmail + ".","Vergleiche immer nur eine Änderung. Trenne saubere Basis und gepatchten Lauf und behalte beide Logs. Beschreibe Schritte, erwartetes Verhalten, Abbruchstelle, Dauer und Bilder oder Video. Entferne persönliche Pfade und unnötige vertrauliche Angaben. Veröffentliche Spieltests in der passenden Diskussion des Originalprojekts; sende Katalogkorrekturen an " + contactEmail + ".","Comparez un changement à la fois. Séparez la base propre de l’essai modifié et conservez les deux journaux. Indiquez étapes, comportement attendu, arrêt, durée et images ou vidéo. Retirez les chemins personnels et informations sensibles inutiles. Publiez les tests dans la discussion originale correspondante ; envoyez les corrections du catalogue à " + contactEmail + ".","Compara un cambio cada vez. Separa la base limpia de la prueba modificada y conserva ambos registros. Incluye pasos, resultado esperado, parada, duración e imágenes o vídeo. Elimina rutas personales y datos sensibles innecesarios. Publica las pruebas en la discusión original correspondiente; envía las correcciones del catálogo a " + contactEmail + "."))]},
- {slug:'progress',reviewed:'2026-10-19',title:L("AnyPS5 development progress and coverage","AnyPS5 开发进度与实现范围","تقدم AnyPS5 ونطاق التنفيذ","Progresso e cobertura do AnyPS5","Entwicklungsstand und Umfang von AnyPS5","Avancement et couverture d’AnyPS5","Avances y cobertura de AnyPS5"),description:L("Understand AnyPS5 library and shader implementation counters. See what these dated figures measure and why they cannot establish how many PS5 games are playable.","了解 AnyPS5 系统库与着色器实现进度：这些统计衡量什么、复核于何时，以及为什么不能据此判断 PS5 游戏可玩率。","افهم أرقام تقدم تنفيذ مكتبات AnyPS5 ومظللاته، وما تقيسه هذه البيانات المؤرخة ولماذا لا تحدد نسبة ألعاب PS5 القابلة للعب.","Saiba o que medem os contadores de implementação de bibliotecas e shaders do AnyPS5 e por que motivo não representam a percentagem de jogos PS5 jogáveis.","Erfahre, was die Implementierungszahlen für AnyPS5-Bibliotheken und Shader messen und warum sie keinen Anteil spielbarer PS5-Titel belegen.","Comprenez les compteurs d’implémentation des bibliothèques et shaders d’AnyPS5 et pourquoi ils ne mesurent pas la proportion de jeux PS5 jouables.","Entiende qué miden los contadores de bibliotecas y shaders de AnyPS5 y por qué no representan el porcentaje de juegos de PS5 que se pueden jugar."),sources:['https://boykopovar.github.io/AnyPS5/progress.json',UPSTREAM+'/blob/main/docs/dev/PROGRESS.md',UPSTREAM+'/blob/main/docs/dev/TechnicalDebt.md',sourceDoc('COMPATIBILITY')],sections:[
+ {slug:'progress',reviewed:'2026-10-20',title:L("AnyPS5 development progress and coverage","AnyPS5 开发进度与实现范围","تقدم AnyPS5 ونطاق التنفيذ","Progresso e cobertura do AnyPS5","Entwicklungsstand und Umfang von AnyPS5","Avancement et couverture d’AnyPS5","Avances y cobertura de AnyPS5"),description:L("Understand AnyPS5 library and shader implementation counters. See what these dated figures measure and why they cannot establish how many PS5 games are playable.","了解 AnyPS5 系统库与着色器实现进度：这些统计衡量什么、复核于何时，以及为什么不能据此判断 PS5 游戏可玩率。","افهم أرقام تقدم تنفيذ مكتبات AnyPS5 ومظللاته، وما تقيسه هذه البيانات المؤرخة ولماذا لا تحدد نسبة ألعاب PS5 القابلة للعب.","Saiba o que medem os contadores de implementação de bibliotecas e shaders do AnyPS5 e por que motivo não representam a percentagem de jogos PS5 jogáveis.","Erfahre, was die Implementierungszahlen für AnyPS5-Bibliotheken und Shader messen und warum sie keinen Anteil spielbarer PS5-Titel belegen.","Comprenez les compteurs d’implémentation des bibliothèques et shaders d’AnyPS5 et pourquoi ils ne mesurent pas la proportion de jeux PS5 jouables.","Entiende qué miden los contadores de bibliotecas y shaders de AnyPS5 y por qué no representan el porcentaje de juegos de PS5 que se pueden jugar."),sources:['https://boykopovar.github.io/AnyPS5/progress.json',UPSTREAM+'/blob/main/docs/dev/PROGRESS.md',UPSTREAM+'/blob/main/docs/dev/TechnicalDebt.md',sourceDoc('COMPATIBILITY')],sections:[
  {
  "id": "counts",
  "title": {
@@ -21,13 +21,13 @@ export const extraArticles:Article[]=[
  },
  "body": [
   {
-   "en": "The19 October snapshot counts3515/3873 declared library functions (90.76%) and1166/1166 recognized RDNA1/2 decoder instructions. Inert bodies can count: this is not full API behavior or a game compatibility rate. Main advances beyond v0.1.2; compare each actual tested build.",
-   "zh": "10月19日快照统计3515/3873个声明库函数（90.76%），RDNA1/2解码识别1166/1166。inert函数体也可计入，不代表完整API行为或游戏可玩率。main已超前于v0.1.2，需按各次实际构建比较。",
-   "ar": "لقطة19أكتوبر3515/3873 دوال90.76% و1166/1166 تعليمات. الأجسام inert قد تُحسب؛ ليست API كاملة أو نسبة ألعاب. main بعدv0.1.2؛ قارن البناء الفعلي.",
-   "pt": "Retrato19outubro3515/3873 funções90,76% e1166/1166 instruções. Corpos inert contam; não é API completa nem taxa de jogos. Main apósv0.1.2; compare build real.",
-   "de": "Stand19.Oktober3515/3873 Funktionen90,76% und1166/1166 Befehle. Inerte Rümpfe zählen; keine vollständige API/Spielquote. Main nachv0.1.2; getestete Builds vergleichen.",
-   "fr": "État19octobre3515/3873 fonctions90,76% et1166/1166 instructions. Corps inertes comptent ; ni API complète ni taux de jeux. Main aprèsv0.1.2 ; comparez builds testés.",
-   "es": "Estado19octubre3515/3873 funciones90,76% y1166/1166 instrucciones. Cuerpos inert cuentan; no API completa ni tasa de juegos. Main trasv0.1.2; compara builds reales."
+   "en": "The20 October snapshot counts4137/5182 declared library functions (79.83%) and1166/1166 recognized RDNA1/2 decoder instructions. Inert bodies can count: this is not full API behavior or a game compatibility rate. Main advances beyond v0.1.2; compare each actual tested build.",
+   "zh": "10月20日快照统计4137/5182个声明库函数（79.83%），RDNA1/2解码识别1166/1166。inert函数体也可计入，不代表完整API行为或游戏可玩率。main已超前于v0.1.2，需按各次实际构建比较。",
+   "ar": "لقطة20أكتوبر4137/5182 دوال79.83% و1166/1166 تعليمات. الأجسام inert قد تُحسب؛ ليست API كاملة أو نسبة ألعاب. main بعدv0.1.2؛ قارن البناء الفعلي.",
+   "pt": "Retrato20outubro4137/5182 funções79,83% e1166/1166 instruções. Corpos inert contam; não é API completa nem taxa de jogos. Main apósv0.1.2; compare build real.",
+   "de": "Stand20.Oktober4137/5182 Funktionen79,83% und1166/1166 Befehle. Inerte Rümpfe zählen; keine vollständige API/Spielquote. Main nachv0.1.2; getestete Builds vergleichen.",
+   "fr": "État20octobre4137/5182 fonctions79,83% et1166/1166 instructions. Corps inertes comptent ; ni API complète ni taux de jeux. Main aprèsv0.1.2 ; comparez builds testés.",
+   "es": "Estado20octubre4137/5182 funciones79,83% y1166/1166 instrucciones. Cuerpos inert cuentan; no API completa ni tasa de juegos. Main trasv0.1.2; compara builds reales."
   }
  ]
 },
@@ -54,4 +54,78 @@ privacy.reviewed='2026-10-15';
 privacy.sections.push({
  ...S('performance',L('Page-load performance','页面加载性能','أداء تحميل الصفحات','Desempenho de carregamento','Ladeleistung der Seiten','Performances de chargement','Rendimiento de carga'),L('Our CDN also provides Cloudflare Web Analytics for page-load timing and Core Web Vitals. This is separate from self-hosted Umami. Umami’s browser opt-out controls Umami, not Cloudflare’s performance beacon. The linked Cloudflare documentation explains its data collection.','我们的 CDN 也通过 Cloudflare Web Analytics 测量页面加载时间与 Core Web Vitals。这与自托管 Umami 是独立服务；Umami 的浏览器停用设置只控制 Umami，不控制 Cloudflare 的性能脚本。下方 Cloudflare 文档说明其数据收集方式。','توفر شبكة CDN أيضاً Cloudflare Web Analytics لقياس زمن تحميل الصفحات وCore Web Vitals. وهي خدمة منفصلة عن Umami المستضاف ذاتياً. إعداد تعطيل Umami في المتصفح لا يتحكم بمنارة أداء Cloudflare. توضح الوثائق المرتبطة كيفية جمع البيانات.','A CDN também fornece Cloudflare Web Analytics para tempos de carregamento e Core Web Vitals. É um serviço separado do Umami autoalojado. A opção de desativar Umami no navegador não controla o beacon Cloudflare. A documentação ligada explica a recolha de dados.','Unser CDN verwendet auch Cloudflare Web Analytics für Ladezeiten und Core Web Vitals. Dieser Dienst ist vom selbst gehosteten Umami getrennt. Die Umami-Deaktivierung im Browser steuert nicht den Cloudflare-Performance-Beacon. Die verlinkte Dokumentation erläutert die Datenerhebung.','Notre CDN fournit aussi Cloudflare Web Analytics pour les temps de chargement et les Core Web Vitals. Ce service est distinct d’Umami auto-hébergé. La désactivation d’Umami dans le navigateur ne contrôle pas la balise Cloudflare. La documentation liée explique les données collectées.','La CDN también ofrece Cloudflare Web Analytics para tiempos de carga y Core Web Vitals. Es independiente de Umami autoalojado. Desactivar Umami en el navegador no controla la baliza de Cloudflare. La documentación enlazada explica la recogida de datos.')),
  links:[{label:'Cloudflare Web Analytics',url:'https://developers.cloudflare.com/web-analytics/data-metrics/data-origin-and-collection/'}],
+});
+
+const troubleshooting20=extraArticles.find(article=>article.slug==="troubleshooting")!;
+troubleshooting20.sections.push({
+ "id": "font-errors-can-look-like-memory",
+ "title": {
+  "en": "A font failure can look like an allocation failure",
+  "zh": "字体失败可能表现为分配失败",
+  "ar": "فشل الخط قد يبدو فشل ذاكرة",
+  "pt": "Fontes podem parecer falha de memória",
+  "de": "Fontfehler können wie Speicherfehler aussehen",
+  "fr": "Une police manquante peut sembler un manque de mémoire",
+  "es": "Una fuente ausente puede parecer fallo de memoria"
+ },
+ "body": [
+  {
+   "en": "The Playroom Linux report at maina373e85 traces Global Heap/nativeTex assertions to missing fonts and invalid text-layout dimensions; Noto substitutes pass six100–150s runs. Check the earliest font log and the documented font directory before treating this exact failure as RAM exhaustion. It does not establish the cause of similar errors in other titles.",
+   "zh": "Playroom Linux maina373e85把Global Heap／nativeTex追溯到缺字体及异常文本布局尺寸，Noto替代字体六次100–150秒通过。遇此特定故障先核对最早字体日志及文档字体目录，再判断内存不足；不据此认定其他游戏同类报错根因。",
+   "ar": "تقريرPlayroom Linuxa373e85 يربطGlobalHeap/nativeTex بخطوطناقصة وأبعادغيرصالحة؛Noto يمر6×100–150ث. افحصأولسجلخطوط والمجلدلهذاالفشل، لا تعمم لألعابأخرى.",
+   "pt": "Relato Playroom Linuxa373e85 liga GlobalHeap/nativeTex a fontes ausentes/dimensões inválidas; Noto passa6×100–150s. Veja primeiro log/diretório antes de inferir falta deRAM neste caso; outros jogos não diagnosticados.",
+   "de": "Playroom-Linuxa373e85 führt GlobalHeap/nativeTex auf fehlendeFonts/ungültigeTextmaße zurück; Noto besteht6×100–150s. Erst Fontlog/Ordner prüfen, bevor dieser Fehler als RAM-Mangel gilt; keine Diagnose anderer Titel.",
+   "fr": "Rapport Playroom Linuxa373e85 relie GlobalHeap/nativeTex à polices absentes/dimensions invalides ; Noto passe6×100–150s. Vérifiez premier log/dossier avant d’inférer manqueRAM dans ce cas ; autres jeux non diagnostiqués.",
+   "es": "Informe Playroom Linuxa373e85 vincula GlobalHeap/nativeTex a fuentes ausentes/dimensiones inválidas; Noto pasa6×100–150s. Revisa primer log/carpeta antes de inferir faltaRAM aquí; otros juegos sin diagnosticar."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8075b6af190ff8f83c1bff9a7f74cd71e5902140/docs/user/USAGE.md"
+  },
+  {
+   "label": "Playroom report",
+   "url": "https://github.com/boykopovar/AnyPS5/issues/7714"
+  }
+ ]
+},{
+ "id": "counters-and-cache-comparisons",
+ "title": {
+  "en": "Compare the same scene and counter window",
+  "zh": "对齐场景与计数窗口",
+  "ar": "طابق المشهد ونافذة العداد",
+  "pt": "Alinhe cena e janela dos contadores",
+  "de": "Szene und Zählerfenster abgleichen",
+  "fr": "Aligner scène et fenêtre des compteurs",
+  "es": "Alinea escena y ventana de contadores"
+ },
+ "body": [
+  {
+   "en": "Profile lines mix10s windows and cumulative totals. Use differences of cumulative values, disclose profiling overhead, cache state and streaming. ASTRO BOT/LEGO cache-budget observations apply to their measured hosts; larger budgets can exhaust VRAM. Fewer pipeline drains alone did not improve Sword of the Sea. Do not turn one host’s switch into a universal preset.",
+   "zh": "分析日志混合10秒窗口与累计值，累计值需取差，并说明分析开销、缓存与串流状态。ASTRO BOT／LEGO纹理预算观察只适用实测主机，增预算可耗尽显存；Sword of the Sea排空少未单独提速。不能把单主机开关写成通用预设。",
+   "ar": "السجلات تمزج10ث وتراكماً؛ خذالفروق وسجّلprofiling/cache/streaming. ميزانيةASTRO/LEGO تخصأجهزتها وقدتنفدVRAM. drains أقللمتسرعSword؛ لا إعدادعام.",
+   "pt": "Logs misturam janelas10s e acumulados; use diferenças, declare profiling/cache/streaming. Orçamentos ASTRO/LEGO são por host e podem esgotarVRAM. Menos drains não aceleraramSword; sem preset universal.",
+   "de": "Logs mischen10s-Fenster und Gesamtsummen; Differenzen nutzen, Profiling/Cache/Streaming angeben. ASTRO/LEGO-Budgets gelten jeHost und können VRAM füllen. WenigerDrains beschleunigtenSword nicht; keinUniversalpreset.",
+   "fr": "Logs mélangent fenêtres10s et cumuls ; utilisez différences, indiquez profilage/cache/streaming. Budgets ASTRO/LEGO propres aux hôtes, risque saturationVRAM. Moinsdrains sans gainSword ; pas préréglage universel.",
+   "es": "Logs mezclan ventanas10s y acumulados; usa diferencias, declara profiling/cache/streaming. Presupuestos ASTRO/LEGO porhost pueden agotarVRAM. Menosdrains no aceleraronSword; sinpreset universal."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8075b6af190ff8f83c1bff9a7f74cd71e5902140/docs/dev/BUILD.md"
+  }
+ ]
+});
+troubleshooting20.reviewed="2026-10-20";
+
+extraArticles.find(article=>article.slug==="progress")!.sections[0].body.push({
+ "en": "The previous reviewed snapshot was3515/3873 (90.76%); this one is4137/5182 (79.83%). Both implemented and declared counts grew, so the lower percentage does not itself establish a regression. Newly declared exports and inert implementations still need behavior and title checks.",
+ "zh": "上次快照3515／3873（90.76%），本次4137／5182（79.83%）；实现数与声明总数都增加，因此百分比降低本身不证明回归。新增导出声明及inert实现仍需行为与游戏验证。",
+ "ar": "السابق3515/3873 ‏90.76% والجديد4137/5182 ‏79.83%. زادالمنفذوالمعلن، فانخفاضالنسبة ليسدليلتراجع. التصريحاتوالأجسامinert تحتاجفحصالسلوكوالعناوين.",
+ "pt": "Anterior3515/3873 (90,76%), atual4137/5182 (79,83%). Ambos os totais cresceram; percentagem menor não prova regressão. Novas declarações e corpos inert exigem validação de comportamento e jogos.",
+ "de": "Zuvor3515/3873 (90,76%), jetzt4137/5182 (79,83%). Implementierungen und Gesamtsumme stiegen; sinkende Quote belegt keine Regression. Neue Deklarationen/inerte Rümpfe brauchen Verhaltens- und Spieltests.",
+ "fr": "Avant3515/3873 (90,76%), maintenant4137/5182 (79,83%). Les deux comptes augmentent ; pourcentage inférieur ne prouve pas régression. Nouvelles déclarations/corps inertes exigent tests de comportement/jeux.",
+ "es": "Antes3515/3873 (90,76%), ahora4137/5182 (79,83%). Ambos recuentos aumentan; menor porcentaje no prueba regresión. Declaraciones nuevas/cuerpos inert requieren pruebas de comportamiento/juegos."
 });

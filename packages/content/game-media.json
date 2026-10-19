@@ -1361,5 +1361,47 @@
     "cover": null,
     "screenshots": [],
     "checked": "2026-10-19"
+  },
+  "echoes-of-aincrad": {
+    "source": "https://www.playstation.com/en-us/games/echoes-of-aincrad/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202602/1717/8f0f71c70c42a9dca275596dd6ce61124eccfa54538d60e4.png",
+    "screenshots": [],
+    "checked": "2026-10-20"
+  },
+  "tomba-special-edition": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/7969",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-20"
+  },
+  "monster-hunter-wilds": {
+    "source": "https://www.playstation.com/en-us/games/monster-hunter-wilds/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202409/0506/aa5c40ba185302dfcc88edc276a876fdc6c516c4db07ec9d.png",
+    "screenshots": [],
+    "checked": "2026-10-20"
+  },
+  "lego-builders-journey": {
+    "source": "https://www.playstation.com/en-us/games/lego-builders-journey/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202202/0310/7HHNZEzG5P8nyJ5LRshV2oXx.png",
+    "screenshots": [],
+    "checked": "2026-10-20"
+  },
+  "superliminal": {
+    "source": "https://www.playstation.com/en-us/games/superliminal/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA19488_00/5/i_fafb8161b93465477b543f2d96835aec423853d5c49d2d2893811396519852aa/i/icon0.png",
+    "screenshots": [],
+    "checked": "2026-10-20"
+  },
+  "squirrel-with-a-gun": {
+    "source": "https://www.playstation.com/en-us/games/squirrel-with-a-gun/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202407/2922/806dbc9fc129686a537bfab37206a52a4be41eb7ec7cf668.png",
+    "screenshots": [],
+    "checked": "2026-10-20"
   }
 }

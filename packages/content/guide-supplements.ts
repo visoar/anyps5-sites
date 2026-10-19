@@ -533,13 +533,13 @@ guideSupplements["guides/windows"].push({
  },
  "body": [
   {
-   "en": "Current main pad_input.py accepts touch-left/touch-right. Default keyboard touch halves are Backspace/Tab; L2 has no built-in key. Import audit now follows host-library dependencies transitively and accepts literal ELF symbol names before hashed NIDs. A passing audit proves dependency discovery, not correct API behavior or gameplay. Profiling and trace buffers alter timing/memory; retain ordinary control runs.",
-   "zh": "当前main的pad_input.py支持touch-left／touch-right；默认键盘两半为Backspace／Tab，L2无内置按键。导入审计会递归追踪主机库依赖，先匹配ELF符号原名再匹配NID。审计通过只证明依赖发现，不证明API行为正确或游戏可玩。性能分析／追踪缓存会影响时间和内存，应保留普通运行对照。",
-   "ar": "pad_input.py يدعم touch-left/right؛ Backspace/Tab افتراضياً، L2 بلا زر. audit يتبع اعتماد المكتبات ويطابق ELF الحرفي قبل NID؛ النجاح ليس صحة API أو لعباً. trace يغير الزمن/الذاكرة، أبق تجارب عادية.",
-   "pt": "pad_input.py aceita touch-left/right; Backspace/Tab, L2 sem tecla. Audit segue dependências e símbolos ELF antes de NID; passar não prova API/jogo. Perfil/trace altera tempo/memória; mantenha controlo normal.",
-   "de": "pad_input.py unterstützt touch-left/right; Backspace/Tab, L2 ohne Taste. Audit verfolgt Bibliotheken und prüft ELF-Namen vor NIDs; Erfolg belegt keine API-/Spielkorrektheit. Profiling/Tracing verändert Zeit/Speicher; normale Kontrolle behalten.",
-   "fr": "pad_input.py accepte touch-left/right ; Backspace/Tab, L2 sans touche. Audit suit dépendances et noms ELF avant NID ; succès ne prouve pas API/jeu. Profilage/traces changent temps/mémoire ; gardez contrôle normal.",
-   "es": "pad_input.py acepta touch-left/right; Backspace/Tab, L2 sin tecla. Audit sigue dependencias y nombres ELF antes de NID; pasar no prueba API/juego. Perfil/trazas cambian tiempo/memoria; conserva control normal."
+   "en": "Current main pad_input.py accepts touch-left/touch-right. Default keyboard touch halves are Backspace/Tab; L2 is now bound to R/mouse X1. Import audit now follows host-library dependencies transitively and accepts literal ELF symbol names before hashed NIDs. A passing audit proves dependency discovery, not correct API behavior or gameplay. Profiling and trace buffers alter timing/memory; retain ordinary control runs.",
+   "zh": "当前main的pad_input.py支持touch-left／touch-right；默认键盘两半为Backspace／Tab，L2现绑定R／鼠标X1。导入审计会递归追踪主机库依赖，先匹配ELF符号原名再匹配NID。审计通过只证明依赖发现，不证明API行为正确或游戏可玩。性能分析／追踪缓存会影响时间和内存，应保留普通运行对照。",
+   "ar": "pad_input.py يدعم touch-left/right؛ Backspace/Tab افتراضياً، L2 الآنR/X1. audit يتبع اعتماد المكتبات ويطابق ELF الحرفي قبل NID؛ النجاح ليس صحة API أو لعباً. trace يغير الزمن/الذاكرة، أبق تجارب عادية.",
+   "pt": "pad_input.py aceita touch-left/right; Backspace/Tab, L2 agoraR/X1. Audit segue dependências e símbolos ELF antes de NID; passar não prova API/jogo. Perfil/trace altera tempo/memória; mantenha controlo normal.",
+   "de": "pad_input.py unterstützt touch-left/right; Backspace/Tab, L2 jetztR/X1. Audit verfolgt Bibliotheken und prüft ELF-Namen vor NIDs; Erfolg belegt keine API-/Spielkorrektheit. Profiling/Tracing verändert Zeit/Speicher; normale Kontrolle behalten.",
+   "fr": "pad_input.py accepte touch-left/right ; Backspace/Tab, L2 maintenantR/X1. Audit suit dépendances et noms ELF avant NID ; succès ne prouve pas API/jeu. Profilage/traces changent temps/mémoire ; gardez contrôle normal.",
+   "es": "pad_input.py acepta touch-left/right; Backspace/Tab, L2 ahoraR/X1. Audit sigue dependencias y nombres ELF antes de NID; pasar no prueba API/juego. Perfil/trazas cambian tiempo/memoria; conserva control normal."
   }
  ],
  "links": [
@@ -619,13 +619,13 @@ guideSupplements["guides/linux"].push({
  },
  "body": [
   {
-   "en": "Current main pad_input.py accepts touch-left/touch-right. Default keyboard touch halves are Backspace/Tab; L2 has no built-in key. Import audit now follows host-library dependencies transitively and accepts literal ELF symbol names before hashed NIDs. A passing audit proves dependency discovery, not correct API behavior or gameplay. Profiling and trace buffers alter timing/memory; retain ordinary control runs.",
-   "zh": "当前main的pad_input.py支持touch-left／touch-right；默认键盘两半为Backspace／Tab，L2无内置按键。导入审计会递归追踪主机库依赖，先匹配ELF符号原名再匹配NID。审计通过只证明依赖发现，不证明API行为正确或游戏可玩。性能分析／追踪缓存会影响时间和内存，应保留普通运行对照。",
-   "ar": "pad_input.py يدعم touch-left/right؛ Backspace/Tab افتراضياً، L2 بلا زر. audit يتبع اعتماد المكتبات ويطابق ELF الحرفي قبل NID؛ النجاح ليس صحة API أو لعباً. trace يغير الزمن/الذاكرة، أبق تجارب عادية.",
-   "pt": "pad_input.py aceita touch-left/right; Backspace/Tab, L2 sem tecla. Audit segue dependências e símbolos ELF antes de NID; passar não prova API/jogo. Perfil/trace altera tempo/memória; mantenha controlo normal.",
-   "de": "pad_input.py unterstützt touch-left/right; Backspace/Tab, L2 ohne Taste. Audit verfolgt Bibliotheken und prüft ELF-Namen vor NIDs; Erfolg belegt keine API-/Spielkorrektheit. Profiling/Tracing verändert Zeit/Speicher; normale Kontrolle behalten.",
-   "fr": "pad_input.py accepte touch-left/right ; Backspace/Tab, L2 sans touche. Audit suit dépendances et noms ELF avant NID ; succès ne prouve pas API/jeu. Profilage/traces changent temps/mémoire ; gardez contrôle normal.",
-   "es": "pad_input.py acepta touch-left/right; Backspace/Tab, L2 sin tecla. Audit sigue dependencias y nombres ELF antes de NID; pasar no prueba API/juego. Perfil/trazas cambian tiempo/memoria; conserva control normal."
+   "en": "Current main pad_input.py accepts touch-left/touch-right. Default keyboard touch halves are Backspace/Tab; L2 is now bound to R/mouse X1. Import audit now follows host-library dependencies transitively and accepts literal ELF symbol names before hashed NIDs. A passing audit proves dependency discovery, not correct API behavior or gameplay. Profiling and trace buffers alter timing/memory; retain ordinary control runs.",
+   "zh": "当前main的pad_input.py支持touch-left／touch-right；默认键盘两半为Backspace／Tab，L2现绑定R／鼠标X1。导入审计会递归追踪主机库依赖，先匹配ELF符号原名再匹配NID。审计通过只证明依赖发现，不证明API行为正确或游戏可玩。性能分析／追踪缓存会影响时间和内存，应保留普通运行对照。",
+   "ar": "pad_input.py يدعم touch-left/right؛ Backspace/Tab افتراضياً، L2 الآنR/X1. audit يتبع اعتماد المكتبات ويطابق ELF الحرفي قبل NID؛ النجاح ليس صحة API أو لعباً. trace يغير الزمن/الذاكرة، أبق تجارب عادية.",
+   "pt": "pad_input.py aceita touch-left/right; Backspace/Tab, L2 agoraR/X1. Audit segue dependências e símbolos ELF antes de NID; passar não prova API/jogo. Perfil/trace altera tempo/memória; mantenha controlo normal.",
+   "de": "pad_input.py unterstützt touch-left/right; Backspace/Tab, L2 jetztR/X1. Audit verfolgt Bibliotheken und prüft ELF-Namen vor NIDs; Erfolg belegt keine API-/Spielkorrektheit. Profiling/Tracing verändert Zeit/Speicher; normale Kontrolle behalten.",
+   "fr": "pad_input.py accepte touch-left/right ; Backspace/Tab, L2 maintenantR/X1. Audit suit dépendances et noms ELF avant NID ; succès ne prouve pas API/jeu. Profilage/traces changent temps/mémoire ; gardez contrôle normal.",
+   "es": "pad_input.py acepta touch-left/right; Backspace/Tab, L2 ahoraR/X1. Audit sigue dependencias y nombres ELF antes de NID; pasar no prueba API/juego. Perfil/trazas cambian tiempo/memoria; conserva control normal."
   }
  ],
  "links": [
@@ -1001,19 +1001,231 @@ guideSupplements["guides/build"].push({
  },
  "body": [
   {
-   "en": "README now states that the relinker-only build runs on macOS, including Apple silicon. The combined Rosetta2/MoltenVK runtime remains open #7332; its M4 Pro title reports use disclosed PR/local changes and retain rendering defects. It is not included in v0.1.2. Converter availability, a general test-suite pass and a specific title run are separate evidence.",
-   "zh": "README现说明仅relinker构建可在macOS及Apple silicon运行；组合Rosetta2／MoltenVK运行时仍为开放#7332。其M4 Pro游戏报告带PR／本地改动且仍有渲染缺陷，不包含在v0.1.2。转换器可用、一般测试通过与具体游戏运行需分别判断。",
-   "ar": "README يدعم relinker وحده علىmacOS/Apple silicon؛ runtime Rosetta2/MoltenVK في#7332 المفتوح، تقاريرM4Pro بترقيعات وعيوب. ليسv0.1.2، المحول والاختبارات واللعبة أدلة منفصلة.",
-   "pt": "README permite relinker isolado emmacOS/Apple silicon; runtime Rosetta2/MoltenVK é#7332 aberto, M4Pro com patches/defeitos. Não incluído v0.1.2; conversor/suite/jogo separados.",
-   "de": "README bestätigt reinen Relinker aufmacOS/Apple silicon; Rosetta2/MoltenVK-Runtime bleibt#7332 offen, M4Pro mit Patches/Bildfehlern. Nichtv0.1.2; Konverter/Suite/Spiel getrennte Belege.",
-   "fr": "README confirme relinker seul surmacOS/Apple silicon ; runtime Rosetta2/MoltenVK reste#7332 ouvert, M4Pro avec patches/défauts. Pasv0.1.2 ; convertisseur/suite/jeu distincts.",
-   "es": "README confirma relinker solo enmacOS/Apple silicon; runtime Rosetta2/MoltenVK sigue#7332 abierto, M4Pro con parches/defectos. No v0.1.2; conversor/suite/juego separados."
+   "en": "The converter supports macOS on Apple silicon; runtime #7332 remains open and absent from v0.1.2. New M4 Pro/70055abe0 tests reach clean Planet of Lana gameplay, unlike the older690c report. Later local arithmetic/fill experiments retain their own pins and are not main/release results. GPU-skipped suites do not validate rendering.",
+   "zh": "转换器支持macOS／Apple silicon，但运行时#7332仍开放且不在v0.1.2。新的M4 Pro／70055abe0到Planet of Lana正常游玩，与旧690c报告不同；后续本地算术／fill实验保留原提交，非main／发行结果。跳过GPU的测试不能证明渲染。",
+   "ar": "المحوليدعمmacOS/Apple silicon؛runtime#7332 مفتوح وليسv0.1.2. M4Pro/70055abe0 يبلغLana سليماً خلاف690c. تجاربحساب/fill محليةببناها لاmain/release؛ اختبارات بلاGPU لاتثبتالرسم.",
+   "pt": "Conversor suporta macOS/Apple silicon; runtime#7332 aberto e fora dev0.1.2. M4Pro/70055abe0 chega Lana limpo, diferente de690c. Experiências locais mantêm pins, não main/release; suite semGPU não valida imagem.",
+   "de": "Konverter unterstützt macOS/Apple silicon; Runtime#7332 offen, nichtv0.1.2. M4Pro/70055abe0 erreicht sauberesLana-Spiel, anders als690c. Lokale Rechen-/Filltests behalten Pins, keinMain/Release; Suite ohneGPU belegt keinRendering.",
+   "fr": "Convertisseur compatible macOS/Apple silicon ; runtime#7332 ouvert horsv0.1.2. M4Pro/70055abe0 atteint Lana propre, contrairement à690c. Expériences locales gardent pins, pasmain/release ; suite sansGPU ne valide pasrendu.",
+   "es": "Conversor soporta macOS/Apple silicon; runtime#7332 abierto fuerav0.1.2. M4Pro/70055abe0 llegaLana limpio, distinto de690c. Experimentos locales conservan pins, no main/release; suite sinGPU no validaimagen."
   }
  ],
  "links": [
   {
    "label": "Upstream source",
-   "url": "https://github.com/boykopovar/AnyPS5/blob/48d61f53b46f1d0726889e4dd39c5ef2b3eb30cd/README.md"
+   "url": "https://github.com/boykopovar/AnyPS5/pull/7332#issuecomment-6262379712"
+  }
+ ]
+});
+
+guideSupplements["start"].push({
+ "id": "version-checked-game-patches",
+ "title": {
+  "en": "Record automatically discovered game patches",
+  "zh": "记录自动发现的游戏补丁",
+  "ar": "سجّل ترقيعات اللعبة التلقائية",
+  "pt": "Registe patches automáticos",
+  "de": "Automatische Spielpatches dokumentieren",
+  "fr": "Documenter les patches automatiques",
+  "es": "Registra parches automáticos"
+ },
+ "body": [
+  {
+   "en": "Post-v0.1.2 main discovers relinker-patches.toml beside the input and announces Patches:. --patches selects a file; --no-patches disables discovery. Expected bytes are checked against the actual title version. Keep the applied-patch manifest and converted build with the report: a clean emulator source can still produce a patched game. Do not transfer a byte patch between content versions.",
+   "zh": "v0.1.2后main会发现输入旁relinker-patches.toml并输出Patches:；--patches选文件，--no-patches禁自动发现。expected字节需匹配实际游戏版本。报告保留应用清单和转换构建，纯模拟器源码也可能生成已修改游戏；不同内容版本不能照搬字节补丁。",
+   "ar": "main بعدv0.1.2 يكتشفrelinker-patches.toml بجوارالمدخل ويعلنPatches:. --patches يختار و--no-patches يعطل. expected يطابق نسخةاللعبة؛ احفظالبيان والبناء، فالمصدرالنظيف قدينتج لعبةمرقعة. لاتنقل بينالنسخ.",
+   "pt": "Main após v0.1.2 descobre relinker-patches.toml junto do input e anuncia Patches:. --patches escolhe, --no-patches desativa. Bytes expected devem corresponder à versão; guarde manifesto/build. Fonte limpa pode gerar jogo modificado; não transfira patches entre versões.",
+   "de": "Main nachv0.1.2 entdeckt relinker-patches.toml neben Eingabe und meldet Patches:. --patches wählt, --no-patches deaktiviert. Expected-Bytes müssen zur Inhaltsversion passen. Manifest/Build behalten; sauberer Quellcode kann ein gepatchtes Spiel erzeugen. Nicht auf andere Versionen übertragen.",
+   "fr": "Main aprèsv0.1.2 découvre relinker-patches.toml près de l’entrée et annonce Patches:. --patches choisit, --no-patches désactive. Octets expected doivent correspondre à la version. Gardez manifeste/build ; source propre peut produire jeu modifié. Ne transposez pas entre versions.",
+   "es": "Main trasv0.1.2 descubre relinker-patches.toml junto al input y anuncia Patches:. --patches elige, --no-patches desactiva. Bytes expected deben coincidir con versión. Guarda manifiesto/build; fuente limpia puede producir juego modificado. No traslades entre versiones."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8075b6af190ff8f83c1bff9a7f74cd71e5902140/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["downloads"].push({
+ "id": "version-checked-game-patches",
+ "title": {
+  "en": "Record automatically discovered game patches",
+  "zh": "记录自动发现的游戏补丁",
+  "ar": "سجّل ترقيعات اللعبة التلقائية",
+  "pt": "Registe patches automáticos",
+  "de": "Automatische Spielpatches dokumentieren",
+  "fr": "Documenter les patches automatiques",
+  "es": "Registra parches automáticos"
+ },
+ "body": [
+  {
+   "en": "Post-v0.1.2 main discovers relinker-patches.toml beside the input and announces Patches:. --patches selects a file; --no-patches disables discovery. Expected bytes are checked against the actual title version. Keep the applied-patch manifest and converted build with the report: a clean emulator source can still produce a patched game. Do not transfer a byte patch between content versions.",
+   "zh": "v0.1.2后main会发现输入旁relinker-patches.toml并输出Patches:；--patches选文件，--no-patches禁自动发现。expected字节需匹配实际游戏版本。报告保留应用清单和转换构建，纯模拟器源码也可能生成已修改游戏；不同内容版本不能照搬字节补丁。",
+   "ar": "main بعدv0.1.2 يكتشفrelinker-patches.toml بجوارالمدخل ويعلنPatches:. --patches يختار و--no-patches يعطل. expected يطابق نسخةاللعبة؛ احفظالبيان والبناء، فالمصدرالنظيف قدينتج لعبةمرقعة. لاتنقل بينالنسخ.",
+   "pt": "Main após v0.1.2 descobre relinker-patches.toml junto do input e anuncia Patches:. --patches escolhe, --no-patches desativa. Bytes expected devem corresponder à versão; guarde manifesto/build. Fonte limpa pode gerar jogo modificado; não transfira patches entre versões.",
+   "de": "Main nachv0.1.2 entdeckt relinker-patches.toml neben Eingabe und meldet Patches:. --patches wählt, --no-patches deaktiviert. Expected-Bytes müssen zur Inhaltsversion passen. Manifest/Build behalten; sauberer Quellcode kann ein gepatchtes Spiel erzeugen. Nicht auf andere Versionen übertragen.",
+   "fr": "Main aprèsv0.1.2 découvre relinker-patches.toml près de l’entrée et annonce Patches:. --patches choisit, --no-patches désactive. Octets expected doivent correspondre à la version. Gardez manifeste/build ; source propre peut produire jeu modifié. Ne transposez pas entre versions.",
+   "es": "Main trasv0.1.2 descubre relinker-patches.toml junto al input y anuncia Patches:. --patches elige, --no-patches desactiva. Bytes expected deben coincidir con versión. Guarda manifiesto/build; fuente limpia puede producir juego modificado. No traslades entre versiones."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8075b6af190ff8f83c1bff9a7f74cd71e5902140/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"].push({
+ "id": "self-build-runtime-dlls",
+ "title": {
+  "en": "Include toolchain DLLs in a Windows self-build",
+  "zh": "Windows自编译需带工具链DLL",
+  "ar": "ضم DLL الأدوات ببناء Windows",
+  "pt": "Inclua DLLs no build Windows",
+  "de": "Toolchain-DLLs im Windows-Eigenbau",
+  "fr": "Inclure les DLLs du build Windows",
+  "es": "Incluye DLLs en build Windows"
+ },
+ "body": [
+  {
+   "en": "After building libs, copy libgcc_s_seh-1.dll, libstdc++-6.dll and libwinpthread-1.dll from that toolchain beside the patched PRX files. The runtime loader does not search PATH for these dependencies; error126 can occur even when the named PRX exists. Release archives already include them. Keep Unity guest modules in their original relative folders, not libs.",
+   "zh": "构建libs后，将该工具链的libgcc_s_seh-1.dll、libstdc++-6.dll和libwinpthread-1.dll放在patched PRX旁。加载器不从PATH找这些依赖，报错PRX存在也可能126。发行包已包含；Unity客体模块仍放原相对目录，不放libs。",
+   "ar": "انسخDLL الثلاثةlibgcc_s_seh-1/libstdc++-6/libwinpthread-1 مننفسالأدوات بجوارPRX. loader لايبحثPATH؛126 ممكن معوجودPRX. الإصدارتضمها؛ وحداتUnity تبقىبمساراتها لاlibs.",
+   "pt": "Copie libgcc_s_seh-1.dll/libstdc++-6.dll/libwinpthread-1.dll do mesmo toolchain junto dos PRX. Loader não pesquisa PATH;126 pode surgir com PRX presente. Releases incluem-nas; módulos Unity ficam nos caminhos originais.",
+   "de": "libgcc_s_seh-1.dll/libstdc++-6.dll/libwinpthread-1.dll derselben Toolchain neben PRX kopieren. Loader durchsucht PATH nicht;126 trotz vorhandener PRX möglich. Releases enthalten sie; Unity-Module im Originalpfad.",
+   "fr": "Copiez libgcc_s_seh-1.dll/libstdc++-6.dll/libwinpthread-1.dll du même toolchain près des PRX. Loader ne cherche pas dans PATH ;126 malgré PRX présente possible. Releases les incluent ; modules Unity au chemin d’origine.",
+   "es": "Copia libgcc_s_seh-1.dll/libstdc++-6.dll/libwinpthread-1.dll del mismo toolchain junto aPRX. Loader no busca PATH;126 posible conPRX presente. Releases las incluyen; módulosUnity en ruta original."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8075b6af190ff8f83c1bff9a7f74cd71e5902140/docs/dev/BUILD.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "self-build-runtime-dlls",
+ "title": {
+  "en": "Include toolchain DLLs in a Windows self-build",
+  "zh": "Windows自编译需带工具链DLL",
+  "ar": "ضم DLL الأدوات ببناء Windows",
+  "pt": "Inclua DLLs no build Windows",
+  "de": "Toolchain-DLLs im Windows-Eigenbau",
+  "fr": "Inclure les DLLs du build Windows",
+  "es": "Incluye DLLs en build Windows"
+ },
+ "body": [
+  {
+   "en": "After building libs, copy libgcc_s_seh-1.dll, libstdc++-6.dll and libwinpthread-1.dll from that toolchain beside the patched PRX files. The runtime loader does not search PATH for these dependencies; error126 can occur even when the named PRX exists. Release archives already include them. Keep Unity guest modules in their original relative folders, not libs.",
+   "zh": "构建libs后，将该工具链的libgcc_s_seh-1.dll、libstdc++-6.dll和libwinpthread-1.dll放在patched PRX旁。加载器不从PATH找这些依赖，报错PRX存在也可能126。发行包已包含；Unity客体模块仍放原相对目录，不放libs。",
+   "ar": "انسخDLL الثلاثةlibgcc_s_seh-1/libstdc++-6/libwinpthread-1 مننفسالأدوات بجوارPRX. loader لايبحثPATH؛126 ممكن معوجودPRX. الإصدارتضمها؛ وحداتUnity تبقىبمساراتها لاlibs.",
+   "pt": "Copie libgcc_s_seh-1.dll/libstdc++-6.dll/libwinpthread-1.dll do mesmo toolchain junto dos PRX. Loader não pesquisa PATH;126 pode surgir com PRX presente. Releases incluem-nas; módulos Unity ficam nos caminhos originais.",
+   "de": "libgcc_s_seh-1.dll/libstdc++-6.dll/libwinpthread-1.dll derselben Toolchain neben PRX kopieren. Loader durchsucht PATH nicht;126 trotz vorhandener PRX möglich. Releases enthalten sie; Unity-Module im Originalpfad.",
+   "fr": "Copiez libgcc_s_seh-1.dll/libstdc++-6.dll/libwinpthread-1.dll du même toolchain près des PRX. Loader ne cherche pas dans PATH ;126 malgré PRX présente possible. Releases les incluent ; modules Unity au chemin d’origine.",
+   "es": "Copia libgcc_s_seh-1.dll/libstdc++-6.dll/libwinpthread-1.dll del mismo toolchain junto aPRX. Loader no busca PATH;126 posible conPRX presente. Releases las incluyen; módulosUnity en ruta original."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8075b6af190ff8f83c1bff9a7f74cd71e5902140/docs/dev/BUILD.md"
+  }
+ ]
+},{
+ "id": "counters-and-cache-comparisons",
+ "title": {
+  "en": "Compare the same scene and counter window",
+  "zh": "对齐场景与计数窗口",
+  "ar": "طابق المشهد ونافذة العداد",
+  "pt": "Alinhe cena e janela dos contadores",
+  "de": "Szene und Zählerfenster abgleichen",
+  "fr": "Aligner scène et fenêtre des compteurs",
+  "es": "Alinea escena y ventana de contadores"
+ },
+ "body": [
+  {
+   "en": "Profile lines mix10s windows and cumulative totals. Use differences of cumulative values, disclose profiling overhead, cache state and streaming. ASTRO BOT/LEGO cache-budget observations apply to their measured hosts; larger budgets can exhaust VRAM. Fewer pipeline drains alone did not improve Sword of the Sea. Do not turn one host’s switch into a universal preset.",
+   "zh": "分析日志混合10秒窗口与累计值，累计值需取差，并说明分析开销、缓存与串流状态。ASTRO BOT／LEGO纹理预算观察只适用实测主机，增预算可耗尽显存；Sword of the Sea排空少未单独提速。不能把单主机开关写成通用预设。",
+   "ar": "السجلات تمزج10ث وتراكماً؛ خذالفروق وسجّلprofiling/cache/streaming. ميزانيةASTRO/LEGO تخصأجهزتها وقدتنفدVRAM. drains أقللمتسرعSword؛ لا إعدادعام.",
+   "pt": "Logs misturam janelas10s e acumulados; use diferenças, declare profiling/cache/streaming. Orçamentos ASTRO/LEGO são por host e podem esgotarVRAM. Menos drains não aceleraramSword; sem preset universal.",
+   "de": "Logs mischen10s-Fenster und Gesamtsummen; Differenzen nutzen, Profiling/Cache/Streaming angeben. ASTRO/LEGO-Budgets gelten jeHost und können VRAM füllen. WenigerDrains beschleunigtenSword nicht; keinUniversalpreset.",
+   "fr": "Logs mélangent fenêtres10s et cumuls ; utilisez différences, indiquez profilage/cache/streaming. Budgets ASTRO/LEGO propres aux hôtes, risque saturationVRAM. Moinsdrains sans gainSword ; pas préréglage universel.",
+   "es": "Logs mezclan ventanas10s y acumulados; usa diferencias, declara profiling/cache/streaming. Presupuestos ASTRO/LEGO porhost pueden agotarVRAM. Menosdrains no aceleraronSword; sinpreset universal."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8075b6af190ff8f83c1bff9a7f74cd71e5902140/docs/dev/BUILD.md"
+  }
+ ]
+});
+
+guideSupplements["guides/input"].push({
+ "id": "analog-keyboard-and-shake",
+ "title": {
+  "en": "New main keyboard controls",
+  "zh": "新版main键盘控制",
+  "ar": "تحكم لوحة مفاتيح main الجديد",
+  "pt": "Novos controlos de teclado",
+  "de": "Neue Main-Tastatursteuerung",
+  "fr": "Nouvelles commandes clavier",
+  "es": "Nuevos controles de teclado"
+ },
+ "body": [
+  {
+   "en": "Current main binds L2 to R/mouse X1, Shake to held X and mouse capture to middle button or F7. Shake synthesizes motion every50ms; it does not verify a title’s sensor behavior. Optional StickModifierScale defaults0.5 with no modifier binding; KeyboardRampMs/TriggerRampMs default0. These change keyboard emulation, not controller sticks. Releasev0.1.2 may differ.",
+   "zh": "当前main将L2绑定R／鼠标X1，按住X模拟Shake，中键或F7切换鼠标捕获。Shake每50ms合成运动，不证明游戏体感正确。可选StickModifierScale默认0.5且未绑修饰键，KeyboardRampMs／TriggerRampMs默认0；它们影响键盘模拟，不改变手柄摇杆。v0.1.2可能不同。",
+   "ar": "main يربطL2 بـR/X1 وShakeبـX والتقاطالفأرة بالوسط/F7. حركةمصطنعة كل50ms ليست تحققحساس اللعبة. StickModifierScale0.5 بلازر افتراضي، ramp0؛ لوحةالمفاتيح لا عصااليد، وقديختلفv0.1.2.",
+   "pt": "Main ligaL2 aR/X1, Shake aX e captura a botão central/F7. Movimento sintético50ms não valida sensores do jogo. StickModifierScale0,5 sem tecla padrão, ramps0; afetam teclado, não sticks. v0.1.2 pode diferir.",
+   "de": "Main bindetL2 anR/X1, Shake anX und Mausfang anMitteltaste/F7. Synthetische Bewegung50ms belegt keine Spielsensorik. StickModifierScale0,5 ohne Standardtaste, Ramps0; Tastaturemulation statt Controllersticks. v0.1.2 kann abweichen.",
+   "fr": "Main lieL2 àR/X1, Shake àX et capture au bouton central/F7. Mouvement synthétique50ms sans validation des capteurs du jeu. StickModifierScale0,5 sans touche par défaut, ramps0 ; clavier, pas sticks. v0.1.2 peut différer.",
+   "es": "Main vinculaL2 aR/X1, Shake aX y captura a botón central/F7. Movimiento sintético50ms no valida sensores del juego. StickModifierScale0,5 sin tecla predeterminada, ramps0; afectan teclado, no sticks. v0.1.2 puede diferir."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8075b6af190ff8f83c1bff9a7f74cd71e5902140/docs/user/INPUT_MAPPING.md"
+  }
+ ]
+});
+
+guideSupplements["guides/language-fonts"].push({
+ "id": "font-errors-can-look-like-memory",
+ "title": {
+  "en": "A font failure can look like an allocation failure",
+  "zh": "字体失败可能表现为分配失败",
+  "ar": "فشل الخط قد يبدو فشل ذاكرة",
+  "pt": "Fontes podem parecer falha de memória",
+  "de": "Fontfehler können wie Speicherfehler aussehen",
+  "fr": "Une police manquante peut sembler un manque de mémoire",
+  "es": "Una fuente ausente puede parecer fallo de memoria"
+ },
+ "body": [
+  {
+   "en": "The Playroom Linux report at maina373e85 traces Global Heap/nativeTex assertions to missing fonts and invalid text-layout dimensions; Noto substitutes pass six100–150s runs. Check the earliest font log and the documented font directory before treating this exact failure as RAM exhaustion. It does not establish the cause of similar errors in other titles.",
+   "zh": "Playroom Linux maina373e85把Global Heap／nativeTex追溯到缺字体及异常文本布局尺寸，Noto替代字体六次100–150秒通过。遇此特定故障先核对最早字体日志及文档字体目录，再判断内存不足；不据此认定其他游戏同类报错根因。",
+   "ar": "تقريرPlayroom Linuxa373e85 يربطGlobalHeap/nativeTex بخطوطناقصة وأبعادغيرصالحة؛Noto يمر6×100–150ث. افحصأولسجلخطوط والمجلدلهذاالفشل، لا تعمم لألعابأخرى.",
+   "pt": "Relato Playroom Linuxa373e85 liga GlobalHeap/nativeTex a fontes ausentes/dimensões inválidas; Noto passa6×100–150s. Veja primeiro log/diretório antes de inferir falta deRAM neste caso; outros jogos não diagnosticados.",
+   "de": "Playroom-Linuxa373e85 führt GlobalHeap/nativeTex auf fehlendeFonts/ungültigeTextmaße zurück; Noto besteht6×100–150s. Erst Fontlog/Ordner prüfen, bevor dieser Fehler als RAM-Mangel gilt; keine Diagnose anderer Titel.",
+   "fr": "Rapport Playroom Linuxa373e85 relie GlobalHeap/nativeTex à polices absentes/dimensions invalides ; Noto passe6×100–150s. Vérifiez premier log/dossier avant d’inférer manqueRAM dans ce cas ; autres jeux non diagnostiqués.",
+   "es": "Informe Playroom Linuxa373e85 vincula GlobalHeap/nativeTex a fuentes ausentes/dimensiones inválidas; Noto pasa6×100–150s. Revisa primer log/carpeta antes de inferir faltaRAM aquí; otros juegos sin diagnosticar."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8075b6af190ff8f83c1bff9a7f74cd71e5902140/docs/user/USAGE.md"
+  },
+  {
+   "label": "Playroom report",
+   "url": "https://github.com/boykopovar/AnyPS5/issues/7714"
   }
  ]
 });

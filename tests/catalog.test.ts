@@ -71,7 +71,7 @@ test('new source reviews distinguish setup screens, patched integrations and act
  assert.equal(filterGames('PPSA01341').some(game=>game.slug==='marvels-spider-man-2'),false);
  assert.equal(filterGames('PPSA25380').length,0);
  const cyberpunk=games.find(g=>g.slug==='cyberpunk-2077')!;
- assert.equal(cyberpunk.reports.length,5);
+ assert.equal(cyberpunk.reports.length,6);
  assert.equal(cyberpunk.reports[0].build,'main 961b25fe');
  assert.equal(cyberpunk.reports.find(r=>r.id==='3308-linux-main-review-20261013')!.build,'main a11c8f7f');
  assert.ok(conclusionReports(cyberpunk,'linux')[0].build?.startsWith('main 799982fac'));

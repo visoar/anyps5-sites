@@ -3050,5 +3050,79 @@
   "rogue-prince-of-persia": {
     "cover": null,
     "screenshots": []
+  },
+  "echoes-of-aincrad": {
+    "cover": {
+      "file": "echoes-of-aincrad/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202602/1717/8f0f71c70c42a9dca275596dd6ce61124eccfa54538d60e4.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202602/1717/8f0f71c70c42a9dca275596dd6ce61124eccfa54538d60e4.png",
+      "sourceSha256": "5e285f38527cea621984447dc702a69c2d6e178311a25a62ef0fae335241007b",
+      "sourceBytes": 190523,
+      "sha256": "ea66a75f8324b222136388c1892b12d2dfe39f539768db88d622e41c155091ba",
+      "bytes": 115086,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "tomba-special-edition": {
+    "cover": null,
+    "screenshots": []
+  },
+  "monster-hunter-wilds": {
+    "cover": {
+      "file": "monster-hunter-wilds/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202409/0506/aa5c40ba185302dfcc88edc276a876fdc6c516c4db07ec9d.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202409/0506/aa5c40ba185302dfcc88edc276a876fdc6c516c4db07ec9d.png",
+      "sourceSha256": "eefbbc9e7b75441faa65ddec769a30695bb9a08bdf51847f309940267e40b957",
+      "sourceBytes": 279930,
+      "sha256": "3210bb926a46775f4d0e756a0695ca22611a4fcfaeb0aba7fd9df5e5b5b92c42",
+      "bytes": 191108,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "lego-builders-journey": {
+    "cover": {
+      "file": "lego-builders-journey/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202202/0310/7HHNZEzG5P8nyJ5LRshV2oXx.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202202/0310/7HHNZEzG5P8nyJ5LRshV2oXx.png",
+      "sourceSha256": "c148e7ad2e7cf4587132f294c12817b9b5d0fb145b77aac0ee04cba5b2395535",
+      "sourceBytes": 120245,
+      "sha256": "9f3d2e98200cf2cf314f22844a6e6cae2ff80a9f63d8b25006992e71a65f8bd3",
+      "bytes": 56436,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "superliminal": {
+    "cover": {
+      "file": "superliminal/cover.webp",
+      "source": "https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA19488_00/5/i_fafb8161b93465477b543f2d96835aec423853d5c49d2d2893811396519852aa/i/icon0.png",
+      "downloadUrl": "https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA19488_00/5/i_fafb8161b93465477b543f2d96835aec423853d5c49d2d2893811396519852aa/i/icon0.png",
+      "sourceSha256": "ef5469a95a171aa225bc4fe734d5d5c34a51d02a02a8f14aae5be72009e05ab8",
+      "sourceBytes": 45991,
+      "sha256": "7bea24d7d2a7c7f687c678fade100b41bbc4c015f6a7134c3fae8c078b66716e",
+      "bytes": 22768,
+      "width": 512,
+      "height": 512
+    },
+    "screenshots": []
+  },
+  "squirrel-with-a-gun": {
+    "cover": {
+      "file": "squirrel-with-a-gun/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202407/2922/806dbc9fc129686a537bfab37206a52a4be41eb7ec7cf668.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202407/2922/806dbc9fc129686a537bfab37206a52a4be41eb7ec7cf668.png",
+      "sourceSha256": "c0521d252f6c56a77c33000e1c243666d16e57172cf236ac92156140c91c7c2f",
+      "sourceBytes": 131076,
+      "sha256": "8da5725a901195c28ac3282578cd174733d1c8cf300f2557700b279e444246ca",
+      "bytes": 69088,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
   }
 }

@@ -3,25 +3,75 @@ import metadata from './github-source-status.json';
 export interface DevelopmentNote {number:number;title:Text;summary:Text;games:string[]}
 export const developmentNotes:DevelopmentNote[]=[
 {
- "number": 7636,
+ "number": 6314,
  "games": [],
  "title": {
-  "en": "Linux preinit regression remains scoped",
-  "zh": "Linux preinit回归需按程序判断",
-  "ar": "تراجع Linux preinit محدود",
-  "pt": "Regressão preinit Linux por aplicação",
-  "de": "Linux-Preinit-Regression nach Programm",
-  "fr": "Régression preinit Linux par programme",
-  "es": "Regresión preinit Linux por programa"
+  "en": "Version-checked conversion patches merged",
+  "zh": "转换期版本检查补丁已合入",
+  "ar": "دمج ترقيعاتتحويل مفحوصة",
+  "pt": "Patches de conversão verificados integrados",
+  "de": "Geprüfte Konvertierungspatches integriert",
+  "fr": "Patches de conversion vérifiés intégrés",
+  "es": "Parches de conversión verificados integrados"
  },
  "summary": {
-  "en": "After #6112, a97-title homebrew catalog on376c04029 reports duplicate destructor registration. #7639 alone advances Wind Waker/Xash/Ruffle only to duplicate atexit-count abort. MXGP26 on400baa252b runs2/2 to140s, so “every Linux title” is not established. Exact callbacks/module initialization remain under investigation.",
-  "zh": "#6112后，376c04029上的97项自制目录报告重复析构注册；#7639单独仅让Wind Waker／Xash／Ruffle推进到重复atexit-count中止。MXGP26在400baa252b两次到140秒，不能称全部Linux游戏失败；回调／模块初始化仍在调查。",
-  "ar": "كتالوج97 homebrew يذكر تكرار التسجيل بعد#6112؛#7639 وحده يصل لخطأatexit التالي. MXGP26 يمر2/2 إلى140ث على400baa، فلا يعمم لكلLinux.",
-  "pt": "Catálogo97homebrew relata registo duplicado pós#6112;#7639 só avança ao erroatexit. MXGP26 passa2/2 até140s em400baa, sem generalizar Linux.",
-  "de": "97Homebrew-Katalog meldet doppelte Registrierung nach#6112;#7639 führt nur zum nächsten Atexitfehler. MXGP26 läuft2/2 bis140s auf400baa, kein allgemeiner Linuxausfall.",
-  "fr": "Catalogue97homebrew signale doublon après#6112 ;#7639 avance seulement à erreuratexit. MXGP26 passe2/2 jusqu’à140s sur400baa, pas panne Linux générale.",
-  "es": "Catálogo97homebrew reporta registro duplicado tras#6112;#7639 solo avanza al erroratexit. MXGP26 pasa2/2 hasta140s en400baa, sin generalizar Linux."
+  "en": "Post-v0.1.2 main can auto-discover relinker-patches.toml and verifies expected title bytes. --no-patches disables discovery. Keep manifest/content version with runtime evidence: clean source does not mean unmodified guest executable. No title-specific preset is implied.",
+  "zh": "v0.1.2后main可自动发现relinker-patches.toml并核对游戏expected字节，--no-patches禁发现。运行证据需保留清单／内容版本，源码纯净不等于客体exe未修改；不含通用游戏预设。",
+  "ar": "main بعدv0.1.2 يكتشفملفpatch ويتحققexpected؛--no-patches يعطل. سجّلالبيان/نسخةاللعبة؛ مصدرنظيف ليسguestغيرمعدل، لا preset.",
+  "pt": "Main apósv0.1.2 descobre patches e verificaexpected;--no-patches desativa. Guarde manifesto/versão; fonte limpa não implica guest intacto, sem preset.",
+  "de": "Main nachv0.1.2 entdecktPatches/prüftExpected;--no-patches aus. Manifest/Version behalten; saubererCode keinunveränderterGuest, keinPreset.",
+  "fr": "Main aprèsv0.1.2 découvrepatches/vérifieexpected ;--no-patches désactive. Gardez manifeste/version ; sourcepropre n’implique pasguestintact, paspreset.",
+  "es": "Main trasv0.1.2 descubreparches/verificaexpected;--no-patches desactiva. Guarda manifiesto/versión; fuentelimpia no implica guestintacto, sinpreset."
+ }
+},
+{
+ "number": 7681,
+ "games": [
+  "ratchet-clank-rift-apart",
+  "guardians-of-the-galaxy",
+  "sword-of-the-sea"
+ ],
+ "title": {
+  "en": "Versioned register defaults restored",
+  "zh": "带版本寄存器默认布局已恢复",
+  "ar": "استعادة تخطيطسجلات معنسخة",
+  "pt": "Layout dos registos versionados restaurado",
+  "de": "Versioniertes Registerlayout wiederhergestellt",
+  "fr": "Disposition des registres versionnés restaurée",
+  "es": "Disposición de registros versionados restaurada"
+ },
+ "summary": {
+  "en": "Merged#7681 keeps legacy key/bank pairs and restores compact12-byte entries for versioned getters. Ratchet NVIDIA main/revert pair passes old sentinel versus15s failure; AMD independent boot agrees, both stop later#6191. Other titles need their own rerun.",
+  "zh": "已合#7681保留旧getter key／bank对，带版本getter恢复紧凑12字节项。Ratchet NVIDIA main／反转对比通过旧sentinel对15秒失败，AMD独立启动一致，但均后停#6191；其他游戏需各自复测。",
+  "ar": "#7681 مدمج يحفظlegacy ويعيد12بايت للversioned. RatchetNVIDIA يمرmain مقابلrevert15ث،AMD يؤيدالبدء؛ كلاهما#6191 لاحقاً. باقيالعناوين تحتاجإعادة.",
+  "pt": "#7681 integrado mantémlegacy/restaura12bytes versionados. RatchetNVIDIA main passa/revert15s falha, AMD confirma arranque; ambos param#6191 depois. Outros exigem reteste.",
+  "de": "#7681 integriert behältLegacy/stellt12ByteVersionseinträge wiederher. RatchetNVIDIA Main passiert/Revert15s scheitert, AMD bestätigtStart; beide später#6191. AndereTitel neuprüfen.",
+  "fr": "#7681 intégré conservelegacy/rétablit12octets versionnés. RatchetNVIDIA main passe/revert15s échoue, AMD confirmeboot ; deux arrêts ultérieurs#6191. Autres titres àretester.",
+  "es": "#7681 integrado conservaLegacy/restaura12bytes versionados. RatchetNVIDIA main pasa/revert15s falla, AMD confirmainicio; ambos después#6191. Otrosrequieren retest."
+ }
+},
+{
+ "number": 7636,
+ "games": [
+  "sword-of-the-sea"
+ ],
+ "title": {
+  "en": "Preinit regression traced and reverted",
+  "zh": "preinit回归已追溯并回退",
+  "ar": "تتبّع تراجعpreinit والتراجععنه",
+  "pt": "Regressão preinit identificada e revertida",
+  "de": "Preinit-Regression verfolgt und zurückgenommen",
+  "fr": "Régression preinit retracée et annulée",
+  "es": "Regresión preinit identificada y revertida"
+ },
+ "summary": {
+  "en": "#7646 merged, reverting#6112 after tracing duplicate initialization in guest libc. Eight Linux homebrew starts return to prior stops on6e27fc8f0+c3b900159; Windows Sword441190cf6 reaches opening cutscene in240s. #7639 alone only reached the next duplicate setter. Not every title was affected; not a general gameplay certification.",
+  "zh": "#7646合入回退#6112，已追到guest libc重复初始化。6e27fc8f0+c3b900159八项Linux自制启动回到原停止点；Windows Sword441190cf6在240秒到开场。单#7639仅推到下一个重复setter，并非所有游戏受影响，也非通用游玩认证。",
+  "ar": "#7646 مدمج يعكس#6112 بعدتتبّع تهيئةlibc المكررة.8homebrew Linux تعودللتوقفالسابق على6e27fc8f0+c3b900159؛Sword Windows441190cf6 مقدمة240ث. #7639 وحده setter تالٍ، ليسكلالعناوين/شهادةلعب.",
+  "pt": "#7646 integrado reverte#6112 após duplicação libc.8homebrew Linux em6e27fc8f0+c3b900159 voltam aos stops anteriores; SwordWindows441190cf6 chega intro240s. #7639 só avança setter; não afetava todos/não certifica jogo.",
+  "de": "#7646 integriert und#6112 nach doppelterLibc-Initialisierung zurückgenommen.8Linux-Starts auf6e27fc8f0+c3b900159 wieder alteStopps; WindowsSword441190cf6 Intro240s. #7639 nur nächsterSetter; nichtalleTitel/keinSpielzertifikat.",
+  "fr": "#7646 intégré annule#6112 après doubleinitialisation libc.8homebrew Linux sur6e27fc8f0+c3b900159 retrouvent anciensarrêts ; SwordWindows441190cf6 intro240s. #7639 seul au setter suivant ; pas tous/pas certificationjeu.",
+  "es": "#7646 integrado revierte#6112 tras dobleinicializaciónlibc.8homebrew Linux en6e27fc8f0+c3b900159 vuelven a paradasprevias; SwordWindows441190cf6 intro240s. #7639 solo siguiente setter; no todos/no certificaciónjuego."
  }
 },
 {
@@ -93,26 +143,25 @@ export const developmentNotes:DevelopmentNote[]=[
 {
  "number": 7332,
  "games": [
-  "god-of-war-sons-of-sparta",
-  "ccleste-homebrew"
+  "god-of-war-sons-of-sparta"
  ],
  "title": {
-  "en": "Open Mac integration has scoped M4 Pro title reports",
-  "zh": "开放Mac整合新增M4 Pro游戏报告",
-  "ar": "تقارير M4 Pro محدودة لتكامل Mac المفتوح",
-  "pt": "PR Mac aberto tem testes M4 Pro",
-  "de": "Offene Mac-Integration mit M4-Pro-Berichten",
-  "fr": "PR Mac ouvert avec rapports M4 Pro",
-  "es": "PR Mac abierto con informes M4 Pro"
+  "en": "Open Mac runtime has newer pinned game tests",
+  "zh": "开放Mac运行时有新的固定构建实测",
+  "ar": "اختبارات أحدث لruntimeMac المفتوح",
+  "pt": "Runtime Mac aberto com novos testes",
+  "de": "Offene Mac-Runtime mit neueren Spieltests",
+  "fr": "Runtime Mac ouvert avec nouveaux tests",
+  "es": "Runtime Mac abierto con pruebas nuevas"
  },
  "summary": {
-  "en": "Open #7332 is Rosetta2/MoltenVK, not native ARM64 or a release. On M4 Pro16-core/24GB, macOS27.0.1, MoltenVK1.4.2, head690c044a6 +maina62c724c3: Lana PPSA19450 v01.010.000 reaches a corrupt≈10 FPS menu only with local RTLD_GLOBAL; Sparta PPSA28997 v01.008.001 also needs #6842, reaches gameplay≈15 FPS with sound/keyboard and background corruption. ccleste1.00 PPSA59322 stops at barycentrics. Laterdf24fc821 +main376c04029 passes1455 general tests with GPU skipped; titles/GPU not replayed on that head.",
-  "zh": "开放#7332属于Rosetta2／MoltenVK，非原生ARM64或发行版。M4 Pro16核GPU／24GB、macOS27.0.1、MoltenVK1.4.2，690c044a6+maina62c724c3：Lana PPSA19450 v01.010.000需本地RTLD_GLOBAL才到约10FPS且背景损坏的菜单；Sparta PPSA28997 v01.008.001另需#6842，到约15FPS游玩，声音／键盘有效但背景损坏。ccleste1.00 PPSA59322停于重心坐标。较新df24fc821+main376c04029一般测试1455通过但GPU跳过，该头未重测游戏／GPU。",
-  "ar": "#7332 مفتوح Rosetta2/MoltenVK لاARM64 أصلي/إصدار. M4Pro16GPU/24GB macOS27.0.1 MVK1.4.2،690c044a6+maina62c: Lana19450 v01.010.000 قائمة10 معRTLD_GLOBAL محلي وفساد؛ Sparta28997 v01.008.001 +#6842 لعب15 وصوت/لوحة مع فساد؛ ccleste59322 v1.00 يتوقف barycentrics. df24+main376 يمر1455 عامة وGPU متجاوز، بلا إعادة ألعاب عليه.",
-  "pt": "#7332 aberto Rosetta2/MoltenVK, nãoARM64 nativo/release. M4Pro16GPU/24GB macOS27.0.1 MVK1.4.2,690c044a6+maina62c: Lana19450 v01.010.000 menu10 corrompido comRTLD_GLOBAL local; Sparta28997 v01.008.001 +#6842 jogo15/som/teclado com corrupção; ccleste59322 v1.00 falha barycentrics. df24+main376 passa1455 gerais comGPU ignorada, sem repetir jogos.",
-  "de": "#7332 offen, Rosetta2/MoltenVK statt nativemARM64/Release. M4Pro16GPU/24GB macOS27.0.1 MVK1.4.2,690c044a6+maina62c: Lana19450 v01.010.000 fehlerhaftes Menü10 mit lokalemRTLD_GLOBAL; Sparta28997 v01.008.001 +#6842 Gameplay15/Ton/Tastatur mit Bildfehlern; ccleste59322 v1.00 Baryzentrikstopp. df24+main376 besteht1455 allgemeine Tests, GPU übersprungen, Spiele nicht erneut geprüft.",
-  "fr": "#7332 ouvert Rosetta2/MoltenVK, pasARM64 natif/release. M4Pro16GPU/24GB macOS27.0.1 MVK1.4.2,690c044a6+maina62c : Lana19450 v01.010.000 menu10 corrompu avecRTLD_GLOBAL local ; Sparta28997 v01.008.001 +#6842 jeu15/son/clavier avec corruption ; ccleste59322 v1.00 arrêt barycentriques. df24+main376 passe1455 généraux, GPU ignoré, jeux non rejoués.",
-  "es": "#7332 abierto Rosetta2/MoltenVK, noARM64 nativo/release. M4Pro16GPU/24GB macOS27.0.1 MVK1.4.2,690c044a6+maina62c: Lana19450 v01.010.000 menú10 corrupto conRTLD_GLOBAL local; Sparta28997 v01.008.001 +#6842 juego15/audio/teclado con corrupción; ccleste59322 v1.00 falla baricéntricas. df24+main376 pasa1455 generales, GPU omitida, juegos sin repetir."
+  "en": "Still open, not v0.1.2. M4Pro24GB/macOS27.0.1/MoltenVK1.4.2/VulkanSDK1.4.363, Rosetta x86-64: Lana19450 v01.010.000 on70055abe0 now has clean menu/gameplay; local GPU fills change5.2→11.9 gameplay. Later54845a456 local exact-fma experiment13.3–13.7 versus11.0–11.4 in one load band. Different heads/scenes, not nativeARM/main/release results. M2Max70055 non-GPU782/783 with transient failure; no title replay in that suite.",
+  "zh": "仍开放，非v0.1.2。M4Pro24GB／macOS27.0.1／MoltenVK1.4.2／SDK1.4.363的Rosetta x86-64：Lana19450 v01.010.000在70055abe0菜单／游玩正常，本地GPU fill游玩5.2→11.9；后54845a456本地精确fma实验同负载段11.0–11.4→13.3–13.7。不同提交／场景，非原生ARM／main／发行结果。M2Max70055非GPU782/783含偶发失败，该suite未复跑游戏。",
+  "ar": "مفتوحليسv0.1.2. M4Pro24GB/macOS27.0.1/MVK1.4.2/SDK1.4.363 Rosetta: Lana19450v01.010.000 على70055abe0 سليمة،fill محلي5.2→11.9. 54845a456 معfma محلي11.0–11.4→13.3–13.7. رؤوس/مشاهدمختلفة لاARM/main/release. M2Max782/783 بلاGPU، لا إعادةلعبة.",
+  "pt": "Aberto, forav0.1.2. M4Pro24GB/macOS27.0.1/MVK1.4.2/SDK1.4.363 Rosetta: Lana19450v01.010.000 limpo em70055abe0, fills locais5,2→11,9. Depois54845a456/fma local11,0–11,4→13,3–13,7 numa carga. Heads/cenas distintos, nãoARM/main/release. M2Max782/783 semGPU, sem reteste jogo.",
+  "de": "Offen, nichtv0.1.2. M4Pro24GB/macOS27.0.1/MVK1.4.2/SDK1.4.363 Rosetta: Lana19450v01.010.000 auf70055abe0 sauber, lokaleGPU-Fills5,2→11,9. Später54845a456/Fma lokal11,0–11,4→13,3–13,7. AndereHeads/Szenen, keinARM/Main/Release. M2Max782/783 ohneGPU, keinSpieltetest.",
+  "fr": "Ouvert horsv0.1.2. M4Pro24GB/macOS27.0.1/MVK1.4.2/SDK1.4.363 Rosetta : Lana19450v01.010.000 propre sur70055abe0, fills locaux5,2→11,9. Puis54845a456/fma local11,0–11,4→13,3–13,7. Heads/scènes distincts, pasARM/main/release. M2Max782/783 sansGPU ni retestjeu.",
+  "es": "Abierto fuerav0.1.2. M4Pro24GB/macOS27.0.1/MVK1.4.2/SDK1.4.363 Rosetta: Lana19450v01.010.000 limpio en70055abe0, fills locales5,2→11,9. Luego54845a456/fma local11,0–11,4→13,3–13,7. Heads/escenas distintos, noARM/main/release. M2Max782/783 sinGPU/retestjuego."
  }
 },
 {
@@ -169,22 +218,22 @@ export const developmentNotes:DevelopmentNote[]=[
   "sonic-unleashed-recompiled"
  ],
  "title": {
-  "en": "Sonic gameplay requires its composed fork",
-  "zh": "Sonic游玩证据属于组合分支",
-  "ar": "لعب Sonic على فرع مركب",
-  "pt": "Sonic joga num fork composto",
-  "de": "Sonic-Gameplay auf zusammengesetztem Fork",
-  "fr": "Sonic jouable sur fork composé",
-  "es": "Sonic jugable en fork compuesto"
+  "en": "Sonic historical gameplay and latest startup are separate",
+  "zh": "Sonic历史游玩与最新启动分开",
+  "ar": "لعبSonic التاريخي وبدءجديد منفصلان",
+  "pt": "Sonic histórico e arranque recente separados",
+  "de": "Sonic-Spielhistorie und aktueller Start getrennt",
+  "fr": "Gameplay historique Sonic et nouveau démarrage distincts",
+  "es": "Sonic histórico e inicio reciente separados"
  },
  "summary": {
-  "en": "#7294 volume layouts and #7573 placeholder-MSAA support merged; #7310 remains open. Earlier4c2cab875 stopped in the intro. Later completed0b06cc662 on main39ff296960 plus many PRs/adaptations reaches controllable daytime play/one ring for3600s. No clock edits; dialogue1.03–1.05 counter is not sustained-play FPS. Newer0e7fba38 replay is unfinished.",
-  "zh": "#7294体积布局及#7573占位MSAA已合入，#7310仍开放。旧4c2cab875停于片头；后来的0b06cc662基于main39ff296960并组合多PR／适配，完成3600秒到可操作白天关卡及1枚环。无时钟改动，对话1.03–1.05计数非持续游玩FPS，更新0e7fba38重放未完成。",
-  "ar": "#7294/#7573 مدمجان و#7310 مفتوح. القديم4c2 يتوقف بالمقدمة؛0b06 علىmain39ff مع تعديلات متعددة يبلغ لعباً/حلقة3600ث بلا تعديل ساعة. عداد الحوار ليس FPS لعب، replay أحدث غير مكتمل.",
-  "pt": "#7294/#7573 integrados, #7310 aberto. Antigo4c2 falha intro;0b06 emmain39ff com stack chega a jogo/anel3600s sem clock edit. Contador diálogo não é FPS sustentado; replay novo incompleto.",
-  "de": "#7294/#7573 integriert, #7310 offen. Alter4c2 stoppt Intro;0b06 aufmain39ff mit Stack erreicht Spiel/Ring3600s ohne Uhränderung. Dialogzähler kein Dauer-FPS, neuer Replay unvollständig.",
-  "fr": "#7294/#7573 intégrés, #7310 ouvert. Ancien4c2 arrêté intro ;0b06 surmain39ff avec stack atteint jeu/anneau3600s sans horloge modifiée. Compteur dialogue pas FPS durable, replay récent incomplet.",
-  "es": "#7294/#7573 integrados, #7310 abierto. Antiguo4c2 falla intro;0b06 enmain39ff con stack llega a juego/anillo3600s sin reloj modificado. Contador diálogo no FPS sostenido, replay nuevo incompleto."
+  "en": "Historical0e7fba38b5 fork confirms movement/seven rings, not the latest run. Current main5c6c compositionsc296/3223 stop black at FMASK/CMASK then snapshot metadata, without menu. #7294/#7573 merged;#7310 open. GPU component matrices do not revalidate the game or prove console-equivalent FMASK decoding.",
+  "zh": "历史0e7fba38b5分支确认移动／7枚环，非最新运行；当前main5c6c的c296／3223组合均黑屏，分别停FMASK／CMASK及snapshot metadata，无菜单。#7294／#7573已合，#7310开放；GPU组件矩阵不能复证游戏或主机等价FMASK。",
+  "ar": "0e7fba38b5 التاريخي يؤكدحركة/7حلقات، ليسالجديد. main5c6c معc296/3223 أسودعندFMASK ثمsnapshot، بلا قائمة. #7294/#7573 مدمجان و#7310 مفتوح؛ مكوناتGPU ليست لعبة/تكافؤكونسول.",
+  "pt": "0e7fba38b5 histórico confirma movimento/7anéis, não novo run. main5c6c c296/3223 pretos emFMASK/snapshot sem menu. #7294/#7573 integrados,#7310 aberto; testesGPU não revalidam jogo/equivalência consola.",
+  "de": "Historisch0e7fba38b5 Bewegung/7Ringe, nichtneuerLauf. Main5c6c c296/3223 schwarz beiFMASK/Snapshot ohneMenü. #7294/#7573 integriert,#7310 offen; GPU-Komponenten keinSpiel-/Konsolenbeleg.",
+  "fr": "Historique0e7fba38b5 mouvement/7anneaux, pasnouveaurun. Main5c6c c296/3223 noirs surFMASK/snapshot sansmenu. #7294/#7573 intégrés,#7310 ouvert ; composantsGPU sans revalidationjeu/équivalenceconsole.",
+  "es": "Histórico0e7fba38b5 movimiento/7anillos, no nuevorun. Main5c6c c296/3223 negros enFMASK/snapshot sinmenú. #7294/#7573 integrados,#7310 abierto; componentesGPU no revalidan juego/equivalenciaconsola."
  }
 },
 {

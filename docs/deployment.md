@@ -52,3 +52,7 @@ The20-entry/65-report update uses the same normal main Git trigger and both exis
 ## Source maintenance — 2026-10-19
 
 The13-entry/36-observation update follows the same normal main trigger and both existing services. See the[maintenance record](maintenance/2026-10-19-nightly.md); ignored daily receipts retain exact SHA, official deployment verification, CI and complete public acceptance. An initial CLI401 is not treated as proof of a failed deployment. Cloudflare handles active search notifications.
+
+## Source maintenance — 2026-10-20
+
+The6-entry/46-observation update follows the existing normal main Git trigger. The[maintenance record](maintenance/2026-10-20-nightly.md) and ignored daily release receipt retain exact main SHA, both official RUNNING deployment IDs, CI and public acceptance. No proactive search notification workflow is required; Cloudflare handles it.

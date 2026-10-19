@@ -1,16 +1,16 @@
 # Self-hosted game media
 
-Updated 2026-10-19. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
+Updated 2026-10-20. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
 
 ## Sources and asset inventory
 
-- 140 game/edition pages have official/publisher artwork: 140 covers and 82 promotional screenshots (222 source assets).
+- 145 game/edition pages have official/publisher artwork: 145 covers and 82 promotional screenshots (227 source assets).
 - `packages/content/game-media.json` retains the original page, provider, image URLs and editorial review date.
 - `packages/content/game-media-local.json` maps each source to its exported file, actual download URL, source/export SHA-256, byte counts and actual dimensions.
 - Committed WebP masters live in `packages/ui/assets/games/<slug>/`. Astro imports them and emits hashed, same-origin images under `/_astro/`, including responsive variants. Production builds do not fetch remote media.
-- 39 entries still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
+- 40 entries still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
 
-The downloaded high-resolution source set totals 57.45 MiB; the exported masters total 29.50 MiB, a 48.7% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
+The downloaded high-resolution source set totals 58.18 MiB; the exported masters total 29.93 MiB, a 48.6% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
 
 ## Update command
 
@@ -46,3 +46,5 @@ The 16 October addition has 14 verified covers. Quake uses its original 2021 key
 The18 October addition includes eight verified covers. The available Furi OG image is PS4-branded and was rejected for this PS5 entry; unavailable matching pages and new homebrew retain icons. No report screenshot was substituted with promotional artwork.
 
 The19 October addition includes five identity-checked covers. The generic EA FC page now advertises FC27 and was rejected for FC25; unavailable/missing matching store art retains icons. The existing STEINS;GATE entry and cover are reused rather than duplicated. No new report screenshot or media host was added.
+
+20 October adds five identity-checked PlayStation covers: Echoes of Aincrad, Monster Hunter Wilds, LEGO Builder’s Journey, Superliminal and Squirrel with a Gun. Tomba’s guessed publisher URL404 retains an icon. Cross-generation promotional art does not prove the tested PPSA package or AnyPS5 rendering.

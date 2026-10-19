@@ -2229,6 +2229,176 @@ Object.assign(editorial,{
   }
  }
 });
+Object.assign(editorial,{
+ "echoes-of-aincrad": {
+  "genre": "rpg",
+  "overview": {
+   "en": "Create an adventurer in Aincrad. A cave checkpoint leaves later battles and world exploration untested.",
+   "zh": "在艾恩葛朗特创建冒险者；洞穴检查点尚不覆盖后续战斗与世界探索。",
+   "ar": "اصنع مغامراً فيAincrad؛ اختبارالكهف لايغطي المعارك والاستكشاف اللاحق.",
+   "pt": "Cria aventureiro emAincrad; a prova da caverna deixa batalhas/exploração posteriores em aberto.",
+   "de": "Erstelle einen Abenteurer inAincrad; Höhlentest lässt spätere Kämpfe/Erkundung offen.",
+   "fr": "Créez un aventurier dansAincrad ; le test de grotte laisse combats/exploration ultérieurs ouverts.",
+   "es": "Crea aventurero enAincrad; el test de cueva deja batallas/exploración posteriores abiertas."
+  },
+  "names": {
+   "zh": "刀剑神域：艾恩葛朗特回响"
+  },
+  "related": [
+   "superliminal",
+   "lego-builders-journey"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA22969. Read the version and patch stack per observation; publisher artwork is promotional.",
+   "zh": "报告包PPSA22969，按每次版本和补丁栈阅读；发行商图片仅宣传资料。",
+   "ar": "حزمةPPSA22969؛ النسخة والترقيعات لكلتجربة، والصور دعائية.",
+   "pt": "PacotePPSA22969; versão/patches por observação, imagens promocionais.",
+   "de": "PaketPPSA22969; Version/Patches jeTest beachten, Bilder sindWerbung.",
+   "fr": "PaquetPPSA22969 ; version/patches par observation, images promotionnelles.",
+   "es": "PaquetePPSA22969; versión/parches por observación, imágenes promocionales."
+  }
+ },
+ "tomba-special-edition": {
+  "genre": "action",
+  "overview": {
+   "en": "A colourful platform adventure returns in this edition. Verify saving separately from loading a saved game.",
+   "zh": "彩色平台冒险的新版本；需把保存与重载已有存档分开验证。",
+   "ar": "مغامرةمنصات ملوّنة بهذاالإصدار؛ الحفظ وإعادةالتحميل اختبارانمنفصلان.",
+   "pt": "Aventura de plataformas colorida nesta edição; guardar e recarregar são verificações distintas.",
+   "de": "Buntes Plattformabenteuer in dieserEdition; Speichern und Laden getrennt prüfen.",
+   "fr": "Aventure de plateformes colorée dans cetteédition ; sauvegarde et rechargement se vérifient séparément.",
+   "es": "Aventura de plataformas colorida en estaedición; guardar y recargar se verifican aparte."
+  },
+  "names": {
+   "zh": "东巴！特别版"
+  },
+  "related": [
+   "tomba-2",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA21382. Read the version and patch stack per observation; publisher artwork is promotional.",
+   "zh": "报告包PPSA21382，按每次版本和补丁栈阅读；发行商图片仅宣传资料。",
+   "ar": "حزمةPPSA21382؛ النسخة والترقيعات لكلتجربة، والصور دعائية.",
+   "pt": "PacotePPSA21382; versão/patches por observação, imagens promocionais.",
+   "de": "PaketPPSA21382; Version/Patches jeTest beachten, Bilder sindWerbung.",
+   "fr": "PaquetPPSA21382 ; version/patches par observation, images promotionnelles.",
+   "es": "PaquetePPSA21382; versión/parches por observación, imágenes promocionales."
+  }
+ },
+ "monster-hunter-wilds": {
+  "genre": "rpg",
+  "overview": {
+   "en": "Hunt in changing wild environments. A flat startup output does not test hunting or combat.",
+   "zh": "在变化的荒野环境中狩猎；启动平面输出并不证明狩猎或战斗可用。",
+   "ar": "صيد ببيئاتبرية متغيرة؛ خرجبدء مسطح لايختبر الصيد أوالقتال.",
+   "pt": "Caça em ambientes selvagens mutáveis; saída lisa de arranque não testa caça/combate.",
+   "de": "Jage in wechselnder Wildnis; flache Startausgabe testet weder Jagd noch Kampf.",
+   "fr": "Chasse dans des milieux changeants ; une sortie initiale unie ne teste pas chasse/combat.",
+   "es": "Caza en entornos cambiantes; salida inicial uniforme no prueba caza/combate."
+  },
+  "names": {
+   "zh": "怪物猎人：荒野"
+  },
+  "related": [
+   "superliminal",
+   "lego-builders-journey"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA24191. Read the version and patch stack per observation; publisher artwork is promotional.",
+   "zh": "报告包PPSA24191，按每次版本和补丁栈阅读；发行商图片仅宣传资料。",
+   "ar": "حزمةPPSA24191؛ النسخة والترقيعات لكلتجربة، والصور دعائية.",
+   "pt": "PacotePPSA24191; versão/patches por observação, imagens promocionais.",
+   "de": "PaketPPSA24191; Version/Patches jeTest beachten, Bilder sindWerbung.",
+   "fr": "PaquetPPSA24191 ; version/patches par observation, images promotionnelles.",
+   "es": "PaquetePPSA24191; versión/parches por observación, imágenes promocionales."
+  }
+ },
+ "lego-builders-journey": {
+  "genre": "puzzle",
+  "overview": {
+   "en": "Build through small brick puzzles. Reaching the first scene leaves puzzle progression and input verification open.",
+   "zh": "用积木解决小型谜题；到达首场景仍需单独验证操作与谜题推进。",
+   "ar": "حلألغاز مكعبات صغيرة؛ بلوغالمشهد الأول لايثبت التحكم أوتقدم الألغاز.",
+   "pt": "Resolve pequenos puzzles de peças; primeira cena deixa input e progressão por verificar.",
+   "de": "Löse kleineSteinpuzzles; ersteSzene lässt Eingaben und Rätselverlauf offen.",
+   "fr": "Résolvez de petits puzzles de briques ; première scène sans validation des commandes/progression.",
+   "es": "Resuelve pequeños puzles de bloques; primera escena deja controles/progresión sin verificar."
+  },
+  "names": {
+   "zh": "乐高：建造者之旅"
+  },
+  "related": [
+   "animal-well",
+   "dreaming-sarah"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA05496. Read the version and patch stack per observation; publisher artwork is promotional.",
+   "zh": "报告包PPSA05496，按每次版本和补丁栈阅读；发行商图片仅宣传资料。",
+   "ar": "حزمةPPSA05496؛ النسخة والترقيعات لكلتجربة، والصور دعائية.",
+   "pt": "PacotePPSA05496; versão/patches por observação, imagens promocionais.",
+   "de": "PaketPPSA05496; Version/Patches jeTest beachten, Bilder sindWerbung.",
+   "fr": "PaquetPPSA05496 ; version/patches par observation, images promotionnelles.",
+   "es": "PaquetePPSA05496; versión/parches por observación, imágenes promocionales."
+  }
+ },
+ "superliminal": {
+  "genre": "puzzle",
+  "overview": {
+   "en": "Perspective changes the scale of dream objects. First-room movement is narrower evidence than solving later puzzles.",
+   "zh": "利用透视改变梦中物体尺度；首房间移动的证据范围小于解开后续谜题。",
+   "ar": "المنظور يغيّر حجمأشياء الحلم؛ حركةالغرفة الأولى لاتثبت الألغازاللاحقة.",
+   "pt": "A perspetiva muda objetos dos sonhos; movimento na primeira sala não prova puzzles seguintes.",
+   "de": "Perspektive verändert Traumobjekte; Bewegung im erstenRaum belegt keine späterenRätsel.",
+   "fr": "La perspective change les objets rêvés ; mouvement dans la première salle ne valide pas la suite.",
+   "es": "La perspectiva cambia objetos soñados; moverse en primera sala no valida puzles posteriores."
+  },
+  "names": {
+   "zh": "超阈限空间"
+  },
+  "related": [
+   "animal-well",
+   "dreaming-sarah"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA06084. Read the version and patch stack per observation; publisher artwork is promotional.",
+   "zh": "报告包PPSA06084，按每次版本和补丁栈阅读；发行商图片仅宣传资料。",
+   "ar": "حزمةPPSA06084؛ النسخة والترقيعات لكلتجربة، والصور دعائية.",
+   "pt": "PacotePPSA06084; versão/patches por observação, imagens promocionais.",
+   "de": "PaketPPSA06084; Version/Patches jeTest beachten, Bilder sindWerbung.",
+   "fr": "PaquetPPSA06084 ; version/patches par observation, images promotionnelles.",
+   "es": "PaquetePPSA06084; versión/parches por observación, imágenes promocionales."
+  }
+ },
+ "squirrel-with-a-gun": {
+  "genre": "action",
+  "overview": {
+   "en": "An armed squirrel explores a sandbox. Separate active streaming from settled scenes when comparing performance.",
+   "zh": "持枪松鼠探索沙盒；对比性能时需把内容串流与稳定场景分开。",
+   "ar": "سنجابمسلح يستكشف عالماً مفتوحاً؛ افصلتحميلالمحتوى عنالمشهدالمستقر عندالمقارنة.",
+   "pt": "Um esquilo armado explora um sandbox; separe streaming ativo de cenas estabilizadas ao comparar.",
+   "de": "BewaffnetesEichhörnchen erkundet Sandbox; aktivesStreaming und stabileSzenen getrennt vergleichen.",
+   "fr": "Écureuil armé explore un bac à sable ; distinguez streaming actif et scène stabilisée.",
+   "es": "Ardilla armada explora sandbox; separa streaming activo de escenas estabilizadas al comparar."
+  },
+  "names": {
+   "zh": "松鼠带枪"
+  },
+  "related": [
+   "superliminal",
+   "lego-builders-journey"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA22102. Read the version and patch stack per observation; publisher artwork is promotional.",
+   "zh": "报告包PPSA22102，按每次版本和补丁栈阅读；发行商图片仅宣传资料。",
+   "ar": "حزمةPPSA22102؛ النسخة والترقيعات لكلتجربة، والصور دعائية.",
+   "pt": "PacotePPSA22102; versão/patches por observação, imagens promocionais.",
+   "de": "PaketPPSA22102; Version/Patches jeTest beachten, Bilder sindWerbung.",
+   "fr": "PaquetPPSA22102 ; version/patches par observation, images promotionnelles.",
+   "es": "PaquetePPSA22102; versión/parches por observación, imágenes promocionales."
+  }
+ }
+});
 export const media=sources as Record<string,{source:string;provider:string;cover:string|null;screenshots:string[];checked:string}>;
 export const genreLabel=(slug:string,locale:keyof Text)=>genres[editorial[slug].genre][locale];
 export const gameName=(game:{slug:string;name:string},locale:keyof Text)=>editorial[game.slug]?.names[locale]||game.name;
