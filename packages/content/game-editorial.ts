@@ -2399,6 +2399,512 @@ Object.assign(editorial,{
   }
  }
 });
+Object.assign(editorial,{
+ "destruction-allstars": {
+  "genre": "racing",
+  "overview": {
+   "en": "Training HUD rendering leaves driving and arena simulation to be tested.",
+   "zh": "训练HUD呈现之后，还需验证驾驶及竞技场模拟。",
+   "ar": "عرض HUD التدريب يترك القيادة والمحاكاة للاختبار.",
+   "pt": "O HUD de treino deixa condução e arena por testar.",
+   "de": "Trainings-HUD lässt Fahren und Arenasimulation offen.",
+   "fr": "Le HUD du tutoriel laisse conduite et arène à tester.",
+   "es": "El HUD de entrenamiento deja conducción y arena por probar."
+  },
+  "names": {
+   "zh": "毁灭全明星"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA02630. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA02630；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA02630؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA02630; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA02630; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA02630 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA02630; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "graveyard-keeper-2": {
+  "genre": "rpg",
+  "overview": {
+   "en": "An initial gameplay report does not establish a complete management or save cycle.",
+   "zh": "初期游玩报告尚不能证明完整经营或存档循环。",
+   "ar": "تقرير اللعب الأول لا يثبت دورة إدارة أو حفظ كاملة.",
+   "pt": "O primeiro teste não prova um ciclo completo de gestão/gravação.",
+   "de": "Erstes Gameplay belegt keinen kompletten Verwaltungs-/Savezyklus.",
+   "fr": "Un premier essai ne valide pas tout le cycle de gestion/sauvegarde.",
+   "es": "Una prueba inicial no valida todo el ciclo de gestión/guardado."
+  },
+  "names": {
+   "zh": "墓场物语2"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA35943. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA35943；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA35943؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA35943; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA35943; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA35943 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA35943; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "grinch-christmas-adventures": {
+  "genre": "platform",
+  "overview": {
+   "en": "The current import refusal occurs before any platform level can be assessed.",
+   "zh": "当前导入拒绝发生在能够评估平台关卡之前。",
+   "ar": "رفض الاستيراد يسبق إمكان تقييم أي مستوى.",
+   "pt": "A recusa de importação antecede qualquer avaliação de nível.",
+   "de": "Importverweigerung liegt vor jeder Levelbewertung.",
+   "fr": "Le refus d’importation précède toute évaluation de niveau.",
+   "es": "El rechazo de importación precede cualquier evaluación de nivel."
+  },
+  "names": {
+   "zh": "格林奇：圣诞冒险"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA07656. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA07656；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA07656؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA07656; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA07656; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA07656 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA07656; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "the-exit-8": {
+  "genre": "adventure",
+  "overview": {
+   "en": "A corridor walk can reveal visual defects without proving the complete anomaly route.",
+   "zh": "走廊移动可暴露画面问题，但不证明完整异常路线可通行。",
+   "ar": "المشي بالممر يكشف عيوباً ولا يثبت المسار الكامل.",
+   "pt": "Andar no corredor revela defeitos sem provar a rota completa.",
+   "de": "Korridorbewegung zeigt Bildfehler, belegt aber nicht die ganze Route.",
+   "fr": "Parcourir le couloir révèle des défauts sans valider toute la route.",
+   "es": "Recorrer el pasillo revela fallos sin validar toda la ruta."
+  },
+  "names": {
+   "zh": "8号出口"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA23276. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA23276；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA23276؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA23276; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA23276; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA23276 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA23276; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "indiana-jones-staff-of-kings": {
+  "genre": "adventure",
+  "overview": {
+   "en": "This is the PS5 PS2 Classics package, distinct from The Great Circle.",
+   "zh": "对象是PS5的PS2经典版封装，与《古老之圈》分开。",
+   "ar": "هذه حزمةPS2 Classics علىPS5 منفصلة عن The Great Circle.",
+   "pt": "É o pacotePS2 Classics naPS5, distinto de The Great Circle.",
+   "de": "PS5-PS2-Classics-Paket, getrennt von The Great Circle.",
+   "fr": "Paquet PS2 Classics surPS5, distinct de The Great Circle.",
+   "es": "PaquetePS2 Classics enPS5, distinto de The Great Circle."
+  },
+  "names": {
+   "zh": "印第安纳琼斯与王杖"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA14388. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA14388；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA14388؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA14388; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA14388; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA14388 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA14388; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "tetris-effect-connected": {
+  "genre": "puzzle",
+  "overview": {
+   "en": "Tutorial rendering does not test later modes, connected play or VR input.",
+   "zh": "教程呈现并未测试后续模式、联机或VR输入。",
+   "ar": "عرض التعليم لا يختبر الأوضاع اللاحقة أو الاتصال أوVR.",
+   "pt": "O tutorial não testa modos seguintes, rede ou inputVR.",
+   "de": "Tutorialdarstellung testet keine späteren Modi, Online- oderVR-Eingaben.",
+   "fr": "Le tutoriel ne teste ni modes suivants, réseau ou entréesVR.",
+   "es": "El tutorial no prueba modos posteriores, red ni inputVR."
+  },
+  "names": {
+   "zh": "俄罗斯方块效应：连接"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA07923. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA07923；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA07923؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA07923; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA07923; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA07923 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA07923; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "dying-light-the-beast": {
+  "genre": "action",
+  "overview": {
+   "en": "Passing a local sign-in path leaves world loading and online identity unverified.",
+   "zh": "越过本地登录路径后，世界加载和在线身份仍需验证。",
+   "ar": "تجاوز الدخول المحلي لايثبت تحميل العالم أو هوية الشبكة.",
+   "pt": "Passar entrada local não valida mundo ou identidade online.",
+   "de": "Lokale Anmeldung belegt weder Weltladen noch Online-Identität.",
+   "fr": "Passer l’entrée locale ne valide ni monde ni identité en ligne.",
+   "es": "Pasar entrada local no valida mundo ni identidad online."
+  },
+  "names": {
+   "zh": "消逝的光芒：困兽"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA24003. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA24003；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA24003؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA24003; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA24003; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA24003 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA24003; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "arcade-game-zone": {
+  "genre": "sports",
+  "overview": {
+   "en": "Each minigame needs its own result; a composed local build is separate from clean main.",
+   "zh": "小游戏需逐项验证，组合本地构建与纯main分开。",
+   "ar": "كل لعبة صغيرة تحتاج نتيجة مستقلة؛ الدمج المحلي منفصل عنmain.",
+   "pt": "Cada minijogo exige resultado próprio; stack local separado de main.",
+   "de": "Jedes Minispiel braucht eigenen Test; lokaler Stack getrennt von Main.",
+   "fr": "Chaque mini-jeu demande son résultat ; stack local distinct de main.",
+   "es": "Cada minijuego necesita resultado propio; stack local separado de main."
+  },
+  "names": {
+   "zh": "街机游戏区"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA19015. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA19015；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA19015؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA19015; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA19015; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA19015 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA19015; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "valor-mortis": {
+  "genre": "action",
+  "overview": {
+   "en": "Responsive calibration menus leave the actual combat path untested.",
+   "zh": "校准菜单可响应，实际战斗路径仍未测试。",
+   "ar": "استجابة قائمة المعايرة تترك القتال غير مختبر.",
+   "pt": "Calibração responde, combate ainda por testar.",
+   "de": "Reagierendes Kalibriermenü lässt Kampf ungeprüft.",
+   "fr": "La calibration répond, mais le combat reste non testé.",
+   "es": "La calibración responde, pero falta probar combate."
+  },
+  "names": {
+   "zh": "Valor Mortis"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA32793. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA32793；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA32793؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA32793; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA32793; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA32793 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA32793; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "pumpkin-jack": {
+  "genre": "platform",
+  "overview": {
+   "en": "Cutscene progress and player-controlled platforming require different evidence.",
+   "zh": "过场推进与玩家操作平台跳跃需要不同证据。",
+   "ar": "تقدم المشهد والتحكم بالمنصات يحتاجان دليلين مختلفين.",
+   "pt": "Cinemática e plataformas controladas exigem provas distintas.",
+   "de": "Filmfortschritt und steuerbares Plattformspiel brauchen eigene Belege.",
+   "fr": "Cinématique et plateformes contrôlées demandent des preuves distinctes.",
+   "es": "Cinemática y plataformas controladas necesitan pruebas distintas."
+  },
+  "names": {
+   "zh": "南瓜杰克"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA03446. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA03446；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA03446؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA03446; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA03446; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA03446 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA03446; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "terrifier-artcade": {
+  "genre": "action",
+  "overview": {
+   "en": "A working action sample leaves the remaining stages and saved progression open.",
+   "zh": "动作场景样本有效，剩余关卡及保存进度仍未知。",
+   "ar": "عينة حركة ناجحة تترك المراحل والحفظ مفتوحين.",
+   "pt": "A amostra de ação deixa níveis restantes/gravação em aberto.",
+   "de": "Funktionierende Aktionsprobe lässt Restlevel/Save offen.",
+   "fr": "Un échantillon d’action laisse suite et sauvegarde ouvertes.",
+   "es": "Una muestra de acción deja niveles restantes/guardado pendientes."
+  },
+  "names": {
+   "zh": "断魂小丑：街机游戏"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA26362. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA26362；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA26362؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA26362; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA26362; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA26362 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA26362; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "life-is-strange-reunion": {
+  "genre": "adventure",
+  "overview": {
+   "en": "A release label alone cannot establish an unmodified test environment.",
+   "zh": "仅报告发行标签，仍不足以证明测试环境未修改。",
+   "ar": "وسم الإصدار وحده لا يثبت بيئة غير معدلة.",
+   "pt": "O rótulo da versão não prova ambiente sem alterações.",
+   "de": "Releasename allein belegt keine unveränderte Testumgebung.",
+   "fr": "Le nom de version seul ne prouve pas un environnement intact.",
+   "es": "La etiqueta de versión sola no prueba entorno sin modificar."
+  },
+  "names": {
+   "zh": "奇异人生：重聚"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA28101. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA28101；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA28101؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA28101; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA28101; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA28101 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA28101; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "street-fighter-6": {
+  "genre": "action",
+  "overview": {
+   "en": "Offline mode menus are a separate milestone from a playable fight.",
+   "zh": "离线模式菜单与可操作对战属于不同进度。",
+   "ar": "قوائم الأوضاع offline منفصلة عن قتال قابل للعب.",
+   "pt": "Menus offline são etapa distinta de uma luta jogável.",
+   "de": "Offline-Menüs sind ein anderer Meilenstein als ein Kampf.",
+   "fr": "Menus hors ligne et combat jouable sont deux étapes.",
+   "es": "Menús offline y pelea jugable son hitos distintos."
+  },
+  "names": {
+   "zh": "街头霸王6"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA02632. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA02632；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA02632؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA02632; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA02632; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA02632 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA02632; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "another-crabs-treasure": {
+  "genre": "adventure",
+  "overview": {
+   "en": "First-beach movement verifies a narrow patched route, leaving combat and later areas open.",
+   "zh": "首海滩移动确认一条有限补丁路径，战斗及后续区域待验。",
+   "ar": "حركة الشاطئ تثبت مساراً محدوداً معدلاً، القتال والمناطق التالية مفتوحة.",
+   "pt": "Movimento na praia valida percurso limitado com patches; combate/zonas seguintes por testar.",
+   "de": "Strandbewegung belegt schmalen Patchpfad; Kampf/Folgegebiete offen.",
+   "fr": "Mouvement sur plage valide une voie corrigée limitée ; combat/suite ouverts.",
+   "es": "Movimiento en playa valida ruta limitada con parches; combate/áreas siguientes pendientes."
+  },
+  "names": {
+   "zh": "蟹蟹寻宝奇遇"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA20423. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA20423；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA20423؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA20423; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA20423; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA20423 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA20423; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "ridge-racer": {
+  "genre": "racing",
+  "overview": {
+   "en": "This PS5 package report preserves its flicker and controller context; other editions need separate tests.",
+   "zh": "此PS5封装报告保留闪烁及手柄环境，其他版本需独立测试。",
+   "ar": "هذا التقرير يحفظ الوميض والتحكم؛ الإصدارات الأخرى تحتاج اختباراً منفصلاً.",
+   "pt": "Este pacotePS5 preserva cintilação/comando; outras edições exigem teste próprio.",
+   "de": "Dieser PS5-Paketbericht behält Flackern/Controllerkontext; andere Editionen getrennt testen.",
+   "fr": "Ce paquetPS5 conserve scintillement/contexte manette ; autres éditions à tester séparément.",
+   "es": "Este paquetePS5 conserva parpadeo/contexto de mando; otras ediciones necesitan prueba aparte."
+  },
+  "names": {
+   "zh": "山脊赛车"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA31372. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA31372；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA31372؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA31372; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA31372; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA31372 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA31372; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "smurfs-dreams": {
+  "genre": "platform",
+  "overview": {
+   "en": "A village-control build and a later graphics candidate are separate observations.",
+   "zh": "村庄操作构建与后续画面候选为不同观察，不能互相代替。",
+   "ar": "بناء تحكم القرية ومرشح الرسومات اللاحق تجربتان منفصلتان.",
+   "pt": "Build de controlo da aldeia e candidato gráfico posterior são observações distintas.",
+   "de": "Dorfsteuerungsbuild und späterer Grafikkandidat sind getrennte Beobachtungen.",
+   "fr": "Build de contrôle au village et candidat graphique ultérieur sont distincts.",
+   "es": "Build de control en aldea y candidato gráfico posterior son observaciones distintas."
+  },
+  "names": {
+   "zh": "蓝精灵：梦境"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA21607. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA21607；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA21607؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA21607; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA21607; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA21607 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA21607; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "assassins-creed-shadows": {
+  "genre": "action",
+  "overview": {
+   "en": "Welcome-screen evidence is narrower than open-world play; full content and matched module builds matter.",
+   "zh": "欢迎画面证据不等于开放世界游玩，完整内容及同构建模块至关重要。",
+   "ar": "شاشة الترحيب ليست عالماً مفتوحاً؛ المحتوى الكامل والوحدات المتطابقة مهمان.",
+   "pt": "Boas-vindas não provam mundo aberto; conteúdo completo e módulos coerentes importam.",
+   "de": "Willkommensbild kein Open-World-Spiel; vollständige Daten/passende Module entscheidend.",
+   "fr": "L’accueil ne prouve pas le monde ouvert ; données complètes et modules cohérents comptent.",
+   "es": "Bienvenida no prueba mundo abierto; contenido completo y módulos coherentes importan."
+  },
+  "names": {
+   "zh": "刺客信条：影"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA20397. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA20397；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA20397؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA20397; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA20397; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA20397 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA20397; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ },
+ "supertuxkart": {
+  "genre": "racing",
+  "overview": {
+   "en": "This homebrew port’s lighting tests do not establish complete races or commercial kart-game compatibility.",
+   "zh": "此自制移植的光照测试不证明完整比赛或商业卡丁车游戏兼容性。",
+   "ar": "اختبار إضاءة هذاhomebrew لايثبت سباقات كاملة أو ألعاباً تجارية.",
+   "pt": "Iluminação deste homebrew não valida corridas completas ou jogos comerciais.",
+   "de": "Beleuchtung dieses Homebrewports belegt keine vollständigen Rennen/kommerziellen Spiele.",
+   "fr": "L’éclairage de ce homebrew ne valide ni courses complètes ni jeux commerciaux.",
+   "es": "Iluminación de este homebrew no valida carreras completas ni juegos comerciales."
+  },
+  "names": {
+   "zh": "SuperTuxKart · PS5自制版"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported package PPSA69421. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA69421；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA69421؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA69421; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA69421; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA69421 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA69421; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  }
+ }
+});
 export const media=sources as Record<string,{source:string;provider:string;cover:string|null;screenshots:string[];checked:string}>;
 export const genreLabel=(slug:string,locale:keyof Text)=>genres[editorial[slug].genre][locale];
 export const gameName=(game:{slug:string;name:string},locale:keyof Text)=>editorial[game.slug]?.names[locale]||game.name;

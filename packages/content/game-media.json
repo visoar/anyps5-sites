@@ -1403,5 +1403,131 @@
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202407/2922/806dbc9fc129686a537bfab37206a52a4be41eb7ec7cf668.png",
     "screenshots": [],
     "checked": "2026-10-20"
+  },
+  "destruction-allstars": {
+    "source": "https://www.playstation.com/en-us/games/destruction-allstars/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0418/d2l5anfkYCPcdtYL8lhqhfOX.png",
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "graveyard-keeper-2": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/8628",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "grinch-christmas-adventures": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/8606",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "the-exit-8": {
+    "source": "https://www.playstation.com/en-us/games/the-exit-8/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202407/2505/34cb80e4a067cf254409922546821d594f431178fb715c92.png",
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "indiana-jones-staff-of-kings": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/8627",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "tetris-effect-connected": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/8613",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "dying-light-the-beast": {
+    "source": "https://www.playstation.com/en-us/games/dying-light-the-beast/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1710/5e2a5dac13684c40c91545ab3a6fee50711e4e9eab9ed39e.png",
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "arcade-game-zone": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/8562",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "valor-mortis": {
+    "source": "https://www.playstation.com/en-us/games/valor-mortis/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1815/96fbe904b245c74b7cbd85f2ed33c1b3d2e60186ce56b51a.png",
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "pumpkin-jack": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/8421",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "terrifier-artcade": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/8381",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "life-is-strange-reunion": {
+    "source": "https://www.playstation.com/en-us/games/life-is-strange-reunion/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202512/0417/9c35156a43661a69e4fa0e3e913e956946ef20e1c42abe9a.png",
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "street-fighter-6": {
+    "source": "https://www.playstation.com/en-us/games/street-fighter-6/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1407/XFU0aPBvtm3W2od1ZvhByAOv.png",
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "another-crabs-treasure": {
+    "source": "https://www.playstation.com/en-us/games/another-crabs-treasure/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202401/0301/30aac0dabbd3e8a390d7b5a75bc558e7f593e09765034080.png",
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "ridge-racer": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/8196",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "smurfs-dreams": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/8158",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "assassins-creed-shadows": {
+    "source": "https://www.playstation.com/en-us/games/assassins-creed-shadows/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202412/2018/6d3fddf363563ef352c729c8f5077056ab342fd0a9daae9b.png",
+    "screenshots": [],
+    "checked": "2026-10-21"
+  },
+  "supertuxkart": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/8364#issuecomment-6294777096",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-21"
   }
 }

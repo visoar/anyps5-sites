@@ -14,7 +14,7 @@ test('locale paths are stable across both sites, including Arabic RTL',()=>{for(
 test('official evidence and patched gameplay are classified separately',async()=>{
  const {stageNeedsPatches}=await import('../packages/content/games');
  assert.equal(stageNeedsPatches(games.find(g=>g.slug==='dreaming-sarah')!),false);
- assert.equal(stageNeedsPatches(games.find(g=>g.slug==='astro-bot')!),true);
+ assert.equal(stageNeedsPatches(games.find(g=>g.slug==='astro-bot')!),false); // A clean-main Windows gameplay observation now exists.
 });
 
 test('unspecified patches stay unknown and homebrew observations retain source scope',()=>{

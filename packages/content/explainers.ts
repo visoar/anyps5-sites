@@ -7,10 +7,10 @@ const link=(url:string,label:ReturnType<typeof L>)=>({url,label});
 const section=(id:string,title:ReturnType<typeof L>,body:ReturnType<typeof L>,links:Section['links']=[]):Section=>({id,title,body:[body],...(links.length?{links}:{})});
 
 export const faqArticle:Article={
- slug:'faq',reviewed:'2026-10-16',
+ slug:'faq',reviewed:'2026-10-21',
  title:L('AnyPS5 frequently asked questions','AnyPS5 常见问题','أسئلة شائعة عن AnyPS5','Perguntas frequentes sobre o AnyPS5','Häufige Fragen zu AnyPS5','Questions fréquentes sur AnyPS5','Preguntas frecuentes sobre AnyPS5'),
  description:L("Answers to AnyPS5 emulator and PS5 on PC questions: how conversion works, whether a console is needed, game files, setup, Mac support and saves.","解答 AnyPS5 模拟器与 PS5 在 PC 上运行的常见问题：转换原理、是否需要主机、游戏文件、安装设置、Mac 支持和存档。","إجابات عن محاكي AnyPS5 وPS5 على الكمبيوتر: التحويل والحاجة إلى جهاز وملفات الألعاب والإعداد ودعم Mac والحفظ.","Respostas sobre o emulador AnyPS5 e PS5 no PC: conversão, necessidade de consola, ficheiros, configuração, suporte Mac e dados guardados.","Antworten zu AnyPS5-Emulator und PS5 auf dem PC: Konvertierung, benötigte Konsole, Spieldateien, Einrichtung, Mac-Unterstützung und Spielstände.","Réponses sur l’émulateur AnyPS5 et la PS5 sur PC : conversion, console nécessaire, fichiers, configuration, support Mac et sauvegardes.","Respuestas sobre el emulador AnyPS5 y PS5 en PC: conversión, necesidad de consola, archivos, configuración, soporte Mac y partidas guardadas."),
- sources:[UPSTREAM,UPSTREAM+'/discussions/1742',UPSTREAM+'/releases/tag/v0.1.2',sourceDoc('USAGE'),sourceDoc('COMPATIBILITY'),build,reviewedSource+'core/libs/prx/libSceSaveData/SaveDataCore.hpp',reviewedSource+'core/libs/prx/libc/src/General.cpp'],
+ sources:[UPSTREAM,UPSTREAM+'/discussions/1742',UPSTREAM+'/releases/tag/v0.1.3',sourceDoc('USAGE'),sourceDoc('COMPATIBILITY'),build,reviewedSource+'core/libs/prx/libSceSaveData/SaveDataCore.hpp',reviewedSource+'core/libs/prx/libc/src/General.cpp'],
  sections:[
   section('emulator',L("Is AnyPS5 a PS5 emulator for PC?","AnyPS5 是用于 PC 的 PS5 模拟器吗？","هل AnyPS5 محاكي PS5 للكمبيوتر؟","O AnyPS5 é um emulador PS5 para PC?","Ist AnyPS5 ein PS5-Emulator für den PC?","AnyPS5 est-il un émulateur PS5 pour PC ?","¿AnyPS5 es un emulador de PS5 para PC?"),L(
    'The upstream project describes AnyPS5 as an executable porting tool. Its relinker converts the executable and bundled modules to the target operating system’s native format, and replacement libraries provide the system functions they call. The converted program runs as an ordinary process; this does not guarantee that every game works.',
@@ -62,16 +62,28 @@ export const faqArticle:Article={
  },
  "body": [
   {
-   "en": "Main already documents --macos --to-rosetta conversion, and further Rosetta ANDN/scalar-compare fixes have merged after v0.1.2. The M1 Pro macos-runtime author now reports 36–45 FPS at 1080p, but the exact new head is still unspecified and a local precision trade-off is disclosed. Do not turn this into a general Mac requirement or main-only test. Full runtime porting remains in progress; v0.1.2 has no Mac library archive.",
-   "zh": "main 已记录 --macos --to-rosetta 转换，v0.1.2 之后又合入 Rosetta ANDN／标量比较修正。M1 Pro macos-runtime 作者更新为 1080p 约 36–45 FPS，但未固定新 head，且披露本地精度取舍；不能推导通用 Mac 要求或普通 main 实测。完整运行时移植仍在推进，v0.1.2 无 Mac 库包。",
-   "ar": "main يوثق التحويل ودمج إصلاحات Rosetta بعدv0.1.2. يذكر مؤلف macos-runtime علىM1 Pro الآن36–45FPS بدقة1080p بلا head جديد محدد ومع مقايضة دقة محلية. لا متطلبات Mac عامة أو اختبار main؛ النقل الكامل جار ولا أرشيف Mac فيv0.1.2.",
-   "pt": "Main documenta conversão e integra correções Rosetta apósv0.1.2. Autor macos-runtime noM1 Pro relata36–45FPS a1080p, sem novo head exato e com compromisso local de precisão. Não define requisitos Mac nem teste main. Port completo em curso; v0.1.2 sem arquivo Mac.",
-   "de": "main dokumentiert Konvertierung und weitere Rosetta-Fixes nachv0.1.2. macos-runtime-Autor aufM1 Pro nennt36–45FPS bei1080p ohne exakten neuen Head und mit lokalem Präzisionskompromiss. Kein allgemeiner Mac-Mindestwert oder Stock-main-Test. Portierung läuft, v0.1.2 ohne Mac-Archiv.",
-   "fr": "Main documente conversion et correctifs Rosetta aprèsv0.1.2. Auteur macos-runtime surM1 Pro annonce36–45FPS en1080p sans nouveau head exact, avec compromis local de précision. Ni exigences Mac générales ni test main seul. Port complet en cours, pas d’archive Mac v0.1.2.",
-   "es": "Main documenta conversión y correcciones Rosetta trasv0.1.2. Autor macos-runtime enM1 Pro indica36–45FPS a1080p sin nuevo head exacto y con compromiso local de precisión. No requisitos Mac generales ni prueba main solo. Port completo en curso, sin archivo Mac v0.1.2."
+   "en": "The converter can produce Mach-O/Rosetta output, but v0.1.3 ships no Mac runtime. Integration PR #7332 closed unmerged on 20 October. Its pinned Apple-silicon experiments remain branch results, including later local Lana tests; closure is not a merge or a released runtime. No general Mac requirements or nativeARM gameplay are established.",
+   "zh": "转换器可生成Mach-O／Rosetta输出，但v0.1.3无Mac运行库。整合PR#7332在10月20日关闭且未合并；其固定Apple芯片实验及后续本地Lana测试仍是分支结果，关闭不等于合入或发行。未建立通用Mac要求或原生ARM游玩结论。",
+   "ar": "المحول ينتجMach-O/Rosetta لكنv0.1.3 بلاruntimeMac. أغلق#7332 دون دمج20أكتوبر؛ تجاربApple وLana المحلية نتائج فرع، لا إصدار أوARM أصلي أو متطلبات عامة.",
+   "pt": "Conversor geraMach-O/Rosetta, masv0.1.3 semruntimeMac. #7332 fechado sem integração20outubro; experiências Apple/Lana mantêm pins de ramo, não release/ARMnativo/requisitos gerais.",
+   "de": "Konverter erzeugtMach-O/Rosetta, v0.1.3 ohneMac-Runtime. #7332 am20.Oktober ungemergt geschlossen; gepinnte Apple-/Lana-Experimente bleiben Zweigergebnisse, kein Release/ARM-nativ/allgemeine Anforderungen.",
+   "fr": "Convertisseur produitMach-O/Rosetta, maisv0.1.3 sansruntimeMac. #7332 fermé sans fusion20octobre ; essais Apple/Lana épinglés restent résultats de branche, ni release/ARMnatif/exigences générales.",
+   "es": "Conversor produceMach-O/Rosetta, perov0.1.3 sinruntimeMac. #7332 cerrado sin fusionar20octubre; experimentos Apple/Lana conservan pins de rama, no release/ARMnativo/requisitos generales."
   }
  ],
  "links": [
+  {
+   "url": "https://github.com/boykopovar/AnyPS5/pull/7332",
+   "label": {
+    "en": "Closed unmerged Mac integration",
+    "zh": "已关闭未合并的Mac整合",
+    "ar": "دمجMac مغلق بلا دمج",
+    "pt": "Integração Mac fechada sem merge",
+    "de": "Ungemergte Mac-Integration",
+    "fr": "Intégration Mac fermée sans fusion",
+    "es": "Integración Mac cerrada sin fusionar"
+   }
+  },
   {
    "url": "https://github.com/boykopovar/AnyPS5/blob/main/docs/user/USAGE.md",
    "label": {

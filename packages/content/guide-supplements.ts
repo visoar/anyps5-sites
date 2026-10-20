@@ -23,10 +23,74 @@ guideSupplements['guides/linux'].push({id:'build-backends',title:L('Check displa
 guideSupplements['guides/build'].push({id:'import-audit',title:L('Audit imports before judging compatibility','先审计导入，再判断运行结果','دقّق الاستيرادات قبل الحكم على التوافق','Audite imports antes de avaliar o jogo','Imports vor der Spielbewertung prüfen','Vérifier les imports avant de juger le résultat','Audita imports antes de valorar el resultado'),body:[L('Current upstream tools/import_audit.py reads the registries produced by --registry against the actual built libraries. Pass the executable registry and every generated module registry, and use --libs for the matching host-library directory and --modules for the title’s module directories. The example includes only one bundled libc module; add every other registry and module directory your title generates.','当前上游的 tools/import_audit.py 根据 --registry 生成的注册表和实际构建库核对导入。传入主程序及每个生成模块的注册表，--libs 指向配套主机库目录，--modules 指向游戏模块目录。下例仅包含一个附带 libc 模块，实际需补齐游戏生成的其他注册表与模块目录。','تقرأ tools/import_audit.py سجلات --registry مقابل المكتبات المبنية فعلياً. مرّر سجل البرنامج وكل وحدة، و--libs للمكتبات المطابقة و--modules لمجلدات وحدات اللعبة. المثال يضم libc واحدة؛ أضف باقي السجلات والمجلدات.','tools/import_audit.py compara registos de --registry com as bibliotecas realmente compiladas. Passe o registo do programa e de cada módulo, --libs para as libs correspondentes e --modules para as pastas do jogo. O exemplo só inclui libc; acrescente todos os outros registos e diretórios.','tools/import_audit.py prüft --registry-Register gegen tatsächlich gebaute Bibliotheken. Übergib Programm- und alle Modulregister, --libs für passende Hostbibliotheken und --modules für Spielmodulordner. Das Beispiel enthält nur libc; ergänze alle weiteren Register und Ordner.','tools/import_audit.py compare les registres --registry aux bibliothèques réellement compilées. Passez le registre du programme et de chaque module, --libs pour les bibliothèques correspondantes et --modules pour les dossiers du jeu. L’exemple inclut seulement libc ; ajoutez les autres registres et dossiers.','tools/import_audit.py compara registros --registry con bibliotecas realmente compiladas. Pasa el registro del programa y de cada módulo, --libs para bibliotecas correspondientes y --modules para carpetas del juego. El ejemplo solo incluye libc; añade los demás registros y carpetas.'),L("implemented marks an export without a whole-function throwing stub, not complete behaviour. stub loads and throws; absent prevents loading; module identifies a title-supplied provider. Current main also audits every --modules file’s undefined symbols and needed libraries, including sectionless ELF dynamic tables. A clean import audit does not prove correct rendering, gameplay or multiplayer.","implemented 表示导出不是整函数抛错占位，不表示行为完整；stub 可加载但调用时抛错，absent 阻止加载，module 标识随游戏提供的库。当前 main 还审计每个 --modules 文件的未定义符号和依赖库，支持无节头 ELF 的动态表。导入无缺失不证明画面、游戏过程或多人正确。","implemented تصدير لا يرمي دائماً، وليس سلوكاً كاملاً. stub يحمل ثم يرمي، absent يمنع التحميل، module مزود مرفق. يفحص main الحالي رموز واعتماديات كل ملف --modules وحتى جداول ELF بلا ترويسات أقسام. التدقيق السليم لا يثبت الرسم أو اللعب أو الشبكة.","implemented é um export sem stub que sempre lança erro, não comportamento completo. stub carrega e falha; absent impede carregar; module é fornecedor do jogo. Main atual audita símbolos e dependências de cada --modules, incluindo ELF sem secções. Auditoria limpa não prova imagem, jogo ou rede.","implemented ist ein Export ohne vollständig werfenden Stub, kein vollständiges Verhalten. stub lädt und wirft; absent verhindert Laden; module ist ein Spielprovider. Aktuelles main prüft Symbole und Abhängigkeiten jeder --modules-Datei, auch ELF ohne Sektionsheader. Ein sauberes Audit belegt kein Rendering, Gameplay oder Netzwerk.","implemented est un export sans stub toujours bloquant, pas un comportement complet. stub charge puis échoue ; absent empêche de charger ; module est fourni par le jeu. Main actuel audite symboles et dépendances de chaque --modules, même ELF sans sections. Audit propre ne valide ni rendu, ni jeu, ni réseau.","implemented es un export sin stub que siempre falla, no comportamiento completo. stub carga y falla; absent impide cargar; module lo aporta el juego. Main actual audita símbolos y dependencias de cada --modules, incluso ELF sin secciones. Auditoría limpia no valida gráficos, juego ni red.")],code:'./build/core/relinker/relinker --registry source/input.elf runtime/app.elf\npython3 tools/import_audit.py runtime/app.registry.json runtime/app.libc.prx.guest.prx.registry.json --libs runtime/libs --modules source/sce_module'});
 
 guideSupplements["downloads"]??=[];
-guideSupplements["downloads"].push({id:"browser-converter",title:L("The browser converter and its library pin","浏览器转换器与运行库版本","محول المتصفح ونسخة المكتبات","O conversor no navegador e as bibliotecas","Browser-Konverter und Bibliotheksversion","Le convertisseur web et ses bibliothèques","Conversor web y versión de bibliotecas"),body:[L("The live library manifest now pins v0.1.2, but the web converter is still built from main. #5381 remains open: matching the manifest does not prove every Windows import binds to the named library. #5409 and #5710 were closed without merge under the PR limit. Prefer an offline release pair or a relinker/library pair from one recorded source revision; a successful conversion is not a game test.","在线运行库清单现已固定 v0.1.2，但网页转换器仍由 main 构建。#5381 仍开放，清单版本相同不能证明 Windows 的每个导入都绑定到指定库。#5409、#5710 因 PR 数量限制关闭且未合并。优先使用配套离线发行文件，或同一源码提交构建的工具与库；转换成功不等于游戏测试通过。","تثبّت قائمة المكتبات الآن v0.1.2، لكن محول الويب يُبنى من main. ما زال #5381 مفتوحاً؛ تطابق النسخة لا يثبت ربط كل استيراد Windows بالمكتبة المسماة. أغلق #5409 و#5710 دون دمج بسبب حد PR. استخدم زوج إصدار محلياً أو أداة ومكتبات من مراجعة واحدة؛ نجاح التحويل ليس اختبار لعبة.","O manifesto fixa agora v0.1.2, mas o conversor web continua a ser compilado de main. #5381 está aberto: a versão igual não prova que todos os imports Windows resolvem na biblioteca indicada. #5409 e #5710 foram fechados pelo limite de PR, sem integração. Prefira um par de ficheiros da versão local ou da mesma revisão. Converter não equivale a testar o jogo.","Das Manifest verweist jetzt auf v0.1.2, der Web-Konverter wird jedoch aus main gebaut. #5381 bleibt offen: gleiche Versionen belegen nicht jede Windows-Bindung an die benannte Bibliothek. #5409 und #5710 wurden wegen des PR-Limits ohne Merge geschlossen. Nutze ein lokales Release-Paar oder Werkzeug und Bibliotheken eines Quellstands. Eine Konvertierung ersetzt keinen Spieltest.","Le manifeste pointe désormais vers v0.1.2, mais le convertisseur web est construit depuis main. #5381 reste ouvert : une version identique ne prouve pas chaque liaison Windows à la bibliothèque nommée. #5409 et #5710 ont été fermées sans fusion pour la limite de PR. Préférez une paire locale de release ou d’une même révision. Convertir ne remplace pas un test du jeu.","El manifiesto fija ahora v0.1.2, pero el conversor web se compila desde main. #5381 sigue abierto: la misma versión no prueba cada enlace Windows con la biblioteca nombrada. #5409 y #5710 se cerraron sin integrar por el límite de PR. Usa un par local de la versión o de la misma revisión. Convertir no equivale a probar el juego.")],links:[{"label": "Web converter", "url": "https://boykopovar.github.io/AnyPS5/"}, {"label": "Issue #5381", "url": "https://github.com/boykopovar/AnyPS5/issues/5381"}, {"label": "PR #5710", "url": "https://github.com/boykopovar/AnyPS5/pull/5710"}]});
+guideSupplements["downloads"].push({
+ "id": "browser-converter",
+ "title": {
+  "en": "Browser converter paired with v0.1.3",
+  "zh": "网页转换器已配对v0.1.3",
+  "ar": "محوّل الويب مقترن بـv0.1.3",
+  "pt": "Conversor web emparelhado comv0.1.3",
+  "de": "Browserkonverter mitv0.1.3 gepaart",
+  "fr": "Convertisseur web associé àv0.1.3",
+  "es": "Conversor web emparejado conv0.1.3"
+ },
+ "body": [
+  {
+   "en": "v0.1.3 was published 20 October 2026 at 09:31 UTC, revision 3fd1cc393. Windows/Linux tools and libraries are released together, with usage/input/change notes and a web converter ZIP. We verified both live browser manifests use this tag and revision; this resolves the earlier mismatched-library publication. Download matching platform files. No games or Mac runtime archive are included. Later main features and local game fixes remain separate.",
+   "zh": "v0.1.3于2026年10月20日09:31 UTC发布，对应3fd1cc393。Windows／Linux工具与库同期提供，另有使用／输入／变更文档及web转换器ZIP。已核对在线两份清单均为此标签／提交，旧库错配发布问题已解决；按平台配对下载。不含游戏或Mac运行库，后续main功能和游戏本地修复仍分开。",
+   "ar": "نشرv0.1.3 في20أكتوبر2026،09:31 UTC عند3fd1cc393. أدوات ومكتبات Windows/Linux مع وثائق وZIP للمحول الويب. تحققنا أن قائمتي الويب تستخدمان نفس الوسم والمراجعة، فتحل مشكلة النشر القديم. نزّل ملفات منصة متطابقة؛ لا ألعاب أوruntimeMac. تغييراتmain اللاحقة والتعديلات المحلية منفصلة.",
+   "pt": "v0.1.3 publicado20outubro2026 às09:31 UTC,3fd1cc393. Ferramentas/bibliotecas Windows/Linux com documentação e ZIP web. Ambos manifestos online usam este tag/revisão, resolvendo a publicação incompatível anterior. Transfira pares da plataforma; sem jogos/runtimeMac. Main posterior e fixes locais separados.",
+   "de": "v0.1.3 erschien20.Oktober2026 um09:31 UTC,3fd1cc393. Windows/Linux-Werkzeuge und Bibliotheken samt Dokumenten/Web-ZIP. Beide Browsermanifeste passen zu Tag/Revision; alte Veröffentlichung mit falschen Bibliotheken behoben. Passende Plattformdateien laden; keine Spiele/Mac-Runtime. SpäteresMain/lokale Fixes getrennt.",
+   "fr": "v0.1.3 publié20octobre2026 à09:31 UTC,3fd1cc393. Outils/bibliothèques Windows/Linux, documents et ZIP web. Les deux manifestes en ligne portent ce tag/révision, résolvant l’ancienne publication incohérente. Téléchargez les paires adaptées ; sans jeux/runtimeMac. Main ultérieur et correctifs locaux distincts.",
+   "es": "v0.1.3 publicado20octubre2026 a09:31 UTC,3fd1cc393. Herramientas/bibliotecas Windows/Linux, documentos y ZIP web. Ambos manifiestos online coinciden en etiqueta/revisión y resuelven publicación incompatible anterior. Descarga pares de plataforma; sin juegos/runtimeMac. Main posterior/parches locales aparte."
+  }
+ ],
+ "links": [
+  {
+   "label": "Web converter",
+   "url": "https://boykopovar.github.io/AnyPS5/"
+  },
+  {
+   "label": "PR#5710",
+   "url": "https://github.com/boykopovar/AnyPS5/pull/5710"
+  }
+ ]
+});
 
 guideSupplements["start"]??=[];
-guideSupplements["start"].push({id:"browser-converter",title:L("The browser converter and its library pin","浏览器转换器与运行库版本","محول المتصفح ونسخة المكتبات","O conversor no navegador e as bibliotecas","Browser-Konverter und Bibliotheksversion","Le convertisseur web et ses bibliothèques","Conversor web y versión de bibliotecas"),body:[L("The live library manifest now pins v0.1.2, but the web converter is still built from main. #5381 remains open: matching the manifest does not prove every Windows import binds to the named library. #5409 and #5710 were closed without merge under the PR limit. Prefer an offline release pair or a relinker/library pair from one recorded source revision; a successful conversion is not a game test.","在线运行库清单现已固定 v0.1.2，但网页转换器仍由 main 构建。#5381 仍开放，清单版本相同不能证明 Windows 的每个导入都绑定到指定库。#5409、#5710 因 PR 数量限制关闭且未合并。优先使用配套离线发行文件，或同一源码提交构建的工具与库；转换成功不等于游戏测试通过。","تثبّت قائمة المكتبات الآن v0.1.2، لكن محول الويب يُبنى من main. ما زال #5381 مفتوحاً؛ تطابق النسخة لا يثبت ربط كل استيراد Windows بالمكتبة المسماة. أغلق #5409 و#5710 دون دمج بسبب حد PR. استخدم زوج إصدار محلياً أو أداة ومكتبات من مراجعة واحدة؛ نجاح التحويل ليس اختبار لعبة.","O manifesto fixa agora v0.1.2, mas o conversor web continua a ser compilado de main. #5381 está aberto: a versão igual não prova que todos os imports Windows resolvem na biblioteca indicada. #5409 e #5710 foram fechados pelo limite de PR, sem integração. Prefira um par de ficheiros da versão local ou da mesma revisão. Converter não equivale a testar o jogo.","Das Manifest verweist jetzt auf v0.1.2, der Web-Konverter wird jedoch aus main gebaut. #5381 bleibt offen: gleiche Versionen belegen nicht jede Windows-Bindung an die benannte Bibliothek. #5409 und #5710 wurden wegen des PR-Limits ohne Merge geschlossen. Nutze ein lokales Release-Paar oder Werkzeug und Bibliotheken eines Quellstands. Eine Konvertierung ersetzt keinen Spieltest.","Le manifeste pointe désormais vers v0.1.2, mais le convertisseur web est construit depuis main. #5381 reste ouvert : une version identique ne prouve pas chaque liaison Windows à la bibliothèque nommée. #5409 et #5710 ont été fermées sans fusion pour la limite de PR. Préférez une paire locale de release ou d’une même révision. Convertir ne remplace pas un test du jeu.","El manifiesto fija ahora v0.1.2, pero el conversor web se compila desde main. #5381 sigue abierto: la misma versión no prueba cada enlace Windows con la biblioteca nombrada. #5409 y #5710 se cerraron sin integrar por el límite de PR. Usa un par local de la versión o de la misma revisión. Convertir no equivale a probar el juego.")],links:[{"label": "Web converter", "url": "https://boykopovar.github.io/AnyPS5/"}, {"label": "Issue #5381", "url": "https://github.com/boykopovar/AnyPS5/issues/5381"}, {"label": "PR #5710", "url": "https://github.com/boykopovar/AnyPS5/pull/5710"}]});
+guideSupplements["start"].push({
+ "id": "browser-converter",
+ "title": {
+  "en": "Browser converter paired with v0.1.3",
+  "zh": "网页转换器已配对v0.1.3",
+  "ar": "محوّل الويب مقترن بـv0.1.3",
+  "pt": "Conversor web emparelhado comv0.1.3",
+  "de": "Browserkonverter mitv0.1.3 gepaart",
+  "fr": "Convertisseur web associé àv0.1.3",
+  "es": "Conversor web emparejado conv0.1.3"
+ },
+ "body": [
+  {
+   "en": "v0.1.3 was published 20 October 2026 at 09:31 UTC, revision 3fd1cc393. Windows/Linux tools and libraries are released together, with usage/input/change notes and a web converter ZIP. We verified both live browser manifests use this tag and revision; this resolves the earlier mismatched-library publication. Download matching platform files. No games or Mac runtime archive are included. Later main features and local game fixes remain separate.",
+   "zh": "v0.1.3于2026年10月20日09:31 UTC发布，对应3fd1cc393。Windows／Linux工具与库同期提供，另有使用／输入／变更文档及web转换器ZIP。已核对在线两份清单均为此标签／提交，旧库错配发布问题已解决；按平台配对下载。不含游戏或Mac运行库，后续main功能和游戏本地修复仍分开。",
+   "ar": "نشرv0.1.3 في20أكتوبر2026،09:31 UTC عند3fd1cc393. أدوات ومكتبات Windows/Linux مع وثائق وZIP للمحول الويب. تحققنا أن قائمتي الويب تستخدمان نفس الوسم والمراجعة، فتحل مشكلة النشر القديم. نزّل ملفات منصة متطابقة؛ لا ألعاب أوruntimeMac. تغييراتmain اللاحقة والتعديلات المحلية منفصلة.",
+   "pt": "v0.1.3 publicado20outubro2026 às09:31 UTC,3fd1cc393. Ferramentas/bibliotecas Windows/Linux com documentação e ZIP web. Ambos manifestos online usam este tag/revisão, resolvendo a publicação incompatível anterior. Transfira pares da plataforma; sem jogos/runtimeMac. Main posterior e fixes locais separados.",
+   "de": "v0.1.3 erschien20.Oktober2026 um09:31 UTC,3fd1cc393. Windows/Linux-Werkzeuge und Bibliotheken samt Dokumenten/Web-ZIP. Beide Browsermanifeste passen zu Tag/Revision; alte Veröffentlichung mit falschen Bibliotheken behoben. Passende Plattformdateien laden; keine Spiele/Mac-Runtime. SpäteresMain/lokale Fixes getrennt.",
+   "fr": "v0.1.3 publié20octobre2026 à09:31 UTC,3fd1cc393. Outils/bibliothèques Windows/Linux, documents et ZIP web. Les deux manifestes en ligne portent ce tag/révision, résolvant l’ancienne publication incohérente. Téléchargez les paires adaptées ; sans jeux/runtimeMac. Main ultérieur et correctifs locaux distincts.",
+   "es": "v0.1.3 publicado20octubre2026 a09:31 UTC,3fd1cc393. Herramientas/bibliotecas Windows/Linux, documentos y ZIP web. Ambos manifiestos online coinciden en etiqueta/revisión y resuelven publicación incompatible anterior. Descarga pares de plataforma; sin juegos/runtimeMac. Main posterior/parches locales aparte."
+  }
+ ],
+ "links": [
+  {
+   "label": "Web converter",
+   "url": "https://boykopovar.github.io/AnyPS5/"
+  },
+  {
+   "label": "PR#5710",
+   "url": "https://github.com/boykopovar/AnyPS5/pull/5710"
+  }
+ ]
+});
 
 guideSupplements["guides/linux"]??=[];
 guideSupplements["guides/linux"].push({id:"release-display",title:L("Linux release display support and a remaining collision","Linux 发行版显示支持与残留符号冲突","عرض إصدار Linux وتعارض رمز متبقٍّ","Imagem no Linux e um conflito restante","Linux-Release: Anzeige und Symbolkonflikt","Affichage Linux et conflit de symbole restant","Pantalla Linux y conflicto de símbolo pendiente"),body:[L("v0.1.1 was offscreen-only; #5383 is now closed after a matching v0.1.2 pair opened X11 and ran Sarah on an MX230. #5396 was closed unmerged because its extra packages were already dependencies, not the cause fix. v0.1.2 predates #5738: YNw9Xk5iNWo can abort first presentation. The cited Linux run uses the preload below; later main fixes the helper collision. This workaround is tied to that error, not general compatibility.","v0.1.1 只有 offscreen 后端；作者用配套 v0.1.2 在 MX230 上打开 X11 并运行莎拉后，#5383 已关闭。#5396 添加的包原本就是依赖，关闭且未合并，不是原因修复。v0.1.2 早于 #5738，首次呈现可能在 YNw9Xk5iNWo 上终止；来源 Linux 复测用了下方 preload，后续 main 修复内部 helper 冲突。此绕行仅针对该错误，不代表普遍兼容。","كان v0.1.1 بلا واجهة سوى offscreen. أغلق #5383 بعد فتح X11 وتشغيل Sarah على MX230 بزوج v0.1.2. أغلق #5396 دون دمج لأن الحزم موجودة كتبعيات، لا كإصلاح السبب. يسبق v0.1.2 إصلاح #5738؛ قد يوقف YNw9Xk5iNWo أول عرض. استخدم الاختبار المذكور preload أدناه؛ أصلح main التعارض لاحقاً. الحل خاص بهذا الخطأ، لا بالتوافق العام.","v0.1.1 tinha apenas offscreen. #5383 foi fechado após um par v0.1.2 abrir X11 e executar Sarah numa MX230. #5396 foi fechado sem integração: os pacotes já eram dependências. v0.1.2 é anterior a #5738; YNw9Xk5iNWo pode abortar a primeira apresentação. O teste Linux citado usou o preload abaixo; main posterior corrigiu o helper. É uma solução para esse erro, não compatibilidade geral.","v0.1.1 hatte nur offscreen. #5383 wurde nach einem X11-/Sarah-Test mit passendem v0.1.2-Paar auf MX230 geschlossen. #5396 blieb ungemergt: die Pakete waren bereits Abhängigkeiten. v0.1.2 liegt vor #5738; YNw9Xk5iNWo kann die erste Präsentation abbrechen. Der Linux-Test nutzte das folgende Preload; späteres main behebt die Helper-Kollision. Das ist eine gezielte Umgehung, kein allgemeiner Kompatibilitätsnachweis.","v0.1.1 n’avait qu’offscreen. #5383 a été fermée après un test X11/Sarah sur MX230 avec la paire v0.1.2. #5396 a été fermée sans fusion : ses paquets étaient déjà des dépendances. v0.1.2 précède #5738 ; YNw9Xk5iNWo peut interrompre la première présentation. Le test Linux cité utilise le preload ci-dessous ; main ultérieur corrige le helper. Ce contournement concerne cette erreur précise.","v0.1.1 solo tenía offscreen. #5383 se cerró tras probar X11/Sarah en una MX230 con el par v0.1.2. #5396 se cerró sin integrar: sus paquetes ya eran dependencias. v0.1.2 precede a #5738; YNw9Xk5iNWo puede abortar la primera presentación. La prueba Linux citada usó el preload inferior; main posterior corrige el helper. Es una solución para ese error concreto.")],code:"LD_PRELOAD=libs/libSceMouse.prx ./app.elf",links:[{"label": "Issue #5383 · retest", "url": "https://github.com/boykopovar/AnyPS5/issues/5383#issuecomment-6173567108"}, {"label": "PR #5738 · merged after v0.1.2", "url": "https://github.com/boykopovar/AnyPS5/pull/5738"}, {"label": "PR #5396 · closed unmerged", "url": "https://github.com/boykopovar/AnyPS5/pull/5396"}]});
@@ -1001,19 +1065,19 @@ guideSupplements["guides/build"].push({
  },
  "body": [
   {
-   "en": "The converter supports macOS on Apple silicon; runtime #7332 remains open and absent from v0.1.2. New M4 Pro/70055abe0 tests reach clean Planet of Lana gameplay, unlike the older690c report. Later local arithmetic/fill experiments retain their own pins and are not main/release results. GPU-skipped suites do not validate rendering.",
-   "zh": "转换器支持macOS／Apple silicon，但运行时#7332仍开放且不在v0.1.2。新的M4 Pro／70055abe0到Planet of Lana正常游玩，与旧690c报告不同；后续本地算术／fill实验保留原提交，非main／发行结果。跳过GPU的测试不能证明渲染。",
-   "ar": "المحوليدعمmacOS/Apple silicon؛runtime#7332 مفتوح وليسv0.1.2. M4Pro/70055abe0 يبلغLana سليماً خلاف690c. تجاربحساب/fill محليةببناها لاmain/release؛ اختبارات بلاGPU لاتثبتالرسم.",
-   "pt": "Conversor suporta macOS/Apple silicon; runtime#7332 aberto e fora dev0.1.2. M4Pro/70055abe0 chega Lana limpo, diferente de690c. Experiências locais mantêm pins, não main/release; suite semGPU não valida imagem.",
-   "de": "Konverter unterstützt macOS/Apple silicon; Runtime#7332 offen, nichtv0.1.2. M4Pro/70055abe0 erreicht sauberesLana-Spiel, anders als690c. Lokale Rechen-/Filltests behalten Pins, keinMain/Release; Suite ohneGPU belegt keinRendering.",
-   "fr": "Convertisseur compatible macOS/Apple silicon ; runtime#7332 ouvert horsv0.1.2. M4Pro/70055abe0 atteint Lana propre, contrairement à690c. Expériences locales gardent pins, pasmain/release ; suite sansGPU ne valide pasrendu.",
-   "es": "Conversor soporta macOS/Apple silicon; runtime#7332 abierto fuerav0.1.2. M4Pro/70055abe0 llegaLana limpio, distinto de690c. Experimentos locales conservan pins, no main/release; suite sinGPU no validaimagen."
+   "en": "The converter can produce Mach-O/Rosetta output, but v0.1.3 ships no Mac runtime. Integration PR #7332 closed unmerged on 20 October. Its pinned Apple-silicon experiments remain branch results, including later local Lana tests; closure is not a merge or a released runtime. No general Mac requirements or nativeARM gameplay are established.",
+   "zh": "转换器可生成Mach-O／Rosetta输出，但v0.1.3无Mac运行库。整合PR#7332在10月20日关闭且未合并；其固定Apple芯片实验及后续本地Lana测试仍是分支结果，关闭不等于合入或发行。未建立通用Mac要求或原生ARM游玩结论。",
+   "ar": "المحول ينتجMach-O/Rosetta لكنv0.1.3 بلاruntimeMac. أغلق#7332 دون دمج20أكتوبر؛ تجاربApple وLana المحلية نتائج فرع، لا إصدار أوARM أصلي أو متطلبات عامة.",
+   "pt": "Conversor geraMach-O/Rosetta, masv0.1.3 semruntimeMac. #7332 fechado sem integração20outubro; experiências Apple/Lana mantêm pins de ramo, não release/ARMnativo/requisitos gerais.",
+   "de": "Konverter erzeugtMach-O/Rosetta, v0.1.3 ohneMac-Runtime. #7332 am20.Oktober ungemergt geschlossen; gepinnte Apple-/Lana-Experimente bleiben Zweigergebnisse, kein Release/ARM-nativ/allgemeine Anforderungen.",
+   "fr": "Convertisseur produitMach-O/Rosetta, maisv0.1.3 sansruntimeMac. #7332 fermé sans fusion20octobre ; essais Apple/Lana épinglés restent résultats de branche, ni release/ARMnatif/exigences générales.",
+   "es": "Conversor produceMach-O/Rosetta, perov0.1.3 sinruntimeMac. #7332 cerrado sin fusionar20octubre; experimentos Apple/Lana conservan pins de rama, no release/ARMnativo/requisitos generales."
   }
  ],
  "links": [
   {
    "label": "Upstream source",
-   "url": "https://github.com/boykopovar/AnyPS5/pull/7332#issuecomment-6262379712"
+   "url": "https://github.com/boykopovar/AnyPS5/pull/7332"
   }
  ]
 });
@@ -1226,6 +1290,96 @@ guideSupplements["guides/language-fonts"].push({
   {
    "label": "Playroom report",
    "url": "https://github.com/boykopovar/AnyPS5/issues/7714"
+  }
+ ]
+});
+
+guideSupplements["guides/input"].push({
+ "id": "main-screenshots-timelines",
+ "title": {
+  "en": "Later main: screenshots and timed input",
+  "zh": "后续main：截图与定时输入",
+  "ar": "main لاحق: صور وإدخال مجدول",
+  "pt": "Main posterior: capturas e input agendado",
+  "de": "SpäteresMain: Screenshots/Zeitplan",
+  "fr": "Main ultérieur : captures/entrées planifiées",
+  "es": "Main posterior: capturas/input programado"
+ },
+ "body": [
+  {
+   "en": "These features are in the reviewed main, absent from v0.1.3’s attached input guide. F12 saves the next displayed frame as PNG in anyps5-screenshots/ or ANYPS5_SCREENSHOTS, without overlay/window scaling; PQ becomes SDR. Write failure stops the game. tools/pad_timeline.py validates ordered nonoverlapping button events (≤4096,≤1h, holds1–5000ms). Timelines follow wall time/controller reads, can miss events during loading and do not reproduce game state.",
+   "zh": "这些功能在已复核main文档，v0.1.3附带输入指南未包含。F12将下一显示帧存PNG到anyps5-screenshots/或ANYPS5_SCREENSHOTS，不含叠加／窗口缩放，PQ转SDR，写失败会停止游戏。tools/pad_timeline.py验证有序不重叠按钮事件（≤4096、≤1小时、按住1–5000ms）。序列依墙钟／手柄读取，加载可漏事件，不能复现游戏状态。",
+   "ar": "الميزات فيmain المراجع، لا دليلv0.1.3 المرفق. F12 يحفظ إطارPNG بلاoverlay/تحجيم فيanyps5-screenshots/ أوANYPS5_SCREENSHOTS،PQ إلىSDR وفشل الكتابة يوقف اللعبة. pad_timeline.py يتحقق≤4096 حدث/ساعة ومدة1–5000ms؛ توقيت حقيقي قد يفوت أثناء التحميل ولا يعيد حالة اللعبة.",
+   "pt": "Funcionalidades do main revisto, ausentes no guia anexov0.1.3. F12 guardaPNG sem overlay/escala emanyps5-screenshots/ ouANYPS5_SCREENSHOTS, PQ→SDR; erro de escrita para jogo. pad_timeline.py valida≤4096 eventos/1h, durações1–5000ms. Tempo real/leitura do comando pode perder eventos ao carregar, sem reproduzir estado.",
+   "de": "Im geprüften Main, nicht im angehängtenv0.1.3-Handbuch. F12 speichertPNG ohne Overlay/Fensterskalierung inanyps5-screenshots/ oderANYPS5_SCREENSHOTS, PQ→SDR; Schreibfehler stoppt Spiel. pad_timeline.py prüft≤4096 Ereignisse/1h mit1–5000ms. Echtzeit/Controllerabfragen können Ladeereignisse verpassen, kein Spielzustandsreplay.",
+   "fr": "Fonctions du main vérifié, absentes du guide jointv0.1.3. F12 sauvePNG sans overlay/échelle dansanyps5-screenshots/ ouANYPS5_SCREENSHOTS, PQ→SDR ; échec écrit arrête jeu. pad_timeline.py valide≤4096 événements/1h, durées1–5000ms. Horloge/lectures manette peuvent rater entrées au chargement, sans rejouer état.",
+   "es": "Funciones de main revisado, ausentes del manual adjuntov0.1.3. F12 guardaPNG sin overlay/escala enanyps5-screenshots/ oANYPS5_SCREENSHOTS, PQ→SDR; fallo al escribir para juego. pad_timeline.py valida≤4096 eventos/1h, duración1–5000ms. Reloj/lecturas de mando pueden perder eventos al cargar, sin reproducir estado."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/2185dbf92e8d9013a1620d2dfc95de50494e19f8/docs/user/INPUT_MAPPING.md"
+  }
+ ]
+});
+
+guideSupplements["guides/language-fonts"].push({
+ "id": "main-arabic-script-font-fallback",
+ "title": {
+  "en": "Later main: script fallback files",
+  "zh": "后续main：文字脚本回退文件",
+  "ar": "main لاحق: خطوط بديلة للنصوص",
+  "pt": "Main posterior: fontes por escrita",
+  "de": "SpäteresMain: Schriftfallback",
+  "fr": "Main ultérieur : polices de secours",
+  "es": "Main posterior: fuentes por escritura"
+ },
+ "body": [
+  {
+   "en": "Later main adds NotoSansArabic-{Light,Regular,Medium,Bold}.ttf and clarifies Japanese/Chinese/Korean CJK fallback. Multi-script font sets open the additional script files for missing characters; one Latin font is insufficient. Keep files beside the executable in anyps5-fonts/ or ANYPS5_SYSTEM_FONTS. This change is absent from v0.1.3’s attached usage guide; rendering still needs title-specific checks.",
+   "zh": "后续main增加NotoSansArabic-{Light,Regular,Medium,Bold}.ttf，并明确日／中／韩CJK回退。多脚本字体集会为缺字打开其他脚本文件，单个拉丁字体不够；文件放可执行文件旁anyps5-fonts/或ANYPS5_SYSTEM_FONTS。v0.1.3附带使用指南未包含此变化，游戏字形仍需单测。",
+   "ar": "main اللاحق يضيف NotoSansArabic-{Light,Regular,Medium,Bold}.ttf ويوضح CJK الياباني/الصيني/الكوري. مجموعات متعددة النص تحتاج ملفاتها الإضافية، لا خط لاتيني فقط. ضعها فيanyps5-fonts/ أوANYPS5_SYSTEM_FONTS. غائب من دليلv0.1.3؛ اختبر كل عنوان.",
+   "pt": "Main posterior adicionaNotoSansArabic-{Light,Regular,Medium,Bold}.ttf e CJK japonês/chinês/coreano. Conjuntos mistos abrem fontes adicionais para glifos ausentes; só latim não chega. anyps5-fonts/ ouANYPS5_SYSTEM_FONTS. Ausente do guião v0.1.3; teste por título.",
+   "de": "SpäteresMain ergänztNotoSansArabic-{Light,Regular,Medium,Bold}.ttf und japanisch/chinesisch/koreanisches CJK. Mehrschriftsets benötigen Zusatzdateien; nur Latin reicht nicht. anyps5-fonts/ oderANYPS5_SYSTEM_FONTS. Nicht imv0.1.3-Handbuch; titelbezogen prüfen.",
+   "fr": "Main ultérieur ajouteNotoSansArabic-{Light,Regular,Medium,Bold}.ttf et CJK japonais/chinois/coréen. Jeux multialphabets ouvrent d’autres fichiers pour glyphes manquants ; latin seul insuffisant. anyps5-fonts/ ouANYPS5_SYSTEM_FONTS. Absent du guidev0.1.3 ; vérifier par titre.",
+   "es": "Main posterior añadeNotoSansArabic-{Light,Regular,Medium,Bold}.ttf y CJK japonés/chino/coreano. Fuentes multiescritura abren archivos extra para glifos ausentes; solo latín no basta. anyps5-fonts/ oANYPS5_SYSTEM_FONTS. Ausente del manualv0.1.3; prueba por título."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/2185dbf92e8d9013a1620d2dfc95de50494e19f8/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-bench-report-boundaries",
+ "title": {
+  "en": "Later main: capture benchmark intervals",
+  "zh": "后续main：保留基准区间",
+  "ar": "main لاحق: فترات القياس",
+  "pt": "Main posterior: intervalos de medição",
+  "de": "SpäteresMain: Messintervalle",
+  "fr": "Main ultérieur : intervalles de mesure",
+  "es": "Main posterior: intervalos de medición"
+ },
+ "body": [
+  {
+   "en": "Later main documents APS5_TRACE_SUMMARY_EVERY=30 with APS5_TRACE_BENCH=1: compressed per-present intervals plus build/host/title metadata where available. First interval includes compilation and the unfinished final interval is omitted. Compare matching later scenes and starting saves, keep missing metadata unknown, and report profiling overhead. These switches are absent from v0.1.3’s usage attachment.",
+   "zh": "后续main文档给出APS5_TRACE_SUMMARY_EVERY=30配APS5_TRACE_BENCH=1，记录压缩逐呈现区间和可取得的构建／主机／游戏元数据。首区间含编译，退出时未完末区间不写。比较相同后续场景及起始存档、缺失保持未知，披露分析开销；v0.1.3附带指南未列这些开关。",
+   "ar": "main يوثقSUMMARY_EVERY=30 معTRACE_BENCH=1 لقياسات مضغوطة وبيانات متاحة. الأول يشمل التجميع والأخير غير المكتمل يحذف. قارن نفس المشهد والحفظ، اترك المجهول واذكر كلفة التحليل؛ ليس في دليلv0.1.3.",
+   "pt": "Main documentaSUMMARY_EVERY=30/TRACE_BENCH=1 para intervalos comprimidos e metadados disponíveis. Primeiro inclui compilação, último incompleto omitido. Compare cenas/saves iguais e declare overhead/dados desconhecidos; ausente nov0.1.3.",
+   "de": "Main dokumentiertSUMMARY_EVERY=30/TRACE_BENCH=1 für komprimierte Intervalle/Metadaten. Erstes enthält Kompilierung, unvollständiges letztes entfällt. Gleiche Szenen/Saves vergleichen, Lücken/Profilkosten nennen; nicht imv0.1.3-Handbuch.",
+   "fr": "Main documenteSUMMARY_EVERY=30/TRACE_BENCH=1 pour intervalles compressés/métadonnées disponibles. Premier inclut compilation, dernier incomplet omis. Comparez scènes/saves identiques, indiquez inconnues/surcoût ; absent du guidev0.1.3.",
+   "es": "Main documentaSUMMARY_EVERY=30/TRACE_BENCH=1 para intervalos comprimidos/metadatos disponibles. Primero incluye compilación y último incompleto se omite. Compara escenas/saves iguales, declara lagunas/coste; ausente del manualv0.1.3."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/2185dbf92e8d9013a1620d2dfc95de50494e19f8/docs/user/USAGE.md"
   }
  ]
 });

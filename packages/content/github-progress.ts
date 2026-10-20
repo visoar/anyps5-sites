@@ -3,6 +3,28 @@ import metadata from './github-source-status.json';
 export interface DevelopmentNote {number:number;title:Text;summary:Text;games:string[]}
 export const developmentNotes:DevelopmentNote[]=[
 {
+ "number": 5601,
+ "games": [],
+ "title": {
+  "en": "PS5LM shader output is a compute test",
+  "zh": "PS5LM输出属于compute测试",
+  "ar": "خرجPS5LM اختبار حسابي",
+  "pt": "SaídaPS5LM é teste compute",
+  "de": "PS5LM-Ausgabe ist Compute-Test",
+  "fr": "SortiePS5LM : test compute",
+  "es": "SalidaPS5LM es prueba compute"
+ },
+ "summary": {
+  "en": "Discussion #5601: PS5LM Plus0.8.4/Qwen2.5-0.5B q4_k_m on Windows11/RDNA2 iGPU32.0.21042.62 uses a local combination #7410/#8134/#8489. Warm runs3/3 q8,4/4 f16 and4/4 flash-off match CPU text; cold10s fence timeout remains. PRs are not all merged, output matching is not a commercial game result.",
+  "zh": "讨论#5601的PS5LM Plus0.8.4／Qwen2.5-0.5B q4_k_m在Windows11／RDNA2核显32.0.21042.62合用#7410／#8134／#8489；暖缓存q8三次、f16四次、关flash四次文字匹配CPU，冷缓存仍可能10秒fence超时。并非全部合入，文本匹配不等于商业游戏实测。",
+  "ar": "#5601: PS5LM0.8.4/Qwen0.5B q4_k_m علىWindows11/RDNA2 driver32.0.21042.62 يجمع#7410/#8134/#8489. دافئ3/3q8 و4/4f16 و4/4بلاflash يطابقCPU؛ timeout بارد10ث باق. ليست كلها مدمجة ولا نتيجة لعبة تجارية.",
+  "pt": "#5601: PS5LM0.8.4/Qwen0.5B q4_k_m Windows11/RDNA2 driver32.0.21042.62 combina#7410/#8134/#8489. Quente3/3q8,4/4f16,4/4flash-off igualCPU; timeout frio10s. Não todos integrados/nem jogo comercial.",
+  "de": "#5601: PS5LM0.8.4/Qwen0.5B q4_k_m Windows11/RDNA2 Treiber32.0.21042.62 mit#7410/#8134/#8489. Warm3/3q8,4/4f16,4/4ohneFlash CPU-Textgleich; kalter10s-Timeout bleibt. Nicht alle integriert/kein kommerzielles Spiel.",
+  "fr": "#5601 : PS5LM0.8.4/Qwen0.5B q4_k_m Windows11/RDNA2 pilote32.0.21042.62 combine#7410/#8134/#8489. Chaud3/3q8,4/4f16,4/4sansFlash identiquesCPU ; timeout froid10s. Pas tous fusionnés/ni jeu commercial.",
+  "es": "#5601: PS5LM0.8.4/Qwen0.5B q4_k_m Windows11/RDNA2 driver32.0.21042.62 combina#7410/#8134/#8489. Caliente3/3q8,4/4f16,4/4sinFlash igualCPU; timeout frío10s. No todos fusionados/ni juego comercial."
+ }
+},
+{
  "number": 6314,
  "games": [],
  "title": {
@@ -146,22 +168,22 @@ export const developmentNotes:DevelopmentNote[]=[
   "god-of-war-sons-of-sparta"
  ],
  "title": {
-  "en": "Open Mac runtime has newer pinned game tests",
-  "zh": "开放Mac运行时有新的固定构建实测",
-  "ar": "اختبارات أحدث لruntimeMac المفتوح",
-  "pt": "Runtime Mac aberto com novos testes",
-  "de": "Offene Mac-Runtime mit neueren Spieltests",
-  "fr": "Runtime Mac ouvert avec nouveaux tests",
-  "es": "Runtime Mac abierto con pruebas nuevas"
+  "en": "Mac integration closed without merge",
+  "zh": "Mac整合关闭且未合并",
+  "ar": "دمجMac مغلق دون إدماج",
+  "pt": "Integração Mac fechada sem merge",
+  "de": "Mac-Integration ungemergt geschlossen",
+  "fr": "Intégration Mac fermée sans fusion",
+  "es": "Integración Mac cerrada sin fusionar"
  },
  "summary": {
-  "en": "Still open, not v0.1.2. M4Pro24GB/macOS27.0.1/MoltenVK1.4.2/VulkanSDK1.4.363, Rosetta x86-64: Lana19450 v01.010.000 on70055abe0 now has clean menu/gameplay; local GPU fills change5.2→11.9 gameplay. Later54845a456 local exact-fma experiment13.3–13.7 versus11.0–11.4 in one load band. Different heads/scenes, not nativeARM/main/release results. M2Max70055 non-GPU782/783 with transient failure; no title replay in that suite.",
-  "zh": "仍开放，非v0.1.2。M4Pro24GB／macOS27.0.1／MoltenVK1.4.2／SDK1.4.363的Rosetta x86-64：Lana19450 v01.010.000在70055abe0菜单／游玩正常，本地GPU fill游玩5.2→11.9；后54845a456本地精确fma实验同负载段11.0–11.4→13.3–13.7。不同提交／场景，非原生ARM／main／发行结果。M2Max70055非GPU782/783含偶发失败，该suite未复跑游戏。",
-  "ar": "مفتوحليسv0.1.2. M4Pro24GB/macOS27.0.1/MVK1.4.2/SDK1.4.363 Rosetta: Lana19450v01.010.000 على70055abe0 سليمة،fill محلي5.2→11.9. 54845a456 معfma محلي11.0–11.4→13.3–13.7. رؤوس/مشاهدمختلفة لاARM/main/release. M2Max782/783 بلاGPU، لا إعادةلعبة.",
-  "pt": "Aberto, forav0.1.2. M4Pro24GB/macOS27.0.1/MVK1.4.2/SDK1.4.363 Rosetta: Lana19450v01.010.000 limpo em70055abe0, fills locais5,2→11,9. Depois54845a456/fma local11,0–11,4→13,3–13,7 numa carga. Heads/cenas distintos, nãoARM/main/release. M2Max782/783 semGPU, sem reteste jogo.",
-  "de": "Offen, nichtv0.1.2. M4Pro24GB/macOS27.0.1/MVK1.4.2/SDK1.4.363 Rosetta: Lana19450v01.010.000 auf70055abe0 sauber, lokaleGPU-Fills5,2→11,9. Später54845a456/Fma lokal11,0–11,4→13,3–13,7. AndereHeads/Szenen, keinARM/Main/Release. M2Max782/783 ohneGPU, keinSpieltetest.",
-  "fr": "Ouvert horsv0.1.2. M4Pro24GB/macOS27.0.1/MVK1.4.2/SDK1.4.363 Rosetta : Lana19450v01.010.000 propre sur70055abe0, fills locaux5,2→11,9. Puis54845a456/fma local11,0–11,4→13,3–13,7. Heads/scènes distincts, pasARM/main/release. M2Max782/783 sansGPU ni retestjeu.",
-  "es": "Abierto fuerav0.1.2. M4Pro24GB/macOS27.0.1/MVK1.4.2/SDK1.4.363 Rosetta: Lana19450v01.010.000 limpio en70055abe0, fills locales5,2→11,9. Luego54845a456/fma local11,0–11,4→13,3–13,7. Heads/escenas distintos, noARM/main/release. M2Max782/783 sinGPU/retestjuego."
+  "en": "#7332 closed unmerged20 October;v0.1.3 has no Mac runtime archive. M4Pro/Rosetta local Lana tests on 7cf8c610c plus #6617/#7340/two committer changes measure29.45–29.47→29.75–29.80 FPS after a local exact-fma follow-up, two alternating runs per build. Scene stationary, broader suites retain failures; not nativeARM/main/release compatibility.",
+  "zh": "#7332在10月20日关闭未合，v0.1.3无Mac库包。M4Pro／Rosetta的Lana本地7cf8c610c加#6617／#7340／两项committer改动，再加精确fma后，两个交替运行各测29.45–29.47→29.75–29.80FPS。仅静止场景，广泛suite仍失败，非原生ARM／main／发行兼容。",
+  "ar": "#7332 أغلق بلا دمج20أكتوبر،v0.1.3 بلاruntimeMac. Lana محلي M4Pro/Rosetta على7cf8c610c+#6617/#7340 وتعديلين يقيس29.45–29.47→29.75–29.80 معfma محلي، تشغيلان متناوبان. مشهد ثابت واختبارات واسعة تفشل؛ ليسARM/main/release.",
+  "pt": "#7332 fechado sem merge20outubro, v0.1.3 semruntimeMac. Lana localM4Pro/Rosetta7cf8c610c+#6617/#7340/2alterações mede29,45–29,47→29,75–29,80 comfma local,2runs alternados. Cena parada/suites com falhas; nãoARM/main/release.",
+  "de": "#7332 am20.Oktober ungemergt geschlossen, v0.1.3 ohneMac-Runtime. LokalesLana M4Pro/Rosetta7cf8c610c+#6617/#7340/2Änderungen misst29,45–29,47→29,75–29,80 mit lokalemfma,2Wechselläufe. Standszene/breite Suiten mit Fehlern; keinARM/Main/Release.",
+  "fr": "#7332 fermé sans fusion20octobre, v0.1.3 sansruntimeMac. Lana localM4Pro/Rosetta7cf8c610c+#6617/#7340/2changements mesure29,45–29,47→29,75–29,80 avecfma local,2essais alternés. Scène immobile/suites en échec ; niARM/main/release.",
+  "es": "#7332 cerrado sin merge20octubre,v0.1.3 sinruntimeMac. Lana localM4Pro/Rosetta7cf8c610c+#6617/#7340/2cambios mide29,45–29,47→29,75–29,80 confma local,2ensayos alternados. Escena inmóvil/suites fallan; noARM/main/release."
  }
 },
 {
@@ -218,22 +240,22 @@ export const developmentNotes:DevelopmentNote[]=[
   "sonic-unleashed-recompiled"
  ],
  "title": {
-  "en": "Sonic historical gameplay and latest startup are separate",
-  "zh": "Sonic历史游玩与最新启动分开",
-  "ar": "لعبSonic التاريخي وبدءجديد منفصلان",
-  "pt": "Sonic histórico e arranque recente separados",
-  "de": "Sonic-Spielhistorie und aktueller Start getrennt",
-  "fr": "Gameplay historique Sonic et nouveau démarrage distincts",
-  "es": "Sonic histórico e inicio reciente separados"
+  "en": "Sonic replay reaches loading, historical gameplay retained",
+  "zh": "Sonic重放到加载，旧游玩证据保留",
+  "ar": "إعادةSonic تبلغ التحميل مع حفظ اللعب السابق",
+  "pt": "Sonic chega a carregar, jogo histórico preservado",
+  "de": "Sonic-Neulauf bis Laden, altes Gameplay bleibt",
+  "fr": "Sonic atteint chargement, ancien jeu conservé",
+  "es": "Sonic llega a carga, juego histórico conservado"
  },
  "summary": {
-  "en": "Historical0e7fba38b5 fork confirms movement/seven rings, not the latest run. Current main5c6c compositionsc296/3223 stop black at FMASK/CMASK then snapshot metadata, without menu. #7294/#7573 merged;#7310 open. GPU component matrices do not revalidate the game or prove console-equivalent FMASK decoding.",
-  "zh": "历史0e7fba38b5分支确认移动／7枚环，非最新运行；当前main5c6c的c296／3223组合均黑屏，分别停FMASK／CMASK及snapshot metadata，无菜单。#7294／#7573已合，#7310开放；GPU组件矩阵不能复证游戏或主机等价FMASK。",
-  "ar": "0e7fba38b5 التاريخي يؤكدحركة/7حلقات، ليسالجديد. main5c6c معc296/3223 أسودعندFMASK ثمsnapshot، بلا قائمة. #7294/#7573 مدمجان و#7310 مفتوح؛ مكوناتGPU ليست لعبة/تكافؤكونسول.",
-  "pt": "0e7fba38b5 histórico confirma movimento/7anéis, não novo run. main5c6c c296/3223 pretos emFMASK/snapshot sem menu. #7294/#7573 integrados,#7310 aberto; testesGPU não revalidam jogo/equivalência consola.",
-  "de": "Historisch0e7fba38b5 Bewegung/7Ringe, nichtneuerLauf. Main5c6c c296/3223 schwarz beiFMASK/Snapshot ohneMenü. #7294/#7573 integriert,#7310 offen; GPU-Komponenten keinSpiel-/Konsolenbeleg.",
-  "fr": "Historique0e7fba38b5 mouvement/7anneaux, pasnouveaurun. Main5c6c c296/3223 noirs surFMASK/snapshot sansmenu. #7294/#7573 intégrés,#7310 ouvert ; composantsGPU sans revalidationjeu/équivalenceconsole.",
-  "es": "Histórico0e7fba38b5 movimiento/7anillos, no nuevorun. Main5c6c c296/3223 negros enFMASK/snapshot sinmenú. #7294/#7573 integrados,#7310 abierto; componentesGPU no revalidan juego/equivalenciaconsola."
+  "en": "Latest6b41d7a709/main da3ea52b53 reaches Continue/movie skip/loading then 275s unreadable Fragment range stop. No gameplay in this replay. Old0e7 movement/seven rings stays selected;180 component passes, zero VUIDs and matching libraries do not supersede the title failure.",
+  "zh": "最新6b41d7a709／main da3ea52b53到Continue／跳影片／加载，275秒因Fragment范围不可读停；此轮无游玩。旧0e7移动／七环仍选入，180组件通过、无VUID及配套库不能取代游戏失败结论。",
+  "ar": "6b41d7a709/main da3ea52b53 يبلغContinue/تخطي/تحميل ثم توقفFragment275ث بلا لعب.0e7 حركة/7حلقات محفوظ؛180اختبار مكونات و0VUID ومكتبات مطابقة لا يلغي توقف اللعبة.",
+  "pt": "6b41d7a709/main da3ea52b53 chegaContinue/skip/carga e paraFragment275s sem jogo.0e7 movimento/7anéis mantido;180componentes/0VUID/libs não superam falha do título.",
+  "de": "6b41d7a709/Main da3ea52b53 bisContinue/Skip/Laden, dannFragment-Stopp275s ohne Gameplay.0e7 Bewegung/7Ringe bleibt;180Komponenten/0VUID/passendeLibs widerlegen Titelabbruch nicht.",
+  "fr": "6b41d7a709/main da3ea52b53 atteintContinue/skip/charge puis arrêtFragment275s sans jeu.0e7 mouvement/7anneaux conservé ;180composants/0VUID/libs n’effacent pas l’échec du titre.",
+  "es": "6b41d7a709/main da3ea52b53 llegaContinue/skip/carga y paraFragment275s sin juego.0e7 movimiento/7anillos sigue;180componentes/0VUID/libs no superan fallo del título."
  }
 },
 {
@@ -512,7 +534,28 @@ export const developmentNotes:DevelopmentNote[]=[
 },
  {number:4216,games:["minecraft", "cyberpunk-2077"],title:L("Allocation lookup optimization is now on main","分配查找优化现已进入 main","تحسين بحث الذاكرة على main","Otimização de procura já em main","Allokationssuche jetzt auf main","Recherche mémoire désormais sur main","Búsqueda de memoria ya en main"),summary:L("#4216 merged as 50578eb936. Address-indexed lookups reduce registry copies and full mapping walks; the author’s Linux Minecraft result still includes its other PR dependencies. Keep the earlier Cyberpunk cold/warm failures on their recorded local build. No new Windows or clean-main title performance is established by the merge.","#4216 已于 50578eb936 合入。按地址索引减少注册表复制和全映射遍历，作者 Linux Minecraft 结果仍有其他 PR 依赖。Cyberpunk 旧冷／暖失败继续对应原本地构建；合入不证明新的 Windows 或原始 main 游戏性能。","#4216 دمج 50578eb936 ويقلل نسخ السجل والبحث. Minecraft Linux ما زال بتبعيات PR أخرى؛ فشل Cyberpunk السابق على بنائه. لا أداء لعبة Windows/main جديد بسبب الدمج.","#4216 integrado50578eb936, reduz cópias/procura. Minecraft Linux mantém outras PR; falhas antigas Cyberpunk conservam build. Merge não estabelece novo desempenho Windows/main.","#4216 gemergt50578eb936, weniger Kopien/Suche. Minecraft-Linux bleibt mit PR-Abhängigkeiten; alte Cyberpunk-Fehler behalten Build. Merge belegt keine neue Windows/main-Leistung.","#4216 intégré50578eb936, moins de copies/parcours. Minecraft Linux garde dépendances ; anciens échecs Cyberpunk conservent build. Merge ne valide pas performance Windows/main.","#4216 integrado50578eb936, reduce copias/recorridos. Minecraft Linux conserva dependencias; fallos antiguos Cyberpunk su build. Merge no valida rendimiento Windows/main.")},
  {number:4554,games:["palworld", "high-on-life"],title:L("DCC writers are synchronized before sampled keys","采样 DCC key 前同步写入","مزامنة الكتابات قبل مفاتيح DCC","Sincronizar escritas antes das chaves DCC","DCC-Schreiber vor Keys synchronisieren","Synchroniser les écritures avant clés DCC","Sincronizar escrituras antes de claves DCC"),summary:L("#4554 merged as 8bf10e51f4 after review added uniform-key writer coverage. Synthetic regression evidence is separate from title rendering. Palworld’s world colours were still wrong in the source investigation, and there is no new clean-main Palworld run; do not present this merge as full compatibility.","#4554 在补充 uniform-key 写入覆盖后于 8bf10e51f4 合入。合成回归证据与实际渲染分开；来源调查中帕鲁世界颜色仍错，也没有新原始 main 帕鲁运行，不能将合入当作完整兼容。","#4554 دمج 8bf10e51f4 بعد تغطية uniform-key. اختبارات اصطناعية ليست رسم لعبة؛ ألوان Palworld بقيت خاطئة ولا تشغيل main جديد. ليس توافقاً كاملاً.","#4554 integrado8bf10e51f4 após cobertura uniform-key. Regressões sintéticas não são jogo; Palworld ainda com cores erradas e sem reteste main. Não é compatibilidade completa.","#4554 gemergt8bf10e51f4 mit Uniform-Key-Abdeckung. Synthetik ist kein Spielrendering; Palworld-Farben noch falsch, kein main-Retest. Keine Vollkompatibilität.","#4554 intégré8bf10e51f4 avec couverture uniform-key. Synthétique distinct du jeu ; couleurs Palworld encore fausses, pas de retest main. Pas de compatibilité complète.","#4554 integrado8bf10e51f4 con cobertura uniform-key. Sintético distinto del juego; colores Palworld aún erróneos, sin retest main. No compatibilidad completa.")},
- {"number": 5381, "games": [], "title": {"en": "Browser pin updated; pairing still unresolved", "zh": "在线库已更新，版本配对仍未解决", "ar": "تحديث النسخة مع بقاء الاقتران", "pt": "Bibliotecas atualizadas, emparelhamento por resolver", "de": "Browser-Pin neu, Paarung offen", "fr": "Pin web actualisé, appariement ouvert", "es": "Pin web actualizado, pareja pendiente"}, "summary": {"en": "The live manifest now pins v0.1.2. It still pairs release libraries with main-built WASM, so #5381 remains open. New libraries resolve many imports but Windows setbuf binding has a named-library caveat. #5409 and #5710 closed without merging under the PR intake limit; closure is not a pairing fix.", "zh": "在线清单现固定 v0.1.2，但仍把发行库与 main 构建的 WASM 配对，#5381 未结。新库解决多项导入，Windows setbuf 的命名库绑定仍有边界；#5409、#5710 因 PR 接收限制关闭未合入，不等于配对修复。", "ar": "البيان v0.1.2 لكن WASM من main، فـ#5381 مفتوح. مكتبات جديدة تحل واردات عديدة مع قيد setbuf Windows. #5409/#5710 أغلقت دون دمج لحد الاستقبال، لا إصلاح اقتران.", "pt": "Manifesto v0.1.2, WASM de main: #5381 aberto. Libs resolvem vários imports, setbuf Windows tem limite de associação. #5409/#5710 fechadas sem merge por limite de PR, não correção.", "de": "Manifest v0.1.2, WASM von main: #5381 offen. Neue Libs lösen viele Imports, Windows-setbuf hat Bindungsgrenze. #5409/#5710 wegen PR-Limit ungemergt geschlossen, kein Paarungsfix.", "fr": "Manifest v0.1.2, WASM de main : #5381 ouvert. Libs résolvent plusieurs imports, setbuf Windows garde un problème de liaison. #5409/#5710 fermés sans merge pour limite PR, aucun correctif.", "es": "Manifest v0.1.2, WASM de main: #5381 abierto. Libs resuelven varios imports, setbuf Windows tiene límite de enlace. #5409/#5710 cerradas sin merge por límite PR, no arreglo."}},
+ {
+ "number": 5381,
+ "games": [],
+ "title": {
+  "en": "Browser release pairing verified",
+  "zh": "网页发行配对已核实",
+  "ar": "تحقق اقتران إصدار الويب",
+  "pt": "Emparelhamento web verificado",
+  "de": "Browser-Releasepaar geprüft",
+  "fr": "Appariement web vérifié",
+  "es": "Emparejamiento web verificado"
+ },
+ "summary": {
+  "en": "#5381 closed;#5710 merged20 October. v0.1.3 asset web ZIP and live web-release.json/release.json agree on 3fd1cc393 and matching library archives. Pages now publishes a release pair instead of mixing main converter with old libraries. Manifest checks verify publication identity, not every game/import execution.",
+  "zh": "#5381已关闭，#5710在10月20日合入。v0.1.3 web ZIP及线上web-release.json／release.json均为3fd1cc393，库包匹配。Pages改为成对发布，避免main转换器混旧库；清单核对证明发布身份，不证明每个游戏／导入已运行。",
+  "ar": "#5381 مغلق و#5710 مدمج20أكتوبر. ZIP الويب وقائمتاه تقرنv0.1.3/3fd1cc393 بمكتباته. Pages ينشر زوج إصدار لاmain مع مكتبات قديمة؛ الهوية ليست اختبار كل لعبة/استيراد.",
+  "pt": "#5381 fechado,#5710 integrado20outubro. ZIP e dois manifestos online confirmamv0.1.3/3fd1cc393 e bibliotecas. Pages publica par de release; identidade não prova cada jogo/import.",
+  "de": "#5381 geschlossen,#5710 am20.Oktober integriert. ZIP und beide Livemanifeste bestätigenv0.1.3/3fd1cc393 samt Bibliotheken. Pages veröffentlicht Releasepaar; Identität kein Test aller Spiele/Imports.",
+  "fr": "#5381 fermé,#5710 fusionné20octobre. ZIP et deux manifestes en ligne confirmentv0.1.3/3fd1cc393 et bibliothèques. Pages publie une paire ; identité sans test de tous jeux/imports.",
+  "es": "#5381 cerrado,#5710 integrado20octubre. ZIP y ambos manifiestos online confirmanv0.1.3/3fd1cc393 y bibliotecas. Pages publica par; identidad no verifica cada juego/import."
+ }
+},
  {"number": 5383, "games": ["dreaming-sarah"], "title": {"en": "Linux v0.1.2 X11 retest is scoped", "zh": "Linux v0.1.2 的 X11 复测边界", "ar": "حدود إعادة اختبار X11", "pt": "Âmbito do reteste X11 v0.1.2", "de": "Grenzen des v0.1.2-X11-Retests", "fr": "Portée du retest X11 v0.1.2", "es": "Alcance del retest X11 v0.1.2"}, "summary": {"en": "The reporter closed #5383 after matching v0.1.2 relinker/libraries ran Sarah on CachyOS X11 with an MX230 and Mouse LD_PRELOAD workaround. Gameplay counters were 26–58 FPS. The earlier v0.1.1 offscreen archive remains historical. #5396 closed without merging; it is not the confirmed release fix or an independent test by this site.", "zh": "报告者在配套 v0.1.2 转换器／库、CachyOS X11、MX230 和 Mouse LD_PRELOAD 绕行条件下运行 Sarah 后关闭 #5383，游戏计数 26–58 FPS。旧 v0.1.1 离屏包结论保留历史边界；#5396 关闭未合入，不能当作该发行修复，本站也未独立实测。", "ar": "أغلق الكاتب #5383 بعد Sarah بمكتبات/أداة v0.1.2 على CachyOS X11 وMX230 وMouse LD_PRELOAD، عدادات لعب 26–58 FPS. v0.1.1 offscreen تاريخي. #5396 مغلق دون دمج، لا إصلاح مثبت ولا اختبار مستقل للموقع.", "pt": "Autor fechou #5383 após Sarah em v0.1.2 emparelhada, CachyOS X11/MX230 com Mouse LD_PRELOAD, 26–58 FPS. Arquivo offscreen v0.1.1 histórico. #5396 fechada sem merge, não correção comprovada nem teste próprio.", "de": "Autor schloss #5383 nach Sarah mit passenden v0.1.2-Dateien, CachyOS X11/MX230 und Mouse-LD_PRELOAD, 26–58 FPS. v0.1.1-Offscreen historisch. #5396 ungemergt geschlossen, kein belegter Fix/eigener Test.", "fr": "Auteur ferme #5383 après Sarah avec fichiers v0.1.2 appariés, CachyOS X11/MX230 et Mouse LD_PRELOAD, 26–58 FPS. v0.1.1 offscreen historique. #5396 fermé sans merge, pas correctif validé/test du site.", "es": "Autor cierra #5383 tras Sarah con archivos v0.1.2 pareados, CachyOS X11/MX230 y Mouse LD_PRELOAD, 26–58 FPS. v0.1.1 offscreen histórico. #5396 cerrada sin merge, no arreglo probado/prueba propia."}},
  {number:5431,games:["ghost-of-tsushima-directors-cut"],title:L("Trace draw attempts through successful submissions","追踪绘制尝试与成功提交","تتبع الرسم إلى الإرسال الناجح","Rastrear desenhos até submissões","Draw-Versuche bis Submit verfolgen","Tracer dessins jusqu’aux soumissions","Trazar dibujos hasta envíos"),summary:L("#5431 is an open diagnostic PR, with eight CaptureTrace tests reported. One isolated Ghost runtime trace has no preparation-failure events but still shows a black window without validated pixel data. It narrows the investigation; neither trace counters nor shader failures establish correct rendering or the cause of black output.","#5431 是开放的诊断 PR，报告八项 CaptureTrace 测试。一份隔离的对马运行追踪没有准备失败事件，仍显示黑窗口且无已验证像素。它缩小调查范围；追踪计数和着色器失败均不能证明正确渲染或黑屏原因。","#5431 PR تشخيص مفتوح مع 8 اختبارات. تتبع Ghost معزول بلا فشل تحضير لكن نافذة سوداء دون بكسلات موثقة. يضيق التحقيق،لا يثبت الرسم أو السبب.","#5431 PR diagnóstico aberto com 8 testes. Trace Ghost isolado sem falhas, janela negra sem píxeis validados. Restringe investigação, não prova imagem/causa.","#5431 offener Diagnose-PR mit 8 Tests. Ghost-Trace ohne Vorbereitungsfehler, schwarzes Fenster ohne validierte Pixel. Grenzt ein, beweist Bild/Ursache nicht.","#5431 PR diagnostic ouvert avec 8 tests. Trace Ghost sans échec préparation, fenêtre noire sans pixels validés. Limite enquête, sans prouver rendu/cause.","#5431 PR diagnóstico abierto con 8 pruebas. Trace Ghost sin fallos preparación, ventana negra sin píxeles validados. Acota investigación, no prueba imagen/causa.")},
  {number:4686,games:['dreaming-sarah','doom-homebrew'],title:L("Compatibility evidence has moved","兼容证据已迁移","انتقال أدلة التوافق","As provas de compatibilidade mudaram","Kompatibilitätsbelege wurden verschoben","Les preuves de compatibilité ont migré","La evidencia de compatibilidad se ha movido"),summary:L("Merged #4686 removes the old compatibility table and its duplicate README claims. Previous Sarah/DOOM reports are archived in discussion #2475; README now points to a community blocker map and title discussions. Archive dates and original environments remain evidence, while an automatically assembled map is a discovery aid. This does not change old tests or release v0.1.1.","已合并 #4686 删除旧兼容表及 README 的重复结论，Sarah／DOOM 原报告归档到 #2475；README 改指社区阻碍地图和游戏讨论。归档日期与原环境仍是证据，自动汇总地图只用于发现线索。这不会改写旧实验，也不是 v0.1.1 新发行。","يحذف #4686 المدمج جدول التوافق وادعاءات README المكررة. أرشفت تقارير Sarah/DOOM في #2475؛ README يشير لخريطة عوائق مجتمعية ونقاشات الألعاب. تحفظ تواريخ وبيئات الأصل؛ الخريطة أداة اكتشاف لا تجربة جديدة ولا إصدار v0.1.1 جديد.","#4686 integrado remove a tabela e afirmações duplicadas do README. Sarah/DOOM estão arquivados em #2475; README aponta para mapa comunitário e discussões. Datas e ambientes originais mantêm-se como prova; mapa automático é descoberta, não altera testes nem publica v0.1.1 novo.","Das gemergte #4686 entfernt Tabelle und doppelte README-Aussagen. Sarah/DOOM sind in #2475 archiviert; README verweist auf Community-Blockerkarte und Diskussionen. Ursprungsdaten und Bedingungen bleiben Belege; die automatische Karte dient zur Suche, nicht als neuer Test oder neuer v0.1.1-Release.","#4686 fusionné supprime la table et les affirmations README répétées. Sarah/DOOM sont archivés dans #2475 ; README renvoie à une carte communautaire et aux discussions. Dates et environnements originaux restent des preuves ; la carte automatique sert à découvrir, sans modifier les tests ni publier un nouveau v0.1.1.","#4686 fusionada elimina la tabla y afirmaciones duplicadas del README. Sarah/DOOM están archivados en #2475; README apunta a mapa comunitario y debates. Fechas y entornos originales siguen como evidencia; el mapa automático sirve para descubrir, sin alterar pruebas ni publicar nuevo v0.1.1.")},

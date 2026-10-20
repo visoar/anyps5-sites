@@ -3124,5 +3124,157 @@
       "height": 1024
     },
     "screenshots": []
+  },
+  "destruction-allstars": {
+    "cover": {
+      "file": "destruction-allstars/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0418/d2l5anfkYCPcdtYL8lhqhfOX.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0418/d2l5anfkYCPcdtYL8lhqhfOX.png",
+      "sourceSha256": "99744cac985e9030d812e91fb2cd671a3870233afcf4ef8c8334c77bdd28daac",
+      "sourceBytes": 226576,
+      "sha256": "94e5a6edc377aeb17d2092a76a6acb528dcca8df297ee23d400a821a205b64ef",
+      "bytes": 135222,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "graveyard-keeper-2": {
+    "cover": null,
+    "screenshots": []
+  },
+  "grinch-christmas-adventures": {
+    "cover": null,
+    "screenshots": []
+  },
+  "the-exit-8": {
+    "cover": {
+      "file": "the-exit-8/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202407/2505/34cb80e4a067cf254409922546821d594f431178fb715c92.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202407/2505/34cb80e4a067cf254409922546821d594f431178fb715c92.png",
+      "sourceSha256": "a6089ddbd3013fe630c5610593adc357206cd39c00640008e14e61e96a6356e9",
+      "sourceBytes": 31508,
+      "sha256": "20780edfa6417ea867049a42e7520a63f6bfb9df326eea9f7d11893089d0d551",
+      "bytes": 12444,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "indiana-jones-staff-of-kings": {
+    "cover": null,
+    "screenshots": []
+  },
+  "tetris-effect-connected": {
+    "cover": null,
+    "screenshots": []
+  },
+  "dying-light-the-beast": {
+    "cover": {
+      "file": "dying-light-the-beast/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1710/5e2a5dac13684c40c91545ab3a6fee50711e4e9eab9ed39e.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1710/5e2a5dac13684c40c91545ab3a6fee50711e4e9eab9ed39e.png",
+      "sourceSha256": "d6ac18547dd1a8e49ea8f51be8360f86072119de3d4a09546a0251ab72fdf98f",
+      "sourceBytes": 217560,
+      "sha256": "be43543d234a981b1d751b40396bd008db906dce9aa2544a6a6a73aed63eae21",
+      "bytes": 138994,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "arcade-game-zone": {
+    "cover": null,
+    "screenshots": []
+  },
+  "valor-mortis": {
+    "cover": {
+      "file": "valor-mortis/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1815/96fbe904b245c74b7cbd85f2ed33c1b3d2e60186ce56b51a.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1815/96fbe904b245c74b7cbd85f2ed33c1b3d2e60186ce56b51a.png",
+      "sourceSha256": "6f312813fc0878113f97989c4ad9cabe92135a6ef023c716c63896b0fdb605ab",
+      "sourceBytes": 148317,
+      "sha256": "e42419e0454c277bf382c340f9797c220113bf3f4336557c7e68808467691518",
+      "bytes": 82328,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "pumpkin-jack": {
+    "cover": null,
+    "screenshots": []
+  },
+  "terrifier-artcade": {
+    "cover": null,
+    "screenshots": []
+  },
+  "life-is-strange-reunion": {
+    "cover": {
+      "file": "life-is-strange-reunion/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202512/0417/9c35156a43661a69e4fa0e3e913e956946ef20e1c42abe9a.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/0417/9c35156a43661a69e4fa0e3e913e956946ef20e1c42abe9a.png",
+      "sourceSha256": "ce78ecb354861a3e049efa3bda9430a8f78646c2f60bb690a2f7ea6cb733286d",
+      "sourceBytes": 206044,
+      "sha256": "51fc250c409b03b8ee5f195bc026205194ed6c1a2be5021befe4f98407204b1e",
+      "bytes": 112806,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "street-fighter-6": {
+    "cover": {
+      "file": "street-fighter-6/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1407/XFU0aPBvtm3W2od1ZvhByAOv.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1407/XFU0aPBvtm3W2od1ZvhByAOv.png",
+      "sourceSha256": "d22eb0d1b9753a61e79ba0ffa00bbd091e4a60984b321904dbb001b061c322d8",
+      "sourceBytes": 295369,
+      "sha256": "60ca597f69040f5d017b5d36c4a52783ac5cabf4a1d8e0bc3891177f1dd72eaf",
+      "bytes": 207532,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "another-crabs-treasure": {
+    "cover": {
+      "file": "another-crabs-treasure/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202401/0301/30aac0dabbd3e8a390d7b5a75bc558e7f593e09765034080.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202401/0301/30aac0dabbd3e8a390d7b5a75bc558e7f593e09765034080.png",
+      "sourceSha256": "2b6ff985e9d0d933686ac365ae18cb4ea7a814ce65af55db9d99d169d9e0750e",
+      "sourceBytes": 188345,
+      "sha256": "74e13cac382b935f229d17e966e74671c6b1d2aa406ff21d28c917291cb436a2",
+      "bytes": 94408,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "ridge-racer": {
+    "cover": null,
+    "screenshots": []
+  },
+  "smurfs-dreams": {
+    "cover": null,
+    "screenshots": []
+  },
+  "assassins-creed-shadows": {
+    "cover": {
+      "file": "assassins-creed-shadows/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202412/2018/6d3fddf363563ef352c729c8f5077056ab342fd0a9daae9b.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202412/2018/6d3fddf363563ef352c729c8f5077056ab342fd0a9daae9b.png",
+      "sourceSha256": "7912f89e89204d79971055628cdd970d03ad1ac0d4425871a7dc0a0de445e9a0",
+      "sourceBytes": 175319,
+      "sha256": "d52835964d992a198fd2e8e9f1960155a450533195116e6d57627fb88fa271a7",
+      "bytes": 99010,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "supertuxkart": {
+    "cover": null,
+    "screenshots": []
   }
 }
