@@ -3,6 +3,54 @@ import metadata from './github-source-status.json';
 export interface DevelopmentNote {number:number;title:Text;summary:Text;games:string[]}
 export const developmentNotes:DevelopmentNote[]=[
 {
+ "number": 5487,
+ "games": [
+  "yakuza-0-directors-cut"
+ ],
+ "title": {
+  "en": "Yakuza: missing PlayGo metadata needs an explicit policy",
+  "zh": "如龙：PlayGo元数据缺失需明确策略",
+  "ar": "Yakuza: سياسة صريحة لغياب PlayGo",
+  "pt": "Yakuza: política explícita sem metadados PlayGo",
+  "de": "Yakuza: klare Policy bei fehlenden PlayGo-Daten",
+  "fr": "Yakuza : politique explicite sans métadonnées PlayGo",
+  "es": "Yakuza: política explícita sin metadatos PlayGo"
+ },
+ "summary": {
+  "en": "PPSA31327 01.015.000 on Windows main 80565c594 +AudioOut2 #8098, Ryzen 7 7800X3D/RTX4070 617.42: removing the local default_chunk=999 XML stops startup without a policy. With installed, fixed IDs 0–5/10 progress like the old XML for 120s; absent polls 1010 times waiting for installation. No new gameplay claim or verification of the 1000 boundary.",
+  "zh": "Windows main 80565c594加AudioOut2 #8098，PPSA31327 01.015.000、Ryzen7 7800X3D／RTX4070 617.42：删除本地default_chunk=999 XML后，未设策略即启动停止。installed让固定ID 0–5／10在120秒内类似旧XML推进；absent轮询1010次等待安装。非新游玩结论，也未验证1000边界。",
+  "ar": "PPSA31327 01.015.000 على Windows main 80565c594 مع AudioOut2 #8098 و7800X3D/RTX4070 617.42. حذف XML المحلي default_chunk=999 يوقف البدء بلا سياسة. installed يتقدم مثل XML لمدة 120ث للمعرفات 0–5/10؛ absent ينتظر التثبيت بـ1010 استطلاع. لا لعب جديد أو اختبار حد 1000.",
+  "pt": "PPSA31327 01.015.000 no Windows main 80565c594 +AudioOut2 #8098, 7800X3D/RTX4070 617.42. Sem XML local default_chunk=999 e sem política, o arranque para. installed avança como XML durante 120s para IDs 0–5/10; absent espera instalação com 1010 consultas. Sem jogo novo nem teste do limite 1000.",
+  "de": "PPSA31327 01.015.000 unter Windows Main 80565c594 +AudioOut2 #8098, 7800X3D/RTX4070 617.42. Ohne lokale default_chunk=999-XML und Policy stoppt der Start. installed folgt 120s dem XML-Verhalten für IDs 0–5/10; absent wartet mit 1010 Abfragen auf Installation. Kein neuer Spielbeleg oder 1000-Grenztest.",
+  "fr": "PPSA31327 01.015.000 sous Windows main 80565c594 +AudioOut2 #8098, 7800X3D/RTX4070 617.42. Sans XML local default_chunk=999 ni politique, démarrage bloqué. installed suit le comportement XML 120s pour IDs 0–5/10 ; absent attend l’installation avec 1010 appels. Ni nouveau jeu ni test de borne 1000.",
+  "es": "PPSA31327 01.015.000 en Windows main 80565c594 +AudioOut2 #8098, 7800X3D/RTX4070 617.42. Sin XML local default_chunk=999 ni política, arranque detenido. installed avanza como XML durante 120s para IDs 0–5/10; absent espera instalación con 1010 consultas. Sin nuevo juego ni test de límite 1000."
+ }
+},
+{
+ "number": 9011,
+ "games": [
+  "lodoss-deedlit"
+ ],
+ "title": {
+  "en": "Lodoss: an isolated import-lease comparison",
+  "zh": "Lodoss：独立导入lease对照",
+  "ar": "Lodoss: مقارنة lease معزولة",
+  "pt": "Lodoss: comparação isolada de lease",
+  "de": "Lodoss: isolierter Import-Lease-Vergleich",
+  "fr": "Lodoss : comparaison isolée du lease",
+  "es": "Lodoss: comparación aislada de lease"
+ },
+ "summary": {
+  "en": "Isolated #9011 mapped-run lease: two opposite-order stationary tutorial pairs50.089/51.220→59.840/59.940 FPS. No dependency on earlier #7465/#8091/#4449 stack. Same patch rebased with focused tests, without a new title replay at rebased head; other scenes/hosts untested.",
+  "zh": "隔离#9011映射lease：静止教程反序两对50.089／51.220→59.840／59.940FPS，不依赖旧#7465／#8091／#4449堆栈。相同补丁再基后通过重点测试，但再基head未新跑游戏，其他场景／主机未验。",
+  "ar": "#9011 معزول: زوجان بترتيبين50.089/51.220→59.840/59.940 فيتعليم ثابت، بلا#7465/#8091/#4449. rebase باختبارات فقط لا إعادةعنوان، باقيالمشاهد/الأجهزة غير مختبرة.",
+  "pt": "#9011 isolado: 2pares inversos50, 089/51, 220→59, 840/59, 940 no tutorial parado, sem #7465/#8091/#4449. Rebase só testes focados, sem novo título/outros hosts.",
+  "de": "Isoliertes #9011: zweiWechselpaare50, 089/51, 220→59, 840/59, 940 imstehendenTutorial, ohne #7465/#8091/#4449. Rebase nurFokustests, kein neuerTitellauf/andereHosts.",
+  "fr": "#9011 isolé: 2paires inverses50, 089/51, 220→59, 840/59, 940 au tutoriel immobile, sans #7465/#8091/#4449. Rebase testé ciblé sans nouveau jeu/autres hôtes.",
+  "es": "#9011 aislado: 2pares inversos50, 089/51, 220→59, 840/59, 940 en tutorial inmóvil, sin #7465/#8091/#4449. Rebase solo tests enfocados, sin nuevo juego/otros hosts."
+ }
+},
+{
  "number": 5601,
  "games": [],
  "title": {
@@ -240,22 +288,22 @@ export const developmentNotes:DevelopmentNote[]=[
   "sonic-unleashed-recompiled"
  ],
  "title": {
-  "en": "Sonic replay reaches loading, historical gameplay retained",
-  "zh": "Sonic重放到加载，旧游玩证据保留",
-  "ar": "إعادةSonic تبلغ التحميل مع حفظ اللعب السابق",
-  "pt": "Sonic chega a carregar, jogo histórico preservado",
-  "de": "Sonic-Neulauf bis Laden, altes Gameplay bleibt",
-  "fr": "Sonic atteint chargement, ancien jeu conservé",
-  "es": "Sonic llega a carga, juego histórico conservado"
+  "en": "Sonic: fresh conversion still stops before gameplay",
+  "zh": "Sonic：全新转换仍停在游玩前",
+  "ar": "Sonic: التحويل الجديد يتوقف قبل اللعب",
+  "pt": "Sonic: conversão nova para antes do jogo",
+  "de": "Sonic: neue Konvertierung stoppt vor Gameplay",
+  "fr": "Sonic : nouvelle conversion arrêtée avant jeu",
+  "es": "Sonic: conversión nueva para antes de jugar"
  },
  "summary": {
-  "en": "Latest6b41d7a709/main da3ea52b53 reaches Continue/movie skip/loading then 275s unreadable Fragment range stop. No gameplay in this replay. Old0e7 movement/seven rings stays selected;180 component passes, zero VUIDs and matching libraries do not supersede the title failure.",
-  "zh": "最新6b41d7a709／main da3ea52b53到Continue／跳影片／加载，275秒因Fragment范围不可读停；此轮无游玩。旧0e7移动／七环仍选入，180组件通过、无VUID及配套库不能取代游戏失败结论。",
-  "ar": "6b41d7a709/main da3ea52b53 يبلغContinue/تخطي/تحميل ثم توقفFragment275ث بلا لعب.0e7 حركة/7حلقات محفوظ؛180اختبار مكونات و0VUID ومكتبات مطابقة لا يلغي توقف اللعبة.",
-  "pt": "6b41d7a709/main da3ea52b53 chegaContinue/skip/carga e paraFragment275s sem jogo.0e7 movimento/7anéis mantido;180componentes/0VUID/libs não superam falha do título.",
-  "de": "6b41d7a709/Main da3ea52b53 bisContinue/Skip/Laden, dannFragment-Stopp275s ohne Gameplay.0e7 Bewegung/7Ringe bleibt;180Komponenten/0VUID/passendeLibs widerlegen Titelabbruch nicht.",
-  "fr": "6b41d7a709/main da3ea52b53 atteintContinue/skip/charge puis arrêtFragment275s sans jeu.0e7 mouvement/7anneaux conservé ;180composants/0VUID/libs n’effacent pas l’échec du titre.",
-  "es": "6b41d7a709/main da3ea52b53 llegaContinue/skip/carga y paraFragment275s sin juego.0e7 movimiento/7anillos sigue;180componentes/0VUID/libs no superan fallo del título."
+  "en": "Fresh-conversion fork reaches menu/movie/level loading then243.192s unreadable-range abort. Same-runtime logging run instead ends338.106s at invalid MSAA descriptor after black screen; not one proven cause/fix. No gameplay; historical0e7 movement/seven rings retained.",
+  "zh": "新转换分支到菜单／影片／关卡加载后243.192秒不可读范围退出；相同运行库加追踪另在338.106秒黑屏后停异常MSAA描述符，非已证同一原因／修复。无游玩，旧0e7移动／七环保留。",
+  "ar": "التحويل الجديد على الفرع 2e844131db مع --no-patches لا يجعل مصدر الفرع نظيفاً. يتوقف عند 243.192ث بنص غير مقروء؛ تجربة التسجيل المختلفة تتوقف عند 338.106ث بخطأ MSAA. لا لعب مثبت، ونتيجة جمع الحلقات القديمة منفصلة.",
+  "pt": "Nova conversão no fork 2e844131db com --no-patches não remove alterações do código. Para aos 243,192s com texto ilegível; outro ensaio com logging para aos 338,106s por MSAA inválido. Sem jogo demonstrado; recolha de anéis antiga é outro resultado.",
+  "de": "Neue Konvertierung auf Fork 2e844131db mit --no-patches bedeutet keinen sauberen Quellstand. Abbruch nach 243,192s mit unlesbarem Text; anderer Logging-Lauf nach 338,106s an ungültigem MSAA. Kein Gameplay; früheres Ringesammeln bleibt getrennt.",
+  "fr": "La nouvelle conversion du fork 2e844131db avec --no-patches ne retire pas les modifications source. Arrêt à 243,192s avec texte illisible ; autre essai avec logs à 338,106s sur MSAA invalide. Sans jeu démontré ; ancienne collecte d’anneaux distincte.",
+  "es": "La nueva conversión del fork 2e844131db con --no-patches conserva cambios fuente. Para a 243,192s con texto ilegible; otra prueba con logs a 338,106s por MSAA inválido. Sin juego demostrado; la recogida anterior de anillos es otro resultado."
  }
 },
 {

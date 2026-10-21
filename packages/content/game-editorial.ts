@@ -2905,6 +2905,932 @@ Object.assign(editorial,{
   }
  }
 });
+Object.assign(editorial,{
+ "afterimage": {
+  "genre": "platform",
+  "overview": {
+   "en": "Intro rendering and a measured shader change leave exploration untested.",
+   "zh": "片头呈现及着色器对照，尚未验证实际探索。",
+   "ar": "عرض المقدمة ومقارنة shader لا يثبتان الاستكشاف.",
+   "pt": "A introdução e o teste de shaders deixam exploração por testar.",
+   "de": "Intro und Shadervergleich lassen Erkundung ungeprüft.",
+   "fr": "L’introduction et la comparaison shader laissent l’exploration ouverte.",
+   "es": "La intro y la comparación shader dejan la exploración sin probar."
+  },
+  "names": {
+   "zh": "心渊梦境"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA14053. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA14053；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA14053. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA14053. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA14053. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA14053. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA14053. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "super-meat-boy-3d": {
+  "genre": "platform",
+  "overview": {
+   "en": "A visible world map does not verify a controllable platform level.",
+   "zh": "世界地图能显示，仍需验证可操作的平台关卡。",
+   "ar": "ظهور الخريطة لا يثبت مرحلة منصات قابلة للتحكم.",
+   "pt": "O mapa visível não valida um nível controlável.",
+   "de": "Eine sichtbare Weltkarte belegt kein steuerbares Level.",
+   "fr": "Une carte visible ne valide pas un niveau contrôlable.",
+   "es": "Un mapa visible no valida un nivel controlable."
+  },
+  "names": {
+   "zh": "超级食肉男孩3D"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA31162. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA31162；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA31162. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA31162. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA31162. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA31162. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA31162. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "new-joe-mac-caveman-ninja": {
+  "genre": "platform",
+  "overview": {
+   "en": "The first-stage sample leaves co-op and later levels open.",
+   "zh": "首关样本之后，合作及后续关卡仍待验证。",
+   "ar": "عينة المرحلة الأولى تترك التعاون والمراحل التالية مفتوحة.",
+   "pt": "O primeiro nível deixa cooperação e níveis seguintes por testar.",
+   "de": "Das erste Level lässt Koop und Folgestufen offen.",
+   "fr": "Le premier niveau laisse coop et suite à tester.",
+   "es": "El primer nivel deja coop y posteriores sin probar."
+  },
+  "names": {
+   "zh": "新乔与麦克：穴居忍者"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA02801. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA02801；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA02801. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA02801. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA02801. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA02801. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA02801. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "rollercoaster-tycoon-adventures-deluxe": {
+  "genre": "sandbox",
+  "overview": {
+   "en": "Camera training is narrower than building and operating a working park.",
+   "zh": "相机教程与建造、运营完整公园的验证范围不同。",
+   "ar": "تعليم الكاميرا أضيق من بناء وإدارة حديقة كاملة.",
+   "pt": "O tutorial de câmara não valida construir e gerir o parque.",
+   "de": "Kameratraining belegt keinen vollständigen Parkbetrieb.",
+   "fr": "Le tutoriel caméra ne valide pas la construction et gestion du parc.",
+   "es": "El tutorial de cámara no valida construir y gestionar el parque."
+  },
+  "names": {
+   "zh": "过山车大亨：冒险豪华版"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA17330. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA17330；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA17330. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA17330. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA17330. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA17330. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA17330. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "the-messenger": {
+  "genre": "platform",
+  "overview": {
+   "en": "Responsive name entry leaves the action stages untested.",
+   "zh": "命名界面可响应，动作关卡尚未进入。",
+   "ar": "استجابة الاسم تترك مراحل الحركة غير مختبرة.",
+   "pt": "O nome responde, mas faltam testar os níveis de ação.",
+   "de": "Reagierende Namenseingabe lässt Aktionslevel offen.",
+   "fr": "La saisie du nom répond, les niveaux restent non testés.",
+   "es": "El nombre responde, los niveles siguen sin probar."
+  },
+  "names": {
+   "zh": "信使"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA24651. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA24651；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA24651. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA24651. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA24651. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA24651. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA24651. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "final-vendetta": {
+  "genre": "action",
+  "overview": {
+   "en": "Miller’s first stage is one sample, not coverage of every fighter or mode.",
+   "zh": "Miller首关只是单一样本，不能覆盖全部角色与模式。",
+   "ar": "مرحلة Miller الأولى لا تغطي كل المقاتلين والأوضاع.",
+   "pt": "O primeiro nível de Miller não cobre todos os lutadores/modos.",
+   "de": "Millers erste Stufe deckt nicht alle Kämpfer und Modi ab.",
+   "fr": "Le premier niveau de Miller ne couvre pas tous les combattants/modes.",
+   "es": "El primer nivel de Miller no cubre todos los luchadores/modos."
+  },
+  "names": {
+   "zh": "最后的复仇"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA07058. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA07058；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA07058. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA07058. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA07058. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA07058. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA07058. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "asterix-obelix-slap-them-all": {
+  "genre": "action",
+  "overview": {
+   "en": "A first-level rendering sample leaves co-op and later fights open.",
+   "zh": "首关呈现样本尚未覆盖合作与后续战斗。",
+   "ar": "عينة المستوى الأول لا تغطي التعاون والقتال اللاحق.",
+   "pt": "O primeiro nível deixa cooperação e lutas seguintes por testar.",
+   "de": "Erstes Level lässt Koop und spätere Kämpfe offen.",
+   "fr": "Le premier niveau laisse coop et combats suivants ouverts.",
+   "es": "El primer nivel deja coop y combates posteriores pendientes."
+  },
+  "names": {
+   "zh": "高卢英雄：痛扁他们"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA08576. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA08576；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA08576. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA08576. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA08576. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA08576. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA08576. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "road-of-death": {
+  "genre": "shooter",
+  "overview": {
+   "en": "The tutorial HUD is useful evidence, while sound and later content still need direct checks.",
+   "zh": "教程HUD提供有效证据，声音与后续内容仍需直接验证。",
+   "ar": "HUD التعليم دليل مفيد؛ الصوت والمحتوى اللاحق يحتاجان اختباراً مباشراً.",
+   "pt": "O HUD do tutorial ajuda; som e conteúdo seguinte exigem teste direto.",
+   "de": "Tutorial-HUD ist ein Beleg; Ton und Folgespiel brauchen direkte Tests.",
+   "fr": "Le HUD du tutoriel aide ; son et suite demandent un test direct.",
+   "es": "El HUD del tutorial ayuda; audio y contenido posterior requieren prueba directa."
+  },
+  "names": {
+   "zh": "死亡之路"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA07286. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA07286；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA07286. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA07286. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA07286. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA07286. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA07286. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "crazy-chicken-shooter-bundle": {
+  "genre": "shooter",
+  "overview": {
+   "en": "Remake scoring and the untested Wanted component remain separate results.",
+   "zh": "Remake命中计分与未测的Wanted需分开记录。",
+   "ar": "تسجيل نقاط Remake منفصل عن Wanted غير المختبر.",
+   "pt": "Pontos no Remake e Wanted não testado são resultados distintos.",
+   "de": "Remake-Punktetreffer und ungeprüftes Wanted bleiben getrennt.",
+   "fr": "Les points dans Remake et Wanted non testé restent distincts.",
+   "es": "Los puntos en Remake y Wanted sin probar son resultados separados."
+  },
+  "names": {
+   "zh": "疯狂小鸡射击合集"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA03117. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA03117；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA03117. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA03117. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA03117. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA03117. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA03117. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "ninja-gaiden-ragebound": {
+  "genre": "action",
+  "overview": {
+   "en": "Opening combat does not establish a complete run or verified audio.",
+   "zh": "开场战斗不代表完整流程或声音已通过验证。",
+   "ar": "قتال البداية لا يثبت جولة كاملة أو صوتاً مختبراً.",
+   "pt": "Combate inicial não valida percurso completo ou som.",
+   "de": "Anfangskampf belegt keinen Durchlauf oder geprüften Ton.",
+   "fr": "Le combat initial ne valide ni parcours complet ni son.",
+   "es": "El combate inicial no valida recorrido completo ni audio."
+  },
+  "names": {
+   "zh": "忍者龙剑传：怒之羁绊"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA28002. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA28002；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA28002. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA28002. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA28002. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA28002. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA28002. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "blue-prince": {
+  "genre": "puzzle",
+  "overview": {
+   "en": "A desk scene and warm shader profile leave room progression unverified.",
+   "zh": "桌面场景与暖缓存剖析，尚未验证房间推进。",
+   "ar": "مشهد المكتب وملف shader الدافئ لا يثبتان تقدم الغرف.",
+   "pt": "A secretária e o perfil quente não validam progresso entre salas.",
+   "de": "Schreibtisch und warmes Shaderprofil lassen Raumfortschritt offen.",
+   "fr": "Le bureau et le profil shader à chaud ne valident pas les pièces suivantes.",
+   "es": "El escritorio y perfil shader caliente no validan avanzar entre salas."
+  },
+  "names": {
+   "zh": "蓝色王子"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA25009. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA25009；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA25009. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA25009. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA25009. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA25009. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA25009. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "castlevania-dominus-collection": {
+  "genre": "action",
+  "overview": {
+   "en": "The collection launcher and DS name entry do not certify the included games.",
+   "zh": "合集启动器与DS命名界面不能认证其中各作可玩。",
+   "ar": "مشغل المجموعة واسم DS لا يثبتان لعب المكونات.",
+   "pt": "O launcher e o nome DS não certificam os jogos incluídos.",
+   "de": "Sammlungslauncher und DS-Namen bestätigen keine enthaltenen Spiele.",
+   "fr": "Le lanceur et le nom DS ne valident pas les jeux inclus.",
+   "es": "El lanzador y nombre DS no validan los juegos incluidos."
+  },
+  "names": {
+   "zh": "恶魔城：多米纳斯合集"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA15645. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA15645；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA15645. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA15645. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA15645. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA15645. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA15645. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "daxter": {
+  "genre": "platform",
+  "overview": {
+   "en": "This is the PS5 PSP-emulator package; fresh-save crashes matter separately from first-area rendering.",
+   "zh": "对象为PS5的PSP模拟封装；新存档崩溃与首区域呈现分别记录。",
+   "ar": "هذه حزمة PSP على PS5؛ انهيار الحفظ الجديد منفصل عن عرض البداية.",
+   "pt": "Pacote PSP na PS5; falhas de save novo são distintas da primeira área.",
+   "de": "PS5-PSP-Paket: neue Save-Abstürze getrennt vom ersten Gebiet.",
+   "fr": "Paquet PSP sur PS5 : plantages du nouveau save distincts de la première zone.",
+   "es": "Paquete PSP en PS5: fallos de guardado nuevo separados de la primera zona."
+  },
+  "names": {
+   "zh": "达斯特"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA09695. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA09695；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA09695. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA09695. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA09695. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA09695. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA09695. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "resident-evil-maiden": {
+  "genre": "adventure",
+  "overview": {
+   "en": "MAIDEN is the PS5 demo, not the retail Village campaign.",
+   "zh": "MAIDEN是PS5独立演示，不是Village商业版主线。",
+   "ar": "MAIDEN عرض PS5، لا حملة Village التجارية.",
+   "pt": "MAIDEN é a demo PS5, não a campanha comercial Village.",
+   "de": "MAIDEN ist die PS5-Demo, nicht die Village-Kampagne.",
+   "fr": "MAIDEN est la démo PS5, pas la campagne commerciale Village.",
+   "es": "MAIDEN es la demo PS5, no la campaña comercial Village."
+  },
+  "names": {
+   "zh": "生化危机：少女"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA01859. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA01859；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA01859. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA01859. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA01859. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA01859. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA01859. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "ball-x-pit": {
+  "genre": "roguelike",
+  "overview": {
+   "en": "Short gameplay, audio and Continue checks coexist with an intermittent freeze.",
+   "zh": "短时游玩、声音及Continue验证，与间歇卡死同时保留。",
+   "ar": "اللعب القصير والصوت وContinue لا يلغي التجمد المتقطع.",
+   "pt": "Jogo curto, som e Continue coexistem com bloqueio intermitente.",
+   "de": "Kurzes Gameplay, Ton und Continue schließen sporadisches Einfrieren nicht aus.",
+   "fr": "Jeu court, son et Continue coexistent avec un gel intermittent.",
+   "es": "Juego corto, audio y Continue coexisten con congelación intermitente."
+  },
+  "names": {
+   "zh": "弹珠地狱"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA31872. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution. Current art advertises The Naturalist Update; it does not identify the content tested in version 01.301.000.",
+   "zh": "报告PS5包PPSA31872；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。 当前封面带The Naturalist Update标识，不能据此认定01.301.000测试涵盖该更新。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA31872. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5. الصورة تروج The Naturalist Update ولا تثبت محتوى اختبار 01.301.000.",
+   "pt": "Pacote PS5 referido PPSA31872. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5. A arte anuncia The Naturalist Update, sem provar o conteúdo testado em 01.301.000.",
+   "de": "Gemeldetes PS5-Paket PPSA31872. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf. Das Bild bewirbt The Naturalist Update und belegt nicht den Testinhalt von 01.301.000.",
+   "fr": "Paquet PS5 rapporté PPSA31872. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5. L’image promeut The Naturalist Update sans identifier le contenu testé en 01.301.000.",
+   "es": "Paquete PS5 reportado PPSA31872. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5. La imagen anuncia The Naturalist Update sin identificar el contenido probado en 01.301.000."
+  }
+ },
+ "dredge": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Water scenes and menus have different speeds; a short successful session is not a stability guarantee.",
+   "zh": "水面与菜单速度不同，短时成功运行不保证长期稳定。",
+   "ar": "الماء والقوائم بسرعتين مختلفتين؛ الجلسة القصيرة ليست ضمان استقرار.",
+   "pt": "Água e menus têm velocidades diferentes; sessão curta não garante estabilidade.",
+   "de": "Wasser und Menüs laufen unterschiedlich; kurze Sitzung garantiert keine Stabilität.",
+   "fr": "Eau et menus ont des vitesses distinctes ; une courte session ne garantit pas la stabilité.",
+   "es": "Agua y menús tienen velocidades distintas; una sesión corta no garantiza estabilidad."
+  },
+  "names": {
+   "zh": "渔帆暗涌"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA09076. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA09076；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA09076. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA09076. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA09076. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA09076. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA09076. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "heavenly-bodies": {
+  "genre": "puzzle",
+  "overview": {
+   "en": "Mission-load crashes limit the value of a responsive in-game sample.",
+   "zh": "任务加载崩溃限制了进入游戏样本的代表性。",
+   "ar": "انهيار تحميل المهمة يحد من دلالة عينة اللعب.",
+   "pt": "Falhas ao carregar a missão limitam o alcance do teste.",
+   "de": "Missionslade-Abstürze begrenzen die Aussage der Spielprobe.",
+   "fr": "Les plantages de mission limitent la portée de l’essai.",
+   "es": "Los fallos al cargar misión limitan el alcance de la prueba."
+  },
+  "names": {
+   "zh": "天体"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA04246. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA04246；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA04246. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA04246. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA04246. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA04246. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA04246. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "crash-bandicoot-4": {
+  "genre": "platform",
+  "overview": {
+   "en": "AMD beach gameplay and NVIDIA black geometry are different GPU results on a local patch stack.",
+   "zh": "本地补丁栈上，AMD海滩游玩与NVIDIA黑色几何为不同GPU结果。",
+   "ar": "شاطئ AMD وهندسة NVIDIA السوداء نتيجتان مختلفتان على patches محلية.",
+   "pt": "Praia AMD e geometria preta NVIDIA são resultados distintos no stack local.",
+   "de": "AMD-Strand und schwarze NVIDIA-Geometrie sind getrennte GPU-Ergebnisse auf lokalem Patchstack.",
+   "fr": "Plage AMD et géométrie noire NVIDIA sont des résultats GPU distincts sur stack local.",
+   "es": "Playa AMD y geometría negra NVIDIA son resultados GPU distintos con patches locales."
+  },
+  "names": {
+   "zh": "古惑狼4：时机已到"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA02433. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA02433；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA02433. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA02433. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA02433. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA02433. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA02433. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "slave-zero-x": {
+  "genre": "action",
+  "overview": {
+   "en": "A live presentation counter over black output does not establish gameplay.",
+   "zh": "黑屏上的活动呈现计数不能证明已进入游玩。",
+   "ar": "عداد عرض نشط فوق شاشة سوداء لا يثبت اللعب.",
+   "pt": "Contador ativo sobre imagem preta não prova jogo.",
+   "de": "Aktiver Present-Zähler über Schwarz belegt kein Gameplay.",
+   "fr": "Un compteur actif sur fond noir ne prouve pas le jeu.",
+   "es": "Un contador activo sobre negro no prueba juego."
+  },
+  "names": {
+   "zh": "奴隶零X"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA13899. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA13899；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA13899. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA13899. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA13899. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA13899. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA13899. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "bloodrayne-revamped": {
+  "genre": "action",
+  "overview": {
+   "en": "Black startup and a user-registration diagnostic leave a production fix unproven.",
+   "zh": "黑屏启动与用户注册诊断，尚未建立正式修复。",
+   "ar": "بدء أسود وتشخيص تسجيل المستخدم بلا إصلاح إنتاجي مثبت.",
+   "pt": "Arranque preto e diagnóstico do registo não provam correção publicada.",
+   "de": "Schwarzer Start und Registrierungsdiagnose belegen keinen produktiven Fix.",
+   "fr": "Démarrage noir et diagnostic d’inscription ne prouvent pas de correction publiée.",
+   "es": "Arranque negro y diagnóstico de registro no prueban arreglo publicado."
+  },
+  "names": {
+   "zh": "吸血莱恩：重制版"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA05916. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA05916；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA05916. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA05916. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA05916. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA05916. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA05916. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "bloodrayne-2-revamped": {
+  "genre": "action",
+  "overview": {
+   "en": "The sequel’s black output is recorded separately from the first game’s diagnostic explanation.",
+   "zh": "续作黑屏单独记录，不能直接套用前作的诊断原因。",
+   "ar": "سواد الجزء الثاني منفصل عن تشخيص اللعبة الأولى.",
+   "pt": "O ecrã preto da sequela não herda a causa diagnosticada no primeiro jogo.",
+   "de": "Schwarzes Bild der Fortsetzung getrennt von der Diagnose des ersten Spiels.",
+   "fr": "Le noir de la suite reste distinct du diagnostic du premier jeu.",
+   "es": "El negro de la secuela se separa del diagnóstico del primer juego."
+  },
+  "names": {
+   "zh": "吸血莱恩2：重制版"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA05975. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA05975；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA05975. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA05975. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA05975. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA05975. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA05975. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "cant-drive-this": {
+  "genre": "racing",
+  "overview": {
+   "en": "A loading bar and valid bundles do not establish driving or identify the stalled async operation.",
+   "zh": "加载条与有效bundle不能证明驾驶可用，也未锁定异步停滞原因。",
+   "ar": "شريط التحميل وbundles صالحة لا يثبتان القيادة أو سبب التعطل.",
+   "pt": "Barra e bundles válidos não provam condução nem a causa do bloqueio.",
+   "de": "Ladebalken und gültige Bundles belegen weder Fahren noch Hängeursache.",
+   "fr": "Barre et bundles valides ne prouvent ni conduite ni cause du blocage.",
+   "es": "Barra y bundles válidos no prueban conducción ni causa del bloqueo."
+  },
+  "names": {
+   "zh": "这车没法开"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA02743. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA02743；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA02743. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA02743. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA02743. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA02743. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA02743. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "astroneer": {
+  "genre": "sandbox",
+  "overview": {
+   "en": "Intro descent and landing remain distinct from player-controlled exploration.",
+   "zh": "片头下降、着陆与玩家可操作探索需分开。",
+   "ar": "الهبوط بالمقدمة منفصل عن استكشاف يتحكم به اللاعب.",
+   "pt": "Descida e aterragem da intro são distintas da exploração controlada.",
+   "de": "Introabstieg und Landung getrennt von steuerbarer Erkundung.",
+   "fr": "Descente et atterrissage d’intro distincts de l’exploration contrôlée.",
+   "es": "Descenso y aterrizaje de intro separados de exploración controlable."
+  },
+  "names": {
+   "zh": "异星探险家"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA27623. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA27623；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA27623. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA27623. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA27623. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA27623. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA27623. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "metal-gear-metal-gear-2": {
+  "genre": "action",
+  "overview": {
+   "en": "The MSX collection launcher is separate from either game’s first rendered frame.",
+   "zh": "MSX合集启动器与两作实际首游戏帧分开记录。",
+   "ar": "مشغل مجموعة MSX منفصل عن أول إطار لكل لعبة.",
+   "pt": "O launcher MSX é distinto do primeiro frame de cada jogo.",
+   "de": "MSX-Sammlungslauncher getrennt vom ersten Spielframe beider Titel.",
+   "fr": "Lanceur MSX distinct de la première image de chacun des jeux.",
+   "es": "Lanzador MSX separado del primer frame de cada juego."
+  },
+  "names": {
+   "zh": "合金装备与合金装备2"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA14408. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA14408；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA14408. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA14408. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA14408. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA14408. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA14408. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "mortal-shell-ii": {
+  "genre": "action",
+  "overview": {
+   "en": "Linux menu progress and Windows driver resets are different host outcomes.",
+   "zh": "Linux菜单推进与Windows驱动重置为不同主机结果。",
+   "ar": "قائمة Linux وإعادة ضبط Windows نتيجتان لمضيفين مختلفين.",
+   "pt": "Menu Linux e resets Windows são resultados de hosts distintos.",
+   "de": "Linux-Menü und Windows-Treiberreset sind getrennte Hostergebnisse.",
+   "fr": "Menu Linux et resets Windows sont des résultats hôtes distincts.",
+   "es": "Menú Linux y resets Windows son resultados de hosts distintos."
+  },
+  "names": {
+   "zh": "致命躯壳2"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA34008. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution. Current Rotten Autumn artwork does not identify the report’s unknown content version or prove expansion testing.",
+   "zh": "报告PS5包PPSA34008；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。 当前Rotten Autumn封面不能确定报告未提供的内容版本，也不证明扩展内容已测试。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA34008. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5. صورة Rotten Autumn لا تحدد نسخة المحتوى المجهولة أو تثبت اختبار الإضافة.",
+   "pt": "Pacote PS5 referido PPSA34008. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5. A arte Rotten Autumn não identifica a versão desconhecida nem prova teste da expansão.",
+   "de": "Gemeldetes PS5-Paket PPSA34008. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf. Rotten-Autumn-Werbung bestimmt weder unbekannte Inhaltsversion noch getestete Erweiterung.",
+   "fr": "Paquet PS5 rapporté PPSA34008. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5. L’image Rotten Autumn ne fixe pas la version inconnue et ne prouve pas le test de l’extension.",
+   "es": "Paquete PS5 reportado PPSA34008. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5. La imagen Rotten Autumn no identifica la versión desconocida ni prueba la expansión."
+  }
+ },
+ "earthion": {
+  "genre": "shooter",
+  "overview": {
+   "en": "Stage-one rendering and startup semaphore stability need separate evidence.",
+   "zh": "首关呈现与启动信号量稳定性需分别举证。",
+   "ar": "عرض المرحلة الأولى واستقرار semaphore البدء يحتاجان دليلين.",
+   "pt": "Primeiro nível e estabilidade do semáforo inicial exigem provas distintas.",
+   "de": "Erste Stufe und Startsemaphor-Stabilität brauchen eigene Belege.",
+   "fr": "Premier niveau et stabilité du sémaphore initial demandent deux preuves.",
+   "es": "Primer nivel y estabilidad del semáforo inicial requieren pruebas distintas."
+  },
+  "names": {
+   "zh": "地球解放军"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA28061. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA28061；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA28061. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA28061. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA28061. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA28061. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA28061. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "minecraft-dungeons-ii": {
+  "genre": "action",
+  "overview": {
+   "en": "An accessibility menu is a limited milestone before any dungeon gameplay.",
+   "zh": "辅助功能菜单是地牢游玩之前的有限进度。",
+   "ar": "قائمة إمكانية الوصول خطوة محدودة قبل لعب الزنازين.",
+   "pt": "O menu de acessibilidade é etapa limitada antes das masmorras.",
+   "de": "Barrierefreiheitsmenü ist begrenzter Fortschritt vor Dungeon-Gameplay.",
+   "fr": "Menu d’accessibilité : étape limitée avant le jeu en donjon.",
+   "es": "Menú de accesibilidad: hito limitado antes de jugar mazmorras."
+  },
+  "names": {
+   "zh": "我的世界：地下城2"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA16064. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA16064；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA16064. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA16064. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA16064. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA16064. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA16064. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "trails-sky-1st-chapter": {
+  "genre": "turnBasedRpg",
+  "overview": {
+   "en": "An unsupported audio effect stops startup before a playable scene.",
+   "zh": "未实现的音效使启动停止，尚无可玩场景。",
+   "ar": "مؤثر صوتي غير منفذ يوقف البدء قبل مشهد لعب.",
+   "pt": "Efeito de áudio ausente para o arranque antes de jogar.",
+   "de": "Fehlender Audioeffekt stoppt vor einer Spielszene.",
+   "fr": "Un effet audio absent bloque avant une scène jouable.",
+   "es": "Un efecto de audio ausente detiene antes de escena jugable."
+  },
+  "names": {
+   "zh": "空之轨迹 the 1st"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA28465. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA28465；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA28465. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA28465. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA28465. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA28465. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA28465. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "curved-space": {
+  "genre": "shooter",
+  "overview": {
+   "en": "A visible HUD over an entirely black world is not usable gameplay rendering.",
+   "zh": "HUD可见但世界全黑，不代表可用的游戏画面。",
+   "ar": "HUD ظاهر والعالم أسود بالكامل ليس عرض لعب صالحاً.",
+   "pt": "HUD visível com mundo preto não é imagem de jogo utilizável.",
+   "de": "Sichtbares HUD vor schwarzer Welt ist keine nutzbare Spieldarstellung.",
+   "fr": "HUD visible sur monde noir ne signifie pas rendu de jeu utilisable.",
+   "es": "HUD visible sobre mundo negro no es imagen de juego utilizable."
+  },
+  "names": {
+   "zh": "曲面空间"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA02817. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA02817；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA02817. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA02817. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA02817. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA02817. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA02817. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "hi-fi-rush": {
+  "genre": "action",
+  "overview": {
+   "en": "A title-screen queue trace does not measure the whole rhythm-action game.",
+   "zh": "标题画面队列trace不能代表整部节奏动作游戏。",
+   "ar": "trace قائمة العنوان لا يقيس لعبة الإيقاع كاملة.",
+   "pt": "O trace do título não mede o jogo de ritmo completo.",
+   "de": "Titel-Trace misst nicht das gesamte Rhythmusspiel.",
+   "fr": "La trace du titre ne mesure pas tout le jeu de rythme.",
+   "es": "El trace del título no mide todo el juego rítmico."
+  },
+  "names": {
+   "zh": "完美音浪"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA17191. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA17191；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA17191. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA17191. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA17191. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA17191. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA17191. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "lego-voyagers": {
+  "genre": "puzzle",
+  "overview": {
+   "en": "A loader ABI fixture is diagnostic evidence, not a successful cooperative game test.",
+   "zh": "加载器ABI fixture属于诊断证据，不是合作游戏测试成功。",
+   "ar": "fixture محمل ABI دليل تشخيصي، لا اختبار تعاون ناجح.",
+   "pt": "Fixture de ABI é diagnóstico, não teste cooperativo bem sucedido.",
+   "de": "Loader-ABI-Fixture ist Diagnose, kein erfolgreicher Koop-Test.",
+   "fr": "Le fixture ABI est diagnostique, pas un essai coop réussi.",
+   "es": "Fixture ABI es diagnóstico, no prueba coop exitosa."
+  },
+  "names": {
+   "zh": "乐高旅途"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA23732. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA23732；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA23732. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA23732. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA23732. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA23732. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA23732. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "cult-of-the-lamb": {
+  "genre": "roguelike",
+  "overview": {
+   "en": "Passing locally patched initialization still leaves almost every run stuck loading.",
+   "zh": "本地修改后越过初始化，几乎全部运行仍卡在加载。",
+   "ar": "تجاوز التهيئة المعدلة يبقي معظم التجارب عالقة بالتحميل.",
+   "pt": "Passar a inicialização modificada deixa quase todos os ensaios a carregar.",
+   "de": "Lokal gepatchte Initialisierung lässt fast alle Läufe beim Laden hängen.",
+   "fr": "L’initialisation modifiée laisse presque tous les essais bloqués au chargement.",
+   "es": "Inicialización modificada deja casi todas las pruebas cargando."
+  },
+  "names": {
+   "zh": "咩咩启示录"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA06464. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA06464；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA06464. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA06464. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA06464. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA06464. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA06464. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ },
+ "doom-3-bfg-homebrew": {
+  "genre": "shooter",
+  "overview": {
+   "en": "This PS5 homebrew port has its own memory-lifetime problem; it is not a retail PS5 release.",
+   "zh": "此PS5自制移植有独立的内存生命周期问题，不是商业PS5发行版。",
+   "ar": "منفذ PS5 homebrew له مشكلة عمر ذاكرة، وليس إصدار PS5 تجارياً.",
+   "pt": "Port homebrew PS5 com problema de memória próprio, não edição comercial PS5.",
+   "de": "PS5-Homebrewport mit eigenem Speicherlebensproblem, keine kommerzielle PS5-Fassung.",
+   "fr": "Port homebrew PS5 avec problème de durée de vie mémoire, pas une édition PS5 commerciale.",
+   "es": "Port homebrew PS5 con problema propio de vida de memoria, no edición comercial PS5."
+  },
+  "names": {
+   "zh": "毁灭战士3 BFG自制移植"
+  },
+  "related": [
+   "astro-bot",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA99313. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA99313；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA99313. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA99313. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA99313. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA99313. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA99313. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  }
+ }
+});
 export const media=sources as Record<string,{source:string;provider:string;cover:string|null;screenshots:string[];checked:string}>;
 export const genreLabel=(slug:string,locale:keyof Text)=>genres[editorial[slug].genre][locale];
 export const gameName=(game:{slug:string;name:string},locale:keyof Text)=>editorial[game.slug]?.names[locale]||game.name;
@@ -2915,3 +3841,5 @@ const nameAliases:Record<string,string[]>={
  'hello-kitty-island-adventure':['Hello Kitty 岛屿冒险','凯蒂猫岛屿冒险'],
 };
 export const gameSearchText=(game:{slug:string;name:string;titleId:string|null})=>[game.name,game.titleId,...Object.values(editorial[game.slug]?.names||{}),...(nameAliases[game.slug]||[])].filter(Boolean).join(' ');
+
+editorial["hi-fi-rush"].editionNote=L("The report is PPSA17191; US PlayStation artwork identifies PPSA17168. Shared promotional art does not establish the tested region or Deluxe content.","报告为PPSA17191，美国PlayStation图片对应PPSA17168；共用宣传图不证明测试地区或Deluxe内容。","التقرير PPSA17191 وصورة المتجر الأمريكي PPSA17168؛ الصورة المشتركة لا تثبت المنطقة أو محتوى Deluxe المختبر.","Relatório PPSA17191, arte americana PPSA17168; imagem partilhada não prova região ou conteúdo Deluxe testado.","Bericht PPSA17191, US-Werbung PPSA17168; gemeinsames Bild belegt weder Testregion noch Deluxe-Inhalt.","Rapport PPSA17191, image américaine PPSA17168 ; l’art partagé ne prouve ni région ni contenu Deluxe testé.","Informe PPSA17191, imagen estadounidense PPSA17168; arte compartido no prueba región ni contenido Deluxe probado.");

@@ -7,31 +7,93 @@ export const extraArticles:Article[]=[
  S('input',L('Before the window opens','窗口出现之前','قبل ظهور النافذة','Antes de aparecer a janela','Vor dem ersten Fenster','Avant l’ouverture de la fenêtre','Antes de abrirse la ventana'),L('Confirm the input is clean ELF, the relinker targets the right operating system, and libs/ contains matching host-native libraries. Windows error 193 suggests a format mismatch; 126 can indicate a missing dependent DLL. On Linux, an undefined symbol points to a missing export or mismatched library. Rebuild the explicit libs target after changing source.','确认输入是干净 ELF，转换目标与系统一致，libs/ 中是配套主机原生库。Windows 错误 193 提示格式错配，126 可能缺少依赖 DLL；Linux 的 undefined symbol 指向缺失导出或库版本错配。修改源码后记得显式重建 libs。','تأكد أن الإدخال ELF نظيف وأن النظام الهدف صحيح وأن libs/ تضم المكتبات المتوافقة. يشير 193 في Windows إلى صيغة خاطئة، و126 إلى DLL تابعة محتملة. في Linux يدل undefined symbol على تصدير مفقود أو مكتبة غير متوافقة. أعد بناء libs بعد تغيير المصدر.','Confirme que a entrada é ELF limpo, o destino é o sistema correto e libs/ contém bibliotecas correspondentes. No Windows, 193 sugere formato errado e 126 uma possível DLL dependente em falta. No Linux, undefined symbol indica exportação ausente ou biblioteca incompatível. Reconstrua libs depois de alterar o código.','Prüfe unverpacktes ELF, das richtige Zielsystem und passende Hostbibliotheken in libs/. Unter Windows deutet 193 auf das Format, 126 eventuell auf eine abhängige DLL. Unter Linux steht undefined symbol für einen fehlenden Export oder unpassende Bibliotheken. Baue nach Quelländerungen das libs-Ziel neu.','Vérifiez l’ELF non encapsulé, le bon système cible et les bibliothèques adaptées dans libs/. Sous Windows, 193 suggère un mauvais format et 126 une DLL dépendante absente. Sous Linux, undefined symbol indique un export manquant ou une bibliothèque incompatible. Recompilez libs après modification du code.','Comprueba el ELF limpio, el sistema de destino y las bibliotecas adecuadas en libs/. En Windows, 193 sugiere formato incorrecto y 126 una posible DLL dependiente ausente. En Linux, undefined symbol apunta a una exportación ausente o biblioteca incompatible. Reconstruye libs tras cambiar el código.')),
  S('graphics',L('After the window opens','窗口出现之后','بعد ظهور النافذة','Depois de aparecer a janela','Nach dem ersten Fenster','Après l’ouverture de la fenêtre','Después de abrirse la ventana'),L('Check the selected Vulkan device in the log. An allocation error, unsupported shader operation, mixed DCC keys and a missing resource file are different failures. Keep the exact message, build hash, patches and scene. Read reports for your platform and GPU; do not apply a workaround from an unrelated game without understanding what it disables.','从日志确认 Vulkan 设备。内存分配错误、不支持的着色器操作、mixed DCC keys 与缺失资源文件是不同问题。保留原始消息、构建哈希、补丁和场景，参考对应平台与显卡的报告；使用其他游戏的绕过参数前，先理解它关闭了什么检查。','تحقق من جهاز Vulkan في السجل. أخطاء التخصيص وعمليات المظللات غير المدعومة وmixed DCC keys والملفات المفقودة مشكلات مختلفة. احفظ النص الدقيق والبناء والتعديلات والمشهد. راجع تقارير نظامك وبطاقتك، وافهم ما يعطله أي حل من لعبة أخرى.','Confirme o dispositivo Vulkan no registo. Falhas de alocação, operações de shaders não suportadas, mixed DCC keys e recursos em falta são problemas distintos. Guarde a mensagem, o commit, os patches e a cena. Consulte relatórios do seu sistema e GPU e compreenda o que um contorno de outro jogo desativa.','Prüfe das ausgewählte Vulkan-Gerät im Log. Speicherfehler, nicht unterstützte Shaderoperationen, mixed DCC keys und fehlende Ressourcen sind verschiedene Probleme. Notiere Meldung, Commit, Patches und Szene. Nutze Berichte deiner Plattform und GPU und verstehe vor fremden Workarounds, welche Prüfung sie abschalten.','Vérifiez le périphérique Vulkan dans le journal. Échec d’allocation, shader non pris en charge, mixed DCC keys et ressource absente sont des problèmes distincts. Gardez le message exact, le commit, les correctifs et la scène. Consultez les rapports de votre plateforme et GPU et comprenez ce que désactive un contournement provenant d’un autre jeu.','Comprueba el dispositivo Vulkan en el registro. Los fallos de asignación, operaciones de shader no admitidas, mixed DCC keys y recursos ausentes son problemas distintos. Guarda el mensaje exacto, commit, parches y escena. Consulta informes de tu sistema y GPU y entiende qué desactiva un apaño de otro juego.')),
  S('report',L('Make a reproducible report','提交可复现的报告','اكتب تقريراً قابلاً للتكرار','Escreva um relatório reproduzível','Schreibe einen reproduzierbaren Bericht','Rédigez un rapport reproductible','Redacta un informe reproducible'),L("Compare one change at a time. Separate a clean baseline from a patched run and keep logs for both. Include steps, expected behavior, actual stop, test duration and any screenshots or video. Remove personal paths and unrelated sensitive information before sharing. Submit game tests to the matching upstream discussion; email catalog corrections to " + contactEmail + ".","每次只比较一项改动，将干净基线与补丁结果分开，并保留两份日志。附上步骤、预期行为、实际停止位置、时长与截图或视频，分享前移除个人路径和无关敏感信息。游戏测试请提交到上游对应讨论；目录更正请邮件联系 " + contactEmail + "。","قارن تغييراً واحداً كل مرة وافصل الأساس النظيف عن التشغيل المعدّل مع سجليهما. أضف الخطوات والمتوقع ونقطة التوقف والمدة وصوراً أو فيديو. احذف المسارات الشخصية والمعلومات الحساسة غير اللازمة. انشر اختبارات الألعاب في النقاش الأصلي المناسب؛ وأرسل تصحيحات الفهرس إلى " + contactEmail + ".","Compare uma alteração de cada vez. Separe a base limpa do teste modificado e guarde os dois registos. Inclua passos, comportamento esperado, paragem, duração e imagens ou vídeo. Remova caminhos pessoais e dados sensíveis irrelevantes. Publique os testes na discussão original adequada; envie correções do catálogo para " + contactEmail + ".","Vergleiche immer nur eine Änderung. Trenne saubere Basis und gepatchten Lauf und behalte beide Logs. Beschreibe Schritte, erwartetes Verhalten, Abbruchstelle, Dauer und Bilder oder Video. Entferne persönliche Pfade und unnötige vertrauliche Angaben. Veröffentliche Spieltests in der passenden Diskussion des Originalprojekts; sende Katalogkorrekturen an " + contactEmail + ".","Comparez un changement à la fois. Séparez la base propre de l’essai modifié et conservez les deux journaux. Indiquez étapes, comportement attendu, arrêt, durée et images ou vidéo. Retirez les chemins personnels et informations sensibles inutiles. Publiez les tests dans la discussion originale correspondante ; envoyez les corrections du catalogue à " + contactEmail + ".","Compara un cambio cada vez. Separa la base limpia de la prueba modificada y conserva ambos registros. Incluye pasos, resultado esperado, parada, duración e imágenes o vídeo. Elimina rutas personales y datos sensibles innecesarios. Publica las pruebas en la discusión original correspondiente; envía las correcciones del catálogo a " + contactEmail + "."))]},
- {slug:'progress',reviewed:'2026-10-21',title:L("AnyPS5 development progress and coverage","AnyPS5 开发进度与实现范围","تقدم AnyPS5 ونطاق التنفيذ","Progresso e cobertura do AnyPS5","Entwicklungsstand und Umfang von AnyPS5","Avancement et couverture d’AnyPS5","Avances y cobertura de AnyPS5"),description:L("Understand AnyPS5 library and shader implementation counters. See what these dated figures measure and why they cannot establish how many PS5 games are playable.","了解 AnyPS5 系统库与着色器实现进度：这些统计衡量什么、复核于何时，以及为什么不能据此判断 PS5 游戏可玩率。","افهم أرقام تقدم تنفيذ مكتبات AnyPS5 ومظللاته، وما تقيسه هذه البيانات المؤرخة ولماذا لا تحدد نسبة ألعاب PS5 القابلة للعب.","Saiba o que medem os contadores de implementação de bibliotecas e shaders do AnyPS5 e por que motivo não representam a percentagem de jogos PS5 jogáveis.","Erfahre, was die Implementierungszahlen für AnyPS5-Bibliotheken und Shader messen und warum sie keinen Anteil spielbarer PS5-Titel belegen.","Comprenez les compteurs d’implémentation des bibliothèques et shaders d’AnyPS5 et pourquoi ils ne mesurent pas la proportion de jeux PS5 jouables.","Entiende qué miden los contadores de bibliotecas y shaders de AnyPS5 y por qué no representan el porcentaje de juegos de PS5 que se pueden jugar."),sources:['https://boykopovar.github.io/AnyPS5/progress.json',UPSTREAM+'/blob/main/docs/dev/PROGRESS.md',UPSTREAM+'/blob/main/docs/dev/TechnicalDebt.md',sourceDoc('COMPATIBILITY')],sections:[
  {
- "id": "counts",
+ "slug": "progress",
+ "reviewed": "2026-10-22",
  "title": {
-  "en": "A dated implementation snapshot",
-  "zh": "有日期的实现快照",
-  "ar": "لقطة مؤرخة للتنفيذ",
-  "pt": "Um retrato datado da implementação",
-  "de": "Ein datierter Implementierungsstand",
-  "fr": "Un état d’implémentation daté",
-  "es": "Una instantánea fechada"
+  "en": "AnyPS5 development progress and coverage",
+  "zh": "AnyPS5 开发进度与实现范围",
+  "ar": "تقدم AnyPS5 ونطاق التنفيذ",
+  "pt": "Progresso e cobertura do AnyPS5",
+  "de": "Entwicklungsstand und Umfang von AnyPS5",
+  "fr": "Avancement et couverture d’AnyPS5",
+  "es": "Avances y cobertura de AnyPS5"
  },
- "body": [
+ "description": {
+  "en": "Understand AnyPS5 library and shader implementation counters. See what these dated figures measure and why they cannot establish how many PS5 games are playable.",
+  "zh": "了解 AnyPS5 系统库与着色器实现进度：这些统计衡量什么、复核于何时，以及为什么不能据此判断 PS5 游戏可玩率。",
+  "ar": "افهم أرقام تقدم تنفيذ مكتبات AnyPS5 ومظللاته، وما تقيسه هذه البيانات المؤرخة ولماذا لا تحدد نسبة ألعاب PS5 القابلة للعب.",
+  "pt": "Saiba o que medem os contadores de implementação de bibliotecas e shaders do AnyPS5 e por que motivo não representam a percentagem de jogos PS5 jogáveis.",
+  "de": "Erfahre, was die Implementierungszahlen für AnyPS5-Bibliotheken und Shader messen und warum sie keinen Anteil spielbarer PS5-Titel belegen.",
+  "fr": "Comprenez les compteurs d’implémentation des bibliothèques et shaders d’AnyPS5 et pourquoi ils ne mesurent pas la proportion de jeux PS5 jouables.",
+  "es": "Entiende qué miden los contadores de bibliotecas y shaders de AnyPS5 y por qué no representan el porcentaje de juegos de PS5 que se pueden jugar."
+ },
+ "sources": [
+  "https://boykopovar.github.io/AnyPS5/progress.json",
+  "https://github.com/boykopovar/AnyPS5/blob/main/docs/dev/PROGRESS.md",
+  "https://github.com/boykopovar/AnyPS5/blob/main/docs/dev/TechnicalDebt.md",
+  "https://github.com/boykopovar/AnyPS5/blob/a60f52e3189003f049299206d2a6d99e55ee4260/docs/user/COMPATIBILITY.md",
+  "https://github.com/boykopovar/AnyPS5/pull/7907",
+  "https://github.com/boykopovar/AnyPS5/pull/8431"
+ ],
+ "sections": [
   {
-   "en": "The21 October snapshot counts4303/6675 declared library functions (64.46%) and1166/1166 recognized RDNA1/2 decoder instructions. Inert bodies can count: this is not full API behavior or a game compatibility rate. Main advances beyond v0.1.3; compare each actual tested build.",
-   "zh": "10月21日快照统计4303/6675个声明库函数（64.46%），RDNA1/2解码识别1166/1166。inert函数体也可计入，不代表完整API行为或游戏可玩率。main已超前于v0.1.3，需按各次实际构建比较。",
-   "ar": "لقطة21أكتوبر4303/6675 دوال64.46% و1166/1166 تعليمات. الأجسام inert قد تُحسب؛ ليست API كاملة أو نسبة ألعاب. main بعدv0.1.3؛ قارن البناء الفعلي.",
-   "pt": "Retrato21outubro4303/6675 funções64,46% e1166/1166 instruções. Corpos inert contam; não é API completa nem taxa de jogos. Main apósv0.1.3; compare build real.",
-   "de": "Stand21.Oktober4303/6675 Funktionen64,46% und1166/1166 Befehle. Inerte Rümpfe zählen; keine vollständige API/Spielquote. Main nachv0.1.3; getestete Builds vergleichen.",
-   "fr": "État21octobre4303/6675 fonctions64,46% et1166/1166 instructions. Corps inertes comptent ; ni API complète ni taux de jeux. Main aprèsv0.1.3 ; comparez builds testés.",
-   "es": "Estado21octubre4303/6675 funciones64,46% y1166/1166 instrucciones. Cuerpos inert cuentan; no API completa ni tasa de juegos. Main trasv0.1.3; compara builds reales."
+   "id": "counts",
+   "title": {
+    "en": "A dated implementation snapshot",
+    "zh": "有日期的实现快照",
+    "ar": "لقطة مؤرخة للتنفيذ",
+    "pt": "Um retrato datado da implementação",
+    "de": "Ein datierter Implementierungsstand",
+    "fr": "Un état d’implémentation daté",
+    "es": "Una instantánea fechada"
+   },
+   "body": [
+    {
+     "en": "The 22 October review counts 4609/10947 declared library functions (42.10%) and 1166/1166 recognized RDNA1/2 decoder instructions. Inert bodies may count; this measures neither complete API behavior nor game compatibility. Actual game tests retain their own builds.",
+     "zh": "10月22日复核为4609／10947个声明库函数（42.10%）及1166／1166个RDNA1/2解码识别指令；inert函数体也可计数，不代表完整API行为或游戏兼容率。游戏测试仍以各自实际构建为准。",
+     "ar": "مراجعة 22 أكتوبر: 4609/10947 دالة معلنة (42.10%) و1166/1166 تعليمة يتعرف عليها decoder. قد تُحسب أجسام inert؛ ليست API كاملة أو توافق ألعاب. احتفظ ببناء كل اختبار لعبة.",
+     "pt": "Revisão de 22 outubro: 4609/10947 funções declaradas (42,10%) e 1166/1166 instruções reconhecidas pelo decoder. Corpos inert podem contar; não mede API completa ou compatibilidade. Cada teste conserva o seu build.",
+     "de": "Prüfung 22. Oktober: 4609/10947 deklarierte Funktionen (42,10%) und 1166/1166 erkannte Decoderbefehle. Inerte Rümpfe können zählen; keine vollständige API oder Spielquote. Jeder Spieltest behält seinen Build.",
+     "fr": "Vérification du 22 octobre : 4609/10947 fonctions déclarées (42,10%) et 1166/1166 instructions reconnues. Des corps inert peuvent compter ; ni API complète ni compatibilité des jeux. Chaque essai conserve son build.",
+     "es": "Revisión del 22 de octubre: 4609/10947 funciones declaradas (42,10%) y 1166/1166 instrucciones reconocidas. Cuerpos inert pueden contar; no mide API completa ni compatibilidad. Cada prueba conserva su build."
+    },
+    {
+     "en": "The preceding snapshot was 4303/6675 (64.46%): implemented count rises by 306 while declarations rise by 4272. The denominator expansion explains the percentage decrease without establishing a game regression. Merged #7907 adds 1499 declarations; #8431 adds 139 more without increasing implemented functions. They explain part of the expansion, not its entire size.",
+     "zh": "前次4303／6675（64.46%）：实现数增加306，声明总数增加4272。分母扩大可使百分比下降，不能据此认定游戏回归。已合并#7907新增1499声明，#8431另增139且实现数未增；两者解释部分增量，不能冒充全部原因。",
+     "ar": "السابق 4303/6675 (64.46%): المنفذ +306 والمعلن +4272. زيادة المقام تخفض النسبة دون إثبات تراجع ألعاب. #7907 المدمج يضيف 1499 تصريحاً و#8431 يضيف 139 دون زيادة المنفذ؛ يفسران جزءاً لا كل الزيادة.",
+     "pt": "Anterior 4303/6675 (64,46%): implementadas +306 e declaradas +4272. A expansão do denominador reduz a percentagem sem provar regressão de jogos. #7907 integrado adiciona 1499 declarações; #8431 adiciona 139 sem novas implementações. Explicam parte, não toda a expansão.",
+     "de": "Zuvor 4303/6675 (64,46%): implementiert +306, deklariert +4272. Der größere Nenner senkt die Quote ohne belegte Spielregression. Gemergtes #7907 ergänzt 1499 Deklarationen, #8431 weitere 139 ohne mehr Implementierungen. Nur ein Teil der Erweiterung.",
+     "fr": "Avant 4303/6675 (64,46%) : implémentées +306, déclarées +4272. Le dénominateur élargi réduit le taux sans prouver une régression des jeux. #7907 intégré ajoute 1499 déclarations, #8431 encore 139 sans nouvelle implémentation. Une partie, pas toute l’expansion.",
+     "es": "Antes 4303/6675 (64,46%): implementadas +306 y declaradas +4272. El denominador mayor baja el porcentaje sin probar regresión de juegos. #7907 integrado añade 1499 declaraciones; #8431 otras 139 sin nuevas implementaciones. Explican parte, no toda la expansión."
+    }
+   ]
+  },
+  {
+   "id": "games",
+   "title": {
+    "en": "Use a game report for a game question",
+    "zh": "关于游戏，回到具体报告",
+    "ar": "لأسئلة الألعاب ارجع إلى تقاريرها",
+    "pt": "Para jogos, consulte os relatórios",
+    "de": "Für Spielfragen zählen Spielberichte",
+    "fr": "Pour un jeu, consultez son rapport",
+    "es": "Para un juego, consulta su informe"
+   },
+   "body": [
+    {
+     "en": "One missing API, shader or synchronization step can block a title despite high counters. Upstream has replaced its live compatibility table with a community blocker map and game discussions. Historical Sarah and DOOM records remain archived. New stock-main DOOM tests and patched GT7 menus must retain their own GPU, build and scene limits; an aggregate map or menu counter cannot prove full gameplay.",
+     "zh": "即使计数很高，一个缺失的 API、着色器或同步环节也能阻碍游戏。上游已用社区阻碍地图和游戏讨论替代实时兼容表，Sarah 与 DOOM 历史记录仍有归档。新 main DOOM 测试与补丁 GT7 菜单必须保留各自 GPU、构建和场景范围；汇总地图或菜单计数不能证明完整游戏过程。",
+     "ar": "قد توقف دالة أو مظلل أو مزامنة ناقصة لعبة رغم الأرقام. استبدل المشروع جدول التوافق بخريطة عوائق مجتمعية ونقاشات؛ Sarah وDOOM محفوظان بالأرشيف. اختبارات DOOM main وقوائم GT7 المعدلة تحتفظ بحدود GPU والبناء والمشهد؛ الخريطة أو عداد القائمة لا يثبت لعباً كاملاً.",
+     "pt": "Uma API, shader ou sincronização em falta pode bloquear jogos apesar dos números. O projeto substituiu a tabela por mapa comunitário e discussões; Sarah/DOOM históricos estão arquivados. Testes DOOM main e menus GT7 modificados preservam GPU, build e cena. Mapa agregado ou contador de menu não prova jogo completo.",
+     "de": "Trotz hoher Zähler können API, Shader oder Synchronisation fehlen. Das Projekt ersetzt die Tabelle durch Community-Blockerkarte und Diskussionen; alte Sarah-/DOOM-Belege sind archiviert. Neue main-DOOM-Tests und gepatchte GT7-Menüs behalten GPU-, Build- und Szenengrenzen. Karte oder Menüzähler belegen keinen vollständigen Spielverlauf.",
+     "fr": "Une API, un shader ou une synchronisation manquante peut bloquer malgré les compteurs. Le projet remplace la table par carte communautaire et discussions ; anciens Sarah/DOOM archivés. Les essais DOOM main et menus GT7 modifiés gardent leurs limites GPU, version et scène. Carte ou compteur de menu ne prouvent pas le jeu complet.",
+     "es": "Una API, shader o sincronización ausente puede bloquear pese a los números. El proyecto sustituye la tabla por mapa comunitario y debates; Sarah/DOOM históricos quedan archivados. Tests DOOM main y menús GT7 modificados conservan GPU, build y escena. Mapa o contador de menú no prueba juego completo."
+    }
+   ]
   }
  ]
 },
- S('games',L('Use a game report for a game question','关于游戏，回到具体报告','لأسئلة الألعاب ارجع إلى تقاريرها','Para jogos, consulte os relatórios','Für Spielfragen zählen Spielberichte','Pour un jeu, consultez son rapport','Para un juego, consulta su informe'),L("One missing API, shader or synchronization step can block a title despite high counters. Upstream has replaced its live compatibility table with a community blocker map and game discussions. Historical Sarah and DOOM records remain archived. New stock-main DOOM tests and patched GT7 menus must retain their own GPU, build and scene limits; an aggregate map or menu counter cannot prove full gameplay.","即使计数很高，一个缺失的 API、着色器或同步环节也能阻碍游戏。上游已用社区阻碍地图和游戏讨论替代实时兼容表，Sarah 与 DOOM 历史记录仍有归档。新 main DOOM 测试与补丁 GT7 菜单必须保留各自 GPU、构建和场景范围；汇总地图或菜单计数不能证明完整游戏过程。","قد توقف دالة أو مظلل أو مزامنة ناقصة لعبة رغم الأرقام. استبدل المشروع جدول التوافق بخريطة عوائق مجتمعية ونقاشات؛ Sarah وDOOM محفوظان بالأرشيف. اختبارات DOOM main وقوائم GT7 المعدلة تحتفظ بحدود GPU والبناء والمشهد؛ الخريطة أو عداد القائمة لا يثبت لعباً كاملاً.","Uma API, shader ou sincronização em falta pode bloquear jogos apesar dos números. O projeto substituiu a tabela por mapa comunitário e discussões; Sarah/DOOM históricos estão arquivados. Testes DOOM main e menus GT7 modificados preservam GPU, build e cena. Mapa agregado ou contador de menu não prova jogo completo.","Trotz hoher Zähler können API, Shader oder Synchronisation fehlen. Das Projekt ersetzt die Tabelle durch Community-Blockerkarte und Diskussionen; alte Sarah-/DOOM-Belege sind archiviert. Neue main-DOOM-Tests und gepatchte GT7-Menüs behalten GPU-, Build- und Szenengrenzen. Karte oder Menüzähler belegen keinen vollständigen Spielverlauf.","Une API, un shader ou une synchronisation manquante peut bloquer malgré les compteurs. Le projet remplace la table par carte communautaire et discussions ; anciens Sarah/DOOM archivés. Les essais DOOM main et menus GT7 modifiés gardent leurs limites GPU, version et scène. Carte ou compteur de menu ne prouvent pas le jeu complet.","Una API, shader o sincronización ausente puede bloquear pese a los números. El proyecto sustituye la tabla por mapa comunitario y debates; Sarah/DOOM históricos quedan archivados. Tests DOOM main y menús GT7 modificados conservan GPU, build y escena. Mapa o contador de menú no prueba juego completo."))]},
  {slug:'updates',reviewed:'2026-10-21',title:L("AnyPS5 releases and version history","AnyPS5 发行版与版本记录","إصدارات AnyPS5 وسجل النسخ","Versões e histórico do AnyPS5","AnyPS5-Releases und Versionsverlauf","Versions et historique d’AnyPS5","Versiones e historial de AnyPS5"),description:L("Read the reviewed AnyPS5 release history, access upstream downloads and see how current main and experimental changes differ from published releases.","查看已复核的 AnyPS5 发行记录与上游下载，了解当前 main、实验改动和已发布发行版的对应关系。","راجع سجل إصدارات AnyPS5 وروابط التنزيل الأصلية، وتعرّف إلى الفرق بين الإصدارات المنشورة وفرع main والتعديلات التجريبية.","Consulte o histórico de versões do AnyPS5 e as transferências oficiais. Saiba como o ramo main e as alterações experimentais diferem das versões publicadas.","Lies den geprüften AnyPS5-Versionsverlauf und finde die Originaldownloads. Vergleiche veröffentlichte Releases mit dem main-Branch und experimentellen Änderungen.","Consultez l’historique vérifié des versions d’AnyPS5 et les téléchargements d’origine. Comparez les versions publiées, la branche main et les changements expérimentaux.","Consulta el historial revisado de AnyPS5 y los archivos originales. Compara las versiones publicadas, la rama main y los cambios experimentales."),sources:[UPSTREAM+'/releases',UPSTREAM+'/commits/main'],sections:[
 {
  "id": "v013",

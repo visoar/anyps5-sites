@@ -64,3 +64,7 @@ const baseArticles:Article[]=[
 export const articles:Article[]=baseArticles.map(article=>({...article,...(article.slug==='downloads'?{title:downloadTitle,description:downloadDescription}:{}),...(['start','downloads','guides/windows','guides/linux','guides/build','guides/input','guides/language-fonts'].includes(article.slug)?{reviewed:'2026-10-20'}:article.slug==='requirements'?{reviewed:'2026-10-15'}:{}),sections:[...(article.slug==='start'?[quickStart]:[]),...article.sections,...(guideSupplements[article.slug]||[])]}));
 
 for(const article of articles){if(["start","downloads","guides/build","guides/input","guides/language-fonts"].includes(article.slug))article.reviewed="2026-10-21";}
+
+for(const article of articles){if(["guides/linux","guides/windows","guides/build"].includes(article.slug))article.reviewed="2026-10-22";}
+
+articles.find(article=>article.slug==="guides/language-fonts")!.reviewed="2026-10-22";

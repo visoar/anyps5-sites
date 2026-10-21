@@ -32,7 +32,7 @@ test('unreported popular games are unknown, searchable and excluded from measure
  const game=filterGames('艾尔登法环')[0];assert.equal(game.slug,'elden-ring');assert.equal(game.titleId,null);assert.equal(game.reports.length,0);assert.equal(bestStage(game),'notTested');assert.equal(stageNeedsPatches(game),false);
  assert.equal(filterGames('elden ring',{stage:'notTested'}).length,1);
  for(const filters of [{platform:'windows'},{platform:'linux'},{stage:'blocked'},{evidence:'official'},{evidence:'community'}])assert.equal(filterGames('elden ring',filters).length,0);
- assert.equal(filterGames('',{stage:'notTested'}).length,8);
+ assert.equal(filterGames('',{stage:'notTested'}).length,7);
 });
 
 test('a merged technical fix does not silently create a new game report',async()=>{
@@ -221,10 +221,11 @@ test('new edition follow-ups retain older observations without crossing PPSA or 
  assert.notEqual(filterGames('PPSA03042')[0].slug,filterGames('PPSA03061')[0].slug);
 });
 
-test('automatic demos and menu counters do not establish interactive gameplay',()=>{
+test('historical automatic demos and menu counters retain their observation boundaries',()=>{
  for(const ppsa of ['PPSA21444','PPSA26525','PPSA47402']){
   const game=filterGames(ppsa)[0];
-  assert.equal(filterGames(ppsa,{stage:'ingame'}).length,0);
+  if(ppsa!=='PPSA21444')assert.equal(filterGames(ppsa,{stage:'ingame'}).length,0);
+  assert.ok(game.reports.filter(r=>r.id.endsWith('20261015')).every(r=>r.stage!=='ingame'));
   assert.ok(game.reports.some(r=>r.stage==='menu'));
   assert.ok(game.reports.filter(r=>r.id.endsWith('20261015')).every(r=>r.testDate===null));
  }

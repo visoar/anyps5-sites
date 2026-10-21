@@ -60,3 +60,7 @@ The6-entry/46-observation update follows the existing normal main Git trigger. T
 ## Source maintenance — 2026-10-21
 
 The18-entry/40-observation/v0.1.3 update uses the existing normal main Git trigger. [Maintenance scope](maintenance/2026-10-21-nightly.md) and ignored daily release receipt record main SHA, both official RUNNING deployment IDs, CI and public acceptance. Cloudflare owns search notifications.
+
+## Source maintenance — 2026-10-22
+
+The33-entry/60-observation update uses the existing main Git trigger. [Maintenance scope](maintenance/2026-10-22-nightly.md) and ignored daily release receipt record exact main SHA, both RUNNING deployment IDs, CI and public acceptance. Cloudflare owns proactive search notifications.

@@ -3276,5 +3276,267 @@
   "supertuxkart": {
     "cover": null,
     "screenshots": []
+  },
+  "afterimage": {
+    "cover": null,
+    "screenshots": []
+  },
+  "super-meat-boy-3d": {
+    "cover": null,
+    "screenshots": []
+  },
+  "new-joe-mac-caveman-ninja": {
+    "cover": null,
+    "screenshots": []
+  },
+  "rollercoaster-tycoon-adventures-deluxe": {
+    "cover": null,
+    "screenshots": []
+  },
+  "the-messenger": {
+    "cover": null,
+    "screenshots": []
+  },
+  "final-vendetta": {
+    "cover": null,
+    "screenshots": []
+  },
+  "asterix-obelix-slap-them-all": {
+    "cover": null,
+    "screenshots": []
+  },
+  "road-of-death": {
+    "cover": null,
+    "screenshots": []
+  },
+  "crazy-chicken-shooter-bundle": {
+    "cover": null,
+    "screenshots": []
+  },
+  "ninja-gaiden-ragebound": {
+    "cover": {
+      "file": "ninja-gaiden-ragebound/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202504/1616/b1a631440844715c22c91b314777a0ecacfe24f2a5e1ade3.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202504/1616/b1a631440844715c22c91b314777a0ecacfe24f2a5e1ade3.png",
+      "sourceSha256": "0947812cde4b68b6f86a33a8c9f1bc89a5ffebbc0226be11dd7e467dc846b0fc",
+      "sourceBytes": 259213,
+      "sha256": "a94c095b73bff6ec52492bfa42bdabed131cd503eb595f8d13f95f732380690d",
+      "bytes": 163936,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "blue-prince": {
+    "cover": {
+      "file": "blue-prince/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1222/155cec2bad7676df9a1aa7e96cdd9f363e117c1650a43c34.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1222/155cec2bad7676df9a1aa7e96cdd9f363e117c1650a43c34.png",
+      "sourceSha256": "dfd25872b5c291b7deecb56d9f76b755ab06e42fbbeb9036dbc2fd92b223f94b",
+      "sourceBytes": 243591,
+      "sha256": "31c1c1b6029d2ec4b4a7d958ed1461ed06773493060c8c68e88121dd62fde9dc",
+      "bytes": 129094,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "castlevania-dominus-collection": {
+    "cover": null,
+    "screenshots": []
+  },
+  "daxter": {
+    "cover": null,
+    "screenshots": []
+  },
+  "resident-evil-maiden": {
+    "cover": null,
+    "screenshots": []
+  },
+  "ball-x-pit": {
+    "cover": {
+      "file": "ball-x-pit/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202608/0616/83415751927d95046612da39ab5f997a0416087b402220fc.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202608/0616/83415751927d95046612da39ab5f997a0416087b402220fc.png",
+      "sourceSha256": "9e957f578eebad9028ee52cff0f38e3246707032ba983e801f82aaa84b80199c",
+      "sourceBytes": 229420,
+      "sha256": "59d505013df51dae4158f569629f40d8f6214b27aee5adf34aa2571d1d37c4f4",
+      "bytes": 133506,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "dredge": {
+    "cover": {
+      "file": "dredge/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202301/1712/N67SrtQhAeoOQbSqku6vdpDM.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202301/1712/N67SrtQhAeoOQbSqku6vdpDM.png",
+      "sourceSha256": "ee5a8ff1b5328e0c2135bab96efa46855b19104c8c40ec496aedc1b8e99a1922",
+      "sourceBytes": 118936,
+      "sha256": "a08578622f5c06e5ae6c6362f465bac7e7e45fc803b2b28bd86e16187f287407",
+      "bytes": 56186,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "heavenly-bodies": {
+    "cover": {
+      "file": "heavenly-bodies/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202112/0209/eTNAclmYfZEjX0OGqdl0CL0k.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/img/rnd/202112/0209/eTNAclmYfZEjX0OGqdl0CL0k.png",
+      "sourceSha256": "78abdef3ab62369b4470460453cc0f5020471c2bd17f5759f29681419131af31",
+      "sourceBytes": 192761,
+      "sha256": "3159f53a5bdd45c2fff38be25e3ac7bc7258b5228c60600e2be01c15f7e9c466",
+      "bytes": 99946,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "crash-bandicoot-4": {
+    "cover": {
+      "file": "crash-bandicoot-4/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202111/1918/psoOkDbYuMdr1RsJo6TpU6bg.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/img/rnd/202111/1918/psoOkDbYuMdr1RsJo6TpU6bg.png",
+      "sourceSha256": "cd817068c7c04d07e6e4da21a8d2ae1c5c99d10f647e0d94d2c413880b82d5ee",
+      "sourceBytes": 283745,
+      "sha256": "ef8967c09133f365781e50c69618b27ea6b9ab321b64a1896fb859363ef82a50",
+      "bytes": 178136,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "slave-zero-x": {
+    "cover": null,
+    "screenshots": []
+  },
+  "bloodrayne-revamped": {
+    "cover": null,
+    "screenshots": []
+  },
+  "bloodrayne-2-revamped": {
+    "cover": null,
+    "screenshots": []
+  },
+  "cant-drive-this": {
+    "cover": {
+      "file": "cant-drive-this/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202101/1915/Cp9qA6sOuL4X4D8u7NcuGygh.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/img/rnd/202101/1915/Cp9qA6sOuL4X4D8u7NcuGygh.png",
+      "sourceSha256": "0b51edfd2c3fbf3aa08525d2128e7524fea9aadf174527fbf009660e5ad75ad6",
+      "sourceBytes": 200311,
+      "sha256": "e1abd09923f7e6bb40dfbf0e62a512fc045a360cde6ebe1d1e3b293e30b0fa23",
+      "bytes": 114404,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "astroneer": {
+    "cover": {
+      "file": "astroneer/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202306/2101/0367df8de23c764cf34cb0295eedf887da7e751f9ab5a2fd.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202306/2101/0367df8de23c764cf34cb0295eedf887da7e751f9ab5a2fd.png",
+      "sourceSha256": "36a3c41d7fbd5c30e13b062e026a87f21536187b2b2164369034363367380e05",
+      "sourceBytes": 186849,
+      "sha256": "b2eeb700b6ebadb75b301ff5cc9a81394949274edcf3bacc240aacfb51dabc23",
+      "bytes": 101104,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "metal-gear-metal-gear-2": {
+    "cover": null,
+    "screenshots": []
+  },
+  "mortal-shell-ii": {
+    "cover": {
+      "file": "mortal-shell-ii/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202610/1610/ed8305bb97b6c184d754e31663f470106d7d68c6b3bb55ef.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202610/1610/ed8305bb97b6c184d754e31663f470106d7d68c6b3bb55ef.png",
+      "sourceSha256": "d1583be0d96b964c51dfe13f905ec39f461fa37f2d28d36c2cee2e724897ab97",
+      "sourceBytes": 175119,
+      "sha256": "653284f76c768d14b7c9b520c6fa2a8107a98499784a43da244a52ddc65d135f",
+      "bytes": 103844,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "earthion": {
+    "cover": null,
+    "screenshots": []
+  },
+  "minecraft-dungeons-ii": {
+    "cover": null,
+    "screenshots": []
+  },
+  "trails-sky-1st-chapter": {
+    "cover": {
+      "file": "trails-sky-1st-chapter/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2002/3bad04769c5906e5ef98e0766ef5657ed486d52560fa285d.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2002/3bad04769c5906e5ef98e0766ef5657ed486d52560fa285d.png",
+      "sourceSha256": "8be32711b3067c36aa2a0c42727b8bc69f27aa3e3985bd89716687998dd44614",
+      "sourceBytes": 318356,
+      "sha256": "8215332540bb6f653484a6efd2b29008907fd8445d3d4d824d3f9fcc0713bdc9",
+      "bytes": 212024,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "curved-space": {
+    "cover": null,
+    "screenshots": []
+  },
+  "hi-fi-rush": {
+    "cover": {
+      "file": "hi-fi-rush/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202402/0615/6c0f8d23c70f7a4c925958886f53181ba43ca5145d471209.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202402/0615/6c0f8d23c70f7a4c925958886f53181ba43ca5145d471209.png",
+      "sourceSha256": "b0231209849d015fe8752887fd8d53d7519901662f876fd91e2e0d446246bdc9",
+      "sourceBytes": 371924,
+      "sha256": "54de13cd556d4b8e0a5e30b66b1b9b18621e63d6fc57900cb59155f07b9d9be1",
+      "bytes": 263672,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "lego-voyagers": {
+    "cover": {
+      "file": "lego-voyagers/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1417/2a38adc0513e60f244b8bc2662dea41328c5fa201c023634.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1417/2a38adc0513e60f244b8bc2662dea41328c5fa201c023634.png",
+      "sourceSha256": "72b59eb1a77ae902b2a7a3a37eaf4ddb43969016a9e727c43876ef2b2e7e4429",
+      "sourceBytes": 102639,
+      "sha256": "e1c076851b7ffb97828529186ef762b0910617a9d9fd3beb4e5b511801673201",
+      "bytes": 49130,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "cult-of-the-lamb": {
+    "cover": {
+      "file": "cult-of-the-lamb/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1518/ea3296f59652aea59db01dd6668c93f1dd23102f84d18807.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1518/ea3296f59652aea59db01dd6668c93f1dd23102f84d18807.png",
+      "sourceSha256": "6ee7a5deb028b40ace6902ed49b5e4ce41389f7ea39ce4fc6353ebe2793a4267",
+      "sourceBytes": 244179,
+      "sha256": "9b7fbb360efa094f7bb06a994eabb5128773f5004be02496e318383501c9cbd7",
+      "bytes": 147720,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "doom-3-bfg-homebrew": {
+    "cover": null,
+    "screenshots": []
   }
 }

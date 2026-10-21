@@ -1383,3 +1383,179 @@ guideSupplements["guides/build"].push({
   }
  ]
 });
+
+guideSupplements["guides/linux"].push({
+ "id": "main-linux-import-tracing",
+ "title": {
+  "en": "Later main: import tracing on Linux",
+  "zh": "后续main：Linux导入追踪",
+  "ar": "main اللاحق: تتبع Linux",
+  "pt": "Main posterior: trace de imports Linux",
+  "de": "Späteres Main: Linux-Importtrace",
+  "fr": "Main ultérieur : trace des imports Linux",
+  "es": "Main posterior: trace de imports Linux"
+ },
+ "body": [
+  {
+   "en": "Current main documents --trace-imports for Windows and Linux; it conflicts with --lazy-binding and records nothing without APS5_TRACE_CALLS. Linux prints the recent calls only on abort, not a Windows-style crash report. Output includes the global last 64 calls, the reporting thread’s last 32 from a 65536-call ring, and 32 top imports. These are diagnostic traces with overhead, not gameplay benchmarks; the v0.1.3 attached usage guide still limits this option to Windows.",
+   "zh": "当前main文档把--trace-imports扩展到Windows和Linux，与--lazy-binding冲突，未设APS5_TRACE_CALLS则不记录。Linux仅abort打印调用，不提供Windows式崩溃报告。输出全局末64次、65536调用环中报告线程末32次及高频32导入。追踪有开销，非游玩基准；v0.1.3附带指南仍将该选项限于Windows。",
+   "ar": "يوثق main تتبع --trace-imports لـWindows/Linux، يتعارض مع --lazy-binding ويحتاج APS5_TRACE_CALLS. Linux يطبع عند abort فقط، لا تقرير انهيار Windows. يعرض آخر 64 نداء عاماً وآخر 32 للخيط من حلقة 65536 وأعلى 32 import. تشخيص ذو كلفة لا benchmark؛ دليل v0.1.3 المرفق يقصره على Windows.",
+   "pt": "Main documenta --trace-imports em Windows/Linux; incompatível com --lazy-binding e exige APS5_TRACE_CALLS. Linux imprime só em abort, sem relatório Windows. Últimas 64 chamadas globais, 32 da thread num anel de 65536 e 32 imports principais. Diagnóstico com custo, não benchmark; guia anexo v0.1.3 ainda diz Windows.",
+   "de": "Main dokumentiert --trace-imports für Windows/Linux, unvereinbar mit --lazy-binding, ohne APS5_TRACE_CALLS keine Aufzeichnung. Linux druckt nur bei Abort, kein Windows-Crashbericht. Letzte 64 globale Aufrufe, 32 des Meldethreads aus 65536er Ring und 32 häufigste Imports. Diagnose mit Aufwand; v0.1.3-Handbuch nennt nur Windows.",
+   "fr": "Main documente --trace-imports sur Windows/Linux, incompatible avec --lazy-binding, sans enregistrement sans APS5_TRACE_CALLS. Linux imprime seulement sur abort, sans rapport Windows. Derniers 64 appels globaux, 32 du thread dans un anneau de 65536 et 32 imports principaux. Diagnostic coûteux, pas benchmark ; guide joint v0.1.3 limité à Windows.",
+   "es": "Main documenta --trace-imports en Windows/Linux, incompatible con --lazy-binding y sin registro sin APS5_TRACE_CALLS. Linux imprime solo en abort, sin reporte Windows. Últimas 64 llamadas globales, 32 del hilo desde anillo de 65536 y 32 imports principales. Diagnóstico con coste; guía adjunta v0.1.3 aún dice Windows."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/7202f120d5b641ce27fcc9bae6166202c52a621d/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "main-module-start-boundaries",
+ "title": {
+  "en": "Later main: module initialization boundaries",
+  "zh": "后续main：模块初始化边界",
+  "ar": "main اللاحق: حدود تهيئة الوحدات",
+  "pt": "Main posterior: limites de inicialização",
+  "de": "Späteres Main: Modulinitialisierung",
+  "fr": "Main ultérieur : initialisation des modules",
+  "es": "Main posterior: inicialización de módulos"
+ },
+ "body": [
+  {
+   "en": "With --module-dir, dependencies of another module initialize at startup; Linux/macOS also eagerly initialize executable dependencies. Other modules initialize when sceKernelLoadStartModule supplies their start arguments, including mono-ps4.sprx on Windows. Discovering every file does not prove correct title initialization: Cult of the Lamb and LEGO Voyagers retain separate startup failures. --module-dir conflicts with --skip-sce-module.",
+   "zh": "--module-dir下，被其他模块依赖的模块启动时初始化；Linux／macOS还提前初始化可执行文件依赖。其他模块待sceKernelLoadStartModule提供启动参数时初始化，包括Windows的mono-ps4.sprx。发现全部文件不证明游戏初始化正确：咩咩启示录与LEGO Voyagers仍有不同启动失败。此选项与--skip-sce-module冲突。",
+   "ar": "مع --module-dir تبدأ تبعيات الوحدات فوراً؛ Linux/macOS يبدآن أيضاً تبعيات الملف التنفيذي. الباقي مع معاملات sceKernelLoadStartModule، مثل mono-ps4.sprx في Windows. اكتشاف الملفات لا يثبت البدء الصحيح؛ Cult وLEGO يبقيان بفشل منفصل. يتعارض مع --skip-sce-module.",
+   "pt": "Com --module-dir, dependências de módulos iniciam no arranque; Linux/macOS também iniciam dependências do executável. Outras aguardam argumentos de sceKernelLoadStartModule, incluindo mono-ps4.sprx no Windows. Descobrir ficheiros não valida inicialização: Cult e LEGO têm falhas distintas. Incompatível com --skip-sce-module.",
+   "de": "Mit --module-dir starten Modulabhängigkeiten sofort; Linux/macOS auch Abhängigkeiten des Executables. Andere starten mit Argumenten von sceKernelLoadStartModule, etwa mono-ps4.sprx unter Windows. Dateifund beweist keine korrekte Initialisierung: Cult und LEGO scheitern getrennt. Konflikt mit --skip-sce-module.",
+   "fr": "Avec --module-dir, dépendances de modules initialisées au départ ; Linux/macOS aussi celles de l’exécutable. Les autres attendent les arguments de sceKernelLoadStartModule, dont mono-ps4.sprx sous Windows. Trouver les fichiers ne valide pas le démarrage : Cult et LEGO ont des échecs distincts. Conflit avec --skip-sce-module.",
+   "es": "Con --module-dir, dependencias de módulos inician al arrancar; Linux/macOS también las del ejecutable. Otras esperan argumentos de sceKernelLoadStartModule, incluido mono-ps4.sprx en Windows. Encontrar archivos no valida inicio: Cult y LEGO tienen fallos distintos. Conflicto con --skip-sce-module."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/7202f120d5b641ce27fcc9bae6166202c52a621d/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"].push({
+ "id": "main-module-start-boundaries",
+ "title": {
+  "en": "Later main: module initialization boundaries",
+  "zh": "后续main：模块初始化边界",
+  "ar": "main اللاحق: حدود تهيئة الوحدات",
+  "pt": "Main posterior: limites de inicialização",
+  "de": "Späteres Main: Modulinitialisierung",
+  "fr": "Main ultérieur : initialisation des modules",
+  "es": "Main posterior: inicialización de módulos"
+ },
+ "body": [
+  {
+   "en": "With --module-dir, dependencies of another module initialize at startup; Linux/macOS also eagerly initialize executable dependencies. Other modules initialize when sceKernelLoadStartModule supplies their start arguments, including mono-ps4.sprx on Windows. Discovering every file does not prove correct title initialization: Cult of the Lamb and LEGO Voyagers retain separate startup failures. --module-dir conflicts with --skip-sce-module.",
+   "zh": "--module-dir下，被其他模块依赖的模块启动时初始化；Linux／macOS还提前初始化可执行文件依赖。其他模块待sceKernelLoadStartModule提供启动参数时初始化，包括Windows的mono-ps4.sprx。发现全部文件不证明游戏初始化正确：咩咩启示录与LEGO Voyagers仍有不同启动失败。此选项与--skip-sce-module冲突。",
+   "ar": "مع --module-dir تبدأ تبعيات الوحدات فوراً؛ Linux/macOS يبدآن أيضاً تبعيات الملف التنفيذي. الباقي مع معاملات sceKernelLoadStartModule، مثل mono-ps4.sprx في Windows. اكتشاف الملفات لا يثبت البدء الصحيح؛ Cult وLEGO يبقيان بفشل منفصل. يتعارض مع --skip-sce-module.",
+   "pt": "Com --module-dir, dependências de módulos iniciam no arranque; Linux/macOS também iniciam dependências do executável. Outras aguardam argumentos de sceKernelLoadStartModule, incluindo mono-ps4.sprx no Windows. Descobrir ficheiros não valida inicialização: Cult e LEGO têm falhas distintas. Incompatível com --skip-sce-module.",
+   "de": "Mit --module-dir starten Modulabhängigkeiten sofort; Linux/macOS auch Abhängigkeiten des Executables. Andere starten mit Argumenten von sceKernelLoadStartModule, etwa mono-ps4.sprx unter Windows. Dateifund beweist keine korrekte Initialisierung: Cult und LEGO scheitern getrennt. Konflikt mit --skip-sce-module.",
+   "fr": "Avec --module-dir, dépendances de modules initialisées au départ ; Linux/macOS aussi celles de l’exécutable. Les autres attendent les arguments de sceKernelLoadStartModule, dont mono-ps4.sprx sous Windows. Trouver les fichiers ne valide pas le démarrage : Cult et LEGO ont des échecs distincts. Conflit avec --skip-sce-module.",
+   "es": "Con --module-dir, dependencias de módulos inician al arrancar; Linux/macOS también las del ejecutable. Otras esperan argumentos de sceKernelLoadStartModule, incluido mono-ps4.sprx en Windows. Encontrar archivos no valida inicio: Cult y LEGO tienen fallos distintos. Conflicto con --skip-sce-module."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/7202f120d5b641ce27fcc9bae6166202c52a621d/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-linux-import-tracing",
+ "title": {
+  "en": "Later main: import tracing on Linux",
+  "zh": "后续main：Linux导入追踪",
+  "ar": "main اللاحق: تتبع Linux",
+  "pt": "Main posterior: trace de imports Linux",
+  "de": "Späteres Main: Linux-Importtrace",
+  "fr": "Main ultérieur : trace des imports Linux",
+  "es": "Main posterior: trace de imports Linux"
+ },
+ "body": [
+  {
+   "en": "Current main documents --trace-imports for Windows and Linux; it conflicts with --lazy-binding and records nothing without APS5_TRACE_CALLS. Linux prints the recent calls only on abort, not a Windows-style crash report. Output includes the global last 64 calls, the reporting thread’s last 32 from a 65536-call ring, and 32 top imports. These are diagnostic traces with overhead, not gameplay benchmarks; the v0.1.3 attached usage guide still limits this option to Windows.",
+   "zh": "当前main文档把--trace-imports扩展到Windows和Linux，与--lazy-binding冲突，未设APS5_TRACE_CALLS则不记录。Linux仅abort打印调用，不提供Windows式崩溃报告。输出全局末64次、65536调用环中报告线程末32次及高频32导入。追踪有开销，非游玩基准；v0.1.3附带指南仍将该选项限于Windows。",
+   "ar": "يوثق main تتبع --trace-imports لـWindows/Linux، يتعارض مع --lazy-binding ويحتاج APS5_TRACE_CALLS. Linux يطبع عند abort فقط، لا تقرير انهيار Windows. يعرض آخر 64 نداء عاماً وآخر 32 للخيط من حلقة 65536 وأعلى 32 import. تشخيص ذو كلفة لا benchmark؛ دليل v0.1.3 المرفق يقصره على Windows.",
+   "pt": "Main documenta --trace-imports em Windows/Linux; incompatível com --lazy-binding e exige APS5_TRACE_CALLS. Linux imprime só em abort, sem relatório Windows. Últimas 64 chamadas globais, 32 da thread num anel de 65536 e 32 imports principais. Diagnóstico com custo, não benchmark; guia anexo v0.1.3 ainda diz Windows.",
+   "de": "Main dokumentiert --trace-imports für Windows/Linux, unvereinbar mit --lazy-binding, ohne APS5_TRACE_CALLS keine Aufzeichnung. Linux druckt nur bei Abort, kein Windows-Crashbericht. Letzte 64 globale Aufrufe, 32 des Meldethreads aus 65536er Ring und 32 häufigste Imports. Diagnose mit Aufwand; v0.1.3-Handbuch nennt nur Windows.",
+   "fr": "Main documente --trace-imports sur Windows/Linux, incompatible avec --lazy-binding, sans enregistrement sans APS5_TRACE_CALLS. Linux imprime seulement sur abort, sans rapport Windows. Derniers 64 appels globaux, 32 du thread dans un anneau de 65536 et 32 imports principaux. Diagnostic coûteux, pas benchmark ; guide joint v0.1.3 limité à Windows.",
+   "es": "Main documenta --trace-imports en Windows/Linux, incompatible con --lazy-binding y sin registro sin APS5_TRACE_CALLS. Linux imprime solo en abort, sin reporte Windows. Últimas 64 llamadas globales, 32 del hilo desde anillo de 65536 y 32 imports principales. Diagnóstico con coste; guía adjunta v0.1.3 aún dice Windows."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/7202f120d5b641ce27fcc9bae6166202c52a621d/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "main-windows-committer-sampling",
+ "title": {
+  "en": "Later main: sample the Windows committer",
+  "zh": "后续main：采样Windows committer",
+  "ar": "main اللاحق: أخذ عينات committer",
+  "pt": "Main posterior: amostrar o committer Windows",
+  "de": "Späteres Main: Windows-Committer sampeln",
+  "fr": "Main ultérieur : échantillonner le committer Windows",
+  "es": "Main posterior: muestreo del committer Windows"
+ },
+ "body": [
+  {
+   "en": "Windows APS5_SAMPLE_COMMITTER=<file> samples queue 0’s draw committer with the worker sampler’s two-file/offline-symbol workflow. It starts at the first pipelined draw; APS5_PIPELINED_DRAWS=0 produces no samples. A worker waiting in DrawPipeline::Enqueue does not prove the committer is idle. Keep profiling runs separate from unprofiled FPS, including Hi-Fi RUSH’s observed tracing overhead.",
+   "zh": "Windows的APS5_SAMPLE_COMMITTER=<file>按worker采样器的双文件／离线符号流程采样queue 0 draw committer，首次pipeline draw才开始，APS5_PIPELINED_DRAWS=0无样本。worker停在DrawPipeline::Enqueue不证明committer空闲；剖析与无追踪FPS分开，保留Hi-Fi RUSH已观察到的追踪开销。",
+   "ar": "في Windows يأخذ APS5_SAMPLE_COMMITTER=<file> عينات committer للطابور 0 بنفس مسار ملفي worker والرموز غير المتصلة. يبدأ مع أول draw متوازي؛ القيمة PIPELINED_DRAWS=0 بلا عينات. انتظار Enqueue لا يثبت خمول committer. افصل التتبع عن FPS، كما توضح كلفة Hi-Fi RUSH.",
+   "pt": "Windows APS5_SAMPLE_COMMITTER=<file> amostra o committer da fila 0 com dois ficheiros e símbolos offline como no worker. Começa no primeiro draw em pipeline; PIPELINED_DRAWS=0 não produz amostras. Esperar em Enqueue não prova inatividade. Separe perfil de FPS sem trace, incluindo custo observado em Hi-Fi RUSH.",
+   "de": "Windows APS5_SAMPLE_COMMITTER=<file> sampelt Queue-0-Committer wie Worker mit zwei Dateien und Offline-Symbolen. Beginn beim ersten Pipeline-Draw; PIPELINED_DRAWS=0 ohne Samples. Warten in Enqueue beweist keinen inaktiven Committer. Profile von ungetraceten FPS trennen; Hi-Fi RUSH zeigt Tracekosten.",
+   "fr": "Windows APS5_SAMPLE_COMMITTER=<file> échantillonne le committer de queue 0 comme le worker, deux fichiers et symboles hors ligne. Début au premier draw en pipeline ; PIPELINED_DRAWS=0 sans échantillons. Attendre dans Enqueue ne prouve pas l’inactivité. Séparez profils et FPS sans trace, dont le surcoût Hi-Fi RUSH.",
+   "es": "Windows APS5_SAMPLE_COMMITTER=<file> muestrea committer de cola 0 como worker, dos archivos y símbolos offline. Empieza con primer draw en pipeline; PIPELINED_DRAWS=0 sin muestras. Esperar en Enqueue no prueba inactividad. Separa perfiles y FPS sin trace, incluido coste observado en Hi-Fi RUSH."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/7202f120d5b641ce27fcc9bae6166202c52a621d/docs/dev/BUILD.md"
+  }
+ ]
+});
+
+guideSupplements["guides/language-fonts"].push({
+ "id": "playroom-linux-font-control",
+ "title": {
+  "en": "Linux font control: ASTRO’s PLAYROOM",
+  "zh": "Linux字体对照：ASTRO’s PLAYROOM",
+  "ar": "مقارنة خطوط Linux: ASTRO’s PLAYROOM",
+  "pt": "Fontes Linux: ASTRO’s PLAYROOM",
+  "de": "Linux-Fontvergleich: ASTRO’s PLAYROOM",
+  "fr": "Polices Linux : ASTRO’s PLAYROOM",
+  "es": "Fuentes Linux: ASTRO’s PLAYROOM"
+ },
+ "body": [
+  {
+   "en": "Same build without fonts asserts after about 28s; Noto substitutes reach the title screen for 240s, window median about 20 FPS with dips to 13–16. No input or gameplay. Local CMake LTO toggle was OFF, with no source changes or -flto; Windows was not tested.",
+   "zh": "同构建缺字体约28秒断言；Noto替代字体后标题运行240秒，窗口中位约20FPS、低点13–16，无输入或游玩。仅本地CMake LTO开关且设为OFF，无源码修改／-flto；Windows未测。",
+   "ar": "البناء نفسه يفشل دون خطوط بعد نحو 28ث؛ خطوط Noto تصل إلى العنوان 240ث بوسيط عداد نحو 20 وانخفاض 13–16. لا إدخال أو لعب. مفتاح CMake المحلي لإعداد LTO كان OFF دون تعديل المصدر أو -flto؛ Windows غير مختبر.",
+   "pt": "Sem fontes, o mesmo build falha aos 28s; Noto permite 240s no título, mediana da janela perto de 20 FPS e quedas a 13–16. Sem input/jogo. Só há um interruptor CMake LTO local, OFF e sem -flto ou alterações de fonte; Windows não testado.",
+   "de": "Ohne Fonts bricht derselbe Build nach etwa 28s ab; Noto ermöglicht 240s Titelbild mit Zählermedian um 20 FPS, Dips 13–16. Keine Eingabe/Gameplay. Lokaler CMake-LTO-Schalter OFF, keine Quelländerung oder -flto; Windows ungeprüft.",
+   "fr": "Sans polices, le même build échoue vers 28s ; Noto permet 240s au titre, médiane du compteur vers 20 FPS et baisses à 13–16. Sans entrée/jeu. Seul commutateur CMake LTO local, OFF, sans -flto ni changement source ; Windows non testé.",
+   "es": "Sin fuentes, el mismo build falla hacia 28s; Noto permite 240s en el título, mediana del contador cerca de 20 FPS y caídas a 13–16. Sin entrada/juego. Interruptor local CMake LTO en OFF, sin -flto ni cambios fuente; Windows sin probar."
+  }
+ ],
+ "links": [
+  {
+   "label": "PPSA01325 01.905.000 · Linux report",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/3232#discussioncomment-19087348"
+  }
+ ]
+});
