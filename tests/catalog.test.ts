@@ -32,7 +32,7 @@ test('unreported popular games are unknown, searchable and excluded from measure
  const game=filterGames('艾尔登法环')[0];assert.equal(game.slug,'elden-ring');assert.equal(game.titleId,null);assert.equal(game.reports.length,0);assert.equal(bestStage(game),'notTested');assert.equal(stageNeedsPatches(game),false);
  assert.equal(filterGames('elden ring',{stage:'notTested'}).length,1);
  for(const filters of [{platform:'windows'},{platform:'linux'},{stage:'blocked'},{evidence:'official'},{evidence:'community'}])assert.equal(filterGames('elden ring',filters).length,0);
- assert.equal(filterGames('',{stage:'notTested'}).length,7);
+ assert.equal(filterGames('',{stage:'notTested'}).length,8);
 });
 
 test('a merged technical fix does not silently create a new game report',async()=>{

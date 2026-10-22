@@ -1760,5 +1760,201 @@
     "cover": null,
     "screenshots": [],
     "checked": "2026-10-22"
+  },
+  "greak-memories-of-azur": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9865#discussioncomment-19131482",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "the-pathless": {
+    "source": "https://www.playstation.com/en-us/games/the-pathless/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202007/1500/PzzL4lymRdZuLEerjeL58HG8.png",
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "call-of-the-sea": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9864",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "persona-3-reload": {
+    "source": "https://www.playstation.com/en-us/games/persona-3-reload/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202307/2601/85487475426de191c3c100b47ddc61f77c515b513948272e.png",
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "dreamcore": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9740",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "morrowind-openmw-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9762",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "ffta-recomp-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9758",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "graven": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9708",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "outer-wilds": {
+    "source": "https://www.playstation.com/en-us/games/outer-wilds/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1623/Zofebh60Ue7Zt5sC10UAtU3D.png",
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "metal-gear-solid-master-collection": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9615",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "raptor-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9687",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "ghostrunner-2": {
+    "source": "https://www.playstation.com/en-us/games/ghostrunner-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0121/f69a1189e9674b64a574b2fc35e987738be0ee41578818a7.png",
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "severed-steel": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9594#discussioncomment-19116043",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "hamster-playground": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9639",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "overcooked-all-you-can-eat": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9603",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "octopath-traveler-ii": {
+    "source": "https://www.playstation.com/en-us/games/octopath-traveler-ii/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202208/3005/IsX7DgPyVdZJf1ZGGNhB1RrI.png",
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "terminator-2d-no-fate": {
+    "source": "https://www.playstation.com/en-us/games/terminator-2d-no-fate/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2113/5a7ae00a42d26b22990488aed07047b811c62e9cea404080.png",
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "art-of-rally": {
+    "source": "https://www.playstation.com/en-us/games/art-of-rally/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202311/1313/a4cae800396bf038e3cbe9242b36fc081fa53b5bda915719.png",
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "syphon-filter": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9516",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "arkanoid-eternal-battle": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9476",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "afterdream": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9475",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "fallen-legion-rise-to-glory": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9434",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "alex-kidd-miracle-world-dx": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9426",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "biped": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9376",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "call-of-duty-black-ops-ii": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/9601",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "rush-2-recompiled": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/9724",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "wave-race-64-recompiled": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/9724",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
+  },
+  "trails-sky-2nd-chapter": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/4246",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-23"
   }
 }

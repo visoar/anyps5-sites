@@ -130,3 +130,44 @@ gameResearch['black-myth-wukong'].edition=L("The startup report identifies PS5 P
 gameResearch['palworld'].checked='2026-10-14';
 gameResearch['palworld'].finding=L("#3832 reaches world setup only on a local integration. #4552 observes world textures with wrong colours on another modified stack. DCC synchronization #4554 and socket descriptors #4391 are now merged, but no new clean-main Palworld run is provided. Reliable saves and multiplayer remain unverified.","#3832 仅在本地整合到达世界设置，#4552 在另一修改环境观察到颜色错误的世界纹理。DCC 同步 #4554 和 socket 描述符 #4391 现已合入，但没有新的原始 main 帕鲁测试；可靠存档和多人仍未验证。","#3832 إعداد عالم بدمج محلي و#4552 ألوان خاطئة بتعديل آخر. #4554 و#4391 مدمجان الآن لكن بلا تشغيل Palworld جديد على main الأصلي. الحفظ والشبكة غير موثقين.","#3832 configuração local, #4552 mundo com cores erradas noutro stack. #4554/#4391 integrados sem novo teste Palworld main original. Gravações/rede não verificadas.","#3832 lokale Welteinstellung, #4552 falsche Weltfarben in anderem Stack. #4554/#4391 gemergt ohne neuen main-Palworld-Test. Speichern/Mehrspieler ungeprüft.","#3832 configuration locale, #4552 monde aux couleurs fausses sur autre pile. #4554/#4391 intégrés sans nouveau test Palworld main original. Sauvegardes/réseau non vérifiés.","#3832 configuración local, #4552 mundo con colores erróneos en otro stack. #4554/#4391 integrados sin nueva prueba Palworld main original. Guardado/red sin verificar.");
 gameResearch['palworld'].sources.push({label:'PR #4391',url:'https://github.com/boykopovar/AnyPS5/pull/4391'});
+
+gameResearch["graven"]={
+ "checked": "2026-10-23",
+ "edition": {
+  "en": "GRAVEN PS5 package PPSA09614, content01.000.001. Conversion and import audits are not a launch test.",
+  "zh": "GRAVEN PS5包PPSA09614、01.000.001；转换及导入审计不是启动测试。",
+  "ar": "حزمة GRAVEN PS5 PPSA09614/01.000.001؛ التحويل والتدقيق ليسا تشغيل اللعبة.",
+  "pt": "Pacote GRAVEN PS5 PPSA09614/01.000.001; conversão/auditoria não são arranque.",
+  "de": "GRAVEN-PS5-Paket PPSA09614/01.000.001; Konvertierung/Audit kein Starttest.",
+  "fr": "Paquet GRAVEN PS5 PPSA09614/01.000.001 ; conversion/audit sans lancement.",
+  "es": "Paquete GRAVEN PS5 PPSA09614/01.000.001; conversión/auditoría no son arranque."
+ },
+ "finding": {
+  "en": "No run has been reported. Static audit on main8b3a6ba88d+#9628 reports0 absent imports and36 stub entries (23 distinct functions in the preceding audit). Earlier main lacked Json Array pop_front. An exported function may still throw when reached; this cannot establish a startup stage, FPS or tested hardware requirement.",
+  "zh": "尚无运行报告。main8b3a6ba88d加#9628静态审计0缺导入、36条stub entry（前次审计23个不同函数）；旧main缺Json Array pop_front。导出函数仍可在触达时throw，不能推导启动阶段、FPS或已测硬件要求。",
+  "ar": "لا تشغيل مبلغ. تدقيق ثابت main8b3a6ba88d+#9628: صفر absent و36stub entry،23دالة مميزة سابقاً. main القديم يفتقد Json Array pop_front. export قد يرمي عند الاستدعاء، لا مرحلة بدء/FPS/متطلبات عتاد مثبتة.",
+  "pt": "Sem execução relatada. Auditoria estática main8b3a6ba88d+#9628:0absent/36stub entries,23funções distintas antes. Main antigo sem Json Array pop_front. Export pode lançar ao chamar; sem fase/FPS/requisito hardware medido.",
+  "de": "Kein Lauf gemeldet. Statischer Audit main8b3a6ba88d+#9628:0 fehlend/36Stub-Einträge, zuvor23Funktionen. Altes Main ohne Json Array pop_front. Export kann beim Aufruf werfen; kein Startstatus/FPS/Hardwarebeleg.",
+  "fr": "Aucun essai rapporté. Audit statique main8b3a6ba88d+#9628:0absent/36entrées stub,23fonctions auparavant. Ancien main sans Json Array pop_front. Export peut lever à l’appel ; sans phase/FPS/nécessité matérielle prouvées.",
+  "es": "Sin ejecución reportada. Auditoría estática main8b3a6ba88d+#9628:0absent/36entradas stub,23funciones antes. Main viejo sin Json Array pop_front. Export puede lanzar al llamar; sin fase/FPS/requisito hardware probado."
+ },
+ "nextTest": {
+  "en": "Launch a pinned Windows build with the complete package; record actual host/driver, first frame, input and any first failing call. Do not mark every listed stub as a required blocker before it is reached.",
+  "zh": "以完整包启动固定Windows构建，记录真实主机／驱动、首帧、输入及首个失败调用；未触达前，不把所有stub都列为必需阻碍。",
+  "ar": "شغّل بناء Windows محدداً بالحزمة الكاملة وسجل المضيف/التعريف وأول إطار والإدخال وأول فشل. لا تجعل كل stub عائقاً مطلوباً قبل الوصول إليه.",
+  "pt": "Inicie build Windows fixado com pacote completo e registe host/driver/primeira imagem/input/falha. Não marque cada stub como bloqueio antes de o atingir.",
+  "de": "Gepinnten Windows-Build mit Vollpaket starten, Host/Treiber/Frame/Eingabe/Erstfehler erfassen. Nicht alle Stubs vor Aufruf als Blocker werten.",
+  "fr": "Lancez un build Windows épinglé complet, notez hôte/pilote/image/entrée/premier échec. Pas tous les stubs comme bloqueurs avant appel.",
+  "es": "Arranca build Windows fijado completo y registra host/driver/frame/entrada/fallo. No marques todo stub como bloqueo antes de alcanzarlo."
+ },
+ "sources": [
+  {
+   "label": "Static audit only · no launch",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/9708"
+  },
+  {
+   "label": "Json pop_front proposal",
+   "url": "https://github.com/boykopovar/AnyPS5/pull/9628"
+  }
+ ]
+};

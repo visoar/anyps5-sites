@@ -9,7 +9,7 @@ export const extraArticles:Article[]=[
  S('report',L('Make a reproducible report','提交可复现的报告','اكتب تقريراً قابلاً للتكرار','Escreva um relatório reproduzível','Schreibe einen reproduzierbaren Bericht','Rédigez un rapport reproductible','Redacta un informe reproducible'),L("Compare one change at a time. Separate a clean baseline from a patched run and keep logs for both. Include steps, expected behavior, actual stop, test duration and any screenshots or video. Remove personal paths and unrelated sensitive information before sharing. Submit game tests to the matching upstream discussion; email catalog corrections to " + contactEmail + ".","每次只比较一项改动，将干净基线与补丁结果分开，并保留两份日志。附上步骤、预期行为、实际停止位置、时长与截图或视频，分享前移除个人路径和无关敏感信息。游戏测试请提交到上游对应讨论；目录更正请邮件联系 " + contactEmail + "。","قارن تغييراً واحداً كل مرة وافصل الأساس النظيف عن التشغيل المعدّل مع سجليهما. أضف الخطوات والمتوقع ونقطة التوقف والمدة وصوراً أو فيديو. احذف المسارات الشخصية والمعلومات الحساسة غير اللازمة. انشر اختبارات الألعاب في النقاش الأصلي المناسب؛ وأرسل تصحيحات الفهرس إلى " + contactEmail + ".","Compare uma alteração de cada vez. Separe a base limpa do teste modificado e guarde os dois registos. Inclua passos, comportamento esperado, paragem, duração e imagens ou vídeo. Remova caminhos pessoais e dados sensíveis irrelevantes. Publique os testes na discussão original adequada; envie correções do catálogo para " + contactEmail + ".","Vergleiche immer nur eine Änderung. Trenne saubere Basis und gepatchten Lauf und behalte beide Logs. Beschreibe Schritte, erwartetes Verhalten, Abbruchstelle, Dauer und Bilder oder Video. Entferne persönliche Pfade und unnötige vertrauliche Angaben. Veröffentliche Spieltests in der passenden Diskussion des Originalprojekts; sende Katalogkorrekturen an " + contactEmail + ".","Comparez un changement à la fois. Séparez la base propre de l’essai modifié et conservez les deux journaux. Indiquez étapes, comportement attendu, arrêt, durée et images ou vidéo. Retirez les chemins personnels et informations sensibles inutiles. Publiez les tests dans la discussion originale correspondante ; envoyez les corrections du catalogue à " + contactEmail + ".","Compara un cambio cada vez. Separa la base limpia de la prueba modificada y conserva ambos registros. Incluye pasos, resultado esperado, parada, duración e imágenes o vídeo. Elimina rutas personales y datos sensibles innecesarios. Publica las pruebas en la discusión original correspondiente; envía las correcciones del catálogo a " + contactEmail + "."))]},
  {
  "slug": "progress",
- "reviewed": "2026-10-22",
+ "reviewed": "2026-10-23",
  "title": {
   "en": "AnyPS5 development progress and coverage",
   "zh": "AnyPS5 开发进度与实现范围",
@@ -34,7 +34,8 @@ export const extraArticles:Article[]=[
   "https://github.com/boykopovar/AnyPS5/blob/main/docs/dev/TechnicalDebt.md",
   "https://github.com/boykopovar/AnyPS5/blob/a60f52e3189003f049299206d2a6d99e55ee4260/docs/user/COMPATIBILITY.md",
   "https://github.com/boykopovar/AnyPS5/pull/7907",
-  "https://github.com/boykopovar/AnyPS5/pull/8431"
+  "https://github.com/boykopovar/AnyPS5/pull/8431",
+  "https://github.com/boykopovar/AnyPS5/discussions/9751"
  ],
  "sections": [
   {
@@ -50,22 +51,22 @@ export const extraArticles:Article[]=[
    },
    "body": [
     {
-     "en": "The 22 October review counts 4609/10947 declared library functions (42.10%) and 1166/1166 recognized RDNA1/2 decoder instructions. Inert bodies may count; this measures neither complete API behavior nor game compatibility. Actual game tests retain their own builds.",
-     "zh": "10月22日复核为4609／10947个声明库函数（42.10%）及1166／1166个RDNA1/2解码识别指令；inert函数体也可计数，不代表完整API行为或游戏兼容率。游戏测试仍以各自实际构建为准。",
-     "ar": "مراجعة 22 أكتوبر: 4609/10947 دالة معلنة (42.10%) و1166/1166 تعليمة يتعرف عليها decoder. قد تُحسب أجسام inert؛ ليست API كاملة أو توافق ألعاب. احتفظ ببناء كل اختبار لعبة.",
-     "pt": "Revisão de 22 outubro: 4609/10947 funções declaradas (42,10%) e 1166/1166 instruções reconhecidas pelo decoder. Corpos inert podem contar; não mede API completa ou compatibilidade. Cada teste conserva o seu build.",
-     "de": "Prüfung 22. Oktober: 4609/10947 deklarierte Funktionen (42,10%) und 1166/1166 erkannte Decoderbefehle. Inerte Rümpfe können zählen; keine vollständige API oder Spielquote. Jeder Spieltest behält seinen Build.",
-     "fr": "Vérification du 22 octobre : 4609/10947 fonctions déclarées (42,10%) et 1166/1166 instructions reconnues. Des corps inert peuvent compter ; ni API complète ni compatibilité des jeux. Chaque essai conserve son build.",
-     "es": "Revisión del 22 de octubre: 4609/10947 funciones declaradas (42,10%) y 1166/1166 instrucciones reconocidas. Cuerpos inert pueden contar; no mide API completa ni compatibilidad. Cada prueba conserva su build."
+     "en": "The23 October review counts4835/11180 declared library functions (43.25%) and1166/1166 recognized decoder instructions. Previous4609/10947: implemented+226, declarations+233. Neither counted bodies nor decoder recognition establish full API semantics, correct graphics or game playability.",
+     "zh": "10月23日复核4835／11180个声明库函数（43.25%），解码识别1166／1166；前次4609／10947，实现+226、声明+233。函数体计数和解码识别不证明完整API、正确图形或游戏可玩。",
+     "ar": "مراجعة23أكتوبر4835/11180 دالة43.25% و1166/1166 decoder. السابق4609/10947: منفذ+226 ومعلن+233. لا تثبت الأجسام/التعرف API كاملة أو رسوماً صحيحة أو اللعب.",
+     "pt": "Revisão23outubro4835/11180 funções43,25% e1166/1166 decoder. Antes4609/10947: implementadas+226/declaradas+233. Contagem/reconhecimento não provam API completa, imagem correta ou jogo.",
+     "de": "Prüfung23.Oktober4835/11180 Funktionen43,25%, Decoder1166/1166. Zuvor4609/10947: implementiert+226/deklariert+233. Zähler/Erkennung belegen weder APIsemantik noch korrektes Bild/Spielbarkeit.",
+     "fr": "Revue23octobre4835/11180 fonctions43,25%, decoder1166/1166. Avant4609/10947: implémentées+226/déclarées+233. Compter/reconnaître ne prouve ni API complète ni image correcte/jouabilité.",
+     "es": "Revisión23octubre4835/11180 funciones43,25%, decoder1166/1166. Antes4609/10947: implementadas+226/declaradas+233. Contar/reconocer no prueba API completa, imagen correcta ni jugabilidad."
     },
     {
-     "en": "The preceding snapshot was 4303/6675 (64.46%): implemented count rises by 306 while declarations rise by 4272. The denominator expansion explains the percentage decrease without establishing a game regression. Merged #7907 adds 1499 declarations; #8431 adds 139 more without increasing implemented functions. They explain part of the expansion, not its entire size.",
-     "zh": "前次4303／6675（64.46%）：实现数增加306，声明总数增加4272。分母扩大可使百分比下降，不能据此认定游戏回归。已合并#7907新增1499声明，#8431另增139且实现数未增；两者解释部分增量，不能冒充全部原因。",
-     "ar": "السابق 4303/6675 (64.46%): المنفذ +306 والمعلن +4272. زيادة المقام تخفض النسبة دون إثبات تراجع ألعاب. #7907 المدمج يضيف 1499 تصريحاً و#8431 يضيف 139 دون زيادة المنفذ؛ يفسران جزءاً لا كل الزيادة.",
-     "pt": "Anterior 4303/6675 (64,46%): implementadas +306 e declaradas +4272. A expansão do denominador reduz a percentagem sem provar regressão de jogos. #7907 integrado adiciona 1499 declarações; #8431 adiciona 139 sem novas implementações. Explicam parte, não toda a expansão.",
-     "de": "Zuvor 4303/6675 (64,46%): implementiert +306, deklariert +4272. Der größere Nenner senkt die Quote ohne belegte Spielregression. Gemergtes #7907 ergänzt 1499 Deklarationen, #8431 weitere 139 ohne mehr Implementierungen. Nur ein Teil der Erweiterung.",
-     "fr": "Avant 4303/6675 (64,46%) : implémentées +306, déclarées +4272. Le dénominateur élargi réduit le taux sans prouver une régression des jeux. #7907 intégré ajoute 1499 déclarations, #8431 encore 139 sans nouvelle implémentation. Une partie, pas toute l’expansion.",
-     "es": "Antes 4303/6675 (64,46%): implementadas +306 y declaradas +4272. El denominador mayor baja el porcentaje sin probar regresión de juegos. #7907 integrado añade 1499 declaraciones; #8431 otras 139 sin nuevas implementaciones. Explican parte, no toda la expansión."
+     "en": "Discussion#9751 proposes a second imported-function measure; it is not an adopted official compatibility counter. Its62-homebrew static audit reports1507/1533 functions classified non-throwing (98.3%), a biased sample without retail coverage or runtime path checks. Do not label that98.3% of games playable. The source’s4834/11181 atcc0078595d is a separate snapshot from the live figure above.",
+     "zh": "讨论#9751提出第二个导入函数指标，尚非官方采用的兼容计数。其62个homebrew静态审计1507／1533非throwing分类（98.3%），样本偏倚、无商业游戏覆盖或runtime路径验证，不能写成98.3%游戏可玩。源cc0078595d的4834／11181与上方live快照分开。",
+     "ar": "#9751 يقترح مقياس imports ثانياً لم يعتمد رسمياً. عينة62homebrew ثابتة1507/1533=98.3% مصنفة non-throwing، متحيزة دون retail/مسارات تشغيل. ليست98.3% ألعاب قابلة للعب. لقطةcc0078595d4834/11181 منفصلة.",
+     "pt": "Discussão#9751 propõe métrica de imports ainda não adotada. Auditoria estática62homebrew:1507/1533=98,3% non-throwing, amostra enviesada sem retail/caminhos runtime. Não98,3% jogos jogáveis. Snapshotcc0078595d4834/11181 separado.",
+     "de": "#9751 schlägt Importmetrik vor, noch kein offizieller Zähler. Statischer62-Homebrew-Audit1507/1533=98,3% non-throwing, verzerrt ohne Retail/Laufpfade. Keine98,3% spielbaren Spiele. Snapshotcc0078595d4834/11181 getrennt.",
+     "fr": "#9751 propose une métrique imports non adoptée. Audit statique62homebrew:1507/1533=98,3% non-throwing, biaisé sans retail/chemins runtime. Pas98,3% de jeux jouables. Snapshotcc0078595d4834/11181 distinct.",
+     "es": "#9751 propone métrica imports no adoptada. Auditoría estática62homebrew:1507/1533=98,3% non-throwing, sesgada sin retail/rutas runtime. No98,3% juegos jugables. Snapshotcc0078595d4834/11181 separado."
     }
    ]
   },

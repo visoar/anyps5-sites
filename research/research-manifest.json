@@ -51,21 +51,21 @@
     }
   ],
   "latestReview": {
-    "reviewed": "2026-10-22",
-    "incrementSince": "2026-10-20T18:30:00Z",
-    "lastSuccessfulCutoff": "2026-10-20T19:44:00Z",
-    "nextSuccessfulCutoff": "2026-10-21T19:42:00Z",
-    "sourceCommit": "7202f120d5b641ce27fcc9bae6166202c52a621d",
-    "documents": 245,
-    "changedDocuments": 162,
-    "issuesAndPRs": 9006,
-    "issuePRPages": 91,
-    "incrementIssuesAndPRs": 1567,
+    "reviewed": "2026-10-23",
+    "incrementSince": "2026-10-21T18:30:00Z",
+    "lastSuccessfulCutoff": "2026-10-21T19:42:00Z",
+    "nextSuccessfulCutoff": "2026-10-22T19:44:00Z",
+    "sourceCommit": "001d132f4752b21e018bda0da86e2ab3f411e7a5",
+    "documents": 247,
+    "changedDocuments": 108,
+    "issuesAndPRs": 9437,
+    "issuePRPages": 95,
+    "incrementIssuesAndPRs": 1562,
     "incrementPages": 16,
-    "commits": 629,
-    "commitPages": 7,
-    "discussions": 275,
-    "discussionPages": 14,
+    "commits": 512,
+    "commitPages": 6,
+    "discussions": 313,
+    "discussionPages": 16,
     "completeNestedPagination": true,
     "releasesIncludingPrereleases": 4,
     "latestRelease": {
@@ -74,21 +74,24 @@
       "commit": "3fd1cc393b8512c2e989860053f30dee5a8cd1aa",
       "url": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.3"
     },
-    "issueCommentPages": 36,
-    "issueComments": 3543,
+    "issueCommentPages": 37,
+    "issueComments": 3669,
     "reviewCommentPages": 1,
-    "reviewComments": 33,
-    "commentThreads": 1525,
-    "unavailableThreads": [],
+    "reviewComments": 28,
+    "commentThreads": 1673,
+    "unavailableThreads": [
+      9418
+    ],
+    "unavailableScope": "PR parent and reviews HTTP404; original global code comment retained; cause unknown. Retry next run.",
     "prReviewPages": 15,
-    "recentPRReviewConnections": 1417,
-    "reviewBodies": 268,
+    "recentPRReviewConnections": 1452,
+    "reviewBodies": 870,
     "changes": {
-      "newEntries": 33,
-      "newReports": 60
+      "newEntries": 28,
+      "newReports": 62
     },
-    "record": "docs/maintenance/2026-10-22-nightly.md",
-    "rawDirectory": "research/raw/daily-2026-10-22/",
+    "record": "docs/maintenance/2026-10-23-nightly.md",
+    "rawDirectory": "research/raw/daily-2026-10-23/",
     "sourceReviewOnly": true
   }
 }

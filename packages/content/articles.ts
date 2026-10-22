@@ -41,9 +41,146 @@ const baseArticles:Article[]=[
  ]
 },
  {id:'source',title:L('A source build is a separate track',"发行版与源码构建如何选择",'البناء من المصدر مسار مستقل',"Escolher entre versão publicada e código-fonte",'Quellcode-Builds sind ein eigener Weg',"Choisir entre version publiée et compilation",'Compilar el código es otra vía'),body:[L('Current main may include fixes that are absent from v0.1.2. Conversely, a community test can depend on unmerged changes that main does not contain. Match relinker and libraries to the same source tree, keep the commit hash, and read the patch conditions on the game page.','当前 main 可能包含 v0.1.2 没有的修复；社区测试又可能依赖尚未进入 main 的改动。relinker 与库应来自同一源码树，保留提交哈希，并核对游戏页的补丁条件。','قد يحتوي main الحالي على إصلاحات غير موجودة في v0.1.2، وقد يعتمد تقرير المجتمع على تعديلات لم تُدمج في main. استخدم relinker والمكتبات من الشجرة نفسها، واحفظ معرّف التعديل واقرأ شروط صفحة اللعبة.','O main atual pode incluir correções ausentes de v0.1.2. Por sua vez, um teste da comunidade pode depender de alterações ainda não integradas. Use relinker e bibliotecas da mesma árvore, guarde o commit e consulte os requisitos de patches na página do jogo.','Der aktuelle main-Branch kann Fehler beheben, die in v0.1.2 noch auftreten. Community-Tests können wiederum Änderungen voraussetzen, die main nicht enthält. Nutze Relinker und Bibliotheken aus demselben Quellstand, notiere den Commit und prüfe die Patchbedingungen auf der Spielseite.','Le main actuel peut contenir des corrections absentes de v0.1.2. Un test communautaire peut aussi dépendre de changements non fusionnés. Utilisez relinker et bibliothèques issus du même code, gardez le commit et consultez les conditions sur la page du jeu.','El main actual puede incluir correcciones ausentes de v0.1.2. Una prueba de la comunidad puede depender de cambios aún no integrados. Usa relinker y bibliotecas del mismo código, guarda el commit y revisa las condiciones en la página del juego.')]}]},
- {slug:'requirements',title:L("AnyPS5 system and build requirements","AnyPS5 系统与编译环境要求","متطلبات النظام والبناء لـAnyPS5","Requisitos do sistema e compilação do AnyPS5","System- und Build-Voraussetzungen für AnyPS5","Prérequis système et compilation d’AnyPS5","Requisitos de sistema y compilación de AnyPS5"),description:L("Check AnyPS5 operating-system, Vulkan and source-build requirements. Learn how to compare hardware reports and diagnose memory allocation limits.","核对 AnyPS5 的操作系统、Vulkan 与源码编译要求，了解硬件报告的比较方法及内存分配限制，避免将实验结果当作通用配置。","راجع متطلبات النظام وVulkan وأدوات بناء AnyPS5، وقارن تقارير العتاد وتعرّف إلى أسباب فشل تخصيص الذاكرة.","Consulte os requisitos de sistema, Vulkan e compilação do AnyPS5. Saiba como comparar relatórios de equipamento e identificar limites de atribuição de memória.","Prüfe die System-, Vulkan- und Build-Anforderungen von AnyPS5. Erfahre, wie du Hardwareberichte vergleichst und Fehler bei der Speicherzuweisung einordnest.","Consultez les prérequis système, Vulkan et compilation d’AnyPS5. Apprenez à comparer les rapports matériels et à diagnostiquer les limites d’allocation mémoire.","Consulta los requisitos de sistema, Vulkan y compilación de AnyPS5. Aprende a comparar informes de hardware y a diagnosticar los límites de asignación de memoria."),sources:[buildDoc,usage],sections:[
- {id:'host',title:L('Host and graphics','主机与图形环境','الجهاز والرسوميات','Sistema e gráficos','Host und Grafik','Système et graphismes','Sistema y gráficos'),body:[L('The documented runtime targets are x86-64 Windows and Linux. The graphics device needs Vulkan 1.1 and suitable graphics/compute queues and swapchain support. A Vulkan version number alone does not establish that a game’s shader and memory paths work.','当前文档的运行目标是 x86-64 Windows 和 Linux。显卡需要 Vulkan 1.1、合适的图形与计算队列以及 swapchain 支持。仅满足 Vulkan 版本号，并不能证明某个游戏的着色器与内存路径已经可用。','تستهدف بيئة التشغيل الموثقة Windows وLinux على x86-64. يلزم جهاز رسوميات يدعم Vulkan 1.1 وصفوف الرسوميات والحوسبة وswapchain. رقم إصدار Vulkan وحده لا يثبت عمل مسارات الذاكرة والمظللات للعبة.','A execução documentada destina-se a Windows e Linux x86-64. A GPU precisa de Vulkan 1.1, filas de gráficos e computação adequadas e suporte de swapchain. A versão de Vulkan, por si só, não comprova que os caminhos de shaders e memória de um jogo funcionem.','Die dokumentierte Laufzeit zielt auf x86-64 unter Windows und Linux. Die GPU braucht Vulkan 1.1 sowie passende Grafik-/Compute-Queues und Swapchain-Unterstützung. Die Vulkan-Version allein belegt noch keine funktionierenden Shader- und Speicherpfade eines Spiels.','L’exécution documentée vise Windows et Linux x86-64. Le GPU doit prendre en charge Vulkan 1.1, des files graphiques et de calcul adaptées ainsi que le swapchain. Le numéro de version Vulkan ne suffit pas à prouver que les chemins mémoire et shaders d’un jeu fonctionnent.','La ejecución documentada apunta a Windows y Linux x86-64. La GPU necesita Vulkan 1.1, colas gráficas y de cómputo adecuadas y soporte de swapchain. La versión de Vulkan por sí sola no demuestra que funcionen los shaders y la memoria de un juego.'),L('There is no verified universal minimum RAM or GPU specification for every title. Memory use depends on the game and build. On Windows, direct-memory allocations consume commit capacity backed by RAM and the page file; an allocation failure is not necessarily a lack of physical RAM.','目前没有经过验证、适用于所有游戏的最低内存或显卡配置。内存使用取决于游戏和构建。Windows 的 direct-memory 分配消耗由内存与页面文件共同支撑的提交额度，分配失败不一定只是物理内存不足。','لا توجد مواصفات دنيا موثقة للذاكرة أو البطاقة تصلح لكل الألعاب. يعتمد الاستهلاك على اللعبة والبناء. في Windows تستخدم الذاكرة المباشرة سعة الالتزام المدعومة بذاكرة الجهاز وملف الترحيل؛ فشل التخصيص لا يعني دائماً نقص RAM.','Não existe um mínimo de RAM ou GPU verificado para todos os títulos. O consumo depende do jogo e da compilação. No Windows, a memória direta usa a capacidade de memória comprometida, apoiada pela RAM e pelo ficheiro de paginação; uma falha não significa necessariamente falta de RAM física.','Es gibt keine bestätigte Mindestmenge an RAM oder GPU-Leistung für alle Spiele. Der Bedarf hängt von Spiel und Build ab. Unter Windows verbrauchen direkte Speicherzuweisungen Commit-Kapazität aus RAM und Auslagerungsdatei; ein Fehler muss daher nicht an zu wenig physischem RAM liegen.','Aucun minimum de RAM ou de GPU n’a été validé pour tous les jeux. La consommation dépend du jeu et de la version. Sous Windows, les allocations de mémoire directe consomment la capacité d’engagement fournie par la RAM et le fichier d’échange ; un échec n’indique pas forcément un manque de RAM physique.','No hay un mínimo de RAM o GPU verificado para todos los juegos. El consumo depende del juego y la compilación. En Windows, la memoria directa consume capacidad de compromiso respaldada por RAM y archivo de paginación; un fallo no implica siempre falta de RAM física.')]},
- {id:'toolchain',title:L('Source-build tools','源码编译工具','أدوات البناء من المصدر','Ferramentas de compilação','Werkzeuge für den Quellcode-Build','Outils de compilation','Herramientas de compilación'),body:[L('Current build documentation calls for Git with submodules, CMake 3.22.1 or newer, Ninja and a C++20 compiler. Windows uses the specified WinLibs GCC 15.2.0 POSIX/UCRT r7 toolchain. Keep its MinGW runtime DLLs with the libraries. Follow current upstream documentation when those versions change.','当前编译文档要求 Git（含子模块）、CMake 3.22.1 或更新版本、Ninja 和支持 C++20 的编译器。Windows 使用指定的 WinLibs GCC 15.2.0 POSIX/UCRT r7 工具链，并将对应 MinGW 运行库 DLL 与系统库放在一起。版本变化时以上游最新文档为准。','تطلب وثائق البناء الحالية Git مع الوحدات الفرعية، وCMake 3.22.1 أو أحدث، وNinja ومترجماً يدعم C++20. يستخدم Windows سلسلة WinLibs GCC 15.2.0 POSIX/UCRT r7 المحددة. احتفظ بملفات MinGW DLL مع المكتبات وراجع الوثائق عند تغير الإصدارات.','A documentação atual pede Git com submódulos, CMake 3.22.1 ou posterior, Ninja e um compilador C++20. No Windows, use WinLibs GCC 15.2.0 POSIX/UCRT r7 e mantenha as DLL de execução MinGW junto das bibliotecas. Consulte a documentação original quando as versões mudarem.','Die aktuellen Build-Anleitungen verlangen Git mit Submodulen, CMake ab 3.22.1, Ninja und einen C++20-Compiler. Unter Windows ist WinLibs GCC 15.2.0 POSIX/UCRT r7 angegeben. Lege die zugehörigen MinGW-Laufzeit-DLLs zu den Bibliotheken und prüfe bei Versionsänderungen die Originaldokumentation.','La documentation actuelle demande Git avec sous-modules, CMake 3.22.1 ou plus récent, Ninja et un compilateur C++20. Sous Windows, utilisez WinLibs GCC 15.2.0 POSIX/UCRT r7 et gardez ses DLL MinGW avec les bibliothèques. Consultez la documentation originale lorsque les versions évoluent.','La documentación actual pide Git con submódulos, CMake 3.22.1 o posterior, Ninja y un compilador C++20. En Windows se usa WinLibs GCC 15.2.0 POSIX/UCRT r7. Conserva sus DLL de MinGW con las bibliotecas y consulta la documentación original cuando cambien las versiones.')]}]},
+ {
+ "slug": "requirements",
+ "title": {
+  "en": "AnyPS5 system and build requirements",
+  "zh": "AnyPS5 系统与编译环境要求",
+  "ar": "متطلبات النظام والبناء لـAnyPS5",
+  "pt": "Requisitos do sistema e compilação do AnyPS5",
+  "de": "System- und Build-Voraussetzungen für AnyPS5",
+  "fr": "Prérequis système et compilation d’AnyPS5",
+  "es": "Requisitos de sistema y compilación de AnyPS5"
+ },
+ "description": {
+  "en": "Check AnyPS5 operating-system, Vulkan and source-build requirements. Learn how to compare hardware reports and diagnose memory allocation limits.",
+  "zh": "核对 AnyPS5 的操作系统、Vulkan 与源码编译要求，了解硬件报告的比较方法及内存分配限制，避免将实验结果当作通用配置。",
+  "ar": "راجع متطلبات النظام وVulkan وأدوات بناء AnyPS5، وقارن تقارير العتاد وتعرّف إلى أسباب فشل تخصيص الذاكرة.",
+  "pt": "Consulte os requisitos de sistema, Vulkan e compilação do AnyPS5. Saiba como comparar relatórios de equipamento e identificar limites de atribuição de memória.",
+  "de": "Prüfe die System-, Vulkan- und Build-Anforderungen von AnyPS5. Erfahre, wie du Hardwareberichte vergleichst und Fehler bei der Speicherzuweisung einordnest.",
+  "fr": "Consultez les prérequis système, Vulkan et compilation d’AnyPS5. Apprenez à comparer les rapports matériels et à diagnostiquer les limites d’allocation mémoire.",
+  "es": "Consulta los requisitos de sistema, Vulkan y compilación de AnyPS5. Aprende a comparar informes de hardware y a diagnosticar los límites de asignación de memoria."
+ },
+ "sources": [
+  "https://github.com/boykopovar/AnyPS5/blob/main/docs/dev/BUILD.md",
+  "https://github.com/boykopovar/AnyPS5/blob/main/docs/user/USAGE.md",
+  "https://github.com/boykopovar/AnyPS5/blob/001d132f4752b21e018bda0da86e2ab3f411e7a5/docs/dev/BUILD.md"
+ ],
+ "sections": [
+  {
+   "id": "host",
+   "title": {
+    "en": "Host and graphics",
+    "zh": "主机与图形环境",
+    "ar": "الجهاز والرسوميات",
+    "pt": "Sistema e gráficos",
+    "de": "Host und Grafik",
+    "fr": "Système et graphismes",
+    "es": "Sistema y gráficos"
+   },
+   "body": [
+    {
+     "en": "The documented runtime targets are x86-64 Windows and Linux. The graphics device needs Vulkan 1.1 and suitable graphics/compute queues and swapchain support. A Vulkan version number alone does not establish that a game’s shader and memory paths work.",
+     "zh": "当前文档的运行目标是 x86-64 Windows 和 Linux。显卡需要 Vulkan 1.1、合适的图形与计算队列以及 swapchain 支持。仅满足 Vulkan 版本号，并不能证明某个游戏的着色器与内存路径已经可用。",
+     "ar": "تستهدف بيئة التشغيل الموثقة Windows وLinux على x86-64. يلزم جهاز رسوميات يدعم Vulkan 1.1 وصفوف الرسوميات والحوسبة وswapchain. رقم إصدار Vulkan وحده لا يثبت عمل مسارات الذاكرة والمظللات للعبة.",
+     "pt": "A execução documentada destina-se a Windows e Linux x86-64. A GPU precisa de Vulkan 1.1, filas de gráficos e computação adequadas e suporte de swapchain. A versão de Vulkan, por si só, não comprova que os caminhos de shaders e memória de um jogo funcionem.",
+     "de": "Die dokumentierte Laufzeit zielt auf x86-64 unter Windows und Linux. Die GPU braucht Vulkan 1.1 sowie passende Grafik-/Compute-Queues und Swapchain-Unterstützung. Die Vulkan-Version allein belegt noch keine funktionierenden Shader- und Speicherpfade eines Spiels.",
+     "fr": "L’exécution documentée vise Windows et Linux x86-64. Le GPU doit prendre en charge Vulkan 1.1, des files graphiques et de calcul adaptées ainsi que le swapchain. Le numéro de version Vulkan ne suffit pas à prouver que les chemins mémoire et shaders d’un jeu fonctionnent.",
+     "es": "La ejecución documentada apunta a Windows y Linux x86-64. La GPU necesita Vulkan 1.1, colas gráficas y de cómputo adecuadas y soporte de swapchain. La versión de Vulkan por sí sola no demuestra que funcionen los shaders y la memoria de un juego."
+    },
+    {
+     "en": "There is no verified universal minimum RAM or GPU specification for every title. Memory use depends on the game and build. On Windows, direct-memory allocations consume commit capacity backed by RAM and the page file; an allocation failure is not necessarily a lack of physical RAM.",
+     "zh": "目前没有经过验证、适用于所有游戏的最低内存或显卡配置。内存使用取决于游戏和构建。Windows 的 direct-memory 分配消耗由内存与页面文件共同支撑的提交额度，分配失败不一定只是物理内存不足。",
+     "ar": "لا توجد مواصفات دنيا موثقة للذاكرة أو البطاقة تصلح لكل الألعاب. يعتمد الاستهلاك على اللعبة والبناء. في Windows تستخدم الذاكرة المباشرة سعة الالتزام المدعومة بذاكرة الجهاز وملف الترحيل؛ فشل التخصيص لا يعني دائماً نقص RAM.",
+     "pt": "Não existe um mínimo de RAM ou GPU verificado para todos os títulos. O consumo depende do jogo e da compilação. No Windows, a memória direta usa a capacidade de memória comprometida, apoiada pela RAM e pelo ficheiro de paginação; uma falha não significa necessariamente falta de RAM física.",
+     "de": "Es gibt keine bestätigte Mindestmenge an RAM oder GPU-Leistung für alle Spiele. Der Bedarf hängt von Spiel und Build ab. Unter Windows verbrauchen direkte Speicherzuweisungen Commit-Kapazität aus RAM und Auslagerungsdatei; ein Fehler muss daher nicht an zu wenig physischem RAM liegen.",
+     "fr": "Aucun minimum de RAM ou de GPU n’a été validé pour tous les jeux. La consommation dépend du jeu et de la version. Sous Windows, les allocations de mémoire directe consomment la capacité d’engagement fournie par la RAM et le fichier d’échange ; un échec n’indique pas forcément un manque de RAM physique.",
+     "es": "No hay un mínimo de RAM o GPU verificado para todos los juegos. El consumo depende del juego y la compilación. En Windows, la memoria directa consume capacidad de compromiso respaldada por RAM y archivo de paginación; un fallo no implica siempre falta de RAM física."
+    }
+   ]
+  },
+  {
+   "id": "toolchain",
+   "title": {
+    "en": "Source-build tools",
+    "zh": "源码编译工具",
+    "ar": "أدوات البناء من المصدر",
+    "pt": "Ferramentas de compilação",
+    "de": "Werkzeuge für den Quellcode-Build",
+    "fr": "Outils de compilation",
+    "es": "Herramientas de compilación"
+   },
+   "body": [
+    {
+     "en": "Current main needs Git/submodules, CMake3.22.1+, Ninja and C++20. For the Windows full runtime it now accepts x86-64 MinGW-w64 GCC with POSIX threads and either supported DWARF or System-V SEH exceptions: WinLibs15.2r7 and MSYS2 UCRT64 GCC16.2.0-6 are documented examples. Keep compiler/runtime DLLs matched. The unchanged v0.1.3 release and older attached build instructions retain their own toolchain context.",
+     "zh": "当前main需Git／子模块、CMake3.22.1+、Ninja及C++20。Windows完整runtime现接受POSIX线程的x86-64 MinGW-w64 GCC及受支持DWARF或System-V SEH异常，文档示例为WinLibs15.2r7和MSYS2 UCRT64 GCC16.2.0-6。编译器与runtime DLL配套；未变v0.1.3及旧附带构建指南保留自身环境。",
+     "ar": "main الحالي يحتاج Git/submodules وCMake3.22.1+ وNinja وC++20. runtime Windows يقبل MinGW-w64 x86-64/POSIX مع DWARF أو SEH System-V مدعومين؛ أمثلة WinLibs15.2r7 وMSYS2 UCRT64 GCC16.2.0-6. طابق DLLs؛ v0.1.3 ودليله القديم لهما سياقهما.",
+     "pt": "Main atual exige Git/submódulos,CMake3.22.1+,Ninja/C++20. Runtime Windows aceita MinGW-w64 x86-64/POSIX e DWARF ou SEH System-V suportados; exemplos WinLibs15.2r7/MSYS2 UCRT64 GCC16.2.0-6. DLLs correspondentes; v0.1.3 e guia antigo conservam contexto.",
+     "de": "Main benötigt Git/Submodule,CMake3.22.1+,Ninja/C++20. Windows-Runtime akzeptiert MinGW-w64 x86-64/POSIX mit unterstütztem DWARF/System-V-SEH; Beispiele WinLibs15.2r7/MSYS2 UCRT64 GCC16.2.0-6. DLLs passend halten; unverändertes v0.1.3 und altes Handbuch getrennt.",
+     "fr": "Main requiert Git/sous-modules,CMake3.22.1+,Ninja/C++20. Runtime Windows accepte MinGW-w64 x86-64/POSIX avec DWARF ou SEH System-V pris en charge ; exemples WinLibs15.2r7/MSYS2 UCRT64 GCC16.2.0-6. DLLs adaptées ; v0.1.3 et ancien guide gardent leur contexte.",
+     "es": "Main requiere Git/submódulos,CMake3.22.1+,Ninja/C++20. Runtime Windows acepta MinGW-w64 x86-64/POSIX con DWARF o SEH System-V admitidos; ejemplos WinLibs15.2r7/MSYS2 UCRT64 GCC16.2.0-6. DLLs a juego; v0.1.3 y guía antigua conservan contexto."
+    }
+   ]
+  },
+  {
+   "id": "cpu-conversion",
+   "title": {
+    "en": "Intel conversion has a specific limit",
+    "zh": "Intel 转换的适用边界",
+    "ar": "حدود التحويل لأجهزة Intel",
+    "pt": "Limites da conversão para Intel",
+    "de": "Grenzen der Intel-Konvertierung",
+    "fr": "Limites de la conversion Intel",
+    "es": "Límites de conversión para Intel"
+   },
+   "body": [
+    {
+     "en": "Current upstream documents --to-intel for supported AMD-specific instructions in the executable and bundled modules. It does not translate AMD-specific instructions generated by the game at runtime; such a path can still require an AMD host. Record the CPU and conversion flags with the report instead of assuming every x86-64 machine can run the same output.",
+     "zh": "当前上游的 --to-intel 可处理可执行文件及附带模块中受支持的 AMD 专用指令，但不能转换游戏在运行时生成的 AMD 专用指令，这类路径仍可能需要 AMD 主机。记录报告时应同时保留 CPU 与转换参数，不能假设所有 x86-64 电脑都可使用同一输出。",
+     "ar": "يعالج --to-intel التعليمات الخاصة بـAMD المدعومة في الملف والوحدات، لا التعليمات التي تولدها اللعبة أثناء التشغيل. قد يبقى هذا المسار بحاجة لمضيف AMD. سجّل المعالج وخيارات التحويل ولا تفترض أن كل x86-64 يشغل الناتج نفسه.",
+     "pt": "--to-intel trata instruções AMD suportadas no executável e nos módulos, não as geradas pelo jogo durante a execução. Esses caminhos podem continuar a exigir um processador AMD. Registe CPU e opções; não presuma que todos os x86-64 executam a mesma saída.",
+     "de": "--to-intel behandelt unterstützte AMD-spezifische Befehle im Programm und in Modulen, nicht zur Laufzeit erzeugte. Solche Pfade können weiterhin einen AMD-Host benötigen. Notiere CPU und Flags; nicht jeder x86-64-Rechner führt dieselbe Ausgabe aus.",
+     "fr": "--to-intel traite les instructions AMD prises en charge dans l’exécutable et les modules, pas celles générées à l’exécution. Ces chemins peuvent encore exiger un hôte AMD. Notez CPU et options ; toutes les machines x86-64 ne peuvent pas forcément lancer le même résultat.",
+     "es": "--to-intel trata instrucciones AMD admitidas en el ejecutable y módulos, no las generadas durante la ejecución. Esas rutas pueden seguir necesitando un host AMD. Registra CPU y opciones; no supongas que todo x86-64 ejecuta la misma salida."
+    }
+   ]
+  },
+  {
+   "id": "release-scope",
+   "title": {
+    "en": "Match the release and reported environment",
+    "zh": "匹配发行版与报告环境",
+    "ar": "طابق الإصدار والبيئة",
+    "pt": "Comparar versão e ambiente",
+    "de": "Release und Umgebung abgleichen",
+    "fr": "Comparer version et environnement",
+    "es": "Compara versión y entorno"
+   },
+   "body": [
+    {
+     "en": "v0.1.2 distributes Windows and Linux runtime archives. The source’s macOS conversion target and the community macos-runtime fork are separate experiments; an M1 Pro report with an unpinned build is not a general Mac requirement. Vulkan header/SDK versions used to compile the runtime are also distinct from a tested driver requirement. Match a game report’s actual GPU, driver, settings and build.",
+     "zh": "v0.1.2 分发 Windows 与 Linux runtime 包。源码的 macOS 转换目标与社区 macos-runtime 分支属于独立实验，构建未固定的 M1 Pro 报告不是通用 Mac 配置要求。编译使用的 Vulkan 头文件／SDK 版本也不同于已实测驱动要求；应匹配具体游戏的 GPU、驱动、设置及构建。",
+     "ar": "v0.1.2 يوزع Windows/Linux. هدف macOS وفرع المجتمع تجارب مستقلة؛ تقرير M1 Pro دون بناء محدد ليس متطلبات عامة. نسخة Vulkan SDK للبناء مختلفة عن متطلبات برنامج التشغيل المختبرة. طابق GPU والبرنامج والإعدادات والبناء.",
+     "pt": "v0.1.2 distribui Windows/Linux. Alvo macOS/fork são experiências separadas; M1 Pro sem build fixo não define requisitos. Versões Vulkan SDK de compilação distintas de driver testado. Compare GPU, driver, opções e build.",
+     "de": "v0.1.2 verteilt Windows/Linux. macOS-Ziel/Fork getrennte Experimente; M1 Pro ohne Buildpin keine allgemeinen Anforderungen. Vulkan-SDK-Version zum Bauen ist nicht getestete Treiberanforderung. GPU, Treiber, Einstellungen/Build abgleichen.",
+     "fr": "v0.1.2 distribue Windows/Linux. Cible macOS/fork sont des expériences séparées ; M1 Pro sans build précis ne définit pas de prérequis. SDK Vulkan de compilation distinct du pilote testé. Comparer GPU, pilote, réglages/build.",
+     "es": "v0.1.2 distribuye Windows/Linux. Destino macOS/fork son experimentos separados; M1 Pro sin build fijo no define requisitos. SDK Vulkan al compilar distinto de driver probado. Compara GPU, driver, ajustes/build."
+    }
+   ],
+   "links": [
+    {
+     "label": "v0.1.2",
+     "url": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.2"
+    },
+    {
+     "label": "macOS · FAQ",
+     "url": "/faq/#mac"
+    }
+   ]
+  }
+ ],
+ "reviewed": "2026-10-23"
+},
  {slug:'guides/windows',reviewed:'2026-10-12',title:L('Set up AnyPS5 on Windows','在 Windows 上设置 AnyPS5','إعداد AnyPS5 على Windows','Configurar o AnyPS5 no Windows','AnyPS5 unter Windows einrichten','Configurer AnyPS5 sous Windows','Configurar AnyPS5 en Windows'),description:L("Set up AnyPS5 on Windows with matching libraries, the --windows relinker option and a consistent runtime folder. Diagnose errors 193 and 126 and missing DLLs.","使用配套 Windows 库和 --windows 参数设置 AnyPS5，核对运行目录，并排查错误 193、126、缺失 DLL 与内存分配问题。","أعدّ AnyPS5 على Windows باستخدام المكتبات المناسبة وخيار --windows. راجع مجلد التشغيل وتعرّف إلى تشخيص الخطأين 193 و126 وملفات DLL المفقودة.","Configure o AnyPS5 no Windows com bibliotecas compatíveis e a opção --windows. Verifique a pasta de execução e resolva erros 193, 126 e DLL em falta.","Richte AnyPS5 unter Windows mit passenden Bibliotheken und --windows ein. Prüfe den Laufzeitordner und behebe Fehler 193, 126 sowie fehlende DLLs.","Configurez AnyPS5 sous Windows avec les bibliothèques adaptées et l’option --windows. Vérifiez le dossier d’exécution et les erreurs 193, 126 ou DLL manquantes.","Configura AnyPS5 en Windows con bibliotecas compatibles y --windows. Revisa la carpeta de ejecución y diagnostica los errores 193, 126 y las DLL que faltan."),sources:[usage,buildDoc],sections:[
  {id:'relink',title:L('Relink for the correct platform','明确指定 Windows 转换目标','حدّد Windows كهدف للتحويل','Indique Windows como destino','Gib Windows als Ziel an','Précisez Windows comme cible','Indica Windows como destino'),body:[L('Use the Windows relinker and Windows-native library archive, or build both from the same source tree. The --windows flag selects PE output; naming the output app.exe does not select Windows by itself. Place the input’s bundled modules in sce_module/ or sce_modules/ beside the input ELF, or provide their parent with --sce-module-path.','使用 Windows relinker 与 Windows 原生库压缩包，或从同一源码树构建二者。--windows 才是选择 PE 输出的参数，仅把文件命名为 app.exe 不会自动选择 Windows。输入 ELF 旁保留 sce_module/ 或 sce_modules/；也可用 --sce-module-path 指定其父目录。','استخدم relinker ومكتبات Windows، أو ابنِهما من المصدر نفسه. يختار --windows إخراج PE؛ الاسم app.exe وحده لا يختار Windows. احتفظ بوحدات الإدخال في sce_module/ أو sce_modules/ بجانب ELF، أو مرّر المجلد الأب عبر --sce-module-path.','Use o relinker e as bibliotecas nativas Windows, ou compile ambos a partir do mesmo código. É --windows que seleciona a saída PE; chamar app.exe ao ficheiro não basta. Mantenha sce_module/ ou sce_modules/ junto do ELF, ou indique a pasta-mãe com --sce-module-path.','Nutze Windows-Relinker und Windows-Bibliotheken oder baue beide aus demselben Quellstand. Erst --windows wählt PE-Ausgabe; der Dateiname app.exe allein reicht nicht. Lege sce_module/ oder sce_modules/ neben die Eingabe-ELF oder gib mit --sce-module-path den übergeordneten Ordner an.','Utilisez le relinker et les bibliothèques Windows, ou compilez les deux depuis le même code. --windows sélectionne la sortie PE ; nommer le fichier app.exe ne suffit pas. Gardez sce_module/ ou sce_modules/ à côté de l’ELF, ou indiquez leur dossier parent avec --sce-module-path.','Usa el relinker y las bibliotecas Windows, o compila ambos desde el mismo código. --windows selecciona la salida PE; llamar app.exe al archivo no basta. Conserva sce_module/ o sce_modules/ junto al ELF, o indica su carpeta superior con --sce-module-path.')],code:'.\\relinker-v0.1.2.exe --windows .\\source\\input.elf .\\runtime\\app.exe\ncd .\\runtime\n.\\app.exe'},
  {id:'dll',title:L('Read the error before replacing files','先看错误，再替换文件','اقرأ الخطأ قبل تبديل الملفات','Leia o erro antes de trocar ficheiros','Lies den Fehler vor einem Dateiaustausch','Lisez l’erreur avant de remplacer les fichiers','Lee el error antes de sustituir archivos'),body:[L('Error 193 usually indicates the wrong binary format: do not put original PS5 libraries in libs/. Error 126 can mean a missing dependent DLL, not only a missing named PRX. Custom builds need matching libgcc_s_seh-1.dll, libstdc++-6.dll and libwinpthread-1.dll in libs/. The release archives include their matching runtime dependencies.','错误 193 通常表示二进制格式不对：不要将原始 PS5 库放入 libs/。错误 126 可能缺少依赖 DLL，不一定是报错中的 PRX 本身缺失。自建库需要将匹配的 libgcc_s_seh-1.dll、libstdc++-6.dll、libwinpthread-1.dll 放入 libs/；发行版压缩包包含对应运行库依赖。','يشير الخطأ 193 غالباً إلى صيغة ملف خاطئة؛ لا تضع مكتبات PS5 الأصلية في libs/. وقد يعني 126 غياب DLL تابعة، لا ملف PRX المذكور فقط. تحتاج مكتباتك المبنية إلى libgcc_s_seh-1.dll وlibstdc++-6.dll وlibwinpthread-1.dll المتوافقة في libs/. تشمل الأرشيفات المنشورة تبعياتها.','O erro 193 costuma indicar um formato binário errado: não coloque bibliotecas PS5 originais em libs/. O erro 126 pode indicar uma DLL dependente em falta. Compilações próprias precisam de libgcc_s_seh-1.dll, libstdc++-6.dll e libwinpthread-1.dll correspondentes em libs/. Os arquivos publicados incluem essas dependências.','Fehler 193 weist meist auf das falsche Binärformat hin: Originale PS5-Bibliotheken gehören nicht in libs/. Fehler 126 kann auch eine fehlende abhängige DLL bedeuten. Eigene Builds benötigen passende libgcc_s_seh-1.dll, libstdc++-6.dll und libwinpthread-1.dll in libs/. Die Release-Archive enthalten ihre Laufzeitabhängigkeiten.','L’erreur 193 indique souvent un mauvais format binaire : ne placez pas les bibliothèques PS5 d’origine dans libs/. L’erreur 126 peut signaler une DLL dépendante absente. Les compilations personnelles ont besoin des fichiers correspondants libgcc_s_seh-1.dll, libstdc++-6.dll et libwinpthread-1.dll dans libs/. Les archives publiées incluent ces dépendances.','El error 193 suele indicar un formato binario incorrecto: no pongas bibliotecas PS5 originales en libs/. El error 126 puede indicar una DLL dependiente ausente. Las compilaciones propias necesitan libgcc_s_seh-1.dll, libstdc++-6.dll y libwinpthread-1.dll correspondientes en libs/. Los archivos publicados incluyen esas dependencias.'),L('Run from a terminal and preserve the earliest error. For direct-memory allocation failures, check total system commit and page-file configuration before blaming the GPU. Do not copy unrelated DLLs from download sites or change the global PATH to hide a dependency mismatch.','在终端运行并保留最早的错误。direct-memory 分配失败时先检查系统提交额度与页面文件配置。不要从不相关下载站拼凑 DLL，也不要用修改全局 PATH 掩盖依赖版本错配。','شغّل من الطرفية واحتفظ بأول خطأ. عند فشل الذاكرة المباشرة افحص التزام الذاكرة وملف الترحيل. لا تجمع DLL من مواقع عشوائية ولا تغيّر PATH العام لإخفاء عدم تطابق التبعيات.','Execute num terminal e guarde o primeiro erro. Nas falhas de memória direta, verifique a memória comprometida e a paginação. Não misture DLL de sites aleatórios nem altere o PATH global para disfarçar incompatibilidades.','Starte im Terminal und bewahre den ersten Fehler auf. Prüfe bei Fehlern direkter Speicherzuweisungen System-Commit und Auslagerungsdatei. Mische keine DLLs aus fremden Downloadquellen und kaschiere Versionskonflikte nicht über den globalen PATH.','Lancez le programme dans un terminal et conservez la première erreur. Pour les échecs de mémoire directe, vérifiez l’engagement mémoire et le fichier d’échange. Ne récupérez pas de DLL au hasard et ne modifiez pas le PATH global pour masquer un conflit.','Ejecuta desde una terminal y conserva el primer error. Si falla la memoria directa, comprueba el compromiso de memoria y la paginación. No mezcles DLL de sitios ajenos ni cambies el PATH global para ocultar incompatibilidades.')]}]},
@@ -68,3 +205,5 @@ for(const article of articles){if(["start","downloads","guides/build","guides/in
 for(const article of articles){if(["guides/linux","guides/windows","guides/build"].includes(article.slug))article.reviewed="2026-10-22";}
 
 articles.find(article=>article.slug==="guides/language-fonts")!.reviewed="2026-10-22";
+
+for(const article of articles){if(["requirements","guides/windows","guides/build","guides/linux","guides/input"].includes(article.slug))article.reviewed="2026-10-23";}

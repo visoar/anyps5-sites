@@ -3538,5 +3538,187 @@
   "doom-3-bfg-homebrew": {
     "cover": null,
     "screenshots": []
+  },
+  "greak-memories-of-azur": {
+    "cover": null,
+    "screenshots": []
+  },
+  "the-pathless": {
+    "cover": {
+      "file": "the-pathless/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202007/1500/PzzL4lymRdZuLEerjeL58HG8.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202007/1500/PzzL4lymRdZuLEerjeL58HG8.png",
+      "sourceSha256": "15b9d9f5f298c7348ef79391d35693cf13e0ac3eac38d4e6662d991978a095e6",
+      "sourceBytes": 225702,
+      "sha256": "8df38bf828197e179eefdb26ab16257fb23073e03a8e432fd7a5e928518f440f",
+      "bytes": 138684,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "call-of-the-sea": {
+    "cover": null,
+    "screenshots": []
+  },
+  "persona-3-reload": {
+    "cover": {
+      "file": "persona-3-reload/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202307/2601/85487475426de191c3c100b47ddc61f77c515b513948272e.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202307/2601/85487475426de191c3c100b47ddc61f77c515b513948272e.png",
+      "sourceSha256": "ba00711594828eb8af184616a2f8e4f63946b4c8eb7a7562ca908d361809efa4",
+      "sourceBytes": 222382,
+      "sha256": "1d8a537a20893eed7cb9266e736a393ed32f0a3c17fc70670e69368c18605868",
+      "bytes": 128158,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "dreamcore": {
+    "cover": null,
+    "screenshots": []
+  },
+  "morrowind-openmw-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "ffta-recomp-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "graven": {
+    "cover": null,
+    "screenshots": []
+  },
+  "outer-wilds": {
+    "cover": {
+      "file": "outer-wilds/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1623/Zofebh60Ue7Zt5sC10UAtU3D.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1623/Zofebh60Ue7Zt5sC10UAtU3D.png",
+      "sourceSha256": "7662858f80c77090b3ecaafe721da7bdb6893cf0ebb5965a951b73d8211cc349",
+      "sourceBytes": 152737,
+      "sha256": "245674d632eff81444735e811e257f101cda9df1a3de1e6c7e9392b0164c4d7f",
+      "bytes": 82946,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "metal-gear-solid-master-collection": {
+    "cover": null,
+    "screenshots": []
+  },
+  "raptor-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "ghostrunner-2": {
+    "cover": {
+      "file": "ghostrunner-2/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0121/f69a1189e9674b64a574b2fc35e987738be0ee41578818a7.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0121/f69a1189e9674b64a574b2fc35e987738be0ee41578818a7.png",
+      "sourceSha256": "0c6aa18bed2da3f70d22432bed8d5344a01f24f0ca31da56b545c06624a27a0b",
+      "sourceBytes": 157769,
+      "sha256": "dd5ffcb4855054c676df7b44896f30b018dd77f106bb163e74ba1087c9e4ef00",
+      "bytes": 90842,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "severed-steel": {
+    "cover": null,
+    "screenshots": []
+  },
+  "hamster-playground": {
+    "cover": null,
+    "screenshots": []
+  },
+  "overcooked-all-you-can-eat": {
+    "cover": null,
+    "screenshots": []
+  },
+  "octopath-traveler-ii": {
+    "cover": {
+      "file": "octopath-traveler-ii/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202208/3005/IsX7DgPyVdZJf1ZGGNhB1RrI.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/3005/IsX7DgPyVdZJf1ZGGNhB1RrI.png",
+      "sourceSha256": "e6d03115d3f039ea01112593177ef8ae02cc159032bf6375eb028a26cb581926",
+      "sourceBytes": 407204,
+      "sha256": "84f319f416d101fe05f866ebb053b01ad9fc8376750bea720f6fe4f3e4b413b6",
+      "bytes": 308468,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "terminator-2d-no-fate": {
+    "cover": {
+      "file": "terminator-2d-no-fate/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2113/5a7ae00a42d26b22990488aed07047b811c62e9cea404080.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2113/5a7ae00a42d26b22990488aed07047b811c62e9cea404080.png",
+      "sourceSha256": "d9ecfd583e4e71fc59d7f8bb7060ae1d07833735a042fb9000531586fe1cd5d1",
+      "sourceBytes": 222780,
+      "sha256": "61899a655ab6c73a99d314c07477e84d6e9b6a83436030b46089933fec56254e",
+      "bytes": 129328,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "art-of-rally": {
+    "cover": {
+      "file": "art-of-rally/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202311/1313/a4cae800396bf038e3cbe9242b36fc081fa53b5bda915719.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202311/1313/a4cae800396bf038e3cbe9242b36fc081fa53b5bda915719.png",
+      "sourceSha256": "c6fc46bb60eb6e5243b5e70ad8003fe7b8e2bb1b69b260e0144bada06fb92f67",
+      "sourceBytes": 87368,
+      "sha256": "a0fde7300414e0b669e5525b3058d0506aefbdf2a7a2d07f838902a0d98909da",
+      "bytes": 43418,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "syphon-filter": {
+    "cover": null,
+    "screenshots": []
+  },
+  "arkanoid-eternal-battle": {
+    "cover": null,
+    "screenshots": []
+  },
+  "afterdream": {
+    "cover": null,
+    "screenshots": []
+  },
+  "fallen-legion-rise-to-glory": {
+    "cover": null,
+    "screenshots": []
+  },
+  "alex-kidd-miracle-world-dx": {
+    "cover": null,
+    "screenshots": []
+  },
+  "biped": {
+    "cover": null,
+    "screenshots": []
+  },
+  "call-of-duty-black-ops-ii": {
+    "cover": null,
+    "screenshots": []
+  },
+  "rush-2-recompiled": {
+    "cover": null,
+    "screenshots": []
+  },
+  "wave-race-64-recompiled": {
+    "cover": null,
+    "screenshots": []
+  },
+  "trails-sky-2nd-chapter": {
+    "cover": null,
+    "screenshots": []
   }
 }

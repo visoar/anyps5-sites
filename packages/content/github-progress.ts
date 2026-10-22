@@ -3,6 +3,148 @@ import metadata from './github-source-status.json';
 export interface DevelopmentNote {number:number;title:Text;summary:Text;games:string[]}
 export const developmentNotes:DevelopmentNote[]=[
 {
+ "number": 9754,
+ "games": [],
+ "title": {
+  "en": "Mac writeback experiment measures cost, not a safe speed setting",
+  "zh": "Mac 写回实验测出成本，尚非安全提速设置",
+  "ar": "تجربة كتابة Mac تقيس التكلفة لا إعداداً آمناً",
+  "pt": "Experiência Mac mede custo, não opção segura",
+  "de": "Mac-Writeback misst Kosten, keine sichere Option",
+  "fr": "Writeback Mac : coût mesuré, pas réglage sûr",
+  "es": "Writeback Mac mide coste, no ajuste seguro"
+ },
+ "summary": {
+  "en": "Don’t Starve Together PPSA02070, Apple M2/MoltenVK 1.4.2, macOS series 42c3fd09a2b6 plus local changes: two 60-second menu runs compare eager stores with a local skip. Writeback falls from 3.66 to 0.02 ms/frame; GPU time in the first 20 seconds falls from 19–21 to 16–16.5 ms. Later draw work differs. Skipping stores can expose stale bytes to guest CPU reads, so this is a correctness-sensitive proposal, with no Windows/Linux or gameplay validation.",
+  "zh": "Don’t Starve Together PPSA02070，Apple M2／MoltenVK 1.4.2、Mac 系列 42c3fd09a2b6 加本地改动：两次 60 秒菜单对照中，跳过主动写回使该项从 3.66 降至 0.02 ms／帧；前 20 秒 GPU 从 19–21 降至 16–16.5 ms，后续绘制量不同。跳过写回可能让客体 CPU 读到旧数据，因此仍是涉及正确性的提案，无 Windows／Linux 或实际游玩验证。",
+  "ar": "PPSA02070 على M2/MoltenVK 1.4.2، فرع Mac 42c3fd09a2b6 مع تغييرات محلية: تجربتا قائمة 60ث، تجاوز الكتابة يخفضها من 3.66 إلى 0.02ms/إطار وGPU أول 20ث من 19–21 إلى 16–16.5ms؛ العمل اللاحق مختلف. قد تقرأ CPU بيانات قديمة، فلا إعداد آمن أو إثبات لعب/Windows/Linux.",
+  "pt": "PPSA02070 em M2/MoltenVK 1.4.2, série Mac 42c3fd09a2b6 com alterações locais: dois menus de 60s; omitir stores reduz escrita de 3,66 para 0,02ms/frame e GPU nos primeiros 20s de 19–21 para 16–16,5ms. Trabalho posterior difere. A CPU pode ler dados antigos; proposta sensível à correção, sem Windows/Linux ou jogabilidade verificados.",
+  "de": "PPSA02070, M2/MoltenVK 1.4.2, Mac-Serie 42c3fd09a2b6 plus lokale Änderungen: zwei 60s-Menüläufe. Store-Skip senkt Writeback 3,66→0,02ms/Frame und GPU in ersten 20s 19–21→16–16,5ms; spätere Draw-Arbeit unterscheidet sich. CPU kann alte Daten lesen. Korrektheitskritischer Vorschlag ohne Windows/Linux- oder Spielnachweis.",
+  "fr": "PPSA02070, M2/MoltenVK 1.4.2, série Mac 42c3fd09a2b6 et changements locaux : deux menus de 60s. Omettre les stores réduit le writeback 3,66→0,02ms/image et le GPU des premières 20s 19–21→16–16,5ms ; travail ultérieur différent. Risque de données périmées pour CPU ; proposition sensible à la correction, sans jeu/Windows/Linux validés.",
+  "es": "PPSA02070, M2/MoltenVK 1.4.2, serie Mac 42c3fd09a2b6 con cambios locales: dos menús de 60s. Omitir stores baja writeback 3,66→0,02ms/frame y GPU en primeros 20s 19–21→16–16,5ms; trabajo posterior distinto. CPU puede leer datos viejos; propuesta sensible a corrección, sin validar juego/Windows/Linux."
+ }
+},
+{
+ "number": 9783,
+ "games": [
+  "ccleste-homebrew",
+  "doom-3-bfg-homebrew"
+ ],
+ "title": {
+  "en": "Mac integration tests remain separate from Linux under Rosetta",
+  "zh": "Mac 集成实验与 Rosetta 下的 Linux 分开记录",
+  "ar": "تجارب Mac منفصلة عن Linux تحت Rosetta",
+  "pt": "Testes Mac separados de Linux sob Rosetta",
+  "de": "Mac-Integration getrennt von Linux unter Rosetta",
+  "fr": "Essais Mac distincts de Linux sous Rosetta",
+  "es": "Pruebas Mac separadas de Linux bajo Rosetta"
+ },
+ "summary": {
+  "en": "The M5/MoltenVK runtime uses ci/macos-series-2 at 53db0badb with #7524, #7937 code and the SSL change from closed-unmerged #7332; conversion uses main 8b3e39832a. Open #9789, linked from issue #9783, passes the UINT pipeline failure: Doom 3 reaches a missing-data exit, while ccleste next lacks barycentric/mesh support. Separate Linux llvmpipe runs use a6dcea9279. Neither presents a playable game or establishes a released Mac runtime.",
+  "zh": "M5／MoltenVK 运行库来自 ci/macos-series-2 53db0badb，加 #7524、#7937 代码及已关闭未合并 #7332 的 SSL 改动；转换器用 main 8b3e39832a。问题 #9783 所链的开放 PR #9789 越过 UINT 管线失败后，Doom 3 到缺数据退出，ccleste 仍缺 barycentric／mesh 能力。另行 Linux llvmpipe 用 a6dcea9279。均未呈现可玩游戏，也不构成已发行 Mac 运行库。",
+  "ar": "يستخدم تشغيل M5/MoltenVK شجرة ci/macos-series-2 عند 53db0badb مع #7524 وكود #7937 وتغيير SSL من #7332 المغلق دون دمج؛ المحول main 8b3e39832a. يتجاوز #9789 المفتوح خطأ UINT: Doom 3 يخرج لغياب البيانات وccleste يفتقد barycentric/mesh. Linux llvmpipe منفصل عند a6dcea9279؛ لا لعبة قابلة للعب أو إصدار Mac مثبت.",
+  "pt": "O runtime M5/MoltenVK usa ci/macos-series-2 em 53db0badb, com #7524, código #7937 e SSL do #7332 fechado sem integrar; o conversor usa main 8b3e39832a. O #9789 aberto ultrapassa UINT: Doom 3 sai por falta de dados e ccleste para por barycentric/mesh. Linux llvmpipe é separado, em a6dcea9279. Não há jogo jogável apresentado nem runtime Mac publicado.",
+  "de": "M5/MoltenVK nutzt ci/macos-series-2 53db0badb mit #7524, #7937-Code und SSL aus dem ungemergt geschlossenen #7332; Konverter ist Main 8b3e39832a. Offenes #9789 überwindet den UINT-Fehler: Doom 3 endet wegen fehlender Daten, ccleste an Barycentric/Mesh. Linux-llvmpipe läuft separat auf a6dcea9279. Kein dargestelltes spielbares Spiel und keine veröffentlichte Mac-Runtime.",
+  "fr": "Le runtime M5/MoltenVK utilise ci/macos-series-2 53db0badb avec #7524, le code #7937 et SSL du #7332 fermé sans fusion ; conversion sur main 8b3e39832a. Le #9789 ouvert dépasse UINT : Doom 3 quitte faute de données, ccleste manque de barycentric/mesh. Linux llvmpipe est distinct, sur a6dcea9279. Aucun jeu jouable présenté ni runtime Mac publié.",
+  "es": "El runtime M5/MoltenVK usa ci/macos-series-2 53db0badb con #7524, código #7937 y SSL de #7332 cerrado sin fusionar; el conversor usa main 8b3e39832a. #9789 abierto supera UINT: Doom 3 sale por datos ausentes y ccleste carece de barycentric/mesh. Linux llvmpipe va separado en a6dcea9279. Sin juego jugable presentado ni runtime Mac publicado."
+ }
+},
+{
+ "number": 9684,
+ "games": [],
+ "title": {
+  "en": "Java probes: stack alignment is runtime evidence",
+  "zh": "Java探针：栈对齐属于runtime证据",
+  "ar": "مجسات Java: محاذاة stack دليل runtime",
+  "pt": "Sondas Java: alinhamento stack é evidência runtime",
+  "de": "Java-Probes: Stackalignment ist Runtimebeleg",
+  "fr": "Sondes Java : alignement stack, preuve runtime",
+  "es": "Sondas Java: alineación stack es evidencia runtime"
+ },
+ "summary": {
+  "en": "Discussion9683: three OpenJDK25 probe packages fail Linux stack-guard mprotect on main6ef5a1c4c;#9684 aligns16KiB stacks and reports all rows passing. WSL2/Ubuntu22.04/Ryzen97900/lavapipe, not a commercial game test. Console ALL PASS belongs to firmware13.60, not proof that all host VM paths match.",
+  "zh": "讨论9683：三种OpenJDK25探针在main6ef5a1c4c的Linux stack-guard mprotect失败，#9684对齐16KiB栈并报告全部行通过；WSL2／Ubuntu22.04／Ryzen97900／lavapipe，非商业游戏。主机ALL PASS属于固件13.60，非全部host VM路径等价证明。",
+  "ar": "نقاش9683: ثلاث حزم Java25 تفشل Linux mprotect على6ef5a1c4c؛#9684 يحاذي16KiB ويبلغ نجاح الصفوف. WSL2/Ubuntu22.04/7900/lavapipe، ليس لعبة تجارية. ALL PASS على كونسل13.60 لا يثبت كل مسارات host VM.",
+  "pt": "Discussão9683: três probes Java25 falham Linux mprotect em6ef5a1c4c;#9684 alinha16KiB e relata todas linhas passadas. WSL2/Ubuntu22.04/7900/lavapipe, não jogo. ALL PASS console13.60 não prova equivalência VM host completa.",
+  "de": "Diskussion9683: drei Java25-Probes Linux-mprotect-Fehler auf6ef5a1c4c;#9684 richtet16KiB aus, alle Zeilen gemeldet bestanden. WSL2/Ubuntu22.04/7900/lavapipe, kein Spiel. Konsolen-ALL-PASS13.60 keine gesamte Host-VM-Äquivalenz.",
+  "fr": "Discussion9683: trois probes Java25 échouent Linux mprotect sur6ef5a1c4c ;#9684 aligne16KiB, toutes lignes annoncées passées. WSL2/Ubuntu22.04/7900/lavapipe, sans jeu. ALL PASS console13.60 ne prouve pas toute VM hôte.",
+  "es": "Discusión9683: tres probes Java25 fallan Linux mprotect en6ef5a1c4c;#9684 alinea16KiB y reporta todas filas pasadas. WSL2/Ubuntu22.04/7900/lavapipe, no juego. ALL PASS consola13.60 no prueba toda VM host."
+ }
+},
+{
+ "number": 9397,
+ "games": [],
+ "title": {
+  "en": "CPU raymarch demo: runtime smoke test, no AGC shader coverage",
+  "zh": "CPU raymarch演示：runtime冒烟，非AGC shader覆盖",
+  "ar": "عرض CPU: اختبار runtime لا تغطية AGC",
+  "pt": "Demo CPU: smoke runtime, não cobertura AGC",
+  "de": "CPU-Demo: Runtime-Smoke ohne AGC-Abdeckung",
+  "fr": "Démo CPU : smoke runtime sans couverture AGC",
+  "es": "Demo CPU: smoke runtime sin cobertura AGC"
+ },
+ "summary": {
+  "en": "PPSA97001 demo1.3 on clean maina6dcea9279, Windows11/i7-13650HX/RTX4060Laptop610.62: four smoke runs180frames/twoscenes/exit0 in3.81–4.44s. Normal19s pad-file scene/mood/track switches work; audio dummy, physical pad/motion/rumble untested. CPU rendering cannot validate commercial AGC graphics.",
+  "zh": "PPSA97001演示1.3在纯maina6dcea9279、Windows11／i7-13650HX／RTX4060Laptop610.62四次冒烟180帧／两场景、3.81–4.44秒exit0；普通19秒pad-file切场景／主题／曲目有效。dummy声音，实体手柄／体感／震动未验；CPU渲染不验证商业AGC图形。",
+  "ar": "عرض1.3 PPSA97001 على main نظيفa6dcea9279/Windows11/13650HX/4060Laptop610.62:4smoke180إطار/مشهدان/exit0 خلال3.81–4.44ث.19ث pad-file يبدل المشهد/المزاج/الموسيقى؛ dummy، يد/حركة/rumble غير مختبرة، CPU لا يثبت AGC تجارياً.",
+  "pt": "Demo1.3 PPSA97001 em main limpoa6dcea9279/Windows11/13650HX/4060Laptop610.62:4smoke180frames/2cenas/exit0 em3,81–4,44s.19s pad-file muda cena/tema/faixa; áudio dummy/pad físico/movimento/rumble não testados. CPU não valida AGC comercial.",
+  "de": "Demo1.3 PPSA97001 auf sauberema6dcea9279/Windows11/13650HX/4060Laptop610.62:4Smoke180Frames/2Szenen/Exit0 in3,81–4,44s.19s Pad-Datei schaltet Szene/Mood/Track; Dummyton/physisches Pad/Motion/Rumble ungeprüft. CPU kein kommerzieller AGC-Beleg.",
+  "fr": "Démo1.3 PPSA97001 sur main proprea6dcea9279/Windows11/13650HX/4060Laptop610.62:4smoke180images/2scènes/exit0 en3,81–4,44s.19s pad-file change scène/thème/piste ; audio dummy/pad physique/mouvement/rumble non testés. CPU sans preuve AGC commerciale.",
+  "es": "Demo1.3 PPSA97001 en main limpioa6dcea9279/Windows11/13650HX/4060Laptop610.62:4smoke180frames/2escenas/exit0 en3,81–4,44s.19s pad-file cambia escena/tema/pista; audio dummy/pad físico/movimiento/rumble sin probar. CPU no valida AGC comercial."
+ }
+},
+{
+ "number": 9406,
+ "games": [
+  "biped",
+  "wobbly-life",
+  "hamster-playground",
+  "outer-wilds"
+ ],
+ "title": {
+  "en": "Pending-depth lifetime: title-specific paired evidence",
+  "zh": "Pending depth生命周期：按游戏保留对照",
+  "ar": "عمر depth: أدلة متطابقة لكل عنوان",
+  "pt": "Depth pendente: pares por título",
+  "de": "Pending-Depth-Lebenszeit: Paare je Titel",
+  "fr": "Durée depth : preuves appariées par titre",
+  "es": "Vida depth: pruebas pareadas por título"
+ },
+ "summary": {
+  "en": "Matched main reproduces pause-menu storage abort≈170s; #9406 same-base candidate permits pause/resume and return to menu through15min scheduled total, including startup/idle. Gameplay remains responsive, menu music absent. Saves, cutscenes and full-game stability unverified.",
+  "zh": "匹配main约170秒重现暂停菜单storage退出；同基线#9406可暂停／恢复／回主菜单，达15分钟总限时，包含启动及闲置。游玩仍响应、菜单音乐缺失；存档／过场／全程稳定未验。",
+  "ar": "main المقارن يعيد تعطل pause نحو 170 ث؛ #9406 على الأساس نفسه يسمح pause/resume/عودة حتى حد 15 د يشمل البدء والانتظار. اللعب يستجيب، موسيقى القائمة غائبة؛ الحفظ والمشاهد والاستقرار الكامل غير مختبرة.",
+  "pt": "Main comparado repete falha pause≈170s; #9406 na mesma base permite pausa/retoma/menu até15min totais com arranque/espera. Jogo responde, música menu ausente; saves/cutscenes/estabilidade completa por testar.",
+  "de": "Passendes Main reproduziert Pause-Abbruch≈170s; #9406 auf gleicher Basis erlaubt Pause/Resume/Menü bis15min Gesamtdauer samt Start/Leerlauf. Gameplay reagiert, Menümusik fehlt; Saves/Filme/Gesamtstabilität offen.",
+  "fr": "Main témoin reproduit arrêt pause≈170s ; #9406 même base permet pause/reprise/menu jusqu’à15min totales incluant début/attente. Jeu réactif, musique menu absente ; saves/films/stabilité complète ouverts.",
+  "es": "Main control reproduce fallo pausa≈170s; #9406 misma base permite pausa/reanudar/menú hasta15min totales con inicio/espera. Juego responde, música menú ausente; saves/películas/estabilidad completa sin probar."
+ }
+},
+{
+ "number": 8847,
+ "games": [
+  "curved-space"
+ ],
+ "title": {
+  "en": "Curved Space: image fix replayed on merged main",
+  "zh": "Curved Space：合并main已重跑图像修复",
+  "ar": "Curved Space: إعادة إصلاح الصورة على main",
+  "pt": "Curved Space: imagem retestada no main integrado",
+  "de": "Curved Space: Bildfix auf gemergtem Main getestet",
+  "fr": "Curved Space : correctif revérifié sur main intégré",
+  "es": "Curved Space: imagen retestada en main integrado"
+ },
+ "summary": {
+  "en": "Merged-main replay now renders arena, ship, rings, backdrop and bloom:73.4% non-black pixels at95s versus0.6–2.1% before. Same100s scripted route, no driver stop. This verifies the first-level image after#8847, not combat, audio, completion or a new FPS figure.",
+  "zh": "合并main重跑首关有竞技场、船、光环、背景和bloom，95秒非黑像素73.4%，旧0.6–2.1%；同100秒脚本无驱动停止。验证#8847后的首关图像，非战斗／声音／完赛或新FPS。",
+  "ar": "إعادة main المدمج تعرض الساحة والسفينة والحلقات والخلفية:73.4% غير أسود عند 95 ث مقابل 0.6–2.1%. مسار 100 ث بلا توقف driver. إثبات صورة أول مستوى بعد #8847 لا قتال/صوت/إكمال أو FPS جديد.",
+  "pt": "Replay main integrado mostra arena/nave/anéis/cenário/bloom:73,4% não preto aos95s contra0,6–2,1%. Mesmo percurso100s sem parar driver. Valida imagem inicial após#8847, não combate/som/fim/FPS novo.",
+  "de": "Gemergtes Main zeigt Arena/Schiff/Ringe/Hintergrund/Bloom:73,4% nichtschwarz bei95s statt0,6–2,1%. Gleicher100s-Pfad ohne Treiberstopp. Erstes Bild nach#8847 bestätigt, kein Kampf/Ton/Abschluss/FPS-Neuwert.",
+  "fr": "Main intégré affiche arène/vaisseau/anneaux/décor/bloom :73,4% non noir à95s contre0,6–2,1%. Même trajet100s sans arrêt pilote. Image initiale après#8847 validée, pas combat/son/fin/nouveaux FPS.",
+  "es": "Main integrado muestra arena/nave/anillos/fondo/bloom:73,4% no negro a95s frente0,6–2,1%. Misma ruta100s sin parar driver. Valida imagen inicial tras#8847, no combate/audio/final/FPS nuevo."
+ }
+},
+{
  "number": 5487,
  "games": [
   "yakuza-0-directors-cut"
@@ -288,22 +430,22 @@ export const developmentNotes:DevelopmentNote[]=[
   "sonic-unleashed-recompiled"
  ],
  "title": {
-  "en": "Sonic: fresh conversion still stops before gameplay",
-  "zh": "Sonic：全新转换仍停在游玩前",
-  "ar": "Sonic: التحويل الجديد يتوقف قبل اللعب",
-  "pt": "Sonic: conversão nova para antes do jogo",
-  "de": "Sonic: neue Konvertierung stoppt vor Gameplay",
-  "fr": "Sonic : nouvelle conversion arrêtée avant jeu",
-  "es": "Sonic: conversión nueva para antes de jugar"
+  "en": "Sonic: ordinary replay and verifier test remain at loading",
+  "zh": "Sonic：普通重跑与verifier仍停加载",
+  "ar": "Sonic: replay وverifier ما زالا بالتحميل",
+  "pt": "Sonic: replay/verifier continuam na carga",
+  "de": "Sonic: Replay/Verifier weiterhin beim Laden",
+  "fr": "Sonic : replay/verifier toujours au chargement",
+  "es": "Sonic: replay/verifier siguen en carga"
  },
  "summary": {
-  "en": "Fresh-conversion fork reaches menu/movie/level loading then243.192s unreadable-range abort. Same-runtime logging run instead ends338.106s at invalid MSAA descriptor after black screen; not one proven cause/fix. No gameplay; historical0e7 movement/seven rings retained.",
-  "zh": "新转换分支到菜单／影片／关卡加载后243.192秒不可读范围退出；相同运行库加追踪另在338.106秒黑屏后停异常MSAA描述符，非已证同一原因／修复。无游玩，旧0e7移动／七环保留。",
-  "ar": "التحويل الجديد على الفرع 2e844131db مع --no-patches لا يجعل مصدر الفرع نظيفاً. يتوقف عند 243.192ث بنص غير مقروء؛ تجربة التسجيل المختلفة تتوقف عند 338.106ث بخطأ MSAA. لا لعب مثبت، ونتيجة جمع الحلقات القديمة منفصلة.",
-  "pt": "Nova conversão no fork 2e844131db com --no-patches não remove alterações do código. Para aos 243,192s com texto ilegível; outro ensaio com logging para aos 338,106s por MSAA inválido. Sem jogo demonstrado; recolha de anéis antiga é outro resultado.",
-  "de": "Neue Konvertierung auf Fork 2e844131db mit --no-patches bedeutet keinen sauberen Quellstand. Abbruch nach 243,192s mit unlesbarem Text; anderer Logging-Lauf nach 338,106s an ungültigem MSAA. Kein Gameplay; früheres Ringesammeln bleibt getrennt.",
-  "fr": "La nouvelle conversion du fork 2e844131db avec --no-patches ne retire pas les modifications source. Arrêt à 243,192s avec texte illisible ; autre essai avec logs à 338,106s sur MSAA invalide. Sans jeu démontré ; ancienne collecte d’anneaux distincte.",
-  "es": "La nueva conversión del fork 2e844131db con --no-patches conserva cambios fuente. Para a 243,192s con texto ilegible; otra prueba con logs a 338,106s por MSAA inválido. Sin juego demostrado; la recogida anterior de anillos es otro resultado."
+  "en": "New ordinary fork replay reaches title/Continue/movie/loading then invalid descriptor, natural exit312.139s. Four recent runs each have2 submission-wait warnings,1 failed fence wait and1 failed query despite0VUID. No new gameplay; old0e7 movement/rings remain separate. Fresh conversion does not remove source patches.",
+  "zh": "新普通fork重跑到标题／Continue／影片／加载后异常descriptor，312.139秒自然退出；四次近运行每次2条提交等待警告、1次fence和1次query失败，虽0VUID。无新游玩，旧0e7移动／环另留，全新转换不清除源码补丁。",
+  "ar": "إعادة fork عادية تصل العنوان/Continue/فيلم/تحميل ثم descriptor غير صالح وخروج 312.139 ث. كل من أربع runs به 2 تحذير انتظار و 1fence و 1query فاشل رغم 0VUID. لا لعب جديد،0e7 منفصل، التحويل الجديد لا يزيل patches المصدر.",
+  "pt": "Replay fork normal chega título/Continue/filme/carga e descriptor inválido312,139s. Quatro runs recentes têm2avisos espera/1fence/1query falhados apesar0VUID. Sem jogo novo,0e7 separado; conversão nova conserva patches fonte.",
+  "de": "Normaler Forklauf bis Titel/Continue/Film/Laden, Deskriptorabbruch312,139s. Vier neue Läufe je2Wartewarnungen/1Fence-/1Queryfehler trotz0VUID. Kein neues Gameplay,0e7 getrennt, neue Konvertierung behält Quellpatches.",
+  "fr": "Replay fork normal jusqu’à titre/Continue/film/charge, descripteur invalide312,139s. Quatre runs chacun2attentes/1fence/1query en échec malgré0VUID. Sans nouveau jeu,0e7 distinct ; conversion neuve conserve patchs source.",
+  "es": "Replay fork normal llega título/Continue/película/carga y descriptor inválido312,139s. Cuatro runs con2avisos espera/1fence/1query fallidos pese0VUID. Sin juego nuevo,0e7 aparte; conversión nueva conserva patches fuente."
  }
 },
 {

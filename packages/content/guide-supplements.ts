@@ -1072,12 +1072,29 @@ guideSupplements["guides/build"].push({
    "de": "Konverter erzeugtMach-O/Rosetta, v0.1.3 ohneMac-Runtime. #7332 am20.Oktober ungemergt geschlossen; gepinnte Apple-/Lana-Experimente bleiben Zweigergebnisse, kein Release/ARM-nativ/allgemeine Anforderungen.",
    "fr": "Convertisseur produitMach-O/Rosetta, maisv0.1.3 sansruntimeMac. #7332 fermé sans fusion20octobre ; essais Apple/Lana épinglés restent résultats de branche, ni release/ARMnatif/exigences générales.",
    "es": "Conversor produceMach-O/Rosetta, perov0.1.3 sinruntimeMac. #7332 cerrado sin fusionar20octubre; experimentos Apple/Lana conservan pins de rama, no release/ARMnativo/requisitos generales."
+  },
+  {
+   "en": "Mac work continues on separate integration trees. The M5 report uses ci/macos-series-2 53db0badb with #7524, #7937 code, #7332 SSL and open #9789; its converter is main 8b3e39832a. Doom 3 still lacks game data and ccleste still lacks GPU capabilities. A Linux container under Rosetta with llvmpipe is a different runtime. These observations do not provide a ready-to-download Mac package or general Apple silicon game requirements.",
+   "zh": "Mac 工作仍在独立集成树继续。M5 报告的运行库是 ci/macos-series-2 53db0badb，加 #7524、#7937 代码、#7332 的 SSL 及开放 #9789；转换器为 main 8b3e39832a。Doom 3 仍缺游戏数据，ccleste 仍缺 GPU 能力。Rosetta 下的 Linux 容器与 llvmpipe 属于不同运行环境；这些记录不代表现成 Mac 包或通用 Apple 芯片游戏要求。",
+   "ar": "يستمر عمل Mac في أشجار دمج منفصلة. تقرير M5 يستخدم ci/macos-series-2 53db0badb مع #7524 وكود #7937 وSSL #7332 و#9789 المفتوح؛ المحول main 8b3e39832a. Doom 3 يفتقد البيانات وccleste قدرات GPU. Linux داخل Rosetta مع llvmpipe بيئة أخرى؛ لا حزمة Mac جاهزة أو متطلبات عامة.",
+   "pt": "O trabalho Mac continua em árvores separadas. M5 usa ci/macos-series-2 53db0badb com #7524, código #7937, SSL #7332 e #9789 aberto; conversor main 8b3e39832a. Doom 3 ainda sem dados e ccleste sem capacidades GPU. Linux/Rosetta/llvmpipe é outro ambiente; não há pacote Mac pronto nem requisitos gerais Apple silicon.",
+   "de": "Mac-Arbeit läuft auf separaten Integrationsbäumen weiter. M5 nutzt ci/macos-series-2 53db0badb mit #7524, #7937-Code, #7332-SSL und offenem #9789; Konverter Main 8b3e39832a. Doom 3 fehlen Daten, ccleste GPU-Fähigkeiten. Linux unter Rosetta/llvmpipe ist eine andere Runtime. Kein fertiges Mac-Paket oder allgemeine Apple-Silicon-Spielanforderung.",
+   "fr": "Le travail Mac continue sur des arbres distincts. M5 utilise ci/macos-series-2 53db0badb avec #7524, code #7937, SSL #7332 et #9789 ouvert ; convertisseur main 8b3e39832a. Doom 3 manque de données, ccleste de capacités GPU. Linux/Rosetta/llvmpipe est un autre runtime ; pas de paquet Mac prêt ni de prérequis généraux Apple silicon.",
+   "es": "El trabajo Mac continúa en árboles separados. M5 usa ci/macos-series-2 53db0badb con #7524, código #7937, SSL #7332 y #9789 abierto; conversor main 8b3e39832a. Doom 3 sigue sin datos y ccleste sin capacidades GPU. Linux/Rosetta/llvmpipe es otro runtime; no paquete Mac listo ni requisitos generales Apple silicon."
   }
  ],
  "links": [
   {
    "label": "Upstream source",
    "url": "https://github.com/boykopovar/AnyPS5/pull/7332"
+  },
+  {
+   "label": "Pinned M5 environment and linked proposal",
+   "url": "https://github.com/boykopovar/AnyPS5/issues/9783"
+  },
+  {
+   "label": "Homebrew scope",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/9788"
   }
  ]
 });
@@ -1556,6 +1573,182 @@ guideSupplements["guides/language-fonts"].push({
   {
    "label": "PPSA01325 01.905.000 · Linux report",
    "url": "https://github.com/boykopovar/AnyPS5/discussions/3232#discussioncomment-19087348"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"].push({
+ "id": "main-msys2-exception-toolchains",
+ "title": {
+  "en": "Later main: choose a compatible Windows exception toolchain",
+  "zh": "后续main：选择兼容Windows异常工具链",
+  "ar": "main اللاحق: أداة استثناءات Windows متوافقة",
+  "pt": "Main posterior: toolchain Windows compatível",
+  "de": "Späteres Main: kompatible Windows-Exceptions",
+  "fr": "Main ultérieur : exceptions Windows compatibles",
+  "es": "Main posterior: excepciones Windows compatibles"
+ },
+ "body": [
+  {
+   "en": "CMake now checks exception capabilities instead of requiring only one compiler distribution. MSYS2 UCRT64 GCC16.2.0-6 supports System-V SEH; WinLibs15.2r7 uses DWARF with -fno-asynchronous-unwind-tables. Use separate build directories and matching gcc/g++/DLLs. Scoop standalone GCC15.2 cannot build the runtime: SjLj fallback or incompatible SEH fails the required ABI handlers. Relinker-only builds are a narrower scope; a converter build does not validate game runtime.",
+   "zh": "CMake现检查异常能力，不再仅限定一个发行工具链。MSYS2 UCRT64 GCC16.2.0-6支持System-V SEH，WinLibs15.2r7用DWARF及-fno-asynchronous-unwind-tables。各工具链分开构建目录，gcc／g++／DLL配套。Scoop独立GCC15.2的SjLj回退或不兼容SEH不能构建runtime所需ABI handler。仅转换器构建范围更窄，不验证游戏runtime。",
+   "ar": "CMake يفحص قدرات exceptions: MSYS2 UCRT64 GCC16.2.0-6 يدعم System-V SEH، وWinLibs15.2r7 DWARF مع -fno-asynchronous-unwind-tables. افصل build dirs وطابق gcc/g++/DLL. Scoop GCC15.2 المستقل يفشل runtime بسبب SjLj/SEH غير متوافق. بناء relinker فقط لا يثبت runtime لعبة.",
+   "pt": "CMake verifica exceptions: MSYS2 UCRT64 GCC16.2.0-6 suporta System-V SEH, WinLibs15.2r7 usa DWARF/-fno-asynchronous-unwind-tables. Separe diretórios e combine gcc/g++/DLLs. Scoop GCC15.2 autónomo falha runtime por SjLj/SEH incompatível. Relinker-only não valida runtime de jogo.",
+   "de": "CMake prüft Exceptions: MSYS2 UCRT64 GCC16.2.0-6 mit System-V-SEH, WinLibs15.2r7 mit DWARF/-fno-asynchronous-unwind-tables. Buildordner trennen, gcc/g++/DLLs abstimmen. Scoop-Einzel-GCC15.2 scheitert an SjLj/SEH-ABI. Relinker-only bestätigt keine Spielruntime.",
+   "fr": "CMake vérifie les exceptions : MSYS2 UCRT64 GCC16.2.0-6 System-V SEH, WinLibs15.2r7 DWARF/-fno-asynchronous-unwind-tables. Dossiers séparés et gcc/g++/DLLs assortis. Scoop GCC15.2 autonome échoue runtime par SjLj/SEH incompatible. Relinker-only ne valide pas la runtime jeu.",
+   "es": "CMake verifica excepciones: MSYS2 UCRT64 GCC16.2.0-6 System-V SEH, WinLibs15.2r7 DWARF/-fno-asynchronous-unwind-tables. Directorios separados y gcc/g++/DLLs a juego. Scoop GCC15.2 autónomo falla runtime por SjLj/SEH incompatible. Relinker-only no valida runtime de juego."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/001d132f4752b21e018bda0da86e2ab3f411e7a5/docs/dev/BUILD.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-msys2-exception-toolchains",
+ "title": {
+  "en": "Later main: choose a compatible Windows exception toolchain",
+  "zh": "后续main：选择兼容Windows异常工具链",
+  "ar": "main اللاحق: أداة استثناءات Windows متوافقة",
+  "pt": "Main posterior: toolchain Windows compatível",
+  "de": "Späteres Main: kompatible Windows-Exceptions",
+  "fr": "Main ultérieur : exceptions Windows compatibles",
+  "es": "Main posterior: excepciones Windows compatibles"
+ },
+ "body": [
+  {
+   "en": "CMake now checks exception capabilities instead of requiring only one compiler distribution. MSYS2 UCRT64 GCC16.2.0-6 supports System-V SEH; WinLibs15.2r7 uses DWARF with -fno-asynchronous-unwind-tables. Use separate build directories and matching gcc/g++/DLLs. Scoop standalone GCC15.2 cannot build the runtime: SjLj fallback or incompatible SEH fails the required ABI handlers. Relinker-only builds are a narrower scope; a converter build does not validate game runtime.",
+   "zh": "CMake现检查异常能力，不再仅限定一个发行工具链。MSYS2 UCRT64 GCC16.2.0-6支持System-V SEH，WinLibs15.2r7用DWARF及-fno-asynchronous-unwind-tables。各工具链分开构建目录，gcc／g++／DLL配套。Scoop独立GCC15.2的SjLj回退或不兼容SEH不能构建runtime所需ABI handler。仅转换器构建范围更窄，不验证游戏runtime。",
+   "ar": "CMake يفحص قدرات exceptions: MSYS2 UCRT64 GCC16.2.0-6 يدعم System-V SEH، وWinLibs15.2r7 DWARF مع -fno-asynchronous-unwind-tables. افصل build dirs وطابق gcc/g++/DLL. Scoop GCC15.2 المستقل يفشل runtime بسبب SjLj/SEH غير متوافق. بناء relinker فقط لا يثبت runtime لعبة.",
+   "pt": "CMake verifica exceptions: MSYS2 UCRT64 GCC16.2.0-6 suporta System-V SEH, WinLibs15.2r7 usa DWARF/-fno-asynchronous-unwind-tables. Separe diretórios e combine gcc/g++/DLLs. Scoop GCC15.2 autónomo falha runtime por SjLj/SEH incompatível. Relinker-only não valida runtime de jogo.",
+   "de": "CMake prüft Exceptions: MSYS2 UCRT64 GCC16.2.0-6 mit System-V-SEH, WinLibs15.2r7 mit DWARF/-fno-asynchronous-unwind-tables. Buildordner trennen, gcc/g++/DLLs abstimmen. Scoop-Einzel-GCC15.2 scheitert an SjLj/SEH-ABI. Relinker-only bestätigt keine Spielruntime.",
+   "fr": "CMake vérifie les exceptions : MSYS2 UCRT64 GCC16.2.0-6 System-V SEH, WinLibs15.2r7 DWARF/-fno-asynchronous-unwind-tables. Dossiers séparés et gcc/g++/DLLs assortis. Scoop GCC15.2 autonome échoue runtime par SjLj/SEH incompatible. Relinker-only ne valide pas la runtime jeu.",
+   "es": "CMake verifica excepciones: MSYS2 UCRT64 GCC16.2.0-6 System-V SEH, WinLibs15.2r7 DWARF/-fno-asynchronous-unwind-tables. Directorios separados y gcc/g++/DLLs a juego. Scoop GCC15.2 autónomo falla runtime por SjLj/SEH incompatible. Relinker-only no valida runtime de juego."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/001d132f4752b21e018bda0da86e2ab3f411e7a5/docs/dev/BUILD.md"
+  }
+ ]
+},{
+ "id": "main-linux-fixed-default",
+ "title": {
+  "en": "Later main: Linux default image base and patch verification",
+  "zh": "后续main：Linux默认基址与补丁验收",
+  "ar": "main اللاحق: أساس Linux والتحقق",
+  "pt": "Main posterior: base Linux e verificação",
+  "de": "Späteres Main: Linux-Basis und Patchprüfung",
+  "fr": "Main ultérieur : base Linux et vérification",
+  "es": "Main posterior: base Linux y verificación"
+ },
+ "body": [
+  {
+   "en": "Ordinary Linux output is now ET_EXEC at0x400000 without ASLR; --linux-fixed-base selects another aligned base. Deprecated --lazy-binding keeps ET_DYN and cannot use bundled modules. A generated patch manifest records linux_base: --verify-output checks ET_EXEC offsets with that value, while ET_DYN requires no linux_base. PE/Mach-O remain refused; module entries are not verified. Do not apply this current-main behavior retrospectively to v0.1.3 or older tests.",
+   "zh": "普通Linux输出现默认0x400000的ET_EXEC、无ASLR，--linux-fixed-base选其他对齐基址。弃用的--lazy-binding保持ET_DYN且不能配bundled modules。生成补丁manifest记录linux_base；--verify-output用其核验ET_EXEC偏移，ET_DYN则不能有此字段。仍拒绝PE／Mach-O且不验模块条目；不倒推到v0.1.3或旧测试。",
+   "ar": "Linux العادي الآن ET_EXEC عند0x400000 بلاASLR؛ --linux-fixed-base يختار غيره. --lazy-binding المهمل يبقيET_DYN دون bundled modules. manifest يسجل linux_base للتحقق ET_EXEC، ET_DYN يجب ألا يحويه. PE/Mach-O والوحدات خارج التحقق؛ لا تعمم على v0.1.3/اختبارات قديمة.",
+   "pt": "Linux normal agora ET_EXEC em0x400000 semASLR; --linux-fixed-base muda base. --lazy-binding obsoleto mantémET_DYN sem módulos. Manifest regista linux_base para verificarET_EXEC;ET_DYN não o aceita. PE/Mach-O e módulos fora; não aplique a v0.1.3/testes antigos.",
+   "de": "Linux standardmäßig ET_EXEC bei0x400000 ohneASLR, andere Basis via --linux-fixed-base. Veraltetes --lazy-binding behältET_DYN ohne Module. Manifest-linux_base für ET_EXEC-Prüfung, beiET_DYN unzulässig. PE/Mach-O/Module ungeprüft; nicht auf v0.1.3/alte Tests übertragen.",
+   "fr": "Linux ordinaire désormais ET_EXEC à0x400000 sansASLR ; --linux-fixed-base change la base. --lazy-binding obsolète gardeET_DYN sans modules. linux_base du manifeste vérifieET_EXEC, absent pourET_DYN. PE/Mach-O/modules exclus ; ne pas reporter sur v0.1.3/anciens essais.",
+   "es": "Linux normal ahora ET_EXEC en0x400000 sinASLR; --linux-fixed-base cambia base. --lazy-binding obsoleto mantieneET_DYN sin módulos. linux_base del manifest verificaET_EXEC, ausente paraET_DYN. PE/Mach-O/módulos fuera; no aplicar a v0.1.3/pruebas antiguas."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/001d132f4752b21e018bda0da86e2ab3f411e7a5/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/linux"].push({
+ "id": "main-linux-fixed-default",
+ "title": {
+  "en": "Later main: Linux default image base and patch verification",
+  "zh": "后续main：Linux默认基址与补丁验收",
+  "ar": "main اللاحق: أساس Linux والتحقق",
+  "pt": "Main posterior: base Linux e verificação",
+  "de": "Späteres Main: Linux-Basis und Patchprüfung",
+  "fr": "Main ultérieur : base Linux et vérification",
+  "es": "Main posterior: base Linux y verificación"
+ },
+ "body": [
+  {
+   "en": "Ordinary Linux output is now ET_EXEC at0x400000 without ASLR; --linux-fixed-base selects another aligned base. Deprecated --lazy-binding keeps ET_DYN and cannot use bundled modules. A generated patch manifest records linux_base: --verify-output checks ET_EXEC offsets with that value, while ET_DYN requires no linux_base. PE/Mach-O remain refused; module entries are not verified. Do not apply this current-main behavior retrospectively to v0.1.3 or older tests.",
+   "zh": "普通Linux输出现默认0x400000的ET_EXEC、无ASLR，--linux-fixed-base选其他对齐基址。弃用的--lazy-binding保持ET_DYN且不能配bundled modules。生成补丁manifest记录linux_base；--verify-output用其核验ET_EXEC偏移，ET_DYN则不能有此字段。仍拒绝PE／Mach-O且不验模块条目；不倒推到v0.1.3或旧测试。",
+   "ar": "Linux العادي الآن ET_EXEC عند0x400000 بلاASLR؛ --linux-fixed-base يختار غيره. --lazy-binding المهمل يبقيET_DYN دون bundled modules. manifest يسجل linux_base للتحقق ET_EXEC، ET_DYN يجب ألا يحويه. PE/Mach-O والوحدات خارج التحقق؛ لا تعمم على v0.1.3/اختبارات قديمة.",
+   "pt": "Linux normal agora ET_EXEC em0x400000 semASLR; --linux-fixed-base muda base. --lazy-binding obsoleto mantémET_DYN sem módulos. Manifest regista linux_base para verificarET_EXEC;ET_DYN não o aceita. PE/Mach-O e módulos fora; não aplique a v0.1.3/testes antigos.",
+   "de": "Linux standardmäßig ET_EXEC bei0x400000 ohneASLR, andere Basis via --linux-fixed-base. Veraltetes --lazy-binding behältET_DYN ohne Module. Manifest-linux_base für ET_EXEC-Prüfung, beiET_DYN unzulässig. PE/Mach-O/Module ungeprüft; nicht auf v0.1.3/alte Tests übertragen.",
+   "fr": "Linux ordinaire désormais ET_EXEC à0x400000 sansASLR ; --linux-fixed-base change la base. --lazy-binding obsolète gardeET_DYN sans modules. linux_base du manifeste vérifieET_EXEC, absent pourET_DYN. PE/Mach-O/modules exclus ; ne pas reporter sur v0.1.3/anciens essais.",
+   "es": "Linux normal ahora ET_EXEC en0x400000 sinASLR; --linux-fixed-base cambia base. --lazy-binding obsoleto mantieneET_DYN sin módulos. linux_base del manifest verificaET_EXEC, ausente paraET_DYN. PE/Mach-O/módulos fuera; no aplicar a v0.1.3/pruebas antiguas."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/001d132f4752b21e018bda0da86e2ab3f411e7a5/docs/user/USAGE.md"
+  }
+ ]
+},{
+ "id": "main-linux-symlink-boundary",
+ "title": {
+  "en": "Later main: linked resource directories",
+  "zh": "后续main：符号链接资源目录",
+  "ar": "main اللاحق: مجلدات الموارد المرتبطة",
+  "pt": "Main posterior: diretórios ligados",
+  "de": "Späteres Main: verlinkte Ressourcen",
+  "fr": "Main ultérieur : dossiers liés",
+  "es": "Main posterior: directorios enlazados"
+ },
+ "body": [
+  {
+   "en": "Current Linux directory listing follows a symlink inside app0 to the file/directory type, so the title can walk a linked directory. Nested links inside a linked directory targeting outside app0 keep link type: for nested trees link only top-level entries, or copy/use hard links. This supersedes the older blanket no-symlink instruction only on builds carrying this change. Preserve the original title metadata and resources.",
+   "zh": "当前Linux在app0内列目录时，符号链接返回目标文件／目录类型，游戏可遍历链接目录；若链接目录目标在app0外，其内部嵌套链接仍保留link类型。嵌套树仅链接顶层，或复制／硬链接。仅含此修改的构建替代旧一概禁symlink说明，保留原metadata及资源。",
+   "ar": "Linux الحالي يتبع نوع هدف symlink داخلapp0 فتُجتاز المجلدات. الروابط المتداخلة داخل هدف خارجapp0 تبقى link type؛ اربط المستوى الأعلى فقط أو انسخ/استخدم hardlinks. يبدل المنع القديم فقط للبناء الجديد؛ احفظ metadata والموارد الأصلية.",
+   "pt": "Linux atual segue tipo do alvo symlink dentroapp0. Links internos num alvo foraapp0 mantêm tipo link; ligue só topo ou copie/use hardlinks. Substitui proibição antiga só nos builds novos; preserve metadados/recursos.",
+   "de": "Linux folgt Zieltyp von Symlinks inapp0. Innere Links in externem Ziel behalten Linktyp; nur Top-Level verlinken oder kopieren/Hardlinks. Ersetzt altes Pauschalverbot nur in passenden Builds; Originaldaten behalten.",
+   "fr": "Linux suit le type cible du symlink dansapp0. Liens imbriqués d’une cible externe gardent type link ; lier seulement le haut ou copier/hardlinks. Remplace l’ancien interdit sur builds concernés seuls ; préserver données.",
+   "es": "Linux sigue tipo destino symlink dentroapp0. Enlaces anidados en destino externo conservan tipo link; enlaza solo nivel superior o copia/hardlinks. Sustituye prohibición antigua solo en builds nuevos; conserva datos originales."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/001d132f4752b21e018bda0da86e2ab3f411e7a5/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/input"].push({
+ "id": "main-f10-overlay-binding",
+ "title": {
+  "en": "Documented default: F10 performance overlay",
+  "zh": "文档默认键：F10性能叠层",
+  "ar": "المفتاح الموثق: F10 للأداء",
+  "pt": "Predefinição documentada: F10",
+  "de": "Dokumentierter Standard: F10",
+  "fr": "Touche documentée : F10",
+  "es": "Tecla documentada: F10"
+ },
+ "body": [
+  {
+   "en": "The current default binding table explicitly lists F10 for TogglePerformanceOverlay and F12 for Screenshot. Configurations may override them. Toggle support and screenshot availability have their own release boundaries; a documentation row is not evidence of a new game-performance improvement.",
+   "zh": "当前默认绑定表明确F10为TogglePerformanceOverlay、F12为Screenshot，配置可覆盖。叠层及截图各有发行版边界，新增文档行不等于游戏性能提升。",
+   "ar": "الجدول الحالي يحددF10 لـTogglePerformanceOverlay وF12 لـScreenshot؛ الإعدادات قد تغيرهما. دعم كل فعل له إصدار، وسطر وثيقة لا يثبت تحسن أداء لعبة.",
+   "pt": "Tabela atual listaF10 TogglePerformanceOverlay/F12 Screenshot, configuração pode mudar. Ações têm limites de versão; linha documental não prova FPS melhor.",
+   "de": "Aktuelle Tabelle nenntF10 TogglePerformanceOverlay/F12 Screenshot, überschreibbar. Aktionen haben eigene Releasegrenzen; Dokumentzeile kein FPS-Gewinn.",
+   "fr": "Table actuelle :F10 TogglePerformanceOverlay/F12 Screenshot, modifiables. Actions selon version ; ligne documentaire sans gain FPS prouvé.",
+   "es": "Tabla actual:F10 TogglePerformanceOverlay/F12 Screenshot, configurables. Acciones según versión; línea documental no prueba mejora FPS."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/001d132f4752b21e018bda0da86e2ab3f411e7a5/docs/user/INPUT_MAPPING.md"
   }
  ]
 });
