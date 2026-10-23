@@ -3,6 +3,104 @@ import metadata from './github-source-status.json';
 export interface DevelopmentNote {number:number;title:Text;summary:Text;games:string[]}
 export const developmentNotes:DevelopmentNote[]=[
 {
+ "number": 10219,
+ "games": [
+  "apotris-homebrew"
+ ],
+ "title": {
+  "en": "SDK syscall routing is a proposal; trapping remains debugging-only",
+  "zh": "SDK syscall路由仍为提案，trap限调试",
+  "ar": "توجيهSDKsyscall اقتراح،trap للتشخيصفقط",
+  "pt": "Rota syscall SDK proposta; trap só depuração",
+  "de": "SDK-Syscallrouting Vorschlag, Trap nurDebugging",
+  "fr": "Routage SDKsyscall proposé, trap débogage seul",
+  "es": "Ruta SDKsyscall propuesta, trap solo depuración"
+ },
+ "summary": {
+  "en": "Apotris’s pathconf stub is converted to UD2 with --trap-sdk-syscall-stubs; tested runs never call it. #10219 proposes routing exact recognized wrappers to existing exports, but error conventions and supported scope are unresolved. Conversion success does not implement FreeBSD syscalls or certify general safety, and the current flag remains for debugging.",
+  "zh": "Apotris的pathconf stub经--trap-sdk-syscall-stubs改为UD2，本次运行未调用；#10219只提议把精确认出的wrapper路由到已有export，错误约定及支持范围未决。转换成功不实现FreeBSD syscall或证明通用安全，此flag仍限调试。",
+  "ar": "Apotris pathconf يصبحUD2 بالflag ولم يستدعَ. #10219 يقترح route wrappers دقيقة إلىexports، convention/نطاق مفتوحان. التحويل ليس تنفيذsyscalls أوسلامةعامة؛ flag debugging.",
+  "pt": "Apotris pathconf viraUD2 e não foi chamado. #10219 propõe routing wrappers exatos paraexports, erros/âmbito abertos. Converter não implementa syscalls/segurança geral; flag debugging.",
+  "de": "Apotris-pathconf wirdUD2, nieaufgerufen. #10219 schlägt Routing exakterWrapper aufExports vor, Fehlerkonvention/Umfang offen. Konvertieren implementiert keineSyscalls/Allgemeinsicherheit; Flag nurDebug.",
+  "fr": "Apotris-pathconf devientUD2, jamaisappelé. #10219 propose routage wrappers exacts vers exports, erreurs/périmètre ouverts. Conversion pasimplémentation syscalls/sûreté générale ; flag debugging.",
+  "es": "Apotris-pathconf pasaUD2, nuncallamado. #10219 propone routing wrappers exactos aexports, errores/alcance abiertos. Convertir noimplementa syscalls/seguridadgeneral; flag debugging."
+ }
+},
+{
+ "number": 10125,
+ "games": [],
+ "title": {
+  "en": "Build-cost proposal: shared test PCH, not faster game execution",
+  "zh": "构建成本提案：共享测试PCH，不是游戏提速",
+  "ar": "اقتراحكلفةbuild:PCH مشتركلاسرعةاللعبة",
+  "pt": "Proposta build:PCH testes, não velocidade do jogo",
+  "de": "Buildkostenvorschlag:Test-PCH, keineSpielbeschleunigung",
+  "fr": "Proposition build:PCH detests, pas vitesse jeu",
+  "es": "Propuesta build:PCH tests, no velocidad juego"
+ },
+ "summary": {
+  "en": "On Windows/GCC15.2 main d339082d2e, header edits rebuild500–800 objects, mostly tests. A later no-ccache -j4 test-PCH experiment reduces rebuild664→341s; include pruning alone leaves many direct includes. #10163/#10164 propose build changes. These figures measure compilation on that setup, not AnyPS5 gameplay or a merged release guarantee.",
+  "zh": "Windows／GCC15.2、main d339082d2e的header改动重编500–800对象、主要测试；后续无ccache、-j4共享测试PCH实验664→341秒，单删include仍有大量直接依赖。#10163／#10164属构建提案，仅此环境编译时间，非游玩或合入发行保证。",
+  "ar": "Windows/GCC15.2/maind339:header يعيد500–800object أغلبهاtests. PCH لاحق بدونccache-j4:664→341ث؛ pruning وحده محدود. #10163/#10164 مقترحان، قياسcompile لاFPS/ضمانrelease.",
+  "pt": "Windows/GCC15.2/maind339:header recompila500–800objetos, maioria testes. PCH posterior semccache-j4:664→341s; pruning limitado. #10163/#10164 propostas, tempo compile nãoFPS/release.",
+  "de": "Windows/GCC15.2/Maind339:Header baut500–800Objekte, meistTests. SpätererPCH ohneCcache-j4:664→341s, Includepruning begrenzt. #10163/#10164 Vorschläge, Compilezeit keinFPS/Releasebeleg.",
+  "fr": "Windows/GCC15.2/maind339:header recompile500–800objets surtouttests. PCH ultérieur sansccache-j4:664→341s, pruning limité. #10163/#10164 propositions, compile pasFPS/release.",
+  "es": "Windows/GCC15.2/maind339:header recompila500–800objetos, mayoría tests. PCH posterior sinccache-j4:664→341s, pruning limitado. #10163/#10164 propuestas, compile noFPS/release."
+ }
+},
+{
+ "number": 8091,
+ "games": [
+  "lodoss-deedlit",
+  "absolum",
+  "dusk-diver-2",
+  "lego-horizon-adventures",
+  "jumanji-ppsa03973"
+ ],
+ "title": {
+  "en": "Host-import draft: title-specific gains, regressions and unresolved crashes",
+  "zh": "Host-import草案：按游戏区分收益、回归与未解崩溃",
+  "ar": "مسودةhost-import:مكاسب وتراجع وأعطالحسبالعنوان",
+  "pt": "Draft host-import:ganhos/regressões/crashes por título",
+  "de": "Hostimport-Draft:Gewinne/Regressionen/Crashs jeTitel",
+  "fr": "Draft host-import:gains/régressions/crashs partitre",
+  "es": "Draft host-import:ganancias/regresiones/crashes portítulo"
+ },
+ "summary": {
+  "en": "Absolum terminal A/B improves frame time, but standalone Lodoss falls53.4→34–35FPS; #7465 composition reaches59.7–59.8 on another shared base. JUMANJI crashes remain unresolved. Redirected-log and differing-screen comparisons are diagnostic, not universal performance proof. CPU/GPU API tests do not certify all titles or default memory pressure safety.",
+  "zh": "Absolum终端A/B改善帧时间，但单独#8091使Lodoss从53.4降到34–35 FPS；另同基加#7465为59.7–59.8。JUMANJI崩溃未解，重定向日志及不同画面对照仅诊断；API测试不证明所有游戏或默认内存压力安全。",
+  "ar": "Absolum terminal يتحسن،Lodoss منفرد53.4→34–35FPS،مجمع#7465 علىقاعدةأخرى59.7–59.8. JUMANJI أعطال مفتوحة؛ logs/شاشات مختلفة تشخيص، APItests ليست سلامةعامة.",
+  "pt": "Absolum terminal melhora, Lodoss sozinho53,4→34–35FPS, composto#7465 noutrabase59,7–59,8. JUMANJI crashes abertos; logs/ecrãs diferentes diagnósticos, APItests não segurança geral.",
+  "de": "Absolum-Terminal verbessert, Lodoss allein53,4→34–35FPS, #7465-Komposition andereBasis59,7–59,8. JUMANJI-Crashs offen; Log-/Bildschirmunterschiede diagnostisch, APItests keineAllgemeinsicherheit.",
+  "fr": "Absolum terminal améliore, Lodoss seul53,4→34–35FPS, composé#7465 autrebase59,7–59,8. CrashsJUMANJI ouverts ; logs/écrans différents diagnostiques, APItests pas sûreté générale.",
+  "es": "Absolum terminal mejora, Lodoss solo53,4→34–35FPS, compuesto#7465 otrabase59,7–59,8. CrashesJUMANJI abiertos; logs/pantallas distintas diagnósticos, APItests noseguridad general."
+ }
+},
+{
+ "number": 10364,
+ "games": [
+  "astro-bot-ppsa21567"
+ ],
+ "title": {
+  "en": "ASTRO: measure label-store cost without discarding its correctness role",
+  "zh": "ASTRO：量化label写回成本，保留正确性边界",
+  "ar": "ASTRO:كلفةlabel-store مع دورالصحة",
+  "pt": "ASTRO:custo label-store e correção",
+  "de": "ASTRO:Label-Store-Kosten und Korrektheit",
+  "fr": "ASTRO:coût label-store et correction",
+  "es": "ASTRO:coste label-store y corrección"
+ },
+ "summary": {
+  "en": "Four rotated warm Crash Site rounds: frame median174.2ms oldmain→220.9ms newmain, or173.5 with label-store disabled. Store protects guest visibility; disabling it is diagnostic, not a safe recommendation. Two terminal-attached confirmations agree in direction; not an all-game regression claim.",
+  "zh": "四轮轮换暖Crash Site：帧中位174.2ms旧main→220.9ms新main，关label-store为173.5。写回保护guest可见性，关闭仅诊断非安全建议；两次终端确认方向一致，不泛化全游戏回归。",
+  "ar": "4جولات Crash Site دافئة:174.2→220.9ms، مع store معطل173.5. المتجر يحمي رؤية guest، تعطيله تشخيص لا توصية آمنة؛ تأكيدان terminal، لا تعميم.",
+  "pt": "4rondas Crash Site warm174,2→220,9ms, store off173,5. Store protege visibilidade guest; desligar é diagnóstico, não conselho seguro.2confirmações terminal, sem regressão geral.",
+  "de": "4rotierte warme Crash-Site-Runden174,2→220,9ms, Store aus173,5. Store schützt Guest-Sichtbarkeit; Abschalten Diagnose, kein sicherer Rat.2Terminalkontrollen, keine allgemeine Regression.",
+  "fr": "4tours Crash Site chauds174,2→220,9ms, store off173,5. Store protège visibilité guest ; désactiver diagnostique, pas conseil sûr.2confirmations terminal, sans généralisation.",
+  "es": "4rondas Crash Site calientes174,2→220,9ms, store off173,5. Store protege visibilidad guest; desactivar es diagnóstico, no consejo seguro.2confirmaciones terminal, sin generalizar."
+ }
+},
+{
  "number": 9754,
  "games": [],
  "title": {
@@ -40,13 +138,13 @@ export const developmentNotes:DevelopmentNote[]=[
   "es": "Pruebas Mac separadas de Linux bajo Rosetta"
  },
  "summary": {
-  "en": "The M5/MoltenVK runtime uses ci/macos-series-2 at 53db0badb with #7524, #7937 code and the SSL change from closed-unmerged #7332; conversion uses main 8b3e39832a. Open #9789, linked from issue #9783, passes the UINT pipeline failure: Doom 3 reaches a missing-data exit, while ccleste next lacks barycentric/mesh support. Separate Linux llvmpipe runs use a6dcea9279. Neither presents a playable game or establishes a released Mac runtime.",
-  "zh": "M5／MoltenVK 运行库来自 ci/macos-series-2 53db0badb，加 #7524、#7937 代码及已关闭未合并 #7332 的 SSL 改动；转换器用 main 8b3e39832a。问题 #9783 所链的开放 PR #9789 越过 UINT 管线失败后，Doom 3 到缺数据退出，ccleste 仍缺 barycentric／mesh 能力。另行 Linux llvmpipe 用 a6dcea9279。均未呈现可玩游戏，也不构成已发行 Mac 运行库。",
-  "ar": "يستخدم تشغيل M5/MoltenVK شجرة ci/macos-series-2 عند 53db0badb مع #7524 وكود #7937 وتغيير SSL من #7332 المغلق دون دمج؛ المحول main 8b3e39832a. يتجاوز #9789 المفتوح خطأ UINT: Doom 3 يخرج لغياب البيانات وccleste يفتقد barycentric/mesh. Linux llvmpipe منفصل عند a6dcea9279؛ لا لعبة قابلة للعب أو إصدار Mac مثبت.",
-  "pt": "O runtime M5/MoltenVK usa ci/macos-series-2 em 53db0badb, com #7524, código #7937 e SSL do #7332 fechado sem integrar; o conversor usa main 8b3e39832a. O #9789 aberto ultrapassa UINT: Doom 3 sai por falta de dados e ccleste para por barycentric/mesh. Linux llvmpipe é separado, em a6dcea9279. Não há jogo jogável apresentado nem runtime Mac publicado.",
-  "de": "M5/MoltenVK nutzt ci/macos-series-2 53db0badb mit #7524, #7937-Code und SSL aus dem ungemergt geschlossenen #7332; Konverter ist Main 8b3e39832a. Offenes #9789 überwindet den UINT-Fehler: Doom 3 endet wegen fehlender Daten, ccleste an Barycentric/Mesh. Linux-llvmpipe läuft separat auf a6dcea9279. Kein dargestelltes spielbares Spiel und keine veröffentlichte Mac-Runtime.",
-  "fr": "Le runtime M5/MoltenVK utilise ci/macos-series-2 53db0badb avec #7524, le code #7937 et SSL du #7332 fermé sans fusion ; conversion sur main 8b3e39832a. Le #9789 ouvert dépasse UINT : Doom 3 quitte faute de données, ccleste manque de barycentric/mesh. Linux llvmpipe est distinct, sur a6dcea9279. Aucun jeu jouable présenté ni runtime Mac publié.",
-  "es": "El runtime M5/MoltenVK usa ci/macos-series-2 53db0badb con #7524, código #7937 y SSL de #7332 cerrado sin fusionar; el conversor usa main 8b3e39832a. #9789 abierto supera UINT: Doom 3 sale por datos ausentes y ccleste carece de barycentric/mesh. Linux llvmpipe va separado en a6dcea9279. Sin juego jugable presentado ni runtime Mac publicado."
+  "en": "The M5/MoltenVK runtime uses ci/macos-series-2 at 53db0badb with #7524, #7937 code and the SSL change from closed-unmerged #7332; conversion uses main 8b3e39832a. Open #9789, linked from issue #9783, passes the UINT pipeline failure: Doom 3 reaches a missing-data exit, while ccleste next lacks barycentric/mesh support. Separate Linux llvmpipe runs use a6dcea9279. Neither presents a playable game or establishes a released Mac runtime. Later #9789 reviews found packing/UINT-resolve issues at specific earlier heads; pipeline creation or fewer warnings alone does not establish correct pixel values or every later head’s qualification.",
+  "zh": "M5／MoltenVK 运行库来自 ci/macos-series-2 53db0badb，加 #7524、#7937 代码及已关闭未合并 #7332 的 SSL 改动；转换器用 main 8b3e39832a。问题 #9783 所链的开放 PR #9789 越过 UINT 管线失败后，Doom 3 到缺数据退出，ccleste 仍缺 barycentric／mesh 能力。另行 Linux llvmpipe 用 a6dcea9279。均未呈现可玩游戏，也不构成已发行 Mac 运行库。 后续#9789审核在特定旧head发现packing／UINT resolve问题，管线创建或警告减少不能证明像素值正确或后续head全面合格。",
+  "ar": "يستخدم تشغيل M5/MoltenVK شجرة ci/macos-series-2 عند 53db0badb مع #7524 وكود #7937 وتغيير SSL من #7332 المغلق دون دمج؛ المحول main 8b3e39832a. يتجاوز #9789 المفتوح خطأ UINT: Doom 3 يخرج لغياب البيانات وccleste يفتقد barycentric/mesh. Linux llvmpipe منفصل عند a6dcea9279؛ لا لعبة قابلة للعب أو إصدار Mac مثبت. مراجعات#9789 لاحقة وجدت مشاكلpacking/resolve فيheads معينة؛ إنشاءpipeline/تحذيراتأقل لايثبت صحةpixels أوheads لاحقة.",
+  "pt": "O runtime M5/MoltenVK usa ci/macos-series-2 em 53db0badb, com #7524, código #7937 e SSL do #7332 fechado sem integrar; o conversor usa main 8b3e39832a. O #9789 aberto ultrapassa UINT: Doom 3 sai por falta de dados e ccleste para por barycentric/mesh. Linux llvmpipe é separado, em a6dcea9279. Não há jogo jogável apresentado nem runtime Mac publicado. Reviews#9789 posteriores encontrarampacking/resolve emheads específicos; pipeline/menosavisos não provam pixels/heads posteriores.",
+  "de": "M5/MoltenVK nutzt ci/macos-series-2 53db0badb mit #7524, #7937-Code und SSL aus dem ungemergt geschlossenen #7332; Konverter ist Main 8b3e39832a. Offenes #9789 überwindet den UINT-Fehler: Doom 3 endet wegen fehlender Daten, ccleste an Barycentric/Mesh. Linux-llvmpipe läuft separat auf a6dcea9279. Kein dargestelltes spielbares Spiel und keine veröffentlichte Mac-Runtime. Spätere#9789-Reviews fandenPacking/Resolve anbestimmtenHeads; Pipeline/wenigerWarnungen beweisen keinePixel-/Folgehead-Korrektheit.",
+  "fr": "Le runtime M5/MoltenVK utilise ci/macos-series-2 53db0badb avec #7524, le code #7937 et SSL du #7332 fermé sans fusion ; conversion sur main 8b3e39832a. Le #9789 ouvert dépasse UINT : Doom 3 quitte faute de données, ccleste manque de barycentric/mesh. Linux llvmpipe est distinct, sur a6dcea9279. Aucun jeu jouable présenté ni runtime Mac publié. Reviews#9789 ultérieures trouventpacking/resolve surheads précis ; pipeline/moinsavertissements ne prouvent pixel/headsultérieurs.",
+  "es": "El runtime M5/MoltenVK usa ci/macos-series-2 53db0badb con #7524, código #7937 y SSL de #7332 cerrado sin fusionar; el conversor usa main 8b3e39832a. #9789 abierto supera UINT: Doom 3 sale por datos ausentes y ccleste carece de barycentric/mesh. Linux llvmpipe va separado en a6dcea9279. Sin juego jugable presentado ni runtime Mac publicado. Reviews#9789 posteriores hallanpacking/resolve enheads concretos; pipeline/menosavisos noprueban pixels/heads posteriores."
  }
 },
 {
@@ -430,22 +528,22 @@ export const developmentNotes:DevelopmentNote[]=[
   "sonic-unleashed-recompiled"
  ],
  "title": {
-  "en": "Sonic: ordinary replay and verifier test remain at loading",
-  "zh": "Sonic：普通重跑与verifier仍停加载",
-  "ar": "Sonic: replay وverifier ما زالا بالتحميل",
-  "pt": "Sonic: replay/verifier continuam na carga",
-  "de": "Sonic: Replay/Verifier weiterhin beim Laden",
-  "fr": "Sonic : replay/verifier toujours au chargement",
-  "es": "Sonic: replay/verifier siguen en carga"
+  "en": "Sonic: 32-ring fork milestone, later pin still loading",
+  "zh": "Sonic：分支32环进展，后续pin仍停加载",
+  "ar": "Sonic:32حلقة علىفرع وpin لاحق بالتحميل",
+  "pt": "Sonic:32anéis nofork, pin posterior na carga",
+  "de": "Sonic:32Ringe imFork, spätererPin lädt weiter",
+  "fr": "Sonic:32anneaux aufork, pin ultérieur encharge",
+  "es": "Sonic:32anillos enfork, pin posterior encarga"
  },
  "summary": {
-  "en": "New ordinary fork replay reaches title/Continue/movie/loading then invalid descriptor, natural exit312.139s. Four recent runs each have2 submission-wait warnings,1 failed fence wait and1 failed query despite0VUID. No new gameplay; old0e7 movement/rings remain separate. Fresh conversion does not remove source patches.",
-  "zh": "新普通fork重跑到标题／Continue／影片／加载后异常descriptor，312.139秒自然退出；四次近运行每次2条提交等待警告、1次fence和1次query失败，虽0VUID。无新游玩，旧0e7移动／环另留，全新转换不清除源码补丁。",
-  "ar": "إعادة fork عادية تصل العنوان/Continue/فيلم/تحميل ثم descriptor غير صالح وخروج 312.139 ث. كل من أربع runs به 2 تحذير انتظار و 1fence و 1query فاشل رغم 0VUID. لا لعب جديد،0e7 منفصل، التحويل الجديد لا يزيل patches المصدر.",
-  "pt": "Replay fork normal chega título/Continue/filme/carga e descriptor inválido312,139s. Quatro runs recentes têm2avisos espera/1fence/1query falhados apesar0VUID. Sem jogo novo,0e7 separado; conversão nova conserva patches fonte.",
-  "de": "Normaler Forklauf bis Titel/Continue/Film/Laden, Deskriptorabbruch312,139s. Vier neue Läufe je2Wartewarnungen/1Fence-/1Queryfehler trotz0VUID. Kein neues Gameplay,0e7 getrennt, neue Konvertierung behält Quellpatches.",
-  "fr": "Replay fork normal jusqu’à titre/Continue/film/charge, descripteur invalide312,139s. Quatre runs chacun2attentes/1fence/1query en échec malgré0VUID. Sans nouveau jeu,0e7 distinct ; conversion neuve conserve patchs source.",
-  "es": "Replay fork normal llega título/Continue/película/carga y descriptor inválido312,139s. Cuatro runs con2avisos espera/1fence/1query fallidos pese0VUID. Sin juego nuevo,0e7 aparte; conversión nueva conserva patches fuente."
+  "en": "Composed fork reaches32 rings beyond pots/Homing Attack, then mesh TYPE refusal1391.511s. Retained conversion, no main-only/FPS claim. Intermittent shadow disappearance is an unquantified observation, not a diagnosed fix; later loading failures remain separate. Latest composed pin reaches Continue/cinematic/Now Loading, then natural SIGABRT324.126s on existing type14/format71 MSAA refusal. Merged#8518 present, no gameplay here;56 component passes are separate from this title result and do not remove18warnings/ninewaits.",
+  "zh": "组合分支越过陶罐到32环／Homing Attack，1391.511秒mesh TYPE拒绝；保留旧转换，不作纯main或FPS结论。影子间歇消失未量化／确诊，后续加载失败另列。 最新组合pin到Continue／片头／Now Loading，324.126秒旧type14／format71 MSAA拒绝自然SIGABRT。虽含已合#8518，此组无游玩；56组件通过不能替代游戏结果，也不抹去18警告／九次wait。",
+  "ar": "فرع مركب32حلقة/Homing ثمرفض mesh1391.511ث، تحويل محفوظ لاmain/FPS. اختفاءظل غيرمقاس/مشخص، فشلتحميل لاحق منفصل. أحدثpin يصلContinue/فيلم/تحميل ثمSIGABRT324.126ث علىMSAA؛ #8518 موجود دونلعب.56اختبارمكون منفصل،18تحذير/9wait باقية.",
+  "pt": "Fork composto32anéis/Homing e recusa mesh1391,511s, conversão retida semmain/FPS. Sombra intermitente não medida/diagnosticada; cargas posteriores separadas. Pin maisnovoContinue/filme/carga eSIGABRT324,126s MSAA; #8518 presente semjogo.56testes componentes separados,18avisos/9waits ficam.",
+  "de": "Komposition32Ringe/Homing dannMeshstopp1391,511s; alteKonvertierung, keinMain/FPS. Schattenbeobachtung unquantifiziert/ungeklärt; spätereLadefehler getrennt. NeuesterPin Continue/Film/Laden dannSIGABRT324,126s MSAA; #8518 vorhanden, keinSpiel.56Komponententests getrennt,18Warnungen/9Waits bleiben.",
+  "fr": "Fork composé32anneaux/Homing puisrefusmesh1391,511s ; conversion conservée sansmain/FPS. Ombreintermittente nonquantifiée/diagnostiquée ; chargementsultérieurs distincts. Pin récentContinue/film/charge puisSIGABRT324,126s MSAA ; #8518 présent sansjeu.56tests composants séparés,18avertissements/9waits restent.",
+  "es": "Fork compuesto32anillos/Homing yrechazomesh1391,511s; conversiónretenida sinmain/FPS. Sombra intermitente sinmedir/diagnosticar; cargasposteriores separadas. Pin másnuevoContinue/film/carga ySIGABRT324,126s MSAA; #8518 presente sinjuego.56tests componentes separados,18avisos/9waits siguen."
  }
 },
 {

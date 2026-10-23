@@ -68,3 +68,7 @@ The33-entry/60-observation update uses the existing main Git trigger. [Maintenan
 ## Source maintenance — 2026-10-23
 
 The28-entry/62-observation update follows the existing main Git trigger. [Scope and evidence gaps](maintenance/2026-10-23-nightly.md), plus the ignored daily release receipt, record the exact main SHA, both RUNNING deployments, CI and public acceptance. No search-engine notification workflow is run.
+
+## Source maintenance — 2026-10-24
+
+The23-entry/64-report update uses the existing main Git trigger. [Scope](maintenance/2026-10-24-nightly.md) and ignored daily release receipt retain final main SHA, both exact-SHA RUNNING deployments, CI and public acceptance. Cloudflare handles search notifications.

@@ -16,10 +16,42 @@ export const researchCopy={
 };
 
 export const gameResearch:Record<string,GameResearch>={
- 'marvels-spider-man-2':research('marvels-spider-man-2',
-  L('This is the PS5 sequel with Peter Parker and Miles Morales. Miles Morales and Spider-Man Remastered are separate releases; their title IDs and reports do not identify Spider-Man 2.','本页是彼得·帕克与迈尔斯共同登场的 PS5 续作。《迈尔斯·莫拉莱斯》与《蜘蛛侠：重制版》属于其他作品，不能沿用它们的游戏 ID 或测试结果。','هذه تتمة PS5 التي تجمع Peter Parker وMiles Morales. لعبتا Miles Morales وSpider-Man Remastered إصداران منفصلان؛ معرّفاتهما وتقاريرهما لا تخص Spider-Man 2.','É a sequela PS5 com Peter Parker e Miles Morales. Miles Morales e Spider-Man Remastered são jogos distintos; os seus IDs e relatórios não identificam Spider-Man 2.','Gemeint ist die PS5-Fortsetzung mit Peter Parker und Miles Morales. Miles Morales und Spider-Man Remastered sind andere Spiele; ihre Titel-IDs und Berichte gelten nicht für Spider-Man 2.','Il s’agit de la suite PS5 avec Peter Parker et Miles Morales. Miles Morales et Spider-Man Remastered sont des jeux distincts ; leurs identifiants et rapports ne concernent pas Spider-Man 2.','Es la secuela PS5 con Peter Parker y Miles Morales. Miles Morales y Spider-Man Remastered son juegos distintos; sus IDs e informes no corresponden a Spider-Man 2.'),
-  L('PR #1070 cites imports from Miles Morales, not a Spider-Man 2 run. It was closed without merging. The reviewed public index provides no scoped Spider-Man 2 run result or hardware benchmark.','PR #1070 引用的是《迈尔斯·莫拉莱斯》（PPSA01341）的导入列表，并非《蜘蛛侠 2》运行记录，且该 PR 未合并即关闭。本次公开索引核对没有找到能明确绑定本作的运行结果或硬件基准。','يستشهد PR #1070 باستيرادات Miles Morales، وليس تشغيل Spider-Man 2، وأُغلق دون دمج. لم يقدم الفهرس العام المراجَع نتيجة تشغيل محددة أو معيار أداء لهذه التتمة.','O PR #1070 cita imports de Miles Morales, não uma execução de Spider-Man 2, e foi encerrado sem integração. O índice público revisto não fornece um resultado delimitado ou benchmark desta sequela.','PR #1070 nennt Imports von Miles Morales, keinen Lauf von Spider-Man 2, und wurde ohne Merge geschlossen. Im geprüften öffentlichen Index fehlt ein klar zugeordneter Lauf oder Hardwarebenchmark dieser Fortsetzung.','La PR #1070 cite les imports de Miles Morales, pas une exécution de Spider-Man 2, et a été fermée sans intégration. L’index public vérifié ne fournit pas de résultat précisément attribué à cette suite ni de benchmark.','La PR #1070 cita imports de Miles Morales, no una ejecución de Spider-Man 2, y se cerró sin integrar. El índice público revisado no aporta una ejecución identificada ni un benchmark de esta secuela.'),
-  L('Record this sequel’s own PPSA ID and content version. Test an interactive street scene, swinging and hero switching; logos or footage of another Spider-Man title cannot establish those results.','记录本作自己的 PPSA ID 和内容版本，再测试可操作的街区、摆荡与角色切换。启动标志或另一部蜘蛛侠作品的视频不能验证这些结果。','سجّل PPSA وإصدار هذه التتمة، ثم اختبر شارعاً تفاعلياً والتأرجح وتبديل البطل. الشعارات أو فيديو لعبة Spider-Man أخرى لا تثبت ذلك.','Registe o PPSA e a versão desta sequela. Teste uma rua interativa, as deslocações por teias e a troca de herói; logótipos ou vídeos de outro título não bastam.','Notiere PPSA-ID und Inhaltsversion dieser Fortsetzung. Prüfe eine steuerbare Straßenszene, Schwingen und Heldenwechsel; Logos oder Videos eines anderen Spider-Man-Spiels reichen dafür nicht.','Notez le PPSA et la version de cette suite. Testez une rue interactive, les déplacements avec les toiles et le changement de héros ; des logos ou la vidéo d’un autre épisode ne suffisent pas.','Registra el PPSA y la versión de esta secuela. Prueba una calle interactiva, balanceo y cambio de héroe; los logos o vídeos de otro título no bastan.'),[1070]),
+ 'marvels-spider-man-2':{
+ "checked": "2026-10-24",
+ "edition": {
+  "en": "PPSA03016 01.004.003 is now identified by a Linux launch report. The separate PPSA08338 Windows reports use a different regional package/version.",
+  "zh": "现有Linux启动报告明确PPSA03016 01.004.003；另有Windows PPSA08338属于不同地区包／版本。",
+  "ar": "تقرير Linux يحددPPSA03016/01.004.003؛ Windows PPSA08338 حزمة/نسخة إقليمية أخرى.",
+  "pt": "Relatório Linux identificaPPSA03016/01.004.003; Windows PPSA08338 é outro pacote/versão.",
+  "de": "Linuxbericht identifiziertPPSA03016/01.004.003; Windows PPSA08338 andere Region/Version.",
+  "fr": "Rapport Linux identifiePPSA03016/01.004.003 ; Windows PPSA08338 autre région/version.",
+  "es": "Reporte Linux identificaPPSA03016/01.004.003; Windows PPSA08338 otra región/versión."
+ },
+ "finding": {
+  "en": "Insomniac logo then black until sampler descriptor refusal133s on the composed old base. Several chained pointer-table fixes clear earlier stops; no menu/gameplay. Current main since#9137 instead stops earlier on registry parameters208/210, exact later pin unknown.",
+  "zh": "旧基组合栈过Insomniac标志后黑屏，133秒sampler descriptor拒绝；多层指针表修复仅清除前序停止，无菜单／游玩。#9137后的main反而更早停于registry参数208／210，后次pin未知。",
+  "ar": "شعار Insomniac ثم سواد/رفض sampler133ث على قاعدة قديمة مركبة؛ لا قائمة/لعب. main بعد#9137 يتوقف أبكر على208/210، pin اللاحق مجهول.",
+  "pt": "Logo Insomniac e preto/recusa sampler133s em base antiga composta; sem menu/jogo. Main após#9137 para antes em208/210, pin posterior desconhecido.",
+  "de": "Insomniac-Logo dann schwarz/Samplerstopp133s auf altem Stack; kein Menü/Spiel. Main nach#9137 früher bei208/210, späterer Pin unbekannt.",
+  "fr": "Logo Insomniac puis noir/refus sampler133s sur ancien stack ; ni menu/jeu. Main après#9137 bloque plus tôt208/210, pin ultérieur inconnu.",
+  "es": "Logo Insomniac y negro/rechazo sampler133s en stack viejo; sin menú/juego. Main tras#9137 para antes208/210, pin posterior desconocido."
+ },
+ "nextTest": {
+  "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+  "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+  "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+  "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+  "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+  "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+  "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+ },
+ "sources": [
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/10195"
+  }
+ ]
+},
  'elden-ring':research('elden-ring',
   L('Separate the PS5 base game, Shadow of the Erdtree expansion and Elden Ring Nightreign. A cross-generation purchase does not mean that its PS4 and PS5 executables share a test result.','区分 PS5 本体、《黄金树幽影》扩展及《黑夜君临》。跨世代购买权益不意味着 PS4、PS5 可执行文件可以共用测试结果。','افصل لعبة PS5 الأساسية عن Shadow of the Erdtree وعن Elden Ring Nightreign. شراء نسختي الجيلين لا يجعل اختبار PS4 صالحاً لـPS5.','Separe o jogo base PS5, Shadow of the Erdtree e Elden Ring Nightreign. Uma compra para duas gerações não torna os executáveis PS4 e PS5 equivalentes num teste.','Trenne das PS5-Hauptspiel, Shadow of the Erdtree und Elden Ring Nightreign. Ein generationsübergreifender Kauf macht PS4- und PS5-Programme nicht zu demselben Testfall.','Distinguez le jeu PS5 de base, Shadow of the Erdtree et Elden Ring Nightreign. L’achat pour deux générations ne rend pas les exécutables PS4 et PS5 équivalents pour les tests.','Separa el juego base PS5, Shadow of the Erdtree y Elden Ring Nightreign. Una compra para dos generaciones no hace equivalentes sus ejecutables PS4 y PS5.'),
   L('Issue #3802 and PR #3817 concern Nightreign (PPSA25380) and a VideoOut export. They do not establish an Elden Ring base-game result. No scoped base-game run was found in the reviewed index.','issue #3802 与 PR #3817 讨论的是《黑夜君临》（PPSA25380）的 VideoOut 导出，不能证明《艾尔登法环》本体的运行情况。本次索引核对未找到明确属于本体的运行记录。','تخص المشكلة #3802 وPR #3817 لعبة Nightreign ‏(PPSA25380) وتصدير VideoOut، ولا تثبتان نتيجة للعبة Elden Ring الأساسية. لم نعثر على تشغيل محدد لها في الفهرس المراجَع.','O issue #3802 e o PR #3817 tratam de Nightreign (PPSA25380) e de uma exportação VideoOut, não do jogo base Elden Ring. Não foi encontrada uma execução identificada do jogo base no índice revisto.','Issue #3802 und PR #3817 betreffen Nightreign (PPSA25380) und einen VideoOut-Export. Sie belegen keinen Lauf des Elden-Ring-Hauptspiels. Im geprüften Index wurde kein eindeutig zugeordneter Lauf gefunden.','L’issue #3802 et la PR #3817 concernent Nightreign (PPSA25380) et un export VideoOut, pas le jeu de base Elden Ring. Aucun essai précisément attribué au jeu de base n’a été trouvé dans l’index vérifié.','La issue #3802 y la PR #3817 tratan Nightreign (PPSA25380) y un export VideoOut, no el Elden Ring base. No se encontró una ejecución identificada del juego base en el índice revisado.'),
@@ -132,42 +164,473 @@ gameResearch['palworld'].finding=L("#3832 reaches world setup only on a local in
 gameResearch['palworld'].sources.push({label:'PR #4391',url:'https://github.com/boykopovar/AnyPS5/pull/4391'});
 
 gameResearch["graven"]={
- "checked": "2026-10-23",
+ "checked": "2026-10-24",
  "edition": {
-  "en": "GRAVEN PS5 package PPSA09614, content01.000.001. Conversion and import audits are not a launch test.",
-  "zh": "GRAVEN PS5包PPSA09614、01.000.001；转换及导入审计不是启动测试。",
-  "ar": "حزمة GRAVEN PS5 PPSA09614/01.000.001؛ التحويل والتدقيق ليسا تشغيل اللعبة.",
-  "pt": "Pacote GRAVEN PS5 PPSA09614/01.000.001; conversão/auditoria não são arranque.",
-  "de": "GRAVEN-PS5-Paket PPSA09614/01.000.001; Konvertierung/Audit kein Starttest.",
-  "fr": "Paquet GRAVEN PS5 PPSA09614/01.000.001 ; conversion/audit sans lancement.",
-  "es": "Paquete GRAVEN PS5 PPSA09614/01.000.001; conversión/auditoría no son arranque."
+  "en": "GRAVEN PPSA09614 01.000.001 now has Windows runtime evidence. Earlier import-only audit remains a separate static snapshot; #9628 later merging does not change the tested 8b3a+#9628 build.",
+  "zh": "GRAVEN PPSA09614 01.000.001现有Windows运行证据；早先仅导入审计仍属独立静态快照，#9628后来合并不改变实测8b3a加#9628构建。",
+  "ar": "GRAVEN PPSA09614/01.000.001 لديه تشغيلWindows؛ تدقيق imports قديم منفصل، دمج#9628 لاحق لا يغيرpin المختبر.",
+  "pt": "GRAVEN PPSA09614/01.000.001 tem execuçãoWindows; audit antigo separado, integração posterior#9628 não muda pin.",
+  "de": "GRAVEN PPSA09614/01.000.001 mit Windowslauf; alter Importaudit separat, späteres#9628-Merge ändert keinen Testpin.",
+  "fr": "GRAVEN PPSA09614/01.000.001 a un essaiWindows ; audit ancien distinct, fusion ultérieure#9628 ne change pas le pin.",
+  "es": "GRAVEN PPSA09614/01.000.001 tiene ejecuciónWindows; audit viejo separado, fusión posterior#9628 no cambia pin."
  },
  "finding": {
-  "en": "No run has been reported. Static audit on main8b3a6ba88d+#9628 reports0 absent imports and36 stub entries (23 distinct functions in the preceding audit). Earlier main lacked Json Array pop_front. An exported function may still throw when reached; this cannot establish a startup stage, FPS or tested hardware requirement.",
-  "zh": "尚无运行报告。main8b3a6ba88d加#9628静态审计0缺导入、36条stub entry（前次审计23个不同函数）；旧main缺Json Array pop_front。导出函数仍可在触达时throw，不能推导启动阶段、FPS或已测硬件要求。",
-  "ar": "لا تشغيل مبلغ. تدقيق ثابت main8b3a6ba88d+#9628: صفر absent و36stub entry،23دالة مميزة سابقاً. main القديم يفتقد Json Array pop_front. export قد يرمي عند الاستدعاء، لا مرحلة بدء/FPS/متطلبات عتاد مثبتة.",
-  "pt": "Sem execução relatada. Auditoria estática main8b3a6ba88d+#9628:0absent/36stub entries,23funções distintas antes. Main antigo sem Json Array pop_front. Export pode lançar ao chamar; sem fase/FPS/requisito hardware medido.",
-  "de": "Kein Lauf gemeldet. Statischer Audit main8b3a6ba88d+#9628:0 fehlend/36Stub-Einträge, zuvor23Funktionen. Altes Main ohne Json Array pop_front. Export kann beim Aufruf werfen; kein Startstatus/FPS/Hardwarebeleg.",
-  "fr": "Aucun essai rapporté. Audit statique main8b3a6ba88d+#9628:0absent/36entrées stub,23fonctions auparavant. Ancien main sans Json Array pop_front. Export peut lever à l’appel ; sans phase/FPS/nécessité matérielle prouvées.",
-  "es": "Sin ejecución reportada. Auditoría estática main8b3a6ba88d+#9628:0absent/36entradas stub,23funciones antes. Main viejo sin Json Array pop_front. Export puede lanzar al llamar; sin fase/FPS/requisito hardware probado."
+  "en": "Same pinned stack progresses from cold319s/no video surface to warm title60, then scripted New Campaign/difficulty and boat intro5–10 FPS by420s.600s cap, no manual play/audio/save proof. One180s loading frame and resolved GPU waits; badly washed cyan/white rendering with mixed-DCC warnings, cause not proven.",
+  "zh": "同一固定栈从冷319秒无video surface推进到暖标题60，再脚本新Campaign／难度及420秒船上片头5–10 FPS；600秒限时，无手动游玩／声音／存档证明。加载单帧180秒、GPU wait后恢复；青白曝光与mixed-DCC警告原因未证。",
+  "ar": "نفس stack: cold319ث بلا surface، warm عنوان60 ثم مقدمة قارب5–10FPS عند420ث؛ حد600ث بلا لعب يدوي/صوت/حفظ. إطار تحميل180ث/waits تعافت، صورة cyan وDCC غير مشخصة.",
+  "pt": "Mesmo stack: cold319s sem surface, warm título60 e barco5–10FPS420s; cap600s sem jogo manual/som/saves. Frame de carga180s/waits recuperados; cyan/DCC sem causa provada.",
+  "de": "Gleicher Stack: kalt319s ohne Surface, warm Titel60 dann Bootintro5–10FPS420s;600s ohne manuelles Spiel/Ton/Saves. Ladeframe180s/Waits erholt, Cyan/DCC-Ursache offen.",
+  "fr": "Même stack : froid319s sans surface, chaud titre60 puis bateau5–10FPS420s ; cap600s sans jeu manuel/son/saves. Frame charge180s/waits rétablis, cyan/DCC sans cause prouvée.",
+  "es": "Mismo stack: frío319s sin surface, caliente título60 y barco5–10FPS420s; cap600s sin juego manual/audio/saves. Frame carga180s/waits recuperados, cyan/DCC sin causa probada."
  },
  "nextTest": {
-  "en": "Launch a pinned Windows build with the complete package; record actual host/driver, first frame, input and any first failing call. Do not mark every listed stub as a required blocker before it is reached.",
-  "zh": "以完整包启动固定Windows构建，记录真实主机／驱动、首帧、输入及首个失败调用；未触达前，不把所有stub都列为必需阻碍。",
-  "ar": "شغّل بناء Windows محدداً بالحزمة الكاملة وسجل المضيف/التعريف وأول إطار والإدخال وأول فشل. لا تجعل كل stub عائقاً مطلوباً قبل الوصول إليه.",
-  "pt": "Inicie build Windows fixado com pacote completo e registe host/driver/primeira imagem/input/falha. Não marque cada stub como bloqueio antes de o atingir.",
-  "de": "Gepinnten Windows-Build mit Vollpaket starten, Host/Treiber/Frame/Eingabe/Erstfehler erfassen. Nicht alle Stubs vor Aufruf als Blocker werten.",
-  "fr": "Lancez un build Windows épinglé complet, notez hôte/pilote/image/entrée/premier échec. Pas tous les stubs comme bloqueurs avant appel.",
-  "es": "Arranca build Windows fijado completo y registra host/driver/frame/entrada/fallo. No marques todo stub como bloqueo antes de alcanzarlo."
+  "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+  "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+  "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+  "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+  "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+  "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+  "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
  },
  "sources": [
   {
-   "label": "Static audit only · no launch",
-   "url": "https://github.com/boykopovar/AnyPS5/discussions/9708"
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/9708#discussioncomment-19138932"
   },
   {
-   "label": "Json pop_front proposal",
+   "label": "Reviewed primary evidence",
    "url": "https://github.com/boykopovar/AnyPS5/pull/9628"
+  }
+ ]
+};
+
+gameResearch["minecraft-dungeons-ii"]={
+ "checked": "2026-10-24",
+ "edition": {
+  "en": "Match the exact PS5 package and tested source tree.",
+  "zh": "核对准确PS5包与实测源码树。",
+  "ar": "طابق حزمة PS5 وشجرة المصدر المختبرة.",
+  "pt": "Confirme pacote PS5 e árvore testada.",
+  "de": "PS5-Paket und getesteten Quellstand abgleichen.",
+  "fr": "Vérifiez paquet PS5 et source testée.",
+  "es": "Comprueba paquete PS5 y código probado."
+ },
+ "finding": {
+  "en": "On23 October the author clarified that these older frame-time captures redirected stdout/stderr. They remain diagnostic observations under their original pins, not protocol-compliant benchmarks; a Lodoss composition’s earlier claimed speed direction was withdrawn pending terminal-attached reruns. Do not infer a universal gain from #8091, which remains draft for title-specific regressions/crashes.",
+  "zh": "10月23日作者明确旧帧时间采集重定向stdout／stderr，保留原pin作为诊断，不再当规范基准；旧Lodoss组合的速度方向曾撤回，需终端重跑。#8091仍因具体游戏回归／崩溃保持draft，不能推导通用提速。",
+  "ar": "وضح المؤلف23أكتوبر أن captures القديمة تعيد توجيه stdout/stderr؛ تشخيص بنفسpins لا benchmark مطابق. سحب اتجاه سرعة Lodoss القديم قبل reruns terminal. #8091 draft مع regressions/crashes، لا ربح عام.",
+  "pt": "Autor esclareceu23out que capturas antigas redirecionavam stdout/stderr: diagnósticos com pins originais, não benchmarks conformes. Retirou direção de ganho Lodoss até rerun terminal. #8091 draft com regressões/crashes, sem ganho geral.",
+  "de": "Autor präzisierte23.Oktober alte Captures mit umgeleitetem stdout/stderr: Diagnosen am Originalpin, keine protokollkonformen Benchmarks. Alte Lodoss-Temporichtung zurückgezogen bis Terminal-Replay. #8091 bleibtDraft mit Regressionen/Crashs, kein allgemeinerGewinn.",
+  "fr": "Auteur précise23octobre anciennes captures avec stdout/stderr redirigés : diagnostics aux pins originaux, pas benchmarks conformes. Ancienne direction vitesse Lodoss retirée avant reruns terminal. #8091 reste draft avec régressions/crashs, sans gain général.",
+  "es": "Autor aclaró23oct capturas viejas con stdout/stderr redirigidos: diagnósticos con pins originales, no benchmarks conformes. Retiró dirección velocidad Lodoss vieja hasta reruns terminal. #8091 sigue draft con regresiones/crashes, sin ganancia general."
+ },
+ "nextTest": {
+  "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+  "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+  "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+  "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+  "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+  "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+  "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+ },
+ "sources": [
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/pull/8091#issuecomment-6314036383"
+  }
+ ]
+};
+
+gameResearch["super-meat-boy-3d"]={
+ "checked": "2026-10-24",
+ "edition": {
+  "en": "Match the exact PS5 package and tested source tree.",
+  "zh": "核对准确PS5包与实测源码树。",
+  "ar": "طابق حزمة PS5 وشجرة المصدر المختبرة.",
+  "pt": "Confirme pacote PS5 e árvore testada.",
+  "de": "PS5-Paket und getesteten Quellstand abgleichen.",
+  "fr": "Vérifiez paquet PS5 et source testée.",
+  "es": "Comprueba paquete PS5 y código probado."
+ },
+ "finding": {
+  "en": "On23 October the author clarified that these older frame-time captures redirected stdout/stderr. They remain diagnostic observations under their original pins, not protocol-compliant benchmarks; a Lodoss composition’s earlier claimed speed direction was withdrawn pending terminal-attached reruns. Do not infer a universal gain from #8091, which remains draft for title-specific regressions/crashes.",
+  "zh": "10月23日作者明确旧帧时间采集重定向stdout／stderr，保留原pin作为诊断，不再当规范基准；旧Lodoss组合的速度方向曾撤回，需终端重跑。#8091仍因具体游戏回归／崩溃保持draft，不能推导通用提速。",
+  "ar": "وضح المؤلف23أكتوبر أن captures القديمة تعيد توجيه stdout/stderr؛ تشخيص بنفسpins لا benchmark مطابق. سحب اتجاه سرعة Lodoss القديم قبل reruns terminal. #8091 draft مع regressions/crashes، لا ربح عام.",
+  "pt": "Autor esclareceu23out que capturas antigas redirecionavam stdout/stderr: diagnósticos com pins originais, não benchmarks conformes. Retirou direção de ganho Lodoss até rerun terminal. #8091 draft com regressões/crashes, sem ganho geral.",
+  "de": "Autor präzisierte23.Oktober alte Captures mit umgeleitetem stdout/stderr: Diagnosen am Originalpin, keine protokollkonformen Benchmarks. Alte Lodoss-Temporichtung zurückgezogen bis Terminal-Replay. #8091 bleibtDraft mit Regressionen/Crashs, kein allgemeinerGewinn.",
+  "fr": "Auteur précise23octobre anciennes captures avec stdout/stderr redirigés : diagnostics aux pins originaux, pas benchmarks conformes. Ancienne direction vitesse Lodoss retirée avant reruns terminal. #8091 reste draft avec régressions/crashs, sans gain général.",
+  "es": "Autor aclaró23oct capturas viejas con stdout/stderr redirigidos: diagnósticos con pins originales, no benchmarks conformes. Retiró dirección velocidad Lodoss vieja hasta reruns terminal. #8091 sigue draft con regresiones/crashes, sin ganancia general."
+ },
+ "nextTest": {
+  "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+  "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+  "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+  "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+  "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+  "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+  "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+ },
+ "sources": [
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/pull/8091#issuecomment-6321661410"
+  }
+ ]
+};
+
+gameResearch["afterimage"]={
+ "checked": "2026-10-24",
+ "edition": {
+  "en": "Match the exact PS5 package and tested source tree.",
+  "zh": "核对准确PS5包与实测源码树。",
+  "ar": "طابق حزمة PS5 وشجرة المصدر المختبرة.",
+  "pt": "Confirme pacote PS5 e árvore testada.",
+  "de": "PS5-Paket und getesteten Quellstand abgleichen.",
+  "fr": "Vérifiez paquet PS5 et source testée.",
+  "es": "Comprueba paquete PS5 y código probado."
+ },
+ "finding": {
+  "en": "On23 October the author clarified that these older frame-time captures redirected stdout/stderr. They remain diagnostic observations under their original pins, not protocol-compliant benchmarks; a Lodoss composition’s earlier claimed speed direction was withdrawn pending terminal-attached reruns. Do not infer a universal gain from #8091, which remains draft for title-specific regressions/crashes.",
+  "zh": "10月23日作者明确旧帧时间采集重定向stdout／stderr，保留原pin作为诊断，不再当规范基准；旧Lodoss组合的速度方向曾撤回，需终端重跑。#8091仍因具体游戏回归／崩溃保持draft，不能推导通用提速。",
+  "ar": "وضح المؤلف23أكتوبر أن captures القديمة تعيد توجيه stdout/stderr؛ تشخيص بنفسpins لا benchmark مطابق. سحب اتجاه سرعة Lodoss القديم قبل reruns terminal. #8091 draft مع regressions/crashes، لا ربح عام.",
+  "pt": "Autor esclareceu23out que capturas antigas redirecionavam stdout/stderr: diagnósticos com pins originais, não benchmarks conformes. Retirou direção de ganho Lodoss até rerun terminal. #8091 draft com regressões/crashes, sem ganho geral.",
+  "de": "Autor präzisierte23.Oktober alte Captures mit umgeleitetem stdout/stderr: Diagnosen am Originalpin, keine protokollkonformen Benchmarks. Alte Lodoss-Temporichtung zurückgezogen bis Terminal-Replay. #8091 bleibtDraft mit Regressionen/Crashs, kein allgemeinerGewinn.",
+  "fr": "Auteur précise23octobre anciennes captures avec stdout/stderr redirigés : diagnostics aux pins originaux, pas benchmarks conformes. Ancienne direction vitesse Lodoss retirée avant reruns terminal. #8091 reste draft avec régressions/crashs, sans gain général.",
+  "es": "Autor aclaró23oct capturas viejas con stdout/stderr redirigidos: diagnósticos con pins originales, no benchmarks conformes. Retiró dirección velocidad Lodoss vieja hasta reruns terminal. #8091 sigue draft con regresiones/crashes, sin ganancia general."
+ },
+ "nextTest": {
+  "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+  "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+  "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+  "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+  "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+  "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+  "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+ },
+ "sources": [
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/pull/8091#issuecomment-6322979128"
+  }
+ ]
+};
+
+gameResearch["octopath-traveler-ii"]={
+ "checked": "2026-10-24",
+ "edition": {
+  "en": "Match the exact PS5 package and tested source tree.",
+  "zh": "核对准确PS5包与实测源码树。",
+  "ar": "طابق حزمة PS5 وشجرة المصدر المختبرة.",
+  "pt": "Confirme pacote PS5 e árvore testada.",
+  "de": "PS5-Paket und getesteten Quellstand abgleichen.",
+  "fr": "Vérifiez paquet PS5 et source testée.",
+  "es": "Comprueba paquete PS5 y código probado."
+ },
+ "finding": {
+  "en": "On23 October the author clarified that these older frame-time captures redirected stdout/stderr. They remain diagnostic observations under their original pins, not protocol-compliant benchmarks; a Lodoss composition’s earlier claimed speed direction was withdrawn pending terminal-attached reruns. Do not infer a universal gain from #8091, which remains draft for title-specific regressions/crashes.",
+  "zh": "10月23日作者明确旧帧时间采集重定向stdout／stderr，保留原pin作为诊断，不再当规范基准；旧Lodoss组合的速度方向曾撤回，需终端重跑。#8091仍因具体游戏回归／崩溃保持draft，不能推导通用提速。",
+  "ar": "وضح المؤلف23أكتوبر أن captures القديمة تعيد توجيه stdout/stderr؛ تشخيص بنفسpins لا benchmark مطابق. سحب اتجاه سرعة Lodoss القديم قبل reruns terminal. #8091 draft مع regressions/crashes، لا ربح عام.",
+  "pt": "Autor esclareceu23out que capturas antigas redirecionavam stdout/stderr: diagnósticos com pins originais, não benchmarks conformes. Retirou direção de ganho Lodoss até rerun terminal. #8091 draft com regressões/crashes, sem ganho geral.",
+  "de": "Autor präzisierte23.Oktober alte Captures mit umgeleitetem stdout/stderr: Diagnosen am Originalpin, keine protokollkonformen Benchmarks. Alte Lodoss-Temporichtung zurückgezogen bis Terminal-Replay. #8091 bleibtDraft mit Regressionen/Crashs, kein allgemeinerGewinn.",
+  "fr": "Auteur précise23octobre anciennes captures avec stdout/stderr redirigés : diagnostics aux pins originaux, pas benchmarks conformes. Ancienne direction vitesse Lodoss retirée avant reruns terminal. #8091 reste draft avec régressions/crashs, sans gain général.",
+  "es": "Autor aclaró23oct capturas viejas con stdout/stderr redirigidos: diagnósticos con pins originales, no benchmarks conformes. Retiró dirección velocidad Lodoss vieja hasta reruns terminal. #8091 sigue draft con regresiones/crashes, sin ganancia general."
+ },
+ "nextTest": {
+  "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+  "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+  "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+  "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+  "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+  "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+  "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+ },
+ "sources": [
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/pull/8091#issuecomment-6332162016"
+  }
+ ]
+};
+
+gameResearch["blue-prince"]={
+ "checked": "2026-10-24",
+ "edition": {
+  "en": "Match the exact PS5 package and tested source tree.",
+  "zh": "核对准确PS5包与实测源码树。",
+  "ar": "طابق حزمة PS5 وشجرة المصدر المختبرة.",
+  "pt": "Confirme pacote PS5 e árvore testada.",
+  "de": "PS5-Paket und getesteten Quellstand abgleichen.",
+  "fr": "Vérifiez paquet PS5 et source testée.",
+  "es": "Comprueba paquete PS5 y código probado."
+ },
+ "finding": {
+  "en": "On23 October the author clarified that these older frame-time captures redirected stdout/stderr. They remain diagnostic observations under their original pins, not protocol-compliant benchmarks; a Lodoss composition’s earlier claimed speed direction was withdrawn pending terminal-attached reruns. Do not infer a universal gain from #8091, which remains draft for title-specific regressions/crashes.",
+  "zh": "10月23日作者明确旧帧时间采集重定向stdout／stderr，保留原pin作为诊断，不再当规范基准；旧Lodoss组合的速度方向曾撤回，需终端重跑。#8091仍因具体游戏回归／崩溃保持draft，不能推导通用提速。",
+  "ar": "وضح المؤلف23أكتوبر أن captures القديمة تعيد توجيه stdout/stderr؛ تشخيص بنفسpins لا benchmark مطابق. سحب اتجاه سرعة Lodoss القديم قبل reruns terminal. #8091 draft مع regressions/crashes، لا ربح عام.",
+  "pt": "Autor esclareceu23out que capturas antigas redirecionavam stdout/stderr: diagnósticos com pins originais, não benchmarks conformes. Retirou direção de ganho Lodoss até rerun terminal. #8091 draft com regressões/crashes, sem ganho geral.",
+  "de": "Autor präzisierte23.Oktober alte Captures mit umgeleitetem stdout/stderr: Diagnosen am Originalpin, keine protokollkonformen Benchmarks. Alte Lodoss-Temporichtung zurückgezogen bis Terminal-Replay. #8091 bleibtDraft mit Regressionen/Crashs, kein allgemeinerGewinn.",
+  "fr": "Auteur précise23octobre anciennes captures avec stdout/stderr redirigés : diagnostics aux pins originaux, pas benchmarks conformes. Ancienne direction vitesse Lodoss retirée avant reruns terminal. #8091 reste draft avec régressions/crashs, sans gain général.",
+  "es": "Autor aclaró23oct capturas viejas con stdout/stderr redirigidos: diagnósticos con pins originales, no benchmarks conformes. Retiró dirección velocidad Lodoss vieja hasta reruns terminal. #8091 sigue draft con regresiones/crashes, sin ganancia general."
+ },
+ "nextTest": {
+  "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+  "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+  "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+  "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+  "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+  "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+  "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+ },
+ "sources": [
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/pull/8091"
+  },
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/9189"
+  }
+ ]
+};
+
+gameResearch["the-pathless"]={
+ "checked": "2026-10-24",
+ "edition": {
+  "en": "Match the exact PS5 package and tested source tree.",
+  "zh": "核对准确PS5包与实测源码树。",
+  "ar": "طابق حزمة PS5 وشجرة المصدر المختبرة.",
+  "pt": "Confirme pacote PS5 e árvore testada.",
+  "de": "PS5-Paket und getesteten Quellstand abgleichen.",
+  "fr": "Vérifiez paquet PS5 et source testée.",
+  "es": "Comprueba paquete PS5 y código probado."
+ },
+ "finding": {
+  "en": "Changing reported direct memory to12/13.5/16GiB leaves the same5,307.25MiB request failing in all three diagnostic arms. The engine grows its own pools; this is not a host-RAM measurement or a recommendation to change the constant. Console value/accounting cause remain unknown.",
+  "zh": "把报告的direct memory改为12／13.5／16GiB，三组仍同一5307.25MiB请求失败，引擎自身池随之扩大。不是主机RAM测量，不建议改常量；主机值与记账原因仍未知。",
+  "ar": "تغيير direct-memory المبلغ12/13.5/16GiB يبقي طلب5307.25MiB فاشلاً بكل الأذرع، تكبر مجمعات المحرك. ليس قياس RAM أو توصية تغيير ثابت؛ قيمة الكونسل/السبب مجهولان.",
+  "pt": "Direct-memory reportada12/13,5/16GiB mantém pedido5307,25MiB falhado; pools crescem. Não mede RAM host nem recomenda mudar constante; valor console/causa abertos.",
+  "de": "Gemeldeter Direktspeicher12/13,5/16GiB: Anfrage5307,25MiB scheitert stets, Enginepools wachsen. Kein Host-RAM-Test/Änderungsrat; Konsolenwert/Buchung offen.",
+  "fr": "Mémoire directe annoncée12/13,5/16GiB : requête5307,25MiB échoue toujours, pools grandissent. Pas mesure RAM hôte/conseil de constante ; valeur console/cause inconnues.",
+  "es": "Memoria directa declarada12/13,5/16GiB: petición5307,25MiB falla siempre, pools crecen. No mide RAM host ni aconseja constante; valor consola/causa desconocidos."
+ },
+ "nextTest": {
+  "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+  "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+  "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+  "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+  "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+  "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+  "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+ },
+ "sources": [
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/9606#discussioncomment-19149902"
+  },
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/10204"
+  }
+ ]
+};
+
+gameResearch["call-of-the-sea"]={
+ "checked": "2026-10-24",
+ "edition": {
+  "en": "Match the exact PS5 package and tested source tree.",
+  "zh": "核对准确PS5包与实测源码树。",
+  "ar": "طابق حزمة PS5 وشجرة المصدر المختبرة.",
+  "pt": "Confirme pacote PS5 e árvore testada.",
+  "de": "PS5-Paket und getesteten Quellstand abgleichen.",
+  "fr": "Vérifiez paquet PS5 et source testée.",
+  "es": "Comprueba paquete PS5 y código probado."
+ },
+ "finding": {
+  "en": "Changing reported direct memory to12/13.5/16GiB leaves the same5,307.25MiB request failing in all three diagnostic arms. The engine grows its own pools; this is not a host-RAM measurement or a recommendation to change the constant. Console value/accounting cause remain unknown.",
+  "zh": "把报告的direct memory改为12／13.5／16GiB，三组仍同一5307.25MiB请求失败，引擎自身池随之扩大。不是主机RAM测量，不建议改常量；主机值与记账原因仍未知。",
+  "ar": "تغيير direct-memory المبلغ12/13.5/16GiB يبقي طلب5307.25MiB فاشلاً بكل الأذرع، تكبر مجمعات المحرك. ليس قياس RAM أو توصية تغيير ثابت؛ قيمة الكونسل/السبب مجهولان.",
+  "pt": "Direct-memory reportada12/13,5/16GiB mantém pedido5307,25MiB falhado; pools crescem. Não mede RAM host nem recomenda mudar constante; valor console/causa abertos.",
+  "de": "Gemeldeter Direktspeicher12/13,5/16GiB: Anfrage5307,25MiB scheitert stets, Enginepools wachsen. Kein Host-RAM-Test/Änderungsrat; Konsolenwert/Buchung offen.",
+  "fr": "Mémoire directe annoncée12/13,5/16GiB : requête5307,25MiB échoue toujours, pools grandissent. Pas mesure RAM hôte/conseil de constante ; valeur console/cause inconnues.",
+  "es": "Memoria directa declarada12/13,5/16GiB: petición5307,25MiB falla siempre, pools crecen. No mide RAM host ni aconseja constante; valor consola/causa desconocidos."
+ },
+ "nextTest": {
+  "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+  "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+  "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+  "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+  "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+  "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+  "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+ },
+ "sources": [
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/9606#discussioncomment-19149902"
+  },
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/10204"
+  }
+ ]
+};
+
+gameResearch["hot-shots-golf-2"]={
+ "checked": "2026-10-24",
+ "edition": {
+  "en": "Match the exact PS5 package and tested source tree.",
+  "zh": "核对准确PS5包与实测源码树。",
+  "ar": "طابق حزمة PS5 وشجرة المصدر المختبرة.",
+  "pt": "Confirme pacote PS5 e árvore testada.",
+  "de": "PS5-Paket und getesteten Quellstand abgleichen.",
+  "fr": "Vérifiez paquet PS5 et source testée.",
+  "es": "Comprueba paquete PS5 y código probado."
+ },
+ "finding": {
+  "en": "The author’s22October edit updates PR states, explicitly not the11October FPS measurements. Several dependencies merged, but no current-main remeasurement proves60FPS. Closed-unmerged #1298/#1341 and open #1191/#1896 remain distinct from merged work.",
+  "zh": "作者10月22日只更新PR状态，明确FPS仍属10月11日；若干依赖已合，但无当前main重测证明60 FPS。#1298／#1341关闭未合，#1191／#1896仍开放，与已合改动分开。",
+  "ar": "تعديل22أكتوبر يحدّث PR لا FPS11أكتوبر؛ دمج بعض الاعتماديات لا يثبت60FPS main الحالي. #1298/#1341 مغلقة بلا دمج،#1191/#1896 مفتوحة.",
+  "pt": "Edição22out muda estados PR, não FPS11out. Alguns integrados não provam60FPS main atual. #1298/#1341 fechados sem integrar,#1191/#1896 abertos.",
+  "de": "22.Oktober nurPR-Status, FPS vom11. bleibenalt. Merges belegen keine60FPS auf aktuellemMain. #1298/#1341 ungemergtzu,#1191/#1896 offen.",
+  "fr": "Édition22oct change PR, pasFPS11oct. Des fusions ne prouvent60FPS main actuel. #1298/#1341 fermés sansfusion,#1191/#1896 ouverts.",
+  "es": "Edición22oct cambia PR, noFPS11oct. Fusiones no prueban60FPS main actual. #1298/#1341 cerrados sinfusionar,#1191/#1896 abiertos."
+ },
+ "nextTest": {
+  "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+  "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+  "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+  "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+  "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+  "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+  "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+ },
+ "sources": [
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/3839"
+  }
+ ]
+};
+
+gameResearch["call-of-duty-black-ops"]={
+ "checked": "2026-10-24",
+ "edition": {
+  "en": "Match the exact PS5 package and tested source tree.",
+  "zh": "核对准确PS5包与实测源码树。",
+  "ar": "طابق حزمة PS5 وشجرة المصدر المختبرة.",
+  "pt": "Confirme pacote PS5 e árvore testada.",
+  "de": "PS5-Paket und getesteten Quellstand abgleichen.",
+  "fr": "Vérifiez paquet PS5 et source testée.",
+  "es": "Comprueba paquete PS5 y código probado."
+ },
+ "finding": {
+  "en": "The unpinned Performance row now reports outdoor15–25 and split-screen5–10FPS. Its build and test date remain unspecified; the clean-main e072 row and earlier campaign claim retain their own older scope. Do not transfer these revised numbers to main or v0.1.3.",
+  "zh": "未固定构建的Performance行现改为户外15–25、分屏5–10 FPS，构建／测试日仍未知；纯main e072行及旧campaign声明维持原边界，不把新数字套到main或v0.1.3。",
+  "ar": "صف Performance غير مثبت:خارج15–25/split5–10FPS، البناء/تاريخ مجهولان. main e072 والحملة الأقدم يحتفظان بسياقهما، لا تعميمmain/v0.1.3.",
+  "pt": "Linha Performance sempin:exterior15–25/split5–10FPS, build/data desconhecidos. Maine072/campanha antiga separados, não transferir para main/v0.1.3.",
+  "de": "Ungepinnte Performancezeile draußen15–25/Splitscreen5–10FPS, Build/Testdatum offen. Maine072/alteKampagne getrennt, nichtMain/v0.1.3 zuordnen.",
+  "fr": "Ligne Performance nonépinglée extérieur15–25/split5–10FPS, build/date inconnus. Maine072/anciennecampagne séparés, pastransfert main/v0.1.3.",
+  "es": "Fila Performance sinpin exterior15–25/split5–10FPS, build/fecha desconocidos. Maine072/campaña antigua separados, no transferir main/v0.1.3."
+ },
+ "nextTest": {
+  "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+  "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+  "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+  "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+  "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+  "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+  "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+ },
+ "sources": [
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/5389"
+  }
+ ]
+};
+
+gameResearch["ghost-of-yotei"]={
+ "checked": "2026-10-24",
+ "edition": {
+  "en": "Match the exact PS5 package and tested source tree.",
+  "zh": "核对准确PS5包与实测源码树。",
+  "ar": "طابق حزمة PS5 وشجرة المصدر المختبرة.",
+  "pt": "Confirme pacote PS5 e árvore testada.",
+  "de": "PS5-Paket und getesteten Quellstand abgleichen.",
+  "fr": "Vérifiez paquet PS5 et source testée.",
+  "es": "Comprueba paquete PS5 y código probado."
+ },
+ "finding": {
+  "en": "New Linux village input proof belongs to the RX9060XT custom integration, not clean main. Later visual probes correct an earlier depth-test suspicion: forcing ALWAYS masks unshaded visibility-buffer bushes. Object/primitive-ID output is the current lead, with no posted fix validated yet; hull-leaf approximation remains local.",
+  "zh": "Linux村庄输入证明属于RX9060XT定制集成，非纯main；后续图形探针纠正旧depth怀疑，强制ALWAYS只是遮住未着色visibility-buffer灌木。当前线索是object／primitive ID输出，尚无已发布验证修复，树叶hull近似仍属本地。",
+  "ar": "دليل input القرية خاص بدمج9060XT لاmain. probes صححت فرضية depth:ALWAYS يخفي شجيرات visibility غير مظللة. object/primitiveID دليل حالي بلاfix معتمد، أوراقhull تقريب محلي.",
+  "pt": "Input aldeia pertence à integração9060XT, não main. Probes corrigem suspeita depth:ALWAYS mascara arbustos visibility não sombreados. object/primitiveID é pista, semfix validado; hull folhas local.",
+  "de": "Dorfsteuerung gehört9060XT-Komposition, nichtMain. Probes korrigieren Depthverdacht:ALWAYS übermalt ungeschatteteVisibilitybüsche. Object/Primitive-ID Spur ohnevalidiertenFix; Hullblätter lokal approximiert.",
+  "fr": "Input village propre à intégration9060XT, pasmain. Probes corrigent soupçon depth:ALWAYS masque buissons visibility nonombrés. object/primitiveID piste sansfix validé ; feuilles hull approximées localement.",
+  "es": "Input aldea pertenece a integración9060XT, nomain. Probes corrigen sospecha depth:ALWAYS oculta arbustos visibility sinsombrear. object/primitiveID pista sinfix validado; hojas hull aproximadas localmente."
+ },
+ "nextTest": {
+  "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+  "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+  "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+  "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+  "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+  "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+  "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+ },
+ "sources": [
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/675#discussioncomment-19135126"
+  },
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/675#discussioncomment-19146133"
+  },
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/675#discussioncomment-19146442"
+  }
+ ]
+};
+
+gameResearch["apotris-homebrew"]={
+ "checked": "2026-10-24",
+ "edition": {
+  "en": "Match the exact PS5 package and tested source tree.",
+  "zh": "核对准确PS5包与实测源码树。",
+  "ar": "طابق حزمة PS5 وشجرة المصدر المختبرة.",
+  "pt": "Confirme pacote PS5 e árvore testada.",
+  "de": "PS5-Paket und getesteten Quellstand abgleichen.",
+  "fr": "Vérifiez paquet PS5 et source testée.",
+  "es": "Comprueba paquete PS5 y código probado."
+ },
+ "finding": {
+  "en": "Apotris’s pathconf stub is converted to UD2 with --trap-sdk-syscall-stubs; tested runs never call it. #10219 proposes routing exact recognized wrappers to existing exports, but error conventions and supported scope are unresolved. Conversion success does not implement FreeBSD syscalls or certify general safety, and the current flag remains for debugging.",
+  "zh": "Apotris的pathconf stub经--trap-sdk-syscall-stubs改为UD2，本次运行未调用；#10219只提议把精确认出的wrapper路由到已有export，错误约定及支持范围未决。转换成功不实现FreeBSD syscall或证明通用安全，此flag仍限调试。",
+  "ar": "Apotris pathconf يصبحUD2 بالflag ولم يستدعَ. #10219 يقترح route wrappers دقيقة إلىexports، convention/نطاق مفتوحان. التحويل ليس تنفيذsyscalls أوسلامةعامة؛ flag debugging.",
+  "pt": "Apotris pathconf viraUD2 e não foi chamado. #10219 propõe routing wrappers exatos paraexports, erros/âmbito abertos. Converter não implementa syscalls/segurança geral; flag debugging.",
+  "de": "Apotris-pathconf wirdUD2, nieaufgerufen. #10219 schlägt Routing exakterWrapper aufExports vor, Fehlerkonvention/Umfang offen. Konvertieren implementiert keineSyscalls/Allgemeinsicherheit; Flag nurDebug.",
+  "fr": "Apotris-pathconf devientUD2, jamaisappelé. #10219 propose routage wrappers exacts vers exports, erreurs/périmètre ouverts. Conversion pasimplémentation syscalls/sûreté générale ; flag debugging.",
+  "es": "Apotris-pathconf pasaUD2, nuncallamado. #10219 propone routing wrappers exactos aexports, errores/alcance abiertos. Convertir noimplementa syscalls/seguridadgeneral; flag debugging."
+ },
+ "nextTest": {
+  "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+  "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+  "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+  "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+  "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+  "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+  "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+ },
+ "sources": [
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/10209"
+  },
+  {
+   "label": "Reviewed primary evidence",
+   "url": "https://github.com/boykopovar/AnyPS5/issues/10219"
   }
  ]
 };

@@ -1,16 +1,16 @@
 # Self-hosted game media
 
-Updated 2026-10-23. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
+Updated 2026-10-24. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
 
 ## Sources and asset inventory
 
-- 173 game/edition pages have official/publisher artwork: 173 covers and 82 promotional screenshots (255 source assets).
+- 179 game/edition pages have official/publisher artwork: 179 covers and 82 promotional screenshots (261 source assets).
 - `packages/content/game-media.json` retains the original page, provider, image URLs and editorial review date.
 - `packages/content/game-media-local.json` maps each source to its exported file, actual download URL, source/export SHA-256, byte counts and actual dimensions.
 - Committed WebP masters live in `packages/ui/assets/games/<slug>/`. Astro imports them and emits hashed, same-origin images under `/_astro/`, including responsive variants. Production builds do not fetch remote media.
-- 91 entries still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
+- 108 entries still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
 
-The downloaded high-resolution source set totals 63.80 MiB; the exported masters total 33.32 MiB, a 47.8% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
+The downloaded high-resolution source set totals 65.11 MiB; the exported masters total 34.13 MiB, a 47.6% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
 
 ## Update command
 
@@ -54,3 +54,5 @@ The19 October addition includes five identity-checked covers. The generic EA FC 
 22 October adds13 identity-checked promotional covers;20 new entries keep icons. The Messenger PS4 art and retail Village art are rejected. BALLxPIT Naturalist Update/MortalShellII Rotten Autumn branding does not identify tested content; HiFi US artPPSA17168 differs from reportPPSA17191. No test screenshot was invented or replaced with promotional art.
 
 23 October adds seven official covers;21 new entries retain icons. Region-package differences for Pathless, OuterWilds, OctopathII and art of rally are explicit in all seven languages. AustraliaDLC promotional branding does not identify tested content. Covers were visually checked, downloaded, decoded, hashed and converted with the existing self-hosted WebP process; none is a test screenshot.
+
+24 October adds six official covers;17 new entries retain icons. All six region/package differences and SeaStars Sunset Edition/Goat/Taiko marketing-content boundaries are explicit in seven languages. Contact sheet, decode/hash and self-hosted WebP checks pass; no new emulator screenshot is claimed.

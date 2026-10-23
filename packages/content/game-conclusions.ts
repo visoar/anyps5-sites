@@ -5,13 +5,13 @@ import {type Game,type Platform,type PlatformConclusion} from './model';
 const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  "tomba-2":{reviewed:"2026-10-20",reportIds:["3646-windows-review-20261014", "7970-windows-review-20261020"]},
  "pragmata":{reviewed:"2026-10-15",reportIds:["3043-windows-review-20261015"]},
- "ccleste-homebrew":{reviewed:"2026-10-23",reportIds:["5079-windows-review-20261014", "5079-linux-review-20261016", "5745-linux-review-20261017", "9788-linux-review-20261023"]},
- "sword-of-the-sea":{reviewed:"2026-10-20",reportIds:["5436-windows-review-20261014", "5692-windows-review-20261015", "5436-windows-review-20261020"]},
+ "ccleste-homebrew":{reviewed:"2026-10-24",reportIds:["5079-windows-review-20261014", "5079-linux-review-20261016", "5745-linux-review-20261017", "9788-linux-review-20261023", "9788-linux-review-20261024", "9788-windows-nvidia-review-20261024"]},
+ "sword-of-the-sea":{reviewed:"2026-10-24",reportIds:["5436-windows-review-20261014", "5692-windows-review-20261015", "5436-windows-review-20261020", "5436-windows-review-20261024"]},
  "sifu":{reviewed:"2026-10-15",reportIds:["5908-windows-review-20261015"]},
  "dying-light-2":{reviewed:"2026-10-14",reportIds:["1794-windows-review-20261014"]},
  "slay-the-princess":{reviewed:"2026-10-15",reportIds:["4369-windows-review-20261015"]},
 
- "high-on-life":{reviewed:"2026-10-18",reportIds:["5488-linux-amd-review-20261015", "5485-linux-review-20261016", "6205-linux-review-20261016", "5488-linux-review-20261018"]},
+ "high-on-life":{reviewed:"2026-10-24",reportIds:["5488-linux-amd-review-20261015", "5485-linux-review-20261016", "6205-linux-review-20261016", "5488-linux-review-20261018", "9981-linux-review-20261024"]},
  "ride-4":{reviewed:"2026-10-16",reportIds:["3468-linux-review-20261016"]},
  "dead-cells":{reviewed:"2026-10-23",reportIds:["3553-linux-review-20261014", "9659-linux-review-20261023"]},
  "kena-bridge-of-spirits":{reviewed:"2026-10-16",reportIds:["5099-linux-review-20261014", "6205-windows-review-20261016"]},
@@ -19,8 +19,8 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  "call-of-duty-black-ops":{reviewed:"2026-10-22",reportIds:["5389-windows-review-20261014", "5389-windows-main-review-20261014", "5389-windows-review-20261022"]},
  "nhl-26":{reviewed:"2026-10-20",reportIds:["5398-linux-review-20261016", "7304-windows-review-20261019", "7304-windows-review-20261020"]},
  "dragon-quest-iii-hd2d":{reviewed:"2026-10-16",reportIds:["6536-linux-review-20261016"]},
- "red-dead-redemption":{reviewed:"2026-10-15",reportIds:["5895-windows-review-20261015"]},
- "mgs-peace-walker":{reviewed:"2026-10-18",reportIds:["5268-linux-review-20261016", "5268-linux-review-20261018", "5268-windows-review-20261018"]},
+ "red-dead-redemption":{reviewed:"2026-10-24",reportIds:["5895-windows-review-20261015", "9914-windows-review-20261024", "9914-windows-3070-review-20261024"]},
+ "mgs-peace-walker":{reviewed:"2026-10-24",reportIds:["5268-linux-review-20261016", "5268-linux-review-20261018", "5268-windows-review-20261018", "5268-windows-review-20261024"]},
  "olliolli-world":{reviewed:"2026-10-17",reportIds:["5316-windows-review-20261017"]},
  "remnant-2":{reviewed:"2026-10-14",reportIds:["5320-windows-review-20261014"]},
  "planet-coaster":{reviewed:"2026-10-14",reportIds:["5342-windows-review-20261014"]},
@@ -30,7 +30,7 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  "death-stranding-2":{reviewed:"2026-10-23",reportIds:["5424-windows-review-20261014", "5424-linux-review-20261016", "5424-linux-review-20261018", "5424-windows-review-20261019", "5424-windows-newer-regression-review-20261019", "5424-windows-review-20261020", "5424-linux-lease-review-20261020", "5424-linux-review-20261021", "5424-linux-nvidia-review-20261023", "5424-linux-radv-review-20261023"]},
  "resident-evil-village":{reviewed:"2026-10-20",reportIds:["5169-windows-review-20261016", "5169-linux-review-20261017", "5169-windows-main-stack-review-20261018", "5169-windows-local-stack-review-20261018", "7644-windows-review-20261020"]},
  "astro-bot-ppsa21559":{reviewed:"2026-10-14",reportIds:["357-linux-ppsa21559-review-20261014"]},
- "astro-bot-ppsa21567":{reviewed:"2026-10-20",reportIds:["357-windows-ppsa21567-review-20261014", "357-windows-review-20261015", "357-windows-fork-review-20261015", "357-linux-review-20261017", "357-windows-review-20261018", "357-windows-review-20261020"]},
+ "astro-bot-ppsa21567":{reviewed:"2026-10-24",reportIds:["357-windows-ppsa21567-review-20261014", "357-windows-review-20261015", "357-windows-fork-review-20261015", "357-linux-review-20261017", "357-windows-review-20261018", "357-windows-review-20261020", "357-windows-review-20261024", "10364-windows-review-20261024"]},
  "black-myth-wukong":{reviewed:"2026-10-14",reportIds:["4508-windows-review-20261014"]},
  "ready-or-not":{reviewed:"2026-10-15",reportIds:["4184-windows-baseline-review-20261015", "4184-windows-review-20261015"]},
  "phasmophobia":{reviewed:"2026-10-15",reportIds:["4680-windows-review-20261015"]},
@@ -39,15 +39,15 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  "ghost-of-tsushima-directors-cut":{reviewed:"2026-10-23",reportIds:["4461-windows-review-20261014", "3710-linux-review-20261018", "4461-windows-review-20261019", "4461-linux-review-20261021", "4461-linux-review-20261023"]},
  'lost-soul-aside':{reviewed:'2026-10-13',reportIds:["4387-windows-review-20261013"]},
  "minecraft":{reviewed:"2026-10-15",reportIds:["4216-linux-review-20261013", "5744-windows-review-20261015"]},
- "gran-turismo-7":{reviewed:"2026-10-22",reportIds:["4697-windows-review-20261015", "6350-linux-review-20261016", "4697-windows-review-20261017", "4697-windows-review-20261018", "4697-windows-review-20261020", "4697-windows-loading-review-20261022", "4697-windows-world-map-review-20261022"]},
+ "gran-turismo-7":{reviewed:"2026-10-24",reportIds:["4697-windows-review-20261015", "6350-linux-review-20261016", "4697-windows-review-20261017", "4697-windows-review-20261018", "4697-windows-review-20261020", "4697-windows-loading-review-20261022", "4697-windows-world-map-review-20261022", "4697-windows-review-20261024"]},
  'horizon-forbidden-west':{reviewed:'2026-10-13',reportIds:['1616-linux']},
  'resident-evil-4-remake':{reviewed:'2026-10-13',reportIds:['2776-windows']},
  'returnal':{reviewed:'2026-10-13',reportIds:['4239-windows']},
 
  "palworld":{reviewed:"2026-10-18",reportIds:["3832-windows", "7017-windows-review-20261018"]},
  "dreaming-sarah":{reviewed:"2026-10-19",reportIds:["3003-windows-review-20261014", "5383-linux-review-20261015", "6151-linux-review-20261016", "3003-linux-review-20261019", "4461-windows-review-20261019", "4461-windows-fork-review-20261019"]},
- "animal-well":{reviewed:"2026-10-23",reportIds:["966-windows-review-20261016", "966-linux-review-20261017", "966-windows-review-20261023"]},
- "hollow-knight-silksong":{reviewed:"2026-10-22",reportIds:["726-windows-review-20261016", "1519-linux-review-20261017", "1996-linux-review-20261022"]},
+ "animal-well":{reviewed:"2026-10-24",reportIds:["966-windows-review-20261016", "966-linux-review-20261017", "966-windows-review-20261023", "966-linux-review-20261024"]},
+ "hollow-knight-silksong":{reviewed:"2026-10-24",reportIds:["726-windows-review-20261016", "1519-linux-review-20261017", "1996-linux-review-20261022", "726-linux-780m-review-20261024", "726-linux-3080ti-review-20261024"]},
  "silt":{reviewed:"2026-10-14",reportIds:["2126-windows-review-20261014", "2126-linux"]},
  'balatro':{reviewed:'2026-10-12',reportIds:['1142-windows']},
 
@@ -57,10 +57,10 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  "astro-bot":{reviewed:"2026-10-23",reportIds:["357-windows", "357-windows-review-20261016", "6284-windows-review-20261016", "357-linux-review-20261017", "3480-windows-review-20261018", "7210-windows-review-20261018", "357-linux-review-20261020", "357-windows-radeon-review-20261020", "357-windows-windows-budget-review-20261021", "357-linux-linux-budget-review-20261021", "357-linux-review-20261022", "357-linux-memory-capped-review-20261023", "9712-windows-bar-snapshots-review-20261023"]},
  "astros-playroom":{reviewed:"2026-10-22",reportIds:["3232-linux-review-20261014", "3232-windows-review-20261018", "7714-linux-review-20261020", "3232-linux-review-20261022"]},
 
- "demons-souls":{reviewed:"2026-10-23",reportIds:["1283-linux-baseline-review-20261015", "1283-linux-review-20261015", "1283-linux-review-20261017", "1283-linux-nvidia-v01004-review-20261017", "7217-linux-review-20261018", "1283-linux-clean-startup-review-20261023", "1283-linux-job-sleep-review-20261023"]},
- "ghost-of-yotei":{reviewed:"2026-10-23",reportIds:["675-windows-review-20261016", "675-linux-review-20261016", "675-windows-4090-review-20261016", "675-windows-review-20261017", "675-linux-review-20261017", "2884-linux-review-20261017", "2884-linux-v01512-review-20261018", "2884-linux-v01008-review-20261018", "675-windows-review-20261019", "675-windows-review-20261021", "675-windows-windows-world-review-20261022", "675-linux-linux-world-review-20261022", "675-windows-new-main-fork-review-20261023", "675-windows-cinematic-review-20261023", "675-windows-ps5-save-review-20261023", "675-windows-fresh-profile-review-20261023", "675-linux-radv-lane-review-20261023"]},
+ "demons-souls":{reviewed:"2026-10-24",reportIds:["1283-linux-baseline-review-20261015", "1283-linux-review-20261015", "1283-linux-review-20261017", "1283-linux-nvidia-v01004-review-20261017", "7217-linux-review-20261018", "1283-linux-clean-startup-review-20261023", "1283-linux-job-sleep-review-20261023", "1283-linux-review-20261024"]},
+ "ghost-of-yotei":{reviewed:"2026-10-24",reportIds:["675-windows-review-20261016", "675-linux-review-20261016", "675-windows-4090-review-20261016", "675-windows-review-20261017", "675-linux-review-20261017", "2884-linux-review-20261017", "2884-linux-v01512-review-20261018", "2884-linux-v01008-review-20261018", "675-windows-review-20261019", "675-windows-review-20261021", "675-windows-windows-world-review-20261022", "675-linux-linux-world-review-20261022", "675-windows-new-main-fork-review-20261023", "675-windows-cinematic-review-20261023", "675-windows-ps5-save-review-20261023", "675-windows-fresh-profile-review-20261023", "675-linux-radv-lane-review-20261023", "675-linux-9060xt-control-review-20261024", "675-linux-9070xt-perf-review-20261024", "675-linux-main-descriptor-review-20261024", "675-linux-linux-nvidia-fork-review-20261024", "675-windows-windows-ab-review-20261024"]},
  "god-of-war-sons-of-sparta":{reviewed:"2026-10-18",reportIds:["1742-windows", "7138-linux-review-20261018"]},
- "gta-v":{reviewed:"2026-10-23",reportIds:["1203-windows", "1203-windows-review-20261017", "6754-windows-review-20261017", "1203-windows-review-20261018", "1203-windows-review-20261019", "1203-windows-review-20261020", "9136-windows-review-20261023"]},
+ "gta-v":{reviewed:"2026-10-24",reportIds:["1203-windows", "1203-windows-review-20261017", "6754-windows-review-20261017", "1203-windows-review-20261018", "1203-windows-review-20261019", "1203-windows-review-20261020", "9136-windows-review-20261023", "1203-windows-review-20261024"]},
  "epic-mickey-rebrushed":{reviewed:"2026-10-16",reportIds:["2255-linux-review-20261014", "6236-windows-review-20261016"]},
  '3d-mini-golf':{reviewed:'2026-10-12',reportIds:['2431-windows']},
  "hello-kitty-island-adventure":{reviewed:"2026-10-23",reportIds:["2690-windows", "2690-linux-review-20261020", "2690-linux-review-20261021", "2690-linux-review-20261023"]},
@@ -68,7 +68,7 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  'sonic-origins':{reviewed:'2026-10-12',reportIds:['2021-linux']},
  "stray":{reviewed:"2026-10-22",reportIds:["5879-windows-review-20261015", "2461-linux-review-20261018", "2461-windows-review-20261021", "5436-linux-local-stack-review-20261021", "2461-windows-review-20261022"]},
  "wobbly-life":{reviewed:"2026-10-23",reportIds:["2211-linux-review-20261016", "2211-linux-review-20261023"]},
- "rise-of-the-ronin":{reviewed:"2026-10-20",reportIds:["2171-linux", "2171-linux-review-20261020"]},
+ "rise-of-the-ronin":{reviewed:"2026-10-24",reportIds:["2171-linux", "2171-linux-review-20261020", "2171-linux-review-20261024"]},
  "ratchet-clank-rift-apart":{reviewed:"2026-10-20",reportIds:["2172-linux-review-20261016", "7678-linux-review-20261020"]},
  'star-wars-galactic-racer':{reviewed:'2026-10-12',reportIds:['3086-windows']},
  "doom-homebrew":{reviewed:"2026-10-15",reportIds:["2475-linux-intel-review-20261013", "2475-linux-nvidia-archived-review-20261013", "2475-linux-amd-archived-review-20261013", "2475-windows-review-20261015"]},
@@ -95,7 +95,7 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  "onimusha-way-of-the-sword":{reviewed:"2026-10-19",reportIds:["5769-windows-review-20261017", "5769-windows-4090-review-20261017", "5769-windows-review-20261019"]},
  "cat-quest-iii":{reviewed:"2026-10-20",reportIds:["5888-windows-review-20261015", "5888-windows-review-20261020"]},
  "withering-rooms":{reviewed:"2026-10-15",reportIds:["5809-linux-review-20261015"]},
- "007-first-light":{reviewed:"2026-10-23",reportIds:["5714-windows-review-20261017", "5714-linux-local-saved-review-20261017", "5714-windows-review-20261020", "5714-windows-review-20261023"]},
+ "007-first-light":{reviewed:"2026-10-24",reportIds:["5714-windows-review-20261017", "5714-linux-local-saved-review-20261017", "5714-windows-review-20261020", "5714-windows-review-20261023", "10041-linux-review-20261024"]},
  "void-terrarium-ppsa03042":{reviewed:"2026-10-22",reportIds:["5665-linux-review-20261015", "5665-linux-review-20261022"]},
  "hollow-knight-voidheart":{reviewed:"2026-10-15",reportIds:["5593-windows-review-20261015"]},
  "marvel-cosmic-invasion":{reviewed:"2026-10-15",reportIds:["5557-windows-review-20261015"]},
@@ -112,7 +112,7 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  "ea-sports-fc-27":{reviewed:"2026-10-16",reportIds:["6344-windows-review-20261016"]},
  "tevi":{reviewed:"2026-10-16",reportIds:["6496-windows-review-20261016"]},
  "quake":{reviewed:"2026-10-20",reportIds:["6477-linux-review-20261016", "6477-linux-review-20261020"]},
- "lodoss-deedlit":{reviewed:"2026-10-22",reportIds:["6460-linux-review-20261019", "6460-linux-review-20261020", "6460-linux-dma-review-20261020", "6460-linux-traversal-review-20261021", "6460-linux-lean-review-20261021", "6460-linux-review-20261022"]},
+ "lodoss-deedlit":{reviewed:"2026-10-24",reportIds:["6460-linux-review-20261019", "6460-linux-review-20261020", "6460-linux-dma-review-20261020", "6460-linux-traversal-review-20261021", "6460-linux-lean-review-20261021", "6460-linux-review-20261022", "8091-linux-standalone-review-20261024", "8091-linux-composition-review-20261024"]},
  "super-mario-sunshine-homebrew":{reviewed:"2026-10-16",reportIds:["6468-windows-review-20261016"]},
  "goosebumps-terror-little-creek":{reviewed:"2026-10-16",reportIds:["6434-windows-review-20261016"]},
  "plants-vs-zombies-replanted":{reviewed:"2026-10-20",reportIds:["6404-linux-review-20261018", "6404-windows-review-20261019", "6404-linux-review-20261020"]},
@@ -123,7 +123,7 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  "mxgp-26":{reviewed:"2026-10-23",reportIds:["6117-linux-review-20261016", "9725-linux-review-20261023"]},
  "borderlands-4":{reviewed:"2026-10-16",reportIds:["6294-linux-review-20261016"]},
  "sackboy-big-adventure":{reviewed:"2026-10-17",reportIds:["6803-windows-review-20261017"]},
- "sonic-unleashed-recompiled":{reviewed:"2026-10-23",reportIds:["4443-windows-review-20261016", "7260-windows-review-20261018", "4443-windows-review-20261019", "4443-windows-review-20261020", "4443-windows-review-20261021", "4443-windows-review-20261022", "4443-windows-ordinary-review-20261023", "4443-windows-verifier-review-20261023"]},
+ "sonic-unleashed-recompiled":{reviewed:"2026-10-24",reportIds:["4443-windows-review-20261016", "7260-windows-review-20261018", "4443-windows-review-20261019", "4443-windows-review-20261020", "4443-windows-review-20261021", "4443-windows-review-20261022", "4443-windows-ordinary-review-20261023", "4443-windows-verifier-review-20261023", "4443-windows-32-rings-review-20261024", "4443-windows-15-rings-review-20261024", "4443-windows-latest-loading-review-20261024"]},
  "hot-wheels-infinite-rush":{reviewed:"2026-10-20",reportIds:["6895-linux-review-20261017", "6895-windows-review-20261017", "6895-linux-review-20261020"]},
  "silent-hill-f":{reviewed:"2026-10-17",reportIds:["6865-windows-review-20261017"]},
  "mlb-the-show-26":{reviewed:"2026-10-23",reportIds:["6864-windows-review-20261018", "6864-windows-review-20261023"]},
@@ -152,7 +152,7 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  "ea-sports-ufc-5":{reviewed:"2026-10-18",reportIds:["7239-windows-review-20261018"]},
  "devil-may-cry-5-special-edition":{reviewed:"2026-10-18",reportIds:["7043-windows-review-20261018"]},
  "mgs-delta-snake-eater":{reviewed:"2026-10-18",reportIds:["7158-windows-review-20261018"]},
- "middle-ages-ping-pong-homebrew":{reviewed:"2026-10-18",reportIds:["7315-windows-review-20261018"]},
+ "middle-ages-ping-pong-homebrew":{reviewed:"2026-10-24",reportIds:["7315-windows-review-20261018", "7315-linux-review-20261024"]},
  "silent-hill-short-message":{reviewed:"2026-10-21",reportIds:["7358-windows-review-20261018", "7305-windows-review-20261021"]},
  "alan-wake-2":{reviewed:"2026-10-18",reportIds:["7303-linux-review-20261018"]},
  "control-resonant":{reviewed:"2026-10-20",reportIds:["7302-linux-review-20261018", "7302-windows-review-20261019", "7302-linux-review-20261020"]},
@@ -166,10 +166,10 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  "gta-iii-definitive":{reviewed:"2026-10-18",reportIds:["6994-linux-review-20261018"]},
  "furi":{reviewed:"2026-10-18",reportIds:["7020-windows-review-20261018"]},
  "one-night-stand":{reviewed:"2026-10-18",reportIds:["6979-windows-review-20261018"]},
- "lego-horizon-adventures":{reviewed:"2026-10-18",reportIds:["6952-windows-review-20261018"]},
+ "lego-horizon-adventures":{reviewed:"2026-10-24",reportIds:["6952-windows-review-20261018", "8091-linux-review-20261024"]},
  "rekhcom-homebrew":{reviewed:"2026-10-18",reportIds:["7013-linux-review-20261018"]},
  "resident-evil-4-ppsa07412":{reviewed:"2026-10-19",reportIds:["7345-windows-review-20261018", "7347-windows-review-20261019"]},
- "tekken-dark-resurrection":{reviewed:"2026-10-18",reportIds:["7118-windows-review-20261018", "7118-windows-diagnostic-review-20261018"]},
+ "tekken-dark-resurrection":{reviewed:"2026-10-24",reportIds:["7118-windows-review-20261018", "7118-windows-diagnostic-review-20261018", "10051-windows-review-20261024"]},
  "mgs-master-vol2-bonus":{reviewed:"2026-10-20",reportIds:["7621-windows-review-20261019", "7621-windows-review-20261020"]},
  "warhammer-40k-boltgun":{reviewed:"2026-10-19",reportIds:["7617-windows-review-20261019"]},
  "ea-sports-fc-25":{reviewed:"2026-10-20",reportIds:["7607-linux-review-20261019", "7607-linux-review-20261020"]},
@@ -179,7 +179,7 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  "snoopy-great-mystery-club":{reviewed:"2026-10-19",reportIds:["7382-linux-review-20261019"]},
  "jurassic-park-classic-collection":{reviewed:"2026-10-20",reportIds:["7387-windows-review-20261019", "7387-windows-review-20261020"]},
  "anger-foot":{reviewed:"2026-10-19",reportIds:["7379-windows-review-20261019"]},
- "absolum":{reviewed:"2026-10-19",reportIds:["7373-linux-review-20261019"]},
+ "absolum":{reviewed:"2026-10-24",reportIds:["7373-linux-review-20261019", "7373-linux-review-20261024"]},
  "sao-last-recollection":{reviewed:"2026-10-19",reportIds:["7359-windows-review-20261019"]},
  "gta-v-ppsa04263":{reviewed:"2026-10-20",reportIds:["1203-linux-review-20261019", "1203-linux-review-20261020"]},
  "rogue-prince-of-persia":{reviewed:"2026-10-19",reportIds:["7547-windows-review-20261019"]},
@@ -199,7 +199,7 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  "arcade-game-zone":{reviewed:"2026-10-21",reportIds:["8562-windows-review-20261021", "8562-windows-local-review-20261021"]},
  "valor-mortis":{reviewed:"2026-10-21",reportIds:["8422-windows-review-20261021"]},
  "pumpkin-jack":{reviewed:"2026-10-22",reportIds:["8421-windows-review-20261021", "8421-windows-review-20261022"]},
- "terrifier-artcade":{reviewed:"2026-10-21",reportIds:["8381-windows-review-20261021"]},
+ "terrifier-artcade":{reviewed:"2026-10-24",reportIds:["8381-windows-review-20261021", "8381-windows-review-20261024"]},
  "life-is-strange-reunion":{reviewed:"2026-10-21",reportIds:["8367-windows-review-20261021"]},
  "street-fighter-6":{reviewed:"2026-10-21",reportIds:["8229-windows-review-20261021"]},
  "another-crabs-treasure":{reviewed:"2026-10-21",reportIds:["8239-linux-review-20261021", "8239-linux-local-review-20261021"]},
@@ -267,7 +267,32 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  "call-of-duty-black-ops-ii":{reviewed:"2026-10-23",reportIds:["9601-linux-review-20261023"]},
  "rush-2-recompiled":{reviewed:"2026-10-23",reportIds:["9724-windows-review-20261023"]},
  "wave-race-64-recompiled":{reviewed:"2026-10-23",reportIds:["9724-windows-review-20261023"]},
- "trails-sky-2nd-chapter":{reviewed:"2026-10-23",reportIds:["4246-linux-review-20261023"]},
+ "trails-sky-2nd-chapter":{reviewed:"2026-10-24",reportIds:["4246-linux-review-20261023", "10156-linux-review-20261024"]},
+ "oregon-trail":{reviewed:"2026-10-24",reportIds:["10215-linux-review-20261024", "10215-linux-diagnostic-review-20261024"]},
+ "dusk-diver-2":{reviewed:"2026-10-24",reportIds:["10081-linux-review-20261024", "10081-linux-8091-review-20261024"]},
+ "blue-reflection-quartet":{reviewed:"2026-10-24",reportIds:["10271-linux-review-20261024"]},
+ "arcrunner":{reviewed:"2026-10-24",reportIds:["10261-linux-review-20261024"]},
+ "bendy-dark-revival":{reviewed:"2026-10-24",reportIds:["10154-linux-review-20261024"]},
+ "apotris-homebrew":{reviewed:"2026-10-24",reportIds:["10209-windows-review-20261024"]},
+ "unbound-worlds-apart":{reviewed:"2026-10-24",reportIds:["10204-linux-review-20261024", "9606-linux-pool-diagnostic-review-20261024"]},
+ "gex-trilogy":{reviewed:"2026-10-24",reportIds:["10203-linux-review-20261024"]},
+ "worms-armageddon-anniversary":{reviewed:"2026-10-24",reportIds:["10082-linux-review-20261024"]},
+ "sea-of-stars":{reviewed:"2026-10-24",reportIds:["10155-linux-review-20261024"]},
+ "disgaea-6-complete":{reviewed:"2026-10-24",reportIds:["10080-linux-review-20261024"]},
+ "goat-simulator-3":{reviewed:"2026-10-24",reportIds:["10040-windows-review-20261024"]},
+ "bugsnax":{reviewed:"2026-10-24",reportIds:["9900-linux-review-20261024"]},
+ "eternal-cylinder":{reviewed:"2026-10-24",reportIds:["9909-linux-review-20261024", "9909-linux-9915-review-20261024"]},
+ "coffee-talk":{reviewed:"2026-10-24",reportIds:["9956-windows-review-20261024"]},
+ "bloodrayne-betrayal-fresh-bites":{reviewed:"2026-10-24",reportIds:["9925-linux-review-20261024"]},
+ "super-crazy-rhythm-castle":{reviewed:"2026-10-24",reportIds:["9917-linux-review-20261024"]},
+ "taiko-rhythm-festival":{reviewed:"2026-10-24",reportIds:["9910-windows-review-20261024"]},
+ "bendy-ink-machine":{reviewed:"2026-10-24",reportIds:["9901-linux-review-20261024"]},
+ "last-faith":{reviewed:"2026-10-24",reportIds:["9868-linux-review-20261024"]},
+ "ps5x360-homebrew":{reviewed:"2026-10-24",reportIds:["10143-linux-linux-review-20261024", "10143-windows-windows-review-20261024"]},
+ "graven":{reviewed:"2026-10-24",reportIds:["9708-windows-review-20261024"]},
+ "ikai":{reviewed:"2026-10-24",reportIds:["8091-linux-review-20261024"]},
+ "jumanji-ppsa03973":{reviewed:"2026-10-24",reportIds:["8091-linux-paired-review-20261024", "8091-linux-fault-diagnostic-review-20261024"]},
+ "marvels-spider-man-2":{reviewed:"2026-10-24",reportIds:["10195-linux-review-20261024"]},
 };
 
 export const gameConclusions:Record<string,PlatformConclusion[]>=Object.fromEntries(Object.entries(selections).map(([slug,selection])=>{
@@ -284,27 +309,27 @@ export const conclusionReports=(game:Game,platform:Platform)=>{
 
 export const recentEvidence=[
  {
-  "slug": "curved-space",
-  "reportId": "8691-linux-review-20261023"
+  "slug": "ccleste-homebrew",
+  "reportId": "9788-linux-review-20261024"
  },
  {
-  "slug": "persona-3-reload",
-  "reportId": "9692-windows-baseline-review-20261023"
+  "slug": "red-dead-redemption",
+  "reportId": "9914-windows-review-20261024"
  },
  {
-  "slug": "biped",
-  "reportId": "9376-windows-baseline-review-20261023"
+  "slug": "marvels-spider-man-2",
+  "reportId": "10195-linux-review-20261024"
  },
  {
-  "slug": "dead-cells",
-  "reportId": "9659-linux-review-20261023"
+  "slug": "graven",
+  "reportId": "9708-windows-review-20261024"
  },
  {
-  "slug": "animal-well",
-  "reportId": "966-windows-review-20261023"
+  "slug": "apotris-homebrew",
+  "reportId": "10209-windows-review-20261024"
  },
  {
-  "slug": "greak-memories-of-azur",
-  "reportId": "9865-linux-review-20261023"
+  "slug": "taiko-rhythm-festival",
+  "reportId": "9910-windows-review-20261024"
  }
 ];

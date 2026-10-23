@@ -62,6 +62,7 @@ export const games:Game[]=[
  ...(maintenanceReports[g.slug]?{reviewed:maintenanceReviewed[g.slug]||'2026-10-13'}:{}),
  ...(g.slug==='black-myth-wukong'?{titleId:'PPSA23226',edition:'PS5 · PPSA23226'}:{}),
  ...(g.slug==='gran-turismo-7'?{titleId:'PPSA01317',edition:'PS5 · PPSA01317'}:{}),
+ ...(g.slug==='marvels-spider-man-2'?{titleId:'PPSA03016',edition:'PS5 · PPSA03016'}:{}),
 }));
 
 const stageRank:Record<Stage,number>={blocked:0,boot:1,menu:2,ingame:3};

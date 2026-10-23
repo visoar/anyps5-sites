@@ -3720,5 +3720,157 @@
   "trails-sky-2nd-chapter": {
     "cover": null,
     "screenshots": []
+  },
+  "oregon-trail": {
+    "cover": null,
+    "screenshots": []
+  },
+  "dusk-diver-2": {
+    "cover": null,
+    "screenshots": []
+  },
+  "blue-reflection-quartet": {
+    "cover": null,
+    "screenshots": []
+  },
+  "arcrunner": {
+    "cover": null,
+    "screenshots": []
+  },
+  "bendy-dark-revival": {
+    "cover": null,
+    "screenshots": []
+  },
+  "apotris-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "unbound-worlds-apart": {
+    "cover": {
+      "file": "unbound-worlds-apart/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202201/0513/D2Qo2GbUg2yBYVQEPhKPNhCP.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202201/0513/D2Qo2GbUg2yBYVQEPhKPNhCP.png",
+      "sourceSha256": "bc9f3dbd4af709cfe7c645b9ec9cbd2b57abd1d72f7abb734e9cf4e809af198d",
+      "sourceBytes": 134661,
+      "sha256": "1ca798764b7b60cef64d5f3affbc038f195216b089520d99e69d3a8ede22409c",
+      "bytes": 69894,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "gex-trilogy": {
+    "cover": null,
+    "screenshots": []
+  },
+  "worms-armageddon-anniversary": {
+    "cover": null,
+    "screenshots": []
+  },
+  "sea-of-stars": {
+    "cover": {
+      "file": "sea-of-stars/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202604/2317/a49622e09a90d32b699213f651de487eb5f249669434e591.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202604/2317/a49622e09a90d32b699213f651de487eb5f249669434e591.png",
+      "sourceSha256": "1b4a7aee091a9ad0521c023f1d7e0f98f67ea854e5f64db68d88e898bcb03dbc",
+      "sourceBytes": 340018,
+      "sha256": "5aba8ddbe04ced6f4270b25b9ad10d749a239c5fbbb91d16fa23a92c3e3feef0",
+      "bytes": 228892,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "disgaea-6-complete": {
+    "cover": null,
+    "screenshots": []
+  },
+  "goat-simulator-3": {
+    "cover": {
+      "file": "goat-simulator-3/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1410/KwoCdV1Juhep39EFodzTDJjZ.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1410/KwoCdV1Juhep39EFodzTDJjZ.png",
+      "sourceSha256": "7529994b079590561ae543ac0347cd3bf0b474d03f794765bb551d7b42dddd63",
+      "sourceBytes": 196282,
+      "sha256": "d4ee2374cb1b81b4386331f72562562107486052e5888dbbcb03eb0670183124",
+      "bytes": 124148,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "bugsnax": {
+    "cover": {
+      "file": "bugsnax/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202006/1917/5ePCp1x8olocgSVS6I1jNLYS.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202006/1917/5ePCp1x8olocgSVS6I1jNLYS.png",
+      "sourceSha256": "6ec18b5d6495b6e8d8d71f5108aa323c7c8817c8fb09fbe5597a91b6f85c60d0",
+      "sourceBytes": 227720,
+      "sha256": "a898920c05735f1dd0a2779d54cd48ab49fd721ee346b5eee10ba418f24d90bb",
+      "bytes": 125690,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "eternal-cylinder": {
+    "cover": null,
+    "screenshots": []
+  },
+  "coffee-talk": {
+    "cover": {
+      "file": "coffee-talk/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202104/0510/kqFKzYXgYrUH0Ytg9ehjazY9.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/img/rnd/202104/0510/kqFKzYXgYrUH0Ytg9ehjazY9.png",
+      "sourceSha256": "91faa16111fb2dbdf1b43ff0e2c36d41c8b76abc6a0ab9d5a36ab90efd9fcccf",
+      "sourceBytes": 110726,
+      "sha256": "bbde3b7d2f807da9d60418b16a509f06aea663df6af54e7586d9d8bc20b68682",
+      "bytes": 51176,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "bloodrayne-betrayal-fresh-bites": {
+    "cover": null,
+    "screenshots": []
+  },
+  "super-crazy-rhythm-castle": {
+    "cover": null,
+    "screenshots": []
+  },
+  "taiko-rhythm-festival": {
+    "cover": {
+      "file": "taiko-rhythm-festival/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202408/0920/f85589f8af0e909c45c140a4d448e8c1984139455f83099c.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202408/0920/f85589f8af0e909c45c140a4d448e8c1984139455f83099c.png",
+      "sourceSha256": "196510e1b4b8a80c160ac6823fefcffed0d3ccaaeaddb0ea5844b3980dfdf475",
+      "sourceBytes": 367412,
+      "sha256": "e9287a48d41d6ac8f4a2e8f2c707a19aaf68d28379c51e4269c37823e83a7afb",
+      "bytes": 243102,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "bendy-ink-machine": {
+    "cover": null,
+    "screenshots": []
+  },
+  "last-faith": {
+    "cover": null,
+    "screenshots": []
+  },
+  "ps5x360-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "ikai": {
+    "cover": null,
+    "screenshots": []
+  },
+  "jumanji-ppsa03973": {
+    "cover": null,
+    "screenshots": []
   }
 }

@@ -1752,3 +1752,273 @@ guideSupplements["guides/input"].push({
   }
  ]
 });
+
+guideSupplements["guides/windows"].push({
+ "id": "main-runtime-module-not-relinked",
+ "title": {
+  "en": "Later main: a missing converted module is an error, not a library substitute",
+  "zh": "后续main：缺少转换模块不是替换系统库的问题",
+  "ar": "main اللاحق: وحدة غير محولة ليست بديلاً للمكتبة",
+  "pt": "Main posterior: módulo não convertido não é substituto",
+  "de": "Späteres Main: unkonvertiertes Modul ist kein Bibliotheksersatz",
+  "fr": "Main ultérieur : module non converti, pas substitut",
+  "es": "Main posterior: módulo no convertido no es sustituto"
+ },
+ "body": [
+  {
+   "en": "A title can load a module after startup. Current main reports “[module] dlopen: … was not relinked” once per file, returns a load error and lets the title continue; a later null fault may follow. Add that module directory with --module-dir and keep the generated guest module in app0. Original PS5 PRX files do not belong in Windows libs/. This does not prove every missing-module crash has the same cause.",
+   "zh": "游戏可在启动后再载模块；当前main每文件只报一次“dlopen…was not relinked”、返回加载错误并让标题继续，后面仍可能空地址故障。用--module-dir包含相应目录，把生成guest模块保留在app0；原PS5 PRX不放Windows libs/。不把所有缺模块崩溃归为同因。",
+   "ar": "قد تحمل اللعبة وحدة بعد البدء؛ main يبلغ was not relinked مرة لكل ملف ويرجع خطأ ثم يتابع، وقد يفشل لاحقاً. أدرج المجلد بـ--module-dir وضع الناتج فيapp0، لا PRX أصلي فيWindows libs. لا تعميم السبب.",
+   "pt": "Um título pode carregar módulos depois do arranque; main avisa was not relinked uma vez e devolve erro, podendo falhar depois. Inclua a pasta em--module-dir, mantenha guest emapp0, não PRX original emWindows libs. Sem causa universal.",
+   "de": "Titel lädt Module später: Main meldet was not relinked einmal jeDatei und gibt Fehler zurück, späterer Nullfehler möglich. Ordner mit--module-dir konvertieren, Guestmodul inapp0; keinePS5-PRX inWindows libs. Kein allgemeinerUrsachenbeleg.",
+   "fr": "Un titre charge aussi après démarrage : main signale was not relinked une fois/fichier, rend erreur puis continue, parfois faute null ensuite. Ajoutez dossier par--module-dir et guest dansapp0, pasPRX original enWindows libs. Cause non universelle.",
+   "es": "El título puede cargar módulos después: main avisa was not relinked una vez/archivo, devuelve error y sigue, pudiendo fallar luego. Incluye carpeta con--module-dir yguest enapp0, noPRX original enWindows libs. Sin causa universal."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d7948b09f95ea8e302590c09dbb3c0c0b714b84a/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"].push({
+ "id": "main-self-padding-limit",
+ "title": {
+  "en": "Later main: unwrap padding limit",
+  "zh": "后续main：SELF解包padding上限",
+  "ar": "main اللاحق: حد padding SELF",
+  "pt": "Main posterior: limite padding SELF",
+  "de": "Späteres Main: SELF-Paddinggrenze",
+  "fr": "Main ultérieur : limite padding SELF",
+  "es": "Main posterior: límite padding SELF"
+ },
+ "body": [
+  {
+   "en": "The SELF unwrapper refuses more than64MiB total alignment padding before allocating output. This counts padding across file-backed and empty segments, not their data bytes. Refusal preserves input and an existing output. It does not decrypt encrypted content, and it is a current-main boundary rather than a new v0.1.3 release.",
+   "zh": "SELF unwrapper在分配输出前拒绝总对齐padding超过64MiB；统计有文件数据及空segment之间的padding，不是segment数据量。拒绝保留输入与已有输出，仍不解密内容；这是当前main边界，不是v0.1.3新发行。",
+   "ar": "يرفض unwrapper أكثر من64MiB padding إجمالي قبل التخصيص، عبر segments الفارغة والمخزنة لا بياناتها. يحفظ المدخل والمخرج الموجود، لا يفك تشفيراً، تغييرmain لا إصدارv0.1.3.",
+   "pt": "Unwrapper recusa padding total>64MiB antes de alocar, incluindo segmentos vazios/ficheiro, não bytes de dados. Preserva entrada/saída existente, não desencripta; main, não nova releasev0.1.3.",
+   "de": "Unwrapper verweigert>64MiB Gesamtpadding vorAllokation, einschließlich leerer/dateibasierterSegmente, keineDatenbytes. Ein-/vorhandeneAusgabe bleiben; keineEntschlüsselung, Main keinv0.1.3-Release.",
+   "fr": "Unwrapper refuse>64MiB padding total avant allocation, segments vides/fichier, pas données. Préserve entrée/sortie existante, sansdécryptage ; main, pas nouveauv0.1.3.",
+   "es": "Unwrapper rechaza>64MiB padding total antes de asignar, segmentos vacíos/archivo, no datos. Conserva entrada/salida existente, sin descifrar; main, no nuevov0.1.3."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d7948b09f95ea8e302590c09dbb3c0c0b714b84a/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/linux"].push({
+ "id": "main-runtime-module-not-relinked",
+ "title": {
+  "en": "Later main: a missing converted module is an error, not a library substitute",
+  "zh": "后续main：缺少转换模块不是替换系统库的问题",
+  "ar": "main اللاحق: وحدة غير محولة ليست بديلاً للمكتبة",
+  "pt": "Main posterior: módulo não convertido não é substituto",
+  "de": "Späteres Main: unkonvertiertes Modul ist kein Bibliotheksersatz",
+  "fr": "Main ultérieur : module non converti, pas substitut",
+  "es": "Main posterior: módulo no convertido no es sustituto"
+ },
+ "body": [
+  {
+   "en": "A title can load a module after startup. Current main reports “[module] dlopen: … was not relinked” once per file, returns a load error and lets the title continue; a later null fault may follow. Add that module directory with --module-dir and keep the generated guest module in app0. Original PS5 PRX files do not belong in Windows libs/. This does not prove every missing-module crash has the same cause.",
+   "zh": "游戏可在启动后再载模块；当前main每文件只报一次“dlopen…was not relinked”、返回加载错误并让标题继续，后面仍可能空地址故障。用--module-dir包含相应目录，把生成guest模块保留在app0；原PS5 PRX不放Windows libs/。不把所有缺模块崩溃归为同因。",
+   "ar": "قد تحمل اللعبة وحدة بعد البدء؛ main يبلغ was not relinked مرة لكل ملف ويرجع خطأ ثم يتابع، وقد يفشل لاحقاً. أدرج المجلد بـ--module-dir وضع الناتج فيapp0، لا PRX أصلي فيWindows libs. لا تعميم السبب.",
+   "pt": "Um título pode carregar módulos depois do arranque; main avisa was not relinked uma vez e devolve erro, podendo falhar depois. Inclua a pasta em--module-dir, mantenha guest emapp0, não PRX original emWindows libs. Sem causa universal.",
+   "de": "Titel lädt Module später: Main meldet was not relinked einmal jeDatei und gibt Fehler zurück, späterer Nullfehler möglich. Ordner mit--module-dir konvertieren, Guestmodul inapp0; keinePS5-PRX inWindows libs. Kein allgemeinerUrsachenbeleg.",
+   "fr": "Un titre charge aussi après démarrage : main signale was not relinked une fois/fichier, rend erreur puis continue, parfois faute null ensuite. Ajoutez dossier par--module-dir et guest dansapp0, pasPRX original enWindows libs. Cause non universelle.",
+   "es": "El título puede cargar módulos después: main avisa was not relinked una vez/archivo, devuelve error y sigue, pudiendo fallar luego. Incluye carpeta con--module-dir yguest enapp0, noPRX original enWindows libs. Sin causa universal."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d7948b09f95ea8e302590c09dbb3c0c0b714b84a/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/linux"].push({
+ "id": "main-self-padding-limit",
+ "title": {
+  "en": "Later main: unwrap padding limit",
+  "zh": "后续main：SELF解包padding上限",
+  "ar": "main اللاحق: حد padding SELF",
+  "pt": "Main posterior: limite padding SELF",
+  "de": "Späteres Main: SELF-Paddinggrenze",
+  "fr": "Main ultérieur : limite padding SELF",
+  "es": "Main posterior: límite padding SELF"
+ },
+ "body": [
+  {
+   "en": "The SELF unwrapper refuses more than64MiB total alignment padding before allocating output. This counts padding across file-backed and empty segments, not their data bytes. Refusal preserves input and an existing output. It does not decrypt encrypted content, and it is a current-main boundary rather than a new v0.1.3 release.",
+   "zh": "SELF unwrapper在分配输出前拒绝总对齐padding超过64MiB；统计有文件数据及空segment之间的padding，不是segment数据量。拒绝保留输入与已有输出，仍不解密内容；这是当前main边界，不是v0.1.3新发行。",
+   "ar": "يرفض unwrapper أكثر من64MiB padding إجمالي قبل التخصيص، عبر segments الفارغة والمخزنة لا بياناتها. يحفظ المدخل والمخرج الموجود، لا يفك تشفيراً، تغييرmain لا إصدارv0.1.3.",
+   "pt": "Unwrapper recusa padding total>64MiB antes de alocar, incluindo segmentos vazios/ficheiro, não bytes de dados. Preserva entrada/saída existente, não desencripta; main, não nova releasev0.1.3.",
+   "de": "Unwrapper verweigert>64MiB Gesamtpadding vorAllokation, einschließlich leerer/dateibasierterSegmente, keineDatenbytes. Ein-/vorhandeneAusgabe bleiben; keineEntschlüsselung, Main keinv0.1.3-Release.",
+   "fr": "Unwrapper refuse>64MiB padding total avant allocation, segments vides/fichier, pas données. Préserve entrée/sortie existante, sansdécryptage ; main, pas nouveauv0.1.3.",
+   "es": "Unwrapper rechaza>64MiB padding total antes de asignar, segmentos vacíos/archivo, no datos. Conserva entrada/salida existente, sin descifrar; main, no nuevov0.1.3."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d7948b09f95ea8e302590c09dbb3c0c0b714b84a/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-self-padding-limit",
+ "title": {
+  "en": "Later main: unwrap padding limit",
+  "zh": "后续main：SELF解包padding上限",
+  "ar": "main اللاحق: حد padding SELF",
+  "pt": "Main posterior: limite padding SELF",
+  "de": "Späteres Main: SELF-Paddinggrenze",
+  "fr": "Main ultérieur : limite padding SELF",
+  "es": "Main posterior: límite padding SELF"
+ },
+ "body": [
+  {
+   "en": "The SELF unwrapper refuses more than64MiB total alignment padding before allocating output. This counts padding across file-backed and empty segments, not their data bytes. Refusal preserves input and an existing output. It does not decrypt encrypted content, and it is a current-main boundary rather than a new v0.1.3 release.",
+   "zh": "SELF unwrapper在分配输出前拒绝总对齐padding超过64MiB；统计有文件数据及空segment之间的padding，不是segment数据量。拒绝保留输入与已有输出，仍不解密内容；这是当前main边界，不是v0.1.3新发行。",
+   "ar": "يرفض unwrapper أكثر من64MiB padding إجمالي قبل التخصيص، عبر segments الفارغة والمخزنة لا بياناتها. يحفظ المدخل والمخرج الموجود، لا يفك تشفيراً، تغييرmain لا إصدارv0.1.3.",
+   "pt": "Unwrapper recusa padding total>64MiB antes de alocar, incluindo segmentos vazios/ficheiro, não bytes de dados. Preserva entrada/saída existente, não desencripta; main, não nova releasev0.1.3.",
+   "de": "Unwrapper verweigert>64MiB Gesamtpadding vorAllokation, einschließlich leerer/dateibasierterSegmente, keineDatenbytes. Ein-/vorhandeneAusgabe bleiben; keineEntschlüsselung, Main keinv0.1.3-Release.",
+   "fr": "Unwrapper refuse>64MiB padding total avant allocation, segments vides/fichier, pas données. Préserve entrée/sortie existante, sansdécryptage ; main, pas nouveauv0.1.3.",
+   "es": "Unwrapper rechaza>64MiB padding total antes de asignar, segmentos vacíos/archivo, no datos. Conserva entrada/salida existente, sin descifrar; main, no nuevov0.1.3."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d7948b09f95ea8e302590c09dbb3c0c0b714b84a/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-draw-pipeline-boundaries",
+ "title": {
+  "en": "Later main: opt-in draw pipeline and measurement",
+  "zh": "后续main：可选draw pipeline及测量边界",
+  "ar": "main اللاحق: draw pipeline اختياري والقياس",
+  "pt": "Main posterior: draw pipeline opcional e medição",
+  "de": "Späteres Main: optionale Drawpipeline und Messung",
+  "fr": "Main ultérieur : draw pipeline optionnel et mesure",
+  "es": "Main posterior: draw pipeline opcional y medición"
+ },
+ "body": [
+  {
+   "en": "APS5_DRAW_PIPELINE=1 is off by default and intended with PIPELINED_DRAWS=32 and PIPELINE_DISPATCH=1. It hands work to a finisher and reuses validity proofs. VERIFY_DRAW_PIPELINE samples full checks at a speed cost; nonzero epoch-proofs differences are bugs. PROFILE_DRAW=1 instead finishes draws on the reading thread, so that run cannot measure the handoff. PIPELINE_STATS reports finisher counters; value1 adds costly Vulkan statistics. No universal FPS gain is established.",
+   "zh": "APS5_DRAW_PIPELINE=1默认关闭，配PIPELINED_DRAWS=32与PIPELINE_DISPATCH=1，把工作交给finisher并复用有效性证明。VERIFY_DRAW_PIPELINE以速度代价采样全检查，epoch-proofs非零差异即bug。PROFILE_DRAW=1却在读取线程完成draw，因此不能测handoff；PIPELINE_STATS输出计数，值1另开有成本的Vulkan统计。无通用FPS收益结论。",
+   "ar": "DRAW_PIPELINE=1 افتراضيoff معPIPELINED_DRAWS=32/PIPELINE_DISPATCH=1؛ finisher وإعادة proofs. VERIFY يفحص عينات بكلفة، فروق epoch-proofs خطأ. PROFILE_DRAW ينهي علىreading-thread فلا يقيسhandoff. STATS=1 يزيد كلفةVulkan؛ لاFPS عام.",
+   "pt": "DRAW_PIPELINE=1 off por defeito comPIPELINED_DRAWS=32/PIPELINE_DISPATCH=1; finisher/provas reutilizadas. VERIFY amostra com custo, diferenças epoch-proofs são bugs. PROFILE_DRAW termina na thread leitora, não medehandoff. STATS=1 custaVulkan; sem ganho geral.",
+   "de": "DRAW_PIPELINE=1 standardmäßig aus, mitPIPELINED_DRAWS=32/PIPELINE_DISPATCH=1; Finisher/Proofreuse. VERIFY prüft stichprobenartig mitKosten, epoch-proofs-Differenzen Fehler. PROFILE_DRAW beendet imLesethread, misst keinHandoff. STATS=1 kostetVulkan; kein allgemeinerFPS-Gewinn.",
+   "fr": "DRAW_PIPELINE=1 désactivé avecPIPELINED_DRAWS=32/PIPELINE_DISPATCH=1 ; finisher/proofs réutilisés. VERIFY échantillonne aveccoût, différences epoch-proofs bugs. PROFILE_DRAW finit surthread lecteur, ne mesure pashandoff. STATS=1 coûteVulkan ; pas gain général.",
+   "es": "DRAW_PIPELINE=1 apagado conPIPELINED_DRAWS=32/PIPELINE_DISPATCH=1; finisher/proofs reutilizados. VERIFY muestrea concoste, diferencias epoch-proofs sonbugs. PROFILE_DRAW acaba enthread lector, no midehandoff. STATS=1 cuestaVulkan; sin ganancia general."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d7948b09f95ea8e302590c09dbb3c0c0b714b84a/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-amd-checkpoint-fallback",
+ "title": {
+  "en": "Later main: AMD dispatch markers for device-loss reports",
+  "zh": "后续main：AMD设备丢失的dispatch标记",
+  "ar": "main اللاحق: علامات AMD لتقارير device loss",
+  "pt": "Main posterior: marcadores AMD em device loss",
+  "de": "Späteres Main: AMD-Marker bei Geräteverlust",
+  "fr": "Main ultérieur : marqueurs AMD et perte du périphérique",
+  "es": "Main posterior: marcadores AMD ante device loss"
+ },
+ "body": [
+  {
+   "en": "APS5_GPU_CHECKPOINTS=1 remains off by default. Without NV diagnostic checkpoints, supported AMD devices can use VK_AMD_buffer_marker to record dispatch reached/finished markers, naming the last programs and up to eight between them. Unsupported devices ignore it. A last marker narrows a hang investigation, not proof that the named shader caused it; keep diagnostics separate from unprofiled speed.",
+   "zh": "APS5_GPU_CHECKPOINTS=1仍默认关闭；没有NV诊断checkpoint时，支持的AMD设备可用VK_AMD_buffer_marker记录dispatch到达／完成、最后program及中间最多八个。不支持设备忽略。最后标记仅缩小hang排查，不证明该shader致因，诊断与无剖析速度分开。",
+   "ar": "GPU_CHECKPOINTS=1 off؛ بدونNV قد يستخدمAMD buffer_marker للوصول/الانتهاء وآخرprogram وحتى8بينهما. غير المدعوم يتجاهل. آخرmarker دليل بحث لا سبب مثبت، افصل السرعة.",
+   "pt": "GPU_CHECKPOINTS=1 off; semNV, AMD suportado usa buffer_marker para reached/finished e até8programs. Outros ignoram. Último marker não prova causa; separe diagnóstico/velocidade.",
+   "de": "GPU_CHECKPOINTS=1 aus; ohneNV AMD-buffer_marker für erreicht/fertig/letzte und bis8Programme. Unsupported ignoriert. LetzterMarker keinUrsachenbeweis; Diagnose vonTempo trennen.",
+   "fr": "GPU_CHECKPOINTS=1 off ; sansNV, AMD buffer_marker pour atteint/fini/derniers etjusqu’à8programmes. Autres ignorent. Derniermarker pascause prouvée ; séparezvitesse.",
+   "es": "GPU_CHECKPOINTS=1 off; sinNV, AMD buffer_marker para alcanzado/finalizado/últimos yhasta8programas. Otros ignoran. Últimomarker noprueba causa; separavelocidad."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d7948b09f95ea8e302590c09dbb3c0c0b714b84a/docs/dev/BUILD.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-bundled-ogg-vorbis",
+ "title": {
+  "en": "Later main: system dependencies still need submodules",
+  "zh": "后续main：系统依赖模式仍需子模块",
+  "ar": "main اللاحق: تبعيات النظام لا تلغي submodules",
+  "pt": "Main posterior: dependências do sistema ainda precisam submódulos",
+  "de": "Späteres Main: Systemabhängigkeiten brauchen weiter Submodule",
+  "fr": "Main ultérieur : dépendances système et sous-modules",
+  "es": "Main posterior: dependencias sistema aún necesitan submódulos"
+ },
+ "body": [
+  {
+   "en": "ANYPS5_USE_SYSTEM_DEPS=ON still keeps FFmpeg, JPEG, stb, VMA, LibAtrac9, ogg and vorbis bundled: initialize the pinned submodules. The system SDL2 must supply HIDAPI, and configure errors do not silently fall back. This is a source-build rule, not a new game hardware requirement.",
+   "zh": "ANYPS5_USE_SYSTEM_DEPS=ON仍把FFmpeg、JPEG、stb、VMA、LibAtrac9、ogg及vorbis作为bundled，需初始化固定子模块。系统SDL2须有HIDAPI，configure错误不会静默回退；这是源码规则，非游戏硬件新要求。",
+   "ar": "SYSTEM_DEPS=ON يبقي FFmpeg/JPEG/stb/VMA/LibAtrac9/ogg/vorbis bundled، فعّل submodules المحددة. SDL2 النظام يحتاجHIDAPI ولا fallback صامت. قاعدة بناء لا عتاد لعبة.",
+   "pt": "SYSTEM_DEPS=ON mantém FFmpeg/JPEG/stb/VMA/LibAtrac9/ogg/vorbis bundled: inicialize submódulos. SDL2 precisaHIDAPI, semfallback silencioso. Regra build, não hardware jogo.",
+   "de": "SYSTEM_DEPS=ON behältFFmpeg/JPEG/stb/VMA/LibAtrac9/ogg/vorbis bundled: Submodule initialisieren. SystemSDL2 brauchtHIDAPI, kein stillerFallback. Buildregel keinSpielhardwarebedarf.",
+   "fr": "SYSTEM_DEPS=ON gardeFFmpeg/JPEG/stb/VMA/LibAtrac9/ogg/vorbis bundled : initialisez sous-modules. SDL2 exigeHIDAPI, pasfallback silencieux. Règle build, pasmatérieljeu.",
+   "es": "SYSTEM_DEPS=ON mantieneFFmpeg/JPEG/stb/VMA/LibAtrac9/ogg/vorbis bundled: inicializa submódulos. SDL2 requiereHIDAPI, sinfallback silencioso. Regla build, nohardwarejuego."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d7948b09f95ea8e302590c09dbb3c0c0b714b84a/docs/dev/BUILD.md"
+  }
+ ]
+});
+
+guideSupplements["guides/input"].push({
+ "id": "main-pad-button-combinations",
+ "title": {
+  "en": "Later main: simultaneous buttons in file input",
+  "zh": "后续main：文件输入的组合按键",
+  "ar": "main اللاحق: أزرار متزامنة بملف الإدخال",
+  "pt": "Main posterior: botões simultâneos no ficheiro",
+  "de": "Späteres Main: gleichzeitige Tasten per Datei",
+  "fr": "Main ultérieur : boutons simultanés par fichier",
+  "es": "Main posterior: botones simultáneos por archivo"
+ },
+ "body": [
+  {
+   "en": "pad_input.py accepts names joined by +, such as l1+r1, as one simultaneous press. release cannot be combined. Keep the existing release observation between commands: rapid file writes replace the previous command, and scripted input does not establish physical-controller, touch or rumble coverage.",
+   "zh": "pad_input.py接受以+连接的按钮名（如l1+r1）同时按下，release不能组合；仍需等游戏观察到释放，快速写文件会替换前一命令。脚本输入不证明实体手柄／触摸／震动已验证。",
+   "ar": "pad_input.py يقبل l1+r1 كضغط واحد؛ release لا يدمج. انتظر رصد release، فالكتابة السريعة تستبدل السابق. script لا يثبت يد فعلية/لمس/rumble.",
+   "pt": "pad_input.py aceita l1+r1 simultâneo; release não combina. Espere release observado; escritas rápidas substituem comando. Script não valida pad físico/toque/rumble.",
+   "de": "pad_input.py akzeptiert l1+r1 gleichzeitig; release nicht kombinierbar. BeobachtetesLoslassen abwarten, schnelleWrites ersetzenBefehl. Skript keinPad-/Touch-/Rumblebeleg.",
+   "fr": "pad_input.py accepte l1+r1 simultané ; release non combinable. Attendez release observé, écritures rapides remplacent commande. Script ne valide pasmanette/toucher/rumble.",
+   "es": "pad_input.py acepta l1+r1 simultáneo; release no combina. Espera release observado; escrituras rápidas reemplazan comando. Script no valida padfísico/táctil/rumble."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d7948b09f95ea8e302590c09dbb3c0c0b714b84a/docs/user/USAGE.md"
+  }
+ ]
+});

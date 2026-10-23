@@ -41,4 +41,6 @@ export const genres:Record<string,Text>={
  sandbox:L('Sandbox','沙盒','لعب حر','Sandbox','Sandbox','Bac à sable','Sandbox'),
  shooter:L('Shooter','射击','تصويب','Tiro','Shooter','Jeu de tir','Disparos'),
  sports:L('Sports','体育','رياضة','Desporto','Sport','Sport','Deportes'),
+ strategy:L('Turn-based strategy','回合制策略','استراتيجية بنظام الأدوار','Estratégia por turnos','Rundenstrategie','Stratégie au tour par tour','Estrategia por turnos'),
+ rhythm:L('Rhythm','音乐节奏','إيقاع','Ritmo','Rhythmus','Rythme','Ritmo'),
 };

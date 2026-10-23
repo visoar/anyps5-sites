@@ -4029,33 +4029,33 @@ Object.assign(editorial,{
   }
  },
  "graven": {
-  "genre": "shooter",
-  "names": {
-   "zh": "GRAVEN"
-  },
-  "overview": {
-   "en": "Only static conversion and import audits exist; no launch has been reported.",
-   "zh": "仅有静态转换与导入审计，尚无实际启动报告。",
-   "ar": "توجد مراجعة تحويل/import ثابتة فقط دون تشغيل مبلغ.",
-   "pt": "Só conversão/auditoria estática; nenhum arranque relatado.",
-   "de": "Nur Konvertierung/Importaudit, kein gemeldeter Start.",
-   "fr": "Conversion/audit statique seuls, aucun lancement rapporté.",
-   "es": "Solo conversión/auditoría estática, sin arranque reportado."
-  },
-  "related": [
-   "astro-bot",
-   "lodoss-deedlit"
-  ],
-  "editionNote": {
-   "en": "Reported PS5 package PPSA09614. Preserve the content version, tested build and host of each observation. Promotional artwork is not an AnyPS5 screenshot or proof of tested DLC.",
-   "zh": "报告PS5包PPSA09614，逐次保留内容版本、测试构建与主机；宣传图不是AnyPS5截图或DLC已测证明。",
-   "ar": "حزمة PS5 PPSA09614؛ احفظ نسخة وبناء ومضيف كل تجربة. الصورة دعائية لا تشغيل AnyPS5 أو إثبات DLC.",
-   "pt": "Pacote PS5 PPSA09614; preserve versão/build/host por observação. Arte promocional não é captura AnyPS5 ou DLC provado.",
-   "de": "PS5-Paket PPSA09614; Inhaltsversion/Build/Host je Beobachtung beachten. Werbung kein AnyPS5-Bild/DLC-Testbeleg.",
-   "fr": "Paquet PS5 PPSA09614 ; conservez version/build/hôte. Image promotionnelle, pas capture AnyPS5/preuve DLC.",
-   "es": "Paquete PS5 PPSA09614; conserva versión/build/host. Arte promocional no es captura AnyPS5/prueba DLC."
-  }
+ "genre": "shooter",
+ "names": {
+  "zh": "GRAVEN"
  },
+ "overview": {
+  "en": "Windows now reaches menus and the boat intro, with severe rendering errors and no verified manual play.",
+  "zh": "Windows现到菜单及船上片头，但渲染错误严重、无手动游玩验证。",
+  "ar": "Windows يصل قوائم/مقدمة قارب مع رسومات معيبة ودون لعب يدوي مثبت.",
+  "pt": "Windows chega menus/intro do barco, com imagem errada e sem jogo manual validado.",
+  "de": "Windows bisMenü/Bootintro mit Grafikfehlern, manuellesSpiel unbestätigt.",
+  "fr": "Windows jusqu’aux menus/intro bateau avec rendu erroné, jeu manuel non validé.",
+  "es": "Windows hasta menús/intro barco con render erróneo y sin juego manual validado."
+ },
+ "related": [
+  "astro-bot",
+  "lodoss-deedlit"
+ ],
+ "editionNote": {
+  "en": "Reported PS5 package PPSA09614. Preserve the content version, tested build and host of each observation. Promotional artwork is not an AnyPS5 screenshot or proof of tested DLC.",
+  "zh": "报告PS5包PPSA09614，逐次保留内容版本、测试构建与主机；宣传图不是AnyPS5截图或DLC已测证明。",
+  "ar": "حزمة PS5 PPSA09614؛ احفظ نسخة وبناء ومضيف كل تجربة. الصورة دعائية لا تشغيل AnyPS5 أو إثبات DLC.",
+  "pt": "Pacote PS5 PPSA09614; preserve versão/build/host por observação. Arte promocional não é captura AnyPS5 ou DLC provado.",
+  "de": "PS5-Paket PPSA09614; Inhaltsversion/Build/Host je Beobachtung beachten. Werbung kein AnyPS5-Bild/DLC-Testbeleg.",
+  "fr": "Paquet PS5 PPSA09614 ; conservez version/build/hôte. Image promotionnelle, pas capture AnyPS5/preuve DLC.",
+  "es": "Paquete PS5 PPSA09614; conserva versión/build/host. Arte promocional no es captura AnyPS5/prueba DLC."
+ }
+},
  "outer-wilds": {
   "genre": "adventure",
   "names": {
@@ -4614,6 +4614,652 @@ Object.assign(editorial,{
    "de": "PS5-Paket PPSA35169; Inhaltsversion/Build/Host je Beobachtung beachten. Werbung kein AnyPS5-Bild/DLC-Testbeleg.",
    "fr": "Paquet PS5 PPSA35169 ; conservez version/build/hôte. Image promotionnelle, pas capture AnyPS5/preuve DLC.",
    "es": "Paquete PS5 PPSA35169; conserva versión/build/host. Arte promocional no es captura AnyPS5/prueba DLC."
+  }
+ }
+});
+Object.assign(editorial,{
+ "oregon-trail": {
+  "genre": "adventure",
+  "names": {
+   "zh": "俄勒冈之旅"
+  },
+  "overview": {
+   "en": "Empty presented frames leave the Oregon journey unverified.",
+   "zh": "空呈现帧尚未证明俄勒冈旅途可以开始。",
+   "ar": "إطارات فارغة لا تثبت بدء الرحلة.",
+   "pt": "Frames vazios não validam o início da viagem.",
+   "de": "Leere Frames belegen keinen Reisebeginn.",
+   "fr": "Les images vides ne valident pas le voyage.",
+   "es": "Frames vacíos no validan el viaje."
+  },
+  "related": [
+   "animal-well",
+   "greak-memories-of-azur"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA19244; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA19244；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA19244؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA19244; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA19244; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA19244 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA19244; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "dusk-diver-2": {
+  "genre": "rpg",
+  "names": {
+   "zh": "酉闪町2"
+  },
+  "overview": {
+   "en": "Very slow settings screens and a faster draft remain menu evidence.",
+   "zh": "缓慢设置界面及提速草案仍属于菜单证据。",
+   "ar": "إعدادات بطيئة ومسودة أسرع، كلاهما دليل قائمة.",
+   "pt": "Opções lentas e draft mais rápido continuam a ser menus.",
+   "de": "Langsame Einstellungen und schnellerer Draft bleiben Menübelege.",
+   "fr": "Réglages lents et brouillon plus rapide restent des menus.",
+   "es": "Ajustes lentos y draft rápido siguen siendo menús."
+  },
+  "related": [
+   "persona-3-reload",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA06565; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA06565；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA06565؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA06565; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA06565; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA06565 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA06565; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "blue-reflection-quartet": {
+  "genre": "turnBasedRpg",
+  "names": {
+   "zh": "BLUE REFLECTION四部曲"
+  },
+  "overview": {
+   "en": "The first collection executable reaches an audio-module stop; the others are untested.",
+   "zh": "合集首个执行文件停于声音模块，其余尚未测试。",
+   "ar": "أول ملف بالمجموعة يتوقف عند وحدة صوت، والبقية غير مختبرة.",
+   "pt": "Primeiro executável para no áudio; restantes por testar.",
+   "de": "Erstes Programm stoppt am Audiomodul, übrige ungeprüft.",
+   "fr": "Premier exécutable bloqué sur l’audio, autres non testés.",
+   "es": "Primer ejecutable para en audio, otros sin probar."
+  },
+  "related": [
+   "persona-3-reload",
+   "trails-sky-2nd-chapter"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA33655; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA33655；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA33655؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA33655; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA33655; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA33655 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA33655; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "arcrunner": {
+  "genre": "shooter",
+  "names": {
+   "zh": "ArcRunner"
+  },
+  "overview": {
+   "en": "The opening street cinematic is visible, but playable control is unverified.",
+   "zh": "街道片头已显示，实际操作仍待验证。",
+   "ar": "مقدمة الشارع تظهر دون تحكم مثبت.",
+   "pt": "Intro de rua visível, controlo por validar.",
+   "de": "Straßenintro sichtbar, Spielsteuerung offen.",
+   "fr": "Intro de rue visible, contrôle non validé.",
+   "es": "Intro calle visible, control sin validar."
+  },
+  "related": [
+   "graven",
+   "severed-steel"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA21406; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA21406；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA21406؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA21406; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA21406; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA21406 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA21406; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "bendy-dark-revival": {
+  "genre": "adventure",
+  "names": {
+   "zh": "班迪与黑暗复兴"
+  },
+  "overview": {
+   "en": "Descriptor diagnostics narrow the investigation without proving a fix.",
+   "zh": "描述符诊断缩小排查范围，尚不构成修复。",
+   "ar": "تشخيص descriptors يضيق البحث دون إصلاح مثبت.",
+   "pt": "Diagnóstico limita a investigação sem provar um fix.",
+   "de": "Deskriptordiagnose grenzt ein, belegt keinen Fix.",
+   "fr": "Le diagnostic précise l’enquête sans prouver un correctif.",
+   "es": "El diagnóstico acota la investigación sin probar arreglo."
+  },
+  "related": [
+   "animal-well",
+   "greak-memories-of-azur"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA27624; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA27624；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA27624؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA27624; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA27624; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA27624 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA27624; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "apotris-homebrew": {
+  "genre": "puzzle",
+  "names": {
+   "zh": "Apotris自制移植"
+  },
+  "overview": {
+   "en": "This PS5 homebrew plays after a conditional syscall-trapping conversion.",
+   "zh": "这款PS5自制移植在带syscall trap条件的转换后进入游玩。",
+   "ar": "Homebrew PS5 يعمل بعد تحويل مشروط بحصر syscall.",
+   "pt": "Homebrew PS5 joga após conversão com syscall trap.",
+   "de": "PS5-Homebrew spielt nach Konvertierung mit Syscall-Trap.",
+   "fr": "Homebrew PS5 jouable après conversion avec syscall trap.",
+   "es": "Homebrew PS5 juega tras convertir con syscall trap."
+  },
+  "related": [
+   "biped",
+   "animal-well"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA98513; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA98513；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA98513؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA98513; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA98513; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA98513 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA98513; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "unbound-worlds-apart": {
+  "genre": "platform",
+  "names": {
+   "zh": "无界：世界之外"
+  },
+  "overview": {
+   "en": "A shared engine allocation failure is not a universal PC RAM requirement.",
+   "zh": "共同引擎分配失败不能当作通用PC内存要求。",
+   "ar": "فشل تخصيص محرك مشترك ليس متطلب RAM عاماً.",
+   "pt": "Falha comum do motor não define RAM geral.",
+   "de": "Gemeinsamer Enginefehler definiert keinen allgemeinen RAM-Bedarf.",
+   "fr": "Une allocation moteur échouée ne fixe pas la RAM générale.",
+   "es": "Fallo compartido del motor no fija RAM general."
+  },
+  "related": [
+   "hollow-knight-silksong",
+   "greak-memories-of-azur"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA03274; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC. Artwork identifies different regional package(s) PPSA03273, not this tested package.",
+   "zh": "报告PS5包PPSA03274；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。 图片对应不同地区包PPSA03273，不用于认定本次测试包。",
+   "ar": "حزمة PS5 PPSA03274؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر. الصورة لحزمة إقليمية مختلفة PPSA03273 لا الحزمة المختبرة.",
+   "pt": "Pacote PS5 PPSA03274; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado. Imagem de pacote regional diferente PPSA03273, não o teste.",
+   "de": "PS5-Paket PPSA03274; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC. Bild eines anderen Regionalpakets PPSA03273, nicht des Tests.",
+   "fr": "Paquet PS5 PPSA03274 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé. Image d’un autre paquet régional PPSA03273, pas cet essai.",
+   "es": "Paquete PS5 PPSA03274; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado. Imagen de otro paquete regional PPSA03273, no de esta prueba."
+  }
+ },
+ "gex-trilogy": {
+  "genre": "platform",
+  "names": {
+   "zh": "Gex三部曲"
+  },
+  "overview": {
+   "en": "Fonts unlock menus and a level card, before verified Gex control.",
+   "zh": "字体解决后到菜单与关卡卡片，Gex实际控制仍未验证。",
+   "ar": "الخطوط تفتح القوائم وبطاقة مستوى دون تحكم مثبت.",
+   "pt": "Fontes permitem menus/cartão, controlo por validar.",
+   "de": "Fonts öffnen Menüs/Levelkarte, Steuerung offen.",
+   "fr": "Polices ouvrent menus/carte, contrôle non validé.",
+   "es": "Fuentes abren menús/tarjeta, control sin validar."
+  },
+  "related": [
+   "hollow-knight-silksong",
+   "greak-memories-of-azur"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA28542; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA28542；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA28542؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA28542; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA28542; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA28542 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA28542; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "worms-armageddon-anniversary": {
+  "genre": "strategy",
+  "names": {
+   "zh": "百战天虫末日浩劫周年版"
+  },
+  "overview": {
+   "en": "A network-event API stops startup before a battle or menu.",
+   "zh": "网络事件API在战斗或菜单前阻止启动。",
+   "ar": "API حدث شبكة توقف البدء قبل قائمة أو معركة.",
+   "pt": "API de rede para antes do menu/batalha.",
+   "de": "Netzwerk-API stoppt vor Menü/Kampf.",
+   "fr": "API réseau bloque avant menu/bataille.",
+   "es": "API de red para antes de menú/batalla."
+  },
+  "related": [
+   "lodoss-deedlit",
+   "biped"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA20052; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA20052；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA20052؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA20052; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA20052; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA20052 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA20052; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "sea-of-stars": {
+  "genre": "turnBasedRpg",
+  "names": {
+   "zh": "星之海"
+  },
+  "overview": {
+   "en": "A static opening illustration is separate from menus and battles.",
+   "zh": "静止开场主图与菜单、战斗分开记录。",
+   "ar": "رسم البداية الثابت منفصل عن القوائم والقتال.",
+   "pt": "Ilustração inicial não é menu ou batalha.",
+   "de": "Statisches Startmotiv ist kein Menü/Kampf.",
+   "fr": "Illustration initiale distincte des menus/combats.",
+   "es": "Ilustración inicial distinta de menús/combates."
+  },
+  "related": [
+   "persona-3-reload",
+   "trails-sky-2nd-chapter"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA07587; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC. Artwork identifies different regional package(s) PPSA07586, PPSA15426, not this tested package. Sunset Edition marketing does not identify the reported content or prove those extras were tested.",
+   "zh": "报告PS5包PPSA07587；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。 图片对应不同地区包PPSA07586, PPSA15426，不用于认定本次测试包。 Sunset Edition营销不代表报告内容或附加内容已测试。",
+   "ar": "حزمة PS5 PPSA07587؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر. الصورة لحزمة إقليمية مختلفة PPSA07586, PPSA15426 لا الحزمة المختبرة. تسويق Sunset Edition لا يثبت محتوى التقرير أو اختبار الإضافات.",
+   "pt": "Pacote PS5 PPSA07587; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado. Imagem de pacote regional diferente PPSA07586, PPSA15426, não o teste. Marketing Sunset Edition não identifica conteúdo relatado/extra testado.",
+   "de": "PS5-Paket PPSA07587; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC. Bild eines anderen Regionalpakets PPSA07586, PPSA15426, nicht des Tests. Sunset Edition-Werbung belegt keine getesteten Zusatzinhalte.",
+   "fr": "Paquet PS5 PPSA07587 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé. Image d’un autre paquet régional PPSA07586, PPSA15426, pas cet essai. Marketing Sunset Edition ne prouve pas les suppléments testés.",
+   "es": "Paquete PS5 PPSA07587; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado. Imagen de otro paquete regional PPSA07586, PPSA15426, no de esta prueba. Marketing Sunset Edition no prueba extras ensayados."
+  }
+ },
+ "disgaea-6-complete": {
+  "genre": "turnBasedRpg",
+  "names": {
+   "zh": "魔界战记6完整版"
+  },
+  "overview": {
+   "en": "Zed’s first story dialogue leaves tactical combat untested.",
+   "zh": "Zed首段剧情对话之后，战棋战斗尚待测试。",
+   "ar": "حوار Zed الأول لا يثبت القتال التكتيكي.",
+   "pt": "Primeiro diálogo de Zed não valida combate.",
+   "de": "Zeds erster Dialog belegt keinen Taktikkampf.",
+   "fr": "Premier dialogue de Zed sans combat validé.",
+   "es": "Primer diálogo de Zed sin combate validado."
+  },
+  "related": [
+   "persona-3-reload",
+   "trails-sky-2nd-chapter"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA06228; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA06228；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA06228؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA06228; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA06228; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA06228 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA06228; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "goat-simulator-3": {
+  "genre": "sandbox",
+  "names": {
+   "zh": "模拟山羊3"
+  },
+  "overview": {
+   "en": "A quest HUD appears, with severe exposure errors and untested movement.",
+   "zh": "任务HUD已出现，但曝光异常明显、移动仍未验证。",
+   "ar": "HUD مهمة مع تعرض خاطئ وحركة غير مختبرة.",
+   "pt": "HUD de missão com exposição errada, movimento por testar.",
+   "de": "Quest-HUD mit Belichtungsfehlern, Bewegung offen.",
+   "fr": "HUD de quête, exposition erronée, mouvement non testé.",
+   "es": "HUD misión con exposición errónea, movimiento sin probar."
+  },
+  "related": [
+   "wobbly-life",
+   "animal-well"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA04158; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC. Artwork identifies different regional package(s) PPSA04159, not this tested package. Multiverse/DLC marketing does not identify the reported content or prove those extras were tested.",
+   "zh": "报告PS5包PPSA04158；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。 图片对应不同地区包PPSA04159，不用于认定本次测试包。 Multiverse/DLC营销不代表报告内容或附加内容已测试。",
+   "ar": "حزمة PS5 PPSA04158؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر. الصورة لحزمة إقليمية مختلفة PPSA04159 لا الحزمة المختبرة. تسويق Multiverse/DLC لا يثبت محتوى التقرير أو اختبار الإضافات.",
+   "pt": "Pacote PS5 PPSA04158; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado. Imagem de pacote regional diferente PPSA04159, não o teste. Marketing Multiverse/DLC não identifica conteúdo relatado/extra testado.",
+   "de": "PS5-Paket PPSA04158; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC. Bild eines anderen Regionalpakets PPSA04159, nicht des Tests. Multiverse/DLC-Werbung belegt keine getesteten Zusatzinhalte.",
+   "fr": "Paquet PS5 PPSA04158 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé. Image d’un autre paquet régional PPSA04159, pas cet essai. Marketing Multiverse/DLC ne prouve pas les suppléments testés.",
+   "es": "Paquete PS5 PPSA04158; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado. Imagen de otro paquete regional PPSA04159, no de esta prueba. Marketing Multiverse/DLC no prueba extras ensayados."
+  }
+ },
+ "bugsnax": {
+  "genre": "adventure",
+  "names": {
+   "zh": "虫子快餐店"
+  },
+  "overview": {
+   "en": "The tested alpha-to-coverage pattern still stops the first frame.",
+   "zh": "本次alpha-to-coverage模式仍阻止首帧。",
+   "ar": "نمط alpha-to-coverage المختبر يمنع أول إطار.",
+   "pt": "Padrão alpha-to-coverage impede primeiro frame.",
+   "de": "Getestetes Alpha-to-Coverage stoppt ersten Frame.",
+   "fr": "Motif alpha-to-coverage bloque la première image.",
+   "es": "Patrón alpha-to-coverage bloquea primer frame."
+  },
+  "related": [
+   "animal-well",
+   "greak-memories-of-azur"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA01503; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC. Artwork identifies different regional package(s) PPSA01502, not this tested package.",
+   "zh": "报告PS5包PPSA01503；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。 图片对应不同地区包PPSA01502，不用于认定本次测试包。",
+   "ar": "حزمة PS5 PPSA01503؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر. الصورة لحزمة إقليمية مختلفة PPSA01502 لا الحزمة المختبرة.",
+   "pt": "Pacote PS5 PPSA01503; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado. Imagem de pacote regional diferente PPSA01502, não o teste.",
+   "de": "PS5-Paket PPSA01503; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC. Bild eines anderen Regionalpakets PPSA01502, nicht des Tests.",
+   "fr": "Paquet PS5 PPSA01503 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé. Image d’un autre paquet régional PPSA01502, pas cet essai.",
+   "es": "Paquete PS5 PPSA01503; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado. Imagen de otro paquete regional PPSA01502, no de esta prueba."
+  }
+ },
+ "eternal-cylinder": {
+  "genre": "adventure",
+  "names": {
+   "zh": "永恒圆柱"
+  },
+  "overview": {
+   "en": "A patched first scene remains very slow, dark and untested for control.",
+   "zh": "补丁首场景仍极慢、偏暗，操作未验证。",
+   "ar": "مشهد معدل بطيء ومظلم بلا تحكم مختبر.",
+   "pt": "Primeira cena com patches lenta/escura, controlo aberto.",
+   "de": "Gepatchte Szene sehr langsam/dunkel, Steuerung offen.",
+   "fr": "Scène corrigée lente/sombre, contrôle non testé.",
+   "es": "Escena con patches lenta/oscura, control pendiente."
+  },
+  "related": [
+   "animal-well",
+   "greak-memories-of-azur"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA06369; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA06369；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA06369؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA06369; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA06369; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA06369 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA06369; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "coffee-talk": {
+  "genre": "adventure",
+  "names": {
+   "zh": "咖啡心语"
+  },
+  "overview": {
+   "en": "Missing bundled-module loads precede a null fault; setup is unresolved.",
+   "zh": "缺少捆绑模块加载后发生空地址故障，设置仍待查。",
+   "ar": "فشل وحدات قبل null، الإعداد غير محسوم.",
+   "pt": "Módulos ausentes antes de falha null, instalação por resolver.",
+   "de": "Fehlende Module vor Nullfehler, Setup ungeklärt.",
+   "fr": "Modules absents avant erreur null, installation non résolue.",
+   "es": "Módulos ausentes antes de fallo null, instalación sin resolver."
+  },
+  "related": [
+   "animal-well",
+   "greak-memories-of-azur"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA07057; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC. Artwork identifies different regional package(s) PPSA07056, not this tested package.",
+   "zh": "报告PS5包PPSA07057；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。 图片对应不同地区包PPSA07056，不用于认定本次测试包。",
+   "ar": "حزمة PS5 PPSA07057؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر. الصورة لحزمة إقليمية مختلفة PPSA07056 لا الحزمة المختبرة.",
+   "pt": "Pacote PS5 PPSA07057; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado. Imagem de pacote regional diferente PPSA07056, não o teste.",
+   "de": "PS5-Paket PPSA07057; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC. Bild eines anderen Regionalpakets PPSA07056, nicht des Tests.",
+   "fr": "Paquet PS5 PPSA07057 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé. Image d’un autre paquet régional PPSA07056, pas cet essai.",
+   "es": "Paquete PS5 PPSA07057; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado. Imagen de otro paquete regional PPSA07056, no de esta prueba."
+  }
+ },
+ "bloodrayne-betrayal-fresh-bites": {
+  "genre": "action",
+  "names": {
+   "zh": "吸血莱恩：背叛新鲜之咬"
+  },
+  "overview": {
+   "en": "Options reaches Forest Assault, but combat and later chapters are untested.",
+   "zh": "Options推进到Forest Assault，战斗与后续章节未验。",
+   "ar": "Options يصل Forest Assault دون قتال أو فصول لاحقة مختبرة.",
+   "pt": "Options chega a Forest Assault; combate/resto por testar.",
+   "de": "Options bis Forest Assault, Kampf/Folgekapitel offen.",
+   "fr": "Options jusqu’à Forest Assault, combat/suite non testés.",
+   "es": "Options llega Forest Assault, combate/resto sin probar."
+  },
+  "related": [
+   "hollow-knight-silksong",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA03364; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA03364；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA03364؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA03364; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA03364; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA03364 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA03364; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "super-crazy-rhythm-castle": {
+  "genre": "rhythm",
+  "names": {
+   "zh": "超级疯狂节奏城堡"
+  },
+  "overview": {
+   "en": "The first level is visible after document acceptance, before rhythm validation.",
+   "zh": "接受文档后已显示首关，节奏游玩仍未验证。",
+   "ar": "أول مستوى بعد الوثائق دون تحقق الإيقاع.",
+   "pt": "Primeiro nível após documentos, ritmo por validar.",
+   "de": "Erstes Level nach Dokumenten, Rhythmus offen.",
+   "fr": "Premier niveau après documents, rythme non validé.",
+   "es": "Primer nivel tras documentos, ritmo sin validar."
+  },
+  "related": [
+   "taiko-rhythm-festival",
+   "animal-well"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA05986; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA05986；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA05986؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA05986; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA05986; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA05986 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA05986; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "taiko-rhythm-festival": {
+  "genre": "rhythm",
+  "names": {
+   "zh": "太鼓之达人咚咚雷音祭"
+  },
+  "overview": {
+   "en": "Reported offline songs work; online music subscriptions remain unavailable.",
+   "zh": "已有离线曲目报告，在线音乐订阅仍不可用。",
+   "ar": "أغانٍ offline مبلغ عنها، الاشتراك online غير متاح.",
+   "pt": "Músicas offline relatadas; subscrição online indisponível.",
+   "de": "Offline-Songs gemeldet, Online-Musikabo nicht verfügbar.",
+   "fr": "Chansons offline rapportées, abonnement online indisponible.",
+   "es": "Canciones offline reportadas, suscripción online no disponible."
+  },
+  "related": [
+   "super-crazy-rhythm-castle",
+   "animal-well"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA16441; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC. Artwork identifies different regional package(s) PPSA16411, PPSA24085, not this tested package. Deluxe marketing does not identify the reported content or prove those extras were tested.",
+   "zh": "报告PS5包PPSA16441；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。 图片对应不同地区包PPSA16411, PPSA24085，不用于认定本次测试包。 Deluxe营销不代表报告内容或附加内容已测试。",
+   "ar": "حزمة PS5 PPSA16441؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر. الصورة لحزمة إقليمية مختلفة PPSA16411, PPSA24085 لا الحزمة المختبرة. تسويق Deluxe لا يثبت محتوى التقرير أو اختبار الإضافات.",
+   "pt": "Pacote PS5 PPSA16441; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado. Imagem de pacote regional diferente PPSA16411, PPSA24085, não o teste. Marketing Deluxe não identifica conteúdo relatado/extra testado.",
+   "de": "PS5-Paket PPSA16441; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC. Bild eines anderen Regionalpakets PPSA16411, PPSA24085, nicht des Tests. Deluxe-Werbung belegt keine getesteten Zusatzinhalte.",
+   "fr": "Paquet PS5 PPSA16441 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé. Image d’un autre paquet régional PPSA16411, PPSA24085, pas cet essai. Marketing Deluxe ne prouve pas les suppléments testés.",
+   "es": "Paquete PS5 PPSA16441; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado. Imagen de otro paquete regional PPSA16411, PPSA24085, no de esta prueba. Marketing Deluxe no prueba extras ensayados."
+  }
+ },
+ "bendy-ink-machine": {
+  "genre": "adventure",
+  "names": {
+   "zh": "班迪与油印机"
+  },
+  "overview": {
+   "en": "The first workshop corridor appears, with visual and control limits unresolved.",
+   "zh": "工作室首走廊已出现，图形与操作边界仍待查。",
+   "ar": "ممر الورشة يظهر مع حدود صورة/تحكم مفتوحة.",
+   "pt": "Corredor aparece, imagem/controlo por verificar.",
+   "de": "Werkstattkorridor sichtbar, Grafik/Steuerung offen.",
+   "fr": "Couloir visible, image/contrôle à vérifier.",
+   "es": "Pasillo visible, imagen/control pendientes."
+  },
+  "related": [
+   "animal-well",
+   "greak-memories-of-azur"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA27616; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA27616；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA27616؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA27616; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA27616; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA27616 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA27616; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "last-faith": {
+  "genre": "action",
+  "names": {
+   "zh": "最后的信仰"
+  },
+  "overview": {
+   "en": "A first arena and HUD are evidence before verified combat.",
+   "zh": "首竞技场及HUD属于战斗验证前的有限证据。",
+   "ar": "ساحة وHUD قبل قتال مثبت.",
+   "pt": "Primeira arena/HUD antes de combate validado.",
+   "de": "Erste Arena/HUD vor bestätigtem Kampf.",
+   "fr": "Première arène/HUD avant combat validé.",
+   "es": "Primera arena/HUD antes de combate validado."
+  },
+  "related": [
+   "hollow-knight-silksong",
+   "lodoss-deedlit"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA09346; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA09346；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA09346؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA09346; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA09346; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA09346 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA09346; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "ps5x360-homebrew": {
+  "genre": "sandbox",
+  "names": {
+   "zh": "PS5X360自制移植"
+  },
+  "overview": {
+   "en": "This Xenia-based PS5 homebrew is not a successful Xbox 360 game test.",
+   "zh": "这款基于Xenia的PS5自制移植并非Xbox360游戏成功测试。",
+   "ar": "Homebrew PS5 مبني على Xenia ليس اختبار لعبة360 ناجحاً.",
+   "pt": "Homebrew PS5 baseado emXenia não prova jogo360.",
+   "de": "Xenia-PS5-Homebrew belegt kein erfolgreiches360-Spiel.",
+   "fr": "Homebrew PS5 basé surXenia ne prouve pas un jeu360.",
+   "es": "Homebrew PS5 basado enXenia no prueba juego360."
+  },
+  "related": [
+   "wobbly-life",
+   "goat-simulator-3"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA50011; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA50011；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA50011؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA50011; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA50011; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA50011 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA50011; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "ikai": {
+  "genre": "adventure",
+  "names": {
+   "zh": "异界"
+  },
+  "overview": {
+   "en": "A private integration reaches menus, while loading and import failures remain.",
+   "zh": "私有集成进入菜单，加载与导入失败仍待解决。",
+   "ar": "دمج خاص يصل قائمة مع فشل تحميل/import باقٍ.",
+   "pt": "Integração privada chega menus, carga/imports por resolver.",
+   "de": "Privatintegration bis Menü, Lade-/Importfehler bleiben.",
+   "fr": "Intégration privée jusqu’aux menus, chargement/imports ouverts.",
+   "es": "Integración privada hasta menús, carga/imports pendientes."
+  },
+  "related": [
+   "animal-well",
+   "greak-memories-of-azur"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA06584; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA06584；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA06584؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA06584; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA06584; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA06584 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA06584; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  }
+ },
+ "jumanji-ppsa03973": {
+  "genre": "adventure",
+  "names": {
+   "zh": "勇敢者游戏PPSA03973"
+  },
+  "overview": {
+   "en": "A candidate import policy correlates with crashes; their cause is unproven.",
+   "zh": "候选导入策略与崩溃有关联，原因尚未证明。",
+   "ar": "سياسة import مرشحة ترتبط بأعطال دون سبب مثبت.",
+   "pt": "Política import candidata associa-se a crashes, sem causa provada.",
+   "de": "Importkandidat korreliert mit Crashs, Ursache unbewiesen.",
+   "fr": "Politique import candidate associée aux crashs, cause non prouvée.",
+   "es": "Política import candidata asociada a crashes, causa no probada."
+  },
+  "related": [
+   "animal-well",
+   "greak-memories-of-azur"
+  ],
+  "editionNote": {
+   "en": "Reported PS5 package PPSA03973; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA03973；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA03973؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA03973; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA03973; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA03973 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA03973; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
   }
  }
 });

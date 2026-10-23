@@ -32,7 +32,7 @@ test('unreported popular games are unknown, searchable and excluded from measure
  const game=filterGames('艾尔登法环')[0];assert.equal(game.slug,'elden-ring');assert.equal(game.titleId,null);assert.equal(game.reports.length,0);assert.equal(bestStage(game),'notTested');assert.equal(stageNeedsPatches(game),false);
  assert.equal(filterGames('elden ring',{stage:'notTested'}).length,1);
  for(const filters of [{platform:'windows'},{platform:'linux'},{stage:'blocked'},{evidence:'official'},{evidence:'community'}])assert.equal(filterGames('elden ring',filters).length,0);
- assert.equal(filterGames('',{stage:'notTested'}).length,8);
+ assert.equal(filterGames('',{stage:'notTested'}).length,6);
 });
 
 test('a merged technical fix does not silently create a new game report',async()=>{
@@ -64,10 +64,17 @@ test('new source reviews distinguish setup screens, patched integrations and act
   assert.equal(conclusionReports(game,platform==='windows'?'linux':'windows').length,0);
   assert.ok(gameResearch[slug]);
  }
- for(const slug of ['elden-ring','marvels-spider-man-2']){
+ for(const slug of ['elden-ring']){
   const game=games.find(g=>g.slug===slug)!;
   assert.equal(game.titleId,null);assert.equal(game.reports.length,0);
  }
+ const spiderMan=games.find(g=>g.slug==='marvels-spider-man-2')!;
+ assert.equal(spiderMan.titleId,'PPSA03016');
+ assert.equal(conclusionReports(spiderMan,'linux')[0].stage,'boot');
+ assert.ok(conclusionReports(spiderMan,'linux')[0].source.endsWith('/discussions/10195'));
+ assert.equal(conclusionReports(spiderMan,'linux')[0].patched,true);
+ assert.equal(conclusionReports(spiderMan,'windows').length,0);
+ assert.ok(spiderMan.reports.every(report=>report.stage!=='ingame'));
  assert.equal(filterGames('PPSA01341').some(game=>game.slug==='marvels-spider-man-2'),false);
  assert.equal(filterGames('PPSA25380').length,0);
  const cyberpunk=games.find(g=>g.slug==='cyberpunk-2077')!;

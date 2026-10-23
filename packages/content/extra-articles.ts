@@ -9,7 +9,7 @@ export const extraArticles:Article[]=[
  S('report',L('Make a reproducible report','提交可复现的报告','اكتب تقريراً قابلاً للتكرار','Escreva um relatório reproduzível','Schreibe einen reproduzierbaren Bericht','Rédigez un rapport reproductible','Redacta un informe reproducible'),L("Compare one change at a time. Separate a clean baseline from a patched run and keep logs for both. Include steps, expected behavior, actual stop, test duration and any screenshots or video. Remove personal paths and unrelated sensitive information before sharing. Submit game tests to the matching upstream discussion; email catalog corrections to " + contactEmail + ".","每次只比较一项改动，将干净基线与补丁结果分开，并保留两份日志。附上步骤、预期行为、实际停止位置、时长与截图或视频，分享前移除个人路径和无关敏感信息。游戏测试请提交到上游对应讨论；目录更正请邮件联系 " + contactEmail + "。","قارن تغييراً واحداً كل مرة وافصل الأساس النظيف عن التشغيل المعدّل مع سجليهما. أضف الخطوات والمتوقع ونقطة التوقف والمدة وصوراً أو فيديو. احذف المسارات الشخصية والمعلومات الحساسة غير اللازمة. انشر اختبارات الألعاب في النقاش الأصلي المناسب؛ وأرسل تصحيحات الفهرس إلى " + contactEmail + ".","Compare uma alteração de cada vez. Separe a base limpa do teste modificado e guarde os dois registos. Inclua passos, comportamento esperado, paragem, duração e imagens ou vídeo. Remova caminhos pessoais e dados sensíveis irrelevantes. Publique os testes na discussão original adequada; envie correções do catálogo para " + contactEmail + ".","Vergleiche immer nur eine Änderung. Trenne saubere Basis und gepatchten Lauf und behalte beide Logs. Beschreibe Schritte, erwartetes Verhalten, Abbruchstelle, Dauer und Bilder oder Video. Entferne persönliche Pfade und unnötige vertrauliche Angaben. Veröffentliche Spieltests in der passenden Diskussion des Originalprojekts; sende Katalogkorrekturen an " + contactEmail + ".","Comparez un changement à la fois. Séparez la base propre de l’essai modifié et conservez les deux journaux. Indiquez étapes, comportement attendu, arrêt, durée et images ou vidéo. Retirez les chemins personnels et informations sensibles inutiles. Publiez les tests dans la discussion originale correspondante ; envoyez les corrections du catalogue à " + contactEmail + ".","Compara un cambio cada vez. Separa la base limpia de la prueba modificada y conserva ambos registros. Incluye pasos, resultado esperado, parada, duración e imágenes o vídeo. Elimina rutas personales y datos sensibles innecesarios. Publica las pruebas en la discusión original correspondiente; envía las correcciones del catálogo a " + contactEmail + "."))]},
  {
  "slug": "progress",
- "reviewed": "2026-10-23",
+ "reviewed": "2026-10-24",
  "title": {
   "en": "AnyPS5 development progress and coverage",
   "zh": "AnyPS5 开发进度与实现范围",
@@ -51,13 +51,13 @@ export const extraArticles:Article[]=[
    },
    "body": [
     {
-     "en": "The23 October review counts4835/11180 declared library functions (43.25%) and1166/1166 recognized decoder instructions. Previous4609/10947: implemented+226, declarations+233. Neither counted bodies nor decoder recognition establish full API semantics, correct graphics or game playability.",
-     "zh": "10月23日复核4835／11180个声明库函数（43.25%），解码识别1166／1166；前次4609／10947，实现+226、声明+233。函数体计数和解码识别不证明完整API、正确图形或游戏可玩。",
-     "ar": "مراجعة23أكتوبر4835/11180 دالة43.25% و1166/1166 decoder. السابق4609/10947: منفذ+226 ومعلن+233. لا تثبت الأجسام/التعرف API كاملة أو رسوماً صحيحة أو اللعب.",
-     "pt": "Revisão23outubro4835/11180 funções43,25% e1166/1166 decoder. Antes4609/10947: implementadas+226/declaradas+233. Contagem/reconhecimento não provam API completa, imagem correta ou jogo.",
-     "de": "Prüfung23.Oktober4835/11180 Funktionen43,25%, Decoder1166/1166. Zuvor4609/10947: implementiert+226/deklariert+233. Zähler/Erkennung belegen weder APIsemantik noch korrektes Bild/Spielbarkeit.",
-     "fr": "Revue23octobre4835/11180 fonctions43,25%, decoder1166/1166. Avant4609/10947: implémentées+226/déclarées+233. Compter/reconnaître ne prouve ni API complète ni image correcte/jouabilité.",
-     "es": "Revisión23octubre4835/11180 funciones43,25%, decoder1166/1166. Antes4609/10947: implementadas+226/declaradas+233. Contar/reconocer no prueba API completa, imagen correcta ni jugabilidad."
+     "en": "The24October review counts5606/11706 declared library functions (47.89%), up771 implementations and526 declarations from4835/11180. Decoder recognition remains1166/1166. Neither metric establishes full API semantics, correct rendering or a fraction of games playable. No new release was found; v0.1.3 remains the latest reviewed asset set.",
+     "zh": "10月24日复核5606／11706个声明库函数（47.89%），较4835／11180实现增771、声明增526；解码识别仍1166／1166。均不证明完整API、正确渲染或游戏可玩比例；无新发行，最新已核验附件仍v0.1.3。",
+     "ar": "مراجعة24أكتوبر5606/11706=47.89%، زيادة771تنفيذ/526إعلان عن4835/11180؛ decoder1166/1166. لا APIكاملة/رسم صحيح/نسبة لعب. لا إصدار جديد،v0.1.3 الأحدث المراجع.",
+     "pt": "Revisão24out5606/11706=47,89%,+771implementações/+526declarações face4835/11180; decoder1166/1166. Não prova API completa/render/jogabilidade. Semnova release,v0.1.3 permanece.",
+     "de": "Prüfung24.Oktober5606/11706=47,89%,+771Implementierungen/+526Deklarationen zu4835/11180; Decoder1166/1166. KeineAPI-/Render-/Spielbarkeitsquote. KeinRelease neu,v0.1.3 bleibt.",
+     "fr": "Revue24oct5606/11706=47,89%,+771implémentations/+526déclarations sur4835/11180 ; decoder1166/1166. PasAPI complète/rendu/tauxjouable. Pasnouveau release,v0.1.3 reste.",
+     "es": "Revisión24oct5606/11706=47,89%,+771implementaciones/+526declaraciones frente4835/11180; decoder1166/1166. NoAPIcompleta/render/tasajugable. Sinrelease nueva,v0.1.3 sigue."
     },
     {
      "en": "Discussion#9751 proposes a second imported-function measure; it is not an adopted official compatibility counter. Its62-homebrew static audit reports1507/1533 functions classified non-throwing (98.3%), a biased sample without retail coverage or runtime path checks. Do not label that98.3% of games playable. The source’s4834/11181 atcc0078595d is a separate snapshot from the live figure above.",
@@ -220,4 +220,96 @@ extraArticles.find(article=>article.slug==="progress")!.sections[0].body.push({
  "de": "Zuvor4137/5182 (79,83%), jetzt4303/6675 (64,46%). Implementierungen und Gesamtsumme stiegen; sinkende Quote belegt keine Regression. Neue Deklarationen/inerte Rümpfe brauchen Verhaltens- und Spieltests.",
  "fr": "Avant4137/5182 (79,83%), maintenant4303/6675 (64,46%). Les deux comptes augmentent ; pourcentage inférieur ne prouve pas régression. Nouvelles déclarations/corps inertes exigent tests de comportement/jeux.",
  "es": "Antes4137/5182 (79,83%), ahora4303/6675 (64,46%). Ambos recuentos aumentan; menor porcentaje no prueba regresión. Declaraciones nuevas/cuerpos inert requieren pruebas de comportamiento/juegos."
+});
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.reviewed="2026-10-24";
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
+ "id": "main-runtime-module-not-relinked",
+ "title": {
+  "en": "Later main: a missing converted module is an error, not a library substitute",
+  "zh": "后续main：缺少转换模块不是替换系统库的问题",
+  "ar": "main اللاحق: وحدة غير محولة ليست بديلاً للمكتبة",
+  "pt": "Main posterior: módulo não convertido não é substituto",
+  "de": "Späteres Main: unkonvertiertes Modul ist kein Bibliotheksersatz",
+  "fr": "Main ultérieur : module non converti, pas substitut",
+  "es": "Main posterior: módulo no convertido no es sustituto"
+ },
+ "body": [
+  {
+   "en": "A title can load a module after startup. Current main reports “[module] dlopen: … was not relinked” once per file, returns a load error and lets the title continue; a later null fault may follow. Add that module directory with --module-dir and keep the generated guest module in app0. Original PS5 PRX files do not belong in Windows libs/. This does not prove every missing-module crash has the same cause.",
+   "zh": "游戏可在启动后再载模块；当前main每文件只报一次“dlopen…was not relinked”、返回加载错误并让标题继续，后面仍可能空地址故障。用--module-dir包含相应目录，把生成guest模块保留在app0；原PS5 PRX不放Windows libs/。不把所有缺模块崩溃归为同因。",
+   "ar": "قد تحمل اللعبة وحدة بعد البدء؛ main يبلغ was not relinked مرة لكل ملف ويرجع خطأ ثم يتابع، وقد يفشل لاحقاً. أدرج المجلد بـ--module-dir وضع الناتج فيapp0، لا PRX أصلي فيWindows libs. لا تعميم السبب.",
+   "pt": "Um título pode carregar módulos depois do arranque; main avisa was not relinked uma vez e devolve erro, podendo falhar depois. Inclua a pasta em--module-dir, mantenha guest emapp0, não PRX original emWindows libs. Sem causa universal.",
+   "de": "Titel lädt Module später: Main meldet was not relinked einmal jeDatei und gibt Fehler zurück, späterer Nullfehler möglich. Ordner mit--module-dir konvertieren, Guestmodul inapp0; keinePS5-PRX inWindows libs. Kein allgemeinerUrsachenbeleg.",
+   "fr": "Un titre charge aussi après démarrage : main signale was not relinked une fois/fichier, rend erreur puis continue, parfois faute null ensuite. Ajoutez dossier par--module-dir et guest dansapp0, pasPRX original enWindows libs. Cause non universelle.",
+   "es": "El título puede cargar módulos después: main avisa was not relinked una vez/archivo, devuelve error y sigue, pudiendo fallar luego. Incluye carpeta con--module-dir yguest enapp0, noPRX original enWindows libs. Sin causa universal."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d7948b09f95ea8e302590c09dbb3c0c0b714b84a/docs/user/USAGE.md"
+  }
+ ]
+});
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
+ "id": "main-memory-recovery-boundary",
+ "title": {
+  "en": "Later main: recovery is not unlimited memory",
+  "zh": "后续main：内存回收不等于无限容量",
+  "ar": "main اللاحق: التعافي ليس ذاكرة غير محدودة",
+  "pt": "Main posterior: recuperação não é memória ilimitada",
+  "de": "Späteres Main: Recovery bedeutet keinen unbegrenzten Speicher",
+  "fr": "Main ultérieur : récupération sans mémoire illimitée",
+  "es": "Main posterior: recuperación no es memoria ilimitada"
+ },
+ "body": [
+  {
+   "en": "Image/buffer allocation retries can release unused pools and reclaimable textures, while preserving pending GPU storage results and recorded-work references. Read requested bytes, released bytes and retry count in bufferpool recovery lines. A failed allocation may remain unrecoverable. The 007 diagnostic cache floor and Astro label-store cost do not justify discarding live GPU results.",
+   "zh": "图像／buffer分配重试可释放未用pool及可回收纹理，同时保留待GPU结果和已录制work引用。bufferpool行列出请求量／释放量／重试次数；无法回收足够空间仍会失败。007缓存下限或Astro写回成本不构成丢弃live GPU结果的理由。",
+   "ar": "إعادة التخصيص تحرر pools غير مستخدمة/textures قابلة للاسترداد مع حفظ نتائجGPU والمراجع الحية. اقرأ الأحجام/retries، فقد يبقى الفشل. كلفةAstro/أرضية007 لا تبرر إسقاط نتائج حية.",
+   "pt": "Retries libertam pools não usados/texturas recuperáveis, preservando resultadosGPU/referências vivas. Leia bytes/retries; pode continuar a falhar. CustoAstro/piso007 não justifica perder resultadosGPU.",
+   "de": "Retries geben ungenutztePools/reclaimbareTexturen frei, behaltenGPU-Ergebnisse/Live-Referenzen. Bytes/Retryzahlen lesen, Fehler kannbleiben. Astro-Kosten/007-Floor keinGrund Live-Ergebnisse zuverwerfen.",
+   "fr": "Retries libèrent pools inutilisés/textures récupérables enpréservant résultatsGPU/référencesvives. Lisez octets/retries, échec possible. CoûtAstro/plancher007 nejustifient pas perdre résultatsGPU.",
+   "es": "Retries liberan pools sinusar/texturas recuperables conservando resultadosGPU/referenciasvivas. Lee bytes/retries, puede fallar. CosteAstro/mínimo007 no justifica descartar resultadosGPU."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d7948b09f95ea8e302590c09dbb3c0c0b714b84a/docs/user/USAGE.md"
+  }
+ ]
+});
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
+ "id": "main-amd-checkpoint-fallback",
+ "title": {
+  "en": "Later main: AMD dispatch markers for device-loss reports",
+  "zh": "后续main：AMD设备丢失的dispatch标记",
+  "ar": "main اللاحق: علامات AMD لتقارير device loss",
+  "pt": "Main posterior: marcadores AMD em device loss",
+  "de": "Späteres Main: AMD-Marker bei Geräteverlust",
+  "fr": "Main ultérieur : marqueurs AMD et perte du périphérique",
+  "es": "Main posterior: marcadores AMD ante device loss"
+ },
+ "body": [
+  {
+   "en": "APS5_GPU_CHECKPOINTS=1 remains off by default. Without NV diagnostic checkpoints, supported AMD devices can use VK_AMD_buffer_marker to record dispatch reached/finished markers, naming the last programs and up to eight between them. Unsupported devices ignore it. A last marker narrows a hang investigation, not proof that the named shader caused it; keep diagnostics separate from unprofiled speed.",
+   "zh": "APS5_GPU_CHECKPOINTS=1仍默认关闭；没有NV诊断checkpoint时，支持的AMD设备可用VK_AMD_buffer_marker记录dispatch到达／完成、最后program及中间最多八个。不支持设备忽略。最后标记仅缩小hang排查，不证明该shader致因，诊断与无剖析速度分开。",
+   "ar": "GPU_CHECKPOINTS=1 off؛ بدونNV قد يستخدمAMD buffer_marker للوصول/الانتهاء وآخرprogram وحتى8بينهما. غير المدعوم يتجاهل. آخرmarker دليل بحث لا سبب مثبت، افصل السرعة.",
+   "pt": "GPU_CHECKPOINTS=1 off; semNV, AMD suportado usa buffer_marker para reached/finished e até8programs. Outros ignoram. Último marker não prova causa; separe diagnóstico/velocidade.",
+   "de": "GPU_CHECKPOINTS=1 aus; ohneNV AMD-buffer_marker für erreicht/fertig/letzte und bis8Programme. Unsupported ignoriert. LetzterMarker keinUrsachenbeweis; Diagnose vonTempo trennen.",
+   "fr": "GPU_CHECKPOINTS=1 off ; sansNV, AMD buffer_marker pour atteint/fini/derniers etjusqu’à8programmes. Autres ignorent. Derniermarker pascause prouvée ; séparezvitesse.",
+   "es": "GPU_CHECKPOINTS=1 off; sinNV, AMD buffer_marker para alcanzado/finalizado/últimos yhasta8programas. Otros ignoran. Últimomarker noprueba causa; separavelocidad."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d7948b09f95ea8e302590c09dbb3c0c0b714b84a/docs/dev/BUILD.md"
+  }
+ ]
 });

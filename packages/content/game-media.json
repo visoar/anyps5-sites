@@ -1956,5 +1956,166 @@
     "cover": null,
     "screenshots": [],
     "checked": "2026-10-23"
+  },
+  "oregon-trail": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/10215",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "dusk-diver-2": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/10081",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "blue-reflection-quartet": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/10271",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "arcrunner": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/10261",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "bendy-dark-revival": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/10154",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "apotris-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/10209",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "unbound-worlds-apart": {
+    "source": "https://www.playstation.com/en-us/games/unbound-worlds-apart/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202201/0513/D2Qo2GbUg2yBYVQEPhKPNhCP.png",
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "gex-trilogy": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/10203",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "worms-armageddon-anniversary": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/10082",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "sea-of-stars": {
+    "source": "https://www.playstation.com/en-us/games/sea-of-stars/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202604/2317/a49622e09a90d32b699213f651de487eb5f249669434e591.png",
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "disgaea-6-complete": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/10080",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "goat-simulator-3": {
+    "source": "https://www.playstation.com/en-us/games/goat-simulator-3/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1410/KwoCdV1Juhep39EFodzTDJjZ.png",
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "bugsnax": {
+    "source": "https://www.playstation.com/en-us/games/bugsnax/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202006/1917/5ePCp1x8olocgSVS6I1jNLYS.png",
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "eternal-cylinder": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9909",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "coffee-talk": {
+    "source": "https://www.playstation.com/en-us/games/coffee-talk/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/img/rnd/202104/0510/kqFKzYXgYrUH0Ytg9ehjazY9.png",
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "bloodrayne-betrayal-fresh-bites": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9925",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "super-crazy-rhythm-castle": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9917",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "taiko-rhythm-festival": {
+    "source": "https://www.playstation.com/en-us/games/taiko-no-tatsujin-rhythm-festival/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202408/0920/f85589f8af0e909c45c140a4d448e8c1984139455f83099c.png",
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "bendy-ink-machine": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9901",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "last-faith": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9868",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "ps5x360-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/10143",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "ikai": {
+    "source": "https://github.com/boykopovar/AnyPS5/pull/8091#issuecomment-6353711433",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
+  },
+  "jumanji-ppsa03973": {
+    "source": "https://github.com/boykopovar/AnyPS5/pull/8091#issuecomment-6327264256",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-24"
   }
 }
