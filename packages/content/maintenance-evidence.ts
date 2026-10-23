@@ -19428,6 +19428,8 @@ const nightlyReports24:Record<string,Report[]>={
  ]
 };
 for(const [slug,reports] of Object.entries(nightlyReports24)){maintenanceReports[slug]=[...(maintenanceReports[slug]||[]),...reports];maintenanceReviewed[slug]="2026-10-24";}
+// Source-analysis revisions do not change historical test dates or selected run conclusions.
+for(const slug of ['minecraft-dungeons-ii','super-meat-boy-3d','afterimage','octopath-traveler-ii','blue-prince','the-pathless','call-of-the-sea','call-of-duty-black-ops'])maintenanceReviewed[slug]='2026-10-24';
 maintenanceGames.push(...([
  {
   "slug": "oregon-trail",
