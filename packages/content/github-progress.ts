@@ -3,6 +3,100 @@ import metadata from './github-source-status.json';
 export interface DevelopmentNote {number:number;title:Text;summary:Text;games:string[]}
 export const developmentNotes:DevelopmentNote[]=[
 {
+ "number": 9789,
+ "games": [
+  "ccleste-homebrew"
+ ],
+ "title": {
+  "en": "UINT tests expand, while exact heads and validation matter",
+  "zh": "UINT测试扩展，仍须区分head与验证层",
+  "ar": "توسيع UINT مع فصل الرؤوس والتحقق",
+  "pt": "UINT ampliado com heads distintos",
+  "de": "UINT-Tests erweitert, Heads beachten",
+  "fr": "Tests UINT élargis, heads à distinguer",
+  "es": "UINT ampliado, distinguir heads"
+ },
+ "summary": {
+  "en": "Later tests read multi-channel raw UINT exports and R8 values0–255, not undefined out-of-range conversion. A specific{1.0,−0.0} lavapipe pair remains excluded/documented. Earlier RX6600XT passes had no layer; the later e605/2fade pair confirms layer loading and0VUID. This is API evidence, not a fresh ccleste/Mac run.",
+  "zh": "后续测试读回多通道原始UINT及R8的0–255，不覆盖未定义越界转换；lavapipe特定{1.0,−0.0}组合仍排除并记录。早先RX6600XT通过未加载层，较后e605／2fade配对确认加载且0 VUID；属API证据，不是新ccleste／Mac运行。",
+  "ar": "اختبارات أحدث تقرأ UINT متعدد القنوات وR8 ضمن0–255 لا تحويل خارج النطاق. زوج lavapipe محدد مستثنى؛ اختبار RX6600XT قديم بلا layer، اللاحق e605/2fade يؤكدها وصفرVUID. API لا تشغيل جديد.",
+  "pt": "Testes posteriores leem UINT multicanal/R8 0–255, não conversão indefinida. Par lavapipe excluído/documentado; RX6600XT antigo sem layer, e605/2fade confirma layer/0VUID. API, não novo jogo/Mac.",
+  "de": "Spätere Tests lesen Mehrkanal-UINT/R8 0–255, keine undefinierte Konversion. Ein Lavapipe-Paar ausgenommen/dokumentiert; alter RX6600XT-Lauf ohne Layer, e605/2fade mit Layer/0VUID. API, kein neuer Spiel-/Maclauf.",
+  "fr": "Tests ultérieurs lisent UINT multicanal/R8 0–255, pas conversion indéfinie. Paire lavapipe exclue/documentée ; ancien RX6600XT sans layer, e605/2fade confirme layer/0VUID. API, pas nouvel essai jeu/Mac.",
+  "es": "Tests posteriores leen UINT multicanal/R8 0–255, no conversión indefinida. Par lavapipe excluido/documentado; RX6600XT anterior sin layer, e605/2fade confirma layer/0VUID. API, no juego/Mac nuevo."
+ }
+},
+{
+ "number": 10515,
+ "games": [
+  "bugsnax"
+ ],
+ "title": {
+  "en": "Two-sample coverage and the single-sample follow-up remain candidates",
+  "zh": "两采样coverage及单采样跟进仍为候选",
+  "ar": "تغطية عينتين ومتابعة العينة الواحدة مرشحتان",
+  "pt": "Cobertura duas amostras ainda candidata",
+  "de": "Zwei-Sample-Coverage bleibt Kandidat",
+  "fr": "Couverture deux échantillons encore candidate",
+  "es": "Cobertura dos muestras aún candidata"
+ },
+ "summary": {
+  "en": "Native gfx1032 measurements pin a separate0xe701 two-sample table, not the old eight-sample rule or PS5 correctness. Bugsnax moves past its14s stop; #10581’s stacked Windows report completes the tutorial. Both PRs remain open; later heads/rebase conflicts and skipped product CI do not inherit earlier exact-head validation.",
+  "zh": "gfx1032本机测量固定独立0xe701两采样表，不套用旧八采样规则，也非PS5正确性证明。Bugsnax越过14秒，#10581叠加Windows报告完成教程；两PR仍开放，后续head／重基冲突及跳过产品CI不能继承旧head验证。",
+  "ar": "قياس gfx1032 يثبت جدول0xe701 لعينتين لا ثماني ولا صحة PS5. Bugsnax يتجاوز14ث، وتركيب #10581 يكمل درس Windows. كلاهما مفتوح، رؤوس أحدث/تعارض وCI متخطى لا ترث اختباراً قديماً.",
+  "pt": "Medição gfx1032 fixa tabela0xe701 de duas amostras, não oito/PS5. Bugsnax passa14s; #10581 completa tutorial Windows. Ambos abertos, heads/conflitos/CI ignorada não herdam testes antigos.",
+  "de": "gfx1032-Messung pinnt eigene0xe701-Zweisampletabelle, nicht Acht-Sample/PS5-Beweis. Bugsnax passiert14s, #10581-Tutorial auf Windows. Beide offen; neue Heads/Konflikte/übersprungene CI erben keine alten Tests.",
+  "fr": "Mesure gfx1032 fixe table0xe701 à deux échantillons, pas huit/preuve PS5. Bugsnax passe14s, #10581 termine tutoriel Windows. Deux PR ouvertes ; nouveaux heads/conflits/CI sautée sans héritage des anciens tests.",
+  "es": "Medición gfx1032 fija tabla0xe701 de dos muestras, no ocho/prueba PS5. Bugsnax supera14s, #10581 termina tutorial Windows. Ambos abiertos; heads/conflictos/CI omitida no heredan tests anteriores."
+ }
+},
+{
+ "number": 10547,
+ "games": [
+  "hollow-knight-silksong"
+ ],
+ "title": {
+  "en": "RADV seam candidate has a bounded title check",
+  "zh": "RADV斜缝候选有具体游戏验证",
+  "ar": "مرشح شق RADV باختبار محدود",
+  "pt": "Candidato RADV com teste limitado",
+  "de": "RADV-Nahtkandidat mit begrenztem Test",
+  "fr": "Candidat RADV vérifié dans un cas précis",
+  "es": "Candidato RADV con prueba limitada"
+ },
+ "summary": {
+  "en": "The open PR prefers host interpolation only on RADV with KHR barycentrics and falls back when lowering is unsupported; target choice enters the cache key. The780M author reports menu/tut_01 seam removed. Hosted product jobs were skipped; reported13test GPU checks are not universal driver or title validation.",
+  "zh": "开放PR仅在具KHR barycentrics的RADV优先host interpolation，不支持时回退，并把目标选择纳入缓存键。780M作者报告菜单／tut_01斜缝消失；托管产品测试被跳过，13项GPU测试报告不等于全部驱动／游戏验证。",
+  "ar": "PR مفتوح يفضل host interpolation على RADV/KHR مع fallback ومفتاح cache. المؤلف يزيل الشق على780M؛ product CI متخطى،13اختبار GPU لا يثبتان كل العناوين.",
+  "pt": "PR aberto prefere host interpolation RADV/KHR com fallback/cache key. Autor remove seam na780M; product CI ignorada,13testes GPU não validam todos títulos/drivers.",
+  "de": "Offener PR bevorzugt Hostinterpolation auf RADV/KHR mit Fallback/Cachekey. Autor meldet Naht weg auf780M; Produkt-CI übersprungen,13GPU-Tests keine allgemeine Validierung.",
+  "fr": "PR ouverte préfère interpolation hôte RADV/KHR avec repli/cache key. Auteur voit disparition sur780M ; CI produit sautée,13tests GPU pas validation universelle.",
+  "es": "PR abierto prefiere interpolación host RADV/KHR con fallback/cache key. Autor elimina diagonal780M; CI producto omitida,13tests GPU no validan todo."
+ }
+},
+{
+ "number": 7881,
+ "games": [],
+ "title": {
+  "en": "Four controller ports merged after v0.1.3",
+  "zh": "v0.1.3之后合入四手柄端口",
+  "ar": "دمج أربع خانات يد بعدv0.1.3",
+  "pt": "Quatro comandos integrados apósv0.1.3",
+  "de": "Vier Controllerports nachv0.1.3 gemergt",
+  "fr": "Quatre ports manette aprèsv0.1.3",
+  "es": "Cuatro puertos de mando trasv0.1.3"
+ },
+ "summary": {
+  "en": "Main now assigns SDL controllers to Players1–4 with dynamic users and keyboard/mouse on Player1. The remote port remains disconnected. Fifteen pad/user-service tests and rebase notes are technical coverage, not proof of four physical controllers or every game’s multiplayer. The separate ImGui editor #674 remains open.",
+  "zh": "main按SDL连接分配玩家1–4、动态用户，玩家1合成键鼠；remote端口保持断开。15项pad／user-service测试及重基记录属技术覆盖，不证明四只实体手柄或所有游戏多人；独立ImGui编辑器#674仍开放。",
+  "ar": "Main يوزع SDL على1–4 مع مستخدمين ديناميكيين، واللوحة/الفأرة مع1. Remote منفصل؛15اختباراً لا تثبت أربع أيد فعلية أو كل الألعاب، و#674 مفتوح.",
+  "pt": "Main atribui SDL a1–4/utilizadores dinâmicos, teclado/rato ao1. Remote desligado;15testes não provam quatro comandos físicos/todos jogos, #674 aberto.",
+  "de": "Main weist SDL1–4/dynamische Nutzer zu, Tastatur/Maus zu1. Remote getrennt;15Tests kein Vier-Geräte-/Alle-Spiele-Beleg, #674 offen.",
+  "fr": "Main affecte SDL1–4/utilisateurs dynamiques, clavier/souris au1. Remote déconnecté ;15tests pas preuve de quatre appareils/tous jeux, #674 ouvert.",
+  "es": "Main asigna SDL1–4/usuarios dinámicos, teclado/ratón al1. Remote desconectado;15tests no prueban cuatro dispositivos/todos juegos, #674 abierto."
+ }
+},
+{
  "number": 10219,
  "games": [
   "apotris-homebrew"
@@ -67,13 +161,13 @@ export const developmentNotes:DevelopmentNote[]=[
   "es": "Draft host-import:ganancias/regresiones/crashes portítulo"
  },
  "summary": {
-  "en": "Absolum terminal A/B improves frame time, but standalone Lodoss falls53.4→34–35FPS; #7465 composition reaches59.7–59.8 on another shared base. JUMANJI crashes remain unresolved. Redirected-log and differing-screen comparisons are diagnostic, not universal performance proof. CPU/GPU API tests do not certify all titles or default memory pressure safety.",
-  "zh": "Absolum终端A/B改善帧时间，但单独#8091使Lodoss从53.4降到34–35 FPS；另同基加#7465为59.7–59.8。JUMANJI崩溃未解，重定向日志及不同画面对照仅诊断；API测试不证明所有游戏或默认内存压力安全。",
-  "ar": "Absolum terminal يتحسن،Lodoss منفرد53.4→34–35FPS،مجمع#7465 علىقاعدةأخرى59.7–59.8. JUMANJI أعطال مفتوحة؛ logs/شاشات مختلفة تشخيص، APItests ليست سلامةعامة.",
-  "pt": "Absolum terminal melhora, Lodoss sozinho53,4→34–35FPS, composto#7465 noutrabase59,7–59,8. JUMANJI crashes abertos; logs/ecrãs diferentes diagnósticos, APItests não segurança geral.",
-  "de": "Absolum-Terminal verbessert, Lodoss allein53,4→34–35FPS, #7465-Komposition andereBasis59,7–59,8. JUMANJI-Crashs offen; Log-/Bildschirmunterschiede diagnostisch, APItests keineAllgemeinsicherheit.",
-  "fr": "Absolum terminal améliore, Lodoss seul53,4→34–35FPS, composé#7465 autrebase59,7–59,8. CrashsJUMANJI ouverts ; logs/écrans différents diagnostiques, APItests pas sûreté générale.",
-  "es": "Absolum terminal mejora, Lodoss solo53,4→34–35FPS, compuesto#7465 otrabase59,7–59,8. CrashesJUMANJI abiertos; logs/pantallas distintas diagnósticos, APItests noseguridad general."
+  "en": "The draft avoids budget collapse in Ikai/FFResonance diagnostics and, with #10304, Mickey’s bounded level runs. Mickey’s error label/−13 value conflict remains unresolved. Older Lodoss standalone regression predates merged #7465; JUMANJI crashes and default memory-pressure safety remain open. Redirected logs/different scenes are not protocol benchmarks.",
+  "zh": "草案在Ikai／FFResonance诊断及加#10304的Mickey短关卡运行避免预算塌缩；Mickey错误名与−13数值矛盾仍待查。旧Lodoss单独回归早于已合#7465，JUMANJI崩溃及默认内存压力安全未决；重定向／不同画面不是规范基准。",
+  "ar": "المسودة تتجنب انهيار الميزانية في تشخيص Ikai/FF ومع#10304في Mickey. تسمية−13 متضاربة؛ تراجع Lodoss قديم قبل#7465، أعطال JUMANJI/سلامة الذاكرة مفتوحة، السجل المعاد ليس benchmark.",
+  "pt": "Draft evita colapso Ikai/FF e Mickey+#10304. Nome/código−13 incoerentes; regressão Lodoss antiga antes#7465, JUMANJI/memória abertos, logs/cenas distintos não são benchmark.",
+  "de": "Draft vermeidet Budgetabfall in Ikai/FF/Mickey+#10304. Name/Code−13 widersprüchlich; alter Lodoss-Rückgang vor#7465, JUMANJI/Speichersicherheit offen. Umgeleitete Logs/andere Szenen keine Protokollbenchmarks.",
+  "fr": "Draft évite chute budget Ikai/FF/Mickey+#10304. Nom/code−13 contradictoires ; ancienne régression Lodoss avant#7465, JUMANJI/mémoire ouverts. Logs redirigés/scènes distinctes pas benchmarks.",
+  "es": "Draft evita caída presupuesto Ikai/FF/Mickey+#10304. Nombre/código−13 incoherentes; regresión Lodoss antigua antes#7465, JUMANJI/memoria abiertos. Logs/escenas distintas no son benchmarks."
  }
 },
 {
@@ -91,13 +185,13 @@ export const developmentNotes:DevelopmentNote[]=[
   "es": "ASTRO:coste label-store y corrección"
  },
  "summary": {
-  "en": "Four rotated warm Crash Site rounds: frame median174.2ms oldmain→220.9ms newmain, or173.5 with label-store disabled. Store protects guest visibility; disabling it is diagnostic, not a safe recommendation. Two terminal-attached confirmations agree in direction; not an all-game regression claim.",
-  "zh": "四轮轮换暖Crash Site：帧中位174.2ms旧main→220.9ms新main，关label-store为173.5。写回保护guest可见性，关闭仅诊断非安全建议；两次终端确认方向一致，不泛化全游戏回归。",
-  "ar": "4جولات Crash Site دافئة:174.2→220.9ms، مع store معطل173.5. المتجر يحمي رؤية guest، تعطيله تشخيص لا توصية آمنة؛ تأكيدان terminal، لا تعميم.",
-  "pt": "4rondas Crash Site warm174,2→220,9ms, store off173,5. Store protege visibilidade guest; desligar é diagnóstico, não conselho seguro.2confirmações terminal, sem regressão geral.",
-  "de": "4rotierte warme Crash-Site-Runden174,2→220,9ms, Store aus173,5. Store schützt Guest-Sichtbarkeit; Abschalten Diagnose, kein sicherer Rat.2Terminalkontrollen, keine allgemeine Regression.",
-  "fr": "4tours Crash Site chauds174,2→220,9ms, store off173,5. Store protège visibilité guest ; désactiver diagnostique, pas conseil sûr.2confirmations terminal, sans généralisation.",
-  "es": "4rondas Crash Site calientes174,2→220,9ms, store off173,5. Store protege visibilidad guest; desactivar es diagnóstico, no consejo seguro.2confirmaciones terminal, sin generalizar."
+  "en": "Both NVIDIA and AMD reproduce label-store overhead. Store-off and a1MiB cutoff can restore stale CPU reads, so neither is a general correctness-preserving fix. The preferred asynchronous-store proposal keeps image copies before labels; its copy bandwidth remains a separate cost, not an implemented or released solution.",
+  "zh": "NVIDIA及AMD均复现label写回开销；关闭或1MiB截断可能恢复CPU旧数据，都不是保持正确性的通用修复。优先异步store提议保持拷贝先于label，拷贝带宽仍须另测，尚非已实现或已发行解法。",
+  "ar": "NVIDIA وAMD يعيدان كلفة label؛ التعطيل/حد1MiB يعيد بيانات CPU قديمة. اقتراح asynchronous يحفظ النسخ قبل label مع كلفة bandwidth منفصلة، ليس حلاً منفذاً/صادراً.",
+  "pt": "NVIDIA/AMD reproduzem custo; off/limite1MiB arriscam CPU stale. Proposta assíncrona mantém cópias antes de label, bandwidth separado, sem solução implementada/release.",
+  "de": "NVIDIA/AMD zeigen Kosten; Abschalten/1MiB riskiert alte CPU-Daten. Asynchronvorschlag behält Kopien vor Label, Bandbreite separat, noch keine implementierte/ausgelieferte Lösung.",
+  "fr": "NVIDIA/AMD reproduisent coût ; off/limite1MiB risque CPU périmé. Proposition asynchrone garde copies avant label, bande passante distincte, pas solution implémentée/publiée.",
+  "es": "NVIDIA/AMD reproducen coste; off/límite1MiB arriesga CPU antiguo. Propuesta asíncrona mantiene copias antes de label, ancho de banda separado, sin solución implementada/publicada."
  }
 },
 {
@@ -182,13 +276,13 @@ export const developmentNotes:DevelopmentNote[]=[
   "es": "Demo CPU: smoke runtime sin cobertura AGC"
  },
  "summary": {
-  "en": "PPSA97001 demo1.3 on clean maina6dcea9279, Windows11/i7-13650HX/RTX4060Laptop610.62: four smoke runs180frames/twoscenes/exit0 in3.81–4.44s. Normal19s pad-file scene/mood/track switches work; audio dummy, physical pad/motion/rumble untested. CPU rendering cannot validate commercial AGC graphics.",
-  "zh": "PPSA97001演示1.3在纯maina6dcea9279、Windows11／i7-13650HX／RTX4060Laptop610.62四次冒烟180帧／两场景、3.81–4.44秒exit0；普通19秒pad-file切场景／主题／曲目有效。dummy声音，实体手柄／体感／震动未验；CPU渲染不验证商业AGC图形。",
-  "ar": "عرض1.3 PPSA97001 على main نظيفa6dcea9279/Windows11/13650HX/4060Laptop610.62:4smoke180إطار/مشهدان/exit0 خلال3.81–4.44ث.19ث pad-file يبدل المشهد/المزاج/الموسيقى؛ dummy، يد/حركة/rumble غير مختبرة، CPU لا يثبت AGC تجارياً.",
-  "pt": "Demo1.3 PPSA97001 em main limpoa6dcea9279/Windows11/13650HX/4060Laptop610.62:4smoke180frames/2cenas/exit0 em3,81–4,44s.19s pad-file muda cena/tema/faixa; áudio dummy/pad físico/movimento/rumble não testados. CPU não valida AGC comercial.",
-  "de": "Demo1.3 PPSA97001 auf sauberema6dcea9279/Windows11/13650HX/4060Laptop610.62:4Smoke180Frames/2Szenen/Exit0 in3,81–4,44s.19s Pad-Datei schaltet Szene/Mood/Track; Dummyton/physisches Pad/Motion/Rumble ungeprüft. CPU kein kommerzieller AGC-Beleg.",
-  "fr": "Démo1.3 PPSA97001 sur main proprea6dcea9279/Windows11/13650HX/4060Laptop610.62:4smoke180images/2scènes/exit0 en3,81–4,44s.19s pad-file change scène/thème/piste ; audio dummy/pad physique/mouvement/rumble non testés. CPU sans preuve AGC commerciale.",
-  "es": "Demo1.3 PPSA97001 en main limpioa6dcea9279/Windows11/13650HX/4060Laptop610.62:4smoke180frames/2escenas/exit0 en3,81–4,44s.19s pad-file cambia escena/tema/pista; audio dummy/pad físico/movimiento/rumble sin probar. CPU no valida AGC comercial."
+  "en": "Demo v1.3—not AnyPS5 v0.1.3—passes three180frame smoke runs on clean d794 Linux/RX7900XTX/RADV26.2.3 with validation0VUID. A22s scripted scene/palette run exits normally; disk audio has nonzero samples, audible playback/physical pad untested. CPU raymarch/presentation is not AGC game coverage.",
+  "zh": "Demo v1.3（非AnyPS5 v0.1.3）在干净d794、Linux／RX7900XTX／RADV26.2.3三次180帧smoke通过、验证0 VUID；22秒脚本换场／配色正常退出。磁盘声音样本非零不等于实际听音／实体手柄，CPU raymarch／呈现不是AGC游戏覆盖。",
+  "ar": "Demo v1.3 لا إصدار AnyPS5: ثلاث180frame على d794 Linux/RX7900XTX/26.2.3 وصفرVUID.22ث مشاهد مبرمجة، PCM غير صفري لا يثبت صوتاً مسموعاً/يداً؛ CPU demo لا AGC ألعاب.",
+  "pt": "Demo v1.3, não release AnyPS5: três180frames d794 Linux/RX7900XTX/26.2.3,0VUID.22s cenas scripted, PCM não zero sem som ouvido/pad; CPU demo não AGC jogos.",
+  "de": "Demo v1.3, nicht AnyPS5-Release: dreimal180Frames d794 Linux/RX7900XTX/26.2.3,0VUID.22s Szenenskript, PCM ungleich null kein Hör-/Padtest; CPU-Demo keine AGC-Spielabdeckung.",
+  "fr": "Demo v1.3, pas release AnyPS5 : trois180frames d794 Linux/RX7900XTX/26.2.3,0VUID.22s scènes scriptées, PCM non nul pas écoute/manette ; démo CPU pas jeux AGC.",
+  "es": "Demo v1.3, no release AnyPS5: tres180frames d794 Linux/RX7900XTX/26.2.3,0VUID.22s escenas script, PCM no cero sin escucha/mando; demo CPU no juegos AGC."
  }
 },
 {
@@ -528,22 +622,22 @@ export const developmentNotes:DevelopmentNote[]=[
   "sonic-unleashed-recompiled"
  ],
  "title": {
-  "en": "Sonic: 32-ring fork milestone, later pin still loading",
-  "zh": "Sonic：分支32环进展，后续pin仍停加载",
-  "ar": "Sonic:32حلقة علىفرع وpin لاحق بالتحميل",
-  "pt": "Sonic:32anéis nofork, pin posterior na carga",
-  "de": "Sonic:32Ringe imFork, spätererPin lädt weiter",
-  "fr": "Sonic:32anneaux aufork, pin ultérieur encharge",
-  "es": "Sonic:32anillos enfork, pin posterior encarga"
+  "en": "Sonic: preserved gameplay, latest composition still loading",
+  "zh": "Sonic：保留历史游玩，最新组合仍加载",
+  "ar": "Sonic: لعب محفوظ وآخر تركيب بالتحميل",
+  "pt": "Sonic: jogo histórico, composição na carga",
+  "de": "Sonic: historisches Spiel, neuester Pin lädt",
+  "fr": "Sonic : jeu historique, composition en charge",
+  "es": "Sonic: juego histórico, composición cargando"
  },
  "summary": {
-  "en": "Composed fork reaches32 rings beyond pots/Homing Attack, then mesh TYPE refusal1391.511s. Retained conversion, no main-only/FPS claim. Intermittent shadow disappearance is an unquantified observation, not a diagnosed fix; later loading failures remain separate. Latest composed pin reaches Continue/cinematic/Now Loading, then natural SIGABRT324.126s on existing type14/format71 MSAA refusal. Merged#8518 present, no gameplay here;56 component passes are separate from this title result and do not remove18warnings/ninewaits.",
-  "zh": "组合分支越过陶罐到32环／Homing Attack，1391.511秒mesh TYPE拒绝；保留旧转换，不作纯main或FPS结论。影子间歇消失未量化／确诊，后续加载失败另列。 最新组合pin到Continue／片头／Now Loading，324.126秒旧type14／format71 MSAA拒绝自然SIGABRT。虽含已合#8518，此组无游玩；56组件通过不能替代游戏结果，也不抹去18警告／九次wait。",
-  "ar": "فرع مركب32حلقة/Homing ثمرفض mesh1391.511ث، تحويل محفوظ لاmain/FPS. اختفاءظل غيرمقاس/مشخص، فشلتحميل لاحق منفصل. أحدثpin يصلContinue/فيلم/تحميل ثمSIGABRT324.126ث علىMSAA؛ #8518 موجود دونلعب.56اختبارمكون منفصل،18تحذير/9wait باقية.",
-  "pt": "Fork composto32anéis/Homing e recusa mesh1391,511s, conversão retida semmain/FPS. Sombra intermitente não medida/diagnosticada; cargas posteriores separadas. Pin maisnovoContinue/filme/carga eSIGABRT324,126s MSAA; #8518 presente semjogo.56testes componentes separados,18avisos/9waits ficam.",
-  "de": "Komposition32Ringe/Homing dannMeshstopp1391,511s; alteKonvertierung, keinMain/FPS. Schattenbeobachtung unquantifiziert/ungeklärt; spätereLadefehler getrennt. NeuesterPin Continue/Film/Laden dannSIGABRT324,126s MSAA; #8518 vorhanden, keinSpiel.56Komponententests getrennt,18Warnungen/9Waits bleiben.",
-  "fr": "Fork composé32anneaux/Homing puisrefusmesh1391,511s ; conversion conservée sansmain/FPS. Ombreintermittente nonquantifiée/diagnostiquée ; chargementsultérieurs distincts. Pin récentContinue/film/charge puisSIGABRT324,126s MSAA ; #8518 présent sansjeu.56tests composants séparés,18avertissements/9waits restent.",
-  "es": "Fork compuesto32anillos/Homing yrechazomesh1391,511s; conversiónretenida sinmain/FPS. Sombra intermitente sinmedir/diagnosticar; cargasposteriores separadas. Pin másnuevoContinue/film/carga ySIGABRT324,126s MSAA; #8518 presente sinjuego.56tests componentes separados,18avisos/9waits siguen."
+  "en": "Latest composition reaches loading/transition animation, not gameplay, then naturally exits0xc0000409 at333.145s on the existing type14/format71 MSAA refusal. Four cinematic59.94FPS samples are not gameplay FPS. Zero VUID errors coexist with18warnings, watchdog/fence failures and one snapshot mismatch; historical32-ring play is separate.",
+  "zh": "最新组合到加载／转场而非游玩，333.145秒旧type14／format71 MSAA拒绝自然退出0xc0000409。四次片头59.94 FPS不能当游玩FPS；VUID错误0仍伴18警告、看门狗／fence失败及一次snapshot mismatch，历史32环另列。",
+  "ar": "أحدث تركيب يصل تحميل/انتقال لا لعب ثم خروج0xc0000409 عند333.145ث برفض MSAA القديم.59.94FPS تخص الفيلم؛ صفر VUID مع18تحذيراً وفشل انتظار ومخالفة snapshot،32حلقة تاريخية منفصلة.",
+  "pt": "Composição recente chega carga/transição, não jogo, e sai0xc0000409 aos333,145s por MSAA antigo.59,94FPS só filme; zero VUID mas18avisos/falhas/mismatch,32anéis históricos separados.",
+  "de": "Neueste Komposition lädt/zeigt Übergang, kein Spiel, natürlicher Exit0xc0000409 nach333,145s am alten MSAA-Stopp.59,94FPS nur Film; null VUID,18Warnungen/Waitfehler/Mismatch. Historische32Ringe getrennt.",
+  "fr": "Composition récente atteint charge/transition, pas jeu, puis sortie naturelle0xc0000409 à333,145s sur ancien refus MSAA.59,94FPS concerne film ; zéro VUID mais18avertissements/échecs/mismatch,32anneaux historiques distincts.",
+  "es": "Composición reciente llega a carga/transición, no juego, y sale0xc0000409 a333,145s por MSAA anterior.59,94FPS solo película; cero VUID pero18avisos/fallos/mismatch,32anillos históricos separados."
  }
 },
 {
@@ -846,7 +940,31 @@ export const developmentNotes:DevelopmentNote[]=[
 },
  {"number": 5383, "games": ["dreaming-sarah"], "title": {"en": "Linux v0.1.2 X11 retest is scoped", "zh": "Linux v0.1.2 的 X11 复测边界", "ar": "حدود إعادة اختبار X11", "pt": "Âmbito do reteste X11 v0.1.2", "de": "Grenzen des v0.1.2-X11-Retests", "fr": "Portée du retest X11 v0.1.2", "es": "Alcance del retest X11 v0.1.2"}, "summary": {"en": "The reporter closed #5383 after matching v0.1.2 relinker/libraries ran Sarah on CachyOS X11 with an MX230 and Mouse LD_PRELOAD workaround. Gameplay counters were 26–58 FPS. The earlier v0.1.1 offscreen archive remains historical. #5396 closed without merging; it is not the confirmed release fix or an independent test by this site.", "zh": "报告者在配套 v0.1.2 转换器／库、CachyOS X11、MX230 和 Mouse LD_PRELOAD 绕行条件下运行 Sarah 后关闭 #5383，游戏计数 26–58 FPS。旧 v0.1.1 离屏包结论保留历史边界；#5396 关闭未合入，不能当作该发行修复，本站也未独立实测。", "ar": "أغلق الكاتب #5383 بعد Sarah بمكتبات/أداة v0.1.2 على CachyOS X11 وMX230 وMouse LD_PRELOAD، عدادات لعب 26–58 FPS. v0.1.1 offscreen تاريخي. #5396 مغلق دون دمج، لا إصلاح مثبت ولا اختبار مستقل للموقع.", "pt": "Autor fechou #5383 após Sarah em v0.1.2 emparelhada, CachyOS X11/MX230 com Mouse LD_PRELOAD, 26–58 FPS. Arquivo offscreen v0.1.1 histórico. #5396 fechada sem merge, não correção comprovada nem teste próprio.", "de": "Autor schloss #5383 nach Sarah mit passenden v0.1.2-Dateien, CachyOS X11/MX230 und Mouse-LD_PRELOAD, 26–58 FPS. v0.1.1-Offscreen historisch. #5396 ungemergt geschlossen, kein belegter Fix/eigener Test.", "fr": "Auteur ferme #5383 après Sarah avec fichiers v0.1.2 appariés, CachyOS X11/MX230 et Mouse LD_PRELOAD, 26–58 FPS. v0.1.1 offscreen historique. #5396 fermé sans merge, pas correctif validé/test du site.", "es": "Autor cierra #5383 tras Sarah con archivos v0.1.2 pareados, CachyOS X11/MX230 y Mouse LD_PRELOAD, 26–58 FPS. v0.1.1 offscreen histórico. #5396 cerrada sin merge, no arreglo probado/prueba propia."}},
  {number:5431,games:["ghost-of-tsushima-directors-cut"],title:L("Trace draw attempts through successful submissions","追踪绘制尝试与成功提交","تتبع الرسم إلى الإرسال الناجح","Rastrear desenhos até submissões","Draw-Versuche bis Submit verfolgen","Tracer dessins jusqu’aux soumissions","Trazar dibujos hasta envíos"),summary:L("#5431 is an open diagnostic PR, with eight CaptureTrace tests reported. One isolated Ghost runtime trace has no preparation-failure events but still shows a black window without validated pixel data. It narrows the investigation; neither trace counters nor shader failures establish correct rendering or the cause of black output.","#5431 是开放的诊断 PR，报告八项 CaptureTrace 测试。一份隔离的对马运行追踪没有准备失败事件，仍显示黑窗口且无已验证像素。它缩小调查范围；追踪计数和着色器失败均不能证明正确渲染或黑屏原因。","#5431 PR تشخيص مفتوح مع 8 اختبارات. تتبع Ghost معزول بلا فشل تحضير لكن نافذة سوداء دون بكسلات موثقة. يضيق التحقيق،لا يثبت الرسم أو السبب.","#5431 PR diagnóstico aberto com 8 testes. Trace Ghost isolado sem falhas, janela negra sem píxeis validados. Restringe investigação, não prova imagem/causa.","#5431 offener Diagnose-PR mit 8 Tests. Ghost-Trace ohne Vorbereitungsfehler, schwarzes Fenster ohne validierte Pixel. Grenzt ein, beweist Bild/Ursache nicht.","#5431 PR diagnostic ouvert avec 8 tests. Trace Ghost sans échec préparation, fenêtre noire sans pixels validés. Limite enquête, sans prouver rendu/cause.","#5431 PR diagnóstico abierto con 8 pruebas. Trace Ghost sin fallos preparación, ventana negra sin píxeles validados. Acota investigación, no prueba imagen/causa.")},
- {number:4686,games:['dreaming-sarah','doom-homebrew'],title:L("Compatibility evidence has moved","兼容证据已迁移","انتقال أدلة التوافق","As provas de compatibilidade mudaram","Kompatibilitätsbelege wurden verschoben","Les preuves de compatibilité ont migré","La evidencia de compatibilidad se ha movido"),summary:L("Merged #4686 removes the old compatibility table and its duplicate README claims. Previous Sarah/DOOM reports are archived in discussion #2475; README now points to a community blocker map and title discussions. Archive dates and original environments remain evidence, while an automatically assembled map is a discovery aid. This does not change old tests or release v0.1.1.","已合并 #4686 删除旧兼容表及 README 的重复结论，Sarah／DOOM 原报告归档到 #2475；README 改指社区阻碍地图和游戏讨论。归档日期与原环境仍是证据，自动汇总地图只用于发现线索。这不会改写旧实验，也不是 v0.1.1 新发行。","يحذف #4686 المدمج جدول التوافق وادعاءات README المكررة. أرشفت تقارير Sarah/DOOM في #2475؛ README يشير لخريطة عوائق مجتمعية ونقاشات الألعاب. تحفظ تواريخ وبيئات الأصل؛ الخريطة أداة اكتشاف لا تجربة جديدة ولا إصدار v0.1.1 جديد.","#4686 integrado remove a tabela e afirmações duplicadas do README. Sarah/DOOM estão arquivados em #2475; README aponta para mapa comunitário e discussões. Datas e ambientes originais mantêm-se como prova; mapa automático é descoberta, não altera testes nem publica v0.1.1 novo.","Das gemergte #4686 entfernt Tabelle und doppelte README-Aussagen. Sarah/DOOM sind in #2475 archiviert; README verweist auf Community-Blockerkarte und Diskussionen. Ursprungsdaten und Bedingungen bleiben Belege; die automatische Karte dient zur Suche, nicht als neuer Test oder neuer v0.1.1-Release.","#4686 fusionné supprime la table et les affirmations README répétées. Sarah/DOOM sont archivés dans #2475 ; README renvoie à une carte communautaire et aux discussions. Dates et environnements originaux restent des preuves ; la carte automatique sert à découvrir, sans modifier les tests ni publier un nouveau v0.1.1.","#4686 fusionada elimina la tabla y afirmaciones duplicadas del README. Sarah/DOOM están archivados en #2475; README apunta a mapa comunitario y debates. Fechas y entornos originales siguen como evidencia; el mapa automático sirve para descubrir, sin alterar pruebas ni publicar nuevo v0.1.1.")},
+ {
+ "number": 4686,
+ "games": [
+  "dreaming-sarah",
+  "doom-homebrew"
+ ],
+ "title": {
+  "en": "Current evidence uses discussions; the community map is archived",
+  "zh": "当前证据看讨论，社区地图已归档",
+  "ar": "الدليل الحالي بالنقاشات والخريطة مؤرشفة",
+  "pt": "Evidência nas discussões, mapa arquivado",
+  "de": "Aktuelle Belege in Diskussionen, Karte archiviert",
+  "fr": "Preuves actuelles dans les discussions, carte archivée",
+  "es": "Pruebas actuales en debates, mapa archivado"
+ },
+ "summary": {
+  "en": "The old table was removed in merged #4686. Current README links Game bring-up discussions; the community map is archived from24October, last build23October22:51UTC. Its stage ordering is historical and cannot replace pinned newer reports or erase earlier fork gameplay.",
+  "zh": "旧表经#4686合并移除；当前README引向Game bring-up讨论，社区地图自10月24日归档、最后构建23日22:51UTC。阶段排序仅历史，不能替换较新固定报告或抹去旧分支游玩。",
+  "ar": "الجدول أزيل بـ#4686، README يوجه للنقاشات. الخريطة مؤرشفة24أكتوبر، آخر بناء23،22:51UTC؛ ترتيب تاريخي لا يستبدل تقارير مثبتة أحدث أو يمحو لعب فرع قديم.",
+  "pt": "Tabela removida #4686, README aponta discussões. Mapa arquivado24out, último23às22:51UTC; ordem histórica não substitui relatos novos/forks antigos.",
+  "de": "Tabelle durch#4686 entfernt, README verweist auf Diskussionen. Karte archiviert24.Okt, zuletzt23.22:51UTC; historische Ordnung ersetzt keine neuen Pins/alten Forkbelege.",
+  "fr": "Table retirée #4686, README renvoie aux discussions. Carte archivée24oct, dernier build23à22:51UTC ; ordre historique sans remplacer nouveaux pins/anciens forks.",
+  "es": "Tabla retirada #4686, README dirige a debates. Mapa archivado24oct, último23a22:51UTC; orden histórico no sustituye pins nuevos/forks antiguos."
+ }
+},
  {number:2708,games:['dreaming-sarah'],title:L('A conversion regression is resolved on main','main 已修复一类转换回归','إصلاح تراجع التحويل على main','Regressão na conversão corrigida em main','Konvertierungsregression auf main behoben','Régression de conversion corrigée sur main','Regresión de conversión corregida en main'),summary:L('The merged module-search change avoids malformed sce_sys metadata. In #2663 the reporter verifies local-fix gameplay and later reports current-main success. Users with this specific conversion error can compare main with their old build; the change is not evidence that v0.1.1 was updated or every title is supported.','已合并的模块搜索改动避开 sce_sys 中异常的元数据。#2663 报告者先验证本地修复后的游戏过程，后来又反馈最新 main 运行成功。遇到这一转换错误的用户可核对 main 与旧构建；这不意味着 v0.1.1 文件已更新，也不证明其他游戏兼容。','يتجنب تعديل البحث المدمج بيانات sce_sys التالفة. يؤكد كاتب #2663 نجاح إصلاح محلي ثم نجاح main أحدث. يمكن لمن يواجه خطأ التحويل المحدد مقارنة البناء القديم مع main؛ لا يعني تحديث ملفات v0.1.1 أو دعم كل لعبة.','A pesquisa de módulos integrada evita metadados malformados de sce_sys. Em #2663, o autor verifica jogo com uma correção local e depois relata sucesso no main mais recente. Quem encontra este erro pode comparar main com a versão antiga; não significa que v0.1.1 tenha sido atualizado ou que todos os jogos sejam suportados.','Die integrierte Modulsuche vermeidet fehlerhafte sce_sys-Metadaten. In #2663 bestätigt der Autor Gameplay mit lokalem Fix und später Erfolg auf aktuellem main. Betroffene können main mit dem alten Build vergleichen; weder sind v0.1.1-Dateien damit aktualisiert noch alle Spiele unterstützt.','La recherche de modules intégrée évite les métadonnées malformées de sce_sys. Dans #2663, l’auteur confirme le jeu avec un correctif local puis un succès sur main récent. Les personnes concernées peuvent comparer main à leur ancienne version ; cela ne met pas à jour les fichiers v0.1.1 et ne prouve pas la compatibilité de tous les jeux.','La búsqueda integrada evita metadatos malformados de sce_sys. En #2663, el autor verifica juego con un arreglo local y luego éxito en main reciente. Quien encuentre este error puede comparar main con su versión anterior; no actualiza los archivos de v0.1.1 ni demuestra compatibilidad con todos los juegos.')},
  {number:3180,games:['dreaming-sarah'],title:L("Linux follow-up confirms a visible game scene","Linux 后续确认可见游戏场景","متابعة Linux تؤكد مشهداً مرئياً","Seguimento Linux confirma uma cena","Linux-Nachtrag zeigt eine Spielszene","Le suivi Linux montre une scène","El seguimiento Linux muestra una escena"),summary:L("The author has now posted a forest screenshot and says Linux works after the earlier main fix. The new commit, patches and hardware were not restated. This is evidence beyond issue closure, but the single 59.93 counter does not verify a timed benchmark, audio, controls or completion. Earlier failed builds remain in the report history.","作者在早期 main 修复后发布森林截图并确认 Linux 已运行，新提交、补丁和硬件没有重述。这是关闭 issue 之外的新增证据，但单张截图上的 59.93 不能验证计时基准、音频、操作或通关。历史失败构建继续保留。","نشر الكاتب صورة غابة وأكد نجاح Linux بعد إصلاح main السابق، دون تحديد الالتزام أو التعديلات أو العتاد الجديد. هذه أدلة تتجاوز إغلاق المشكلة، لكن عداد 59.93 الواحد لا يثبت قياساً زمنياً أو صوتاً أو تحكماً أو إكمالاً. تبقى الإخفاقات القديمة.","O autor publicou a floresta e confirmou Linux após a correção main, sem repetir commit, patches ou equipamento. É evidência além do fecho, mas um contador 59,93 não prova benchmark, áudio, controlo ou conclusão. Preservam-se os builds falhados.","Der Autor zeigt einen Wald und bestätigt Linux nach dem früheren main-Fix, ohne neuen Commit, Patches oder Hardware. Mehr als nur Issue-Schließung, doch ein einzelner Zähler 59,93 belegt weder Benchmark noch Ton, Steuerung oder Abschluss. Alte Fehler bleiben.","L’auteur publie une forêt et confirme Linux après le correctif main, sans préciser nouveau commit, correctifs ou matériel. Cela dépasse la fermeture de l’issue, mais un compteur 59,93 unique ne valide ni benchmark, ni son, ni commandes, ni fin. Les anciens échecs restent.","El autor publica el bosque y confirma Linux tras el arreglo main, sin fijar nuevo commit, parches ni equipo. Es evidencia adicional al cierre, pero un contador 59,93 no prueba benchmark, audio, controles o finalización. Se conservan los fallos antiguos.")},
  {number:3291,games:['dreaming-sarah'],title:L("NVIDIA validation stays separate from game tests","NVIDIA 验证与游戏测试分别记录","تحقق NVIDIA منفصل عن اختبارات الألعاب","Validação NVIDIA separada dos jogos","NVIDIA-Validierung getrennt von Spieltests","Validation NVIDIA distincte des jeux","Validación NVIDIA separada de juegos"),summary:L("The earlier Windows experiment reached Sarah’s title screen. A Linux RTX 5060 / 590.48.01 cross-check of fix 3389172454 on baseline 2a5eca11 resolves nine GPU fixtures, while wave32 remains failing. It used an isolated patched archive/library, not a clean full branch build, and no title files. AMD RADV passed all 22 focused fixtures. None of this supplies Linux game FPS or a released fix.","此前 Windows 实验到达 Sarah 标题。Linux RTX 5060／590.48.01 在基线 2a5eca11 上交叉验证修复 3389172454，解决九个 GPU 测试，wave32 仍失败；方法使用隔离的修改归档／库，不是完整分支干净构建，也没有使用游戏文件。AMD RADV 的 22 个定向测试全过，不能据此写 Linux 游戏 FPS 或发行版已修复。","تجربة Windows السابقة بلغت عنوان Sarah. تحقق Linux RTX 5060/590.48.01 للإصلاح 3389172454 على 2a5eca11 يحل تسع حالات GPU، وتبقى wave32 فاشلة. استخدم أرشيفاً ومكتبة معزولين لا بناء فرع كامل ولا ملفات ألعاب. RADV نجح في 22 حالة مركزة. ليس FPS لعبة Linux أو إصلاح إصدار.","A experiência Windows anterior chegou ao título Sarah. Linux RTX 5060/590.48.01 valida 3389172454 sobre 2a5eca11: nove casos GPU resolvidos, wave32 ainda falha. Usa arquivo/biblioteca isolados, não build limpo completo nem jogos. RADV passa 22 casos focados. Não fornece FPS de jogo Linux ou fix publicado.","Der frühere Windows-Test erreichte Sarahs Titel. Linux RTX 5060/590.48.01 prüft 3389172454 auf 2a5eca11: neun GPU-Fixtures behoben, wave32 weiterhin fehlerhaft. Isoliertes Archiv/Bibliothek statt sauberem Gesamtbuild, keine Spieldateien. RADV besteht 22 Teiltests. Keine Linux-Spiel-FPS oder Releasekorrektur.","L’essai Windows antérieur atteint le titre Sarah. Linux RTX 5060/590.48.01 vérifie 3389172454 sur 2a5eca11 : neuf cas GPU résolus, wave32 encore en échec. Archive/bibliothèque isolées, sans build complet propre ni jeu. RADV passe 22 cas ciblés. Ni FPS Linux en jeu ni correctif publié établis.","El ensayo Windows anterior llegó al título Sarah. Linux RTX 5060/590.48.01 valida 3389172454 sobre 2a5eca11: nueve casos GPU resueltos, wave32 sigue fallando. Archivo/biblioteca aislados, sin build limpio completo ni juegos. RADV pasa 22 casos enfocados. No aporta FPS de juego Linux ni arreglo publicado.")},

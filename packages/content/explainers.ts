@@ -48,7 +48,59 @@ export const faqArticle:Article={
    "Résultats officiels issus du tableau archivé a60f52e318 avec Dreaming Sarah/DOOM Shareware homebrew. Le projet utilise désormais les rapports publics. Archive historique, pas recensement actuel. Rapports conservent builds/patches ; aucune catégorie ne prouve la fin complète.",
    "Resultados oficiales de tabla archivada a60f52e318 con Dreaming Sarah/DOOM Shareware homebrew. Proyecto usa ahora informes públicos. Archivo histórico, no censo actual. Informes conservan builds/patches; ninguna categoría prueba finalización completa."
   ),[link('/methodology/',L('How we review evidence','我们如何复核证据','كيف نراجع الأدلة','Como revemos as provas','So prüfen wir Belege','Comment nous vérifions les preuves','Cómo revisamos las pruebas')),link(sourceDoc('COMPATIBILITY'),L('Upstream compatibility table','上游兼容表','جدول التوافق الأصلي','Tabela de compatibilidade original','Originale Kompatibilitätstabelle','Table de compatibilité originale','Tabla de compatibilidad original'))]),
-  section('compatibility-archive',L("Where did the upstream compatibility table go?","上游兼容表迁到哪里了？","أين انتقل جدول التوافق؟","Para onde foi a tabela de compatibilidade?","Wohin wurde die Kompatibilitätstabelle verschoben?","Où est passée la table de compatibilité ?","¿Dónde está ahora la tabla de compatibilidad?"),L("Merged #4686 removes the old compatibility table and its duplicate README claims. Previous Sarah/DOOM reports are archived in discussion #2475; README now points to a community blocker map and title discussions. Archive dates and original environments remain evidence, while an automatically assembled map is a discovery aid. This does not change old tests or release v0.1.1.","已合并 #4686 删除旧兼容表及 README 的重复结论，Sarah／DOOM 原报告归档到 #2475；README 改指社区阻碍地图和游戏讨论。归档日期与原环境仍是证据，自动汇总地图只用于发现线索。这不会改写旧实验，也不是 v0.1.1 新发行。","يحذف #4686 المدمج جدول التوافق وادعاءات README المكررة. أرشفت تقارير Sarah/DOOM في #2475؛ README يشير لخريطة عوائق مجتمعية ونقاشات الألعاب. تحفظ تواريخ وبيئات الأصل؛ الخريطة أداة اكتشاف لا تجربة جديدة ولا إصدار v0.1.1 جديد.","#4686 integrado remove a tabela e afirmações duplicadas do README. Sarah/DOOM estão arquivados em #2475; README aponta para mapa comunitário e discussões. Datas e ambientes originais mantêm-se como prova; mapa automático é descoberta, não altera testes nem publica v0.1.1 novo.","Das gemergte #4686 entfernt Tabelle und doppelte README-Aussagen. Sarah/DOOM sind in #2475 archiviert; README verweist auf Community-Blockerkarte und Diskussionen. Ursprungsdaten und Bedingungen bleiben Belege; die automatische Karte dient zur Suche, nicht als neuer Test oder neuer v0.1.1-Release.","#4686 fusionné supprime la table et les affirmations README répétées. Sarah/DOOM sont archivés dans #2475 ; README renvoie à une carte communautaire et aux discussions. Dates et environnements originaux restent des preuves ; la carte automatique sert à découvrir, sans modifier les tests ni publier un nouveau v0.1.1.","#4686 fusionada elimina la tabla y afirmaciones duplicadas del README. Sarah/DOOM están archivados en #2475; README apunta a mapa comunitario y debates. Fechas y entornos originales siguen como evidencia; el mapa automático sirve para descubrir, sin alterar pruebas ni publicar nuevo v0.1.1."),[link('https://github.com/boykopovar/AnyPS5/discussions/2475#discussioncomment-18886410',L('Archived source reports','归档的来源报告','تقارير المصدر المؤرشفة','Relatos de origem arquivados','Archivierte Quellberichte','Rapports sources archivés','Informes fuente archivados')),link('https://github.com/boykopovar/AnyPS5#compatibility',L('Current upstream guidance','当前上游说明','الإرشادات الأصلية الحالية','Orientações atuais do projeto','Aktuelle Projektanleitung','Conseils actuels du projet','Guía actual del proyecto'))]),
+  {
+ "id": "compatibility-archive",
+ "title": {
+  "en": "Where did the upstream compatibility table go?",
+  "zh": "上游兼容表迁到哪里了？",
+  "ar": "أين انتقل جدول التوافق؟",
+  "pt": "Para onde foi a tabela de compatibilidade?",
+  "de": "Wohin wurde die Kompatibilitätstabelle verschoben?",
+  "fr": "Où est passée la table de compatibilité ?",
+  "es": "¿Dónde está ahora la tabla de compatibilidad?"
+ },
+ "body": [
+  {
+   "en": "Upstream removed the old compatibility table in #4686; its README now directs current reports to Game bring-up discussions. The community blocker-map repository declares itself archived from24October, with its last build23October2026 at22:51UTC. It remains a historical snapshot, not a live status source. Keep original report dates/builds; neither the map nor a high API counter is a playable-game percentage.",
+   "zh": "上游#4686移除旧兼容表，当前README引导至Game bring-up讨论。社区blocker map仓库声明10月24日起归档，最后构建为2026年10月23日22:51UTC；仅历史快照，不再是实时状态源。保留原报告日期／构建，地图或高API计数都不代表游戏可玩比例。",
+   "ar": "أزيل الجدول في #4686 وREADME يوجه لنقاشات Game bring-up. خريطة المجتمع مؤرشفة منذ24أكتوبر وآخر بناء23أكتوبر2026،22:51UTC؛ مرجع تاريخي لا حي. احتفظ بالتواريخ/build، لا نسبة لعب من الخريطة أو API.",
+   "pt": "A tabela saiu em #4686 e README aponta às discussões Game bring-up. Mapa comunitário arquivado desde24out, último build23out2026 às22:51UTC; histórico, não estado vivo. Preserve datas/builds; mapa/API não são percentagem jogável.",
+   "de": "Tabelle entfernt in #4686, README verweist auf Game-bring-up-Diskussionen. Communitykarte seit24.Oktober archiviert, letzter Build23.Oktober2026 22:51UTC; historisch, nicht live. Testdaten/Builds behalten; Karte/API-Zähler keine Spielbarkeitsquote.",
+   "fr": "Table retirée dans #4686, README renvoie aux discussions Game bring-up. Carte communautaire archivée depuis24oct, dernier build23oct2026 à22:51UTC ; historique, pas statut vivant. Gardez dates/builds ; carte/API pas taux jouable.",
+   "es": "Tabla retirada en #4686, README dirige a debates Game bring-up. Mapa comunitario archivado desde24oct, último build23oct2026 a22:51UTC; histórico, no estado vivo. Conserva fechas/builds; mapa/API no son porcentaje jugable."
+  }
+ ],
+ "links": [
+  {
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/2475#discussioncomment-18886410",
+   "label": {
+    "en": "Archived source reports",
+    "zh": "归档的来源报告",
+    "ar": "تقارير المصدر المؤرشفة",
+    "pt": "Relatos de origem arquivados",
+    "de": "Archivierte Quellberichte",
+    "fr": "Rapports sources archivés",
+    "es": "Informes fuente archivados"
+   }
+  },
+  {
+   "url": "https://github.com/boykopovar/AnyPS5#compatibility",
+   "label": {
+    "en": "Current upstream guidance",
+    "zh": "当前上游说明",
+    "ar": "الإرشادات الأصلية الحالية",
+    "pt": "Orientações atuais do projeto",
+    "de": "Aktuelle Projektanleitung",
+    "fr": "Conseils actuels du projet",
+    "es": "Guía actual del proyecto"
+   }
+  },
+  {
+   "label": "Archived map and last-build notice",
+   "url": "https://github.com/AlxcBTW/anyps5-roadmap#readme"
+  }
+ ]
+},
   {
  "id": "mac",
  "title": {
@@ -189,3 +241,5 @@ export const howItWorksArticle:Article={
   ))
  ]
 };
+
+faqArticle.reviewed="2026-10-25";

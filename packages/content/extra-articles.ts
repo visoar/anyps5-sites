@@ -9,7 +9,7 @@ export const extraArticles:Article[]=[
  S('report',L('Make a reproducible report','提交可复现的报告','اكتب تقريراً قابلاً للتكرار','Escreva um relatório reproduzível','Schreibe einen reproduzierbaren Bericht','Rédigez un rapport reproductible','Redacta un informe reproducible'),L("Compare one change at a time. Separate a clean baseline from a patched run and keep logs for both. Include steps, expected behavior, actual stop, test duration and any screenshots or video. Remove personal paths and unrelated sensitive information before sharing. Submit game tests to the matching upstream discussion; email catalog corrections to " + contactEmail + ".","每次只比较一项改动，将干净基线与补丁结果分开，并保留两份日志。附上步骤、预期行为、实际停止位置、时长与截图或视频，分享前移除个人路径和无关敏感信息。游戏测试请提交到上游对应讨论；目录更正请邮件联系 " + contactEmail + "。","قارن تغييراً واحداً كل مرة وافصل الأساس النظيف عن التشغيل المعدّل مع سجليهما. أضف الخطوات والمتوقع ونقطة التوقف والمدة وصوراً أو فيديو. احذف المسارات الشخصية والمعلومات الحساسة غير اللازمة. انشر اختبارات الألعاب في النقاش الأصلي المناسب؛ وأرسل تصحيحات الفهرس إلى " + contactEmail + ".","Compare uma alteração de cada vez. Separe a base limpa do teste modificado e guarde os dois registos. Inclua passos, comportamento esperado, paragem, duração e imagens ou vídeo. Remova caminhos pessoais e dados sensíveis irrelevantes. Publique os testes na discussão original adequada; envie correções do catálogo para " + contactEmail + ".","Vergleiche immer nur eine Änderung. Trenne saubere Basis und gepatchten Lauf und behalte beide Logs. Beschreibe Schritte, erwartetes Verhalten, Abbruchstelle, Dauer und Bilder oder Video. Entferne persönliche Pfade und unnötige vertrauliche Angaben. Veröffentliche Spieltests in der passenden Diskussion des Originalprojekts; sende Katalogkorrekturen an " + contactEmail + ".","Comparez un changement à la fois. Séparez la base propre de l’essai modifié et conservez les deux journaux. Indiquez étapes, comportement attendu, arrêt, durée et images ou vidéo. Retirez les chemins personnels et informations sensibles inutiles. Publiez les tests dans la discussion originale correspondante ; envoyez les corrections du catalogue à " + contactEmail + ".","Compara un cambio cada vez. Separa la base limpia de la prueba modificada y conserva ambos registros. Incluye pasos, resultado esperado, parada, duración e imágenes o vídeo. Elimina rutas personales y datos sensibles innecesarios. Publica las pruebas en la discusión original correspondiente; envía las correcciones del catálogo a " + contactEmail + "."))]},
  {
  "slug": "progress",
- "reviewed": "2026-10-24",
+ "reviewed": "2026-10-25",
  "title": {
   "en": "AnyPS5 development progress and coverage",
   "zh": "AnyPS5 开发进度与实现范围",
@@ -35,7 +35,8 @@ export const extraArticles:Article[]=[
   "https://github.com/boykopovar/AnyPS5/blob/a60f52e3189003f049299206d2a6d99e55ee4260/docs/user/COMPATIBILITY.md",
   "https://github.com/boykopovar/AnyPS5/pull/7907",
   "https://github.com/boykopovar/AnyPS5/pull/8431",
-  "https://github.com/boykopovar/AnyPS5/discussions/9751"
+  "https://github.com/boykopovar/AnyPS5/discussions/9751",
+  "https://github.com/AlxcBTW/anyps5-roadmap#readme"
  ],
  "sections": [
   {
@@ -51,13 +52,13 @@ export const extraArticles:Article[]=[
    },
    "body": [
     {
-     "en": "The24October review counts5606/11706 declared library functions (47.89%), up771 implementations and526 declarations from4835/11180. Decoder recognition remains1166/1166. Neither metric establishes full API semantics, correct rendering or a fraction of games playable. No new release was found; v0.1.3 remains the latest reviewed asset set.",
-     "zh": "10月24日复核5606／11706个声明库函数（47.89%），较4835／11180实现增771、声明增526；解码识别仍1166／1166。均不证明完整API、正确渲染或游戏可玩比例；无新发行，最新已核验附件仍v0.1.3。",
-     "ar": "مراجعة24أكتوبر5606/11706=47.89%، زيادة771تنفيذ/526إعلان عن4835/11180؛ decoder1166/1166. لا APIكاملة/رسم صحيح/نسبة لعب. لا إصدار جديد،v0.1.3 الأحدث المراجع.",
-     "pt": "Revisão24out5606/11706=47,89%,+771implementações/+526declarações face4835/11180; decoder1166/1166. Não prova API completa/render/jogabilidade. Semnova release,v0.1.3 permanece.",
-     "de": "Prüfung24.Oktober5606/11706=47,89%,+771Implementierungen/+526Deklarationen zu4835/11180; Decoder1166/1166. KeineAPI-/Render-/Spielbarkeitsquote. KeinRelease neu,v0.1.3 bleibt.",
-     "fr": "Revue24oct5606/11706=47,89%,+771implémentations/+526déclarations sur4835/11180 ; decoder1166/1166. PasAPI complète/rendu/tauxjouable. Pasnouveau release,v0.1.3 reste.",
-     "es": "Revisión24oct5606/11706=47,89%,+771implementaciones/+526declaraciones frente4835/11180; decoder1166/1166. NoAPIcompleta/render/tasajugable. Sinrelease nueva,v0.1.3 sigue."
+     "en": "The25October review counts5995/12286 declared library functions (48.8%), +389 implementations/+580 declarations from5606/11706. Decoder recognition stays1166/1166. Coverage of declared exports and instruction recognition do not prove complete behavior or game compatibility; v0.1.3 assets remain unchanged.",
+     "zh": "10月25日复核5995／12286个声明库函数（48.8%），较5606／11706实现增389、声明增580；解码识别仍1166／1166。声明export覆盖和指令识别不证明完整行为或游戏兼容，v0.1.3附件未变。",
+     "ar": "مراجعة25أكتوبر5995/12286=48.8%،+389تنفيذاً/+580إعلاناً عن5606/11706؛ decoder1166/1166. لا سلوك كامل أو توافق ألعاب، ملفاتv0.1.3 ثابتة.",
+     "pt": "Revisão25out5995/12286=48,8%,+389implementações/+580declarações face5606/11706; decoder1166/1166. Não prova comportamento completo/compatibilidade, assetsv0.1.3 inalterados.",
+     "de": "Prüfung25.Oktober5995/12286=48,8%,+389Implementierungen/+580Deklarationen zu5606/11706; Decoder1166/1166. Kein vollständiges Verhalten/Spielkompatibilität, v0.1.3 unverändert.",
+     "fr": "Revue25oct5995/12286=48,8%,+389implémentations/+580déclarations sur5606/11706 ; decoder1166/1166. Pas comportement complet/compatibilité, fichiersv0.1.3 inchangés.",
+     "es": "Revisión25oct5995/12286=48,8%,+389implementaciones/+580declaraciones frente5606/11706; decoder1166/1166. No comportamiento completo/compatibilidad, archivosv0.1.3 iguales."
     },
     {
      "en": "Discussion#9751 proposes a second imported-function measure; it is not an adopted official compatibility counter. Its62-homebrew static audit reports1507/1533 functions classified non-throwing (98.3%), a biased sample without retail coverage or runtime path checks. Do not label that98.3% of games playable. The source’s4834/11181 atcc0078595d is a separate snapshot from the live figure above.",
@@ -67,6 +68,15 @@ export const extraArticles:Article[]=[
      "de": "#9751 schlägt Importmetrik vor, noch kein offizieller Zähler. Statischer62-Homebrew-Audit1507/1533=98,3% non-throwing, verzerrt ohne Retail/Laufpfade. Keine98,3% spielbaren Spiele. Snapshotcc0078595d4834/11181 getrennt.",
      "fr": "#9751 propose une métrique imports non adoptée. Audit statique62homebrew:1507/1533=98,3% non-throwing, biaisé sans retail/chemins runtime. Pas98,3% de jeux jouables. Snapshotcc0078595d4834/11181 distinct.",
      "es": "#9751 propone métrica imports no adoptada. Auditoría estática62homebrew:1507/1533=98,3% non-throwing, sesgada sin retail/rutas runtime. No98,3% juegos jugables. Snapshotcc0078595d4834/11181 separado."
+    },
+    {
+     "en": "The previous reviewed snapshot was4137/5182 (79.83%); this one is4303/6675 (64.46%). Both implemented and declared counts grew, so the lower percentage does not itself establish a regression. Newly declared exports and inert implementations still need behavior and title checks.",
+     "zh": "上次快照4137／5182（79.83%），本次4303／6675（64.46%）；实现数与声明总数都增加，因此百分比降低本身不证明回归。新增导出声明及inert实现仍需行为与游戏验证。",
+     "ar": "السابق4137/5182 ‏79.83% والجديد4303/6675 ‏64.46%. زادالمنفذوالمعلن، فانخفاضالنسبة ليسدليلتراجع. التصريحاتوالأجسامinert تحتاجفحصالسلوكوالعناوين.",
+     "pt": "Anterior4137/5182 (79,83%), atual4303/6675 (64,46%). Ambos os totais cresceram; percentagem menor não prova regressão. Novas declarações e corpos inert exigem validação de comportamento e jogos.",
+     "de": "Zuvor4137/5182 (79,83%), jetzt4303/6675 (64,46%). Implementierungen und Gesamtsumme stiegen; sinkende Quote belegt keine Regression. Neue Deklarationen/inerte Rümpfe brauchen Verhaltens- und Spieltests.",
+     "fr": "Avant4137/5182 (79,83%), maintenant4303/6675 (64,46%). Les deux comptes augmentent ; pourcentage inférieur ne prouve pas régression. Nouvelles déclarations/corps inertes exigent tests de comportement/jeux.",
+     "es": "Antes4137/5182 (79,83%), ahora4303/6675 (64,46%). Ambos recuentos aumentan; menor porcentaje no prueba regresión. Declaraciones nuevas/cuerpos inert requieren pruebas de comportamiento/juegos."
     }
    ]
   },
@@ -83,13 +93,13 @@ export const extraArticles:Article[]=[
    },
    "body": [
     {
-     "en": "One missing API, shader or synchronization step can block a title despite high counters. Upstream has replaced its live compatibility table with a community blocker map and game discussions. Historical Sarah and DOOM records remain archived. New stock-main DOOM tests and patched GT7 menus must retain their own GPU, build and scene limits; an aggregate map or menu counter cannot prove full gameplay.",
-     "zh": "即使计数很高，一个缺失的 API、着色器或同步环节也能阻碍游戏。上游已用社区阻碍地图和游戏讨论替代实时兼容表，Sarah 与 DOOM 历史记录仍有归档。新 main DOOM 测试与补丁 GT7 菜单必须保留各自 GPU、构建和场景范围；汇总地图或菜单计数不能证明完整游戏过程。",
-     "ar": "قد توقف دالة أو مظلل أو مزامنة ناقصة لعبة رغم الأرقام. استبدل المشروع جدول التوافق بخريطة عوائق مجتمعية ونقاشات؛ Sarah وDOOM محفوظان بالأرشيف. اختبارات DOOM main وقوائم GT7 المعدلة تحتفظ بحدود GPU والبناء والمشهد؛ الخريطة أو عداد القائمة لا يثبت لعباً كاملاً.",
-     "pt": "Uma API, shader ou sincronização em falta pode bloquear jogos apesar dos números. O projeto substituiu a tabela por mapa comunitário e discussões; Sarah/DOOM históricos estão arquivados. Testes DOOM main e menus GT7 modificados preservam GPU, build e cena. Mapa agregado ou contador de menu não prova jogo completo.",
-     "de": "Trotz hoher Zähler können API, Shader oder Synchronisation fehlen. Das Projekt ersetzt die Tabelle durch Community-Blockerkarte und Diskussionen; alte Sarah-/DOOM-Belege sind archiviert. Neue main-DOOM-Tests und gepatchte GT7-Menüs behalten GPU-, Build- und Szenengrenzen. Karte oder Menüzähler belegen keinen vollständigen Spielverlauf.",
-     "fr": "Une API, un shader ou une synchronisation manquante peut bloquer malgré les compteurs. Le projet remplace la table par carte communautaire et discussions ; anciens Sarah/DOOM archivés. Les essais DOOM main et menus GT7 modifiés gardent leurs limites GPU, version et scène. Carte ou compteur de menu ne prouvent pas le jeu complet.",
-     "es": "Una API, shader o sincronización ausente puede bloquear pese a los números. El proyecto sustituye la tabla por mapa comunitario y debates; Sarah/DOOM históricos quedan archivados. Tests DOOM main y menús GT7 modificados conservan GPU, build y escena. Mapa o contador de menú no prueba juego completo."
+     "en": "Upstream removed the old compatibility table in #4686; its README now directs current reports to Game bring-up discussions. The community blocker-map repository declares itself archived from24October, with its last build23October2026 at22:51UTC. It remains a historical snapshot, not a live status source. Keep original report dates/builds; neither the map nor a high API counter is a playable-game percentage.",
+     "zh": "上游#4686移除旧兼容表，当前README引导至Game bring-up讨论。社区blocker map仓库声明10月24日起归档，最后构建为2026年10月23日22:51UTC；仅历史快照，不再是实时状态源。保留原报告日期／构建，地图或高API计数都不代表游戏可玩比例。",
+     "ar": "أزيل الجدول في #4686 وREADME يوجه لنقاشات Game bring-up. خريطة المجتمع مؤرشفة منذ24أكتوبر وآخر بناء23أكتوبر2026،22:51UTC؛ مرجع تاريخي لا حي. احتفظ بالتواريخ/build، لا نسبة لعب من الخريطة أو API.",
+     "pt": "A tabela saiu em #4686 e README aponta às discussões Game bring-up. Mapa comunitário arquivado desde24out, último build23out2026 às22:51UTC; histórico, não estado vivo. Preserve datas/builds; mapa/API não são percentagem jogável.",
+     "de": "Tabelle entfernt in #4686, README verweist auf Game-bring-up-Diskussionen. Communitykarte seit24.Oktober archiviert, letzter Build23.Oktober2026 22:51UTC; historisch, nicht live. Testdaten/Builds behalten; Karte/API-Zähler keine Spielbarkeitsquote.",
+     "fr": "Table retirée dans #4686, README renvoie aux discussions Game bring-up. Carte communautaire archivée depuis24oct, dernier build23oct2026 à22:51UTC ; historique, pas statut vivant. Gardez dates/builds ; carte/API pas taux jouable.",
+     "es": "Tabla retirada en #4686, README dirige a debates Game bring-up. Mapa comunitario archivado desde24oct, último build23oct2026 a22:51UTC; histórico, no estado vivo. Conserva fechas/builds; mapa/API no son porcentaje jugable."
     }
    ]
   }
@@ -310,6 +320,158 @@ extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
   {
    "label": "Pinned upstream source",
    "url": "https://github.com/boykopovar/AnyPS5/blob/d7948b09f95ea8e302590c09dbb3c0c0b714b84a/docs/dev/BUILD.md"
+  }
+ ]
+});
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
+ "id": "main-deferred-extra-modules",
+ "title": {
+  "en": "Later main: map a module before starting it",
+  "zh": "后续main：映射模块与执行初始化分开",
+  "ar": "main اللاحق: ربط الوحدة وبدؤها منفصلان",
+  "pt": "Main posterior: mapear e iniciar módulos",
+  "de": "Späteres Main: Module abbilden und starten",
+  "fr": "Main ultérieur : mapper puis initialiser",
+  "es": "Main posterior: mapear e iniciar módulos"
+ },
+ "body": [
+  {
+   "en": "Convert Unity’s extra directories with --module-dir Media/Modules --module-dir Media/Plugins, retaining originals and each printed Guest module output. Later Linux main maps needed modules at startup but starts extra-directory modules only on explicit load, with the title’s arguments. Windows/macOS initialization rules differ. Lost in Play and Coffee Talk provide bounded setup follow-ups, not a universal null-call fix; keep matching relinker/runtime builds.",
+   "zh": "Unity额外目录使用--module-dir Media/Modules --module-dir Media/Plugins，保留原文件及打印出的Guest module输出。后续Linux main启动时映射需要的模块，但额外目录模块仅显式加载时带游戏参数初始化；Windows／macOS规则不同。Lost in Play与Coffee Talk仅为有边界设置跟进，不是所有空调用的修复，转换器与运行库须配套。",
+   "ar": "حوّل مجلدي Unity الإضافيين مع --module-dir واحتفظ بالأصل وGuest module. Linux الأحدث يربط المطلوب عند البدء ويهيئ الإضافي عند تحميل صريح بوسائط اللعبة؛ Windows/macOS مختلفان. تقريران محدودان لا إصلاح عام لـnull، وطابق الأدوات.",
+   "pt": "Converta pastas Unity Media/Modules e Media/Plugins com --module-dir, mantendo originais/Guest module. Linux posterior mapeia módulos no início, inicializa extras só na carga explícita; Windows/macOS diferem. Relatos Coffee/Lost não são fix null universal; use builds correspondentes.",
+   "de": "Unity-Zusatzordner Media/Modules und Media/Plugins mit --module-dir konvertieren, Originale/Guest module behalten. Späteres Linux mappt benötigte Module beim Start, initialisiert Extras erst beim expliziten Laden; Windows/macOS anders. Coffee/Lost keine universelle Null-Fehlerbehebung, passende Builds verwenden.",
+   "fr": "Convertissez Media/Modules et Media/Plugins avec --module-dir, gardez originaux/Guest module. Linux ultérieur mappe au départ mais initialise les extras au chargement explicite ; Windows/macOS diffèrent. Coffee/Lost ne prouvent pas un fix null universel, appariez les builds.",
+   "es": "Convierte Media/Modules y Media/Plugins con --module-dir, conserva originales/Guest module. Linux posterior mapea al inicio e inicializa extras al cargar explícitamente; Windows/macOS difieren. Coffee/Lost no son fix null universal, usa builds compatibles."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/user/USAGE.md"
+  }
+ ]
+});
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
+ "id": "main-windows-build-tool-errors",
+ "title": {
+  "en": "Later main: distinguish build-tool failures",
+  "zh": "后续main：区分构建工具故障",
+  "ar": "main اللاحق: تمييز أخطاء أدوات البناء",
+  "pt": "Main posterior: erros das ferramentas",
+  "de": "Späteres Main: Buildwerkzeugfehler trennen",
+  "fr": "Main ultérieur : erreurs des outils",
+  "es": "Main posterior: distinguir errores de herramientas"
+ },
+ "body": [
+  {
+   "en": "The python.org Windows installer may provide python/py but no python3: use py -3 instead of the Store alias; other distributions differ. CTest fixes relinker test temp files under build/core/relinker/test-temp, so changing the parent shell’s TEMP does not move them. For libusb version_describe.h, check Git Bash and any overriding PowerShell Group Policy; upstream documents a Git-Bash wrapper via LIBUSB_POWERSHELL_EXECUTABLE without changing policy.",
+   "zh": "python.org的Windows安装可能只有python／py而无python3，遇Store别名用py -3，其他发行不同。CTest把转换器测试临时目录固定在build/core/relinker/test-temp，改父shell TEMP无效。libusb的version_describe.h失败需核对Git Bash及PowerShell组策略；上游给出LIBUSB_POWERSHELL_EXECUTABLE指向Git-Bash包装器，无需改策略。",
+   "ar": "قد يوفر Python ويندوز python/py دون python3؛ استخدم py -3 بدلاً من Store. CTest يثبت temp في build/core/relinker/test-temp فلا يغيره TEMP الأب. راجع Git Bash وسياسة PowerShell عند فشل libusb؛ wrapper موثق دون تعديل السياسة.",
+   "pt": "Python.org Windows pode ter python/py sem python3: use py -3, não alias Store. CTest fixa temporários em build/core/relinker/test-temp. Para libusb confira Git Bash/Group Policy; wrapper LIBUSB_POWERSHELL_EXECUTABLE documentado sem mudar política.",
+   "de": "Python.org-Windows kann python/py ohne python3 liefern: py -3 statt Storealias. CTest fixiert Temp unter build/core/relinker/test-temp. Bei libusb Git Bash/PowerShell-Gruppenrichtlinie prüfen; dokumentierter Wrapper ohne Richtlinienänderung.",
+   "fr": "Python.org Windows peut fournir python/py sans python3 : utilisez py -3. CTest fixe temp sous build/core/relinker/test-temp. Pour libusb, vérifiez Git Bash/stratégie PowerShell ; wrapper documenté sans modifier la stratégie.",
+   "es": "Python.org Windows puede traer python/py sin python3: usa py -3. CTest fija temp en build/core/relinker/test-temp. Para libusb comprueba Git Bash/política PowerShell; wrapper documentado sin cambiar política."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/dev/BUILD.md"
+  }
+ ]
+});
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
+ "id": "main-windows-red-zone-option",
+ "title": {
+  "en": "Later main: explicit Windows red-zone conversion",
+  "zh": "后续main：显式Windows red-zone转换",
+  "ar": "main اللاحق: تحويل red-zone صريح",
+  "pt": "Main posterior: red-zone explícita no Windows",
+  "de": "Späteres Main: explizite Windows-Red-Zone",
+  "fr": "Main ultérieur : red-zone Windows explicite",
+  "es": "Main posterior: red-zone explícita Windows"
+ },
+ "body": [
+  {
+   "en": "--frame-red-zone is Windows-only and opt-in. It gives supported leaf functions stack frames so host-delivered exceptions do not overwrite live System-V red-zone values. Bounds require .eh_frame; absent metadata fails, unsupported leaves are reported, and patches overlapping framed sites are refused. It is not a general crash fix, Linux flag or proof that an older patched GTA run now works unchanged.",
+   "zh": "--frame-red-zone仅Windows且显式开启，为支持的leaf函数建立栈帧，防主机异常覆盖System-V red-zone存活值；边界需.eh_frame，缺失会失败，未支持函数有报告，与改写站点重叠的补丁会拒绝。非通用崩溃修复、Linux选项或旧GTA补丁结果已可原版复现的证明。",
+   "ar": "--frame-red-zone اختياري لويندوز، يؤطر leaf مدعومة لحماية قيم System-V من الاستثناءات. يحتاج .eh_frame ويفشل بدونه، يبلغ المتروك ويرفض patch متداخلاً. ليس إصلاحاً عاماً أو علم Linux أو إثبات GTA نظيف.",
+   "pt": "--frame-red-zone é opt-in Windows, enquadra folhas suportadas contra exceções. Exige .eh_frame, falha sem ele, relata omissões e recusa patches sobrepostos. Não é fix geral, opção Linux ou prova GTA sem patches.",
+   "de": "--frame-red-zone nur Windows/Opt-in, rahmt unterstützte Blattfunktionen gegen Ausnahmeüberschreiben. Braucht .eh_frame, sonst Fehler; Auslassungen gemeldet, überlappende Patches abgelehnt. Kein allgemeiner Fix/Linuxflag/Stock-GTA-Beleg.",
+   "fr": "--frame-red-zone réservé Windows/opt-in protège les feuilles prises en charge contre les exceptions. Exige .eh_frame, échoue sinon, signale exclusions/refuse patches chevauchants. Pas correctif général/option Linux/preuve GTA sans patches.",
+   "es": "--frame-red-zone solo Windows/opt-in protege hojas admitidas de excepciones. Exige .eh_frame, falla sin él, informa exclusiones/rechaza parches solapados. No fix general/opción Linux/prueba GTA sin parches."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/user/USAGE.md"
+  }
+ ]
+});
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
+ "id": "main-optional-mimalloc-files",
+ "title": {
+  "en": "Later main: confirm the allocator actually loaded",
+  "zh": "后续main：确认实际加载了分配器",
+  "ar": "main اللاحق: تأكد من تحميل المخصص",
+  "pt": "Main posterior: confirmar o alocador",
+  "de": "Späteres Main: geladenen Allocator prüfen",
+  "fr": "Main ultérieur : vérifier l’allocateur chargé",
+  "es": "Main posterior: confirmar el asignador"
+ },
+ "body": [
+  {
+   "en": "With APS5_MIMALLOC set, Windows loads mimalloc.dll and mimalloc-redirect.dll from matching libs/. If either is absent it silently keeps the C runtime heap; a variable alone does not prove which allocator ran. Preserve compiler/runtime pairing and measure a specific scene rather than assuming a universal FPS gain.",
+   "zh": "设置APS5_MIMALLOC后Windows从配套libs/加载mimalloc.dll及mimalloc-redirect.dll；缺文件会静默沿用C运行时heap，仅设变量不能证明分配器已切换。保留工具链／运行库配套，按场景测量，不预设通用FPS提升。",
+   "ar": "مع APS5_MIMALLOC يحمل Windows مكتبتين من libs؛ غيابهما يبقي CRT بصمت. المتغير لا يثبت المخصص، طابق build وقس مشهداً لا تفترض تسريعاً عاماً.",
+   "pt": "APS5_MIMALLOC carrega duas DLL de libs no Windows; ausentes mantém CRT sem aviso. Variável não prova alocador, use builds correspondentes e meça cena sem ganho geral presumido.",
+   "de": "APS5_MIMALLOC lädt zwei DLLs aus libs auf Windows; fehlen sie, bleibt CRT still aktiv. Variable beweist keinen Allocator; passende Builds/Szene messen, keinen allgemeinen FPS-Gewinn annehmen.",
+   "fr": "APS5_MIMALLOC charge deux DLL de libs sous Windows ; absentes, CRT reste sans message. Variable ne prouve pas allocateur ; builds appariés/scène mesurée, sans gain général supposé.",
+   "es": "APS5_MIMALLOC carga dos DLL de libs en Windows; ausentes conserva CRT sin aviso. Variable no prueba asignador; builds compatibles y escena medida, sin mejora general supuesta."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/user/USAGE.md"
+  }
+ ]
+});
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.reviewed="2026-10-25";
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
+ "id": "main-import-audit-name-mismatch",
+ "title": {
+  "en": "Later main: a counted implementation can still fail the import audit",
+  "zh": "后续main：计为implemented也可能导入审计失败",
+  "ar": "main اللاحق: تنفيذ محسوب قد يفشل تدقيق الاستيراد",
+  "pt": "Main posterior: implementação pode falhar audit",
+  "de": "Späteres Main: Implementierung kann Importaudit verfehlen",
+  "fr": "Main ultérieur : implémentation et audit diffèrent",
+  "es": "Main posterior: implementación puede fallar audit"
+ },
+ "body": [
+  {
+   "en": "For an import naming a library, import_audit now requires the literal export name. A hash-only match may still count as implemented/stub, but records symbol_mismatch and exits1; a strong mismatch is a current stop. Imports without a library retain name-to-NID fallback. Review weak bindings and exact module registries, not just the implemented count.",
+   "zh": "带library的import现在需字面export名匹配；仅hash命中即使计implemented／stub，仍标symbol_mismatch并退出1，强import不匹配属当前阻碍。无library者保留name-to-NID回退；须核对weak绑定和准确模块registry，不能只看implemented计数。",
+   "ar": "استيراد باسم مكتبة يحتاج اسم export حرفياً؛ تطابق hash قد يعد implemented/stub لكنه symbol_mismatch وخروج1، والقوي حاجز حالي. دون مكتبة يبقى fallback؛ راجع weak/registry لا العداد فقط.",
+   "pt": "Import com biblioteca exige nome literal; match só hash pode contar implemented/stub mas marca symbol_mismatch/saída1, forte é bloqueio. Sem biblioteca mantém fallback; confira weak/registry, não só contagem.",
+   "de": "Import mit Bibliothek braucht wörtlichen Exportnamen; Hash allein kann als implemented/stub zählen, aber symbol_mismatch/Exit1, starker Import blockiert. Ohne Bibliothek Fallback; Weak/Registry prüfen statt nur Zähler.",
+   "fr": "Import avec bibliothèque exige nom littéral ; hash seul peut compter implemented/stub mais symbol_mismatch/sortie1, import fort bloquant. Sans bibliothèque repli conservé ; vérifiez weak/registry, pas seul compteur.",
+   "es": "Import con biblioteca exige nombre literal; solo hash puede contar implemented/stub pero symbol_mismatch/salida1, fuerte bloquea. Sin biblioteca mantiene fallback; revisa weak/registry, no solo contador."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/user/USAGE.md"
   }
  ]
 });

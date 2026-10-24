@@ -2022,3 +2022,363 @@ guideSupplements["guides/input"].push({
   }
  ]
 });
+
+guideSupplements["guides/input"].push({
+ "id": "main-four-controller-ports",
+ "title": {
+  "en": "Later main: four controller slots",
+  "zh": "后续main：四个手柄端口",
+  "ar": "main اللاحق: أربع خانات يد",
+  "pt": "Main posterior: quatro comandos",
+  "de": "Späteres Main: vier Controllerplätze",
+  "fr": "Main ultérieur : quatre manettes",
+  "es": "Main posterior: cuatro mandos"
+ },
+ "body": [
+  {
+   "en": "Merged #7881 assigns the first SDL controller to Player1 with keyboard/mouse, then Players2–4, with dynamic connection and matching user-service IDs. The remote-control port remains disconnected, not an alias of Player1. Per-title local multiplayer and physical DualSense features still require real tests; the separate ImGui configuration editor remains an open proposal.",
+   "zh": "已合#7881按连接顺序分配SDL手柄给玩家1至4；玩家1合成键鼠输入，支持动态连接与对应user-service编号。remote-control端口保持断开，不冒充玩家1；每款本地多人及实体DualSense功能仍需实测，独立ImGui配置编辑器仍是提案。",
+   "ar": "#7881 المدمج يوزع أيدي SDL على1–4، واللوحة/الفأرة مع1، مع اتصال ديناميكي ومعرفات مستخدم. المنفذ البعيد منفصل؛ لعب متعدد وميزات DualSense تحتاج اختباراً، ومحرر ImGui ما زال مقترحاً.",
+   "pt": "O #7881 integrado atribui comandos SDL aos jogadores1–4, teclado/rato ao1, com ligação dinâmica e IDs correspondentes. Porta remota fica desligada; multiplayer/DualSense requerem testes, editor ImGui ainda proposto.",
+   "de": "Gemergtes #7881 weist SDL-Controller1–4 zu, Tastatur/Maus zu1, mit Hotplug und Nutzer-IDs. Remoteport bleibt getrennt; Titel-Multiplayer/DualSense real prüfen, ImGui-Editor weiterhin Vorschlag.",
+   "fr": "#7881 fusionné affecte SDL aux joueurs1–4, clavier/souris au1, avec connexion dynamique/IDs correspondants. Port distant déconnecté ; multijoueur/DualSense à tester, éditeur ImGui encore proposé.",
+   "es": "#7881 fusionado asigna SDL a jugadores1–4, teclado/ratón al1, con conexión dinámica/IDs. Puerto remoto desconectado; multijugador/DualSense requieren pruebas, editor ImGui aún propuesto."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/user/INPUT_MAPPING.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"].push({
+ "id": "main-deferred-extra-modules",
+ "title": {
+  "en": "Later main: map a module before starting it",
+  "zh": "后续main：映射模块与执行初始化分开",
+  "ar": "main اللاحق: ربط الوحدة وبدؤها منفصلان",
+  "pt": "Main posterior: mapear e iniciar módulos",
+  "de": "Späteres Main: Module abbilden und starten",
+  "fr": "Main ultérieur : mapper puis initialiser",
+  "es": "Main posterior: mapear e iniciar módulos"
+ },
+ "body": [
+  {
+   "en": "Convert Unity’s extra directories with --module-dir Media/Modules --module-dir Media/Plugins, retaining originals and each printed Guest module output. Later Linux main maps needed modules at startup but starts extra-directory modules only on explicit load, with the title’s arguments. Windows/macOS initialization rules differ. Lost in Play and Coffee Talk provide bounded setup follow-ups, not a universal null-call fix; keep matching relinker/runtime builds.",
+   "zh": "Unity额外目录使用--module-dir Media/Modules --module-dir Media/Plugins，保留原文件及打印出的Guest module输出。后续Linux main启动时映射需要的模块，但额外目录模块仅显式加载时带游戏参数初始化；Windows／macOS规则不同。Lost in Play与Coffee Talk仅为有边界设置跟进，不是所有空调用的修复，转换器与运行库须配套。",
+   "ar": "حوّل مجلدي Unity الإضافيين مع --module-dir واحتفظ بالأصل وGuest module. Linux الأحدث يربط المطلوب عند البدء ويهيئ الإضافي عند تحميل صريح بوسائط اللعبة؛ Windows/macOS مختلفان. تقريران محدودان لا إصلاح عام لـnull، وطابق الأدوات.",
+   "pt": "Converta pastas Unity Media/Modules e Media/Plugins com --module-dir, mantendo originais/Guest module. Linux posterior mapeia módulos no início, inicializa extras só na carga explícita; Windows/macOS diferem. Relatos Coffee/Lost não são fix null universal; use builds correspondentes.",
+   "de": "Unity-Zusatzordner Media/Modules und Media/Plugins mit --module-dir konvertieren, Originale/Guest module behalten. Späteres Linux mappt benötigte Module beim Start, initialisiert Extras erst beim expliziten Laden; Windows/macOS anders. Coffee/Lost keine universelle Null-Fehlerbehebung, passende Builds verwenden.",
+   "fr": "Convertissez Media/Modules et Media/Plugins avec --module-dir, gardez originaux/Guest module. Linux ultérieur mappe au départ mais initialise les extras au chargement explicite ; Windows/macOS diffèrent. Coffee/Lost ne prouvent pas un fix null universel, appariez les builds.",
+   "es": "Convierte Media/Modules y Media/Plugins con --module-dir, conserva originales/Guest module. Linux posterior mapea al inicio e inicializa extras al cargar explícitamente; Windows/macOS difieren. Coffee/Lost no son fix null universal, usa builds compatibles."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"].push({
+ "id": "main-local-patch-advisor",
+ "title": {
+  "en": "Later main: a local patch advisor",
+  "zh": "后续main：本地补丁建议工具",
+  "ar": "main اللاحق: مساعد patches محلي",
+  "pt": "Main posterior: sugestões de patches locais",
+  "de": "Späteres Main: lokaler Patchberater",
+  "fr": "Main ultérieur : conseil de patches locaux",
+  "es": "Main posterior: asesor de parches locales"
+ },
+ "body": [
+  {
+   "en": "suggest_patches.py requires Python3.11+, an explicit param.json, local catalog and relinker. It matches title/version and target-file hashes, then invokes --verify-patches; it never downloads or applies a patch. Multiple valid entries yield no recommendation. Hashes identify bytes, not trust or playability. Keep catalog files outside the input directory to avoid automatic patch discovery, and repeat the same module/additional-executable options during conversion.",
+   "zh": "suggest_patches.py需Python3.11+、明确param.json、本地catalog及转换器；匹配游戏／版本／目标哈希再调用--verify-patches，不下载或应用补丁。多个有效项不推荐；哈希识别字节而非可信度或可玩性。catalog放输入目录外避免自动发现，转换时沿用相同模块及额外程序选项。",
+   "ar": "يتطلب suggest_patches.py Python3.11+ وparam.json وcatalog/relinker محليين. يطابق النسخة/الهاش ويشغل --verify-patches دون تنزيل/تطبيق. تعدد النتائج بلا توصية؛ الهاش ليس ثقة/لعباً. أبق catalog خارج الإدخال وطابق خيارات الوحدات.",
+   "pt": "suggest_patches.py exige Python3.11+, param.json, catálogo/relinker locais. Confere versão/hashes e --verify-patches, sem transferir/aplicar. Várias entradas válidas: sem recomendação. Hash não prova confiança/jogo; catálogo fora da pasta de entrada, mesmas opções na conversão.",
+   "de": "suggest_patches.py braucht Python3.11+, param.json, lokalen Katalog/Relinker. Prüft Version/Hashes/--verify-patches, lädt/wendet nichts an. Mehrere Treffer: keine Empfehlung. Hash kein Vertrauens-/Spielbeleg; Katalog außerhalb Eingabeordner, gleiche Moduloptionen verwenden.",
+   "fr": "suggest_patches.py exige Python3.11+, param.json, catalogue/relinker locaux. Vérifie version/hashes/--verify-patches sans télécharger/appliquer. Plusieurs résultats : pas de conseil. Hash pas confiance/jouabilité ; catalogue hors entrée, mêmes options de modules.",
+   "es": "suggest_patches.py requiere Python3.11+, param.json, catálogo/relinker locales. Verifica versión/hashes/--verify-patches sin descargar/aplicar. Varios válidos: sin recomendación. Hash no prueba confianza/juego; catálogo fuera de entrada, mismas opciones."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"].push({
+ "id": "main-windows-red-zone-option",
+ "title": {
+  "en": "Later main: explicit Windows red-zone conversion",
+  "zh": "后续main：显式Windows red-zone转换",
+  "ar": "main اللاحق: تحويل red-zone صريح",
+  "pt": "Main posterior: red-zone explícita no Windows",
+  "de": "Späteres Main: explizite Windows-Red-Zone",
+  "fr": "Main ultérieur : red-zone Windows explicite",
+  "es": "Main posterior: red-zone explícita Windows"
+ },
+ "body": [
+  {
+   "en": "--frame-red-zone is Windows-only and opt-in. It gives supported leaf functions stack frames so host-delivered exceptions do not overwrite live System-V red-zone values. Bounds require .eh_frame; absent metadata fails, unsupported leaves are reported, and patches overlapping framed sites are refused. It is not a general crash fix, Linux flag or proof that an older patched GTA run now works unchanged.",
+   "zh": "--frame-red-zone仅Windows且显式开启，为支持的leaf函数建立栈帧，防主机异常覆盖System-V red-zone存活值；边界需.eh_frame，缺失会失败，未支持函数有报告，与改写站点重叠的补丁会拒绝。非通用崩溃修复、Linux选项或旧GTA补丁结果已可原版复现的证明。",
+   "ar": "--frame-red-zone اختياري لويندوز، يؤطر leaf مدعومة لحماية قيم System-V من الاستثناءات. يحتاج .eh_frame ويفشل بدونه، يبلغ المتروك ويرفض patch متداخلاً. ليس إصلاحاً عاماً أو علم Linux أو إثبات GTA نظيف.",
+   "pt": "--frame-red-zone é opt-in Windows, enquadra folhas suportadas contra exceções. Exige .eh_frame, falha sem ele, relata omissões e recusa patches sobrepostos. Não é fix geral, opção Linux ou prova GTA sem patches.",
+   "de": "--frame-red-zone nur Windows/Opt-in, rahmt unterstützte Blattfunktionen gegen Ausnahmeüberschreiben. Braucht .eh_frame, sonst Fehler; Auslassungen gemeldet, überlappende Patches abgelehnt. Kein allgemeiner Fix/Linuxflag/Stock-GTA-Beleg.",
+   "fr": "--frame-red-zone réservé Windows/opt-in protège les feuilles prises en charge contre les exceptions. Exige .eh_frame, échoue sinon, signale exclusions/refuse patches chevauchants. Pas correctif général/option Linux/preuve GTA sans patches.",
+   "es": "--frame-red-zone solo Windows/opt-in protege hojas admitidas de excepciones. Exige .eh_frame, falla sin él, informa exclusiones/rechaza parches solapados. No fix general/opción Linux/prueba GTA sin parches."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"].push({
+ "id": "main-optional-mimalloc-files",
+ "title": {
+  "en": "Later main: confirm the allocator actually loaded",
+  "zh": "后续main：确认实际加载了分配器",
+  "ar": "main اللاحق: تأكد من تحميل المخصص",
+  "pt": "Main posterior: confirmar o alocador",
+  "de": "Späteres Main: geladenen Allocator prüfen",
+  "fr": "Main ultérieur : vérifier l’allocateur chargé",
+  "es": "Main posterior: confirmar el asignador"
+ },
+ "body": [
+  {
+   "en": "With APS5_MIMALLOC set, Windows loads mimalloc.dll and mimalloc-redirect.dll from matching libs/. If either is absent it silently keeps the C runtime heap; a variable alone does not prove which allocator ran. Preserve compiler/runtime pairing and measure a specific scene rather than assuming a universal FPS gain.",
+   "zh": "设置APS5_MIMALLOC后Windows从配套libs/加载mimalloc.dll及mimalloc-redirect.dll；缺文件会静默沿用C运行时heap，仅设变量不能证明分配器已切换。保留工具链／运行库配套，按场景测量，不预设通用FPS提升。",
+   "ar": "مع APS5_MIMALLOC يحمل Windows مكتبتين من libs؛ غيابهما يبقي CRT بصمت. المتغير لا يثبت المخصص، طابق build وقس مشهداً لا تفترض تسريعاً عاماً.",
+   "pt": "APS5_MIMALLOC carrega duas DLL de libs no Windows; ausentes mantém CRT sem aviso. Variável não prova alocador, use builds correspondentes e meça cena sem ganho geral presumido.",
+   "de": "APS5_MIMALLOC lädt zwei DLLs aus libs auf Windows; fehlen sie, bleibt CRT still aktiv. Variable beweist keinen Allocator; passende Builds/Szene messen, keinen allgemeinen FPS-Gewinn annehmen.",
+   "fr": "APS5_MIMALLOC charge deux DLL de libs sous Windows ; absentes, CRT reste sans message. Variable ne prouve pas allocateur ; builds appariés/scène mesurée, sans gain général supposé.",
+   "es": "APS5_MIMALLOC carga dos DLL de libs en Windows; ausentes conserva CRT sin aviso. Variable no prueba asignador; builds compatibles y escena medida, sin mejora general supuesta."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/linux"].push({
+ "id": "main-deferred-extra-modules",
+ "title": {
+  "en": "Later main: map a module before starting it",
+  "zh": "后续main：映射模块与执行初始化分开",
+  "ar": "main اللاحق: ربط الوحدة وبدؤها منفصلان",
+  "pt": "Main posterior: mapear e iniciar módulos",
+  "de": "Späteres Main: Module abbilden und starten",
+  "fr": "Main ultérieur : mapper puis initialiser",
+  "es": "Main posterior: mapear e iniciar módulos"
+ },
+ "body": [
+  {
+   "en": "Convert Unity’s extra directories with --module-dir Media/Modules --module-dir Media/Plugins, retaining originals and each printed Guest module output. Later Linux main maps needed modules at startup but starts extra-directory modules only on explicit load, with the title’s arguments. Windows/macOS initialization rules differ. Lost in Play and Coffee Talk provide bounded setup follow-ups, not a universal null-call fix; keep matching relinker/runtime builds.",
+   "zh": "Unity额外目录使用--module-dir Media/Modules --module-dir Media/Plugins，保留原文件及打印出的Guest module输出。后续Linux main启动时映射需要的模块，但额外目录模块仅显式加载时带游戏参数初始化；Windows／macOS规则不同。Lost in Play与Coffee Talk仅为有边界设置跟进，不是所有空调用的修复，转换器与运行库须配套。",
+   "ar": "حوّل مجلدي Unity الإضافيين مع --module-dir واحتفظ بالأصل وGuest module. Linux الأحدث يربط المطلوب عند البدء ويهيئ الإضافي عند تحميل صريح بوسائط اللعبة؛ Windows/macOS مختلفان. تقريران محدودان لا إصلاح عام لـnull، وطابق الأدوات.",
+   "pt": "Converta pastas Unity Media/Modules e Media/Plugins com --module-dir, mantendo originais/Guest module. Linux posterior mapeia módulos no início, inicializa extras só na carga explícita; Windows/macOS diferem. Relatos Coffee/Lost não são fix null universal; use builds correspondentes.",
+   "de": "Unity-Zusatzordner Media/Modules und Media/Plugins mit --module-dir konvertieren, Originale/Guest module behalten. Späteres Linux mappt benötigte Module beim Start, initialisiert Extras erst beim expliziten Laden; Windows/macOS anders. Coffee/Lost keine universelle Null-Fehlerbehebung, passende Builds verwenden.",
+   "fr": "Convertissez Media/Modules et Media/Plugins avec --module-dir, gardez originaux/Guest module. Linux ultérieur mappe au départ mais initialise les extras au chargement explicite ; Windows/macOS diffèrent. Coffee/Lost ne prouvent pas un fix null universel, appariez les builds.",
+   "es": "Convierte Media/Modules y Media/Plugins con --module-dir, conserva originales/Guest module. Linux posterior mapea al inicio e inicializa extras al cargar explícitamente; Windows/macOS difieren. Coffee/Lost no son fix null universal, usa builds compatibles."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/linux"].push({
+ "id": "main-local-patch-advisor",
+ "title": {
+  "en": "Later main: a local patch advisor",
+  "zh": "后续main：本地补丁建议工具",
+  "ar": "main اللاحق: مساعد patches محلي",
+  "pt": "Main posterior: sugestões de patches locais",
+  "de": "Späteres Main: lokaler Patchberater",
+  "fr": "Main ultérieur : conseil de patches locaux",
+  "es": "Main posterior: asesor de parches locales"
+ },
+ "body": [
+  {
+   "en": "suggest_patches.py requires Python3.11+, an explicit param.json, local catalog and relinker. It matches title/version and target-file hashes, then invokes --verify-patches; it never downloads or applies a patch. Multiple valid entries yield no recommendation. Hashes identify bytes, not trust or playability. Keep catalog files outside the input directory to avoid automatic patch discovery, and repeat the same module/additional-executable options during conversion.",
+   "zh": "suggest_patches.py需Python3.11+、明确param.json、本地catalog及转换器；匹配游戏／版本／目标哈希再调用--verify-patches，不下载或应用补丁。多个有效项不推荐；哈希识别字节而非可信度或可玩性。catalog放输入目录外避免自动发现，转换时沿用相同模块及额外程序选项。",
+   "ar": "يتطلب suggest_patches.py Python3.11+ وparam.json وcatalog/relinker محليين. يطابق النسخة/الهاش ويشغل --verify-patches دون تنزيل/تطبيق. تعدد النتائج بلا توصية؛ الهاش ليس ثقة/لعباً. أبق catalog خارج الإدخال وطابق خيارات الوحدات.",
+   "pt": "suggest_patches.py exige Python3.11+, param.json, catálogo/relinker locais. Confere versão/hashes e --verify-patches, sem transferir/aplicar. Várias entradas válidas: sem recomendação. Hash não prova confiança/jogo; catálogo fora da pasta de entrada, mesmas opções na conversão.",
+   "de": "suggest_patches.py braucht Python3.11+, param.json, lokalen Katalog/Relinker. Prüft Version/Hashes/--verify-patches, lädt/wendet nichts an. Mehrere Treffer: keine Empfehlung. Hash kein Vertrauens-/Spielbeleg; Katalog außerhalb Eingabeordner, gleiche Moduloptionen verwenden.",
+   "fr": "suggest_patches.py exige Python3.11+, param.json, catalogue/relinker locaux. Vérifie version/hashes/--verify-patches sans télécharger/appliquer. Plusieurs résultats : pas de conseil. Hash pas confiance/jouabilité ; catalogue hors entrée, mêmes options de modules.",
+   "es": "suggest_patches.py requiere Python3.11+, param.json, catálogo/relinker locales. Verifica versión/hashes/--verify-patches sin descargar/aplicar. Varios válidos: sin recomendación. Hash no prueba confianza/juego; catálogo fuera de entrada, mismas opciones."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-windows-build-tool-errors",
+ "title": {
+  "en": "Later main: distinguish build-tool failures",
+  "zh": "后续main：区分构建工具故障",
+  "ar": "main اللاحق: تمييز أخطاء أدوات البناء",
+  "pt": "Main posterior: erros das ferramentas",
+  "de": "Späteres Main: Buildwerkzeugfehler trennen",
+  "fr": "Main ultérieur : erreurs des outils",
+  "es": "Main posterior: distinguir errores de herramientas"
+ },
+ "body": [
+  {
+   "en": "The python.org Windows installer may provide python/py but no python3: use py -3 instead of the Store alias; other distributions differ. CTest fixes relinker test temp files under build/core/relinker/test-temp, so changing the parent shell’s TEMP does not move them. For libusb version_describe.h, check Git Bash and any overriding PowerShell Group Policy; upstream documents a Git-Bash wrapper via LIBUSB_POWERSHELL_EXECUTABLE without changing policy.",
+   "zh": "python.org的Windows安装可能只有python／py而无python3，遇Store别名用py -3，其他发行不同。CTest把转换器测试临时目录固定在build/core/relinker/test-temp，改父shell TEMP无效。libusb的version_describe.h失败需核对Git Bash及PowerShell组策略；上游给出LIBUSB_POWERSHELL_EXECUTABLE指向Git-Bash包装器，无需改策略。",
+   "ar": "قد يوفر Python ويندوز python/py دون python3؛ استخدم py -3 بدلاً من Store. CTest يثبت temp في build/core/relinker/test-temp فلا يغيره TEMP الأب. راجع Git Bash وسياسة PowerShell عند فشل libusb؛ wrapper موثق دون تعديل السياسة.",
+   "pt": "Python.org Windows pode ter python/py sem python3: use py -3, não alias Store. CTest fixa temporários em build/core/relinker/test-temp. Para libusb confira Git Bash/Group Policy; wrapper LIBUSB_POWERSHELL_EXECUTABLE documentado sem mudar política.",
+   "de": "Python.org-Windows kann python/py ohne python3 liefern: py -3 statt Storealias. CTest fixiert Temp unter build/core/relinker/test-temp. Bei libusb Git Bash/PowerShell-Gruppenrichtlinie prüfen; dokumentierter Wrapper ohne Richtlinienänderung.",
+   "fr": "Python.org Windows peut fournir python/py sans python3 : utilisez py -3. CTest fixe temp sous build/core/relinker/test-temp. Pour libusb, vérifiez Git Bash/stratégie PowerShell ; wrapper documenté sans modifier la stratégie.",
+   "es": "Python.org Windows puede traer python/py sin python3: usa py -3. CTest fija temp en build/core/relinker/test-temp. Para libusb comprueba Git Bash/política PowerShell; wrapper documentado sin cambiar política."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/dev/BUILD.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-windows-red-zone-option",
+ "title": {
+  "en": "Later main: explicit Windows red-zone conversion",
+  "zh": "后续main：显式Windows red-zone转换",
+  "ar": "main اللاحق: تحويل red-zone صريح",
+  "pt": "Main posterior: red-zone explícita no Windows",
+  "de": "Späteres Main: explizite Windows-Red-Zone",
+  "fr": "Main ultérieur : red-zone Windows explicite",
+  "es": "Main posterior: red-zone explícita Windows"
+ },
+ "body": [
+  {
+   "en": "--frame-red-zone is Windows-only and opt-in. It gives supported leaf functions stack frames so host-delivered exceptions do not overwrite live System-V red-zone values. Bounds require .eh_frame; absent metadata fails, unsupported leaves are reported, and patches overlapping framed sites are refused. It is not a general crash fix, Linux flag or proof that an older patched GTA run now works unchanged.",
+   "zh": "--frame-red-zone仅Windows且显式开启，为支持的leaf函数建立栈帧，防主机异常覆盖System-V red-zone存活值；边界需.eh_frame，缺失会失败，未支持函数有报告，与改写站点重叠的补丁会拒绝。非通用崩溃修复、Linux选项或旧GTA补丁结果已可原版复现的证明。",
+   "ar": "--frame-red-zone اختياري لويندوز، يؤطر leaf مدعومة لحماية قيم System-V من الاستثناءات. يحتاج .eh_frame ويفشل بدونه، يبلغ المتروك ويرفض patch متداخلاً. ليس إصلاحاً عاماً أو علم Linux أو إثبات GTA نظيف.",
+   "pt": "--frame-red-zone é opt-in Windows, enquadra folhas suportadas contra exceções. Exige .eh_frame, falha sem ele, relata omissões e recusa patches sobrepostos. Não é fix geral, opção Linux ou prova GTA sem patches.",
+   "de": "--frame-red-zone nur Windows/Opt-in, rahmt unterstützte Blattfunktionen gegen Ausnahmeüberschreiben. Braucht .eh_frame, sonst Fehler; Auslassungen gemeldet, überlappende Patches abgelehnt. Kein allgemeiner Fix/Linuxflag/Stock-GTA-Beleg.",
+   "fr": "--frame-red-zone réservé Windows/opt-in protège les feuilles prises en charge contre les exceptions. Exige .eh_frame, échoue sinon, signale exclusions/refuse patches chevauchants. Pas correctif général/option Linux/preuve GTA sans patches.",
+   "es": "--frame-red-zone solo Windows/opt-in protege hojas admitidas de excepciones. Exige .eh_frame, falla sin él, informa exclusiones/rechaza parches solapados. No fix general/opción Linux/prueba GTA sin parches."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-frame-capture-boundaries",
+ "title": {
+  "en": "Later main: replay captures have different evidence limits",
+  "zh": "后续main：整帧重放的证据边界",
+  "ar": "main اللاحق: حدود دليل إعادة الإطار",
+  "pt": "Main posterior: limites da repetição de frames",
+  "de": "Späteres Main: Beleggrenzen von Frame-Replays",
+  "fr": "Main ultérieur : limites des relectures",
+  "es": "Main posterior: límites de reproducir frames"
+ },
+ "body": [
+  {
+   "en": "APS5_FRAME_CAPTURE records calls and guest-memory snapshots, including the title image; treat capture archives as potentially containing game data, not shareable logs. The default is10frames from flip1, with a low-disk stop below4GiB free. agc_frame_replay can pace calls and release or synthesize waits; record those choices and compare actual reference pixels. Replay timing is not native gameplay FPS, and the new synthetic tests do not certify every game capture.",
+   "zh": "APS5_FRAME_CAPTURE记录调用与guest内存快照，含游戏image，档案可能含游戏数据，不能当可直接分享的日志。默认flip1起10帧、磁盘不足4GiB停止；agc_frame_replay可节奏控制并释放或合成等待，须记选项、比较真实参考像素。重放耗时不等于原生游玩FPS，合成测试不保证所有游戏采集正确。",
+   "ar": "يلتقط APS5_FRAME_CAPTURE نداءات وذاكرة guest بما فيها صورة البرنامج، فالأرشيف قد يحمل بيانات لعبة لا سجلاً للنشر. الافتراضي10إطارات منflip1 ويتوقف دون4GiB. replay قد يصطنع waits؛ سجل الخيارات وقارن pixels، لا تعادل توقيته بـFPS لعبة.",
+   "pt": "APS5_FRAME_CAPTURE inclui chamadas/memória guest e imagem do jogo: arquivo pode conter dados, não um log para partilhar.10frames desdeflip1, para abaixo4GiB livres. Replay pode sintetizar waits; registe opções/pixels de referência, tempo não é FPS nativo.",
+   "de": "APS5_FRAME_CAPTURE enthält Aufrufe/Guest-Speicher samt Spielimage: Archiv kann Spieldaten enthalten, kein frei teilbares Log.10Frames ab Flip1, Stopp unter4GiB. Replay kann Waits synthetisieren; Optionen/Referenzpixel prüfen, Zeit keine nativen Spiel-FPS.",
+   "fr": "APS5_FRAME_CAPTURE contient appels/mémoire guest/image du jeu : archive potentiellement avec données, pas simple log partageable.10frames dèsflip1, arrêt sous4GiB libres. Replay peut synthétiser des waits ; notez options/pixels, durée pas FPS natif.",
+   "es": "APS5_FRAME_CAPTURE incluye llamadas/memoria guest/imagen del juego: archivo puede contener datos, no simple log compartible.10frames desdeflip1, para bajo4GiB libres. Replay puede sintetizar waits; registra opciones/píxeles, tiempo no es FPS nativo."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/dev/BUILD.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-rosetta-xsaveopt",
+ "title": {
+  "en": "Later main: Rosetta instruction conversion remains explicit",
+  "zh": "后续main：Rosetta指令转换仍需显式开启",
+  "ar": "main اللاحق: تحويل Rosetta صريح",
+  "pt": "Main posterior: Rosetta explícito",
+  "de": "Späteres Main: Rosetta explizit",
+  "fr": "Main ultérieur : Rosetta explicite",
+  "es": "Main posterior: Rosetta explícito"
+ },
+ "body": [
+  {
+   "en": "--to-rosetta now also rewrites XSAVEOPT to XSAVE. It implies --to-intel and conflicts with --windows; --macos alone does not enable instruction lowering. Instruction-level M2 evidence is not a Mac commercial-game test, matching runtime build or official Mac release.",
+   "zh": "--to-rosetta现在也把XSAVEOPT改为XSAVE；隐含--to-intel且与--windows冲突，单用--macos不启用指令lowering。M2指令级证据不是Mac商业游戏、配套运行库或官方Mac发行证明。",
+   "ar": "--to-rosetta يحول XSAVEOPT إلى XSAVE ويضم --to-intel، يتعارض مع --windows؛ --macos وحده لا يحول التعليمات. دليل M2 ليس لعبة Mac أو runtime/إصداراً رسمياً.",
+   "pt": "--to-rosetta também converte XSAVEOPT em XSAVE, implica --to-intel e conflita --windows; --macos só não baixa instruções. Prova M2 não é jogo/runtime/release Mac.",
+   "de": "--to-rosetta wandelt auch XSAVEOPT zu XSAVE, impliziert --to-intel, widerspricht --windows; --macos allein senkt keine Instruktionen. M2-Beleg kein Mac-Spiel/Runtime/Release.",
+   "fr": "--to-rosetta convertit aussi XSAVEOPT en XSAVE, implique --to-intel, incompatible --windows ; --macos seul ne traduit pas les instructions. Preuve M2 pas jeu/runtime/release Mac.",
+   "es": "--to-rosetta también convierte XSAVEOPT a XSAVE, implica --to-intel y choca con --windows; --macos solo no baja instrucciones. Prueba M2 no es juego/runtime/release Mac."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-import-audit-name-mismatch",
+ "title": {
+  "en": "Later main: a counted implementation can still fail the import audit",
+  "zh": "后续main：计为implemented也可能导入审计失败",
+  "ar": "main اللاحق: تنفيذ محسوب قد يفشل تدقيق الاستيراد",
+  "pt": "Main posterior: implementação pode falhar audit",
+  "de": "Späteres Main: Implementierung kann Importaudit verfehlen",
+  "fr": "Main ultérieur : implémentation et audit diffèrent",
+  "es": "Main posterior: implementación puede fallar audit"
+ },
+ "body": [
+  {
+   "en": "For an import naming a library, import_audit now requires the literal export name. A hash-only match may still count as implemented/stub, but records symbol_mismatch and exits1; a strong mismatch is a current stop. Imports without a library retain name-to-NID fallback. Review weak bindings and exact module registries, not just the implemented count.",
+   "zh": "带library的import现在需字面export名匹配；仅hash命中即使计implemented／stub，仍标symbol_mismatch并退出1，强import不匹配属当前阻碍。无library者保留name-to-NID回退；须核对weak绑定和准确模块registry，不能只看implemented计数。",
+   "ar": "استيراد باسم مكتبة يحتاج اسم export حرفياً؛ تطابق hash قد يعد implemented/stub لكنه symbol_mismatch وخروج1، والقوي حاجز حالي. دون مكتبة يبقى fallback؛ راجع weak/registry لا العداد فقط.",
+   "pt": "Import com biblioteca exige nome literal; match só hash pode contar implemented/stub mas marca symbol_mismatch/saída1, forte é bloqueio. Sem biblioteca mantém fallback; confira weak/registry, não só contagem.",
+   "de": "Import mit Bibliothek braucht wörtlichen Exportnamen; Hash allein kann als implemented/stub zählen, aber symbol_mismatch/Exit1, starker Import blockiert. Ohne Bibliothek Fallback; Weak/Registry prüfen statt nur Zähler.",
+   "fr": "Import avec bibliothèque exige nom littéral ; hash seul peut compter implemented/stub mais symbol_mismatch/sortie1, import fort bloquant. Sans bibliothèque repli conservé ; vérifiez weak/registry, pas seul compteur.",
+   "es": "Import con biblioteca exige nombre literal; solo hash puede contar implemented/stub pero symbol_mismatch/salida1, fuerte bloquea. Sin biblioteca mantiene fallback; revisa weak/registry, no solo contador."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/50757b01c6d8853954da4698f74bd903e01358c4/docs/user/USAGE.md"
+  }
+ ]
+});

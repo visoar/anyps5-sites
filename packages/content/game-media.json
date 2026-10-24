@@ -2117,5 +2117,54 @@
     "cover": null,
     "screenshots": [],
     "checked": "2026-10-24"
+  },
+  "vice-city-definitive": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/10520#discussioncomment-19168389",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-25"
+  },
+  "far-changing-tides": {
+    "source": "https://www.playstation.com/en-us/games/far--changing-tides/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202107/2813/Os6biEZBZHzt6GU8qqo5eSMT.png",
+    "screenshots": [],
+    "checked": "2026-10-25"
+  },
+  "darkest-dungeon-ii": {
+    "source": "https://www.playstation.com/en-us/games/darkest-dungeon-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1022/40f6dbaa9cfdd3aa69838e4902593daaa777e24783f85249.png",
+    "screenshots": [],
+    "checked": "2026-10-25"
+  },
+  "final-fantasy-resonance": {
+    "source": "https://www.playstation.com/en-us/games/final-fantasy-resonance/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202604/2403/8e22140956f5980e5a33a0f6fa22ced64c3597cfdf20bc0e.png",
+    "screenshots": [],
+    "checked": "2026-10-25"
+  },
+  "ghostwire-tokyo": {
+    "source": "https://www.playstation.com/en-us/games/ghostwire-tokyo/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202202/1522/n6qx9GWCjkivDuCDsHhBwzhF.png",
+    "screenshots": [],
+    "checked": "2026-10-25"
+  },
+  "lost-in-play": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/10383",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-25"
+  },
+  "the-king-is-watching": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/10377#issuecomment-6373976366",
+    "provider": "Community source",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-10-25"
   }
 }

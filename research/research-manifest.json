@@ -51,39 +51,39 @@
     }
   ],
   "latestReview": {
-    "reviewed": "2026-10-24",
-    "incrementSince": "2026-10-22T18:30:00Z",
-    "lastSuccessfulCutoff": "2026-10-22T19:44:00Z",
-    "nextSuccessfulCutoff": "2026-10-23T19:35:00Z",
-    "sourceCommit": "d7948b09f95ea8e302590c09dbb3c0c0b714b84a",
-    "documents": 260,
-    "changedDocuments": 89,
-    "issuesAndPRs": 9900,
-    "issuePRPages": 99,
+    "reviewed": "2026-10-25",
+    "incrementSince": "2026-10-23T18:30:00Z",
+    "lastSuccessfulCutoff": "2026-10-23T19:35:00Z",
+    "nextSuccessfulCutoff": "2026-10-24T19:43:00Z",
+    "sourceCommit": "50757b01c6d8853954da4698f74bd903e01358c4",
+    "documents": 262,
+    "changedDocuments": 49,
+    "issuesAndPRs": 10245,
+    "issuePRPages": 103,
     "inventoryRecovery": {
-      "initialAllPages": 99,
-      "initialAllCount": 9900,
-      "page100": "HTTP422: page parameter unsupported for large dataset; not treated as full inventory",
+      "initialAllPages": 103,
+      "initialAllCount": 10245,
+      "initialLastPage": 45,
       "recoveredVia": {
         "open": {
           "pages": 16,
-          "count": 1558,
-          "lastPage": 58
+          "count": 1516,
+          "lastPage": 16
         },
         "closed": {
-          "pages": 84,
-          "count": 8342,
-          "lastPage": 42
+          "pages": 88,
+          "count": 8728,
+          "lastPage": 28
         }
       },
-      "uniqueUnionWithInitialAndIncrement": 9900,
-      "note": "Open/closed snapshots overlap in time; updated objects de-duplicated by ID/latest timestamp, not one atomic repository state."
+      "uniqueUnionWithInitialAndIncrement": 10245,
+      "note": "Separate open/closed snapshots are exhausted; union de-duplicates by ID/latest timestamp, not an atomic state."
     },
-    "incrementIssuesAndPRs": 1793,
+    "incrementIssuesAndPRs": 1707,
     "incrementPages": 18,
-    "commits": 580,
-    "commitPages": 6,
-    "discussions": 341,
+    "commits": 607,
+    "commitPages": 7,
+    "discussions": 347,
     "discussionPages": 18,
     "completeNestedPagination": true,
     "releasesIncludingPrereleases": 4,
@@ -93,24 +93,24 @@
       "commit": "3fd1cc393b8512c2e989860053f30dee5a8cd1aa",
       "url": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.3"
     },
-    "issueCommentPages": 38,
-    "issueComments": 3754,
+    "issueCommentPages": 35,
+    "issueComments": 3437,
     "reviewCommentPages": 1,
-    "reviewComments": 7,
-    "commentThreads": 1889,
+    "reviewComments": 61,
+    "commentThreads": 1819,
     "unavailableThreads": [
       9418
     ],
-    "unavailableScope": "Historical PR parent/reviews retried: HTTP404; cause unknown; original code comment retained. Not a current-window comment parent.",
+    "unavailableScope": "Historical parent retry HTTP404; reviews remain inaccessible, cause unknown; original code comment retained. Not a current-window missing parent.",
     "prReviewPages": 17,
-    "recentPRReviewConnections": 1670,
-    "reviewBodies": 483,
+    "recentPRReviewConnections": 1650,
+    "reviewBodies": 675,
     "changes": {
-      "newEntries": 23,
-      "newReports": 64
+      "newEntries": 7,
+      "newReports": 51
     },
-    "record": "docs/maintenance/2026-10-24-nightly.md",
-    "rawDirectory": "research/raw/daily-2026-10-24/",
+    "record": "docs/maintenance/2026-10-25-nightly.md",
+    "rawDirectory": "research/raw/daily-2026-10-25/",
     "sourceReviewOnly": true
   }
 }

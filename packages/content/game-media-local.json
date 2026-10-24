@@ -3872,5 +3872,73 @@
   "jumanji-ppsa03973": {
     "cover": null,
     "screenshots": []
+  },
+  "vice-city-definitive": {
+    "cover": null,
+    "screenshots": []
+  },
+  "far-changing-tides": {
+    "cover": {
+      "file": "far-changing-tides/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202107/2813/Os6biEZBZHzt6GU8qqo5eSMT.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202107/2813/Os6biEZBZHzt6GU8qqo5eSMT.png",
+      "sourceSha256": "84c996a71e866df5f9df12f02c2afe6fde0f0498473166b311dae4236d75d99a",
+      "sourceBytes": 156139,
+      "sha256": "3d63be125e14f72a9e9473460ffc163fa376a5042ebf38a5a281080cce74822c",
+      "bytes": 86206,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "darkest-dungeon-ii": {
+    "cover": {
+      "file": "darkest-dungeon-ii/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1022/40f6dbaa9cfdd3aa69838e4902593daaa777e24783f85249.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1022/40f6dbaa9cfdd3aa69838e4902593daaa777e24783f85249.png",
+      "sourceSha256": "892dc2c8a7dea5b813a14c5dcc2b28ae360f53ccbf0abd79d08de0a312bdd3ea",
+      "sourceBytes": 121753,
+      "sha256": "eafa59005edab1459db85d435a2a1b2261699a6b88e38045b1c9521e156299f3",
+      "bytes": 61192,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "final-fantasy-resonance": {
+    "cover": {
+      "file": "final-fantasy-resonance/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202604/2403/8e22140956f5980e5a33a0f6fa22ced64c3597cfdf20bc0e.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202604/2403/8e22140956f5980e5a33a0f6fa22ced64c3597cfdf20bc0e.png",
+      "sourceSha256": "575f56cb2241654e3b7da49d32d3c33b4cf31253f41936c35751b815b2bd2ac5",
+      "sourceBytes": 248720,
+      "sha256": "532ec2513762cbd9d2be07ce4a2da7a50cc25c154d0a32505f5c48548ac10397",
+      "bytes": 156176,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "ghostwire-tokyo": {
+    "cover": {
+      "file": "ghostwire-tokyo/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202202/1522/n6qx9GWCjkivDuCDsHhBwzhF.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202202/1522/n6qx9GWCjkivDuCDsHhBwzhF.png",
+      "sourceSha256": "3974cb7cc68797803a1df5fe688485eee741567b3e322b01770360f80aedf8c5",
+      "sourceBytes": 286506,
+      "sha256": "49709d8ca5567e48cbd48d0b2104e1ea5a59d354753a56f9203e23096ac52e60",
+      "bytes": 192300,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "lost-in-play": {
+    "cover": null,
+    "screenshots": []
+  },
+  "the-king-is-watching": {
+    "cover": null,
+    "screenshots": []
   }
 }

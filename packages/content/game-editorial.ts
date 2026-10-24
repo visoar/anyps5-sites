@@ -4843,33 +4843,33 @@ Object.assign(editorial,{
   }
  },
  "worms-armageddon-anniversary": {
-  "genre": "strategy",
-  "names": {
-   "zh": "百战天虫末日浩劫周年版"
-  },
-  "overview": {
-   "en": "A network-event API stops startup before a battle or menu.",
-   "zh": "网络事件API在战斗或菜单前阻止启动。",
-   "ar": "API حدث شبكة توقف البدء قبل قائمة أو معركة.",
-   "pt": "API de rede para antes do menu/batalha.",
-   "de": "Netzwerk-API stoppt vor Menü/Kampf.",
-   "fr": "API réseau bloque avant menu/bataille.",
-   "es": "API de red para antes de menú/batalla."
-  },
-  "related": [
-   "lodoss-deedlit",
-   "biped"
-  ],
-  "editionNote": {
-   "en": "Reported PS5 package PPSA20052; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
-   "zh": "报告PS5包PPSA20052；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
-   "ar": "حزمة PS5 PPSA20052؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
-   "pt": "Pacote PS5 PPSA20052; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
-   "de": "PS5-Paket PPSA20052; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
-   "fr": "Paquet PS5 PPSA20052 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
-   "es": "Paquete PS5 PPSA20052; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
-  }
+ "genre": "strategy",
+ "names": {
+  "zh": "百战天虫末日浩劫周年版"
  },
+ "overview": {
+  "en": "A current-main Windows report passes the old network-event stop and reaches menus; a match is unverified.",
+  "zh": "当前main的Windows报告越过旧网络事件停止并到菜单，对战未验证。",
+  "ar": "تقرير Windows على Main يتجاوز عطل الشبكة إلى القوائم، دون مباراة مثبتة.",
+  "pt": "Windows na main passa falha antiga até menus, partida não verificada.",
+  "de": "Windows auf Main passiert alten Netzwerkstopp bis Menü, Partie offen.",
+  "fr": "Windows sur main passe ancien arrêt réseau jusqu’aux menus, partie non vérifiée.",
+  "es": "Windows en main supera fallo de red hasta menús, partida sin verificar."
+ },
+ "related": [
+  "lodoss-deedlit",
+  "biped"
+ ],
+ "editionNote": {
+  "en": "Reported PS5 package PPSA20052; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+  "zh": "报告PS5包PPSA20052；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+  "ar": "حزمة PS5 PPSA20052؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+  "pt": "Pacote PS5 PPSA20052; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+  "de": "PS5-Paket PPSA20052; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+  "fr": "Paquet PS5 PPSA20052 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+  "es": "Paquete PS5 PPSA20052; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+ }
+},
  "sea-of-stars": {
   "genre": "turnBasedRpg",
   "names": {
@@ -5011,33 +5011,33 @@ Object.assign(editorial,{
   }
  },
  "coffee-talk": {
-  "genre": "adventure",
-  "names": {
-   "zh": "咖啡心语"
-  },
-  "overview": {
-   "en": "Missing bundled-module loads precede a null fault; setup is unresolved.",
-   "zh": "缺少捆绑模块加载后发生空地址故障，设置仍待查。",
-   "ar": "فشل وحدات قبل null، الإعداد غير محسوم.",
-   "pt": "Módulos ausentes antes de falha null, instalação por resolver.",
-   "de": "Fehlende Module vor Nullfehler, Setup ungeklärt.",
-   "fr": "Modules absents avant erreur null, installation non résolue.",
-   "es": "Módulos ausentes antes de fallo null, instalación sin resolver."
-  },
-  "related": [
-   "animal-well",
-   "greak-memories-of-azur"
-  ],
-  "editionNote": {
-   "en": "Reported PS5 package PPSA07057; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC. Artwork identifies different regional package(s) PPSA07056, not this tested package.",
-   "zh": "报告PS5包PPSA07057；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。 图片对应不同地区包PPSA07056，不用于认定本次测试包。",
-   "ar": "حزمة PS5 PPSA07057؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر. الصورة لحزمة إقليمية مختلفة PPSA07056 لا الحزمة المختبرة.",
-   "pt": "Pacote PS5 PPSA07057; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado. Imagem de pacote regional diferente PPSA07056, não o teste.",
-   "de": "PS5-Paket PPSA07057; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC. Bild eines anderen Regionalpakets PPSA07056, nicht des Tests.",
-   "fr": "Paquet PS5 PPSA07057 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé. Image d’un autre paquet régional PPSA07056, pas cet essai.",
-   "es": "Paquete PS5 PPSA07057; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado. Imagen de otro paquete regional PPSA07056, no de esta prueba."
-  }
+ "genre": "adventure",
+ "names": {
+  "zh": "咖啡心语"
  },
+ "overview": {
+  "en": "Windows now reaches profile creation and café dialogue after converting the extra Unity modules.",
+  "zh": "补转额外Unity模块后，Windows现可到建档及咖啡店对话。",
+  "ar": "Windows يصل الملف وحوار المقهى بعد تحويل وحدات Unity الإضافية.",
+  "pt": "Windows chega perfil/diálogo após converter módulos Unity extra.",
+  "de": "Windows erreicht Profil/Cafédialog nach Konvertierung zusätzlicher Unity-Module.",
+  "fr": "Windows atteint profil/dialogue après conversion des modules Unity supplémentaires.",
+  "es": "Windows llega perfil/diálogo tras convertir módulos Unity extra."
+ },
+ "related": [
+  "animal-well",
+  "greak-memories-of-azur"
+ ],
+ "editionNote": {
+  "en": "Reported PS5 package PPSA07057; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC. Artwork identifies different regional package(s) PPSA07056, not this tested package.",
+  "zh": "报告PS5包PPSA07057；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。 图片对应不同地区包PPSA07056，不用于认定本次测试包。",
+  "ar": "حزمة PS5 PPSA07057؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر. الصورة لحزمة إقليمية مختلفة PPSA07056 لا الحزمة المختبرة.",
+  "pt": "Pacote PS5 PPSA07057; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado. Imagem de pacote regional diferente PPSA07056, não o teste.",
+  "de": "PS5-Paket PPSA07057; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC. Bild eines anderen Regionalpakets PPSA07056, nicht des Tests.",
+  "fr": "Paquet PS5 PPSA07057 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé. Image d’un autre paquet régional PPSA07056, pas cet essai.",
+  "es": "Paquete PS5 PPSA07057; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado. Imagen de otro paquete regional PPSA07056, no de esta prueba."
+ }
+},
  "bloodrayne-betrayal-fresh-bites": {
   "genre": "action",
   "names": {
@@ -5263,6 +5263,204 @@ Object.assign(editorial,{
   }
  }
 });
+Object.assign(editorial,{
+ "vice-city-definitive": {
+  "genre": "action",
+  "names": {
+   "zh": "侠盗猎车手：罪恶都市最终版"
+  },
+  "overview": {
+   "en": "Tommy Vercetti’s neon-lit city belongs to the remastered trilogy. Here, PlayGo and queue-wait experiments remain distinct from demonstrated open-world play.",
+   "zh": "汤米的霓虹城市属于重制三部曲；这里的PlayGo及队列等待实验，仍与已证实的开放世界游玩分开。",
+   "ar": "مدينة تومي المضيئة جزء من الثلاثية المحسنة؛ تجارب PlayGo والانتظار هنا منفصلة عن لعب عالم مفتوح مثبت.",
+   "pt": "A cidade de Tommy integra a trilogia remasterizada; experiências PlayGo e esperas não equivalem a jogo aberto demonstrado.",
+   "de": "Tommys Neonstadt gehört zur überarbeiteten Trilogie; PlayGo-/Warteexperimente belegen hier noch kein offenes Weltspiel.",
+   "fr": "La ville de Tommy appartient à la trilogie remastérisée ; expériences PlayGo/attentes distinctes du jeu ouvert démontré.",
+   "es": "La ciudad de Tommy pertenece a la trilogía remasterizada; experimentos PlayGo/esperas separados del juego abierto demostrado."
+  },
+  "related": [
+   "gta-iii-definitive",
+   "control-resonant"
+  ],
+  "editionNote": {
+   "en": "The run identifies PPSA03530. Match content version, executable, host and patches per report; promotional artwork does not identify tested extras.",
+   "zh": "报告标识PPSA03530；逐次匹配内容版本、程序、主机与补丁，宣传图不证明附加内容已测试。",
+   "ar": "التقرير يحدد PPSA03530؛ طابق النسخة والبرنامج والمضيف والتعديلات، والصورة الدعائية لا تثبت إضافات مختبرة.",
+   "pt": "Relato identifica PPSA03530; confira versão/executável/host/alterações. Arte promocional não prova extras testados.",
+   "de": "Bericht nennt PPSA03530; Version/Programm/Host/Patches abgleichen. Werbebild belegt keine getesteten Extras.",
+   "fr": "Rapport identifie PPSA03530 ; vérifiez version/exécutable/hôte/patches. Image promotionnelle ne prouve pas les extras testés.",
+   "es": "Relato identifica PPSA03530; comprueba versión/ejecutable/host/patches. Arte promocional no prueba extras probados."
+  }
+ },
+ "far-changing-tides": {
+  "genre": "puzzle",
+  "names": {
+   "zh": "远方：涌变暗潮"
+  },
+  "overview": {
+   "en": "A boy and his ship explore a flooded landscape. Patched swimming and one checkpoint load are meaningful opening evidence, with audio and the voyage still unverified.",
+   "zh": "男孩与船探索被淹没的世界；补丁游泳及一次存档读入属于片头证据，声音和完整航程仍待验证。",
+   "ar": "فتى وسفينته يستكشفان عالماً غارقاً؛ سباحة معدلة وتحميل حفظ واحد دليل بداية، والصوت والرحلة غير مؤكدين.",
+   "pt": "Um rapaz e o barco exploram um mundo inundado; natação modificada e um save são provas iniciais, som/viagem por verificar.",
+   "de": "Junge und Schiff erkunden eine Flutwelt; gepatchtes Schwimmen und ein Save sind frühe Belege, Ton/Reise bleiben offen.",
+   "fr": "Un garçon et son bateau explorent un monde inondé ; nage modifiée et un save sont des preuves initiales, son/voyage ouverts.",
+   "es": "Un chico y su barco exploran un mundo inundado; natación modificada y un save son pruebas iniciales, audio/viaje pendientes."
+  },
+  "related": [
+   "greak-memories-of-azur",
+   "animal-well"
+  ],
+  "editionNote": {
+   "en": "The run identifies PPSA03766. Match content version, executable, host and patches per report; promotional artwork does not identify tested extras.",
+   "zh": "报告标识PPSA03766；逐次匹配内容版本、程序、主机与补丁，宣传图不证明附加内容已测试。",
+   "ar": "التقرير يحدد PPSA03766؛ طابق النسخة والبرنامج والمضيف والتعديلات، والصورة الدعائية لا تثبت إضافات مختبرة.",
+   "pt": "Relato identifica PPSA03766; confira versão/executável/host/alterações. Arte promocional não prova extras testados.",
+   "de": "Bericht nennt PPSA03766; Version/Programm/Host/Patches abgleichen. Werbebild belegt keine getesteten Extras.",
+   "fr": "Rapport identifie PPSA03766 ; vérifiez version/exécutable/hôte/patches. Image promotionnelle ne prouve pas les extras testés.",
+   "es": "Relato identifica PPSA03766; comprueba versión/ejecutable/host/patches. Arte promocional no prueba extras probados."
+  }
+ },
+ "darkest-dungeon-ii": {
+ "genre": "turnBasedRpg",
+ "names": {
+  "zh": "暗黑地牢II"
+ },
+ "overview": {
+  "en": "Four heroes travel by stagecoach between turn-based encounters. One Linux composition completes the opening battle and road event; later battles and campaign stability remain unqualified.",
+  "zh": "四名英雄乘马车穿行并参加回合制遭遇；一组Linux补丁构建完成首战与道路事件，后续战斗和战役稳定性仍未验证。",
+  "ar": "أربعة أبطال بعربة بين مواجهات بالأدوار؛ تركيب Linux يكمل أول معركة وحدث طريق، دون إثبات استقرار الحملة.",
+  "pt": "Quatro heróis viajam de diligência entre combates por turnos; uma composição Linux termina o primeiro combate/evento, não valida campanha.",
+  "de": "Vier Helden reisen per Kutsche zwischen Rundenkämpfen; eine Linux-Komposition schafft ersten Kampf/Ereignis, Kampagne bleibt ungeprüft.",
+  "fr": "Quatre héros voyagent en diligence entre combats au tour par tour ; un montage Linux finit premier combat/événement, campagne non validée.",
+  "es": "Cuatro héroes viajan en diligencia entre combates por turnos; una composición Linux termina primer combate/evento, campaña sin validar."
+ },
+ "related": [
+  "persona-3-reload",
+  "trails-sky-2nd-chapter"
+ ],
+ "editionNote": {
+  "en": "The run identifies PPSA19591. Match content version, executable, host and patches per report; promotional artwork does not identify tested extras. Artwork lists regional package PPSA19590, different from the tested package. The cover advertises Oblivion Edition; tested DLC/edition contents are not established.",
+  "zh": "报告标识PPSA19591；逐次匹配内容版本、程序、主机与补丁，宣传图不证明附加内容已测试。 配图列出另一地区包PPSA19590，与报告包不同。 封面标有Oblivion Edition，不证明实测DLC或版本内容。",
+  "ar": "التقرير يحدد PPSA19591؛ طابق النسخة والبرنامج والمضيف والتعديلات، والصورة الدعائية لا تثبت إضافات مختبرة. الصورة تسمي حزمة إقليمية مختلفة PPSA19590. الغلاف Oblivion Edition لا يثبت DLC أو محتوى النسخة المختبرة.",
+  "pt": "Relato identifica PPSA19591; confira versão/executável/host/alterações. Arte promocional não prova extras testados. Arte lista pacote regional distinto PPSA19590. Capa Oblivion Edition não prova DLC/conteúdo testado.",
+  "de": "Bericht nennt PPSA19591; Version/Programm/Host/Patches abgleichen. Werbebild belegt keine getesteten Extras. Bild nennt anderes Regionalpaket PPSA19590. Oblivion-Edition-Cover belegt kein getestetes DLC/Edition.",
+  "fr": "Rapport identifie PPSA19591 ; vérifiez version/exécutable/hôte/patches. Image promotionnelle ne prouve pas les extras testés. Image nomme un autre paquet régional PPSA19590. Couverture Oblivion Edition ne prouve pas DLC/contenu testé.",
+  "es": "Relato identifica PPSA19591; comprueba versión/ejecutable/host/patches. Arte promocional no prueba extras probados. Imagen identifica otro paquete regional PPSA19590. Portada Oblivion Edition no prueba DLC/contenido probado."
+ }
+},
+ "final-fantasy-resonance": {
+  "genre": "turnBasedRpg",
+  "names": {
+   "zh": "最终幻想Resonance"
+  },
+  "overview": {
+   "en": "An HD-2D crystal adventure with turn-based battles. Reviewed Linux evidence stops in the narrated opening; a separate RTX5080 gameplay claim lacks enough host details for a platform conclusion.",
+   "zh": "HD-2D水晶冒险采用回合制战斗；已审核Linux证据停在旁白片头，另一RTX5080游玩主张缺少足够主机资料，未归入平台结论。",
+   "ar": "مغامرة بلورات HD-2D وقتال بالأدوار؛ دليل Linux عند المقدمة، وادعاء لعب RTX5080 منفصل تنقصه تفاصيل المضيف.",
+   "pt": "Aventura HD-2D de cristais e turnos; prova Linux fica na intro, outro relato RTX5080 carece de detalhes do host.",
+   "de": "HD-2D-Kristallabenteuer mit Rundenkämpfen; Linux-Beleg endet im Intro, separater RTX5080-Spielbericht hat unvollständigen Hostkontext.",
+   "fr": "Aventure HD-2D de cristaux au tour par tour ; preuve Linux limitée à l’intro, récit RTX5080 distinct sans contexte hôte suffisant.",
+   "es": "Aventura HD-2D de cristales por turnos; prueba Linux queda en intro, relato RTX5080 separado con host insuficiente."
+  },
+  "related": [
+   "persona-3-reload",
+   "trails-sky-2nd-chapter"
+  ],
+  "editionNote": {
+   "en": "The run identifies PPSA31544. Match content version, executable, host and patches per report; promotional artwork does not identify tested extras. The source page mixes standard/deluxe PPSA31544 and demo PPSA36303; its image does not identify the tested edition.",
+   "zh": "报告标识PPSA31544；逐次匹配内容版本、程序、主机与补丁，宣传图不证明附加内容已测试。 资料页同时列标准／豪华PPSA31544和试玩PPSA36303，图片不识别实测版本。",
+   "ar": "التقرير يحدد PPSA31544؛ طابق النسخة والبرنامج والمضيف والتعديلات، والصورة الدعائية لا تثبت إضافات مختبرة. الصفحة تجمع standard/deluxe31544 وdemo36303؛ الصورة لا تحدد النسخة المختبرة.",
+   "pt": "Relato identifica PPSA31544; confira versão/executável/host/alterações. Arte promocional não prova extras testados. Página mistura standard/deluxe31544/demo36303; imagem não identifica edição testada.",
+   "de": "Bericht nennt PPSA31544; Version/Programm/Host/Patches abgleichen. Werbebild belegt keine getesteten Extras. Seite mischt Standard/Deluxe31544/Demo36303; Bild identifiziert keine Testedition.",
+   "fr": "Rapport identifie PPSA31544 ; vérifiez version/exécutable/hôte/patches. Image promotionnelle ne prouve pas les extras testés. Page mélange standard/deluxe31544/demo36303 ; image ne fixe pas l’édition testée.",
+   "es": "Relato identifica PPSA31544; comprueba versión/ejecutable/host/patches. Arte promocional no prueba extras probados. Página mezcla estándar/deluxe31544/demo36303; imagen no identifica edición probada."
+  }
+ },
+ "ghostwire-tokyo": {
+  "genre": "action",
+  "names": {
+   "zh": "幽灵线：东京"
+  },
+  "overview": {
+   "en": "Tokyo’s supernatural mystery pairs exploration with spectral combat. Windows tests here reach settings and menus, with intermittent storage refusal and a separate render-thread timeout.",
+   "zh": "东京的超自然谜团结合探索与灵能战斗；这里的Windows测试仅到设置和菜单，仍有偶发storage拒绝及独立RenderThread超时。",
+   "ar": "لغز طوكيو الخارق يجمع الاستكشاف والقتال الروحي؛ اختبارات Windows تصل إعدادات/قوائم مع رفض storage ومهلة عرض منفصلة.",
+   "pt": "Mistério sobrenatural de Tóquio mistura exploração/combate; testes Windows chegam opções/menus com recusa storage e timeout separados.",
+   "de": "Tokios Geistermysterium verbindet Erkundung/Kampf; Windows hier bis Einstellungen/Menüs mit Storage-Stopp und separatem Render-Timeout.",
+   "fr": "Mystère surnaturel de Tokyo mêlant exploration/combat ; Windows jusqu’aux réglages/menus, refus storage et délai de rendu distincts.",
+   "es": "Misterio sobrenatural de Tokio con exploración/combate; Windows hasta ajustes/menús, rechazo storage y timeout separados."
+  },
+  "related": [
+   "gta-iii-definitive",
+   "control-resonant"
+  ],
+  "editionNote": {
+   "en": "The run identifies PPSA01337. Match content version, executable, host and patches per report; promotional artwork does not identify tested extras.",
+   "zh": "报告标识PPSA01337；逐次匹配内容版本、程序、主机与补丁，宣传图不证明附加内容已测试。",
+   "ar": "التقرير يحدد PPSA01337؛ طابق النسخة والبرنامج والمضيف والتعديلات، والصورة الدعائية لا تثبت إضافات مختبرة.",
+   "pt": "Relato identifica PPSA01337; confira versão/executável/host/alterações. Arte promocional não prova extras testados.",
+   "de": "Bericht nennt PPSA01337; Version/Programm/Host/Patches abgleichen. Werbebild belegt keine getesteten Extras.",
+   "fr": "Rapport identifie PPSA01337 ; vérifiez version/exécutable/hôte/patches. Image promotionnelle ne prouve pas les extras testés.",
+   "es": "Relato identifica PPSA01337; comprueba versión/ejecutable/host/patches. Arte promocional no prueba extras probados."
+  }
+ },
+ "lost-in-play": {
+  "genre": "puzzle",
+  "names": {
+   "zh": "迷失游乐园"
+  },
+  "overview": {
+   "en": "A cartoon puzzle adventure built around fantastical creatures and visual storytelling. Converting bundled Unity modules changes the reported startup result, while the follow-up’s timing and build remain incomplete.",
+   "zh": "以奇幻生物和视觉叙事构成的卡通解谜冒险；补转Unity模块改变了报告中的启动结果，后续时长和构建资料仍不完整。",
+   "ar": "مغامرة ألغاز كرتونية ومخلوقات خيالية؛ تحويل وحدات Unity يغير نتيجة البدء المبلغ عنها، مع نقص مدة وبناء المتابعة.",
+   "pt": "Aventura cartoon de puzzles e criaturas; converter módulos Unity muda o arranque relatado, mas duração/build do seguimento incompletos.",
+   "de": "Cartoon-Rätselabenteuer mit Fantasiewesen; konvertierte Unity-Module ändern den Startbericht, Folge-Build/Dauer bleiben unvollständig.",
+   "fr": "Aventure dessinée d’énigmes et créatures ; modules Unity convertis changent le démarrage rapporté, durée/build du suivi incomplets.",
+   "es": "Aventura de puzles y criaturas de dibujos; convertir módulos Unity cambia el inicio reportado, duración/build posteriores incompletos."
+  },
+  "related": [
+   "greak-memories-of-azur",
+   "animal-well"
+  ],
+  "editionNote": {
+   "en": "The run identifies PPSA22116. Match content version, executable, host and patches per report; promotional artwork does not identify tested extras.",
+   "zh": "报告标识PPSA22116；逐次匹配内容版本、程序、主机与补丁，宣传图不证明附加内容已测试。",
+   "ar": "التقرير يحدد PPSA22116؛ طابق النسخة والبرنامج والمضيف والتعديلات، والصورة الدعائية لا تثبت إضافات مختبرة.",
+   "pt": "Relato identifica PPSA22116; confira versão/executável/host/alterações. Arte promocional não prova extras testados.",
+   "de": "Bericht nennt PPSA22116; Version/Programm/Host/Patches abgleichen. Werbebild belegt keine getesteten Extras.",
+   "fr": "Rapport identifie PPSA22116 ; vérifiez version/exécutable/hôte/patches. Image promotionnelle ne prouve pas les extras testés.",
+   "es": "Relato identifica PPSA22116; comprueba versión/ejecutable/host/patches. Arte promocional no prueba extras probados."
+  }
+ },
+ "the-king-is-watching": {
+  "genre": "roguelike",
+  "names": {
+   "zh": "国王在看着你"
+  },
+  "overview": {
+   "en": "A roguelite kingdom produces resources where the king looks. Its Windows report already reaches gameplay, but intermittent guest-memory faults still lack a known trigger.",
+   "zh": "Roguelite王国围绕国王注视的位置生产资源；Windows报告已进游戏，但偶发guest内存故障仍无已知触发条件。",
+   "ar": "مملكة roguelite تنتج حيث ينظر الملك؛ تقرير Windows يبلغ اللعب مع أعطال ذاكرة guest متقطعة بلا محفز معروف.",
+   "pt": "Reino roguelite produz onde o rei olha; relato Windows chega ao jogo, mas falhas de memória guest sem gatilho conhecido.",
+   "de": "Roguelite-Königreich produziert unter dem Blick des Königs; Windows erreicht Spiel, sporadische Guest-Speicherfehler ohne bekannten Auslöser.",
+   "fr": "Royaume roguelite produisant sous le regard du roi ; Windows atteint le jeu, fautes mémoire guest intermittentes sans déclencheur connu.",
+   "es": "Reino roguelite produce bajo la mirada del rey; Windows llega al juego, fallos de memoria guest intermitentes sin desencadenante conocido."
+  },
+  "related": [
+   "hades-ii",
+   "darkest-dungeon-ii"
+  ],
+  "editionNote": {
+   "en": "The run identifies PPSA34959. Match content version, executable, host and patches per report; promotional artwork does not identify tested extras.",
+   "zh": "报告标识PPSA34959；逐次匹配内容版本、程序、主机与补丁，宣传图不证明附加内容已测试。",
+   "ar": "التقرير يحدد PPSA34959؛ طابق النسخة والبرنامج والمضيف والتعديلات، والصورة الدعائية لا تثبت إضافات مختبرة.",
+   "pt": "Relato identifica PPSA34959; confira versão/executável/host/alterações. Arte promocional não prova extras testados.",
+   "de": "Bericht nennt PPSA34959; Version/Programm/Host/Patches abgleichen. Werbebild belegt keine getesteten Extras.",
+   "fr": "Rapport identifie PPSA34959 ; vérifiez version/exécutable/hôte/patches. Image promotionnelle ne prouve pas les extras testés.",
+   "es": "Relato identifica PPSA34959; comprueba versión/ejecutable/host/patches. Arte promocional no prueba extras probados."
+  }
+ }
+});
 export const media=sources as Record<string,{source:string;provider:string;cover:string|null;screenshots:string[];checked:string}>;
 export const genreLabel=(slug:string,locale:keyof Text)=>genres[editorial[slug].genre][locale];
 export const gameName=(game:{slug:string;name:string},locale:keyof Text)=>editorial[game.slug]?.names[locale]||game.name;
@@ -5275,3 +5473,5 @@ const nameAliases:Record<string,string[]>={
 export const gameSearchText=(game:{slug:string;name:string;titleId:string|null})=>[game.name,game.titleId,...Object.values(editorial[game.slug]?.names||{}),...(nameAliases[game.slug]||[])].filter(Boolean).join(' ');
 
 editorial["hi-fi-rush"].editionNote=L("The report is PPSA17191; US PlayStation artwork identifies PPSA17168. Shared promotional art does not establish the tested region or Deluxe content.","报告为PPSA17191，美国PlayStation图片对应PPSA17168；共用宣传图不证明测试地区或Deluxe内容。","التقرير PPSA17191 وصورة المتجر الأمريكي PPSA17168؛ الصورة المشتركة لا تثبت المنطقة أو محتوى Deluxe المختبر.","Relatório PPSA17191, arte americana PPSA17168; imagem partilhada não prova região ou conteúdo Deluxe testado.","Bericht PPSA17191, US-Werbung PPSA17168; gemeinsames Bild belegt weder Testregion noch Deluxe-Inhalt.","Rapport PPSA17191, image américaine PPSA17168 ; l’art partagé ne prouve ni région ni contenu Deluxe testé.","Informe PPSA17191, imagen estadounidense PPSA17168; arte compartido no prueba región ni contenido Deluxe probado.");
+
+editorial['jumanji-ppsa03973'].names.zh='勇敢者游戏：电子游戏';
