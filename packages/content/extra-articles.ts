@@ -475,3 +475,73 @@ extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
   }
  ]
 });
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
+ "id": "main-converted-module-layout",
+ "title": {
+  "en": "Follow the generated module layout",
+  "zh": "按生成布局放置转换模块",
+  "ar": "اتبع ترتيب الوحدات المولد",
+  "pt": "Siga a disposição gerada",
+  "de": "Erzeugtes Modullayout verwenden",
+  "fr": "Suivre la disposition générée",
+  "es": "Sigue la disposición generada"
+ },
+ "body": [
+  {
+   "en": "Current main prints app0/<module folder>/<name>.guest.prx. Its dynamic loader explicitly chooses the converted sibling; GAME_TESTING now says keep the original beside it. Silt’s earlier2dc8e456 report removed originals to avoid its older resolver: preserve that recipe with its version. New module-parent scanning suggests --module-dir for matching unconverted modules but cannot report unreadable files. A clean scan is not proof every runtime load exists.",
+   "zh": "当前main打印app0／模块目录／<name>.guest.prx，动态加载器明确选择转换副本，GAME_TESTING现要求原件留旁。Silt旧2dc8e456报告通过移走原件避开旧解析器，应保留其版本配方。新增模块父目录扫描为匹配的未转换模块提示--module-dir，但不报告不可读文件；扫描无警告不证明运行期模块齐全。",
+   "ar": "main الحالي يطبع app0/<folder>/<name>.guest.prx والـ loader يختار المحول؛ GAME_TESTING يبقي الأصل بجانبه. Silt2dc8e456 أزال الأصل لحل قديم، احفظ وصفته بإصداره. فحص الأب يقترح--module-dir للمطابق غير المحول، ولا يرى غير المقروء؛ نظافته لا تثبت كل تحميل.",
+   "pt": "Main imprimeapp0/<pasta>/<nome>.guest.prxe loaderescolhe convertido; GAME_TESTINGguarda original ao lado. Silt2dc8e456removeu originais pelo resolverantigo, mantenha receita/versionada. Scan do pai sugere--module-dirpara módulos, não vê ilegíveis; sem aviso não prova todos loads.",
+   "de": "Main drucktapp0/<Ordner>/<Name>.guest.prx, Loader wählt konvertierte Kopie; GAME_TESTINGbehält Original daneben. Silt2dc8e456entfernte Originale wegen altem Resolver, Rezept bleibt versioniert. Parent-Scan schlägt--module-dirvor, übersieht unlesbare Dateien; kein Warnhinweis beweist keine Vollständigkeit.",
+   "fr": "Main afficheapp0/<dossier>/<nom>.guest.prx, loaderchoisit converti; GAME_TESTINGgarde original à côté. Silt2dc8e456retirait originaux pour ancien resolver, recette reste versionnée. Scan parent propose--module-dir, ignore illisibles; sans avertissement ne prouve tous loads.",
+   "es": "Main imprimeapp0/<carpeta>/<nombre>.guest.prx, loaderelige convertido; GAME_TESTINGconserva original al lado. Silt2dc8e456quitó originales por resolverviejo, mantén receta versionada. Scan del padre propone--module-dir, no informa ilegibles; sin aviso no prueba todos loads."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/6bc113969895900890ae9bb4c473beb840ba12db/docs/user/USAGE.md"
+  },
+  {
+   "label": "Pinned dynamic loader",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/6bc113969895900890ae9bb4c473beb840ba12db/core/libs/prx/libkernel/Module/src/DynamicLoader.cpp#L253-L283"
+  },
+  {
+   "label": "Older Silt report",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/10843"
+  }
+ ]
+});
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
+ "id": "main-import-count-snapshots",
+ "title": {
+  "en": "Keep a bounded import-call snapshot",
+  "zh": "保留有边界的导入调用快照",
+  "ar": "لقطة عدد نداءات الاستيراد",
+  "pt": "Guardar contagens de imports",
+  "de": "Importaufrufe als Snapshot",
+  "fr": "Instantané des appels importés",
+  "es": "Instantánea de llamadas importadas"
+ },
+ "body": [
+  {
+   "en": "With --trace-imports and APS5_TRACE_CALLS , set APS5_TRACE_CALLS_FILE to a local path for per-import call counts rewritten every10s, most called first. A killed run retains only the latest rewrite; absence there does not prove never called. trace_digest skips window-capture lines and reports identity changes. Cold/warm caches, scene and all switches must match before comparing timings.",
+   "zh": "配合--trace-imports和APS5_TRACE_CALLS，APS5_TRACE_CALLS_FILE指定本地路径，每10秒重写导入调用数、频次降序。进程被杀只保留最后重写，未出现不等于从未调用。trace_digest跳过窗口抓取行并报告身份变化；比较计时前对齐冷／热缓存、场景及全部开关。",
+   "ar": "مع--trace-imports و APS5_TRACE_CALLS يكتب APS5_TRACE_CALLS_FILE عدادات محلية كل 10 ث. القتل يبقي آخر كتابة فقط، الغياب ليس عدم نداء. trace_digest يتجاوز windowcaptures ويبلغ تغير الهوية. طابق الكاش/المشهد/المفاتيح للمقارنة.",
+   "pt": "Com--trace-importse APS5_TRACE_CALLS , APS5_TRACE_CALLS_FILE reescreve contagens locais10s. Processo morto guarda última escrita, ausência não prova nunca chamado. trace_digestsalta capturas e avisa identidade. Compare cache/cena/opções iguais.",
+   "de": "Mit--trace-imports/ APS5_TRACE_CALLS schreibt APS5_TRACE_CALLS_FILE alle10s lokale Zähler. Getöteter Lauf behält letzten Stand, Fehlen beweist keinen Nichtaufruf. trace_digestüberspringt Fenstercaptures, meldet Identitätswechsel. Cache/Szene/Schalter abgleichen.",
+   "fr": "Avec--trace-imports/ APS5_TRACE_CALLS , APS5_TRACE_CALLS_FILE réécrit compteurs locaux10s. Processus tué garde dernier état, absence ne prouve jamais appelé. trace_digestsaute captures, signale identité. Appariez cache/scène/options.",
+   "es": "Con--trace-imports/ APS5_TRACE_CALLS , APS5_TRACE_CALLS_FILE reescribe contadores10s. Proceso muerto conserva última escritura, ausencia no prueba nunca llamado. trace_digestomite capturas, informa identidad. Empareja caché/escena/opciones."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/6bc113969895900890ae9bb4c473beb840ba12db/docs/user/USAGE.md"
+  }
+ ]
+});
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.reviewed="2026-10-26";

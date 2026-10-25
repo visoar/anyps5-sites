@@ -3940,5 +3940,61 @@
   "the-king-is-watching": {
     "cover": null,
     "screenshots": []
+  },
+  "octopath-traveler-0": {
+    "cover": {
+      "file": "octopath-traveler-0/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202505/2109/6eb9221ab73f97643997949976e2e13f374ed79e4e244060.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202505/2109/6eb9221ab73f97643997949976e2e13f374ed79e4e244060.png",
+      "sourceSha256": "6685e62befe795836df9794df34a5705bb9c0e10e250aae43e2ec673b5def71b",
+      "sourceBytes": 397006,
+      "sha256": "06ca644e1dc854787ab69916c5b553f3170fb9fcc849ce64fd3c27dc494d08c4",
+      "bytes": 324550,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "mouse-pi-for-hire": {
+    "cover": {
+      "file": "mouse-pi-for-hire/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0206/ec04116f30616ee2ef7e91c70c96bb7773b9d95a54e4d2b9.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0206/ec04116f30616ee2ef7e91c70c96bb7773b9d95a54e4d2b9.png",
+      "sourceSha256": "187b2c3a5b990c90f896765ffea3183a1704c621c79346a4899a8010737e5d58",
+      "sourceBytes": 113592,
+      "sha256": "3c8ec1dddedd1d6c333dbe8bad74d7e318dfc8636d123b148a685805a4df5e0a",
+      "bytes": 69272,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "resident-evil-requiem": {
+    "cover": {
+      "file": "resident-evil-requiem/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1205/79661d7a2bdb9784749b4e57e1456ca89f7ac7bed8615aee.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1205/79661d7a2bdb9784749b4e57e1456ca89f7ac7bed8615aee.png",
+      "sourceSha256": "47ddc027612714ecef2e0f431d3db259ba912411eb4ffc2ce2b1491b99eda6d8",
+      "sourceBytes": 276038,
+      "sha256": "3ef6a73537d912ab61c2d77cf0720d222ffe6bbac61909ded0ed07839f5939f8",
+      "bytes": 206406,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "subnautica-below-zero": {
+    "cover": {
+      "file": "subnautica-below-zero/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202103/1000/ajXEVMJhzxXuOezVXR6bFOkK.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202103/1000/ajXEVMJhzxXuOezVXR6bFOkK.png",
+      "sourceSha256": "500e1a70b10a5eac42e17e86c30d90996ab3a01ed771de6553dab76e7623b452",
+      "sourceBytes": 221325,
+      "sha256": "e3c4a32cea9a397ace3a050158f56077e15c14dc121980502978b5dbc092ef1c",
+      "bytes": 131484,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
   }
 }

@@ -3,9 +3,11 @@ import assert from 'node:assert/strict';
 import {filterGames,matchesReport,games} from '../packages/content/games';
 import {localPath,localeConfig,locales} from '../packages/content/locales';
 test('platform, stage and evidence must match one report, not separate reports',()=>{
- assert.equal(matchesReport({platform:'windows',stage:'ingame',evidence:'official'} as any,{platform:'linux',evidence:'official'}),false);
+ const windows=games.find(g=>g.slug==='dreaming-sarah')!.reports[0];
+ const linux={...windows,platform:'linux' as const,stage:'menu' as const};
+ assert.equal(matchesReport(windows,{platform:'linux',evidence:'official'}),false);
  assert.deepEqual(filterGames('Sarah',{platform:'linux',evidence:'official'}),[]);
- assert.equal(filterGames('silt',{platform:'linux',stage:'ingame'}).length,0);
+ assert.equal([windows,linux].some(report=>matchesReport(report,{platform:'linux',stage:'ingame'})),false);
 });
 test('search supports exact title ID and case-insensitive names',()=>{assert.equal(filterGames('  ppsa02929  ')[0]?.slug,'dreaming-sarah');assert.equal(filterGames('SILKSONG').length,1);assert.equal(filterGames('unreported-title').length,0);assert.equal(filterGames('').length,games.length)});
 test('missing official build and test date are preserved',()=>{const r=games.find(g=>g.slug==='dreaming-sarah')!.reports[0];assert.equal(r.build,null);assert.equal(r.testDate,null);assert.equal(r.benchmarks[0].fps,'60')});

@@ -1,16 +1,16 @@
 # Self-hosted game media
 
-Updated 2026-10-25. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
+Updated 2026-10-26. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
 
 ## Sources and asset inventory
 
-- 183 game/edition pages have official/publisher artwork: 183 covers and 82 promotional screenshots (265 source assets).
+- 187 game/edition pages have official/publisher artwork: 187 covers and 82 promotional screenshots (269 source assets).
 - `packages/content/game-media.json` retains the original page, provider, image URLs and editorial review date.
 - `packages/content/game-media-local.json` maps each source to its exported file, actual download URL, source/export SHA-256, byte counts and actual dimensions.
 - Committed WebP masters live in `packages/ui/assets/games/<slug>/`. Astro imports them and emits hashed, same-origin images under `/_astro/`, including responsive variants. Production builds do not fetch remote media.
-- 111 entries still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
+- 114 entries still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
 
-The downloaded high-resolution source set totals 65.89 MiB; the exported masters total 34.60 MiB, a 47.5% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
+The downloaded high-resolution source set totals 66.85 MiB; the exported masters total 35.30 MiB, a 47.2% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
 
 ## Update command
 
@@ -58,3 +58,5 @@ The19 October addition includes five identity-checked covers. The generic EA FC 
 24 October adds six official covers;17 new entries retain icons. All six region/package differences and SeaStars Sunset Edition/Goat/Taiko marketing-content boundaries are explicit in seven languages. Contact sheet, decode/hash and self-hosted WebP checks pass; no new emulator screenshot is claimed.
 
 25 October adds FAR, Darkest Dungeon II, Final Fantasy Resonance and Ghostwire covers; three new entries retain icons. Darkest19590/report19591 and Oblivion Edition, plus FF standard/deluxe31544 versus demo36303, remain explicit even in the research edition text. Store responses without selected OG art keep icons and publisher identity citations. No new report screenshot or external host.
+
+26 October adds Octopath0, MOUSE, Requiem and Below Zero covers. Octopath28492/demo29437 versus report28495, Requiem30803/36561 versus31246, and BelowZero02456 versus02457 stay explicit in all seven languages and visible research edition text. Persona page metadata marks its OG art PS4, so it is rejected. Flashback’s subtitle/package identity awaits primary confirmation; it and DriftCheck retain icons. No report image is replaced by advertising.

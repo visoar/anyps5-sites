@@ -2382,3 +2382,329 @@ guideSupplements["guides/build"].push({
   }
  ]
 });
+
+for(const sections of Object.values(guideSupplements)){for(const section of sections){section.body=section.body.map(body=>body.en.includes("APS5_PIPELINE_JOURNAL_ENTRIES")&&body.en.includes("APS5_PIPELINE_STORE_ENTRIES")?{
+ "en": "Later main records pipelines.journal and replays the newest4096 entries. Graphics retention starts1024 and grows to4096 for replay/reused evictions; APS5_PIPELINE_STORE_ENTRIES fixes the count when set. This is a count bound, not a memory budget. Replay threads default to half the CPU threads;0 records only. APS5_NO_PIPELINE_JOURNAL =1 disables it; MAX_MIB remains1024. Different GPU/driver resets the journal; warm cache is not a gameplay FPS guarantee. v0.1.3 keeps its original behavior.",
+ "zh": "后续main将pipelines.journal最新4096条重放，图形保留从1024按重放／被逐出后复用需求增至4096；设置APS5_PIPELINE_STORE_ENTRIES则固定数量，非内存预算。重放默认半数CPU线程，0只记录；APS5_NO_PIPELINE_JOURNAL=1禁用，MAX_MIB仍1024。换GPU／驱动重置，热缓存不是游戏FPS保证，v0.1.3保留原行为。",
+ "ar": "main اللاحق يعيد أحدث 4096 سجلاً؛ store يبدأ 1024 وينمو 4096 للإعادة/المعاد استخدامه. APS5_PIPELINE_STORE_ENTRIES يثبت العدد لا الذاكرة. الخيوط نصف CPU، 0 يسجل فقط؛ APS5_NO_PIPELINE_JOURNAL =1 يعطل، MAX_MIB يبقى 1024. GPU/تعريف جديد يعيد الكاش؛ ليس ضمان FPS. v0.1.3 أصلي.",
+ "pt": "Main posterior repete últimos4096registos; retenção1024→4096para replay/reutilização. APS5_PIPELINE_STORE_ENTRIES fixa contagem, não memória. Threads: metadeCPU,0só regista; APS5_NO_PIPELINE_JOURNAL =1desativa, MAX_MIB1024. GPU/driverreinicia, não garanteFPS. v0.1.3mantém original.",
+ "de": "Späteres main spielt neueste4096ab; Haltung1024→4096für Replay/wiederkehrende Evictions. APS5_PIPELINE_STORE_ENTRIES fixiert Anzahl, nicht Speicher. Threads: halbeCPU,0nur aufzeichnen; APS5_NO_PIPELINE_JOURNAL =1aus, MAX_MIB1024. GPU/Treiberwechsel setzt zurück, keineFPSgarantie. v0.1.3bleibt original.",
+ "fr": "Main ultérieur rejoue derniers4096; stockage1024→4096pour replay/réutilisation. APS5_PIPELINE_STORE_ENTRIES fixe nombre, pas mémoire. Threads: moitiéCPU,0enregistre seul; APS5_NO_PIPELINE_JOURNAL =1désactive, MAX_MIB1024. GPU/pilote réinitialise, pas garantieFPS. v0.1.3reste original.",
+ "es": "Main posterior reproduce últimos4096; retención1024→4096para replay/reutilización. APS5_PIPELINE_STORE_ENTRIES fija cantidad, no memoria. Hilos: mitadCPU,0sólo registra; APS5_NO_PIPELINE_JOURNAL =1desactiva, MAX_MIB1024. GPU/driverreinicia, no garantizaFPS. v0.1.3conserva original."
+}:body);}}
+
+guideSupplements["guides/windows"].push({
+ "id": "main-windows-image-base",
+ "title": {
+  "en": "Later main: preferred image placement",
+  "zh": "后续main：默认程序装载地址",
+  "ar": "موضع الصورة في main لاحق",
+  "pt": "Main posterior: base preferida",
+  "de": "Späteres main: bevorzugte Adresse",
+  "fr": "Main ultérieur: adresse préférée",
+  "es": "Main posterior: base preferida"
+ },
+ "body": [
+  {
+   "en": "The lowest Windows ELF load page now prefers0x400000, with PE headers at0x3f0000. Ordinary output keeps relocations and can move if occupied;--windows-fixed-base removes relocations and fails if its exact aligned address is occupied. Bundled modules retain DYNAMIC_BASE. This differs from earlier0x140000000 preferred PE bases; reconvert only when testing that change, not to reinterpret old reports.",
+   "zh": "Windows最低ELF装载页现首选0x400000，PE头在0x3f0000。普通输出保留重定位，地址占用可搬移；--windows-fixed-base移除重定位，指定对齐地址占用则失败。模块保留DYNAMIC_BASE。不同于旧0x140000000 PE首选基址，测试该变更才重新转换，不能改写旧报告。",
+   "ar": "أدنى صفحة ELF في Windows تفضل 0x400000 والرؤوس 0x3f0000. الخرج العادي يحتفظ relocations ويتغير عند الاحتلال؛ --windows-fixed-base يزيلها ويفشل إذا شُغل العنوان المحاذى. الوحدات DYNAMIC_BASE. يختلف عن PE0x140000000 الأقدم، لا تعد تفسير تقاريره.",
+   "pt": "PáginaELFWindows prefere0x400000, cabeçalhosPE0x3f0000. Normal mantém relocations, pode mover;--windows-fixed-baseretira-as e falha em endereço ocupado. MódulosDYNAMIC_BASE. Difere dePE0x140000000antigo; não reinterprete relatos antigos.",
+   "de": "Windows-ELF-Seite bevorzugt0x400000, PE-Header0x3f0000. Standard behält Relokationen/kann ausweichen;--windows-fixed-baseentfernt sie, belegte Zieladresse scheitert. ModuleDYNAMIC_BASE. Anders als früherePE0x140000000; alte Berichte nicht umdeuten.",
+   "fr": "PageELFWindows préfère0x400000, en-têtesPE0x3f0000. Sortie normale garde relocations/déplacement;--windows-fixed-baseles retire, adresse occupée échoue. ModulesDYNAMIC_BASE. Diffère dePE0x140000000ancien; ne réinterprétez pas anciens rapports.",
+   "es": "PáginaELFWindows prefiere0x400000, cabecerasPE0x3f0000. Normal conserva relocations/puede moverse;--windows-fixed-baselas elimina, falla si ocupada. MódulosDYNAMIC_BASE. Difiere dePE0x140000000antiguo; no reinterpretar informes."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/6bc113969895900890ae9bb4c473beb840ba12db/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"].push({
+ "id": "main-converted-module-layout",
+ "title": {
+  "en": "Follow the generated module layout",
+  "zh": "按生成布局放置转换模块",
+  "ar": "اتبع ترتيب الوحدات المولد",
+  "pt": "Siga a disposição gerada",
+  "de": "Erzeugtes Modullayout verwenden",
+  "fr": "Suivre la disposition générée",
+  "es": "Sigue la disposición generada"
+ },
+ "body": [
+  {
+   "en": "Current main prints app0/<module folder>/<name>.guest.prx. Its dynamic loader explicitly chooses the converted sibling; GAME_TESTING now says keep the original beside it. Silt’s earlier2dc8e456 report removed originals to avoid its older resolver: preserve that recipe with its version. New module-parent scanning suggests --module-dir for matching unconverted modules but cannot report unreadable files. A clean scan is not proof every runtime load exists.",
+   "zh": "当前main打印app0／模块目录／<name>.guest.prx，动态加载器明确选择转换副本，GAME_TESTING现要求原件留旁。Silt旧2dc8e456报告通过移走原件避开旧解析器，应保留其版本配方。新增模块父目录扫描为匹配的未转换模块提示--module-dir，但不报告不可读文件；扫描无警告不证明运行期模块齐全。",
+   "ar": "main الحالي يطبع app0/<folder>/<name>.guest.prx والـ loader يختار المحول؛ GAME_TESTING يبقي الأصل بجانبه. Silt2dc8e456 أزال الأصل لحل قديم، احفظ وصفته بإصداره. فحص الأب يقترح--module-dir للمطابق غير المحول، ولا يرى غير المقروء؛ نظافته لا تثبت كل تحميل.",
+   "pt": "Main imprimeapp0/<pasta>/<nome>.guest.prxe loaderescolhe convertido; GAME_TESTINGguarda original ao lado. Silt2dc8e456removeu originais pelo resolverantigo, mantenha receita/versionada. Scan do pai sugere--module-dirpara módulos, não vê ilegíveis; sem aviso não prova todos loads.",
+   "de": "Main drucktapp0/<Ordner>/<Name>.guest.prx, Loader wählt konvertierte Kopie; GAME_TESTINGbehält Original daneben. Silt2dc8e456entfernte Originale wegen altem Resolver, Rezept bleibt versioniert. Parent-Scan schlägt--module-dirvor, übersieht unlesbare Dateien; kein Warnhinweis beweist keine Vollständigkeit.",
+   "fr": "Main afficheapp0/<dossier>/<nom>.guest.prx, loaderchoisit converti; GAME_TESTINGgarde original à côté. Silt2dc8e456retirait originaux pour ancien resolver, recette reste versionnée. Scan parent propose--module-dir, ignore illisibles; sans avertissement ne prouve tous loads.",
+   "es": "Main imprimeapp0/<carpeta>/<nombre>.guest.prx, loaderelige convertido; GAME_TESTINGconserva original al lado. Silt2dc8e456quitó originales por resolverviejo, mantén receta versionada. Scan del padre propone--module-dir, no informa ilegibles; sin aviso no prueba todos loads."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/6bc113969895900890ae9bb4c473beb840ba12db/docs/user/USAGE.md"
+  },
+  {
+   "label": "Pinned dynamic loader",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/6bc113969895900890ae9bb4c473beb840ba12db/core/libs/prx/libkernel/Module/src/DynamicLoader.cpp#L253-L283"
+  },
+  {
+   "label": "Older Silt report",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/10843"
+  }
+ ]
+});
+
+guideSupplements["guides/linux"].push({
+ "id": "main-converted-module-layout",
+ "title": {
+  "en": "Follow the generated module layout",
+  "zh": "按生成布局放置转换模块",
+  "ar": "اتبع ترتيب الوحدات المولد",
+  "pt": "Siga a disposição gerada",
+  "de": "Erzeugtes Modullayout verwenden",
+  "fr": "Suivre la disposition générée",
+  "es": "Sigue la disposición generada"
+ },
+ "body": [
+  {
+   "en": "Current main prints app0/<module folder>/<name>.guest.prx. Its dynamic loader explicitly chooses the converted sibling; GAME_TESTING now says keep the original beside it. Silt’s earlier2dc8e456 report removed originals to avoid its older resolver: preserve that recipe with its version. New module-parent scanning suggests --module-dir for matching unconverted modules but cannot report unreadable files. A clean scan is not proof every runtime load exists.",
+   "zh": "当前main打印app0／模块目录／<name>.guest.prx，动态加载器明确选择转换副本，GAME_TESTING现要求原件留旁。Silt旧2dc8e456报告通过移走原件避开旧解析器，应保留其版本配方。新增模块父目录扫描为匹配的未转换模块提示--module-dir，但不报告不可读文件；扫描无警告不证明运行期模块齐全。",
+   "ar": "main الحالي يطبع app0/<folder>/<name>.guest.prx والـ loader يختار المحول؛ GAME_TESTING يبقي الأصل بجانبه. Silt2dc8e456 أزال الأصل لحل قديم، احفظ وصفته بإصداره. فحص الأب يقترح--module-dir للمطابق غير المحول، ولا يرى غير المقروء؛ نظافته لا تثبت كل تحميل.",
+   "pt": "Main imprimeapp0/<pasta>/<nome>.guest.prxe loaderescolhe convertido; GAME_TESTINGguarda original ao lado. Silt2dc8e456removeu originais pelo resolverantigo, mantenha receita/versionada. Scan do pai sugere--module-dirpara módulos, não vê ilegíveis; sem aviso não prova todos loads.",
+   "de": "Main drucktapp0/<Ordner>/<Name>.guest.prx, Loader wählt konvertierte Kopie; GAME_TESTINGbehält Original daneben. Silt2dc8e456entfernte Originale wegen altem Resolver, Rezept bleibt versioniert. Parent-Scan schlägt--module-dirvor, übersieht unlesbare Dateien; kein Warnhinweis beweist keine Vollständigkeit.",
+   "fr": "Main afficheapp0/<dossier>/<nom>.guest.prx, loaderchoisit converti; GAME_TESTINGgarde original à côté. Silt2dc8e456retirait originaux pour ancien resolver, recette reste versionnée. Scan parent propose--module-dir, ignore illisibles; sans avertissement ne prouve tous loads.",
+   "es": "Main imprimeapp0/<carpeta>/<nombre>.guest.prx, loaderelige convertido; GAME_TESTINGconserva original al lado. Silt2dc8e456quitó originales por resolverviejo, mantén receta versionada. Scan del padre propone--module-dir, no informa ilegibles; sin aviso no prueba todos loads."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/6bc113969895900890ae9bb4c473beb840ba12db/docs/user/USAGE.md"
+  },
+  {
+   "label": "Pinned dynamic loader",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/6bc113969895900890ae9bb4c473beb840ba12db/core/libs/prx/libkernel/Module/src/DynamicLoader.cpp#L253-L283"
+  },
+  {
+   "label": "Older Silt report",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/10843"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-converter-only-macos",
+ "title": {
+  "en": "Building the converter is not building a Mac runtime",
+  "zh": "能构建转换器不等于Mac运行时就绪",
+  "ar": "بناء المحول ليس تشغيل Mac",
+  "pt": "Compilar conversor não é runtimeMac",
+  "de": "Konverterbuild ist keinMac-Runtimebuild",
+  "fr": "Compiler convertisseur ne fournit pas runtimeMac",
+  "es": "Compilar conversor no es runtimeMac"
+ },
+ "body": [
+  {
+   "en": "The converter-only build supports Apple Silicon with AppleClang from Xcode command-line tools, CMake and Ninja from Homebrew. This does not provide the full PS5 runtime libraries. Current Mac title experiments still combine open patches and use x86-64/Rosetta; v0.1.3 has no Mac runtime package.",
+   "zh": "仅转换器构建支持Apple Silicon，使用Xcode命令行工具AppleClang及Homebrew的CMake／Ninja；不提供完整PS5运行库。当前Mac游戏实验仍叠开放补丁并用x86-64／Rosetta，v0.1.3没有Mac运行包。",
+   "ar": "بناء المحول فقط يدعم AppleSilicon بـ AppleClang/CMake/Ninja؛ لا يوفر مكتبات التشغيل الكاملة. تجارب Mac تجمع patches مفتوحة و x86-64/Rosetta، ولا حزمة Mac في v0.1.3.",
+   "pt": "Conversor apenas suportaAppleSilicon/AppleClang/CMake/Ninja, não libs completas. ExperiênciasMacjuntam patches abertos, x86-64/Rosetta; v0.1.3sem pacoteMac.",
+   "de": "Nur-Konverter unterstütztAppleSilicon/AppleClang/CMake/Ninja, nicht volle Runtime-Libs. Mac-Versuche brauchen offene Patches/x86-64/Rosetta; v0.1.3ohneMac-Paket.",
+   "fr": "Convertisseur seul supporteAppleSilicon/AppleClang/CMake/Ninja, pas libs complètes. EssaisMacavecpatches ouverts/x86-64/Rosetta; v0.1.3sans paquetMac.",
+   "es": "Sólo conversor soportaAppleSilicon/AppleClang/CMake/Ninja, no libs completas. PruebasMacconparches abiertos/x86-64/Rosetta; v0.1.3sin paqueteMac."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/6bc113969895900890ae9bb4c473beb840ba12db/docs/dev/BUILD.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-import-count-snapshots",
+ "title": {
+  "en": "Keep a bounded import-call snapshot",
+  "zh": "保留有边界的导入调用快照",
+  "ar": "لقطة عدد نداءات الاستيراد",
+  "pt": "Guardar contagens de imports",
+  "de": "Importaufrufe als Snapshot",
+  "fr": "Instantané des appels importés",
+  "es": "Instantánea de llamadas importadas"
+ },
+ "body": [
+  {
+   "en": "With --trace-imports and APS5_TRACE_CALLS , set APS5_TRACE_CALLS_FILE to a local path for per-import call counts rewritten every10s, most called first. A killed run retains only the latest rewrite; absence there does not prove never called. trace_digest skips window-capture lines and reports identity changes. Cold/warm caches, scene and all switches must match before comparing timings.",
+   "zh": "配合--trace-imports和APS5_TRACE_CALLS，APS5_TRACE_CALLS_FILE指定本地路径，每10秒重写导入调用数、频次降序。进程被杀只保留最后重写，未出现不等于从未调用。trace_digest跳过窗口抓取行并报告身份变化；比较计时前对齐冷／热缓存、场景及全部开关。",
+   "ar": "مع--trace-imports و APS5_TRACE_CALLS يكتب APS5_TRACE_CALLS_FILE عدادات محلية كل 10 ث. القتل يبقي آخر كتابة فقط، الغياب ليس عدم نداء. trace_digest يتجاوز windowcaptures ويبلغ تغير الهوية. طابق الكاش/المشهد/المفاتيح للمقارنة.",
+   "pt": "Com--trace-importse APS5_TRACE_CALLS , APS5_TRACE_CALLS_FILE reescreve contagens locais10s. Processo morto guarda última escrita, ausência não prova nunca chamado. trace_digestsalta capturas e avisa identidade. Compare cache/cena/opções iguais.",
+   "de": "Mit--trace-imports/ APS5_TRACE_CALLS schreibt APS5_TRACE_CALLS_FILE alle10s lokale Zähler. Getöteter Lauf behält letzten Stand, Fehlen beweist keinen Nichtaufruf. trace_digestüberspringt Fenstercaptures, meldet Identitätswechsel. Cache/Szene/Schalter abgleichen.",
+   "fr": "Avec--trace-imports/ APS5_TRACE_CALLS , APS5_TRACE_CALLS_FILE réécrit compteurs locaux10s. Processus tué garde dernier état, absence ne prouve jamais appelé. trace_digestsaute captures, signale identité. Appariez cache/scène/options.",
+   "es": "Con--trace-imports/ APS5_TRACE_CALLS , APS5_TRACE_CALLS_FILE reescribe contadores10s. Proceso muerto conserva última escritura, ausencia no prueba nunca llamado. trace_digestomite capturas, informa identidad. Empareja caché/escena/opciones."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/6bc113969895900890ae9bb4c473beb840ba12db/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-verified-stack-sampling",
+ "title": {
+  "en": "Symbolize the binary that actually ran",
+  "zh": "用实际运行二进制解释采样",
+  "ar": "اربط العينات بالملف المنفذ",
+  "pt": "Simbolize o binário executado",
+  "de": "Tatsächlich gelaufenen Build symbolisieren",
+  "fr": "Symboliser le binaire exécuté",
+  "es": "Simboliza el binario ejecutado"
+ },
+ "body": [
+  {
+   "en": "Windows APS5_SAMPLE_WORKER now writes collapsed stacks as well as self/inclusive samples; truncated walks are marked. symbolize_samples checks module size and PE timestamp before naming frames;--unverified bypasses that identity check, not a fix. APS5_SAMPLE_THREADS uses a shallower .pdata-only walk. Inclusive counts can double-count recursion; sampling overhead and incomplete stacks limit comparisons.",
+   "zh": "Windows APS5_SAMPLE_WORKER现另写collapsed堆栈，截断有标记；symbolize_samples先核模块尺寸／PE时间戳，--unverified绕过身份检查而非修复。APS5_SAMPLE_THREADS只浅层.pdata展开，inclusive可能重复计递归，采样开销／缺帧限制比较。",
+   "ar": "APS5_SAMPLE_WORKER في Windows يكتب collapsedstacks مع علامة الاقتطاع. symbolize_samples يفحص الحجم/PEtimestamp؛ --unverified يتجاوز الهوية لا يصلح. SAMPLE_THREADS بـ.pdata ضحل. inclusive قد يكرر recursion، والكلفة/النقص يحدان المقارنة.",
+   "pt": "SAMPLE_WORKERWindowsgera collapsedstacks/marca truncados. symbolize_samplesconfere tamanho/PEtimestamp;--unverifiedignora identidade, não corrige. SAMPLE_THREADSusa.pdata raso. Inclusive duplica recursão; overhead/pilhas incompletas limitam.",
+   "de": "WindowsSAMPLE_WORKERliefert collapsedstacks/Abbruchmarken. symbolize_samplesprüft Größe/PE-Zeitstempel;--unverifiedumgeht Identität, kein Fix. SAMPLE_THREADSflacher.pdata-Walk. Inclusive kann Rekursion mehrfach zählen, Overhead/Lücken begrenzen Vergleich.",
+   "fr": "SAMPLE_WORKERWindowsécrit pilescollapsed/troncature marquée. symbolize_samplesvérifie taille/datePE;--unverifiedignore identité, pas fix. SAMPLE_THREADSpile.pdata peu profonde. Inclusive peut doubler récursion, coût/lacunes limitent comparaison.",
+   "es": "SAMPLE_WORKERWindowsescribe pilascollapsed/truncadas marcadas. symbolize_samplesverifica tamaño/fechaPE;--unverifiedsalta identidad, no fix. SAMPLE_THREADSusa.pdata superficial. Inclusive duplica recursión, coste/huecos limitan comparación."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/6bc113969895900890ae9bb4c473beb840ba12db/docs/dev/BUILD.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-local-trophy-statistics",
+ "title": {
+  "en": "Local trophy statistics have a limited rule set",
+  "zh": "本地奖杯统计只覆盖有限规则",
+  "ar": "قواعد محدودة لإحصاء الكؤوس",
+  "pt": "Regras limitadas de troféus",
+  "de": "Begrenzte lokale Trophäenregeln",
+  "fr": "Règles limitées de trophées",
+  "es": "Reglas limitadas de trofeos"
+ },
+ "body": [
+  {
+   "en": "Later main stores local statistic values in _trophy/<user>_<service>.stats.txt across runs. Only documented latest/max integer statistics and simple event-property rules are applied; unsupported rules are logged. APS5_TRACE_UDS logs events/statistics and ignored reasons. Local unlocks do not establish PSN synchronization. A reset concerns both statistics and unlock files, not just one.",
+   "zh": "后续main用_trophy／<用户>_<服务>.stats.txt跨运行保存统计，只应用已列出的latest／max整数及简单事件属性规则，其他规则记日志。APS5_TRACE_UDS记录事件、统计及忽略原因；本地解锁不证明PSN同步。重置涉及统计与解锁两个文件，不能只处理一个。",
+   "ar": "main اللاحق يحفظ_trophy/<user>_<service>.stats.txt بين التشغيلات، بقواعد latest/max للأعداد والأحداث البسيطة فقط؛ الباقي يسجل. TRACE_UDS يسجل السبب. فتح محلي لا يثبت PSN؛ reset يشمل الإحصاء والفتح معاً.",
+   "pt": "Main guarda_trophy/<user>_<service>.stats.txtentre execuções, só regraslatest/maxinteiras/eventos simples; resto no log. TRACE_UDSmostra razões. Desbloqueio local não provaPSN; resetafeta estatísticas e unlock.",
+   "de": "Main speichert_trophy/<user>_<service>.stats.txtüber Läufe, nur dokumentiertelatest/maxGanzzahl-/Ereignisregeln, andere geloggt. TRACE_UDSzeigt Gründe. Lokal keinPSN-Nachweis; Resetbetrifft Statistik und Unlock.",
+   "fr": "Main garde_trophy/<user>_<service>.stats.txtentre essais, règleslatest/maxentières/événements simples seulement; reste journalisé. TRACE_UDSdonne raisons. Local ne prouvePSN; resetconcerne statistiques et unlock.",
+   "es": "Main guarda_trophy/<user>_<service>.stats.txtentre ejecuciones, sólo reglaslatest/maxenteras/eventos simples; resto registrado. TRACE_UDSmuestra razones. Local no pruebaPSN; resetafecta estadísticas y unlock."
+  }
+ ],
+ "links": [
+  {
+   "label": "Pinned upstream source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/6bc113969895900890ae9bb4c473beb840ba12db/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/input"].push({
+ "id": "controller-only-name-prompt",
+ "title": {
+  "en": "A name prompt can still need a keyboard",
+  "zh": "命名窗口仍可能需要键盘",
+  "ar": "قد يحتاج الاسم لوحة مفاتيح",
+  "pt": "Nome pode exigir teclado",
+  "de": "Namenseingabe braucht eventuell Tastatur",
+  "fr": "Un nom peut exiger un clavier",
+  "es": "El nombre puede necesitar teclado"
+ },
+ "body": [
+  {
+   "en": "OCTOPATH0’s63a863d3b0 report reaches character creation, but the IME name dialog accepts host keyboard text; controller-only completion is not verified. A proposed on-screen keyboard is not a merged feature. DriftCheck’s real USB Xbox test is on a separate patched Mac/Rosetta tree and does not prove every game, DualSense sensor or rumble path.",
+   "zh": "OCTOPATH0的63a863d3b0报告到角色创建，IME命名仅接收电脑键盘文字，未验证纯手柄完成；屏幕键盘提议不是已合功能。DriftCheck实体USB Xbox测试在另一补丁Mac／Rosetta树，不证明所有游戏、DualSense传感器或震动。",
+   "ar": "تقرير OCTOPATH0 على 63a863d3b0 يبلغ الإنشاء لكن IME يأخذ لوحة المضيف، لا إكمال بذراع فقط. لوحة الشاشة مقترحة لا مدمجة. DriftCheckXboxUSB على Mac/Rosetta معدل لا يثبت كل لعبة/حساس DualSense/اهتزاز.",
+   "pt": "OCTOPATH063a863d3b0chega à criação, masIMEusa teclado anfitrião; comando só não validado. Teclado virtual proposto, não integrado. DriftCheckXboxUSBnumMac/Rosettamodificado não prova todos jogos/sensoresDualSense/vibração.",
+   "de": "OCTOPATH063a863d3b0erreicht Erstellung, IMEbraucht Hosttastatur; Controller allein ungeprüft. Bildschirmtastatur nur Vorschlag. DriftCheckXboxUSBaufMac/Rosetta-Patchbaum beweist nicht alle Spiele/DualSense-Sensoren/Vibration.",
+   "fr": "OCTOPATH063a863d3b0atteint création, IMEprend clavier hôte; manette seule non validée. Clavier écran proposé, pas fusionné. DriftCheckXboxUSBsurMac/Rosettamodifié ne prouve tous jeux/capteursDualSense/vibration.",
+   "es": "OCTOPATH063a863d3b0llega a creación, IMEusa teclado anfitrión; mando sólo sin verificar. Teclado virtual propuesto, no fusionado. DriftCheckXboxUSBconMac/Rosettamodificado no prueba todos juegos/sensoresDualSense/vibración."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed primary source",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/11114"
+  }
+ ]
+});
+
+guideSupplements["guides/language-fonts"].push({
+ "id": "main-font-first-strong-direction",
+ "title": {
+  "en": "Default direction follows the first strong character",
+  "zh": "默认方向跟随首个强方向字符",
+  "ar": "الاتجاه حسب أول حرف قوي",
+  "pt": "Direção pelo primeiro caráter forte",
+  "de": "Richtung nach erstem starken Zeichen",
+  "fr": "Sens selon premier caractère fort",
+  "es": "Dirección por primer carácter fuerte"
+ },
+ "body": [
+  {
+   "en": "Merged10021 chooses a default string’s direction at creation, with LRM/RLM and isolate handling; the getter reads the stored byte. Explicit forms stay explicit. The13.42 harness measured nonempty strings before a later glyph-stage failure, not full RTL rendering; block-range classification still has limits. This does not certify every game’s Arabic layout.",
+   "zh": "合入10021后，默认字符串在创建时按首个强方向字符决定方向，处理LRM／RLM及isolate，getter读取存储值，保留显式方向。13.42测试非空串在后续字形失败前读值，不是完整RTL渲染，Unicode区块分类也有限，不证明所有游戏阿语排版。",
+   "ar": "10021 المدمج يقرر الاتجاه عند الإنشاء بأول قوي، مع LRM/RLM وعزل؛ getter يقرأ البايت والصريح محفوظ. قياس 13.42 قبل فشل glyph لاحق، لا RTL كامل، وتصنيف النطاق محدود؛ لا تصديق لكل تنسيق عربي.",
+   "pt": "10021integrado decide na criação pelo primeiro forte, LRM/RLM/isolates; getterlê byte, explícitos mantidos.13.42medido antes de falhaglyph, nãoRTLcompleto; faixas limitadas, sem validar árabe em todos jogos.",
+   "de": "10021gemergt bestimmt bei Erstellung nach erstem starken Zeichen, LRM/RLM/Isolates; Getterliest Byte, explizit bleibt.13.42vor späterem Glyphenfehler gemessen, kein vollesRTL; Blockbereiche begrenzt, keine allgemeine Arabischqualifikation.",
+   "fr": "10021fusionné décide à création selon premier fort, LRM/RLM/isolats; getterlit octet, explicite gardé.13.42mesuré avant échecglyph, pasRTLcomplet; plages limitées, pas validation arabe universelle.",
+   "es": "10021fusionado decide al crear por primer fuerte, LRM/RLM/aislados; getterlee byte, explícitos mantenidos.13.42medido antes de falloglyph, noRTLcompleto; rangos limitados, no valida árabe universal."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed primary source",
+   "url": "https://github.com/boykopovar/AnyPS5/pull/10021"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "main-native-import-patching",
+ "title": {
+  "en": "Native import patching is a separate tool",
+  "zh": "原生程序导入修补是独立工具",
+  "ar": "ترقيع واردات الأصل أداة منفصلة",
+  "pt": "Imports nativos: uma ferramenta distinta",
+  "de": "Native Importanpassung als eigenes Werkzeug",
+  "fr": "Imports natifs: outil distinct",
+  "es": "Imports nativos: herramienta aparte"
+ },
+ "body": [
+  {
+   "en": "Later main’s nid_patcher --exec detects native PE/ELF64/Mach-O64 from bytes and rewrites imports in place while preserving application exports; unsupported layouts fail before writing. Use a working copy and preserve host imports explicitly with the documented export exclusions or narrower --only-sce mode. It is not the relinker command or proof of game compatibility; build a separate executable per target.",
+   "zh": "后续main的nid_patcher --exec按字节识别原生PE／ELF64／Mach-O64，原位改写导入、保留程序导出，不支持布局在写入前失败。使用工作副本，通过导出排除或较窄--only-sce明确保留主机导入；它不是relinker命令或兼容证明，每个目标单独构建。",
+   "ar": "nid_patcher --exec في main لاحق يحدد PE/ELF64/Mach-O64 ويغير الواردات مكانياً ويحفظ الصادرات؛ غير المدعوم يفشل قبل الكتابة. نسخة عمل واستثناءات exports أو--only-sce لحفظ المضيف. ليس relinker/توافقاً؛ برنامج منفصل لكل هدف.",
+   "pt": "nid_patcher --execdetetaPE/ELF64/Mach-O64e altera imports in-place, preserva exports; layout inválido falha antes de escrever. Use cópia/exclusões ou--only-scepara preservar host. Não érelinker/compatibilidade; buildpor alvo.",
+   "de": "nid_patcher --execerkenntPE/ELF64/Mach-O64, ändert Imports direkt, behält Exports; unbekanntes Layout scheitert vor Schreiben. Arbeitskopie/Exportausnahmen oder--only-scefür Hostimports. KeinRelinker/Kompatibilitätsnachweis; pro Ziel bauen.",
+   "fr": "nid_patcher --execdétectePE/ELF64/Mach-O64, modifie imports sur place, garde exports; layout inconnu échoue avant écriture. Copie/exclusions ou--only-scepour hostimports. Pasrelinker/preuve de compatibilité; buildpar cible.",
+   "es": "nid_patcher --execdetectaPE/ELF64/Mach-O64, cambia imports in-place, conserva exports; layoutinválido falla antes de escribir. Copia/exclusiones o--only-scepara hostimports. No esrelinker/compatibilidad; buildpor destino."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed primary source",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/6bc113969895900890ae9bb4c473beb840ba12db/docs/user/USAGE.md"
+  }
+ ]
+});

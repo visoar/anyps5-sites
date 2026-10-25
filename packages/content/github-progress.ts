@@ -985,3 +985,147 @@ export const developmentNotes:DevelopmentNote[]=[
  {number:3138,games:[],title:L('Font handles retain language and design settings','字体句柄保存语言与排版设置','حفظ اللغة والتصميم في مقابض الخط','Definições de idioma e desenho das fontes','Schrift-Handles behalten Spracheinstellungen','Paramètres de langue et de typographie','Ajustes de idioma y diseño de fuentes'),summary:L('Merged setters/getters retain values per font handle. The source marks parts of the signatures unverified on PS5 hardware; this does not mean every game’s multilingual text is fixed.','合并的 getter/setter 按字体句柄保留参数。来源仍标注部分签名未在 PS5 真机验证，不能解释为所有游戏的多语言文字已修复。',"تحفظ دوال القراءة والضبط المدمجة القيم لكل معرّف خط. يشير المصدر إلى أن بعض تواقيع الدوال لم تُتحقق على جهاز PS5؛ ولا يعني ذلك إصلاح النصوص متعددة اللغات في كل لعبة.","As funções de leitura e escrita integradas conservam os valores de cada identificador de tipo de letra. O código assinala que algumas assinaturas não foram verificadas numa PS5; isto não significa que o texto multilingue de todos os jogos esteja corrigido.",'Der Merge speichert Werte pro Schrift-Handle. Signaturen sind teils nicht auf PS5 geprüft; nicht alle mehrsprachigen Spieltexte sind damit behoben.',"Les fonctions de lecture et de modification intégrées conservent les valeurs propres à chaque handle de police. La source signale que certaines signatures n’ont pas été vérifiées sur une PS5 ; cela ne signifie pas que tous les textes multilingues des jeux sont corrigés.",'El merge guarda valores por fuente. Algunas firmas no están verificadas en PS5; no corrige por ello todos los textos multilingües.')},
 ];
 export const developmentSource=(note:DevelopmentNote)=>metadata[String(note.number) as keyof typeof metadata];
+
+developmentNotes.unshift(...[
+ {
+  "number": 9401,
+  "games": [
+   "gta-v"
+  ],
+  "title": {
+   "en": "Pipeline retention grows to4096",
+   "zh": "流水线保留上限增至4096",
+   "ar": "حفظ حتى 4096pipeline",
+   "pt": "Retenção até4096pipelines",
+   "de": "Pipelinehaltung bis4096",
+   "fr": "Rétention jusqu’à4096pipelines",
+   "es": "Retención hasta4096pipelines"
+  },
+  "summary": {
+   "en": "Merged main replays newest4096 journal records and grows the graphics store1024→4096 when needed; explicit store override fixes the count. It is not a byte bound. Small-shader memory floors differ from GTA’s upper estimate; replay/cold caches and spawn variation prevent a universal FPS claim. v0.1.3 files unchanged.",
+   "zh": "已合main重放最新4096条journal，图形store按需1024→4096；显式覆盖固定数量，非字节预算。小着色器内存下限不同于GTA上界估计，冷热缓存和出生点差异不能推普遍FPS。v0.1.3文件未变。",
+   "ar": "main المدمج يعيد أحدث 4096 سجلاً وينمو store1024→4096 عند الحاجة؛ override يثبت العدد لا البايت. كلفة shader صغير ليست حد GTA، الكاش/الظهور يمنع FPS عام. v0.1.3 لم يتغير.",
+   "pt": "Main integrado repete últimos4096registos e store1024→4096; overridefixa contagem, não bytes. Custo de shaders pequenos difere deGTA; cache/spawn não provamFPSgeral. v0.1.3inalterado.",
+   "de": "Main gemergt spielt letzte4096Einträge ab, Store wächst1024→4096; Overridefixiert Anzahl, nicht Bytes. Kleine Shaderkosten nichtGTA-Obergrenze; Cache/Spawn verhindern allgemeineFPS. v0.1.3unverändert.",
+   "fr": "Main fusionné rejoue derniers4096, en store1024→4096; overridefixe nombre, pas octets. Coût petit shader différent deGTA; cache/spawn sansFPSgénéral. v0.1.3inchangé.",
+   "es": "Main fusionado reproduce últimos4096, store1024→4096; overridefija número, no bytes. Coste de shaders pequeños difiere deGTA; caché/spawn sinFPSgeneral. v0.1.3sin cambios."
+  }
+ },
+ {
+  "number": 10935,
+  "games": [
+   "pragmata",
+   "resident-evil-village",
+   "resident-evil-requiem"
+  ],
+  "title": {
+   "en": "Pad probe regression and an open fallback",
+   "zh": "手柄探测回归与开放的回退方案",
+   "ar": "تراجع فحص اليد وبديل مفتوح",
+   "pt": "Regressão de sondagem e fallback aberto",
+   "de": "Controllerprobe: Regression und offener Fallback",
+   "fr": "Régression de sonde et repli ouvert",
+   "es": "Regresión de sondeo y alternativa abierta"
+  },
+  "summary": {
+   "en": "Merged10361 deliberately throws on unknown port types3/4. Pragmata/Village now stop;10935 proposes INVALID_ARG after user validation. Approved code and a WSL test/control do not measure those console results or prove a merged/released fix. Native Requiem tests include further patches and still fail later.",
+   "zh": "10361对未知端口3／4有意抛错，Pragmata／Village因此停止；10935提议用户检查后回INVALID_ARG。审查通过及WSL用例／对照不证明该主机返回值，也非已合／已发行修复；Requiem原生测试还叠其他补丁并继续失败。",
+   "ar": "10361 يرمي عمداً للمنفذين 3/4 المجهولين، فيوقف Pragmata/Village.10935 يقترح INVALID_ARG بعد فحص المستخدم. اعتماد/اختبار WSL لا يقيس الجهاز أو يثبت دمج/إصداراً. Requiem بمزيد patches يفشل لاحقاً.",
+   "pt": "10361lança em portas3/4desconhecidas e páraPragmata/Village.10935propõeINVALID_ARGapós utilizador. Aprovação/testeWSLnão medem consola nem integração/release. Requiemusa maispatches e falha depois.",
+   "de": "10361wirft absichtlich bei unbekannt3/4, Pragmata/Villagestoppen.10935schlägtINVALID_ARGnach Nutzerprüfung vor. Freigabe/WSL-Kontrolle misst Konsole nicht, kein Merge/Release. Requiemmit weiteren Patches scheitert später.",
+   "fr": "10361lance pour ports3/4inconnus, Pragmata/Villagestoppent.10935proposeINVALID_ARGaprès utilisateur. Approbation/testWSLne mesure console ni fusion/release. Requiemavec autres patches échoue ensuite.",
+   "es": "10361lanza en puertos3/4desconocidos, Pragmata/Villageparan.10935proponeINVALID_ARGtras usuario. Aprobación/testWSLno miden consola ni fusión/release. Requiemcon más parches falla después."
+  }
+ },
+ {
+  "number": 11119,
+  "games": [
+   "driftcheck",
+   "syobon-action-homebrew"
+  ],
+  "title": {
+   "en": "One SDL copy in an experimental Mac build",
+   "zh": "实验Mac构建保留一份SDL",
+   "ar": "نسخة SDL واحدة في Mac تجريبي",
+   "pt": "Uma cópiaSDL emMac experimental",
+   "de": "EineSDL-Kopie im experimentellenMac",
+   "fr": "Une copieSDL surMac expérimental",
+   "es": "Una copiaSDL enMac experimental"
+  },
+  "summary": {
+   "en": "Open11119 removes duplicate SDL classes in a patched Rosetta runtime. DriftCheck has real USB Xbox input; Syobon uses scripted input.97passes/25skips and device-creating VideoOut skips are not full GPU validation. Main alone still does not build Mac libraries; no official Mac release.",
+   "zh": "开放11119移除补丁Rosetta运行时的重复SDL类。DriftCheck测实体USB Xbox，Syobon用脚本输入。97通过／25跳过及创建设备的VideoOut用例跳过，不等于完整GPU验证。main仍不能单独构建Mac库，无Mac正式版。",
+   "ar": "11119 مفتوح يزيل SDL المكرر في Rosetta معدل. DriftCheck بـ XboxUSB فعلي، Syobon بإدخال مكتوب.97 نجاح/25 تخطي واختبارات VideoOut للجهاز متخطاة، ليس GPU كاملاً. main لا يبني Mac وحده، لا إصدار Mac.",
+   "pt": "11119aberto removeSDLduplicado emRosettamodificado. DriftCheckXboxUSB real, Syobonguiado.97passam/25saltam e testesVideoOutcom dispositivo saltam, nãoGPUcompleto. Mainnão compila libsMac só; semreleaseMac.",
+   "de": "Offenes11119entfernt doppelteSDL inRosetta-Patchbaum. DriftCheckechterXboxUSB, SyobonSkript.97bestanden/25übersprungen, geräteerzeugendeVideoOut-Tests übersprungen, keine volleGPU-Validation. MainbautMacnicht allein, keinMac-Release.",
+   "fr": "11119ouvert retireSDLdupliqué dansRosettamodifié. DriftCheckXboxUSB réel, Syobonscripté.97passent/25sautent et testsVideoOutà appareil sautent, pasGPUcomplet. Mainne construit pasMacseul, pasreleaseMac.",
+   "es": "11119abierto eliminaSDLduplicado enRosettamodificado. DriftCheckXboxUSB real, Syobonpor guion.97pasan/25saltan y testsVideoOutcon dispositivo saltan, noGPUcompleto. Mainno construyeMacsolo, sinreleaseMac."
+  }
+ },
+ {
+  "number": 10021,
+  "games": [],
+  "title": {
+   "en": "Font direction is decided when a string is created",
+   "zh": "字体方向在创建字符串时决定",
+   "ar": "اتجاه الخط عند إنشاء النص",
+   "pt": "Direção na criação da cadeia",
+   "de": "Schriftrichtung bei Stringerstellung",
+   "fr": "Sens lors de création de chaîne",
+   "es": "Dirección al crear cadena"
+  },
+  "summary": {
+   "en": "Merged implementation uses the first strong character for default direction, including LRM/RLM and isolate limits; explicit forms remain.13.42 nonempty measurements stop later at glyph creation, only empty completes. Range-based classification remains debt, not full native RTL rendering.",
+   "zh": "已合实现按首个强方向字符决定默认方向，涵盖LRM／RLM和isolate边界，保留显式方向。13.42非空测量后来在字形创建失败，仅空串完整返回；范围分类仍有技术债，不是原生RTL完整渲染验证。",
+   "ar": "التنفيذ المدمج يختار أول حرف قوي، مع LRM/RLM وعزل، ويحفظ الصريح. قياسات 13.42 غير الفارغة تفشل لاحقاً بال glyph، الفارغة فقط تكمل. تصنيف النطاق دين، لا RTL أصلي كامل.",
+   "pt": "Implementação integrada usa primeiro forte, LRM/RLM/isolates, formas explícitas mantidas.13.42não vazio falha depois no glyph, só vazio completa. Classificação por faixas é dívida, nãoRTLtotal.",
+   "de": "Gemergte Implementierung nimmt erstes starkes Zeichen, LRM/RLM/Isolates, explizite Formen bleiben.13.42nichtleer scheitert später an Glyphen, nur leer beendet. Bereichsklassifikation Schuld, kein vollständiges nativesRTL.",
+   "fr": "Implémentation fusionnée prend premier fort, LRM/RLM/isolats, formes explicites gardées.13.42non vide échoue ensuite au glyph, seul vide termine. Classification par plages reste dette, pasRTLnatif complet.",
+   "es": "Implementación fusionada usa primer fuerte, LRM/RLM/aislados, formas explícitas mantenidas.13.42no vacío falla después en glyph, sólo vacío completa. Clasificación por rangos es deuda, noRTLnativo completo."
+  }
+ },
+ {
+  "number": 9170,
+  "games": [
+   "silt"
+  ],
+  "title": {
+   "en": "Thread identity follows measured console behavior",
+   "zh": "线程身份遵循主机测量",
+   "ar": "هوية الخيط توافق قياس الجهاز",
+   "pt": "Identidade de thread medida",
+   "de": "Threadidentität folgt Messung",
+   "fr": "Identité du thread mesurée",
+   "es": "Identidad de hilo medida"
+  },
+  "summary": {
+   "en": "Merged _Thrd_id returns the64-bit scePthreadSelf pointer. Console main/worker measurements and Cyberpunk/Pragmata forwarding support that scope. Silt’s earlier local equivalent was not imported by that title, so merge is not a newly reproduced Silt fix or a commercial-game compatibility result.",
+   "zh": "已合_Thrd_id返回64位scePthreadSelf指针，主机主／子线程测量及Cyberpunk／Pragmata转发支持此范围。Silt早期本地等价实现并未被该标题导入，合并不等于新复现的Silt修复或商业兼容结果。",
+   "ar": "_Thrd_id المدمج يرجع مؤشر scePthreadSelf64 بت، بقياس خيطين وتحويل Cyberpunk/Pragmata. Silt لم يستورد مكافئه المحلي، فالدمج ليس إصلاح Silt معاداً أو توافق لعبة.",
+   "pt": "_Thrd_idintegrado devolve ponteiro64bitsscePthreadSelf, com medição/forwardingCyberpunk/Pragmata. Siltnão importava equivalente local; merge não é fixSiltretetado/compatibilidade comercial.",
+   "de": "Gemergtes_Thrd_idliefert64-bit-scePthreadSelf, belegt durch Threads/WeiterleitungenCyberpunk/Pragmata. Siltnutzte lokale Entsprechung nicht; Mergekein neuerSilt-Fix/Kompatibilitätsnachweis.",
+   "fr": "_Thrd_idfusionné retourne pointeur64bitsscePthreadSelf, mesures/renvoisCyberpunk/Pragmata. Siltn’importait pas équivalent local; fusion pas nouveaufixSiltreproduit/compatibilité commerciale.",
+   "es": "_Thrd_idfusionado devuelve puntero64bitsscePthreadSelf, mediciones/reenvíosCyberpunk/Pragmata. Siltno importaba equivalente local; fusión no es arregloSiltretestado/compatibilidad comercial."
+  }
+ }
+]);
+
+Object.assign(developmentNotes.find(note=>note.number===10547)!,{summary:{
+ "en": "Native seam reports remain at their tested heads. A source-only review finds hostInterpolationFirst missing from request serialization at3609b981, so replay may differ; no fresh native failure reproduced. Versioned round-trip/cache tests remain requested, not a game regression proved by a green direct-Recompile test.",
+ "zh": "原生接缝报告保留原头；源码审查发现3609b981请求序列化缺hostInterpolationFirst，重放可能不同，未复现新的原生故障。仍要求版本化往返／缓存测试，直接Recompile绿灯不验证此路径。",
+ "ar": "تقارير أصلية تبقى بأرؤسها؛ 3609b981 يفقد hostInterpolationFirst بالتسلسل، replay قد يختلف، لا عطل أصلي معاد. اختبارات roundtrip/cache مطلوبة؛ Recompile المباشر ليس تحققها.",
+ "pt": "Relatos mantêm heads;3609b981omitehostInterpolationFirstna serialização, replaydifere potencialmente, sem falha nativa nova. Testesroundtrip/cachepedidos; Recompiledireto não basta.",
+ "de": "Native Berichte behalten Heads;3609b981serialisiert Flag nicht, Replay kann abweichen, kein neuer nativer Fehler. Roundtrip/Cachetests gefordert, direktesRecompilegenügt nicht.",
+ "fr": "Rapports gardent heads;3609b981omet flag en sérialisation, replaypeut différer, sans défaut natif nouveau. Testsroundtrip/cache demandés, Recompiledirect insuffisant.",
+ "es": "Informes conservan heads;3609b981omite flag en serialización, replaypuede variar, sin fallo nativo nuevo. Testsroundtrip/caché solicitados, Recompiledirecto insuficiente."
+}});
+
+Object.assign(developmentNotes.find(note=>note.number===7294)!,{summary:{
+ "en": "Latest799671df6d integration reaches tutorial NOW LOADING, then natural abort576.373s at3036 after device/fence failures;1891aa7d instead stops285.208s on unreadable write. Neither reaches gameplay. Historical32rings keep their original fork; component passes and zeroVUIDs do not erase other warnings or prove a current-main fix.",
+ "zh": "最新799671df6d到教程NOW LOADING后576.373秒在设备／fence异常后因3036自然终止；1891aa7d则285.208秒遇不可读写入。均无游玩，历史32枚戒指保留原分支；组件通过、零VUID不抹去其他警告或证明main已修复。",
+ "ar": "799671df6d يبلغ NOW LOADING ثم 576.373 ثتوقف 3036 بعد device/fences؛ 1891aa7d285.208 ثكتابة غير مقروءة. لا لعب؛ 32 حلقة قديمة بفرعها، اختبارات/0VUID لا تمحو التحذيرات أو تثبت main.",
+ "pt": "799671df6dchegaNOW LOADING, aborta576,373s3036apósdevice/fences;1891aa7d285,208s escrita ilegível. Sem jogo;32anéis no fork antigo; testes/0VUIDnão anulam avisos/provammain.",
+ "de": "799671df6dNOW LOADING, dann576,373s3036nachDevice/Fences;1891aa7d285,208sunlesbarer Write. Kein Spiel;32Ringe auf altem Fork, Tests/0VUIDlöschen Warnungen nicht/beweisenmainnicht.",
+ "fr": "799671df6dNOW LOADING, puis576,373s3036aprèsdevice/fences;1891aa7d285,208sécriture illisible. Pas jeu;32anneaux ancien fork, tests/0VUIDn’effacent avertissements/ne prouventmain.",
+ "es": "799671df6dNOW LOADING, luego576,373s3036trasdevice/fences;1891aa7d285,208sescritura ilegible. Sin juego;32anillos fork antiguo, tests/0VUIDno borran avisos/pruebanmain."
+}});

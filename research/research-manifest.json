@@ -51,39 +51,39 @@
     }
   ],
   "latestReview": {
-    "reviewed": "2026-10-25",
-    "incrementSince": "2026-10-23T18:30:00Z",
-    "lastSuccessfulCutoff": "2026-10-23T19:35:00Z",
-    "nextSuccessfulCutoff": "2026-10-24T19:43:00Z",
-    "sourceCommit": "50757b01c6d8853954da4698f74bd903e01358c4",
+    "reviewed": "2026-10-26",
+    "incrementSince": "2026-10-24T18:30:00Z",
+    "lastSuccessfulCutoff": "2026-10-24T19:43:00Z",
+    "nextSuccessfulCutoff": "2026-10-25T19:38:00Z",
+    "sourceCommit": "6bc113969895900890ae9bb4c473beb840ba12db",
     "documents": 262,
-    "changedDocuments": 49,
-    "issuesAndPRs": 10245,
-    "issuePRPages": 103,
+    "changedDocuments": 52,
+    "issuesAndPRs": 10661,
+    "issuePRPages": 107,
     "inventoryRecovery": {
-      "initialAllPages": 103,
-      "initialAllCount": 10245,
-      "initialLastPage": 45,
+      "initialAllPages": 107,
+      "initialAllCount": 10661,
+      "initialLastPage": 61,
       "recoveredVia": {
         "open": {
-          "pages": 16,
-          "count": 1516,
-          "lastPage": 16
+          "pages": 17,
+          "count": 1623,
+          "lastPage": 23
         },
         "closed": {
-          "pages": 88,
-          "count": 8728,
-          "lastPage": 28
+          "pages": 91,
+          "count": 9038,
+          "lastPage": 38
         }
       },
-      "uniqueUnionWithInitialAndIncrement": 10245,
-      "note": "Separate open/closed snapshots are exhausted; union de-duplicates by ID/latest timestamp, not an atomic state."
+      "uniqueUnionWithInitialAndIncrement": 10661,
+      "note": "All-state and separate state pagination exhausted, non-atomic snapshots; ID union retained."
     },
-    "incrementIssuesAndPRs": 1707,
+    "incrementIssuesAndPRs": 1755,
     "incrementPages": 18,
-    "commits": 607,
-    "commitPages": 7,
-    "discussions": 347,
+    "commits": 489,
+    "commitPages": 5,
+    "discussions": 359,
     "discussionPages": 18,
     "completeNestedPagination": true,
     "releasesIncludingPrereleases": 4,
@@ -93,24 +93,24 @@
       "commit": "3fd1cc393b8512c2e989860053f30dee5a8cd1aa",
       "url": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.3"
     },
-    "issueCommentPages": 35,
-    "issueComments": 3437,
+    "issueCommentPages": 37,
+    "issueComments": 3624,
     "reviewCommentPages": 1,
-    "reviewComments": 61,
-    "commentThreads": 1819,
+    "reviewComments": 45,
+    "commentThreads": 1852,
     "unavailableThreads": [
       9418
     ],
-    "unavailableScope": "Historical parent retry HTTP404; reviews remain inaccessible, cause unknown; original code comment retained. Not a current-window missing parent.",
+    "unavailableScope": "Historical parent retry HTTP404;body/reviews inaccessible,cause unknown;original code comment retained. Not a current-window missing parent.",
     "prReviewPages": 17,
-    "recentPRReviewConnections": 1650,
-    "reviewBodies": 675,
+    "recentPRReviewConnections": 1668,
+    "reviewBodies": 912,
     "changes": {
       "newEntries": 7,
-      "newReports": 51
+      "newReports": 43
     },
-    "record": "docs/maintenance/2026-10-25-nightly.md",
-    "rawDirectory": "research/raw/daily-2026-10-25/",
+    "record": "docs/maintenance/2026-10-26-nightly.md",
+    "rawDirectory": "research/raw/daily-2026-10-26/",
     "sourceReviewOnly": true
   }
 }

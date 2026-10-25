@@ -155,3 +155,7 @@ for(const article of articles){if(["requirements","guides/windows","guides/build
 for(const article of articles){if(["guides/windows","guides/linux","guides/build","guides/input"].includes(article.slug))article.reviewed="2026-10-24";}
 
 for(const article of articles){if(["guides/windows","guides/linux","guides/build","guides/input"].includes(article.slug))article.reviewed="2026-10-25";}
+
+for(const article of articles){if(["guides/windows","guides/linux","guides/build"].includes(article.slug)){article.reviewed="2026-10-26";}}
+
+for(const article of articles){if(["guides/input","guides/language-fonts"].includes(article.slug))article.reviewed="2026-10-26";}

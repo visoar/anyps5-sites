@@ -5461,6 +5461,183 @@ Object.assign(editorial,{
   }
  }
 });
+Object.assign(editorial,{
+ "octopath-traveler-0": {
+  "genre": "turnBasedRpg",
+  "overview": {
+   "en": "An HD-2D role-playing adventure with a custom protagonist and town restoration. Character creation here is separate from battles and exploration.",
+   "zh": "HD-2D角色扮演冒险，可创建主角并重建城镇；此处角色创建结果与战斗、探索分开。",
+   "ar": "مغامرة HD-2D ببطل مخصص وإعمار بلدة؛ إنشاء الشخصية هنا منفصل عن القتال والاستكشاف.",
+   "pt": "RPG HD-2D com protagonista criado e reconstrução de uma vila; criação não prova combate/exploração.",
+   "de": "HD-2D-RPG mit eigener Figur und Stadtaufbau; Charaktererstellung belegt hier noch keine Kämpfe/Erkundung.",
+   "fr": "RPG HD-2D avec personnage créé et reconstruction; création distincte des combats/exploration.",
+   "es": "RPG HD-2D con protagonista propio y reconstrucción; creación separada de combate/exploración."
+  },
+  "editionNote": {
+   "en": "Confirm this PS5 package and content version; other regions, PS4/native PC versions, DLC and promotional images do not identify the tested content. Report: Asian28495/01.000.000. Art page listsJapanese28492 and demo29437, not this package.",
+   "zh": "核对本PS5包及内容版本，其他地区、PS4／原生PC、DLC和宣传图不能识别实测内容。 报告为亚洲28495／01.000.000；图片页列日本28492及试玩29437，与实测包不同。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ مناطق أخرى و PS4/PC و DLC والدعاية لا تحدد المحتوى المختبر. التقريرآسيوي 28495/01.000.000؛ الصورة لصفحة 28492 الياباني/demo29437.",
+   "pt": "Confirme pacotePS5/versão; outras regiões, PS4/PC, DLC e imagem promocional não identificam conteúdo testado. Relato asiático28495/01.000.000; arte28492japonês/demo29437.",
+   "de": "PS5-Paket/Version prüfen; andere Regionen, PS4/PC, DLC und Werbebilder identifizieren Testinhalt nicht. BerichtAsien28495/01.000.000; BildseiteJapan28492/Demo29437.",
+   "fr": "Vérifiez paquetPS5/version; autres régions, PS4/PC, DLC et images promotionnelles ne fixent pas le contenu testé. RapportAsie28495/01.000.000; page artJapon28492/démo29437.",
+   "es": "Verifica paquetePS5/versión; otras regiones, PS4/PC, DLC e imagen promocional no identifican contenido probado. InformeAsia28495/01.000.000; páginaJapón28492/demo29437."
+  },
+  "related": [],
+  "names": {
+   "zh": "八方旅人0"
+  }
+ },
+ "mouse-pi-for-hire": {
+  "genre": "shooter",
+  "overview": {
+   "en": "A noir first-person shooter with hand-drawn cartoon visuals. The hotel-lobby walking report does not certify later combat or the campaign.",
+   "zh": "黑色侦探风格第一人称射击，采用手绘卡通视觉；酒店大厅行走报告不验证后续战斗或全流程。",
+   "ar": "تصويب أول بنكهةنوير ورسوم كرتونية؛ تقرير مشي الفندق لا يؤهل القتال اللاحق أو الحملة.",
+   "pt": "Tiro na primeira pessoa noir com desenhos animados; andar no hotel não certifica combate/campanha.",
+   "de": "Noir-Egoshooter mit gezeichnetem Cartoonstil; Hotelbewegung zertifiziert weder spätere Kämpfe noch Kampagne.",
+   "fr": "FPS noir au dessin animé; marche à l’hôtel ne certifie ni combats ultérieurs ni campagne.",
+   "es": "FPS noir de dibujos animados; andar por hotel no certifica combate posterior ni campaña."
+  },
+  "editionNote": {
+   "en": "Confirm this PS5 package and content version; other regions, PS4/native PC versions, DLC and promotional images do not identify the tested content.",
+   "zh": "核对本PS5包及内容版本，其他地区、PS4／原生PC、DLC和宣传图不能识别实测内容。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ مناطق أخرى و PS4/PC و DLC والدعاية لا تحدد المحتوى المختبر.",
+   "pt": "Confirme pacotePS5/versão; outras regiões, PS4/PC, DLC e imagem promocional não identificam conteúdo testado.",
+   "de": "PS5-Paket/Version prüfen; andere Regionen, PS4/PC, DLC und Werbebilder identifizieren Testinhalt nicht.",
+   "fr": "Vérifiez paquetPS5/version; autres régions, PS4/PC, DLC et images promotionnelles ne fixent pas le contenu testé.",
+   "es": "Verifica paquetePS5/versión; otras regiones, PS4/PC, DLC e imagen promocional no identifican contenido probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "MOUSE: P.I. For Hire"
+  }
+ },
+ "persona-5-royal": {
+  "genre": "turnBasedRpg",
+  "overview": {
+   "en": "The Phantom Thieves combine Tokyo social life with supernatural turn-based battles. Loading patches and an ATLUS logo are not a playable Royal campaign.",
+   "zh": "怪盗团的东京日常与异世界回合制战斗交织；加载补丁与ATLUS标志不等于皇家版剧情可玩。",
+   "ar": "حياة طوكيو ومعارك خارقة بالأدوار؛ تصحيحات التحميل وشعار ATLUS ليسا حملة Royal قابلة للعب.",
+   "pt": "Vida social em Tóquio e batalhas por turnos sobrenaturais; patches/logótipoATLUSnão provam campanhaRoyal.",
+   "de": "Tokio-Alltag und übernatürliche Rundenkämpfe; Ladepatches/ATLUS-Logo belegen keine spielbare Royal-Kampagne.",
+   "fr": "Vie sociale à Tokyo et combats surnaturels au tour par tour; patches/logoATLUSne prouvent pas une campagneRoyaljouable.",
+   "es": "Vida social en Tokio y combates sobrenaturales por turnos; parches/logoATLUSno prueban campañaRoyaljugable."
+  },
+  "editionNote": {
+   "en": "Confirm this PS5 package and content version; other regions, PS4/native PC versions, DLC and promotional images do not identify the tested content. PS5report05110. Available page OG art is labelledPS4 and was rejected; USPS5listing05109 is another region.",
+   "zh": "核对本PS5包及内容版本，其他地区、PS4／原生PC、DLC和宣传图不能识别实测内容。 实测PS5为05110；可取OG素材标为PS4，已弃用，资料页USPS5的05109属另一地区。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ مناطق أخرى و PS4/PC و DLC والدعاية لا تحدد المحتوى المختبر. تقرير PS5 هو 05110؛ صورة OG موسومة PS4 رفضت، و USPS5 رقمه 05109 آخر.",
+   "pt": "Confirme pacotePS5/versão; outras regiões, PS4/PC, DLC e imagem promocional não identificam conteúdo testado. PS5testado05110; OGmarcadoPS4rejeitado, USPS505109é outra região.",
+   "de": "PS5-Paket/Version prüfen; andere Regionen, PS4/PC, DLC und Werbebilder identifizieren Testinhalt nicht. PS5-Test05110; PS4-markiertesOGabgelehnt, US-PS505109andere Region.",
+   "fr": "Vérifiez paquetPS5/version; autres régions, PS4/PC, DLC et images promotionnelles ne fixent pas le contenu testé. PS5testé05110; OGmarquéPS4écarté, USPS505109autre région.",
+   "es": "Verifica paquetePS5/versión; otras regiones, PS4/PC, DLC e imagen promocional no identifican contenido probado. PS5probado05110; OGmarcadoPS4rechazado, USPS505109otra región."
+  },
+  "related": [],
+  "names": {
+   "zh": "女神异闻录5皇家版"
+  }
+ },
+ "flashback-ppsa08546": {
+  "genre": "action",
+  "overview": {
+   "en": "The upstream report calls PPSA08546 “Flashback”. Other title indexes associate this package with Flashback2; the subtitle awaits primary package confirmation. Depth-view diagnostics do not establish a playable level.",
+   "zh": "上游将PPSA08546称作Flashback，其他目录关联Flashback2；副标题仍待原始包确认。深度视图诊断不证明可操作关卡。",
+   "ar": "يسمي التقرير PPSA08546 بـ Flashback؛ فهارس أخرى تربطه بـ Flashback2، والعنوان الفرعي ينتظر تأكيد الحزمة. تشخيص العمق ليس مرحلة لعب.",
+   "pt": "Upstream chamaPPSA08546Flashback; outros índices apontamFlashback2, subtítulo por confirmar no pacote. Diagnóstico de profundidade não prova nível jogável.",
+   "de": "Upstream nenntPPSA08546Flashback; andere Indizes ordnenFlashback2zu, Untertitel braucht Paketbestätigung. Tiefendiagnose belegt kein spielbares Level.",
+   "fr": "Upstream nommePPSA08546Flashback; d’autres index l’associent àFlashback2, sous-titre à confirmer par le paquet. Diagnostic profondeur ne prouve pas de niveau jouable.",
+   "es": "Upstream llamaPPSA08546Flashback; otros índices lo asocian conFlashback2, subtítulo pendiente del paquete. Diagnóstico de profundidad no prueba nivel jugable."
+  },
+  "editionNote": {
+   "en": "Confirm this PS5 package and content version; other regions, PS4/native PC versions, DLC and promotional images do not identify the tested content.",
+   "zh": "核对本PS5包及内容版本，其他地区、PS4／原生PC、DLC和宣传图不能识别实测内容。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ مناطق أخرى و PS4/PC و DLC والدعاية لا تحدد المحتوى المختبر.",
+   "pt": "Confirme pacotePS5/versão; outras regiões, PS4/PC, DLC e imagem promocional não identificam conteúdo testado.",
+   "de": "PS5-Paket/Version prüfen; andere Regionen, PS4/PC, DLC und Werbebilder identifizieren Testinhalt nicht.",
+   "fr": "Vérifiez paquetPS5/version; autres régions, PS4/PC, DLC et images promotionnelles ne fixent pas le contenu testé.",
+   "es": "Verifica paquetePS5/versión; otras regiones, PS4/PC, DLC e imagen promocional no identifican contenido probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "Flashback（PPSA08546）"
+  }
+ },
+ "driftcheck": {
+  "genre": "utility",
+  "overview": {
+   "en": "An open-source PS5 homebrew controller tester for stick drift, buttons and triggers. UI rendering and physical-controller validation have different evidence scopes.",
+   "zh": "开源PS5自制手柄测试工具，检查摇杆漂移、按键与扳机；界面渲染和实体手柄测试有各自证据范围。",
+   "ar": "أداة PS5 مفتوحة لاختبار انجراف العصا والأزرار والزناد؛ رسم الواجهة واختبار ذراع فعلي دليلان مختلفان.",
+   "pt": "Ferramenta homebrew PS5 para deriva, botões e gatilhos; interface e ensaio de comando físico têm provas distintas.",
+   "de": "Offener PS5-Homebrew-Controllertest für Drift, Tasten und Trigger; UI und physische Eingabe getrennt belegt.",
+   "fr": "Outil homebrew PS5 ouvert pour dérive, boutons et gâchettes; interface et manette physique ont des preuves distinctes.",
+   "es": "Herramienta homebrew PS5 abierta para deriva, botones y gatillos; interfaz y mando físico tienen evidencia distinta."
+  },
+  "editionNote": {
+   "en": "Confirm this PS5 package and content version; other regions, PS4/native PC versions, DLC and promotional images do not identify the tested content. Homebrew98766. Windows UI test has unknown content version; Mac01.000.000 test uses Rosetta and unmerged runtime patches, not an officialMac release.",
+   "zh": "核对本PS5包及内容版本，其他地区、PS4／原生PC、DLC和宣传图不能识别实测内容。 自制98766；Windows界面测试内容版本未知，Mac01.000.000用Rosetta与未合运行时补丁，不是Mac正式发行。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ مناطق أخرى و PS4/PC و DLC والدعاية لا تحدد المحتوى المختبر. أداة 98766؛ نسخة Windows مجهولة، Mac01.000.000 مع Rosetta وتعديلات غير مدمجة، لا إصدار Mac رسمي.",
+   "pt": "Confirme pacotePS5/versão; outras regiões, PS4/PC, DLC e imagem promocional não identificam conteúdo testado. Homebrew98766; versãoWindowsdesconhecida, Mac01.000.000comRosetta/patches abertos, não releaseMac.",
+   "de": "PS5-Paket/Version prüfen; andere Regionen, PS4/PC, DLC und Werbebilder identifizieren Testinhalt nicht. Homebrew98766; Windows-Version unbekannt, Mac01.000.000mitRosetta/offenen Patches, keinMac-Release.",
+   "fr": "Vérifiez paquetPS5/version; autres régions, PS4/PC, DLC et images promotionnelles ne fixent pas le contenu testé. Homebrew98766; versionWindowsinconnue, Mac01.000.000avecRosetta/patches ouverts, pasreleaseMac.",
+   "es": "Verifica paquetePS5/versión; otras regiones, PS4/PC, DLC e imagen promocional no identifican contenido probado. Homebrew98766; versiónWindowsdesconocida, Mac01.000.000conRosetta/parches abiertos, no releaseMac."
+  },
+  "related": [],
+  "names": {
+   "zh": "DriftCheck手柄测试工具"
+  }
+ },
+ "resident-evil-requiem": {
+  "genre": "action",
+  "overview": {
+   "en": "Capcom’s survival-horror entry needs edition-specific verification. A saved-settings intro and an indirect-draw hang do not prove exploration or combat.",
+   "zh": "卡普空生存恐怖新作须逐版本核验；已有设置后的片头和间接绘制挂起不证明探索或战斗。",
+   "ar": "رعب بقاء Capcom يتطلب تحقق النسخة؛ مقدمة بإعداد محفوظ وتعليق رسم لا يثبتان استكشافاً أو قتالاً.",
+   "pt": "Terror de sobrevivênciaCapcom exige edição exata; intro e bloqueio de draw não provam exploração/combate.",
+   "de": "Capcoms Survivalhorror braucht Editionsprüfung; Intro mit Saveeinstellungen und Draw-Hang belegen keine Erkundung/Kämpfe.",
+   "fr": "Survival horrorCapcom à vérifier par édition; intro avec réglages sauvegardés et draw bloqué ne prouvent pas exploration/combat.",
+   "es": "Survival horrorCapcom exige edición concreta; intro con ajustes guardados y draw colgado no prueban exploración/combate."
+  },
+  "editionNote": {
+   "en": "Confirm this PS5 package and content version; other regions, PS4/native PC versions, DLC and promotional images do not identify the tested content. Report31246/01.200.000; the art page includes30803/36561, so it does not prove the reported region or edition.",
+   "zh": "核对本PS5包及内容版本，其他地区、PS4／原生PC、DLC和宣传图不能识别实测内容。 实测31246／01.200.000，图片页包含30803／36561，不证明报告地区或版本内容。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ مناطق أخرى و PS4/PC و DLC والدعاية لا تحدد المحتوى المختبر. تقرير 31246/01.200.000؛ صفحةالصورة 30803/36561 لا تثبت منطقته/نسخته.",
+   "pt": "Confirme pacotePS5/versão; outras regiões, PS4/PC, DLC e imagem promocional não identificam conteúdo testado. Relato31246/01.200.000; arte30803/36561não prova região/edição testada.",
+   "de": "PS5-Paket/Version prüfen; andere Regionen, PS4/PC, DLC und Werbebilder identifizieren Testinhalt nicht. Bericht31246/01.200.000; Bildseite30803/36561belegt Testregion/Edition nicht.",
+   "fr": "Vérifiez paquetPS5/version; autres régions, PS4/PC, DLC et images promotionnelles ne fixent pas le contenu testé. Rapport31246/01.200.000; art30803/36561ne fixe région/édition testée.",
+   "es": "Verifica paquetePS5/versión; otras regiones, PS4/PC, DLC e imagen promocional no identifican contenido probado. Informe31246/01.200.000; arte30803/36561no fija región/edición probada."
+  },
+  "related": [],
+  "names": {
+   "zh": "生化危机：安魂曲"
+  }
+ },
+ "subnautica-below-zero": {
+  "genre": "adventure",
+  "overview": {
+   "en": "An arctic underwater survival adventure on Planet4546B. Its opening-intro counters are separate from swimming, crafting and habitat building.",
+   "zh": "在4546B冰冷海域求生的水下冒险；开场片头计数与潜游、制作和建造基地分开。",
+   "ar": "بقاء تحت الماء في منطقة قطبية من 4546B؛ عداد المقدمة منفصل عن السباحة والصناعة والبناء.",
+   "pt": "Sobrevivência subaquática no ártico de4546B; contadores da intro não provam natação, criação/construção.",
+   "de": "Arktisches Unterwasserüberleben auf4546B; Introzähler getrennt von Schwimmen, Crafting/Basisbau.",
+   "fr": "Survie sous-marine arctique sur4546B; compteurs d’intro distincts de nage, fabrication/construction.",
+   "es": "Supervivencia submarina ártica en4546B; contadores de intro separados de nado, fabricación/construcción."
+  },
+  "editionNote": {
+   "en": "Confirm this PS5 package and content version; other regions, PS4/native PC versions, DLC and promotional images do not identify the tested content. Report02457; promotional page02456 differs by region. Content version unstated.",
+   "zh": "核对本PS5包及内容版本，其他地区、PS4／原生PC、DLC和宣传图不能识别实测内容。 实测02457与宣传页02456地区不同，实测内容版本未知。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ مناطق أخرى و PS4/PC و DLC والدعاية لا تحدد المحتوى المختبر. تقرير 02457 والصورة 02456 منطقة أخرى؛ نسخة المحتوى مجهولة.",
+   "pt": "Confirme pacotePS5/versão; outras regiões, PS4/PC, DLC e imagem promocional não identificam conteúdo testado. Relato02457, arte02456outra região; versão desconhecida.",
+   "de": "PS5-Paket/Version prüfen; andere Regionen, PS4/PC, DLC und Werbebilder identifizieren Testinhalt nicht. Bericht02457, Bild02456andere Region; Inhaltsversion unbekannt.",
+   "fr": "Vérifiez paquetPS5/version; autres régions, PS4/PC, DLC et images promotionnelles ne fixent pas le contenu testé. Rapport02457, art02456autre région; version inconnue.",
+   "es": "Verifica paquetePS5/versión; otras regiones, PS4/PC, DLC e imagen promocional no identifican contenido probado. Informe02457, arte02456otra región; versión desconocida."
+  },
+  "related": [],
+  "names": {
+   "zh": "深海迷航：零度之下"
+  }
+ }
+});
 export const media=sources as Record<string,{source:string;provider:string;cover:string|null;screenshots:string[];checked:string}>;
 export const genreLabel=(slug:string,locale:keyof Text)=>genres[editorial[slug].genre][locale];
 export const gameName=(game:{slug:string;name:string},locale:keyof Text)=>editorial[game.slug]?.names[locale]||game.name;
@@ -5475,3 +5652,42 @@ export const gameSearchText=(game:{slug:string;name:string;titleId:string|null})
 editorial["hi-fi-rush"].editionNote=L("The report is PPSA17191; US PlayStation artwork identifies PPSA17168. Shared promotional art does not establish the tested region or Deluxe content.","报告为PPSA17191，美国PlayStation图片对应PPSA17168；共用宣传图不证明测试地区或Deluxe内容。","التقرير PPSA17191 وصورة المتجر الأمريكي PPSA17168؛ الصورة المشتركة لا تثبت المنطقة أو محتوى Deluxe المختبر.","Relatório PPSA17191, arte americana PPSA17168; imagem partilhada não prova região ou conteúdo Deluxe testado.","Bericht PPSA17191, US-Werbung PPSA17168; gemeinsames Bild belegt weder Testregion noch Deluxe-Inhalt.","Rapport PPSA17191, image américaine PPSA17168 ; l’art partagé ne prouve ni région ni contenu Deluxe testé.","Informe PPSA17191, imagen estadounidense PPSA17168; arte compartido no prueba región ni contenido Deluxe probado.");
 
 editorial['jumanji-ppsa03973'].names.zh='勇敢者游戏：电子游戏';
+
+for(const [slug,overview]of Object.entries({
+ "final-fantasy-resonance": {
+  "en": "An HD-2D crystal adventure with turn-based battles. Windows clean-main play and Linux patched scene evidence retain distinct conditions.",
+  "zh": "HD-2D水晶冒险采用回合制战斗；Windows干净main游玩与Linux补丁场景保留各自条件。",
+  "ar": "مغامرة HD-2D بمعارك أدوار؛ لعب Windowsmain ومشهد Linux المعدل منفصلان.",
+  "pt": "AventuraHD-2D por turnos; Windowsmain limpo/Linuxmodificado separados.",
+  "de": "HD-2D-Rundenabenteuer; Windowsmain-Spiel undLinux-Patchszene getrennt.",
+  "fr": "AventureHD-2D par tours; jeuWindowsmain et scèneLinuxmodifiée distincts.",
+  "es": "AventuraHD-2D por turnos; Windowsmain y escenaLinuxmodificada separados."
+ },
+ "bugsnax": {
+  "en": "Catchable food creatures inhabit Snaktooth Island. Rainy-opening and tutorial observations use different alpha-coverage experiments.",
+  "zh": "食物生物栖息于Snaktooth岛；雨中开场与教程观察使用不同alpha覆盖实验。",
+  "ar": "كائنات طعام بجزيرة Snaktooth؛ الافتتاح والتعليم بتجربتي alpha مختلفتين.",
+  "pt": "Criaturas alimentares emSnaktooth; abertura/tutorial usam coberturaalpha distinta.",
+  "de": "Essbare Wesen aufSnaktooth; Einstieg/Tutorial mit anderenAlphaexperimenten.",
+  "fr": "Créatures comestibles àSnaktooth; ouverture/tutoriel sur expériencesalpha distinctes.",
+  "es": "Criaturas comestibles enSnaktooth; inicio/tutorial con experimentosalpha distintos."
+ },
+ "trails-sky-1st-chapter": {
+  "en": "A story-led party RPG. A local NGS2 integration reaches the first house interior before its own guard aborts; continued play remains unverified.",
+  "zh": "剧情驱动的队伍RPG；本地NGS2整合到首间屋内后被自身保护终止，后续游玩未证实。",
+  "ar": "RPG قصصي جماعي؛ NGS2 محلي يصل المنزل ثم يتوقف بحارسه، استمرار اللعب غير مثبت.",
+  "pt": "RPG de grupo narrativo; NGS2local chega à casa e aborta no guard, jogo contínuo não provado.",
+  "de": "Erzähltes Gruppen-RPG; lokalesNGS2erreicht Haus und bricht am Guard ab, Weiterspielen ungeprüft.",
+  "fr": "RPG narratif de groupe; NGS2local atteint maison puis guard, jeu continu non vérifié.",
+  "es": "RPG narrativo de grupo; NGS2local llega a casa y guardaborta, juego continuo sin probar."
+ },
+ "super-meat-boy-3d": {
+  "en": "A three-dimensional precision platformer. Gameplay renders differently across the reported Windows/AMD and Linux/NVIDIA builds; colour correctness remains unresolved.",
+  "zh": "三维精准跳跃游戏；Windows／AMD与Linux／NVIDIA报告的游戏过程呈色不同，颜色正确性仍待解决。",
+  "ar": "منصات ثلاثية دقيقة؛ ألوان Windows/AMD و Linux/NVIDIA مختلفة، الصحة غير محسومة.",
+  "pt": "Plataformas3D de precisão; cor difereWindows/AMD eLinux/NVIDIA, questão aberta.",
+  "de": "Präzisions-3D-Plattformer; Windows/AMDundLinux/NVIDIAzeigen andere Farben, ungeklärt.",
+  "fr": "Plateformes3D de précision; couleursWindows/AMD etLinux/NVIDIAdiffèrent, non résolu.",
+  "es": "Plataformas3D de precisión; coloresWindows/AMD yLinux/NVIDIAdifieren, sin resolver."
+ }
+})){editorial[slug].overview=overview;}

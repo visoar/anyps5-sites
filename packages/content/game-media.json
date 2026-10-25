@@ -2166,5 +2166,33 @@
     "cover": null,
     "screenshots": [],
     "checked": "2026-10-25"
+  },
+  "octopath-traveler-0": {
+    "source": "https://www.playstation.com/en-us/games/octopath-traveler-0/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202505/2109/6eb9221ab73f97643997949976e2e13f374ed79e4e244060.png",
+    "screenshots": [],
+    "checked": "2026-10-26"
+  },
+  "mouse-pi-for-hire": {
+    "source": "https://www.playstation.com/en-us/games/mouse-p-i-for-hire/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0206/ec04116f30616ee2ef7e91c70c96bb7773b9d95a54e4d2b9.png",
+    "screenshots": [],
+    "checked": "2026-10-26"
+  },
+  "resident-evil-requiem": {
+    "source": "https://www.playstation.com/en-us/games/resident-evil-requiem/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1205/79661d7a2bdb9784749b4e57e1456ca89f7ac7bed8615aee.png",
+    "screenshots": [],
+    "checked": "2026-10-26"
+  },
+  "subnautica-below-zero": {
+    "source": "https://www.playstation.com/en-us/games/subnautica-below-zero/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202103/1000/ajXEVMJhzxXuOezVXR6bFOkK.png",
+    "screenshots": [],
+    "checked": "2026-10-26"
   }
 }
