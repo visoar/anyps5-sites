@@ -21983,7 +21983,7 @@ const nightlyReports26:Record<string,Report[]>={
    "summary": {
     "en": "Exact2ff14f34/main c8d34 renders title/foliage, New Game/save choice and rainy first-person opening305s; normal close310.6s/0. Main control stops13s on0xe701 before verified frame. No10581, later tutorial, bridge, audio, movement or FPS comparison; physical validation0VUID on both.",
     "zh": "固定2ff14f34／mainc8d34到标题、树叶、新游戏／存档选择和305秒雨中第一人称开场，310.6秒正常退出0。main对照13秒因0xe701停止、未核验帧。无10581，未验证后续教程、桥、音频、移动或FPS；两侧实体验证层0VUID。",
-    "ar": "2ff14f34/main c8d34 يصل عنواناً/أوراقاً/حفظاً ثم افتتاحية 305 ث؛ إغلاق طبيعي 310.6 ث/0. main يتوقف 13 ث عند 0xe701 قبل إطار متحقق. بلا 10581 أو تحقق教程/جسر/صوت/حركة/FPS؛ 0VUID كلاهما.",
+    "ar": "2ff14f34/main c8d34 يصل عنواناً/أوراقاً/حفظاً ثم افتتاحية 305 ث؛ إغلاق طبيعي 310.6 ث/0. main يتوقف 13 ث عند 0xe701 قبل إطار متحقق. بلا 10581 أو تحقق البرنامج التعليمي اللاحق/جسر/صوت/حركة/FPS؛ 0VUID كلاهما.",
     "pt": "2ff14f34/main c8d34 mostra título/folhagem/escolha de gravação e abertura305s; fecha310,6s/0. mainpára13s em0xe701antes de quadro validado. Sem10581/tutorial posterior/ponte/áudio/movimento/FPS;0VUIDambos.",
     "de": "2ff14f34/main c8d34 zeigt Titel/Laub/Speicherwahl und Einstieg305s; normal310,6s/0. mainstoppt13s an0xe701vor geprüftem Frame. Ohne10581; weiteres Tutorial, Brücke, Ton, Bewegung/FPS ungeprüft;0VUIDbeide.",
     "fr": "2ff14f34/main c8d34 montre titre/feuillage/choix sauvegarde et ouverture305s; fermeture310,6s/0. mainstoppe13s sur0xe701avant image vérifiée. Sans10581; tutoriel suite, pont, son, mouvement/FPS non vérifiés;0VUIDdes deux.",
