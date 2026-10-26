@@ -545,3 +545,34 @@ extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
 });
 
 extraArticles.find(article=>article.slug==="troubleshooting")!.reviewed="2026-10-26";
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
+ "id": "result-memo-and-diagnostic-scope",
+ "title": {
+  "en": "A memory limit is not a compatibility fix",
+  "zh": "内存上限不是兼容性修复",
+  "ar": "حد الذاكرة ليس إصلاح توافق",
+  "pt": "Um limite de memória não corrige compatibilidade",
+  "de": "Ein Speicherlimit ist kein Kompatibilitätsfix",
+  "fr": "Une limite mémoire ne corrige pas la compatibilité",
+  "es": "Un límite de memoria no corrige compatibilidad"
+ },
+ "body": [
+  {
+   "en": "Current main documents APS5_RESULT_MEMO_MB with a 256 MiB limit across shader-source result memos and LRU eviction. Zero retains results until their set evicts them; it is not a zero-byte budget. APS5_NO_PERF_DOMINATOR_TREE selects a diagnostic fallback, not a promised speed gain. MoltenVK deferred-destruction and macOS priority controls are experimental platform details. Record the actual build and every override before comparing runs; none of these options establishes a game fix or release support.",
+   "zh": "当前 main 的 APS5_RESULT_MEMO_MB 默认 256 MiB，约束全部 shader source 的结果 memo 并按 LRU 淘汰；0 表示保留至集合自身淘汰，不是零字节预算。APS5_NO_PERF_DOMINATOR_TREE 选择诊断回退，不承诺提速。MoltenVK 延迟销毁及 macOS 优先级控制是实验平台细节。比较运行前记录实际构建及全部覆盖项；这些选项不单独证明游戏修复或发行支持。",
+   "ar": "يوثق main حد APS5_RESULT_MEMO_MB الافتراضي 256 MiB لمذكرات نتائج مصادر shader مع إخلاء LRU. الصفر يحتفظ حتى إخلاء المجموعة، لا ميزانية صفرية. APS5_NO_PERF_DOMINATOR_TREE مسار تشخيصي لا وعد سرعة. تدمير MoltenVK المؤجل وأولوية macOS تفاصيل تجريبية. سجل البناء وكل تجاوز قبل المقارنة؛ لا تثبت هذه الخيارات إصلاح لعبة أو دعم إصدار.",
+   "pt": "O main documenta APS5_RESULT_MEMO_MB com 256 MiB para resultados dos shaders e expulsão LRU. Zero retém até à expulsão pelo conjunto, não significa zero bytes. APS5_NO_PERF_DOMINATOR_TREE escolhe um caminho de diagnóstico, sem ganho garantido. Destruição diferida MoltenVK e prioridades macOS são detalhes experimentais. Registe build e opções antes de comparar; não provam uma correção de jogo ou suporte de versão.",
+   "de": "Main dokumentiert APS5_RESULT_MEMO_MB mit 256 MiB über Shader-Ergebnismemos und LRU-Verdrängung. Null behält Ergebnisse bis zur Verdrängung durch die Menge, kein Nullbyte-Budget. APS5_NO_PERF_DOMINATOR_TREE wählt einen Diagnosepfad ohne Leistungsversprechen. MoltenVK-Löschverzögerung und macOS-Priorität sind experimentelle Details. Build und alle Overrides dokumentieren; kein Beleg für Spielkorrektur oder Release-Support.",
+   "fr": "Le main documente APS5_RESULT_MEMO_MB à 256 MiB pour les mémos de résultats shaders avec éviction LRU. Zéro conserve jusqu’à l’éviction par l’ensemble, sans budget de zéro octet. APS5_NO_PERF_DOMINATOR_TREE choisit un repli de diagnostic, sans gain garanti. Destruction différée MoltenVK et priorité macOS sont expérimentales. Notez build et options avant de comparer; rien ne prouve seul une correction de jeu ou un support publié.",
+   "es": "Main documenta APS5_RESULT_MEMO_MB con 256 MiB para memos de resultados shader y expulsión LRU. Cero conserva hasta que el conjunto expulse; no significa cero bytes. APS5_NO_PERF_DOMINATOR_TREE elige una vía diagnóstica sin promesa de velocidad. Destrucción diferida MoltenVK y prioridad macOS son experimentales. Registra build y opciones antes de comparar; no demuestran una corrección de juego ni soporte publicado."
+  }
+ ],
+ "links": [
+  {
+   "label": "ENVIRONMENT · e0b13f2990",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/e0b13f2990f31a949a6da21d81a7789ebdfeaa26/docs/dev/ENVIRONMENT.md"
+  }
+ ]
+});
+extraArticles.find(article=>article.slug==="troubleshooting")!.reviewed="2026-10-27";

@@ -3996,5 +3996,89 @@
       "height": 1024
     },
     "screenshots": []
+  },
+  "aila": {
+    "cover": {
+      "file": "aila/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202505/1513/e021c6680bfc45ea9e1e9019d431ede72fb92039cf0f4e28.jpg",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202505/1513/e021c6680bfc45ea9e1e9019d431ede72fb92039cf0f4e28.jpg",
+      "sourceSha256": "3f9c2bf2ab4f6c4e95a5419cf30fd57b542c4b25d6a1643097f6453f8e06f728",
+      "sourceBytes": 2673725,
+      "sha256": "96f17349a2e6d8f4f394d66b3dfe0e1bd57649263add03da12c025feb531900b",
+      "bytes": 108322,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "deathloop": {
+    "cover": {
+      "file": "deathloop/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202007/1617/Fv4asO4zbdqL83hiL9COTlWZ.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202007/1617/Fv4asO4zbdqL83hiL9COTlWZ.png",
+      "sourceSha256": "3f77cb9419960879100578fd701c84cbef688fcd144bb7a3f5f09f5b4d04d131",
+      "sourceBytes": 205333,
+      "sha256": "281fc901f544e47d8e50bbb8329d37b39e6b7bcef1f7d2daa9c315978268ce20",
+      "bytes": 113726,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "neptunia-reverse": {
+    "cover": {
+      "file": "neptunia-reverse/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202105/1319/8SO9D15YafaDqF75zJZJC1Ia.jpg",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202105/1319/8SO9D15YafaDqF75zJZJC1Ia.jpg",
+      "sourceSha256": "522a75438d9e6bf235eb52ab4efb37cd8f7e5e22edb3ba6e48fb00f5b2575750",
+      "sourceBytes": 736374,
+      "sha256": "64d6e51dca9783160522a480526636df9dd750db48a1b0ac50fc237aa910aa0b",
+      "bytes": 78044,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "days-gone-remastered": {
+    "cover": {
+      "file": "days-gone-remastered/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1302/cdf6431ee3f30fde3c13b42857d41edc42142da11e1bdc61.jpg",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1302/cdf6431ee3f30fde3c13b42857d41edc42142da11e1bdc61.jpg",
+      "sourceSha256": "f5f7d8d21d7ba4eb7b4a9424672336cae1b14716b35e4f6a9bfe2955a1306cce",
+      "sourceBytes": 581999,
+      "sha256": "6efcaf9e59838fdbb2b53aca785410afcfb4fe4ff65036f811f8cff9831142ef",
+      "bytes": 36092,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "mewgenics": {
+    "cover": {
+      "file": "mewgenics/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202608/2019/da4d679cbe3193e14bbb96cc8537858031267c059f43a7cd.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202608/2019/da4d679cbe3193e14bbb96cc8537858031267c059f43a7cd.png",
+      "sourceSha256": "d5850862a088ea8a3c033a7da108252e640d5ac904aff1f6379a5afdb96f8dd3",
+      "sourceBytes": 591288,
+      "sha256": "0518202b9ca40df9802e56c7b439699c4f5741dada9f2757ecf55f3bac670abd",
+      "bytes": 70074,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "alone-in-the-dark": {
+    "cover": {
+      "file": "alone-in-the-dark/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1015/b3a91fa43661ced3d57a908c26f5bfab057584343be6f618.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1015/b3a91fa43661ced3d57a908c26f5bfab057584343be6f618.png",
+      "sourceSha256": "65ccd93272eef96d301d894a750780210568ab126042b101358c60b60b3767f7",
+      "sourceBytes": 127309,
+      "sha256": "16dbdfa662f5be64bc02f92a6190e77e99d67de3fb66e961b56b771b3a757474",
+      "bytes": 60614,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
   }
 }

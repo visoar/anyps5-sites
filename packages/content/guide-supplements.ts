@@ -2708,3 +2708,215 @@ guideSupplements["guides/build"].push({
   }
  ]
 });
+
+guideSupplements["guides/input"].push({
+ "id": "upstream-web-input-mapper",
+ "title": {
+  "en": "Edit an input configuration in the browser",
+  "zh": "在浏览器编辑输入配置",
+  "ar": "تحرير إعداد التحكم في المتصفح",
+  "pt": "Editar a configuração no navegador",
+  "de": "Eingabekonfiguration im Browser bearbeiten",
+  "fr": "Modifier les commandes dans le navigateur",
+  "es": "Editar controles en el navegador"
+ },
+ "body": [
+  {
+   "en": "Current main includes a local input mapper requiring Node.js 22 or later. Run the command below from the upstream checkout, then open http://127.0.0.1:4173. No package installation is needed. It edits keyboard, mouse and wheel overrides; it does not run a game. Controls, Configuration and Help preserve edits when switching views. Only the language preference is saved: copy or download the INI before reloading. The configurator is not yet hosted on upstream GitHub Pages, and these main changes do not establish inclusion in v0.1.3.",
+   "zh": "当前 main 提供本地输入编辑器，需 Node.js 22 或更高版本。在上游检出目录执行下方命令，打开 http://127.0.0.1:4173，无需安装包。它编辑键盘、鼠标与滚轮映射，不运行游戏。切换操控、配置与帮助视图会保留编辑；只有语言偏好持久保存，刷新前请复制或下载 INI。上游尚未把编辑器发布到 GitHub Pages；main 新增内容不等于已包含在 v0.1.3。",
+   "ar": "يتضمن main محرر إدخال محلياً يتطلب Node.js 22 أو أحدث. شغّل الأمر في نسخة المصدر ثم افتح http://127.0.0.1:4173؛ لا يلزم تثبيت حزم. يحرر لوحة المفاتيح والفأرة والعجلة ولا يشغّل لعبة. الانتقال بين طرق العرض يحفظ التعديلات مؤقتاً؛ اللغة وحدها محفوظة دائماً، لذا انسخ INI أو نزّله قبل التحديث. لم يُنشر على GitHub Pages بعد، ولا تعني تغييرات main وجودها في v0.1.3.",
+   "pt": "O main inclui um editor local que requer Node.js 22 ou posterior. Execute o comando na cópia do projeto original e abra http://127.0.0.1:4173; não precisa de instalar pacotes. Edita teclado, rato e roda, sem executar jogos. Mudar entre Controlos, Configuração e Ajuda preserva as alterações; só o idioma fica guardado. Copie ou transfira o INI antes de recarregar. Ainda não está no GitHub Pages e estas alterações do main não confirmam inclusão na v0.1.3.",
+   "de": "Main enthält einen lokalen Eingabeeditor für Node.js 22 oder neuer. Befehl im Upstream-Checkout ausführen und http://127.0.0.1:4173 öffnen; keine Paketinstallation nötig. Er bearbeitet Tastatur, Maus und Mausrad, führt aber kein Spiel aus. Ansichtswechsel erhalten Änderungen; dauerhaft gespeichert wird nur die Sprache. INI vor dem Neuladen kopieren oder herunterladen. Noch nicht auf GitHub Pages veröffentlicht; Main-Änderungen bestätigen keine Aufnahme in v0.1.3.",
+   "fr": "Le main propose un éditeur local nécessitant Node.js 22 ou ultérieur. Lancez la commande depuis la copie du dépôt original, puis ouvrez http://127.0.0.1:4173; aucune installation de paquets. Il modifie clavier, souris et molette sans lancer de jeu. Changer de vue conserve les modifications; seule la langue est mémorisée. Copiez ou téléchargez l’INI avant de recharger. Pas encore publié sur GitHub Pages; ces changements du main ne confirment pas leur présence dans v0.1.3.",
+   "es": "El main incluye un editor local que requiere Node.js 22 o posterior. Ejecuta el comando en la copia del proyecto original y abre http://127.0.0.1:4173; no hace falta instalar paquetes. Edita teclado, ratón y rueda sin ejecutar juegos. Cambiar de vista conserva los cambios; solo se guarda el idioma. Copia o descarga el INI antes de recargar. Aún no está en GitHub Pages; los cambios de main no confirman su inclusión en v0.1.3."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream documentation · e0b13f2990",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/e0b13f2990f31a949a6da21d81a7789ebdfeaa26/docs/user/INPUT_MAPPING.md"
+  }
+ ],
+ "code": "npm --prefix tools/input-mapper start"
+});
+
+guideSupplements["guides/input"].push({
+ "id": "input-mapper-validation",
+ "title": {
+  "en": "Check warnings before exporting",
+  "zh": "导出前核对警告",
+  "ar": "راجع التحذيرات قبل التصدير",
+  "pt": "Verificar avisos antes de exportar",
+  "de": "Warnungen vor dem Export prüfen",
+  "fr": "Vérifier les avertissements avant l’export",
+  "es": "Revisar avisos antes de exportar"
+ },
+ "body": [
+  {
+   "en": "Invalid imports preserve the current configuration; invalid bindings block export. Duplicate or shared inputs, including retained defaults, produce warnings. Removing every binding for an action restores its built-in inputs. Capture uses physical browser keys mapped to SDL names. Escape cancels capture and must be selected manually to assign it; IME, ambiguous keys and system shortcuts may also need manual selection. Names containing # or ; cannot be exported because INI treats them as comments. The interface and FAQ have 22 languages, including RTL layouts; this does not translate a game.",
+   "zh": "无效导入保留当前配置，无效绑定阻止导出。重复或共用输入（包括仍保留的默认键）会警告；删光某动作的绑定会恢复内置输入。捕获按浏览器物理键映射 SDL 名称；Escape 用于取消，若要绑定须手动选择，IME、歧义键及系统快捷键也可能要手选。含 # 或 ; 的名称因 INI 注释语法不能导出。界面和 FAQ 有 22 种语言及 RTL 布局，不负责翻译游戏。",
+   "ar": "الاستيراد غير الصالح يحفظ الإعداد الحالي، والربط غير الصالح يمنع التصدير. التكرار أو الاشتراك مع الافتراضيات يولد تحذيراً؛ حذف كل روابط فعل يعيد افتراضياته. الالتقاط يطابق المفاتيح الفعلية مع SDL. Escape يلغي الالتقاط ويُختار يدوياً لربطه، وكذلك بعض مفاتيح IME والاختصارات. الأسماء المحتوية # أو ; لا تُصدّر لأنها تعليقات INI. الواجهة والأسئلة بـ22 لغة مع RTL، ولا تترجم اللعبة.",
+   "pt": "Importações inválidas preservam a configuração; associações inválidas impedem a exportação. Entradas repetidas ou partilhadas com predefinições geram avisos. Remover todas as associações de uma ação restaura as entradas de origem. A captura converte teclas físicas para nomes SDL. Escape cancela a captura e exige seleção manual, tal como algumas teclas IME e atalhos. Nomes com # ou ; não são exportáveis por serem comentários INI. A interface e FAQ têm 22 idiomas, incluindo RTL; não traduzem jogos.",
+   "de": "Ungültige Importe erhalten die Konfiguration; ungültige Belegungen blockieren den Export. Doppelte oder mit Standards geteilte Eingaben erzeugen Warnungen. Alle Belegungen einer Aktion löschen stellt deren Standards wieder her. Erfasst werden physische Tasten mit SDL-Namen. Escape bricht ab und muss zum Belegen manuell gewählt werden; das gilt auch für manche IME-Tasten und Systemkürzel. Namen mit # oder ; sind wegen INI-Kommentaren nicht exportierbar. Oberfläche und FAQ bieten 22 Sprachen mit RTL, keine Spielübersetzung.",
+   "fr": "Un import invalide conserve la configuration; une association invalide bloque l’export. Les entrées partagées ou dupliquées avec les valeurs par défaut génèrent un avertissement. Supprimer toutes les associations d’une action restaure ses entrées intégrées. La capture traduit les touches physiques en noms SDL. Échap annule et doit être choisi manuellement pour l’associer, comme certaines touches IME et raccourcis. Les noms contenant # ou ; ne sont pas exportables, car ce sont des commentaires INI. Interface et FAQ en 22 langues avec RTL, sans traduire les jeux.",
+   "es": "Las importaciones inválidas conservan la configuración; los enlaces inválidos bloquean la exportación. Las entradas duplicadas o compartidas con valores predeterminados generan avisos. Quitar todos los enlaces de una acción restaura sus entradas originales. La captura convierte teclas físicas en nombres SDL. Escape cancela y debe elegirse manualmente para asignarlo, igual que algunas teclas IME y atajos. Los nombres con # o ; no se exportan por ser comentarios INI. La interfaz y FAQ tienen 22 idiomas y RTL; no traducen juegos."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream documentation · e0b13f2990",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/e0b13f2990f31a949a6da21d81a7789ebdfeaa26/docs/user/INPUT_MAPPING.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"].push({
+ "id": "read-only-dump-import-audit",
+ "title": {
+  "en": "Audit imports before starting a title",
+  "zh": "启动前审核转储导入",
+  "ar": "تدقيق الواردات قبل التشغيل",
+  "pt": "Auditar imports antes de iniciar",
+  "de": "Imports vor dem Spielstart prüfen",
+  "fr": "Auditer les imports avant le lancement",
+  "es": "Auditar imports antes de iniciar"
+ },
+ "body": [
+  {
+   "en": "Current main’s audit_dump.py combines unwrapping, conversion with --registry and import auditing. It reads every documented module folder and PRX files beside eboot.bin, writing to a temporary directory or --work directory while leaving the dump unchanged. Add --windows for Windows output. Point --libs at build/core/libs/libs, not unpatched or a game-module folder. Passing this preflight is not a game run or proof that imported functions behave correctly.",
+   "zh": "当前 main 的 audit_dump.py 串联展开、带 --registry 转换及导入审核，扫描文档列出的模块目录与 eboot.bin 旁 PRX，输出到临时目录或 --work 目录，原转储只读。Windows 输出加 --windows；--libs 指向 build/core/libs/libs，不是 unpatched 或游戏模块目录。预检通过不等于游戏运行，也不保证导入函数行为正确。",
+   "ar": "يجمع audit_dump.py في main فك الحاوية والتحويل مع --registry وتدقيق الواردات. يقرأ مجلدات الوحدات وPRX بجوار eboot.bin ويكتب مؤقتاً أو في --work دون تغيير النسخة. أضف --windows لهدف Windows، ووجّه --libs إلى build/core/libs/libs، لا unpatched أو وحدات اللعبة. نجاح الفحص ليس تشغيل لعبة أو إثبات سلوك الواردات.",
+   "pt": "O audit_dump.py do main combina extração, conversão com --registry e auditoria de imports. Lê as pastas de módulos documentadas e PRX junto de eboot.bin, escrevendo numa pasta temporária ou --work sem alterar o dump. Acrescente --windows para Windows e aponte --libs para build/core/libs/libs, não unpatched nem módulos do jogo. Passar a verificação não é executar um jogo nem validar o comportamento das funções.",
+   "de": "Main bündelt mit audit_dump.py Entpacken, Konvertierung mit --registry und Importprüfung. Dokumentierte Modulordner und PRX neben eboot.bin werden gelesen; Ausgabe temporär oder nach --work, Dump unverändert. Für Windows --windows ergänzen; --libs muss build/core/libs/libs sein, nicht unpatched oder ein Spielmodulordner. Bestehen bestätigt weder einen Spiellauf noch korrekte Funktionssemantik.",
+   "fr": "L’audit_dump.py du main combine déballage, conversion avec --registry et audit des imports. Il lit les dossiers de modules documentés et les PRX près d’eboot.bin, écrit dans un dossier temporaire ou --work sans modifier le dump. Ajoutez --windows pour Windows; --libs vise build/core/libs/libs, ni unpatched ni les modules du jeu. Réussir ce contrôle n’est pas exécuter un jeu ni valider le comportement des fonctions.",
+   "es": "El audit_dump.py de main combina extracción, conversión con --registry y auditoría de imports. Lee carpetas de módulos documentadas y PRX junto a eboot.bin, y escribe en un directorio temporal o --work sin modificar el dump. Añade --windows para Windows; --libs apunta a build/core/libs/libs, no a unpatched ni a módulos del juego. Pasar la revisión no demuestra ejecución ni comportamiento correcto de funciones."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream documentation · e0b13f2990",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/e0b13f2990f31a949a6da21d81a7789ebdfeaa26/docs/dev/GAME_TESTING.md"
+  }
+ ],
+ "code": "python3 tools/audit_dump.py <app0> --relinker <relinker> --libs build/core/libs/libs"
+});
+
+guideSupplements["guides/build"].push({
+ "id": "list-verified-patches",
+ "title": {
+  "en": "A verified patch list still requires a choice",
+  "zh": "已验证补丁列表仍须人工选择",
+  "ar": "قائمة التعديلات تحتاج اختياراً",
+  "pt": "Escolher entre patches verificados",
+  "de": "Verifizierte Patches bewusst auswählen",
+  "fr": "Choisir parmi les patches vérifiés",
+  "es": "Elegir entre parches verificados"
+ },
+ "body": [
+  {
+   "en": "suggest_patches.py --list-verified lists every catalog entry passing metadata, hash and relinker checks, in catalog order. It exits 0 when at least one verifies, even if others fail. Without this flag, multiple verified entries remain ambiguous and none is chosen. The tool does not fetch, apply or combine patches. Choose and review one matching file; matching hashes identify exact input bytes, not the catalog’s trustworthiness, patch safety or game playability.",
+   "zh": "suggest_patches.py --list-verified 按目录顺序列出通过元数据、哈希和 relinker 校验的条目；至少一个通过就退出 0，即使其他条目失败。不加该选项时，多项通过仍属歧义，不自动选择。工具不下载、应用或组合补丁。须审阅并选一个匹配文件；哈希只核对输入字节，不保证目录可信、补丁安全或游戏可玩。",
+   "ar": "يسرد suggest_patches.py --list-verified كل مدخل ينجح في فحص البيانات والتجزئة وrelinker حسب ترتيب الفهرس. يخرج 0 إذا نجح واحد ولو فشل غيره. دون الخيار تبقى النتائج المتعددة غامضة ولا تُختار واحدة. لا يجلب التعديلات ولا يطبقها أو يجمعها. راجع ملفاً مطابقاً واختره؛ تطابق التجزئة يحدد البايتات فقط، لا الثقة أو السلامة أو قابلية اللعب.",
+   "pt": "O suggest_patches.py --list-verified lista entradas aprovadas nos metadados, hashes e relinker, pela ordem do catálogo. Sai com 0 se alguma passar, mesmo que outras falhem. Sem a opção, vários resultados continuam ambíguos e nenhum é escolhido. Não obtém, aplica ou combina patches. Reveja e escolha um ficheiro compatível; hashes identificam bytes, não confiança, segurança ou jogabilidade.",
+   "de": "suggest_patches.py --list-verified listet Einträge mit passenden Metadaten, Hashes und Relinker-Prüfungen in Katalogreihenfolge. Exit 0 genügt ein Treffer, auch wenn andere scheitern. Ohne Option bleiben mehrere Treffer mehrdeutig und ungewhählt. Das Werkzeug lädt, installiert und kombiniert keine Patches. Eine passende Datei prüfen und wählen; Hashes belegen Eingabebytes, weder Vertrauen noch Sicherheit oder Spielbarkeit.",
+   "fr": "suggest_patches.py --list-verified liste les entrées validées par métadonnées, empreintes et relinker dans l’ordre du catalogue. Sortie 0 dès qu’une passe, même si d’autres échouent. Sans l’option, plusieurs résultats restent ambigus et aucun n’est choisi. L’outil ne télécharge, applique ou combine aucun patch. Examinez et choisissez un fichier correspondant; les empreintes identifient les octets, pas la confiance, la sécurité ni la jouabilité.",
+   "es": "suggest_patches.py --list-verified enumera entradas que pasan metadatos, hashes y relinker, en orden del catálogo. Devuelve 0 si alguna pasa aunque otras fallen. Sin la opción, varios resultados siguen siendo ambiguos y no se elige ninguno. No descarga, aplica ni combina parches. Revisa y elige un archivo compatible; los hashes identifican bytes, no confianza, seguridad ni jugabilidad."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream documentation · e0b13f2990",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/e0b13f2990f31a949a6da21d81a7789ebdfeaa26/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/linux"].push({
+ "id": "nonempty-rpath-entries",
+ "title": {
+  "en": "Check every Linux library path entry",
+  "zh": "检查 Linux 每个库路径段",
+  "ar": "افحص كل جزء من مسار المكتبات",
+  "pt": "Verificar cada entrada de bibliotecas Linux",
+  "de": "Jeden Linux-Bibliothekspfad prüfen",
+  "fr": "Vérifier chaque entrée du chemin Linux",
+  "es": "Comprobar cada ruta de bibliotecas Linux"
+ },
+ "body": [
+  {
+   "en": "On current main, every colon-separated --rpath entry must be nonempty. With guest modules, each entry must be absolute or start with $ORIGIN. Quote $ORIGIN in the shell so it reaches the relinker literally; trailing colons and empty middle entries are invalid. Windows separately requires a nonempty ASCII path. These conversion rules are pinned to main, not silently added to older release instructions.",
+   "zh": "当前 main 要求 --rpath 的每个冒号分隔段非空；带 guest 模块时，每段必须是绝对路径或以 $ORIGIN 开头。Shell 中给 $ORIGIN 加引号，确保按字面传给 relinker；尾随冒号或中间空段都无效。Windows 另要求非空 ASCII 路径。这些是固定 main 的转换规则，不追溯套用旧发行说明。",
+   "ar": "يتطلب main أن يكون كل جزء مفصول بنقطتين في --rpath غير فارغ. مع وحدات الضيف يجب أن يكون مطلقاً أو يبدأ بـ$ORIGIN. اقتبس $ORIGIN في الصدفة لتمريره حرفياً؛ النقطتان في النهاية والأجزاء الفارغة غير صالحة. Windows يتطلب مسار ASCII غير فارغ. قواعد main هذه لا تعيد كتابة الإصدارات القديمة.",
+   "pt": "No main, cada entrada de --rpath separada por dois pontos tem de conter um caminho. Com módulos guest, deve ser absoluta ou começar por $ORIGIN. Proteja $ORIGIN com aspas para não ser expandido pela shell; dois pontos finais ou entradas vazias são inválidos. Windows exige um caminho ASCII não vazio. São regras deste main, sem alterar retroativamente instruções de versões antigas.",
+   "de": "In Main muss jeder durch Doppelpunkt getrennte --rpath-Eintrag nichtleer sein. Bei Gastmodulen ist jeder Eintrag absolut oder beginnt mit $ORIGIN. $ORIGIN in der Shell zitieren, damit es unverändert ankommt; abschließende Doppelpunkte und leere Teile sind ungültig. Windows verlangt separat einen nichtleeren ASCII-Pfad. Diese Main-Regeln gelten nicht rückwirkend für alte Release-Anleitungen.",
+   "fr": "Dans le main, chaque entrée de --rpath séparée par deux-points doit être non vide. Avec des modules invités, chaque entrée est absolue ou commence par $ORIGIN. Protégez $ORIGIN avec des guillemets pour le transmettre littéralement; deux-points final et entrées vides sont invalides. Windows exige séparément un chemin ASCII non vide. Ces règles du main ne modifient pas rétroactivement les anciennes versions.",
+   "es": "En main, cada entrada de --rpath separada por dos puntos debe tener contenido. Con módulos invitados, debe ser absoluta o empezar por $ORIGIN. Pon $ORIGIN entre comillas para pasarlo literalmente; dos puntos finales y entradas vacías son inválidos. Windows exige aparte una ruta ASCII no vacía. Son reglas de este main, sin modificar instrucciones de versiones antiguas."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream documentation · e0b13f2990",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/e0b13f2990f31a949a6da21d81a7789ebdfeaa26/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"].push({
+ "id": "current-trace-platform-scope",
+ "title": {
+  "en": "Import tracing and its platform limits",
+  "zh": "导入追踪的平台边界",
+  "ar": "حدود تتبع الواردات حسب المنصة",
+  "pt": "Limites do rastreio por plataforma",
+  "de": "Plattformgrenzen der Importaufzeichnung",
+  "fr": "Limites du traçage selon la plateforme",
+  "es": "Límites del rastreo por plataforma"
+ },
+ "body": [
+  {
+   "en": "Current main documents --trace-imports for Windows, Linux and macOS output; --lazy-binding remains incompatible. APS5_TRACE_CALLS selects libraries or all; unset means no recording. Linux and macOS print these records on abort, with no crash report. Conversion support or a tracing flag does not establish an official macOS runtime release. Match the documentation and library files to your actual build.",
+   "zh": "当前 main 的 --trace-imports 文档覆盖 Windows、Linux、macOS 输出，仍与 --lazy-binding 冲突。APS5_TRACE_CALLS 选择库或 all，未设则不记录。Linux、macOS 只在 abort 打印这些记录，没有 crash report。转换支持或追踪选项不等于 macOS 正式运行时发行；文档与库文件应匹配实际构建。",
+   "ar": "يوثق main خيار --trace-imports لمخرجات Windows وLinux وmacOS، ولا يجتمع مع --lazy-binding. يختار APS5_TRACE_CALLS مكتبات أو all؛ غيابه يعني عدم التسجيل. Linux وmacOS يطبعان عند abort دون تقرير crash. دعم التحويل أو التتبع لا يثبت إصدار runtime رسمي لـmacOS. طابق الوثائق والمكتبات مع البناء الفعلي.",
+   "pt": "O main documenta --trace-imports para Windows, Linux e macOS; continua incompatível com --lazy-binding. APS5_TRACE_CALLS escolhe bibliotecas ou all; sem variável não há registo. Linux e macOS imprimem no abort, sem relatório de crash. Conversão ou rastreio não confirmam uma versão oficial do runtime macOS. Compare documentação e bibliotecas com o build real.",
+   "de": "Main dokumentiert --trace-imports für Windows, Linux und macOS; --lazy-binding bleibt inkompatibel. APS5_TRACE_CALLS wählt Bibliotheken oder all, ohne Variable keine Aufzeichnung. Linux und macOS geben beim Abort aus, ohne Crashbericht. Konvertierung oder Tracing bestätigen kein offizielles macOS-Runtime-Release. Dokumentation und Bibliotheken müssen zum Build passen.",
+   "fr": "Le main documente --trace-imports pour Windows, Linux et macOS; --lazy-binding reste incompatible. APS5_TRACE_CALLS choisit des bibliothèques ou all; sans variable, aucun enregistrement. Linux et macOS impriment lors d’un abort, sans rapport de crash. Conversion ou traçage ne confirment pas de runtime macOS officiel. Faites correspondre documentation, bibliothèques et build réel.",
+   "es": "Main documenta --trace-imports para Windows, Linux y macOS; sigue siendo incompatible con --lazy-binding. APS5_TRACE_CALLS elige bibliotecas o all; sin variable no registra. Linux y macOS imprimen en abort, sin informe de crash. Conversión o rastreo no confirman un runtime oficial macOS. Usa documentación y bibliotecas del build real."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream documentation · e0b13f2990",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/e0b13f2990f31a949a6da21d81a7789ebdfeaa26/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/linux"].push({
+ "id": "current-trace-platform-scope",
+ "title": {
+  "en": "Import tracing and its platform limits",
+  "zh": "导入追踪的平台边界",
+  "ar": "حدود تتبع الواردات حسب المنصة",
+  "pt": "Limites do rastreio por plataforma",
+  "de": "Plattformgrenzen der Importaufzeichnung",
+  "fr": "Limites du traçage selon la plateforme",
+  "es": "Límites del rastreo por plataforma"
+ },
+ "body": [
+  {
+   "en": "Current main documents --trace-imports for Windows, Linux and macOS output; --lazy-binding remains incompatible. APS5_TRACE_CALLS selects libraries or all; unset means no recording. Linux and macOS print these records on abort, with no crash report. Conversion support or a tracing flag does not establish an official macOS runtime release. Match the documentation and library files to your actual build.",
+   "zh": "当前 main 的 --trace-imports 文档覆盖 Windows、Linux、macOS 输出，仍与 --lazy-binding 冲突。APS5_TRACE_CALLS 选择库或 all，未设则不记录。Linux、macOS 只在 abort 打印这些记录，没有 crash report。转换支持或追踪选项不等于 macOS 正式运行时发行；文档与库文件应匹配实际构建。",
+   "ar": "يوثق main خيار --trace-imports لمخرجات Windows وLinux وmacOS، ولا يجتمع مع --lazy-binding. يختار APS5_TRACE_CALLS مكتبات أو all؛ غيابه يعني عدم التسجيل. Linux وmacOS يطبعان عند abort دون تقرير crash. دعم التحويل أو التتبع لا يثبت إصدار runtime رسمي لـmacOS. طابق الوثائق والمكتبات مع البناء الفعلي.",
+   "pt": "O main documenta --trace-imports para Windows, Linux e macOS; continua incompatível com --lazy-binding. APS5_TRACE_CALLS escolhe bibliotecas ou all; sem variável não há registo. Linux e macOS imprimem no abort, sem relatório de crash. Conversão ou rastreio não confirmam uma versão oficial do runtime macOS. Compare documentação e bibliotecas com o build real.",
+   "de": "Main dokumentiert --trace-imports für Windows, Linux und macOS; --lazy-binding bleibt inkompatibel. APS5_TRACE_CALLS wählt Bibliotheken oder all, ohne Variable keine Aufzeichnung. Linux und macOS geben beim Abort aus, ohne Crashbericht. Konvertierung oder Tracing bestätigen kein offizielles macOS-Runtime-Release. Dokumentation und Bibliotheken müssen zum Build passen.",
+   "fr": "Le main documente --trace-imports pour Windows, Linux et macOS; --lazy-binding reste incompatible. APS5_TRACE_CALLS choisit des bibliothèques ou all; sans variable, aucun enregistrement. Linux et macOS impriment lors d’un abort, sans rapport de crash. Conversion ou traçage ne confirment pas de runtime macOS officiel. Faites correspondre documentation, bibliothèques et build réel.",
+   "es": "Main documenta --trace-imports para Windows, Linux y macOS; sigue siendo incompatible con --lazy-binding. APS5_TRACE_CALLS elige bibliotecas o all; sin variable no registra. Linux y macOS imprimen en abort, sin informe de crash. Conversión o rastreo no confirman un runtime oficial macOS. Usa documentación y bibliotecas del build real."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream documentation · e0b13f2990",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/e0b13f2990f31a949a6da21d81a7789ebdfeaa26/docs/user/USAGE.md"
+  }
+ ]
+});

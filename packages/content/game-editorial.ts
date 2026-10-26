@@ -5638,6 +5638,283 @@ Object.assign(editorial,{
   }
  }
 });
+Object.assign(editorial,{
+ "aila": {
+  "genre": "adventure",
+  "overview": {
+   "en": "A horror adventure about testing unsettling simulated experiences. This PS5 report distinguishes the first dark room from later puzzles and combat.",
+   "zh": "以测试惊悚模拟体验为设定的恐怖冒险；本PS5报告将首个黑暗房间与后续解谜、战斗分开。",
+   "ar": "مغامرة رعب لاختبار تجارب محاكاة مزعجة؛ تقرير PS5 يفصل الغرفة الأولى عن الألغاز والقتال اللاحق.",
+   "pt": "Aventura de terror sobre testar simulações inquietantes; a primeira sala PS5 não prova puzzles ou combates posteriores.",
+   "de": "Horrorabenteuer über verstörende Simulationen; der erste PS5-Raum belegt keine späteren Rätsel oder Kämpfe.",
+   "fr": "Aventure horrifique de simulations inquiétantes; la première pièce PS5 ne prouve pas les énigmes ou combats ultérieurs.",
+   "es": "Aventura de terror sobre simulaciones inquietantes; la primera habitación PS5 no prueba puzles o combates posteriores."
+  },
+  "editionNote": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "A.I.L.A"
+  }
+ },
+ "deathloop": {
+  "genre": "shooter",
+  "overview": {
+   "en": "Colt explores Blackreef in a repeating day. Beach progression does not verify breaking the loop or online invasions.",
+   "zh": "Colt在不断重置的一天探索黑礁岛；海滩进度不验证打破循环或线上入侵。",
+   "ar": "يستكشف Colt جزيرة Blackreef في يوم متكرر؛ الشاطئ لا يثبت كسر الحلقة أو الغزو الشبكي.",
+   "pt": "Colt explora Blackreef num dia repetido; chegar à praia não valida quebrar o ciclo nem invasões online.",
+   "de": "Colt erkundet Blackreef in einer Zeitschleife; Strandfortschritt belegt weder Schleifenabschluss noch Online-Invasionen.",
+   "fr": "Colt explore Blackreef dans une journée répétée; la plage ne valide ni fin de boucle ni invasions en ligne.",
+   "es": "Colt explora Blackreef en un día repetido; la playa no valida romper el ciclo ni invasiones en línea."
+  },
+  "editionNote": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.Report PPSA01670 differs from the artwork page’s PPSA01302. HDR/SDR settings and patch scope remain explicit.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。 实测01670与配图页01302地区包不同，保留HDR／SDR及补丁边界。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر. التقرير01670 يختلف عن صفحة الصورة01302؛ HDR/SDR والتعديلات منفصلة.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado. Relato01670 difere da arte01302; HDR/SDR e patches explícitos.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht. Bericht01670 anders als Bildseite01302; HDR/SDR/Patches getrennt.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé. Rapport01670 différent de l’art01302; HDR/SDR et patches explicites.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado. Informe01670 distinto del arte01302; HDR/SDR y parches explícitos."
+  },
+  "related": [],
+  "names": {
+   "zh": "死亡循环"
+  }
+ },
+ "neptunia-reverse": {
+  "genre": "turnBasedRpg",
+  "overview": {
+   "en": "A Gamindustri role-playing adventure with party battles. Opening dialogue and its audio fix do not establish dungeon or battle compatibility.",
+   "zh": "以Gamindustri为舞台的队伍战斗角色扮演；开场对话及音频修改不证明迷宫或战斗兼容。",
+   "ar": "مغامرة أدوار في Gamindustri بمعارك فريق؛ الحوار والصوت في البداية لا يثبتان الأبراج أو القتال.",
+   "pt": "RPG em Gamindustri com batalhas de equipa; diálogo inicial e áudio não validam masmorras ou combate.",
+   "de": "Gamindustri-RPG mit Gruppenkämpfen; Anfangsdialog und Audiofix belegen keine Dungeon- oder Kampfkompatibilität.",
+   "fr": "RPG à Gamindustri avec combats en équipe; dialogue initial et correctif audio ne prouvent ni donjons ni batailles.",
+   "es": "RPG en Gamindustri con batallas de grupo; diálogo inicial y arreglo de audio no prueban mazmorras o combate."
+  },
+  "editionNote": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "海王星 ReVerse"
+  }
+ },
+ "skyrim-ppsa03747": {
+  "genre": "rpg",
+  "overview": {
+   "en": "An open-world role-playing journey across Skyrim. The scripted cart opening is distinct from freely exploring, fighting or saving.",
+   "zh": "在天际省展开的开放世界角色扮演；脚本马车开场与自由探索、战斗和存档分开。",
+   "ar": "رحلة أدوار بعالم Skyrim المفتوح؛ عربة البداية المكتوبة منفصلة عن الاستكشاف والقتال والحفظ.",
+   "pt": "RPG de mundo aberto em Skyrim; a carroça guiada difere de explorar, combater e gravar livremente.",
+   "de": "Offenes Skyrim-Rollenspiel; geskriptete Wagenfahrt ist getrennt von freier Erkundung, Kampf und Speichern.",
+   "fr": "RPG en monde ouvert à Skyrim; trajet scripté distinct d’exploration libre, combat et sauvegarde.",
+   "es": "RPG de mundo abierto en Skyrim; carro inicial por guion distinto de explorar, combatir y guardar libremente."
+  },
+  "editionNote": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.The matching store identifies Special Edition; the report does not establish Anniversary content. Cross-generation art is not used as PS5 test imagery.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。 匹配商店页为特别版，报告不证明周年内容；跨世代配图不冒充PS5实测。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر. المتجر المطابق يسمي Special Edition؛ لا دليل Anniversary، والصورة المشتركة ليست اختبار PS5.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado. Loja identifica Special Edition, sem provar Anniversary; arte entre gerações não é teste PS5.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht. Store bestätigt Special Edition, keine Anniversary-Inhalte belegt; Mehrgenerationenbild kein PS5-Test.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé. Boutique identifie Special Edition sans preuve Anniversary; art multigénération distinct d’un test PS5.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado. Tienda identifica Special Edition sin probar Anniversary; arte multigeneración no es test PS5."
+  },
+  "related": [],
+  "names": {
+   "zh": "上古卷轴5：天际 特别版"
+  }
+ },
+ "days-gone-remastered": {
+  "genre": "action",
+  "overview": {
+   "en": "Deacon travels an infected Oregon by motorcycle. This PS5 remaster is separate from the PS4 release and native PC Broken Road content.",
+   "zh": "Deacon骑摩托穿越感染后的俄勒冈；此PS5复刻版与PS4及原生PC的Broken Road内容分开。",
+   "ar": "يسافر Deacon بدراجته في أوريغون المصابة؛ نسخة PS5 منفصلة عن PS4 ومحتوى Broken Road على PC.",
+   "pt": "Deacon percorre Oregon infetado de mota; edição PS5 distinta de PS4 e Broken Road nativo para PC.",
+   "de": "Deacon fährt durch infiziertes Oregon; PS5-Remaster getrennt von PS4 und nativem PC-Broken-Road-Inhalt.",
+   "fr": "Deacon traverse l’Oregon infecté à moto; remaster PS5 distinct de PS4 et du contenu PC natif Broken Road.",
+   "es": "Deacon cruza Oregón infectado en moto; remaster PS5 distinto de PS4 y contenido PC nativo Broken Road."
+  },
+  "editionNote": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "往日不再 复刻版"
+  }
+ },
+ "mewgenics": {
+  "genre": "strategy",
+  "overview": {
+   "en": "A tactical roguelike built around cats, inherited traits and turn-based encounters. Menu, battle dialogue and move-grid costs need separate comparisons.",
+   "zh": "围绕猫、遗传特征和回合制遭遇展开的战术Roguelike；菜单、战斗对话、移动格的开销需分别比较。",
+   "ar": "روغلايك تكتيكي بقطط وصفات موروثة ومعارك أدوار؛ القائمة وحوار المعركة وشبكة الحركة تقاس منفصلة.",
+   "pt": "Roguelike tático de gatos, hereditariedade e turnos; menu, diálogo de batalha e grelha exigem comparações separadas.",
+   "de": "Taktisches Katzen-Roguelike mit Vererbung und Rundenkämpfen; Menü, Kampfdialog und Bewegungsraster getrennt messen.",
+   "fr": "Roguelike tactique de chats, hérédité et tours; menu, dialogue de bataille et grille nécessitent des comparaisons distinctes.",
+   "es": "Roguelike táctico de gatos, herencia y turnos; menú, diálogo de batalla y cuadrícula requieren comparaciones separadas."
+  },
+  "editionNote": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "Mewgenics"
+  }
+ },
+ "sonic-2006-recompiled": {
+  "genre": "platform",
+  "overview": {
+   "en": "The reported PS5 homebrew port of MarathonRecomp. Keep this package separate from Sonic Unleashed Recompiled and official Sonic releases.",
+   "zh": "报告中的MarathonRecomp PS5自制移植，与Sonic Unleashed Recompiled及官方索尼克发行版分别记录。",
+   "ar": "منفذ PS5 المنزلي المبلغ عنه لـMarathonRecomp؛ منفصل عن Sonic Unleashed Recompiled والإصدارات الرسمية.",
+   "pt": "Port homebrew PS5 relatado de MarathonRecomp, separado de Sonic Unleashed Recompiled e edições oficiais.",
+   "de": "Berichteter PS5-Homebrew-Port von MarathonRecomp, getrennt von Sonic Unleashed Recompiled und offiziellen Sonic-Versionen.",
+   "fr": "Port homebrew PS5 rapporté de MarathonRecomp, distinct de Sonic Unleashed Recompiled et des éditions officielles.",
+   "es": "Port homebrew PS5 informado de MarathonRecomp, separado de Sonic Unleashed Recompiled y ediciones oficiales."
+  },
+  "editionNote": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "索尼克2006 · PS5自制移植"
+  }
+ },
+ "cult-of-the-lamb-ppsa06465": {
+  "genre": "roguelike",
+  "overview": {
+   "en": "The cult-building roguelike, tracked here as a separate PS5 package. PPSA06464 results do not supply this edition’s platform evidence.",
+   "zh": "经营教团的Roguelike，此处单列PS5包；PPSA06464结果不能替代此版本的平台证据。",
+   "ar": "روغلايك بناء طائفة بحزمة PS5 منفصلة؛ نتائج PPSA06464 لا توفر دليل هذه النسخة.",
+   "pt": "Roguelike de culto numa edição PS5 separada; PPSA06464 não fornece os resultados desta edição.",
+   "de": "Kultaufbau-Roguelike als eigenes PS5-Paket; PPSA06464 liefert nicht die Plattformbelege dieser Edition.",
+   "fr": "Roguelike de gestion de culte, paquet PS5 distinct; PPSA06464 ne fournit pas les preuves de cette édition.",
+   "es": "Roguelike de gestión de culto en paquete PS5 separado; PPSA06464 no aporta los resultados de esta edición."
+  },
+  "editionNote": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "咩咩启示录 · PPSA06465"
+  }
+ },
+ "sonic-origins-plus-ppsa05325": {
+  "genre": "platform",
+  "overview": {
+   "en": "A separately reported Sonic collection package. The Sonic2 menu sample does not test a level, every included game or multiplayer.",
+   "zh": "另一个被报告的索尼克合集包；Sonic2菜单采样不验证关卡、合集全部游戏或多人模式。",
+   "ar": "حزمة مجموعة Sonic منفصلة؛ عينة قائمة Sonic2 لا تختبر مستوى أو كل الألعاب أو اللعب الجماعي.",
+   "pt": "Pacote Sonic distinto; a amostra do menu Sonic2 não testa níveis, toda a coleção ou multijogador.",
+   "de": "Separat berichtetes Sonic-Paket; Sonic2-Menütest belegt keine Level, gesamte Sammlung oder Mehrspieler.",
+   "fr": "Paquet Sonic distinct; l’échantillon du menu Sonic2 ne teste ni niveau, collection entière ni multijoueur.",
+   "es": "Paquete Sonic separado; muestra del menú Sonic2 no prueba niveles, toda colección ni multijugador."
+  },
+  "editionNote": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "索尼克 起源Plus · PPSA05325"
+  }
+ },
+ "dusklight-ps5-homebrew": {
+  "genre": "homebrew",
+  "overview": {
+   "en": "The homebrew title identified as Dusklight v1.0.0 in the primary report. Renderer diagnostics do not identify similarly named commercial editions.",
+   "zh": "原始报告标为Dusklight v1.0.0的自制程序；渲染器诊断不用于识别同名商业版本。",
+   "ar": "عنوان منزلي يسميه المصدر Dusklight v1.0.0؛ تشخيص العرض لا يحدد نسخاً تجارية متشابهة الاسم.",
+   "pt": "Homebrew identificado como Dusklight v1.0.0 no relato; diagnóstico não identifica edições comerciais com nome semelhante.",
+   "de": "Im Primärbericht Dusklight v1.0.0 genanntes Homebrew; Renderdiagnose identifiziert keine ähnlich benannten Handelsversionen.",
+   "fr": "Homebrew nommé Dusklight v1.0.0 par le rapport; diagnostic sans identification d’éditions commerciales homonymes.",
+   "es": "Homebrew llamado Dusklight v1.0.0 en informe; diagnóstico no identifica ediciones comerciales homónimas."
+  },
+  "editionNote": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "Dusklight · PS5自制程序"
+  }
+ },
+ "alone-in-the-dark": {
+  "genre": "adventure",
+  "overview": {
+   "en": "A horror adventure centered on Derceto Manor. Startup and menu survival do not verify exploration, combat or campaign completion.",
+   "zh": "围绕Derceto庄园展开的恐怖冒险；启动与菜单存活不验证探索、战斗或剧情完成。",
+   "ar": "مغامرة رعب حول قصر Derceto؛ البقاء في البداية والقائمة لا يثبت الاستكشاف أو القتال أو الإكمال.",
+   "pt": "Aventura de terror na mansão Derceto; sobreviver ao menu não valida exploração, combate ou conclusão.",
+   "de": "Horrorabenteuer um Derceto Manor; Start-/Menüüberleben belegt weder Erkundung noch Kampf oder Abschluss.",
+   "fr": "Aventure horrifique au manoir Derceto; survie au menu ne prouve ni exploration ni combat ni fin.",
+   "es": "Aventura de terror en mansión Derceto; sobrevivir al menú no valida exploración, combate o final."
+  },
+  "editionNote": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "鬼屋魔影"
+  }
+ }
+});
 export const media=sources as Record<string,{source:string;provider:string;cover:string|null;screenshots:string[];checked:string}>;
 export const genreLabel=(slug:string,locale:keyof Text)=>genres[editorial[slug].genre][locale];
 export const gameName=(game:{slug:string;name:string},locale:keyof Text)=>editorial[game.slug]?.names[locale]||game.name;
@@ -5691,3 +5968,13 @@ for(const [slug,overview]of Object.entries({
   "es": "Plataformas3D de precisión; coloresWindows/AMD yLinux/NVIDIAdifieren, sin resolver."
  }
 })){editorial[slug].overview=overview;}
+
+editorial["persona-5-royal"].overview={
+ "en": "Tokyo social life and supernatural turn-based battles meet in this RPG. The new local casino run is bounded and remains distinct from main-only movie failure.",
+ "zh": "东京日常与异世界回合战斗交织；新本地赌场运行范围有限，与main单独片头失败分开。",
+ "ar": "حياة طوكيو ومعارك أدوار خارقة؛ تجربة الكازينو المحلية محدودة ومنفصلة عن فشل الفيلم على main.",
+ "pt": "Vida em Tóquio e batalhas por turnos; casino local limitado, separado da falha do filme em main.",
+ "de": "Tokio-Alltag und Rundenkämpfe; lokaler Casinotest begrenzt, getrennt vom Main-Filmfehler.",
+ "fr": "Vie à Tokyo et combats au tour par tour; casino local limité, distinct de l’échec film sur main.",
+ "es": "Vida en Tokio y combate por turnos; casino local limitado, separado del fallo de película en main."
+};

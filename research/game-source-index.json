@@ -660,11 +660,75 @@
   ],
   "pagination_complete": true,
   "latestReview": {
-    "reviewed": "2026-10-15",
-    "sourceCommit": "411e5e6d9fe3e09206490ccc0d260229851c2310",
-    "discussions": 126,
+    "reviewed": "2026-10-27",
+    "incrementSince": "2026-10-25T18:30:00Z",
+    "lastSuccessfulCutoff": "2026-10-25T19:38:00Z",
+    "nextSuccessfulCutoff": "2026-10-26T19:36:00Z",
+    "sourceCommit": "e0b13f2990f31a949a6da21d81a7789ebdfeaa26",
+    "documents": 267,
+    "changedDocuments": 83,
+    "issuesAndPRs": 11066,
+    "issuePRPages": 111,
+    "inventoryRecovery": {
+      "initialAllPages": 111,
+      "initialAllCount": 11066,
+      "initialLastPage": 66,
+      "recoveredVia": {
+        "open": {
+          "pages": 17,
+          "count": 1602,
+          "lastPage": 2
+        },
+        "closed": {
+          "pages": 95,
+          "count": 9463,
+          "lastPage": 63
+        }
+      },
+      "uniqueUnionWithInitialAndIncrement": 11066,
+      "note": "All-state/open/closed pagination exhausted; collection calls are not one atomic snapshot."
+    },
+    "incrementIssuesAndPRs": 1867,
+    "incrementPages": 19,
+    "commits": 598,
+    "commitPages": 6,
+    "discussions": 365,
+    "discussionPages": 19,
+    "discussionComments": 836,
+    "discussionReplies": 394,
     "completeNestedPagination": true,
-    "record": "docs/maintenance/2026-10-15-nightly.md",
+    "releasesIncludingPrereleases": 4,
+    "latestRelease": {
+      "tag": "v0.1.3",
+      "published": "2026-10-20T09:31:13Z",
+      "commit": "3fd1cc393b8512c2e989860053f30dee5a8cd1aa",
+      "url": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.3"
+    },
+    "issueCommentPages": 47,
+    "issueComments": 4604,
+    "reviewCommentPages": 1,
+    "reviewComments": 48,
+    "commentThreads": 1990,
+    "selectedCompleteThreads": 1804,
+    "unavailableThreads": [
+      9418
+    ],
+    "unavailableScope": "Historical parent retry HTTP404; body/reviews inaccessible, cause unknown. Original code comment retained. No missing current-window parent.",
+    "prReviewPages": 18,
+    "recentPRReviewConnections": 1705,
+    "reviewBodies": 843,
+    "olderReviewBodyEdits": 0,
+    "changes": {
+      "newEntries": 11,
+      "newReports": 55,
+      "gameEntries": 312,
+      "reports": 822,
+      "unreported": 6,
+      "locales": 7,
+      "developmentNotes": 75
+    },
+    "record": "docs/maintenance/2026-10-27-nightly.md",
+    "rawDirectory": "research/raw/daily-2026-10-27/",
     "sourceReviewOnly": true
   }
 }

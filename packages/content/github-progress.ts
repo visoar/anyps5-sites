@@ -1129,3 +1129,86 @@ Object.assign(developmentNotes.find(note=>note.number===7294)!,{summary:{
  "fr": "799671df6dNOW LOADING, puis576,373s3036aprèsdevice/fences;1891aa7d285,208sécriture illisible. Pas jeu;32anneaux ancien fork, tests/0VUIDn’effacent avertissements/ne prouventmain.",
  "es": "799671df6dNOW LOADING, luego576,373s3036trasdevice/fences;1891aa7d285,208sescritura ilegible. Sin juego;32anillos fork antiguo, tests/0VUIDno borran avisos/pruebanmain."
 }});
+
+developmentNotes.unshift(...[
+ {
+  "number": 11120,
+  "games": [
+   "ghost-of-yotei"
+  ],
+  "title": {
+   "en": "Slice-zero storage support merged with measured limits",
+   "zh": "零切片存储支持已合入，测量范围有限",
+   "ar": "دمج تخزين الشريحة صفر بحدود مقاسة",
+   "pt": "Armazenamento da fatia zero integrado",
+   "de": "Slice-null-Speicherung mit Messgrenzen integriert",
+   "fr": "Stockage tranche zéro intégré avec limites",
+   "es": "Almacenamiento de capa cero integrado"
+  },
+  "summary": {
+   "en": "Merged d9f5bf4d91 adds write-only 2D-array stores through 1D descriptors, dropping nonzero slices. The rule was measured on RDNA2 gfx1036, not PS5 gfx1013. Tested b9d00c5d80 includes validation-layer tests; separate two-GPU Windows checks had no layer installed. Yōtei’s earlier local version omitted the slice check, and the title was not rerun on this head. API passes and merge do not establish a new game result or release inclusion.",
+   "zh": "合入 d9f5bf4d91 后支持经 1D 描述符进行只写 2D-array 存储，丢弃非零切片。规则测于 RDNA2 gfx1036，不是 PS5 gfx1013。b9d00c5d80 有加载验证层的测试，另一次 Windows 双 GPU 测试未装层。Yōtei 早期本地版没有切片检查，该 head 未复跑游戏；API 通过和合并不等于新游戏结果或发行版包含。",
+   "ar": "دمج d9f5bf4d91 يدعم كتابة 2D-array عبر وصف 1D مع إسقاط الشرائح غير الصفرية. القياس gfx1036 لا PS5 gfx1013. اختبارات b9d00c5d80 حملت طبقة تحقق، وفحص Windows منفصل بلا طبقة. نسخة Yōtei القديمة بلا فحص الشريحة ولم تُعد اللعبة بهذا الرأس؛ نجاح API والدمج ليس نتيجة لعبة أو إصدار.",
+   "pt": "O merge d9f5bf4d91 suporta escrita 2D-array por descritores 1D, descartando fatias não zero. Medido em gfx1036, não PS5 gfx1013. b9d00c5d80 tem testes com validação; ensaio Windows de duas GPU sem layer. A versão local antiga de Yōtei não verificava a fatia e o jogo não foi repetido neste head. API e merge não provam novo resultado nem inclusão numa versão.",
+   "de": "Merge d9f5bf4d91 ergänzt schreibende 2D-Array-Zugriffe über 1D-Deskriptoren, andere Slices werden verworfen. Gemessen auf gfx1036, nicht PS5 gfx1013. b9d00c5d80 mit Validierung, separater Windows-Zwei-GPU-Test ohne Layer. Alte lokale Yōtei-Version ohne Sliceprüfung, kein neuer Titellauf auf diesem Head. API-Erfolg und Merge belegen kein Spielresultat oder Release.",
+   "fr": "Le merge d9f5bf4d91 ajoute les écritures 2D-array via des descripteurs 1D et ignore les autres tranches. Mesure gfx1036, pas PS5 gfx1013. b9d00c5d80 testé avec validation; essai Windows séparé sur deux GPU sans couche. Ancienne version Yōtei sans contrôle de tranche, jeu non retesté sur ce head. API et fusion ne prouvent ni nouveau jeu ni inclusion publiée.",
+   "es": "El merge d9f5bf4d91 admite escritura 2D-array por descriptores 1D y descarta capas no cero. Medido en gfx1036, no PS5 gfx1013. b9d00c5d80 probado con validación; ensayo Windows aparte con dos GPU sin capa. Versión local antigua de Yōtei sin control de capa, juego no repetido en este head. API y merge no prueban resultado de juego ni inclusión publicada."
+  }
+ },
+ {
+  "number": 11126,
+  "games": [],
+  "title": {
+   "en": "Mirror sampling tests do not identify an unblocked title",
+   "zh": "镜像采样测试未证明某款游戏解锁",
+   "ar": "اختبارات الانعكاس لا تثبت تشغيل عنوان",
+   "pt": "Testes de espelho sem jogo desbloqueado",
+   "de": "Spiegel-Sampling ohne belegten Titelfortschritt",
+   "fr": "Tests miroir sans jeu débloqué prouvé",
+   "es": "Pruebas espejo sin juego desbloqueado"
+  },
+  "summary": {
+   "en": "Open #11126 mirrors negative unnormalized taps once, then clamps, following gfx1036 measurements; gfx1013 remains unmeasured. The f636ecd34 rerun reports 72/72 with a loaded validation layer and no VUID errors; current 098fc2772 only shortens documentation. An approval or skipped product CI is not independent hardware validation. No known title uses these new modes; Yōtei uses mode 0 already accepted on main.",
+   "zh": "开放 #11126 按 gfx1036 测量把非归一化负采样点镜像一次再钳制，gfx1013 未测。f636ecd34 复跑 72／72，确认加载验证层且无 VUID；当前 098fc2772 仅缩短文档。批准或跳过的产品 CI 不算独立硬件验证；尚无已知标题使用新模式，Yōtei 的 mode 0 原已支持。",
+   "ar": "طلب #11126 المفتوح يعكس النقرات السالبة مرة ثم يقيدها وفق gfx1036؛ gfx1013 غير مقاس. إعادة f636ecd34 تبلغ 72/72 بطبقة تحقق محملة وبلا VUID؛ 098fc2772 يقصر الوثيقة فقط. الموافقة وCI المتخطى ليسا تحقق عتاد مستقل. لا عنوان معروف يستخدم الأوضاع الجديدة؛ Yōtei يستعمل mode 0 المدعوم أصلاً.",
+   "pt": "A #11126 aberta espelha amostras negativas uma vez e limita-as, segundo gfx1036; gfx1013 não medido. f636ecd34 regista 72/72 com layer carregada e sem VUID; 098fc2772 só encurta documentação. Aprovação ou CI ignorado não são validação independente. Nenhum título conhecido usa os modos novos; Yōtei usa mode 0 já aceite.",
+   "de": "Offene #11126 spiegelt negative unnormalisierte Abtastungen einmal und begrenzt sie gemäß gfx1036; gfx1013 ungeprüft. f636ecd34 meldet 72/72 mit geladenem Layer ohne VUID, 098fc2772 kürzt nur Dokumentation. Freigabe oder übersprungene Produkt-CI keine unabhängige Hardwareprüfung. Kein bekannter Titel nutzt neue Modi; Yōtei nutzt bereits unterstützten Modus 0.",
+   "fr": "La #11126 ouverte reflète les échantillons négatifs une fois puis les borne selon gfx1036; gfx1013 non mesuré. f636ecd34 annonce 72/72 avec couche chargée sans VUID; 098fc2772 raccourcit seulement la documentation. Approbation et CI ignorée ne valident pas indépendamment le matériel. Aucun titre connu n’utilise les nouveaux modes; Yōtei utilise déjà le mode 0.",
+   "es": "La #11126 abierta refleja muestras negativas una vez y las limita según gfx1036; gfx1013 no medido. f636ecd34 informa 72/72 con capa cargada sin VUID; 098fc2772 solo acorta documentación. Aprobación o CI omitida no validan hardware independientemente. Ningún título conocido usa modos nuevos; Yōtei usa mode 0 ya admitido."
+  }
+ },
+ {
+  "number": 11482,
+  "games": [
+   "mewgenics"
+  ],
+  "title": {
+   "en": "Mouse exports resolve but still throw",
+   "zh": "鼠标导出可解析，但调用仍抛错",
+   "ar": "واردات الفأرة تُحل لكنها ترمي خطأ",
+   "pt": "Exports do rato resolvidos mas não implementados",
+   "de": "Maus-Exports auflösbar, Aufrufe werfen weiter",
+   "fr": "Exports souris résolus mais appels en échec",
+   "es": "Exports de ratón resueltos, llamadas fallan"
+  },
+  "summary": {
+   "en": "Open 0c96c6a000 adds three absolute-position mouse exports as throwing stubs, with signatures and behavior still unknown. Linux compile/symbol/harness checks pass; mouse_input was not run because SDL2 headers were absent. Windows main 48c160c58 plus the PR resolves Mewgenics PPSA37318 imports, then aborts at virtual-screen-size initialization. A separate local implementation reaching battle is a different stack, not this PR’s result.",
+   "zh": "开放 0c96c6a000 加入三个绝对位置鼠标导出，均为抛错 stub，签名和行为仍未知。Linux 编译／符号／隔离 harness 通过，缺 SDL2 头文件，未跑 mouse_input。Windows main 48c160c58 加该 PR 能解析 Mewgenics PPSA37318 导入，随后虚拟屏幕尺寸初始化终止。另一个本地实现到战斗属于不同堆栈，不能归给此 PR。",
+   "ar": "يضيف 0c96c6a000 المفتوح ثلاثة exports لمواضع الفأرة ترمي خطأ، والتواقيع والسلوك مجهولان. فحص Linux للترجمة والرموز والحاضنة ينجح؛ mouse_input لم يعمل لغياب SDL2. Windows main 48c160c58 مع الطلب يحل واردات Mewgenics PPSA37318 ثم يجهض عند حجم الشاشة الافتراضية. تنفيذ محلي آخر يصل القتال بتركيب مختلف.",
+   "pt": "O 0c96c6a000 aberto acrescenta três exports de posição absoluta que lançam erro; assinaturas e comportamento desconhecidos. Compilação, símbolos e harness Linux passam; mouse_input não executado por falta de SDL2. Windows main 48c160c58 com a PR resolve imports Mewgenics PPSA37318, mas aborta na dimensão virtual. Implementação local que chega ao combate é outra pilha.",
+   "de": "Offenes 0c96c6a000 ergänzt drei absolute Maus-Exports als werfende Stubs, Signaturen und Verhalten unbekannt. Linux-Kompilierung, Symbole und Harness erfolgreich; mouse_input ohne SDL2-Header ungeprüft. Windows main 48c160c58 plus PR löst Mewgenics-PPSA37318-Imports, bricht bei virtueller Bildschirmgröße ab. Lokale Implementierung mit Kampffortschritt ist ein anderer Stack.",
+   "fr": "Le 0c96c6a000 ouvert ajoute trois exports absolus de souris levant une erreur, signatures et comportement inconnus. Compilation, symboles et harnais Linux passent; mouse_input non exécuté sans SDL2. Windows main 48c160c58 plus PR résout les imports Mewgenics PPSA37318 puis échoue à la taille virtuelle. L’implémentation locale atteignant le combat est une autre pile.",
+   "es": "El 0c96c6a000 abierto añade tres exports absolutos de ratón que lanzan errores, con firmas y comportamiento desconocidos. Compilación, símbolos y harness Linux pasan; mouse_input no ejecutado sin SDL2. Windows main 48c160c58 más PR resuelve imports de Mewgenics PPSA37318 y aborta en tamaño virtual. La implementación local que llega al combate es otra pila."
+  }
+ }
+]);
+
+Object.assign(developmentNotes.find(note=>note.number===10547)!,{summary:{
+ "en": "Earlier native seam observations keep their pins. The author now reports serializer correction c75821d217 for hostInterpolationFirst, but that is a later branch change, not a retest of3609b981 or a new native Silksong result. Verify round-trip/cache behavior on the exact corrected head before closing the replay gap.",
+ "zh": "早期原生接缝观察保留原pin。作者新报c75821d217修正hostInterpolationFirst序列化，属于较后分支变更，不冒充3609b981复测或新丝之歌原生结果；仍需在该准确head验证往返／缓存再关闭缺口。",
+ "ar": "أدلة الوصلة القديمة تحتفظ برؤوسها. الكاتب يبلغ إصلاح serializer في c75821d217 لـhostInterpolationFirst، تغيير لاحق لا إعادة3609b981 أو Silksong أصلي جديد. تحقق round-trip/cache على الرأس المصحح.",
+ "pt": "Relatos antigos mantêm pins. Autor informa serializer c75821d217 para hostInterpolationFirst, mudança posterior, não reteste3609b981/jogo novo. Verifique round-trip/cache nesse head.",
+ "de": "Alte Nahtbelege behalten Pins. Autor meldet Serializerkorrektur c75821d217 für hostInterpolationFirst, späterer Zweig, kein3609b981-/neuer Spieltest. Roundtrip/Cache exakt dort prüfen.",
+ "fr": "Anciens essais gardent pins. Auteur annonce serializer c75821d217 pour hostInterpolationFirst, changement ultérieur, pas retest3609b981/jeu neuf. Vérifier round-trip/cache au head exact.",
+ "es": "Informes antiguos conservan pins. Autor informa serializer c75821d217 para hostInterpolationFirst, cambio posterior, no retest3609b981/juego nuevo. Verifica round-trip/caché exactos."
+}});

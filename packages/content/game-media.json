@@ -2194,5 +2194,47 @@
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202103/1000/ajXEVMJhzxXuOezVXR6bFOkK.png",
     "screenshots": [],
     "checked": "2026-10-26"
+  },
+  "aila": {
+    "source": "https://store.playstation.com/en-us/concept/10014194/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202505/1513/e021c6680bfc45ea9e1e9019d431ede72fb92039cf0f4e28.jpg",
+    "screenshots": [],
+    "checked": "2026-10-27"
+  },
+  "deathloop": {
+    "source": "https://www.playstation.com/en-us/games/deathloop/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202007/1617/Fv4asO4zbdqL83hiL9COTlWZ.png",
+    "screenshots": [],
+    "checked": "2026-10-27"
+  },
+  "neptunia-reverse": {
+    "source": "https://store.playstation.com/en-us/product/UP0031-PPSA02721_00-NEPREVERSEGAME01/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202105/1319/8SO9D15YafaDqF75zJZJC1Ia.jpg",
+    "screenshots": [],
+    "checked": "2026-10-27"
+  },
+  "days-gone-remastered": {
+    "source": "https://store.playstation.com/en-us/product/UP9000-PPSA28180_00-DAYSGONEREMASTER/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1302/cdf6431ee3f30fde3c13b42857d41edc42142da11e1bdc61.jpg",
+    "screenshots": [],
+    "checked": "2026-10-27"
+  },
+  "mewgenics": {
+    "source": "https://store.playstation.com/en-us/concept/10019219/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202608/2019/da4d679cbe3193e14bbb96cc8537858031267c059f43a7cd.png",
+    "screenshots": [],
+    "checked": "2026-10-27"
+  },
+  "alone-in-the-dark": {
+    "source": "https://www.playstation.com/en-us/games/alone-in-the-dark/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1015/b3a91fa43661ced3d57a908c26f5bfab057584343be6f618.png",
+    "screenshots": [],
+    "checked": "2026-10-27"
   }
 }
