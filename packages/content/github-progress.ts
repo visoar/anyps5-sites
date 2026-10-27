@@ -1212,3 +1212,106 @@ Object.assign(developmentNotes.find(note=>note.number===10547)!,{summary:{
  "fr": "Anciens essais gardent pins. Auteur annonce serializer c75821d217 pour hostInterpolationFirst, changement ultérieur, pas retest3609b981/jeu neuf. Vérifier round-trip/cache au head exact.",
  "es": "Informes antiguos conservan pins. Autor informa serializer c75821d217 para hostInterpolationFirst, cambio posterior, no retest3609b981/juego nuevo. Verifica round-trip/caché exactos."
 }});
+
+developmentNotes.unshift(...[
+ {
+  "number": 11580,
+  "games": [
+   "resident-evil-requiem",
+   "gta-v",
+   "gta-v-ppsa04263",
+   "lego-horizon-adventures",
+   "silent-hill-townfall"
+  ],
+  "title": {
+   "en": "Converted D16 progress is title- and build-specific",
+   "zh": "转换D16进展须按游戏与构建区分",
+   "ar": "تقدم D16 خاص بالعنوان والبناء",
+   "pt": "D16 por título e build",
+   "de": "D16-Fortschritt je Titel und Build",
+   "fr": "D16 selon titre et build",
+   "es": "D16 según título y build"
+  },
+  "summary": {
+   "en": "The open fix has independent Windows AMD/NVIDIA and Linux reports passing the former D16 stop; dbf2107ba6 validation and negative controls are bounded API evidence. Exact PS5 rounding is not claimed. GTA can still hang, LEGO can lose the device, and Townfall needs another local PR. Later fedf3e91a7 changes and main implementation are not silently assigned to earlier tests or v0.1.3.",
+   "zh": "开放修复有Windows AMD／NVIDIA及Linux独立越过旧D16拒绝报告；dbf2107ba6验证及负对照仅属有范围API证据，不宣称准确PS5舍入。GTA仍挂起、LEGO仍设备丢失，Townfall需另项本地PR；不把后续fedf3e91a7或main实现替进旧测试或v0.1.3。",
+   "ar": "الإصلاح المفتوح يتجاوز D16 بتقارير Windows AMD/NVIDIA وLinux؛ تحقق dbf2107ba6 وضوابطه دليل API محدود، لا تقريب PS5 دقيق. GTA قد يتجمد وLEGO يفقد الجهاز وTownfall يحتاج PR آخر. لا ننسب fedf3e91a7 أو main اللاحق لاختبار قديم أوv0.1.3.",
+   "pt": "Fix aberto passa D16 em Windows AMD/NVIDIA/Linux; validação/controlos dbf2107ba6 são API limitada, sem arredondamento PS5 exato. GTA pode bloquear, LEGO perder dispositivo, Townfall precisa outro PR. fedf3e91a7/main posteriores não substituem testes antigos ouv0.1.3.",
+   "de": "Offener Fix passiert D16 auf Windows AMD/NVIDIA/Linux; dbf2107ba6-Validierung/Negativkontrollen begrenzte API-Belege ohne exakte PS5-Rundung. GTA hängt, LEGO verliert Gerät, Townfall braucht weiteren PR. Späteres fedf3e91a7/Main nicht alten Tests/v0.1.3 zuordnen.",
+   "fr": "Fix ouvert passe D16 Windows AMD/NVIDIA/Linux; validation/contrôles dbf2107ba6 limités aux API, sans arrondi PS5 exact. GTA peut geler, LEGO perdre appareil, Townfall nécessite autre PR. fedf3e91a7/main ultérieurs non attribués aux anciens tests/v0.1.3.",
+   "es": "Fix abierto supera D16 Windows AMD/NVIDIA/Linux; validación/controles dbf2107ba6 son API limitada, sin redondeo PS5 exacto. GTA puede colgar, LEGO perder dispositivo, Townfall requiere otro PR. fedf3e91a7/main posteriores no sustituyen tests antiguos/v0.1.3."
+  }
+ },
+ {
+  "number": 11620,
+  "games": [
+   "call-of-duty-modern-warfare-iii"
+  ],
+  "title": {
+   "en": "Loading progress does not establish download semantics",
+   "zh": "加载推进不证明下载接口语义",
+   "ar": "تقدم التحميل لا يثبت سلوك التنزيل",
+   "pt": "Progresso de carga não prova semântica de download",
+   "de": "Ladefortschritt belegt keine Downloadsemantik",
+   "fr": "Progression du chargement sans sémantique prouvée",
+   "es": "Progreso de carga sin semántica demostrada"
+  },
+  "summary": {
+   "en": "The review rejects unmeasured Download0/1 and expansion success behavior. The later2e3004955 head restores throwing stubs and limits the change to download0–2 partition/path validation. MW3’s earlier local fastfile progress is a different tested stack, not proof those exports are implemented or the current head reaches gameplay.",
+   "zh": "评审否定未测Download0／1及扩容直接成功语义；后续2e3004955恢复抛错桩，只限定download0–2分区／路径校验。MW3旧本地fastfile进度属于另一测试组合，不证明这些导出已实现或当前head可进游戏。",
+   "ar": "المراجعة ترفض نجاح تنزيل/توسعة غير مقاس؛2e3004955 يعيد stubs الرامية ويقتصر على مسارات download0–2. تقدم MW3 المحلي القديم تركيب مختلف، لا تنفيذ exports أو لعب بالرأس الحالي.",
+   "pt": "Revisão rejeita sucesso Download/Expand não medido;2e3004955 repõe stubs e limita caminhos download0–2. Fastfile MW3 antigo é outro stack, sem provar exports implementados ou jogo atual.",
+   "de": "Review verwirft ungemessenen Download-/Expand-Erfolg;2e3004955 stellt werfende Stubs wieder her, begrenzt auf download0–2-Pfade. Alter MW3-Fastfilefortschritt anderer Stack, kein Export-/Spielnachweis dieses Heads.",
+   "fr": "Review rejette succès Download/Expand non mesuré;2e3004955 rétablit stubs et limite chemins download0–2. Ancien fastfile MW3 autre stack, sans exports implémentés ni jeu actuel prouvés.",
+   "es": "Review rechaza éxito Download/Expand no medido;2e3004955 restaura stubs y limita rutas download0–2. Fastfile MW3 antiguo es otro stack, sin probar exports implementados ni juego actual."
+  }
+ },
+ {
+  "number": 11952,
+  "games": [
+   "god-of-war-sons-of-sparta"
+  ],
+  "title": {
+   "en": "A measured Cyclops gain has a precise local boundary",
+   "zh": "独眼巨人实测增益有明确本地边界",
+   "ar": "مكسب Cyclops بحد محلي محدد",
+   "pt": "Ganho Cyclops com âmbito local exato",
+   "de": "Cyclops-Gewinn mit genauer lokaler Grenze",
+   "fr": "Gain Cyclops dans un cadre local précis",
+   "es": "Ganancia Cyclops con límite local exacto"
+  },
+  "summary": {
+   "en": "The6edeae61a331 head has three prospective warm12s Radeon760M pairs,12.54→18.84 FPS, with identical dirty observation hooks and no dropped events. Additional #10547 is measured on an already #11952-patched base,18.854→20.040. Earlier instruction counts alone did not satisfy game-performance evidence; these later runs do not change earlier heads or prove a release. A failing descriptor-set fixture is not counted as passing validation.",
+   "zh": "6edeae61a331在760M有三组预定热缓存12秒12.54→18.84 FPS，两组相同dirty观测hooks且无丢失事件；#10547额外18.854→20.040基于已加#11952的构建。早先仅指令计数不满足游戏性能证据；后续运行不改写旧head，也不证明发行。失败的descriptor-set测试不计作验证通过。",
+   "ar": "6edeae61a331 له ثلاثة أزواج760M دافئة12ث12.54→18.84 FPS، hooks dirty متطابقة وبلا أحداث مفقودة. #10547 الإضافي18.854→20.040 فوق11952. عد التعليمات القديم ليس قياس لعبة؛ الجديد لا يبدل الرؤوس أو يثبت الإصدار. fixture فاشل لا يُحسب نجاحاً.",
+   "pt": "6edeae61a331 tem três pares760M quentes12s12,54→18,84 FPS, hooks dirty iguais sem eventos perdidos. #10547 adicional18,854→20,040 sobre11952. Instruções antigas não eram benchmark; novos ensaios não mudam heads/releases. Fixture falhado não conta como validação passada.",
+   "de": "6edeae61a331 hat drei geplante warme760M-Paare12s12,54→18,84 FPS, gleiche Dirty-Hooks ohne Ereignisverlust. #10547 zusätzlich18,854→20,040 auf11952-Basis. Alte Instruktionszahlen kein Spielbeleg; spätere Tests ändern keine Heads/Releases. Fehlfixture nicht als bestanden zählen.",
+   "fr": "6edeae61a331 possède trois paires760M chaudes12s12,54→18,84 FPS, hooks dirty identiques sans perte. #10547 additionnel18,854→20,040 sur11952. Anciens comptes instructions sans benchmark; nouveaux essais sans réécrire heads/releases. Fixture échoué non compté réussi.",
+   "es": "6edeae61a331 tiene tres parejas760M calientes12s12,54→18,84 FPS, hooks dirty iguales sin pérdida. #10547 adicional18,854→20,040 sobre11952. Instrucciones antiguas sin benchmark; pruebas nuevas no cambian heads/releases. Fixture fallido no contado como validación pasada."
+  }
+ },
+ {
+  "number": 11587,
+  "games": [
+   "god-of-war-sons-of-sparta"
+  ],
+  "title": {
+   "en": "Experimental Mac runs remain a separate platform",
+   "zh": "实验Mac运行仍须独立记录",
+   "ar": "تشغيل Mac التجريبي منفصل",
+   "pt": "Ensaios Mac experimentais separados",
+   "de": "Experimentelle Mac-Läufe getrennt halten",
+   "fr": "Essais Mac expérimentaux distincts",
+   "es": "Pruebas Mac experimentales separadas"
+  },
+  "summary": {
+   "en": "M4 Pro/macOS27.0.1/Rosetta/MoltenVK1.4.2 with main3fea2a937b plus eight open boot PRs reports Lana28.9 FPS over70s and a cold Cyclops120s run40.6 FPS. This is neither native ARM nor an official runtime release. A later Lana paired patch test is neutral after main’s buffer change; #8887’s private-stack Sparta pair is also near noise. No Windows/Linux report or new Lana entry is inferred.",
+   "zh": "M4 Pro／macOS27.0.1／Rosetta／MoltenVK1.4.2在main3fea2a937b加8项开放启动PR，报告Lana70秒28.9 FPS、冷缓存独眼巨人120秒40.6 FPS；不是原生ARM或官方运行发行。后续Lana配对在main缓冲修改后无增益，#8887私有Sparta配对也近噪声。不据此生成Windows／Linux报告或新Lana条目。",
+   "ar": "M4 Pro/macOS27.0.1/Rosetta/MoltenVK1.4.2 معmain3fea2a937b وثمانية PR يبلغ Lana28.9 FPS/70ث وCyclops40.6/120ث بارد؛ لا ARM أصلي أو إصدار رسمي. زوج Lana اللاحق محايد و#8887 Sparta ضمن الضجيج. لا استنتاج Windows/Linux أو عنوان Lana جديد.",
+   "pt": "M4 Pro/macOS27.0.1/Rosetta/MoltenVK1.4.2 commain3fea2a937b+oito PRs relata Lana28,9 FPS/70s e Cyclops40,6/120s frio; não ARM nativo/release oficial. Par Lana posterior neutro, #8887 Sparta perto do ruído. Sem inferir Windows/Linux ou entrada Lana.",
+   "de": "M4 Pro/macOS27.0.1/Rosetta/MoltenVK1.4.2 mitmain3fea2a937b+acht PRs meldet Lana28,9 FPS/70s und kalten Cyclops40,6/120s; kein natives ARM/offizieller Release. Spätere Lana-Paare neutral, #8887-Sparta nahe Rauschen. Kein Windows/Linux- oder neuer Lana-Eintrag abgeleitet.",
+   "fr": "M4 Pro/macOS27.0.1/Rosetta/MoltenVK1.4.2 avecmain3fea2a937b+huit PR annonce Lana28,9 FPS/70s et Cyclops40,6/120s froid; ni ARM natif ni release officiel. Paires Lana ultérieures neutres, #8887 Sparta proche bruit. Aucun rapport Windows/Linux ou entrée Lana inféré.",
+   "es": "M4 Pro/macOS27.0.1/Rosetta/MoltenVK1.4.2 conmain3fea2a937b+ocho PR informa Lana28,9 FPS/70s y Cyclops40,6/120s frío; no ARM nativo/release oficial. Parejas Lana posteriores neutras, #8887 Sparta cerca del ruido. Sin inferir Windows/Linux ni entrada Lana."
+  }
+ }
+]);

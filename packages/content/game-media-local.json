@@ -4080,5 +4080,215 @@
       "height": 1024
     },
     "screenshots": []
+  },
+  "planet-zoo": {
+    "cover": {
+      "file": "planet-zoo/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202401/1811/851a87ff8fed13fc7f2d35252bdd94511f410a07ac270194.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202401/1811/851a87ff8fed13fc7f2d35252bdd94511f410a07ac270194.png",
+      "sourceSha256": "524626381c314a62097f574a388c79057c5a4d64621649ca6e959aa9f13b80c1",
+      "sourceBytes": 1828364,
+      "sha256": "c7b2bfd8c3f5c558e49380ce656d285ea44b1e26994d028651e0e5bffe87e8aa",
+      "bytes": 184816,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "monopoly": {
+    "cover": {
+      "file": "monopoly/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2015/3c031e939d7f1116d7a2f56621a6a14093b8e8373e82f2be.jpg",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2015/3c031e939d7f1116d7a2f56621a6a14093b8e8373e82f2be.jpg",
+      "sourceSha256": "a5bd03a8c55160146a407b50c05d6be77f120cdefb48e73a0fd8766fd9f58d42",
+      "sourceBytes": 891294,
+      "sha256": "17ac6506bd3fa603751ad3a679fe27e25b7503acd29ab7a58a078cdde91fe399",
+      "bytes": 79154,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "the-medium": {
+    "cover": {
+      "file": "the-medium/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202603/1814/078d90da8167fac06a072cf74c05496936befae74409e98f.jpg",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202603/1814/078d90da8167fac06a072cf74c05496936befae74409e98f.jpg",
+      "sourceSha256": "b86d3ef4d49be25191b6a42ab239b4b2cc20cedab2499f1856870bd6f1bf23cc",
+      "sourceBytes": 2059668,
+      "sha256": "2a2b17c2215c946fe99575a79b07a3c3d039b71b526a6855071cc4f1adcc6180",
+      "bytes": 92952,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "my-friend-peppa-pig": {
+    "cover": {
+      "file": "my-friend-peppa-pig/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202109/1317/RwVujQ3nJo8aCIvVGSmxC5kl.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202109/1317/RwVujQ3nJo8aCIvVGSmxC5kl.png",
+      "sourceSha256": "55b34e962735b3526429f24d83af0b8dd06be63e3a9175629dcf9565e8774e19",
+      "sourceBytes": 129011,
+      "sha256": "a73afb0883a52880b0bcd3cae4b45925c9e9ff30ef467d6e04fe67dd4f3ac1bc",
+      "bytes": 14778,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "river-city-girls": {
+    "cover": {
+      "file": "river-city-girls/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202205/1122/9cDHyiZIRDsAo5dPbyB5skit.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202205/1122/9cDHyiZIRDsAo5dPbyB5skit.png",
+      "sourceSha256": "b54729cb1b789f5a909b7016e1c7cb45aaddd19405db98d3d289aeb76d628c0f",
+      "sourceBytes": 1744459,
+      "sha256": "81e129aa7e1bf7726ac8d09bdd9d54177ccb30c589d7b4fee21ab9573dc09607",
+      "bytes": 235626,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "gigabash": {
+    "cover": {
+      "file": "gigabash/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202208/2103/Co8F5SntE32qmC5rTtDdXfjg.jpg",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/2103/Co8F5SntE32qmC5rTtDdXfjg.jpg",
+      "sourceSha256": "041a56dbdf823fc74debc8865beb63f88542f401bb556701e166ee1237052dec",
+      "sourceBytes": 1116370,
+      "sha256": "48454e0bca6d736c718d2a773ed5bf440518afc11bc40bd7e3a44ab39914e72f",
+      "bytes": 115616,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "carmen-sandiego": {
+    "cover": {
+      "file": "carmen-sandiego/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1100/40b50ee051d2482fe0a5bc496075405c5671342fd60c9a7c.jpg",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1100/40b50ee051d2482fe0a5bc496075405c5671342fd60c9a7c.jpg",
+      "sourceSha256": "dbb2f4af5c8fe960044862601d1746bf8cb38151399b0beed36fbd3cf165cf9c",
+      "sourceBytes": 1114146,
+      "sha256": "702b23796fa432731a0fac8cb5bfc000e14e4f588f75bf10e6bc37d1f72f271b",
+      "bytes": 104860,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "silent-hill-townfall": {
+    "cover": {
+      "file": "silent-hill-townfall/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1407/420dcf45979ace1b7c97122a2dc0eb479428590ecab89c2b.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1407/420dcf45979ace1b7c97122a2dc0eb479428590ecab89c2b.png",
+      "sourceSha256": "e93bc0910e2c2a8f9baeec041f6ba0672cbd113b93f74eb0fe4e78eee4849617",
+      "sourceBytes": 127210,
+      "sha256": "c5231fde9954864a88bfc712c81e0c4fbbc552000f0fe9584b11661fa9f67e50",
+      "bytes": 61964,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "fatal-frame-ii-crimson-butterfly-remake": {
+    "cover": {
+      "file": "fatal-frame-ii-crimson-butterfly-remake/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202510/0907/821dc3a00430751c9dede410e6cdb5bc11c708e7b727fb60.jpg",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202510/0907/821dc3a00430751c9dede410e6cdb5bc11c708e7b727fb60.jpg",
+      "sourceSha256": "3fe0b85c540cb2f78ecf7e258576c03a2192c17f8a36fcbda6c2817701935b91",
+      "sourceBytes": 940581,
+      "sha256": "fe8b20c9b99e407e0ab3dc128dc2833c86bdbe6ff9032585c1f52e62e9aa5110",
+      "bytes": 75704,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "r-type-final-3-evolved": {
+    "cover": {
+      "file": "r-type-final-3-evolved/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202103/1000/JL4zTKk5ohB4DxDOt9a8PzE9.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202103/1000/JL4zTKk5ohB4DxDOt9a8PzE9.png",
+      "sourceSha256": "93da97ef499e7c9701218ecdb584dfb0c5ef19364cfb90a7dfdaaf32af229314",
+      "sourceBytes": 877029,
+      "sha256": "24c8ab4d4aa3cc5e534e613b77c8b208a47368b800afe8bb102c9a14da625877",
+      "bytes": 97858,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "human-fall-flat": {
+    "cover": {
+      "file": "human-fall-flat/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202602/2414/8397d69b6a24f42f0357ffee13e53cc2535493b0692f4f76.jpg",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202602/2414/8397d69b6a24f42f0357ffee13e53cc2535493b0692f4f76.jpg",
+      "sourceSha256": "10423f87e295f560352d05d3e9bfdabe76529e62f4774ba157548b684cd01e9d",
+      "sourceBytes": 1094078,
+      "sha256": "d413bfd5fd09ecfd96b161518d3ba348ca66eb7c8b55f689af42cbb35dc654af",
+      "bytes": 117196,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "call-of-duty-modern-warfare-iii": {
+    "cover": {
+      "file": "call-of-duty-modern-warfare-iii/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1722/15f4ab1e0fe6a37609b164362a653c0e5bcee98a861d0f10.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1722/15f4ab1e0fe6a37609b164362a653c0e5bcee98a861d0f10.png",
+      "sourceSha256": "a9ca6e2fe2d8ad3bc4e86214b04db2e0c998e69616b0c7dc5befccb86786f1d9",
+      "sourceBytes": 194460,
+      "sha256": "56b5ce1a75490df4156dedabfe1903a8440c58279df53e4d311fcbc43d27fed2",
+      "bytes": 111736,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "crimson-desert-ppsa25286": {
+    "cover": {
+      "file": "crimson-desert-ppsa25286/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202608/2006/e8f306c89efa555a13e4d3910dafda994a14b2355f342802.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202608/2006/e8f306c89efa555a13e4d3910dafda994a14b2355f342802.png",
+      "sourceSha256": "e82f2f69c11214cfabe5fee0fa7a5c833a63966cff7ce99452fbcf362f07aada",
+      "sourceBytes": 205757,
+      "sha256": "14f3b2afef2ed0d9896eeaf796f260270f25e258be3181c45502d0113f43eaba",
+      "bytes": 127424,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "cyberpunk-2077-ppsa03974": {
+    "cover": {
+      "file": "cyberpunk-2077-ppsa03974/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/cKZ4tKNFj9C00giTzYtH8PF1.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/cKZ4tKNFj9C00giTzYtH8PF1.png",
+      "sourceSha256": "aa5c360872d6e5a66516bff73ccf59cafd5aad24da2baf1a5782f27fd0cc0b9f",
+      "sourceBytes": 180710,
+      "sha256": "6744a3a3d3c8b7c3575a32708378dd41b2fc4569e1b854002fde2bbbf2cfcfb1",
+      "bytes": 108304,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "alan-wake-remastered": {
+    "cover": {
+      "file": "alan-wake-remastered/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202109/2709/wMyl8RQ9Tvi99wjgPPEBGVyX.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/img/rnd/202109/2709/wMyl8RQ9Tvi99wjgPPEBGVyX.png",
+      "sourceSha256": "5b68d06cb0b90e414d66ea61fa480e03fd53acfb4c0441b457f88d731b2f0035",
+      "sourceBytes": 89831,
+      "sha256": "04083d63040bab0cd5da8184d67c7bfe53b93e64f9d8bef844a3f96d289ba68c",
+      "bytes": 34986,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
   }
 }

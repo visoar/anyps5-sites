@@ -84,3 +84,7 @@ The7-entry/43-observation update uses the existing main Git trigger. [Scope](mai
 ## Source maintenance — 2026-10-27
 
 The 11-entry/55-observation update follows the existing main Git trigger. [Scope](maintenance/2026-10-27-nightly.md) and the ignored daily release receipt retain the final main SHA, both exact-SHA RUNNING deployments, CI and public acceptance. Cloudflare handles active search notifications; no separate notification workflow is run.
+
+## Source maintenance — 2026-10-28
+
+The18-entry/72-observation update follows the existing normal main Git trigger. [Scope](maintenance/2026-10-28-nightly.md) and the ignored daily release receipt retain final main SHA, both exact-SHA RUNNING deployment IDs, CI and public acceptance. Cloudflare owns active search notifications; no notification workflow is run.

@@ -5915,6 +5915,458 @@ Object.assign(editorial,{
   }
  }
 });
+Object.assign(editorial,{
+ "planet-zoo": {
+  "genre": "strategy",
+  "overview": {
+   "en": "Manage animal habitats and a zoo; the reported startup failures do not test animal simulation or park building.",
+   "zh": "管理动物栖息地与动物园；启动失败未测试动物模拟或园区建设。",
+   "ar": "إدارة موائل وحديقة حيوان؛ فشل البدء لا يختبر المحاكاة أو البناء.",
+   "pt": "Gerir habitats e um zoo; falhas iniciais não testam simulação ou construção.",
+   "de": "Tierlebensräume und Zoo verwalten; Startfehler testen weder Simulation noch Bau.",
+   "fr": "Gérer habitats et zoo; les échecs initiaux ne testent ni simulation ni construction.",
+   "es": "Gestionar hábitats y zoológico; fallos iniciales no prueban simulación ni construcción."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.The reviewed promotional page is PPSA18027, separate from reported PPSA18026; it does not identify that package.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。 宣传页为PPSA18027，不同于报告PPSA18026，不用于认定实测包。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC. الصفحة الدعائية PPSA18027 مختلفة عن التقرير PPSA18026 ولا تحدد حزمته.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC. Página promocional PPSA18027 difere do relato PPSA18026, sem identificar esse pacote.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis. Werbeseite PPSA18027 unterscheidet sich vom Bericht PPSA18026, kein Paketnachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé. Page promotionnelle PPSA18027 distincte du rapport PPSA18026, sans identifier son paquet.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado. Página promocional PPSA18027 distinta del informe PPSA18026, sin identificar ese paquete."
+  },
+  "related": [],
+  "names": {
+   "zh": "动物园之星 主机版"
+  }
+ },
+ "monopoly": {
+  "genre": "strategy",
+  "overview": {
+   "en": "A digital property-trading board game. Board selection is separate from finishing a match or online play.",
+   "zh": "数字地产交易桌游；棋盘选择与完整对局、联机分开验证。",
+   "ar": "لعبة لوح لتجارة العقارات؛ اختيار اللوحة لا يثبت مباراة كاملة أو الشبكة.",
+   "pt": "Jogo de tabuleiro imobiliário; selecionar tabuleiro não valida partida ou rede.",
+   "de": "Digitales Immobilienbrettspiel; Brettwahl belegt keine vollständige Partie oder Onlinefunktion.",
+   "fr": "Jeu de plateau immobilier; sélection du plateau distincte d’une partie complète ou en ligne.",
+   "es": "Juego de tablero inmobiliario; selección no prueba partida completa ni juego online."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "地产大亨"
+  }
+ },
+ "the-medium": {
+  "genre": "adventure",
+  "overview": {
+   "en": "A psychological horror adventure across two realities. Nearly black output does not establish that either world renders correctly.",
+   "zh": "穿梭双重现实的心理恐怖冒险；近黑输出不证明任一世界正确渲染。",
+   "ar": "مغامرة رعب بين واقعين؛ الصورة شبه السوداء لا تثبت صحة أي عالم.",
+   "pt": "Terror psicológico entre duas realidades; imagem quase preta não valida nenhum mundo.",
+   "de": "Psychologischer Horror zwischen zwei Realitäten; fast schwarzes Bild belegt keinen korrekt gerenderten Raum.",
+   "fr": "Horreur psychologique entre deux réalités; image presque noire sans validation des mondes.",
+   "es": "Terror psicológico entre dos realidades; imagen casi negra no valida ninguno de los mundos."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.The reviewed promotional page is PPSA03717, separate from reported PPSA03718; it does not identify that package.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。 宣传页为PPSA03717，不同于报告PPSA03718，不用于认定实测包。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC. الصفحة الدعائية PPSA03717 مختلفة عن التقرير PPSA03718 ولا تحدد حزمته.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC. Página promocional PPSA03717 difere do relato PPSA03718, sem identificar esse pacote.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis. Werbeseite PPSA03717 unterscheidet sich vom Bericht PPSA03718, kein Paketnachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé. Page promotionnelle PPSA03717 distincte du rapport PPSA03718, sans identifier son paquet.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado. Página promocional PPSA03717 distinta del informe PPSA03718, sin identificar ese paquete."
+  },
+  "related": [],
+  "names": {
+   "zh": "灵媒"
+  }
+ },
+ "my-friend-peppa-pig": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Create a character and explore Peppa’s world. Scripted scene progression does not verify every activity or save reload.",
+   "zh": "自建角色探索佩奇世界；脚本场景推进不验证全部活动或读档。",
+   "ar": "اصنع شخصية واستكشف عالم Peppa؛ التقدم المكتوب لا يثبت كل الأنشطة أو إعادة الحفظ.",
+   "pt": "Criar personagem e explorar Peppa; progressão por guião não valida todas as atividades ou recarga.",
+   "de": "Figur erstellen und Peppas Welt erkunden; Skriptfortschritt belegt nicht alle Aktivitäten oder Laden.",
+   "fr": "Créer un personnage et explorer Peppa; progression scriptée sans valider toutes activités ou rechargement.",
+   "es": "Crear personaje y explorar Peppa; progresión por guion no valida toda actividad ni recarga."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.The reviewed promotional page is PPSA03705, separate from reported PPSA03706; it does not identify that package.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。 宣传页为PPSA03705，不同于报告PPSA03706，不用于认定实测包。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC. الصفحة الدعائية PPSA03705 مختلفة عن التقرير PPSA03706 ولا تحدد حزمته.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC. Página promocional PPSA03705 difere do relato PPSA03706, sem identificar esse pacote.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis. Werbeseite PPSA03705 unterscheidet sich vom Bericht PPSA03706, kein Paketnachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé. Page promotionnelle PPSA03705 distincte du rapport PPSA03706, sans identifier son paquet.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado. Página promocional PPSA03705 distinta del informe PPSA03706, sin identificar ese paquete."
+  },
+  "related": [],
+  "names": {
+   "zh": "我的朋友小猪佩奇"
+  }
+ },
+ "call-of-duty-modern-warfare-iii": {
+  "genre": "shooter",
+  "overview": {
+   "en": "Military shooter with campaign and multiplayer modes. Asset-loading progress is not a rendered mission or an online session.",
+   "zh": "包含战役与多人模式的军事射击；资源加载推进不是可见任务或联机会话。",
+   "ar": "تصويب عسكري بحملة وأونلاين؛ تحميل الموارد لا يثبت مهمة مرئية أو جلسة شبكة.",
+   "pt": "Tiro militar com campanha e multijogador; carregar recursos não valida missão ou sessão online.",
+   "de": "Militärshooter mit Kampagne/Multiplayer; Ressourcenladen belegt keine sichtbare Mission oder Onlinesitzung.",
+   "fr": "Tir militaire campagne/multijoueur; chargement de ressources sans mission visible ni session réseau validée.",
+   "es": "Disparos militar con campaña/multijugador; cargar recursos no valida misión visible ni sesión online."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.The reviewed promotional page is PPSA01649, separate from reported PPSA24263; it does not identify that package.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。 宣传页为PPSA01649，不同于报告PPSA24263，不用于认定实测包。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC. الصفحة الدعائية PPSA01649 مختلفة عن التقرير PPSA24263 ولا تحدد حزمته.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC. Página promocional PPSA01649 difere do relato PPSA24263, sem identificar esse pacote.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis. Werbeseite PPSA01649 unterscheidet sich vom Bericht PPSA24263, kein Paketnachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé. Page promotionnelle PPSA01649 distincte du rapport PPSA24263, sans identifier son paquet.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado. Página promocional PPSA01649 distinta del informe PPSA24263, sin identificar ese paquete."
+  },
+  "related": [],
+  "names": {
+   "zh": "使命召唤：现代战争III"
+  }
+ },
+ "river-city-girls": {
+  "genre": "action",
+  "overview": {
+   "en": "Misako and Kyoko fight through River City. Classroom movement does not verify later bosses or cooperative play.",
+   "zh": "美沙子与京子闯荡热血城；教室移动不验证后续首领或合作模式。",
+   "ar": "تقاتل Misako وKyoko في River City؛ حركة الفصل لا تثبت الزعماء أو التعاون.",
+   "pt": "Misako e Kyoko lutam em River City; movimento na sala não valida bosses ou cooperação.",
+   "de": "Misako und Kyoko kämpfen durch River City; Klassenraumbewegung belegt keine Bosse oder Koop.",
+   "fr": "Misako et Kyoko combattent à River City; mouvement en classe sans validation des boss ou coopération.",
+   "es": "Misako y Kyoko luchan en River City; movimiento en aula no valida jefes ni cooperativo."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "热血少女"
+  }
+ },
+ "gigabash": {
+  "genre": "action",
+  "overview": {
+   "en": "Giant monsters and mecha fight in destructible arenas. Menu speed and first-match performance are measured separately.",
+   "zh": "巨兽与机甲在可破坏场地对战；菜单速度和首场性能分别记录。",
+   "ar": "وحوش وآلات عملاقة في ساحات قابلة للتدمير؛ سرعة القائمة منفصلة عن المعركة.",
+   "pt": "Monstros e mechas em arenas destrutíveis; menu e primeiro combate medidos separadamente.",
+   "de": "Riesenmonster und Mechas in zerstörbaren Arenen; Menü und erster Kampf getrennt gemessen.",
+   "fr": "Monstres et mechas en arènes destructibles; menu et premier combat mesurés séparément.",
+   "es": "Monstruos y mechas en arenas destructibles; menú y primer combate medidos por separado."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "巨击大乱斗"
+  }
+ },
+ "codex-ps5-homebrew": {
+  "genre": "homebrew",
+  "overview": {
+   "en": "Independent PS5 homebrew client prototype. A simulated listener handshake does not verify a real assistant backend.",
+   "zh": "独立PS5自制客户端原型；模拟监听器握手不验证真实助手后端。",
+   "ar": "نموذج عميل homebrew مستقل؛ مصافحة مستمع بديل لا تثبت backend حقيقياً.",
+   "pt": "Protótipo homebrew independente; handshake com listener simulado não valida backend real.",
+   "de": "Unabhängiger Homebrew-Clientprototyp; Ersatzlistener-Handshake belegt kein echtes Assistentenbackend.",
+   "fr": "Prototype client homebrew indépendant; poignée de main simulée sans backend réel validé.",
+   "es": "Prototipo cliente homebrew independiente; handshake simulado no valida backend real."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "Codex-PS5 自制原型"
+  }
+ },
+ "project-zero-maiden-black-water": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Camera-based supernatural horror. The audio initialization stop does not establish exploration or combat.",
+   "zh": "以照相机对抗灵异的恐怖冒险；音频初始化停止不证明探索或战斗。",
+   "ar": "رعب خارق بالكاميرا؛ توقف تهيئة الصوت لا يثبت الاستكشاف أو القتال.",
+   "pt": "Terror sobrenatural com câmara; paragem de áudio não valida exploração ou combate.",
+   "de": "Übernatürlicher Kamerahorror; Audiostop belegt weder Erkundung noch Kampf.",
+   "fr": "Horreur surnaturelle à la caméra; blocage audio sans exploration ou combat établis.",
+   "es": "Terror sobrenatural con cámara; parada audio no valida exploración ni combate."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "零：濡鸦之巫女"
+  }
+ },
+ "carmen-sandiego": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Travel and solve clue-based investigations as Carmen. Passing a redirect is separate from solving a case.",
+   "zh": "扮演卡门旅行并凭线索破案；通过重定向与完成案件分开。",
+   "ar": "سفر وتحقيق بالأدلة مع Carmen؛ تجاوز التحويل لا يثبت حل قضية.",
+   "pt": "Viagens e investigação com Carmen; passar redirect não valida resolver um caso.",
+   "de": "Reisen und Spuren verfolgen mit Carmen; Redirect-Erfolg belegt keinen gelösten Fall.",
+   "fr": "Voyage et enquête avec Carmen; redirection réussie sans affaire résolue prouvée.",
+   "es": "Viajar e investigar con Carmen; superar redirección no valida resolver un caso."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "卡门·圣地亚哥"
+  }
+ },
+ "silent-hill-townfall": {
+  "genre": "adventure",
+  "overview": {
+   "en": "First-person horror in fog-bound St. Amelia. Reaching the harbor does not verify free exploration, combat or endings.",
+   "zh": "在雾笼罩的St. Amelia展开第一人称恐怖；港口画面不验证自由探索、战斗或结局。",
+   "ar": "رعب بمنظور أول في St. Amelia الضبابية؛ الميناء لا يثبت الاستكشاف أو القتال أو النهايات.",
+   "pt": "Terror na primeira pessoa em St. Amelia; porto não valida exploração, combate ou finais.",
+   "de": "Ego-Horror im nebligen St. Amelia; Hafen belegt keine freie Erkundung, Kämpfe oder Enden.",
+   "fr": "Horreur subjective à St. Amelia; port sans exploration libre, combats ou fins validés.",
+   "es": "Terror en primera persona en St. Amelia; puerto no valida exploración libre, combate ni finales."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "寂静岭：Townfall"
+  }
+ },
+ "cyberpunk-2077-ppsa03974": {
+  "genre": "rpg",
+  "overview": {
+   "en": "Night City role-playing action, tracked separately for this PS5 package. A timed startup test does not verify a mission.",
+   "zh": "夜之城动作角色扮演，本PS5包独立追踪；限时启动不验证任务。",
+   "ar": "أكشن أدوار في Night City لهذه الحزمة المستقلة؛ اختبار بدء محدود لا يثبت مهمة.",
+   "pt": "Ação RPG em Night City, pacote PS5 separado; arranque limitado não valida missão.",
+   "de": "Night-City-Action-RPG für separates PS5-Paket; begrenzter Starttest belegt keine Mission.",
+   "fr": "Action RPG à Night City, paquet PS5 distinct; démarrage limité sans mission validée.",
+   "es": "Acción RPG en Night City, paquete PS5 separado; arranque limitado no valida misión."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "赛博朋克2077 · PPSA03974"
+  }
+ },
+ "crimson-desert-ppsa25286": {
+  "genre": "action",
+  "overview": {
+   "en": "Open-world action adventure, separate from other regional packages. The network startup test does not validate exploration or battle.",
+   "zh": "开放世界动作冒险，与其他区域包分开；网络启动测试不验证探索或战斗。",
+   "ar": "مغامرة أكشن مفتوحة بحزمة مستقلة؛ اختبار الشبكة لا يثبت الاستكشاف أو القتال.",
+   "pt": "Aventura de ação aberta, pacote separado; teste de rede não valida exploração ou combate.",
+   "de": "Offene Actionwelt als separates Paket; Netzwerkstarttest belegt keine Erkundung oder Kämpfe.",
+   "fr": "Aventure d’action ouverte, paquet distinct; test réseau sans exploration ou combat validés.",
+   "es": "Aventura de acción abierta, paquete separado; prueba red no valida exploración ni combate."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "红色沙漠 · PPSA25286"
+  }
+ },
+ "fatal-frame-ii-crimson-butterfly-remake": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Mio and Mayu explore a haunted village with the Camera Obscura. This remake’s PPSA is distinct from Maiden of Black Water.",
+   "zh": "澪与茧以射影机探索幽灵村落；此重制版PPSA与濡鸦之巫女分开。",
+   "ar": "تستكشف Mio وMayu قرية مسكونة بالكاميرا؛ PPSA الريميك منفصل عن Maiden of Black Water.",
+   "pt": "Mio e Mayu exploram aldeia assombrada; PPSA do remake distinto de Maiden of Black Water.",
+   "de": "Mio und Mayu im Geisterdorf; PPSA des Remakes getrennt von Maiden of Black Water.",
+   "fr": "Mio et Mayu explorent un village hanté; PPSA du remake distinct de Maiden of Black Water.",
+   "es": "Mio y Mayu exploran aldea embrujada; PPSA del remake distinto de Maiden of Black Water."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "零：红蝶 重制版"
+  }
+ },
+ "alan-wake-remastered": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Alan fights a darkness shaped by his writing. The remaster’s rendering refusals are separate from Alan Wake 2 results.",
+   "zh": "艾伦对抗与写作相连的黑暗；重制版渲染拒绝与心灵杀手2结果分开。",
+   "ar": "يقاوم Alan ظلاماً مرتبطاً بكتابته؛ رفض رسم الريماستر منفصل عن Alan Wake2.",
+   "pt": "Alan enfrenta escuridão ligada à escrita; recusas do remaster separadas de Alan Wake2.",
+   "de": "Alan gegen die Dunkelheit seiner Texte; Remaster-Verweigerungen getrennt von Alan Wake2.",
+   "fr": "Alan affronte l’obscurité liée à ses écrits; refus du remaster distincts d’Alan Wake2.",
+   "es": "Alan enfrenta oscuridad ligada a su escritura; rechazos del remaster separados de Alan Wake2."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "心灵杀手 重制版"
+  }
+ },
+ "echoes-of-the-end": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Ryn combines swordplay, magic and traversal in Aema. A loading-only pair does not establish combat or the latest Enhanced Edition behavior.",
+   "zh": "Ryn在Aema运用剑术、魔法和穿越；仅加载对照不证明战斗或最新增强版表现。",
+   "ar": "تمزج Ryn السيف والسحر والتنقل في Aema؛ زوج تحميل لا يثبت القتال أو أحدث Enhanced Edition.",
+   "pt": "Ryn combina espada, magia e travessia em Aema; só carga não valida combate nem Enhanced Edition atual.",
+   "de": "Ryn mit Schwert, Magie und Bewegung in Aema; Ladepaar belegt keinen Kampf oder aktuelles Enhanced-Verhalten.",
+   "fr": "Ryn mêle épée, magie et parcours à Aema; paire de chargement sans combat ou Enhanced actuel validé.",
+   "es": "Ryn combina espada, magia y recorrido en Aema; solo carga no valida combate ni Enhanced actual."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.Current Enhanced Edition marketing does not establish what features version01.012.000 tested.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。 当前增强版宣传不证明01.012.000实际测试哪些新增内容。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC. إعلان Enhanced الحالي لا يثبت ميزات01.012.000 المختبرة.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC. Marketing Enhanced atual não prova funcionalidades testadas em01.012.000.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis. Aktuelle Enhanced-Werbung belegt keine getesteten Inhalte von01.012.000.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé. Marketing Enhanced actuel sans preuve des fonctions testées en01.012.000.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado. Marketing Enhanced actual no prueba funciones testadas en01.012.000."
+  },
+  "related": [],
+  "names": {
+   "zh": "终结之回响"
+  }
+ },
+ "human-fall-flat": {
+  "genre": "puzzle",
+  "overview": {
+   "en": "Physics puzzles in floating dreamscapes. Socket counts do not verify grabbing, cooperation or completing a level.",
+   "zh": "漂浮梦境中的物理解谜；套接字计数不验证抓取、合作或通关。",
+   "ar": "ألغاز فيزياء بعوالم حالمة؛ عدادات المقابس لا تثبت الإمساك أو التعاون أو إنهاء مرحلة.",
+   "pt": "Puzzles de física em sonhos flutuantes; contagens de sockets não validam agarrar, cooperar ou terminar nível.",
+   "de": "Physikrätsel in Traumwelten; Socketzähler belegen weder Greifen noch Koop oder Levelabschluss.",
+   "fr": "Puzzles physiques oniriques; compteurs sockets sans prise, coopération ou niveau terminé validés.",
+   "es": "Puzles físicos oníricos; contadores sockets no validan agarrar, cooperar ni completar nivel."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.The reviewed promotional page is PPSA02431, separate from reported PPSA02429; it does not identify that package.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。 宣传页为PPSA02431，不同于报告PPSA02429，不用于认定实测包。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC. الصفحة الدعائية PPSA02431 مختلفة عن التقرير PPSA02429 ولا تحدد حزمته.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC. Página promocional PPSA02431 difere do relato PPSA02429, sem identificar esse pacote.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis. Werbeseite PPSA02431 unterscheidet sich vom Bericht PPSA02429, kein Paketnachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé. Page promotionnelle PPSA02431 distincte du rapport PPSA02429, sans identifier son paquet.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado. Página promocional PPSA02431 distinta del informe PPSA02429, sin identificar ese paquete."
+  },
+  "related": [],
+  "names": {
+   "zh": "人类一败涂地"
+  }
+ },
+ "r-type-final-3-evolved": {
+  "genre": "shooter",
+  "overview": {
+   "en": "Side-scrolling spacecraft combat. Passing a depth-format guard does not verify a stage, score or enemy behavior.",
+   "zh": "横向卷轴战机射击；越过深度格式保护不验证关卡、分数或敌人行为。",
+   "ar": "قتال سفن جانبي؛ تجاوز حارس عمق لا يثبت مرحلة أو نقاطاً أو سلوك العدو.",
+   "pt": "Combate espacial lateral; passar formato de profundidade não valida nível, pontuação ou inimigos.",
+   "de": "Seitliches Raumschiffgefecht; Tiefenformatprüfung belegt keinen Level, Punkte oder Gegnerverhalten.",
+   "fr": "Combat spatial latéral; franchir format de profondeur sans niveau, score ou ennemis validés.",
+   "es": "Combate espacial lateral; superar formato profundidad no valida nivel, puntuación ni enemigos."
+  },
+  "editionNote": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado."
+  },
+  "related": [],
+  "names": {
+   "zh": "R-Type Final 3 Evolved"
+  }
+ }
+});
 export const media=sources as Record<string,{source:string;provider:string;cover:string|null;screenshots:string[];checked:string}>;
 export const genreLabel=(slug:string,locale:keyof Text)=>genres[editorial[slug].genre][locale];
 export const gameName=(game:{slug:string;name:string},locale:keyof Text)=>editorial[game.slug]?.names[locale]||game.name;
@@ -5978,3 +6430,7 @@ editorial["persona-5-royal"].overview={
  "fr": "Vie à Tokyo et combats au tour par tour; casino local limité, distinct de l’échec film sur main.",
  "es": "Vida en Tokio y combate por turnos; casino local limitado, separado del fallo de película en main."
 };
+
+editorial["persona-5-royal"].overview={"en": "Tokyo social life and supernatural turn-based battles meet; the clean-main casino report is bounded and does not verify the complete story.", "zh": "东京日常与异世界回合战斗交织；干净main赌场报告范围有限，不验证完整剧情。", "ar": "حياة طوكيو ومعارك أدوار خارقة؛ تقرير كازينو main نظيف محدود ولا يثبت القصة كاملة.", "pt": "Vida em Tóquio e batalhas por turnos; casino main limpo limitado, sem validar história completa.", "de": "Tokio-Alltag und Rundenkämpfe; sauberer Main-Casinobericht begrenzt, kein Gesamtnachweis.", "fr": "Vie à Tokyo et combats au tour par tour; casino main propre limité, sans histoire complète validée.", "es": "Vida en Tokio y batallas por turnos; casino main limpio limitado, sin historia completa validada."};
+
+for(const locale of Object.keys(editorial["crimson-desert-ppsa25286"].editionNote) as (keyof Text)[]){editorial["crimson-desert-ppsa25286"].editionNote[locale]+={"en": " Enhanced promotional branding does not establish which enhanced features the reported version tested.", "zh": " 增强版宣传标识不证明报告版本实测哪些增强内容。", "ar": " شعار Enhanced الدعائي لا يثبت ميزات النسخة المختبرة.", "pt": " Marca Enhanced promocional não prova funções testadas na versão do relato.", "de": " Enhanced-Werbung belegt keine getesteten Zusatzfunktionen des Berichts.", "fr": " Marque Enhanced promotionnelle sans preuve des fonctions testées.", "es": " Marca Enhanced promocional no prueba funciones testadas en esa versión."}[locale];}

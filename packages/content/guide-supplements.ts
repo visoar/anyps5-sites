@@ -2920,3 +2920,282 @@ guideSupplements["guides/linux"].push({
   }
  ]
 });
+
+guideSupplements["guides/input"]??=[];
+guideSupplements["guides/input"].push({
+ "id": "fullscreen-overlay-pages",
+ "title": {
+  "en": "Fullscreen and two overlay pages",
+  "zh": "全屏与双页性能叠加层",
+  "ar": "ملء الشاشة وصفحتا القياس",
+  "pt": "Ecrã inteiro e duas páginas de métricas",
+  "de": "Vollbild und zwei Messseiten",
+  "fr": "Plein écran et deux pages de mesures",
+  "es": "Pantalla completa y dos páginas de métricas"
+ },
+ "body": [
+  {
+   "en": "Current main adds F11 fullscreen and F10 cycling off → page1 → page2 → off. ANYPS5_FULLSCREEN starts at desktop resolution when nonempty and not0; it is not a game render-resolution override. ANYPS5_OVERLAY accepts only0/1/2; positions are tl/tr/bl/br. Page2 uses one-second intervals and instrumentation has overhead. Inclusive CPU phases and overlapping GPU ranges cannot be added; missing counters are omitted, not zero. System commit/limit is not process RSS; Linux reports a limit only with strict overcommit=2. Flip/present/drop/repeat counts describe different events. These main features are not established as part of unchanged v0.1.3.",
+   "zh": "当前main新增F11全屏及F10关闭→第一页→第二页→关闭。ANYPS5_FULLSCREEN非空且非0时以桌面分辨率启动，不覆盖游戏渲染分辨率。ANYPS5_OVERLAY仅接受0／1／2，位置为tl／tr／bl／br。第二页按一秒统计，埋点有开销；包含子阶段的CPU时间及重叠GPU范围不能相加，缺失指标会省略而不是零。系统commit／limit不是进程RSS，Linux仅严格overcommit=2时报告上限。flip／present／drop／repeat计数含义不同；这些main功能未确认包含于未变的v0.1.3。",
+   "ar": "يضيف main الحالي F11 وF10 للتبديل إيقاف→1→2→إيقاف. ANYPS5_FULLSCREEN غير الفارغ وغير0 يستخدم دقة سطح المكتب، لا يغير دقة رسم اللعبة. ANYPS5_OVERLAY يقبل0/1/2 فقط ومواضع tl/tr/bl/br. الصفحة2 بفترات ثانية والقياس له كلفة؛ أزمنة CPU الشاملة ونطاقات GPU المتداخلة لا تُجمع. المفقود محذوف لا صفر. commit النظام ليس RSS؛ حد Linux فقط مع overcommit=2. عدادات flip/present/drop/repeat مختلفة. لا إثبات وجود هذه الميزات في v0.1.3 غير المتغير.",
+   "pt": "Main atual acrescenta F11 e F10 desligado→1→2→desligado. ANYPS5_FULLSCREEN não vazio/diferente de0 usa resolução do ambiente de trabalho, não a renderização do jogo. ANYPS5_OVERLAY só0/1/2, posições tl/tr/bl/br. Página2 usa um segundo e medir tem custo; fases CPU inclusivas e intervalos GPU sobrepostos não se somam. Métricas ausentes não são zero. Commit/limite do sistema não é RSS; limite Linux só com overcommit=2. Flip/present/drop/repeat são eventos distintos. Não confirmado na v0.1.3 inalterada.",
+   "de": "Aktuelles Main ergänzt F11 und F10 aus→1→2→aus. ANYPS5_FULLSCREEN nichtleer/ungleich0 nutzt Desktopauflösung, überschreibt keine Spielrenderauflösung. ANYPS5_OVERLAY nur0/1/2, Position tl/tr/bl/br. Seite2 misst Sekundenintervalle mit Eigenkosten; inklusive CPU-Phasen und überlappende GPU-Bereiche nicht addieren. Fehlendes bleibt ausgelassen statt null. Systemcommit/-limit ist nicht Prozess-RSS; Linuxlimit nur bei overcommit=2. Flip/Present/Drop/Repeat sind verschiedene Ereignisse. Aufnahme in unverändertes v0.1.3 unbestätigt.",
+   "fr": "Main actuel ajoute F11 et F10 éteint→1→2→éteint. ANYPS5_FULLSCREEN non vide/différent de0 utilise la résolution du bureau, sans modifier le rendu du jeu. ANYPS5_OVERLAY seulement0/1/2, positions tl/tr/bl/br. Page2 par secondes, instrumentation coûteuse; phases CPU inclusives et plages GPU superposées non additionnables. Métriques absentes omises, pas zéro. Commit/limite système différent de RSS; limite Linux seulement avec overcommit=2. Flip/present/drop/repeat distincts. Inclusion dans v0.1.3 inchangée non confirmée.",
+   "es": "Main actual añade F11 y F10 apagado→1→2→apagado. ANYPS5_FULLSCREEN no vacío/distinto de0 usa resolución del escritorio, sin cambiar renderizado del juego. ANYPS5_OVERLAY solo0/1/2, posiciones tl/tr/bl/br. Página2 por segundos, instrumentación con coste; fases CPU inclusivas y rangos GPU solapados no se suman. Ausencias omitidas, no cero. Commit/límite del sistema no es RSS; límite Linux solo con overcommit=2. Flip/present/drop/repeat distintos. Sin confirmar inclusión en v0.1.3 sin cambios."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream main · d13b3d7c55",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d13b3d7c55a433c7a5040076d849dbe59fad4b53/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"]??=[];
+guideSupplements["guides/windows"].push({
+ "id": "fullscreen-overlay-pages",
+ "title": {
+  "en": "Fullscreen and two overlay pages",
+  "zh": "全屏与双页性能叠加层",
+  "ar": "ملء الشاشة وصفحتا القياس",
+  "pt": "Ecrã inteiro e duas páginas de métricas",
+  "de": "Vollbild und zwei Messseiten",
+  "fr": "Plein écran et deux pages de mesures",
+  "es": "Pantalla completa y dos páginas de métricas"
+ },
+ "body": [
+  {
+   "en": "Current main adds F11 fullscreen and F10 cycling off → page1 → page2 → off. ANYPS5_FULLSCREEN starts at desktop resolution when nonempty and not0; it is not a game render-resolution override. ANYPS5_OVERLAY accepts only0/1/2; positions are tl/tr/bl/br. Page2 uses one-second intervals and instrumentation has overhead. Inclusive CPU phases and overlapping GPU ranges cannot be added; missing counters are omitted, not zero. System commit/limit is not process RSS; Linux reports a limit only with strict overcommit=2. Flip/present/drop/repeat counts describe different events. These main features are not established as part of unchanged v0.1.3.",
+   "zh": "当前main新增F11全屏及F10关闭→第一页→第二页→关闭。ANYPS5_FULLSCREEN非空且非0时以桌面分辨率启动，不覆盖游戏渲染分辨率。ANYPS5_OVERLAY仅接受0／1／2，位置为tl／tr／bl／br。第二页按一秒统计，埋点有开销；包含子阶段的CPU时间及重叠GPU范围不能相加，缺失指标会省略而不是零。系统commit／limit不是进程RSS，Linux仅严格overcommit=2时报告上限。flip／present／drop／repeat计数含义不同；这些main功能未确认包含于未变的v0.1.3。",
+   "ar": "يضيف main الحالي F11 وF10 للتبديل إيقاف→1→2→إيقاف. ANYPS5_FULLSCREEN غير الفارغ وغير0 يستخدم دقة سطح المكتب، لا يغير دقة رسم اللعبة. ANYPS5_OVERLAY يقبل0/1/2 فقط ومواضع tl/tr/bl/br. الصفحة2 بفترات ثانية والقياس له كلفة؛ أزمنة CPU الشاملة ونطاقات GPU المتداخلة لا تُجمع. المفقود محذوف لا صفر. commit النظام ليس RSS؛ حد Linux فقط مع overcommit=2. عدادات flip/present/drop/repeat مختلفة. لا إثبات وجود هذه الميزات في v0.1.3 غير المتغير.",
+   "pt": "Main atual acrescenta F11 e F10 desligado→1→2→desligado. ANYPS5_FULLSCREEN não vazio/diferente de0 usa resolução do ambiente de trabalho, não a renderização do jogo. ANYPS5_OVERLAY só0/1/2, posições tl/tr/bl/br. Página2 usa um segundo e medir tem custo; fases CPU inclusivas e intervalos GPU sobrepostos não se somam. Métricas ausentes não são zero. Commit/limite do sistema não é RSS; limite Linux só com overcommit=2. Flip/present/drop/repeat são eventos distintos. Não confirmado na v0.1.3 inalterada.",
+   "de": "Aktuelles Main ergänzt F11 und F10 aus→1→2→aus. ANYPS5_FULLSCREEN nichtleer/ungleich0 nutzt Desktopauflösung, überschreibt keine Spielrenderauflösung. ANYPS5_OVERLAY nur0/1/2, Position tl/tr/bl/br. Seite2 misst Sekundenintervalle mit Eigenkosten; inklusive CPU-Phasen und überlappende GPU-Bereiche nicht addieren. Fehlendes bleibt ausgelassen statt null. Systemcommit/-limit ist nicht Prozess-RSS; Linuxlimit nur bei overcommit=2. Flip/Present/Drop/Repeat sind verschiedene Ereignisse. Aufnahme in unverändertes v0.1.3 unbestätigt.",
+   "fr": "Main actuel ajoute F11 et F10 éteint→1→2→éteint. ANYPS5_FULLSCREEN non vide/différent de0 utilise la résolution du bureau, sans modifier le rendu du jeu. ANYPS5_OVERLAY seulement0/1/2, positions tl/tr/bl/br. Page2 par secondes, instrumentation coûteuse; phases CPU inclusives et plages GPU superposées non additionnables. Métriques absentes omises, pas zéro. Commit/limite système différent de RSS; limite Linux seulement avec overcommit=2. Flip/present/drop/repeat distincts. Inclusion dans v0.1.3 inchangée non confirmée.",
+   "es": "Main actual añade F11 y F10 apagado→1→2→apagado. ANYPS5_FULLSCREEN no vacío/distinto de0 usa resolución del escritorio, sin cambiar renderizado del juego. ANYPS5_OVERLAY solo0/1/2, posiciones tl/tr/bl/br. Página2 por segundos, instrumentación con coste; fases CPU inclusivas y rangos GPU solapados no se suman. Ausencias omitidas, no cero. Commit/límite del sistema no es RSS; límite Linux solo con overcommit=2. Flip/present/drop/repeat distintos. Sin confirmar inclusión en v0.1.3 sin cambios."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream main · d13b3d7c55",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d13b3d7c55a433c7a5040076d849dbe59fad4b53/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/linux"]??=[];
+guideSupplements["guides/linux"].push({
+ "id": "fullscreen-overlay-pages",
+ "title": {
+  "en": "Fullscreen and two overlay pages",
+  "zh": "全屏与双页性能叠加层",
+  "ar": "ملء الشاشة وصفحتا القياس",
+  "pt": "Ecrã inteiro e duas páginas de métricas",
+  "de": "Vollbild und zwei Messseiten",
+  "fr": "Plein écran et deux pages de mesures",
+  "es": "Pantalla completa y dos páginas de métricas"
+ },
+ "body": [
+  {
+   "en": "Current main adds F11 fullscreen and F10 cycling off → page1 → page2 → off. ANYPS5_FULLSCREEN starts at desktop resolution when nonempty and not0; it is not a game render-resolution override. ANYPS5_OVERLAY accepts only0/1/2; positions are tl/tr/bl/br. Page2 uses one-second intervals and instrumentation has overhead. Inclusive CPU phases and overlapping GPU ranges cannot be added; missing counters are omitted, not zero. System commit/limit is not process RSS; Linux reports a limit only with strict overcommit=2. Flip/present/drop/repeat counts describe different events. These main features are not established as part of unchanged v0.1.3.",
+   "zh": "当前main新增F11全屏及F10关闭→第一页→第二页→关闭。ANYPS5_FULLSCREEN非空且非0时以桌面分辨率启动，不覆盖游戏渲染分辨率。ANYPS5_OVERLAY仅接受0／1／2，位置为tl／tr／bl／br。第二页按一秒统计，埋点有开销；包含子阶段的CPU时间及重叠GPU范围不能相加，缺失指标会省略而不是零。系统commit／limit不是进程RSS，Linux仅严格overcommit=2时报告上限。flip／present／drop／repeat计数含义不同；这些main功能未确认包含于未变的v0.1.3。",
+   "ar": "يضيف main الحالي F11 وF10 للتبديل إيقاف→1→2→إيقاف. ANYPS5_FULLSCREEN غير الفارغ وغير0 يستخدم دقة سطح المكتب، لا يغير دقة رسم اللعبة. ANYPS5_OVERLAY يقبل0/1/2 فقط ومواضع tl/tr/bl/br. الصفحة2 بفترات ثانية والقياس له كلفة؛ أزمنة CPU الشاملة ونطاقات GPU المتداخلة لا تُجمع. المفقود محذوف لا صفر. commit النظام ليس RSS؛ حد Linux فقط مع overcommit=2. عدادات flip/present/drop/repeat مختلفة. لا إثبات وجود هذه الميزات في v0.1.3 غير المتغير.",
+   "pt": "Main atual acrescenta F11 e F10 desligado→1→2→desligado. ANYPS5_FULLSCREEN não vazio/diferente de0 usa resolução do ambiente de trabalho, não a renderização do jogo. ANYPS5_OVERLAY só0/1/2, posições tl/tr/bl/br. Página2 usa um segundo e medir tem custo; fases CPU inclusivas e intervalos GPU sobrepostos não se somam. Métricas ausentes não são zero. Commit/limite do sistema não é RSS; limite Linux só com overcommit=2. Flip/present/drop/repeat são eventos distintos. Não confirmado na v0.1.3 inalterada.",
+   "de": "Aktuelles Main ergänzt F11 und F10 aus→1→2→aus. ANYPS5_FULLSCREEN nichtleer/ungleich0 nutzt Desktopauflösung, überschreibt keine Spielrenderauflösung. ANYPS5_OVERLAY nur0/1/2, Position tl/tr/bl/br. Seite2 misst Sekundenintervalle mit Eigenkosten; inklusive CPU-Phasen und überlappende GPU-Bereiche nicht addieren. Fehlendes bleibt ausgelassen statt null. Systemcommit/-limit ist nicht Prozess-RSS; Linuxlimit nur bei overcommit=2. Flip/Present/Drop/Repeat sind verschiedene Ereignisse. Aufnahme in unverändertes v0.1.3 unbestätigt.",
+   "fr": "Main actuel ajoute F11 et F10 éteint→1→2→éteint. ANYPS5_FULLSCREEN non vide/différent de0 utilise la résolution du bureau, sans modifier le rendu du jeu. ANYPS5_OVERLAY seulement0/1/2, positions tl/tr/bl/br. Page2 par secondes, instrumentation coûteuse; phases CPU inclusives et plages GPU superposées non additionnables. Métriques absentes omises, pas zéro. Commit/limite système différent de RSS; limite Linux seulement avec overcommit=2. Flip/present/drop/repeat distincts. Inclusion dans v0.1.3 inchangée non confirmée.",
+   "es": "Main actual añade F11 y F10 apagado→1→2→apagado. ANYPS5_FULLSCREEN no vacío/distinto de0 usa resolución del escritorio, sin cambiar renderizado del juego. ANYPS5_OVERLAY solo0/1/2, posiciones tl/tr/bl/br. Página2 por segundos, instrumentación con coste; fases CPU inclusivas y rangos GPU solapados no se suman. Ausencias omitidas, no cero. Commit/límite del sistema no es RSS; límite Linux solo con overcommit=2. Flip/present/drop/repeat distintos. Sin confirmar inclusión en v0.1.3 sin cambios."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream main · d13b3d7c55",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d13b3d7c55a433c7a5040076d849dbe59fad4b53/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"]??=[];
+guideSupplements["guides/build"].push({
+ "id": "short-path-sanitizer-gate",
+ "title": {
+  "en": "Build paths and what a validation gate proves",
+  "zh": "构建路径及验证门禁的证据范围",
+  "ar": "مسارات البناء وحدود بوابة التحقق",
+  "pt": "Caminhos de compilação e limites da validação",
+  "de": "Buildpfade und Grenzen des Prüftors",
+  "fr": "Chemins de compilation et portée du contrôle",
+  "es": "Rutas de compilación y alcance de validación"
+ },
+ "body": [
+  {
+   "en": "Windows dependency/object paths can still hit260 characters with LongPathsEnabled=1. Use a short checkout such as C:\u00075 and freshly configure/build there; moving an old build directory retains absolute paths. Current main documents Linux dynamic-library ThreadSanitizer, mutually exclusive with AddressSanitizer; suppressions for uninstrumented drivers do not prove race freedom. The POSIX Vulkan gate rejects dirty sources, requires fresh output outside worktrees, loaded layers and no skipped selected tests; it compares new diagnostic IDs, not just counts. Hashes identify selected binaries, not every loaded artifact. Passing repetitions neither prove all games nor rule out intermittent faults. Windows capture/replay needs guest write watch; disabling it now refuses capture. None of these development checks is a game benchmark.",
+   "zh": "Windows依赖／对象路径即使LongPathsEnabled=1仍可能触及260字符；用C:\u00075等短检出路径并重新配置构建，移动旧构建目录会保留绝对路径。当前main文档加入Linux动态库ThreadSanitizer，与AddressSanitizer互斥；未插桩驱动抑制项不证明无竞态。POSIX Vulkan门禁拒绝脏源码，要求工作树外全新输出、已加载层及所选测试不跳过；比较新增诊断ID而非只看次数。哈希只标识选中二进制，非全部加载产物。重复通过不证明所有游戏或排除间歇故障；Windows／Linux捕获回放需要guest write watch，禁用会拒绝捕获。这些开发检查不是游戏基准。",
+   "ar": "قد تبقى مسارات Windows محدودة260 حرفاً رغم LongPathsEnabled=1؛ استخدم C:\u00075 وأعد التهيئة والبناء، فالنقل يبقي المسارات المطلقة. main يوثق ThreadSanitizer لمكتبات Linux الديناميكية، متنافي مع ASan؛ suppressions السواقات ليست برهان غياب سباق. بوابة Vulkan POSIX تتطلب مصدراً نظيفاً ومخرجات جديدة خارج worktree وطبقات محملة واختبارات غير متخطاة، وتقارن IDs التشخيص الجديدة. الهاش لثنائيات مختارة لا كل المحمل. التكرار لا يثبت كل الألعاب أو غياب أخطاء متقطعة. الالتقاط Windows/Linux يتطلب write watch؛ تعطيله يرفض الالتقاط. هذه ليست benchmark لعبة.",
+   "pt": "Windows pode atingir260 caracteres mesmo com LongPathsEnabled=1. Use C:\u00075 e configure/compile de novo; mover build antigo mantém caminhos absolutos. Main documenta TSan em libs dinâmicas Linux, incompatível com ASan; supressões de drivers não provam ausência de races. Gate Vulkan POSIX exige fontes limpas, saída nova fora de worktrees, layers carregadas e testes sem skips; compara IDs novos. Hashes só dos binários escolhidos, não de tudo carregado. Repetições não provam todos os jogos nem ausência de falhas intermitentes. Captura Windows/Linux exige write watch. Não é benchmark de jogo.",
+   "de": "Windows kann trotz LongPathsEnabled=1 an260 Zeichen scheitern. Kurzer Checkout C:\u00075, neu konfigurieren/bauen; verschobene Altbuilds behalten absolute Pfade. Main dokumentiert TSan für dynamische Linuxlibs, nicht zusammen mit ASan; Treibersuppressions belegen keine Racefreiheit. POSIX-Vulkangate verlangt saubere Quellen, neue Ausgabe außerhalb Worktrees, geladene Layer und keine Testskips; vergleicht neue Diagnose-IDs. Hashes nur ausgewählter Binärdateien. Wiederholungen belegen weder alle Spiele noch Abwesenheit sporadischer Fehler. Windows/Linux-Capture braucht Write-Watch. Kein Spielbenchmark.",
+   "fr": "Windows peut dépasser260 caractères malgré LongPathsEnabled=1. Copie courte C:\u00075, reconfiguration/recompilation; déplacer l’ancien build garde les chemins absolus. Main documente TSan Linux dynamique, incompatible ASan; suppressions pilotes sans preuve d’absence de races. Gate Vulkan POSIX exige sources propres, sortie neuve hors worktrees, couches chargées et tests non ignorés; compare nouveaux IDs. Hashes seulement des binaires sélectionnés. Répétitions sans preuve de tous les jeux ni absence de panne intermittente. Capture Windows/Linux exige write watch. Aucun benchmark de jeu.",
+   "es": "Windows puede superar260 caracteres pese a LongPathsEnabled=1. Usa C:\u00075 y configura/compila de nuevo; mover build viejo conserva rutas absolutas. Main documenta TSan Linux dinámico, incompatible ASan; supresiones de drivers no prueban ausencia de races. Gate Vulkan POSIX exige fuentes limpias, salida nueva fuera de worktrees, capas cargadas y tests sin saltos; compara IDs nuevos. Hashes solo de binarios seleccionados. Repetir no prueba todos los juegos ni ausencia de fallos intermitentes. Captura Windows/Linux requiere write watch. No es benchmark de juego."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream main · d13b3d7c55",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d13b3d7c55a433c7a5040076d849dbe59fad4b53/docs/dev/BUILD.md"
+  }
+ ]
+});
+
+guideSupplements["start"]??=[];
+guideSupplements["start"].push({
+ "id": "ordinary-process-and-usb",
+ "title": {
+  "en": "Treat converted programs as ordinary host applications",
+  "zh": "按普通主机程序处理转换产物",
+  "ar": "عامل البرامج المحولة كتطبيقات مضيفة عادية",
+  "pt": "Tratar programas convertidos como aplicações normais",
+  "de": "Konvertierte Programme als normale Hostanwendungen behandeln",
+  "fr": "Traiter les programmes convertis comme applications ordinaires",
+  "es": "Tratar programas convertidos como aplicaciones normales"
+ },
+ "body": [
+  {
+   "en": "Converted programs run with your host account’s permissions; conversion does not recreate the console sandbox. Keep sensitive files separate and use a restricted account or isolation when appropriate. Current main’s APS5_USB_STORAGE_PASSTHROUGH is opt-in and exposes host-mounted USB FAT/exFAT volumes writable; unset it scans no volumes and exposes no USB device. This option is not required by every game. --version prints the build identity and exits; it does not test a game. The online converter now follows CLI backup/SONAME skip rules. A destination directory that already exists is rejected before writing.",
+   "zh": "转换程序以主机账户权限运行，转换不重建主机沙箱；将敏感文件分开，按需要使用受限账户或隔离。当前main的APS5_USB_STORAGE_PASSTHROUGH需主动启用，会以可写方式暴露主机挂载的USB FAT／exFAT卷；未设时不扫描也不暴露USB。并非每款游戏都需要此项。--version只打印构建标识并退出，不测试游戏。在线转换器现遵循CLI的备份／SONAME跳过规则；目标目录已存在时写入前拒绝。",
+   "ar": "البرنامج المحول يعمل بصلاحيات حساب المضيف، بلا sandbox الكونسول. افصل الملفات الحساسة واستخدم حساباً مقيداً أو عزلاً حسب الحاجة. APS5_USB_STORAGE_PASSTHROUGH في main اختياري ويكشف وحدات USB FAT/exFAT المركبة قابلة للكتابة؛ غير المضبوط لا يفحص ولا يكشف USB. ليس مطلوباً لكل لعبة. --version يطبع البناء ويخرج لا يختبر لعبة. المحول الشبكي يتبع قواعد CLI للنسخ الاحتياطية/SONAME؛ المجلد الموجود يُرفض قبل الكتابة.",
+   "pt": "Programa convertido usa permissões da conta, sem sandbox da consola. Separe ficheiros sensíveis e use conta restrita/isolamento quando adequado. APS5_USB_STORAGE_PASSTHROUGH em main é opt-in e expõe volumes USB FAT/exFAT montados com escrita; ausente não pesquisa/exibe USB. Nem todo jogo precisa. --version só identifica build e sai. Conversor online segue backups/SONAME da CLI; destino existente é recusado antes de escrever.",
+   "de": "Konvertiertes Programm nutzt Kontorechte ohne Konsolensandbox. Sensible Dateien trennen, bei Bedarf eingeschränktes Konto/Isolation nutzen. Main-Option APS5_USB_STORAGE_PASSTHROUGH gibt eingebundene USB-FAT/exFAT-Volumes schreibbar frei; ungesetzt kein Scan/USB. Nicht für jedes Spiel nötig. --version zeigt Build und endet ohne Spieltest. Onlinekonverter folgt CLI-Backup/SONAME-Regeln; vorhandenes Zielverzeichnis wird vor Schreiben abgelehnt.",
+   "fr": "Programme converti utilise les droits du compte sans sandbox console. Séparez fichiers sensibles, compte restreint/isolation selon besoin. APS5_USB_STORAGE_PASSTHROUGH de main expose volontairement USB FAT/exFAT monté en écriture; absent, aucun scan/USB. Non nécessaire à tout jeu. --version identifie le build puis quitte sans test. Convertisseur en ligne suit règles CLI backup/SONAME; destination existante refusée avant écriture.",
+   "es": "Programa convertido usa permisos de la cuenta sin sandbox consola. Separa archivos sensibles, cuenta restringida/aislamiento si procede. APS5_USB_STORAGE_PASSTHROUGH de main expone voluntariamente USB FAT/exFAT montados con escritura; ausente no escanea/expone USB. No requerido por todo juego. --version identifica build y sale sin test. Conversor online sigue reglas CLI backup/SONAME; destino existente rechazado antes de escribir."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream main · d13b3d7c55",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d13b3d7c55a433c7a5040076d849dbe59fad4b53/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"]??=[];
+guideSupplements["guides/windows"].push({
+ "id": "ordinary-process-and-usb",
+ "title": {
+  "en": "Treat converted programs as ordinary host applications",
+  "zh": "按普通主机程序处理转换产物",
+  "ar": "عامل البرامج المحولة كتطبيقات مضيفة عادية",
+  "pt": "Tratar programas convertidos como aplicações normais",
+  "de": "Konvertierte Programme als normale Hostanwendungen behandeln",
+  "fr": "Traiter les programmes convertis comme applications ordinaires",
+  "es": "Tratar programas convertidos como aplicaciones normales"
+ },
+ "body": [
+  {
+   "en": "Converted programs run with your host account’s permissions; conversion does not recreate the console sandbox. Keep sensitive files separate and use a restricted account or isolation when appropriate. Current main’s APS5_USB_STORAGE_PASSTHROUGH is opt-in and exposes host-mounted USB FAT/exFAT volumes writable; unset it scans no volumes and exposes no USB device. This option is not required by every game. --version prints the build identity and exits; it does not test a game. The online converter now follows CLI backup/SONAME skip rules. A destination directory that already exists is rejected before writing.",
+   "zh": "转换程序以主机账户权限运行，转换不重建主机沙箱；将敏感文件分开，按需要使用受限账户或隔离。当前main的APS5_USB_STORAGE_PASSTHROUGH需主动启用，会以可写方式暴露主机挂载的USB FAT／exFAT卷；未设时不扫描也不暴露USB。并非每款游戏都需要此项。--version只打印构建标识并退出，不测试游戏。在线转换器现遵循CLI的备份／SONAME跳过规则；目标目录已存在时写入前拒绝。",
+   "ar": "البرنامج المحول يعمل بصلاحيات حساب المضيف، بلا sandbox الكونسول. افصل الملفات الحساسة واستخدم حساباً مقيداً أو عزلاً حسب الحاجة. APS5_USB_STORAGE_PASSTHROUGH في main اختياري ويكشف وحدات USB FAT/exFAT المركبة قابلة للكتابة؛ غير المضبوط لا يفحص ولا يكشف USB. ليس مطلوباً لكل لعبة. --version يطبع البناء ويخرج لا يختبر لعبة. المحول الشبكي يتبع قواعد CLI للنسخ الاحتياطية/SONAME؛ المجلد الموجود يُرفض قبل الكتابة.",
+   "pt": "Programa convertido usa permissões da conta, sem sandbox da consola. Separe ficheiros sensíveis e use conta restrita/isolamento quando adequado. APS5_USB_STORAGE_PASSTHROUGH em main é opt-in e expõe volumes USB FAT/exFAT montados com escrita; ausente não pesquisa/exibe USB. Nem todo jogo precisa. --version só identifica build e sai. Conversor online segue backups/SONAME da CLI; destino existente é recusado antes de escrever.",
+   "de": "Konvertiertes Programm nutzt Kontorechte ohne Konsolensandbox. Sensible Dateien trennen, bei Bedarf eingeschränktes Konto/Isolation nutzen. Main-Option APS5_USB_STORAGE_PASSTHROUGH gibt eingebundene USB-FAT/exFAT-Volumes schreibbar frei; ungesetzt kein Scan/USB. Nicht für jedes Spiel nötig. --version zeigt Build und endet ohne Spieltest. Onlinekonverter folgt CLI-Backup/SONAME-Regeln; vorhandenes Zielverzeichnis wird vor Schreiben abgelehnt.",
+   "fr": "Programme converti utilise les droits du compte sans sandbox console. Séparez fichiers sensibles, compte restreint/isolation selon besoin. APS5_USB_STORAGE_PASSTHROUGH de main expose volontairement USB FAT/exFAT monté en écriture; absent, aucun scan/USB. Non nécessaire à tout jeu. --version identifie le build puis quitte sans test. Convertisseur en ligne suit règles CLI backup/SONAME; destination existante refusée avant écriture.",
+   "es": "Programa convertido usa permisos de la cuenta sin sandbox consola. Separa archivos sensibles, cuenta restringida/aislamiento si procede. APS5_USB_STORAGE_PASSTHROUGH de main expone voluntariamente USB FAT/exFAT montados con escritura; ausente no escanea/expone USB. No requerido por todo juego. --version identifica build y sale sin test. Conversor online sigue reglas CLI backup/SONAME; destino existente rechazado antes de escribir."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream main · d13b3d7c55",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d13b3d7c55a433c7a5040076d849dbe59fad4b53/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/linux"]??=[];
+guideSupplements["guides/linux"].push({
+ "id": "ordinary-process-and-usb",
+ "title": {
+  "en": "Treat converted programs as ordinary host applications",
+  "zh": "按普通主机程序处理转换产物",
+  "ar": "عامل البرامج المحولة كتطبيقات مضيفة عادية",
+  "pt": "Tratar programas convertidos como aplicações normais",
+  "de": "Konvertierte Programme als normale Hostanwendungen behandeln",
+  "fr": "Traiter les programmes convertis comme applications ordinaires",
+  "es": "Tratar programas convertidos como aplicaciones normales"
+ },
+ "body": [
+  {
+   "en": "Converted programs run with your host account’s permissions; conversion does not recreate the console sandbox. Keep sensitive files separate and use a restricted account or isolation when appropriate. Current main’s APS5_USB_STORAGE_PASSTHROUGH is opt-in and exposes host-mounted USB FAT/exFAT volumes writable; unset it scans no volumes and exposes no USB device. This option is not required by every game. --version prints the build identity and exits; it does not test a game. The online converter now follows CLI backup/SONAME skip rules. A destination directory that already exists is rejected before writing.",
+   "zh": "转换程序以主机账户权限运行，转换不重建主机沙箱；将敏感文件分开，按需要使用受限账户或隔离。当前main的APS5_USB_STORAGE_PASSTHROUGH需主动启用，会以可写方式暴露主机挂载的USB FAT／exFAT卷；未设时不扫描也不暴露USB。并非每款游戏都需要此项。--version只打印构建标识并退出，不测试游戏。在线转换器现遵循CLI的备份／SONAME跳过规则；目标目录已存在时写入前拒绝。",
+   "ar": "البرنامج المحول يعمل بصلاحيات حساب المضيف، بلا sandbox الكونسول. افصل الملفات الحساسة واستخدم حساباً مقيداً أو عزلاً حسب الحاجة. APS5_USB_STORAGE_PASSTHROUGH في main اختياري ويكشف وحدات USB FAT/exFAT المركبة قابلة للكتابة؛ غير المضبوط لا يفحص ولا يكشف USB. ليس مطلوباً لكل لعبة. --version يطبع البناء ويخرج لا يختبر لعبة. المحول الشبكي يتبع قواعد CLI للنسخ الاحتياطية/SONAME؛ المجلد الموجود يُرفض قبل الكتابة.",
+   "pt": "Programa convertido usa permissões da conta, sem sandbox da consola. Separe ficheiros sensíveis e use conta restrita/isolamento quando adequado. APS5_USB_STORAGE_PASSTHROUGH em main é opt-in e expõe volumes USB FAT/exFAT montados com escrita; ausente não pesquisa/exibe USB. Nem todo jogo precisa. --version só identifica build e sai. Conversor online segue backups/SONAME da CLI; destino existente é recusado antes de escrever.",
+   "de": "Konvertiertes Programm nutzt Kontorechte ohne Konsolensandbox. Sensible Dateien trennen, bei Bedarf eingeschränktes Konto/Isolation nutzen. Main-Option APS5_USB_STORAGE_PASSTHROUGH gibt eingebundene USB-FAT/exFAT-Volumes schreibbar frei; ungesetzt kein Scan/USB. Nicht für jedes Spiel nötig. --version zeigt Build und endet ohne Spieltest. Onlinekonverter folgt CLI-Backup/SONAME-Regeln; vorhandenes Zielverzeichnis wird vor Schreiben abgelehnt.",
+   "fr": "Programme converti utilise les droits du compte sans sandbox console. Séparez fichiers sensibles, compte restreint/isolation selon besoin. APS5_USB_STORAGE_PASSTHROUGH de main expose volontairement USB FAT/exFAT monté en écriture; absent, aucun scan/USB. Non nécessaire à tout jeu. --version identifie le build puis quitte sans test. Convertisseur en ligne suit règles CLI backup/SONAME; destination existante refusée avant écriture.",
+   "es": "Programa convertido usa permisos de la cuenta sin sandbox consola. Separa archivos sensibles, cuenta restringida/aislamiento si procede. APS5_USB_STORAGE_PASSTHROUGH de main expone voluntariamente USB FAT/exFAT montados con escritura; ausente no escanea/expone USB. No requerido por todo juego. --version identifica build y sale sin test. Conversor online sigue reglas CLI backup/SONAME; destino existente rechazado antes de escribir."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream main · d13b3d7c55",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d13b3d7c55a433c7a5040076d849dbe59fad4b53/docs/user/USAGE.md"
+  }
+ ]
+});
+
+guideSupplements["guides/build"]??=[];
+guideSupplements["guides/build"].push({
+ "id": "runtime-switch-comparison",
+ "title": {
+  "en": "Compare one exact build and scene at a time",
+  "zh": "每次比较准确构建与同一场景",
+  "ar": "قارن بناءً ومشهداً محددين",
+  "pt": "Comparar build exato e a mesma cena",
+  "de": "Exakten Build und gleiche Szene vergleichen",
+  "fr": "Comparer build exact et même scène",
+  "es": "Comparar build exacto y misma escena"
+ },
+ "body": [
+  {
+   "en": "Main’s APS5_AB uses seconds:switch[+switch...] and toggles runtime switches at flip packets; settle defaults to2 seconds and start can be a flip count or seconds. A private fork’s comma syntax is not this interface. ANYPS5_LANGUAGE accepts0–30; invalid overlay/language values can fail rather than silently default. APS5_EXACT_DRAW_WRITES is now on when unset, with0 selecting approximation. APS5_TIME_SCALE accepts positive fractions, changes guest clocks and is not an FPS multiplier. STRICT_DESCRIPTOR_WEBS selects throwing diagnosis instead of default fault selection, not a compatibility cure. Record every override, cache and trace-event loss before comparing. PREBUILD_THREADS, worker affinity and profiling change the workload, so do not combine gains from different runs.",
+   "zh": "main的APS5_AB使用seconds:switch[+switch...]，在flip处切换运行开关，settle默认2秒，start可用flip计数或秒；私有fork逗号语法不适用于此接口。ANYPS5_LANGUAGE仅0–30，非法语言／叠加层值可能失败而非静默回退。APS5_EXACT_DRAW_WRITES未设时现默认开启，0选近似。APS5_TIME_SCALE接受正小数，改guest时钟而非FPS倍增；STRICT_DESCRIPTOR_WEBS选抛错诊断而非默认故障选择，不是兼容药方。记录全部覆盖、缓存和追踪事件丢失；PREBUILD_THREADS、线程亲和与profiling会改变负载，不相加不同运行的增益。",
+   "ar": "APS5_AB يستخدم seconds:switch[+switch...] عند flip؛ settle افتراضي2ث وstart عدد flip أو ثوان. فاصلة الفرع الخاص ليست الواجهة هذه. ANYPS5_LANGUAGE يقبل0–30؛ القيم غير الصالحة قد تفشل. EXACT_DRAW_WRITES افتراضياً مفعل،0 تقريب. TIME_SCALE يقبل كسوراً موجبة ويغير ساعة الضيف لا FPS. STRICT_DESCRIPTOR_WEBS تشخيص يرمي لا علاج توافق. سجل الخيارات والكاش وأحداث التتبع المفقودة؛ threads/affinity/profiling تغير الحمل فلا تجمع مكاسب مختلفة.",
+   "pt": "APS5_AB usa seconds:switch[+switch...] nos flips; settle2 s, start por flips/segundos. Vírgulas de forks não são esta interface. ANYPS5_LANGUAGE0–30, inválidos podem falhar. EXACT_DRAW_WRITES ativo por omissão,0 aproxima. TIME_SCALE aceita frações positivas, altera relógio e não multiplica FPS. STRICT_DESCRIPTOR_WEBS é diagnóstico, não cura. Registe opções/cache/eventos perdidos; threads/afinidade/profiling mudam carga, ganhos não se somam.",
+   "de": "APS5_AB nutzt seconds:switch[+switch...] an Flips; settle2 s, start Flips/Sekunden. Fork-Kommasyntax gilt hier nicht. ANYPS5_LANGUAGE0–30, ungültige Werte können scheitern. EXACT_DRAW_WRITES standardmäßig an,0 näherungsweise. TIME_SCALE positive Brüche ändern Gastuhr statt FPS. STRICT_DESCRIPTOR_WEBS Diagnose statt Kompatibilitätsheilung. Optionen/Cache/Ereignisverluste erfassen; Threads/Affinität/Profiling verändern Last, Gewinne nicht addieren.",
+   "fr": "APS5_AB utilise seconds:switch[+switch...] aux flips; settle2 s, start flips/secondes. Virgules de fork non applicables. ANYPS5_LANGUAGE0–30, valeurs invalides peuvent échouer. EXACT_DRAW_WRITES actif par défaut,0 approximation. TIME_SCALE fractions positives change horloge invitée, pas FPS. STRICT_DESCRIPTOR_WEBS diagnostic, pas remède. Notez options/cache/événements perdus; threads/affinité/profiling modifient charge, gains non additionnables.",
+   "es": "APS5_AB usa seconds:switch[+switch...] en flips; settle2 s, start flips/segundos. Comas de fork no aplicables. ANYPS5_LANGUAGE0–30, inválidos pueden fallar. EXACT_DRAW_WRITES activo por defecto,0 aproximación. TIME_SCALE fracciones positivas cambia reloj guest, no FPS. STRICT_DESCRIPTOR_WEBS diagnóstico, no cura. Registra opciones/caché/eventos perdidos; hilos/afinidad/profiling cambian carga, ganancias no sumables."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream main · d13b3d7c55",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d13b3d7c55a433c7a5040076d849dbe59fad4b53/docs/dev/ENVIRONMENT.md"
+  }
+ ]
+});
+
+guideSupplements["guides/windows"]??=[];
+guideSupplements["guides/windows"].push({
+ "id": "windows-base-documentation-discrepancy",
+ "title": {
+  "en": "A preferred address is not a sandbox setting",
+  "zh": "首选地址不是沙箱设置",
+  "ar": "العنوان المفضل ليس إعداد sandbox",
+  "pt": "Endereço preferido não é sandbox",
+  "de": "Bevorzugte Adresse ist keine Sandboxeinstellung",
+  "fr": "Adresse préférée sans réglage sandbox",
+  "es": "Dirección preferida no es sandbox"
+ },
+ "body": [
+  {
+   "en": "The pinned usage prose says0x140000000, while its option table and WindowsPeFormat.hpp use ExecutableBase=0x400000. WindowsPePatcher.cpp constructs the default mapping from that constant. Keep this documentation discrepancy visible instead of changing a working command from prose alone. --windows-fixed-base explicitly changes placement and disables relocation behavior; use only for an identified build need, not as a general performance or isolation tweak.",
+   "zh": "固定版本USAGE正文写0x140000000，但选项表及WindowsPeFormat.hpp的ExecutableBase为0x400000，WindowsPePatcher.cpp默认映射使用该常量。保留此文档矛盾，不仅凭正文改动可用命令。--windows-fixed-base显式改变放置及重定位行为，只用于已识别的构建需求，不作为通用性能或隔离设置。",
+   "ar": "نص USAGE المثبت يقول0x140000000 لكن الجدول وExecutableBase في WindowsPeFormat.hpp يقولان0x400000 ويستخدمه WindowsPePatcher.cpp. نبقي التعارض واضحاً ولا نغير أمراً يعمل بالنص وحده. --windows-fixed-base يغير الموضع والترحيل لحاجة بناء محددة، لا تحسين سرعة أو عزل عام.",
+   "pt": "USAGE fixado diz0x140000000, mas tabela/ExecutableBase em WindowsPeFormat.hpp usam0x400000, usado pelo WindowsPePatcher.cpp. Discrepância explícita, sem alterar comando funcional só pela prosa. --windows-fixed-base muda posição/relocação para necessidade identificada, não otimização ou isolamento geral.",
+   "de": "Fixiertes USAGE nennt0x140000000, Tabelle/ExecutableBase in WindowsPeFormat.hpp dagegen0x400000, das WindowsPePatcher.cpp nutzt. Widerspruch sichtbar lassen, funktionierenden Befehl nicht nur nach Prosa ändern. --windows-fixed-base ändert Platzierung/Relokation für konkrete Buildanforderung, kein allgemeiner Leistungs-/Isolationstipp.",
+   "fr": "USAGE fixé dit0x140000000, tableau/ExecutableBase dans WindowsPeFormat.hpp0x400000 utilisé par WindowsPePatcher.cpp. Divergence conservée, sans changer commande fonctionnelle sur seule prose. --windows-fixed-base modifie placement/relocalisation pour besoin identifié, pas réglage général vitesse/isolation.",
+   "es": "USAGE fijado dice0x140000000, tabla/ExecutableBase en WindowsPeFormat.hpp0x400000 usado por WindowsPePatcher.cpp. Discrepancia visible, sin cambiar comando funcional solo por prosa. --windows-fixed-base cambia colocación/reubicación para necesidad identificada, no ajuste general rendimiento/aislamiento."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream main · d13b3d7c55",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d13b3d7c55a433c7a5040076d849dbe59fad4b53/docs/user/USAGE.md"
+  }
+ ]
+});

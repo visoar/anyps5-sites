@@ -24460,3 +24460,2377 @@ maintenanceGames.push(...([
 ] as Omit<Game,"reports">[]).map(game=>({...game,reports:[]})));
 
 for(const slug of ["aila", "deathloop", "neptunia-reverse", "skyrim-ppsa03747", "days-gone-remastered", "mewgenics", "sonic-2006-recompiled", "persona-5-royal", "unbound-worlds-apart", "arcrunner", "hamster-playground", "heavenly-bodies", "hot-wheels-infinite-rush", "astro-bot", "astro-bot-ppsa21567", "gta-v", "borderlands-4", "palworld", "demons-souls", "astros-playroom", "sonic-unleashed-recompiled", "ghost-of-tsushima-directors-cut", "ghost-of-yotei", "mxgp-26", "super-meat-boy-3d", "grinch-christmas-adventures", "castlevania-belmonts-curse", "ratchet-clank-rift-apart", "lego-builders-journey", "pragmata", "vice-city-definitive", "cult-of-the-lamb-ppsa06465", "sonic-origins-plus-ppsa05325", "dusklight-ps5-homebrew", "metal-gear-solid-master-collection", "minecraft-dungeons-ii", "alone-in-the-dark", "diablo-ii-resurrected", "007-first-light", "resident-evil-requiem", "final-fantasy-resonance", "high-on-life", "hollow-knight-silksong", "mgs-delta-snake-eater", "dave-the-diver", "persona-3-reload", "marvels-spider-man-2", "god-of-war-sons-of-sparta"]){maintenanceReviewed[slug]="2026-10-27";}
+
+const nightlyReports28:Record<string,Report[]>={
+ "planet-zoo": [
+  {
+   "id": "11608-windows-review-20261028",
+   "platform": "windows",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/11608",
+   "updated": "2026-10-27T13:52:32Z",
+   "testDate": null,
+   "build": "clean main e61a7c7e24 ·3runs35–46s/0presents; later clean3fea2a937b and8ff4baf534 still fail",
+   "os": "Windows 11 Pro 26200 · WinLibs GCC 15.2 Release",
+   "cpu": "AMD Ryzen 7 5800X3D",
+   "gpu": "AMD Radeon RX 9070 XT",
+   "driver": "32.0.32015.7029",
+   "version": "01.009.002",
+   "patched": false,
+   "summary": {
+    "en": "Three clean-main runs abort before the first present at descriptor bindings; two later main builds still fail. No gameplay or FPS is verified.",
+    "zh": "三次干净main首帧前在描述符绑定终止，后续两个main构建仍失败；没有游戏或FPS验证。",
+    "ar": "ثلاث محاولات main نظيف تتوقف قبل العرض في الواصفات؛ بناءان أحدث يفشلان أيضاً، بلا لعب أو FPS مثبت.",
+    "pt": "Três ensaios main limpo abortam antes de apresentar; dois main posteriores também falham, sem jogo/FPS validado.",
+    "de": "Drei saubere Main-Läufe scheitern vor erstem Bild; zwei spätere Main-Builds ebenfalls, kein Spiel/FPS belegt.",
+    "fr": "Trois essais main propre échouent avant image; deux main ultérieurs aussi, sans jeu/FPS validé.",
+    "es": "Tres ensayos main limpio fallan antes de imagen; dos main posteriores también, sin juego/FPS validado."
+   },
+   "benchmarks": [],
+   "media": []
+  },
+  {
+   "id": "11951-windows-review-20261028",
+   "platform": "windows",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11951",
+   "updated": "2026-10-27T18:05:38Z",
+   "testDate": null,
+   "build": "main8ff4baf534 +#11951 ·60s HANG_DUMP; separate300s attempts logs end80/30s",
+   "os": "Windows 11 Pro 26200 · WinLibs GCC 15.2 Release",
+   "cpu": "AMD Ryzen 7 5800X3D",
+   "gpu": "AMD Radeon RX 9070 XT",
+   "driver": "32.0.32015.7029",
+   "version": "01.009.002",
+   "patched": true,
+   "summary": {
+    "en": "One local watchdog run shows Frontier logo and EULA,288 presents in60s, then deliberately aborts. Two300s attempts stop logging much earlier with3/0 presents. No gameplay or reliable FPS.",
+    "zh": "一次本地看门狗运行显示Frontier标志及EULA，60秒288次呈现后主动终止；两次300秒尝试更早停止日志，仅3／0次呈现，没有游戏或可靠FPS。",
+    "ar": "محاولة مراقب محلية تعرض Frontier/EULA و288 عرضاً/60ث ثم تتوقف عمداً؛ محاولتا300ث تنقطعان أبكر مع3/0 عروض، بلا لعب أو FPS موثوق.",
+    "pt": "Um watchdog local mostra Frontier/EULA,288 apresentações/60s e aborta; dois ensaios300s param logs cedo com3/0, sem jogo/FPS fiável.",
+    "de": "Lokaler Watchdog zeigt Frontier/EULA,288 Bilder/60s, absichtlicher Abbruch; zwei300s-Versuche mit früh endenden Logs3/0, kein Spiel/FPS belegt.",
+    "fr": "Watchdog local affiche Frontier/EULA,288 présentations/60s puis arrêt; deux essais300s interrompus tôt3/0, sans jeu/FPS fiable.",
+    "es": "Watchdog local muestra Frontier/EULA,288 presentaciones/60s y aborta; dos pruebas300s con logs tempranos3/0, sin juego/FPS fiable."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "monopoly": [
+  {
+   "id": "11954-windows-review-20261028",
+   "platform": "windows",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/11954",
+   "updated": "2026-10-27T13:50:44Z",
+   "testDate": null,
+   "build": "#11586 a40e7c1e81 executable/modules; staged Http2; trace runtime ca0e9557aab1 · 600 presents / 65.9 s, ~3.82M events dropped",
+   "os": "Windows 10.0.26300",
+   "cpu": "Intel Core i5-14600K",
+   "gpu": "NVIDIA GeForce RTX 5070",
+   "driver": "617.42",
+   "version": "01.005.000",
+   "patched": true,
+   "summary": {
+    "en": "Board/token selection renders, then a white frame. Mixed executable/module/Http2 builds and millions of dropped trace events prevent a reliable FPS comparison. Online errors are observed but not proved to cause the white screen; early audio stutters.",
+    "zh": "棋盘／棋子选择可见，随后白屏。程序、模块与Http2混合构建且追踪丢失数百万事件，无法可靠比较FPS；线上错误不证明白屏原因，早期音频卡顿。",
+    "ar": "تظهر خيارات اللوحة والقطعة ثم إطار أبيض. بناء مختلط وفقد ملايين أحداث التتبع يمنعان مقارنة FPS موثوقة. أخطاء الشبكة لا تثبت سبب البياض، والصوت يتقطع مبكراً.",
+    "pt": "Seleção de tabuleiro/peça visível, depois branco. Builds mistos e milhões de eventos perdidos impedem comparar FPS. Erros online não provam a causa; áudio inicial entrecortado.",
+    "de": "Brett-/Figurenauswahl sichtbar, danach weißes Bild. Gemischte Builds und Millionen verlorene Trace-Ereignisse verhindern FPS-Vergleich. Onlinefehler als Ursache unbewiesen; früher Ton stockt.",
+    "fr": "Choix du plateau/pion visible, puis image blanche. Builds mélangés et millions d’événements perdus empêchent une comparaison FPS. Erreurs réseau sans causalité établie; son initial saccadé.",
+    "es": "Selección de tablero/ficha visible, después blanco. Builds mezclados y millones de eventos perdidos impiden comparar FPS. Errores online sin causalidad demostrada; audio inicial entrecortado."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "the-medium": [
+  {
+   "id": "11898-linux-review-20261028",
+   "platform": "linux",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/11898",
+   "updated": "2026-10-27T12:21:00Z",
+   "testDate": null,
+   "build": "main 9ae2f7d22a; separate +#11899 chunk-list 0,1 +#10831 TYPE2 · 240 s · mean image 2.5/255",
+   "os": "Linux",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+   "driver": null,
+   "version": "01.007.000",
+   "patched": true,
+   "summary": {
+    "en": "Installed PlayGo data triggers a 5.565 GB UE4 pool failure; absent data reaches title/menu but New Game stays black. Local chunk-list and TYPE2 changes survive 240 s, yet frames are nearly black and level packages remain unopened. Presentation counts do not prove gameplay.",
+    "zh": "已安装PlayGo数据时UE4申请5.565 GB池失败；缺数据可到标题／菜单但新游戏黑屏。本地块列表及TYPE2修改存活240秒，画面仍近黑且未打开关卡包；呈现计数不证明游戏。",
+    "ar": "بيانات PlayGo المثبتة تفشل في حوض UE4 بحجم 5.565 GB؛ غيابها يبلغ القائمة لكن New Game أسود. تعديلات محلية تعيش 240ث بإطارات شبه سوداء وحزم مستويات لم تُفتح؛ العد ليس دليلاً للعب.",
+    "pt": "PlayGo instalado falha num pool UE4 de 5,565 GB; sem dados chega ao menu mas New Game fica preto. Alterações locais duram 240 s quase pretos, sem abrir pacotes de nível; apresentações não provam jogo.",
+    "de": "Installierte PlayGo-Daten scheitern an 5,565-GB-UE4-Pool; ohne Daten Menü, New Game schwarz. Lokale Änderungen überleben 240 s mit fast schwarzen Bildern und ungeöffneten Levelpaketen; Bildzähler belegt kein Spiel.",
+    "fr": "PlayGo installé échoue sur un pool UE4 de 5,565 Go; sans données, menu puis New Game noir. Modifications locales tiennent 240 s presque noirs sans ouvrir les niveaux; compteur d’images ne prouve pas le jeu.",
+    "es": "PlayGo instalado falla en un pool UE4 de 5,565 GB; sin datos llega al menú pero New Game negro. Cambios locales duran 240 s casi negros sin abrir niveles; contar imágenes no demuestra juego."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "my-friend-peppa-pig": [
+  {
+   "id": "11822-linux-review-20261028",
+   "platform": "linux",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/11822",
+   "updated": "2026-10-27T08:53:23Z",
+   "testDate": null,
+   "build": "clean main 1b2af92baf",
+   "os": "CachyOS Linux 7.3 · GCC 16.2 Release",
+   "cpu": "AMD Ryzen 9 9900X",
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+   "driver": "615.78.08",
+   "version": "01.000.002",
+   "patched": false,
+   "summary": {
+    "en": "Clean main reaches level-eight scenes in a 240 s scripted run, 30 presents/s over the final ten seconds with no dropped events. Cross every twelve seconds; audio, reload, full play and a real controller remain untested.",
+    "zh": "干净main在240秒脚本运行中到达第八关场景；末10秒30次呈现／秒，无事件丢失。每12秒Cross，音频、读档、完整流程及真实手柄未测。",
+    "ar": "main نظيف يبلغ مشاهد المستوى الثامن خلال 240ث مكتوبة، 30 عرضاً/ث في آخر عشر ثوان بلا أحداث مفقودة. Cross كل 12ث؛ الصوت وإعادة الحفظ واللعبة الكاملة واليد الحقيقية غير مختبرة.",
+    "pt": "Main limpo chega às cenas do nível oito em 240 s por guião, 30 apresentações/s nos últimos dez segundos, sem eventos perdidos. Cross cada 12 s; áudio, recarga, jogo completo e comando real por testar.",
+    "de": "Sauberes Main erreicht Level-8-Szenen in 240 s mit Skript, zuletzt 30 Bilder/s ohne verlorene Ereignisse. Cross alle 12 s; Ton, Laden, Vollspiel und echter Controller ungeprüft.",
+    "fr": "Main propre atteint les scènes du niveau huit en 240 s scriptées, 30 présentations/s sur les dix dernières secondes sans événements perdus. Cross toutes les 12 s; son, rechargement, jeu complet et vraie manette non testés.",
+    "es": "Main limpio alcanza escenas del nivel ocho en 240 s por guion, 30 presentaciones/s en los últimos diez segundos sin eventos perdidos. Cross cada 12 s; audio, recarga, juego completo y mando real sin probar."
+   },
+   "benchmarks": [
+    {
+     "cpu": "AMD Ryzen 9 9900X",
+     "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+     "fps": "30 presents/s · final 10 s of 240 s scripted scenes",
+     "context": {
+      "en": "Clean main reaches level-eight scenes in a 240 s scripted run, 30 presents/s over the final ten seconds with no dropped events. Cross every twelve seconds; audio, reload, full play and a real controller remain untested.",
+      "zh": "干净main在240秒脚本运行中到达第八关场景；末10秒30次呈现／秒，无事件丢失。每12秒Cross，音频、读档、完整流程及真实手柄未测。",
+      "ar": "main نظيف يبلغ مشاهد المستوى الثامن خلال 240ث مكتوبة، 30 عرضاً/ث في آخر عشر ثوان بلا أحداث مفقودة. Cross كل 12ث؛ الصوت وإعادة الحفظ واللعبة الكاملة واليد الحقيقية غير مختبرة.",
+      "pt": "Main limpo chega às cenas do nível oito em 240 s por guião, 30 apresentações/s nos últimos dez segundos, sem eventos perdidos. Cross cada 12 s; áudio, recarga, jogo completo e comando real por testar.",
+      "de": "Sauberes Main erreicht Level-8-Szenen in 240 s mit Skript, zuletzt 30 Bilder/s ohne verlorene Ereignisse. Cross alle 12 s; Ton, Laden, Vollspiel und echter Controller ungeprüft.",
+      "fr": "Main propre atteint les scènes du niveau huit en 240 s scriptées, 30 présentations/s sur les dix dernières secondes sans événements perdus. Cross toutes les 12 s; son, rechargement, jeu complet et vraie manette non testés.",
+      "es": "Main limpio alcanza escenas del nivel ocho en 240 s por guion, 30 presentaciones/s en los últimos diez segundos sin eventos perdidos. Cross cada 12 s; audio, recarga, juego completo y mando real sin probar."
+     }
+    }
+   ],
+   "media": []
+  }
+ ],
+ "call-of-duty-modern-warfare-iii": [
+  {
+   "id": "11591-windows-review-20261028",
+   "platform": "windows",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/11591",
+   "updated": "2026-10-27T06:00:39Z",
+   "testDate": null,
+   "build": "main e61a7c7e24 +feat/appcontent then #11588/#11620/#11725/#11727; integration SHA unknown",
+   "os": "Windows 11 · GCC 15.2 Release",
+   "cpu": "AMD Ryzen 5 3600X",
+   "gpu": "AMD Radeon RX 5700 XT",
+   "driver": "32.0.21045.16010",
+   "version": "01.004.000",
+   "patched": true,
+   "summary": {
+    "en": "Window, swapchain and audio initialization produce zero frames. Successive local fixes advance xpak/fastfile loading to GameUpdate; the 500→20 µs wait experiment lowers polling CPU but does not verify rendering, audible sound or campaign progress.",
+    "zh": "窗口、交换链及音频初始化仍为零帧；连续本地修改使xpak／fastfile加载推进至GameUpdate。500→20微秒等待实验降低轮询CPU，不证明渲染、可听音频或战役进度。",
+    "ar": "تهيئة نافذة وعرض وصوت بلا إطارات. تعديلات محلية تتقدم بتحميل xpak/fastfile إلى GameUpdate؛ تجربة الانتظار تخفض CPU لكنها لا تثبت صورة أو صوتاً مسموعاً أو حملة.",
+    "pt": "Janela, swapchain e áudio inicializados, zero imagens. Correções locais avançam xpak/fastfile até GameUpdate; espera 500→20 µs reduz CPU sem provar imagem, áudio audível ou campanha.",
+    "de": "Fenster-, Swapchain- und Audioinitialisierung ohne Bilder. Lokale Fixes bringen xpak/fastfile bis GameUpdate; Warteexperiment senkt CPU, belegt aber weder Bild noch hörbaren Ton oder Kampagne.",
+    "fr": "Fenêtre, swapchain et audio initialisés sans image. Correctifs locaux avancent xpak/fastfile jusqu’à GameUpdate; attente 500→20 µs réduit le CPU sans prouver image, son audible ni campagne.",
+    "es": "Ventana, swapchain y audio inicializados, cero imágenes. Cambios locales avanzan xpak/fastfile hasta GameUpdate; espera 500→20 µs reduce CPU sin probar imagen, audio audible ni campaña."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "river-city-girls": [
+  {
+   "id": "11609-windows-review-20261028",
+   "platform": "windows",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/11609",
+   "updated": "2026-10-26T22:39:12Z",
+   "testDate": null,
+   "build": "clean main e61a7c7e24 · Cross/Cross/Cross/Down every 3 s",
+   "os": "Windows 11 Pro 26200 · WinLibs GCC 15.2 Release",
+   "cpu": "AMD Ryzen 7 5800X3D",
+   "gpu": "AMD Radeon RX 9070 XT",
+   "driver": "32.0.32015.7029",
+   "version": "02.000.000",
+   "patched": false,
+   "summary": {
+    "en": "Three clean-main 360 s runs show classroom HUD and player movement at different positions. Later ten-second windows contain 564–600 presents. Scripted new-save input; audio, later levels and save reload are unverified.",
+    "zh": "三次干净main各360秒，可见教室HUD及不同位置的玩家移动；后段每10秒564–600次呈现。脚本新档输入，音频、后续关卡与读档未验证。",
+    "ar": "ثلاث محاولات main نظيف 360ث تظهر واجهة الفصل وحركة اللاعب في مواقع مختلفة؛ لاحقاً 564–600 عرض/10ث. إدخال مكتوب بحفظ جديد؛ الصوت والمراحل اللاحقة وإعادة الحفظ مجهولة.",
+    "pt": "Três ensaios main limpo de 360 s mostram HUD da sala e jogador em posições diferentes; depois 564–600 apresentações/10 s. Novo save por guião; áudio, níveis posteriores e recarga por verificar.",
+    "de": "Drei saubere 360-s-Main-Läufe zeigen Klassenraum-HUD und Spielerbewegung; später 564–600 Bilder/10 s. Skript mit neuem Spielstand; Ton, spätere Level und Laden ungeprüft.",
+    "fr": "Trois essais main propre de 360 s montrent HUD de classe et déplacement du joueur; ensuite 564–600 présentations/10 s. Nouvelle sauvegarde scriptée; son, suite et rechargement non vérifiés.",
+    "es": "Tres pruebas main limpio de 360 s muestran HUD de aula y movimiento del jugador; después 564–600 presentaciones/10 s. Nueva partida por guion; audio, niveles posteriores y recarga sin verificar."
+   },
+   "benchmarks": [
+    {
+     "cpu": "AMD Ryzen 7 5800X3D",
+     "gpu": "AMD Radeon RX 9070 XT",
+     "fps": "56.4–60 presents/s · later scripted classroom windows",
+     "context": {
+      "en": "Three clean-main 360 s runs show classroom HUD and player movement at different positions. Later ten-second windows contain 564–600 presents. Scripted new-save input; audio, later levels and save reload are unverified.",
+      "zh": "三次干净main各360秒，可见教室HUD及不同位置的玩家移动；后段每10秒564–600次呈现。脚本新档输入，音频、后续关卡与读档未验证。",
+      "ar": "ثلاث محاولات main نظيف 360ث تظهر واجهة الفصل وحركة اللاعب في مواقع مختلفة؛ لاحقاً 564–600 عرض/10ث. إدخال مكتوب بحفظ جديد؛ الصوت والمراحل اللاحقة وإعادة الحفظ مجهولة.",
+      "pt": "Três ensaios main limpo de 360 s mostram HUD da sala e jogador em posições diferentes; depois 564–600 apresentações/10 s. Novo save por guião; áudio, níveis posteriores e recarga por verificar.",
+      "de": "Drei saubere 360-s-Main-Läufe zeigen Klassenraum-HUD und Spielerbewegung; später 564–600 Bilder/10 s. Skript mit neuem Spielstand; Ton, spätere Level und Laden ungeprüft.",
+      "fr": "Trois essais main propre de 360 s montrent HUD de classe et déplacement du joueur; ensuite 564–600 présentations/10 s. Nouvelle sauvegarde scriptée; son, suite et rechargement non vérifiés.",
+      "es": "Tres pruebas main limpio de 360 s muestran HUD de aula y movimiento del jugador; después 564–600 presentaciones/10 s. Nueva partida por guion; audio, niveles posteriores y recarga sin verificar."
+     }
+    }
+   ],
+   "media": []
+  }
+ ],
+ "gigabash": [
+  {
+   "id": "11607-windows-review-20261028",
+   "platform": "windows",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/11607",
+   "updated": "2026-10-26T22:39:07Z",
+   "testDate": null,
+   "build": "clean main e61a7c7e24 · Cross every 3 s",
+   "os": "Windows 11 Pro 26200 · WinLibs GCC 15.2 Release",
+   "cpu": "AMD Ryzen 7 5800X3D",
+   "gpu": "AMD Radeon RX 9070 XT",
+   "driver": "32.0.32015.7029",
+   "version": "01.092.000",
+   "patched": false,
+   "summary": {
+    "en": "Three clean-main 300 s scripted runs reach three match stages. Menus approach 60 FPS, but final match windows span only 4.7–16.2 presents/s. Audio and play beyond the first match are unverified.",
+    "zh": "三次干净main各300秒，脚本到达三个对战场景；菜单近60 FPS，末段对战仅4.7–16.2次呈现／秒。未验证音频或首场之后的流程。",
+    "ar": "ثلاث محاولات main نظيف 300ث مكتوبة تبلغ ثلاث ساحات. القائمة تقارب 60 FPS لكن نهايات المعركة 4.7–16.2 عرض/ث فقط. الصوت وما بعد المباراة الأولى مجهولان.",
+    "pt": "Três ensaios main limpo de 300 s por guião chegam a três arenas. Menus perto de 60 FPS, finais de combate só 4,7–16,2 apresentações/s. Áudio e continuação por verificar.",
+    "de": "Drei saubere Main-Läufe à 300 s mit Skript erreichen drei Arenen. Menü fast 60 FPS, Kampfende nur 4,7–16,2 Bilder/s. Ton und Fortsetzung ungeprüft.",
+    "fr": "Trois essais main propre de 300 s scriptés atteignent trois arènes. Menus proches de 60 FPS, fin des combats seulement 4,7–16,2 présentations/s. Son et suite non vérifiés.",
+    "es": "Tres pruebas main limpio de 300 s por guion llegan a tres arenas. Menús cerca de 60 FPS, finales de combate solo 4,7–16,2 presentaciones/s. Audio y continuación sin verificar."
+   },
+   "benchmarks": [
+    {
+     "cpu": "AMD Ryzen 7 5800X3D",
+     "gpu": "AMD Radeon RX 9070 XT",
+     "fps": "4.7–16.2 presents/s · final match windows, not menu 60",
+     "context": {
+      "en": "Three clean-main 300 s scripted runs reach three match stages. Menus approach 60 FPS, but final match windows span only 4.7–16.2 presents/s. Audio and play beyond the first match are unverified.",
+      "zh": "三次干净main各300秒，脚本到达三个对战场景；菜单近60 FPS，末段对战仅4.7–16.2次呈现／秒。未验证音频或首场之后的流程。",
+      "ar": "ثلاث محاولات main نظيف 300ث مكتوبة تبلغ ثلاث ساحات. القائمة تقارب 60 FPS لكن نهايات المعركة 4.7–16.2 عرض/ث فقط. الصوت وما بعد المباراة الأولى مجهولان.",
+      "pt": "Três ensaios main limpo de 300 s por guião chegam a três arenas. Menus perto de 60 FPS, finais de combate só 4,7–16,2 apresentações/s. Áudio e continuação por verificar.",
+      "de": "Drei saubere Main-Läufe à 300 s mit Skript erreichen drei Arenen. Menü fast 60 FPS, Kampfende nur 4,7–16,2 Bilder/s. Ton und Fortsetzung ungeprüft.",
+      "fr": "Trois essais main propre de 300 s scriptés atteignent trois arènes. Menus proches de 60 FPS, fin des combats seulement 4,7–16,2 présentations/s. Son et suite non vérifiés.",
+      "es": "Tres pruebas main limpio de 300 s por guion llegan a tres arenas. Menús cerca de 60 FPS, finales de combate solo 4,7–16,2 presentaciones/s. Audio y continuación sin verificar."
+     }
+    }
+   ],
+   "media": []
+  }
+ ],
+ "codex-ps5-homebrew": [
+  {
+   "id": "11570-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/11570",
+   "updated": "2026-10-26T20:47:24Z",
+   "testDate": null,
+   "build": "Portablelle/Codex-PS5 v0.0.4 · main e61a7c7e24; separate +#11571 · GCC 13/Xvfb/container loopback",
+   "os": "Ubuntu 22.04 WSL2",
+   "cpu": "AMD Ryzen 9 7900",
+   "gpu": "Mesa lavapipe (software)",
+   "driver": null,
+   "version": "00.000.004",
+   "patched": true,
+   "summary": {
+    "en": "Independent homebrew UI boots for 30 s in WSL/lavapipe. Main fails at setsockopt; #11571 reaches initialize only with a stand-in listener. The assistant-service ELF is not run; no real backend, chat session or game compatibility is proved.",
+    "zh": "独立自制UI在WSL／lavapipe启动30秒。main的setsockopt失败；#11571仅在替代监听器下到initialize。未运行assistant-service ELF，不证明真实后端、聊天或游戏兼容。",
+    "ar": "واجهة homebrew مستقلة تبدأ 30ث على WSL/lavapipe. main يفشل عند setsockopt؛ #11571 يبلغ initialize مع مستمع بديل فقط. ELF الخدمة لم يُشغل؛ لا backend أو محادثة أو لعبة مثبتة.",
+    "pt": "UI homebrew independente arranca 30 s em WSL/lavapipe. Main falha em setsockopt; #11571 chega a initialize só com listener substituto. ELF do serviço não executado; sem backend, chat ou jogo comprovado.",
+    "de": "Unabhängige Homebrew-UI startet 30 s unter WSL/lavapipe. Main scheitert an setsockopt; #11571 erreicht initialize nur mit Ersatzlistener. Service-ELF ungestartet; kein echter Backend-/Chat-/Spielnachweis.",
+    "fr": "UI homebrew indépendante démarre 30 s sous WSL/lavapipe. Main échoue sur setsockopt; #11571 atteint initialize avec écouteur substitut seulement. ELF du service non lancé; aucun backend, chat ou jeu prouvé.",
+    "es": "UI homebrew independiente arranca 30 s en WSL/lavapipe. Main falla en setsockopt; #11571 alcanza initialize solo con listener sustituto. ELF del servicio sin ejecutar; ningún backend, chat o juego probado."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "project-zero-maiden-black-water": [
+  {
+   "id": "10599-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/10599#issuecomment-6430075348",
+   "updated": "2026-10-26T23:48:49Z",
+   "testDate": null,
+   "build": "#10599 54ac175ee3",
+   "os": "CachyOS Linux · GCC 16.2",
+   "cpu": null,
+   "gpu": null,
+   "driver": null,
+   "version": "01.000.005",
+   "patched": true,
+   "summary": {
+    "en": "The tested PR passes the previous Reverb refusal, then aborts on a custom mastering voice. No rendered scene or gameplay is established.",
+    "zh": "实测PR越过原Reverb拒绝，随后在自定义mastering voice终止；未建立可见场景或游戏证据。",
+    "ar": "يتجاوز PR رفض Reverb ثم يتوقف عند mastering voice مخصص؛ لا مشهد أو لعب مثبت.",
+    "pt": "PR ultrapassa Reverb mas aborta na mastering voice personalizada; sem cena ou jogo comprovado.",
+    "de": "PR passiert Reverb, scheitert dann an eigener Mastering-Voice; keine Szene oder Spiel belegt.",
+    "fr": "PR franchit Reverb puis échoue sur une voix mastering personnalisée; aucune scène ni jeu établi.",
+    "es": "PR supera Reverb y aborta en mastering voice personalizada; sin escena ni juego demostrado."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "carmen-sandiego": [
+  {
+   "id": "11575-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11575#issuecomment-6430075609",
+   "updated": "2026-10-26T23:48:50Z",
+   "testDate": null,
+   "build": "main 74acfad65b +#11575 · tested head unstated",
+   "os": "CachyOS Linux",
+   "cpu": null,
+   "gpu": null,
+   "driver": null,
+   "version": "01.009.000",
+   "patched": true,
+   "summary": {
+    "en": "Local redirect support passes the old HTTP redirect refusal, then stops at asynchronous HTTP support. No scene, FPS or completed network exchange is verified.",
+    "zh": "本地重定向支持越过旧HTTP拒绝，随后停在异步HTTP；未验证场景、FPS或完整网络交互。",
+    "ar": "دعم التحويل المحلي يتجاوز رفض HTTP ثم يتوقف عند HTTP غير المتزامن؛ لا مشهد أو FPS أو تبادل كامل مثبت.",
+    "pt": "Redirect local passa a recusa HTTP e para no assíncrono; sem cena, FPS ou troca de rede completa.",
+    "de": "Lokale Redirect-Unterstützung passiert HTTP-Verweigerung, stoppt dann asynchron; keine Szene, FPS oder vollständiger Netzwerkablauf belegt.",
+    "fr": "Redirection locale franchit le refus HTTP puis bloque en asynchrone; ni scène, FPS ni échange complet vérifiés.",
+    "es": "Redirección local supera rechazo HTTP y para en asíncrono; sin escena, FPS ni intercambio completo verificado."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "silent-hill-townfall": [
+  {
+   "id": "10304-windows-review-20261028",
+   "platform": "windows",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/10304#issuecomment-6431143256",
+   "updated": "2026-10-27T01:05:35Z",
+   "testDate": null,
+   "build": "main 74acfad65b +#11580 dbf2107ba6; separate +#10304 e0d6e062a9",
+   "os": "Windows 11 Pro 26300",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX 3070 8GB",
+   "driver": "617.14",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "D16 changes pass the old refusal. Two warm runs then abort on GPU ownership aliasing; adding #10304 reaches the harbor in three timed runs. Only scripted Cross is verified, not free play, audio or saving.",
+    "zh": "D16修改越过旧拒绝，两次热启动随后在GPU归属别名终止；再加#10304三次限时运行到港口。只验证脚本Cross，未验证自由游玩、音频或存档。",
+    "ar": "تعديل D16 يتجاوز الرفض ثم تنهار محاولتان دافئتان في aliasing. إضافة #10304 تبلغ الميناء بثلاث محاولات محدودة؛ Cross مكتوب فقط، لا تحكم حر أو صوت أو حفظ.",
+    "pt": "D16 passa a recusa; dois ensaios quentes abortam no aliasing GPU. Com #10304, três ensaios chegam ao porto; só Cross por guião, sem jogo livre, áudio ou gravação.",
+    "de": "D16 passiert Verweigerung; zwei warme Läufe scheitern an GPU-Aliasing. Mit #10304 drei begrenzte Läufe zum Hafen; nur Skript-Cross, freies Spiel/Ton/Speichern ungeprüft.",
+    "fr": "D16 franchit le refus; deux essais chauds échouent sur aliasing GPU. Avec #10304, trois essais au port; Cross scripté seulement, jeu libre/son/sauvegardes non vérifiés.",
+    "es": "D16 supera rechazo; dos ensayos calientes abortan por aliasing GPU. Con #10304, tres pruebas llegan al puerto; solo Cross por guion, sin juego libre/audio/guardado."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "cyberpunk-2077-ppsa03974": [
+  {
+   "id": "11580-windows-review-20261028",
+   "platform": "windows",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11580#issuecomment-6435751375",
+   "updated": "2026-10-27T06:55:46Z",
+   "testDate": null,
+   "build": "main bc904110; local 85793e1fcb +#11580 · 0x1 STOPPED_BY_CLAUDE",
+   "os": "Windows 11 26200",
+   "cpu": "AMD Ryzen 9 9950X3D",
+   "gpu": "NVIDIA GeForce RTX 5090",
+   "driver": "617.42",
+   "version": "02.120.000",
+   "patched": true,
+   "summary": {
+    "en": "Main aborts on converted D16 after 110 s. The local candidate reaches a 112 s deliberate STOPPED_BY_CLAUDE timeout instead; that stop is not a normal exit and no specific scene is identified.",
+    "zh": "main在110秒因转换D16终止；本地候选运行至112秒主动STOPPED_BY_CLAUDE限时，不是正常退出，也未识别具体场景。",
+    "ar": "main يتوقف في D16 عند 110ث؛ المرشح المحلي يصل إلى إيقاف مقصود عند 112ث، لا خروج طبيعي ولا مشهد محدد.",
+    "pt": "Main aborta em D16 aos 110 s; candidato termina por timeout intencional aos 112 s, não saída normal nem cena identificada.",
+    "de": "Main bricht bei D16 nach 110 s ab; lokaler Kandidat endet nach 112 s absichtlich per Timeout, kein normaler Exit oder Szenennachweis.",
+    "fr": "Main échoue en D16 après 110 s; candidat arrêté volontairement à 112 s, ni sortie normale ni scène identifiée.",
+    "es": "Main aborta en D16 a los 110 s; candidato detenido deliberadamente a los 112 s, sin salida normal ni escena identificada."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "crimson-desert-ppsa25286": [
+  {
+   "id": "11630-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11630#issuecomment-6437018587",
+   "updated": "2026-10-27T08:19:36Z",
+   "testDate": null,
+   "build": "main 1392601 +#11798 control; #11630 9d7aaabd7f2 · GCC 15.2",
+   "os": "CachyOS Linux",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX 4070 Ti",
+   "driver": "615.71.09",
+   "version": "01.000.568",
+   "patched": true,
+   "summary": {
+    "en": "Both main and the asynchronous-HTTP candidate stop on the same kqueue/NULL limitation in about a second. This no-network sandbox does not validate real network transport or gameplay.",
+    "zh": "main与异步HTTP候选均约一秒停在相同kqueue／NULL限制；无网络沙箱不验证真实传输或游戏。",
+    "ar": "main ومرشح HTTP يتوقفان خلال ثانية عند قيد kqueue/NULL نفسه؛ بيئة بلا شبكة لا تثبت النقل أو اللعب.",
+    "pt": "Main e candidato HTTP param em cerca de um segundo no mesmo limite kqueue/NULL; sandbox sem rede não valida transporte ou jogo.",
+    "de": "Main und HTTP-Kandidat stoppen nach etwa einer Sekunde an gleicher kqueue/NULL-Grenze; Netzwerk-Sandbox belegt weder Transport noch Spiel.",
+    "fr": "Main et candidat HTTP bloquent en une seconde sur la même limite kqueue/NULL; bac à sable sans réseau ne valide ni transport ni jeu.",
+    "es": "Main y candidato HTTP paran en un segundo en el mismo límite kqueue/NULL; sandbox sin red no valida transporte ni juego."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "fatal-frame-ii-crimson-butterfly-remake": [
+  {
+   "id": "10409-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/10409#issuecomment-6436849786",
+   "updated": "2026-10-27T08:09:24Z",
+   "testDate": null,
+   "build": "main ca7bf03 +two numpunct symbols; separate +#10409 · head unstated",
+   "os": "Linux · Vulkan 1.4.351",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+   "driver": null,
+   "version": "01.002.002",
+   "patched": true,
+   "summary": {
+    "en": "A GuestTm stack overwrite stops baseline after 2–11 s. The PR passes that point but aborts near 13 s at an NGS2 custom twelve-channel submixer. The report mixes subtitles; the matching official PPSA identifies Crimson Butterfly Remake, not Maiden of Black Water.",
+    "zh": "基线2–11秒发生GuestTm栈覆盖；PR越过后约13秒在NGS2自定义12声道submixer终止。报告混写副标题；匹配官方PPSA是红蝶重制版，并非濡鸦之巫女。",
+    "ar": "تجاوز GuestTm يوقف الأساس خلال 2–11ث؛ PR يتجاوزه ثم يتوقف قرب 13ث عند NGS2 ذي 12 قناة. التقرير يخلط الأسماء؛ PPSA الرسمي يحدد Crimson Butterfly Remake لا Maiden.",
+    "pt": "Overflow GuestTm para a base em 2–11 s; PR passa e aborta aos ≈13 s em NGS2 de 12 canais. Relato mistura subtítulos; PPSA oficial identifica Crimson Butterfly Remake, não Maiden.",
+    "de": "GuestTm-Stacküberschreibung stoppt Basis nach 2–11 s; PR dann nach ≈13 s an NGS2 mit 12 Kanälen. Bericht mischt Untertitel; offizielles PPSA bestätigt Crimson Butterfly Remake statt Maiden.",
+    "fr": "Débordement GuestTm arrête la base à 2–11 s; PR puis arrêt vers 13 s sur NGS2 à 12 canaux. Sous-titres mélangés dans le rapport; PPSA officiel identifie Crimson Butterfly Remake, pas Maiden.",
+    "es": "Desbordamiento GuestTm para base a 2–11 s; PR después aborta hacia 13 s en NGS2 de 12 canales. Informe mezcla subtítulos; PPSA oficial identifica Crimson Butterfly Remake, no Maiden."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "alan-wake-remastered": [
+  {
+   "id": "10581-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/10581#issuecomment-6442382044",
+   "updated": "2026-10-27T12:54:05Z",
+   "testDate": null,
+   "build": "main 9ae2f7d22a; #10581 43ddcb6e26; separate format bypasses · GCC 16.2",
+   "os": "Linux",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+   "driver": null,
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "With PlayGo installed, New Game fails around 40 s at format e701. The candidate passes that check, then refuses an MRT alpha format. Additional local bypasses reach further unimplemented checks, not verified gameplay.",
+    "zh": "已安装PlayGo时新游戏约40秒在e701格式失败；候选越过后在MRT alpha格式拒绝，再加本地绕过只到更多未实现检查，不是游戏验证。",
+    "ar": "مع PlayGo يفشل New Game قرب 40ث في e701؛ المرشح يتجاوزه ثم يرفض صيغة MRT alpha. تجاوزات محلية تبلغ قيوداً أخرى، لا لعباً مثبتاً.",
+    "pt": "Com PlayGo, New Game falha aos ≈40 s em e701; candidato passa e recusa MRT alpha. Bypasses locais só avançam até outros limites, sem jogo verificado.",
+    "de": "Mit PlayGo scheitert New Game nach ≈40 s an e701; Kandidat dann am MRT-Alphaformat. Lokale Umgehungen erreichen weitere Grenzen, kein Spielnachweis.",
+    "fr": "Avec PlayGo, New Game échoue vers 40 s sur e701; candidat passe puis refuse MRT alpha. Contournements locaux vers d’autres limites, sans jeu vérifié.",
+    "es": "Con PlayGo, New Game falla hacia 40 s en e701; candidato pasa y rechaza MRT alpha. Bypasses locales llegan a otros límites, sin juego verificado."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "echoes-of-the-end": [
+  {
+   "id": "11982-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11982#issuecomment-6445839107",
+   "updated": "2026-10-27T15:17:34Z",
+   "testDate": null,
+   "build": "66f7196d9df =main 801d5b9 +8089/8091/4449/11873/6867/8874 +counters; 8b549106a45 adds #11982",
+   "os": "Linux 7.2.9 · 128 GB RAM",
+   "cpu": "AMD Ryzen 9 7950X",
+   "gpu": "AMD Radeon RX 6650 XT",
+   "driver": "RADV Mesa 26.2.4",
+   "version": "01.012.000",
+   "patched": true,
+   "summary": {
+    "en": "One 60 s loading pair compares bounded staging on a large private stack. A roughly 40 s loading hitch dominates; median frame time is neutral. Scene progress and a gameplay speed gain are not established.",
+    "zh": "大量私有修改上仅一组60秒加载对照，约40秒加载卡顿主导，中位帧时间无变化；未建立场景进度或游戏性能提升。",
+    "ar": "زوج تحميل واحد 60ث على تركيب خاص كبير؛ توقف ≈40ث يهيمن والوسيط محايد. لا تقدم مشهد أو مكسب لعب مثبت.",
+    "pt": "Um par de carga de 60 s numa composição privada extensa; hitch de ≈40 s domina, mediana neutra. Sem progresso de cena ou ganho em jogo comprovado.",
+    "de": "Ein 60-s-Ladepaar auf großem Privatstack; ≈40-s-Hänger dominiert, Median neutral. Kein Szenenfortschritt oder Spielgewinn belegt.",
+    "fr": "Une paire de chargement de 60 s sur composition privée; blocage ≈40 s dominant, médiane neutre. Ni progression de scène ni gain en jeu établi.",
+    "es": "Una pareja de carga de 60 s en combinación privada extensa; parón ≈40 s domina, mediana neutra. Sin progreso de escena ni mejora en juego demostrada."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "human-fall-flat": [
+  {
+   "id": "11969-windows-review-20261028",
+   "platform": "windows",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11969#issuecomment-6451820664",
+   "updated": "2026-10-27T19:41:25Z",
+   "testDate": null,
+   "build": "read 8c68efe407 · transport 3c360d54ee · write dc7772e6e1 · actual patched production libraries",
+   "os": "Windows 11",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX 5080",
+   "driver": "32.0.16.2101",
+   "version": "01.017.000",
+   "patched": true,
+   "summary": {
+    "en": "Patched libraries run a roughly 40 s render/save/network setup test; Windows watchdog deliberately aborts, and debugger runs also fault on baseline. Positive UDP counts do not prove multiplayer, TCP or gameplay. Linux uses software llvmpipe, not the Windows RTX 5080.",
+    "zh": "补丁库进行约40秒渲染／存档／网络准备；Windows看门狗主动终止，调试运行连基线也故障。UDP正计数不证明多人、TCP或游戏；Linux用软件llvmpipe而非Windows的5080。",
+    "ar": "اختبار إعداد صورة/حفظ/شبكة ≈40ث بمكتبات معدلة؛ مراقب Windows يوقفه عمداً وتصحيح الأساس يفشل أيضاً. عد UDP لا يثبت تعدد اللاعبين أو TCP أو اللعب؛ Linux يستخدم llvmpipe برمجياً.",
+    "pt": "Teste de configuração imagem/save/rede ≈40 s com bibliotecas alteradas; watchdog Windows aborta e debugger falha também na base. Contagens UDP não provam multiplayer/TCP/jogo; Linux usa llvmpipe por software.",
+    "de": "≈40-s-Bild/Speicher/Netzwerk-Setup mit gepatchten Bibliotheken; Windows-Watchdog bricht absichtlich ab, Debugger scheitert auch an Basis. UDP-Zähler belegt kein Multiplayer/TCP/Spiel; Linux nutzt Software-llvmpipe.",
+    "fr": "Test d’initialisation image/sauvegarde/réseau ≈40 s avec bibliothèques modifiées; watchdog Windows arrête volontairement, debugger échoue aussi sur la base. Compteurs UDP ne prouvent ni multijoueur/TCP/jeu; Linux en llvmpipe logiciel.",
+    "es": "Prueba de preparación imagen/guardado/red ≈40 s con bibliotecas modificadas; watchdog Windows aborta y debugger falla también en base. Contadores UDP no prueban multijugador/TCP/juego; Linux usa llvmpipe software."
+   },
+   "benchmarks": [],
+   "media": []
+  },
+  {
+   "id": "11969-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11969#issuecomment-6451820664",
+   "updated": "2026-10-27T19:41:25Z",
+   "testDate": null,
+   "build": "read 8c68efe407 · transport 3c360d54ee · write dc7772e6e1",
+   "os": "Linux WSL",
+   "cpu": null,
+   "gpu": "llvmpipe LLVM 20.1.2 (software)",
+   "driver": null,
+   "version": "01.017.000",
+   "patched": true,
+   "summary": {
+    "en": "Same patched-library setup runs to a 40 s cap with five seconds cleanup. Blocking UDP operations return positive counts, with one unexplained zero. This software-rendered setup does not verify multiplayer, TCP or interactive play.",
+    "zh": "同套补丁准备测试到40秒限时，清理5秒；阻塞UDP有正返回但一次零值未解释。软件渲染准备不验证多人、TCP或交互游玩。",
+    "ar": "الإعداد المعدل نفسه يبلغ حد 40ث مع تنظيف 5ث؛ UDP يعيد أعداداً موجبة وصفراً غير مفسر. العرض البرمجي لا يثبت تعدد اللاعبين أو TCP أو اللعب التفاعلي.",
+    "pt": "Mesmo setup alterado até 40 s e limpeza de 5 s; UDP positivo e um zero inexplicado. Renderização por software não valida multiplayer/TCP/jogo interativo.",
+    "de": "Gleiches Setup bis 40 s plus 5 s Aufräumen; UDP positiv mit ungeklärter Null. Softwareausgabe belegt kein Multiplayer/TCP/interaktives Spiel.",
+    "fr": "Même initialisation jusqu’à 40 s puis nettoyage 5 s; UDP positif et un zéro inexpliqué. Rendu logiciel ne valide pas multijoueur/TCP/jeu interactif.",
+    "es": "Misma preparación hasta 40 s y limpieza de 5 s; UDP positivo y un cero sin explicar. Renderizado software no valida multijugador/TCP/juego interactivo."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "r-type-final-3-evolved": [
+  {
+   "id": "11580-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11580#issuecomment-6429651341",
+   "updated": "2026-10-26T23:20:08Z",
+   "testDate": null,
+   "build": "main 74acfad65b vs #11580 dbf2107ba6 · 200 s",
+   "os": "CachyOS Linux · GCC 16.2.1 Release",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+   "driver": "615.78.08",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "A 200 s local D16 test passes the former converted-depth refusal. Nineteen profile lines are not nineteen frames or FPS; no specific interactive scene is identified, and validation layers were not installed.",
+    "zh": "200秒本地D16测试越过原深度转换拒绝；19行profile不是19帧或FPS。未识别具体交互场景，且未安装验证层。",
+    "ar": "اختبار D16 محلي 200ث يتجاوز رفض العمق؛ 19 سطر profile ليست إطارات أو FPS. لا مشهد تفاعلي محدد، وطبقات التحقق غير مثبتة.",
+    "pt": "Teste D16 local de 200 s passa a recusa; 19 linhas profile não são imagens/FPS. Sem cena interativa identificada e sem validation layers instaladas.",
+    "de": "Lokaler D16-Test über 200 s passiert Verweigerung; 19 Profilzeilen sind keine Bilder/FPS. Interaktive Szene unbenannt, Validierungslayer uninstalliert.",
+    "fr": "Test D16 local de 200 s franchit le refus; 19 lignes profile ne sont ni images ni FPS. Scène interactive non identifiée, couches de validation non installées.",
+    "es": "Prueba D16 local de 200 s supera rechazo; 19 líneas profile no son imágenes/FPS. Sin escena interactiva identificada ni capas de validación instaladas."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "astro-bot-ppsa21567": [
+  {
+   "id": "11917-windows-review-20261028",
+   "platform": "windows",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/11917",
+   "updated": "2026-10-27T12:40:40Z",
+   "testDate": null,
+   "build": "reported main eb8dcfebaa015115bc054cfb37001a334b8e4f61 including #5596 and e56a7c23512a5c292797815efa08d00b3c3005c1; integration cleanliness unknown",
+   "os": "Windows 11 Home/Pro 64-bit · 64 GB RAM",
+   "cpu": "Intel Core i7-13700HX",
+   "gpu": "NVIDIA GeForce RTX 4050 Laptop 6GB",
+   "driver": "565.90",
+   "version": "01.019.000 · target 01.018.000",
+   "patched": null,
+   "summary": {
+    "en": "Author reports tutorial completion and autosaved hub access with keyboard/controller, but no reload or duration. Title 15–16 FPS and heavy-texture 0.26–0.41 FPS are different scenes; audio is out of sync. The reported build includes additional commits.",
+    "zh": "作者报告完成教程并自动保存后到达枢纽，可用键盘／手柄；时长、读档未知。标题15–16 FPS与重纹理场景0.26–0.41 FPS须分开，音画不同步；报告构建另含提交。",
+    "ar": "المؤلف يبلغ إكمال التدريب والوصول إلى المركز بحفظ تلقائي وتحكم؛ المدة وإعادة الحفظ مجهولتان. العنوان 15–16 FPS والمشهد الثقيل 0.26–0.41 منفصلان، والصوت غير متزامن.",
+    "pt": "Autor relata tutorial concluído e hub com autosave e controlos; duração/recarga desconhecidas. Título 15–16 FPS e cena pesada 0,26–0,41 separados, áudio dessincronizado; build inclui commits adicionais.",
+    "de": "Autor meldet Tutorialabschluss und Hub mit Autosave/Steuerung; Dauer/Laden unbekannt. Titel 15–16 FPS getrennt von schwerer Szene 0,26–0,41; Ton asynchron, zusätzliche Commits im Build.",
+    "fr": "Auteur signale tutoriel terminé et hub avec sauvegarde automatique/commandes; durée/rechargement inconnus. Titre 15–16 FPS distinct de scène lourde 0,26–0,41; son désynchronisé, commits supplémentaires.",
+    "es": "Autor informa tutorial terminado y hub con autoguardado/controles; duración/recarga desconocidas. Título 15–16 FPS distinto de escena pesada 0,26–0,41; audio desincronizado, commits adicionales."
+   },
+   "benchmarks": [],
+   "media": []
+  },
+  {
+   "id": "6182-linux-review-20261028",
+   "platform": "linux",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/6182#issuecomment-6432837521",
+   "updated": "2026-10-27T03:14:29Z",
+   "testDate": null,
+   "build": "main a120/b9c30 controls; +#6182 51d5f7e04b · transition273/274s,hub309/314s",
+   "os": "Arch Linux 7.2.11 · GCC 16.2.1 Release",
+   "cpu": null,
+   "gpu": "AMD Radeon RX 9070 XT",
+   "driver": "RADV Mesa 26.2.5",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Two local runs pass the former lease-pin stop and reach the interactive world map until a 900 s cap. This does not verify Crash Site gameplay; controls on clean main still fail around 255–315 s.",
+    "zh": "两次本地运行越过旧lease-pin停止，到可交互世界地图并运行至900秒；不验证Crash Site游戏，干净main对照仍约255–315秒失败。",
+    "ar": "محاولتان محليتان تتجاوزان lease-pin وتبلغان خريطة تفاعلية حتى900ث؛ لا تحقق لعب Crash Site، وmain نظيف يفشل255–315ث.",
+    "pt": "Dois ensaios locais passam lease-pin e chegam ao mapa interativo até900 s; não validam Crash Site, main limpo ainda falha255–315 s.",
+    "de": "Zwei lokale Läufe passieren Lease-Pin und erreichen interaktive Weltkarte bis900 s; kein Crash-Site-Spiel, sauberes Main scheitert255–315 s.",
+    "fr": "Deux essais locaux passent lease-pin et atteignent carte interactive jusqu’à900 s; pas jeu Crash Site, main propre échoue255–315 s.",
+    "es": "Dos pruebas locales superan lease-pin y llegan al mapa interactivo hasta900 s; sin juego Crash Site, main limpio falla255–315 s."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "persona-5-royal": [
+  {
+   "id": "10872-windows-review-20261028",
+   "platform": "windows",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/10872",
+   "updated": "2026-10-27T15:18:51Z",
+   "testDate": "2026-10-27",
+   "build": "clean main fe2b52c7e4 includes #10614/#10887/#10913 · 21.9 GiB private · VUID00605 persists without #6782",
+   "os": "Windows",
+   "cpu": null,
+   "gpu": "AMD Radeon RX 6700 XT",
+   "driver": "32.0.21045.16010",
+   "version": null,
+   "patched": false,
+   "summary": {
+    "en": "Clean-main scripted casino run survives 780 s and reaches the HUD after 433 s. The earlier 15 FPS result belongs to a different patched build; it is not this main benchmark. Audio, escape progression and reload remain unverified.",
+    "zh": "干净main脚本赌场运行780秒，433秒后到HUD。早先15 FPS属于另一补丁构建，不是本次main性能；音频、后续逃离和读档未验证。",
+    "ar": "main نظيف يعيش 780ث في الكازينو وواجهة اللعب عند 433ث. نتيجة 15 FPS الأقدم لبناء معدل آخر، ليست قياس main هذا. الصوت والهروب وإعادة الحفظ مجهولة.",
+    "pt": "Main limpo dura 780 s no casino, HUD aos 433 s. Os antigos 15 FPS pertencem a outro build alterado, não a este main. Áudio, fuga e recarga por verificar.",
+    "de": "Sauberes Main läuft im Casino 780 s, HUD ab 433 s. Frühere 15 FPS gehören zu anderem Patchbuild, nicht diesem Main. Ton, Flucht und Laden ungeprüft.",
+    "fr": "Main propre tient 780 s au casino, HUD après 433 s. Les anciens 15 FPS concernent un autre build modifié, pas ce main. Son, fuite et rechargement non vérifiés.",
+    "es": "Main limpio dura 780 s en casino, HUD tras 433 s. Los anteriores 15 FPS son de otro build modificado, no de este main. Audio, fuga y recarga sin verificar."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "ball-x-pit": [
+  {
+   "id": "8966-windows-main-review-20261028",
+   "platform": "windows",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/8966",
+   "updated": "2026-10-27T18:17:49Z",
+   "testDate": null,
+   "build": "clean main 62b3ba2522 · after #10167",
+   "os": "Windows",
+   "cpu": null,
+   "gpu": null,
+   "driver": null,
+   "version": null,
+   "patched": false,
+   "summary": {
+    "en": "Two clean-main runs stop at Http2 CookieBox after six or ten seconds. This regression does not erase the separate local gameplay results or establish that a later fix is released.",
+    "zh": "两次干净main在6／10秒停于Http2 CookieBox；此回归不抹去独立本地游戏结果，也不证明后续修改已发行。",
+    "ar": "محاولتا main نظيف تتوقفان في Http2 CookieBox بعد 6/10ث؛ لا تمحوان اللعب المحلي ولا تثبتان إصدار إصلاح لاحق.",
+    "pt": "Dois ensaios main limpo param em Http2 CookieBox aos 6/10 s; não apagam jogo local nem provam correção publicada.",
+    "de": "Zwei saubere Main-Läufe stoppen nach 6/10 s in Http2 CookieBox; lokale Spielresultate bleiben getrennt, späterer Releasefix unbewiesen.",
+    "fr": "Deux essais main propre bloquent en Http2 CookieBox à 6/10 s; résultats locaux distincts, correctif publié non établi.",
+    "es": "Dos ensayos main limpio paran en Http2 CookieBox a los 6/10 s; resultados locales separados, sin probar arreglo publicado."
+   },
+   "benchmarks": [],
+   "media": []
+  },
+  {
+   "id": "8966-windows-local-review-20261028",
+   "platform": "windows",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/8966",
+   "updated": "2026-10-27T18:17:49Z",
+   "testDate": null,
+   "build": "main 8ff4baf534 +#11950/#11575/#11586/#11611/#11134 +local Windows build fix proposed as #12059",
+   "os": "Windows",
+   "cpu": null,
+   "gpu": null,
+   "driver": null,
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Local HTTP/certificate/build-fix stack runs the base game twice for 300 s at roughly 35 presents/s. Prior level-three freezes and hitches are not disproved; this is not a clean-main or release result.",
+    "zh": "本地HTTP、证书和构建修复组合两次运行本体300秒，约35次呈现／秒；未推翻先前第三关冻结和卡顿，不是干净main或发行版结果。",
+    "ar": "تركيب HTTP وشهادات وإصلاح بناء محلي يشغل الأساس مرتين 300ث بنحو 35 عرض/ث. تجمد المستوى الثالث السابق والتقطعات غير منفية؛ ليس main نظيفاً أو إصداراً.",
+    "pt": "Stack HTTP/certificados/build local roda duas vezes 300 s a ≈35 apresentações/s. Não exclui bloqueios antigos no nível três nem hitches; não é main limpo/release.",
+    "de": "Lokaler HTTP/Zertifikat/Build-Stack läuft zweimal 300 s mit ≈35 Bildern/s. Alte Level-3-Freezes/Hänger nicht widerlegt; kein sauberes Main/Release.",
+    "fr": "Stack local HTTP/certificats/build tient deux fois 300 s à ≈35 présentations/s. Anciens gels niveau trois/saccades non exclus; pas main propre/release.",
+    "es": "Stack local HTTP/certificados/build dura dos veces 300 s a ≈35 presentaciones/s. No descarta congelaciones previas nivel tres ni parones; no es main limpio/release."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "dusk-diver-2": [
+  {
+   "id": "8091-linux-review-20261028",
+   "platform": "linux",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/8091#issuecomment-6441947069",
+   "updated": "2026-10-27T12:31:52Z",
+   "testDate": null,
+   "build": "main 801d5b9 vs #8091 1c7f19e716 · 2×90 s each",
+   "os": "Arch Linux 7.2.9",
+   "cpu": "AMD Ryzen 9 7950X",
+   "gpu": "AMD Radeon RX 6650 XT",
+   "driver": "RADV Mesa 26.2.4 ·GCC Release",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Corrected matched builds: clean main stalls at FMOD under a 77 MiB import budget; the candidate reaches settings at 11.04/12.79 FPS despite failed imports. Earlier “main runs at 11 FPS” reports were withdrawn because they included old #8091 code.",
+    "zh": "校正配套构建：干净main在77 MiB导入预算下FMOD停滞；候选到设置11.04／12.79 FPS但仍有导入失败。早先“main已11 FPS”因混入旧#8091代码被撤回。",
+    "ar": "البناء المصحح: main نظيف يتعطل في FMOD بميزانية 77 MiB؛ المرشح يبلغ الإعدادات 11.04/12.79 FPS مع فشل استيراد. قول main عند 11 FPS سُحب لاشتماله على #8091 القديم.",
+    "pt": "Builds corrigidos: main limpo bloqueia em FMOD com 77 MiB; candidato chega às definições a 11,04/12,79 FPS apesar de imports falhados. “Main a 11 FPS” retirado por incluir #8091 antigo.",
+    "de": "Korrigierte Builds: sauberes Main hängt bei FMOD/77 MiB; Kandidat erreicht Einstellungen mit 11,04/12,79 FPS trotz Importfehlern. „Main mit 11 FPS“ wegen altem #8091-Code zurückgezogen.",
+    "fr": "Builds corrigés: main propre bloque en FMOD/77 Mio; candidat atteint réglages à 11,04/12,79 FPS malgré échecs d’import. «Main à 11 FPS» retiré car ancien #8091 inclus.",
+    "es": "Builds corregidos: main limpio se atasca en FMOD/77 MiB; candidato llega a ajustes a 11,04/12,79 FPS pese a imports fallidos. “Main a 11 FPS” retirado por incluir #8091 antiguo."
+   },
+   "benchmarks": [],
+   "media": []
+  },
+  {
+   "id": "4449-linux-review-20261028",
+   "platform": "linux",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/4449#issuecomment-6440163476",
+   "updated": "2026-10-27T10:56:53Z",
+   "testDate": null,
+   "build": "baseline 716cb74e08 vs #4449 1f7640bad2",
+   "os": "Arch Linux 7.2.9",
+   "cpu": "AMD Ryzen 9 7950X",
+   "gpu": "AMD Radeon RX 6650 XT",
+   "driver": "RADV Mesa 26.2.4 ·GCC Release",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Four 90 s tests distinguish baseline FMOD stalls from the exact PR settings-menu result: 11.5/11.2 FPS and zero failed imports. This does not validate later play, and later rebase claims are not substituted into this run.",
+    "zh": "四次90秒测试区分基线FMOD停滞与准确PR设置菜单11.5／11.2 FPS、零导入失败；不验证后续游戏，也不把后续rebase替进本次。",
+    "ar": "أربع محاولات 90ث تفصل توقف FMOD عن قائمة المرشح 11.5/11.2 FPS بلا فشل استيراد؛ لا لعب لاحق، ولا استبدال البناء بإعادة تأسيس أحدث.",
+    "pt": "Quatro ensaios de 90 s distinguem bloqueio FMOD da lista do PR a 11,5/11,2 FPS sem imports falhados; sem jogo posterior nem trocar o build por rebase novo.",
+    "de": "Vier 90-s-Tests trennen FMOD-Hänger vom PR-Einstellungsmenü mit 11,5/11,2 FPS ohne Importfehler; kein späteres Spiel, kein Ersetzen durch Rebase.",
+    "fr": "Quatre essais de 90 s distinguent blocages FMOD du menu PR à 11,5/11,2 FPS sans échec d’import; suite non validée, rebase ultérieur non substitué.",
+    "es": "Cuatro pruebas de 90 s separan atascos FMOD del menú PR a 11,5/11,2 FPS sin imports fallidos; sin validar juego posterior ni sustituir por rebase reciente."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "jumanji-ppsa03973": [
+  {
+   "id": "8091-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/8091#issuecomment-6442250100",
+   "updated": "2026-10-27T12:47:26Z",
+   "testDate": null,
+   "build": "clean main 801d5b9 vs #8091 1c7f19e716 · 3×150 s each",
+   "os": "Arch Linux 7.2.9",
+   "cpu": "AMD Ryzen 9 7950X",
+   "gpu": "AMD Radeon RX 6650 XT",
+   "driver": "RADV Mesa 26.2.4 ·GCC Release",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Corrected clean-main controls crash near 30 s; candidate runs reach startup/legal screens at about 33 FPS without that stop. One earlier candidate crash remains among five total trials. Old mislabeled-main and live-import-overlap claims were withdrawn.",
+    "zh": "校正的干净main对照约30秒崩溃；候选到启动／法律画面约33 FPS未触发该停止，但五次候选历史仍有一次崩溃。旧的main误标及活跃导入重叠推断已撤回。",
+    "ar": "main المصحح ينهار قرب 30ث؛ المرشح يبلغ البداية/القانوني بنحو 33 FPS بلا ذلك التوقف، لكن محاولة سابقة من خمس انهارت. ادعاءات main والتداخل القديمة مسحوبة.",
+    "pt": "Main corrigido falha aos ≈30 s; candidato chega ao início/legal a ≈33 FPS, mas há uma falha anterior em cinco tentativas. Alegações antigas de main e sobreposição retiradas.",
+    "de": "Korrigiertes Main stürzt nach ≈30 s ab; Kandidat zeigt Start/Rechtstexte mit ≈33 FPS, früherer Absturz unter fünf Versuchen bleibt. Alte Main-/Importüberlappungsbehauptungen zurückgezogen.",
+    "fr": "Main corrigé plante vers 30 s; candidat atteint début/mentions légales à ≈33 FPS, mais un ancien crash sur cinq demeure. Anciennes affirmations main/chevauchement retirées.",
+    "es": "Main corregido falla hacia 30 s; candidato llega a inicio/legal a ≈33 FPS, pero queda un fallo previo entre cinco pruebas. Afirmaciones antiguas main/solapamiento retiradas."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "unbound-worlds-apart": [
+  {
+   "id": "10204-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/10204",
+   "updated": "2026-10-27T14:36:20Z",
+   "testDate": null,
+   "build": "clean main 801d5b9 · PlayGo installed; supplemental allocation trace discussion #9606",
+   "os": "CachyOS Linux 7.3 · GCC 16.2 Release",
+   "cpu": "AMD Ryzen 9 9900X",
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+   "driver": "615.78.08",
+   "version": null,
+   "patched": false,
+   "summary": {
+    "en": "With PlayGo installed, current main still fails a 5.565 GB UE4 pool request after about 20 s. Allocation logging finds no corresponding new kernel allocation call: internal pool refusal is observed, not proof of a console memory rule. Earlier absent-data gameplay stays separate.",
+    "zh": "安装PlayGo后当前main约20秒仍在5.565 GB UE4池申请失败；完整分配日志没有对应新内核分配调用，直接证据是内部池拒绝，不是主机规则证明。旧缺数据游戏结果独立保留。",
+    "ar": "مع PlayGo يفشل main قرب 20ث في حوض UE4 بحجم 5.565 GB؛ لا استدعاء تخصيص نواة جديد مطابق في السجل. رفض داخلي لا يثبت قاعدة ذاكرة الكونسول؛ اللعب القديم منفصل.",
+    "pt": "Com PlayGo, main falha aos ≈20 s num pool UE4 de 5,565 GB; log sem nova alocação kernel correspondente. Recusa interna não prova regra da consola; jogo antigo separado.",
+    "de": "Mit PlayGo scheitert Main nach ≈20 s an 5,565-GB-UE4-Pool; Log ohne zugehörigen neuen Kernelaufruf. Interne Verweigerung belegt keine Konsolenregel; frühere Spielresultate getrennt.",
+    "fr": "Avec PlayGo, main échoue vers 20 s sur pool UE4 5,565 Go; aucun nouvel appel kernel correspondant. Refus interne sans preuve de règle console; ancien jeu séparé.",
+    "es": "Con PlayGo, main falla hacia 20 s en pool UE4 5,565 GB; sin nueva llamada kernel correspondiente. Rechazo interno no prueba regla de consola; juego previo separado."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "oregon-trail": [
+  {
+   "id": "10215-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/10215",
+   "updated": "2026-10-27T14:24:35Z",
+   "testDate": null,
+   "build": "main 801d5b9 · Cross every 15 s",
+   "os": "CachyOS Linux 7.3 · GCC 16.2 Release",
+   "cpu": "AMD Ryzen 9 9900X",
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+   "driver": "615.78.08",
+   "version": null,
+   "patched": false,
+   "summary": {
+    "en": "All sampled images stay black in a 180 s scripted run. Window 21.7–23.3 FPS and continuing draw/writeback traffic do not establish visible gameplay or a diagnosed cause.",
+    "zh": "180秒脚本运行全部抽样图仍黑；窗口21.7–23.3 FPS及持续绘制／回写不证明可见游戏，也未定位原因。",
+    "ar": "كل الصور المأخوذة سوداء في 180ث؛ 21.7–23.3 FPS للنافذة وحركة الرسم لا تثبت لعباً مرئياً أو سبباً معروفاً.",
+    "pt": "Todas as capturas ficam pretas em 180 s; janela 21,7–23,3 FPS e tráfego de desenho não provam jogo visível ou causa.",
+    "de": "Alle Stichproben in 180 s schwarz; Fenster 21,7–23,3 FPS und Draw-Traffic belegen weder sichtbares Spiel noch Ursache.",
+    "fr": "Toutes captures noires sur 180 s; fenêtre 21,7–23,3 FPS et activité graphique ne prouvent ni jeu visible ni cause.",
+    "es": "Todas las capturas negras en 180 s; ventana 21,7–23,3 FPS y actividad gráfica no prueban juego visible ni causa."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "sea-of-stars": [
+  {
+   "id": "10155-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/10155",
+   "updated": "2026-10-27T14:21:46Z",
+   "testDate": null,
+   "build": "main 801d5b9 · Cross every 15 s · 484/485 signals SIGUSR1",
+   "os": "CachyOS Linux 7.3 · GCC 16.2 Release",
+   "cpu": "AMD Ryzen 9 9900X",
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+   "driver": "615.78.08",
+   "version": null,
+   "patched": false,
+   "summary": {
+    "en": "Clean main remains on key art for 180 s despite scripted input. Window 59.94 FPS is not game performance; almost all reported signals are GC SIGUSR1, not crashes.",
+    "zh": "干净main输入脚本后180秒仍封面；窗口59.94 FPS不是游戏性能，几乎全部信号为GC的SIGUSR1而非崩溃。",
+    "ar": "main نظيف يبقى على الصورة 180ث رغم الإدخال؛ 59.94 FPS للنافذة ليست أداء لعب، ومعظم الإشارات GC SIGUSR1 لا انهيارات.",
+    "pt": "Main limpo mantém a imagem inicial 180 s; janela 59,94 FPS não é desempenho em jogo, sinais sobretudo GC SIGUSR1, não falhas.",
+    "de": "Sauberes Main bleibt 180 s am Startbild; Fenster 59,94 FPS keine Spielleistung, Signale fast alle GC SIGUSR1 statt Abstürzen.",
+    "fr": "Main propre reste à l’image initiale 180 s; fenêtre 59,94 FPS sans mesure en jeu, signaux surtout GC SIGUSR1 non crashes.",
+    "es": "Main limpio sigue en portada 180 s; ventana 59,94 FPS no es rendimiento en juego, señales casi todas GC SIGUSR1, no fallos."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "blue-reflection-quartet": [
+  {
+   "id": "10271-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/10271",
+   "updated": "2026-10-27T14:04:01Z",
+   "testDate": null,
+   "build": "#10599 61908b16ac · clean local branch",
+   "os": "Arch Linux 7.2.9",
+   "cpu": "AMD Ryzen 9 7950X",
+   "gpu": "AMD Radeon RX 6650 XT",
+   "driver": "RADV Mesa 26.2.4 ·GCC Release",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Exact #10599 build passes Reverb but stops after two seconds at an NGS2 multiple-custom-buffer submixer. Another audio PR does not cover this case; no scene is verified.",
+    "zh": "准确#10599越过Reverb，2秒后停于NGS2多个自定义缓冲submixer；另一音频PR未覆盖此例，未验证场景。",
+    "ar": "بناء #10599 يتجاوز Reverb ثم يتوقف بعد ثانيتين في NGS2؛ PR صوت آخر لا يغطي الحالة، بلا مشهد مثبت.",
+    "pt": "Build #10599 passa Reverb e para em dois segundos no submixer NGS2; outro PR não cobre o caso, sem cena validada.",
+    "de": "Exaktes #10599 passiert Reverb, stoppt nach zwei Sekunden an NGS2-Submixer; anderer Audio-PR deckt Fall nicht, keine Szene belegt.",
+    "fr": "Build exact #10599 franchit Reverb puis bloque à deux secondes en NGS2; autre PR audio insuffisant, aucune scène vérifiée.",
+    "es": "Build exacto #10599 supera Reverb y para a dos segundos en NGS2; otro PR audio no cubre caso, sin escena validada."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "trails-sky-2nd-chapter": [
+  {
+   "id": "10156-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/10156",
+   "updated": "2026-10-27T13:52:30Z",
+   "testDate": null,
+   "build": "#11315 aea8616433 · conflicts with #10599",
+   "os": "Arch Linux 7.2.9",
+   "cpu": "AMD Ryzen 9 7950X",
+   "gpu": "AMD Radeon RX 6650 XT",
+   "driver": "RADV Mesa 26.2.4 ·GCC Release",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Exact #11315 build passes PitchShift but stops at Reverb after two seconds. Conflicting #10599 is not jointly tested, so no combined fix or scene result is claimed.",
+    "zh": "准确#11315越过PitchShift但2秒后停于Reverb；冲突的#10599未联合测试，不宣称组合修复或场景结果。",
+    "ar": "بناء #11315 يتجاوز PitchShift ويتوقف عند Reverb بعد ثانيتين؛ #10599 المتعارض لم يُختبر معه، بلا إصلاح مشترك أو مشهد.",
+    "pt": "Build #11315 passa PitchShift e para em Reverb aos dois segundos; #10599 conflituoso não testado em conjunto, sem correção combinada/cena.",
+    "de": "Exaktes #11315 passiert PitchShift, stoppt nach zwei Sekunden an Reverb; konkurrierendes #10599 nicht gemeinsam getestet, kein Kombifix/Szenennachweis.",
+    "fr": "Build #11315 franchit PitchShift puis Reverb bloque après deux secondes; #10599 conflictuel non testé ensemble, ni correctif combiné ni scène.",
+    "es": "Build #11315 supera PitchShift y para en Reverb a dos segundos; #10599 conflictivo sin prueba conjunta, sin arreglo combinado ni escena."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "bendy-dark-revival": [
+  {
+   "id": "10154-linux-review-20261028",
+   "platform": "linux",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/10154",
+   "updated": "2026-10-27T01:39:09Z",
+   "testDate": null,
+   "build": "444d40a7f989 =main f9b2 +12 disclosed cherry-picks including #6782/#6913/#11690/#11692/#11704; later 84432c7f27f7 adds #8223 331399d903d7",
+   "os": "Linux 7.2.9",
+   "cpu": "AMD Ryzen 9 7950X",
+   "gpu": "AMD Radeon RX 6650 XT",
+   "driver": "RADV Mesa 26.2.4",
+   "version": "01.000.003",
+   "patched": true,
+   "summary": {
+    "en": "Private stack reaches an office door, saves/reloads and completes one 420 s corridor run. Repeat crashes before OPEN; debugger wrapper exit zero is not guest success. A later MSAA branch still aborts on another repeat, so no stable fix.",
+    "zh": "私有组合到办公室门、保存／读档并一次走廊运行420秒；重试在OPEN前崩溃，调试器包装退出零不代表游戏成功。后续MSAA分支仍有重试终止，不能称稳定修复。",
+    "ar": "تركيب خاص يبلغ باب المكتب ويحفظ/يعيد التحميل ويكمل محاولة ممر 420ث؛ الإعادة تنهار قبل OPEN. خروج wrapper بصفر ليس نجاح الضيف؛ فرع MSAA اللاحق يفشل أيضاً.",
+    "pt": "Stack privado chega à porta, grava/recarrega e completa um corredor de 420 s; repetição falha antes de OPEN. Exit zero do wrapper não é sucesso do jogo; ramo MSAA posterior também aborta.",
+    "de": "Privatstack erreicht Bürotür, speichert/lädt und schafft einmal 420-s-Korridor; Wiederholung stürzt vor OPEN ab. Wrapper-Exit null kein Gasterfolg; späterer MSAA-Zweig scheitert ebenfalls.",
+    "fr": "Stack privé atteint porte, sauvegarde/recharge et termine un corridor de 420 s; répétition plante avant OPEN. Sortie zéro du wrapper sans succès invité; branche MSAA ultérieure échoue aussi.",
+    "es": "Stack privado llega a puerta, guarda/recarga y completa un corredor de 420 s; repetición falla antes de OPEN. Exit cero del wrapper no es éxito del juego; rama MSAA posterior también aborta."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "hamster-playground": [
+  {
+   "id": "9639-linux-review-20261028",
+   "platform": "linux",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/9639",
+   "updated": "2026-10-26T20:56:18Z",
+   "testDate": "2026-10-27",
+   "build": "27b64d68cfb1 =main 74acfad +#11575/#11586/#11611/#11145/#6782/#6913/#11564; newer 21444662ef4 adds deadline/merge cb45",
+   "os": "Linux 7.2.9",
+   "cpu": "AMD Ryzen 9 7950X",
+   "gpu": "AMD Radeon RX 6650 XT",
+   "driver": "RADV Mesa 26.2.4",
+   "version": "01.009.000",
+   "patched": true,
+   "summary": {
+    "en": "Private stack verifies adoption and save reload, then a newer 540 s quest-book run reaches 2/14 rewards. The newest checkpoint is not reloaded; audio/minigames and an optimization FPS gain remain unknown.",
+    "zh": "私有组合验证领养及读档，更新540秒任务簿运行到2／14奖励；最新检查点未读档。音频、小游戏及优化FPS增益未知。",
+    "ar": "تركيب خاص يتحقق من التبني وإعادة الحفظ ثم محاولة دفتر 540ث تبلغ مكافآت 2/14؛ أحدث حفظ لم يُعد. الصوت والألعاب المصغرة ومكسب FPS مجهولة.",
+    "pt": "Stack privado verifica adoção e recarga; novo ensaio de 540 s chega a recompensas 2/14. Último checkpoint sem recarga; áudio/minijogos e ganho FPS desconhecidos.",
+    "de": "Privatstack bestätigt Adoption/Laden; neuer 540-s-Aufgabenlauf erreicht 2/14 Belohnungen. Neuester Stand ungeladen; Ton/Minispiele/FPS-Gewinn unbekannt.",
+    "fr": "Stack privé valide adoption/rechargement; nouvel essai quêtes de 540 s atteint 2/14 récompenses. Dernier point non rechargé; son/minijeux/gain FPS inconnus.",
+    "es": "Stack privado verifica adopción/recarga; nueva prueba de misiones 540 s alcanza 2/14 recompensas. Último punto sin recargar; audio/minijuegos/ganancia FPS desconocidos."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "heavenly-bodies": [
+  {
+   "id": "8931-windows-review-20261028",
+   "platform": "windows",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/8931",
+   "updated": "2026-10-26T20:02:54Z",
+   "testDate": null,
+   "build": "clean main f95acfc9483 vs same main +#8932 · 3 alternating pairs",
+   "os": "Windows",
+   "cpu": null,
+   "gpu": null,
+   "driver": null,
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Alternating main and local #8932 runs each survive about four minutes. Late stores disappear with the patch, but neither arm crashes here; this does not prove the earlier intermittent crash fixed.",
+    "zh": "交替main和本地#8932各存活约四分钟；补丁消除late stores，但本对照两组均未崩溃，不能证明旧间歇崩溃已修。",
+    "ar": "main و#8932 محلي يتناوبان نحو أربع دقائق بلا انهيار؛ تختفي late stores مع التعديل لكن لا يثبت إصلاح الانهيار المتقطع القديم.",
+    "pt": "Main e #8932 alternados sobrevivem ≈4 min; late stores desaparecem, mas nenhum braço falha aqui, sem provar correção do crash intermitente.",
+    "de": "Main und lokales #8932 überleben abwechselnd ≈4 min. Late Stores verschwinden, beide Arme ohne Absturz; alter intermittierender Crash nicht als behoben belegt.",
+    "fr": "Main et #8932 local tiennent chacun ≈4 min. Late stores disparaissent mais aucun bras ne plante ici; ancien crash intermittent non prouvé corrigé.",
+    "es": "Main y #8932 local duran ≈4 min cada uno. Late stores desaparecen pero ningún brazo falla aquí; sin demostrar arreglo del fallo intermitente."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "alan-wake-2": [
+  {
+   "id": "7303-linux-review-20261028",
+   "platform": "linux",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/7303",
+   "updated": "2026-10-27T12:38:26Z",
+   "testDate": null,
+   "build": "main 27ad / ca0e9557aa; local #11611 +#11145 system roots or #11922 error mapping · PlayGo installed",
+   "os": "Arch Linux 7.2.11 · GCC 16.2",
+   "cpu": null,
+   "gpu": "AMD Radeon RX 9070 XT",
+   "driver": "RADV Mesa 26.2.5",
+   "version": "01.200.007",
+   "patched": true,
+   "summary": {
+    "en": "Main stops at HTTP/1 after about 63 s. Local HTTP/TLS/error-handling paths reach EULA for 600 s, but scrolling/acceptance mostly fails. One successful acceptance in eight older network-error runs is not a repeatable gameplay result.",
+    "zh": "main约63秒停在HTTP／1；本地HTTP、TLS及错误处理到EULA 600秒，但滚动／接受多数失败。旧网络错误运行八次仅一次接受，不是可复现游戏结果。",
+    "ar": "main يتوقف في HTTP/1 قرب 63ث؛ تعديلات HTTP/TLS والأخطاء تبلغ EULA لـ600ث، والتمرير/القبول غالباً يفشلان. قبول واحد من ثمان قديمة ليس لعباً متكرراً.",
+    "pt": "Main para em HTTP/1 aos ≈63 s; HTTP/TLS/erros locais chegam ao EULA por 600 s, navegação/aceitação quase sempre falha. Um sucesso em oito antigos não prova jogo reproduzível.",
+    "de": "Main stoppt nach ≈63 s an HTTP/1; lokale HTTP/TLS/Fehlerpfade erreichen EULA für 600 s, Bedienung meist erfolglos. Ein Akzeptieren unter acht älteren Läufen kein reproduzierbares Spiel.",
+    "fr": "Main bloque en HTTP/1 vers 63 s; voies HTTP/TLS/erreurs locales atteignent EULA 600 s, défilement/acceptation souvent échouent. Un succès sur huit anciens essais sans jeu reproductible.",
+    "es": "Main para en HTTP/1 hacia 63 s; HTTP/TLS/errores locales llegan a EULA 600 s, navegación/aceptación suele fallar. Un éxito entre ocho pruebas antiguas no demuestra juego reproducible."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "assassins-creed-mirage": [
+  {
+   "id": "7534-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/7534",
+   "updated": "2026-10-27T03:00:15Z",
+   "testDate": null,
+   "build": "main a120; local #11691 then #8223 · #7532 startup SIGSEGV also intermittent",
+   "os": "Arch Linux 7.2.11 · GCC 16.2.1 Release",
+   "cpu": null,
+   "gpu": "AMD Radeon RX 9070 XT",
+   "driver": "RADV Mesa 26.2.5",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Main fails converted format 36 after 86–91 s. Local #11691 passes it, then #8223 passes an MSAA CPU read only to hit a partial-clear guard. Startup remains black; no combined gameplay fix.",
+    "zh": "main在86–91秒格式36转换失败；本地#11691越过，再加#8223越过MSAA CPU读取后仍停于部分清除保护。启动仍黑，无组合游戏修复。",
+    "ar": "main يفشل في الصيغة 36 عند 86–91ث؛ #11691 ثم #8223 يتجاوزانها وقراءة MSAA لكن يتوقفان عند partial-clear. البداية سوداء، بلا إصلاح لعب شامل.",
+    "pt": "Main falha no formato 36 aos 86–91 s; #11691 e #8223 passam os primeiros limites mas param no partial-clear. Início preto, sem correção de jogo combinada.",
+    "de": "Main scheitert nach 86–91 s an Format 36; #11691/#8223 passieren erste Grenzen, stoppen an Partial-Clear. Start bleibt schwarz, kein kombinierter Spielnachweis.",
+    "fr": "Main échoue sur format 36 à 86–91 s; #11691/#8223 franchissent premiers obstacles puis partial-clear. Début noir, aucun correctif de jeu combiné.",
+    "es": "Main falla en formato 36 a 86–91 s; #11691/#8223 pasan primeros obstáculos y paran en partial-clear. Inicio negro, sin arreglo combinado del juego."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "resident-evil-requiem": [
+  {
+   "id": "11599-windows-review-20261028",
+   "platform": "windows",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/11599",
+   "updated": "2026-10-27T11:36:20Z",
+   "testDate": null,
+   "build": "main 74acfad65b +#10935/#10304/#9950/#11199/#11369/#11485/#11580 +old libSceHttp2 from88795 +MSAA line-list refusal bypass · LAZY_PREPARE=1 / NO_GPL=1",
+   "os": "Windows 11 26200 · 32 GB RAM",
+   "cpu": "AMD Ryzen 7 9800X3D",
+   "gpu": "AMD Radeon RX 9070 XT",
+   "driver": "32.0.31021.1015",
+   "version": "01.200.000",
+   "patched": true,
+   "summary": {
+    "en": "Local stack reaches menu, then an FBI-office opening cinematic and the next load after an old Http2 replacement and an incorrect MSAA bypass. Lazy preparation reduces memory and frame time, but no interactive gameplay or faithful rendering is verified.",
+    "zh": "本地组合到菜单；替换旧Http2并错误绕过MSAA后到FBI办公室开场与下次加载。懒准备降低内存和帧时间，不证明交互游戏或正确渲染。",
+    "ar": "تركيب محلي يبلغ القائمة ثم مشهد مكتب FBI والتحميل التالي بعد Http2 قديم وتجاوز MSAA غير صحيح. التحضير الكسول يخفض الذاكرة/الزمن، بلا لعب تفاعلي أو دقة صورة مثبتة.",
+    "pt": "Stack local chega ao menu, abertura FBI e carga seguinte com Http2 antigo e bypass MSAA incorreto. Preparação lazy reduz memória/tempo, sem validar jogo interativo ou imagem fiel.",
+    "de": "Lokaler Stack erreicht Menü, FBI-Intro und Folgeladen mit altem Http2/falscher MSAA-Umgehung. Lazy-Vorbereitung senkt Speicher/Framezeit, belegt kein interaktives Spiel oder korrektes Bild.",
+    "fr": "Stack local atteint menu, cinématique FBI et chargement suivant via ancien Http2/bypass MSAA incorrect. Préparation lazy réduit mémoire/temps sans prouver jeu interactif ou rendu fidèle.",
+    "es": "Stack local llega a menú, cinemática FBI y siguiente carga con Http2 antiguo/bypass MSAA incorrecto. Preparación lazy reduce memoria/tiempo sin validar juego interactivo ni imagen fiel."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "ghost-of-yotei": [
+  {
+   "id": "675-windows-fork-world-review-20261028",
+   "platform": "windows",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/675",
+   "updated": "2026-10-27T13:54:50Z",
+   "testDate": null,
+   "build": "Windows fork ee143e114b /6470f9c27c integrating main88795 with51 conflicts · 3×25 min · 7.87/7.75/7.92 presents per10s",
+   "os": "Windows",
+   "cpu": null,
+   "gpu": null,
+   "driver": null,
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Private fork world tests record about 0.79 presents/s, not 7.9 FPS. Owned-write proof improves this fork by 6.4%; removed older write-protection gains do not apply. Shader warmup and memory pressure remain substantial; no upstream release result.",
+    "zh": "私有fork世界场景约0.79次呈现／秒，不是7.9 FPS；owned-write证明在此fork增6.4%，已删除旧写保护增益不适用。预热及内存压力仍大，不是上游发行版结果。",
+    "ar": "اختبارات العالم بفرع خاص نحو 0.79 عرض/ث لا 7.9 FPS؛ تحسن 6.4% محلي، ومكاسب حماية الكتابة المحذوفة لا تنطبق. إحماء وضغط ذاكرة كبيران، لا إصدار upstream.",
+    "pt": "Mundo no fork privado ≈0,79 apresentações/s, não 7,9 FPS; ganho local 6,4%, ganhos write-protect removidos não se aplicam. Aquecimento/memória elevados, sem resultado de release upstream.",
+    "de": "Privater Weltlauf ≈0,79 Bilder/s statt 7,9 FPS; lokaler Gewinn 6,4%, entfernte Schreibschutzgewinne gelten nicht. Hoher Warmup-/Speicherbedarf, kein Upstream-Releaseergebnis.",
+    "fr": "Monde sur fork privé ≈0,79 présentations/s, pas 7,9 FPS; gain local 6,4%, anciens gains write-protect retirés non applicables. Préchauffage/mémoire élevés, aucun résultat release upstream.",
+    "es": "Mundo en fork privado ≈0,79 presentaciones/s, no 7,9 FPS; mejora local 6,4%, ganancias write-protect retiradas no aplican. Calentamiento/memoria elevados, sin resultado release upstream."
+   },
+   "benchmarks": [],
+   "media": []
+  },
+  {
+   "id": "675-linux-nvidia-menu-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/675",
+   "updated": "2026-10-27T13:54:50Z",
+   "testDate": null,
+   "build": "yotei/best 24ceae2f56 · 13 README switches · 70min+15min menu; third run45min +31min hung/killed137",
+   "os": "CachyOS Linux 7.3 · GCC16.2 · 32GB RAM",
+   "cpu": "Intel Core i9-11900K",
+   "gpu": "NVIDIA GeForce RTX 3080 Ti",
+   "driver": "615.78.08",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Two long cache-warmed menu attempts reach about 1.3–1.4 FPS. A further controller run hangs at the burning-tree frame for at least 31 minutes and is killed. This does not verify in-game progression.",
+    "zh": "两次长时缓存菜单约1.3–1.4 FPS；后续手柄运行在燃树画面挂起至少31分钟后被杀，不验证游戏内推进。",
+    "ar": "محاولتا قائمة طويلتان ≈1.3–1.4 FPS؛ محاولة يد لاحقة تتجمد عند الشجرة المحترقة ≥31 دقيقة ثم تُقتل، بلا تقدم لعب مثبت.",
+    "pt": "Dois menus longos aquecidos ≈1,3–1,4 FPS; novo ensaio com comando bloqueia na árvore ≥31 min e é morto, sem progresso em jogo.",
+    "de": "Zwei lange warme Menüversuche ≈1,3–1,4 FPS; Controllerlauf hängt am Baum ≥31 min und wird beendet, kein Spielfortschritt.",
+    "fr": "Deux longs essais menu chauds ≈1,3–1,4 FPS; essai manette bloque sur l’arbre ≥31 min puis tué, sans progression en jeu.",
+    "es": "Dos menús largos calientes ≈1,3–1,4 FPS; ensayo con mando cuelga en árbol ≥31 min y se mata, sin progreso en juego."
+   },
+   "benchmarks": [],
+   "media": []
+  },
+  {
+   "id": "675-linux-amd-village-review-20261028",
+   "platform": "linux",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/675",
+   "updated": "2026-10-27T13:54:50Z",
+   "testDate": "2026-10-25",
+   "build": "private 9b2bbdfff9 · warmed cache · no pipelines compiled",
+   "os": "Fedora Linux",
+   "cpu": "AMD Ryzen 7 5700X",
+   "gpu": "AMD Radeon RX 9060 XT 16GB",
+   "driver": "patched RADV Mesa26.2.4",
+   "version": "01.512.000",
+   "patched": true,
+   "summary": {
+    "en": "Private patched-RADV village fixed-camera run records 150 presents in 151.401 s, about 0.991 FPS. Cache/pool experiments use different configurations and gains cannot be added; later compact-store code was not in this benchmark.",
+    "zh": "私有补丁RADV村落固定镜头151.401秒150次呈现，约0.991 FPS。缓存／池实验配置不同，增益不能相加；后续compact-store代码未参与此测试。",
+    "ar": "قرية بكاميرا ثابتة وRADV معدل: 150 عرضاً/151.401ث، ≈0.991 FPS. تجارب الحوض/الكاش مختلفة ولا تُجمع مكاسبها؛ كود compact-store اللاحق ليس ضمن القياس.",
+    "pt": "Vila com câmara fixa/RADV alterado: 150 apresentações/151,401 s, ≈0,991 FPS. Configurações de pool/cache diferentes, ganhos não somáveis; compact-store posterior não integra o teste.",
+    "de": "Privater RADV-Dorflauf mit fester Kamera: 150 Bilder/151,401 s, ≈0,991 FPS. Verschiedene Pool/Cache-Konfigurationen nicht addierbar; späterer Compact-Store-Code nicht mitgemessen.",
+    "fr": "Village caméra fixe/RADV modifié: 150 présentations/151,401 s, ≈0,991 FPS. Configurations pool/cache différentes, gains non additionnables; compact-store ultérieur absent du test.",
+    "es": "Aldea cámara fija/RADV modificado: 150 presentaciones/151,401 s, ≈0,991 FPS. Configuraciones pool/caché distintas, ganancias no sumables; compact-store posterior fuera del test."
+   },
+   "benchmarks": [
+    {
+     "cpu": "AMD Ryzen 7 5700X",
+     "gpu": "AMD Radeon RX 9060 XT 16GB",
+     "fps": "0.991 FPS · fixed-camera village,151.401s",
+     "context": {
+      "en": "Private patched-RADV village fixed-camera run records 150 presents in 151.401 s, about 0.991 FPS. Cache/pool experiments use different configurations and gains cannot be added; later compact-store code was not in this benchmark.",
+      "zh": "私有补丁RADV村落固定镜头151.401秒150次呈现，约0.991 FPS。缓存／池实验配置不同，增益不能相加；后续compact-store代码未参与此测试。",
+      "ar": "قرية بكاميرا ثابتة وRADV معدل: 150 عرضاً/151.401ث، ≈0.991 FPS. تجارب الحوض/الكاش مختلفة ولا تُجمع مكاسبها؛ كود compact-store اللاحق ليس ضمن القياس.",
+      "pt": "Vila com câmara fixa/RADV alterado: 150 apresentações/151,401 s, ≈0,991 FPS. Configurações de pool/cache diferentes, ganhos não somáveis; compact-store posterior não integra o teste.",
+      "de": "Privater RADV-Dorflauf mit fester Kamera: 150 Bilder/151,401 s, ≈0,991 FPS. Verschiedene Pool/Cache-Konfigurationen nicht addierbar; späterer Compact-Store-Code nicht mitgemessen.",
+      "fr": "Village caméra fixe/RADV modifié: 150 présentations/151,401 s, ≈0,991 FPS. Configurations pool/cache différentes, gains non additionnables; compact-store ultérieur absent du test.",
+      "es": "Aldea cámara fija/RADV modificado: 150 presentaciones/151,401 s, ≈0,991 FPS. Configuraciones pool/caché distintas, ganancias no sumables; compact-store posterior fuera del test."
+     }
+    }
+   ],
+   "media": []
+  },
+  {
+   "id": "675-linux-amd-pgo-review-20261028",
+   "platform": "linux",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/675",
+   "updated": "2026-10-27T13:54:50Z",
+   "testDate": null,
+   "build": "yotei/linux-best-u2 6ff7f14f0 · local PGO/LTO/cache/draw/thread pinning; invalid reuse experiment reverted",
+   "os": "Linux",
+   "cpu": "AMD Ryzen 7 5700X",
+   "gpu": "AMD Radeon RX 9070 XT",
+   "driver": "patched RADV",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Another heavily modified branch measures 1.91–1.96 FPS in three unprofiled village runs. PGO, local draw/cache/LTO and thread changes are combined; no individual gain, upstream-main or release claim follows.",
+    "zh": "另一大量修改分支三次无profiling村落1.91–1.96 FPS；PGO、绘制、缓存、LTO及线程修改组合，不能推出单项增益、上游main或发行版结论。",
+    "ar": "فرع آخر معدل بكثافة يقيس 1.91–1.96 FPS في ثلاث محاولات قرية بلا profiling. PGO ورسم وكاش/LTO وخيوط مجتمعة، لا مكسب فردي أو main/إصدار.",
+    "pt": "Outro ramo muito alterado mede 1,91–1,96 FPS em três ensaios da vila sem profiling. PGO/desenho/cache/LTO/threads combinados, sem ganho individual nem main/release.",
+    "de": "Anderer stark geänderter Zweig misst 1,91–1,96 FPS in drei Dorfversuchen ohne Profiling. PGO/Draw/Cache/LTO/Threads kombiniert, kein Einzelgewinn oder Main/Releasebeleg.",
+    "fr": "Autre branche très modifiée: 1,91–1,96 FPS sur trois essais village sans profiling. PGO/dessin/cache/LTO/threads combinés, aucun gain isolé ou main/release établi.",
+    "es": "Otra rama muy modificada: 1,91–1,96 FPS en tres ensayos de aldea sin profiling. PGO/dibujo/caché/LTO/hilos combinados, sin mejora individual ni main/release."
+   },
+   "benchmarks": [
+    {
+     "cpu": "AMD Ryzen 7 5700X",
+     "gpu": "AMD Radeon RX 9070 XT",
+     "fps": "1.91–1.96 FPS · three unprofiled private-fork village runs",
+     "context": {
+      "en": "Another heavily modified branch measures 1.91–1.96 FPS in three unprofiled village runs. PGO, local draw/cache/LTO and thread changes are combined; no individual gain, upstream-main or release claim follows.",
+      "zh": "另一大量修改分支三次无profiling村落1.91–1.96 FPS；PGO、绘制、缓存、LTO及线程修改组合，不能推出单项增益、上游main或发行版结论。",
+      "ar": "فرع آخر معدل بكثافة يقيس 1.91–1.96 FPS في ثلاث محاولات قرية بلا profiling. PGO ورسم وكاش/LTO وخيوط مجتمعة، لا مكسب فردي أو main/إصدار.",
+      "pt": "Outro ramo muito alterado mede 1,91–1,96 FPS em três ensaios da vila sem profiling. PGO/desenho/cache/LTO/threads combinados, sem ganho individual nem main/release.",
+      "de": "Anderer stark geänderter Zweig misst 1,91–1,96 FPS in drei Dorfversuchen ohne Profiling. PGO/Draw/Cache/LTO/Threads kombiniert, kein Einzelgewinn oder Main/Releasebeleg.",
+      "fr": "Autre branche très modifiée: 1,91–1,96 FPS sur trois essais village sans profiling. PGO/dessin/cache/LTO/threads combinés, aucun gain isolé ou main/release établi.",
+      "es": "Otra rama muy modificada: 1,91–1,96 FPS en tres ensayos de aldea sin profiling. PGO/dibujo/caché/LTO/hilos combinados, sin mejora individual ni main/release."
+     }
+    }
+   ],
+   "media": []
+  }
+ ],
+ "ghost-of-tsushima-directors-cut": [
+  {
+   "id": "4461-windows-review-20261028",
+   "platform": "windows",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/discussions/4461",
+   "updated": "2026-10-27T16:47:11Z",
+   "testDate": null,
+   "build": "local m126/m132/m134/m135/m141… experiments · integration SHA unknown · depth/flip/reclaim/window workarounds",
+   "os": "Windows",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX 4060 Laptop · 16GB host RAM",
+   "driver": null,
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "New local experiments emit hundreds of frames, but inspected evidence still shows the Sony logo. Dynamic colors, packet counts and guest time do not prove the claimed fully functional 3D scene; later runs hit device loss or memory exhaustion.",
+    "zh": "新增本地实验输出数百帧，但实际核看图片仍为Sony标志。动态颜色、包计数及guest time不能证明声称的完整3D场景；后续运行设备丢失或内存耗尽。",
+    "ar": "تجارب محلية تنتج مئات الإطارات لكن الصور المفحوصة ما زالت شعار Sony. اللون والعدادات لا تثبت مشهد 3D كاملاً؛ لاحقاً فقد جهاز/نفاد ذاكرة.",
+    "pt": "Experiências locais emitem centenas de imagens, mas as verificadas só mostram logótipo Sony. Cores/contagens/tempo guest não provam cena 3D funcional; depois device loss/memória esgotada.",
+    "de": "Lokale Experimente liefern Hunderte Bilder, geprüfte Belege zeigen weiter Sony-Logo. Farben/Zähler/Gastzeit belegen keine funktionierende 3D-Szene; spätere Geräte-/Speicherfehler.",
+    "fr": "Expériences locales produisent des centaines d’images, preuves inspectées toujours logo Sony. Couleurs/compteurs/temps invité ne prouvent pas scène 3D fonctionnelle; pertes appareil/mémoire ensuite.",
+    "es": "Experimentos locales emiten cientos de imágenes, pruebas inspeccionadas siguen en logo Sony. Colores/contadores/tiempo guest no prueban escena 3D funcional; luego device loss/memoria agotada."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "gta-v": [
+  {
+   "id": "11425-windows-d16-review-20261028",
+   "platform": "windows",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/issues/11425#issuecomment-6425876227",
+   "updated": "2026-10-26T19:54:20Z",
+   "testDate": null,
+   "build": "894f617c6e onmain99b8446cbc +revert#9789; control48c +same revert",
+   "os": "Windows 11",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX 4090",
+   "driver": "616.92",
+   "version": "01.005.000",
+   "patched": true,
+   "summary": {
+    "en": "A local D16 fix plus a separate export revert reaches Los Santos for 240 s at about 5 FPS. One control/candidate pair does not establish console-value accuracy or a generally safe revert.",
+    "zh": "本地D16修复另回退导出后到洛圣都240秒，约5 FPS；仅一组对照，不证明主机数值正确或回退普适安全。",
+    "ar": "إصلاح D16 محلي مع تراجع آخر يبلغ Los Santos 240ث بنحو 5 FPS؛ زوج واحد لا يثبت دقة قيم الكونسول أو سلامة التراجع عامة.",
+    "pt": "D16 local e revert separado chegam a Los Santos 240 s a ≈5 FPS; um par não prova valores da consola ou revert seguro em geral.",
+    "de": "Lokaler D16-Fix plus separater Revert erreicht Los Santos 240 s mit ≈5 FPS; ein Paar belegt weder Konsolenwerte noch allgemeine Revert-Sicherheit.",
+    "fr": "D16 local et revert distinct atteignent Los Santos 240 s à ≈5 FPS; une paire ne prouve ni valeurs console ni sûreté générale du revert.",
+    "es": "D16 local y revert separado llegan a Los Santos 240 s a ≈5 FPS; una pareja no prueba valores consola ni seguridad general del revert."
+   },
+   "benchmarks": [
+    {
+     "cpu": null,
+     "gpu": "NVIDIA GeForce RTX 4090",
+     "fps": "≈5 FPS · Los Santos",
+     "context": {
+      "en": "A local D16 fix plus a separate export revert reaches Los Santos for 240 s at about 5 FPS. One control/candidate pair does not establish console-value accuracy or a generally safe revert.",
+      "zh": "本地D16修复另回退导出后到洛圣都240秒，约5 FPS；仅一组对照，不证明主机数值正确或回退普适安全。",
+      "ar": "إصلاح D16 محلي مع تراجع آخر يبلغ Los Santos 240ث بنحو 5 FPS؛ زوج واحد لا يثبت دقة قيم الكونسول أو سلامة التراجع عامة.",
+      "pt": "D16 local e revert separado chegam a Los Santos 240 s a ≈5 FPS; um par não prova valores da consola ou revert seguro em geral.",
+      "de": "Lokaler D16-Fix plus separater Revert erreicht Los Santos 240 s mit ≈5 FPS; ein Paar belegt weder Konsolenwerte noch allgemeine Revert-Sicherheit.",
+      "fr": "D16 local et revert distinct atteignent Los Santos 240 s à ≈5 FPS; une paire ne prouve ni valeurs console ni sûreté générale du revert.",
+      "es": "D16 local y revert separado llegan a Los Santos 240 s a ≈5 FPS; una pareja no prueba valores consola ni seguridad general del revert."
+     }
+    }
+   ],
+   "media": []
+  },
+  {
+   "id": "11425-linux-review-20261028",
+   "platform": "linux",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/issues/11425#issuecomment-6427654998",
+   "updated": "2026-10-26T21:26:09Z",
+   "testDate": null,
+   "build": "894f617c6e on99b8446cbc · no other patches · empty shader cache · only trace switches",
+   "os": "CachyOS Linux 7.3.0-4 · GCC16.2.1",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX 4070 SUPER",
+   "driver": "615.78.08",
+   "version": "01.011.001",
+   "patched": true,
+   "summary": {
+    "en": "One exact-branch run loads the save after about 200 s and is manually played to the 600 s cap without the D16 stop. Cold compilation changes frame times substantially; no #9789 revert is needed on this package.",
+    "zh": "准确分支一次约200秒加载存档，手动游玩至600秒未触发D16停止；首次编译使帧时间大幅波动，本包不需回退#9789。",
+    "ar": "فرع محدد يحمل الحفظ قرب 200ث ويُلعب يدوياً حتى 600ث بلا توقف D16؛ التجميع البارد يغير الأزمنة كثيراً، وهذه الحزمة لا تحتاج تراجع #9789.",
+    "pt": "Ramo exato carrega aos ≈200 s e é jogado manualmente até 600 s sem D16; compilação fria varia tempos, este pacote não precisa revert #9789.",
+    "de": "Exakter Zweig lädt nach ≈200 s und wird bis 600 s manuell gespielt ohne D16-Stop; kalte Kompilierung schwankt stark, dieses Paket braucht keinen #9789-Revert.",
+    "fr": "Branche exacte charge vers 200 s puis jeu manuel jusqu’à 600 s sans arrêt D16; compilation froide très variable, pas de revert #9789 sur ce paquet.",
+    "es": "Rama exacta carga hacia 200 s y se juega manualmente hasta 600 s sin D16; compilación fría varía mucho, este paquete no necesita revert #9789."
+   },
+   "benchmarks": [],
+   "media": []
+  },
+  {
+   "id": "11425-windows-d16-pr-review-20261028",
+   "platform": "windows",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/issues/11425#issuecomment-6451832303",
+   "updated": "2026-10-27T19:41:56Z",
+   "testDate": null,
+   "build": "main a120df3486 +#11580 7bd8b371ce +revert#9789",
+   "os": "Windows",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX4090",
+   "driver": "616.92",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "A newer local D16 PR build loads Story and permits open-world play with an additional #9789 revert. Duration and performance are not restated; the earlier branch benchmark must not be assigned to this newer head.",
+    "zh": "较新本地D16 PR另回退#9789后加载故事并可开放世界游玩；未重述时长／性能，不能把旧分支基准赋给此新构建。",
+    "ar": "بناء D16 أحدث مع تراجع #9789 يحمل Story ويسمح بالعالم المفتوح؛ المدة والأداء غير مذكورين ولا تُنسب إليه أرقام الفرع القديم.",
+    "pt": "D16 mais recente com revert #9789 carrega Story e permite mundo aberto; duração/desempenho não repetidos, sem transferir benchmark antigo.",
+    "de": "Neueres D16 mit #9789-Revert lädt Story/erlaubt offene Welt; Dauer/Leistung ungenannt, alte Zweigwerte nicht übertragen.",
+    "fr": "D16 plus récent avec revert #9789 charge Story/monde ouvert; durée/performance non reprises, anciens chiffres non transférés.",
+    "es": "D16 más reciente con revert #9789 carga Story/mundo abierto; duración/rendimiento no reiterados, cifras antiguas no transferidas."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "gta-v-ppsa04263": [
+  {
+   "id": "11580-windows-review-20261028",
+   "platform": "windows",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11580#issuecomment-6451541570",
+   "updated": "2026-10-27T19:28:37Z",
+   "testDate": null,
+   "build": "main14332cd8d0 vs +#11580 fedf3e91a7 · --frame-red-zone · cold cache",
+   "os": "Windows11 26220 · 32GB RAM",
+   "cpu": "AMD Ryzen7 5800X",
+   "gpu": "NVIDIA GeForce RTX3080 10GB",
+   "driver": "621.01",
+   "version": "01.011.001",
+   "patched": true,
+   "summary": {
+    "en": "Candidate reaches North Yankton hostage/bank/vault/phone actions while baseline aborts at Story loading. Compilation windows show about 3–9 presents/s; candidate then hangs at 555 s and is killed after two silent minutes. No general crash fix.",
+    "zh": "候选可操作北扬克顿人质、银行、金库、电话，基线在故事加载终止；编译期约3–9次呈现／秒，但555秒挂起、静默两分钟后被杀，非普适崩溃修复。",
+    "ar": "المرشح يبلغ أفعال North Yankton بينما الأساس يتوقف في التحميل؛ نحو 3–9 عرض/ث أثناء التجميع، ثم تجمد عند 555ث وقتل بعد صمت دقيقتين. لا إصلاح انهيار عام.",
+    "pt": "Candidato permite ações em North Yankton, base aborta em Story; ≈3–9 apresentações/s a compilar, mas bloqueia aos 555 s e é morto após dois minutos. Sem correção geral.",
+    "de": "Kandidat erlaubt North-Yankton-Aktionen, Basis scheitert beim Storyladen; ≈3–9 Bilder/s während Kompilierung, hängt bei 555 s und wird beendet. Kein allgemeiner Crashfix.",
+    "fr": "Candidat permet actions North Yankton, base échoue au chargement Story; ≈3–9 présentations/s en compilation, gel à 555 s puis arrêt forcé. Pas de correctif général.",
+    "es": "Candidato permite acciones North Yankton, base aborta cargando Story; ≈3–9 presentaciones/s compilando, cuelgue a 555 s y cierre forzado. Sin arreglo general."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "lego-builders-journey": [
+  {
+   "id": "11308-windows-review-20261028",
+   "platform": "windows",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/issues/11308#issuecomment-6425919404",
+   "updated": "2026-10-26T19:56:50Z",
+   "testDate": "2026-10-26",
+   "build": "main f95acfc9483 +#11098 f1fb9d6ea · local integration6649abca5; separate clean ray-tracing repro#11513",
+   "os": "Windows11 26300 · 5.4GB private",
+   "cpu": "AMD Ryzen7 9800X3D",
+   "gpu": "NVIDIA GeForce RTX5080",
+   "driver": "617.42",
+   "version": "03.002.583",
+   "patched": true,
+   "summary": {
+    "en": "Local depth-mip fix permits four minutes of brick placement/camera input with audio. Warm stationary opening samples show 18–19.9 presents/s, not a full-level benchmark. Enabling ray tracing still triggers a separate UINT export abort.",
+    "zh": "本地深度mip修复后可放砖／镜头操作约四分钟并有音频；热缓存静止开场18–19.9次呈现／秒，不是全关卡基准。启用光追仍有独立UINT导出终止。",
+    "ar": "إصلاح depth-mip محلي يسمح بوضع مكعبات/كاميرا وصوت أربع دقائق. افتتاح ثابت دافئ 18–19.9 عرض/ث لا مرحلة كاملة؛ تفعيل ray tracing يفشل في UINT منفصل.",
+    "pt": "Fix depth-mip local permite quatro minutos de peças/câmara e áudio. Abertura parada quente 18–19,9 apresentações/s, não nível inteiro; ray tracing ainda aborta em UINT.",
+    "de": "Lokaler Depth-Mip-Fix erlaubt vier Minuten Bausteine/Kamera mit Ton. Warmer statischer Anfang 18–19,9 Bilder/s, kein Levelbenchmark; Raytracing scheitert weiter an UINT.",
+    "fr": "Fix depth-mip local permet quatre minutes de briques/caméra avec son. Début fixe chaud 18–19,9 présentations/s, pas niveau entier; ray tracing échoue encore en UINT.",
+    "es": "Fix depth-mip local permite cuatro minutos de ladrillos/cámara y audio. Inicio estático caliente 18–19,9 presentaciones/s, no nivel completo; ray tracing aún aborta en UINT."
+   },
+   "benchmarks": [
+    {
+     "cpu": "AMD Ryzen7 9800X3D",
+     "gpu": "NVIDIA GeForce RTX5080",
+     "fps": "18–19.9 presents/s · warm stationary opening",
+     "context": {
+      "en": "Local depth-mip fix permits four minutes of brick placement/camera input with audio. Warm stationary opening samples show 18–19.9 presents/s, not a full-level benchmark. Enabling ray tracing still triggers a separate UINT export abort.",
+      "zh": "本地深度mip修复后可放砖／镜头操作约四分钟并有音频；热缓存静止开场18–19.9次呈现／秒，不是全关卡基准。启用光追仍有独立UINT导出终止。",
+      "ar": "إصلاح depth-mip محلي يسمح بوضع مكعبات/كاميرا وصوت أربع دقائق. افتتاح ثابت دافئ 18–19.9 عرض/ث لا مرحلة كاملة؛ تفعيل ray tracing يفشل في UINT منفصل.",
+      "pt": "Fix depth-mip local permite quatro minutos de peças/câmara e áudio. Abertura parada quente 18–19,9 apresentações/s, não nível inteiro; ray tracing ainda aborta em UINT.",
+      "de": "Lokaler Depth-Mip-Fix erlaubt vier Minuten Bausteine/Kamera mit Ton. Warmer statischer Anfang 18–19,9 Bilder/s, kein Levelbenchmark; Raytracing scheitert weiter an UINT.",
+      "fr": "Fix depth-mip local permet quatre minutes de briques/caméra avec son. Début fixe chaud 18–19,9 présentations/s, pas niveau entier; ray tracing échoue encore en UINT.",
+      "es": "Fix depth-mip local permite cuatro minutos de ladrillos/cámara y audio. Inicio estático caliente 18–19,9 presentaciones/s, no nivel completo; ray tracing aún aborta en UINT."
+     }
+    }
+   ],
+   "media": []
+  }
+ ],
+ "sonic-origins": [
+  {
+   "id": "10668-windows-review-20261028",
+   "platform": "windows",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/10668#issuecomment-6446358668",
+   "updated": "2026-10-27T15:39:33Z",
+   "testDate": null,
+   "build": "main ca0e9557aa vs #10668 2b395fe86a · one warmup +profile +2interleaved trace rounds",
+   "os": "Windows11",
+   "cpu": "Intel Core i9-9900K",
+   "gpu": "NVIDIA GeForce RTX2080 Ti",
+   "driver": "617.14",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Rebased exact-head menu pairs improve title readings from 13.85–13.88 to 16.42–16.44 FPS, with lower GPU time. This is the Sonic 3 & Knuckles selection page, not gameplay or the separate PPSA05325 package.",
+    "zh": "rebase准确构建菜单对照由13.85–13.88升至16.42–16.44 FPS并降低GPU时间；这是Sonic3＆Knuckles选择页，不是游戏或另一PPSA05325包。",
+    "ar": "زوج قائمة بعد rebase يرتفع من 13.85–13.88 إلى 16.42–16.44 FPS مع GPU أقل؛ صفحة اختيار Sonic3&Knuckles، لا لعب أو حزمة05325.",
+    "pt": "Menu após rebase passa de 13,85–13,88 para 16,42–16,44 FPS com menos GPU; seleção Sonic3&Knuckles, não jogo nem pacote05325.",
+    "de": "Menüpaare nach Rebase verbessern 13,85–13,88 auf16,42–16,44 FPS mit weniger GPU-Zeit; Sonic3&Knuckles-Auswahl, kein Spiel oder Paket05325.",
+    "fr": "Paires menu rebasées de13,85–13,88 à16,42–16,44 FPS, GPU réduit; sélection Sonic3&Knuckles, pas jeu ni paquet05325.",
+    "es": "Parejas menú rebasadas pasan13,85–13,88 a16,42–16,44 FPS con menos GPU; selección Sonic3&Knuckles, no juego ni paquete05325."
+   },
+   "benchmarks": [
+    {
+     "cpu": "Intel Core i9-9900K",
+     "gpu": "NVIDIA GeForce RTX2080 Ti",
+     "fps": "16.42–16.44 FPS · Sonic3&Knuckles menu",
+     "context": {
+      "en": "Rebased exact-head menu pairs improve title readings from 13.85–13.88 to 16.42–16.44 FPS, with lower GPU time. This is the Sonic 3 & Knuckles selection page, not gameplay or the separate PPSA05325 package.",
+      "zh": "rebase准确构建菜单对照由13.85–13.88升至16.42–16.44 FPS并降低GPU时间；这是Sonic3＆Knuckles选择页，不是游戏或另一PPSA05325包。",
+      "ar": "زوج قائمة بعد rebase يرتفع من 13.85–13.88 إلى 16.42–16.44 FPS مع GPU أقل؛ صفحة اختيار Sonic3&Knuckles، لا لعب أو حزمة05325.",
+      "pt": "Menu após rebase passa de 13,85–13,88 para 16,42–16,44 FPS com menos GPU; seleção Sonic3&Knuckles, não jogo nem pacote05325.",
+      "de": "Menüpaare nach Rebase verbessern 13,85–13,88 auf16,42–16,44 FPS mit weniger GPU-Zeit; Sonic3&Knuckles-Auswahl, kein Spiel oder Paket05325.",
+      "fr": "Paires menu rebasées de13,85–13,88 à16,42–16,44 FPS, GPU réduit; sélection Sonic3&Knuckles, pas jeu ni paquet05325.",
+      "es": "Parejas menú rebasadas pasan13,85–13,88 a16,42–16,44 FPS con menos GPU; selección Sonic3&Knuckles, no juego ni paquete05325."
+     }
+    }
+   ],
+   "media": []
+  }
+ ],
+ "sonic-2006-recompiled": [
+  {
+   "id": "11562-windows-review-20261028",
+   "platform": "windows",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/issues/11562",
+   "updated": "2026-10-27T00:10:09Z",
+   "testDate": null,
+   "build": "main ae17955d2 +local nonfinite depth clear/frame recorder hash/page commit/private regions · SYNC_DRAWS=1 or CPU_STORES=1 separate",
+   "os": "Windows11 26200",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX5070",
+   "driver": "616.64",
+   "version": "01.000.000",
+   "patched": true,
+   "summary": {
+    "en": "Private recompiled build reaches town/character selection but floor and camera flicker or disappear. Normal output is 11–14 FPS at 4K; synchronous draws or CPU stores improve visibility at only about 4 or 2–3 FPS. Diagnostic workarounds, not a general fix.",
+    "zh": "私有重编译构建到城镇／角色选择，但地面与镜头闪烁或消失；正常4K输出11–14 FPS，强制同步绘制或CPU stores改善可见性却仅约4或2–3 FPS，属于诊断绕过。",
+    "ar": "بناء معاد محلي يبلغ المدينة/اختيار الشخصية بأرض وكاميرا مفقودتين أو وامضتين. العادي 11–14 FPS عند4K؛ المزامنة/CPU stores تحسن الرؤية عند4 أو2–3 فقط، تجاوز تشخيصي.",
+    "pt": "Build recompilado privado chega à cidade/seleção com chão/câmara invisíveis ou a piscar. Normal11–14 FPS em4K; sync draws/CPU stores melhoram imagem a4 ou2–3, só diagnóstico.",
+    "de": "Privater Recompile erreicht Stadt/Auswahl mit fehlendem/flackerndem Boden/Kamera. Normal11–14 FPS bei4K; Sync-Draws/CPU-Stores verbessern Sicht bei4 bzw2–3, Diagnoseumgehungen.",
+    "fr": "Recompile privé atteint ville/sélection avec sol/caméra absents ou clignotants. Normal11–14 FPS en4K; sync draws/CPU stores améliorent à4 ou2–3 seulement, contournements diagnostic.",
+    "es": "Recompilación privada llega a ciudad/selección con suelo/cámara invisibles o parpadeando. Normal11–14 FPS en4K; sync draws/CPU stores mejoran a4 o2–3, solo diagnóstico."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "ratchet-clank-rift-apart": [
+  {
+   "id": "11700-linux-review-20261028",
+   "platform": "linux",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/issues/11700#issuecomment-6435149929",
+   "updated": "2026-10-27T06:20:33Z",
+   "testDate": null,
+   "build": "main abed03546 +#9749(with9633)/#10906/#10000 +2local GetImageResource skips · APS5_AJM_GAPLESS_END_HOLDS=1",
+   "os": "CachyOS Linux7.3",
+   "cpu": "Intel Core i9-14900K",
+   "gpu": "NVIDIA GeForce RTX4090",
+   "driver": "615.78.08",
+   "version": "01.005.003",
+   "patched": true,
+   "summary": {
+    "en": "Local shader skips and gapless-audio experiment reach the Rivet opening cinematic in a fourth run at 0.1–0.8 FPS. Prior control-style hang is intermittent, loud constant tone remains, and a 5 MiB AMM allocation abort occurs. No interactive play verified.",
+    "zh": "本地跳过shader及gapless音频实验第四次到Rivet开场动画0.1–0.8 FPS；先前操控样式挂起间歇出现，持续尖声仍在，并有5 MiB AMM分配终止，未验证交互游玩。",
+    "ar": "تجاوز shaders وتجربة الصوت يبلغان مشهد Rivet بالرابعة عند0.1–0.8 FPS؛ تعليق سابق متقطع ونغمة حادة مستمرة وفشل AMM5MiB. لا لعب تفاعلي مثبت.",
+    "pt": "Skips shaders/áudio local chegam à abertura Rivet na quarta tentativa a0,1–0,8 FPS; bloqueio anterior intermitente, tom alto e falha AMM5MiB persistem. Sem jogo interativo validado.",
+    "de": "Shader-Skips/Audioexperiment erreichen beim vierten Lauf Rivet-Intro mit0,1–0,8 FPS; intermittierender Hänger, Dauerton und AMM5MiB-Fehler bleiben. Interaktives Spiel ungeprüft.",
+    "fr": "Skips shaders/audio locaux atteignent intro Rivet au quatrième essai à0,1–0,8 FPS; gel intermittent, son aigu et échec AMM5MiB persistent. Jeu interactif non vérifié.",
+    "es": "Skips shaders/audio locales llegan a intro Rivet en cuarta prueba a0,1–0,8 FPS; cuelgue intermitente, tono fuerte y fallo AMM5MiB persisten. Sin juego interactivo verificado."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "god-of-war-sons-of-sparta": [
+  {
+   "id": "11952-linux-review-20261028",
+   "platform": "linux",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11952",
+   "updated": "2026-10-27T16:27:40Z",
+   "testDate": null,
+   "build": "baseline75f3702aed32 vs #11952 6edeae61a3317444fc6eefde2ca1fbd721a126db · identical dirty hooks · internal4K/output1920/window1152 · 0dropped events",
+   "os": "Debian13 Linux7.2.12-x64v3 · Wayland mailbox ·23.8GB RAM",
+   "cpu": "AMD Ryzen5 7640HS",
+   "gpu": "AMD Radeon 760M",
+   "driver": "RADV25.0.7-2+deb13u1",
+   "version": "01.008.001",
+   "patched": true,
+   "summary": {
+    "en": "Three prospective warm 12 s Cyclops pairs rise from 12.54 to 18.84 FPS on this laptop. Both builds carry identical observation hooks and dirty flags; combat is nondeterministic. This exact-head local result is not an upstream-main or release benchmark.",
+    "zh": "同笔记本三组预定热缓存12秒独眼巨人战斗对照12.54→18.84 FPS；两组都有相同观测hooks及dirty标记，战斗非确定性。仅此准确构建本地结果，不是main／发行版基准。",
+    "ar": "ثلاثة أزواج Cyclops دافئة12ث ترتفع12.54→18.84 FPS على هذا المحمول؛ hooks وdirty متطابقة والقتال غير حتمي. نتيجة محلية لهذا الرأس، لا main/إصدار.",
+    "pt": "Três pares Cyclops quentes12 s sobem12,54→18,84 FPS neste portátil; hooks/dirty iguais e combate não determinístico. Resultado local deste head, não main/release.",
+    "de": "Drei geplante warme12-s-Cyclops-Paare steigen12,54→18,84 FPS auf diesem Laptop; gleiche Hooks/Dirty-Flags, Kampf nicht deterministisch. Lokaler exakter Build, kein Main/Releasebenchmark.",
+    "fr": "Trois paires Cyclops chaudes12 s passent12,54→18,84 FPS sur ce portable; hooks/dirty identiques, combat non déterministe. Résultat local exact, pas main/release.",
+    "es": "Tres parejas Cyclops calientes12 s pasan12,54→18,84 FPS en este portátil; hooks/dirty iguales, combate no determinista. Resultado local exacto, no main/release."
+   },
+   "benchmarks": [
+    {
+     "cpu": "AMD Ryzen5 7640HS",
+     "gpu": "AMD Radeon 760M",
+     "fps": "18.84 FPS · 3×12s warm Cyclops pairs vs12.54",
+     "context": {
+      "en": "Three prospective warm 12 s Cyclops pairs rise from 12.54 to 18.84 FPS on this laptop. Both builds carry identical observation hooks and dirty flags; combat is nondeterministic. This exact-head local result is not an upstream-main or release benchmark.",
+      "zh": "同笔记本三组预定热缓存12秒独眼巨人战斗对照12.54→18.84 FPS；两组都有相同观测hooks及dirty标记，战斗非确定性。仅此准确构建本地结果，不是main／发行版基准。",
+      "ar": "ثلاثة أزواج Cyclops دافئة12ث ترتفع12.54→18.84 FPS على هذا المحمول؛ hooks وdirty متطابقة والقتال غير حتمي. نتيجة محلية لهذا الرأس، لا main/إصدار.",
+      "pt": "Três pares Cyclops quentes12 s sobem12,54→18,84 FPS neste portátil; hooks/dirty iguais e combate não determinístico. Resultado local deste head, não main/release.",
+      "de": "Drei geplante warme12-s-Cyclops-Paare steigen12,54→18,84 FPS auf diesem Laptop; gleiche Hooks/Dirty-Flags, Kampf nicht deterministisch. Lokaler exakter Build, kein Main/Releasebenchmark.",
+      "fr": "Trois paires Cyclops chaudes12 s passent12,54→18,84 FPS sur ce portable; hooks/dirty identiques, combat non déterministe. Résultat local exact, pas main/release.",
+      "es": "Tres parejas Cyclops calientes12 s pasan12,54→18,84 FPS en este portátil; hooks/dirty iguales, combate no determinista. Resultado local exacto, no main/release."
+     }
+    }
+   ],
+   "media": []
+  },
+  {
+   "id": "10547-linux-review-20261028",
+   "platform": "linux",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/10547#issuecomment-6450195823",
+   "updated": "2026-10-27T18:22:13Z",
+   "testDate": null,
+   "build": "main5ad1c72e3348 +#11952 vs +#10547 diff2794a1e8b9a3 · both dirty, identical hooks/load hashes",
+   "os": "Debian13 Linux7.2.12-x64v3",
+   "cpu": "AMD Ryzen5 7640HS",
+   "gpu": "AMD Radeon 760M",
+   "driver": "RADV25.0.7-2+deb13u1",
+   "version": "01.008.001",
+   "patched": true,
+   "summary": {
+    "en": "On top of #11952, three further warm 12 s Cyclops pairs improve 18.854→20.040 FPS. This measures the additional PR on an already patched base; gains cannot be treated as standalone main results. One mesh fixture fails on both arms.",
+    "zh": "已加#11952的基线上再三组热缓存12秒独眼巨人对照18.854→20.040 FPS；测的是额外PR而非单独main结果。一个mesh测试两组都失败。",
+    "ar": "فوق #11952 ثلاثة أزواج Cyclops دافئة12ث تتحسن18.854→20.040 FPS؛ تغيير إضافي على أساس معدل لا main مستقل. اختبار mesh واحد يفشل في الطرفين.",
+    "pt": "Sobre #11952, três pares Cyclops quentes12 s sobem18,854→20,040 FPS; PR adicional sobre base alterada, não main isolado. Um teste mesh falha em ambos.",
+    "de": "Auf #11952 steigen drei weitere warme12-s-Cyclops-Paare18,854→20,040 FPS; zusätzlicher PR auf Patchbasis, kein isoliertes Main. Mesh-Test scheitert in beiden Armen.",
+    "fr": "Sur #11952, trois autres paires Cyclops chaudes12 s passent18,854→20,040 FPS; PR additionnel sur base modifiée, pas main seul. Un test mesh échoue des deux côtés.",
+    "es": "Sobre #11952, tres parejas Cyclops calientes12 s pasan18,854→20,040 FPS; PR extra sobre base modificada, no main aislado. Un test mesh falla en ambos."
+   },
+   "benchmarks": [
+    {
+     "cpu": "AMD Ryzen5 7640HS",
+     "gpu": "AMD Radeon 760M",
+     "fps": "20.040 FPS · additional PR on #11952 base,3×12s",
+     "context": {
+      "en": "On top of #11952, three further warm 12 s Cyclops pairs improve 18.854→20.040 FPS. This measures the additional PR on an already patched base; gains cannot be treated as standalone main results. One mesh fixture fails on both arms.",
+      "zh": "已加#11952的基线上再三组热缓存12秒独眼巨人对照18.854→20.040 FPS；测的是额外PR而非单独main结果。一个mesh测试两组都失败。",
+      "ar": "فوق #11952 ثلاثة أزواج Cyclops دافئة12ث تتحسن18.854→20.040 FPS؛ تغيير إضافي على أساس معدل لا main مستقل. اختبار mesh واحد يفشل في الطرفين.",
+      "pt": "Sobre #11952, três pares Cyclops quentes12 s sobem18,854→20,040 FPS; PR adicional sobre base alterada, não main isolado. Um teste mesh falha em ambos.",
+      "de": "Auf #11952 steigen drei weitere warme12-s-Cyclops-Paare18,854→20,040 FPS; zusätzlicher PR auf Patchbasis, kein isoliertes Main. Mesh-Test scheitert in beiden Armen.",
+      "fr": "Sur #11952, trois autres paires Cyclops chaudes12 s passent18,854→20,040 FPS; PR additionnel sur base modifiée, pas main seul. Un test mesh échoue des deux côtés.",
+      "es": "Sobre #11952, tres parejas Cyclops calientes12 s pasan18,854→20,040 FPS; PR extra sobre base modificada, no main aislado. Un test mesh falla en ambos."
+     }
+    }
+   ],
+   "media": []
+  }
+ ],
+ "astro-bot": [
+  {
+   "id": "11307-windows-long-intro-review-20261028",
+   "platform": "windows",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11307#issuecomment-6440045889",
+   "updated": "2026-10-27T10:51:36Z",
+   "testDate": null,
+   "build": "main abed03546 vs #11307 36277c4b44 also #11619 · baseline4×32min+1×20min /candidate2×32min",
+   "os": "Windows11 26200 ·31GB RAM",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX5070 Ti",
+   "driver": "617.42",
+   "version": "01.007.000",
+   "patched": true,
+   "summary": {
+    "en": "Five baseline runs usually collapse to 0.7–3 FPS after 11–26 minutes. Two exact candidate 32-minute runs avoid sustained collapse and show 7–13.7 FPS in the intro after minute18; one tunnel slowdown remains. No full-game stability claim.",
+    "zh": "五次基线多在11–26分钟降至0.7–3 FPS；两次准确候选32分钟未持续崩塌，第18分钟后片头7–13.7 FPS，但一次隧道减速仍在；非完整稳定性证明。",
+    "ar": "خمس محاولات أساس غالباً تنهار إلى0.7–3 FPS بعد11–26د؛ مرشحان32د يتجنبان الانهيار المستمر ويعرضان7–13.7 FPS بالافتتاح بعد18د، مع تباطؤ نفق. لا استقرار كامل.",
+    "pt": "Cinco bases costumam cair para0,7–3 FPS aos11–26 min; dois candidatos32 min evitam queda sustentada, intro7–13,7 FPS após18 min, mas um túnel abranda. Sem estabilidade total.",
+    "de": "Fünf Basisläufe fallen meist nach11–26 min auf0,7–3 FPS; zwei32-min-Kandidaten vermeiden Dauereinbruch, Intro7–13,7 FPS nach18 min, Tunnelverlangsamung bleibt. Kein Vollspiel-Stabilitätsnachweis.",
+    "fr": "Cinq bases chutent souvent à0,7–3 FPS après11–26 min; deux candidats32 min évitent chute durable, intro7–13,7 FPS après18 min, ralentissement tunnel demeure. Pas stabilité complète.",
+    "es": "Cinco bases suelen caer a0,7–3 FPS tras11–26 min; dos candidatos32 min evitan caída sostenida, intro7–13,7 FPS tras18 min, queda ralentización en túnel. Sin estabilidad completa."
+   },
+   "benchmarks": [],
+   "media": []
+  },
+  {
+   "id": "6284-windows-device-loss-review-20261028",
+   "platform": "windows",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/issues/6284#issuecomment-6429234530",
+   "updated": "2026-10-26T22:53:11Z",
+   "testDate": null,
+   "build": "main6ea31 +#11307; earlier candidateb27cc · 2/33 combined candidate observations, distinct runs",
+   "os": "Windows",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX5080",
+   "driver": "617.42",
+   "version": "01.007.000",
+   "patched": true,
+   "summary": {
+    "en": "One of 24 new 100 s logo tests still hits device loss, in addition to one of nine prior candidate runs. Small failure counts do not justify calling the combined build stable.",
+    "zh": "新增24次100秒标志测试仍一次设备丢失，旧候选9次也有一次；小样本失败计数不能据以称组合稳定。",
+    "ar": "اختبار شعار واحد من24 الجديدة100ث يفقد الجهاز، إضافة إلى واحد من9 سابقة؛ العدد الصغير لا يثبت الاستقرار.",
+    "pt": "Uma de24 novas provas de logótipo100 s perde o dispositivo, além de uma em9 anteriores; amostra não prova estabilidade.",
+    "de": "Ein Geräteverlust in24 neuen100-s-Logotests plus einer in9 früheren; kleine Stichprobe belegt keine Stabilität.",
+    "fr": "Une perte appareil sur24 nouveaux tests logo100 s, plus une sur9 antérieurs; petit échantillon sans stabilité prouvée.",
+    "es": "Una pérdida de dispositivo entre24 nuevas pruebas logo100 s, más una entre9 anteriores; muestra pequeña sin estabilidad demostrada."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "lego-horizon-adventures": [
+  {
+   "id": "11580-windows-review-20261028",
+   "platform": "windows",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11580",
+   "updated": "2026-10-27T19:28:37Z",
+   "testDate": null,
+   "build": "main abed03546 vs +#11580 dbf2107ba6; separate #6926 bc288 comparison f7a266 vs384046 · 6runs each",
+   "os": "Windows11 26300",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX5070 Ti",
+   "driver": "621.01",
+   "version": "01.004.000",
+   "patched": true,
+   "summary": {
+    "en": "Main fails D16 in all twelve tests. Local candidate passes that check in 14/15 and reaches post-quality loading in twelve, but device loss occurs with and without #6926. No evidence that #6926 fixes corruption or that later gameplay works.",
+    "zh": "main十二次均D16失败；本地候选15次14次越过、12次到画质选择后加载，但有无#6926都设备丢失。未证明#6926修复损坏或后续游戏有效。",
+    "ar": "main يفشل D16 في12/12؛ المرشح يتجاوزه14/15 ويبلغ التحميل12 مرة، لكن فقد الجهاز يحدث مع #6926 وبدونه. لا إصلاح فساد أو لعب لاحق مثبت.",
+    "pt": "Main falha D16 em12/12; candidato passa14/15 e chega à carga12 vezes, mas device loss com/sem #6926. Sem prova de correção de corrupção ou jogo posterior.",
+    "de": "Main scheitert12/12 an D16; Kandidat passiert14/15, erreicht12-mal Laden, Geräteverluste mit/ohne #6926. Kein Korruptionsfix oder späteres Spiel belegt.",
+    "fr": "Main échoue12/12 sur D16; candidat passe14/15, atteint chargement12 fois, pertes appareil avec/sans #6926. Aucun correctif corruption ou jeu ultérieur prouvé.",
+    "es": "Main falla12/12 en D16; candidato pasa14/15 y llega a carga12 veces, device loss con/sin #6926. Sin prueba de arreglo corrupción ni juego posterior."
+   },
+   "benchmarks": [],
+   "media": []
+  },
+  {
+   "id": "11580-linux-review-20261028",
+   "platform": "linux",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11580#issuecomment-6432838116",
+   "updated": "2026-10-27T03:14:32Z",
+   "testDate": null,
+   "build": "main a120 +#11580 dbf2107ba6 then +#8091 71d29197ff · one cinematic cap424s",
+   "os": "Arch Linux 7.2.11 · GCC 16.2.1 Release",
+   "cpu": null,
+   "gpu": "AMD Radeon RX 9070 XT",
+   "driver": "RADV Mesa 26.2.5",
+   "version": "01.004.000",
+   "patched": true,
+   "summary": {
+    "en": "Local D16 fix initially spends 600 s at the PlayStation logo as import budget collapses. Adding #8091 reaches menu and an opening cinematic once; another run stays on black loading for two minutes.",
+    "zh": "本地D16修复最初因导入预算下降在PS标志600秒；加#8091一次到菜单和开场，另一运行黑屏加载两分钟。",
+    "ar": "D16 محلي يبقى600ث عند شعار PlayStation مع انهيار الميزانية؛ إضافة #8091 تبلغ قائمة ومشهداً مرة، وأخرى تحميل أسود دقيقتين.",
+    "pt": "D16 local fica600 s no logo com orçamento a cair; com #8091 chega uma vez ao menu/cinemática, outra fica dois minutos em carga preta.",
+    "de": "Lokales D16 bleibt600 s am Logo bei sinkendem Importbudget; #8091 erreicht einmal Menü/Intro, zweiter Lauf zwei Minuten schwarz.",
+    "fr": "D16 local reste600 s au logo avec budget en chute; #8091 atteint une fois menu/cinématique, autre essai noir deux minutes.",
+    "es": "D16 local queda600 s en logo con presupuesto en caída; #8091 llega una vez a menú/cinemática, otro ensayo negro dos minutos."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "super-meat-boy-3d": [
+  {
+   "id": "11425-linux-review-20261028",
+   "platform": "linux",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/issues/11425#issuecomment-6445372185",
+   "updated": "2026-10-27T15:02:56Z",
+   "testDate": null,
+   "build": "codex/fix-packed-float-d16 894f617c6e onmain99b8446cbc; later merge notes fieldCount45/cacheFormat49 separate",
+   "os": "Linux",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX4070 Ti",
+   "driver": "615.71.09",
+   "version": "02.000.001",
+   "patched": true,
+   "summary": {
+    "en": "Exact D16 branch reaches level-one tutorial for a 602 s run at about 5 FPS. This Linux result does not fix the separately observed Windows cyan rendering or establish console-value accuracy.",
+    "zh": "准确D16分支到第一关教程602秒，约5 FPS；Linux结果不修复另见的Windows青色渲染，也不证明主机数值正确。",
+    "ar": "فرع D16 المحدد يبلغ تدريب المرحلة الأولى602ث بنحو5 FPS؛ لا يصلح زرقة Windows ولا يثبت قيم الكونسول.",
+    "pt": "Ramo D16 chega ao tutorial nível1 por602 s a≈5 FPS; não corrige ciano Windows nem prova valores da consola.",
+    "de": "Exakter D16-Zweig erreicht Level1-Tutorial602 s mit≈5 FPS; kein Windows-Cyanfix oder Konsolenwertnachweis.",
+    "fr": "Branche D16 atteint tutoriel niveau1 pendant602 s à≈5 FPS; ni correctif cyan Windows ni valeurs console prouvées.",
+    "es": "Rama D16 llega al tutorial nivel1 por602 s a≈5 FPS; no corrige cian Windows ni prueba valores consola."
+   },
+   "benchmarks": [
+    {
+     "cpu": null,
+     "gpu": "NVIDIA GeForce RTX4070 Ti",
+     "fps": "≈5 FPS · level1 tutorial,602s",
+     "context": {
+      "en": "Exact D16 branch reaches level-one tutorial for a 602 s run at about 5 FPS. This Linux result does not fix the separately observed Windows cyan rendering or establish console-value accuracy.",
+      "zh": "准确D16分支到第一关教程602秒，约5 FPS；Linux结果不修复另见的Windows青色渲染，也不证明主机数值正确。",
+      "ar": "فرع D16 المحدد يبلغ تدريب المرحلة الأولى602ث بنحو5 FPS؛ لا يصلح زرقة Windows ولا يثبت قيم الكونسول.",
+      "pt": "Ramo D16 chega ao tutorial nível1 por602 s a≈5 FPS; não corrige ciano Windows nem prova valores da consola.",
+      "de": "Exakter D16-Zweig erreicht Level1-Tutorial602 s mit≈5 FPS; kein Windows-Cyanfix oder Konsolenwertnachweis.",
+      "fr": "Branche D16 atteint tutoriel niveau1 pendant602 s à≈5 FPS; ni correctif cyan Windows ni valeurs console prouvées.",
+      "es": "Rama D16 llega al tutorial nivel1 por602 s a≈5 FPS; no corrige cian Windows ni prueba valores consola."
+     }
+    }
+   ],
+   "media": []
+  }
+ ],
+ "borderlands-4": [
+  {
+   "id": "11425-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/issues/11425",
+   "updated": "2026-10-27T19:09:09Z",
+   "testDate": null,
+   "build": "main eece5da035 vs894f617c6e on99b8446cbc",
+   "os": "Linux",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX4070 Ti",
+   "driver": "615.71.09",
+   "version": "01.100.000",
+   "patched": true,
+   "summary": {
+    "en": "Local branch runs for 603 s without the D16 refusal that stops main at 101 s. The comment does not identify an interactive scene; lack of refusal is not a gameplay or speed result.",
+    "zh": "本地分支603秒未触发main在101秒的D16拒绝；评论未识别交互场景，无拒绝不等于游戏或性能结果。",
+    "ar": "الفرع المحلي603ث بلا رفض D16 الذي يوقف main عند101ث؛ لا مشهد تفاعلي محدد، غياب الرفض ليس لعباً أو سرعة.",
+    "pt": "Ramo local603 s sem recusa D16 que para main aos101 s; cena interativa não identificada, não prova jogo/velocidade.",
+    "de": "Lokaler Zweig603 s ohne D16-Stop von Main bei101 s; interaktive Szene unbenannt, kein Spiel-/Geschwindigkeitsnachweis.",
+    "fr": "Branche locale603 s sans refus D16 de main à101 s; scène interactive non identifiée, sans résultat jeu/vitesse.",
+    "es": "Rama local603 s sin rechazo D16 de main a101 s; escena interactiva no identificada, sin resultado juego/velocidad."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "metal-gear-solid-master-collection": [
+  {
+   "id": "7922-windows-review-20261028",
+   "platform": "windows",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/7922#issuecomment-6449747475",
+   "updated": "2026-10-27T18:02:28Z",
+   "testDate": null,
+   "build": "#7922 4844a289c2 · with/without SPANNED wave; 997/1000-style baseline arms still fail",
+   "os": "Windows",
+   "cpu": null,
+   "gpu": "AMD Radeon RX6700 XT",
+   "driver": "32.0.21045.16010",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Two exact-head 330 s boots reach title with either wave mode and no hang. Other closely related arms still fail; this narrow route does not establish gameplay or a universal shared-memory fix.",
+    "zh": "准确构建两次330秒启动，两种wave模式均到标题无挂起；其他近邻组合仍失败，仅此路径不证明游戏或普适共享内存修复。",
+    "ar": "محاولتان330ث بالرأس المحدد تبلغان العنوان بكلا وضعي wave بلا تعليق؛ أذرع قريبة تفشل، فلا لعب أو إصلاح شامل.",
+    "pt": "Dois arranques330 s chegam ao título com ambos modos wave; variantes próximas falham, sem jogo ou correção geral comprovada.",
+    "de": "Zwei330-s-Starts erreichen Titel mit beiden Wave-Modi; nahe Varianten scheitern, kein Spiel- oder universeller Shared-Memory-Fix.",
+    "fr": "Deux démarrages330 s atteignent titre dans les deux modes wave; variantes proches échouent, sans jeu ou correctif général prouvé.",
+    "es": "Dos arranques330 s llegan al título en ambos modos wave; variantes próximas fallan, sin juego ni arreglo general probado."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "call-of-duty-black-ops-ii": [
+  {
+   "id": "11967-linux-shader-prep-review-20261028",
+   "platform": "linux",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11967#issuecomment-6445322283",
+   "updated": "2026-10-27T14:57:34Z",
+   "testDate": null,
+   "build": "main eece5da035 +#9656 · control ed3b6566a2c6 vs #11967 8745883fc2b6 · worst hitch1453–1475→1324–1360ms · no ShaderCache/warm NVIDIA cache",
+   "os": "Ubuntu26.04 Linux7.0.0-38",
+   "cpu": "Intel Core i7-13700K",
+   "gpu": "NVIDIA GeForce RTX4070 Ti",
+   "driver": "615.71",
+   "version": "01.010.000",
+   "patched": true,
+   "summary": {
+    "en": "Three 180 s campaign pairs reduce shader preparation cost and worst loading hitch, not a measured gameplay FPS gain. Millions of trace events are dropped, and present counts vary with scene; later PR heads are not substituted.",
+    "zh": "三组180秒战役对照降低shader准备开销及最重加载卡顿，不是已测游戏FPS增益；追踪丢失数百万事件，场景不同使呈现数不同，不替换后续PR构建。",
+    "ar": "ثلاثة أزواج حملة180ث تخفض تحضير shaders وأسوأ تحميل، لا مكسب FPS لعب مقاس. ملايين أحداث مفقودة وعد الصور يتغير بالمشهد؛ لا تبديل برؤوس أحدث.",
+    "pt": "Três pares campanha180 s reduzem preparação/hitch de carga, sem ganho FPS medido. Milhões de eventos perdidos e cenas variáveis; heads posteriores não substituídos.",
+    "de": "Drei180-s-Kampagnenpaare senken Shaderkosten/Ladehänger, kein gemessener Spiel-FPS-Gewinn. Millionen verlorene Ereignisse, variable Szenen; spätere Köpfe nicht ersetzt.",
+    "fr": "Trois paires campagne180 s réduisent préparation/blocage chargement, sans gain FPS de jeu mesuré. Millions d’événements perdus, scènes variables; heads ultérieurs non substitués.",
+    "es": "Tres parejas campaña180 s reducen preparación/parón de carga, sin ganancia FPS de juego medida. Millones de eventos perdidos y escenas variables; heads posteriores no sustituidos."
+   },
+   "benchmarks": [],
+   "media": []
+  },
+  {
+   "id": "12039-linux-artifact-review-20261028",
+   "platform": "linux",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/12039#issuecomment-6449512144",
+   "updated": "2026-10-27T17:51:05Z",
+   "testDate": null,
+   "build": "same ed3b6566a2c6 +#9656 vs #12039 2bb6ee4de3 ·3×180s · valid title pairs−14.5/17.4%",
+   "os": "Ubuntu26.04 Linux7.0.0-38",
+   "cpu": "Intel Core i7-13700K",
+   "gpu": "NVIDIA GeForce RTX4070 Ti",
+   "driver": "615.71",
+   "version": "01.010.000",
+   "patched": true,
+   "summary": {
+    "en": "Further matched campaign pairs reduce title shader-preparation work in two valid pairs; an unmatched first pair is excluded. Worker time and worst hitch are mixed, with dropped trace events. No FPS improvement is claimed.",
+    "zh": "进一步战役配对仅两组有效样本降低主线程shader准备；首组不匹配排除。worker时间及最重卡顿有增有减，追踪有丢失，不宣称FPS提升。",
+    "ar": "أزواج حملة لاحقة تخفض تحضير العنوان في زوجين صالحين؛ الأول غير المتطابق مستبعد. وقت workers وأسوأ توقف مختلطان مع أحداث مفقودة؛ بلا ادعاء FPS.",
+    "pt": "Pares posteriores reduzem preparação em dois pares válidos; primeiro não emparelhado excluído. Workers/hitch mistos, eventos perdidos; sem alegar ganho FPS.",
+    "de": "Weitere Kampagnenpaare senken Vorbereitung in zwei gültigen Paaren; unpassendes erstes ausgeschlossen. Worker/Hänger gemischt, Ereignisverluste; kein FPS-Gewinn behauptet.",
+    "fr": "Paires suivantes réduisent préparation sur deux paires valides; première non appariée exclue. Workers/blocage mitigés, événements perdus; aucun gain FPS revendiqué.",
+    "es": "Parejas posteriores reducen preparación en dos válidas; primera no comparable excluida. Workers/parón mixtos, eventos perdidos; sin afirmar mejora FPS."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "pragmata": [
+  {
+   "id": "7844-linux-review-20261028",
+   "platform": "linux",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/7844#issuecomment-6442053786",
+   "updated": "2026-10-27T12:37:18Z",
+   "testDate": null,
+   "build": "main e61a7c7e24 +#10935/#8091/#10304/#6743/#6782/#10351/#7446/#6498/#9950/#10469/#10492/#10497/#11580/#4449 vs +#7844 31342e632b",
+   "os": "Arch Linux7.2.11 ·32GB RAM",
+   "cpu": "AMD Ryzen7 9800X3D",
+   "gpu": "AMD Radeon RX9070 XT 16GB",
+   "driver": "RADV26.2.5",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Two cold/warm 1200 s pairs improve cinematic presentation rate to 1.31/1.33 from 1.13/1.17, on a base with fourteen open PRs. Every run freezes on the same image after 540–575 s; repeating that frame is not progress.",
+    "zh": "含14项开放PR的基线上，两组冷／热1200秒对照片头呈现率1.13／1.17→1.31／1.33；所有运行540–575秒后停同一画面，重复呈现不是进度。",
+    "ar": "زوجان بارد/دافئ1200ث يرفعان عرض السينمائي1.13/1.17→1.31/1.33 على14 PR؛ كل المحاولات تجمد الصورة540–575ث، تكرارها ليس تقدماً.",
+    "pt": "Dois pares frio/quente1200 s sobem1,13/1,17→1,31/1,33 na cinemática sobre14 PRs; todos congelam a mesma imagem540–575 s, repeti-la não é progresso.",
+    "de": "Zwei kalte/warme1200-s-Paare steigern Intro1,13/1,17→1,31/1,33 auf14-PR-Basis; alle frieren bei540–575 s am selben Bild ein, Wiederholung kein Fortschritt.",
+    "fr": "Deux paires froid/chaud1200 s améliorent cinématique1,13/1,17→1,31/1,33 sur14 PR; toutes figent la même image à540–575 s, répétition sans progression.",
+    "es": "Dos parejas frío/caliente1200 s mejoran cinemática1,13/1,17→1,31/1,33 sobre14 PR; todas congelan misma imagen540–575 s, repetirla no es progreso."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "lego-batman-legacy-dark-knight": [
+  {
+   "id": "8091-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/8091#issuecomment-6449570528",
+   "updated": "2026-10-27T19:04:34Z",
+   "testDate": null,
+   "build": "baseline b6fe513b9 vs #8091 1c7f19e716 ·5×110s; separate894f617c6e +#8091 · bisect identifies #8898 merge9bbb7 firstbad",
+   "os": "Ubuntu Linux7.0",
+   "cpu": null,
+   "gpu": "AMD Radeon RX9060 XT",
+   "driver": "RADV26.0.8",
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Five candidate seizure-warning runs stabilize near 4 presents/s; baseline varies widely and hangs once. A later D16 branch still collapses its import budget; combining #8091 reaches only the warning, not gameplay.",
+    "zh": "五次候选光敏警告运行约4次呈现／秒；基线波动大且一次挂起。后续D16分支仍导入预算崩塌，组合#8091也只到警告，不是游戏。",
+    "ar": "خمس محاولات تحذير مرشح تستقر قرب4 عرض/ث؛ الأساس متغير ويتعلق مرة. فرع D16 لاحق ينهار بميزانية الاستيراد، ودمج #8091 يبلغ التحذير فقط.",
+    "pt": "Cinco candidatos no aviso estabilizam≈4 apresentações/s; base varia e bloqueia uma vez. Ramo D16 posterior perde orçamento, com #8091 só chega ao aviso, não jogo.",
+    "de": "Fünf Kandidaten am Warnbild stabilisieren≈4 Bilder/s; Basis schwankt/hängt einmal. Späterer D16-Zweig verliert Budget, mit #8091 nur Warnung, kein Spiel.",
+    "fr": "Cinq candidats à l’avertissement stabilisent≈4 présentations/s; base variable, un gel. Branche D16 ultérieure perd budget; avec #8091 seulement avertissement, pas jeu.",
+    "es": "Cinco candidatos en aviso estabilizan≈4 presentaciones/s; base variable y un cuelgue. Rama D16 posterior pierde presupuesto; con #8091 solo aviso, no juego."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "marvels-spider-man-2": [
+  {
+   "id": "9790-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/9790#issuecomment-6425760140",
+   "updated": "2026-10-26T19:48:30Z",
+   "testDate": null,
+   "build": "main f95acfc948 vs +#9790 6779c1495a; separate #9969 34edfd45ff same VRAM outcome · clean merges · guard270/223s",
+   "os": "Linux7.2.11 · fresh shader caches",
+   "cpu": null,
+   "gpu": "AMD Radeon RX9070 XT",
+   "driver": "RADV26.2.5",
+   "version": "01.004.003",
+   "patched": true,
+   "summary": {
+    "en": "Exact PR passes the main recompiler stop twice, but both runs turn black after logos and exhaust available VRAM until a guard stops them. Saved older shader replays still refuse; passing the current dispatch is not gameplay.",
+    "zh": "准确PR两次越过main重编译停止，但标志后黑屏且可用显存耗尽，由保护器终止；旧shader回放仍拒绝，本次dispatch通过不是游戏。",
+    "ar": "PR محدد يتجاوز توقف main مرتين لكن الشاشة تسود بعد الشعارات وتنخفض VRAM حتى إيقاف الحارس. replay قديم ما زال يرفض؛ لا لعب مثبت.",
+    "pt": "PR passa duas vezes a recusa main, mas depois dos logos fica preto e esgota VRAM até ao guard. Replays antigos ainda recusam; dispatch não prova jogo.",
+    "de": "Exakter PR passiert Main-Stop zweimal, danach schwarz/VRAM-Erschöpfung bis Schutzabbruch. Alte Shader-Replays verweigern weiter; Dispatch-Erfolg kein Spiel.",
+    "fr": "PR exact franchit deux fois l’arrêt main, puis noir/VRAM épuisée jusqu’au garde. Anciens replays refusent encore; dispatch réussi sans jeu prouvé.",
+    "es": "PR exacto pasa dos veces parada main, luego negro/VRAM agotada hasta guard. Replays antiguos aún rechazan; dispatch no prueba juego."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "007-first-light": [
+  {
+   "id": "9129-linux-review-20261028",
+   "platform": "linux",
+   "stage": "menu",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/9129#issuecomment-6425761111",
+   "updated": "2026-10-26T19:48:33Z",
+   "testDate": null,
+   "build": "main f95acfc948 includes#9396 vs +#9129 fa02afeb47 · LD_PRELOAD sampler · Cross every30s",
+   "os": "Linux",
+   "cpu": null,
+   "gpu": "AMD Radeon RX9070 XT",
+   "driver": "RADV26.2.5",
+   "version": "01.018.000",
+   "patched": true,
+   "summary": {
+    "en": "One pair stays on First Launch Options for fifteen minutes. The candidate lowers sampled RSS from 14.6 to 9.2 GB and live relocation allocations, but no gameplay, FPS or free-control improvement follows.",
+    "zh": "一组对照十五分钟停在首次启动选项；候选采样RSS14.6→9.2 GB并减少重定位活跃分配，不代表游戏、FPS或自由操控改善。",
+    "ar": "زوج واحد يبقى على خيارات البداية15د؛ المرشح يخفض RSS14.6→9.2 GB والتخصيصات، بلا دليل لعب أو FPS أو تحكم حر.",
+    "pt": "Um par fica nas opções iniciais15 min; candidato reduz RSS14,6→9,2 GB e alocações, sem provar jogo/FPS/controlos.",
+    "de": "Ein Paar bleibt15 min bei Erststartoptionen; Kandidat senkt RSS14,6→9,2 GB und Allokationen, kein Spiel/FPS/Steuerungsgewinn belegt.",
+    "fr": "Une paire reste aux options initiales15 min; candidat réduit RSS14,6→9,2 Go et allocations, sans gain jeu/FPS/commandes prouvé.",
+    "es": "Una pareja queda en opciones iniciales15 min; candidato reduce RSS14,6→9,2 GB y asignaciones, sin probar juego/FPS/controles."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "mxgp-26": [
+  {
+   "id": "11630-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/11630",
+   "updated": "2026-10-27T19:11:48Z",
+   "testDate": null,
+   "build": "main74acfad/abed +#11616/#11617/#11575/#11630 1e42382d8b then #11611 b5eebed6ca on c60b527966 · GCC15.2",
+   "os": "Linux",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX4070 Ti",
+   "driver": "615.71.09",
+   "version": "01.003.000",
+   "patched": true,
+   "summary": {
+    "en": "Successive local pool/redirect/async fixes move the startup stop to HTTP/1, then a DNS error in a no-network sandbox. Zero rendered gameplay is established; the transport has not been tested against a real network here.",
+    "zh": "连续本地池／重定向／异步修改将启动停止推进到HTTP／1，随后无网络沙箱DNS错误；未建立游戏渲染，未在此验证真实网络。",
+    "ar": "إصلاحات محلية للحوض/التحويل/async تنقل التوقف إلى HTTP/1 ثم DNS في sandbox بلا شبكة؛ لا لعب مرئي أو نقل حقيقي مثبت.",
+    "pt": "Fixes locais pool/redirect/async avançam até HTTP/1 e erro DNS em sandbox sem rede; sem jogo ou transporte real validado.",
+    "de": "Lokale Pool/Redirect/Async-Fixes verschieben Stop zu HTTP/1 und DNS in Netzwerksandbox; kein Spiel oder echter Transport belegt.",
+    "fr": "Fixes locaux pool/redirection/async avancent vers HTTP/1 puis DNS sans réseau; ni jeu ni transport réel validé.",
+    "es": "Fixes locales pool/redirección/async avanzan a HTTP/1 y DNS sin red; sin juego ni transporte real validado."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "ridge-racer": [
+  {
+   "id": "5209-windows-review-20261028",
+   "platform": "windows",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/5209#issuecomment-6429696714",
+   "updated": "2026-10-26T23:23:09Z",
+   "testDate": null,
+   "build": "main74acfad65b +#5209 · tested head not restated",
+   "os": "Windows11 26300",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX5080",
+   "driver": "617.42",
+   "version": "01.000.002",
+   "patched": true,
+   "summary": {
+    "en": "Local font changes restore horizontal CJK text while menu/race windows show 600 presents per ten seconds. No complete race or longer-session result is supplied.",
+    "zh": "本地字体修改恢复横排CJK文字，菜单／比赛窗口每10秒600次呈现；未提供完整比赛或长会话结果。",
+    "ar": "تعديل خط محلي يعيد CJK الأفقي وقائمة/سباق600 عرض/10ث؛ لا سباق كامل أو مدة أطول مثبتة.",
+    "pt": "Fonte local repõe CJK horizontal, menu/corrida600 apresentações/10 s; sem corrida completa ou sessão longa.",
+    "de": "Lokaler Fontfix stellt horizontales CJK wieder her, Menü/Rennen600 Bilder/10 s; kein komplettes Rennen/Langtest.",
+    "fr": "Police locale rétablit CJK horizontal, menu/course600 présentations/10 s; course complète/durée non vérifiées.",
+    "es": "Fuente local restaura CJK horizontal, menú/carrera600 presentaciones/10 s; sin carrera completa ni sesión larga."
+   },
+   "benchmarks": [
+    {
+     "cpu": null,
+     "gpu": "NVIDIA GeForce RTX5080",
+     "fps": "60 presents/s · menu/race windows",
+     "context": {
+      "en": "Local font changes restore horizontal CJK text while menu/race windows show 600 presents per ten seconds. No complete race or longer-session result is supplied.",
+      "zh": "本地字体修改恢复横排CJK文字，菜单／比赛窗口每10秒600次呈现；未提供完整比赛或长会话结果。",
+      "ar": "تعديل خط محلي يعيد CJK الأفقي وقائمة/سباق600 عرض/10ث؛ لا سباق كامل أو مدة أطول مثبتة.",
+      "pt": "Fonte local repõe CJK horizontal, menu/corrida600 apresentações/10 s; sem corrida completa ou sessão longa.",
+      "de": "Lokaler Fontfix stellt horizontales CJK wieder her, Menü/Rennen600 Bilder/10 s; kein komplettes Rennen/Langtest.",
+      "fr": "Police locale rétablit CJK horizontal, menu/course600 présentations/10 s; course complète/durée non vérifiées.",
+      "es": "Fuente local restaura CJK horizontal, menú/carrera600 presentaciones/10 s; sin carrera completa ni sesión larga."
+     }
+    }
+   ],
+   "media": []
+  }
+ ],
+ "tekken-dark-resurrection": [
+  {
+   "id": "5209-windows-review-20261028",
+   "platform": "windows",
+   "stage": "ingame",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/5209#issuecomment-6433426939",
+   "updated": "2026-10-27T04:02:03Z",
+   "testDate": null,
+   "build": "main74acfad65b +#5209 · exact tested head unknown",
+   "os": "Windows",
+   "cpu": null,
+   "gpu": "NVIDIA GeForce RTX5090",
+   "driver": null,
+   "version": null,
+   "patched": true,
+   "summary": {
+    "en": "Local font test renders a single HUD line at 112 s, but the comparison uses another scene and is not a controlled fidelity test. Character meshes still break into triangles.",
+    "zh": "本地字体测试112秒可见一行HUD，但对照为另一场景，不是受控画质验证；角色模型仍碎成三角形。",
+    "ar": "اختبار خط محلي يظهر سطر HUD عند112ث؛ المقارنة بمشهد آخر ليست اختبار دقة مضبوطاً، والشخصيات ما زالت مثلثات.",
+    "pt": "Teste de fonte mostra linha HUD aos112 s; comparação noutra cena não controla fidelidade, personagens continuam em triângulos.",
+    "de": "Lokaler Fonttest zeigt HUD-Zeile bei112 s; andere Vergleichsszene kein kontrollierter Bildtest, Figuren weiter Dreiecke.",
+    "fr": "Test police affiche ligne HUD à112 s; autre scène comparative sans contrôle fidélité, personnages toujours en triangles.",
+    "es": "Test fuente muestra línea HUD a112 s; comparación en otra escena no controla fidelidad, personajes aún en triángulos."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "marvels-wolverine": [
+  {
+   "id": "10256-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/pull/10256#issuecomment-6442673843",
+   "updated": "2026-10-27T13:08:33Z",
+   "testDate": null,
+   "build": "main aeeaefad9 vs local8fb5807f5; separate older4be control · main420s cap/candidate666s timing",
+   "os": "Linux6.12",
+   "cpu": "Intel Core i7-14700K",
+   "gpu": "NVIDIA GeForce RTX4070 SUPER",
+   "driver": "615.71.10",
+   "version": "01.001.005",
+   "patched": true,
+   "summary": {
+    "en": "Local AGC test eventually produces a 120-frame timing window with median about 5.35 s/frame. Scripted menu inputs do not identify interactive gameplay; main provides no comparable timing window within its cap, so no direct FPS gain is established.",
+    "zh": "本地AGC测试最终有120帧计时窗口，中位约5.35秒／帧；脚本菜单输入未识别交互游戏，main限时内无可比窗口，不能建立直接FPS增益。",
+    "ar": "اختبار AGC محلي ينتج نافذة120 إطار بوسيط5.35ث/إطار؛ إدخال قائمة مكتوب لا يثبت لعباً، وmain بلا نافذة مقارنة، لا مكسب FPS مباشر.",
+    "pt": "AGC local produz janela120 imagens com mediana5,35 s/imagem; entradas menu não identificam jogo e main sem janela comparável, sem ganho FPS direto.",
+    "de": "Lokales AGC liefert120-Bild-Fenster mit Median5,35 s/Bild; Skriptmenü belegt kein Spiel, Main ohne vergleichbares Fenster, kein direkter FPS-Gewinn.",
+    "fr": "AGC local produit fenêtre120 images à médiane5,35 s/image; entrées menu sans jeu identifié, main sans fenêtre comparable, aucun gain FPS direct.",
+    "es": "AGC local produce ventana120 imágenes con mediana5,35 s/imagen; entradas menú sin juego identificado, main sin ventana comparable, sin ganancia FPS directa."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ],
+ "double-dragon-gaiden": [
+  {
+   "id": "5621-linux-review-20261028",
+   "platform": "linux",
+   "stage": "boot",
+   "evidence": "community",
+   "source": "https://github.com/boykopovar/AnyPS5/issues/5621#issuecomment-6441972956",
+   "updated": "2026-10-27T12:33:14Z",
+   "testDate": null,
+   "build": "main eece5da03 includes#6586 merge2c98914",
+   "os": "Linux",
+   "cpu": null,
+   "gpu": null,
+   "driver": null,
+   "version": null,
+   "patched": false,
+   "summary": {
+    "en": "New main passes the old module-initialization issue but opens a window then aborts near 25 s at an Http2 redirect. Merging the initialization fix does not establish gameplay.",
+    "zh": "新main越过旧模块初始化问题，打开窗口后约25秒在Http2重定向终止；初始化修复合并不等于游戏通过。",
+    "ar": "main جديد يتجاوز تهيئة الوحدة لكنه يفتح نافذة ثم يفشل قرب25ث عند Http2 redirect؛ الدمج لا يثبت اللعب.",
+    "pt": "Main novo passa inicialização, abre janela e aborta aos≈25 s no redirect Http2; merge não prova jogo.",
+    "de": "Neues Main passiert Modulinitialisierung, öffnet Fenster und bricht nach≈25 s an Http2-Redirect ab; Merge kein Spielnachweis.",
+    "fr": "Nouveau main passe initialisation, ouvre fenêtre puis échoue vers25 s en redirection Http2; fusion sans jeu établi.",
+    "es": "Main nuevo pasa inicialización, abre ventana y aborta hacia25 s en redirect Http2; merge no prueba juego."
+   },
+   "benchmarks": [],
+   "media": []
+  }
+ ]
+};
+for(const [slug,reports] of Object.entries(nightlyReports28)){maintenanceReports[slug]=[...(maintenanceReports[slug]||[]),...reports];maintenanceReviewed[slug]="2026-10-28";}
+maintenanceGames.push(...([
+ {
+  "slug": "planet-zoo",
+  "name": "Planet Zoo: Console Edition",
+  "titleId": "PPSA18026",
+  "edition": "PS5 · PPSA18026",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "monopoly",
+  "name": "MONOPOLY",
+  "titleId": "PPSA17419",
+  "edition": "PS5 · PPSA17419",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "the-medium",
+  "name": "The Medium",
+  "titleId": "PPSA03718",
+  "edition": "PS5 · PPSA03718",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "my-friend-peppa-pig",
+  "name": "My Friend Peppa Pig",
+  "titleId": "PPSA03706",
+  "edition": "PS5 · PPSA03706",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "call-of-duty-modern-warfare-iii",
+  "name": "Call of Duty: Modern Warfare III",
+  "titleId": "PPSA24263",
+  "edition": "PS5 · PPSA24263",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "river-city-girls",
+  "name": "River City Girls",
+  "titleId": "PPSA04075",
+  "edition": "PS5 · PPSA04075",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "gigabash",
+  "name": "GigaBash",
+  "titleId": "PPSA06094",
+  "edition": "PS5 · PPSA06094",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "codex-ps5-homebrew",
+  "name": "Codex-PS5 · homebrew prototype",
+  "titleId": "PPSA99105",
+  "edition": "PS5 · PPSA99105",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "project-zero-maiden-black-water",
+  "name": "PROJECT ZERO: MAIDEN OF BLACK WATER",
+  "titleId": "PPSA04333",
+  "edition": "PS5 · PPSA04333",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "carmen-sandiego",
+  "name": "Carmen Sandiego",
+  "titleId": "PPSA25256",
+  "edition": "PS5 · PPSA25256",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "silent-hill-townfall",
+  "name": "SILENT HILL: Townfall",
+  "titleId": "PPSA33286",
+  "edition": "PS5 · PPSA33286",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "cyberpunk-2077-ppsa03974",
+  "name": "Cyberpunk 2077 · PPSA03974",
+  "titleId": "PPSA03974",
+  "edition": "PS5 · PPSA03974",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "crimson-desert-ppsa25286",
+  "name": "Crimson Desert · PPSA25286",
+  "titleId": "PPSA25286",
+  "edition": "PS5 · PPSA25286",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "fatal-frame-ii-crimson-butterfly-remake",
+  "name": "FATAL FRAME II: Crimson Butterfly REMAKE",
+  "titleId": "PPSA32802",
+  "edition": "PS5 · PPSA32802",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "alan-wake-remastered",
+  "name": "Alan Wake Remastered",
+  "titleId": "PPSA01924",
+  "edition": "PS5 · PPSA01924",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "echoes-of-the-end",
+  "name": "Echoes of the End",
+  "titleId": "PPSA25636",
+  "edition": "PS5 · PPSA25636",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "human-fall-flat",
+  "name": "Human: Fall Flat",
+  "titleId": "PPSA02429",
+  "edition": "PS5 · PPSA02429",
+  "reviewed": "2026-10-28"
+ },
+ {
+  "slug": "r-type-final-3-evolved",
+  "name": "R-Type Final 3 Evolved",
+  "titleId": "PPSA08395",
+  "edition": "PS5 · PPSA08395",
+  "reviewed": "2026-10-28"
+ }
+] as Omit<Game,"reports">[]).map(game=>({...game,reports:[]})));
+
+for(const slug of ["planet-zoo", "monopoly", "the-medium", "my-friend-peppa-pig", "call-of-duty-modern-warfare-iii", "river-city-girls", "gigabash", "codex-ps5-homebrew", "project-zero-maiden-black-water", "carmen-sandiego", "silent-hill-townfall", "cyberpunk-2077-ppsa03974", "crimson-desert-ppsa25286", "fatal-frame-ii-crimson-butterfly-remake", "alan-wake-remastered", "echoes-of-the-end", "human-fall-flat", "r-type-final-3-evolved", "astro-bot-ppsa21567", "persona-5-royal", "ball-x-pit", "dusk-diver-2", "jumanji-ppsa03973", "unbound-worlds-apart", "oregon-trail", "sea-of-stars", "blue-reflection-quartet", "trails-sky-2nd-chapter", "bendy-dark-revival", "hamster-playground", "heavenly-bodies", "alan-wake-2", "assassins-creed-mirage", "resident-evil-requiem", "ghost-of-yotei", "ghost-of-tsushima-directors-cut", "gta-v", "gta-v-ppsa04263", "lego-builders-journey", "sonic-origins", "sonic-2006-recompiled", "ratchet-clank-rift-apart", "god-of-war-sons-of-sparta", "astro-bot", "lego-horizon-adventures", "super-meat-boy-3d", "borderlands-4", "metal-gear-solid-master-collection", "call-of-duty-black-ops-ii", "pragmata", "lego-batman-legacy-dark-knight", "marvels-spider-man-2", "007-first-light", "mxgp-26", "ridge-racer", "tekken-dark-resurrection", "marvels-wolverine", "double-dragon-gaiden", "stray", "yakuza-0-directors-cut", "minecraft", "palworld", "mgs4-master-collection", "mewgenics", "demons-souls", "castlevania-belmonts-curse"]){maintenanceReviewed[slug]="2026-10-28";}

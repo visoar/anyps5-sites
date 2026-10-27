@@ -576,3 +576,34 @@ extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
  ]
 });
 extraArticles.find(article=>article.slug==="troubleshooting")!.reviewed="2026-10-27";
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
+ "id": "runtime-switch-comparison",
+ "title": {
+  "en": "Compare one exact build and scene at a time",
+  "zh": "每次比较准确构建与同一场景",
+  "ar": "قارن بناءً ومشهداً محددين",
+  "pt": "Comparar build exato e a mesma cena",
+  "de": "Exakten Build und gleiche Szene vergleichen",
+  "fr": "Comparer build exact et même scène",
+  "es": "Comparar build exacto y misma escena"
+ },
+ "body": [
+  {
+   "en": "Main’s APS5_AB uses seconds:switch[+switch...] and toggles runtime switches at flip packets; settle defaults to2 seconds and start can be a flip count or seconds. A private fork’s comma syntax is not this interface. ANYPS5_LANGUAGE accepts0–30; invalid overlay/language values can fail rather than silently default. APS5_EXACT_DRAW_WRITES is now on when unset, with0 selecting approximation. APS5_TIME_SCALE accepts positive fractions, changes guest clocks and is not an FPS multiplier. STRICT_DESCRIPTOR_WEBS selects throwing diagnosis instead of default fault selection, not a compatibility cure. Record every override, cache and trace-event loss before comparing. PREBUILD_THREADS, worker affinity and profiling change the workload, so do not combine gains from different runs.",
+   "zh": "main的APS5_AB使用seconds:switch[+switch...]，在flip处切换运行开关，settle默认2秒，start可用flip计数或秒；私有fork逗号语法不适用于此接口。ANYPS5_LANGUAGE仅0–30，非法语言／叠加层值可能失败而非静默回退。APS5_EXACT_DRAW_WRITES未设时现默认开启，0选近似。APS5_TIME_SCALE接受正小数，改guest时钟而非FPS倍增；STRICT_DESCRIPTOR_WEBS选抛错诊断而非默认故障选择，不是兼容药方。记录全部覆盖、缓存和追踪事件丢失；PREBUILD_THREADS、线程亲和与profiling会改变负载，不相加不同运行的增益。",
+   "ar": "APS5_AB يستخدم seconds:switch[+switch...] عند flip؛ settle افتراضي2ث وstart عدد flip أو ثوان. فاصلة الفرع الخاص ليست الواجهة هذه. ANYPS5_LANGUAGE يقبل0–30؛ القيم غير الصالحة قد تفشل. EXACT_DRAW_WRITES افتراضياً مفعل،0 تقريب. TIME_SCALE يقبل كسوراً موجبة ويغير ساعة الضيف لا FPS. STRICT_DESCRIPTOR_WEBS تشخيص يرمي لا علاج توافق. سجل الخيارات والكاش وأحداث التتبع المفقودة؛ threads/affinity/profiling تغير الحمل فلا تجمع مكاسب مختلفة.",
+   "pt": "APS5_AB usa seconds:switch[+switch...] nos flips; settle2 s, start por flips/segundos. Vírgulas de forks não são esta interface. ANYPS5_LANGUAGE0–30, inválidos podem falhar. EXACT_DRAW_WRITES ativo por omissão,0 aproxima. TIME_SCALE aceita frações positivas, altera relógio e não multiplica FPS. STRICT_DESCRIPTOR_WEBS é diagnóstico, não cura. Registe opções/cache/eventos perdidos; threads/afinidade/profiling mudam carga, ganhos não se somam.",
+   "de": "APS5_AB nutzt seconds:switch[+switch...] an Flips; settle2 s, start Flips/Sekunden. Fork-Kommasyntax gilt hier nicht. ANYPS5_LANGUAGE0–30, ungültige Werte können scheitern. EXACT_DRAW_WRITES standardmäßig an,0 näherungsweise. TIME_SCALE positive Brüche ändern Gastuhr statt FPS. STRICT_DESCRIPTOR_WEBS Diagnose statt Kompatibilitätsheilung. Optionen/Cache/Ereignisverluste erfassen; Threads/Affinität/Profiling verändern Last, Gewinne nicht addieren.",
+   "fr": "APS5_AB utilise seconds:switch[+switch...] aux flips; settle2 s, start flips/secondes. Virgules de fork non applicables. ANYPS5_LANGUAGE0–30, valeurs invalides peuvent échouer. EXACT_DRAW_WRITES actif par défaut,0 approximation. TIME_SCALE fractions positives change horloge invitée, pas FPS. STRICT_DESCRIPTOR_WEBS diagnostic, pas remède. Notez options/cache/événements perdus; threads/affinité/profiling modifient charge, gains non additionnables.",
+   "es": "APS5_AB usa seconds:switch[+switch...] en flips; settle2 s, start flips/segundos. Comas de fork no aplicables. ANYPS5_LANGUAGE0–30, inválidos pueden fallar. EXACT_DRAW_WRITES activo por defecto,0 aproximación. TIME_SCALE fracciones positivas cambia reloj guest, no FPS. STRICT_DESCRIPTOR_WEBS diagnóstico, no cura. Registra opciones/caché/eventos perdidos; hilos/afinidad/profiling cambian carga, ganancias no sumables."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream main · d13b3d7c55",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/d13b3d7c55a433c7a5040076d849dbe59fad4b53/docs/dev/ENVIRONMENT.md"
+  }
+ ]
+});
+extraArticles.find(article=>article.slug==="troubleshooting")!.reviewed="2026-10-28";

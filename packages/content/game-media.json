@@ -2236,5 +2236,110 @@
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1015/b3a91fa43661ced3d57a908c26f5bfab057584343be6f618.png",
     "screenshots": [],
     "checked": "2026-10-27"
+  },
+  "planet-zoo": {
+    "source": "https://store.playstation.com/en-us/product/UP2514-PPSA18027_00-PLANETZOOOOOOOOO",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202401/1811/851a87ff8fed13fc7f2d35252bdd94511f410a07ac270194.png",
+    "screenshots": [],
+    "checked": "2026-10-28"
+  },
+  "monopoly": {
+    "source": "https://store.playstation.com/en-us/concept/10008585",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2015/3c031e939d7f1116d7a2f56621a6a14093b8e8373e82f2be.jpg",
+    "screenshots": [],
+    "checked": "2026-10-28"
+  },
+  "the-medium": {
+    "source": "https://store.playstation.com/en-us/concept/10002899",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202603/1814/078d90da8167fac06a072cf74c05496936befae74409e98f.jpg",
+    "screenshots": [],
+    "checked": "2026-10-28"
+  },
+  "my-friend-peppa-pig": {
+    "source": "https://store.playstation.com/en-us/product/UP3824-PPSA03705_00-8652666117318371/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202109/1317/RwVujQ3nJo8aCIvVGSmxC5kl.png",
+    "screenshots": [],
+    "checked": "2026-10-28"
+  },
+  "river-city-girls": {
+    "source": "https://store.playstation.com/en-us/concept/234070",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202205/1122/9cDHyiZIRDsAo5dPbyB5skit.png",
+    "screenshots": [],
+    "checked": "2026-10-28"
+  },
+  "gigabash": {
+    "source": "https://store.playstation.com/en-us/product/UP5397-PPSA06094_00-9152601786774628/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202208/2103/Co8F5SntE32qmC5rTtDdXfjg.jpg",
+    "screenshots": [],
+    "checked": "2026-10-28"
+  },
+  "carmen-sandiego": {
+    "source": "https://store.playstation.com/en-us/concept/10012106",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1100/40b50ee051d2482fe0a5bc496075405c5671342fd60c9a7c.jpg",
+    "screenshots": [],
+    "checked": "2026-10-28"
+  },
+  "silent-hill-townfall": {
+    "source": "https://www.playstation.com/en-us/games/silent-hill-townfall/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1407/420dcf45979ace1b7c97122a2dc0eb479428590ecab89c2b.png",
+    "screenshots": [],
+    "checked": "2026-10-28"
+  },
+  "fatal-frame-ii-crimson-butterfly-remake": {
+    "source": "https://store.playstation.com/en-us/product/JP0106-PPSA32802_00-CRIBATTFFF000020",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202510/0907/821dc3a00430751c9dede410e6cdb5bc11c708e7b727fb60.jpg",
+    "screenshots": [],
+    "checked": "2026-10-28"
+  },
+  "r-type-final-3-evolved": {
+    "source": "https://store.playstation.com/en-gb/product/EP1063-PPSA08395_00-0000000000000001",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202103/1000/JL4zTKk5ohB4DxDOt9a8PzE9.png",
+    "screenshots": [],
+    "checked": "2026-10-28"
+  },
+  "human-fall-flat": {
+    "source": "https://store.playstation.com/en-us/concept/227139/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202602/2414/8397d69b6a24f42f0357ffee13e53cc2535493b0692f4f76.jpg",
+    "screenshots": [],
+    "checked": "2026-10-28"
+  },
+  "call-of-duty-modern-warfare-iii": {
+    "source": "https://www.playstation.com/en-us/games/call-of-duty-modern-warfare-iii/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1722/15f4ab1e0fe6a37609b164362a653c0e5bcee98a861d0f10.png",
+    "screenshots": [],
+    "checked": "2026-10-28"
+  },
+  "crimson-desert-ppsa25286": {
+    "source": "https://www.playstation.com/en-us/games/crimson-desert/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202608/2006/e8f306c89efa555a13e4d3910dafda994a14b2355f342802.png",
+    "screenshots": [],
+    "checked": "2026-10-28"
+  },
+  "cyberpunk-2077-ppsa03974": {
+    "source": "https://www.playstation.com/en-us/games/cyberpunk-2077/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/cKZ4tKNFj9C00giTzYtH8PF1.png",
+    "screenshots": [],
+    "checked": "2026-10-28"
+  },
+  "alan-wake-remastered": {
+    "source": "https://www.playstation.com/en-us/games/alan-wake-remastered/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/img/rnd/202109/2709/wMyl8RQ9Tvi99wjgPPEBGVyX.png",
+    "screenshots": [],
+    "checked": "2026-10-28"
   }
 }
