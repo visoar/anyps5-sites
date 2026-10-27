@@ -26513,35 +26513,6 @@ const nightlyReports28:Record<string,Report[]>={
    "media": []
   }
  ],
- "007-first-light": [
-  {
-   "id": "9129-linux-review-20261028",
-   "platform": "linux",
-   "stage": "menu",
-   "evidence": "community",
-   "source": "https://github.com/boykopovar/AnyPS5/pull/9129#issuecomment-6425761111",
-   "updated": "2026-10-26T19:48:33Z",
-   "testDate": null,
-   "build": "main f95acfc948 includes#9396 vs +#9129 fa02afeb47 · LD_PRELOAD sampler · Cross every30s",
-   "os": "Linux",
-   "cpu": null,
-   "gpu": "AMD Radeon RX9070 XT",
-   "driver": "RADV26.2.5",
-   "version": "01.018.000",
-   "patched": true,
-   "summary": {
-    "en": "One pair stays on First Launch Options for fifteen minutes. The candidate lowers sampled RSS from 14.6 to 9.2 GB and live relocation allocations, but no gameplay, FPS or free-control improvement follows.",
-    "zh": "一组对照十五分钟停在首次启动选项；候选采样RSS14.6→9.2 GB并减少重定位活跃分配，不代表游戏、FPS或自由操控改善。",
-    "ar": "زوج واحد يبقى على خيارات البداية15د؛ المرشح يخفض RSS14.6→9.2 GB والتخصيصات، بلا دليل لعب أو FPS أو تحكم حر.",
-    "pt": "Um par fica nas opções iniciais15 min; candidato reduz RSS14,6→9,2 GB e alocações, sem provar jogo/FPS/controlos.",
-    "de": "Ein Paar bleibt15 min bei Erststartoptionen; Kandidat senkt RSS14,6→9,2 GB und Allokationen, kein Spiel/FPS/Steuerungsgewinn belegt.",
-    "fr": "Une paire reste aux options initiales15 min; candidat réduit RSS14,6→9,2 Go et allocations, sans gain jeu/FPS/commandes prouvé.",
-    "es": "Una pareja queda en opciones iniciales15 min; candidato reduce RSS14,6→9,2 GB y asignaciones, sin probar juego/FPS/controles."
-   },
-   "benchmarks": [],
-   "media": []
-  }
- ],
  "mxgp-26": [
   {
    "id": "11630-linux-review-20261028",
@@ -26833,4 +26804,4 @@ maintenanceGames.push(...([
  }
 ] as Omit<Game,"reports">[]).map(game=>({...game,reports:[]})));
 
-for(const slug of ["planet-zoo", "monopoly", "the-medium", "my-friend-peppa-pig", "call-of-duty-modern-warfare-iii", "river-city-girls", "gigabash", "codex-ps5-homebrew", "project-zero-maiden-black-water", "carmen-sandiego", "silent-hill-townfall", "cyberpunk-2077-ppsa03974", "crimson-desert-ppsa25286", "fatal-frame-ii-crimson-butterfly-remake", "alan-wake-remastered", "echoes-of-the-end", "human-fall-flat", "r-type-final-3-evolved", "astro-bot-ppsa21567", "persona-5-royal", "ball-x-pit", "dusk-diver-2", "jumanji-ppsa03973", "unbound-worlds-apart", "oregon-trail", "sea-of-stars", "blue-reflection-quartet", "trails-sky-2nd-chapter", "bendy-dark-revival", "hamster-playground", "heavenly-bodies", "alan-wake-2", "assassins-creed-mirage", "resident-evil-requiem", "ghost-of-yotei", "ghost-of-tsushima-directors-cut", "gta-v", "gta-v-ppsa04263", "lego-builders-journey", "sonic-origins", "sonic-2006-recompiled", "ratchet-clank-rift-apart", "god-of-war-sons-of-sparta", "astro-bot", "lego-horizon-adventures", "super-meat-boy-3d", "borderlands-4", "metal-gear-solid-master-collection", "call-of-duty-black-ops-ii", "pragmata", "lego-batman-legacy-dark-knight", "marvels-spider-man-2", "007-first-light", "mxgp-26", "ridge-racer", "tekken-dark-resurrection", "marvels-wolverine", "double-dragon-gaiden", "stray", "yakuza-0-directors-cut", "minecraft", "palworld", "mgs4-master-collection", "mewgenics", "demons-souls", "castlevania-belmonts-curse"]){maintenanceReviewed[slug]="2026-10-28";}
+for(const slug of ["planet-zoo", "monopoly", "the-medium", "my-friend-peppa-pig", "call-of-duty-modern-warfare-iii", "river-city-girls", "gigabash", "codex-ps5-homebrew", "project-zero-maiden-black-water", "carmen-sandiego", "silent-hill-townfall", "cyberpunk-2077-ppsa03974", "crimson-desert-ppsa25286", "fatal-frame-ii-crimson-butterfly-remake", "alan-wake-remastered", "echoes-of-the-end", "human-fall-flat", "r-type-final-3-evolved", "astro-bot-ppsa21567", "persona-5-royal", "ball-x-pit", "dusk-diver-2", "jumanji-ppsa03973", "unbound-worlds-apart", "oregon-trail", "sea-of-stars", "blue-reflection-quartet", "trails-sky-2nd-chapter", "bendy-dark-revival", "hamster-playground", "heavenly-bodies", "alan-wake-2", "assassins-creed-mirage", "resident-evil-requiem", "ghost-of-yotei", "ghost-of-tsushima-directors-cut", "gta-v", "gta-v-ppsa04263", "lego-builders-journey", "sonic-origins", "sonic-2006-recompiled", "ratchet-clank-rift-apart", "god-of-war-sons-of-sparta", "astro-bot", "lego-horizon-adventures", "super-meat-boy-3d", "borderlands-4", "metal-gear-solid-master-collection", "call-of-duty-black-ops-ii", "pragmata", "lego-batman-legacy-dark-knight", "marvels-spider-man-2", "mxgp-26", "ridge-racer", "tekken-dark-resurrection", "marvels-wolverine", "double-dragon-gaiden", "stray", "yakuza-0-directors-cut", "minecraft", "palworld", "mgs4-master-collection", "mewgenics", "demons-souls", "castlevania-belmonts-curse"]){maintenanceReviewed[slug]="2026-10-28";}

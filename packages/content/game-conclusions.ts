@@ -95,7 +95,7 @@ const selections:Record<string,{reviewed:string;reportIds:string[]}>={
  "onimusha-way-of-the-sword":{reviewed:"2026-10-19",reportIds:["5769-windows-review-20261017", "5769-windows-4090-review-20261017", "5769-windows-review-20261019"]},
  "cat-quest-iii":{reviewed:"2026-10-20",reportIds:["5888-windows-review-20261015", "5888-windows-review-20261020"]},
  "withering-rooms":{reviewed:"2026-10-15",reportIds:["5809-linux-review-20261015"]},
- "007-first-light":{reviewed:"2026-10-28",reportIds:["5714-windows-review-20261017", "5714-linux-local-saved-review-20261017", "5714-windows-review-20261020", "5714-windows-review-20261023", "10041-linux-review-20261024", "9129-linux-review-20261027", "9129-linux-review-20261028"]},
+ "007-first-light":{reviewed:"2026-10-27",reportIds:["5714-windows-review-20261017", "5714-linux-local-saved-review-20261017", "5714-windows-review-20261020", "5714-windows-review-20261023", "10041-linux-review-20261024", "9129-linux-review-20261027"]},
  "void-terrarium-ppsa03042":{reviewed:"2026-10-22",reportIds:["5665-linux-review-20261015", "5665-linux-review-20261022"]},
  "hollow-knight-voidheart":{reviewed:"2026-10-15",reportIds:["5593-windows-review-20261015"]},
  "marvel-cosmic-invasion":{reviewed:"2026-10-15",reportIds:["5557-windows-review-20261015"]},

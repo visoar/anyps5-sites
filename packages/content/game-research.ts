@@ -6672,42 +6672,6 @@ Object.assign(gameResearch,{
    }
   ]
  },
- "007-first-light": {
-  "checked": "2026-10-28",
-  "edition": {
-   "en": "The report is PPSA11386 v01.018.000. The current promotional cover advertises DLC; it does not establish that content was tested.",
-   "zh": "报告为 PPSA11386 v01.018.000；当前宣传封面带有 DLC 广告，不证明已测试该内容。",
-   "ar": "التقرير PPSA11386 v01.018.000؛ الغلاف الحالي يعلن DLC ولا يثبت اختبارها.",
-   "pt": "Relato PPSA11386 v01.018.000; capa anuncia DLC e não comprova o seu teste.",
-   "de": "Bericht PPSA11386 v01.018.000; Cover wirbt für DLC und belegt keinen Test davon.",
-   "fr": "Rapport PPSA11386 v01.018.000 ; couverture annonce un DLC sans preuve de test.",
-   "es": "Informe PPSA11386 v01.018.000; portada anuncia DLC sin prueba de haberlo probado."
-  },
-  "finding": {
-   "en": "One pair stays on First Launch Options for fifteen minutes. The candidate lowers sampled RSS from 14.6 to 9.2 GB and live relocation allocations, but no gameplay, FPS or free-control improvement follows.",
-   "zh": "一组对照十五分钟停在首次启动选项；候选采样RSS14.6→9.2 GB并减少重定位活跃分配，不代表游戏、FPS或自由操控改善。",
-   "ar": "زوج واحد يبقى على خيارات البداية15د؛ المرشح يخفض RSS14.6→9.2 GB والتخصيصات، بلا دليل لعب أو FPS أو تحكم حر.",
-   "pt": "Um par fica nas opções iniciais15 min; candidato reduz RSS14,6→9,2 GB e alocações, sem provar jogo/FPS/controlos.",
-   "de": "Ein Paar bleibt15 min bei Erststartoptionen; Kandidat senkt RSS14,6→9,2 GB und Allokationen, kein Spiel/FPS/Steuerungsgewinn belegt.",
-   "fr": "Une paire reste aux options initiales15 min; candidat réduit RSS14,6→9,2 Go et allocations, sans gain jeu/FPS/commandes prouvé.",
-   "es": "Una pareja queda en opciones iniciales15 min; candidato reduce RSS14,6→9,2 GB y asignaciones, sin probar juego/FPS/controles."
-  },
-  "nextTest": {
-   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
-   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
-   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
-   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
-   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
-   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
-   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
-  },
-  "sources": [
-   {
-    "label": "Reviewed primary observation",
-    "url": "https://github.com/boykopovar/AnyPS5/pull/9129#issuecomment-6425761111"
-   }
-  ]
- },
  "mxgp-26": {
   "checked": "2026-10-28",
   "edition": {

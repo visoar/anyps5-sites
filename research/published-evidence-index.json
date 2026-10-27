@@ -6231,7 +6231,7 @@
       "slug": "007-first-light",
       "name": "007 First Light",
       "titleId": "PPSA11386",
-      "reviewed": "2026-10-28",
+      "reviewed": "2026-10-27",
       "reports": [
         {
           "id": "5714-linux-review-20261015",
@@ -6327,18 +6327,6 @@
           "evidence": "community",
           "version": "01.018.000",
           "build": "main f95acfc948 (includes#9396) vs +#9129 fa02afeb47",
-          "patched": true
-        },
-        {
-          "id": "9129-linux-review-20261028",
-          "source": "https://github.com/boykopovar/AnyPS5/pull/9129#issuecomment-6425761111",
-          "sourceUpdated": "2026-10-26T19:48:33Z",
-          "testDate": null,
-          "platform": "linux",
-          "stage": "menu",
-          "evidence": "community",
-          "version": "01.018.000",
-          "build": "main f95acfc948 includes#9396 vs +#9129 fa02afeb47 · LD_PRELOAD sampler · Cross every30s",
           "patched": true
         }
       ]
