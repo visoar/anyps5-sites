@@ -4290,5 +4290,61 @@
       "height": 1024
     },
     "screenshots": []
+  },
+  "layers-of-fear": {
+    "cover": {
+      "file": "layers-of-fear/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202602/1213/7e2f31c6bf7ebef8087e10082d4ea38210788f89f33e7332.jpg",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202602/1213/7e2f31c6bf7ebef8087e10082d4ea38210788f89f33e7332.jpg",
+      "sourceSha256": "612f075de52b67d4a654c80198aa420cf046d36a74d32633348a07d1c9f0dd09",
+      "sourceBytes": 372762,
+      "sha256": "00bef39460e43dd4b7b6380abc3f20171c7b30f8559437c9b3ed74019c3473c9",
+      "bytes": 31322,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "jusant": {
+    "cover": {
+      "file": "jusant/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202306/0109/c780d45fe308020ea741873f73ff8ed882cf92254447dd6c.jpg",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202306/0109/c780d45fe308020ea741873f73ff8ed882cf92254447dd6c.jpg",
+      "sourceSha256": "7fd48861cf39443322505272a7bbf9aa4aded1c13fb7c783deece791312f65de",
+      "sourceBytes": 730176,
+      "sha256": "daf2080084dc3bb12ca0511fd056da4acebcaf57f871388f1be351b3eb063bf9",
+      "bytes": 78982,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "forspoken": {
+    "cover": {
+      "file": "forspoken/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202203/0922/2gqcLQ5GUmznCHUZuuamxD06.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202203/0922/2gqcLQ5GUmznCHUZuuamxD06.png",
+      "sourceSha256": "dcdbb47631369fae5dcfe31a760dbf8cd6a9aad5e464b5c83feaba6c8788eb2a",
+      "sourceBytes": 238083,
+      "sha256": "f4829ba95cc723d3055414cbb5fc9a65799feb951b042db7820022383d0779d2",
+      "bytes": 168074,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "ghost-song": {
+    "cover": {
+      "file": "ghost-song/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1818/aWbw79ZDNe2aBrmwFIS7NCQn.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1818/aWbw79ZDNe2aBrmwFIS7NCQn.png",
+      "sourceSha256": "11a9a08766e69edb2bdb743fc7e185a4b92d5d3fb83e8ed41f1e969611d1c4d3",
+      "sourceBytes": 1035918,
+      "sha256": "f49f00fa8e6ea4e258171c41ce3600255eabb49518f2647108650f5de63ecd95",
+      "bytes": 117636,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
   }
 }

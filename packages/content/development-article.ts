@@ -6,3 +6,5 @@ export const developmentArticle:Article={slug:'development-notes',reviewed:'2026
 developmentArticle.reviewed="2026-10-27";
 
 developmentArticle.reviewed="2026-10-28";
+
+developmentArticle.reviewed="2026-10-30";

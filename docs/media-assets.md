@@ -1,16 +1,16 @@
 # Self-hosted game media
 
-Updated 2026-10-28. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
+Updated 2026-10-30. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
 
 ## Sources and asset inventory
 
-- 208 game/edition pages have official/publisher artwork: 208 covers and 82 promotional screenshots (290 source assets).
+- 212 game/edition pages have official/publisher artwork: 212 covers and 82 promotional screenshots (294 source assets).
 - `packages/content/game-media.json` retains the original page, provider, image URLs and editorial review date.
 - `packages/content/game-media-local.json` maps each source to its exported file, actual download URL, source/export SHA-256, byte counts and actual dimensions.
 - Committed WebP masters live in `packages/ui/assets/games/<slug>/`. Astro imports them and emits hashed, same-origin images under `/_astro/`, including responsive variants. Production builds do not fetch remote media.
-- 122 entries still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
+- 137 entries still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
 
-The downloaded high-resolution source set totals 83.55 MiB; the exported masters total 37.23 MiB, a 55.4% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
+The downloaded high-resolution source set totals 85.81 MiB; the exported masters total 37.61 MiB, a 56.2% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
 
 ## Update command
 
@@ -64,3 +64,5 @@ The19 October addition includes five identity-checked covers. The generic EA FC 
 27 October adds six identity-reviewed official promotional covers: AILA, DEATHLOOP, Neptunia ReVerse, Mewgenics, Days Gone Remastered and Alone in the Dark. Deathloop artwork is from a differently identified regional product page (PPSA01302), not proof of the tested PPSA01670 edition; all seven editorial notes retain that limit. The matching PPSA03747 store title is Skyrim Special Edition; Anniversary status is unverified, and cross-generation PS4 artwork was not reused. Homebrew and alternate packages without selected matching art keep icons (119 total). All six new masters were decoded and visually reviewed; 71.54 MiB originals become 35.74 MiB WebP across the inventory. No image is presented as an AnyPS5 screenshot.
 
 28 October adds15 visually reviewed PlayStation promotional covers. PlanetZoo18027/report18026, Medium03717/03718, Peppa03705/03706, MW3 art01649/report24263 and Human02431/report02429 remain explicit in all seven edition notes. Crimson Enhanced branding does not identify tested enhancement features; cross-generation advertising is not a PS5 report screenshot. Codex homebrew, Echoes and ProjectZero retain icons; the first guessed ProjectZero publisher page404 was recovered through the official04333 store listing for identity, without inventing artwork. All290 masters decode/hash successfully; originals83.55 MiB become37.23 MiB WebP.
+
+30 October adds four visually reviewed promotional covers: Layers of Fear, Jusant, Forspoken and Ghost Song. Layers artwork08681/report07265 and Forspoken03982/demo05700/report03984 stay explicit in all seven edition/research notes. Fifteen other new homebrew entries retain icons; author console demos are not AnyPS5 screenshots. reSOT retains its tested name/version despite current rePOP branding. The first Bible catalog URL404 and absent RuneScape catalog identity remain documented rather than borrowing another project’s artwork. All294 masters pass the existing decode/hash checks.

@@ -6434,3 +6434,481 @@ editorial["persona-5-royal"].overview={
 editorial["persona-5-royal"].overview={"en": "Tokyo social life and supernatural turn-based battles meet; the clean-main casino report is bounded and does not verify the complete story.", "zh": "东京日常与异世界回合战斗交织；干净main赌场报告范围有限，不验证完整剧情。", "ar": "حياة طوكيو ومعارك أدوار خارقة؛ تقرير كازينو main نظيف محدود ولا يثبت القصة كاملة.", "pt": "Vida em Tóquio e batalhas por turnos; casino main limpo limitado, sem validar história completa.", "de": "Tokio-Alltag und Rundenkämpfe; sauberer Main-Casinobericht begrenzt, kein Gesamtnachweis.", "fr": "Vie à Tokyo et combats au tour par tour; casino main propre limité, sans histoire complète validée.", "es": "Vida en Tokio y batallas por turnos; casino main limpio limitado, sin historia completa validada."};
 
 for(const locale of Object.keys(editorial["crimson-desert-ppsa25286"].editionNote) as (keyof Text)[]){editorial["crimson-desert-ppsa25286"].editionNote[locale]+={"en": " Enhanced promotional branding does not establish which enhanced features the reported version tested.", "zh": " 增强版宣传标识不证明报告版本实测哪些增强内容。", "ar": " شعار Enhanced الدعائي لا يثبت ميزات النسخة المختبرة.", "pt": " Marca Enhanced promocional não prova funções testadas na versão do relato.", "de": " Enhanced-Werbung belegt keine getesteten Zusatzfunktionen des Berichts.", "fr": " Marque Enhanced promotionnelle sans preuve des fonctions testées.", "es": " Marca Enhanced promocional no prueba funciones testadas en esa versión."}[locale];}
+
+Object.assign(editorial,{
+ "layers-of-fear": {
+  "genre": "adventure",
+  "overview": {
+   "en": "Psychological horror following artists and their changing surroundings; this entry tracks the 2023 PS5 collection.",
+   "zh": "艺术家与不断变化环境中的心理恐怖；此条追踪2023年PS5合集。",
+   "ar": "رعب نفسي عن فنانين وبيئات متغيرة؛ هذه مجموعةPS5 لعام2023.",
+   "pt": "Terror psicológico sobre artistas e cenários mutáveis; coleção PS5 de2023.",
+   "de": "Psychologischer Horror um Künstler und wechselnde Räume; PS5-Sammlung von2023.",
+   "fr": "Horreur psychologique autour d’artistes et décors changeants; collection PS5 de2023.",
+   "es": "Terror psicológico de artistas y entornos cambiantes; colección PS5 de2023."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.Promotional material identifies PPSA08681, not tested PPSA07265.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。 宣传资料为PPSA08681，不是实测PPSA07265的身份依据。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية. المادة الدعائية PPSA08681 لا تحدد الحزمة المختبرة PPSA07265.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão. Material promocional PPSA08681 não identifica o pacote testado PPSA07265.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis. Werbung PPSA08681 identifiziert nicht Testpaket PPSA07265.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin. Promotion PPSA08681 n’identifie pas le paquet testé PPSA07265.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final. Promoción PPSA08681 no identifica paquete probado PPSA07265."
+  },
+  "related": [],
+  "names": {
+   "zh": "层层恐惧"
+  }
+ },
+ "jusant": {
+  "genre": "adventure",
+  "overview": {
+   "en": "A climbing adventure built around routes, stamina and an immense tower. A rendered scene does not verify a climb.",
+   "zh": "围绕路线、体力与巨塔的攀爬冒险；场景渲染不等于攀爬已验证。",
+   "ar": "مغامرة تسلق بالمسارات والتحمل وبرج هائل؛ رسم مشهد لا يثبت التسلق.",
+   "pt": "Aventura de escalada com percursos, resistência e uma torre; cena renderizada não valida escalar.",
+   "de": "Kletterabenteuer um Routen, Ausdauer und einen Turm; gerenderte Szene belegt kein Klettern.",
+   "fr": "Aventure d’escalade, endurance et grande tour; scène affichée sans ascension validée.",
+   "es": "Aventura de escalada, rutas, resistencia y torre; escena renderizada no valida escalar."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "退潮"
+  }
+ },
+ "sudokuzen-homebrew": {
+  "genre": "puzzle",
+  "overview": {
+   "en": "A PS5 homebrew Sudoku project; distinct from unrelated mobile games with the same name.",
+   "zh": "PS5自制数独项目，与同名手机游戏分开。",
+   "ar": "مشروع Sudoku منزليPS5، منفصل عن ألعاب الهاتف بالاسم نفسه.",
+   "pt": "Sudoku homebrew PS5, distinto de aplicações móveis homónimas.",
+   "de": "PS5-Homebrew-Sudoku, getrennt von gleichnamigen Mobilspielen.",
+   "fr": "Sudoku homebrew PS5, distinct des jeux mobiles homonymes.",
+   "es": "Sudoku homebrew PS5, distinto de juegos móviles homónimos."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "SudokuZen · 自制数独"
+  }
+ },
+ "prosperostore-homebrew": {
+  "genre": "utility",
+  "overview": {
+   "en": "A homebrew catalog and installer front end. Displaying an update is separate from installing a package.",
+   "zh": "自制应用目录与安装前端；显示更新与完成安装分开。",
+   "ar": "واجهة فهرس وتثبيت منزلي؛ عرض تحديث منفصل عن تثبيته.",
+   "pt": "Catálogo e instalador homebrew; mostrar atualização difere de instalar.",
+   "de": "Homebrew-Katalog/Installer; Updateanzeige ist kein Installationsnachweis.",
+   "fr": "Catalogue/installateur homebrew; proposer une mise à jour ne valide pas l’installation.",
+   "es": "Catálogo/instalador homebrew; mostrar actualización no valida instalar."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "ProsperoStore · 自制商店"
+  }
+ },
+ "pokemmo-prospero-homebrew": {
+  "genre": "utility",
+  "overview": {
+   "en": "A community PokeMMO launcher; client updates, account login, ROM selection and actual play require separate evidence.",
+   "zh": "社区PokeMMO启动器；客户端更新、登录、ROM选择与实际游戏须分别举证。",
+   "ar": "مشغل PokeMMO مجتمعي؛ التحديث والدخول وROM واللعب أدلة منفصلة.",
+   "pt": "Launcher comunitário PokeMMO; atualização/login/ROM/jogo exigem provas separadas.",
+   "de": "Community-PokeMMO-Launcher; Updates, Login, ROM-Auswahl und Spiel getrennt belegen.",
+   "fr": "Lanceur PokeMMO communautaire; mise à jour/connexion/ROM/jeu à prouver séparément.",
+   "es": "Launcher comunitario PokeMMO; actualización/login/ROM/juego con pruebas separadas."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "PokeMMO Prospero · 自制启动器"
+  }
+ },
+ "olise-player-homebrew": {
+  "genre": "utility",
+  "overview": {
+   "en": "Tracker-module music player. A NOW PLAYING log on a muted desktop is not an audible playback test.",
+   "zh": "Tracker模块音乐播放器；静音桌面的NOW PLAYING日志不是听音测试。",
+   "ar": "مشغل موسيقى tracker؛ سجل NOW PLAYING مع الكتم ليس اختبار سماع.",
+   "pt": "Leitor de módulos tracker; NOW PLAYING num desktop silenciado não valida áudio.",
+   "de": "Tracker-Musikplayer; NOW PLAYING bei stummem Desktop kein Hörtest.",
+   "fr": "Lecteur tracker; NOW PLAYING sur bureau muet sans écoute validée.",
+   "es": "Reproductor tracker; NOW PLAYING en escritorio silenciado no valida audio."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "OliSe Player · 自制音乐播放器"
+  }
+ },
+ "bible-reader-homebrew": {
+  "genre": "utility",
+  "overview": {
+   "en": "Offline Bible reader with a voice feature advertised by its author. The AnyPS5 report tests initialization, not reading or speech.",
+   "zh": "作者提供离线圣经与语音功能；AnyPS5报告只测试初始化，未测阅读或朗读。",
+   "ar": "قارئ كتاب مقدس بلا اتصال وصوت معلن؛ تقرير AnyPS5 للتهيئة لا القراءة أو النطق.",
+   "pt": "Leitor bíblico offline com voz anunciada; relato AnyPS5 só de inicialização, não leitura/fala.",
+   "de": "Offline-Bibelleser mit beworbener Sprache; AnyPS5 prüft Initialisierung statt Lesen/TTS.",
+   "fr": "Lecteur biblique hors ligne avec voix annoncée; AnyPS5 teste initialisation, pas lecture/parole.",
+   "es": "Lector bíblico offline con voz anunciada; AnyPS5 prueba inicialización, no lectura/habla."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "PS5 Bible Reader · 自制阅读器"
+  }
+ },
+ "resot-homebrew": {
+  "genre": "homebrew",
+  "overview": {
+   "en": "Homebrew Xbox Sands of Time recompilation. Current rePOP-ps5 branding does not replace the older tested reSOT version.",
+   "zh": "Xbox时之砂自制重编译；当前rePOP-ps5名称不替换旧reSOT实测版本。",
+   "ar": "إعادة ترجمة Sands of Time منزلياً؛ اسم rePOP-ps5 الحالي لا يبدل نسخة reSOT المختبرة.",
+   "pt": "Recompilação homebrew Sands of Time Xbox; marca rePOP-ps5 atual não substitui reSOT testado.",
+   "de": "Homebrew-Xbox-Sands-of-Time-Rekompilierung; heutiges rePOP-Branding ersetzt alte reSOT-Testversion nicht.",
+   "fr": "Recompilation homebrew Sands of Time Xbox; marque rePOP actuelle ne remplace pas reSOT testé.",
+   "es": "Recompilación homebrew Sands of Time Xbox; marca rePOP actual no reemplaza reSOT probado."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "reSOT · 自制移植"
+  }
+ },
+ "forever-launcher-homebrew": {
+  "genre": "utility",
+  "overview": {
+   "en": "Wine-based launcher for Battle.net and World of Warcraft on a homebrew PS5. Console results are separate from AnyPS5.",
+   "zh": "自制PS5上基于Wine的Battle.net及魔兽世界启动器；主机结果与AnyPS5分开。",
+   "ar": "مشغل Wine لـBattle.net/WoW على PS5 منزلي؛ نتائج الجهاز منفصلة عن AnyPS5.",
+   "pt": "Launcher Wine Battle.net/WoW para PS5 homebrew; resultados na consola separados de AnyPS5.",
+   "de": "Wine-Launcher Battle.net/WoW für Homebrew-PS5; Konsolenresultate getrennt von AnyPS5.",
+   "fr": "Lanceur Wine Battle.net/WoW pour PS5 homebrew; résultats console distincts d’AnyPS5.",
+   "es": "Launcher Wine Battle.net/WoW para PS5 homebrew; resultados consola distintos de AnyPS5."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "Forever Launcher · 自制启动器"
+  }
+ },
+ "runescape-launcher-homebrew": {
+  "genre": "utility",
+  "overview": {
+   "en": "The Wine-based RuneScape launcher identified by the upstream report. Original distribution provenance remains to be independently confirmed.",
+   "zh": "上游报告识别的Wine版RuneScape启动器；原始分发来源仍待独立确认。",
+   "ar": "مشغل RuneScape عبر Wine كما يسميه التقرير؛ مصدر التوزيع الأصلي يحتاج تأكيداً مستقلاً.",
+   "pt": "Launcher RuneScape/Wine identificado pelo relato; proveniência original por confirmar.",
+   "de": "RuneScape-/Wine-Launcher laut Bericht; ursprüngliche Distribution noch unabhängig zu bestätigen.",
+   "fr": "Lanceur RuneScape/Wine identifié par le rapport; distribution originale à confirmer.",
+   "es": "Launcher RuneScape/Wine identificado por informe; distribución original por confirmar."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "RuneScape Launcher · 自制启动器"
+  }
+ },
+ "forspoken": {
+  "genre": "rpg",
+  "overview": {
+   "en": "Frey travels through Athia using magic and movement. Startup and race diagnostics do not establish open-world play.",
+   "zh": "芙蕾以魔法与移动探索艾希亚；启动及竞态诊断不证明开放世界游玩。",
+   "ar": "تتنقل Frey بسحرها في Athia؛ فحص البدء والسباق لا يثبت اللعب المفتوح.",
+   "pt": "Frey atravessa Athia com magia; diagnósticos de arranque/corrida não validam mundo aberto.",
+   "de": "Frey durchquert Athia mit Magie; Start-/Race-Diagnosen belegen kein offenes Spiel.",
+   "fr": "Frey parcourt Athia par magie; diagnostics démarrage/course sans monde ouvert validé.",
+   "es": "Frey recorre Athia con magia; diagnósticos de inicio/carrera no validan mundo abierto."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.Promotional material identifies PPSA03982 / demo PPSA05700, not tested PPSA03984.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。 宣传资料为PPSA03982 / demo PPSA05700，不是实测PPSA03984的身份依据。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية. المادة الدعائية PPSA03982 / demo PPSA05700 لا تحدد الحزمة المختبرة PPSA03984.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão. Material promocional PPSA03982 / demo PPSA05700 não identifica o pacote testado PPSA03984.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis. Werbung PPSA03982 / demo PPSA05700 identifiziert nicht Testpaket PPSA03984.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin. Promotion PPSA03982 / demo PPSA05700 n’identifie pas le paquet testé PPSA03984.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final. Promoción PPSA03982 / demo PPSA05700 no identifica paquete probado PPSA03984."
+  },
+  "related": [],
+  "names": {
+   "zh": "魔咒之地"
+  }
+ },
+ "prosperocraft-homebrew": {
+  "genre": "utility",
+  "overview": {
+   "en": "A Java-based Minecraft launcher, tracked independently from the retail PS5 Minecraft edition. Launcher UI does not prove a loaded world.",
+   "zh": "Java版Minecraft启动器，与商业PS5版分开；启动器UI不证明世界加载成功。",
+   "ar": "مشغل Minecraft Java مستقل عن نسخةPS5 التجارية؛ واجهته لا تثبت عالماً محملاً.",
+   "pt": "Launcher Minecraft Java separado do PS5 comercial; UI não prova mundo carregado.",
+   "de": "Minecraft-Java-Launcher getrennt vom PS5-Handelsspiel; UI kein Weltnachweis.",
+   "fr": "Lanceur Minecraft Java distinct du PS5 commercial; UI sans monde chargé validé.",
+   "es": "Launcher Minecraft Java distinto de PS5 comercial; UI no valida mundo cargado."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "ProsperoCraft · Java版启动器"
+  }
+ },
+ "beetle-pce-ps5": {
+  "genre": "homebrew",
+  "overview": {
+   "en": "A PC Engine emulator port; its library browser is separate from running a supplied game.",
+   "zh": "PC Engine模拟器移植，游戏库浏览与实际运行游戏分开。",
+   "ar": "منفذ محاكي PC Engine؛ المكتبة منفصلة عن تشغيل لعبة.",
+   "pt": "Port de emulador PC Engine; biblioteca não valida executar um jogo.",
+   "de": "PC-Engine-Emulatorport; Bibliothek getrennt vom Spielbetrieb.",
+   "fr": "Port émulateur PC Engine; bibliothèque distincte d’un jeu exécuté.",
+   "es": "Port emulador PC Engine; biblioteca distinta de ejecutar juego."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "Beetle PCE PS5 · 自制模拟器"
+  }
+ },
+ "sahin-homebrew": {
+  "genre": "homebrew",
+  "overview": {
+   "en": "A PS5 homebrew front end for an owned PC copy of Blur through Wine/DXVK. It is not a retail PS5 Blur release.",
+   "zh": "通过Wine／DXVK使用自有PC版Blur的PS5自制前端，不是商业PS5 Blur发行版。",
+   "ar": "واجهةPS5 منزلية لنسخة Blur PC عبر Wine/DXVK، لا إصدارPS5 تجاري.",
+   "pt": "Front end PS5 homebrew de Blur PC via Wine/DXVK, não edição PS5 comercial.",
+   "de": "Homebrew-Frontend für eigenes PC-Blur über Wine/DXVK, kein PS5-Handelsrelease.",
+   "fr": "Interface PS5 homebrew de Blur PC via Wine/DXVK, pas une édition commerciale PS5.",
+   "es": "Front end PS5 homebrew de Blur PC por Wine/DXVK, no edición PS5 comercial."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "Sahin · Blur自制前端"
+  }
+ },
+ "futbol13-homebrew": {
+  "genre": "homebrew",
+  "overview": {
+   "en": "A separately packaged PS5 homebrew front end. The present AnyPS5 evidence stops during graphics initialization.",
+   "zh": "独立封装的PS5自制前端；当前AnyPS5证据停在图形初始化。",
+   "ar": "واجهةPS5 منزلية بحزمة مستقلة؛ الدليل الحالي يقف بتهيئة الرسوم.",
+   "pt": "Front end PS5 homebrew separado; evidência atual para na inicialização gráfica.",
+   "de": "Separates PS5-Homebrew-Frontend; aktueller Befund endet bei Grafikinitialisierung.",
+   "fr": "Interface PS5 homebrew séparée; preuve actuelle limitée à l’initialisation graphique.",
+   "es": "Front end PS5 homebrew separado; prueba actual para al inicializar gráficos."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "FUTBOL13 · 自制前端"
+  }
+ },
+ "getsu-san-homebrew": {
+  "genre": "homebrew",
+  "overview": {
+   "en": "A PS5 homebrew San Andreas project, distinct from a commercial PS5 edition. The reported shader stop is not gameplay.",
+   "zh": "PS5自制San Andreas项目，与商业PS5版分开；所报shader停止不是游戏过程。",
+   "ar": "مشروع San Andreas منزليPS5 منفصل عن التجاري؛ توقف shader ليس لعباً.",
+   "pt": "Projeto San Andreas homebrew PS5 distinto do comercial; paragem shader não é jogo.",
+   "de": "PS5-Homebrew-San-Andreas-Projekt, getrennt vom Handel; Shaderstopp kein Spielnachweis.",
+   "fr": "Projet San Andreas homebrew PS5 distinct du commercial; arrêt shader sans jeu validé.",
+   "es": "Proyecto San Andreas homebrew PS5 distinto del comercial; parada shader no es juego."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "GETSU-SAN · 自制前端"
+  }
+ },
+ "foxhollow-homebrew": {
+  "genre": "homebrew",
+  "overview": {
+   "en": "A native Star Fox Adventures port project for PS5, requiring the user’s PAL disc image. It is not a Sony retail release.",
+   "zh": "PS5原生Star Fox Adventures移植项目，需用户PAL光盘镜像，不是索尼商业发行。",
+   "ar": "مشروع منفذ Star Fox Adventures لـPS5 يحتاج قرص PAL الخاص، لا إصدار Sony تجاري.",
+   "pt": "Port nativo Star Fox Adventures para PS5, precisa disco PAL próprio; não lançamento Sony comercial.",
+   "de": "Nativer Star-Fox-Adventures-Port für PS5 mit eigener PAL-Disc; kein Sony-Handelsrelease.",
+   "fr": "Port natif Star Fox Adventures PS5 avec disque PAL personnel; pas sortie Sony commerciale.",
+   "es": "Port nativo Star Fox Adventures PS5 con disco PAL propio; no lanzamiento Sony comercial."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "FoxHollow · 自制移植"
+  }
+ },
+ "wwe13-homebrew": {
+  "genre": "homebrew",
+  "overview": {
+   "en": "A PS5 homebrew port based on an Xbox 360 recompilation. The author’s console match claims are not AnyPS5 benchmarks.",
+   "zh": "基于Xbox360重编译的PS5自制移植；作者主机比赛结果不是AnyPS5基准。",
+   "ar": "منفذPS5 منزلي لإعادة ترجمةXbox360؛ نتائج المباريات على الجهاز ليست قياسات AnyPS5.",
+   "pt": "Port PS5 homebrew de recompilação Xbox360; resultados na consola não são benchmarks AnyPS5.",
+   "de": "PS5-Homebrew-Port einer Xbox360-Rekompilierung; Konsolenmatch-Werte keine AnyPS5-Benchmarks.",
+   "fr": "Port PS5 homebrew d’une recompilation Xbox360; résultats console sans benchmark AnyPS5.",
+   "es": "Port PS5 homebrew de recompilación Xbox360; resultados consola no son benchmarks AnyPS5."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "WWE 13 · 自制移植"
+  }
+ },
+ "ghost-song": {
+  "genre": "adventure",
+  "overview": {
+   "en": "A two-dimensional exploration adventure beneath Lorian. The PS5 startup report does not validate its combat or traversal.",
+   "zh": "洛里安地下的二维探索冒险；PS5启动报告不验证战斗或穿行。",
+   "ar": "مغامرة استكشاف ثنائية تحت Lorian؛ تقرير بدءPS5 لا يثبت القتال أو التنقل.",
+   "pt": "Aventura2D sob Lorian; arranque PS5 não valida combate ou travessia.",
+   "de": "2D-Erkundungsabenteuer unter Lorian; PS5-Startbericht belegt keinen Kampf oder Fortschritt.",
+   "fr": "Aventure2D sous Lorian; démarrage PS5 sans combat ou parcours validés.",
+   "es": "Aventura2D bajo Lorian; inicio PS5 no valida combate ni recorrido."
+  },
+  "editionNote": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "related": [],
+  "names": {
+   "zh": "幽灵之歌"
+  }
+ }
+});

@@ -7233,3 +7233,2833 @@ Object.assign(gameResearch,{
 gameResearch["planet-zoo"].sources.push({label:"Separate local EULA/watchdog run",url:"https://github.com/boykopovar/AnyPS5/pull/11951"});
 
 for(const locale of Object.keys(gameResearch["crimson-desert-ppsa25286"].edition) as (keyof Text)[]){gameResearch["crimson-desert-ppsa25286"].edition[locale]+={"en": " Enhanced promotional branding does not establish which enhanced features the reported version tested.", "zh": " 增强版宣传标识不证明报告版本实测哪些增强内容。", "ar": " شعار Enhanced الدعائي لا يثبت ميزات النسخة المختبرة.", "pt": " Marca Enhanced promocional não prova funções testadas na versão do relato.", "de": " Enhanced-Werbung belegt keine getesteten Zusatzfunktionen des Berichts.", "fr": " Marque Enhanced promotionnelle sans preuve des fonctions testées.", "es": " Marca Enhanced promocional no prueba funciones testadas en esa versión."}[locale];}
+
+Object.assign(gameResearch,{
+ "layers-of-fear": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.Promotional material identifies PPSA08681, not tested PPSA07265.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。 宣传资料为PPSA08681，不是实测PPSA07265的身份依据。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية. المادة الدعائية PPSA08681 لا تحدد الحزمة المختبرة PPSA07265.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão. Material promocional PPSA08681 não identifica o pacote testado PPSA07265.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis. Werbung PPSA08681 identifiziert nicht Testpaket PPSA07265.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin. Promotion PPSA08681 n’identifie pas le paquet testé PPSA07265.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final. Promoción PPSA08681 no identifica paquete probado PPSA07265."
+  },
+  "finding": {
+   "en": "Local D16/ReadLane fixes reach Initial Setup with working Cross, about 13–14 FPS. Continuing can abort at call 0x12fc. An intro movie is not gameplay; audio, saves and completion remain unverified.",
+   "zh": "本地D16／ReadLane修改到初始设置，Cross有效，约13–14 FPS；继续可能在0x12fc调用终止。片头不是游戏，音频、存档与通关未验证。",
+   "ar": "تعديلات D16/ReadLane المحلية تبلغ الإعدادات مع Cross ونحو13–14 FPS؛ المتابعة قد تتوقف عند0x12fc. المقدمة ليست لعباً والصوت والحفظ والنهاية مجهولة.",
+   "pt": "Fixes locais D16/ReadLane chegam à configuração com Cross, cerca de13–14 FPS; continuar pode abortar em0x12fc. Intro não prova jogo, áudio, saves ou conclusão.",
+   "de": "Lokale D16-/ReadLane-Fixes erreichen Einstellungen mit Cross, etwa13–14 FPS; Fortsetzen kann bei0x12fc abbrechen. Intro belegt weder Spiel noch Ton, Laden oder Abschluss.",
+   "fr": "Correctifs locaux D16/ReadLane atteignent les réglages avec Cross, environ13–14 FPS; poursuivre peut échouer à0x12fc. Intro sans jeu, son, sauvegarde ou fin validés.",
+   "es": "Fixes locales D16/ReadLane llegan a ajustes con Cross, unos13–14 FPS; continuar puede abortar en0x12fc. Intro sin juego, audio, guardado ni final validados."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12325"
+   },
+   {
+    "label": "Publisher identity and promotional material; not an AnyPS5 test",
+    "url": "https://store.playstation.com/en-us/product/UP4176-PPSA08681_00-3639609726712198/"
+   }
+  ]
+ },
+ "jusant": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "A 240-second local run renders a bright 3D scene, but neither a readable menu nor player control is verified. The final window has 72 presents/10 s. Directory version 01.007 conflicts with reported content 02.000000; do not infer climbing gameplay.",
+   "zh": "240秒本地运行有明亮3D场景，未确认可读菜单或玩家操控；末窗口72次呈现／10秒。目录01.007与报告内容02.000000冲突，不据此认定攀爬游戏。",
+   "ar": "تشغيل محلي240ث يرسم مشهداً ثلاثياً بلا قائمة مقروءة أو تحكم مثبت؛ آخر نافذة72 عرضاً/10ث. اسم المجلد01.007 يخالف النسخة02.000000، ولا يثبت التسلق.",
+   "pt": "Ensaio local240s mostra cena3D sem menu legível ou controlo confirmado;72 apresentações/10s finais. Diretório01.007 difere do conteúdo02.000000; sem escalada validada.",
+   "de": "Lokaler240-s-Lauf zeigt3D-Szene ohne lesbares Menü oder Steuerungsnachweis; zuletzt72 Bilder/10s. Ordner01.007 widerspricht Inhalt02.000000; Klettern ungeprüft.",
+   "fr": "Essai local240s affiche scène3D sans menu lisible ni contrôle confirmé;72 présentations/10s finales. Dossier01.007 distinct du contenu02.000000; escalade non validée.",
+   "es": "Prueba local240s muestra escena3D sin menú legible ni control confirmado;72 presentaciones/10s finales. Carpeta01.007 difiere del contenido02.000000; escalada sin validar."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12317"
+   },
+   {
+    "label": "Publisher identity and promotional material; not an AnyPS5 test",
+    "url": "https://store.playstation.com/no-no/product/EP8091-PPSA10264_00-4648066903011525"
+   }
+  ]
+ },
+ "sudokuzen-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "Official v0.1.3 opens a black window, then exits after three seconds without presenting. Skipping bundled modules gives the same result. No title screen, puzzle input, audio or FPS is verified; an import audit is not a successful run.",
+   "zh": "官方v0.1.3开黑窗后三秒退出，零呈现；跳过随包模块结果相同。未验证标题、谜题输入、音频或FPS，导入审计通过不等于运行成功。",
+   "ar": "v0.1.3 الرسمي يفتح نافذة سوداء ثم يخرج بعد3ث بلا عرض؛ تخطي الوحدات لا يغير النتيجة. لا قائمة أو ألغاز أو صوت أو FPS مثبت، وفحص الواردات ليس نجاح تشغيل.",
+   "pt": "v0.1.3 oficial abre janela preta e sai em3s sem apresentar; ignorar módulos não muda. Sem título, puzzle, áudio ou FPS verificados; auditoria de imports não prova execução.",
+   "de": "Offizielles v0.1.3 öffnet schwarzes Fenster und endet nach3s ohne Ausgabe; Module überspringen hilft nicht. Titel, Rätsel, Ton/FPS ungeprüft; Importprüfung kein Laufnachweis.",
+   "fr": "v0.1.3 officiel ouvre fenêtre noire puis quitte après3s sans image; ignorer modules ne change rien. Aucun titre, puzzle, son ou FPS validé; audit imports sans réussite de lancement.",
+   "es": "v0.1.3 oficial abre ventana negra y sale tras3s sin presentar; omitir módulos no cambia nada. Sin título, puzle, audio o FPS verificados; auditoría imports no prueba ejecución."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12236"
+   },
+   {
+    "label": "Original homebrew project identity; console demonstrations are separate",
+    "url": "https://github.com/Bruce303lee/sudokuzen"
+   }
+  ]
+ },
+ "prosperostore-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "The local AppInstUtil/HTTP/CA stack displays twelve catalog items and offers update 01.000106. No installer was run. The offered version is not the tested package version; the desktop was muted and GPU details are absent.",
+   "zh": "本地AppInstUtil／HTTP／CA组合显示12项目录并提示更新01.000106；未执行安装。提示版本不等于实测包版本，桌面静音，GPU未知。",
+   "ar": "تركيب AppInstUtil/HTTP/CA المحلي يعرض12 عنصراً وتحديث01.000106؛ لم يُشغل المثبت. الإصدار المعروض ليس نسخة الحزمة المختبرة، والجهاز صامت وGPU مجهول.",
+   "pt": "Stack local AppInstUtil/HTTP/CA mostra12 itens e oferece01.000106; instalação não ensaiada. Versão oferecida não identifica pacote testado; som silenciado e GPU desconhecida.",
+   "de": "Lokaler AppInstUtil/HTTP/CA-Stack zeigt12 Einträge und Update01.000106; Installation ungeprüft. Angebotene Version kein Testpaketnachweis, Desktop stumm, GPU unbekannt.",
+   "fr": "Stack local AppInstUtil/HTTP/CA affiche12 éléments et propose01.000106; aucune installation testée. Offre distincte de la version testée, bureau muet, GPU inconnu.",
+   "es": "Stack local AppInstUtil/HTTP/CA muestra12 elementos y ofrece01.000106; instalación sin probar. Oferta distinta del paquete probado, escritorio silenciado, GPU desconocida."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12763"
+   },
+   {
+    "label": "Original homebrew project identity; console demonstrations are separate",
+    "url": "https://github.com/darkxex/ProsperoStore"
+   }
+  ]
+ },
+ "pokemmo-prospero-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "Local HTTP/CA fixes download and install the 92 MB client update, reaching ROM selection. The reporter chose “not now” on the device-code flow: completed Google sign-in and PokeMMO gameplay are unverified. No ROMs were supplied; the desktop was muted.",
+   "zh": "本地HTTP／CA修改下载并安装92 MB客户端更新，到ROM选择；设备码流程选择“稍后”，未验证Google登录完成或PokeMMO游戏。未提供ROM，桌面静音。",
+   "ar": "تعديلات HTTP/CA تنزل وتثبت تحديث92 MB وتبلغ اختيار ROM؛ اختار الكاتب «ليس الآن» في تسجيل الجهاز. لا تسجيل Google مكتمل أو لعب PokeMMO، بلا ROM وصوت مكتوم.",
+   "pt": "Fixes HTTP/CA descarregam/instalam92MB e chegam à seleção ROM; escolheu «agora não» no código. Login Google completo e jogo PokeMMO não validados; sem ROM, som silenciado.",
+   "de": "HTTP/CA-Fixes laden/installieren92MB und erreichen ROM-Auswahl; Gerätecode mit „später“ übersprungen. Google-Anmeldung und PokeMMO-Spiel ungeprüft; keine ROMs, Desktop stumm.",
+   "fr": "Fixes HTTP/CA téléchargent/installent92Mo et atteignent choix ROM; «pas maintenant» au code appareil. Connexion Google complète et jeu PokeMMO non validés; sans ROM, bureau muet.",
+   "es": "Fixes HTTP/CA descargan/instalan92MB y llegan a selección ROM; «ahora no» en código dispositivo. Login Google completo y juego PokeMMO sin validar; sin ROM, escritorio silenciado."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12762"
+   },
+   {
+    "label": "Original homebrew project identity; console demonstrations are separate",
+    "url": "https://github.com/Shabbypenguin/PokeMMO-Prospero"
+   }
+  ]
+ },
+ "olise-player-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "Local HTTP/1.1 changes download tracker music and log NOW PLAYING during a 150-second input script. The desktop was muted, so audible playback is not verified. The console wire protocol remains unmeasured; this is a player utility, not a gameplay result.",
+   "zh": "本地HTTP／1.1修改在150秒输入脚本中下载模块音乐并记录NOW PLAYING；桌面静音，不能确认可听播放。主机线协议未测，这是播放器工具结果。",
+   "ar": "تعديلات HTTP/1.1 تنزل موسيقى وتطبع NOW PLAYING خلال150ث؛ الجهاز صامت، فلا صوت مسموع مثبت. بروتوكول الجهاز غير مقاس؛ نتيجة أداة تشغيل لا لعبة.",
+   "pt": "Alterações HTTP/1.1 descarregam música e registam NOW PLAYING em150s; desktop silenciado, áudio audível não verificado. Protocolo da consola não medido; utilitário, não jogo.",
+   "de": "HTTP/1.1-Änderungen laden Musik und melden NOW PLAYING im150-s-Skript; Desktop stumm, hörbare Wiedergabe ungeprüft. Konsolenprotokoll ungemessen; Player statt Spielbefund.",
+   "fr": "Modifications HTTP/1.1 téléchargent musique et signalent NOW PLAYING en150s; bureau muet, écoute non validée. Protocole console non mesuré; utilitaire, pas jeu.",
+   "es": "Cambios HTTP/1.1 descargan música y registran NOW PLAYING en150s; escritorio silenciado, audio audible sin validar. Protocolo consola sin medir; utilidad, no juego."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12761"
+   },
+   {
+    "label": "Original homebrew project identity; console demonstrations are separate",
+    "url": "https://github.com/Marice/OliSePlayer"
+   }
+  ]
+ },
+ "bible-reader-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "Main fails at __opendir2; the local fix reaches BIBLE_LOAD_OK and an OpenGL draw loop for 180 seconds. No reading-page interaction or text-to-speech was exercised. Muted output does not verify audible speech.",
+   "zh": "main停于__opendir2，本地修改到BIBLE_LOAD_OK及180秒OpenGL绘制循环；未操作阅读页或朗读，静音输出不证明语音可听。",
+   "ar": "main يفشل عند __opendir2؛ الإصلاح المحلي يبلغ BIBLE_LOAD_OK وحلقة رسم180ث. صفحات القراءة والنطق لم تُختبر، والصمت لا يثبت كلاماً مسموعاً.",
+   "pt": "Main falha em __opendir2; fix local chega a BIBLE_LOAD_OK e desenho180s. Páginas/leitura por voz não ensaiadas; saída silenciada não valida voz audível.",
+   "de": "Main scheitert an __opendir2; lokaler Fix erreicht BIBLE_LOAD_OK und180s Zeichenschleife. Lesen/TTS ungeprüft; stumme Ausgabe belegt keine hörbare Sprache.",
+   "fr": "Main échoue à __opendir2; fix local atteint BIBLE_LOAD_OK et dessin180s. Lecture et synthèse vocale non exercées; sortie muette sans voix validée.",
+   "es": "Main falla en __opendir2; fix local llega a BIBLE_LOAD_OK y dibujo180s. Lectura y voz sin probar; salida silenciada no valida habla audible."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12760"
+   },
+   {
+    "label": "Original homebrew project identity; console demonstrations are separate",
+    "url": "https://github.com/Yahballon/PS5_Bible_Reader"
+   }
+  ]
+ },
+ "resot-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "The local module-handle fix reaches a “no default.xbe” notification, then aborts at an AGC scanout size mismatch after two seconds. No Xbox files were supplied; neither an original game nor player control is verified.",
+   "zh": "本地模块句柄修改到“无default.xbe”提示，随后两秒在AGC扫描输出尺寸不符终止；未提供Xbox文件，不证明原游戏或操控。",
+   "ar": "إصلاح مقبض الوحدة يبلغ إشعار غياب default.xbe ثم يتوقف بعد2ث لاختلاف حجم AGC. بلا ملفات Xbox؛ لا اللعبة الأصلية أو تحكم مثبت.",
+   "pt": "Fix do módulo chega a «sem default.xbe» e aborta em2s por tamanho AGC. Sem ficheiros Xbox; jogo original e controlos não validados.",
+   "de": "Modulhandle-Fix erreicht „kein default.xbe“, dann AGC-Größenabbruch nach2s. Keine Xbox-Dateien; Originalspiel und Steuerung ungeprüft.",
+   "fr": "Fix du module atteint «pas de default.xbe», puis échec taille AGC après2s. Aucun fichier Xbox; jeu original et commandes non validés.",
+   "es": "Fix del módulo llega a «sin default.xbe» y aborta en2s por tamaño AGC. Sin archivos Xbox; juego original y controles sin validar."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12728"
+   },
+   {
+    "label": "Original homebrew project identity; console demonstrations are separate",
+    "url": "https://github.com/bystritskiy/rePOP-ps5"
+   }
+  ]
+ },
+ "forever-launcher-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "The local SCM_RIGHTS fix starts the private Wine server, then prefix initialization fails because wineboot is missing (0xC0000135). A server exit code of zero does not establish a working launcher or game. Software-rendered WSL/CI runs remain separate from Windows support.",
+   "zh": "本地SCM_RIGHTS修改启动私有Wine服务，随后缺wineboot导致前缀初始化失败0xC0000135；服务退出0不证明启动器或游戏可用。WSL／CI软件渲染不代表Windows支持。",
+   "ar": "إصلاح SCM_RIGHTS يبدأ Wine الخاص ثم يفشل إعداد prefix لغياب wineboot‏0xC0000135. خروج الخادم0 ليس نجاح التطبيق أو اللعبة؛ تشغيل WSL/CI البرمجي منفصل عن Windows.",
+   "pt": "Fix SCM_RIGHTS inicia Wine privado, mas prefix falha sem wineboot‏0xC0000135. Servidor sair0 não prova launcher/jogo; WSL/CI por software não valida Windows.",
+   "de": "SCM_RIGHTS-Fix startet privaten Wine-Server, Präfix scheitert ohne wineboot‏0xC0000135. Serverexit0 kein Launcher-/Spielnachweis; Software-WSL/CI getrennt von Windows.",
+   "fr": "Fix SCM_RIGHTS démarre Wine privé, puis préfixe échoue sans wineboot‏0xC0000135. Sortie serveur0 ne valide ni lanceur ni jeu; WSL/CI logiciel distinct de Windows.",
+   "es": "Fix SCM_RIGHTS inicia Wine privado, pero prefijo falla sin wineboot‏0xC0000135. Salida servidor0 no valida launcher/juego; WSL/CI por software distinto de Windows."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12712"
+   },
+   {
+    "label": "Original homebrew project identity; console demonstrations are separate",
+    "url": "https://github.com/bizkut/ps5-forever"
+   }
+  ]
+ },
+ "runescape-launcher-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "The local SCM_RIGHTS fix starts the private Wine server, then prefix initialization fails because wineboot is missing (0xC0000135). A server exit code of zero does not establish a working launcher or game. Software-rendered WSL/CI runs remain separate from Windows support.",
+   "zh": "本地SCM_RIGHTS修改启动私有Wine服务，随后缺wineboot导致前缀初始化失败0xC0000135；服务退出0不证明启动器或游戏可用。WSL／CI软件渲染不代表Windows支持。",
+   "ar": "إصلاح SCM_RIGHTS يبدأ Wine الخاص ثم يفشل إعداد prefix لغياب wineboot‏0xC0000135. خروج الخادم0 ليس نجاح التطبيق أو اللعبة؛ تشغيل WSL/CI البرمجي منفصل عن Windows.",
+   "pt": "Fix SCM_RIGHTS inicia Wine privado, mas prefix falha sem wineboot‏0xC0000135. Servidor sair0 não prova launcher/jogo; WSL/CI por software não valida Windows.",
+   "de": "SCM_RIGHTS-Fix startet privaten Wine-Server, Präfix scheitert ohne wineboot‏0xC0000135. Serverexit0 kein Launcher-/Spielnachweis; Software-WSL/CI getrennt von Windows.",
+   "fr": "Fix SCM_RIGHTS démarre Wine privé, puis préfixe échoue sans wineboot‏0xC0000135. Sortie serveur0 ne valide ni lanceur ni jeu; WSL/CI logiciel distinct de Windows.",
+   "es": "Fix SCM_RIGHTS inicia Wine privado, pero prefijo falla sin wineboot‏0xC0000135. Salida servidor0 no valida launcher/juego; WSL/CI por software distinto de Windows."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12713"
+   }
+  ]
+ },
+ "forspoken": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.Promotional material identifies PPSA03982 / demo PPSA05700, not tested PPSA03984.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。 宣传资料为PPSA03982 / demo PPSA05700，不是实测PPSA03984的身份依据。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية. المادة الدعائية PPSA03982 / demo PPSA05700 لا تحدد الحزمة المختبرة PPSA03984.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão. Material promocional PPSA03982 / demo PPSA05700 não identifica o pacote testado PPSA03984.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis. Werbung PPSA03982 / demo PPSA05700 identifiziert nicht Testpaket PPSA03984.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin. Promotion PPSA03982 / demo PPSA05700 n’identifie pas le paquet testé PPSA03984.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final. Promoción PPSA03982 / demo PPSA05700 no identifica paquete probado PPSA03984."
+  },
+  "finding": {
+   "en": "The opening sometimes aborts at a depth-mip-chain race: 2/19 earlier main runs and 3/196 later runs. Four local 250-second candidate runs do not reproduce it, but this rare failure rate cannot establish a fix. Audio, free play and completion are unverified. The local D16 change passes the earlier shader refusal, but only reaches subsequent startup work within the observed window. This content-version-specific run does not establish free exploration or repair the separately reported rare race.",
+   "zh": "片头偶发深度mip链竞态：旧main为2／19，后续3／196；本地候选四次250秒未复现，不足以证明稀有故障已修复。音频、自由游玩与通关未验证。 本地D16修改越过旧shader拒绝，只确认观察窗口内后续启动工作；此版本测试不证明自由探索，也不修复另报的稀有竞态。",
+   "ar": "المقدمة تفشل أحياناً بسباق depth-mip:‏2/19 قديماً و3/196 لاحقاً. أربع محاولات محلية250ث بلا فشل لا تثبت إصلاحاً نادراً؛ الصوت واللعب الحر والنهاية مجهولة. تعديل D16 يتجاوز رفض shader إلى بدء لاحق فقط؛ لا استكشاف حر أو إصلاح السباق المنفصل مثبت.",
+   "pt": "Intro falha por corrida depth-mip:2/19 main antigo,3/196 posterior. Quatro candidatos250s sem falha não provam correção rara; áudio, jogo livre e conclusão por verificar. Fix D16 passa a recusa shader para arranque posterior apenas; sem exploração livre ou correção da corrida separada.",
+   "de": "Intro scheitert sporadisch an Depth-Mip-Race:2/19 alte,3/196 spätere Main-Läufe. Vier lokale250-s-Läufe ohne Fehler belegen keinen Fix; Ton/freies Spiel/Abschluss ungeprüft. D16-Fix passiert Shader-Verweigerung bis späterem Start; freie Erkundung oder separater Race-Fix unbelegt.",
+   "fr": "Intro échoue parfois sur course depth-mip:2/19 anciens,3/196 récents. Quatre essais locaux250s sans échec ne prouvent pas le fix rare; son/jeu libre/fin non validés. Fix D16 franchit refus shader vers démarrage ultérieur seulement; exploration libre ou autre course non résolues.",
+   "es": "Intro falla por carrera depth-mip:2/19 main antiguo,3/196 posterior. Cuatro candidatos250s sin fallo no prueban arreglo raro; audio/juego libre/final sin verificar. Fix D16 pasa rechazo shader a inicio posterior solamente; sin exploración libre ni arreglo de carrera separada."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12711"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/11580#issuecomment-6461809091"
+   },
+   {
+    "label": "Publisher identity and promotional material; not an AnyPS5 test",
+    "url": "https://www.playstation.com/en-us/games/forspoken/"
+   }
+  ]
+ },
+ "prosperocraft-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "Local sysctl and stack-protection changes reach the launcher’s instance/form/on-screen-keyboard UI for 120 seconds. This Java 25 launcher is not a running Minecraft world. Main aborts earlier; gameplay, downloads and audio remain unverified.",
+   "zh": "本地sysctl及栈保护修改到启动器实例／表单／屏幕键盘UI并运行120秒；Java25启动器不等于Minecraft世界已运行。main更早终止，游戏、下载、音频未验证。",
+   "ar": "تعديلات sysctl وحماية المكدس تبلغ واجهة المثيلات/النماذج/لوحة المفاتيح120ث؛ مشغل Java25 ليس عالم Minecraft. main يفشل أبكر، واللعب والتنزيل والصوت مجهولة.",
+   "pt": "Fixes sysctl/pilha chegam à UI de instâncias/formulários/teclado120s; launcher Java25 não prova mundo Minecraft. Main aborta antes, jogo/downloads/áudio por verificar.",
+   "de": "Sysctl-/Stack-Fixes erreichen Instanz-/Formular-/Bildschirmtastatur-UI für120s; Java25-Launcher kein Minecraft-Weltnachweis. Main stoppt früher, Spiel/Downloads/Ton ungeprüft.",
+   "fr": "Fixes sysctl/pile atteignent UI instances/formulaires/clavier120s; lanceur Java25 ne prouve pas un monde Minecraft. Main échoue avant, jeu/téléchargements/son non validés.",
+   "es": "Fixes sysctl/pila llegan a UI instancias/formularios/teclado120s; launcher Java25 no prueba mundo Minecraft. Main aborta antes, juego/descargas/audio sin validar."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12710"
+   },
+   {
+    "label": "Original homebrew project identity; console demonstrations are separate",
+    "url": "https://github.com/mateo-cogeanu/ProsperoCraft"
+   }
+  ]
+ },
+ "god-of-war-ragnarok": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "Conversion fails on a raw bundled-libc syscall on both Linux and Windows targets. This WSL relinker-only test has no runtime GPU result; later local PLT restoration must not be silently assigned to this earlier build. A local HTTP/owner/PLT stack produces 16 warm presents in 150 seconds, then hits an oversized 1D-array view. The proper 2D remap reaches 43 black presents in 600 seconds. The earlier 2048-slice clamp was withdrawn; no menu, input or gameplay is established. A private stack reaches New Game, the sled/forest opening and the first Freya fight, around 950 gameplay frames in roughly fifteen minutes; the heaviest scene is about 2 FPS. About thirty local branches are included. This does not qualify clean main, audio, saves or completion.",
+   "zh": "Linux和Windows目标转换均停在随包libc原始syscall；这是WSL仅重链接测试，无运行GPU结果，后续本地PLT恢复不能归入此旧构建。 本地HTTP／owner／PLT组合150秒热缓存16次呈现，随后超大1D数组视图拒绝；正确2D映射600秒43次黑帧。旧2048切片钳位已撤回，未验证菜单、输入或游戏。 私有组合从新游戏到雪橇／森林及首次芙蕾雅战斗，约15分钟950游戏帧，最重场景约2 FPS；含约30本地分支。不证明干净main、音频、存档或通关。",
+   "ar": "التحويل يفشل في syscall داخل libc لكلا الهدفين؛ اختبار WSL للربط فقط بلا نتيجة GPU. استعادة PLT اللاحقة لا تنسب لهذا البناء. تركيب HTTP/owner/PLT ينتج16 عرضاً/150ث ثم رفض مصفوفة1D؛ تحويل2D الصحيح يعطي43 عرضاً أسود/600ث. تراجع الكاتب عن clamp2048؛ لا قائمة أو تحكم أو لعب مثبت. تركيب خاص يبلغ بداية الزلاجة/الغابة وقتال Freya الأول، نحو950 إطار لعب/15د وأثقل مشهد≈2 FPS؛ يشمل≈30 فرعاً محلياً. لا main نظيف أو صوت أو حفظ أو إكمال مثبت.",
+   "pt": "Conversão falha no syscall de libc para ambos os alvos; teste WSL só do relinker, sem GPU. Restauro PLT posterior não pertence a este build. Stack HTTP/owner/PLT dá16 apresentações/150s e recusa array1D; remapeamento2D dá43 pretas/600s. Clamp2048 retirado; sem menu, input ou jogo validado. Stack privado chega ao trenó/floresta e primeiro combate Freya,≈950 frames/15min, pior cena≈2 FPS; inclui≈30 ramos locais. Sem qualificar main limpo, áudio, saves ou conclusão.",
+   "de": "Konvertierung scheitert am libc-Syscall für beide Ziele; WSL-Linktest ohne GPU-Lauf. Spätere PLT-Wiederherstellung nicht diesem Build zuordnen. HTTP/Owner/PLT-Stack liefert16 Bilder/150s, dann1D-Array-Abbruch; korrekte2D-Abbildung43 schwarze/600s. Alter2048-Clamp zurückgezogen; Menü/Steuerung/Spiel ungeprüft. Privater Stack erreicht Schlitten/Wald und ersten Freya-Kampf,≈950 Spielframes/15min, schwere Szene≈2 FPS;≈30 lokale Zweige. Kein Nachweis für sauberes Main, Ton, Laden oder Abschluss.",
+   "fr": "Conversion échoue au syscall libc pour les deux cibles; test WSL du relinker seul, sans GPU. Restitution PLT ultérieure distincte de ce build. Stack HTTP/owner/PLT produit16 images/150s puis refus tableau1D; remappage2D correct43 noires/600s. Clamp2048 retiré; menu, commandes et jeu non établis. Stack privé atteint traîneau/forêt et premier combat Freya,≈950 images de jeu/15min, scène lourde≈2 FPS;≈30 branches locales. Sans main propre, son, sauvegarde ou fin validés.",
+   "es": "Conversión falla en syscall libc para ambos destinos; prueba WSL solo de relinker, sin GPU. Restauración PLT posterior distinta de este build. Stack HTTP/owner/PLT produce16 imágenes/150s y rechazo array1D; remapeo2D correcto43 negras/600s. Clamp2048 retirado; menú, input y juego sin validar. Stack privado llega a trineo/bosque y primer combate Freya,≈950 frames/15min, escena pesada≈2 FPS;≈30 ramas locales. Sin main limpio, audio, guardado ni final validados."
+  },
+  "nextTest": {
+   "en": "Record the opening campaign sequence, combat, companion interaction and save reload on a pinned PS5 build. Test Valhalla separately rather than treating an opening scene as whole-game coverage.",
+   "zh": "在固定 PS5 构建上记录主线开场、战斗、同伴互动及存档重载，Valhalla 单独测试。开场片段不能代表整部游戏。",
+   "ar": "سجّل افتتاح الحملة والقتال وتفاعل الرفيق وإعادة تحميل الحفظ على بناء PS5 محدد. اختبر Valhalla منفصلة؛ البداية لا تغطي اللعبة كاملة.",
+   "pt": "Registe a abertura da campanha, combate, interação com o companheiro e recarregamento de dados guardados numa versão PS5 identificada. Teste Valhalla à parte; a abertura não cobre todo o jogo.",
+   "de": "Prüfe Kampagnenbeginn, Kampf, Begleiterinteraktion und Spielstandladen auf einem festgehaltenen PS5-Build. Teste Valhalla separat; die Eröffnung belegt keinen vollständigen Durchlauf.",
+   "fr": "Vérifiez l’ouverture de campagne, le combat, les interactions avec le compagnon et les sauvegardes sur une version PS5 identifiée. Testez Valhalla séparément ; l’ouverture ne couvre pas tout le jeu.",
+   "es": "Registra inicio de campaña, combate, interacción con el compañero y recarga de partida en una versión PS5 identificada. Prueba Valhalla aparte; el inicio no cubre todo el juego."
+  },
+  "sources": [
+   {
+    "label": "PlayStation",
+    "url": "https://www.playstation.com/en-us/games/god-of-war-ragnarok/"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12128"
+   }
+  ]
+ },
+ "sonic-2006-recompiled": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado."
+  },
+  "finding": {
+   "en": "The local ReadLane/follow-up stack shows menus and Sonic’s opening cinematic at 30 FPS, then stage loading fails at guest memory 0x2d634b500. Without --to-intel clean main reaches only about 2 FPS; no audible sound or playable stage is verified here.",
+   "zh": "本地ReadLane／后续组合菜单与索尼克片头30 FPS，关卡加载在客体内存0x2d634b500失败；无--to-intel的干净main约2 FPS。本报告未验证可听音频或可玩关卡。",
+   "ar": "تركيب محلي يعرض القوائم ومقدمة Sonic‏30 FPS ثم يفشل تحميل المرحلة عند0x2d634b500. main بلا --to-intel نحو2 FPS؛ لا صوت مسموع أو مرحلة قابلة للعب مثبتة.",
+   "pt": "Stack local mostra menus/intro Sonic30 FPS e falha ao carregar nível em0x2d634b500. Main sem --to-intel≈2 FPS; sem som audível ou nível jogável validado.",
+   "de": "Lokaler Stack zeigt Menüs/Sonic-Intro30 FPS, Level lädt bis Speicherfehler0x2d634b500. Main ohne --to-intel≈2 FPS; hörbarer Ton und spielbarer Level ungeprüft.",
+   "fr": "Stack local affiche menus/intro Sonic30 FPS puis échec chargement à0x2d634b500. Main sans --to-intel≈2 FPS; son audible ou niveau jouable non validés.",
+   "es": "Stack local muestra menús/intro Sonic30 FPS y falla cargando nivel en0x2d634b500. Main sin --to-intel≈2 FPS; audio audible y nivel jugable sin validar."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/11469"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/11562"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12932"
+   }
+  ]
+ },
+ "dusklight-ps5-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado."
+  },
+  "finding": {
+   "en": "Main aborts at fcntl after the first menu. The local fix opens settings and a “no image found” screen; no disc image was supplied. This launcher result does not verify the underlying game.",
+   "zh": "main首菜单后在fcntl终止；本地修改到设置与“无镜像”页面，未提供光盘镜像，启动器结果不证明底层游戏。",
+   "ar": "main يفشل عندfcntl بعد أول قائمة؛ الإصلاح يبلغ الإعدادات وغياب الصورة. بلا قرص، ولا إثبات للعبة الأساسية.",
+   "pt": "Main aborta emfcntl após menu; fix abre opções/sem imagem. Sem disco, launcher não valida jogo original.",
+   "de": "Main bricht nach Menü anfcntl ab; Fix zeigt Einstellungen/kein Image. Ohne Disc kein Nachweis des eigentlichen Spiels.",
+   "fr": "Main échoue àfcntl après menu; fix ouvre réglages/sans image. Sans disque, lanceur ne valide pas le jeu original.",
+   "es": "Main aborta enfcntl tras menú; fix abre ajustes/sin imagen. Sin disco, launcher no valida juego original."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package, build, patch set and scene; verify controls, audio, save reload and a longer session separately. Record the actual test date and keep unknown fields unknown.",
+   "zh": "以准确包、构建、补丁和场景复测，分别验证操控、音频、读档及更长会话；记录实际测试日期，未知字段保持未知。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد نفسه؛ افحص التحكم والصوت وإعادة الحفظ والمدة منفصلة. سجل تاريخ الاختبار واحتفظ بالمجهول.",
+   "pt": "Repita pacote, build, patches e cena; verifique controlos, áudio, recarga e sessão longa separadamente. Registe a data real e mantenha desconhecidos.",
+   "de": "Paket, Build, Patches und Szene reproduzieren; Steuerung, Ton, Laden und Dauer getrennt prüfen. Testdatum erfassen, Unbekanntes bewahren.",
+   "fr": "Reproduisez paquet, build, patches et scène; vérifiez commandes, son, rechargement et durée séparément. Date réelle et inconnus conservés.",
+   "es": "Repite paquete, build, parches y escena; verifica controles, audio, recarga y duración aparte. Registra fecha real y conserva desconocidos."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/11301#issuecomment-6416361017"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12708"
+   }
+  ]
+ },
+ "marvels-wolverine": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "Despite the form’s “does not convert” checkbox, the report describes a runtime black window for ten minutes, about zero FPS, with submissions stopping near 46 seconds. Diagnostic write-back switches did not help; no scene or causal fix is established. Loading fails with Windows error126 for libcohtml. The form puts v0.1.3 in the content-version field and names a different CPU revision than the log. Build and game version remain unknown; this dependency failure does not revise other successful observations.",
+   "zh": "表单勾选“不能转换”，但正文实际是黑窗运行10分钟、约零FPS且46秒左右停止提交；写回诊断开关无帮助，未建立场景或因果修复。 加载libcohtml报Windows126；表单把v0.1.3写进内容版本且CPU型号与日志冲突，构建及游戏版本保留未知。依赖失败不改写其他测试。",
+   "ar": "رغم خانة فشل التحويل، المتن يصف نافذة سوداء10د ونحو صفرFPS وتوقف إرسال قرب46ث. مفاتيح التشخيص لم تساعد؛ لا مشهد أو إصلاح مثبت. التحميل يفشل126 فيlibcohtml؛ خانة المحتوى تسميv0.1.3 والمعالج يخالف السجل. البناء ونسخة اللعبة مجهولان، ولا يغير فشل الاعتماد اختبارات أخرى.",
+   "pt": "Apesar da caixa «não converte», texto descreve janela preta10min,≈0FPS e submissões param≈46s. Diagnósticos sem ajuda; sem cena ou fix demonstrado. Carga falha126 emlibcohtml; versão conteúdo contémv0.1.3 e CPU difere do log. Build/versão jogo desconhecidos; falha dependência não reescreve outros testes.",
+   "de": "Trotz „konvertiert nicht“ beschreibt Text schwarzes Fenster10min,≈0FPS, Einreichungen stoppen≈46s. Diagnoseoptionen helfen nicht; Szene/Ursache ungeklärt. Laden scheitert126 anlibcohtml; Inhaltsversion nenntv0.1.3, CPU widerspricht Log. Build/Spielversion unbekannt; Abhängigkeitsfehler ändert andere Tests nicht.",
+   "fr": "Malgré case «ne convertit pas», texte décrit fenêtre noire10min,≈0FPS, soumissions arrêtées≈46s. Diagnostics sans effet; scène ou correctif causal non établis. Chargement échoue126 surlibcohtml; version contenu indiquev0.1.3 et CPU contredit journal. Build/version jeu inconnus; dépendance sans réécrire autres essais.",
+   "es": "Pese a casilla «no convierte», texto describe ventana negra10min,≈0FPS y envíos paran≈46s. Diagnósticos sin ayuda; escena o arreglo causal sin establecer. Carga falla126 enlibcohtml; versión contenido dicev0.1.3 y CPU contradice log. Build/versión juego desconocidos; dependencia no reescribe otras pruebas."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/10256#issuecomment-6442673843"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12571"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12755"
+   }
+  ]
+ },
+ "stray-ppsa02101": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "The form labels this “in game”, but the body stops before full gameplay rendering at a queue-0x20 WAIT_REG_MEM timeout. Setup and trophy mounting do not establish play. Other Stray packages retain their own results.",
+   "zh": "表单标“游戏中”，正文却在完整游戏渲染前因队列0x20的WAIT_REG_MEM超时停止；设置与奖杯挂载不证明游玩，其他Stray包结果独立保留。",
+   "ar": "الخانة تقول لعباً لكن المتن يتوقف قبل الرسم الكامل عند WAIT_REG_MEM على0x20. الإعدادات والجوائز ليست لعباً؛ حزم Stray الأخرى مستقلة.",
+   "pt": "Formulário diz jogo, mas texto para antes do desenho completo em WAIT_REG_MEM0x20. Setup/troféus não provam jogar; outras edições separadas.",
+   "de": "Formular nennt Spiel, Text stoppt vor vollständiger Darstellung an WAIT_REG_MEM0x20. Einrichtung/Trophäen kein Spielnachweis; andere Pakete getrennt.",
+   "fr": "Formulaire dit jeu, texte s’arrête avant rendu complet sur WAIT_REG_MEM0x20. Réglages/trophées ne prouvent pas jouer; autres paquets distincts.",
+   "es": "Formulario dice juego, texto para antes del render completo en WAIT_REG_MEM0x20. Ajustes/trofeos no prueban jugar; otros paquetes separados."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/12086"
+   }
+  ]
+ },
+ "skyrim-ppsa03747": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.The matching store identifies Special Edition; the report does not establish Anniversary content. Cross-generation art is not used as PS5 test imagery.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。 匹配商店页为特别版，报告不证明周年内容；跨世代配图不冒充PS5实测。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر. المتجر المطابق يسمي Special Edition؛ لا دليل Anniversary، والصورة المشتركة ليست اختبار PS5.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado. Loja identifica Special Edition, sem provar Anniversary; arte entre gerações não é teste PS5.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht. Store bestätigt Special Edition, keine Anniversary-Inhalte belegt; Mehrgenerationenbild kein PS5-Test.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé. Boutique identifie Special Edition sans preuve Anniversary; art multigénération distinct d’un test PS5.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado. Tienda identifica Special Edition sin probar Anniversary; arte multigeneración no es test PS5."
+  },
+  "finding": {
+   "en": "The local wait fix reaches character creation, but buffered-voice regressions abort two of four earlier runs. On the later stack two controls fail, while the additional audio fix survives all three 420-second runs. Dummy audio and scripted input do not verify free-world play or audible sound.",
+   "zh": "本地等待修改到角色创建，但缓冲语音回归令旧测试2／4终止；后续组合基线2次失败，额外音频修改3次各420秒存活。dummy音频与脚本不证明开放世界或可听声音。",
+   "ar": "إصلاح الانتظار يبلغ إنشاء الشخصية لكن الصوت يوقف2/4 سابقاً؛ التركيب اللاحق يفشل في ضابطين والإصلاح الإضافي يعيش3×420ث. صوت dummy وإدخال مكتوب لا يثبتان العالم الحر أو السماع.",
+   "pt": "Fix espera chega à criação, mas voz aborta2/4 anteriores; stack posterior falha2 controlos, fix áudio vive3×420s. Áudio dummy/script não validam mundo livre ou som audível.",
+   "de": "Wartefix erreicht Charaktererstellung, Audio stoppt2/4 frühere Läufe; später2 Kontrollen fehlgeschlagen, Zusatzfix3×420s stabil. Dummyton/Skript kein Freiwelt-/Hörnachweis.",
+   "fr": "Fix attente atteint création, voix arrête2/4 essais antérieurs; stack récent échoue2 contrôles, fix audio tient3×420s. Son dummy/script sans monde libre ou écoute validés.",
+   "es": "Fix espera llega a creación, voz aborta2/4 anteriores; stack posterior falla2 controles, fix audio dura3×420s. Audio dummy/script no validan mundo libre ni sonido audible."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package, build, patch set and scene; verify controls, audio, save reload and a longer session separately. Record the actual test date and keep unknown fields unknown.",
+   "zh": "以准确包、构建、补丁和场景复测，分别验证操控、音频、读档及更长会话；记录实际测试日期，未知字段保持未知。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد نفسه؛ افحص التحكم والصوت وإعادة الحفظ والمدة منفصلة. سجل تاريخ الاختبار واحتفظ بالمجهول.",
+   "pt": "Repita pacote, build, patches e cena; verifique controlos, áudio, recarga e sessão longa separadamente. Registe a data real e mantenha desconhecidos.",
+   "de": "Paket, Build, Patches und Szene reproduzieren; Steuerung, Ton, Laden und Dauer getrennt prüfen. Testdatum erfassen, Unbekanntes bewahren.",
+   "fr": "Reproduisez paquet, build, patches et scène; vérifiez commandes, son, rechargement et durée séparément. Date réelle et inconnus conservés.",
+   "es": "Repite paquete, build, parches y escena; verifica controles, audio, recarga y duración aparte. Registra fecha real y conserva desconocidos."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/11508"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/8091#issuecomment-6423645589"
+   },
+   {
+    "label": "Publisher identity and promotional art, not an AnyPS5 test",
+    "url": "https://store.playstation.com/en-gb/product/EP1003-PPSA03747_00-TESVSKYRIM000000/"
+   }
+  ]
+ },
+ "call-of-the-sea": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA01546. Preserve the content version, tested build and host of each observation. Promotional artwork is not an AnyPS5 screenshot or proof of tested DLC.",
+   "zh": "报告PS5包PPSA01546，逐次保留内容版本、测试构建与主机；宣传图不是AnyPS5截图或DLC已测证明。",
+   "ar": "حزمة PS5 PPSA01546؛ احفظ نسخة وبناء ومضيف كل تجربة. الصورة دعائية لا تشغيل AnyPS5 أو إثبات DLC.",
+   "pt": "Pacote PS5 PPSA01546; preserve versão/build/host por observação. Arte promocional não é captura AnyPS5 ou DLC provado.",
+   "de": "PS5-Paket PPSA01546; Inhaltsversion/Build/Host je Beobachtung beachten. Werbung kein AnyPS5-Bild/DLC-Testbeleg.",
+   "fr": "Paquet PS5 PPSA01546 ; conservez version/build/hôte. Image promotionnelle, pas capture AnyPS5/preuve DLC.",
+   "es": "Paquete PS5 PPSA01546; conserva versión/build/host. Arte promocional no es captura AnyPS5/prueba DLC."
+  },
+  "finding": {
+   "en": "Absent PlayGo metadata avoids the installed-mode 5.565 GB startup failure. A later clean-main run reaches forest/underwater scenes with visibly changing camera views for 330 seconds and closes normally. Very dark output, audio, reload and completion remain unqualified; the earlier PM4 failure is not proved fixed. The private capture/replay stack plus layered-target changes restores blue underwater and visible walls/vegetation in recorded and fresh native views. Later import fixes reduce failures 1816→1, but framing differs and both arms have six waits: no FPS gain or full-control claim follows.",
+   "zh": "缺PlayGo元数据时absent避开installed的5.565 GB启动失败；后续干净main运行330秒到森林／水下，镜头视图确有变化并正常关闭。画面很暗，音频、读档、通关未验证，旧PM4失败未证明修复。 私有捕获／回放组合加分层目标修改恢复蓝色水下、墙面及植被，录制与新原生视图均可见；后续导入修改1816→1，但镜头不同且两组均6次等待，不能称提速或完整操控。",
+   "ar": "وضع absent يتجاوز فشل5.565 GB عند غياب PlayGo؛ main لاحق يبلغ الغابة/تحت الماء330ث مع تغير مشاهد ويغلق عادياً. الصورة مظلمة والصوت والحفظ والنهاية مجهولة؛ إصلاح PM4 غير مثبت. تركيب تسجيل خاص وتعديلات الطبقات يعيد الماء الأزرق والجدران والنبات في التسجيل والتشغيل الجديد. إصلاح الواردات1816→1 مع إطارين مختلفين وستة انتظارات بكليهما؛ بلا مكسب FPS أو تحكم كامل.",
+   "pt": "Absent evita falha5,565GB sem PlayGo; main posterior chega à floresta/submerso330s com vistas diferentes e fecha normalmente. Muito escuro, áudio/recarga/fim não validados; PM4 antigo não provado corrigido. Stack privado/targets em camadas repõe água azul, paredes/vegetação em gravação e execução nova. Imports1816→1, mas enquadramento difere e ambos têm6 esperas; sem ganho FPS ou controlo total.",
+   "de": "Absent vermeidet5,565-GB-Startfehler ohne PlayGo; neueres sauberes Main zeigt Wald/Unterwasser330s mit geänderten Ansichten, normales Ende. Sehr dunkel, Ton/Laden/Abschluss ungeprüft; alter PM4-Fix unbelegt. Privater Aufnahme-/Layer-Stack stellt blaues Wasser/Wände/Pflanzen in Aufnahme und neuem Lauf dar. Imports1816→1, aber anderer Ausschnitt und je6 Warteereignisse; kein FPS-/Vollsteuerungsnachweis.",
+   "fr": "Absent évite échec5,565Go sans PlayGo; main récent atteint forêt/sous-marin330s avec vues changeantes et fermeture normale. Très sombre, son/chargement/fin non validés; ancien PM4 non prouvé corrigé. Stack privé/cibles en couches restaure eau bleue, murs/végétation en enregistrement et nouveau natif. Imports1816→1, cadrages distincts et6 attentes chacun; sans gain FPS ou contrôle complet.",
+   "es": "Absent evita fallo5,565GB sin PlayGo; main posterior llega a bosque/submarino330s con vistas cambiantes y cierre normal. Muy oscuro, audio/carga/final sin validar; PM4 antiguo no probado arreglado. Stack privado/targets por capas restaura agua azul, paredes/vegetación en grabación y nuevo nativo. Imports1816→1, encuadres distintos y6 esperas cada uno; sin mejora FPS ni control completo."
+  },
+  "nextTest": {
+   "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+   "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+   "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+   "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+   "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+   "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+   "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary evidence",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/9606#discussioncomment-19149902"
+   },
+   {
+    "label": "Reviewed primary evidence",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/10204"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/9864"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/6959#issuecomment-6501172989"
+   }
+  ]
+ },
+ "severed-steel": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA05106. Preserve the content version, tested build and host of each observation. Promotional artwork is not an AnyPS5 screenshot or proof of tested DLC.",
+   "zh": "报告PS5包PPSA05106，逐次保留内容版本、测试构建与主机；宣传图不是AnyPS5截图或DLC已测证明。",
+   "ar": "حزمة PS5 PPSA05106؛ احفظ نسخة وبناء ومضيف كل تجربة. الصورة دعائية لا تشغيل AnyPS5 أو إثبات DLC.",
+   "pt": "Pacote PS5 PPSA05106; preserve versão/build/host por observação. Arte promocional não é captura AnyPS5 ou DLC provado.",
+   "de": "PS5-Paket PPSA05106; Inhaltsversion/Build/Host je Beobachtung beachten. Werbung kein AnyPS5-Bild/DLC-Testbeleg.",
+   "fr": "Paquet PS5 PPSA05106 ; conservez version/build/hôte. Image promotionnelle, pas capture AnyPS5/preuve DLC.",
+   "es": "Paquete PS5 PPSA05106; conserva versión/build/host. Arte promocional no es captura AnyPS5/prueba DLC."
+  },
+  "finding": {
+   "en": "Later main reaches New Game menus at 35–37 FPS in a 220-second Cross-only run. Navigating to MUTATORS, previously mislabeled PLAY, instead exhausts the engine pool and crashes in four runs. Cross-only survives 300 seconds; no level or root-cause fix is verified.",
+   "zh": "后续main在220秒仅Cross运行到新游戏菜单35–37 FPS；转到MUTATORS（此前误标PLAY）则引擎池耗尽，4次崩溃。仅Cross存活300秒，未验证关卡或根因修复。",
+   "ar": "main لاحق يبلغ القائمة35–37 FPS/220ث مع Cross فقط. اختيار MUTATORS، المسمى PLAY خطأً، يستنفد الحوض وينهار4 مرات. Cross فقط يعيش300ث؛ لا مستوى أو إصلاح سببي مثبت.",
+   "pt": "Main posterior mostra menu35–37 FPS/220s só Cross. MUTATORS, antes confundido com PLAY, esgota pool e falha4 vezes. Só Cross dura300s; sem nível ou causa corrigida.",
+   "de": "Neueres Main zeigt Menü35–37 FPS/220s nur Cross. MUTATORS, früher fälschlich PLAY, erschöpft Pool und stürzt4-mal ab. Nur Cross300s; Level/Ursachenfix ungeprüft.",
+   "fr": "Main récent affiche menu35–37 FPS/220s Cross seul. MUTATORS, auparavant mal nommé PLAY, épuise pool et échoue4 fois. Cross seul tient300s; niveau/fix causal non établis.",
+   "es": "Main posterior muestra menú35–37 FPS/220s solo Cross. MUTATORS, antes llamado PLAY por error, agota pool y falla4 veces. Solo Cross dura300s; nivel/arreglo causal sin validar."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/9594"
+   }
+  ]
+ },
+ "unbound-worlds-apart": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA03274; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC. Artwork identifies different regional package(s) PPSA03273, not this tested package.",
+   "zh": "报告PS5包PPSA03274；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。 图片对应不同地区包PPSA03273，不用于认定本次测试包。",
+   "ar": "حزمة PS5 PPSA03274؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر. الصورة لحزمة إقليمية مختلفة PPSA03273 لا الحزمة المختبرة.",
+   "pt": "Pacote PS5 PPSA03274; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado. Imagem de pacote regional diferente PPSA03273, não o teste.",
+   "de": "PS5-Paket PPSA03274; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC. Bild eines anderen Regionalpakets PPSA03273, nicht des Tests.",
+   "fr": "Paquet PS5 PPSA03274 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé. Image d’un autre paquet régional PPSA03273, pas cet essai.",
+   "es": "Paquete PS5 PPSA03274; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado. Imagen de otro paquete regional PPSA03273, no de esta prueba."
+  },
+  "finding": {
+   "en": "The same clean build fails before a window with installed PlayGo, but absent reaches a readable New Game menu near 59.94 FPS. New Game then fails a different 8.26 MB engine allocation at 114.7 seconds. Startup recovery does not establish gameplay or an import-failure cause.",
+   "zh": "同一干净构建在installed下首窗前失败，absent到可读新游戏菜单约59.94 FPS；选择后114.7秒另一次8.26 MB引擎分配失败。启动恢复不证明游戏或导入故障因果。",
+   "ar": "نفس main يفشل قبل النافذة مع installed، ويبلغ قائمة59.94 FPS مع absent؛ New Game يفشل بتخصيص8.26 MB عند114.7ث. تجاوز البدء ليس لعباً أو سبب فشل imports.",
+   "pt": "Mesmo main falha antes da janela com installed, absent chega ao menu59,94 FPS; New Game falha alocação8,26MB aos114,7s. Arranque recuperado não prova jogo ou causa dos imports.",
+   "de": "Gleiches Main scheitert vor Fenster mit installed, absent erreicht Menü59,94 FPS; New Game scheitert an8,26MB nach114,7s. Startfortschritt kein Spiel-/Importursachennachweis.",
+   "fr": "Même main échoue avant fenêtre en installed, absent atteint menu59,94 FPS; New Game échoue allocation8,26Mo à114,7s. Démarrage ne prouve ni jeu ni causalité imports.",
+   "es": "Mismo main falla antes de ventana con installed, absent llega a menú59,94 FPS; New Game falla asignación8,26MB a114,7s. Inicio recuperado no prueba juego ni causa imports."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/10204#discussioncomment-19184285"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/10204"
+   }
+  ]
+ },
+ "the-pathless": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA01826. Preserve the content version, tested build and host of each observation. Promotional artwork is not an AnyPS5 screenshot or proof of tested DLC. Publisher artwork identifies PPSA01825, a different regional package; it does not identify this test.",
+   "zh": "报告PS5包PPSA01826，逐次保留内容版本、测试构建与主机；宣传图不是AnyPS5截图或DLC已测证明。 发行商图片对应不同地区包PPSA01825，不用于认定本次测试身份。",
+   "ar": "حزمة PS5 PPSA01826؛ احفظ نسخة وبناء ومضيف كل تجربة. الصورة دعائية لا تشغيل AnyPS5 أو إثبات DLC. صورة الناشر للحزمة الإقليمية PPSA01825 لا تحدد هذا الاختبار.",
+   "pt": "Pacote PS5 PPSA01826; preserve versão/build/host por observação. Arte promocional não é captura AnyPS5 ou DLC provado. Arte do editor identifica pacote regional PPSA01825, não este teste.",
+   "de": "PS5-Paket PPSA01826; Inhaltsversion/Build/Host je Beobachtung beachten. Werbung kein AnyPS5-Bild/DLC-Testbeleg. Herausgeberbild nennt anderes Regionalpaket PPSA01825, nicht diesen Test.",
+   "fr": "Paquet PS5 PPSA01826 ; conservez version/build/hôte. Image promotionnelle, pas capture AnyPS5/preuve DLC. Image éditeur : autre paquet régional PPSA01825, pas cet essai.",
+   "es": "Paquete PS5 PPSA01826; conserva versión/build/host. Arte promocional no es captura AnyPS5/prueba DLC. Imagen editorial de otro paquete regional PPSA01825, no de esta prueba."
+  },
+  "finding": {
+   "en": "Absent PlayGo avoids the 5.565 GB startup failure and shows publisher/title images before normal close at 240 seconds. Black samples have unvalidated capture visibility. The startup trace is not gameplay FPS; interactive menus, audio and saves remain unverified.",
+   "zh": "absent避开5.565 GB启动失败，240秒正常关闭前可见发行商／标题图；黑色样本的捕获可见性未独立验证。启动追踪不是游戏FPS，交互菜单、音频、存档未测。",
+   "ar": "Absent يتجاوز فشل5.565 GB ويعرض شعار/عنوان قبل إغلاق240ث؛ ظهور الالتقاط الأسود غير متحقق. التتبع بدء لا FPS لعب؛ القوائم التفاعلية والصوت والحفظ مجهولة.",
+   "pt": "Absent evita falha5,565GB e mostra logos/título antes de fechar240s; visibilidade das capturas pretas não validada. Trace de arranque não é FPS de jogo; menus/áudio/saves por verificar.",
+   "de": "Absent vermeidet5,565GB-Startfehler, zeigt Logos/Titel bis normalem Ende240s; Sichtbarkeit schwarzer Captures ungeprüft. Starttrace kein Spiel-FPS; Menüinteraktion/Ton/Saves offen.",
+   "fr": "Absent évite échec5,565Go et montre logos/titre avant fermeture240s; visibilité des captures noires non validée. Trace démarrage sans FPS de jeu; menus/son/saves non testés.",
+   "es": "Absent evita fallo5,565GB y muestra logos/título antes de cerrar240s; visibilidad capturas negras sin validar. Trace de inicio no es FPS de juego; menús/audio/saves sin probar."
+  },
+  "nextTest": {
+   "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+   "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+   "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+   "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+   "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+   "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+   "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary evidence",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/9606#discussioncomment-19149902"
+   },
+   {
+    "label": "Reviewed primary evidence",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/10204"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/9606"
+   }
+  ]
+ },
+ "gta-v": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "Six local D16-stack runs load Story, cinematics and the open world for up to 674 seconds without a crash. Warm cutscenes are around 70 ms/frame; open world 120–240 ms. Later write-watch pairs improve cutscenes only; dark foreground tiles and capture limitations remain separate.",
+   "zh": "六次本地D16组合到故事、片头及开放世界，最长674秒无崩溃；热缓存片头约70毫秒／帧，开放世界120–240毫秒。后续写监控增益仅属片头，前景暗块及捕获限制另记。",
+   "ar": "ست محاولات D16 محلية تبلغ Story والعالم المفتوح حتى674ث بلا انهيار؛ السينمائي≈70ms والعالم120–240ms/إطار. أزواج write-watch اللاحقة تخص السينمائي؛ البلاطات والالتقاط منفصلان.",
+   "pt": "Seis ensaios D16 locais chegam a Story/mundo aberto até674s sem crash; cinemática≈70ms, mundo120–240ms/frame. Ganhos write-watch posteriores só nas cenas; tiles escuros/captura separados.",
+   "de": "Sechs lokale D16-Läufe erreichen Story/offene Welt bis674s ohne Absturz; Intro≈70ms, Welt120–240ms/Frame. Spätere Write-Watch-Gewinne nur Intro; dunkle Kacheln/Capture getrennt.",
+   "fr": "Six essais D16 locaux atteignent Story/monde ouvert jusqu’à674s sans crash; cinématique≈70ms, monde120–240ms/image. Gains write-watch ultérieurs limités aux scènes; tuiles/capture distinctes.",
+   "es": "Seis pruebas D16 locales llegan a Story/mundo abierto hasta674s sin crash; cinemática≈70ms, mundo120–240ms/frame. Ganancias write-watch posteriores solo escenas; tiles/captura separados."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/9136#issuecomment-6390382840"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/11513"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/11425"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/11307#issuecomment-6414324303"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/11425#issuecomment-6425876227"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/11425#issuecomment-6427654998"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/11425#issuecomment-6451832303"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/1203"
+   }
+  ]
+ },
+ "gta-v-ppsa04263": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Report package PPSA04263. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA04263；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA04263، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA04263; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA04263; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA04263 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA04263; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  },
+  "finding": {
+   "en": "Three interleaved local pairs in the stationary North Yankton prologue average 9.46→12.14 FPS. The port’s priority switch is off; 200,000 proof checks disagree zero times. This is a patched non-Fidelity scene result, not an unchanged-main or general game benchmark. On an already patched #6192 base, additional hint/cache changes reduce revalidation work but do not measurably change FPS: 12.40→12.52 over three runs each. All 300,000 proof checks agree. Reduced counters must not be promoted to another gameplay speedup.",
+   "zh": "北扬克顿序章静止场景三组交错本地对照平均9.46→12.14 FPS；移植版优先级开关关闭，20万proof检查零分歧。这是补丁非Fidelity场景结果，不是原main或全游戏基准。 已含#6192的补丁基线上，额外hint／缓存修改减少复验工作，三次各组12.40→12.52 FPS仍无明显变化；30万proof一致。计数下降不能升级为另一次游戏提速。",
+   "ar": "ثلاثة أزواج محلية متداخلة بمقدمة North Yankton الثابتة تعطي9.46→12.14 FPS؛ الأولوية معطلة و200ألف فحص بلا اختلاف. مشهد معدل غير Fidelity، لا main نظيف أو قياس عام. فوق أساس6192 المعدل تقلل تغييرات hint/cache العمل بلا مكسب FPS مقاس:12.40→12.52 بثلاث محاولات لكل طرف،300ألف فحص متفق. العدادات ليست تسريعاً آخر.",
+   "pt": "Três pares locais intercalados no prólogo North Yankton parado dão9,46→12,14 FPS; prioridade desligada e200mil provas sem divergência. Cena com patches não Fidelity, sem benchmark main/global. Sobre base6192, hint/cache reduz trabalho sem ganho FPS mensurável:12,40→12,52 em3 ensaios por lado,300mil provas iguais. Contadores menores não provam mais velocidade.",
+   "de": "Drei verschachtelte lokale Paare im stehenden North-Yankton-Prolog9,46→12,14 FPS; Priorität aus,200.000 Proofs ohne Abweichung. Gepatchte Nicht-Fidelity-Szene, kein Main-/Gesamtbenchmark. Auf6192-Basis senken Hint-/Cache-Änderungen Arbeit ohne messbaren FPS-Gewinn:12,40→12,52 je3 Läufe,300.000 Proofs gleich. Kleinere Zähler kein weiterer Spielgewinn.",
+   "fr": "Trois paires locales alternées au prologue North Yankton immobile9,46→12,14 FPS; priorité désactivée,200000 preuves sans divergence. Scène modifiée non Fidelity, sans benchmark main/global. Sur base6192, hint/cache réduit travail sans gain FPS mesurable:12,40→12,52 en3 essais chacun,300000 preuves égales. Compteurs réduits sans nouveau gain de jeu.",
+   "es": "Tres parejas locales intercaladas en prólogo North Yankton quieto9,46→12,14 FPS; prioridad desactivada,200000 pruebas sin divergencia. Escena parcheada no Fidelity, sin benchmark main/general. Sobre base6192, hint/cache reduce trabajo sin ganancia FPS medible:12,40→12,52 en3 pruebas por lado,300000 comprobaciones iguales. Contadores menores no prueban más velocidad."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/11580#issuecomment-6451541570"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/6192#issuecomment-6499177612"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/12378#issuecomment-6503638471"
+   }
+  ]
+ },
+ "resident-evil-requiem": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Confirm this PS5 package and content version; other regions, PS4/native PC versions, DLC and promotional images do not identify the tested content. Report31246/01.200.000; the art page includes30803/36561, so it does not prove the reported region or edition.",
+   "zh": "核对本PS5包及内容版本，其他地区、PS4／原生PC、DLC和宣传图不能识别实测内容。 实测31246／01.200.000，图片页包含30803／36561，不证明报告地区或版本内容。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ مناطق أخرى و PS4/PC و DLC والدعاية لا تحدد المحتوى المختبر. تقرير 31246/01.200.000؛ صفحةالصورة 30803/36561 لا تثبت منطقته/نسخته.",
+   "pt": "Confirme pacotePS5/versão; outras regiões, PS4/PC, DLC e imagem promocional não identificam conteúdo testado. Relato31246/01.200.000; arte30803/36561não prova região/edição testada.",
+   "de": "PS5-Paket/Version prüfen; andere Regionen, PS4/PC, DLC und Werbebilder identifizieren Testinhalt nicht. Bericht31246/01.200.000; Bildseite30803/36561belegt Testregion/Edition nicht.",
+   "fr": "Vérifiez paquetPS5/version; autres régions, PS4/PC, DLC et images promotionnelles ne fixent pas le contenu testé. Rapport31246/01.200.000; art30803/36561ne fixe région/édition testée.",
+   "es": "Verifica paquetePS5/versión; otras regiones, PS4/PC, DLC e imagen promocional no identifican contenido probado. Informe31246/01.200.000; arte30803/36561no fija región/edición probada."
+  },
+  "finding": {
+   "en": "The private stack reaches rainy-street player control, objective HUD and inventory after the intro. Clear-key and memory changes remove earlier blockers, but sampled-texture churn makes frames grow from seconds to minutes. The later refused-texture fix stabilizes about 10–12 s/frame, not playable speed; loading-card comparisons were corrected as mismatched scenes.",
+   "zh": "私有组合越过片头到雨街操控、任务HUD与物品栏；clear-key及内存修改越过旧阻碍，纹理反复创建令单帧从秒增至分钟。后续拒收纹理修改约10–12秒／帧，仍极慢；加载卡对照已纠正为不同场景。",
+   "ar": "تركيب خاص يبلغ تحكم الشارع وHUD والمخزون؛ تغييرات clear-key والذاكرة تتجاوز عوائق، لكن churn يرفع الإطار لثوان ودقائق. إصلاح لاحق≈10–12ث/إطار لا سرعة لعب؛ مقارنات بطاقة التحميل صُححت لاختلاف المشاهد.",
+   "pt": "Stack privado chega à rua/HUD/inventário; fixes clear-key/memória passam bloqueios, mas churn leva frames a segundos/minutos. Fix posterior≈10–12s/frame, não velocidade jogável; pares de cartão de carga corrigidos por cenas diferentes.",
+   "de": "Privater Stack erreicht Straße/Steuerung/HUD/Inventar; Clear-Key-/Speicherfixes passieren Stopps, Texturchurn macht Frames sekunden-/minutenlang. Später≈10–12s/Frame, weiter extrem langsam; Ladebildvergleiche als szenenfremd korrigiert.",
+   "fr": "Stack privé atteint rue/commandes/HUD/inventaire; fixes clear-key/mémoire franchissent blocages, churn étire images à secondes/minutes. Ensuite≈10–12s/image, toujours très lent; comparaisons carte chargement corrigées pour scènes différentes.",
+   "es": "Stack privado llega a calle/control/HUD/inventario; fixes clear-key/memoria superan bloqueos, churn alarga frames a segundos/minutos. Después≈10–12s/frame, aún muy lento; parejas de carga corregidas por escenas distintas."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/11052"
+   },
+   {
+    "label": "Publisher identity/art source; not an AnyPS5 test",
+    "url": "https://www.playstation.com/en-us/games/resident-evil-requiem/"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/11485#issuecomment-6422070394"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/11599"
+   }
+  ]
+ },
+ "resident-evil-village": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "At the first “R Look” prompt after Continue, a matched local lighting change replaces three out-of-focus glows with visible room furnishings. Both runs remain around 0.3–0.5 FPS. This one-boot-per-arm visual comparison does not prove a speed gain or later progression.",
+   "zh": "Continue后首次“R Look”处，本地灯光修改将三个模糊光团还原为可见房间陈设；两组仍约0.3–0.5 FPS。各启动一次的画面对照不证明提速或后续流程。",
+   "ar": "عند R Look بعد Continue يستعيد تعديل محلي أثاث الغرفة بدل ثلاث توهجات؛ كلاهما≈0.3–0.5 FPS. محاولة لكل طرف لا تثبت تسريعاً أو تقدماً لاحقاً.",
+   "pt": "Em R Look após Continue, fix local revela a sala em vez de3 brilhos; ambos≈0,3–0,5 FPS. Um arranque por lado não prova velocidade ou progressão.",
+   "de": "Bei R Look nach Continue zeigt lokaler Fix Zimmer statt3 Lichtflecken; beide≈0,3–0,5 FPS. Je ein Start belegt weder Tempo noch späteren Fortschritt.",
+   "fr": "À R Look après Continue, fix local révèle pièce au lieu de3 halos; les deux≈0,3–0,5 FPS. Un démarrage chacun sans vitesse ou suite validées.",
+   "es": "En R Look tras Continue, fix local revela habitación en vez de3 brillos; ambos≈0,3–0,5 FPS. Un arranque por lado no prueba velocidad ni progreso posterior."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build and selected scene, with the reported patches and hardware. Verify input, audio, save reload and a longer session separately; unknown fields stay unknown.",
+   "zh": "按报告的包、构建、补丁、硬件与场景复测，分别核验输入、音频、读档及更长会话，未知字段保持未知。",
+   "ar": "أعد نفس الحزمة/البناء/التعديلات/العتاد والمشهد؛ تحقق منفصلاً من الإدخال والصوت وإعادة الحفظ والمدة، وابقِ المجهول مجهولاً.",
+   "pt": "Repita pacote/build/patches/máquina/cena; verifique entrada, áudio, recarga e sessão longa separadamente. Desconhecidos permanecem assim.",
+   "de": "Paket/Build/Patches/Hardware/Szene reproduzieren; Eingabe, Ton, Laden und längere Sitzung getrennt prüfen. Unbekanntes bleibt unbekannt.",
+   "fr": "Reproduisez paquet/build/patches/matériel/scène; vérifiez saisie, son, rechargement et longue durée séparément. Inconnus conservés.",
+   "es": "Repite paquete/build/parches/equipo/escena; verifica entrada, audio, recarga y larga sesión por separado. Mantén desconocidos."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/5169"
+   }
+  ]
+ },
+ "river-city-girls": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "PS5 package and content version follow the individual report; unreported fields remain unknown. Publisher artwork is promotional, not an AnyPS5 screenshot or evidence of tested DLC.",
+   "zh": "PS5包和内容版本以各报告为准，未述保持未知；发行商图片为宣传素材，不是AnyPS5截图，也不证明已测DLC。",
+   "ar": "حزمة PS5 والنسخة بحسب التقرير؛ غير المذكور مجهول. صور الناشر دعائية لا اختبار AnyPS5 أو دليل DLC.",
+   "pt": "Pacote PS5 e versão seguem cada relato; ausentes ficam desconhecidos. Arte promocional não é teste AnyPS5 nem prova de DLC.",
+   "de": "PS5-Paket/Version gelten je Bericht, fehlende Angaben unbekannt. Werbung ist kein AnyPS5-Testbild oder DLC-Nachweis.",
+   "fr": "Paquet PS5/version propres au rapport, absences inconnues. Art promotionnel sans capture AnyPS5 ni preuve de DLC testé.",
+   "es": "Paquete PS5/versión según informe, ausencias desconocidas. Arte promocional no es captura AnyPS5 ni prueba de DLC probado."
+  },
+  "finding": {
+   "en": "A manual boss-death pair measures lower controller-speaker fallback peaks with the opt-in mute change. Ordinary game buses keep playing; defaults stay unchanged. Captured audio was measured but not listened to on speakers, and a physical DualSense speaker was not tested.",
+   "zh": "手动Boss死亡对照测得选择mute后手柄扬声器回落混音峰值下降；普通游戏声道仍播放，默认不变。仅测量音频捕获，未扬声器听辨，也未测实体DualSense扬声器。",
+   "ar": "زوج موت الزعيم اليدوي يقيس قمة أقل مع mute الاختياري لنسخة سماعة اليد؛ قنوات اللعبة باقية والافتراضي ثابت. القياس دون استماع أو سماعة DualSense فعلية.",
+   "pt": "Par manual de morte mede pico inferior com mute opt-in da coluna do comando; buses normais continuam, padrão igual. Captura medida, sem audição em colunas ou DualSense real.",
+   "de": "Manuelles Boss-Tod-Paar misst niedrigere Peaks mit optionalem Controller-Fallback-Mute; normale Busse bleiben, Standard gleich. Aufnahme gemessen, nicht angehört, DualSense-Lautsprecher ungeprüft.",
+   "fr": "Paire manuelle de mort mesure pic réduit avec mute facultatif du retour haut-parleur manette; bus normaux conservés, défaut identique. Capture mesurée sans écoute ou DualSense réel testé.",
+   "es": "Pareja manual de muerte mide pico menor con mute opcional del altavoz de mando; buses normales siguen, defecto igual. Captura medida sin escucha ni altavoz DualSense real probado."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/11609"
+   },
+   {
+    "label": "Publisher identity/promotional material, not an AnyPS5 test",
+    "url": "https://store.playstation.com/en-us/concept/234070"
+   }
+  ]
+ },
+ "vampire-survivors": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "The contributor reports 600 presents/10 s across menus, gameplay and level-ups, over 22,000 flips, and successful save-memory writes. The actual AnyPS5 commit, full driver revision and test date are unspecified; save reload, completion and audio are not established by these counters.",
+   "zh": "报告菜单、游戏与升级均600次呈现／10秒，总计逾22000 flips，存档内存写入成功；未述实际AnyPS5提交、完整驱动版本或测试日期。计数不证明读档、通关或音频。",
+   "ar": "الكاتب يبلغ600 عرض/10ث بالقوائم واللعب والترقيات وأكثر من22ألف flip وكتابة حفظ. commit ونسخة driver الكاملة والتاريخ مجهولة؛ العد لا يثبت إعادة الحفظ أو النهاية أو الصوت.",
+   "pt": "Autor relata600 apresentações/10s nos menus/jogo/subidas,22mil flips e escrita de save. Commit/driver completo/data ausentes; contadores não validam recarga, fim ou áudio.",
+   "de": "Autor meldet600 Bilder/10s in Menü/Spiel/Level-ups,22.000 Flips und Save-Schreiben. Commit/voller Treiber/Testdatum fehlen; Laden/Abschluss/Ton nicht durch Zähler belegt.",
+   "fr": "Auteur rapporte600 images/10s menus/jeu/niveaux,22000 flips et écriture sauvegarde. Commit/driver complet/date absents; compteurs sans rechargement, fin ou son validés.",
+   "es": "Autor informa600 imágenes/10s menús/juego/niveles,22000 flips y escritura guardado. Commit/driver completo/fecha ausentes; contadores no validan carga, final o audio."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/3745"
+   }
+  ]
+ },
+ "octopath-traveler-ii": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA09809. Preserve the content version, tested build and host of each observation. Promotional artwork is not an AnyPS5 screenshot or proof of tested DLC. Publisher artwork identifies PPSA09797, PPSA10805, a different regional package; it does not identify this test.",
+   "zh": "报告PS5包PPSA09809，逐次保留内容版本、测试构建与主机；宣传图不是AnyPS5截图或DLC已测证明。 发行商图片对应不同地区包PPSA09797, PPSA10805，不用于认定本次测试身份。",
+   "ar": "حزمة PS5 PPSA09809؛ احفظ نسخة وبناء ومضيف كل تجربة. الصورة دعائية لا تشغيل AnyPS5 أو إثبات DLC. صورة الناشر للحزمة الإقليمية PPSA09797, PPSA10805 لا تحدد هذا الاختبار.",
+   "pt": "Pacote PS5 PPSA09809; preserve versão/build/host por observação. Arte promocional não é captura AnyPS5 ou DLC provado. Arte do editor identifica pacote regional PPSA09797, PPSA10805, não este teste.",
+   "de": "PS5-Paket PPSA09809; Inhaltsversion/Build/Host je Beobachtung beachten. Werbung kein AnyPS5-Bild/DLC-Testbeleg. Herausgeberbild nennt anderes Regionalpaket PPSA09797, PPSA10805, nicht diesen Test.",
+   "fr": "Paquet PS5 PPSA09809 ; conservez version/build/hôte. Image promotionnelle, pas capture AnyPS5/preuve DLC. Image éditeur : autre paquet régional PPSA09797, PPSA10805, pas cet essai.",
+   "es": "Paquete PS5 PPSA09809; conserva versión/build/host. Arte promocional no es captura AnyPS5/prueba DLC. Imagen editorial de otro paquete regional PPSA09797, PPSA10805, no de esta prueba."
+  },
+  "finding": {
+   "en": "Options, rather than Cross, confirms Initial Settings. The title reaches traveler selection at about 24–26 FPS; no traveler was selected. The layered-target patch restores a lit parchment map at similar speed. Later main already includes the budget fix; this is still menu evidence, without audio or gameplay.",
+   "zh": "Options而非Cross确认初始设置；到旅人选择约24–26 FPS，未选中旅人。分层目标补丁恢复明亮羊皮地图且速度近似；后续main已含预算修改，仍只是菜单，无音频或游戏验证。",
+   "ar": "Options يؤكد الإعدادات ثم اختيار الرحالة≈24–26 FPS دون اختيار شخصية. تعديل الطبقات يعيد خريطة مضاءة بسرعة مماثلة؛ main اللاحق يضم fix الميزانية. قائمة فقط بلا صوت أو لعب.",
+   "pt": "Options confirma ajustes e chega à seleção24–26 FPS, sem escolher viajante. Patch camadas ilumina mapa sem mudar velocidade; main posterior inclui orçamento. Menu, sem áudio/jogo.",
+   "de": "Options bestätigt Einstellungen, Reisendenauswahl≈24–26 FPS ohne Wahl. Layer-Fix beleuchtet Karte bei ähnlichem Tempo; neueres Main enthält Budgetfix. Menü, Ton/Spiel ungeprüft.",
+   "fr": "Options confirme réglages, choix voyageur≈24–26 FPS sans sélection. Fix couches éclaire carte à vitesse semblable; main récent inclut budget. Menu seul, sans son/jeu validés.",
+   "es": "Options confirma ajustes, selección viajero≈24–26 FPS sin elegir. Fix capas ilumina mapa a velocidad similar; main posterior incluye presupuesto. Solo menú, sin audio/juego."
+  },
+  "nextTest": {
+   "en": "Pin build, modules, settings and test date; repeat the relevant scene with controls, audio and saves. Keep diagnostic runs separate from compliant performance captures.",
+   "zh": "固定构建、模块、设置与测试日期，复现相关场景并验证操作、声音与存档；诊断运行与规范性能采集分开。",
+   "ar": "ثبّت البناء/الوحدات/الإعدادات/التاريخ وكرر المشهد والتحكم والصوت والحفظ. افصل التشخيص عن قياس الأداء.",
+   "pt": "Fixe build/módulos/opções/data e repita cena/controlos/som/saves. Separe diagnóstico de medição.",
+   "de": "Build/Module/Einstellungen/Datum festhalten, Szene/Steuerung/Ton/Saves prüfen. Diagnose und Leistungsmessung trennen.",
+   "fr": "Fixez build/modules/réglages/date, répétez scène/contrôle/son/saves. Séparez diagnostic et mesures.",
+   "es": "Fija build/módulos/ajustes/fecha y repite escena/control/audio/saves. Separa diagnóstico y medición."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary evidence",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/8091#issuecomment-6332162016"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/9593"
+   }
+  ]
+ },
+ "astroneer": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA27623. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA27623；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA27623. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA27623. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA27623. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA27623. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA27623. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  },
+  "finding": {
+   "en": "The budget candidate renders the intro around 12 FPS where the paired main is black. A 306-present trace has median 81.6 ms/frame. No post-landing input was tried. Thousands of scattered imports and a warm-cache slowdown are not by themselves proof of gameplay or a general FPS fix.",
+   "zh": "预算候选在配对main黑屏处显示片头约12 FPS；306帧追踪中位81.6毫秒。未操作着陆后游戏，数千分散导入或热缓存变慢本身不证明游戏或通用FPS修复。",
+   "ar": "مرشح الميزانية يرسم المقدمة≈12 FPS مقابل main أسود؛306 عروض بوسيط81.6ms. لا إدخال بعد الهبوط. آلاف imports ليست لعباً أو تسريعاً عاماً مثبتاً.",
+   "pt": "Candidato orçamento mostra intro≈12 FPS contra main preto;306 frames com mediana81,6ms. Sem input após aterrar; milhares de imports não provam jogo ou ganho geral.",
+   "de": "Budgetkandidat zeigt Intro≈12 FPS statt schwarzem Main;306 Bilder Median81,6ms. Keine Eingabe nach Landung; Tausende Imports kein Spiel-/Allgemeingewinnnachweis.",
+   "fr": "Candidat budget affiche intro≈12 FPS contre main noir;306 images médiane81,6ms. Sans entrée après atterrissage; imports nombreux sans jeu/gain général validés.",
+   "es": "Candidato presupuesto muestra intro≈12 FPS frente main negro;306 imágenes mediana81,6ms. Sin input tras aterrizar; miles imports no prueban juego/ganancia general."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/8746"
+   }
+  ]
+ },
+ "eternal-cylinder": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA06369; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA06369；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA06369؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA06369; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA06369; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA06369 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA06369; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  },
+  "finding": {
+   "en": "Budget plus OOB-fetch changes reach a scene with HUD, without tested gameplay input. Two scene traces vary from 166 to 396 ms/frame; the slower run repeatedly copies a failed 4.5 MiB import. The exact mappings were not captured, so #4449 was not validated as a fix here.",
+   "zh": "预算与越界读取修改到有HUD场景，未测试游戏输入；两次追踪166至396毫秒／帧，慢运行反复复制失败的4.5 MiB导入。未捕获准确映射，因此未验证#4449修复。",
+   "ar": "تعديلات الميزانية/OOB تبلغ مشهداً مع HUD بلا تحكم مختبر. تتفاوت تجربتان166–396ms، والبطيئة تكرر نسخ import4.5MiB فاشل. بلا mappings، إصلاح4449 غير مثبت.",
+   "pt": "Fixes orçamento/OOB chegam a cena HUD sem input testado. Dois traces166–396ms, lento copia import4,5MiB falhado; sem mappings exatos,4449 não validado.",
+   "de": "Budget-/OOB-Fixes erreichen HUD-Szene ohne Steuerungstest. Zwei Traces166–396ms, langsamer Lauf kopiert fehlgeschlagenen4,5MiB-Import; ohne Mappings kein4449-Fixnachweis.",
+   "fr": "Fixes budget/OOB atteignent scène HUD sans commandes testées. Deux traces166–396ms, essai lent recopie import4,5MiB échoué; sans mappings,4449 non validé.",
+   "es": "Fixes presupuesto/OOB llegan a escena HUD sin input probado. Dos traces166–396ms, lento copia import4,5MiB fallido; sin mappings,4449 sin validar."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/9909"
+   }
+  ]
+ },
+ "mortal-shell-ii": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA34008. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution. Current Rotten Autumn artwork does not identify the report’s unknown content version or prove expansion testing.",
+   "zh": "报告PS5包PPSA34008；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。 当前Rotten Autumn封面不能确定报告未提供的内容版本，也不证明扩展内容已测试。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA34008. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5. صورة Rotten Autumn لا تحدد نسخة المحتوى المجهولة أو تثبت اختبار الإضافة.",
+   "pt": "Pacote PS5 referido PPSA34008. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5. A arte Rotten Autumn não identifica a versão desconhecida nem prova teste da expansão.",
+   "de": "Gemeldetes PS5-Paket PPSA34008. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf. Rotten-Autumn-Werbung bestimmt weder unbekannte Inhaltsversion noch getestete Erweiterung.",
+   "fr": "Paquet PS5 rapporté PPSA34008. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5. L’image Rotten Autumn ne fixe pas la version inconnue et ne prouve pas le test de l’extension.",
+   "es": "Paquete PS5 reportado PPSA34008. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5. La imagen Rotten Autumn no identifica la versión desconocida ni prueba la expansión."
+  },
+  "finding": {
+   "en": "The local D16 stack passes the shader refusal, then aborts at unsupported extended M4AAC decoding before a verified scene. A diagnostic run measures extension1/output2 with eight channels; channel ordering and console semantics remain unknown, rather than silently bypassed.",
+   "zh": "本地D16组合越过shader拒绝后，在扩展M4AAC解码终止，尚无确认场景；诊断测得extension1／output2及8声道，但通道顺序与主机语义仍未知，不能静默绕过。",
+   "ar": "تركيب D16 يتجاوز shader ثم يفشل في M4AAC الممتد قبل مشهد مثبت؛ القياس ext1/out2 وثماني قنوات، لكن ترتيبها وسلوك الجهاز مجهولان بلا تجاوز صامت.",
+   "pt": "Stack D16 passa shader e aborta M4AAC alargado antes de cena confirmada; ext1/out2 e8 canais medidos, ordem/semântica desconhecidas, sem bypass.",
+   "de": "D16-Stack passiert Shader, bricht an erweitertem M4AAC vor bestätigter Szene ab; ext1/out2/8 Kanäle gemessen, Reihenfolge/Konsole unbekannt, kein stiller Bypass.",
+   "fr": "Stack D16 passe shader puis échoue M4AAC étendu avant scène validée; ext1/out2/8 canaux mesurés, ordre/console inconnus, sans contournement silencieux.",
+   "es": "Stack D16 pasa shader y aborta M4AAC extendido antes de escena validada; ext1/out2/8 canales medidos, orden/consola desconocidos, sin bypass silencioso."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/8844"
+   }
+  ]
+ },
+ "oregon-trail": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA19244; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA19244；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA19244؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA19244; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA19244; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA19244 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA19244; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  },
+  "finding": {
+   "en": "The local budget candidate raises black-frame presentation from roughly 17 to 60 FPS; both screenshots remain black. Eight dumped final storage outputs are all zero, and forced SDR is unchanged. Faster black output is not a verified menu or gameplay improvement.",
+   "zh": "本地预算候选把黑帧呈现约17升至60 FPS，截图均黑；8次最终存储输出全零，强制SDR不变。更快黑屏不代表菜单或游戏改善。",
+   "ar": "مرشح الميزانية يرفع العرض الأسود≈17→60 FPS والصور سوداء؛ ثمانية مخارج صفرية وSDR لا يغيرها. الأسود الأسرع ليس قائمة أو لعباً.",
+   "pt": "Candidato orçamento sobe frames pretos≈17→60 FPS, imagens continuam pretas;8 saídas zero eSDR igual. Preto mais rápido não valida menu/jogo.",
+   "de": "Budgetkandidat erhöht Schwarzbildrate≈17→60 FPS;8 finale Ausgaben null, SDR unverändert. Schnelleres Schwarz kein Menü-/Spielgewinn.",
+   "fr": "Candidat budget hausse images noires≈17→60 FPS;8 sorties nulles, SDR identique. Noir plus rapide sans menu/jeu validés.",
+   "es": "Candidato presupuesto sube frames negros≈17→60 FPS;8 salidas cero, SDR igual. Negro más rápido no valida menú/juego."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/10215"
+   }
+  ]
+ },
+ "mafia-old-country": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Report package PPSA14299. Keep each tested version, runtime and patch stack. Publisher artwork does not establish the tested region, DLC or AnyPS5 rendering.",
+   "zh": "报告包PPSA14299；按各次版本、运行时及补丁栈阅读。发行商宣传图不能证明实测地区、DLC或AnyPS5画面。",
+   "ar": "حزمة PPSA14299، احتفظ بالنسخة والبناء والترقيع؛ الدعاية لا تثبت المنطقة أوDLC أو رسم AnyPS5.",
+   "pt": "Pacote PPSA14299; mantenha versão/build/patches. Arte não prova região/DLC/renderização AnyPS5.",
+   "de": "Paket PPSA14299; Version/Runtime/Patches beachten. Werbung belegt keine Region/DLC/AnyPS5-Darstellung.",
+   "fr": "Paquet PPSA14299 ; conserver version/runtime/patches. Publicité ne prouve ni région/DLC/rendu AnyPS5.",
+   "es": "Paquete PPSA14299; conserva versión/runtime/parches. Arte no prueba región/DLC/renderizado AnyPS5."
+  },
+  "finding": {
+   "en": "Main stops at HTTP callbacks. Local redirect/async/D16 fixes plus a legacy network-error change reach terms, brightness and menu at 4–6 presents/s. Large pipeline compiles can trigger the engine watchdog; no five-minute attempt reaches gameplay.",
+   "zh": "main停于HTTP回调；本地重定向／异步／D16加旧网络错误行为到条款、亮度及菜单4–6次呈现／秒。大pipeline编译触发引擎watchdog，五分钟测试均未进游戏。",
+   "ar": "main يقف عند HTTP؛ إصلاحات محلية مع سلوك خطأ قديم تبلغ الشروط/السطوع/القائمة4–6 عرض/ث. compiles كبيرة تفعل watchdog؛ لا لعب خلال5د.",
+   "pt": "Main para emHTTP; fixes locais e erro antigo chegam a termos/brilho/menu4–6 apresentações/s. Compiles grandes acionam watchdog; sem jogo nos5min.",
+   "de": "Main stoppt anHTTP; lokale Fixes/alter Netzwerkfehler erreichen AGB/Helligkeit/Menü4–6 Bilder/s. Große Compiles lösen Watchdog aus; kein Spiel in5min.",
+   "fr": "Main bloque HTTP; fixes locaux/ancienne erreur atteignent conditions/luminosité/menu4–6 images/s. Gros compiles déclenchent watchdog; aucun jeu en5min.",
+   "es": "Main para enHTTP; fixes locales/error antiguo llegan a términos/brillo/menú4–6 imágenes/s. Compiles grandes disparan watchdog; sin juego en5min."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/7458"
+   }
+  ]
+ },
+ "astros-playroom": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "After the pool-size revert, clean main boots CPU Plaza and three steady runs give 48.7–48.8 presents/10 s, median 204 ms/frame. More stage reuse is about 5% slower in local experiments. Earlier 12 GiB boot failures and profiling timings belong to different builds.",
+   "zh": "池大小回退后干净main到CPU广场，三次稳定48.7–48.8次呈现／10秒，中位204毫秒／帧；本地更多stage复用反慢约5%。旧12 GiB启动失败与剖析计时属不同构建。",
+   "ar": "بعد تراجع الحوض main نظيف يبلغ CPU Plaza بثلاث محاولات48.7–48.8 عرض/10ث و204ms؛ إعادة استعمال إضافية أبطأ≈5%. فشل12GiB وقياسات profiling لبناء آخر.",
+   "pt": "Após revert do pool main limpo chega a CPU Plaza,3 ensaios48,7–48,8 apresentações/10s e204ms; maior reutilização local fica≈5% pior. Falhas12GiB/profiling são outros builds.",
+   "de": "Nach Pool-Revert erreicht sauberes Main CPU Plaza,3 Läufe48,7–48,8 Bilder/10s,204ms; mehr lokale Wiederverwendung≈5% langsamer. Alte12GiB-/Profilingbefunde andere Builds.",
+   "fr": "Après revert pool main propre atteint CPU Plaza,3 essais48,7–48,8 images/10s,204ms; réutilisation locale accrue≈5% plus lente. Anciens12GiB/profiling sur autres builds.",
+   "es": "Tras revert pool main limpio llega a CPU Plaza,3 pruebas48,7–48,8 imágenes/10s,204ms; más reutilización local≈5% más lenta. Fallos12GiB/profiling son otros builds."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package, build, patch set and scene; verify controls, audio, save reload and a longer session separately. Record the actual test date and keep unknown fields unknown.",
+   "zh": "以准确包、构建、补丁和场景复测，分别验证操控、音频、读档及更长会话；记录实际测试日期，未知字段保持未知。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد نفسه؛ افحص التحكم والصوت وإعادة الحفظ والمدة منفصلة. سجل تاريخ الاختبار واحتفظ بالمجهول.",
+   "pt": "Repita pacote, build, patches e cena; verifique controlos, áudio, recarga e sessão longa separadamente. Registe a data real e mantenha desconhecidos.",
+   "de": "Paket, Build, Patches und Szene reproduzieren; Steuerung, Ton, Laden und Dauer getrennt prüfen. Testdatum erfassen, Unbekanntes bewahren.",
+   "fr": "Reproduisez paquet, build, patches et scène; vérifiez commandes, son, rechargement et durée séparément. Date réelle et inconnus conservés.",
+   "es": "Repite paquete, build, parches y escena; verifica controles, audio, recarga y duración aparte. Registra fecha real y conserva desconocidos."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/6782#issuecomment-6405807418"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/3232"
+   }
+  ]
+ },
+ "ghost-of-yotei": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "Clean main passes the old blend stop but fails a later multi-target blend while loading the first world cell. Version 02.002000 requests GHOSTYOTEIDUPLEX; an absent entitlement label leaves a spinner. A local multi-target fix passes that stop but falls below 0.1 FPS as textures fill memory; no free play is verified. The older fork freezes in six lane-on opening runs versus zero of three lane-off. Two hour-long candidate runs reach their caps without freezing. This is a specific recorder hand-off fix; it neither proves main support nor adds the GPU time of overlapping queues into a utilization measurement. The AMD fork reports about 2.3 FPS at the village gate versus about 2.0 earlier, and 12.3 FPS in its title menu. A later probe write-back fix restores golden reflections and raises menu rate about 5%, with world speed unchanged. One world run, patched ACO, PGO and 1080p remain explicit boundaries.",
+   "zh": "干净main越过旧混合拒绝，却在首世界单元加载遇多目标混合停止；02.002000请求GHOSTYOTEIDUPLEX，缺授权标签会转圈。本地多目标修改越过后纹理占满内存，降至0.1 FPS以下，未验证自由游玩。 旧fork片头lane-on六次全冻，lane-off三次均未冻；候选两次一小时到限时未冻。仅是特定recorder交接修改，不证明main支持，也不能相加重叠队列时间当GPU利用率。 AMD fork村门约2.3 FPS，旧约2.0；标题菜单12.3 FPS。后续探针写回恢复金色反射、菜单约快5%，世界速度不变。仅一次世界运行，含ACO补丁、PGO及1080p边界。",
+   "ar": "main يتجاوز مزجاً قديماً ثم يقف بمزج أهداف متعددة عند تحميل العالم.02.002000 يطلب GHOSTYOTEIDUPLEX وإلا spinner. إصلاح محلي يتقدم ثم أقل0.1 FPS مع امتلاء الذاكرة؛ لا لعب حر مثبت. الفرع القديم يتجمد6/6 مع lane مقابل0/3 بدونه؛ المرشح يكمل محاولتين بساعة. إصلاح تسليم recorder محدد، لا main مثبت أو جمع أزمنة متداخلة كاستخدام GPU. فرع AMD يبلغ≈2.3 FPS عند القرية مقابل≈2.0 وقائمة12.3؛ إصلاح انعكاس لاحق يعيد الذهبي وقائمة+5% دون تغير العالم. محاولة عالم واحدة مع ACO/PGO/1080p.",
+   "pt": "Main passa blend antigo e falha multi-target no primeiro mundo.02.002000 pede GHOSTYOTEIDUPLEX ou fica spinner. Fix local avança mas cai abaixo0,1 FPS com texturas; sem jogo livre. Fork antigo congela6/6 com lane contra0/3 sem; candidato chega ao limite em2×1h. Fix específico recorder, não main validado nem soma de filas sobrepostas como uso GPU. Fork AMD dá≈2,3 FPS na aldeia contra≈2,0, menu12,3; fix reflexos repõe dourado e menu+5%, mundo igual. Um ensaio mundo, ACO/PGO/1080p explícitos.",
+   "de": "Main passiert alten Blendstopp, scheitert an mehreren Zielen beim Weltladen.02.002000 verlangt GHOSTYOTEIDUPLEX, sonst Spinner. Lokaler Fix weiter, dann unter0,1 FPS bei vollen Texturen; freies Spiel ungeprüft. Alter Fork friert6/6 mit Lane,0/3 ohne; Kandidat erreicht2×1h-Limit. Spezifischer Recorder-Fix, kein Main-Nachweis oder summierte Überlappungszeit als GPU-Auslastung. AMD-Fork≈2,3 FPS am Dorftor statt≈2,0, Menü12,3; Reflexionsfix goldene Farbe/Menü+5%, Welt gleich. Ein Weltlauf, ACO/PGO/1080p als Grenzen.",
+   "fr": "Main passe ancien blend mais échoue multi-cibles au chargement du monde.02.002000 demande GHOSTYOTEIDUPLEX sinon spinner. Fix local avance puis sous0,1 FPS avec mémoire pleine; jeu libre non validé. Ancien fork gèle6/6 avec lane contre0/3 sans; candidat atteint2×1h. Fix précis recorder, sans main validé ni somme des temps superposés comme charge GPU. Fork AMD≈2,3 FPS porte village contre≈2,0, menu12,3; fix reflets rend doré/menu+5%, monde inchangé. Un essai monde, ACO/PGO/1080p explicites.",
+   "es": "Main pasa blend antiguo y falla multi-target cargando mundo.02.002000 pide GHOSTYOTEIDUPLEX o spinner. Fix local avanza pero cae bajo0,1 FPS con texturas; sin juego libre. Fork antiguo congela6/6 con lane frente0/3 sin; candidato alcanza2×1h. Fix específico recorder, no main validado ni suma de colas solapadas como uso GPU. Fork AMD≈2,3 FPS puerta aldea frente≈2,0, menú12,3; fix reflejos restaura dorado/menú+5%, mundo igual. Una prueba mundo, ACO/PGO/1080p explícitos."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary evidence",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/675#discussioncomment-19135126"
+   },
+   {
+    "label": "Reviewed primary evidence",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/675#discussioncomment-19146133"
+   },
+   {
+    "label": "Reviewed primary evidence",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/675#discussioncomment-19146442"
+   },
+   {
+    "label": "Reviewed observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/675#discussioncomment-19172352"
+   },
+   {
+    "label": "Reviewed observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/675#discussioncomment-19172970"
+   },
+   {
+    "label": "Reviewed observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/675#discussioncomment-19178132"
+   },
+   {
+    "label": "Reviewed observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/675#discussioncomment-19176545"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/9508#issuecomment-6402906265"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/675"
+   }
+  ]
+ },
+ "sonic-unleashed-recompiled": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reports on this page identify PPSA99902. Promotional artwork does not establish the tested region, content version or AnyPS5 rendering.",
+   "zh": "本页报告编号为 PPSA99902；宣传图不能证明实测地区、内容版本或 AnyPS5 渲染。",
+   "ar": "معرّف التقارير PPSA99902؛ الفن الدعائي لا يثبت المنطقة أو النسخة أو رسم AnyPS5.",
+   "pt": "Relatos identificam PPSA99902; arte promocional não prova região, versão ou imagem AnyPS5.",
+   "de": "Berichte nennen PPSA99902; Werbebilder belegen weder Region, Inhaltsversion noch AnyPS5-Rendering.",
+   "fr": "Rapports identifiés PPSA99902 ; illustrations promotionnelles ne prouvent ni région, version ni rendu AnyPS5.",
+   "es": "Informes identifican PPSA99902; arte promocional no prueba región, versión ni renderizado AnyPS5."
+  },
+  "finding": {
+   "en": "Two current fork runs pass tutorial loading into the 3D Werehog/Chip cinematic and reach controlled 600/900-second caps. Player control is not verified at this pin. Cinematic samples 1.3–5.2 FPS and eight known warnings are not a gameplay benchmark; historical interactive ring milestones keep their older builds.",
+   "zh": "当前fork两次越过教程加载到Werehog／Chip的3D片头，600／900秒受控结束；此pin未验证玩家操控。片头1.3–5.2 FPS及8项已知警告不是游戏基准，历史收环操控保留旧构建。",
+   "ar": "محاولتا fork تتجاوزان تحميل التدريب لسينمائي3D وتنتهيان عند600/900ث عمداً. تحكم اللاعب غير مثبت بهذاpin؛1.3–5.2 FPS و8تحذيرات ليست benchmark لعب، والتقدم القديم ببنائه.",
+   "pt": "Dois ensaios fork passam carga para cinemática3D e terminam aos600/900s planeados. Controlo não validado neste pin;1,3–5,2 FPS/8 avisos não são benchmark jogo, marcos antigos preservados.",
+   "de": "Zwei Fork-Läufe nach Tutorialladen in3D-Intro, kontrollierte600/900s-Enden. Steuerung an diesem Pin ungeprüft;1,3–5,2 FPS/8 bekannte Warnungen kein Spielbenchmark, alte Ring-Meilensteine behalten Builds.",
+   "fr": "Deux essais fork passent chargement vers cinématique3D, arrêts prévus600/900s. Commandes non validées à ce pin;1,3–5,2 FPS/8 avertissements ne sont pas benchmark jeu, anciens jalons conservés.",
+   "es": "Dos pruebas fork pasan carga a cinemática3D, paradas previstas600/900s. Control sin validar en este pin;1,3–5,2 FPS/8 avisos no son benchmark juego, hitos antiguos conservados."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package, build, patch set and scene; verify controls, audio, save reload and a longer session separately. Record the actual test date and keep unknown fields unknown.",
+   "zh": "以准确包、构建、补丁和场景复测，分别验证操控、音频、读档及更长会话；记录实际测试日期，未知字段保持未知。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد نفسه؛ افحص التحكم والصوت وإعادة الحفظ والمدة منفصلة. سجل تاريخ الاختبار واحتفظ بالمجهول.",
+   "pt": "Repita pacote, build, patches e cena; verifique controlos, áudio, recarga e sessão longa separadamente. Registe a data real e mantenha desconhecidos.",
+   "de": "Paket, Build, Patches und Szene reproduzieren; Steuerung, Ton, Laden und Dauer getrennt prüfen. Testdatum erfassen, Unbekanntes bewahren.",
+   "fr": "Reproduisez paquet, build, patches et scène; vérifiez commandes, son, rechargement et durée séparément. Date réelle et inconnus conservés.",
+   "es": "Repite paquete, build, parches y escena; verifica controles, audio, recarga y duración aparte. Registra fecha real y conserva desconocidos."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/4443"
+   }
+  ]
+ },
+ "bendy-dark-revival": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA27624; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA27624；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA27624؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA27624; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA27624; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA27624 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA27624; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  },
+  "finding": {
+   "en": "The refreshed private stack completes the doorway/movement/save/OPEN/camera route for 420 seconds with native exit0. Neither intermittent fault recurs, so neither is proved fixed. A separate static hallway candidate sits between two controls; no repeatable FPS gain is established.",
+   "zh": "刷新私有组合完成门口／移动／存档／OPEN／镜头路线420秒，原生退出0；两种间歇故障未触发，不证明修复。另静止走廊候选落于两基线之间，没有可重复FPS增益。",
+   "ar": "تركيب خاص محدث يكمل مسار الباب/الحركة/الحفظ/OPEN/الكاميرا420ث بخروج0. غياب خطأين متقطعين لا يثبت إصلاحهما؛ مرشح الرواق بين ضابطين بلا مكسب FPS متكرر.",
+   "pt": "Stack privado atualizado completa porta/movimento/save/OPEN/câmara420s com saída0. Falhas intermitentes ausentes não provam correção; candidato corredor entre2 controlos, sem ganho FPS repetível.",
+   "de": "Aktualisierter Privatstack absolviert Tür/Bewegung/Save/OPEN/Kamera420s mit Exit0. Zwei sporadische Fehler nicht aufgetreten, nicht bewiesen behoben; Flurkandidat zwischen Kontrollen, kein wiederholbarer FPS-Gewinn.",
+   "fr": "Stack privé actualisé termine porte/mouvement/save/OPEN/caméra420s avec sortie0. Deux défauts intermittents absents sans fix prouvé; candidat couloir entre contrôles, sans gain FPS reproductible.",
+   "es": "Stack privado actualizado completa puerta/movimiento/save/OPEN/cámara420s con salida0. Fallos intermitentes ausentes no prueban arreglo; candidato pasillo entre controles, sin mejora FPS repetible."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/10154"
+   }
+  ]
+ },
+ "beetle-pce-ps5": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "The local ABI/export stack opens the library screen, then scripted input quits at fourteen seconds. No ROMs were supplied. A working “No games found” browser does not verify emulated-game compatibility.",
+   "zh": "本地ABI／导出组合打开游戏库，14秒脚本退出；未提供ROM。“未找到游戏”的浏览页不证明模拟游戏兼容。",
+   "ar": "تركيب ABI محلي يفتح المكتبة ويخرج بإدخال مكتوب14ث؛ بلا ROM. متصفح «لا ألعاب» لا يثبت ألعاباً محاكاة.",
+   "pt": "Stack ABI local abre biblioteca e sai por script14s; sem ROMs. «Sem jogos» não prova compatibilidade de jogos emulados.",
+   "de": "Lokaler ABI-Stack öffnet Bibliothek, Skript beendet nach14s; keine ROMs. „Keine Spiele“ kein Emulator-Spielnachweis.",
+   "fr": "Stack ABI local ouvre bibliothèque et quitte par script14s; sans ROM. «Aucun jeu» ne valide pas de jeu émulé.",
+   "es": "Stack ABI local abre biblioteca y sale por script14s; sin ROMs. «Sin juegos» no valida juegos emulados."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/10548#issuecomment-6470861702"
+   },
+   {
+    "label": "Original homebrew project identity; console demonstrations are separate",
+    "url": "https://github.com/MisterTemaki/beetlepcePS5"
+   }
+  ]
+ },
+ "sahin-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "Local AppInstUtil initialization passes the first startup refusal, then stops after two seconds at an unmeasured flat-input provoking-vertex shader mode. No title screen, gameplay or FPS is verified.",
+   "zh": "本地AppInstUtil初始化越过首个拒绝，随后两秒在未测的flat-input provoking-vertex模式停止；未验证标题、游戏或FPS。",
+   "ar": "تهيئة AppInstUtil تتجاوز الرفض الأول ثم تفشل بعد2ث بنمط shader غير مقاس؛ لا عنوان أو لعب أو FPS مثبت.",
+   "pt": "AppInstUtil local passa primeiro bloqueio e para2s depois num modo shader não medido; sem título, jogo ou FPS validado.",
+   "de": "Lokales AppInstUtil passiert ersten Stopp, dann nach2s ungemessener Shadermodus; Titel/Spiel/FPS ungeprüft.",
+   "fr": "AppInstUtil local franchit premier blocage puis mode shader non mesuré après2s; titre/jeu/FPS non validés.",
+   "es": "AppInstUtil local supera primer bloqueo y para a2s en modo shader sin medir; título/juego/FPS sin validar."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/8346#issuecomment-6470862543"
+   },
+   {
+    "label": "Original homebrew project identity; console demonstrations are separate",
+    "url": "https://github.com/7tg/sahin"
+   }
+  ]
+ },
+ "futbol13-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "Local AppInstUtil initialization passes the first startup refusal, then stops after two seconds at an unmeasured flat-input provoking-vertex shader mode. No title screen, gameplay or FPS is verified.",
+   "zh": "本地AppInstUtil初始化越过首个拒绝，随后两秒在未测的flat-input provoking-vertex模式停止；未验证标题、游戏或FPS。",
+   "ar": "تهيئة AppInstUtil تتجاوز الرفض الأول ثم تفشل بعد2ث بنمط shader غير مقاس؛ لا عنوان أو لعب أو FPS مثبت.",
+   "pt": "AppInstUtil local passa primeiro bloqueio e para2s depois num modo shader não medido; sem título, jogo ou FPS validado.",
+   "de": "Lokales AppInstUtil passiert ersten Stopp, dann nach2s ungemessener Shadermodus; Titel/Spiel/FPS ungeprüft.",
+   "fr": "AppInstUtil local franchit premier blocage puis mode shader non mesuré après2s; titre/jeu/FPS non validés.",
+   "es": "AppInstUtil local supera primer bloqueo y para a2s en modo shader sin medir; título/juego/FPS sin validar."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/8346#issuecomment-6470862543"
+   },
+   {
+    "label": "Original homebrew project identity; console demonstrations are separate",
+    "url": "https://github.com/7tg/futbol13"
+   }
+  ]
+ },
+ "getsu-san-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "Local AppInstUtil initialization passes the first startup refusal, then stops after two seconds at an unmeasured flat-input provoking-vertex shader mode. No title screen, gameplay or FPS is verified.",
+   "zh": "本地AppInstUtil初始化越过首个拒绝，随后两秒在未测的flat-input provoking-vertex模式停止；未验证标题、游戏或FPS。",
+   "ar": "تهيئة AppInstUtil تتجاوز الرفض الأول ثم تفشل بعد2ث بنمط shader غير مقاس؛ لا عنوان أو لعب أو FPS مثبت.",
+   "pt": "AppInstUtil local passa primeiro bloqueio e para2s depois num modo shader não medido; sem título, jogo ou FPS validado.",
+   "de": "Lokales AppInstUtil passiert ersten Stopp, dann nach2s ungemessener Shadermodus; Titel/Spiel/FPS ungeprüft.",
+   "fr": "AppInstUtil local franchit premier blocage puis mode shader non mesuré après2s; titre/jeu/FPS non validés.",
+   "es": "AppInstUtil local supera primer bloqueo y para a2s en modo shader sin medir; título/juego/FPS sin validar."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/8346#issuecomment-6470862543"
+   },
+   {
+    "label": "Original homebrew project identity; console demonstrations are separate",
+    "url": "https://github.com/CHI-GETSU/GTA-SA-PS5-Homebrew"
+   }
+  ]
+ },
+ "foxhollow-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "The local segment-overlap change converts the package on both targets, but Windows stops at the port’s missing game.iso preparation check. No PAL GSAP01 image was supplied. Linux conversion success is not a Linux runtime result; the RELRO gap is separately unresolved.",
+   "zh": "本地段重叠修改使两目标均可转换，Windows却停在移植版缺game.iso准备检查；未提供PAL GSAP01镜像。Linux转换通过不是运行通过，RELRO间隙另未解决。",
+   "ar": "تعديل التداخل يحول للهدفين لكن Windows يقف لغياب game.iso؛ بلا PAL GSAP01. نجاح تحويل Linux ليس تشغيله وRELRO منفصل.",
+   "pt": "Fix sobreposição converte ambos, mas Windows para sem game.iso; sem imagem PAL GSAP01. Conversão Linux não é execução; lacuna RELRO separada.",
+   "de": "Überlappungsfix konvertiert beide Ziele, Windows stoppt ohne game.iso; kein PAL GSAP01. Linux-Konvertierung kein Laufnachweis, RELRO-Lücke separat.",
+   "fr": "Fix chevauchement convertit les deux, Windows s’arrête sans game.iso; aucun PAL GSAP01. Conversion Linux distincte du runtime, lacune RELRO séparée.",
+   "es": "Fix solapamiento convierte ambos, Windows para sin game.iso; sin PAL GSAP01. Conversión Linux no es ejecución, hueco RELRO separado."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/12591#issuecomment-6497730398"
+   },
+   {
+    "label": "Original homebrew project identity; console demonstrations are separate",
+    "url": "https://github.com/BaZZtian/PS5-FoxHollow"
+   }
+  ]
+ },
+ "wwe13-homebrew": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "After local conversion fixes the Windows port stays alive for sixty seconds with sixty nonblack dumped frames. The displayed scene and player response are not identified, so submission counts do not prove a match or gameplay. Linux was converted, not run.",
+   "zh": "本地转换修改后Windows移植版存活60秒，60张转储均非黑；未识别画面阶段或玩家响应，提交计数不证明比赛或游戏。Linux只转换未运行。",
+   "ar": "بعد إصلاح التحويل يعيش Windows60ث مع60 صورة غير سوداء؛ المشهد والتحكم غير محددين، فالعداد لا يثبت مباراة. Linux حُول ولم يُشغل.",
+   "pt": "Após fix de conversão Windows vive60s/60 frames não pretos; cena/controlos não identificados, contadores não provam combate. Linux só convertido.",
+   "de": "Nach Konvertierungsfix Windows60s/60 nichtschwarze Bilder; Szene/Steuerung unbekannt, Zähler kein Matchnachweis. Linux nur konvertiert.",
+   "fr": "Après fix conversion Windows60s/60 images non noires; scène/commandes inconnues, compteurs sans match validé. Linux converti seulement.",
+   "es": "Tras fix conversión Windows60s/60 imágenes no negras; escena/control desconocidos, contadores no prueban combate. Linux solo convertido."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/12591#issuecomment-6497730398"
+   },
+   {
+    "label": "Original homebrew project identity; console demonstrations are separate",
+    "url": "https://github.com/elripalda/wwe13-ps5"
+   }
+  ]
+ },
+ "ghost-song": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Only the pinned AnyPS5 report establishes the tested package, build and environment. Unreported fields remain unknown; author/publisher artwork and console demonstrations do not prove AnyPS5 rendering, audio or completion.",
+   "zh": "实测包、构建及环境仅以准确AnyPS5报告为准，未述保持未知；作者／发行商配图及主机演示不证明AnyPS5渲染、音频或通关。",
+   "ar": "الحزمة والبناء والبيئة من تقرير AnyPS5 المحدد فقط؛ المفقود مجهول، وصور المؤلف/الناشر وعروض الجهاز ليست إثبات AnyPS5 أو الصوت أو النهاية.",
+   "pt": "Pacote/build/ambiente seguem o relato AnyPS5 exato; ausências desconhecidas. Arte e demos de consola não provam AnyPS5, áudio ou conclusão.",
+   "de": "Paket/Build/Umgebung nur laut genauem AnyPS5-Bericht, Fehlendes unbekannt. Autor-/Publisherbilder und Konsolendemos kein AnyPS5-/Ton-/Abschlussnachweis.",
+   "fr": "Paquet/build/environnement selon rapport AnyPS5 précis, absences inconnues. Art et démos console ne prouvent pas rendu AnyPS5, son ou fin.",
+   "es": "Paquete/build/entorno según informe AnyPS5 exacto, ausencias desconocidas. Arte/demos consola no prueban render AnyPS5, audio ni final."
+  },
+  "finding": {
+   "en": "Redirect and TLS callback changes pass two earlier aborts and remain running past the publisher splash for 3.5 minutes, about 52–60 FPS. Visible gameplay, input, save/load and successful network callbacks are not verified by this unattended run.",
+   "zh": "重定向及TLS回调修改越过两次旧终止，发行商标志后运行3.5分钟约52–60 FPS；无人值守测试未验证可见游戏、输入、存读档或网络回调成功。",
+   "ar": "تعديلات redirect/TLS تتجاوز توقفين وتعيش بعد الشعار3.5د≈52–60 FPS؛ لا لعب مرئي أو تحكم أو حفظ أو نجاح callback شبكة مثبت.",
+   "pt": "Fixes redirect/TLS passam2 abortos e duram3,5min após splash≈52–60 FPS; sem jogo visível/input/save ou callbacks rede validados.",
+   "de": "Redirect-/TLS-Fixes passieren2 Abbrüche, laufen nach Logo3,5min≈52–60 FPS; sichtbares Spiel/Eingabe/Saves/Netzwerkcallbacks ungeprüft.",
+   "fr": "Fixes redirect/TLS passent2 arrêts et tiennent3,5min après logo≈52–60 FPS; jeu visible/commandes/saves/callbacks réseau non validés.",
+   "es": "Fixes redirect/TLS pasan2 abortos y duran3,5min tras logo≈52–60 FPS; juego visible/input/saves/callbacks red sin validar."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/11575#issuecomment-6467061648"
+   },
+   {
+    "label": "Publisher identity and promotional material; not an AnyPS5 test",
+    "url": "https://store.playstation.com/en-ie/product/EP3717-PPSA09232_00-GHOSTSONGPS5000E"
+   }
+  ]
+ },
+ "mewgenics": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado."
+  },
+  "finding": {
+   "en": "The physical mouse tracks and clicks correctly through menus to the first battle, which then aborts at an unrelated storage-write refusal. The later #7048 stack freezes on hover in both runs instead; it must not be described as a tested battle fix. Earlier tutorial results keep their older head.",
+   "zh": "实体鼠标跟随、悬停、点击可过菜单到首战，随后另项存储写拒绝终止；后续#7048组合两次均在悬停冻结，不能写成已测战斗修复。旧教程结果保留旧head。",
+   "ar": "الفأرة تعمل بالقوائم حتى أول قتال ثم رفض تخزين؛ تركيب7048 اللاحق يتجمد عند hover مرتين، لا إصلاح قتال مختبر. نتيجة التدريب القديمة تبقى برأسها.",
+   "pt": "Rato físico funciona até primeira batalha, depois recusa storage; stack7048 posterior congela no hover2 vezes, sem fix batalha validado. Tutorial antigo mantém head.",
+   "de": "Physische Maus funktioniert bis erstem Kampf, dann Speicherrefusal; späterer7048-Stack friert2-mal beim Hover. Kein Kampffixnachweis, altes Tutorial behält Head.",
+   "fr": "Souris physique fonctionne jusqu’au premier combat, puis refus stockage; stack7048 ultérieur gèle2 fois au survol. Aucun fix combat validé, ancien tutoriel garde head.",
+   "es": "Ratón físico funciona hasta primera batalla, luego rechazo storage; stack7048 posterior congela2 veces al hover. Sin arreglo combate validado, tutorial antiguo conserva head."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/11477"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/9875#issuecomment-6425161853"
+   },
+   {
+    "label": "Publisher identity and promotional art, not an AnyPS5 test",
+    "url": "https://store.playstation.com/en-us/concept/10019219/"
+   },
+   {
+    "label": "Source-only follow-up with distinct test scope",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/9875"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/12958#issuecomment-6504654748"
+   }
+  ]
+ },
+ "guardians-of-the-galaxy": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "Reverting #9789 lets the otherwise blocked build reach the menu and Milano at 0.8–2 FPS. The menu remains about 496–533 ms/frame across four controls. Lower GPU wait time under one switch does not improve total frame time; no general performance fix is established.",
+   "zh": "回退#9789后原阻塞构建到菜单与Milano，0.8–2 FPS；四基线菜单约496–533毫秒／帧。某开关虽降低GPU等待，整帧无明显改善，不构成通用提速修复。",
+   "ar": "تراجع9789 يتيح القائمة وMilano‏0.8–2 FPS؛ أربعة ضوابط قائمة496–533ms. خفض انتظار GPU لا يحسن الإطار الكلي، بلا تسريع عام مثبت.",
+   "pt": "Revert9789 permite menu/Milano0,8–2 FPS;4 controlos menu496–533ms. Menor espera GPU não melhora frame total, sem fix geral.",
+   "de": "9789-Revert erlaubt Menü/Milano0,8–2 FPS;4 Menükontrollen496–533ms. Weniger GPU-Warten kein Gesamtframegewinn, kein allgemeiner Fix.",
+   "fr": "Revert9789 permet menu/Milano0,8–2 FPS;4 contrôles menu496–533ms. Moins d’attente GPU sans gain global, aucun fix général.",
+   "es": "Revert9789 permite menú/Milano0,8–2 FPS;4 controles menú496–533ms. Menos espera GPU no mejora frame total, sin fix general."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/10441#issuecomment-6488841833"
+   }
+  ]
+ },
+ "pragmata": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "The source tests PPSA02530 v01.200.000, not Sketchbook DEMO PPSA33065.",
+   "zh": "来源测试 PPSA02530 v01.200.000，非 Sketchbook DEMO PPSA33065。",
+   "ar": "التقرير PPSA02530 v01.200.000 لا DEMO PPSA33065.",
+   "pt": "RelatoPPSA02530 v01.200.000, não DEMO PPSA33065.",
+   "de": "BerichtPPSA02530 v01.200.000, keine DEMO PPSA33065.",
+   "fr": "RapportPPSA02530 v01.200.000, pas DEMO PPSA33065.",
+   "es": "InformePPSA02530 v01.200.000, no DEMO PPSA33065."
+  },
+  "finding": {
+   "en": "A multi-PR local stack reaches the first load after menus, then refuses a read spanning a newly reused 4× depth target at 399 seconds. The overlap is measured, but intended console bytes and a fix are unknown. Disabling GPL avoids a separate AMD-driver startup crash in this setup.",
+   "zh": "多PR本地组合到菜单后首加载，399秒读取覆盖新复用4×深度目标的范围时拒绝；重叠已测，主机预期字节与修复仍未知。关闭GPL仅避开此环境另项AMD驱动启动崩溃。",
+   "ar": "تركيب محلي متعدد يبلغ أول تحميل بعد القوائم ثم يرفض قراءة هدف عمق4× معاد الاستخدام399ث. التداخل مقاس لكن bytes الجهاز والإصلاح مجهولان؛ NO_GPL يتجنب فشل driver منفصلاً.",
+   "pt": "Stack local chega à carga após menus e recusa leitura sobre depth4× reutilizado399s. Sobreposição medida, bytes consola/fix desconhecidos; NO_GPL evita outro crash driver.",
+   "de": "Lokaler Mehrfachstack erreicht Laden nach Menüs, verweigert überlappenden4×-Tiefenread399s. Überlappung gemessen, Konsolenbytes/Fix unbekannt; NO_GPL vermeidet separaten Treibercrash.",
+   "fr": "Stack local atteint chargement après menus puis refuse lecture profondeur4× réutilisée399s. Chevauchement mesuré, octets console/fix inconnus; NO_GPL évite autre crash driver.",
+   "es": "Stack local llega a carga tras menús y rechaza lectura profundidad4× reutilizada399s. Solapamiento medido, bytes consola/fix desconocidos; NO_GPL evita otro crash driver."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/10904"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/10304#issuecomment-6423173954"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/7844#issuecomment-6442053786"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/6570#issuecomment-6489293666"
+   }
+  ]
+ },
+ "soul-hackers-2": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reports identify PPSA03743; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA03743；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA03743؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA03743; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA03743; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA03743 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA03743; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "finding": {
+   "en": "The local depth-stamp change reaches the first gameplay scene, with candidate five-second windows of 100/129 presents versus controls 90/80. One control drops trace events. Later #11696/#9858 tests are neutral; #9875 stalls three times versus one of four controls, an association without proved cause.",
+   "zh": "本地深度stamp修改到首游戏场景，候选5秒100／129次呈现、基线90／80，其中一基线追踪丢事件。后续#11696／#9858无明显变化；#9875三次均卡、基线1／4，关联不证明原因。",
+   "ar": "تعديل depth-stamp يبلغ أول مشهد لعب100/129 عرضاً/5ث مقابل90/80؛ ضابط يسقط أحداثاً.11696/9858 محايدان؛9875 يتعطل3/3 مقابل1/4، ارتباط بلا سبب مثبت.",
+   "pt": "Fix depth-stamp chega ao jogo100/129 frames/5s contra90/80; um controlo perde eventos.11696/9858 neutros;9875 bloqueia3/3 contra1/4, associação sem causa provada.",
+   "de": "Depth-Stamp-Fix erreicht Spiel100/129 Bilder/5s statt90/80; eine Kontrolle verliert Events.11696/9858 neutral;9875 hängt3/3 statt1/4, Zusammenhang ohne Ursachenbeweis.",
+   "fr": "Fix depth-stamp atteint jeu100/129 images/5s contre90/80; un contrôle perd événements.11696/9858 neutres;9875 bloque3/3 contre1/4, lien sans cause prouvée.",
+   "es": "Fix depth-stamp llega a juego100/129 frames/5s frente90/80; un control pierde eventos.11696/9858 neutros;9875 atasca3/3 frente1/4, asociación sin causa probada."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/11602#issuecomment-6463626040"
+   }
+  ]
+ },
+ "wobbly-life": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "Vega shows magenta/grey tiled noise in the 3D continue screen, while the same main is clean on RDNA2/RDNA3 and llvmpipe. The proposed f16 connection is unproved. These are render-target dumps, not presented-surface captures or a new gameplay test.",
+   "zh": "Vega的3D继续屏出现洋红／灰色块噪声，同main的RDNA2／RDNA3及llvmpipe正常；f16关联未证明。素材是渲染目标转储，非最终呈现或新游戏测试。",
+   "ar": "Vega يظهر ضجيجاً في شاشة3D بينما RDNA2/3 وllvmpipe نظيفة على main نفسه؛ صلةf16 غير مثبتة. صور render target لا العرض أو لعب جديد.",
+   "pt": "Vega mostra ruído no ecrã3D, RDNA2/3 e llvmpipe limpos no mesmo main; ligaçãof16 não provada. Dumps target não são superfície apresentada/jogo novo.",
+   "de": "Vega zeigt3D-Störungen, RDNA2/3/llvmpipe auf gleichem Main sauber; f16-Ursache ungeklärt. Target-Dumps statt präsentierter Oberfläche/neuem Spieltest.",
+   "fr": "Vega montre bruit3D, RDNA2/3/llvmpipe propres sur même main; lienf16 non prouvé. Dumps target sans surface présentée ou nouveau jeu testé.",
+   "es": "Vega muestra ruido3D, RDNA2/3/llvmpipe limpios en mismo main; relaciónf16 sin probar. Dumps target distintos de superficie presentada/nuevo juego."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/3882#issuecomment-6466393828"
+   }
+  ]
+ },
+ "supertuxkart": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported package PPSA69421. Preserve each observation’s version, build and patch boundaries. Images are promotional unless specifically identified as test captures.",
+   "zh": "报告包PPSA69421；按每次观察保留版本、构建及补丁边界，图片除明确标注实测外均为宣传资料。",
+   "ar": "الحزمةPPSA69421؛ احفظ نسخة وبناء وتعديلات كل تجربة. الصور دعائية إلا لقطات الاختبار المحددة.",
+   "pt": "PacotePPSA69421; versão/build/patches por observação. Imagens promocionais salvo capturas identificadas.",
+   "de": "PaketPPSA69421; Version/Build/Patches je Beobachtung beachten. Bilder Werbung außer gekennzeichneten Testaufnahmen.",
+   "fr": "PaquetPPSA69421 ; version/build/patchs propres à chaque essai. Images promotionnelles sauf captures identifiées.",
+   "es": "PaquetePPSA69421; versión/build/parches por observación. Imágenes promocionales salvo capturas identificadas."
+  },
+  "finding": {
+   "en": "Clean-main tutorial racing measures 11.7–12.3 FPS during the first sixty seconds after the countdown, with both window and title counters agreeing. Earlier 1.70/2.16 FPS observations belong to an older build; this is not an isolated attribution of all gains to one merge.",
+   "zh": "干净main教程比赛倒数后首60秒11.7–12.3 FPS，窗口与游戏计数一致；旧1.70／2.16属旧构建，不能把全部增益归于某次合并。",
+   "ar": "سباق التدريب على main يقيس11.7–12.3 FPS بأول60ث ويتفق العدادان؛1.70/2.16 القديمة لبناء أقدم، لا نسبة كل المكسب لدمج واحد.",
+   "pt": "Corrida tutorial main mede11,7–12,3 FPS/60s e contadores concordam;1,70/2,16 antigos são outro build, sem atribuir tudo a um merge.",
+   "de": "Main-Tutorialrennen11,7–12,3 FPS/erste60s, beide Zähler gleich; alte1,70/2,16 anderer Build, keine Einzelmerge-Zuordnung aller Gewinne.",
+   "fr": "Course tutoriel main11,7–12,3 FPS/60s, compteurs concordants; anciens1,70/2,16 autre build, sans attribuer tous gains à une fusion.",
+   "es": "Carrera tutorial main11,7–12,3 FPS/60s, contadores coinciden;1,70/2,16 antiguos otro build, sin atribuir todo a un merge."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/8364#issuecomment-6455557360"
+   }
+  ]
+ },
+ "art-of-rally": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA03659. Preserve the content version, tested build and host of each observation. Promotional artwork is not an AnyPS5 screenshot or proof of tested DLC. Publisher artwork identifies PPSA03686, a different regional package; it does not identify this test. The pictured Australia DLC promotion does not establish that this DLC was tested.",
+   "zh": "报告PS5包PPSA03659，逐次保留内容版本、测试构建与主机；宣传图不是AnyPS5截图或DLC已测证明。 发行商图片对应不同地区包PPSA03686，不用于认定本次测试身份。 图片中的 Australia DLC 宣传不代表该 DLC 已实测。",
+   "ar": "حزمة PS5 PPSA03659؛ احفظ نسخة وبناء ومضيف كل تجربة. الصورة دعائية لا تشغيل AnyPS5 أو إثبات DLC. صورة الناشر للحزمة الإقليمية PPSA03686 لا تحدد هذا الاختبار. إعلان Australia DLC بالصورة لا يثبت اختباره.",
+   "pt": "Pacote PS5 PPSA03659; preserve versão/build/host por observação. Arte promocional não é captura AnyPS5 ou DLC provado. Arte do editor identifica pacote regional PPSA03686, não este teste. A promoção Australia DLC na imagem não prova esse DLC testado.",
+   "de": "PS5-Paket PPSA03659; Inhaltsversion/Build/Host je Beobachtung beachten. Werbung kein AnyPS5-Bild/DLC-Testbeleg. Herausgeberbild nennt anderes Regionalpaket PPSA03686, nicht diesen Test. Australia-DLC-Werbung im Bild belegt keinen DLC-Test.",
+   "fr": "Paquet PS5 PPSA03659 ; conservez version/build/hôte. Image promotionnelle, pas capture AnyPS5/preuve DLC. Image éditeur : autre paquet régional PPSA03686, pas cet essai. La promotion Australia DLC visible ne prouve pas son test.",
+   "es": "Paquete PS5 PPSA03659; conserva versión/build/host. Arte promocional no es captura AnyPS5/prueba DLC. Imagen editorial de otro paquete regional PPSA03686, no de esta prueba. La promoción Australia DLC de la imagen no prueba que se probara."
+  },
+  "finding": {
+   "en": "Local redirect/TLS changes reach privacy and intro scenes for 150 seconds, but no race input is verified. A later same-main run needs only Http2 replaced and shows information cards near 51 FPS. Successful real-network requests and callback execution remain unmeasured.",
+   "zh": "本地重定向／TLS修改到隐私与片头150秒，未验证比赛输入；后续同main仅替换Http2可到信息卡约51 FPS。真实网络成功及回调执行仍未测。",
+   "ar": "تعديلات redirect/TLS تبلغ الخصوصية والمقدمة150ث بلا سباق مختبر؛ إعادة Http2 فقط تظهر بطاقات≈51 FPS. نجاح الشبكة وcallbacks غير مقاس.",
+   "pt": "Fixes redirect/TLS mostram privacidade/intro150s sem corrida; só Http2 depois mostra cartões≈51 FPS. Rede real/callbacks não medidos.",
+   "de": "Redirect-/TLS-Fixes zeigen Datenschutz/Intro150s ohne Rennen; später nur Http2-Karten≈51 FPS. Echtes Netzwerk/Callbacks ungemessen.",
+   "fr": "Fixes redirect/TLS affichent confidentialité/intro150s sans course; Http2 seul ensuite cartes≈51 FPS. Réseau réel/callbacks non mesurés.",
+   "es": "Fixes redirect/TLS muestran privacidad/intro150s sin carrera; solo Http2 después tarjetas≈51 FPS. Red real/callbacks sin medir."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/11586#issuecomment-6463888495"
+   }
+  ]
+ },
+ "castlevania-dominus-collection": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA15645. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution.",
+   "zh": "报告PS5包PPSA15645；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA15645. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5.",
+   "pt": "Pacote PS5 referido PPSA15645. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5.",
+   "de": "Gemeldetes PS5-Paket PPSA15645. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf.",
+   "fr": "Paquet PS5 rapporté PPSA15645. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5.",
+   "es": "Paquete PS5 reportado PPSA15645. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5."
+  },
+  "finding": {
+   "en": "Unchanged main reaches Order of Ecclesia’s first room with working left/right movement. Collection Save succeeds and a fresh process reloads the slot with movement intact. Audio was muted; combat, later progress and sustained performance are untested. This is not a causal #7908 A/B.",
+   "zh": "原main到《被夺走的刻印》首房间，可左右移动；合集存档成功且新进程读档后仍可移动。静音，战斗、后续及持续性能未测，也不是#7908因果对照。",
+   "ar": "main غير معدل يبلغ أول غرفة Ecclesia بحركة يمين/يسار، ويحفظ ويعيد التحميل بعملية جديدة. الصوت مكتوم والقتال والتقدم والأداء مجهولة؛ ليس A/B سببي7908.",
+   "pt": "Main inalterado chega à primeira sala Ecclesia com movimento; Save Collection e recarga noutro processo funcionam. Áudio silenciado, combate/progresso/performance por testar; não A/B7908.",
+   "de": "Unverändertes Main erreicht Ecclesias ersten Raum/Bewegung, Collection-Save und neuer Prozess laden korrekt. Ton stumm, Kampf/Fortschritt/Dauerleistung ungeprüft; kein7908-Kausalvergleich.",
+   "fr": "Main inchangé atteint première salle Ecclesia/mouvement, Save Collection et nouveau processus rechargent. Son muet, combat/suite/performance non testés; pas A/B causal7908.",
+   "es": "Main sin cambios llega a primera sala Ecclesia/movimiento, Save Collection y nuevo proceso recargan. Audio silenciado, combate/progreso/performance sin probar; no A/B causal7908."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/7908#issuecomment-6480169746"
+   }
+  ]
+ },
+ "double-dragon-gaiden": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reports identify PPSA16018; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA16018；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA16018؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA16018; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA16018; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA16018 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA16018; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "finding": {
+   "en": "The local HTTP transport survives a ninety-second unattended run near 59.94 FPS after the earlier callback/HTTP1 aborts. The report identifies a window and counters, not a visible interactive scene. Do not promote “end to end” wording into verified gameplay, controls or completion.",
+   "zh": "本地HTTP传输越过旧回调／HTTP1终止，无人值守90秒约59.94 FPS；来源只识别窗口与计数，未识别可见交互场景，不能把“端到端”措辞升级为游戏、操控或通关。",
+   "ar": "HTTP محلي يتجاوز الرفض ويعيش90ث بلا إدخال≈59.94 FPS؛ التقرير يثبت نافذة/عدادات لا مشهداً تفاعلياً. «end to end» ليس لعباً أو تحكماً أو إكمالاً.",
+   "pt": "HTTP local passa abortos e dura90s sem input≈59,94 FPS; relatório identifica janela/contadores, não cena interativa. «End to end» não valida jogo/controlos/fim.",
+   "de": "Lokales HTTP überlebt90s ohne Eingabe≈59,94 FPS nach alten Stopps; Fenster/Zähler ohne interaktive Szene. „End to end“ kein Spiel-/Steuerungs-/Abschlussnachweis.",
+   "fr": "HTTP local tient90s sans entrée≈59,94 FPS après anciens arrêts; fenêtre/compteurs sans scène interactive. «End to end» ne valide pas jeu/commandes/fin.",
+   "es": "HTTP local dura90s sin input≈59,94 FPS tras abortos antiguos; ventana/contadores sin escena interactiva. «End to end» no valida juego/control/final."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/5621#issuecomment-6441972956"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/11611#issuecomment-6504375279"
+   }
+  ]
+ },
+ "uncharted-legacy-of-thieves": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reports identify PPSA05684; compare the recorded content version, build and patches. Publisher artwork is not an AnyPS5 capture.",
+   "zh": "报告标识PPSA05684；请核对各次内容版本、构建与补丁。发行商宣传图不是AnyPS5实测。",
+   "ar": "التقارير تخص PPSA05684؛ قارن النسخة والبناء والترقيع. صور الناشر ليست AnyPS5.",
+   "pt": "Relatos identificam PPSA05684; compare versão, build e patches. Arte promocional não é captura AnyPS5.",
+   "de": "Berichte zu PPSA05684; Version, Build und Patches vergleichen. Werbebilder sind keine AnyPS5-Aufnahmen.",
+   "fr": "Rapports PPSA05684 ; comparez version, build et patches. Visuels promotionnels ne sont pas AnyPS5.",
+   "es": "Informes PPSA05684; compara versión, build y parches. Arte promocional no es captura AnyPS5."
+  },
+  "finding": {
+   "en": "The orphanage roof slide fails with a collision NaN assertion in seven controls. The local guest-MXCSR stack passes the slide into the next cinematic, while host workers keep their own mode. Other open graphics changes are present; this does not qualify the full campaign or isolate all three PRs.",
+   "zh": "孤儿院屋顶滑行七次基线均collision NaN断言失败；本地客体MXCSR组合可过滑行到下一片头，host workers保留原模式。另含开放图形修改，不证明全战役或逐项隔离三PR。",
+   "ar": "انزلاق السطح يفشل7 ضوابط بـNaN؛ تركيب guest-MXCSR يمر للسينمائي التالي مع بقاء وضع العمال. تغييرات رسوم أخرى موجودة، لا حملة كاملة أو عزلPRs الثلاثة.",
+   "pt": "Deslize telhado falha7 controlos NaN; stack guest-MXCSR passa à cinemática seguinte, workers mantêm modo. Outros fixes gráficos presentes, sem campanha completa ou isolamento3PRs.",
+   "de": "Dachrutschen scheitert7 Kontrollen anNaN; Guest-MXCSR-Stack erreicht nächstes Intro, Hostworker-Modus bleibt. Weitere Grafikfixes vorhanden, keine Kampagnen-/Dreifachisolation.",
+   "fr": "Glissade toit échoue7 contrôles NaN; stack guest-MXCSR passe cinématique suivante, mode workers conservé. Autres fixes graphiques présents, sans campagne complète ou isolation3PRs.",
+   "es": "Deslizamiento techo falla7 controles NaN; stack guest-MXCSR pasa a siguiente cinemática, modo workers igual. Otros fixes gráficos presentes, sin campaña completa ni aislamiento3PRs."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/7565#issuecomment-6453929913"
+   }
+  ]
+ },
+ "the-last-of-us-part-i": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "A local older-main port removes the huge mirrored arrays and its 512 MiB clamp, but aborts after about 6.5 minutes in the menu when a registered range contains less than one slice. A private fallback instead runs out of memory. Neither a safe workaround nor gameplay is established.",
+   "zh": "旧main本地移植取消大数组镜像与512 MiB钳位，但菜单约6.5分钟因注册范围不足一切片终止；私有回退另耗尽内存。未建立安全绕过或游戏证据。",
+   "ar": "منفذ main أقدم يزيل المصفوفات الضخمة وclamp512MiB، لكن القائمة تفشل بعد6.5د بنطاق أقل من شريحة. fallback خاص ينفد ذاكرة؛ بلا تجاوز آمن أو لعب.",
+   "pt": "Port main antigo remove arrays enormes/clamp512MiB, mas menu aborta≈6,5min com alcance menor que slice. Fallback privado fica sem memória; sem workaround seguro/jogo.",
+   "de": "Älterer Main-Port entfernt große Arrays/512MiB-Clamp, Menü bricht≈6,5min bei zu kleinem Range ab. Privater Fallback OOM; kein sicherer Workaround/Spielnachweis.",
+   "fr": "Port main ancien retire grands tableaux/clamp512MiB, menu échoue≈6,5min sur plage trop petite. Fallback privé épuise mémoire; aucun contournement sûr/jeu.",
+   "es": "Port main antiguo elimina arrays grandes/clamp512MiB, menú aborta≈6,5min por rango insuficiente. Fallback privado agota memoria; sin bypass seguro/juego."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build and selected scene, with the reported patches and hardware. Verify input, audio, save reload and a longer session separately; unknown fields stay unknown.",
+   "zh": "按报告的包、构建、补丁、硬件与场景复测，分别核验输入、音频、读档及更长会话，未知字段保持未知。",
+   "ar": "أعد نفس الحزمة/البناء/التعديلات/العتاد والمشهد؛ تحقق منفصلاً من الإدخال والصوت وإعادة الحفظ والمدة، وابقِ المجهول مجهولاً.",
+   "pt": "Repita pacote/build/patches/máquina/cena; verifique entrada, áudio, recarga e sessão longa separadamente. Desconhecidos permanecem assim.",
+   "de": "Paket/Build/Patches/Hardware/Szene reproduzieren; Eingabe, Ton, Laden und längere Sitzung getrennt prüfen. Unbekanntes bleibt unbekannt.",
+   "fr": "Reproduisez paquet/build/patches/matériel/scène; vérifiez saisie, son, rechargement et longue durée séparément. Inconnus conservés.",
+   "es": "Repite paquete/build/parches/equipo/escena; verifica entrada, audio, recarga y larga sesión por separado. Mantén desconocidos."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary evidence",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/9295#issuecomment-6382034776"
+   },
+   {
+    "label": "Reviewed primary evidence",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/9295#issuecomment-6382729671"
+   },
+   {
+    "label": "Reviewed observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/10986"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/9318#issuecomment-6477891557"
+   }
+  ]
+ },
+ "diablo-ii-resurrected": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "The report’s content version is 01.039.000; current artwork does not prove later expansions were tested.",
+   "zh": "报告内容版本为 01.039.000；当前配图不证明已测试后来扩展。",
+   "ar": "نسخة التقرير 01.039.000 ؛ الصور الحالية لا تثبت اختبار توسعات لاحقة.",
+   "pt": "Versão relatada01.039.000; arte atual não prova expansões posteriores testadas.",
+   "de": "Berichtsversion01.039.000; aktuelle Bilder belegen keine späteren Erweiterungen.",
+   "fr": "Version rapportée01.039.000 ; images actuelles sans preuve des extensions ultérieures.",
+   "es": "Versión indicada01.039.000; arte actual no prueba expansiones posteriores."
+  },
+  "finding": {
+   "en": "Linux loads a save and reaches town. On RTX 3080 Ti at 4K, current-main windows show 73–86 presents/10 s in town, 87–95 in menu. The swept-buffer change helps town but hurts menu; its adaptive replacement is still local. Boot memory spikes and other experimental validation failures remain explicit. The Radeon 780M reaches menu, character selection and town after loading. Two of twelve starts crash after loading a save; some boots need relaunch after memory spikes. Discrete-GPU staging has no effect here. This bounded town report does not verify later areas or completion. Main converts again and reaches town, but large black untextured ground patches persist for 6.5 minutes around the campfire and tiles. Both Linux controls render that spot correctly. This Windows-specific observation does not transfer the Linux town FPS to this laptop.",
+   "zh": "Linux读档到城镇；3080 Ti的4K当前main城镇每10秒73–86次呈现，菜单87–95。扫掠缓冲修改利城镇却损菜单，自适应替代仍本地；启动内存尖峰及其他实验验证失败明确保留。 780M读档到菜单、角色选择及城镇；12次启动2次读档后崩溃，部分启动内存尖峰须重开。独显staging在此无效，城镇有限报告不验证后续或通关。 main恢复转换并到城镇，但营火及地砖附近大块黑色无纹理地面持续6.5分钟；两Linux对照此处正常。Windows特定观察不能套用Linux城镇FPS。",
+   "ar": "Linux يحمل الحفظ ويبلغ البلدة؛3080Ti/4K يعرض73–86/10ث بالبلدة و87–95 بالقائمة. تغيير staging يفيد البلدة ويضر القائمة، البديل التكيفي محلي؛ قفزات الذاكرة وفشل التحقق محفوظة. 780M يبلغ القائمة والشخصية والبلدة بعد التحميل؛2/12 بدء تنهار بعد الحفظ وبعضها يحتاج إعادة بسبب الذاكرة. Staging المنفصل بلا أثر؛ لا مناطق لاحقة أو إكمال مثبت. main يحول ويبلغ البلدة لكن بقع أرض سوداء بلا نسيج تدوم6.5د؛ ضابطاLinux سليمَان. لا ننقل FPS Linux لهذا المحمول.",
+   "pt": "Linux carrega save e chega à vila;3080Ti/4K73–86 apresentações/10s vila,87–95 menu. Staging ajuda vila e prejudica menu, substituto adaptativo ainda local; picos/falhas validação mantidos. 780M chega a menu/personagem/vila após carga;2/12 inícios falham e alguns precisam relançar por memória. Staging discreto sem efeito; sem áreas posteriores/conclusão. Main converte e chega à vila, mas chão preto sem textura persiste6,5min;2 Linux corretos. FPS Linux não se transfere para este portátil.",
+   "de": "Linux lädt Save bis Stadt;3080Ti/4K73–86 Bilder/10s Stadt,87–95 Menü. Staging hilft Stadt, bremst Menü, adaptive Alternative lokal; Speicherspitzen/Validierungsfehler bleiben. 780M erreicht Menü/Figur/Stadt nach Laden;2/12 Starts stürzen danach ab, teils Neustart wegen Speicher. Discrete-Staging wirkungslos; spätere Gebiete/Abschluss ungeprüft. Main konvertiert/erreicht Stadt, schwarze texturlose Bodenflecken6,5min; beide Linux-Kontrollen korrekt. Linux-FPS nicht Laptop zuordnen.",
+   "fr": "Linux charge save et atteint ville;3080Ti/4K73–86 images/10s ville,87–95 menu. Staging aide ville mais pénalise menu, remplacement adaptatif local; pics/échecs validation conservés. 780M atteint menu/personnage/ville après chargement;2/12 démarrages échouent, parfois relance mémoire. Staging discret sans effet; suite/fin non validées. Main convertit/atteint ville, taches noires sans texture6,5min;2 contrôlesLinux corrects. FPS Linux non attribués à ce portable.",
+   "es": "Linux carga save y llega al pueblo;3080Ti/4K73–86 imágenes/10s pueblo,87–95 menú. Staging ayuda pueblo y daña menú, reemplazo adaptativo local; picos/fallos validación conservados. 780M llega a menú/personaje/pueblo tras carga;2/12 inicios fallan y algunos requieren reinicio por memoria. Staging discreto sin efecto; áreas posteriores/final sin validar. Main convierte/llega al pueblo, manchas negras sin textura6,5min;2 controlesLinux correctos. FPS Linux no se atribuyen a este portátil."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package, build, patch set and scene; verify controls, audio, save reload and a longer session separately. Record the actual test date and keep unknown fields unknown.",
+   "zh": "以准确包、构建、补丁和场景复测，分别验证操控、音频、读档及更长会话；记录实际测试日期，未知字段保持未知。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد نفسه؛ افحص التحكم والصوت وإعادة الحفظ والمدة منفصلة. سجل تاريخ الاختبار واحتفظ بالمجهول.",
+   "pt": "Repita pacote, build, patches e cena; verifique controlos, áudio, recarga e sessão longa separadamente. Registe a data real e mantenha desconhecidos.",
+   "de": "Paket, Build, Patches und Szene reproduzieren; Steuerung, Ton, Laden und Dauer getrennt prüfen. Testdatum erfassen, Unbekanntes bewahren.",
+   "fr": "Reproduisez paquet, build, patches et scène; vérifiez commandes, son, rechargement et durée séparément. Date réelle et inconnus conservés.",
+   "es": "Repite paquete, build, parches y escena; verifica controles, audio, recarga y duración aparte. Registra fecha real y conserva desconocidos."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/11297#issuecomment-6412124386"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/5146"
+   }
+  ]
+ },
+ "god-of-war-sons-of-sparta": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "One prospective warm stationary-camp pair measures 20.65922→20.81063 FPS. This is a camp observation, not refreshed Cyclops combat or proof of repeatability. Later exact-head correctness checks keep their own revisions and pre-existing failures; they do not replace these performance pins. One prospective warm stationary-camp pair measures 20.66479→21.81957 FPS. This is a camp observation, not refreshed Cyclops combat or proof of repeatability. Later exact-head correctness checks keep their own revisions and pre-existing failures; they do not replace these performance pins. One prospective warm stationary-camp pair measures 20.58067→21.09340 FPS. This is a camp observation, not refreshed Cyclops combat or proof of repeatability. Later exact-head correctness checks keep their own revisions and pre-existing failures; they do not replace these performance pins. One prospective warm stationary-camp pair measures 20.72849→20.74957 FPS. This is a camp observation, not refreshed Cyclops combat or proof of repeatability. Later exact-head correctness checks keep their own revisions and pre-existing failures; they do not replace these performance pins.",
+   "zh": "一组预定热缓存静止营地对照20.65922→20.81063 FPS；这是营地，非刷新独眼巨人战斗或可重复证明。后续准确head正确性检查保留各自版本及既有失败，不替换这些性能pin。 一组预定热缓存静止营地对照20.66479→21.81957 FPS；这是营地，非刷新独眼巨人战斗或可重复证明。后续准确head正确性检查保留各自版本及既有失败，不替换这些性能pin。 一组预定热缓存静止营地对照20.58067→21.09340 FPS；这是营地，非刷新独眼巨人战斗或可重复证明。后续准确head正确性检查保留各自版本及既有失败，不替换这些性能pin。 一组预定热缓存静止营地对照20.72849→20.74957 FPS；这是营地，非刷新独眼巨人战斗或可重复证明。后续准确head正确性检查保留各自版本及既有失败，不替换这些性能pin。",
+   "ar": "زوج مخيم ثابت دافئ واحد يقيس20.65922→20.81063 FPS؛ ليس قتال Cyclops محدثاً أو تكراراً مثبتاً. اختبارات الصحة اللاحقة تبقى بإصداراتها وفشلها القديم دون تبديل هذه القياسات. زوج مخيم ثابت دافئ واحد يقيس20.66479→21.81957 FPS؛ ليس قتال Cyclops محدثاً أو تكراراً مثبتاً. اختبارات الصحة اللاحقة تبقى بإصداراتها وفشلها القديم دون تبديل هذه القياسات. زوج مخيم ثابت دافئ واحد يقيس20.58067→21.09340 FPS؛ ليس قتال Cyclops محدثاً أو تكراراً مثبتاً. اختبارات الصحة اللاحقة تبقى بإصداراتها وفشلها القديم دون تبديل هذه القياسات. زوج مخيم ثابت دافئ واحد يقيس20.72849→20.74957 FPS؛ ليس قتال Cyclops محدثاً أو تكراراً مثبتاً. اختبارات الصحة اللاحقة تبقى بإصداراتها وفشلها القديم دون تبديل هذه القياسات.",
+   "pt": "Um par quente no acampamento parado mede20.65922→20.81063 FPS; não combate Cyclops atualizado ou repetibilidade. Correção em heads posteriores mantém revisões/falhas, sem substituir estes pins. Um par quente no acampamento parado mede20.66479→21.81957 FPS; não combate Cyclops atualizado ou repetibilidade. Correção em heads posteriores mantém revisões/falhas, sem substituir estes pins. Um par quente no acampamento parado mede20.58067→21.09340 FPS; não combate Cyclops atualizado ou repetibilidade. Correção em heads posteriores mantém revisões/falhas, sem substituir estes pins. Um par quente no acampamento parado mede20.72849→20.74957 FPS; não combate Cyclops atualizado ou repetibilidade. Correção em heads posteriores mantém revisões/falhas, sem substituir estes pins.",
+   "de": "Ein warmes stationäres Lagerpaar misst20.65922→20.81063 FPS; kein erneuerter Cyclops-Kampf/Wiederholbarkeitsnachweis. Spätere Head-Korrektheit behält Revisionen/Altfehler, ersetzt keine Messpins. Ein warmes stationäres Lagerpaar misst20.66479→21.81957 FPS; kein erneuerter Cyclops-Kampf/Wiederholbarkeitsnachweis. Spätere Head-Korrektheit behält Revisionen/Altfehler, ersetzt keine Messpins. Ein warmes stationäres Lagerpaar misst20.58067→21.09340 FPS; kein erneuerter Cyclops-Kampf/Wiederholbarkeitsnachweis. Spätere Head-Korrektheit behält Revisionen/Altfehler, ersetzt keine Messpins. Ein warmes stationäres Lagerpaar misst20.72849→20.74957 FPS; kein erneuerter Cyclops-Kampf/Wiederholbarkeitsnachweis. Spätere Head-Korrektheit behält Revisionen/Altfehler, ersetzt keine Messpins.",
+   "fr": "Une paire chaude au camp immobile mesure20.65922→20.81063 FPS; pas nouveau combat Cyclops ou répétabilité prouvée. Contrôles ultérieurs gardent révisions/défauts existants sans remplacer ces pins. Une paire chaude au camp immobile mesure20.66479→21.81957 FPS; pas nouveau combat Cyclops ou répétabilité prouvée. Contrôles ultérieurs gardent révisions/défauts existants sans remplacer ces pins. Une paire chaude au camp immobile mesure20.58067→21.09340 FPS; pas nouveau combat Cyclops ou répétabilité prouvée. Contrôles ultérieurs gardent révisions/défauts existants sans remplacer ces pins. Une paire chaude au camp immobile mesure20.72849→20.74957 FPS; pas nouveau combat Cyclops ou répétabilité prouvée. Contrôles ultérieurs gardent révisions/défauts existants sans remplacer ces pins.",
+   "es": "Una pareja caliente en campamento quieto mide20.65922→20.81063 FPS; no combate Cyclops actualizado ni repetibilidad probada. Checks posteriores conservan revisiones/fallos existentes sin sustituir estos pins. Una pareja caliente en campamento quieto mide20.66479→21.81957 FPS; no combate Cyclops actualizado ni repetibilidad probada. Checks posteriores conservan revisiones/fallos existentes sin sustituir estos pins. Una pareja caliente en campamento quieto mide20.58067→21.09340 FPS; no combate Cyclops actualizado ni repetibilidad probada. Checks posteriores conservan revisiones/fallos existentes sin sustituir estos pins. Una pareja caliente en campamento quieto mide20.72849→20.74957 FPS; no combate Cyclops actualizado ni repetibilidad probada. Checks posteriores conservan revisiones/fallos existentes sin sustituir estos pins."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/1742#discussioncomment-19178047"
+   },
+   {
+    "label": "Source-scoped follow-up, separate from historical tests",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/10540#issuecomment-6419715677"
+   },
+   {
+    "label": "Source-scoped follow-up, separate from historical tests",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/11447#issuecomment-6417998163"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/11952"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/10547#issuecomment-6450195823"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/12287#issuecomment-6499340874"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/12559#issuecomment-6499609779"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/11952#issuecomment-6500102270"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/12299#issuecomment-6499860792"
+   }
+  ]
+ },
+ "astro-bot": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "The local D16-store correction restores the crash-site sky in three matching screenshots. The galaxy map then renders and the first Aerial Garden level runs four minutes without a throw or crash. Map presentation counts are not level FPS; audio, completion and later stability are untested. Four interleaved hub pairs settle at 5.93 versus 5.94 FPS. The apparently faster initial main run counted an unsettled scene. No shared-view write faults or armed subpages occur in either control, so this title gives no measurable gain for the tested change on current main.",
+   "zh": "本地D16 store修正三张同场景截图恢复坠毁地点天空；随后星图可见、首Aerial Garden关卡4分钟无抛错或崩溃。星图呈现计数不是关卡FPS，音频、通关及后续稳定未测。 四组交错枢纽对照稳定5.93与5.94 FPS；表面更快的首main包含未稳定场景。两组均无共享view写故障或armed子页，当前main此游戏未显示修改增益。",
+   "ar": "إصلاح D16 يعيد السماء في3 صور متطابقة؛ الخريطة ثم أول مستوى Aerial Garden يعمل4د بلا انهيار. عد الخريطة ليس FPS المستوى، والصوت والنهاية والاستقرار مجهولة. أربعة أزواج hub تستقر5.93 مقابل5.94 FPS؛ بداية أسرع كانت مشهداً غير مستقر. لا shared-view faults أو subpages مفعلة، فلا مكسب مقاس بهذا العنوان.",
+   "pt": "Fix D16 repõe céu em3 capturas iguais; mapa e primeiro Aerial Garden duram4min sem crash. Contadores mapa não são FPS nível; áudio/fim/estabilidade por testar. Quatro pares hub estabilizam5,93/5,94 FPS; arranque rápido contou cena não estabilizada. Sem faults/subpages shared-view, nenhum ganho medido neste main.",
+   "de": "D16-Fix stellt Himmel in3 gleichen Screenshots wieder her; Karte/erster Aerial-Garden-Level4min ohne Crash. Kartenzähler kein Level-FPS; Ton/Abschluss/Dauer ungeprüft. Vier Hub-Paare stabil5,93/5,94 FPS; schneller Start zählte unfertige Szene. Keine Shared-View-Faults/Arming, kein messbarer Gewinn dieses Main-Tests.",
+   "fr": "Fix D16 restaure ciel dans3 captures identiques; carte/premier Aerial Garden4min sans crash. Compteurs carte sans FPS niveau; son/fin/stabilité non testés. Quatre paires hub stables5,93/5,94 FPS; début rapide comptait scène non stabilisée. Sans faults/subpages shared-view, aucun gain mesurable sur ce main.",
+   "es": "Fix D16 restaura cielo en3 capturas iguales; mapa/primer Aerial Garden4min sin crash. Contadores mapa no son FPS nivel; audio/final/estabilidad sin probar. Cuatro parejas hub estables5,93/5,94 FPS; inicio rápido contó escena no asentada. Sin faults/subpages shared-view, ninguna ganancia medible en este main."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/357#discussioncomment-19183828"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/9712#issuecomment-6405968025"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/10364#issuecomment-6410487349"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/11307#issuecomment-6440045889"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/6284#issuecomment-6429234530"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/12191#issuecomment-6484206432"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/6273#issuecomment-6497570135"
+   }
+  ]
+ },
+ "ball-x-pit": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA31872. Preserve the version, host and patch scope of each test. Promotional artwork does not show AnyPS5 execution. Current art advertises The Naturalist Update; it does not identify the content tested in version 01.301.000.",
+   "zh": "报告PS5包PPSA31872；逐次保留版本、主机及补丁边界，宣传图片不是AnyPS5实测。 当前封面带The Naturalist Update标识，不能据此认定01.301.000测试涵盖该更新。",
+   "ar": "حزمة PS5 المبلغ عنها PPSA31872. احفظ نسخة ومضيف وتعديلات كل اختبار؛ الصور الدعائية ليست تشغيل AnyPS5. الصورة تروج The Naturalist Update ولا تثبت محتوى اختبار 01.301.000.",
+   "pt": "Pacote PS5 referido PPSA31872. Preserve versão, host e patches por teste; arte promocional não mostra execução AnyPS5. A arte anuncia The Naturalist Update, sem provar o conteúdo testado em 01.301.000.",
+   "de": "Gemeldetes PS5-Paket PPSA31872. Version, Host und Patches je Test beachten; Werbebilder zeigen keinen AnyPS5-Lauf. Das Bild bewirbt The Naturalist Update und belegt nicht den Testinhalt von 01.301.000.",
+   "fr": "Paquet PS5 rapporté PPSA31872. Conservez version, hôte et patchs de chaque essai ; les images promotionnelles ne montrent pas AnyPS5. L’image promeut The Naturalist Update sans identifier le contenu testé en 01.301.000.",
+   "es": "Paquete PS5 reportado PPSA31872. Conserva versión, host y patches por prueba; imágenes promocionales no muestran AnyPS5. La imagen anuncia The Naturalist Update sin identificar el contenido probado en 01.301.000."
+  },
+  "finding": {
+   "en": "Two local 300-second HTTP/certificate-stack runs reach the in-game base screen around 35 presents/s. The first-level-load freeze still occurs in one of four runs; hitches and controller reconnect limitations remain. Later source edits supply exact heads rather than retagging the original build.",
+   "zh": "两次本地HTTP／证书组合各300秒到基地游戏画面约35次呈现／秒；首关加载仍1／4冻结，卡顿及手柄重连限制保留。后续来源修订补充准确head，不重标旧构建。",
+   "ar": "محاولتان محليتان300ث لتركيب HTTP/شهادات تبلغان القاعدة≈35 عرض/ث؛ تحميل أول مستوى يتجمد1/4 مع تقطع وحدود إعادة اليد. الرؤوس المضافة لا تعيد تسمية البناء القديم.",
+   "pt": "Dois ensaios locais300s HTTP/certificados chegam à base≈35 apresentações/s; primeira carga congela1/4, hitches/reconexão mantidos. Heads corrigidos não reetiquetam build antigo.",
+   "de": "Zwei lokale300-s-HTTP/Zertifikatsläufe erreichen Basis≈35 Bilder/s; erstes Levelladen hängt1/4, Ruckler/Reconnect bleiben. Ergänzte Heads benennen alten Build nicht um.",
+   "fr": "Deux essais locaux300s HTTP/certificats atteignent base≈35 images/s; chargement initial gèle1/4, saccades/reconnexion persistent. Heads précisés sans rebaptiser ancien build.",
+   "es": "Dos pruebas locales300s HTTP/certificados llegan a base≈35 imágenes/s; primera carga congela1/4, tirones/reconexión siguen. Heads añadidos no reetiquetan build antiguo."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/8966#discussioncomment-19178002"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/8966"
+   }
+  ]
+ },
+ "neptunia-reverse": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Confirm this exact PS5 package and content version. Other regions, DLC, PC versions and promotional images do not identify the tested build.",
+   "zh": "核对准确PS5包和内容版本；其他地区、DLC、PC版本及宣传图不能识别实测构建。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ المناطق وDLC وPC والصور الدعائية لا تحدد البناء المختبر.",
+   "pt": "Confirme o pacote PS5 e versão; regiões, DLC, PC e imagens promocionais não identificam o build testado.",
+   "de": "Genaues PS5-Paket und Version prüfen; Regionen, DLC, PC und Werbebilder identifizieren den Testbuild nicht.",
+   "fr": "Vérifiez paquet PS5 et version; régions, DLC, PC et images promotionnelles ne fixent pas le build testé.",
+   "es": "Verifica paquete PS5 y versión; regiones, DLC, PC e imágenes promocionales no identifican el build probado."
+  },
+  "finding": {
+   "en": "The AudioOut2 fix is now merged as 6c48f35a95, but the title’s published audio run predates that merge. No fresh-main retest is supplied; the format and sampler-bias blockers remain separate.",
+   "zh": "AudioOut2修改已以6c48f35a95合并，但游戏音频报告早于合并；没有新main复测，格式及sampler bias阻碍仍独立。",
+   "ar": "إصلاح AudioOut2 دُمج6c48f35a95 لكن التشغيل أقدم؛ لا إعادةmain جديدة، عوائق format/sampler مستقلة.",
+   "pt": "AudioOut2 fundido6c48f35a95, mas ensaio é anterior; sem reteste main, bloqueios formato/sampler separados.",
+   "de": "AudioOut2 als6c48f35a95 integriert, Titellauf älter; kein Main-Retest, Format/Sampler bleiben getrennt.",
+   "fr": "AudioOut2 fusionné6c48f35a95 mais essai antérieur; pas de retest main, blocages format/sampler distincts.",
+   "es": "AudioOut2 fusionado6c48f35a95 pero prueba anterior; sin retest main, bloqueos formato/sampler separados."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package, build, patch set and scene; verify controls, audio, save reload and a longer session separately. Record the actual test date and keep unknown fields unknown.",
+   "zh": "以准确包、构建、补丁和场景复测，分别验证操控、音频、读档及更长会话；记录实际测试日期，未知字段保持未知。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد نفسه؛ افحص التحكم والصوت وإعادة الحفظ والمدة منفصلة. سجل تاريخ الاختبار واحتفظ بالمجهول.",
+   "pt": "Repita pacote, build, patches e cena; verifique controlos, áudio, recarga e sessão longa separadamente. Registe a data real e mantenha desconhecidos.",
+   "de": "Paket, Build, Patches und Szene reproduzieren; Steuerung, Ton, Laden und Dauer getrennt prüfen. Testdatum erfassen, Unbekanntes bewahren.",
+   "fr": "Reproduisez paquet, build, patches et scène; vérifiez commandes, son, rechargement et durée séparément. Date réelle et inconnus conservés.",
+   "es": "Repite paquete, build, parches y escena; verifica controles, audio, recarga y duración aparte. Registra fecha real y conserva desconocidos."
+  },
+  "sources": [
+   {
+    "label": "Source-only status or evidence correction",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/11493"
+   },
+   {
+    "label": "Publisher identity and promotional art, not an AnyPS5 test",
+    "url": "https://store.playstation.com/en-us/product/UP0031-PPSA02721_00-NEPREVERSEGAME01/"
+   }
+  ]
+ },
+ "lego-builders-journey": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported package PPSA05496. Read the version and patch stack per observation; publisher artwork is promotional.",
+   "zh": "报告包PPSA05496，按每次版本和补丁栈阅读；发行商图片仅宣传资料。",
+   "ar": "حزمةPPSA05496؛ النسخة والترقيعات لكلتجربة، والصور دعائية.",
+   "pt": "PacotePPSA05496; versão/patches por observação, imagens promocionais.",
+   "de": "PaketPPSA05496; Version/Patches jeTest beachten, Bilder sindWerbung.",
+   "fr": "PaquetPPSA05496 ; version/patches par observation, images promotionnelles.",
+   "es": "PaquetePPSA05496; versión/parches por observación, imágenes promocionales."
+  },
+  "finding": {
+   "en": "Module, depth-mip and storage-budget prerequisites are merged, according to source history. The status author explicitly did not rerun the title. A merged stack does not establish that current main reproduces the older first-scene result.",
+   "zh": "模块、depth mip及存储预算前置已合并，但状态作者明确未重跑游戏；组合进入main不证明当前main复现旧首场景。",
+   "ar": "متطلبات الوحدات والعمق والميزانية دُمجت لكن الكاتب لم يعد التشغيل؛ الدمج لا يثبت المشهد القديم على main.",
+   "pt": "Pré-requisitos fundidos, mas autor não repetiu jogo; merge não valida antiga cena no main atual.",
+   "de": "Voraussetzungen integriert, Autor hat Titel nicht erneut gestartet; Merge kein aktueller Szenennachweis.",
+   "fr": "Prérequis fusionnés, auteur sans nouvel essai; fusion ne valide pas ancienne scène sur main actuel.",
+   "es": "Prerrequisitos fusionados, autor sin repetir juego; merge no valida escena antigua en main actual."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/11308"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/issues/11308#issuecomment-6425919404"
+   },
+   {
+    "label": "Source-only status or evidence correction",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/7926"
+   }
+  ]
+ },
+ "blue-reflection-quartet": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA33655; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC.",
+   "zh": "报告PS5包PPSA33655；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。",
+   "ar": "حزمة PS5 PPSA33655؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر.",
+   "pt": "Pacote PS5 PPSA33655; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado.",
+   "de": "PS5-Paket PPSA33655; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC.",
+   "fr": "Paquet PS5 PPSA33655 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé.",
+   "es": "Paquete PS5 PPSA33655; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado."
+  },
+  "finding": {
+   "en": "The new reply asks how UserFx extra-buffer channels and module order behave. It proposes a future branch and requests a test; it supplies no new runtime success. Preserve the existing custom-submixer stop.",
+   "zh": "新回复询问UserFx附加缓冲通道及模块顺序，计划分支并请求测试，没有新增运行成功证据；保留既有自定义submixer停止。",
+   "ar": "الرد يسأل عن UserFx والترتيب ويقترح اختباراً مستقبلياً؛ لا نجاح تشغيل جديد، وتوقف submixer باق.",
+   "pt": "Resposta pergunta por UserFx/ordem e propõe teste futuro; sem sucesso novo, bloqueio submixer mantido.",
+   "de": "Antwort fragt nach UserFx/Reihenfolge und künftigem Test; kein neuer Laufnachweis, Submixer-Stopp bleibt.",
+   "fr": "Réponse interroge UserFx/ordre et propose futur essai; aucun succès nouveau, blocage submixer conservé.",
+   "es": "Respuesta pregunta UserFx/orden y propone prueba futura; sin éxito nuevo, bloqueo submixer conservado."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Source-only status or evidence correction",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/10271"
+   }
+  ]
+ },
+ "bugsnax": {
+  "checked": "2026-10-30",
+  "finding": {
+   "en": "Review requests a larger AMD hardware readback before treating the dither table as accurate. The request is not a completed game or hardware test, and does not broaden the older bridge-cutscene result.",
+   "zh": "评审要求更大AMD硬件回读后再认定抖动表准确；请求不等于已完成游戏或硬件测试，也不扩大旧桥段结果。",
+   "ar": "المراجعة تطلب readback AMD أكبر؛ الطلب ليس اختباراً منجزاً ولا يوسع نتيجة الجسر القديمة.",
+   "pt": "Review pede readback AMD maior; pedido não é teste completo nem amplia antiga cena da ponte.",
+   "de": "Review fordert größeres AMD-Readback; Anfrage kein abgeschlossener Test oder erweiterter Brückennachweis.",
+   "fr": "Review demande readback AMD plus grand; demande sans test terminé ni extension de l’ancienne scène.",
+   "es": "Review pide readback AMD mayor; solicitud no es test completado ni amplía escena antigua."
+  },
+  "edition": {
+   "en": "Reported PS5 package PPSA01503; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC. Artwork identifies different regional package(s) PPSA01502, not this tested package.",
+   "zh": "报告PS5包PPSA01503；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。 图片对应不同地区包PPSA01502，不用于认定本次测试包。",
+   "ar": "حزمة PS5 PPSA01503؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر. الصورة لحزمة إقليمية مختلفة PPSA01502 لا الحزمة المختبرة.",
+   "pt": "Pacote PS5 PPSA01503; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado. Imagem de pacote regional diferente PPSA01502, não o teste.",
+   "de": "PS5-Paket PPSA01503; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC. Bild eines anderen Regionalpakets PPSA01502, nicht des Tests.",
+   "fr": "Paquet PS5 PPSA01503 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé. Image d’un autre paquet régional PPSA01502, pas cet essai.",
+   "es": "Paquete PS5 PPSA01503; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado. Imagen de otro paquete regional PPSA01502, no de esta prueba."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build and selected scene, with the reported patches and hardware. Verify input, audio, save reload and a longer session separately; unknown fields stay unknown.",
+   "zh": "按报告的包、构建、补丁、硬件与场景复测，分别核验输入、音频、读档及更长会话，未知字段保持未知。",
+   "ar": "أعد نفس الحزمة/البناء/التعديلات/العتاد والمشهد؛ تحقق منفصلاً من الإدخال والصوت وإعادة الحفظ والمدة، وابقِ المجهول مجهولاً.",
+   "pt": "Repita pacote/build/patches/máquina/cena; verifique entrada, áudio, recarga e sessão longa separadamente. Desconhecidos permanecem assim.",
+   "de": "Paket/Build/Patches/Hardware/Szene reproduzieren; Eingabe, Ton, Laden und längere Sitzung getrennt prüfen. Unbekanntes bleibt unbekannt.",
+   "fr": "Reproduisez paquet/build/patches/matériel/scène; vérifiez saisie, son, rechargement et longue durée séparément. Inconnus conservés.",
+   "es": "Repite paquete/build/parches/equipo/escena; verifica entrada, audio, recarga y larga sesión por separado. Mantén desconocidos."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary evidence",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/9900#discussioncomment-19161527"
+   },
+   {
+    "label": "Reviewed primary evidence",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/9900#discussioncomment-19165799"
+   },
+   {
+    "label": "Reviewed observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/10515#issuecomment-6389757353"
+   },
+   {
+    "label": "Single-sample coverage review and revised scope",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/10581#issuecomment-6390289949"
+   },
+   {
+    "label": "Source-only status or evidence correction",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/9900"
+   }
+  ]
+ },
+ "taiko-rhythm-festival": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Reported PS5 package PPSA16441; check each report’s content version, build and host. Publisher art is promotional, not AnyPS5 output or tested DLC. Artwork identifies different regional package(s) PPSA16411, PPSA24085, not this tested package. Deluxe marketing does not identify the reported content or prove those extras were tested.",
+   "zh": "报告PS5包PPSA16441；逐次核对内容版本、构建与主机。发行商图片仅宣传资料，非AnyPS5画面或已测DLC。 图片对应不同地区包PPSA16411, PPSA24085，不用于认定本次测试包。 Deluxe营销不代表报告内容或附加内容已测试。",
+   "ar": "حزمة PS5 PPSA16441؛ راجع نسخة وبناء ومضيف كل تقرير. الصورة دعائية لا تشغيل AnyPS5 أو DLC مختبر. الصورة لحزمة إقليمية مختلفة PPSA16411, PPSA24085 لا الحزمة المختبرة. تسويق Deluxe لا يثبت محتوى التقرير أو اختبار الإضافات.",
+   "pt": "Pacote PS5 PPSA16441; confira versão/build/host por relatório. Arte promocional, não captura AnyPS5 ou DLC testado. Imagem de pacote regional diferente PPSA16411, PPSA24085, não o teste. Marketing Deluxe não identifica conteúdo relatado/extra testado.",
+   "de": "PS5-Paket PPSA16441; Version/Build/Host je Bericht beachten. Werbung, kein AnyPS5-Bild oder getestetes DLC. Bild eines anderen Regionalpakets PPSA16411, PPSA24085, nicht des Tests. Deluxe-Werbung belegt keine getesteten Zusatzinhalte.",
+   "fr": "Paquet PS5 PPSA16441 ; vérifiez version/build/hôte. Art promotionnel, pas sortie AnyPS5 ou DLC testé. Image d’un autre paquet régional PPSA16411, PPSA24085, pas cet essai. Marketing Deluxe ne prouve pas les suppléments testés.",
+   "es": "Paquete PS5 PPSA16441; comprueba versión/build/host. Arte promocional, no salida AnyPS5 o DLC probado. Imagen de otro paquete regional PPSA16411, PPSA24085, no de esta prueba. Marketing Deluxe no prueba extras ensayados."
+  },
+  "finding": {
+   "en": "The new reply calls the title playable because online features are missing. It adds no separately pinned run, duration or benchmark. The existing bounded song/menu evidence remains the basis, rather than the label alone.",
+   "zh": "新回复因仅缺线上功能而称可玩，但未加独立固定构建、时长或基准；仍依既有有限歌曲／菜单证据，不仅凭标签。",
+   "ar": "الرد يسميه قابلاً للعب بلا وظائف online، دون تشغيل محدد أو مدة جديدة؛ الدليل القديم لا التصنيف هو الأساس.",
+   "pt": "Resposta chama jogável sem online, sem novo build/duração; provas anteriores limitadas mantêm-se, não o rótulo.",
+   "de": "Antwort nennt spielbar ohne Online, ohne neuen Pin/Dauer; begrenzte alte Belege statt Etikett maßgeblich.",
+   "fr": "Réponse dit jouable sans online, sans nouveau pin/durée; preuves anciennes limitées plutôt que label.",
+   "es": "Respuesta dice jugable sin online, sin nuevo pin/duración; pruebas antiguas limitadas, no etiqueta, son base."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build/patches and scene. Verify controls, audio, reload and longer play independently; missing hardware, driver or test dates stay unknown. A stopped process, a present counter or an import audit is not a complete game test.",
+   "zh": "按准确包、构建、补丁与场景复测，分别验证操控、音频、读档及长流程；缺失硬件、驱动或测试日期保持未知。进程存活、呈现计数或导入审计不等于完整游戏测试。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة مستقلة، والمفقود مجهول. بقاء العملية والعداد وفحص الواردات ليست اختبار لعبة كامل.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente, mantendo ausências desconhecidas. Processo, contador ou auditoria não são teste completo.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen, Fehlendes unbekannt. Prozess/Zähler/Importprüfung kein vollständiger Spieltest.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, chargement et durée séparés, absences inconnues. Processus/compteur/audit sans test complet.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, carga y duración por separado, ausencias desconocidas. Proceso/contador/auditoría no son prueba completa."
+  },
+  "sources": [
+   {
+    "label": "Source-only status or evidence correction",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/9910"
+   }
+  ]
+ },
+ "persona-5-royal": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "Confirm this PS5 package and content version; other regions, PS4/native PC versions, DLC and promotional images do not identify the tested content. PS5report05110. Available page OG art is labelledPS4 and was rejected; USPS5listing05109 is another region.",
+   "zh": "核对本PS5包及内容版本，其他地区、PS4／原生PC、DLC和宣传图不能识别实测内容。 实测PS5为05110；可取OG素材标为PS4，已弃用，资料页USPS5的05109属另一地区。",
+   "ar": "تحقق من حزمة PS5 ونسختها؛ مناطق أخرى و PS4/PC و DLC والدعاية لا تحدد المحتوى المختبر. تقرير PS5 هو 05110؛ صورة OG موسومة PS4 رفضت، و USPS5 رقمه 05109 آخر.",
+   "pt": "Confirme pacotePS5/versão; outras regiões, PS4/PC, DLC e imagem promocional não identificam conteúdo testado. PS5testado05110; OGmarcadoPS4rejeitado, USPS505109é outra região.",
+   "de": "PS5-Paket/Version prüfen; andere Regionen, PS4/PC, DLC und Werbebilder identifizieren Testinhalt nicht. PS5-Test05110; PS4-markiertesOGabgelehnt, US-PS505109andere Region.",
+   "fr": "Vérifiez paquetPS5/version; autres régions, PS4/PC, DLC et images promotionnelles ne fixent pas le contenu testé. PS5testé05110; OGmarquéPS4écarté, USPS505109autre région.",
+   "es": "Verifica paquetePS5/versión; otras regiones, PS4/PC, DLC e imagen promocional no identifican contenido probado. PS5probado05110; OGmarcadoPS4rechazado, USPS505109otra región."
+  },
+  "finding": {
+   "en": "The 28 October main/89d6a7caf7 pair was explicitly withdrawn after an extra input driver contaminated both runs. Its 13.1→16.7 FPS and memory figures are not valid new evidence. The synthetic budget-test analysis remains separate; unrelated older casino reports retain their own pins.",
+   "zh": "10月28日main／89d6a7caf7对照因额外输入驱动污染两组已撤回，13.1→16.7 FPS及内存数不属有效新证据。合成预算测试分析另留，无关旧赌场报告保留原pin。",
+   "ar": "زوج28أكتوبر main/89d6a7caf7 سُحب لتلوث الإدخال؛13.1→16.7 FPS والذاكرة ليست دليلاً صالحاً. التحليل الاصطناعي منفصل، والتقارير القديمة تحتفظ بمصادرها.",
+   "pt": "Par28out main/89d6a7caf7 retirado por input extra;13,1→16,7 FPS/memória inválidos. Teste sintético separado, relatos antigos mantêm pins.",
+   "de": "Paar28.Okt main/89d6a7caf7 wegen zusätzlicher Eingabe zurückgezogen;13,1→16,7 FPS/Speicher ungültig. Synthetik getrennt, alte Casinoberichte behalten Pins.",
+   "fr": "Paire28oct main/89d6a7caf7 retirée pour entrée supplémentaire;13,1→16,7 FPS/mémoire invalides. Synthétique distinct, anciens rapports gardent pins.",
+   "es": "Pareja28oct main/89d6a7caf7 retirada por input extra;13,1→16,7 FPS/memoria inválidos. Sintético separado, informes antiguos conservan pins."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/10872"
+   },
+   {
+    "label": "Publisher identity/art source; not an AnyPS5 test",
+    "url": "https://www.playstation.com/en-us/games/persona-5-royal/"
+   },
+   {
+    "label": "Source-only status or evidence correction",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/7844"
+   }
+  ]
+ }
+});
+
+Object.assign(gameResearch,{
+ "ghost-of-tsushima-directors-cut": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "The private sparse-memory/DCC stack reaches visible disclaimer text and survives 360 seconds with bounded memory. Shader activity, hundreds of presents and changing logo frames do not establish a rendered playable world. Later writable-mirror work and remaining depth-store stops keep their own heads; the branch’s “3D progression” wording is not a gameplay milestone.",
+   "zh": "私有稀疏内存／DCC组合到可见免责声明，有限内存下存活360秒；shader活动、数百呈现与标志帧变化不证明可玩世界。后续可写镜像工作及剩余深度store停止保留各自head，分支“3D推进”措辞不能升为游戏里程碑。",
+   "ar": "تركيب ذاكرة/DCC خاص يعرض التحذير ويعيش360ث؛ نشاط shader ومئات العروض وتغير الشعار لا تثبت عالماً قابلاً للعب. إصلاحات المرايا والتوقفات اللاحقة برؤوسها، و«تقدم3D» ليس لعباً.",
+   "pt": "Stack privado memória/DCC mostra aviso e vive360s; shaders/centenas de frames/logos variáveis não provam mundo jogável. Mirrors/stores posteriores mantêm heads; «progresso3D» não é gameplay.",
+   "de": "Privater Speicher-/DCC-Stack zeigt Hinweis und läuft360s; Shader/Hunderte Bilder/Logoänderung kein spielbarer Weltnachweis. Spätere Mirror-/Depth-Stopps behalten Heads; „3D-Fortschritt“ kein Spielmeilenstein.",
+   "fr": "Stack privé mémoire/DCC affiche avertissement et tient360s; shaders/centaines d’images/logos variables ne prouvent pas monde jouable. Mirrors/stores ultérieurs gardent heads; «progrès3D» sans jeu validé.",
+   "es": "Stack privado memoria/DCC muestra aviso y dura360s; shaders/cientos de frames/logos cambiantes no prueban mundo jugable. Mirrors/stores posteriores conservan heads; «progreso3D» no valida juego."
+  },
+  "nextTest": {
+   "en": "Repeat the exact package/build/patches and scene. Check controls, audio, reload and longer play separately; keep missing hardware, driver and test date unknown. Inspect images rather than inferring play from counters.",
+   "zh": "以准确包、构建、补丁及场景复测，分别验证操控、音频、读档与长流程；缺失硬件、驱动、测试日期保持未知，核看图片而不由计数推断游戏。",
+   "ar": "أعد الحزمة والبناء والتعديلات والمشهد؛ افحص التحكم والصوت والحفظ والمدة منفصلة، واحتفظ بالمجهول وافحص الصور لا العدادات.",
+   "pt": "Repita pacote/build/patches/cena; verifique controlos, áudio, recarga e duração separadamente. Mantenha desconhecidos e veja imagens, não só contadores.",
+   "de": "Paket/Build/Patches/Szene wiederholen; Steuerung, Ton, Laden und Dauer getrennt prüfen. Unbekanntes bewahren, Bilder statt bloßer Zähler prüfen.",
+   "fr": "Reproduire paquet/build/patches/scène; commandes, son, rechargement et durée séparés. Inconnus conservés, images inspectées plutôt que compteurs.",
+   "es": "Repite paquete/build/parches/escena; controles, audio, recarga y duración por separado. Conserva desconocidos, revisa imágenes y no solo contadores."
+  },
+  "sources": [
+   {
+    "label": "Reviewed observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/4461#discussioncomment-19178775"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/4461"
+   }
+  ]
+ },
+ "death-stranding-2": {
+  "checked": "2026-10-30",
+  "edition": {
+   "en": "This page covers the PS5 release. A PS4 edition, native PC release or console performance mode is not an AnyPS5 test. Confirm the title ID and version before comparing reports.",
+   "zh": "本页关注 PS5 版本。PS4 版、原生 PC 版及主机性能模式的表现不属于 AnyPS5 测试结果；比较报告前请核对 PPSA ID 和游戏版本。",
+   "ar": "تتناول الصفحة إصدار PS5. نتائج PS4 أو PC الأصلية أو أوضاع أداء الجهاز ليست اختبارات AnyPS5. تحقق من المعرّف والإصدار عند مقارنة التقارير.",
+   "pt": "Esta página trata da edição PS5. Resultados de PS4, PC nativo ou modos da consola não são testes AnyPS5. Confirme o ID e a versão antes de comparar relatos.",
+   "de": "Diese Seite behandelt die PS5-Fassung. PS4, native PC-Versionen und Konsolenmodi sind keine AnyPS5-Tests. Vergleiche nur Berichte mit passender Titel-ID und Version.",
+   "fr": "Cette page concerne la version PS5. Les résultats PS4, PC natif ou des modes console ne constituent pas des tests AnyPS5. Vérifiez l’identifiant et la version avant toute comparaison.",
+   "es": "Esta página trata la edición de PS5. Los resultados de PS4, PC nativo o modos de consola no son pruebas de AnyPS5. Comprueba el ID y la versión antes de comparar informes."
+  },
+  "finding": {
+   "en": "The local event/lease stack passes the earlier pinned-range wait for 306 seconds, then ends with device loss. The lease PRs were tested together, and all newer runs end before the historical 1124-second callback crash. An approximately 30 FPS counter and absence of an earlier failure do not verify a fix or identify gameplay.",
+   "zh": "本地事件／lease组合越过旧pinned-range等待到306秒后设备丢失；两lease PR合测，新运行均早于历史1124秒回调崩溃。约30 FPS计数及未触发旧故障不证明修复或游戏场景。",
+   "ar": "تركيب event/lease محلي يتجاوز الانتظار306ث ثم يفقد الجهاز؛ PRs معاً وكلها أقصر من انهيار1124ث القديم. عداد≈30 FPS وغياب الخطأ ليس إصلاحاً أو مشهداً مثبتاً.",
+   "pt": "Stack event/lease local passa espera306s e perde dispositivo; PRs juntos e ensaios antes do crash antigo1124s. Contador≈30 FPS/ausência falha não provam fix ou jogo.",
+   "de": "Lokaler Event-/Lease-Stack passiert Warten306s bis Geräteverlust; PRs gemeinsam, Läufe vor altem1124s-Crash beendet.≈30-FPS-Zähler/fehlender Altfehler kein Fix-/Spielnachweis.",
+   "fr": "Stack event/lease local passe attente306s puis perte appareil; PRs ensemble, essais avant ancien crash1124s. Compteur≈30 FPS/absence défaut sans fix ou jeu validés.",
+   "es": "Stack event/lease local pasa espera306s y pierde dispositivo; PRs juntos y pruebas antes de crash antiguo1124s. Contador≈30 FPS/ausencia fallo no prueban fix ni juego."
+  },
+  "nextTest": {
+   "en": "Reproduce the exact package/build and selected scene, with the reported patches and hardware. Verify input, audio, save reload and a longer session separately; unknown fields stay unknown.",
+   "zh": "按报告的包、构建、补丁、硬件与场景复测，分别核验输入、音频、读档及更长会话，未知字段保持未知。",
+   "ar": "أعد نفس الحزمة/البناء/التعديلات/العتاد والمشهد؛ تحقق منفصلاً من الإدخال والصوت وإعادة الحفظ والمدة، وابقِ المجهول مجهولاً.",
+   "pt": "Repita pacote/build/patches/máquina/cena; verifique entrada, áudio, recarga e sessão longa separadamente. Desconhecidos permanecem assim.",
+   "de": "Paket/Build/Patches/Hardware/Szene reproduzieren; Eingabe, Ton, Laden und längere Sitzung getrennt prüfen. Unbekanntes bleibt unbekannt.",
+   "fr": "Reproduisez paquet/build/patches/matériel/scène; vérifiez saisie, son, rechargement et longue durée séparément. Inconnus conservés.",
+   "es": "Repite paquete/build/parches/equipo/escena; verifica entrada, audio, recarga y larga sesión por separado. Mantén desconocidos."
+  },
+  "sources": [
+   {
+    "label": "Reviewed observation",
+    "url": "https://github.com/boykopovar/AnyPS5/discussions/5424#discussioncomment-19125215"
+   },
+   {
+    "label": "Reviewed primary observation",
+    "url": "https://github.com/boykopovar/AnyPS5/pull/6565#issuecomment-6481412782"
+   }
+  ]
+ }
+});

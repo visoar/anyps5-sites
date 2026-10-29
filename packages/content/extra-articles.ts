@@ -607,3 +607,65 @@ extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
  ]
 });
 extraArticles.find(article=>article.slug==="troubleshooting")!.reviewed="2026-10-28";
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
+ "id": "runtime-metadata-and-input-errors",
+ "title": {
+  "en": "Keep runtime metadata and diagnose explicit input-file errors",
+  "zh": "保留运行元数据，识别输入文件的明确错误",
+  "ar": "احتفظ ببيانات التشغيل وشخّص ملف الإدخال",
+  "pt": "Preserve metadados e diagnostique o ficheiro de entrada",
+  "de": "Runtime-Metadaten behalten, Eingabedateifehler prüfen",
+  "fr": "Conserver métadonnées et diagnostiquer le fichier d’entrée",
+  "es": "Conserva metadatos y diagnostica el archivo de entrada"
+ },
+ "body": [
+  {
+   "en": "Keep the title’s original app0/sce_sys/param.json, including titleId and localizedParameters/titleName. Main falls back to param.sfo only when JSON is absent; absent or malformed metadata can stop title/window setup. Startup creates data/, and download0/ for nonzero downloadDataSize, only from valid metadata. A named ANYPS5_INPUT_CONFIG file that is missing or unreadable is an error; invalid mapping lines name the file and line. Built-in bindings apply when neither a default input file nor an explicit setting exists. These behaviors are pinned to current main, not retroactively assigned to older reports. For launcher tests, distinguish its front end, account flow, downloaded client and actual game scene.",
+   "zh": "保留游戏原始app0/sce_sys/param.json中的titleId及localizedParameters／titleName；仅JSON缺失时main回退param.sfo，缺失或无效元数据可使标题／窗口设置失败。仅有效元数据会在启动创建data/，downloadDataSize非零另建download0/。显式ANYPS5_INPUT_CONFIG文件缺失或不可读会报错，无效映射会指出文件与行号；默认文件和显式设置均无时才用内建绑定。这是当前main边界，不能追溯赋给旧报告。启动器测试应区分前端、账户流程、客户端与实际游戏场景。",
+   "ar": "احتفظ بـparam.json الأصلي وtitleId وlocalizedParameters/titleName؛ main يستخدمparam.sfo عند غيابJSON فقط، والبيانات المفقودة/الخاطئة قد توقف النافذة. البيانات الصالحة تنشئdata/ وdownload0/ للحجم غير الصفري. ملفANYPS5_INPUT_CONFIG المفقود/غير المقروء خطأ، والسطر الخاطئ يسمي الملف/السطر؛ الافتراضي عند غياب الملف والإعداد. هذا main الحالي لا التقارير القديمة. افصل واجهة المشغل والدخول والعميل واللعبة.",
+   "pt": "Guarde param.json original com titleId/localizedParameters/titleName; main usa param.sfo só sem JSON, metadados inválidos podem parar janela. Válidos criam data/ e download0/ se tamanho não zero. ANYPS5_INPUT_CONFIG em falta/ilegível dá erro, linha inválida indica ficheiro/linha; bindings internos só sem ficheiro/definição. Comportamento main atual, não relatos antigos. Separe launcher/login/cliente/jogo.",
+   "de": "Originales param.json samt titleId/localizedParameters/titleName behalten; Main nutzt param.sfo nur ohne JSON, fehlende/ungültige Daten können Fenster stoppen. Gültige Daten erzeugen data/ und bei Downloadgröße download0/. Fehlendes/unlesbares ANYPS5_INPUT_CONFIG ist Fehler, falsche Zeile nennt Datei/Zeile; Standardbelegung ohne Datei/Einstellung. Aktuelles Main, nicht alte Berichte. Launcher/Login/Client/Spiel trennen.",
+   "fr": "Conserver param.json original et titleId/localizedParameters/titleName; main utilise param.sfo seulement sans JSON, données invalides peuvent arrêter fenêtre. Données valides créent data/ et download0/ si taille non nulle. ANYPS5_INPUT_CONFIG absent/illisible est une erreur, ligne incorrecte nomme fichier/ligne; commandes intégrées sans fichier/réglage. Main actuel, pas anciens rapports. Séparer lanceur/connexion/client/jeu.",
+   "es": "Conserva param.json original y titleId/localizedParameters/titleName; main usa param.sfo solo sin JSON, datos inválidos pueden parar ventana. Datos válidos crean data/ y download0/ si tamaño no cero. ANYPS5_INPUT_CONFIG ausente/ilegible es error, línea inválida nombra archivo/línea; bindings internos sin archivo/ajuste. Main actual, no informes antiguos. Separa launcher/login/cliente/juego."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream main · 184afa49ad",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/184afa49adce16e298c47d136706fd2356198852/docs/user/USAGE.md"
+  }
+ ]
+});
+extraArticles.find(article=>article.slug==="troubleshooting")!.reviewed="2026-10-30";
+
+extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
+ "id": "bounded-traces-and-compute-inspection",
+ "title": {
+  "en": "Bound trace memory and separate inspection from benchmarks",
+  "zh": "限制追踪内存，区分检查与基准",
+  "ar": "قيّد ذاكرة التتبع وافصل الفحص عن القياس",
+  "pt": "Limite memória do trace e separe inspeção de benchmark",
+  "de": "Trace-Speicher begrenzen, Inspektion von Benchmarks trennen",
+  "fr": "Borner mémoire des traces et séparer inspection et benchmark",
+  "es": "Limita memoria del trace y separa inspección de benchmark"
+ },
+ "body": [
+  {
+   "en": "Main accepts APS5_TRACE_EVENTS from1 to4194304, default262144. A current event is40 bytes: 10 MiB per default thread buffer or160 MiB at maximum, allocated before the window opens, plus formatting memory. More capacity can still overflow; dropped events remain a qualification limit. Compute-pipeline --inspect needs VK_KHR_pipeline_executable_properties, reports driver counters and null milliseconds, and cannot be treated as a compile benchmark. Runtime capture stops optionally at128 records or256 MiB while the title continues; captured shaders are not reference game pixels. Windows’ usage prose now agrees on the lowest ELF page’s default0x400000, resolving the earlier documentation discrepancy; fixed-base placement is not a general FPS or isolation setting.",
+   "zh": "main的APS5_TRACE_EVENTS范围1至4194304，默认262144；当前每事件40字节，每默认线程缓冲10 MiB，最大160 MiB，窗口开始前即分配且格式化另占内存。扩大后仍可能溢出，丢事件仍是验证限制。计算pipeline --inspect需VK_KHR_pipeline_executable_properties，只报告驱动计数、milliseconds为null，不能当编译基准。运行捕获到128条或256 MiB会停止可选捕获、游戏继续，捕获shader不是游戏参考像素。Windows正文已修正最低ELF页默认0x400000，消除旧文档矛盾；fixed-base不是通用FPS或隔离设置。",
+   "ar": "APS5_TRACE_EVENTS من1 إلى4194304 وافتراضي262144؛ الحدث40بايت،10MiB لكل buffer افتراضي أو160MiB أقصى، قبل النافذة مع ذاكرة تنسيق إضافية. السقوط يظل قيداً. --inspect يتطلب VK_KHR_pipeline_executable_properties ويعرض عدادات وmilliseconds=null، لا benchmark. الالتقاط الاختياري يتوقف128سجلاً/256MiB واللعبة تستمر؛ shader ليس صورة مرجعية. نص Windows صُحح إلى0x400000، وfixed-base ليس تحسين FPS/عزل عام.",
+   "pt": "APS5_TRACE_EVENTS1–4194304, padrão262144; evento40bytes, buffer10MiB ou máximo160MiB por thread antes da janela, mais formatação. Ainda pode perder eventos. --inspect exige VK_KHR_pipeline_executable_properties e mostra contadores/milliseconds=null, não benchmark. Captura opcional para128registos/256MiB mantendo jogo; shader não é pixel referência. Texto Windows corrigido para0x400000; fixed-base não é ajuste FPS/isolamento.",
+   "de": "APS5_TRACE_EVENTS1–4194304, Standard262144; Event40Bytes, Puffer10MiB oder160MiB je Thread vor Fenster plus Formatierung. Eventverlust bleibt Grenze. --inspect verlangt VK_KHR_pipeline_executable_properties, Zähler/milliseconds=null, kein Benchmark. Optionale Capture endet128Records/256MiB, Spiel weiter; Shader keine Referenzpixel. Windows-Text auf0x400000 korrigiert; Fixed-Base kein FPS-/Isolationstipp.",
+   "fr": "APS5_TRACE_EVENTS1–4194304, défaut262144; événement40octets, tampon10MiB ou160MiB par thread avant fenêtre, plus formatage. Pertes restent une limite. --inspect exige VK_KHR_pipeline_executable_properties, compteurs/milliseconds=null, pas benchmark. Capture facultative s’arrête128enregistrements/256MiB, jeu continue; shader sans pixels référence. Texte Windows corrigé0x400000; fixed-base pas réglage FPS/isolation.",
+   "es": "APS5_TRACE_EVENTS1–4194304, defecto262144; evento40bytes, buffer10MiB o160MiB por hilo antes de ventana, más formato. Pérdidas siguen siendo límite. --inspect requiere VK_KHR_pipeline_executable_properties, contadores/milliseconds=null, no benchmark. Captura opcional para128registros/256MiB, juego sigue; shader no son píxeles referencia. Texto Windows corregido0x400000; fixed-base no es ajuste FPS/aislamiento."
+  }
+ ],
+ "links": [
+  {
+   "label": "Upstream main · 184afa49ad",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/184afa49adce16e298c47d136706fd2356198852/docs/dev/BUILD.md"
+  }
+ ]
+});
+extraArticles.find(article=>article.slug==="troubleshooting")!.reviewed="2026-10-30";

@@ -1315,3 +1315,130 @@ developmentNotes.unshift(...[
   }
  }
 ]);
+
+developmentNotes.unshift(...[
+ {
+  "number": 12191,
+  "games": [
+   "astro-bot",
+   "god-of-war-ragnarok"
+  ],
+  "title": {
+   "en": "D16 corrections need a title-specific visual check",
+   "zh": "D16修正须逐游戏核对画面",
+   "ar": "تصحيح D16 يحتاج فحص كل عنوان",
+   "pt": "D16 exige verificação visual por título",
+   "de": "D16 je Titel visuell prüfen",
+   "fr": "D16 à vérifier visuellement par titre",
+   "es": "D16 requiere revisión visual por título"
+  },
+  "summary": {
+   "en": "The tested c3c947e9c1 correction restores ASTRO BOT’s tutorial sky and passes a four-minute first level. Ragnarök’s Linux author also cites a D16 dark-character correction, while explicitly declining to equate it with the Windows black-screen reports. Private Windows diagnostics withdraw earlier “the game writes black” reasoning: later packed draw output is nonzero, but capture closes a render pass and is not the black first-present frame. None of this proves a universal black-screen fix or a v0.1.3 update.",
+   "zh": "实测c3c947e9c1恢复ASTRO BOT教程天空并过首关4分钟；诸神黄昏Linux作者也引用D16暗角色修正，却明确不能等同Windows黑屏。Windows私有诊断撤回旧“游戏写黑”推理：后续打包draw输出非零，但捕获关闭render pass且不是首呈现黑帧。不能称通用黑屏修复或v0.1.3更新。",
+   "ar": "تصحيحc3c947e9c1 يعيد سماءASTRO ويمر4د من المستوى. كاتب RagnarökLinux يذكر D16 لكنه لا يساويه بسوادWindows. التشخيص الخاص يسحب «اللعبة تكتب أسود»: output لاحق غير صفري لكن الالتقاط يغلق render pass وليس إطار العرض الأسود الأول. لا إصلاح عام أو تحديثv0.1.3.",
+   "pt": "c3c947e9c1 repõe céu ASTRO/4min nível. Autor RagnarökLinux cita D16 sem igualar ao preto Windows. Diagnóstico privado retira «jogo escreve preto»: output posterior não zero, mas captura fecha render pass e não é primeiro frame preto. Sem fix universal ou atualização v0.1.3.",
+   "de": "c3c947e9c1 stellt ASTRO-Himmel/4min Level her. RagnarökLinux nennt D16 ohne Gleichsetzung mit Windows-Schwarz. Private Diagnose zieht „Spiel schreibt schwarz“ zurück: späterer Output nichtnull, Capture schließt Renderpass und ist nicht erster Schwarzframe. Kein universeller Fix/v0.1.3-Update.",
+   "fr": "c3c947e9c1 restaure ciel ASTRO/4min niveau. Auteur RagnarökLinux cite D16 sans assimilation au noir Windows. Diagnostic privé retire «jeu écrit noir»: sortie ultérieure non nulle, capture ferme render pass et n’est pas premier noir. Aucun fix universel/mise à jourv0.1.3.",
+   "es": "c3c947e9c1 restaura cielo ASTRO/4min nivel. Autor RagnarökLinux cita D16 sin equiparar negro Windows. Diagnóstico privado retira «juego escribe negro»: salida posterior no cero, captura cierra render pass y no es primer negro. Sin fix universal/actualizaciónv0.1.3."
+  }
+ },
+ {
+  "number": 11611,
+  "games": [
+   "prosperostore-homebrew",
+   "pokemmo-prospero-homebrew",
+   "olise-player-homebrew",
+   "double-dragon-gaiden"
+  ],
+  "title": {
+   "en": "HTTP progress is not account or gameplay completion",
+   "zh": "HTTP推进不等于登录或游戏完成",
+   "ar": "تقدم HTTP ليس دخولاً أو لعباً كاملاً",
+   "pt": "Progresso HTTP não prova login ou jogo",
+   "de": "HTTP-Fortschritt kein Login-/Spielabschluss",
+   "fr": "HTTP avancé sans connexion ou jeu complet prouvés",
+   "es": "Progreso HTTP no prueba login ni juego"
+  },
+  "summary": {
+   "en": "Local transport, callback and CA stacks let launchers fetch catalogs or updates. PokeMMO stopped at ROM selection after declining device-code sign-in; OliSe’s NOW PLAYING test was muted. Double Dragon’s ninety-second counter-only run cannot establish an interactive stage. Individual PR conflicts, exact tested heads and missing network evidence remain visible; main changes and release availability are separate.",
+   "zh": "本地传输、回调及CA组合可让启动器获取目录／更新；PokeMMO拒绝设备码登录后停ROM选择，OliSe的NOW PLAYING测试静音。双截龙90秒仅计数运行不能认定交互关卡。PR冲突、实测head及网络证据缺口保留，main与发行可用分开。",
+   "ar": "تركيبات النقل/CA تجلب فهارس وتحديثات؛ PokeMMO رفض الدخول ووقفROM، واختبارOliSe مكتوم. عداد Double Dragon90ث لا يثبت مرحلة تفاعلية. تعارضاتPRs والرؤوس والمفقود محفوظة، وmain ليس إصداراً.",
+   "pt": "Stacks transporte/CA obtêm catálogos/updates; PokeMMO recusou login e parouROM, OliSe silenciado. Contadores Double Dragon90s não provam fase interativa. Conflitos/heads/lacunas mantidos, main separado do release.",
+   "de": "Transport-/CA-Stacks laden Kataloge/Updates; PokeMMO überspringt Login bis ROM, OliSe stumm. Double-Dragon-Zähler90s kein interaktiver Levelnachweis. Konflikte/Heads/Lücken bleiben, Main getrennt vom Release.",
+   "fr": "Stacks transport/CA récupèrent catalogues/updates; PokeMMO refuse connexion puisROM, OliSe muet. Compteurs Double Dragon90s sans niveau interactif. Conflits/heads/lacunes conservés, main distinct du release.",
+   "es": "Stacks transporte/CA obtienen catálogos/updates; PokeMMO omitió login hastaROM, OliSe silenciado. Contadores Double Dragon90s sin nivel interactivo. Conflictos/heads/huecos conservados, main distinto de release."
+  }
+ },
+ {
+  "number": 12584,
+  "games": [
+   "river-city-girls"
+  ],
+  "title": {
+   "en": "Controller-speaker fallback: measured, optional, bounded",
+   "zh": "手柄扬声器回落混音：实测且可选",
+   "ar": "نسخة سماعة اليد: قياس اختياري محدود",
+   "pt": "Fallback da coluna do comando: opt-in medido",
+   "de": "Controller-Fallback: gemessen und optional",
+   "fr": "Retour haut-parleur manette: mesuré, facultatif",
+   "es": "Fallback altavoz mando: medido y opcional"
+  },
+  "summary": {
+   "en": "The tested Linux branch adds APS5_PAD_SPEAKER_FALLBACK_DB for the fallback copy when a controller has no speaker. Defaults remain 0 dB; mute/off/-inf silence that copy, and numeric values clamp to -60..0. A manual River City Girls death pair measures lower peaks without muting ordinary game buses. The captures were measured, not listened to on speakers, and no physical DualSense speaker was qualified. This is not an automatic per-game mix or evidence of a new release.",
+   "zh": "实测Linux分支以APS5_PAD_SPEAKER_FALLBACK_DB控制无扬声器手柄的回落副本；默认0 dB，mute／off／-inf只静音副本，数值钳位-60..0。热血少女手动死亡对照测得峰值下降，普通声道不静音；仅测量捕获、未扬声器听辨，实体DualSense未验证。不是自动游戏混音或新发行证明。",
+   "ar": "الفرع يضيف APS5_PAD_SPEAKER_FALLBACK_DB لنسخة سماعة اليد؛ الافتراضي0dB وmute/off/-inf للكتم أو -60..0. زوج موت يدوي يخفض القمة دون القنوات العادية؛ قياس دون استماع أو DualSense فعلي. لا مزج تلقائي أو إصدار جديد.",
+   "pt": "Ramo adiciona APS5_PAD_SPEAKER_FALLBACK_DB à cópia fallback; padrão0dB, mute/off/-inf ou -60..0. Par manual reduz pico sem silenciar buses normais; medido sem ouvir/sem DualSense real. Não mistura automática/release novo.",
+   "de": "Zweig ergänzt APS5_PAD_SPEAKER_FALLBACK_DB für Fallbackkopie; Standard0dB, mute/off/-inf oder -60..0. Manuelles Paar senkt Peaks ohne normale Busse stummzuschalten; gemessen statt gehört, kein DualSense-Test. Kein Automix/Release.",
+   "fr": "Branche ajoute APS5_PAD_SPEAKER_FALLBACK_DB à la copie de retour; défaut0dB, mute/off/-inf ou -60..0. Paire manuelle réduit pics sans couper bus normaux; mesurée sans écoute/DualSense réel. Pas mix automatique/release.",
+   "es": "Rama añade APS5_PAD_SPEAKER_FALLBACK_DB a copia fallback; defecto0dB, mute/off/-inf o -60..0. Pareja manual baja picos sin silenciar buses normales; medida sin escucha/DualSense real. No mezcla automática/release."
+  }
+ },
+ {
+  "number": 12299,
+  "games": [
+   "god-of-war-sons-of-sparta"
+  ],
+  "title": {
+   "en": "Keep compiler counts, camp pairs and later validation distinct",
+   "zh": "编译器计数、营地对照及后续验证分开",
+   "ar": "افصل عدادات المترجم وأزواج المخيم والتحقق",
+   "pt": "Separe contagens, pares no acampamento e validação",
+   "de": "Compilerzähler, Lagerpaare und spätere Prüfung trennen",
+   "fr": "Séparer compteurs, paires au camp et validation",
+   "es": "Separa contadores, parejas campamento y validación"
+  },
+  "summary": {
+   "en": "One warmed Radeon camp pair shows a near-neutral 20.72849→20.74957 FPS over the shared #8716 prerequisite. Other exact-head camp pairs are separately recorded, including the packed-float backing change’s 20.66479→21.81957; none refreshes Cyclops combat. Later audit-main correctness does not retag those timings. Eight combined shader PRs on a macOS/Rosetta support stack are neutral too, with existing VUID/test failures and unisolated PR effects; they are not Windows/Linux or unchanged-main results.",
+   "zh": "一组热缓存Radeon营地对照在共同#8716前置上20.72849→20.74957 FPS近乎无变化；其他准确head营地各记，包括打包浮点背衬20.66479→21.81957，均非独眼巨人战斗刷新。后续audit-main正确性不重标旧计时。macOS／Rosetta支持组合八项shader PR也无明显变化，含既有VUID／测试失败且未隔离效果，不是Windows／Linux或原main结果。",
+   "ar": "زوج Radeon مخيم20.72849→20.74957 فوق8716 محايد تقريباً؛ أزواج أخرى منفصلة ومنها20.66479→21.81957، لا قتال Cyclops محدث. تحقق main اللاحق لا يعيد تسمية القياس. ثمانيةPRs معmacOS/Rosetta محايدة مع فشل قديم وتأثيرات غير معزولة، لا Windows/Linux أوmain نظيف.",
+   "pt": "Par Radeon camp20,72849→20,74957 sobre8716 quase neutro; outros separados, incluindo20,66479→21,81957, sem Cyclops novo. Validação posterior não reetiqueta tempos. OitoPRs macOS/Rosetta neutros com falhas antigas/efeitos não isolados, sem Windows/Linux/main limpo.",
+   "de": "Radeon-Lagerpaar20,72849→20,74957 auf8716 nahezu neutral; andere getrennt, darunter20,66479→21,81957, kein neuer Cyclops. Spätere Prüfung benennt Zeiten nicht um. AchtPRs unter macOS/Rosetta neutral mit Altfehlern/unisoliert, kein Windows/Linux/Main-Nachweis.",
+   "fr": "Paire Radeon camp20,72849→20,74957 sur8716 presque neutre; autres distinctes dont20,66479→21,81957, pas nouveau Cyclops. Validation ultérieure sans renommer temps. HuitPRs macOS/Rosetta neutres avec défauts existants/effets non isolés, pas Windows/Linux/main propre.",
+   "es": "Pareja Radeon camp20,72849→20,74957 sobre8716 casi neutra; otras separadas incluido20,66479→21,81957, no Cyclops nuevo. Validación posterior no reetiqueta tiempos. OchoPRs macOS/Rosetta neutros con fallos previos/efectos no aislados, no Windows/Linux/main limpio."
+  }
+ },
+ {
+  "number": 12958,
+  "games": [
+   "mewgenics"
+  ],
+  "title": {
+   "en": "Mouse progress reaches a separate graphics boundary",
+   "zh": "鼠标推进后遇独立图形边界",
+   "ar": "تقدم الفأرة يبلغ عائق رسوم منفصلاً",
+   "pt": "Rato avança até limite gráfico distinto",
+   "de": "Mausfortschritt bis separater Grafikgrenze",
+   "fr": "Souris progresse jusqu’à une autre limite graphique",
+   "es": "Ratón avanza hasta límite gráfico distinto"
+  },
+  "summary": {
+   "en": "The exact 26d7585cfb run verifies physical-mouse tracking, hovering and clicking through the menus to the first battle. Storage-write refusal still stops that battle; adding the current #7048 stack instead deadlocks on hover in two runs. An older #7048 tutorial success is preserved at its own head. Passing mouse tests does not establish a current full-game fix, nor does a suspected lock cycle establish a finished correction.",
+   "zh": "准确26d7585cfb实测实体鼠标跟随、悬停、点击过菜单到首战，存储写拒绝仍阻塞战斗；加入当前#7048反两次悬停死锁。旧#7048教程成功保留旧head。鼠标测试通过不等于当前整游戏修复，疑似锁循环也非已完成修复。",
+   "ar": "26d7585cfb يثبت الفأرة حتى أول قتال ثم رفض التخزين؛7048 الحالي يعلق hover مرتين. نجاح التدريب الأقدم يبقى برأسه. نجاح الفأرة ليس إصلاح اللعبة، واشتباه دورة قفل ليس تصحيحاً منجزاً.",
+   "pt": "26d7585cfb valida rato até batalha, depois recusa storage;7048 atual bloqueia hover2 vezes. Tutorial antigo mantém head. Testes rato não provam fix jogo, ciclo lock suspeito não é correção pronta.",
+   "de": "26d7585cfb bestätigt Maus bis Kampf, dann Storage-Stopp; aktuelles7048 hängt2-mal beim Hover. Altes Tutorial behält Head. Maustest kein Gesamtfix, vermuteter Lockzyklus keine fertige Korrektur.",
+   "fr": "26d7585cfb valide souris jusqu’au combat puis refus stockage;7048 actuel gèle2 fois au survol. Ancien tutoriel garde head. Tests souris sans fix jeu complet, cycle verrou suspect sans correction achevée.",
+   "es": "26d7585cfb valida ratón hasta batalla y rechazo storage;7048 actual bloquea hover2 veces. Tutorial antiguo conserva head. Tests ratón no prueban fix completo, ciclo lock sospechado no es corrección lista."
+  }
+ }
+]);

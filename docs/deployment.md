@@ -35,7 +35,7 @@ The 28 baseline external HTTP checks passed again, including both www redirects 
 
 ## Recurring maintenance releases
 
-Daily maintenance continues in the existing chat at 03:40 Asia/Shanghai. A normal push to `origin main` triggers both existing Git services. Read deployments with `npx zeabur@latest deployment list --service-id <service> --env-id 6acb4cd25a13ed952d20bb01 --json -i=false`, and match the full pushed SHA separately on each service before reporting release success. Keep deployment receipts and external-check results in ignored `research/raw/daily-YYYY-MM-DD/release.json`; the maintenance note and Git history identify the content change. Resume any outstanding deployment/acceptance checks before making another content commit.
+Maintenance continues in the existing chat every Tuesday and Friday at 03:40 Asia/Shanghai. A normal push to `origin main` triggers both existing Git services. Read deployments with `npx zeabur@latest deployment list --service-id <service> --env-id 6acb4cd25a13ed952d20bb01 --json -i=false`, and match the full pushed SHA separately on each service before reporting release success. Keep deployment receipts and external-check results in ignored `research/raw/daily-YYYY-MM-DD/release.json`; the maintenance note and Git history identify the content change. Resume any outstanding deployment/acceptance checks before making another content commit.
 
 ## Search discovery and CI
 
@@ -88,3 +88,7 @@ The 11-entry/55-observation update follows the existing main Git trigger. [Scope
 ## Source maintenance — 2026-10-28
 
 The18-entry/71-observation update follows the existing normal main Git trigger. [Scope](maintenance/2026-10-28-nightly.md) and the ignored daily release receipt retain final main SHA, both exact-SHA RUNNING deployment IDs, CI and public acceptance. Cloudflare owns active search notifications; no notification workflow is run.
+
+## Source maintenance — 2026-10-30
+
+The19-entry/76-observation release follows the existing main Git trigger. [Scope](maintenance/2026-10-30-nightly.md) and ignored daily receipts retain the final SHA, both exact-SHA RUNNING deployments, CI and public content/assets/sitemap acceptance. The chat schedule is now Tuesday/Friday03:40 Asia/Shanghai. Cloudflare handles active search notifications.

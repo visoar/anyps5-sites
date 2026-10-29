@@ -2341,5 +2341,33 @@
     "cover": "https://image.api.playstation.com/vulcan/img/rnd/202109/2709/wMyl8RQ9Tvi99wjgPPEBGVyX.png",
     "screenshots": [],
     "checked": "2026-10-28"
+  },
+  "layers-of-fear": {
+    "source": "https://store.playstation.com/en-us/product/UP4176-PPSA08681_00-3639609726712198/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202602/1213/7e2f31c6bf7ebef8087e10082d4ea38210788f89f33e7332.jpg",
+    "screenshots": [],
+    "checked": "2026-10-30"
+  },
+  "jusant": {
+    "source": "https://store.playstation.com/no-no/product/EP8091-PPSA10264_00-4648066903011525",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202306/0109/c780d45fe308020ea741873f73ff8ed882cf92254447dd6c.jpg",
+    "screenshots": [],
+    "checked": "2026-10-30"
+  },
+  "forspoken": {
+    "source": "https://www.playstation.com/en-us/games/forspoken/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202203/0922/2gqcLQ5GUmznCHUZuuamxD06.png",
+    "screenshots": [],
+    "checked": "2026-10-30"
+  },
+  "ghost-song": {
+    "source": "https://store.playstation.com/en-ie/product/EP3717-PPSA09232_00-GHOSTSONGPS5000E",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1818/aWbw79ZDNe2aBrmwFIS7NCQn.png",
+    "screenshots": [],
+    "checked": "2026-10-30"
   }
 }
