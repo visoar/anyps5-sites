@@ -1,0 +1,9 @@
+{
+  "host": "anyps5.games",
+  "pages": [
+    "/",
+    "/zh/",
+    "/ar/"
+  ],
+  "www_redirect": true
+}

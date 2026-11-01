@@ -33,9 +33,14 @@ Update the report modules (`games.ts`, `game-extras.ts`, `game-updates.ts`) and 
 
 ## Deployment
 
-A single GitHub repository keeps the shared evidence model consistent. Two Zeabur Git services on Tencent-US2 build independently from `main`, using `Dockerfile.anyps5-cc` and `Dockerfile.anyps5-games`. Nginx serves static files on port 8080, returns a real 404 for missing routes, and redirects each `www` hostname to its HTTPS apex while preserving the path and query. Cloudflare proxies both apex and `www` records. Existing email records are preserved.
+A single repository keeps shared evidence consistent. Main Site CI/CD audits, tests
+and builds both sites once, tests official non-root Nginx slim images, publishes
+private GHCR SHA images, then deploys the two Coolify applications. No runtime
+Node service or database is needed. Cloudflare keeps apex/www proxied and the
+existing email records. www redirects preserve path/query; unknown pages are404.
 
-Deployment identifiers are recorded in [CLAUDE.md](CLAUDE.md). Do not store credentials in the repository. See [deployment verification](docs/deployment.md) for the verified production state.
+See [the current deployment runbook](docs/deployment.md) and [AGENTS.md](AGENTS.md).
+Do not directly upload uncommitted files or deploy to the old Zeabur services.
 
 ## Evidence and design
 
@@ -52,7 +57,7 @@ Deployment identifiers are recorded in [CLAUDE.md](CLAUDE.md). Do not store cred
 
 The current edition has 349 game/edition pages per language, 969 scoped reports and 5 games without a reviewed run result. A no-report entry is searchable but never classified as a startup failure, given invented hardware/FPS, or matched to a specific tested platform. Chinese searches also recognise the curated local game names.
 
-See [content and source maintenance](docs/content-and-source-maintenance.md) for page intent, multilingual conventions, issue/PR evidence rules, image provenance and the review workflow. `python3 research/scripts/review_updates.py` fetches candidate changes without auto-publishing them. After editing reports, regenerate the clean publication index with `npx tsx research/scripts/index_published_evidence.ts`. The existing Git push deployment remains the release path. Latest research scope and evidence gaps: [2026-10-30 nightly maintenance](docs/maintenance/2026-10-30-nightly.md).
+See [content and source maintenance](docs/content-and-source-maintenance.md) for page intent, multilingual conventions, issue/PR evidence rules, image provenance and the review workflow. `python3 research/scripts/review_updates.py` fetches candidate changes without auto-publishing them. After editing reports, regenerate the clean publication index with `npx tsx research/scripts/index_published_evidence.ts`. The committed main Site CI/CD remains the release path. Latest research scope and evidence gaps: [2026-10-30 nightly maintenance](docs/maintenance/2026-10-30-nightly.md).
 
 Default appearance is light on AnyPS5.cc and dark on AnyPS5.games. The single theme button saves an explicit choice per origin. A prior saved choice is retained; browser system appearance does not replace the site default.
 

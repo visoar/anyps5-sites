@@ -1,23 +1,86 @@
-name: Validate sites
+name: Site CI/CD
 on:
+  pull_request:
   push:
     branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: site-validation
-  cancel-in-progress: true
+  group: site-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
   validate:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: read
+      packages: write
     steps:
-      - uses: actions/checkout@v7.0.1
-      - uses: actions/setup-node@v7.1.0
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
         with:
-          node-version: 24
+          node-version: 24.22.2
           cache: npm
-      - run: npm ci --no-audit --no-fund
+      - run: npm ci
+      - run: npm audit --audit-level=low
       - run: npm test
+      - run: python3 -m unittest discover -s scripts -p test_deploy_coolify.py
       - run: npm run build
+      - name: Build and smoke-test cc image
+        run: |
+          set -euo pipefail
+          docker build -f Dockerfile.anyps5-cc --build-arg ASSET_STAGE=prebuilt --build-arg SOURCE_COMMIT="$GITHUB_SHA" -t ghcr.io/visoar/anyps5-sites-cc:sha-$GITHUB_SHA .
+          docker run -d --name site-cc -p 127.0.0.1:8080:8080 ghcr.io/visoar/anyps5-sites-cc:sha-$GITHUB_SHA
+          trap 'docker rm -f site-cc >/dev/null 2>&1' EXIT
+          for attempt in {1..20}; do
+            if curl -fsS http://127.0.0.1:8080/healthz; then break; fi
+            sleep 1
+          done
+          test "$(docker exec site-cc id -u)" = 101
+          DEPLOY_CONFIG=scripts/deployment-cc.json python3 scripts/verify-deployment.py --url http://127.0.0.1:8080 --revision "$GITHUB_SHA" --check-host
+      - name: Build and smoke-test games image
+        run: |
+          set -euo pipefail
+          docker build -f Dockerfile.anyps5-games --build-arg ASSET_STAGE=prebuilt --build-arg SOURCE_COMMIT="$GITHUB_SHA" -t ghcr.io/visoar/anyps5-sites-games:sha-$GITHUB_SHA .
+          docker run -d --name site-games -p 127.0.0.1:8081:8080 ghcr.io/visoar/anyps5-sites-games:sha-$GITHUB_SHA
+          trap 'docker rm -f site-games >/dev/null 2>&1' EXIT
+          for attempt in {1..20}; do
+            if curl -fsS http://127.0.0.1:8081/healthz; then break; fi
+            sleep 1
+          done
+          test "$(docker exec site-games id -u)" = 101
+          DEPLOY_CONFIG=scripts/deployment-games.json python3 scripts/verify-deployment.py --url http://127.0.0.1:8081 --revision "$GITHUB_SHA" --check-host
+      - name: Publish private images after all checks pass
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          echo "$GH_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
+          trap 'docker logout ghcr.io' EXIT
+          docker push ghcr.io/visoar/anyps5-sites-cc:sha-$GITHUB_SHA
+          test "$(gh api users/visoar/packages/container/anyps5-sites-cc --jq .visibility)" = private
+          docker push ghcr.io/visoar/anyps5-sites-games:sha-$GITHUB_SHA
+          test "$(gh api users/visoar/packages/container/anyps5-sites-games --jq .visibility)" = private
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment: production
+    strategy:
+      fail-fast: false
+      matrix:
+        site: [cc, games]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Deploy and verify the exact published commit
+        env:
+          COOLIFY_TOKEN: ${{ secrets.COOLIFY_TOKEN }}
+          IMAGE: ghcr.io/visoar/anyps5-sites-${{ matrix.site }}
+          DEPLOY_CONFIG: scripts/deployment-${{ matrix.site }}.json
+          COOLIFY_APP_UUID: ${{ matrix.site == 'cc' && vars.COOLIFY_APP_UUID_CC || vars.COOLIFY_APP_UUID_GAMES }}
+          APP_URL: ${{ matrix.site == 'cc' && vars.APP_URL_CC || vars.APP_URL_GAMES }}
+          DEPLOY_CHECK_URL: ${{ matrix.site == 'cc' && vars.DEPLOY_CHECK_URL_CC || vars.DEPLOY_CHECK_URL_GAMES }}
+        run: python3 scripts/deploy-coolify.py

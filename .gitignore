@@ -10,3 +10,6 @@ research/raw/
 .DS_Store
 docs/qa/*.png
 .cache/
+
+__pycache__/
+*.pyc
