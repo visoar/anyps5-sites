@@ -1,8 +1,24 @@
 name: Site CI/CD
 on:
   pull_request:
+    paths-ignore:
+      - docs/**
+      - research/**
+      - design/**
+      - design-qa.md
+      - README.md
+      - AGENTS.md
+      - CLAUDE.md
   push:
     branches: [main]
+    paths-ignore:
+      - docs/**
+      - research/**
+      - design/**
+      - design-qa.md
+      - README.md
+      - AGENTS.md
+      - CLAUDE.md
   workflow_dispatch:
 permissions:
   contents: read

@@ -47,3 +47,6 @@ repeats public checks. Do not force-push main or resume the old Git deployment p
 Search-engine notifications remain delegated to the existing Cloudflare setup.
 CI does not submit URLs or restore retired notification manifests. Update this
 manual, README and AGENTS whenever deployment platforms or release rules change.
+
+
+CI keeps one workflow and builds each site once per checked commit; image packaging reuses the tested output. Changes limited to operational docs, agent instructions or design/research notes skip the workflow. Content, code, dependencies, tests, deployment scripts and workflow changes still run all checks. Use workflow_dispatch for an intentional full check; deployments retry only the deploy job of a successful main run, preserving the tested SHA image. GitHub-hosted private-repository jobs still consume Actions minutes.
