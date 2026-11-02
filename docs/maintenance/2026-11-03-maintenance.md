@@ -47,3 +47,5 @@
 本地浏览器通过 20 个页面／主题组合，覆盖 390px RTL、新商业／homebrew 条目、下载／输入／Windows 指南、图片解码、精确 PPSA 搜索及同报告平台／阶段过滤，复位 388 条。提交前审阅 diff、历史数据不变及忽略抓取目录。后续由现有 main Site CI/CD 验证实际镜像、发布私有 SHA 标签，再部署两个原有 Coolify 应用；禁止本地未提交上传。
 
 最终 main SHA、CI run、两个对应部署／镜像／健康状态、公开 revision、线上页面／链接／图片／sitemap／www 验收和未发布授权修改计数保存在忽略目录 `research/raw/daily-2026-11-03/release.json`。完成前以 `release-pending.json` 保留待办；只有两个实际 revision 匹配且验收通过才通知上线完成，不凭 push 或历史部署宣称成功。
+
+发布闭环补充：逐项环境复核发现部分新增观察借用了未在本线程确认的 CPU／驱动，或未在对应原帖／所选回复中重申的内核／编译器版本。已将无证据的字段置为未知，OS 只保留该来源能确认的部分，并重新执行检查、构建、CI 和两站发布验收；阶段、测量构建、版本、补丁、FPS 与旧 969 报告不变。具体字段差异保留于忽略目录 environment-corrections.json，最终 release.json 使用修正后的 main SHA。
