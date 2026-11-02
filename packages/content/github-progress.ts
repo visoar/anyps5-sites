@@ -1442,3 +1442,227 @@ developmentNotes.unshift(...[
   }
  }
 ]);
+
+// Merge state reviewed independently from game runs, 3 November 2026.
+for(const note of [
+ {
+  "number": 4449,
+  "games": [
+   "tetris-forever",
+   "crimson-spires",
+   "code-violet"
+  ],
+  "title": {
+   "en": "Scattered dma-buf import merged after v0.1.4",
+   "zh": "分散 DMA-buf 导入在 v0.1.4 之后合入",
+   "ar": "دمج استيراد dma-buf بعد v0.1.4",
+   "pt": "Importação dma-buf integrada após v0.1.4",
+   "de": "DMA-buf-Import nach v0.1.4 integriert",
+   "fr": "Import dma-buf intégré après v0.1.4",
+   "es": "Importación dma-buf integrada tras v0.1.4"
+  },
+  "summary": {
+   "en": "PR #4449 merged on 2 November as a20477ae0b. The released v0.1.4 revision predates it. Older local integrations retain their tested pins: Tetris Forever’s Linux chapter-menu improvement is not Windows gameplay evidence, and fewer import errors in Crimson Spires or Code Violet do not alone establish higher game FPS or completion.",
+   "zh": "PR #4449 于 11 月 2 日以 a20477ae0b 合入，晚于 v0.1.4。旧本地整合保留原测试提交；Tetris Forever 的 Linux 章节菜单提升不等于 Windows 游戏过程，Crimson Spires／Code Violet 导入错误减少也不能单独证明游戏帧率提升或通关。",
+   "ar": "دُمج #4449 في 2 نوفمبر بالمراجعة a20477ae0b بعد v0.1.4. تحتفظ التجارب المحلية بمراجعاتها. تحسن قائمة Tetris Forever على Linux ليس لعب Windows؛ قلة أخطاء الاستيراد في Crimson Spires أو Code Violet لا تثبت FPS أعلى أو الإكمال.",
+   "pt": "#4449 integrado em 2 de novembro como a20477ae0b, após v0.1.4. Integrações locais mantêm os pins. Melhoria do menu Linux de Tetris Forever não é jogo Windows; menos erros em Crimson Spires/Code Violet não provam maior FPS ou conclusão.",
+   "de": "#4449 wurde am 2. November als a20477ae0b integriert, nach v0.1.4. Lokale Tests behalten ihre Pins. Tetris Forevers Linux-Menü ist kein Windows-Gameplay; weniger Importfehler bei Crimson Spires/Code Violet belegen weder höhere Spiel-FPS noch Abschluss.",
+   "fr": "#4449 a été intégré le 2 novembre, a20477ae0b, après v0.1.4. Les essais locaux conservent leurs révisions. Le menu Linux de Tetris Forever n’est pas du jeu Windows ; moins d’erreurs dans Crimson Spires/Code Violet ne prouve ni gain FPS ni fin de jeu.",
+   "es": "#4449 se integró el 2 de noviembre como a20477ae0b, después de v0.1.4. Las pruebas locales conservan sus revisiones. El menú Linux de Tetris Forever no es juego Windows; menos errores en Crimson Spires/Code Violet no prueba mejores FPS ni finalización."
+  }
+ },
+ {
+  "number": 6959,
+  "games": [
+   "bramble-the-mountain-king",
+   "insomnis",
+   "spirit-of-the-north-enhanced"
+  ],
+  "title": {
+   "en": "Lighting fixes do not imply a speed improvement",
+   "zh": "光照修正不等于性能提升",
+   "ar": "تصحيح الإضاءة لا يعني زيادة السرعة",
+   "pt": "Correção de iluminação não implica mais velocidade",
+   "de": "Lichtkorrektur bedeutet keinen Tempogewinn",
+   "fr": "Correction d’éclairage sans gain automatique",
+   "es": "Corregir iluminación no implica más velocidad"
+  },
+  "summary": {
+   "en": "PR #6959 merged on 2 November as 0c0b1b22b9, after v0.1.4. New pinned main observations show lit scenes in Insomnis and Spirit of the North. Bramble’s earlier local pair improves visibility while menu FPS falls from 25.4 to 11.5; its separate bedroom movement run does not validate leaving the room, saving or finishing the game. Preserve scene and build boundaries.",
+   "zh": "PR #6959 于 11 月 2 日以 0c0b1b22b9 合入，晚于 v0.1.4。新固定 main 报告显示 Insomnis／Spirit of the North 的明亮场景。Bramble 旧本地对照改善可见度但菜单从 25.4 降至 11.5 FPS；另一次卧室移动不验证离开房间、存档或通关。应保留构建与场景边界。",
+   "ar": "دُمج #6959 في 2 نوفمبر، 0c0b1b22b9، بعد v0.1.4. تعرض تقارير main المحددة مشاهد مضاءة في Insomnis وSpirit of the North. في مقارنة Bramble المحلية تحسنت الرؤية وهبطت القائمة من 25.4 إلى 11.5 FPS؛ تجربة غرفة النوم لا تثبت مغادرتها أو الحفظ أو الإكمال.",
+   "pt": "#6959 integrado em 2 de novembro, 0c0b1b22b9, após v0.1.4. Ensaios main identificados mostram cenas iluminadas em Insomnis/Spirit of the North. No par local de Bramble a visibilidade melhora e o menu cai de 25,4 para 11,5 FPS; movimento no quarto não prova saída, saves ou conclusão.",
+   "de": "#6959 wurde am 2. November als 0c0b1b22b9 integriert, nach v0.1.4. Gepinnte Main-Läufe zeigen beleuchtete Szenen in Insomnis/Spirit of the North. Brambles lokales Paar verbessert Sichtbarkeit bei Menüabfall von 25,4 auf 11,5 FPS; Schlafzimmerbewegung belegt weder Verlassen noch Speichern oder Abschluss.",
+   "fr": "#6959 a été intégré le 2 novembre, 0c0b1b22b9, après v0.1.4. Des essais main identifiés montrent des scènes éclairées dans Insomnis/Spirit of the North. Bramble devient visible mais son menu passe de 25,4 à 11,5 FPS ; le déplacement dans la chambre ne valide ni sortie, sauvegarde ou fin.",
+   "es": "#6959 se integró el 2 de noviembre como 0c0b1b22b9, tras v0.1.4. Pruebas main identificadas muestran escenas iluminadas en Insomnis/Spirit of the North. Bramble gana visibilidad pero su menú baja de 25,4 a 11,5 FPS; moverse en el dormitorio no valida salir, guardar o terminar."
+  }
+ },
+ {
+  "number": 11580,
+  "games": [
+   "silent-hill-2",
+   "runescape-dragonwilds"
+  ],
+  "title": {
+   "en": "Merged 16-bit image handling still needs title retests",
+   "zh": "16 位图像修改已合并，游戏仍需复测",
+   "ar": "دمج صور 16 بت لا يغني عن إعادة الاختبار",
+   "pt": "Imagens de 16 bits integradas, jogos por retestar",
+   "de": "16-Bit-Bildbehandlung integriert, Titel erneut prüfen",
+   "fr": "Images 16 bits intégrées, jeux à retester",
+   "es": "Imágenes de 16 bits integradas, juegos por repetir"
+  },
+  "summary": {
+   "en": "PR #11580 merged on 2 November as d2ce337078, later than v0.1.4. Silent Hill 2’s pinned local run reports movies/a scene at about 0.2 FPS under tracing and a separate unprofiled startup near 3 FPS; these are not a normal gameplay benchmark. RuneScape Dragonwilds reaches a related 16-bit rejection, but the proposed fix was not rerun on that title. Merge status does not manufacture a game result.",
+   "zh": "PR #11580 于 11 月 2 日以 d2ce337078 合入，晚于 v0.1.4。Silent Hill 2 本地固定构建在追踪下影片／场景约 0.2 FPS，另次无 profiler 启动约 3 FPS，不是正常游玩基准。RuneScape Dragonwilds 到达相关 16 位拒绝，但尚未用该修复复测；合并不能自动产生游戏结果。",
+   "ar": "دُمج #11580 في 2 نوفمبر، d2ce337078، بعد v0.1.4. تقرير Silent Hill 2 المحلي يصف أفلاماً/مشهداً قرب 0.2 FPS مع التتبع وبدءاً منفصلاً قرب 3 FPS دونه، لا قياس لعب عادي. يصل RuneScape Dragonwilds إلى رفض 16 بت، لكن لم يُعد اختباره بالإصلاح. الدمج ليس نتيجة لعبة.",
+   "pt": "#11580 integrado em 2 de novembro, d2ce337078, após v0.1.4. Silent Hill 2 relata filmes/cena a cerca de 0,2 FPS com tracing e arranque separado perto de 3 FPS sem profiler; não é benchmark normal. RuneScape Dragonwilds atinge rejeição de 16 bits, sem reteste com a correção. Merge não cria resultado de jogo.",
+   "de": "#11580 wurde am 2. November als d2ce337078 integriert, nach v0.1.4. Silent Hill 2 zeigt Filme/Szene mit etwa 0,2 FPS unter Trace und separaten unprofilierten Start um 3 FPS; kein normaler Spielbenchmark. RuneScape Dragonwilds erreicht eine 16-Bit-Ablehnung, ohne Retest des Fixes. Merge erzeugt kein Spielergebnis.",
+   "fr": "#11580 a été intégré le 2 novembre, d2ce337078, après v0.1.4. Silent Hill 2 affiche films/scène vers 0,2 FPS sous trace et un démarrage distinct vers 3 FPS sans profilage, sans benchmark normal. RuneScape Dragonwilds atteint un rejet 16 bits mais n’a pas été retesté avec le correctif. Une fusion ne crée pas un résultat.",
+   "es": "#11580 se integró el 2 de noviembre como d2ce337078, tras v0.1.4. Silent Hill 2 muestra películas/escena a unos 0,2 FPS con tracing y arranque separado cercano a 3 FPS sin perfilado; no es benchmark normal. RuneScape Dragonwilds llega al rechazo de 16 bits sin repetir con el arreglo. Integrar no crea un resultado de juego."
+  }
+ }
+]){const index=developmentNotes.findIndex(old=>old.number===note.number);if(index<0)developmentNotes.unshift(note);else developmentNotes[index]=note;}
+
+for(const note of [
+ {
+  "number": 12584,
+  "games": [
+   "river-city-girls"
+  ],
+  "title": {
+   "en": "Controller-speaker fallback: measured, optional, bounded",
+   "zh": "手柄扬声器回落混音：实测且可选",
+   "ar": "نسخة سماعة اليد: قياس اختياري محدود",
+   "pt": "Fallback da coluna do comando: opt-in medido",
+   "de": "Controller-Fallback: gemessen und optional",
+   "fr": "Retour haut-parleur manette: mesuré, facultatif",
+   "es": "Fallback altavoz mando: medido y opcional"
+  },
+  "summary": {
+   "en": "Merged on 2026-10-30 as a36ff7f47e; the earlier measurements below retain their original builds. The tested Linux branch adds APS5_PAD_SPEAKER_FALLBACK_DB for the fallback copy when a controller has no speaker. Defaults remain 0 dB; mute/off/-inf silence that copy, and numeric values clamp to -60..0. A manual River City Girls death pair measures lower peaks without muting ordinary game buses. The captures were measured, not listened to on speakers, and no physical DualSense speaker was qualified. This is not an automatic per-game mix or evidence of a new release.",
+   "zh": "2026-10-30 已以 a36ff7f47e 合入，下述早期测量仍保留原构建。实测Linux分支以APS5_PAD_SPEAKER_FALLBACK_DB控制无扬声器手柄的回落副本；默认0 dB，mute／off／-inf只静音副本，数值钳位-60..0。热血少女手动死亡对照测得峰值下降，普通声道不静音；仅测量捕获、未扬声器听辨，实体DualSense未验证。不是自动游戏混音或新发行证明。",
+   "ar": "دُمج في 2026-10-30 بالمراجعة a36ff7f47e؛ القياسات الأقدم تحتفظ ببناءاتها. الفرع يضيف APS5_PAD_SPEAKER_FALLBACK_DB لنسخة سماعة اليد؛ الافتراضي0dB وmute/off/-inf للكتم أو -60..0. زوج موت يدوي يخفض القمة دون القنوات العادية؛ قياس دون استماع أو DualSense فعلي. لا مزج تلقائي أو إصدار جديد.",
+   "pt": "Integrado em 2026-10-30, a36ff7f47e; as medições anteriores mantêm as compilações originais. Ramo adiciona APS5_PAD_SPEAKER_FALLBACK_DB à cópia fallback; padrão0dB, mute/off/-inf ou -60..0. Par manual reduz pico sem silenciar buses normais; medido sem ouvir/sem DualSense real. Não mistura automática/release novo.",
+   "de": "Am 2026-10-30 als a36ff7f47e integriert; frühere Messungen behalten ihre Builds. Zweig ergänzt APS5_PAD_SPEAKER_FALLBACK_DB für Fallbackkopie; Standard0dB, mute/off/-inf oder -60..0. Manuelles Paar senkt Peaks ohne normale Busse stummzuschalten; gemessen statt gehört, kein DualSense-Test. Kein Automix/Release.",
+   "fr": "Intégré le 2026-10-30, a36ff7f47e ; les mesures antérieures conservent leurs versions. Branche ajoute APS5_PAD_SPEAKER_FALLBACK_DB à la copie de retour; défaut0dB, mute/off/-inf ou -60..0. Paire manuelle réduit pics sans couper bus normaux; mesurée sans écoute/DualSense réel. Pas mix automatique/release.",
+   "es": "Integrado el 2026-10-30, a36ff7f47e; las mediciones anteriores conservan sus compilaciones. Rama añade APS5_PAD_SPEAKER_FALLBACK_DB a copia fallback; defecto0dB, mute/off/-inf o -60..0. Pareja manual baja picos sin silenciar buses normales; medida sin escucha/DualSense real. No mezcla automática/release."
+  }
+ },
+ {
+  "number": 12958,
+  "games": [
+   "mewgenics"
+  ],
+  "title": {
+   "en": "Mouse progress reaches a separate graphics boundary",
+   "zh": "鼠标推进后遇独立图形边界",
+   "ar": "تقدم الفأرة يبلغ عائق رسوم منفصلاً",
+   "pt": "Rato avança até limite gráfico distinto",
+   "de": "Mausfortschritt bis separater Grafikgrenze",
+   "fr": "Souris progresse jusqu’à une autre limite graphique",
+   "es": "Ratón avanza hasta límite gráfico distinto"
+  },
+  "summary": {
+   "en": "Merged on 2026-11-02 as c47ee4e034; the earlier measurements below retain their original builds. The exact 26d7585cfb run verifies physical-mouse tracking, hovering and clicking through the menus to the first battle. Storage-write refusal still stops that battle; adding the current #7048 stack instead deadlocks on hover in two runs. An older #7048 tutorial success is preserved at its own head. Passing mouse tests does not establish a current full-game fix, nor does a suspected lock cycle establish a finished correction.",
+   "zh": "2026-11-02 已以 c47ee4e034 合入，下述早期测量仍保留原构建。准确26d7585cfb实测实体鼠标跟随、悬停、点击过菜单到首战，存储写拒绝仍阻塞战斗；加入当前#7048反两次悬停死锁。旧#7048教程成功保留旧head。鼠标测试通过不等于当前整游戏修复，疑似锁循环也非已完成修复。",
+   "ar": "دُمج في 2026-11-02 بالمراجعة c47ee4e034؛ القياسات الأقدم تحتفظ ببناءاتها. 26d7585cfb يثبت الفأرة حتى أول قتال ثم رفض التخزين؛7048 الحالي يعلق hover مرتين. نجاح التدريب الأقدم يبقى برأسه. نجاح الفأرة ليس إصلاح اللعبة، واشتباه دورة قفل ليس تصحيحاً منجزاً.",
+   "pt": "Integrado em 2026-11-02, c47ee4e034; as medições anteriores mantêm as compilações originais. 26d7585cfb valida rato até batalha, depois recusa storage;7048 atual bloqueia hover2 vezes. Tutorial antigo mantém head. Testes rato não provam fix jogo, ciclo lock suspeito não é correção pronta.",
+   "de": "Am 2026-11-02 als c47ee4e034 integriert; frühere Messungen behalten ihre Builds. 26d7585cfb bestätigt Maus bis Kampf, dann Storage-Stopp; aktuelles7048 hängt2-mal beim Hover. Altes Tutorial behält Head. Maustest kein Gesamtfix, vermuteter Lockzyklus keine fertige Korrektur.",
+   "fr": "Intégré le 2026-11-02, c47ee4e034 ; les mesures antérieures conservent leurs versions. 26d7585cfb valide souris jusqu’au combat puis refus stockage;7048 actuel gèle2 fois au survol. Ancien tutoriel garde head. Tests souris sans fix jeu complet, cycle verrou suspect sans correction achevée.",
+   "es": "Integrado el 2026-11-02, c47ee4e034; las mediciones anteriores conservan sus compilaciones. 26d7585cfb valida ratón hasta batalla y rechazo storage;7048 actual bloquea hover2 veces. Tutorial antiguo conserva head. Tests ratón no prueban fix completo, ciclo lock sospechado no es corrección lista."
+  }
+ },
+ {
+  "number": 11952,
+  "games": [
+   "god-of-war-sons-of-sparta"
+  ],
+  "title": {
+   "en": "A measured Cyclops gain has a precise local boundary",
+   "zh": "独眼巨人实测增益有明确本地边界",
+   "ar": "مكسب Cyclops بحد محلي محدد",
+   "pt": "Ganho Cyclops com âmbito local exato",
+   "de": "Cyclops-Gewinn mit genauer lokaler Grenze",
+   "fr": "Gain Cyclops dans un cadre local précis",
+   "es": "Ganancia Cyclops con límite local exacto"
+  },
+  "summary": {
+   "en": "Merged on 2026-11-01 as 4ae6cdcdb1; the earlier measurements below retain their original builds. The6edeae61a331 head has three prospective warm12s Radeon760M pairs,12.54→18.84 FPS, with identical dirty observation hooks and no dropped events. Additional #10547 is measured on an already #11952-patched base,18.854→20.040. Earlier instruction counts alone did not satisfy game-performance evidence; these later runs do not change earlier heads or prove a release. A failing descriptor-set fixture is not counted as passing validation.",
+   "zh": "2026-11-01 已以 4ae6cdcdb1 合入，下述早期测量仍保留原构建。6edeae61a331在760M有三组预定热缓存12秒12.54→18.84 FPS，两组相同dirty观测hooks且无丢失事件；#10547额外18.854→20.040基于已加#11952的构建。早先仅指令计数不满足游戏性能证据；后续运行不改写旧head，也不证明发行。失败的descriptor-set测试不计作验证通过。",
+   "ar": "دُمج في 2026-11-01 بالمراجعة 4ae6cdcdb1؛ القياسات الأقدم تحتفظ ببناءاتها. 6edeae61a331 له ثلاثة أزواج760M دافئة12ث12.54→18.84 FPS، hooks dirty متطابقة وبلا أحداث مفقودة. #10547 الإضافي18.854→20.040 فوق11952. عد التعليمات القديم ليس قياس لعبة؛ الجديد لا يبدل الرؤوس أو يثبت الإصدار. fixture فاشل لا يُحسب نجاحاً.",
+   "pt": "Integrado em 2026-11-01, 4ae6cdcdb1; as medições anteriores mantêm as compilações originais. 6edeae61a331 tem três pares760M quentes12s12,54→18,84 FPS, hooks dirty iguais sem eventos perdidos. #10547 adicional18,854→20,040 sobre11952. Instruções antigas não eram benchmark; novos ensaios não mudam heads/releases. Fixture falhado não conta como validação passada.",
+   "de": "Am 2026-11-01 als 4ae6cdcdb1 integriert; frühere Messungen behalten ihre Builds. 6edeae61a331 hat drei geplante warme760M-Paare12s12,54→18,84 FPS, gleiche Dirty-Hooks ohne Ereignisverlust. #10547 zusätzlich18,854→20,040 auf11952-Basis. Alte Instruktionszahlen kein Spielbeleg; spätere Tests ändern keine Heads/Releases. Fehlfixture nicht als bestanden zählen.",
+   "fr": "Intégré le 2026-11-01, 4ae6cdcdb1 ; les mesures antérieures conservent leurs versions. 6edeae61a331 possède trois paires760M chaudes12s12,54→18,84 FPS, hooks dirty identiques sans perte. #10547 additionnel18,854→20,040 sur11952. Anciens comptes instructions sans benchmark; nouveaux essais sans réécrire heads/releases. Fixture échoué non compté réussi.",
+   "es": "Integrado el 2026-11-01, 4ae6cdcdb1; las mediciones anteriores conservan sus compilaciones. 6edeae61a331 tiene tres parejas760M calientes12s12,54→18,84 FPS, hooks dirty iguales sin pérdida. #10547 adicional18,854→20,040 sobre11952. Instrucciones antiguas sin benchmark; pruebas nuevas no cambian heads/releases. Fixture fallido no contado como validación pasada."
+  }
+ },
+ {
+  "number": 11126,
+  "games": [],
+  "title": {
+   "en": "Mirror sampling tests do not identify an unblocked title",
+   "zh": "镜像采样测试未证明某款游戏解锁",
+   "ar": "اختبارات الانعكاس لا تثبت تشغيل عنوان",
+   "pt": "Testes de espelho sem jogo desbloqueado",
+   "de": "Spiegel-Sampling ohne belegten Titelfortschritt",
+   "fr": "Tests miroir sans jeu débloqué prouvé",
+   "es": "Pruebas espejo sin juego desbloqueado"
+  },
+  "summary": {
+   "en": "Merged on 2026-11-02 as d7809ef62b; the earlier measurements below retain their original builds. #11126 mirrors negative unnormalized taps once, then clamps, following gfx1036 measurements; gfx1013 remains unmeasured. The f636ecd34 rerun reports 72/72 with a loaded validation layer and no VUID errors; current 098fc2772 only shortens documentation. An approval or skipped product CI is not independent hardware validation. No known title uses these new modes; Yōtei uses mode 0 already accepted on main.",
+   "zh": "2026-11-02 已以 d7809ef62b 合入，下述早期测量仍保留原构建。#11126 按 gfx1036 测量把非归一化负采样点镜像一次再钳制，gfx1013 未测。f636ecd34 复跑 72／72，确认加载验证层且无 VUID；当前 098fc2772 仅缩短文档。批准或跳过的产品 CI 不算独立硬件验证；尚无已知标题使用新模式，Yōtei 的 mode 0 原已支持。",
+   "ar": "دُمج في 2026-11-02 بالمراجعة d7809ef62b؛ القياسات الأقدم تحتفظ ببناءاتها. طلب #11126 يعكس النقرات السالبة مرة ثم يقيدها وفق gfx1036؛ gfx1013 غير مقاس. إعادة f636ecd34 تبلغ 72/72 بطبقة تحقق محملة وبلا VUID؛ 098fc2772 يقصر الوثيقة فقط. الموافقة وCI المتخطى ليسا تحقق عتاد مستقل. لا عنوان معروف يستخدم الأوضاع الجديدة؛ Yōtei يستعمل mode 0 المدعوم أصلاً.",
+   "pt": "Integrado em 2026-11-02, d7809ef62b; as medições anteriores mantêm as compilações originais. A #11126 espelha amostras negativas uma vez e limita-as, segundo gfx1036; gfx1013 não medido. f636ecd34 regista 72/72 com layer carregada e sem VUID; 098fc2772 só encurta documentação. Aprovação ou CI ignorado não são validação independente. Nenhum título conhecido usa os modos novos; Yōtei usa mode 0 já aceite.",
+   "de": "Am 2026-11-02 als d7809ef62b integriert; frühere Messungen behalten ihre Builds. #11126 spiegelt negative unnormalisierte Abtastungen einmal und begrenzt sie gemäß gfx1036; gfx1013 ungeprüft. f636ecd34 meldet 72/72 mit geladenem Layer ohne VUID, 098fc2772 kürzt nur Dokumentation. Freigabe oder übersprungene Produkt-CI keine unabhängige Hardwareprüfung. Kein bekannter Titel nutzt neue Modi; Yōtei nutzt bereits unterstützten Modus 0.",
+   "fr": "Intégré le 2026-11-02, d7809ef62b ; les mesures antérieures conservent leurs versions. La #11126 reflète les échantillons négatifs une fois puis les borne selon gfx1036; gfx1013 non mesuré. f636ecd34 annonce 72/72 avec couche chargée sans VUID; 098fc2772 raccourcit seulement la documentation. Approbation et CI ignorée ne valident pas indépendamment le matériel. Aucun titre connu n’utilise les nouveaux modes; Yōtei utilise déjà le mode 0.",
+   "es": "Integrado el 2026-11-02, d7809ef62b; las mediciones anteriores conservan sus compilaciones. La #11126 refleja muestras negativas una vez y las limita según gfx1036; gfx1013 no medido. f636ecd34 informa 72/72 con capa cargada sin VUID; 098fc2772 solo acorta documentación. Aprobación o CI omitida no validan hardware independientemente. Ningún título conocido usa modos nuevos; Yōtei usa mode 0 ya admitido."
+  }
+ },
+ {
+  "number": 10547,
+  "games": [
+   "hollow-knight-silksong"
+  ],
+  "title": {
+   "en": "RADV seam candidate has a bounded title check",
+   "zh": "RADV斜缝候选有具体游戏验证",
+   "ar": "مرشح شق RADV باختبار محدود",
+   "pt": "Candidato RADV com teste limitado",
+   "de": "RADV-Nahtkandidat mit begrenztem Test",
+   "fr": "Candidat RADV vérifié dans un cas précis",
+   "es": "Candidato RADV con prueba limitada"
+  },
+  "summary": {
+   "en": "Merged on 2026-11-02 as 79eb4afea7; the earlier measurements below retain their original builds. Earlier native seam observations keep their pins. The author now reports serializer correction c75821d217 for hostInterpolationFirst, but that is a later branch change, not a retest of3609b981 or a new native Silksong result. Verify round-trip/cache behavior on the exact corrected head before closing the replay gap.",
+   "zh": "2026-11-02 已以 79eb4afea7 合入，下述早期测量仍保留原构建。早期原生接缝观察保留原pin。作者新报c75821d217修正hostInterpolationFirst序列化，属于较后分支变更，不冒充3609b981复测或新丝之歌原生结果；仍需在该准确head验证往返／缓存再关闭缺口。",
+   "ar": "دُمج في 2026-11-02 بالمراجعة 79eb4afea7؛ القياسات الأقدم تحتفظ ببناءاتها. أدلة الوصلة القديمة تحتفظ برؤوسها. الكاتب يبلغ إصلاح serializer في c75821d217 لـhostInterpolationFirst، تغيير لاحق لا إعادة3609b981 أو Silksong أصلي جديد. تحقق round-trip/cache على الرأس المصحح.",
+   "pt": "Integrado em 2026-11-02, 79eb4afea7; as medições anteriores mantêm as compilações originais. Relatos antigos mantêm pins. Autor informa serializer c75821d217 para hostInterpolationFirst, mudança posterior, não reteste3609b981/jogo novo. Verifique round-trip/cache nesse head.",
+   "de": "Am 2026-11-02 als 79eb4afea7 integriert; frühere Messungen behalten ihre Builds. Alte Nahtbelege behalten Pins. Autor meldet Serializerkorrektur c75821d217 für hostInterpolationFirst, späterer Zweig, kein3609b981-/neuer Spieltest. Roundtrip/Cache exakt dort prüfen.",
+   "fr": "Intégré le 2026-11-02, 79eb4afea7 ; les mesures antérieures conservent leurs versions. Anciens essais gardent pins. Auteur annonce serializer c75821d217 pour hostInterpolationFirst, changement ultérieur, pas retest3609b981/jeu neuf. Vérifier round-trip/cache au head exact.",
+   "es": "Integrado el 2026-11-02, 79eb4afea7; las mediciones anteriores conservan sus compilaciones. Informes antiguos conservan pins. Autor informa serializer c75821d217 para hostInterpolationFirst, cambio posterior, no retest3609b981/juego nuevo. Verifica round-trip/caché exactos."
+  }
+ },
+ {
+  "number": 674,
+  "games": [],
+  "title": {
+   "en": "A proposed native input configuration editor",
+   "zh": "原生输入设置编辑器方案",
+   "ar": "محرر مقترح لإعداد الإدخال",
+   "pt": "Proposta de editor de controlos",
+   "de": "Vorschlag für einen Eingabeeditor",
+   "fr": "Proposition d’éditeur de commandes",
+   "es": "Propuesta de editor de controles"
+  },
+  "summary": {
+   "en": "Closed without merging; the editor remains a historical proposal. The proposal adds a separate SDL/ImGui editor and live mappings. Its interface and shortcuts remain proposal details, not instructions guaranteed to work in v0.1.1.",
+   "zh": "已关闭未合并，编辑器仍是历史提案。该方案加入独立 SDL/ImGui 编辑器和实时映射。界面与快捷键仍属方案内容，不是保证在 v0.1.1 可用的操作步骤。",
+   "ar": "أغلق دون دمج؛ المحرر مقترح تاريخي. يقترح محرر SDL/ImGui وربطاً حياً. الواجهة والاختصارات ليست تعليمات مضمونة في v0.1.1.",
+   "pt": "Fechado sem integrar; o editor é uma proposta histórica. A proposta acrescenta um editor separado baseado em SDL/ImGui e associações de teclas atualizadas em tempo real. A interface e os atalhos fazem parte da proposta; não são passos garantidos na versão v0.1.1.",
+   "de": "Ungemergt geschlossen; der Editor bleibt ein historischer Vorschlag. Der Vorschlag ergänzt SDL/ImGui und Live-Belegungen. Oberfläche und Kürzel sind in v0.1.1 nicht garantiert.",
+   "fr": "Fermé sans fusion ; l’éditeur reste une proposition historique. La proposition ajoute un éditeur distinct fondé sur SDL/ImGui et des associations de touches modifiables en direct. Son interface et ses raccourcis restent des éléments de la proposition, sans garantie de fonctionnement dans v0.1.1.",
+   "es": "Cerrado sin integrar; el editor sigue siendo una propuesta histórica. La propuesta añade SDL/ImGui y asignaciones en vivo. Interfaz y atajos no están garantizados en v0.1.1."
+  }
+ }
+]){developmentNotes[developmentNotes.findIndex(old=>old.number===note.number)]=note;}

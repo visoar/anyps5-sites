@@ -6912,3 +6912,1099 @@ Object.assign(editorial,{
   }
  }
 });
+
+// Reviewed edition profiles, 3 November 2026.
+Object.assign(editorial,{
+ "asterigos-curse-of-the-stars": {
+  "overview": {
+   "en": "The Outerrim comparison separates visibility from speed: restoring light does not establish faster combat.",
+   "zh": "Outerrim的对照把可见画面与速度分开，恢复照明不等于战斗提速。",
+   "ar": "مقارنةOuterrim تفصل الرؤية عن السرعة؛ الضوء لا يثبت قتالاً أسرع.",
+   "pt": "Outerrim separa visibilidade de velocidade: repor luz não prova combate mais rápido.",
+   "de": "Outerrim trennt Sichtbarkeit und Tempo: mehr Licht belegt keinen schnelleren Kampf.",
+   "fr": "Outerrim distingue visibilité et vitesse : rétablir la lumière ne prouve pas un combat plus rapide.",
+   "es": "Outerrim separa visibilidad y velocidad: restaurar luz no prueba combate más rápido."
+  },
+  "genre": "rpg",
+  "editionNote": {
+   "en": "The promotional store page is regional package PPSA08193; the run report identifies PPSA08194. Artwork does not verify that package or gameplay.",
+   "zh": "宣传商店页属于地区包 PPSA08193，运行报告标识 PPSA08194；宣传图不验证该包或游戏过程。",
+   "ar": "صفحة الصور الترويجية للحزمة الإقليمية PPSA08193، والتقرير يحدد PPSA08194. الصور لا تثبت الحزمة المختبرة أو اللعب.",
+   "pt": "A página promocional é do pacote regional PPSA08193; o relatório identifica PPSA08194. A imagem não valida o pacote nem o jogo.",
+   "de": "Die Werbeseite gehört zum Regionalpaket PPSA08193, der Laufbericht nennt PPSA08194. Das Bild bestätigt weder Testpaket noch Gameplay.",
+   "fr": "La page promotionnelle concerne le paquet régional PPSA08193 ; le rapport identifie PPSA08194. L’image ne valide ni ce paquet ni le jeu.",
+   "es": "La página promocional corresponde al paquete regional PPSA08193; el informe identifica PPSA08194. La imagen no valida ese paquete ni el juego."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "失落迷城：群星的诅咒"
+  }
+ },
+ "insomnis": {
+  "overview": {
+   "en": "A mansion transition can be intentionally dark. Compare the scene and subtitle before treating black pixels as a regression.",
+   "zh": "宅邸转场可能本来就黑，需先比对场景和字幕再判断回退。",
+   "ar": "انتقال القصر قد يكون مظلماً عمداً؛ قارن المشهد والترجمة قبل وصف التراجع.",
+   "pt": "Uma transição pode ser escura por intenção; compare cena e legendas antes de concluir regressão.",
+   "de": "Ein Villenübergang kann absichtlich dunkel sein; Szene und Untertitel vor Regressionsdiagnose prüfen.",
+   "fr": "Une transition peut être sombre à dessein ; comparer scène et sous-titres avant de conclure à une régression.",
+   "es": "Una transición puede ser oscura por diseño; compara escena y subtítulos antes de concluir regresión."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "失眠"
+  }
+ },
+ "spirit-of-the-north-enhanced": {
+  "overview": {
+   "en": "The fox-in-snow test distinguishes a visible, moving scene from later exploration and a finished adventure.",
+   "zh": "雪地狐狸实测区分可见移动场景、后续探索和完成冒险。",
+   "ar": "اختبار الثعلب في الثلج يفصل المشهد المتحرك عن الاستكشاف اللاحق وإنهاء المغامرة.",
+   "pt": "O teste da raposa distingue uma cena visível em movimento de exploração posterior e conclusão.",
+   "de": "Der Fuchs-im-Schnee-Test trennt sichtbare Bewegung, weitere Erkundung und Abschluss.",
+   "fr": "Le test du renard distingue scène visible en mouvement, exploration ultérieure et fin.",
+   "es": "La prueba del zorro distingue escena visible en movimiento, exploración posterior y final."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "北方之灵 增强版"
+  }
+ },
+ "oxide-room-104": {
+  "overview": {
+   "en": "A descriptor fix can replace a crash with black output. That advances diagnosis without proving a playable room.",
+   "zh": "描述符修复可能把崩溃变成黑屏，推进排错但不证明房间可玩。",
+   "ar": "إصلاح الواصف قد يستبدل الانهيار بالسواد؛ تقدم تشخيص لا غرفة قابلة للعب.",
+   "pt": "Uma correção pode trocar crash por ecrã preto: avanço de diagnóstico sem quarto jogável comprovado.",
+   "de": "Ein Deskriptorfix kann Absturz durch Schwarz ersetzen: Diagnosefortschritt ohne spielbaren Raum.",
+   "fr": "Un correctif peut remplacer un crash par du noir : diagnostic avancé sans pièce jouable validée.",
+   "es": "Un arreglo puede cambiar un fallo por negro: avance diagnóstico sin habitación jugable validada."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "氧化物104号房间"
+  }
+ },
+ "thymesia": {
+  "overview": {
+   "en": "Tutorial HUD, actual movement and combat need separate checks; the scripted first-room test does not establish all three.",
+   "zh": "教程HUD、实际移动与战斗须分别核对，首房间脚本不证明三者全有效。",
+   "ar": "HUD التعليم والحركة والقتال فحوص منفصلة؛ سكربت الغرفة الأولى لا يثبتها كلها.",
+   "pt": "HUD, movimento e combate exigem testes separados; o primeiro quarto não valida os três.",
+   "de": "Tutorial-HUD, Bewegung und Kampf getrennt prüfen; der Raumtest belegt nicht alle drei.",
+   "fr": "HUD, déplacement et combat demandent des contrôles distincts ; la première pièce ne valide pas tout.",
+   "es": "HUD, movimiento y combate requieren comprobaciones distintas; la primera sala no valida todo."
+  },
+  "genre": "action",
+  "editionNote": {
+   "en": "The promotional store page is regional package PPSA05214; the run report identifies PPSA05213. Artwork does not verify that package or gameplay.",
+   "zh": "宣传商店页属于地区包 PPSA05214，运行报告标识 PPSA05213；宣传图不验证该包或游戏过程。",
+   "ar": "صفحة الصور الترويجية للحزمة الإقليمية PPSA05214، والتقرير يحدد PPSA05213. الصور لا تثبت الحزمة المختبرة أو اللعب.",
+   "pt": "A página promocional é do pacote regional PPSA05214; o relatório identifica PPSA05213. A imagem não valida o pacote nem o jogo.",
+   "de": "Die Werbeseite gehört zum Regionalpaket PPSA05214, der Laufbericht nennt PPSA05213. Das Bild bestätigt weder Testpaket noch Gameplay.",
+   "fr": "La page promotionnelle concerne le paquet régional PPSA05214 ; le rapport identifie PPSA05213. L’image ne valide ni ce paquet ni le jeu.",
+   "es": "La página promocional corresponde al paquete regional PPSA05214; el informe identifica PPSA05213. La imagen no valida ese paquete ni el juego."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "记忆边境"
+  }
+ },
+ "under-the-waves": {
+  "overview": {
+   "en": "This underwater adventure’s early failures vary. A clean timed close cannot identify which command or memory path is correct.",
+   "zh": "这款水下冒险的早期故障位置不定，定时正常退出不能证明命令或内存路径正确。",
+   "ar": "أعطال المغامرة المائية تتغير؛ إغلاق مؤقت ناجح لا يحدد صحة الأوامر والذاكرة.",
+   "pt": "As falhas iniciais variam; um fecho normal não prova a correção dos comandos ou memória.",
+   "de": "Frühe Fehler variieren; geplantes Schließen belegt keine korrekten Befehls-/Speicherpfade.",
+   "fr": "Les premiers échecs varient ; une fermeture normale ne valide pas commandes ou mémoire.",
+   "es": "Los fallos iniciales varían; un cierre normal no valida comandos o memoria."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "碧波之下"
+  }
+ },
+ "evil-inside": {
+  "overview": {
+   "en": "A missing unused plugin and a rendered interior are different checkpoints. Keep the loader workaround visible when comparing results.",
+   "zh": "缺失的未用插件与室内画面是不同检查点，比对结果时须保留加载替代条件。",
+   "ar": "الملحق المفقود والمشهد الداخلي نقطتان مختلفتان؛ احتفظ بشرط حل المحمّل.",
+   "pt": "Plugin ausente e interior renderizado são etapas distintas; preserve o workaround do loader.",
+   "de": "Fehlendes Plugin und Innenraumbild sind getrennte Etappen; Loader-Workaround sichtbar halten.",
+   "fr": "Plugin absent et intérieur rendu sont distincts ; conserver le contournement du chargeur.",
+   "es": "Plugin ausente e interior renderizado son etapas distintas; conserva la solución del cargador."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "恶魔在内"
+  }
+ },
+ "kao-the-kangaroo": {
+  "overview": {
+   "en": "Variable guest crashes do not justify a confident allocator diagnosis. Later debugger evidence withdraws the earlier array explanation.",
+   "zh": "客体崩溃位置变化不足以断言分配器问题，后续调试撤回了早先数组解释。",
+   "ar": "الانهيارات المتغيرة لا تثبت خلل المخصص؛ الدليل اللاحق يسحب تفسير المصفوفة.",
+   "pt": "Crashes variáveis não provam falha do alocador; o diagnóstico posterior retira a explicação do array.",
+   "de": "Variable Abstürze belegen keinen Allokatorfehler; spätere Diagnose widerlegt die Array-Erklärung.",
+   "fr": "Les crashes variables ne prouvent pas un défaut d’allocation ; le diagnostic retire l’explication du tableau.",
+   "es": "Los fallos variables no prueban un defecto del asignador; el diagnóstico retira la explicación del array."
+  },
+  "genre": "platform",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "袋鼠闯天关"
+  }
+ },
+ "new-super-luckys-tale": {
+  "overview": {
+   "en": "A briefly rendered title screen does not settle the later guest crash. Menu reliability comes before judging platforming.",
+   "zh": "标题画面短暂出现不解决后续客体崩溃，先确认菜单可靠再判断平台跳跃。",
+   "ar": "ظهور العنوان لحظة لا يصلح الانهيار اللاحق؛ موثوقية القائمة تسبق تقييم المنصات.",
+   "pt": "Um título visível por momentos não resolve o crash; primeiro valide a fiabilidade do menu.",
+   "de": "Ein kurz sichtbarer Titel löst spätere Abstürze nicht; zuerst Menüzugang verlässlich prüfen.",
+   "fr": "Un titre brièvement visible ne résout pas le crash ; fiabiliser le menu avant les plateformes.",
+   "es": "Un título visible brevemente no resuelve el fallo; primero valida la fiabilidad del menú."
+  },
+  "genre": "platform",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "新超级幸运狐"
+  }
+ },
+ "fobia-st-dinfna-hotel": {
+  "overview": {
+   "en": "The first-person wall and movement are stronger evidence than a running process, but remain a short patched opening check.",
+   "zh": "第一人称墙面和移动比进程存活更有证据价值，仍只是开场补丁短测。",
+   "ar": "الجدار والحركة أقوى من بقاء العملية، لكنهما اختبار افتتاح قصير معدل.",
+   "pt": "Parede e movimento valem mais que um processo vivo, mas continuam um teste inicial modificado.",
+   "de": "Wand und Bewegung sind stärker als ein lebender Prozess, bleiben aber ein kurzer gepatchter Anfang.",
+   "fr": "Mur et mouvement valent mieux qu’un processus vivant, mais restent un bref début modifié.",
+   "es": "Pared y movimiento valen más que un proceso vivo, pero siguen siendo un inicio modificado breve."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "恐惧：圣丁夫娜酒店"
+  }
+ },
+ "bramble-the-mountain-king": {
+  "overview": {
+   "en": "Olle’s opening bedroom provides a bounded movement check. Its lighting comparison and later navigation use separate measurements.",
+   "zh": "奥勒开场卧室提供有限移动检查，照明对照与后续导航各有独立测量。",
+   "ar": "غرفة أولّه الأولى اختبار حركة محدود؛ مقارنة الضوء والتنقل لهما قياسان منفصلان.",
+   "pt": "O quarto de Olle permite um teste limitado; luz e navegação têm medições distintas.",
+   "de": "Olles Schlafzimmer erlaubt einen begrenzten Bewegungstest; Lichtvergleich und Navigation getrennt messen.",
+   "fr": "La chambre d’Olle offre un test borné ; éclairage et navigation ont des mesures distinctes.",
+   "es": "El dormitorio de Olle ofrece una prueba limitada; luz y navegación tienen mediciones distintas."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "布兰博：山丘之王"
+  }
+ },
+ "gamedec-definitive-edition": {
+  "overview": {
+   "en": "New Content can keep the cursor before investigation begins. A failed menu script is not proof that the detective controls are broken.",
+   "zh": "新内容菜单可能拦在调查前，脚本没移开光标不证明侦探操作失效。",
+   "ar": "قائمة المحتوى قد تسبق التحقيق؛ فشل السكربت ليس دليلاً على عطل التحكم.",
+   "pt": "New Content pode anteceder a investigação; um script falhado não prova controlos avariados.",
+   "de": "New Content kann vor der Ermittlung warten; ein Skriptfehler beweist keine defekte Steuerung.",
+   "fr": "New Content peut précéder l’enquête ; l’échec du script ne prouve pas des commandes cassées.",
+   "es": "New Content puede preceder a la investigación; un script fallido no prueba controles rotos."
+  },
+  "genre": "rpg",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "骇游侠探 决定版"
+  }
+ },
+ "last-days-of-lazarus": {
+  "overview": {
+   "en": "The dim interior is not automatically the same lighting bug seen in other games. Compare a matched scene before borrowing a fix.",
+   "zh": "昏暗室内不自动等于其他游戏的照明问题，借用修复前应比对相同场景。",
+   "ar": "الداخل المظلم ليس تلقائياً عطل ألعاب أخرى؛ قارن مشهداً مطابقاً قبل استعارة الإصلاح.",
+   "pt": "Um interior escuro não implica o mesmo bug de outro jogo; compare cenas equivalentes.",
+   "de": "Ein dunkler Innenraum ist nicht automatisch derselbe Fehler; erst passende Szenen vergleichen.",
+   "fr": "Un intérieur sombre n’implique pas le même défaut ; comparer des scènes équivalentes.",
+   "es": "Un interior oscuro no implica el mismo defecto; compara escenas equivalentes."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "拉撒路的末日"
+  }
+ },
+ "contra-operation-galuga": {
+  "overview": {
+   "en": "Story selection works, while loading and actual control remain distinct questions. A debugger island image cannot validate a mission.",
+   "zh": "故事选项有效，但加载与操控仍须分开，调试器岛屿画面不能验证任务可玩。",
+   "ar": "اختيار القصة يعمل؛ التحميل والتحكم سؤالان آخران، وصورة المصحح لا تثبت المهمة.",
+   "pt": "A seleção funciona; carregar e controlar são questões distintas, uma imagem do debugger não valida a missão.",
+   "de": "Storyauswahl funktioniert; Laden und Steuern getrennt, ein Debuggerbild belegt keine Mission.",
+   "fr": "La sélection fonctionne ; chargement et contrôle restent distincts, une image du débogueur ne valide pas la mission.",
+   "es": "La selección funciona; carga y control son distintos, una imagen del depurador no valida la misión."
+  },
+  "genre": "shooter",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "魂斗罗：加鲁加行动"
+  }
+ },
+ "in-sound-mind": {
+  "overview": {
+   "en": "The fusion refusal happens before exploration. A nearby shader PR with a different scope cannot be treated as this game’s fix.",
+   "zh": "融合拒绝发生在探索前，附近范围不同的着色器PR不能当作本作修复。",
+   "ar": "رفض الدمج يسبق الاستكشاف؛ PR مختلف النطاق ليس إصلاح هذه اللعبة.",
+   "pt": "A recusa antecede a exploração; um PR de outro caso não é a correção deste jogo.",
+   "de": "Fusionsabbruch vor Erkundung; ein anders begrenzter PR ist kein Fix für dieses Spiel.",
+   "fr": "Le refus précède l’exploration ; un PR d’un autre cas n’est pas le correctif du jeu.",
+   "es": "El rechazo precede a la exploración; un PR de otro caso no es la corrección de este juego."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "心魔"
+  }
+ },
+ "silent-hill-2": {
+  "overview": {
+   "en": "A horror cutscene and controllable exploration are different stages. Traced loading rates cannot describe the pace of play.",
+   "zh": "恐怖过场与可操作探索是不同阶段，带追踪加载速度不能代替游玩速度。",
+   "ar": "المشهد السينمائي والاستكشاف مرحلتان؛ سرعة التحميل المتتبعة ليست سرعة اللعب.",
+   "pt": "Uma cena e exploração são fases distintas; taxas de carga com trace não descrevem o jogo.",
+   "de": "Filmsequenz und Erkundung trennen; gemessene Laderate beschreibt kein Spieltempo.",
+   "fr": "Cinématique et exploration sont distinctes ; une vitesse de chargement tracée ne décrit pas le jeu.",
+   "es": "Cinemática y exploración son distintas; una tasa de carga con traza no describe el juego."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "寂静岭2"
+  }
+ },
+ "mortal-kombat-11": {
+  "overview": {
+   "en": "The Scorpion fight is a useful bounded combat report, with local workarounds that are not all correct or proposed upstream.",
+   "zh": "蝎子对战提供有限战斗证据，但所需本地替代并非全都正确或已向上游提案。",
+   "ar": "قتال Scorpion دليل محدود، مع حلول محلية ليست كلها صحيحة أو مقترحة.",
+   "pt": "O combate de Scorpion é limitado e depende de workarounds nem todos corretos ou propostos.",
+   "de": "Scorpions Kampf liefert begrenzte Evidenz mit teils falschen oder unvorgeschlagenen Workarounds.",
+   "fr": "Le combat de Scorpion est borné, avec des contournements pas tous corrects ou proposés.",
+   "es": "El combate de Scorpion es limitado, con soluciones no todas correctas o propuestas."
+  },
+  "genre": "action",
+  "editionNote": {
+   "en": "The promotional cover is branded Ultimate; it does not establish DLC ownership or tested content for PPSA01619.",
+   "zh": "宣传封面标注 Ultimate，不证明 PPSA01619 测试包拥有或测试了对应 DLC。",
+   "ar": "الغلاف الترويجي يحمل Ultimate؛ لا يثبت امتلاك أو اختبار DLC للحزمة PPSA01619.",
+   "pt": "A capa promocional diz Ultimate; não prova posse ou teste de DLC em PPSA01619.",
+   "de": "Das Werbecover nennt Ultimate; es bestätigt keine DLC-Berechtigung oder DLC-Tests für PPSA01619.",
+   "fr": "La couverture promotionnelle indique Ultimate ; elle ne prouve ni possession ni test des DLC pour PPSA01619.",
+   "es": "La portada promocional indica Ultimate; no demuestra posesión ni prueba de DLC para PPSA01619."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "真人快打11"
+  }
+ },
+ "klonoa-phantasy-reverie-series": {
+  "overview": {
+   "en": "Door to Phantomile now has an opening-area control check. Diagnostic flushing and the failed Continue attempt remain part of the result.",
+   "zh": "Door to Phantomile已有首区操控检查，诊断刷写与Continue失败仍属于结论边界。",
+   "ar": "بداية Door to Phantomile تختبر التحكم؛ التدفق التشخيصي وفشل Continue جزء من الحدود.",
+   "pt": "Door to Phantomile tem teste inicial; flushing diagnóstico e Continue falhado mantêm-se nas condições.",
+   "de": "Door to Phantomile mit Anfangssteuerung; Diagnoseflush und fehlgeschlagenes Continue bleiben Grenzen.",
+   "fr": "Door to Phantomile a un test initial ; flush diagnostique et échec de Continue restent des limites.",
+   "es": "Door to Phantomile tiene prueba inicial; flush diagnóstico y fallo de Continue siguen siendo límites."
+  },
+  "genre": "platform",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "风之克罗诺亚 幻想遐想系列"
+  }
+ },
+ "trek-to-yomi": {
+  "overview": {
+   "en": "The combat tutorial exposes different memory and GPU costs from the opening movie; profiler overhead must stay visible in comparisons.",
+   "zh": "战斗教程与开场电影的显存和GPU开销不同，对比时须保留分析器开销。",
+   "ar": "تكاليف التعليم تختلف عن الفيلم؛ كلفة أداة القياس جزء من المقارنة.",
+   "pt": "O tutorial difere do filme em memória/GPU; preserve a sobrecarga do profiler.",
+   "de": "Tutorial und Film haben andere Speicher-/GPU-Kosten; Profileraufwand berücksichtigen.",
+   "fr": "Tutoriel et film ont des coûts mémoire/GPU différents ; conserver le surcoût du profileur.",
+   "es": "Tutorial y película tienen costes distintos; conserva la sobrecarga del perfilador."
+  },
+  "genre": "action",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "黄泉之路"
+  }
+ },
+ "tetris-forever": {
+  "overview": {
+   "en": "A selected Windows game and a Linux chapter menu answer different questions; menu speed does not validate the collection’s games.",
+   "zh": "Windows选定游戏与Linux章节菜单回答不同问题，菜单速度不验证合集中各游戏。",
+   "ar": "لعبة Windows وقائمة Linux تجيبان سؤالين؛ سرعة القائمة لا تثبت ألعاب المجموعة.",
+   "pt": "Um jogo Windows e um menu Linux são testes distintos; o menu não valida toda a coleção.",
+   "de": "Windows-Spiel und Linux-Kapitelmenü trennen; Menütempo validiert keine ganze Sammlung.",
+   "fr": "Jeu Windows et menu Linux sont distincts ; le menu ne valide pas toute la collection.",
+   "es": "Juego Windows y menú Linux son distintos; el menú no valida toda la colección."
+  },
+  "genre": "puzzle",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "俄罗斯方块：永恒"
+  }
+ },
+ "armored-core-vi": {
+  "overview": {
+   "en": "Menu and first-mission mech combat have different rates. Short normal exits cannot establish an entire mission or campaign.",
+   "zh": "菜单与首任务机甲战斗速度不同，短跑正常退出不能证明完整任务或战役。",
+   "ar": "القائمة وقتال الآلات لهما سرعتان؛ الإغلاق القصير لا يثبت مهمة أو حملة كاملة.",
+   "pt": "Menu e combate têm taxas distintas; um fecho normal curto não valida missão ou campanha.",
+   "de": "Menü und Mechkampf mit anderen Raten; kurze saubere Läufe belegen keine Mission/Kampagne.",
+   "fr": "Menu et combat ont des rythmes distincts ; un bref essai ne valide pas mission ou campagne.",
+   "es": "Menú y combate tienen tasas distintas; una prueba breve no valida misión o campaña."
+  },
+  "genre": "action",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "装甲核心VI 境界天火"
+  }
+ },
+ "crimson-spires": {
+  "overview": {
+   "en": "Advancing opening dialogue is useful evidence, but does not verify the later choice branches or persistent progress.",
+   "zh": "开场对话可推进有证据价值，但不验证后续选项分支或进度持久保存。",
+   "ar": "تقدم الحوار دليل مفيد، لا يثبت الفروع اللاحقة أو حفظ التقدم.",
+   "pt": "Avançar diálogo é evidência útil, sem validar ramos posteriores ou progresso guardado.",
+   "de": "Fortschreitender Dialog ist Evidenz, spätere Zweige/Speicherung bleiben offen.",
+   "fr": "Avancer le dialogue est utile, sans branches ultérieures ou progression sauvegardée validées.",
+   "es": "Avanzar diálogo es útil, sin validar ramas posteriores o progreso guardado."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "猩红尖塔"
+  }
+ },
+ "divinity-original-sin-2": {
+  "overview": {
+   "en": "The Hold has limited combat/save evidence on a composed branch; its opening and later-save speeds must not be combined.",
+   "zh": "组合分支在The Hold有有限战斗／存档证据，开场与后段存档速度不能混合。",
+   "ar": "The Hold له دليل قتال/حفظ على فرع مركب؛ سرعات المشاهد لا تدمج.",
+   "pt": "The Hold tem evidência limitada num ramo composto; não misture taxas de cenas distintas.",
+   "de": "The Hold mit begrenzter Kampf-/Save-Evidenz im Zweig; Szenentempo nicht vermischen.",
+   "fr": "The Hold a des preuves limitées en branche ; ne pas mélanger les vitesses des scènes.",
+   "es": "The Hold tiene pruebas limitadas en rama; no mezcles velocidades de escenas distintas."
+  },
+  "genre": "rpg",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "神界：原罪2 终极版"
+  }
+ },
+ "tekken-8-ppsa10595": {
+  "overview": {
+   "en": "This edition’s Pascal-GPU refusal does not establish a minimum for every PC or invalidate results on a different GPU.",
+   "zh": "此版本Pascal GPU拒绝不能直接定义所有PC最低配置，也不推翻其他GPU结果。",
+   "ar": "رفض Pascal لا يحدد متطلبات كل حاسوب ولا ينفي GPU آخر.",
+   "pt": "A recusa Pascal não define requisitos universais nem invalida outro GPU.",
+   "de": "Pascal-Abbruch definiert keine allgemeinen Anforderungen und widerlegt andere GPUs nicht.",
+   "fr": "Le refus Pascal ne définit pas toutes les exigences et n’invalide pas un autre GPU.",
+   "es": "El rechazo Pascal no define requisitos universales ni invalida otra GPU."
+  },
+  "genre": "action",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "铁拳8 · PPSA10595"
+  }
+ },
+ "planet-of-lana-ppsa19450": {
+  "overview": {
+   "en": "The Windows heap-mirror branch report belongs to this PPSA edition. Its frame count alone cannot provide measured FPS.",
+   "zh": "Windows堆镜像分支报告属于此PPSA版本，单独累计帧数不能给出实测FPS。",
+   "ar": "تقرير فرع Windows لهذه النسخة؛ عدد الإطارات وحده لا يعطي FPS مقاساً.",
+   "pt": "O relato do ramo Windows pertence a esta edição; contagem de frames não mede FPS.",
+   "de": "Windows-Zweigbericht gilt für diese Edition; Bildzahl allein misst keine FPS.",
+   "fr": "Le rapport de branche Windows concerne cette édition ; le nombre d’images ne mesure pas les FPS.",
+   "es": "El informe de rama Windows es de esta edición; contar imágenes no mide FPS."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "拉娜之星 · PPSA19450"
+  }
+ },
+ "runescape-dragonwilds": {
+  "overview": {
+   "en": "A studio logo and EOS/network probes do not validate co-operative survival. The unmeasured timeout workaround remains a prerequisite.",
+   "zh": "工作室标志及EOS／网络探针不验证合作生存，未测主机语义的超时替代仍是条件。",
+   "ar": "شعار وقياسات EOS لا تثبت البقاء التعاوني؛ حل المهلة غير المقاس شرط محلي.",
+   "pt": "Logo e sondas EOS não validam sobrevivência cooperativa; timeout não medido continua condição.",
+   "de": "Logo/EOS-Proben belegen kein Koopspiel; ungemessener Timeouttrick bleibt Voraussetzung.",
+   "fr": "Logo et sondes EOS ne valident pas la survie coopérative ; timeout non mesuré reste une condition.",
+   "es": "Logo y sondas EOS no validan supervivencia cooperativa; timeout no medido sigue siendo condición."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "RuneScape：Dragonwilds"
+  }
+ },
+ "trackmania": {
+  "overview": {
+   "en": "Converting engine modules and reaching audio setup precede any racing evidence; the local loader path is not a completed port.",
+   "zh": "转换引擎模块与音频初始化都在赛车证据之前，本地加载路径不是完成移植。",
+   "ar": "تحويل المحرك وإعداد الصوت يسبقان السباق؛ المحمّل المحلي ليس نقلاً مكتملاً.",
+   "pt": "Converter módulos e iniciar áudio precede corridas; loader local não é port concluído.",
+   "de": "Enginekonvertierung/Tonsetup vor Rennnachweis; lokaler Loader kein fertiger Port.",
+   "fr": "Conversion moteur et audio précèdent la course ; chargeur local sans portage complet.",
+   "es": "Conversión del motor y audio preceden carreras; cargador local no es un port completo."
+  },
+  "genre": "racing",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "赛道狂飙"
+  }
+ },
+ "my-first-gran-turismo": {
+  "overview": {
+   "en": "The beginner racing title’s old-release import failure is separate from its optional console VR features and current-main tests.",
+   "zh": "这款入门赛车的旧发行版导入失败，与主机可选VR功能及当前main测试分开。",
+   "ar": "فشل استيراد الإصدار القديم منفصل عن VR الاختياري واختبارات main.",
+   "pt": "A falha de importação antiga difere do VR opcional e de testes main.",
+   "de": "Alter Importfehler getrennt von optionalem Konsolen-VR und main-Tests.",
+   "fr": "L’ancien échec d’import diffère du VR console et des tests main.",
+   "es": "El fallo de importación antiguo difiere del VR opcional y pruebas main."
+  },
+  "genre": "racing",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "我的第一辆跑车浪漫旅"
+  }
+ },
+ "mihawkos-homebrew": {
+  "overview": {
+   "en": "A homebrew launcher shell; its UI does not establish that console payloads or Wine games can launch.",
+   "zh": "自制启动器外壳，界面出现不证明主机载荷或Wine游戏可启动。",
+   "ar": "واجهة تشغيل منزلي؛ عرضها لا يثبت payload أو ألعاب Wine.",
+   "pt": "Launcher homebrew; UI não valida payloads ou jogos Wine.",
+   "de": "Homebrew-Launcher; UI belegt keine Payloads/Wine-Spiele.",
+   "fr": "Lanceur homebrew ; UI sans payloads/jeux Wine validés.",
+   "es": "Lanzador homebrew; UI sin payloads/juegos Wine validados."
+  },
+  "genre": "utility",
+  "editionNote": {
+   "en": "This is a community PS5 homebrew project or utility. Its interface does not establish commercial PS5 compatibility or games run inside it.",
+   "zh": "这是社区PS5自制项目或工具，界面不证明商业PS5游戏兼容，也不证明其中运行的游戏。",
+   "ar": "هذا مشروع أو أداة منزلية؛ واجهته لا تثبت ألعاب PS5 التجارية أو داخله.",
+   "pt": "Projeto/utilitário homebrew; UI não valida jogos comerciais ou executados nele.",
+   "de": "Homebrew/Tool; UI belegt weder kommerzielle noch darin gestartete Spiele.",
+   "fr": "Projet/utilitaire homebrew ; UI sans jeux commerciaux ou internes validés.",
+   "es": "Proyecto/utilidad homebrew; UI sin juegos comerciales o internos validados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "MihawkOS · 自制启动器"
+  }
+ },
+ "afterglow-homebrew": {
+  "overview": {
+   "en": "A homebrew OpenGL startup case where warm driver caches and arithmetic accuracy change the diagnosis.",
+   "zh": "自制OpenGL启动案例，驱动热缓存与算术精度会影响诊断。",
+   "ar": "حالة بدء OpenGL منزلي تتأثر بالذاكرة الدافئة ودقة الحساب.",
+   "pt": "Caso OpenGL homebrew dependente de cache e precisão.",
+   "de": "Homebrew-OpenGL-Startfall mit Cache-/Genauigkeitsgrenzen.",
+   "fr": "Cas OpenGL homebrew sensible au cache et à la précision.",
+   "es": "Caso OpenGL homebrew sensible a cache y precisión."
+  },
+  "genre": "homebrew",
+  "editionNote": {
+   "en": "This is a community PS5 homebrew project or utility. Its interface does not establish commercial PS5 compatibility or games run inside it.",
+   "zh": "这是社区PS5自制项目或工具，界面不证明商业PS5游戏兼容，也不证明其中运行的游戏。",
+   "ar": "هذا مشروع أو أداة منزلية؛ واجهته لا تثبت ألعاب PS5 التجارية أو داخله.",
+   "pt": "Projeto/utilitário homebrew; UI não valida jogos comerciais ou executados nele.",
+   "de": "Homebrew/Tool; UI belegt weder kommerzielle noch darin gestartete Spiele.",
+   "fr": "Projet/utilitaire homebrew ; UI sans jeux commerciaux ou internes validés.",
+   "es": "Proyecto/utilidad homebrew; UI sin juegos comerciales o internos validados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "Afterglow · 自制程序"
+  }
+ },
+ "media-player-classic-homebrew": {
+  "overview": {
+   "en": "A PS5 homebrew media-player interface; an empty window does not validate decoding or playback.",
+   "zh": "PS5自制播放器界面，空窗口不验证解码或播放。",
+   "ar": "واجهة مشغل منزلي؛ نافذة فارغة لا تثبت فكاً أو تشغيل وسائط.",
+   "pt": "Interface de leitor homebrew; janela vazia não valida reprodução.",
+   "de": "Homebrew-Playeroberfläche; leeres Fenster belegt keine Wiedergabe.",
+   "fr": "Interface de lecteur homebrew ; fenêtre vide sans lecture validée.",
+   "es": "Interfaz de reproductor homebrew; ventana vacía no valida reproducción."
+  },
+  "genre": "utility",
+  "editionNote": {
+   "en": "This is a community PS5 homebrew project or utility. Its interface does not establish commercial PS5 compatibility or games run inside it.",
+   "zh": "这是社区PS5自制项目或工具，界面不证明商业PS5游戏兼容，也不证明其中运行的游戏。",
+   "ar": "هذا مشروع أو أداة منزلية؛ واجهته لا تثبت ألعاب PS5 التجارية أو داخله.",
+   "pt": "Projeto/utilitário homebrew; UI não valida jogos comerciais ou executados nele.",
+   "de": "Homebrew/Tool; UI belegt weder kommerzielle noch darin gestartete Spiele.",
+   "fr": "Projet/utilitaire homebrew ; UI sans jeux commerciaux ou internes validés.",
+   "es": "Proyecto/utilidad homebrew; UI sin juegos comerciales o internos validados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "Media Player Classic PS5 · 自制播放器"
+  }
+ },
+ "genesis-plus-gx-homebrew": {
+  "overview": {
+   "en": "An emulator front end with an empty ROM library; its menu is not a tested console game.",
+   "zh": "ROM库为空的模拟器前端，菜单不等于被模拟游戏实测。",
+   "ar": "واجهة محاكاة بلا ROM؛ قائمتها ليست لعبة مختبرة.",
+   "pt": "Emulador com biblioteca vazia; menu não valida um jogo.",
+   "de": "Emulatorfront mit leerer ROM-Liste; Menü kein Spieltest.",
+   "fr": "Interface d’émulation vide ; menu sans jeu testé.",
+   "es": "Interfaz de emulación vacía; menú sin juego probado."
+  },
+  "genre": "utility",
+  "editionNote": {
+   "en": "This is a community PS5 homebrew project or utility. Its interface does not establish commercial PS5 compatibility or games run inside it.",
+   "zh": "这是社区PS5自制项目或工具，界面不证明商业PS5游戏兼容，也不证明其中运行的游戏。",
+   "ar": "هذا مشروع أو أداة منزلية؛ واجهته لا تثبت ألعاب PS5 التجارية أو داخله.",
+   "pt": "Projeto/utilitário homebrew; UI não valida jogos comerciais ou executados nele.",
+   "de": "Homebrew/Tool; UI belegt weder kommerzielle noch darin gestartete Spiele.",
+   "fr": "Projet/utilitaire homebrew ; UI sans jeux commerciaux ou internes validés.",
+   "es": "Proyecto/utilidad homebrew; UI sin juegos comerciales o internos validados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "Genesis Plus GX PS5 · 自制模拟器"
+  }
+ },
+ "snes9x-homebrew": {
+  "overview": {
+   "en": "A homebrew emulator menu; loading a ROM and exercising its controls are still separate tests.",
+   "zh": "自制模拟器菜单，加载ROM和操作仍是独立待测项。",
+   "ar": "قائمة محاكي منزلي؛ تحميل ROM والتحكم فحوص أخرى.",
+   "pt": "Menu homebrew; carregar ROM e testar comandos são outras etapas.",
+   "de": "Homebrew-Menü; ROM-Laden und Eingabe separat testen.",
+   "fr": "Menu homebrew ; ROM et commandes demandent d’autres essais.",
+   "es": "Menú homebrew; ROM y controles requieren otras pruebas."
+  },
+  "genre": "utility",
+  "editionNote": {
+   "en": "This is a community PS5 homebrew project or utility. Its interface does not establish commercial PS5 compatibility or games run inside it.",
+   "zh": "这是社区PS5自制项目或工具，界面不证明商业PS5游戏兼容，也不证明其中运行的游戏。",
+   "ar": "هذا مشروع أو أداة منزلية؛ واجهته لا تثبت ألعاب PS5 التجارية أو داخله.",
+   "pt": "Projeto/utilitário homebrew; UI não valida jogos comerciais ou executados nele.",
+   "de": "Homebrew/Tool; UI belegt weder kommerzielle noch darin gestartete Spiele.",
+   "fr": "Projet/utilitaire homebrew ; UI sans jeux commerciaux ou internes validés.",
+   "es": "Proyecto/utilidad homebrew; UI sin juegos comerciales o internos validados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "Snes9x PS5 · 自制模拟器"
+  }
+ },
+ "psteroid5-homebrew": {
+  "overview": {
+   "en": "The space-themed homebrew reaches its menu; displayed scores do not validate multiplayer or a round.",
+   "zh": "太空主题自制程序到菜单，显示分数不验证多人或一局游戏。",
+   "ar": "منزلي فضائي يبلغ القائمة؛ النتائج لا تثبت جولة أو تعدد لاعبين.",
+   "pt": "Homebrew espacial no menu; resultados não validam ronda ou multiplayer.",
+   "de": "Weltraum-Homebrew im Menü; Scoreanzeige kein Runden-/Mehrspielertest.",
+   "fr": "Homebrew spatial au menu ; scores sans manche/multijoueur validés.",
+   "es": "Homebrew espacial en menú; puntuaciones sin ronda/multijugador validados."
+  },
+  "genre": "homebrew",
+  "editionNote": {
+   "en": "This is a community PS5 homebrew project or utility. Its interface does not establish commercial PS5 compatibility or games run inside it.",
+   "zh": "这是社区PS5自制项目或工具，界面不证明商业PS5游戏兼容，也不证明其中运行的游戏。",
+   "ar": "هذا مشروع أو أداة منزلية؛ واجهته لا تثبت ألعاب PS5 التجارية أو داخله.",
+   "pt": "Projeto/utilitário homebrew; UI não valida jogos comerciais ou executados nele.",
+   "de": "Homebrew/Tool; UI belegt weder kommerzielle noch darin gestartete Spiele.",
+   "fr": "Projet/utilitaire homebrew ; UI sans jeux commerciaux ou internes validés.",
+   "es": "Proyecto/utilidad homebrew; UI sin juegos comerciales o internos validados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "PSteroid5 · 自制游戏"
+  }
+ },
+ "ratchet-clank-size-matters": {
+  "overview": {
+   "en": "An AVC metadata refusal is not the same as an absent export; this launcher report needs a fuller decoder trace.",
+   "zh": "AVC元数据拒绝不等于导出不存在，此启动器报告仍需完整解码追踪。",
+   "ar": "رفض AVC ليس غياب الدالة؛ تقرير المشغل يحتاج تتبعاً أكمل.",
+   "pt": "Recusa AVC não é export ausente; falta um trace do decoder.",
+   "de": "AVC-Verweigerung ist kein fehlender Export; Decodertrace fehlt.",
+   "fr": "Refus AVC ne signifie pas export absent ; trace décodeur nécessaire.",
+   "es": "Rechazo AVC no significa export ausente; falta traza del decodificador."
+  },
+  "genre": "platform",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "瑞奇与叮当：尺寸事件"
+  }
+ },
+ "formula-retro-racing-world-tour": {
+  "overview": {
+   "en": "A release-line HTTP stop is separate from later main implementation and an actual driving retest.",
+   "zh": "发行线HTTP阻碍与后续main实现、实际驾驶复测须分开。",
+   "ar": "فشل HTTP للإصدار منفصل عن main وإعادة قيادة فعلية.",
+   "pt": "Falha HTTP da release, main e reteste de condução são distintos.",
+   "de": "Release-HTTP-Stopp, main und Fahrretest getrennt.",
+   "fr": "Refus HTTP release, main et essai de conduite sont distincts.",
+   "es": "Fallo HTTP release, main y prueba de conducción son distintos."
+  },
+  "genre": "racing",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "方程式复古赛车：世界巡回赛 特别版"
+  }
+ },
+ "little-nightmares-2": {
+  "overview": {
+   "en": "The missing PlayGo data prevents a meaningful horror-game run; proposed chunk policies remain untested.",
+   "zh": "缺PlayGo数据使本次恐怖游戏测试受阻，建议块策略仍未经复测。",
+   "ar": "غياب PlayGo يمنع الاختبار؛ السياسات المقترحة غير مختبرة.",
+   "pt": "PlayGo ausente bloqueia o teste; políticas propostas por validar.",
+   "de": "Fehlendes PlayGo blockiert; vorgeschlagene Policies ungeprüft.",
+   "fr": "PlayGo absent bloque le test ; politiques proposées non testées.",
+   "es": "PlayGo ausente bloquea; políticas propuestas sin probar."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "小小梦魇II"
+  }
+ },
+ "spider-man-remastered": {
+  "overview": {
+   "en": "This Remastered PPSA edition has a shader table-call failure; Spider-Man2 or native PC results cannot substitute for it.",
+   "zh": "此复刻PPSA版本停于着色器表调用，蜘蛛侠2及原生PC结果不能替代。",
+   "ar": "نسخة Remastered لها فشل shader؛ Spider-Man2 وPC ليسا بديلاً.",
+   "pt": "Esta edição Remastered falha no shader; Spider-Man2/PC não a substituem.",
+   "de": "Remastered-Shaderfehler nicht durch Spider-Man2-/PC-Befunde ersetzen.",
+   "fr": "Échec shader Remastered distinct de Spider-Man2/PC.",
+   "es": "Fallo shader Remastered distinto de Spider-Man2/PC."
+  },
+  "genre": "action",
+  "editionNote": {
+   "en": "Official artwork, when available, describes the game and may cover another region or generation. It does not identify the tested PPSA, DLC or AnyPS5 output.",
+   "zh": "可用官方配图用于介绍游戏，可能覆盖其他地区或世代，不识别实测PPSA、DLC或AnyPS5画面。",
+   "ar": "الرسم الرسمي قد يخص منطقة أو جيلاً آخر، لا يحدد PPSA المختبر أو DLC أو خرج AnyPS5.",
+   "pt": "Arte oficial pode abranger outra região/geração; não identifica PPSA, DLC ou imagem AnyPS5 testados.",
+   "de": "Offizielle Bilder können andere Regionen/Generationen betreffen; kein PPSA-/DLC-/AnyPS5-Testbeleg.",
+   "fr": "L’art officiel peut couvrir une autre région/génération ; il n’identifie pas PPSA, DLC ou rendu AnyPS5 testés.",
+   "es": "El arte oficial puede cubrir otra región/generación; no identifica PPSA, DLC o imagen AnyPS5 probados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "漫威蜘蛛侠 复刻版"
+  }
+ },
+ "sfiii-homebrew": {
+  "overview": {
+   "en": "The community project’s companion-library layout blocks conversion before any launcher or fighting-game result.",
+   "zh": "社区项目伴随库布局在转换阶段受阻，尚无启动器或格斗游戏结果。",
+   "ar": "مكتبة المشروع تمنع التحويل قبل مشغل أو قتال.",
+   "pt": "A biblioteca bloqueia a conversão antes de launcher ou combate.",
+   "de": "Begleitbibliothek blockiert vor Launcher/Kampftest.",
+   "fr": "Bibliothèque bloquante avant lanceur ou combat.",
+   "es": "Biblioteca bloquea antes de lanzador o combate."
+  },
+  "genre": "homebrew",
+  "editionNote": {
+   "en": "This is a community PS5 homebrew project or utility. Its interface does not establish commercial PS5 compatibility or games run inside it.",
+   "zh": "这是社区PS5自制项目或工具，界面不证明商业PS5游戏兼容，也不证明其中运行的游戏。",
+   "ar": "هذا مشروع أو أداة منزلية؛ واجهته لا تثبت ألعاب PS5 التجارية أو داخله.",
+   "pt": "Projeto/utilitário homebrew; UI não valida jogos comerciais ou executados nele.",
+   "de": "Homebrew/Tool; UI belegt weder kommerzielle noch darin gestartete Spiele.",
+   "fr": "Projet/utilitaire homebrew ; UI sans jeux commerciaux ou internes validés.",
+   "es": "Proyecto/utilidad homebrew; UI sin juegos comerciales o internos validados."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {
+   "zh": "sfiii-ps5 · 自制项目"
+  }
+ }
+});

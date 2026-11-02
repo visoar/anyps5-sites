@@ -31,10 +31,10 @@ test('unspecified patches stay unknown and homebrew observations retain source s
 
 test('unreported popular games are unknown, searchable and excluded from measured platform filters',async()=>{
  const {bestStage,stageNeedsPatches}=await import('../packages/content/games');
- const game=filterGames('艾尔登法环')[0];assert.equal(game.slug,'elden-ring');assert.equal(game.titleId,null);assert.equal(game.reports.length,0);assert.equal(bestStage(game),'notTested');assert.equal(stageNeedsPatches(game),false);
- assert.equal(filterGames('elden ring',{stage:'notTested'}).length,1);
- for(const filters of [{platform:'windows'},{platform:'linux'},{stage:'blocked'},{evidence:'official'},{evidence:'community'}])assert.equal(filterGames('elden ring',filters).length,0);
- assert.equal(filterGames('',{stage:'notTested'}).length,5);
+ const game=filterGames('最终幻想 XVI')[0];assert.equal(game.slug,'final-fantasy-xvi');assert.equal(game.titleId,null);assert.equal(game.reports.length,0);assert.equal(bestStage(game),'notTested');assert.equal(stageNeedsPatches(game),false);
+ assert.equal(filterGames('final fantasy xvi',{stage:'notTested'}).length,1);
+ for(const filters of [{platform:'windows'},{platform:'linux'},{stage:'blocked'},{evidence:'official'},{evidence:'community'}])assert.equal(filterGames('final fantasy xvi',filters).length,0);
+ assert.equal(filterGames('',{stage:'notTested'}).length,4);
 });
 
 test('a merged technical fix does not silently create a new game report',async()=>{
@@ -66,7 +66,7 @@ test('new source reviews distinguish setup screens, patched integrations and act
   assert.equal(conclusionReports(game,platform==='windows'?'linux':'windows').length,0);
   assert.ok(gameResearch[slug]);
  }
- for(const slug of ['elden-ring']){
+ for(const slug of ['final-fantasy-xvi']){
   const game=games.find(g=>g.slug===slug)!;
   assert.equal(game.titleId,null);assert.equal(game.reports.length,0);
  }

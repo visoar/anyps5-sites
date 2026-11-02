@@ -165,3 +165,257 @@ for(const article of articles){if(["guides/input","guides/build","guides/windows
 for(const article of articles){if(["guides/build", "guides/input", "guides/linux", "guides/windows", "start", "troubleshooting"].includes(article.slug))article.reviewed="2026-10-28";}
 
 for(const article of articles){if(["download", "getting-started", "guides/build", "guides/linux", "guides/windows", "troubleshooting"].includes(article.slug))article.reviewed="2026-10-30";}
+
+// Release and source documentation reviewed 3 November 2026.
+for(const article of articles){if(["start","downloads"].includes(article.slug)){for(const section of article.sections){if(["release","browser-converter"].includes(section.id)){section.body=[{
+ "en": "v0.1.4 was published on 30 October 2026 at 23:09 UTC, revision 7fcab08f71e463b1768730a626a0f5472d336708. Windows and Linux relinkers, runtime libraries, input/usage notes and the web converter are available. Both live browser manifests match this revision and the library archive hashes. Use matching platform files; no games or Mac runtime are included. Later main changes and local game patches remain separate from this release.",
+ "zh": "v0.1.4 于 2026 年 10 月 30 日 23:09 UTC 发布，提交为 7fcab08f71e463b1768730a626a0f5472d336708，提供 Windows／Linux 转换器、运行库、输入／使用文档和网页转换器。两份在线清单的提交及库压缩包哈希均已核对一致。工具与库按平台配套；不含游戏或 Mac 运行库，后续 main 修改和游戏本地补丁另行区分。",
+ "ar": "صدر v0.1.4 في 30 أكتوبر 2026 الساعة 23:09 UTC، بالمراجعة 7fcab08f71e463b1768730a626a0f5472d336708. تتوفر أدوات Windows وLinux ومكتبات التشغيل والوثائق ومحول الويب. تطابق القائمتان المباشرتان المراجعة وبصمات أرشيف المكتبات. استخدم ملفات متوافقة للنظام نفسه؛ لا ألعاب ولا مكتبات تشغيل Mac. تغييرات main اللاحقة والتعديلات المحلية منفصلة.",
+ "pt": "v0.1.4 foi publicado em 30 de outubro de 2026 às 23:09 UTC, revisão 7fcab08f71e463b1768730a626a0f5472d336708. Inclui conversores e bibliotecas Windows/Linux, documentação e conversor web. Os dois manifestos online coincidem na revisão e nos hashes das bibliotecas. Use pares da mesma plataforma; não inclui jogos nem runtime Mac. Alterações posteriores de main e patches locais são distintos desta versão.",
+ "de": "v0.1.4 erschien am 30. Oktober 2026 um 23:09 UTC, Revision 7fcab08f71e463b1768730a626a0f5472d336708. Verfügbar sind Windows-/Linux-Konverter, Laufzeitbibliotheken, Dokumentation und Web-Konverter. Beide Live-Manifeste stimmen bei Revision und Bibliotheks-Hashes überein. Passende Plattformdateien verwenden; Spiele und Mac-Runtime sind nicht enthalten. Spätere Main-Änderungen und lokale Spielpatches bleiben getrennt.",
+ "fr": "v0.1.4 a été publié le 30 octobre 2026 à 23:09 UTC, révision 7fcab08f71e463b1768730a626a0f5472d336708. Il propose les convertisseurs et bibliothèques Windows/Linux, la documentation et le convertisseur web. Les deux manifestes en ligne correspondent à cette révision et aux empreintes des bibliothèques. Utilisez des fichiers de même plateforme ; aucun jeu ni runtime Mac n’est inclus. Les modifications ultérieures de main et les correctifs locaux restent distincts.",
+ "es": "v0.1.4 se publicó el 30 de octubre de 2026 a las 23:09 UTC, revisión 7fcab08f71e463b1768730a626a0f5472d336708. Ofrece conversores y bibliotecas Windows/Linux, documentación y conversor web. Ambos manifiestos online coinciden en revisión y hashes de las bibliotecas. Usa archivos de la misma plataforma; no incluye juegos ni runtime Mac. Los cambios posteriores de main y los parches locales quedan separados."
+}];section.title=section.id==="release"?{
+ "en": "Published release / v0.1.4",
+ "zh": "正式发行版 / v0.1.4",
+ "ar": "الإصدار المنشور / v0.1.4",
+ "pt": "Versão publicada / v0.1.4",
+ "de": "Veröffentlichte Version / v0.1.4",
+ "fr": "Version publiée / v0.1.4",
+ "es": "Versión publicada / v0.1.4"
+}:{
+ "en": "Browser converter paired with v0.1.4",
+ "zh": "与 v0.1.4 配套的网页转换器",
+ "ar": "محول الويب المتوافق مع v0.1.4",
+ "pt": "Conversor web para v0.1.4",
+ "de": "Web-Konverter passend zu v0.1.4",
+ "fr": "Convertisseur web associé à v0.1.4",
+ "es": "Conversor web para v0.1.4"
+};section.links=[{label:"v0.1.4",url:"https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.4"}];}}article.sources=article.sources.map(source=>source.endsWith("/releases/tag/v0.1.3")?"https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.4":source);}}
+for(const section of articles.find(a=>a.slug==="guides/input")!.sections){if(section.id==="main-screenshots-timelines")section.body=[{
+ "en": "v0.1.4 now documents F12 screenshots and timed input. F12 saves the next displayed frame as PNG in anyps5-screenshots/ or ANYPS5_SCREENSHOTS, without overlay/window scaling; PQ becomes SDR. Write failure stops the game. tools/pad_timeline.py validates ordered nonoverlapping button events (≤4096,≤1h, holds1–5000ms). Timelines follow wall time/controller reads, can miss events during loading and do not reproduce game state.",
+ "zh": "v0.1.4 已记录 F12 截图及定时输入。F12将下一显示帧存PNG到anyps5-screenshots/或ANYPS5_SCREENSHOTS，不含叠加／窗口缩放，PQ转SDR，写失败会停止游戏。tools/pad_timeline.py验证有序不重叠按钮事件（≤4096、≤1小时、按住1–5000ms）。序列依墙钟／手柄读取，加载可漏事件，不能复现游戏状态。",
+ "ar": "يوثق v0.1.4 الآن صور F12 والإدخال الموقّت. F12 يحفظ إطارPNG بلاoverlay/تحجيم فيanyps5-screenshots/ أوANYPS5_SCREENSHOTS،PQ إلىSDR وفشل الكتابة يوقف اللعبة. pad_timeline.py يتحقق≤4096 حدث/ساعة ومدة1–5000ms؛ توقيت حقيقي قد يفوت أثناء التحميل ولا يعيد حالة اللعبة.",
+ "pt": "v0.1.4 documenta agora capturas F12 e entrada temporizada. F12 guardaPNG sem overlay/escala emanyps5-screenshots/ ouANYPS5_SCREENSHOTS, PQ→SDR; erro de escrita para jogo. pad_timeline.py valida≤4096 eventos/1h, durações1–5000ms. Tempo real/leitura do comando pode perder eventos ao carregar, sem reproduzir estado.",
+ "de": "v0.1.4 dokumentiert jetzt F12-Screenshots und zeitgesteuerte Eingaben. F12 speichertPNG ohne Overlay/Fensterskalierung inanyps5-screenshots/ oderANYPS5_SCREENSHOTS, PQ→SDR; Schreibfehler stoppt Spiel. pad_timeline.py prüft≤4096 Ereignisse/1h mit1–5000ms. Echtzeit/Controllerabfragen können Ladeereignisse verpassen, kein Spielzustandsreplay.",
+ "fr": "v0.1.4 documente désormais les captures F12 et les entrées temporisées. F12 sauvePNG sans overlay/échelle dansanyps5-screenshots/ ouANYPS5_SCREENSHOTS, PQ→SDR ; échec écrit arrête jeu. pad_timeline.py valide≤4096 événements/1h, durées1–5000ms. Horloge/lectures manette peuvent rater entrées au chargement, sans rejouer état.",
+ "es": "v0.1.4 ya documenta capturas F12 y entrada temporizada. F12 guardaPNG sin overlay/escala enanyps5-screenshots/ oANYPS5_SCREENSHOTS, PQ→SDR; fallo al escribir para juego. pad_timeline.py valida≤4096 eventos/1h, duración1–5000ms. Reloj/lecturas de mando pueden perder eventos al cargar, sin reproducir estado."
+}];}
+for(const article of articles){if([
+ "start",
+ "downloads",
+ "guides/windows",
+ "guides/linux",
+ "guides/build"
+].includes(article.slug)){article.sections.push({
+ "id": "main-dry-run-boundary",
+ "title": {
+  "en": "Preview conversion without writing output",
+  "zh": "只预检转换，不写入输出",
+  "ar": "معاينة التحويل دون كتابة",
+  "pt": "Pré-visualizar a conversão sem escrever",
+  "de": "Konvertierung ohne Dateiausgabe prüfen",
+  "fr": "Prévisualiser la conversion sans écrire",
+  "es": "Previsualizar la conversión sin escribir"
+ },
+ "body": [
+  {
+   "en": "Reviewed main adds relinker --dry-run; it is not documented in the v0.1.4 usage attachment. Output paths are still required, but conversion is prepared in memory without creating directories, files or permissions. This cannot validate destination write access. It conflicts with --autorun and --verify-patches; conversion failures return 2. A successful preview is neither a launch nor a patch-byte verification.",
+   "zh": "复核的 main 新增 relinker --dry-run，v0.1.4 附带使用文档尚无此选项。仍须给输出路径，但只在内存中准备转换，不创建目录、文件或修改权限，因此不验证目标写权限。它与 --autorun、--verify-patches 冲突，转换失败退出 2。预检成功不等于启动成功或补丁字节验证。",
+   "ar": "يضيف main المراجَع relinker --dry-run، وهو غير موثق في مرفق v0.1.4. يلزم مسار إخراج، لكن التحضير في الذاكرة دون إنشاء ملفات أو تغيير الصلاحيات، ولا يتحقق من إمكانية الكتابة. يتعارض مع --autorun و--verify-patches؛ فشل التحويل يعيد 2. نجاح المعاينة ليس تشغيل اللعبة أو تحقق بايتات التعديل.",
+   "pt": "Main revisto acrescenta relinker --dry-run, ausente da documentação anexada a v0.1.4. Exige caminhos de saída, mas prepara tudo em memória sem criar ficheiros, pastas ou permissões. Não verifica acesso de escrita. É incompatível com --autorun e --verify-patches; falhas devolvem 2. Sucesso não prova arranque nem valida bytes de patches.",
+   "de": "Geprüftes Main ergänzt relinker --dry-run; die v0.1.4-Anleitung dokumentiert es noch nicht. Ausgabepfade bleiben nötig, die Vorbereitung erfolgt aber im Speicher ohne Dateien, Ordner oder Rechteänderungen. Schreibzugriff wird nicht geprüft. Unvereinbar mit --autorun und --verify-patches; Konvertierungsfehler liefern 2. Erfolg bestätigt weder Spielstart noch Patchbytes.",
+   "fr": "Main ajoute relinker --dry-run, absent du guide joint à v0.1.4. Les chemins de sortie restent obligatoires, mais la préparation en mémoire ne crée ni fichiers, ni dossiers, ni permissions. Elle ne vérifie pas les droits d’écriture. Incompatible avec --autorun et --verify-patches ; un échec renvoie 2. La réussite ne prouve ni lancement ni validité des octets d’un correctif.",
+   "es": "Main añade relinker --dry-run, ausente de la guía adjunta a v0.1.4. Exige rutas de salida, pero prepara todo en memoria sin crear archivos, carpetas ni permisos. No comprueba acceso de escritura. Es incompatible con --autorun y --verify-patches; un fallo devuelve 2. El éxito no confirma inicio ni bytes de parches."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · a4eca2a056",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/a4eca2a056bf3bbbec98ab42e9d28163e4ea9cb8/docs/user/USAGE.md"
+  }
+ ]
+});}}
+for(const article of articles){if([
+ "guides/windows",
+ "guides/linux",
+ "guides/input",
+ "requirements"
+].includes(article.slug)){article.sections.push({
+ "id": "main-videoout-output-policy",
+ "title": {
+  "en": "Output class, display and frame limits are different settings",
+  "zh": "输出档位、显示器与限帧是不同设置",
+  "ar": "فئة العرض والشاشة وحد الإطارات إعدادات مختلفة",
+  "pt": "Classe de saída, monitor e limite de imagens",
+  "de": "Ausgabeklasse, Monitor und Bildlimit unterscheiden",
+  "fr": "Classe de sortie, écran et limite d’images",
+  "es": "Clase de salida, pantalla y límite de imágenes"
+ },
+ "body": [
+  {
+   "en": "Reviewed main documents APS5_OUTPUT_RESOLUTION=WxH: both dimensions below 3840×2160 select the 1080p VideoOut class; otherwise it reports the 2160 class. This does not force internal rendering resolution, and some games ignore it. ANYPS5_DISPLAY_INDEX chooses a connected SDL display by zero-based index. ANYPS5_FPS_LIMIT accepts 0.5–1000000 with at most three decimals; 0/empty/unset disables it. A cap cannot accelerate a slow game or exceed its output cadence. These settings are absent from v0.1.4’s usage attachment; preserve the actual tested commit.",
+   "zh": "复核 main 的 APS5_OUTPUT_RESOLUTION=WxH 只有宽小于 3840 且高小于 2160 才选择 1080p VideoOut 档位，否则报告 2160 档位；不强制内部渲染分辨率，部分游戏会忽略。ANYPS5_DISPLAY_INDEX 用从 0 开始的索引选择已连接 SDL 显示器。ANYPS5_FPS_LIMIT 接受 0.5–1000000、最多三位小数，0／空值／未设置为不限帧；它不能加速慢游戏或突破输出节奏。v0.1.4 附带使用文档尚无这些设置，报告须保留实际提交。",
+   "ar": "في main، يختار APS5_OUTPUT_RESOLUTION=WxH فئة VideoOut ‏1080p إذا كان العرض أقل من 3840 والارتفاع أقل من 2160، وإلا فئة 2160. لا يفرض دقة الرسم الداخلية وقد تتجاهله اللعبة. يختار ANYPS5_DISPLAY_INDEX شاشة SDL بفهرس يبدأ من صفر. يقبل ANYPS5_FPS_LIMIT ‏0.5–1000000 حتى ثلاث منازل؛ 0 أو الفراغ أو الغياب يعطله. لا يسرّع لعبة بطيئة أو يتجاوز إيقاعها. هذه الخيارات غائبة عن مرفق v0.1.4؛ سجّل التعديل المختبَر.",
+   "pt": "Em main, APS5_OUTPUT_RESOLUTION=WxH escolhe a classe VideoOut 1080p apenas com largura inferior a 3840 e altura inferior a 2160; caso contrário, 2160. Não força a resolução interna e alguns jogos ignoram-no. ANYPS5_DISPLAY_INDEX escolhe um monitor SDL ligado, com índice a partir de zero. ANYPS5_FPS_LIMIT aceita 0.5–1000000 e até três casas decimais; 0/vazio/ausente desativa. Não acelera jogos lentos nem ultrapassa a cadência de saída. Opções ausentes do anexo v0.1.4; registe o commit.",
+   "de": "In Main wählt APS5_OUTPUT_RESOLUTION=WxH nur bei Breite unter 3840 und Höhe unter 2160 die VideoOut-Klasse 1080p, sonst 2160. Interne Renderauflösung wird nicht erzwungen; manche Spiele ignorieren es. ANYPS5_DISPLAY_INDEX wählt einen verbundenen SDL-Monitor ab Index null. ANYPS5_FPS_LIMIT erlaubt 0.5–1000000 mit höchstens drei Nachkommastellen; 0/leer/ungesetzt deaktiviert. Das beschleunigt kein langsames Spiel und überschreitet keine Ausgaberate. Im v0.1.4-Anhang fehlen diese Optionen; Testcommit festhalten.",
+   "fr": "Dans main, APS5_OUTPUT_RESOLUTION=WxH choisit la classe VideoOut 1080p seulement si largeur <3840 et hauteur <2160, sinon 2160. Il ne force pas la résolution interne et certains jeux l’ignorent. ANYPS5_DISPLAY_INDEX choisit un écran SDL connecté, à partir de zéro. ANYPS5_FPS_LIMIT accepte 0.5–1000000 avec trois décimales au plus ; 0/vide/absent désactive la limite. Cela n’accélère pas un jeu lent et ne dépasse pas sa cadence. Options absentes du guide v0.1.4 ; conservez le commit testé.",
+   "es": "En main, APS5_OUTPUT_RESOLUTION=WxH elige la clase VideoOut 1080p solo con ancho <3840 y alto <2160; si no, 2160. No fuerza la resolución interna y algunos juegos lo ignoran. ANYPS5_DISPLAY_INDEX selecciona una pantalla SDL conectada desde el índice cero. ANYPS5_FPS_LIMIT admite 0.5–1000000 y hasta tres decimales; 0/vacío/ausente lo desactiva. No acelera un juego lento ni supera su cadencia. Opciones ausentes de la guía v0.1.4; conserva el commit probado."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · a4eca2a056",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/a4eca2a056bf3bbbec98ab42e9d28163e4ea9cb8/docs/user/USAGE.md"
+  }
+ ]
+});}}
+for(const article of articles){if([
+ "guides/input"
+].includes(article.slug)){article.sections.push({
+ "id": "released-host-input-audio",
+ "title": {
+  "en": "Host comfort controls do not validate controller features",
+  "zh": "宿主输入与音频选项的边界",
+  "ar": "حدود إعدادات الإدخال والصوت المضيفة",
+  "pt": "Limites dos controlos e áudio do anfitrião",
+  "de": "Grenzen der Host-Eingabe und Audiooptionen",
+  "fr": "Limites des options d’entrée et audio de l’hôte",
+  "es": "Límites de las opciones de entrada y audio del host"
+ },
+ "body": [
+  {
+   "en": "v0.1.4 documents ANYPS5_RUMBLE=0–100 (default 100): zero silences rumble, trigger impulses and haptic fallback, not adaptive-trigger effects. APS5_PAD_SPEAKER_FALLBACK_DB accepts −60 to 0 or mute/off/-inf; it affects AudioOut2’s host fallback, not the main mix, actual controller speaker or legacy AudioOut. Empty/invalid values fail. F5/F6/F8 adjust host volume; they do not change game state. In reviewed main, ANYPS5_PAD_PORT0_STATE=controller logs user 0 out after a debounced controller disconnect, unlike other player slots. APS5_NO_PAD_INPUT suppresses keyboard/mouse and F keys even when set empty, not physical controllers or file-injected input.",
+   "zh": "v0.1.4 记录 ANYPS5_RUMBLE=0–100，默认 100；0 静音震动、扳机脉冲及触觉回退，不是自适应扳机效果开关。APS5_PAD_SPEAKER_FALLBACK_DB 接受 −60 至 0 或 mute／off／-inf，仅影响 AudioOut2 的宿主回退，不影响主混音、真实手柄扬声器或旧 AudioOut；空值／无效值报错。F5／F6／F8 调整宿主音量，不改游戏状态。复核 main 的 ANYPS5_PAD_PORT0_STATE=controller 在去抖后的手柄断开时登出用户 0，其余玩家槽不同。APS5_NO_PAD_INPUT 即使设置为空也屏蔽键鼠及 F 键，不屏蔽物理手柄或文件注入输入。",
+   "ar": "يوثق v0.1.4 ‏ANYPS5_RUMBLE=0–100، الافتراضي 100؛ الصفر يوقف الاهتزاز والنبضات والبديل اللمسي، لا تأثيرات الزناد التكيفية. يقبل APS5_PAD_SPEAKER_FALLBACK_DB من −60 إلى 0 أو mute/off/-inf لبديل AudioOut2 المضيف فقط، لا المزيج الرئيسي أو سماعة اليد الفعلية أو AudioOut القديم؛ الفراغ والقيم الخاطئة تفشل. F5/F6/F8 لصوت المضيف لا حالة اللعبة. في main، يسجل ANYPS5_PAD_PORT0_STATE=controller خروج المستخدم 0 بعد فصل اليد المؤكد. يمنع APS5_NO_PAD_INPUT لوحة المفاتيح والفأرة ومفاتيح F حتى بقيمة فارغة، لا اليد الفعلية أو إدخال الملف.",
+   "pt": "v0.1.4 documenta ANYPS5_RUMBLE=0–100, padrão 100; zero silencia vibração, impulsos e fallback háptico, não efeitos dos gatilhos adaptativos. APS5_PAD_SPEAKER_FALLBACK_DB aceita −60 a 0 ou mute/off/-inf apenas para o fallback AudioOut2 do anfitrião, não a mistura principal, altifalante real ou AudioOut antigo; vazio/inválido falha. F5/F6/F8 ajustam volume do anfitrião. Em main, ANYPS5_PAD_PORT0_STATE=controller termina a sessão do utilizador 0 após desligação confirmada. APS5_NO_PAD_INPUT bloqueia teclado/rato/F mesmo vazio, não comandos físicos ou entrada por ficheiro.",
+   "de": "v0.1.4 dokumentiert ANYPS5_RUMBLE=0–100, Standard 100; null stoppt Rumpeln, Triggerimpulse und Haptik-Fallback, keine adaptiven Triggereffekte. APS5_PAD_SPEAKER_FALLBACK_DB erlaubt −60 bis 0 oder mute/off/-inf nur für den Host-Fallback von AudioOut2, nicht Hauptmix, echten Controllerlautsprecher oder altes AudioOut; leer/ungültig führt zum Fehler. F5/F6/F8 regeln Hostlautstärke. Main meldet mit ANYPS5_PAD_PORT0_STATE=controller Benutzer 0 nach entprellter Trennung ab. APS5_NO_PAD_INPUT sperrt Tastatur/Maus/F-Tasten auch leer, nicht echte Controller oder Dateieingabe.",
+   "fr": "v0.1.4 documente ANYPS5_RUMBLE=0–100, défaut 100 ; zéro coupe vibrations, impulsions et repli haptique, pas les effets adaptatifs. APS5_PAD_SPEAKER_FALLBACK_DB accepte −60 à 0 ou mute/off/-inf pour le repli hôte d’AudioOut2 seulement, sans changer mix principal, véritable haut-parleur de manette ou ancien AudioOut ; vide/invalide échoue. F5/F6/F8 règlent le volume hôte. Dans main, ANYPS5_PAD_PORT0_STATE=controller déconnecte l’utilisateur 0 après débranchement confirmé. APS5_NO_PAD_INPUT bloque clavier/souris/F même vide, pas les manettes physiques ou entrées par fichier.",
+   "es": "v0.1.4 documenta ANYPS5_RUMBLE=0–100, valor 100; cero silencia vibración, impulsos y fallback háptico, no efectos adaptativos. APS5_PAD_SPEAKER_FALLBACK_DB acepta −60 a 0 o mute/off/-inf solo para el fallback del host de AudioOut2, no mezcla principal, altavoz real o AudioOut antiguo; vacío/inválido falla. F5/F6/F8 ajustan volumen del host. En main, ANYPS5_PAD_PORT0_STATE=controller desconecta al usuario 0 tras confirmar la desconexión del mando. APS5_NO_PAD_INPUT bloquea teclado/ratón/F incluso vacío, no mandos físicos ni entrada por archivo."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · a4eca2a056",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/a4eca2a056bf3bbbec98ab42e9d28163e4ea9cb8/docs/user/INPUT_MAPPING.md"
+  }
+ ]
+});}}
+for(const article of articles){if([
+ "start",
+ "guides/windows",
+ "guides/linux"
+].includes(article.slug)){article.sections.push({
+ "id": "main-playgo-lists-init",
+ "title": {
+  "en": "Preserve title metadata before overriding startup answers",
+  "zh": "先保留元数据，再考虑启动策略",
+  "ar": "احفظ البيانات قبل تجاوز إجابات البدء",
+  "pt": "Preserve metadados antes de alterar respostas",
+  "de": "Metadaten vor Startüberschreibungen erhalten",
+  "fr": "Préserver les métadonnées avant les dérogations",
+  "es": "Conserva metadatos antes de cambiar respuestas"
+ },
+ "body": [
+  {
+   "en": "Main now accepts decimal ID lists such as APS5_PLAYGO_UNLISTED_CHUNKS=0,1, only when both original PlayGo metadata files are absent. Existing scenario JSON takes precedence; this cannot repair an incomplete dump. installed and absent are title-specific diagnostics, not universal fixes. Windows now starts extra-directory modules only when explicitly requested or needed transitively by modules outside extra; mapping a module is not starting it. Keep the exact source revision and test save loading separately.",
+   "zh": "main 新接受 APS5_PLAYGO_UNLISTED_CHUNKS=0,1 这样的十进制 ID 列表，仅在两个原始 PlayGo 元数据文件均缺失时使用；已有 scenario JSON 优先，不能据此修复不完整转储。installed／absent 是按游戏验证的诊断策略，不是通用修复。Windows 对 extra 目录模块仅显式请求或被目录外模块传递依赖时初始化，映射模块不等于启动。保留准确提交，另测读档。",
+   "ar": "يقبل main قوائم عشرية مثل APS5_PLAYGO_UNLISTED_CHUNKS=0,1 فقط عند غياب ملفي PlayGo الأصليين. لملف scenario JSON أولوية؛ الخيار لا يصلح تفريغاً ناقصاً. installed وabsent تشخيصان خاصان باللعبة. يبدأ Windows وحدات extra عند طلب صريح أو اعتماد متعد من خارجها؛ ربط الوحدة ليس بدءها. سجّل المراجعة واختبر تحميل الحفظ منفصلاً.",
+   "pt": "Main aceita listas decimais como APS5_PLAYGO_UNLISTED_CHUNKS=0,1 apenas sem os dois ficheiros PlayGo originais. scenario JSON tem prioridade; isto não repara dumps incompletos. installed/absent são diagnósticos por jogo. Windows inicia módulos extra apenas por pedido explícito ou dependência transitiva externa; mapear não é iniciar. Registe a revisão e teste o carregamento de saves à parte.",
+   "de": "Main akzeptiert Dezimallisten wie APS5_PLAYGO_UNLISTED_CHUNKS=0,1 nur ohne beide ursprünglichen PlayGo-Dateien. Vorhandenes scenario JSON hat Vorrang; unvollständige Dumps werden nicht repariert. installed/absent bleiben titelspezifische Diagnosen. Windows startet Extra-Module nur auf Anforderung oder als transitive Abhängigkeit außerhalb von extra; Mapping ist kein Start. Revision und Laden von Spielständen separat prüfen.",
+   "fr": "Main accepte des listes décimales comme APS5_PLAYGO_UNLISTED_CHUNKS=0,1 seulement sans les deux fichiers PlayGo originaux. Le scenario JSON existant prime ; cela ne répare pas un dump incomplet. installed/absent restent des diagnostics par jeu. Windows démarre les modules extra uniquement sur demande ou dépendance transitive extérieure ; mapper n’est pas démarrer. Conservez la révision et testez les sauvegardes séparément.",
+   "es": "Main acepta listas decimales como APS5_PLAYGO_UNLISTED_CHUNKS=0,1 solo sin ambos archivos PlayGo originales. scenario JSON existente tiene prioridad; no repara dumps incompletos. installed/absent son diagnósticos por juego. Windows inicia módulos extra solo por petición explícita o dependencia transitiva externa; mapear no es iniciar. Conserva la revisión y prueba la carga de partidas aparte."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · a4eca2a056",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/a4eca2a056bf3bbbec98ab42e9d28163e4ea9cb8/docs/user/USAGE.md"
+  }
+ ]
+});}}
+for(const article of articles){if([
+ "guides/language-fonts"
+].includes(article.slug)){article.sections.push({
+ "id": "main-language-auto",
+ "title": {
+  "en": "Automatic language selection follows the host locale",
+  "zh": "自动语言选择读取宿主区域",
+  "ar": "اللغة التلقائية تتبع إعداد المضيف",
+  "pt": "Idioma automático segue a configuração local",
+  "de": "Automatische Sprache folgt Host-Locale",
+  "fr": "Langue automatique selon les paramètres de l’hôte",
+  "es": "Idioma automático según la configuración del host"
+ },
+ "body": [
+  {
+   "en": "Reviewed main adds ANYPS5_LANGUAGE=auto, absent from v0.1.4’s usage attachment. The host locale is read once; unsupported locales fall back to English and the result is logged. Linux checks LC_ALL, LC_MESSAGES and LANG, with LANGUAGE considered outside the C locale. Regional variants such as pt-PT remain distinct. This chooses a system-language answer, not a translation or missing-font repair.",
+   "zh": "复核 main 新增 ANYPS5_LANGUAGE=auto，v0.1.4 附带使用文档尚无此值。宿主区域只读取一次，不支持时回退英语并记录选择；Linux 检查 LC_ALL、LC_MESSAGES、LANG，在非 C 区域下考虑 LANGUAGE。pt-PT 等地区变体保持区分。它只选择系统语言答复，不提供翻译，也不修复缺字体。",
+   "ar": "يضيف main ‏ANYPS5_LANGUAGE=auto، غير الموجود في مرفق v0.1.4. يقرأ إعداد المضيف مرة واحدة، ويسجل النتيجة مع الرجوع للإنجليزية عند عدم الدعم. يفحص Linux ‏LC_ALL وLC_MESSAGES وLANG، ثم LANGUAGE خارج C. تبقى صيغ مثل pt-PT مميزة. يختار إجابة لغة النظام، ولا يترجم أو يصلح الخطوط.",
+   "pt": "Main acrescenta ANYPS5_LANGUAGE=auto, ausente do anexo v0.1.4. Lê a configuração local uma vez, regista o resultado e usa inglês se não suportada. Linux consulta LC_ALL, LC_MESSAGES e LANG, considerando LANGUAGE fora de C. Variantes como pt-PT são distintas. Só escolhe a resposta de idioma; não traduz nem corrige fontes.",
+   "de": "Main ergänzt ANYPS5_LANGUAGE=auto, nicht im v0.1.4-Anhang. Die Host-Locale wird einmal gelesen, die Auswahl protokolliert und bei fehlender Unterstützung Englisch verwendet. Linux prüft LC_ALL, LC_MESSAGES, LANG sowie LANGUAGE außerhalb von C. Varianten wie pt-PT bleiben getrennt. Das wählt nur die Systemsprache und übersetzt oder repariert keine Schriften.",
+   "fr": "Main ajoute ANYPS5_LANGUAGE=auto, absent du guide v0.1.4. La locale hôte est lue une fois, le choix journalisé et l’anglais utilisé en repli. Linux consulte LC_ALL, LC_MESSAGES, LANG et LANGUAGE hors locale C. Les variantes comme pt-PT restent distinctes. Cela sélectionne une langue système, sans traduction ni réparation des polices.",
+   "es": "Main añade ANYPS5_LANGUAGE=auto, ausente de la guía v0.1.4. Lee la configuración regional una vez, registra la elección y recurre al inglés si no es compatible. Linux consulta LC_ALL, LC_MESSAGES, LANG y LANGUAGE fuera de C. Variantes como pt-PT siguen separadas. Elige el idioma del sistema; no traduce ni repara fuentes."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · a4eca2a056",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/a4eca2a056bf3bbbec98ab42e9d28163e4ea9cb8/docs/user/USAGE.md"
+  }
+ ]
+});}}
+for(const article of articles){article.reviewed="2026-11-03";}
+
+articles.find(a=>a.slug==="requirements")!.sections.find(s=>s.id==="release-scope")!.body=[{
+ "en": "v0.1.4 distributes Windows and Linux runtime archives. The source’s macOS conversion target and the community macos-runtime fork are separate experiments; an M1 Pro report with an unpinned build is not a general Mac requirement. Vulkan header/SDK versions used to compile the runtime are also distinct from a tested driver requirement. Match a game report’s actual GPU, driver, settings and build.",
+ "zh": "v0.1.4 分发 Windows 与 Linux runtime 包。源码的 macOS 转换目标与社区 macos-runtime 分支属于独立实验，构建未固定的 M1 Pro 报告不是通用 Mac 配置要求。编译使用的 Vulkan 头文件／SDK 版本也不同于已实测驱动要求；应匹配具体游戏的 GPU、驱动、设置及构建。",
+ "ar": "v0.1.4 يوزع Windows/Linux. هدف macOS وفرع المجتمع تجارب مستقلة؛ تقرير M1 Pro دون بناء محدد ليس متطلبات عامة. نسخة Vulkan SDK للبناء مختلفة عن متطلبات برنامج التشغيل المختبرة. طابق GPU والبرنامج والإعدادات والبناء.",
+ "pt": "v0.1.4 distribui Windows/Linux. Alvo macOS/fork são experiências separadas; M1 Pro sem build fixo não define requisitos. Versões Vulkan SDK de compilação distintas de driver testado. Compare GPU, driver, opções e build.",
+ "de": "v0.1.4 verteilt Windows/Linux. macOS-Ziel/Fork getrennte Experimente; M1 Pro ohne Buildpin keine allgemeinen Anforderungen. Vulkan-SDK-Version zum Bauen ist nicht getestete Treiberanforderung. GPU, Treiber, Einstellungen/Build abgleichen.",
+ "fr": "v0.1.4 distribue Windows/Linux. Cible macOS/fork sont des expériences séparées ; M1 Pro sans build précis ne définit pas de prérequis. SDK Vulkan de compilation distinct du pilote testé. Comparer GPU, pilote, réglages/build.",
+ "es": "v0.1.4 distribuye Windows/Linux. Destino macOS/fork son experimentos separados; M1 Pro sin build fijo no define requisitos. SDK Vulkan al compilar distinto de driver probado. Compara GPU, driver, ajustes/build."
+}];
+
+for(const article of articles){if(["guides/windows","guides/linux","guides/build","requirements"].includes(article.slug))article.sections.push({
+ "id": "host-report-log-and-policy",
+ "title": {
+  "en": "Capture the host before changing runtime policy",
+  "zh": "调整策略前，先记录宿主环境",
+  "ar": "سجّل المضيف قبل تغيير السياسة",
+  "pt": "Registe o anfitrião antes de mudar políticas",
+  "de": "Host vor Änderungen an Laufzeitregeln erfassen",
+  "fr": "Relever l’hôte avant de modifier les règles",
+  "es": "Registra el host antes de cambiar políticas"
+ },
+ "body": [
+  {
+   "en": "v0.1.4 documents ANYPS5_LOG_FILE=<path>: it duplicates executable stdout/stderr to an append-only file, without filename expansion. It does not collect relinker output or separate trace files. Opening failure stops startup with status 1; there is no size limit. Reviewed main adds ANYPS5_HOST_REPORT=1 after GPU selection, including a report before a missing-feature failure. Review paths and title output before sharing logs; redaction is not a guarantee. A missing-feature list diagnoses that device/build, not whole-game compatibility.",
+   "zh": "v0.1.4 记录 ANYPS5_LOG_FILE=<path>：将可执行程序 stdout／stderr 复制追加到文件，不展开文件名，不收集 relinker 或独立追踪文件。打开失败以状态 1 停止启动，无文件大小上限。复核 main 的 ANYPS5_HOST_REPORT=1 在选定 GPU 后打印环境，缺功能失败前也会输出。分享前检查路径和游戏输出，不能依赖自动遮盖；缺功能清单只诊断该设备／构建，不代表整部游戏兼容。",
+   "ar": "يوثق v0.1.4 ‏ANYPS5_LOG_FILE=<path> لنسخ stdout/stderr إلى ملف تراكمي دون توسيع الاسم، وليس خرج relinker أو ملفات التتبع المنفصلة. فشل الفتح يوقف البدء بالحالة 1، ولا حد للحجم. يضيف main ‏ANYPS5_HOST_REPORT=1 بعد اختيار GPU، حتى قبل فشل ميزة مفقودة. راجع المسارات وخرج اللعبة قبل المشاركة؛ التنقيح ليس ضماناً. القائمة تشخص الجهاز والبناء، لا توافق اللعبة بالكامل.",
+   "pt": "v0.1.4 documenta ANYPS5_LOG_FILE=<path>: copia stdout/stderr do executável para um ficheiro em modo acrescentar, sem expandir nomes. Não inclui relinker nem traces separados. Falha de abertura termina com estado 1; não há limite de tamanho. Main acrescenta ANYPS5_HOST_REPORT=1 após escolher GPU, também antes de falhar por funcionalidades ausentes. Reveja caminhos e texto antes de partilhar; a ocultação não é garantida. A lista diagnostica dispositivo/build, não compatibilidade completa.",
+   "de": "v0.1.4 dokumentiert ANYPS5_LOG_FILE=<path>: stdout/stderr des Programms werden ohne Namensexpansion angehängt, nicht Relinker-Ausgabe oder separate Traces. Öffnungsfehler stoppt mit Status 1; keine Größenbegrenzung. Main ergänzt ANYPS5_HOST_REPORT=1 nach GPU-Auswahl, auch vor Fehlern wegen fehlender Features. Pfade und Spielausgaben vor Weitergabe prüfen; Schwärzung ist keine Garantie. Die Liste diagnostiziert Gerät/Build, keine vollständige Spielkompatibilität.",
+   "fr": "v0.1.4 documente ANYPS5_LOG_FILE=<path> : copie stdout/stderr de l’exécutable en ajout dans un fichier, sans expansion du nom, sans sortie du relinker ni traces séparées. Un échec d’ouverture arrête avec le statut 1 ; aucune limite de taille. Main ajoute ANYPS5_HOST_REPORT=1 après choix GPU, avant un échec de fonctionnalité manquante également. Vérifiez chemins et texte avant partage ; le masquage n’est pas garanti. La liste diagnostique appareil/version, pas toute la compatibilité.",
+   "es": "v0.1.4 documenta ANYPS5_LOG_FILE=<path>: copia stdout/stderr del ejecutable a un archivo acumulativo sin expandir nombres; no recoge relinker ni trazas separadas. Fallar al abrir detiene con estado 1; no hay límite de tamaño. Main añade ANYPS5_HOST_REPORT=1 tras elegir GPU, también antes de un fallo por funciones ausentes. Revisa rutas y texto antes de compartir; el ocultamiento no es garantía. La lista diagnostica dispositivo/compilación, no compatibilidad completa."
+  },
+  {
+   "en": "Other reviewed-main policies remain opt-in: ANYPS5_FREE_SPACE=host checks the save volume when creating a new save; fixed is the default and console behavior is unmeasured. A default-sized 16384-block save needs 1 GiB. APS5_GAME_MODE=on/auto requests host performance mode, off by default; a request is not a measured speed gain. ANYPS5_PSN_DIALOGS=show adds a host notice while retaining the same cancellation result, not PSN access. Record each policy and keep real save/load tests separate.",
+   "zh": "其他已复核 main 策略需主动选择：ANYPS5_FREE_SPACE=host 在新建存档时检查存档卷，默认 fixed，console 行为未测；默认 16384 块存档需 1 GiB。APS5_GAME_MODE=on／auto 请求宿主性能模式，默认 off；请求不等于实测提速。ANYPS5_PSN_DIALOGS=show 增加宿主提示但仍返回相同取消结果，不提供 PSN。逐项记录策略，存／读档另行实测。",
+   "ar": "سياسات main اختيارية: يفحص ANYPS5_FREE_SPACE=host قرص الحفظ عند إنشاء حفظ جديد، والافتراضي fixed وسلوك الجهاز غير مقاس؛ 16384 كتلة افتراضية تحتاج 1 GiB. يطلب APS5_GAME_MODE=on/auto وضع أداء المضيف، والافتراضي off؛ الطلب لا يثبت تسريعاً. يضيف ANYPS5_PSN_DIALOGS=show إشعاراً مع نتيجة الإلغاء نفسها، لا وصول PSN. سجّل الخيارات واختبر الحفظ والتحميل منفصلين.",
+   "pt": "Outras políticas de main são opcionais: ANYPS5_FREE_SPACE=host verifica o volume ao criar saves; fixed é padrão e o comportamento da consola não foi medido. 16384 blocos exigem 1 GiB. APS5_GAME_MODE=on/auto pede desempenho ao anfitrião, padrão off; não prova ganho. ANYPS5_PSN_DIALOGS=show mostra um aviso com o mesmo resultado de cancelamento, sem PSN. Registe políticas e teste guardar/carregar separadamente.",
+   "de": "Weitere Main-Regeln sind optional: ANYPS5_FREE_SPACE=host prüft das Laufwerk bei neuen Spielständen; Standard fixed, Konsolenverhalten ungemessen. 16384 Blöcke benötigen 1 GiB. APS5_GAME_MODE=on/auto fordert Host-Leistungsmodus an, Standard off; keine gemessene Beschleunigung. ANYPS5_PSN_DIALOGS=show ergänzt einen Hinweis bei gleichem Abbruchresultat, keinen PSN-Zugang. Regeln dokumentieren und Speichern/Laden separat testen.",
+   "fr": "Autres règles main facultatives : ANYPS5_FREE_SPACE=host vérifie le volume lors d’une nouvelle sauvegarde ; fixed par défaut, comportement console non mesuré. 16384 blocs exigent 1 GiB. APS5_GAME_MODE=on/auto demande le mode performance hôte, off par défaut, sans gain mesuré. ANYPS5_PSN_DIALOGS=show ajoute un avis avec le même résultat d’annulation, sans accès PSN. Notez les règles et testez sauvegarde/chargement séparément.",
+   "es": "Otras políticas main son opcionales: ANYPS5_FREE_SPACE=host comprueba el volumen al crear partidas; fixed es el valor predeterminado y la consola no se midió. 16384 bloques necesitan 1 GiB. APS5_GAME_MODE=on/auto solicita rendimiento al host, off por defecto; no prueba mejora. ANYPS5_PSN_DIALOGS=show añade un aviso con la misma cancelación, sin acceso PSN. Registra las políticas y prueba guardar/cargar por separado."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · a4eca2a056",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/a4eca2a056bf3bbbec98ab42e9d28163e4ea9cb8/docs/user/USAGE.md"
+  },
+  {
+   "label": "v0.1.4",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/v0.1.4/docs/user/USAGE.md"
+  }
+ ]
+});}

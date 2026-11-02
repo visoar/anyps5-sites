@@ -2369,5 +2369,278 @@
     "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1818/aWbw79ZDNe2aBrmwFIS7NCQn.png",
     "screenshots": [],
     "checked": "2026-10-30"
+  },
+  "asterigos-curse-of-the-stars": {
+    "source": "https://store.playstation.com/en-us/product/UP0097-PPSA08193_00-8607921909272886/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202510/2109/43fc149aa790c550d5b67700ec6b53b7cec958d94af46483.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "insomnis": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/14054",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "spirit-of-the-north-enhanced": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/14019",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "oxide-room-104": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/14058",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "thymesia": {
+    "source": "https://store.playstation.com/en-us/product/UP4064-PPSA05214_00-0984199900323554",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202207/2510/VxGUjBtHjGIH1UScQcGWLTqq.jpg",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "under-the-waves": {
+    "source": "https://www.playstation.com/en-us/games/under-the-waves/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202306/0819/8dee0e6f68b3efd178afe3832ef42b5e40b08ba69d531b28.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "evil-inside": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/14010",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "kao-the-kangaroo": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/14033",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "new-super-luckys-tale": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/14099",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "fobia-st-dinfna-hotel": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/14035",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "bramble-the-mountain-king": {
+    "source": "https://www.playstation.com/en-us/games/bramble-the-mountain-king/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2814/0UJhKmBamV5MzeIfAZQSYK4H.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "gamedec-definitive-edition": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/14082",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "last-days-of-lazarus": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/14075",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "contra-operation-galuga": {
+    "source": "https://www.playstation.com/en-us/games/contra-operation-galuga/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1601/44cb8a12bb12a74028d2961970b76687d7b4e63071acf0ca.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "in-sound-mind": {
+    "source": "https://www.playstation.com/en-us/games/in-sound-mind/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202109/0919/SrGenFYkZK6oY4KqCZKVM49N.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "silent-hill-2": {
+    "source": "https://www.playstation.com/en-us/games/silent-hill-2/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2000/IgwsFz9BiBrFvyV7pIWpoVgd.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "mortal-kombat-11": {
+    "source": "https://www.playstation.com/en-us/games/mortal-kombat-11/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202009/0123/bF1qmEL5RM6aMfL0oLcxRe8B.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "klonoa-phantasy-reverie-series": {
+    "source": "https://www.playstation.com/en-us/games/klonoa-phantasy-reverie-series/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202206/2401/5SKKiq6ufyndH62KJ5nbHNtD.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "trek-to-yomi": {
+    "source": "https://www.playstation.com/en-us/games/trek-to-yomi/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202208/2518/H38ighX3WbFQsB1tVWABV7QV.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "tetris-forever": {
+    "source": "https://www.playstation.com/en-us/games/tetris-forever/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202410/1415/4afa6dcb1141e3ba19e4c048e1fe7024cbf17618cec83f0e.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "armored-core-vi": {
+    "source": "https://www.playstation.com/en-us/games/armored-core-6-fires-of-rubicon/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202304/2800/f9336cf87ddc9d5996606fd2e7f5e4e6a6bbc5131845d665.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "crimson-spires": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/14316",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "divinity-original-sin-2": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/13726",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "tekken-8-ppsa10595": {
+    "source": "https://www.playstation.com/en-us/games/tekken-8/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0312/aff71a0ced271048f5079b1fcf715bcb45110efc13e9704a.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "planet-of-lana-ppsa19450": {
+    "source": "https://www.playstation.com/en-us/games/planet-of-lana/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202311/0815/433083a8a679a86eb7a78d0a3c4f90a4e95dc3bca4c1c6ce.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "runescape-dragonwilds": {
+    "source": "https://www.playstation.com/en-us/games/runescape-dragonwilds/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1117/252b7056c5ed89c910b3182d8ca3bc60e21ffa136fb8d96f.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "trackmania": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/13709",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "my-first-gran-turismo": {
+    "source": "https://www.playstation.com/en-us/games/gran-turismo-7/my-first-gran-turismo/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202411/2507/f3e188254bee44e60aca10a86ce9184293fa24ba169e9249.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "mihawkos-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/13543",
+    "provider": "Community project",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "afterglow-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/13019",
+    "provider": "Community project",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "media-player-classic-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/13018",
+    "provider": "Community project",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "genesis-plus-gx-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/13017",
+    "provider": "Community project",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "snes9x-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/13016",
+    "provider": "Community project",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "psteroid5-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/13015",
+    "provider": "Community project",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "ratchet-clank-size-matters": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/15020",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "formula-retro-racing-world-tour": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/15018",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "little-nightmares-2": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/15054",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "spider-man-remastered": {
+    "source": "https://www.playstation.com/en-us/games/marvels-spider-man-remastered/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/B2aUYFC0qUAkNnjbTHRyhrg3.png",
+    "screenshots": [],
+    "checked": "2026-11-03"
+  },
+  "sfiii-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/14893",
+    "provider": "Community project",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-03"
   }
 }

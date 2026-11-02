@@ -669,3 +669,97 @@ extraArticles.find(article=>article.slug==="troubleshooting")!.sections.push({
  ]
 });
 extraArticles.find(article=>article.slug==="troubleshooting")!.reviewed="2026-10-30";
+
+extraArticles.find(a=>a.slug==="updates")!.sections.unshift({
+ "id": "v014",
+ "title": {
+  "en": "30 October 2026 / v0.1.4",
+  "zh": "2026 年 10 月 30 日 / v0.1.4",
+  "ar": "30 أكتوبر 2026 / v0.1.4",
+  "pt": "30 de outubro de 2026 / v0.1.4",
+  "de": "30. Oktober 2026 / v0.1.4",
+  "fr": "30 octobre 2026 / v0.1.4",
+  "es": "30 de octubre de 2026 / v0.1.4"
+ },
+ "body": [
+  {
+   "en": "v0.1.4 was published on 30 October 2026 at 23:09 UTC, revision 7fcab08f71e463b1768730a626a0f5472d336708. Windows and Linux relinkers, runtime libraries, input/usage notes and the web converter are available. Both live browser manifests match this revision and the library archive hashes. Use matching platform files; no games or Mac runtime are included. Later main changes and local game patches remain separate from this release.",
+   "zh": "v0.1.4 于 2026 年 10 月 30 日 23:09 UTC 发布，提交为 7fcab08f71e463b1768730a626a0f5472d336708，提供 Windows／Linux 转换器、运行库、输入／使用文档和网页转换器。两份在线清单的提交及库压缩包哈希均已核对一致。工具与库按平台配套；不含游戏或 Mac 运行库，后续 main 修改和游戏本地补丁另行区分。",
+   "ar": "صدر v0.1.4 في 30 أكتوبر 2026 الساعة 23:09 UTC، بالمراجعة 7fcab08f71e463b1768730a626a0f5472d336708. تتوفر أدوات Windows وLinux ومكتبات التشغيل والوثائق ومحول الويب. تطابق القائمتان المباشرتان المراجعة وبصمات أرشيف المكتبات. استخدم ملفات متوافقة للنظام نفسه؛ لا ألعاب ولا مكتبات تشغيل Mac. تغييرات main اللاحقة والتعديلات المحلية منفصلة.",
+   "pt": "v0.1.4 foi publicado em 30 de outubro de 2026 às 23:09 UTC, revisão 7fcab08f71e463b1768730a626a0f5472d336708. Inclui conversores e bibliotecas Windows/Linux, documentação e conversor web. Os dois manifestos online coincidem na revisão e nos hashes das bibliotecas. Use pares da mesma plataforma; não inclui jogos nem runtime Mac. Alterações posteriores de main e patches locais são distintos desta versão.",
+   "de": "v0.1.4 erschien am 30. Oktober 2026 um 23:09 UTC, Revision 7fcab08f71e463b1768730a626a0f5472d336708. Verfügbar sind Windows-/Linux-Konverter, Laufzeitbibliotheken, Dokumentation und Web-Konverter. Beide Live-Manifeste stimmen bei Revision und Bibliotheks-Hashes überein. Passende Plattformdateien verwenden; Spiele und Mac-Runtime sind nicht enthalten. Spätere Main-Änderungen und lokale Spielpatches bleiben getrennt.",
+   "fr": "v0.1.4 a été publié le 30 octobre 2026 à 23:09 UTC, révision 7fcab08f71e463b1768730a626a0f5472d336708. Il propose les convertisseurs et bibliothèques Windows/Linux, la documentation et le convertisseur web. Les deux manifestes en ligne correspondent à cette révision et aux empreintes des bibliothèques. Utilisez des fichiers de même plateforme ; aucun jeu ni runtime Mac n’est inclus. Les modifications ultérieures de main et les correctifs locaux restent distincts.",
+   "es": "v0.1.4 se publicó el 30 de octubre de 2026 a las 23:09 UTC, revisión 7fcab08f71e463b1768730a626a0f5472d336708. Ofrece conversores y bibliotecas Windows/Linux, documentación y conversor web. Ambos manifiestos online coinciden en revisión y hashes de las bibliotecas. Usa archivos de la misma plataforma; no incluye juegos ni runtime Mac. Los cambios posteriores de main y los parches locales quedan separados."
+  }
+ ],
+ "links": [
+  {
+   "label": "v0.1.4",
+   "url": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.4"
+  }
+ ]
+});
+for(const article of extraArticles){if(["updates","progress","faq"].includes(article.slug))article.reviewed="2026-11-03";}
+
+extraArticles.find(a=>a.slug==="progress")!.sections.find(s=>s.id==="counts")!.body=[{
+ "en": "The 3 November review records 9546/36666 declared library functions (26.04%) and decoder recognition of 1166/1166. The denominator has expanded substantially; a lower percentage does not itself show a regression. Declared-export implementation and instruction recognition are neither complete behavioral validation nor a game compatibility rate. Release v0.1.4 is a separate dated snapshot.",
+ "zh": "11 月 3 日复核记录 9546／36666 个声明库函数（26.04%），解码识别为 1166／1166。分母大幅扩展，比例下降本身不证明回归；声明 export 实现和指令识别既不是完整行为验证，也不是游戏兼容率。v0.1.4 是独立的发行快照。",
+ "ar": "تسجل مراجعة 3 نوفمبر 9546/36666 وظيفة مكتبة معلنة (26.04%) والتعرف على 1166/1166 تعليمة. توسع المقام كثيراً؛ انخفاض النسبة لا يثبت تراجعاً. تنفيذ الوظائف والتعرف على التعليمات ليسا تحققاً كاملاً من السلوك أو نسبة توافق ألعاب. v0.1.4 لقطة إصدار مستقلة.",
+ "pt": "A revisão de 3 de novembro regista 9546/36666 funções declaradas (26,04%) e reconhecimento de 1166/1166 instruções. O denominador aumentou muito; a descida percentual não prova regressão. Implementação de exports e reconhecimento não validam todo o comportamento nem medem compatibilidade de jogos. v0.1.4 é um snapshot separado.",
+ "de": "Die Prüfung vom 3. November zählt 9546/36666 deklarierte Bibliotheksfunktionen (26,04 %) und 1166/1166 erkannte Instruktionen. Der Nenner ist stark gewachsen; ein kleinerer Anteil belegt keine Regression. Exportimplementierung und Erkennung sind weder vollständige Verhaltensprüfung noch Spielkompatibilitätsrate. v0.1.4 bleibt ein eigener Release-Snapshot.",
+ "fr": "La revue du 3 novembre compte 9546/36666 fonctions déclarées (26,04 %) et 1166/1166 instructions reconnues. Le dénominateur a fortement augmenté ; une baisse du pourcentage ne prouve pas une régression. Implémentation des exports et reconnaissance ne valident ni tous les comportements ni la compatibilité des jeux. v0.1.4 est un instantané distinct.",
+ "es": "La revisión del 3 de noviembre cuenta 9546/36666 funciones declaradas (26,04 %) y 1166/1166 instrucciones reconocidas. El denominador aumentó mucho; una menor proporción no demuestra regresión. Implementación y reconocimiento no validan todo el comportamiento ni miden compatibilidad de juegos. v0.1.4 es una instantánea separada."
+},{
+ "en": "Discussion#9751 proposes a second imported-function measure; it is not an adopted official compatibility counter. Its62-homebrew static audit reports1507/1533 functions classified non-throwing (98.3%), a biased sample without retail coverage or runtime path checks. Do not label that98.3% of games playable. The source’s4834/11181 atcc0078595d is a separate snapshot from the live figure above.",
+ "zh": "讨论#9751提出第二个导入函数指标，尚非官方采用的兼容计数。其62个homebrew静态审计1507／1533非throwing分类（98.3%），样本偏倚、无商业游戏覆盖或runtime路径验证，不能写成98.3%游戏可玩。源cc0078595d的4834／11181与上方live快照分开。",
+ "ar": "#9751 يقترح مقياس imports ثانياً لم يعتمد رسمياً. عينة62homebrew ثابتة1507/1533=98.3% مصنفة non-throwing، متحيزة دون retail/مسارات تشغيل. ليست98.3% ألعاب قابلة للعب. لقطةcc0078595d4834/11181 منفصلة.",
+ "pt": "Discussão#9751 propõe métrica de imports ainda não adotada. Auditoria estática62homebrew:1507/1533=98,3% non-throwing, amostra enviesada sem retail/caminhos runtime. Não98,3% jogos jogáveis. Snapshotcc0078595d4834/11181 separado.",
+ "de": "#9751 schlägt Importmetrik vor, noch kein offizieller Zähler. Statischer62-Homebrew-Audit1507/1533=98,3% non-throwing, verzerrt ohne Retail/Laufpfade. Keine98,3% spielbaren Spiele. Snapshotcc0078595d4834/11181 getrennt.",
+ "fr": "#9751 propose une métrique imports non adoptée. Audit statique62homebrew:1507/1533=98,3% non-throwing, biaisé sans retail/chemins runtime. Pas98,3% de jeux jouables. Snapshotcc0078595d4834/11181 distinct.",
+ "es": "#9751 propone métrica imports no adoptada. Auditoría estática62homebrew:1507/1533=98,3% non-throwing, sesgada sin retail/rutas runtime. No98,3% juegos jugables. Snapshotcc0078595d4834/11181 separado."
+}];
+for(const section of extraArticles.find(a=>a.slug==="faq")!.sections){if(section.id==="mac")section.body=section.body.map(text=>Object.fromEntries(Object.entries(text).map(([locale,value])=>[locale,value.replaceAll("v0.1.3","v0.1.4")])) as typeof text);}
+
+extraArticles.find(a=>a.slug==="troubleshooting")!.sections.push({
+ "id": "host-report-log-and-policy",
+ "title": {
+  "en": "Capture the host before changing runtime policy",
+  "zh": "调整策略前，先记录宿主环境",
+  "ar": "سجّل المضيف قبل تغيير السياسة",
+  "pt": "Registe o anfitrião antes de mudar políticas",
+  "de": "Host vor Änderungen an Laufzeitregeln erfassen",
+  "fr": "Relever l’hôte avant de modifier les règles",
+  "es": "Registra el host antes de cambiar políticas"
+ },
+ "body": [
+  {
+   "en": "v0.1.4 documents ANYPS5_LOG_FILE=<path>: it duplicates executable stdout/stderr to an append-only file, without filename expansion. It does not collect relinker output or separate trace files. Opening failure stops startup with status 1; there is no size limit. Reviewed main adds ANYPS5_HOST_REPORT=1 after GPU selection, including a report before a missing-feature failure. Review paths and title output before sharing logs; redaction is not a guarantee. A missing-feature list diagnoses that device/build, not whole-game compatibility.",
+   "zh": "v0.1.4 记录 ANYPS5_LOG_FILE=<path>：将可执行程序 stdout／stderr 复制追加到文件，不展开文件名，不收集 relinker 或独立追踪文件。打开失败以状态 1 停止启动，无文件大小上限。复核 main 的 ANYPS5_HOST_REPORT=1 在选定 GPU 后打印环境，缺功能失败前也会输出。分享前检查路径和游戏输出，不能依赖自动遮盖；缺功能清单只诊断该设备／构建，不代表整部游戏兼容。",
+   "ar": "يوثق v0.1.4 ‏ANYPS5_LOG_FILE=<path> لنسخ stdout/stderr إلى ملف تراكمي دون توسيع الاسم، وليس خرج relinker أو ملفات التتبع المنفصلة. فشل الفتح يوقف البدء بالحالة 1، ولا حد للحجم. يضيف main ‏ANYPS5_HOST_REPORT=1 بعد اختيار GPU، حتى قبل فشل ميزة مفقودة. راجع المسارات وخرج اللعبة قبل المشاركة؛ التنقيح ليس ضماناً. القائمة تشخص الجهاز والبناء، لا توافق اللعبة بالكامل.",
+   "pt": "v0.1.4 documenta ANYPS5_LOG_FILE=<path>: copia stdout/stderr do executável para um ficheiro em modo acrescentar, sem expandir nomes. Não inclui relinker nem traces separados. Falha de abertura termina com estado 1; não há limite de tamanho. Main acrescenta ANYPS5_HOST_REPORT=1 após escolher GPU, também antes de falhar por funcionalidades ausentes. Reveja caminhos e texto antes de partilhar; a ocultação não é garantida. A lista diagnostica dispositivo/build, não compatibilidade completa.",
+   "de": "v0.1.4 dokumentiert ANYPS5_LOG_FILE=<path>: stdout/stderr des Programms werden ohne Namensexpansion angehängt, nicht Relinker-Ausgabe oder separate Traces. Öffnungsfehler stoppt mit Status 1; keine Größenbegrenzung. Main ergänzt ANYPS5_HOST_REPORT=1 nach GPU-Auswahl, auch vor Fehlern wegen fehlender Features. Pfade und Spielausgaben vor Weitergabe prüfen; Schwärzung ist keine Garantie. Die Liste diagnostiziert Gerät/Build, keine vollständige Spielkompatibilität.",
+   "fr": "v0.1.4 documente ANYPS5_LOG_FILE=<path> : copie stdout/stderr de l’exécutable en ajout dans un fichier, sans expansion du nom, sans sortie du relinker ni traces séparées. Un échec d’ouverture arrête avec le statut 1 ; aucune limite de taille. Main ajoute ANYPS5_HOST_REPORT=1 après choix GPU, avant un échec de fonctionnalité manquante également. Vérifiez chemins et texte avant partage ; le masquage n’est pas garanti. La liste diagnostique appareil/version, pas toute la compatibilité.",
+   "es": "v0.1.4 documenta ANYPS5_LOG_FILE=<path>: copia stdout/stderr del ejecutable a un archivo acumulativo sin expandir nombres; no recoge relinker ni trazas separadas. Fallar al abrir detiene con estado 1; no hay límite de tamaño. Main añade ANYPS5_HOST_REPORT=1 tras elegir GPU, también antes de un fallo por funciones ausentes. Revisa rutas y texto antes de compartir; el ocultamiento no es garantía. La lista diagnostica dispositivo/compilación, no compatibilidad completa."
+  },
+  {
+   "en": "Other reviewed-main policies remain opt-in: ANYPS5_FREE_SPACE=host checks the save volume when creating a new save; fixed is the default and console behavior is unmeasured. A default-sized 16384-block save needs 1 GiB. APS5_GAME_MODE=on/auto requests host performance mode, off by default; a request is not a measured speed gain. ANYPS5_PSN_DIALOGS=show adds a host notice while retaining the same cancellation result, not PSN access. Record each policy and keep real save/load tests separate.",
+   "zh": "其他已复核 main 策略需主动选择：ANYPS5_FREE_SPACE=host 在新建存档时检查存档卷，默认 fixed，console 行为未测；默认 16384 块存档需 1 GiB。APS5_GAME_MODE=on／auto 请求宿主性能模式，默认 off；请求不等于实测提速。ANYPS5_PSN_DIALOGS=show 增加宿主提示但仍返回相同取消结果，不提供 PSN。逐项记录策略，存／读档另行实测。",
+   "ar": "سياسات main اختيارية: يفحص ANYPS5_FREE_SPACE=host قرص الحفظ عند إنشاء حفظ جديد، والافتراضي fixed وسلوك الجهاز غير مقاس؛ 16384 كتلة افتراضية تحتاج 1 GiB. يطلب APS5_GAME_MODE=on/auto وضع أداء المضيف، والافتراضي off؛ الطلب لا يثبت تسريعاً. يضيف ANYPS5_PSN_DIALOGS=show إشعاراً مع نتيجة الإلغاء نفسها، لا وصول PSN. سجّل الخيارات واختبر الحفظ والتحميل منفصلين.",
+   "pt": "Outras políticas de main são opcionais: ANYPS5_FREE_SPACE=host verifica o volume ao criar saves; fixed é padrão e o comportamento da consola não foi medido. 16384 blocos exigem 1 GiB. APS5_GAME_MODE=on/auto pede desempenho ao anfitrião, padrão off; não prova ganho. ANYPS5_PSN_DIALOGS=show mostra um aviso com o mesmo resultado de cancelamento, sem PSN. Registe políticas e teste guardar/carregar separadamente.",
+   "de": "Weitere Main-Regeln sind optional: ANYPS5_FREE_SPACE=host prüft das Laufwerk bei neuen Spielständen; Standard fixed, Konsolenverhalten ungemessen. 16384 Blöcke benötigen 1 GiB. APS5_GAME_MODE=on/auto fordert Host-Leistungsmodus an, Standard off; keine gemessene Beschleunigung. ANYPS5_PSN_DIALOGS=show ergänzt einen Hinweis bei gleichem Abbruchresultat, keinen PSN-Zugang. Regeln dokumentieren und Speichern/Laden separat testen.",
+   "fr": "Autres règles main facultatives : ANYPS5_FREE_SPACE=host vérifie le volume lors d’une nouvelle sauvegarde ; fixed par défaut, comportement console non mesuré. 16384 blocs exigent 1 GiB. APS5_GAME_MODE=on/auto demande le mode performance hôte, off par défaut, sans gain mesuré. ANYPS5_PSN_DIALOGS=show ajoute un avis avec le même résultat d’annulation, sans accès PSN. Notez les règles et testez sauvegarde/chargement séparément.",
+   "es": "Otras políticas main son opcionales: ANYPS5_FREE_SPACE=host comprueba el volumen al crear partidas; fixed es el valor predeterminado y la consola no se midió. 16384 bloques necesitan 1 GiB. APS5_GAME_MODE=on/auto solicita rendimiento al host, off por defecto; no prueba mejora. ANYPS5_PSN_DIALOGS=show añade un aviso con la misma cancelación, sin acceso PSN. Registra las políticas y prueba guardar/cargar por separado."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · a4eca2a056",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/a4eca2a056bf3bbbec98ab42e9d28163e4ea9cb8/docs/user/USAGE.md"
+  },
+  {
+   "label": "v0.1.4",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/v0.1.4/docs/user/USAGE.md"
+  }
+ ]
+});
+extraArticles.find(a=>a.slug==="troubleshooting")!.reviewed="2026-11-03";

@@ -4346,5 +4346,331 @@
       "height": 675
     },
     "screenshots": []
+  },
+  "asterigos-curse-of-the-stars": {
+    "cover": {
+      "file": "asterigos-curse-of-the-stars/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202510/2109/43fc149aa790c550d5b67700ec6b53b7cec958d94af46483.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202510/2109/43fc149aa790c550d5b67700ec6b53b7cec958d94af46483.png",
+      "sourceSha256": "f38ac9ebbb1022804dd6f4eeb8fb6873c78e3a7f70a3fb116894d217e3492948",
+      "sourceBytes": 625296,
+      "sha256": "05441e0547a716dc4db687c23dec30fe2bfa6068040e4de8566ffa6eb9d6b5c0",
+      "bytes": 59888,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "insomnis": {
+    "cover": null,
+    "screenshots": []
+  },
+  "spirit-of-the-north-enhanced": {
+    "cover": null,
+    "screenshots": []
+  },
+  "oxide-room-104": {
+    "cover": null,
+    "screenshots": []
+  },
+  "thymesia": {
+    "cover": {
+      "file": "thymesia/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202207/2510/VxGUjBtHjGIH1UScQcGWLTqq.jpg",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202207/2510/VxGUjBtHjGIH1UScQcGWLTqq.jpg",
+      "sourceSha256": "f2ce94591dcd685763cf2bdb90252d1f4bfdb36662f0c9821e1392f67beaa25c",
+      "sourceBytes": 458195,
+      "sha256": "4b1810b5913091fd806982ca2565a6d81dfb3edd813f6e497a1d7dc9baf52608",
+      "bytes": 34002,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "under-the-waves": {
+    "cover": {
+      "file": "under-the-waves/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202306/0819/8dee0e6f68b3efd178afe3832ef42b5e40b08ba69d531b28.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202306/0819/8dee0e6f68b3efd178afe3832ef42b5e40b08ba69d531b28.png",
+      "sourceSha256": "90b8031ba4cc7972ad9402cf5283a1bd322eb21939267fb0b9e486b1be4f1cb0",
+      "sourceBytes": 82251,
+      "sha256": "17e36c019e122a8cc4ed51bcfb7c59eaf5f1fd63bb84e62d65086e8da2438fea",
+      "bytes": 36542,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "evil-inside": {
+    "cover": null,
+    "screenshots": []
+  },
+  "kao-the-kangaroo": {
+    "cover": null,
+    "screenshots": []
+  },
+  "new-super-luckys-tale": {
+    "cover": null,
+    "screenshots": []
+  },
+  "fobia-st-dinfna-hotel": {
+    "cover": null,
+    "screenshots": []
+  },
+  "bramble-the-mountain-king": {
+    "cover": {
+      "file": "bramble-the-mountain-king/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2814/0UJhKmBamV5MzeIfAZQSYK4H.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2814/0UJhKmBamV5MzeIfAZQSYK4H.png",
+      "sourceSha256": "43a85f192f46330cd513ff0cb97515eaf54e6c1211ace31ce99759a6ec8bb7e9",
+      "sourceBytes": 168326,
+      "sha256": "e99ee7ca62b53e521eb5759184a85fa4b0fedd6acb5891c24ffc31a0240aebdb",
+      "bytes": 96886,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "gamedec-definitive-edition": {
+    "cover": null,
+    "screenshots": []
+  },
+  "last-days-of-lazarus": {
+    "cover": null,
+    "screenshots": []
+  },
+  "contra-operation-galuga": {
+    "cover": {
+      "file": "contra-operation-galuga/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1601/44cb8a12bb12a74028d2961970b76687d7b4e63071acf0ca.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1601/44cb8a12bb12a74028d2961970b76687d7b4e63071acf0ca.png",
+      "sourceSha256": "7152fda7dc9279a5a5722018103780d5205f8b80e350b5465007e9b71e09a715",
+      "sourceBytes": 304599,
+      "sha256": "461bb2645fdf30cbfa5790ddc495c43d617e04228d13233a7c577e7d41304f93",
+      "bytes": 206754,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "in-sound-mind": {
+    "cover": {
+      "file": "in-sound-mind/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202109/0919/SrGenFYkZK6oY4KqCZKVM49N.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202109/0919/SrGenFYkZK6oY4KqCZKVM49N.png",
+      "sourceSha256": "73f6755085b7cd7b55bce98961097c49c4634c0f51a2a4b0b3c7f4368c794d31",
+      "sourceBytes": 234960,
+      "sha256": "2cf2e5ce65cad54ab3ecfaef28f777d9881ac4832f833144278079855f309b71",
+      "bytes": 139352,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "silent-hill-2": {
+    "cover": {
+      "file": "silent-hill-2/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2000/IgwsFz9BiBrFvyV7pIWpoVgd.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2000/IgwsFz9BiBrFvyV7pIWpoVgd.png",
+      "sourceSha256": "7e0743d7eb02ea5959cd22c3cf607c6d671e3656b33097550153c5c0ed50cadb",
+      "sourceBytes": 101579,
+      "sha256": "4d15f1634f4510ae34c89ee78fd92277244482de5b2cf3eda5b1880b2cb4c96f",
+      "bytes": 52406,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "mortal-kombat-11": {
+    "cover": {
+      "file": "mortal-kombat-11/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202009/0123/bF1qmEL5RM6aMfL0oLcxRe8B.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202009/0123/bF1qmEL5RM6aMfL0oLcxRe8B.png",
+      "sourceSha256": "d8dcf889fab3f003348c38e077500d659ebf9ad9a900aa9cd3d716afcb00701d",
+      "sourceBytes": 164262,
+      "sha256": "9f6246830930390a908aa921e40c0aa7308b11455637cdbf007c1aea243da83a",
+      "bytes": 89516,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "klonoa-phantasy-reverie-series": {
+    "cover": {
+      "file": "klonoa-phantasy-reverie-series/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202206/2401/5SKKiq6ufyndH62KJ5nbHNtD.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/2401/5SKKiq6ufyndH62KJ5nbHNtD.png",
+      "sourceSha256": "026abfd268cc9d3d361f06dbab174747eec8bc821afe1e4e93674e07efd569a5",
+      "sourceBytes": 309988,
+      "sha256": "700ec21e5e1cc04e4f4ef9ea63793f49535738e87fda77eeff23bb69df1d54a9",
+      "bytes": 199450,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "trek-to-yomi": {
+    "cover": {
+      "file": "trek-to-yomi/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202208/2518/H38ighX3WbFQsB1tVWABV7QV.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/2518/H38ighX3WbFQsB1tVWABV7QV.png",
+      "sourceSha256": "33d28575979529f5b70b0688fda96c78c158f866c4f22ccf6236e32533c3dc62",
+      "sourceBytes": 125350,
+      "sha256": "5b3f921abf8a2e6f7d48e1458ab1dd72aeac3e24eda0b3fc76c39a1ed194de6f",
+      "bytes": 67984,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "tetris-forever": {
+    "cover": {
+      "file": "tetris-forever/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202410/1415/4afa6dcb1141e3ba19e4c048e1fe7024cbf17618cec83f0e.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202410/1415/4afa6dcb1141e3ba19e4c048e1fe7024cbf17618cec83f0e.png",
+      "sourceSha256": "608750a5bef943c621a4e5e738ab1158cad250f92fe74f39f63eaff299feb6af",
+      "sourceBytes": 180570,
+      "sha256": "b3e2ab4da1f611efec50659d9632e3b3e8e6732eac4fb94d8071cd7606dee85c",
+      "bytes": 85184,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "armored-core-vi": {
+    "cover": {
+      "file": "armored-core-vi/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202304/2800/f9336cf87ddc9d5996606fd2e7f5e4e6a6bbc5131845d665.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202304/2800/f9336cf87ddc9d5996606fd2e7f5e4e6a6bbc5131845d665.png",
+      "sourceSha256": "1d00e35aad6245c9f1b015d43d7e482cb088c030629900c6401d64ef630b878e",
+      "sourceBytes": 242631,
+      "sha256": "cb88855002d01f4574504376ae395ee11ab3b67bd23537eb40821c5e862697b1",
+      "bytes": 168280,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "crimson-spires": {
+    "cover": null,
+    "screenshots": []
+  },
+  "divinity-original-sin-2": {
+    "cover": null,
+    "screenshots": []
+  },
+  "tekken-8-ppsa10595": {
+    "cover": {
+      "file": "tekken-8-ppsa10595/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0312/aff71a0ced271048f5079b1fcf715bcb45110efc13e9704a.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0312/aff71a0ced271048f5079b1fcf715bcb45110efc13e9704a.png",
+      "sourceSha256": "0dbee0c46e4dc4889d8973a16fe513bf7164b52791998f4d74808dd5d95e6278",
+      "sourceBytes": 155538,
+      "sha256": "20b945e3cbb51e7d303718928bfd8dd722d6b55ac6c79d3b0040f89b7d3bd542",
+      "bytes": 96244,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "planet-of-lana-ppsa19450": {
+    "cover": {
+      "file": "planet-of-lana-ppsa19450/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202311/0815/433083a8a679a86eb7a78d0a3c4f90a4e95dc3bca4c1c6ce.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202311/0815/433083a8a679a86eb7a78d0a3c4f90a4e95dc3bca4c1c6ce.png",
+      "sourceSha256": "95e032d767ad8b66f9642935ecc1a00406e693b51a4ccf00ea53db42e2063707",
+      "sourceBytes": 113345,
+      "sha256": "bdb5ddc120963cf3ec8a0c48fe9bbcc54cf97685389ba41ce6e1d1b78e84f9b8",
+      "bytes": 59858,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "runescape-dragonwilds": {
+    "cover": {
+      "file": "runescape-dragonwilds/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1117/252b7056c5ed89c910b3182d8ca3bc60e21ffa136fb8d96f.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1117/252b7056c5ed89c910b3182d8ca3bc60e21ffa136fb8d96f.png",
+      "sourceSha256": "a67e18fe8d4d506341ca82cdfbd5158ef735bf5900fabe8ecbeca65311618c8a",
+      "sourceBytes": 191190,
+      "sha256": "9430b02a834270961d80f9eab1eac4683bb9e13bf3a1826ded0fa1173ef07f2e",
+      "bytes": 114466,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "trackmania": {
+    "cover": null,
+    "screenshots": []
+  },
+  "my-first-gran-turismo": {
+    "cover": {
+      "file": "my-first-gran-turismo/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202411/2507/f3e188254bee44e60aca10a86ce9184293fa24ba169e9249.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202411/2507/f3e188254bee44e60aca10a86ce9184293fa24ba169e9249.png",
+      "sourceSha256": "9c56fc44698beed4f2bbe33eb8ae390394270f3509c4a320c1a9f0622926995b",
+      "sourceBytes": 99781,
+      "sha256": "90af90f717e396e69884dd84aa99ae7487e375c98b47a138d04702728cc5ead4",
+      "bytes": 50906,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "mihawkos-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "afterglow-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "media-player-classic-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "genesis-plus-gx-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "snes9x-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "psteroid5-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "ratchet-clank-size-matters": {
+    "cover": null,
+    "screenshots": []
+  },
+  "formula-retro-racing-world-tour": {
+    "cover": null,
+    "screenshots": []
+  },
+  "little-nightmares-2": {
+    "cover": null,
+    "screenshots": []
+  },
+  "spider-man-remastered": {
+    "cover": {
+      "file": "spider-man-remastered/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/B2aUYFC0qUAkNnjbTHRyhrg3.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/B2aUYFC0qUAkNnjbTHRyhrg3.png",
+      "sourceSha256": "9fc82723dfebddeffe6cc09178884abdf55e02bc46fdb070741ad1aa83ccb877",
+      "sourceBytes": 114119,
+      "sha256": "4e2fd3c94420774a82dc92fbc7e4a0189e4838d370eaf4f3a51dc5f261f20a0a",
+      "bytes": 65988,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "sfiii-homebrew": {
+    "cover": null,
+    "screenshots": []
   }
 }

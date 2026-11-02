@@ -1,16 +1,16 @@
 # Self-hosted game media
 
-Updated 2026-10-30. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
+Updated 2026-11-03. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
 
 ## Sources and asset inventory
 
-- 212 game/edition pages have official/publisher artwork: 212 covers and 82 promotional screenshots (294 source assets).
+- 229 game/edition pages have official/publisher artwork: 229 covers and 82 promotional screenshots (311 source assets).
 - `packages/content/game-media.json` retains the original page, provider, image URLs and editorial review date.
 - `packages/content/game-media-local.json` maps each source to its exported file, actual download URL, source/export SHA-256, byte counts and actual dimensions.
 - Committed WebP masters live in `packages/ui/assets/games/<slug>/`. Astro imports them and emits hashed, same-origin images under `/_astro/`, including responsive variants. Production builds do not fetch remote media.
-- 137 entries still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
+- 159 entries still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
 
-The downloaded high-resolution source set totals 85.81 MiB; the exported masters total 37.61 MiB, a 56.2% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
+The downloaded high-resolution source set totals 89.32 MiB; the exported masters total 39.16 MiB, a 56.2% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
 
 ## Update command
 
@@ -33,7 +33,7 @@ Astro hashes the exported filenames. The existing Nginx `/_astro/` location supp
 
 `npm run check` verifies source-to-local correspondence, the full inventory, file existence, WebP format, dimensions, byte count and SHA-256. `npm run build` also checks every rendered image and responsive variant for a real same-origin WebP/SVG file, and checks OG/Twitter WebP references. The sitemap checks still compare the complete indexable inventory against both entrypoints.
 
-Before release, inspect a PlayStation gallery, Steam/publisher artwork, catalog cards and mobile thumbnails in the browser. After push-triggered deployment, compare the latest Git SHA on both Zeabur services, verify WebP MIME/cache headers and image/metadata dimensions, and inspect browser-loaded image origins. Preserve provenance and promotional/report distinctions during future updates.
+Before release, inspect a PlayStation gallery, Steam/publisher artwork, catalog cards and mobile thumbnails in the browser. After push-triggered deployment, verify both existing Coolify applications use the immutable main SHA images and both public revision.txt endpoints match that SHA, verify WebP MIME/cache headers and image/metadata dimensions, and inspect browser-loaded image origins. Preserve provenance and promotional/report distinctions during future updates.
 
 Blasphemous 2’s current publisher artwork carries The Third Sin branding. Its edition note explicitly preserves the report’s unknown content version and does not infer that expansion or Mea Culpa was tested. Artwork does not identify the reported region/PPSA.
 
@@ -66,3 +66,5 @@ The19 October addition includes five identity-checked covers. The generic EA FC 
 28 October adds15 visually reviewed PlayStation promotional covers. PlanetZoo18027/report18026, Medium03717/03718, Peppa03705/03706, MW3 art01649/report24263 and Human02431/report02429 remain explicit in all seven edition notes. Crimson Enhanced branding does not identify tested enhancement features; cross-generation advertising is not a PS5 report screenshot. Codex homebrew, Echoes and ProjectZero retain icons; the first guessed ProjectZero publisher page404 was recovered through the official04333 store listing for identity, without inventing artwork. All290 masters decode/hash successfully; originals83.55 MiB become37.23 MiB WebP.
 
 30 October adds four visually reviewed promotional covers: Layers of Fear, Jusant, Forspoken and Ghost Song. Layers artwork08681/report07265 and Forspoken03982/demo05700/report03984 stay explicit in all seven edition/research notes. Fifteen other new homebrew entries retain icons; author console demos are not AnyPS5 screenshots. reSOT retains its tested name/version despite current rePOP branding. The first Bible catalog URL404 and absent RuneScape catalog identity remain documented rather than borrowing another project’s artwork. All294 masters pass the existing decode/hash checks.
+
+3 November adds 17 visually reviewed PlayStation promotional covers (see game-media.json). Asterigos store PPSA08193 differs from tested PPSA08194; Thymesia store PPSA05214 differs from tested PPSA05213. Mortal Kombat 11 artwork is branded Ultimate and does not establish tested DLC. Little Nightmares II’s PS4-labelled publisher page and Spirit of the North’s generic redirect were rejected. Unverified commercial and homebrew art retains icons. No promotional picture is an AnyPS5 execution capture.
