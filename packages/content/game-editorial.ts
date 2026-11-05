@@ -8008,3 +8008,449 @@ Object.assign(editorial,{
   }
  }
 });
+
+// Reviewed edition profiles, 6 November 2026.
+Object.assign(editorial,{
+ "coffee-talk-episode-2": {
+  "overview": {
+   "en": "Customer dialogue, phone and recipes render after manual progression; the café counter reads 119.86 FPS. This is a short opening scene, not evidence of audio, saves or completion.",
+   "zh": "手动推进到顾客对话、手机与配方，咖啡馆计数119.86 FPS；仅短段开场，未验证声音、存档或通关。",
+   "ar": "تظهر محادثة الزبائن والهاتف والوصفات بعد التقدم اليدوي، والعداد 119.86 FPS؛ بداية قصيرة لا تثبت الصوت أو الحفظ أو الإكمال.",
+   "pt": "Diálogo, telefone e receitas após avanço manual; contador119,86 FPS no café. Início curto, sem áudio, saves ou conclusão validados.",
+   "de": "Kundendialog, Telefon und Rezepte nach manueller Eingabe, Zähler119,86 FPS. Kurzer Anfang; Ton, Speichern und Abschluss ungeprüft.",
+   "fr": "Dialogue, téléphone et recettes après progression manuelle ; compteur119,86 FPS au café. Début bref, son, sauvegarde et fin non vérifiés.",
+   "es": "Diálogo, teléfono y recetas tras avance manual; contador119,86 FPS en café. Inicio breve, sin verificar audio, guardado o final."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Promotional store package PPSA07052 differs from reported PPSA07053; artwork does not validate that region, DLC or Any PS5 rendering.",
+   "zh": "宣传商店包PPSA07052与实测PPSA07053不同，配图不验证该地区、DLC或AnyPS5渲染。",
+   "ar": "حزمة الصور PPSA07052 تختلف عن التقرير PPSA07053؛ لا تثبت المنطقة أو DLC أو رسم Any PS5.",
+   "pt": "Pacote promocionalPPSA07052 difere do testadoPPSA07053; arte não valida região/DLC/Any PS5.",
+   "de": "WerbepaketPPSA07052 unterscheidet sich vonPPSA07053; Bild kein Regions-/DLC-/Any PS5-Beleg.",
+   "fr": "Paquet promotionnelPPSA07052 distinct du rapportPPSA07053 ; image sans région/DLC/renduAny PS5 validés.",
+   "es": "Paquete promocionalPPSA07052 distinto dePPSA07053; arte no valida región/DLC/Any PS5."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "mandragora-ppsa26917": {
+  "overview": {
+   "en": "Character creation reaches Vindicator at 5.41 FPS; logos separately read 58.83. The first frame took about 200 s with busy USB storage. No combat or adventure was tested; do not compare unlike scenes or generalize that delay.",
+   "zh": "角色创建到Vindicator约5.41 FPS，标志另为58.83；繁忙USB存储下首帧约200秒。未测战斗或冒险，不混比场景或推广该延迟。",
+   "ar": "إنشاء Vindicator عند 5.41 FPS والشعارات 58.83 منفصلة. أول إطار نحو 200 ث مع USB مشغول؛ لا قتال أو مغامرة، ولا مقارنة مشاهد مختلفة أو تعميم التأخير.",
+   "pt": "Criação Vindicator a5,41 FPS; logótipos58,83 separados. Primeiro frame cerca200 s com USB ocupado; sem combate/aventura ou comparação entre cenas.",
+   "de": "Vindicator-Erstellung5,41 FPS, Logos separat58,83. Erstbild rund200 s bei belastetem USB; kein Kampf/Abenteuer, keine szenenfremden Vergleiche oder allgemeine Ladezeit.",
+   "fr": "Création Vindicator à5,41 FPS, logos séparés à58,83. Première image vers200 s sur USB chargé ; combat/aventure non testés, délai non généralisable.",
+   "es": "Creación Vindicator a5,41 FPS, logos separados58,83. Primera imagen unos200 s con USB ocupado; combate/aventura sin probar, demora no generalizable."
+  },
+  "genre": "rpg",
+  "editionNote": {
+   "en": "Promotional store package PPSA06960 differs from reported PPSA26917; artwork does not validate that region, DLC or Any PS5 rendering.",
+   "zh": "宣传商店包PPSA06960与实测PPSA26917不同，配图不验证该地区、DLC或AnyPS5渲染。",
+   "ar": "حزمة الصور PPSA06960 تختلف عن التقرير PPSA26917؛ لا تثبت المنطقة أو DLC أو رسم Any PS5.",
+   "pt": "Pacote promocionalPPSA06960 difere do testadoPPSA26917; arte não valida região/DLC/Any PS5.",
+   "de": "WerbepaketPPSA06960 unterscheidet sich vonPPSA26917; Bild kein Regions-/DLC-/Any PS5-Beleg.",
+   "fr": "Paquet promotionnelPPSA06960 distinct du rapportPPSA26917 ; image sans région/DLC/renduAny PS5 validés.",
+   "es": "Paquete promocionalPPSA06960 distinto dePPSA26917; arte no valida región/DLC/Any PS5."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "7-days-to-die": {
+  "overview": {
+   "en": "Only publisher logos are established. Presents stop at 665 around 114 s; the process remains alive. An earlier high counter is not gameplay performance, and no survival world is verified.",
+   "zh": "仅确认发行商标志，约114秒呈现计数停在665，进程仍在；早期高帧数不是游戏性能，未验证生存世界。",
+   "ar": "المثبت شعارات الناشر فقط؛ العروض تتوقف عند 665 قرب 114 ث مع بقاء العملية. العداد المبكر ليس أداء لعب ولا عالم بقاء مثبت.",
+   "pt": "Só logótipos; apresentações param em665 perto114 s com processo ativo. Contador inicial não é desempenho de jogo; mundo por validar.",
+   "de": "Nur Publisherlogos; Präsentationen stoppen bei665 um114 s, Prozess bleibt aktiv. Früher Zähler keine Spielleistung; Überlebenswelt ungeprüft.",
+   "fr": "Logos seuls ; présentations arrêtées à665 vers114 s, processus actif. Le compteur initial n’est pas une mesure du jeu ; monde non validé.",
+   "es": "Solo logos; presentaciones paran en665 hacia114 s, proceso activo. Contador inicial no mide juego; mundo sin validar."
+  },
+  "genre": "sandbox",
+  "editionNote": {
+   "en": "Promotional artwork identifies the advertised game, not the tested content version or Any PS5 output. Native PC and other-generation results remain separate.",
+   "zh": "宣传配图介绍发行游戏，不证明实测内容版本或AnyPS5画面；原生PC及其他世代结果分开。",
+   "ar": "الصور الترويجية للعبة المعلنة، لا نسخة الاختبار أو خرج Any PS5؛ PC والأجيال الأخرى منفصلة.",
+   "pt": "Arte promocional identifica o jogo anunciado, não conteúdo testado ou imagemAny PS5; PC e outras gerações separados.",
+   "de": "Werbebilder zeigen beworbenes Spiel, nicht getesteten Inhalt oderAny PS5-Ausgabe; PC/andere Generationen getrennt.",
+   "fr": "Art promotionnel du jeu annoncé, sans version testée ou renduAny PS5 ; PC/autres générations distincts.",
+   "es": "Arte promocional del juego anunciado, no versión probada ni salidaAny PS5; PC/otras generaciones aparte."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "poppy-playtime-chapter-1": {
+  "overview": {
+   "en": "Manual Play reaches the factory lobby, security and gift-shop view at 24.43 FPS; the menu is 60.04. Later puzzles, audio and saves are untested.",
+   "zh": "手动Play到工厂大厅、保安及礼品店视角24.43 FPS，菜单60.04；后续谜题、声音与存档未测。",
+   "ar": "Play اليدوي يبلغ ردهة المصنع والأمن والمتجر 24.43 FPS؛ القائمة 60.04. الألغاز اللاحقة والصوت والحفظ غير مختبرة.",
+   "pt": "Play manual chega ao átrio, segurança e loja a24,43 FPS; menu60,04. Puzzles posteriores, áudio e saves por testar.",
+   "de": "Manuelles Play erreicht Fabriklobby, Sicherheits-/Ladenansicht24,43 FPS; Menü60,04. Spätere Rätsel, Ton und Speichern ungeprüft.",
+   "fr": "Play manuel atteint hall, sécurité et boutique à24,43 FPS ; menu60,04. Énigmes suivantes, son et sauvegardes non testés.",
+   "es": "Play manual llega a vestíbulo, seguridad y tienda a24,43 FPS; menú60,04. Puzles posteriores, audio y guardado sin probar."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Promotional store package PPSA18454 differs from reported PPSA20591; artwork does not validate that region, DLC or Any PS5 rendering.",
+   "zh": "宣传商店包PPSA18454与实测PPSA20591不同，配图不验证该地区、DLC或AnyPS5渲染。",
+   "ar": "حزمة الصور PPSA18454 تختلف عن التقرير PPSA20591؛ لا تثبت المنطقة أو DLC أو رسم Any PS5.",
+   "pt": "Pacote promocionalPPSA18454 difere do testadoPPSA20591; arte não valida região/DLC/Any PS5.",
+   "de": "WerbepaketPPSA18454 unterscheidet sich vonPPSA20591; Bild kein Regions-/DLC-/Any PS5-Beleg.",
+   "fr": "Paquet promotionnelPPSA18454 distinct du rapportPPSA20591 ; image sans région/DLC/renduAny PS5 validés.",
+   "es": "Paquete promocionalPPSA18454 distinto dePPSA20591; arte no valida región/DLC/Any PS5."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "hoa": {
+  "overview": {
+   "en": "The leaf intro leads to the first meadow with beetle, bees and flowers at 59.94–59.95 FPS. An older build crashed in a Unity worker; no single responsible fix or whole-game result is established.",
+   "zh": "树叶片头后到甲虫、蜜蜂与花朵的首片草地59.94–59.95 FPS；旧构建曾在Unity线程崩溃，未隔离具体修复，也未覆盖全程。",
+   "ar": "مقدمة الورقة ثم المرج الأول بالحشرات والزهور 59.94–59.95 FPS. انهار بناء أقدم في Unity؛ لا إصلاح منفرد أو نتيجة لعبة كاملة مثبتة.",
+   "pt": "Intro da folha e primeiro prado com insetos/flores59,94–59,95 FPS. Build antigo falhava em Unity; sem correção isolada ou jogo completo.",
+   "de": "Blattintro und erste Wiese mit Insekten/Blumen59,94–59,95 FPS. Alter Build stürzte in Unity ab; kein isolierter Fix oder Ganzspielbeleg.",
+   "fr": "Intro de feuille puis première prairie avec insectes/fleurs59,94–59,95 FPS. Ancien crash Unity ; correctif isolé et jeu complet non établis.",
+   "es": "Intro de hoja y primer prado con insectos/flores59,94–59,95 FPS. Antes fallaba Unity; sin arreglo aislado ni juego completo."
+  },
+  "genre": "platform",
+  "editionNote": {
+   "en": "Promotional artwork identifies the advertised game, not the tested content version or Any PS5 output. Native PC and other-generation results remain separate.",
+   "zh": "宣传配图介绍发行游戏，不证明实测内容版本或AnyPS5画面；原生PC及其他世代结果分开。",
+   "ar": "الصور الترويجية للعبة المعلنة، لا نسخة الاختبار أو خرج Any PS5؛ PC والأجيال الأخرى منفصلة.",
+   "pt": "Arte promocional identifica o jogo anunciado, não conteúdo testado ou imagemAny PS5; PC e outras gerações separados.",
+   "de": "Werbebilder zeigen beworbenes Spiel, nicht getesteten Inhalt oderAny PS5-Ausgabe; PC/andere Generationen getrennt.",
+   "fr": "Art promotionnel du jeu annoncé, sans version testée ou renduAny PS5 ; PC/autres générations distincts.",
+   "es": "Arte promocional del juego anunciado, no versión probada ni salidaAny PS5; PC/otras generaciones aparte."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "platform-8": {
+  "overview": {
+   "en": "One present is logged but no game image is captured; a null write aborts near 61 s. Save/audio initialization is not gameplay, and the cause remains unknown.",
+   "zh": "记录一次呈现但无游戏画面捕获，约61秒空指针写入终止；存档／音频初始化不等于游戏过程，原因未知。",
+   "ar": "عرض واحد في السجل بلا صورة ملتقطة؛ كتابة NULL توقف قرب 61 ث. تهيئة الحفظ/الصوت ليست لعباً والسبب مجهول.",
+   "pt": "Um present sem imagem capturada; escrita nula aborta perto61 s. Inicialização de saves/áudio não prova jogo; causa desconhecida.",
+   "de": "Ein Present ohne erfasstes Spielbild; Null-Schreibzugriff um61 s. Speicher-/Audiostart kein Gameplay, Ursache offen.",
+   "fr": "Une présentation sans image capturée ; écriture nulle vers61 s. Initialisation son/sauvegarde sans jeu, cause inconnue.",
+   "es": "Un present sin imagen capturada; escritura nula hacia61 s. Inicializar audio/guardado no prueba juego; causa desconocida."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Promotional artwork identifies the advertised game, not the tested content version or Any PS5 output. Native PC and other-generation results remain separate.",
+   "zh": "宣传配图介绍发行游戏，不证明实测内容版本或AnyPS5画面；原生PC及其他世代结果分开。",
+   "ar": "الصور الترويجية للعبة المعلنة، لا نسخة الاختبار أو خرج Any PS5؛ PC والأجيال الأخرى منفصلة.",
+   "pt": "Arte promocional identifica o jogo anunciado, não conteúdo testado ou imagemAny PS5; PC e outras gerações separados.",
+   "de": "Werbebilder zeigen beworbenes Spiel, nicht getesteten Inhalt oderAny PS5-Ausgabe; PC/andere Generationen getrennt.",
+   "fr": "Art promotionnel du jeu annoncé, sans version testée ou renduAny PS5 ; PC/autres générations distincts.",
+   "es": "Arte promocional del juego anunciado, no versión probada ni salidaAny PS5; PC/otras generaciones aparte."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "the-exit-9": {
+  "overview": {
+   "en": "The first white corridor renders at 3.39 FPS after a 1.4 FPS menu. A cold shader watchdog stop is passed on a warm retry. This is The Exit 9, not The Exit 8; later exploration and completion are unverified.",
+   "zh": "1.4 FPS菜单后首条白走廊约3.39 FPS；冷缓存着色器超时在热重试通过。本条是The Exit 9，非The Exit 8，后续探索及通关未验。",
+   "ar": "الممر الأبيض الأول 3.39 FPS بعد قائمة 1.4؛ تجاوز إعادة دافئة توقف تجميع بارد. هذا The Exit 9 لا The Exit 8؛ الاستكشاف والنهاية مجهولان.",
+   "pt": "Primeiro corredor branco3,39 FPS após menu1,4; repetição quente passa watchdog frio. É The Exit 9; exploração posterior/fim por validar.",
+   "de": "Erster weißer Gang3,39 FPS nach Menü1,4; warmer Versuch überwindet kalten Shaderstopp. The Exit 9; spätere Erkundung/Abschluss ungeprüft.",
+   "fr": "Premier couloir blanc3,39 FPS après menu1,4 ; reprise chaude dépasse arrêt de compilation froide. The Exit 9 ; suite/fin non vérifiées.",
+   "es": "Primer corredor blanco3,39 FPS tras menú1,4; repetición caliente supera parada fría de shaders. The Exit 9; exploración/final pendientes."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "The report identifies The Exit 9 PPSA20955. Publisher identity remains unverified; do not attribute it to The Exit 8’s developer or reuse that game’s artwork.",
+   "zh": "报告标识The Exit 9 PPSA20955，发行方身份仍待验证；不归给The Exit 8作者，也不挪用其配图。",
+   "ar": "التقرير The Exit 9 PPSA20955 والناشر غير مؤكد؛ لا تنسبه لمطور The Exit 8 أو تستخدم صوره.",
+   "pt": "RelatórioThe Exit 9 PPSA20955, editor por verificar; não atribuir ao autor deThe Exit 8 nem usar arte deste.",
+   "de": "BerichtThe Exit 9 PPSA20955, Publisher ungeprüft; nicht The-Exit-8-Entwickler zuordnen/Bilder übernehmen.",
+   "fr": "RapportThe Exit 9 PPSA20955, éditeur non vérifié ; ne pas attribuer au créateur deThe Exit 8 ou reprendre son art.",
+   "es": "InformeThe Exit 9 PPSA20955, editor sin verificar; no atribuir al autor deThe Exit 8 ni usar su arte."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "subnautica": {
+  "overview": {
+   "en": "An animated title screen runs from 58.86 to 46.78 FPS without input. Menu response, underwater world, survival actions and saves are untested; Below Zero is a different title.",
+   "zh": "未输入时动态标题从58.86到46.78 FPS；菜单响应、水下世界、生存操作与存档未测，Below Zero是另一游戏。",
+   "ar": "عنوان متحرك 58.86 إلى 46.78 FPS بلا إدخال. استجابة القائمة والعالم والبقاء والحفظ غير مختبرة؛ Below Zero عنوان آخر.",
+   "pt": "Título animado58,86 a46,78 FPS sem input. Menu, mundo, sobrevivência e saves por testar; Below Zero é outro jogo.",
+   "de": "Animierter Titel58,86 bis46,78 FPS ohne Eingabe. Menüreaktion, Welt, Überleben und Speichern ungeprüft; Below Zero separat.",
+   "fr": "Titre animé58,86 à46,78 FPS sans entrée. Menu, monde, survie et sauvegarde non testés ; Below Zero distinct.",
+   "es": "Título animado58,86 a46,78 FPS sin entrada. Menú, mundo, supervivencia y guardado sin probar; Below Zero distinto."
+  },
+  "genre": "sandbox",
+  "editionNote": {
+   "en": "Promotional store package PPSA02452 differs from reported PPSA02453; artwork does not validate that region, DLC or Any PS5 rendering.",
+   "zh": "宣传商店包PPSA02452与实测PPSA02453不同，配图不验证该地区、DLC或AnyPS5渲染。",
+   "ar": "حزمة الصور PPSA02452 تختلف عن التقرير PPSA02453؛ لا تثبت المنطقة أو DLC أو رسم Any PS5.",
+   "pt": "Pacote promocionalPPSA02452 difere do testadoPPSA02453; arte não valida região/DLC/Any PS5.",
+   "de": "WerbepaketPPSA02452 unterscheidet sich vonPPSA02453; Bild kein Regions-/DLC-/Any PS5-Beleg.",
+   "fr": "Paquet promotionnelPPSA02452 distinct du rapportPPSA02453 ; image sans région/DLC/renduAny PS5 validés.",
+   "es": "Paquete promocionalPPSA02452 distinto dePPSA02453; arte no valida región/DLC/Any PS5."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "fatal-frame-maiden-ppsa04334": {
+  "overview": {
+   "en": "The NGS2 custom mastering-rack modules reject startup near 6 s, before a game frame. PR #14119 is a proposal, not a completed retest or audio/gameplay result.",
+   "zh": "约6秒在NGS2自定义mastering-rack模块拒绝启动，未出游戏帧；#14119是提议，非完成复测或音频／游戏结论。",
+   "ar": "توقف وحدات NGS2 mastering-rack قرب 6 ث قبل إطار. #14119 اقتراح لا إعادة اختبار أو صوت/لعب مثبت.",
+   "pt": "Módulos NGS2 mastering-rack recusam início perto6 s antes de imagem. #14119 é proposta, sem reteste ou áudio/jogo validado.",
+   "de": "NGS2-Mastering-Rack stoppt um6 s vor Spielbild. #14119 ist Vorschlag, kein Retest oder Ton-/Spielbeleg.",
+   "fr": "Modules NGS2 mastering-rack arrêtent vers6 s avant image. #14119 est proposé, sans retest ni son/jeu validé.",
+   "es": "NGS2 mastering-rack detiene hacia6 s antes de imagen. #14119 es propuesta, sin repetición ni audio/juego validado."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Promotional artwork identifies the advertised game, not the tested content version or Any PS5 output. Native PC and other-generation results remain separate.",
+   "zh": "宣传配图介绍发行游戏，不证明实测内容版本或AnyPS5画面；原生PC及其他世代结果分开。",
+   "ar": "الصور الترويجية للعبة المعلنة، لا نسخة الاختبار أو خرج Any PS5؛ PC والأجيال الأخرى منفصلة.",
+   "pt": "Arte promocional identifica o jogo anunciado, não conteúdo testado ou imagemAny PS5; PC e outras gerações separados.",
+   "de": "Werbebilder zeigen beworbenes Spiel, nicht getesteten Inhalt oderAny PS5-Ausgabe; PC/andere Generationen getrennt.",
+   "fr": "Art promotionnel du jeu annoncé, sans version testée ou renduAny PS5 ; PC/autres générations distincts.",
+   "es": "Arte promocional del juego anunciado, no versión probada ni salidaAny PS5; PC/otras generaciones aparte."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "saga-of-sins": {
+  "overview": {
+   "en": "Manual progression reaches Ulric dialogue in the church at 54.91 FPS; the stained-glass intro is 59.94. Combat and later levels are untested.",
+   "zh": "手动推进到教堂Ulric对话54.91 FPS，彩窗片头59.94；战斗与后续关卡未测。",
+   "ar": "التقدم اليدوي يبلغ حوار Ulric بالكنيسة 54.91 FPS؛ المقدمة 59.94. القتال والمراحل اللاحقة غير مختبرة.",
+   "pt": "Avanço manual chega a Ulric na igreja54,91 FPS; intro59,94. Combate e níveis posteriores por testar.",
+   "de": "Manuell bis Ulrics Kirchendialog54,91 FPS; Intro59,94. Kampf und spätere Level ungeprüft.",
+   "fr": "Progression manuelle au dialogue d’Ulric dans l’église54,91 FPS ; intro59,94. Combat et suite non testés.",
+   "es": "Avance manual a diálogo de Ulric en iglesia54,91 FPS; intro59,94. Combate y niveles posteriores sin probar."
+  },
+  "genre": "platform",
+  "editionNote": {
+   "en": "Promotional artwork identifies the advertised game, not the tested content version or Any PS5 output. Native PC and other-generation results remain separate.",
+   "zh": "宣传配图介绍发行游戏，不证明实测内容版本或AnyPS5画面；原生PC及其他世代结果分开。",
+   "ar": "الصور الترويجية للعبة المعلنة، لا نسخة الاختبار أو خرج Any PS5؛ PC والأجيال الأخرى منفصلة.",
+   "pt": "Arte promocional identifica o jogo anunciado, não conteúdo testado ou imagemAny PS5; PC e outras gerações separados.",
+   "de": "Werbebilder zeigen beworbenes Spiel, nicht getesteten Inhalt oderAny PS5-Ausgabe; PC/andere Generationen getrennt.",
+   "fr": "Art promotionnel du jeu annoncé, sans version testée ou renduAny PS5 ; PC/autres générations distincts.",
+   "es": "Arte promocional del juego anunciado, no versión probada ni salidaAny PS5; PC/otras generaciones aparte."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "disney-pixar-up": {
+  "overview": {
+   "en": "The PS5 classic reaches the first level with Carl/Russell HUD, movement and camera. A momentary 53 FPS counter under a 60 FPS cap is not an average; audio, checkpoints and level completion are untested.",
+   "zh": "PS5经典版到首关Carl／Russell HUD，移动与镜头有效；60限帧下瞬时约53 FPS非平均值，声音、检查点及完成关卡未测。",
+   "ar": "نسخة PS5 الكلاسيكية تبلغ المرحلة الأولى مع HUD وحركة وكاميرا. عداد 53 لحظي تحت حد 60 ليس متوسطاً؛ الصوت والحفظ وإنهاء المرحلة مجهولة.",
+   "pt": "Clássico PS5 chega ao primeiro nível com HUD, movimento e câmara. Cerca53 FPS instantâneos sob limite60 não são média; áudio/checkpoints/fim por testar.",
+   "de": "PS5-Klassiker erreicht erstes Level mit HUD, Bewegung/Kamera. Momentane53 bei Limit60 kein Mittelwert; Ton, Checkpoints und Levelabschluss ungeprüft.",
+   "fr": "Version classique PS5 atteint premier niveau, HUD, déplacement/caméra. Environ53 FPS instantanés sous plafond60, pas une moyenne ; son/checkpoints/fin non testés.",
+   "es": "Clásico PS5 llega al primer nivel, HUD, movimiento/cámara. Unos53 FPS instantáneos bajo límite60 no son media; audio/checkpoints/final sin probar."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Promotional artwork identifies the advertised game, not the tested content version or Any PS5 output. Native PC and other-generation results remain separate.",
+   "zh": "宣传配图介绍发行游戏，不证明实测内容版本或AnyPS5画面；原生PC及其他世代结果分开。",
+   "ar": "الصور الترويجية للعبة المعلنة، لا نسخة الاختبار أو خرج Any PS5؛ PC والأجيال الأخرى منفصلة.",
+   "pt": "Arte promocional identifica o jogo anunciado, não conteúdo testado ou imagemAny PS5; PC e outras gerações separados.",
+   "de": "Werbebilder zeigen beworbenes Spiel, nicht getesteten Inhalt oderAny PS5-Ausgabe; PC/andere Generationen getrennt.",
+   "fr": "Art promotionnel du jeu annoncé, sans version testée ou renduAny PS5 ; PC/autres générations distincts.",
+   "es": "Arte promocional del juego anunciado, no versión probada ni salidaAny PS5; PC/otras generaciones aparte."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "dead-of-darkness": {
+  "overview": {
+   "en": "Tested 3 November: default warm presentation plays from Moderate/new game into the apartment with movement, about six minutes near 60 FPS. Separate debug-capture settings crash before the intro; they do not invalidate the default run. Audio fidelity and completion are unverified.",
+   "zh": "11月3日默认热缓存呈现从Moderate新游戏到公寓并可移动，约六分钟接近60 FPS；独立调试捕获配置在片头前崩溃，不抹除默认结果。声音保真及通关未验。",
+   "ar": "اختبار 3 نوفمبر: العرض الافتراضي الدافئ من New Game إلى الشقة مع حركة، نحو 6 د قرب 60 FPS. إعدادات التقاط تشخيصية تنهار قبل المقدمة منفصلة؛ دقة الصوت والنهاية غير مؤكدة.",
+   "pt": "Teste 3 novembro: apresentação normal quente chega ao apartamento com movimento, cerca6min perto60 FPS. Captura de diagnóstico falha antes da intro separadamente; fidelidade de áudio/fim por validar.",
+   "de": "Test 3. November: Standardpfad mit warmem Cache bis Wohnung mit Bewegung, rund6min nahe60 FPS. Separater Diagnosecapture stürzt vor Intro ab; Tonqualität/Abschluss ungeprüft.",
+   "fr": "Test 3 novembre : présentation normale chaude jusqu’à l’appartement avec déplacement, environ6min près60 FPS. Capture de diagnostic échoue séparément avant intro ; son fidèle/fin non validés.",
+   "es": "Prueba3 noviembre: presentación normal caliente hasta apartamento con movimiento, unos6min cerca60 FPS. Captura diagnóstica falla aparte antes de intro; fidelidad de audio/final pendientes."
+  },
+  "genre": "adventure",
+  "editionNote": {
+   "en": "Promotional artwork identifies the advertised game, not the tested content version or Any PS5 output. Native PC and other-generation results remain separate.",
+   "zh": "宣传配图介绍发行游戏，不证明实测内容版本或AnyPS5画面；原生PC及其他世代结果分开。",
+   "ar": "الصور الترويجية للعبة المعلنة، لا نسخة الاختبار أو خرج Any PS5؛ PC والأجيال الأخرى منفصلة.",
+   "pt": "Arte promocional identifica o jogo anunciado, não conteúdo testado ou imagemAny PS5; PC e outras gerações separados.",
+   "de": "Werbebilder zeigen beworbenes Spiel, nicht getesteten Inhalt oderAny PS5-Ausgabe; PC/andere Generationen getrennt.",
+   "fr": "Art promotionnel du jeu annoncé, sans version testée ou renduAny PS5 ; PC/autres générations distincts.",
+   "es": "Arte promocional del juego anunciado, no versión probada ni salidaAny PS5; PC/otras generaciones aparte."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "spirit-of-the-island": {
+  "overview": {
+   "en": "With IME names entered, a beach/island and quest HUD appear around 330 s, about 31 FPS; movement and actions were not checked. One of three loads crashes in the heap. A later 1c8c0efc8c series has no such crash in four runs but still has separate MSAA-depth stops; this is not general stability.",
+   "zh": "IME输入名字后约330秒到海滩岛屿与任务HUD、约31 FPS，未测移动操作；三次加载一次堆崩溃。后续1c8c0efc8c四次无该崩溃但仍有独立MSAA深度终止，非普遍稳定证明。",
+   "ar": "بعد إدخال الأسماء تظهر الجزيرة و HUD قرب 330 ث ونحو 31 FPS؛ لا حركة مثبتة. انهيار heap في 1/3. لاحق 1c8c0efc8c بلا الانهيار في 4 لكن توقف MSAA منفصل؛ لا استقرار عام.",
+   "pt": "Nomes IME levam à ilha/HUD perto330 s e31 FPS; movimento por testar. Heap falha1/3. Série1c8c0efc8c sem esse crash em4, mas stops MSAA separados; estabilidade não provada.",
+   "de": "Nach IME-Namen Insel/HUD um330 s etwa31 FPS, Bewegung ungeprüft. Heapabsturz1/3. Später1c8c0efc8c viermal ohne diesen Crash, separate MSAA-Stopps bleiben; kein Stabilitätsbeweis.",
+   "fr": "Noms IME puis île/HUD vers330 s à31 FPS, mouvement non testé. Crash heap1/3. Série1c8c0efc8c sans ce crash sur4 mais arrêts MSAA distincts ; stabilité non prouvée.",
+   "es": "Nombres IME y luego isla/HUD hacia330 s a31 FPS, movimiento sin probar. Fallo heap1/3. Serie1c8c0efc8c sin ese fallo en4 pero paradas MSAA aparte; estabilidad no probada."
+  },
+  "genre": "sandbox",
+  "editionNote": {
+   "en": "Promotional store package PPSA13935 differs from reported PPSA13934; artwork does not validate that region, DLC or Any PS5 rendering.",
+   "zh": "宣传商店包PPSA13935与实测PPSA13934不同，配图不验证该地区、DLC或AnyPS5渲染。",
+   "ar": "حزمة الصور PPSA13935 تختلف عن التقرير PPSA13934؛ لا تثبت المنطقة أو DLC أو رسم Any PS5.",
+   "pt": "Pacote promocionalPPSA13935 difere do testadoPPSA13934; arte não valida região/DLC/Any PS5.",
+   "de": "WerbepaketPPSA13935 unterscheidet sich vonPPSA13934; Bild kein Regions-/DLC-/Any PS5-Beleg.",
+   "fr": "Paquet promotionnelPPSA13935 distinct du rapportPPSA13934 ; image sans région/DLC/renduAny PS5 validés.",
+   "es": "Paquete promocionalPPSA13935 distinto dePPSA13934; arte no valida región/DLC/Any PS5."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "age-of-mythology-retold": {
+  "overview": {
+   "en": "A local stack reaches a music-playing title screen at 0.48 FPS; no controller or match was tested. It uses main 1e658521a0 with #15327/#15656/#15563(first revision)/#7508/#15659/#15611/#15655; component heads are not all supplied. Stock main GPU-hangs. Clock-20 behavior remains unmeasured on PS5; closing a proposal does not make it available.",
+   "zh": "本地组合到带音乐标题0.48 FPS，未测手柄或对局；main 1e658521a0叠加#15327／#15656／#15563首版／#7508／#15659／#15611／#15655，部分head缺失。纯main GPU挂起，PS5时钟20行为仍未知，提议关闭不等于可用。",
+   "ar": "مجموعة محلية تبلغ عنواناً مع موسيقى 0.48 FPS، بلا تحكم أو مباراة. main 1e658521a0 مع سبعة PR؛ بعض المراجعات غائبة. main الأصلي يعلق GPU، وسلوك clock20 على PS5 غير مقاس؛ إغلاق اقتراح لا يعني توفره.",
+   "pt": "Stack local chega ao título com música0,48 FPS, sem comando/partida. main 1e658521a0 mais sete PR, heads incompletos. Main original bloqueia GPU; clock20 PS5 por medir, proposta fechada não é funcionalidade publicada.",
+   "de": "Lokaler Stack erreicht Titel mit Musik0,48 FPS, kein Controller/Match. main 1e658521a0 plus sieben PR, Heads teils unbekannt. Stock-main mit GPU-Hang; PS5-Clock20 ungemessen, geschlossener Vorschlag keine Verfügbarkeit.",
+   "fr": "Stack local atteint titre musical0,48 FPS, sans manette/partie. main 1e658521a0 et sept PR, heads incomplets. Main original bloque GPU ; clock20 PS5 non mesuré, proposition fermée sans disponibilité validée.",
+   "es": "Stack local llega a título con música0,48 FPS, sin mando/partida. main 1e658521a0 más siete PR, heads incompletos. Main original cuelga GPU; clock20 PS5 sin medir, propuesta cerrada no implica disponibilidad."
+  },
+  "genre": "strategy",
+  "editionNote": {
+   "en": "Promotional artwork identifies the advertised game, not the tested content version or Any PS5 output. Native PC and other-generation results remain separate.",
+   "zh": "宣传配图介绍发行游戏，不证明实测内容版本或AnyPS5画面；原生PC及其他世代结果分开。",
+   "ar": "الصور الترويجية للعبة المعلنة، لا نسخة الاختبار أو خرج Any PS5؛ PC والأجيال الأخرى منفصلة.",
+   "pt": "Arte promocional identifica o jogo anunciado, não conteúdo testado ou imagemAny PS5; PC e outras gerações separados.",
+   "de": "Werbebilder zeigen beworbenes Spiel, nicht getesteten Inhalt oderAny PS5-Ausgabe; PC/andere Generationen getrennt.",
+   "fr": "Art promotionnel du jeu annoncé, sans version testée ou renduAny PS5 ; PC/autres générations distincts.",
+   "es": "Arte promocional del juego anunciado, no versión probada ni salidaAny PS5; PC/otras generaciones aparte."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "vlc-homebrew": {
+  "overview": {
+   "en": "Welcome and Playback settings respond at 119.87 FPS. Latin text renders but some non-Latin text is tiny or unreadable. No media file was opened, so playback is untested.",
+   "zh": "欢迎与Playback设置可响应119.87 FPS；拉丁字正常，部分非拉丁文字过小或难辨；未打开媒体文件，不证明播放有效。",
+   "ar": "الترحيب وإعدادات Playback تستجيب 119.87 FPS؛ بعض النص غير اللاتيني غير مقروء. لم يُفتح ملف وسائط، فالتشغيل غير مختبر.",
+   "pt": "Boas-vindas/Playback respondem119,87 FPS; parte do texto não latino ilegível. Nenhum ficheiro aberto; reprodução por testar.",
+   "de": "Willkommen/Playback reagieren119,87 FPS; nichtlateinischer Text teils unlesbar. Keine Mediendatei geöffnet, Wiedergabe ungeprüft.",
+   "fr": "Accueil/Playback répondent119,87 FPS ; texte non latin parfois illisible. Aucun fichier ouvert, lecture non testée.",
+   "es": "Bienvenida/Playback responden119,87 FPS; texto no latino a veces ilegible. Sin archivo abierto, reproducción sin probar."
+  },
+  "genre": "utility",
+  "editionNote": {
+   "en": "This community PS5 homebrew/utility is not a commercial PS5 compatibility test. No official promotional image has been verified.",
+   "zh": "此社区PS5自制项目／工具不构成商业PS5兼容测试，尚无已验证官方配图。",
+   "ar": "أداة/مشروع PS5 منزلي لا اختبار تجاري؛ لا صورة رسمية مؤكدة.",
+   "pt": "Homebrew/utilitário PS5 não valida jogos comerciais; sem imagem oficial verificada.",
+   "de": "PS5-Homebrew/Tool kein kommerzieller Kompatibilitätstest; kein offizielles Bild geprüft.",
+   "fr": "Homebrew/outil PS5 sans compatibilité commerciale ; aucune image officielle vérifiée.",
+   "es": "Homebrew/utilidad PS5 no valida juegos comerciales; sin imagen oficial verificada."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "arkanoid-eternal-battle-ppsa06328": {
+  "overview": {
+   "en": "This separate regional release reaches offline Retro’s brick field and GAME OVER after a scripted round near 59.94 FPS. Paddle movement/score during the blind-scripted round, audio and online modes are unverified; Eternal Battle is marked inaccessible offline.",
+   "zh": "这个独立地区版到离线Retro砖块场与脚本一局后的GAME OVER约59.94 FPS；盲脚本期间球拍移动／分数、声音及在线未验，Eternal Battle离线不可用。",
+   "ar": "النسخة الإقليمية تصل Retro وميدان الطوب و GAME OVER بعد جولة آلية قرب 59.94 FPS. حركة المضرب/النتيجة والصوت/الإنترنت غير مؤكدة؛ Eternal Battle غير متاح دون اتصال.",
+   "pt": "Edição regional chega ao Retro/campo/GAME OVER após ronda scriptada59,94 FPS. Movimento/pontos durante script cego, áudio/online por validar; Eternal Battle indisponível offline.",
+   "de": "Regionale Fassung erreicht Retro-Spielfeld/GAME OVER nach Blindskript-Runde59,94 FPS. Paddel/Score/Ton/Online ungeprüft; Eternal Battle offline gesperrt.",
+   "fr": "Édition régionale atteint Retro/terrain/GAME OVER après partie scriptée59,94 FPS. Raquette/score pendant script aveugle, son/online non validés ; Eternal Battle inaccessible hors ligne.",
+   "es": "Edición regional llega a Retro/campo/GAME OVER tras ronda con script59,94 FPS. Pala/puntos durante script ciego, audio/online pendientes; Eternal Battle no disponible offline."
+  },
+  "genre": "puzzle",
+  "editionNote": {
+   "en": "Promotional artwork identifies the advertised game, not the tested content version or Any PS5 output. Native PC and other-generation results remain separate.",
+   "zh": "宣传配图介绍发行游戏，不证明实测内容版本或AnyPS5画面；原生PC及其他世代结果分开。",
+   "ar": "الصور الترويجية للعبة المعلنة، لا نسخة الاختبار أو خرج Any PS5؛ PC والأجيال الأخرى منفصلة.",
+   "pt": "Arte promocional identifica o jogo anunciado, não conteúdo testado ou imagemAny PS5; PC e outras gerações separados.",
+   "de": "Werbebilder zeigen beworbenes Spiel, nicht getesteten Inhalt oderAny PS5-Ausgabe; PC/andere Generationen getrennt.",
+   "fr": "Art promotionnel du jeu annoncé, sans version testée ou renduAny PS5 ; PC/autres générations distincts.",
+   "es": "Arte promocional del juego anunciado, no versión probada ni salidaAny PS5; PC/otras generaciones aparte."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ },
+ "fsr4-showcase-homebrew": {
+  "overview": {
+   "en": "Two catalog-homebrew launches on plain main stop at first-use compute-pipeline waits, before any frame: cold at 10.6 s, warm at 20.1 s. Passing READY/CHAPTER logs does not prove a visible scene. Later FAST_F32 diagnostics still hit another expensive packed-integer program; no retail-game or correct-fix claim.",
+   "zh": "目录自制项目纯main两次在首次计算管线等待处停止，未呈现帧：冷10.6秒、热20.1秒；READY／CHAPTER日志非可见场景。后续FAST_F32诊断仍卡另一整数程序，不作商业游戏或正确修复结论。",
+   "ar": "تشغيلان منزليان main يتوقفان عند انتظار pipeline قبل إطار:10.6 ث بارد و 20.1 دافئ. سجلات READY/CHAPTER ليست صورة؛ FAST_F32 يصل عائقاً آخر، لا إصلاح أو لعبة تجارية.",
+   "pt": "Dois arranques homebrew main param antes de imagem por pipeline:10,6 s frio/20,1quente. READY/CHAPTER não provam cena; FAST_F32 chega a outro custo, sem fix/jogo comercial.",
+   "de": "ZweiHomebrew-main-Starts vor Bild an Pipelinewait: kalt10,6 s/warm20,1. READY/CHAPTER kein Szenenbeleg; FAST_F32 trifft weiteren Aufwand, kein Fix/Retailbeleg.",
+   "fr": "Deux lancements homebrew main avant image au pipeline : froid10,6 s/chaud20,1. READY/CHAPTER sans scène ; FAST_F32 rencontre autre coût, sans fix/jeu commercial.",
+   "es": "Dos inicios homebrew main antes de imagen por pipeline: frío10,6 s/caliente20,1. READY/CHAPTER no prueban escena; FAST_F32 llega a otro coste, sin arreglo/juego comercial."
+  },
+  "genre": "homebrew",
+  "editionNote": {
+   "en": "This community PS5 homebrew/utility is not a commercial PS5 compatibility test. No official promotional image has been verified.",
+   "zh": "此社区PS5自制项目／工具不构成商业PS5兼容测试，尚无已验证官方配图。",
+   "ar": "أداة/مشروع PS5 منزلي لا اختبار تجاري؛ لا صورة رسمية مؤكدة.",
+   "pt": "Homebrew/utilitário PS5 não valida jogos comerciais; sem imagem oficial verificada.",
+   "de": "PS5-Homebrew/Tool kein kommerzieller Kompatibilitätstest; kein offizielles Bild geprüft.",
+   "fr": "Homebrew/outil PS5 sans compatibilité commerciale ; aucune image officielle vérifiée.",
+   "es": "Homebrew/utilidad PS5 no valida juegos comerciales; sin imagen oficial verificada."
+  },
+  "related": [
+   "astro-bot",
+   "dead-cells"
+  ],
+  "names": {}
+ }
+});

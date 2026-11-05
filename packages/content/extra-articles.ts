@@ -763,3 +763,199 @@ extraArticles.find(a=>a.slug==="troubleshooting")!.sections.push({
  ]
 });
 extraArticles.find(a=>a.slug==="troubleshooting")!.reviewed="2026-11-03";
+
+// Source documentation reviewed 6 November 2026.
+extraArticles.find(a=>a.slug==="troubleshooting")!.sections.push({
+ "id": "main-local-run-report",
+ "title": {
+  "en": "Local run reports and missing milestones",
+  "zh": "本地运行报告与缺失里程碑",
+  "ar": "تقارير تشغيل محلية ومراحل مفقودة",
+  "pt": "Relatórios locais e marcos ausentes",
+  "de": "Lokale Laufberichte und fehlende Meilensteine",
+  "fr": "Rapports locaux et jalons absents",
+  "es": "Informes locales e hitos ausentes"
+ },
+ "body": [
+  {
+   "en": "Reviewed main writes anyps5-report.json locally on normal exit, with build/title/frame and stop metadata; this is later than v0.1.4. Killed, crashed or aborted runs produce no report. Windows requires guest exit/_exit; entry return is insufficient. Linux/Windows do not record loaded/started, so absence is not failure. Windows/macOS paths are not runtime-validated by the upstream document. Redaction is a filter, not a privacy guarantee: inspect before manually sharing. Nothing is uploaded automatically; a first present does not prove gameplay.",
+   "zh": "复核main在正常exit时本地写anyps5-report.json，含构建／游戏／帧数及停止信息，晚于v0.1.4。杀进程、崩溃及abort不出报告；Windows须客体exit／_exit，入口返回无报告。Linux／Windows不记loaded／started，缺项不等于失败。上游文档说明Windows／macOS路径未做运行验证。脱敏只是过滤，手动分享前须阅读；不会自动上传，首个present亦非游戏过程证明。",
+   "ar": "main يكتب anyps5-report.json محلياً عند exit الطبيعي، بعد v0.1.4. القتل/الانهيار/abort لا يكتب؛ Windows يحتاج exit/_exit لا مجرد عودة. Linux/Windows لا يسجلان loaded/started، فغيابهما ليس فشلاً. مسارا Windows/macOS غير مختبرين عملياً وفق الوثيقة. التنقيح ليس ضماناً؛ افحص قبل المشاركة اليدوية، بلا رفع تلقائي، وأول present لا يثبت اللعب.",
+   "pt": "Main escreve anyps5-report.json local noexit normal, apósv0.1.4. Matar/crash/abort não gera relatório; Windows exigeexit/_exit, não retorno. Linux/Windows não registamloaded/started: ausência não é falha. Documento não valida execução Windows/macOS. Redação não garante privacidade: leia antes de partilhar manualmente. Nada é enviado; primeiro present não prova jogo.",
+   "de": "Main schreibt anyps5-report.json lokal bei normalemexit, nachv0.1.4. Kill/Crash/abort ohne Bericht; Windows braucht Gast-exit/_exit, keine bloße Rückkehr. Linux/Windows erfassenloaded/started nicht: Fehlen kein Fehler. Windows/macOS laut Dokument nicht laufzeitgeprüft. Redaktion keine Datenschutzgarantie: vor manuellem Teilen prüfen. Kein Upload; erstesPresent kein Gameplaybeleg.",
+   "fr": "Main écrit anyps5-report.json localement àexit normal, aprèsv0.1.4. Kill/crash/abort sans rapport ; Windows exigeexit/_exit invité, pas simple retour. Linux/Windows ne consignent pasloaded/started : absence sans échec. Windows/macOS non validés en exécution selon document. Filtrage sans garantie : relire avant partage manuel. Aucun envoi automatique ; premierPresent sans jeu validé.",
+   "es": "Main escribe anyps5-report.json local alexit normal, posterior av0.1.4. Kill/fallo/abort sin informe; Windows exigeexit/_exit huésped, no simple retorno. Linux/Windows no registranloaded/started: ausencia no es fallo. Windows/macOS sin validar en ejecución según documento. Filtrado sin garantía: leer antes de compartir manualmente. Nada se sube; primerPresent no prueba juego."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · 8ce5134fbd",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8ce5134fbd59338cd4a4d04887539ad2e5677c9f/docs/user/run-report.md"
+  }
+ ]
+});
+extraArticles.find(a=>a.slug==="troubleshooting")!.sections.push({
+ "id": "verify-original-resource-layout",
+ "title": {
+  "en": "Check the game’s resource layout before renderer diagnosis",
+  "zh": "先检查原始资源布局，再判断渲染故障",
+  "ar": "تحقق من الملفات قبل تشخيص الرسم",
+  "pt": "Verificar recursos antes do renderizador",
+  "de": "Dateilayout vor Rendererdiagnose prüfen",
+  "fr": "Vérifier les ressources avant le rendu",
+  "es": "Revisar recursos antes del renderizador"
+ },
+ "body": [
+  {
+   "en": "A converted executable does not guarantee a complete game layout. Astro Bot’s latest report restores missing args.txt and app0/data mapping without changing code; Sea of Stars and Smurfs reports restore files hidden in a repack. Compare with your own original title layout and preserve originals. Do not copy another title’s command line or treat promotional images, present counts or resource-audit success as gameplay validation. Version/environment details still belong to each report.",
+   "zh": "可执行文件转换成功不保证游戏布局完整。Astro Bot新报告补回args.txt与app0/data映射，无需改代码；Sea of Stars及Smurfs补回重打包隐藏文件。应与自己的原始游戏布局核对并保留原件，不复制别作命令行，也不把宣传图、呈现计数或资源审计成功当游戏验证；版本环境仍按各报告记录。",
+   "ar": "تحويل التنفيذي لا يضمن اكتمال الملفات. تقرير Astro Bot يستعيد args.txt وربط app0/data بلا كود؛ Sea of Stars/Smurfs يستعيدان ملفات repack. قارن بأصلك واحفظه، لا تنسخ إعداد عنوان آخر ولا تعتبر الصور/العداد/التدقيق لعباً. النسخة والبيئة لكل تقرير.",
+   "pt": "Converter executável não garante layout completo. Astro Bot repõeargs.txt/app0/data sem código; Sea of Stars/Smurfs recuperam ficheiros de repack. Compare com o seu original e preserve-o. Não copie comandos de outro título nem confunda arte/contador/auditoria com jogo; versões/ambientes separados.",
+   "de": "Konvertierte EXE garantiert keine vollständigen Dateien. Astro Bot stelltargs.txt/app0/data ohne Codefix wieder her; Sea of Stars/Smurfs fehlende Repack-Dateien. Mit eigenen Originalen vergleichen/bewahren. Keine fremden Titelargumente oder Werbung/Zähler/Audit als Spielbeleg; Version/Umgebung getrennt.",
+   "fr": "EXE converti ne garantit pas tous les fichiers. Astro Bot rétablitargs.txt/app0/data sans code ; Sea of Stars/Smurfs fichiers du repack. Comparer à ses originaux et les préserver. Ne pas copier arguments d’un autre titre ni confondre art/compteur/audit avec jeu ; versions/environnements distincts.",
+   "es": "EXE convertido no garantiza archivos completos. Astro Bot restauraargs.txt/app0/data sin código; Sea of Stars/Smurfs archivos de repack. Compara con tus originales y consérvalos. No copies argumentos ajenos ni confundas arte/contador/auditoría con juego; versiones/entornos separados."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · 8ce5134fbd",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8ce5134fbd59338cd4a4d04887539ad2e5677c9f/docs/dev/GAME_TESTING.md"
+  }
+ ]
+});
+extraArticles.find(a=>a.slug==="troubleshooting")!.sections.push({
+ "id": "main-omit-unused-missing-dependencies",
+ "title": {
+  "en": "Optional Linux dependency omission has narrow conditions",
+  "zh": "Linux依赖省略有严格前提",
+  "ar": "حذف تبعيات Linux بشروط محددة",
+  "pt": "Omissão Linux com condições restritas",
+  "de": "Linux-Abhängigkeiten nur gezielt auslassen",
+  "fr": "Omission Linux sous conditions précises",
+  "es": "Omitir dependencias Linux con límites"
+ },
+ "body": [
+  {
+   "en": "Main’s --omit-unavailable-dependencies omits only an unavailable bundled dependency with no imports, no converted provider and no copy in any --rpath directory. All those directories must exist during conversion. Without the flag the dependency remains and is noted. Use it only with all system libraries already in rpath: an omitted library found later through LD_LIBRARY_PATH will not load. This is not permission to discard real imports or a universal startup fix.",
+   "zh": "main的--omit-unavailable-dependencies只省略没有导入、没有转换后提供者、且所有--rpath目录中均无文件的缺失捆绑依赖；转换时目录必须存在。不启用则保留并提示。须确保所有系统库已在rpath，省略后即使LD_LIBRARY_PATH后来找到也不加载；不能删真实导入，也非通用启动修复。",
+   "ar": "الخيار يحذف تبعية مفقودة بلا واردات أو مزود محول أو ملف في rpath؛ كل المجلدات موجودة وقت التحويل. بدونه تبقى مع ملاحظة. يلزم وجود كل مكتبات النظام في rpath، فالعثور لاحقاً عبر LD_LIBRARY_PATH لا يعيدها. ليس حذف واردات حقيقية أو إصلاحاً عاماً.",
+   "pt": "Opção só omite dependência ausente sem imports/provedor convertido/cópia emrpath; diretórios devem existir. Sem flag mantém e avisa. Todas as libs devem estar emrpath: LD_LIBRARY_PATH posterior não a carrega. Não elimina imports reais nem resolve todos os arranques.",
+   "de": "Flag lässt nur fehlende Abhängigkeit ohne Imports/konvertierten Provider/Kopie inrpath aus; Verzeichnisse müssen existieren. Ohne Flag behalten+Hinweis. Alle Systemlibs inrpath nötig; spätereLD_LIBRARY_PATH-Funde werden nicht geladen. Keine echten Imports löschen, kein Universalfix.",
+   "fr": "Option omet seulement dépendance absente sans imports/fournisseur converti/copie dansrpath ; dossiers existants requis. Sans flag elle reste avec note. Toutes bibliothèques système enrpath ; trouvée plus tard parLD_LIBRARY_PATH ne charge pas. Ni suppression d’imports réels ni fix universel.",
+   "es": "Opción solo omite dependencia ausente sin imports/proveedor convertido/copia enrpath; directorios deben existir. Sin flag queda con aviso. Todas las libs en rpath; LD_LIBRARY_PATH posterior no la carga. No elimina imports reales ni arregla cualquier inicio."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · 8ce5134fbd",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8ce5134fbd59338cd4a4d04887539ad2e5677c9f/docs/user/USAGE.md"
+  }
+ ]
+});
+extraArticles.find(a=>a.slug==="troubleshooting")!.sections.push({
+ "id": "main-included-addon-labels",
+ "title": {
+  "en": "List only add-ons included in your copy",
+  "zh": "只登记自己副本包含的附加内容",
+  "ar": "سجل الإضافات الموجودة في نسختك فقط",
+  "pt": "Listar só extras incluídos na sua cópia",
+  "de": "Nur enthaltene Add-ons eintragen",
+  "fr": "Lister les extensions de sa copie",
+  "es": "Listar solo complementos de tu copia"
+ },
+ "body": [
+  {
+   "en": "Later main reads anyps5-entitlements.ini beside the executable, or the ANYPS5_ENTITLEMENTS path: one included add-on label per line, up to 16 characters; # and ; begin comments. Unlisted labels are reported not installed. Some titles wait rather than proceed without an expected add-on. A loading spinner alone does not identify missing data, and declaring a label neither supplies content nor proves a DLC test. Keep this source behavior separate from v0.1.4.",
+   "zh": "后续main读取可执行文件旁anyps5-entitlements.ini或ANYPS5_ENTITLEMENTS路径，每行登记自己副本包含的一个附加内容label、最多16字符，#及;为注释。未列出按未安装报告，部分游戏会等待。加载转圈不能独自证明缺数据，登记label既不提供内容也不证明DLC测试；与v0.1.4分别记录。",
+   "ar": "main يقرأ ملف entitlements بجوار التنفيذي أو المسار المحدد: label واحد لإضافة نسختك/سطر حتى 16 حرفاً،# و; تعليقات. غير المدرج غير مثبت وبعض العناوين تنتظر. الدوران لا يشخص البيانات، وال label لا يوفر محتوى أو يثبت DLC؛ افصله عن v0.1.4.",
+   "pt": "Main lê entitlements junto ao EXE/ou caminho configurado: label de extra incluído/linha até16caracteres;# e; comentários. Não listado=ausente, certos títulos esperam. Spinner não diagnostica dados; label não fornece conteúdo nem valida DLC. Separar dev0.1.4.",
+   "de": "Main liest entitlements neben EXE/konfiguriertem Pfad: ein enthaltenes Add-on-Label/Zeile bis16Zeichen,#/; Kommentare. Ungelistet=nicht installiert, manche Spiele warten. Spinner keine Datendiagnose; Label liefert keinen Inhalt/kein DLC-Test. Vonv0.1.4 trennen.",
+   "fr": "Main lit entitlements près EXE/chemin configuré : label d’extension incluse/ligne jusqu’à16caractères,#/; commentaires. Non listé=non installé, certains titres attendent. Spinner sans diagnostic ; label sans contenu ou validation DLC. Distinct dev0.1.4.",
+   "es": "Main lee entitlements junto EXE/ruta configurada: label de complemento incluido/línea hasta16caracteres,#/; comentarios. No listado=no instalado, algunos esperan. Spinner no diagnostica datos; label no suministra contenido ni valida DLC. Separar dev0.1.4."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · 8ce5134fbd",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8ce5134fbd59338cd4a4d04887539ad2e5677c9f/docs/user/USAGE.md"
+  }
+ ]
+});
+for(const article of extraArticles){if(article.slug==="troubleshooting")article.reviewed="2026-11-06";}
+
+// Progress and evidence review, 6 November 2026.
+extraArticles.find(a=>a.slug==="progress")!.sections.find(s=>s.id==="counts")!.body[0]={
+ "en": "The 6 November source review records 10275/37973 declared library functions (27.06%) and decoder recognition of 1166/1166 instructions. The denominator changes as declarations are catalogued; these are neither complete behavioral validation nor a game compatibility rate. v0.1.4 remains the 30 October release snapshot, separate from newer main and local integrations.",
+ "zh": "11月6日来源复核为10275／37973声明库函数（27.06%），解码识别1166／1166；分母会随声明入库变化，两项都不是完整行为验证或游戏兼容率。v0.1.4仍为10月30日发行快照，与新main及本地整合分开。",
+ "ar": "مراجعة 6 نوفمبر:10275/37973 وظيفة معلنة 27.06٪ والتعرف 1166/1166 تعليمة. يتغير المقام بجرد التصريحات؛ ليست صحة سلوك كاملة أو توافق ألعاب. v0.1.4 لقطة 30 أكتوبر منفصلة عن main والتكاملات.",
+ "pt": "Revisão 6 novembro:10275/37973funções declaradas27,06% e1166/1166instruções reconhecidas. Denominador muda com inventário; não valida comportamento completo/compatibilidade. v0.1.4 é snapshot30 outubro, distinto de main/integrações.",
+ "de": "Prüfung 6. November:10275/37973deklarierte Funktionen27,06% und1166/1166erkannte Instruktionen. Nenner ändert sich mit Katalog; keine vollständige Verhaltens-/Spielkompatibilitätsprüfung. v0.1.4 bleibt30.-Oktober-Snapshot, getrennt vonmain/lokal.",
+ "fr": "Revue 6 novembre :10275/37973fonctions déclarées27,06% et1166/1166instructions reconnues. Dénominateur évolue avec inventaire ; ni comportement complet ni taux de compatibilité. v0.1.4 reste snapshot30 octobre distinct demain/local.",
+ "es": "Revisión 6 noviembre:10275/37973funciones declaradas27,06% y1166/1166instrucciones reconocidas. Denominador cambia con inventario; no valida todo comportamiento ni compatibilidad. v0.1.4 sigue snapshot30 octubre separado de main/local."
+};
+extraArticles.find(a=>a.slug==="updates")!.sections.unshift({
+ "id": "review-2026-11-06",
+ "title": {
+  "en": "6 November 2026 / evidence and setup review",
+  "zh": "2026年11月6日／证据与配置复核",
+  "ar": "6 نوفمبر 2026 / مراجعة الأدلة والإعداد",
+  "pt": "6 novembro2026 / evidência e configuração",
+  "de": "6. November2026 / Belege und Einrichtung",
+  "fr": "6 novembre2026 / preuves et réglages",
+  "es": "6 noviembre2026 / evidencias y ajustes"
+ },
+ "body": [
+  {
+   "en": "v0.1.4 is unchanged. New reports separate Astro Bot resource-layout recovery, Hamster races with a later Custom-mode crash, Dead of Darkness’s bounded opening, and Darkest Dungeon II’s first battle from older failures. Yōtei’s private 22.6–24 presents per ten seconds are only 2.26–2.4 FPS; withdrawn Code Violet gains stay withdrawn. New main run-report/input options do not retroactively belong to the release.",
+   "zh": "v0.1.4未变。新报告分别记录Astro Bot资源布局恢复、仓鼠比赛及后续自定义崩溃、Dead of Darkness有限开场与Darkest Dungeon II首战，旧失败仍保留。Yōtei私有每十秒22.6–24次仅为2.26–2.4 FPS，Code Violet撤回增益不再引用。main新报告／输入选项不倒写入发行版。",
+   "ar": "v0.1.4 لم يتغير. تقارير جديدة تفصل ملفات Astro Bot وسباقات Hamster مع انهيار Custom وبداية Dead of Darkness وقتال Darkest DungeonII عن الفشل القديم. Yōtei الخاص 22.6–24 عرض/10 ث=2.26–2.4 FPS؛ مكسب Code Violet مسحوب. خيارات main الجديدة ليست ضمن الإصدار.",
+   "pt": "v0.1.4 igual. Relatos separam ficheiros Astro Bot, corridasHamster/crashCustom, inícioDead of Darkness e batalhaDarkest DungeonII das falhas antigas. Yōtei privado22,6–24 presents/10 s=2,26–2,4 FPS; ganhoCode Violet retirado. Opçõesmain não pertencem retroativamente ao release.",
+   "de": "v0.1.4 unverändert. Neue Berichte trennen Astro-Bot-Dateifix, Hamsterrennen/Customcrash, Dead-of-Darkness-Anfang und Darkest-DungeonII-Kampf von alten Fehlern. Yōtei privat22,6–24Presents/10 s=2,26–2,4 FPS; Code-Violet-Gewinn zurückgezogen. NeueMain-Optionen nicht rückwirkend imRelease.",
+   "fr": "v0.1.4 inchangé. Rapports séparent fichiers Astro Bot, coursesHamster/crashCustom, débutDead of Darkness et combatDarkest DungeonII des anciens échecs. Yōtei privé22,6–24présentations/10 s=2,26–2,4 FPS ; gainCode Violet retiré. Optionsmain non rétroactives au release.",
+   "es": "v0.1.4 igual. Informes separan archivos Astro Bot, carrerasHamster/falloCustom, inicioDead of Darkness y batallaDarkest DungeonII de fallos antiguos. Yōtei privado22,6–24 presents/10 s=2,26–2,4 FPS; gananciaCode Violet retirada. Opcionesmain no retroactivas al release."
+  }
+ ],
+ "links": [
+  {
+   "label": "v0.1.4",
+   "url": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.4"
+  },
+  {
+   "label": "Astro Bot resource-layout correction",
+   "url": "https://github.com/boykopovar/AnyPS5/discussions/357#discussioncomment-19379771"
+  }
+ ]
+});
+for(const article of extraArticles){if(["progress","updates"].includes(article.slug))article.reviewed="2026-11-06";}
+
+// Local run report FAQ, 6 November 2026.
+extraArticles.find(a=>a.slug==="faq")!.sections.push({
+ "id": "main-local-run-report",
+ "title": {
+  "en": "Local run reports and missing milestones",
+  "zh": "本地运行报告与缺失里程碑",
+  "ar": "تقارير تشغيل محلية ومراحل مفقودة",
+  "pt": "Relatórios locais e marcos ausentes",
+  "de": "Lokale Laufberichte und fehlende Meilensteine",
+  "fr": "Rapports locaux et jalons absents",
+  "es": "Informes locales e hitos ausentes"
+ },
+ "body": [
+  {
+   "en": "Reviewed main writes anyps5-report.json locally on normal exit, with build/title/frame and stop metadata; this is later than v0.1.4. Killed, crashed or aborted runs produce no report. Windows requires guest exit/_exit; entry return is insufficient. Linux/Windows do not record loaded/started, so absence is not failure. Windows/macOS paths are not runtime-validated by the upstream document. Redaction is a filter, not a privacy guarantee: inspect before manually sharing. Nothing is uploaded automatically; a first present does not prove gameplay.",
+   "zh": "复核main在正常exit时本地写anyps5-report.json，含构建／游戏／帧数及停止信息，晚于v0.1.4。杀进程、崩溃及abort不出报告；Windows须客体exit／_exit，入口返回无报告。Linux／Windows不记loaded／started，缺项不等于失败。上游文档说明Windows／macOS路径未做运行验证。脱敏只是过滤，手动分享前须阅读；不会自动上传，首个present亦非游戏过程证明。",
+   "ar": "main يكتب anyps5-report.json محلياً عند exit الطبيعي، بعد v0.1.4. القتل/الانهيار/abort لا يكتب؛ Windows يحتاج exit/_exit لا مجرد عودة. Linux/Windows لا يسجلان loaded/started، فغيابهما ليس فشلاً. مسارا Windows/macOS غير مختبرين عملياً وفق الوثيقة. التنقيح ليس ضماناً؛ افحص قبل المشاركة اليدوية، بلا رفع تلقائي، وأول present لا يثبت اللعب.",
+   "pt": "Main escreve anyps5-report.json local noexit normal, apósv0.1.4. Matar/crash/abort não gera relatório; Windows exigeexit/_exit, não retorno. Linux/Windows não registamloaded/started: ausência não é falha. Documento não valida execução Windows/macOS. Redação não garante privacidade: leia antes de partilhar manualmente. Nada é enviado; primeiro present não prova jogo.",
+   "de": "Main schreibt anyps5-report.json lokal bei normalemexit, nachv0.1.4. Kill/Crash/abort ohne Bericht; Windows braucht Gast-exit/_exit, keine bloße Rückkehr. Linux/Windows erfassenloaded/started nicht: Fehlen kein Fehler. Windows/macOS laut Dokument nicht laufzeitgeprüft. Redaktion keine Datenschutzgarantie: vor manuellem Teilen prüfen. Kein Upload; erstesPresent kein Gameplaybeleg.",
+   "fr": "Main écrit anyps5-report.json localement àexit normal, aprèsv0.1.4. Kill/crash/abort sans rapport ; Windows exigeexit/_exit invité, pas simple retour. Linux/Windows ne consignent pasloaded/started : absence sans échec. Windows/macOS non validés en exécution selon document. Filtrage sans garantie : relire avant partage manuel. Aucun envoi automatique ; premierPresent sans jeu validé.",
+   "es": "Main escribe anyps5-report.json local alexit normal, posterior av0.1.4. Kill/fallo/abort sin informe; Windows exigeexit/_exit huésped, no simple retorno. Linux/Windows no registranloaded/started: ausencia no es fallo. Windows/macOS sin validar en ejecución según documento. Filtrado sin garantía: leer antes de compartir manualmente. Nada se sube; primerPresent no prueba juego."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · 8ce5134fbd",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8ce5134fbd59338cd4a4d04887539ad2e5677c9f/docs/user/run-report.md"
+  }
+ ]
+});
+extraArticles.find(a=>a.slug==="faq")!.reviewed="2026-11-06";

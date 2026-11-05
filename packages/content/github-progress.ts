@@ -1666,3 +1666,161 @@ for(const note of [
   }
  }
 ]){developmentNotes[developmentNotes.findIndex(old=>old.number===note.number)]=note;}
+
+// Source and merge boundaries reviewed 6 November 2026.
+for(const note of [
+ {
+  "number": 11611,
+  "games": [
+   "hamster-playground",
+   "ghost-song",
+   "art-of-rally",
+   "far-changing-tides"
+  ],
+  "title": {
+   "en": "HTTP/1.x merged, async waits still need evidence",
+   "zh": "HTTP/1.x已合并，异步等待仍需证据",
+   "ar": "دمج HTTP/1.x وانتظار async يحتاج دليلاً",
+   "pt": "HTTP/1.x integrado, async por verificar",
+   "de": "HTTP/1.x integriert, Async-Waits weiter prüfen",
+   "fr": "HTTP/1.x fusionné, attentes async à vérifier",
+   "es": "HTTP/1.x integrado, esperas async por verificar"
+  },
+  "summary": {
+   "en": "PR #11611 merged on 4 November as 57d3815776; #11586 merged earlier. This is later than v0.1.4. Fresh pinned Hamster/Ghost Song main reports are separate from older composed FAR tests. Async #11630 remains open, and a zero-timeout WaitAsync stop does not establish console blocking/polling semantics or online play.",
+   "zh": "#11611于11月4日以57d3815776合并，#11586此前已合并，均晚于v0.1.4。新仓鼠／Ghost Song固定main与旧FAR组合分别记录。异步#11630仍开放，零超时WaitAsync阻碍不证明主机阻塞／轮询语义或在线游玩。",
+   "ar": "دُمج#11611 في 4 نوفمبر 57d3815776 و#11586 قبله، بعد v0.1.4. main الجديد Hamster/Ghost Song منفصل عن FAR المركب القديم. #11630 مفتوح و WaitAsync صفر لا يثبت سلوك PS5 أو اللعب الشبكي.",
+   "pt": "#11611 integrado4 novembro57d3815776,#11586 antes, apósv0.1.4. Novos mainHamster/Ghost Song separados deFAR composto antigo. #11630 aberto, WaitAsync zero sem semântica PS5/online validada.",
+   "de": "#11611 am4. November57d3815776 integriert,#11586 früher, nachv0.1.4. NeueMain-Hamster/Ghost-Song-Berichte getrennt von altemFAR-Stack. #11630 offen, WaitAsync-null kein PS5-/Onlinebeleg.",
+   "fr": "#11611 fusionné4 novembre57d3815776,#11586 auparavant, aprèsv0.1.4. NouveauxmainHamster/Ghost Song distincts deFAR ancien composé. #11630 ouvert, WaitAsync zéro sans sémantique PS5/online validée.",
+   "es": "#11611 integrado4 noviembre57d3815776,#11586 antes, trasv0.1.4. NuevosmainHamster/Ghost Song separados deFAR compuesto antiguo. #11630 abierto, WaitAsync cero sin semántica PS5/online validada."
+  }
+ },
+ {
+  "number": 15466,
+  "games": [
+   "darkest-dungeon-ii",
+   "spirit-of-the-island",
+   "contra-operation-galuga",
+   "goat-simulator-3"
+  ],
+  "title": {
+   "en": "Dropped stale depth results have a scoped benefit",
+   "zh": "丢弃过期深度结果有局部收益",
+   "ar": "إسقاط عمق قديم بفائدة محددة",
+   "pt": "Descartar profundidade antiga tem efeito limitado",
+   "de": "Alte Depth-Daten verwerfen hilft gezielt",
+   "fr": "Abandon de profondeur périmée : effet limité",
+   "es": "Descartar profundidad antigua ayuda con límites"
+  },
+  "summary": {
+   "en": "Merged 3 November as 5a20baa0cc, after v0.1.4. New Windows main reports pass Darkest Dungeon II’s first battle and reduce one Spirit heap-crash class, but Spirit retains a distinct D32S8 publication stop and Goat still crashes. Contra’s six-per-arm comparison supports the memory-lifetime fix without proving all gameplay or general stability.",
+   "zh": "11月3日以5a20baa0cc合并，晚于v0.1.4。新Windows main打过Darkest Dungeon II首战，并减少Spirit一类堆崩溃；Spirit仍有独立D32S8发布终止，Goat仍崩溃。Contra每组六次支持内存生命周期修复，不证明全部游戏或普遍稳定。",
+   "ar": "دُمج 3 نوفمبر 5a20baa0cc بعد v0.1.4. Windows main يتجاوز أول قتال DDII ويقلل فئة heapSpirit، لكن D32S8 باق و Goat ينهار. مقارنة Contra6/ذراع تدعم إصلاح العمر لا استقراراً عاماً.",
+   "pt": "Integrado 3 novembro5a20baa0cc apósv0.1.4. Windows main passa primeira batalhaDDII/reduz uma falhaSpirit; D32S8Spirit e crashGoat persistem. Contra6/arm apoia lifetime, não estabilidade geral.",
+   "de": "Am3. November5a20baa0cc nachv0.1.4 integriert. Windows-main schafftDDII-Kampf/reduziert Spirit-Heapfehler, D32S8Spirit/Goatcrash bleiben. Contra6/Arm stützt Lifetimefix, keine allgemeine Stabilität.",
+   "fr": "Fusionné 3 novembre5a20baa0cc aprèsv0.1.4. Windows main passe combatDDII/réduit crashSpirit ; D32S8Spirit/Goatcrash persistent. Contra6/bras soutient lifetime, sans stabilité générale.",
+   "es": "Integrado 3 noviembre5a20baa0cc trasv0.1.4. Windows main pasa batallaDDII/reduce falloSpirit; D32S8Spirit/Goatcrash siguen. Contra6/brazo apoya lifetime, no estabilidad general."
+  }
+ },
+ {
+  "number": 15935,
+  "games": [
+   "sonic-unleashed-recompiled"
+  ],
+  "title": {
+   "en": "A merge followed by a revert is not shipped support",
+   "zh": "合并后又回退，不等于已交付支持",
+   "ar": "دمج ثم تراجع ليس دعماً متاحاً",
+   "pt": "Integrar e reverter não é suporte entregue",
+   "de": "Merge mit Revert ist keine verfügbare Unterstützung",
+   "fr": "Fusion puis retrait sans prise en charge livrée",
+   "es": "Merge y reversión no equivalen a soporte"
+  },
+  "summary": {
+   "en": "Native-depth PR #6973 merged on 5 November, then #15935 reverted it as acac7c8541 after regressions. Replacement proposals and synthetic GPU passes remain separate from the pinned Sonic fork gameplay report. No new game/FPS result is established by refreshing those component tests.",
+   "zh": "原生深度#6973于11月5日合并，随后回归使#15935以acac7c8541回退。替代提案及合成GPU通过与固定Sonic分支游戏报告分开，组件复测不生成新游戏／FPS结果。",
+   "ar": "دُمج#6973 ثم ألغاه#15935 في 5 نوفمبر acac7c8541 بعد تراجعات. البدائل واختبارات GPU منفصلة عن لعب Sonic المثبت؛ لا لعبة/FPS جديد بتحديث المكونات.",
+   "pt": "#6973 integrou e#15935 reverteu5 novembroacac7c8541 após regressões. Propostas/testes GPU distintos do Sonic em fork; sem novo jogo/FPS por testes componentes.",
+   "de": "#6973 am5. November integriert, dann#15935acac7c8541 wegen Regressionen zurück. Ersatz/GPU tests getrennt vom Sonic-Forklauf; kein neuer Spiel-/FPS-Beleg.",
+   "fr": "#6973 intégré puis#15935acac7c8541 retire5 novembre après régressions. Alternatives/tests GPU distincts du Sonic fork ; aucun nouveau jeu/FPS.",
+   "es": "#6973 integrado y#15935acac7c8541 revierte5 noviembre por regresiones. Alternativas/tests GPU aparte de Sonic fork; sin nuevo juego/FPS."
+  }
+ },
+ {
+  "number": 15656,
+  "games": [
+   "age-of-mythology-retold",
+   "star-wars-galactic-racer"
+  ],
+  "title": {
+   "en": "Closed clock workaround, console behavior unmeasured",
+   "zh": "时钟绕过已关闭，主机行为未测",
+   "ar": "حل الساعة مغلق وسلوك PS5 غير مقاس",
+   "pt": "Workaround de relógio fechado, PS5 por medir",
+   "de": "Clock-Workaround geschlossen, PS5 ungemessen",
+   "fr": "Contournement horloge fermé, PS5 non mesuré",
+   "es": "Workaround reloj cerrado, PS5 sin medir"
+  },
+  "summary": {
+   "en": "PR #15656 closed without merging. Age of Mythology and Galactic Racer’s local runs still depend on that experimental clock-20 handling; they are not stock-main results. #15725 requests a real PS5 clock_gettime measurement. API model tests or closing the PR do not prove a released implementation or correct game timing.",
+   "zh": "#15656关闭未合并；Age of Mythology及Galactic Racer本地报告仍依赖实验时钟20处理，非纯main。#15725请求PS5真实clock_gettime测量；API模型测试或PR关闭不证明正式实现或正确游戏时钟。",
+   "ar": "#15656 أغلق بلا دمج؛ الجولات المحلية ما زالت تحتاج clock20 التجريبي وليست main. #15725 يطلب قياس PS5. نموذج API/إغلاق PR ليس تنفيذاً منشوراً أو توقيت لعبة صحيحاً.",
+   "pt": "#15656 fechado sem merge; ensaios locais dependem clock20 experimental, não main. #15725 pede medição PS5. ModeloAPI/fecho não valida implementação publicada/relógio do jogo.",
+   "de": "#15656 ungemergt geschlossen; lokale Läufe brauchen experimentelleClock20, kein main. #15725 fordert PS5-Messung. API-Modell/Schließen kein Release-/Timingbeleg.",
+   "fr": "#15656 fermé non fusionné ; essais locaux dépendent clock20 expérimental, pas main. #15725 demande mesure PS5. ModèleAPI/clôture sans implémentation publiée ou timing validé.",
+   "es": "#15656 cerrado sin merge; pruebas locales requierenclock20 experimental, no main. #15725 pide medición PS5. ModeloAPI/cierre no valida implementación publicada/tiempo correcto."
+  }
+ },
+ {
+  "number": 14139,
+  "games": [
+   "evil-inside"
+  ],
+  "title": {
+   "en": "Linux dependency omission is opt-in",
+   "zh": "Linux依赖省略须显式启用",
+   "ar": "حذف تبعية Linux اختياري",
+   "pt": "Omissão Linux exige opção",
+   "de": "Linux-Abhängigkeit nur mit Opt-in auslassen",
+   "fr": "Omission Linux sur option",
+   "es": "Omisión Linux requiere opción"
+  },
+  "summary": {
+   "en": "Merged 3 November as 7af9b1c691, after v0.1.4. The flag omits only unavailable unused bundled dependencies under checked rpath conditions. Evil Inside’s earlier patched result keeps its exact test composition; the merge alone is not a new scene or full-game test.",
+   "zh": "11月3日以7af9b1c691合并，晚于v0.1.4；选项仅在检查rpath前提下省略缺失且未使用的捆绑依赖。Evil Inside旧补丁报告保留准确组合，合并本身不是新场景或全流程测试。",
+   "ar": "دُمج 3 نوفمبر 7af9b1c691 بعد v0.1.4؛ يحذف تبعيات غائبة غير مستخدمة بشروط rpath. تجربة Evil Inside القديمة تحتفظ ببنائها؛ الدمج ليس مشهداً أو لعبة كاملة.",
+   "pt": "Integrado 3 novembro7af9b1c691 apósv0.1.4; omite dependências ausentes/não usadas sob condiçõesrpath. Evil Inside mantém composição testada, merge não cria cena/jogo completo.",
+   "de": "Am3. November7af9b1c691 nachv0.1.4 integriert; nur fehlende ungenutzte Abhängigkeiten unterrpath-Bedingungen. Evil-Inside-Test behält Stack; Merge kein neuer Szenen-/Ganzspieltest.",
+   "fr": "Fusionné 3 novembre7af9b1c691 aprèsv0.1.4 ; dépendances absentes/inutilisées sous conditionsrpath. Evil Inside garde composition testée ; fusion sans nouvelle scène/jeu complet.",
+   "es": "Integrado 3 noviembre7af9b1c691 trasv0.1.4; dependencias ausentes/no usadas bajo condicionesrpath. Evil Inside conserva composición probada; merge no crea escena/juego completo."
+  }
+ },
+ {
+  "number": 11183,
+  "games": [
+   "oxide-room-104",
+   "trek-to-yomi",
+   "gamedec-definitive-edition",
+   "infliction-extended-cut"
+  ],
+  "title": {
+   "en": "Exact shader semantics versus diagnostic shortcuts",
+   "zh": "精确着色器语义与诊断捷径",
+   "ar": "دقة المظلل مقابل اختصارات التشخيص",
+   "pt": "Semântica exata e atalhos de diagnóstico",
+   "de": "Exakte Shadersemantik und Diagnoseabkürzungen",
+   "fr": "Sémantique exacte et raccourcis diagnostiques",
+   "es": "Semántica exacta y atajos diagnósticos"
+  },
+  "summary": {
+   "en": "Trek To Yomi’s proposed NaN probe shortcut was withdrawn after counterexamples; FAST_F32 changes semantics. Gamedec and Infliction show different #4287 outcomes, so one title cannot justify a universal setting. Oxide Room’s newer LUT diagnosis does not demonstrate a visible room or higher compatibility. Source-only analysis remains separate from game tests.",
+   "zh": "Trek To Yomi的NaN探测捷径被反例推翻后撤回，FAST_F32会改语义；Gamedec与Infliction的#4287结果不同，单作不能推出通用设置。Oxide Room新LUT排查不证明可见房间或更高兼容性，源码分析与游戏实测分开。",
+   "ar": "سُحب اختصار NaN بعد أمثلة مضادة، و FAST_F32 يغير السلوك. نتائج#4287 تختلف بين لعبتين فلا إعداد عام. تشخيص LUT في Oxide Room لا يثبت غرفة أو توافقاً؛ التحليل منفصل.",
+   "pt": "Atalho NaN retirado após contraexemplos, FAST_F32 altera semântica. #4287 difere entre títulos, sem opção universal. DiagnósticoLUT deOxide não prova quarto/compatibilidade; análise separada.",
+   "de": "NaN-Abkürzung nach Gegenbeispielen zurückgezogen, FAST_F32 ändert Semantik. #4287 je Titel anders, kein Universalsetting. Oxide-LUT-Diagnose kein Raum-/Kompatibilitätsbeleg; Analyse separat.",
+   "fr": "Raccourci NaN retiré après contre-exemples, FAST_F32 change sémantique. #4287 diffère selon titre, sans réglage universel. DiagnosticLUT Oxide sans pièce/compatibilité validée ; analyse distincte.",
+   "es": "Atajo NaN retirado por contraejemplos, FAST_F32 cambia semántica. #4287 difiere por título, sin ajuste universal. DiagnósticoLUT Oxide no prueba habitación/compatibilidad; análisis aparte."
+  }
+ }
+]){const index=developmentNotes.findIndex(old=>old.number===note.number);if(index<0)developmentNotes.unshift(note);else developmentNotes[index]=note;}

@@ -419,3 +419,217 @@ for(const article of articles){if(["guides/windows","guides/linux","guides/build
   }
  ]
 });}
+
+// Source documentation reviewed 6 November 2026.
+for(const article of articles){if([
+ "start",
+ "guides/windows",
+ "guides/linux",
+ "guides/build"
+].includes(article.slug)){article.sections.push({
+ "id": "main-local-run-report",
+ "title": {
+  "en": "Local run reports and missing milestones",
+  "zh": "本地运行报告与缺失里程碑",
+  "ar": "تقارير تشغيل محلية ومراحل مفقودة",
+  "pt": "Relatórios locais e marcos ausentes",
+  "de": "Lokale Laufberichte und fehlende Meilensteine",
+  "fr": "Rapports locaux et jalons absents",
+  "es": "Informes locales e hitos ausentes"
+ },
+ "body": [
+  {
+   "en": "Reviewed main writes anyps5-report.json locally on normal exit, with build/title/frame and stop metadata; this is later than v0.1.4. Killed, crashed or aborted runs produce no report. Windows requires guest exit/_exit; entry return is insufficient. Linux/Windows do not record loaded/started, so absence is not failure. Windows/macOS paths are not runtime-validated by the upstream document. Redaction is a filter, not a privacy guarantee: inspect before manually sharing. Nothing is uploaded automatically; a first present does not prove gameplay.",
+   "zh": "复核main在正常exit时本地写anyps5-report.json，含构建／游戏／帧数及停止信息，晚于v0.1.4。杀进程、崩溃及abort不出报告；Windows须客体exit／_exit，入口返回无报告。Linux／Windows不记loaded／started，缺项不等于失败。上游文档说明Windows／macOS路径未做运行验证。脱敏只是过滤，手动分享前须阅读；不会自动上传，首个present亦非游戏过程证明。",
+   "ar": "main يكتب anyps5-report.json محلياً عند exit الطبيعي، بعد v0.1.4. القتل/الانهيار/abort لا يكتب؛ Windows يحتاج exit/_exit لا مجرد عودة. Linux/Windows لا يسجلان loaded/started، فغيابهما ليس فشلاً. مسارا Windows/macOS غير مختبرين عملياً وفق الوثيقة. التنقيح ليس ضماناً؛ افحص قبل المشاركة اليدوية، بلا رفع تلقائي، وأول present لا يثبت اللعب.",
+   "pt": "Main escreve anyps5-report.json local noexit normal, apósv0.1.4. Matar/crash/abort não gera relatório; Windows exigeexit/_exit, não retorno. Linux/Windows não registamloaded/started: ausência não é falha. Documento não valida execução Windows/macOS. Redação não garante privacidade: leia antes de partilhar manualmente. Nada é enviado; primeiro present não prova jogo.",
+   "de": "Main schreibt anyps5-report.json lokal bei normalemexit, nachv0.1.4. Kill/Crash/abort ohne Bericht; Windows braucht Gast-exit/_exit, keine bloße Rückkehr. Linux/Windows erfassenloaded/started nicht: Fehlen kein Fehler. Windows/macOS laut Dokument nicht laufzeitgeprüft. Redaktion keine Datenschutzgarantie: vor manuellem Teilen prüfen. Kein Upload; erstesPresent kein Gameplaybeleg.",
+   "fr": "Main écrit anyps5-report.json localement àexit normal, aprèsv0.1.4. Kill/crash/abort sans rapport ; Windows exigeexit/_exit invité, pas simple retour. Linux/Windows ne consignent pasloaded/started : absence sans échec. Windows/macOS non validés en exécution selon document. Filtrage sans garantie : relire avant partage manuel. Aucun envoi automatique ; premierPresent sans jeu validé.",
+   "es": "Main escribe anyps5-report.json local alexit normal, posterior av0.1.4. Kill/fallo/abort sin informe; Windows exigeexit/_exit huésped, no simple retorno. Linux/Windows no registranloaded/started: ausencia no es fallo. Windows/macOS sin validar en ejecución según documento. Filtrado sin garantía: leer antes de compartir manualmente. Nada se sube; primerPresent no prueba juego."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · 8ce5134fbd",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8ce5134fbd59338cd4a4d04887539ad2e5677c9f/docs/user/run-report.md"
+  }
+ ]
+});article.reviewed="2026-11-06";}}
+for(const article of articles){if([
+ "guides/input"
+].includes(article.slug)){article.sections.push({
+ "id": "main-per-title-input-profiles",
+ "title": {
+  "en": "Per-game bindings override only named settings",
+  "zh": "逐游戏配置只覆盖列出的设置",
+  "ar": "ملف اللعبة يبدل الإعدادات المذكورة فقط",
+  "pt": "Perfis por jogo substituem só o indicado",
+  "de": "Spielprofile überschreiben nur genannte Werte",
+  "fr": "Profils par jeu : seuls les réglages cités changent",
+  "es": "Perfiles por juego cambian solo lo indicado"
+ },
+ "body": [
+  {
+   "en": "Later main reads anyps5-input.<TITLEID>.ini after the shared input file, beside that file or ANYPS5_INPUT_CONFIG’s target. Only listed actions/settings override the shared configuration; other titles keep their bindings. IDs allow letters, digits, underscore and hyphen. Invalid lines report profile path and line. Keep the actual build pin: this is not established in v0.1.4’s attached input guide.",
+   "zh": "后续main在共享输入文件之后读取同目录anyps5-input.<TITLEID>.ini；ANYPS5_INPUT_CONFIG指定文件时也以其目录为准。只覆盖列出动作／设置，其他游戏不受影响。ID允许字母、数字、下划线和连字符；错误报告文件与行号。保留实际构建，此项未在v0.1.4附带输入指南中确立。",
+   "ar": "main اللاحق يقرأ anyps5-input.<TITLEID>.ini بعد الملف المشترك وبجواره، أو بجوار هدف ANYPS5_INPUT_CONFIG. يستبدل المذكور فقط ولا يغير الألعاب الأخرى. ID حروف/أرقام/_/-، والخطأ يذكر الملف والسطر. احتفظ بالبناء؛ ليس مثبتاً في مرفق v0.1.4.",
+   "pt": "Main lê anyps5-input.<TITLEID>.ini após e ao lado do ficheiro comum/ANYPS5_INPUT_CONFIG. Só ações/opções listadas substituem; outros jogos mantêm definições. ID permite letras/dígitos/_/-; erros indicam ficheiro/linha. Guarde o pin, ausente do guia anexov0.1.4.",
+   "de": "Main liest anyps5-input.<TITLEID>.ini nach/neben gemeinsamer Datei/ANYPS5_INPUT_CONFIG. Nur genannte Aktionen/Werte ersetzen, andere Spiele bleiben. ID erlaubt Buchstaben/Ziffern/_/-; Fehler mit Datei/Zeile. Buildpin behalten, nicht imv0.1.4-Anhang belegt.",
+   "fr": "Main lit anyps5-input.<TITLEID>.ini après/à côté du fichier commun/ANYPS5_INPUT_CONFIG. Seuls éléments cités remplacent, autres jeux inchangés. ID lettres/chiffres/_/-, erreur avec fichier/ligne. Garder le pin, absent du guide jointv0.1.4.",
+   "es": "Main lee anyps5-input.<TITLEID>.ini después/junto al común/ANYPS5_INPUT_CONFIG. Solo acciones/valores listados reemplazan; otros juegos conservan ajustes. ID letras/dígitos/_/-, errores con archivo/línea. Guarda pin, ausente de guía adjuntav0.1.4."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · 8ce5134fbd",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8ce5134fbd59338cd4a4d04887539ad2e5677c9f/docs/user/INPUT_MAPPING.md"
+  }
+ ]
+});article.reviewed="2026-11-06";}}
+for(const article of articles){if([
+ "start",
+ "guides/windows",
+ "guides/linux"
+].includes(article.slug)){article.sections.push({
+ "id": "verify-original-resource-layout",
+ "title": {
+  "en": "Check the game’s resource layout before renderer diagnosis",
+  "zh": "先检查原始资源布局，再判断渲染故障",
+  "ar": "تحقق من الملفات قبل تشخيص الرسم",
+  "pt": "Verificar recursos antes do renderizador",
+  "de": "Dateilayout vor Rendererdiagnose prüfen",
+  "fr": "Vérifier les ressources avant le rendu",
+  "es": "Revisar recursos antes del renderizador"
+ },
+ "body": [
+  {
+   "en": "A converted executable does not guarantee a complete game layout. Astro Bot’s latest report restores missing args.txt and app0/data mapping without changing code; Sea of Stars and Smurfs reports restore files hidden in a repack. Compare with your own original title layout and preserve originals. Do not copy another title’s command line or treat promotional images, present counts or resource-audit success as gameplay validation. Version/environment details still belong to each report.",
+   "zh": "可执行文件转换成功不保证游戏布局完整。Astro Bot新报告补回args.txt与app0/data映射，无需改代码；Sea of Stars及Smurfs补回重打包隐藏文件。应与自己的原始游戏布局核对并保留原件，不复制别作命令行，也不把宣传图、呈现计数或资源审计成功当游戏验证；版本环境仍按各报告记录。",
+   "ar": "تحويل التنفيذي لا يضمن اكتمال الملفات. تقرير Astro Bot يستعيد args.txt وربط app0/data بلا كود؛ Sea of Stars/Smurfs يستعيدان ملفات repack. قارن بأصلك واحفظه، لا تنسخ إعداد عنوان آخر ولا تعتبر الصور/العداد/التدقيق لعباً. النسخة والبيئة لكل تقرير.",
+   "pt": "Converter executável não garante layout completo. Astro Bot repõeargs.txt/app0/data sem código; Sea of Stars/Smurfs recuperam ficheiros de repack. Compare com o seu original e preserve-o. Não copie comandos de outro título nem confunda arte/contador/auditoria com jogo; versões/ambientes separados.",
+   "de": "Konvertierte EXE garantiert keine vollständigen Dateien. Astro Bot stelltargs.txt/app0/data ohne Codefix wieder her; Sea of Stars/Smurfs fehlende Repack-Dateien. Mit eigenen Originalen vergleichen/bewahren. Keine fremden Titelargumente oder Werbung/Zähler/Audit als Spielbeleg; Version/Umgebung getrennt.",
+   "fr": "EXE converti ne garantit pas tous les fichiers. Astro Bot rétablitargs.txt/app0/data sans code ; Sea of Stars/Smurfs fichiers du repack. Comparer à ses originaux et les préserver. Ne pas copier arguments d’un autre titre ni confondre art/compteur/audit avec jeu ; versions/environnements distincts.",
+   "es": "EXE convertido no garantiza archivos completos. Astro Bot restauraargs.txt/app0/data sin código; Sea of Stars/Smurfs archivos de repack. Compara con tus originales y consérvalos. No copies argumentos ajenos ni confundas arte/contador/auditoría con juego; versiones/entornos separados."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · 8ce5134fbd",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8ce5134fbd59338cd4a4d04887539ad2e5677c9f/docs/dev/GAME_TESTING.md"
+  }
+ ]
+});article.reviewed="2026-11-06";}}
+for(const article of articles){if([
+ "guides/linux",
+ "guides/build"
+].includes(article.slug)){article.sections.push({
+ "id": "main-omit-unused-missing-dependencies",
+ "title": {
+  "en": "Optional Linux dependency omission has narrow conditions",
+  "zh": "Linux依赖省略有严格前提",
+  "ar": "حذف تبعيات Linux بشروط محددة",
+  "pt": "Omissão Linux com condições restritas",
+  "de": "Linux-Abhängigkeiten nur gezielt auslassen",
+  "fr": "Omission Linux sous conditions précises",
+  "es": "Omitir dependencias Linux con límites"
+ },
+ "body": [
+  {
+   "en": "Main’s --omit-unavailable-dependencies omits only an unavailable bundled dependency with no imports, no converted provider and no copy in any --rpath directory. All those directories must exist during conversion. Without the flag the dependency remains and is noted. Use it only with all system libraries already in rpath: an omitted library found later through LD_LIBRARY_PATH will not load. This is not permission to discard real imports or a universal startup fix.",
+   "zh": "main的--omit-unavailable-dependencies只省略没有导入、没有转换后提供者、且所有--rpath目录中均无文件的缺失捆绑依赖；转换时目录必须存在。不启用则保留并提示。须确保所有系统库已在rpath，省略后即使LD_LIBRARY_PATH后来找到也不加载；不能删真实导入，也非通用启动修复。",
+   "ar": "الخيار يحذف تبعية مفقودة بلا واردات أو مزود محول أو ملف في rpath؛ كل المجلدات موجودة وقت التحويل. بدونه تبقى مع ملاحظة. يلزم وجود كل مكتبات النظام في rpath، فالعثور لاحقاً عبر LD_LIBRARY_PATH لا يعيدها. ليس حذف واردات حقيقية أو إصلاحاً عاماً.",
+   "pt": "Opção só omite dependência ausente sem imports/provedor convertido/cópia emrpath; diretórios devem existir. Sem flag mantém e avisa. Todas as libs devem estar emrpath: LD_LIBRARY_PATH posterior não a carrega. Não elimina imports reais nem resolve todos os arranques.",
+   "de": "Flag lässt nur fehlende Abhängigkeit ohne Imports/konvertierten Provider/Kopie inrpath aus; Verzeichnisse müssen existieren. Ohne Flag behalten+Hinweis. Alle Systemlibs inrpath nötig; spätereLD_LIBRARY_PATH-Funde werden nicht geladen. Keine echten Imports löschen, kein Universalfix.",
+   "fr": "Option omet seulement dépendance absente sans imports/fournisseur converti/copie dansrpath ; dossiers existants requis. Sans flag elle reste avec note. Toutes bibliothèques système enrpath ; trouvée plus tard parLD_LIBRARY_PATH ne charge pas. Ni suppression d’imports réels ni fix universel.",
+   "es": "Opción solo omite dependencia ausente sin imports/proveedor convertido/copia enrpath; directorios deben existir. Sin flag queda con aviso. Todas las libs en rpath; LD_LIBRARY_PATH posterior no la carga. No elimina imports reales ni arregla cualquier inicio."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · 8ce5134fbd",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8ce5134fbd59338cd4a4d04887539ad2e5677c9f/docs/user/USAGE.md"
+  }
+ ]
+});article.reviewed="2026-11-06";}}
+for(const article of articles){if([
+ "guides/windows",
+ "guides/linux"
+].includes(article.slug)){article.sections.push({
+ "id": "main-included-addon-labels",
+ "title": {
+  "en": "List only add-ons included in your copy",
+  "zh": "只登记自己副本包含的附加内容",
+  "ar": "سجل الإضافات الموجودة في نسختك فقط",
+  "pt": "Listar só extras incluídos na sua cópia",
+  "de": "Nur enthaltene Add-ons eintragen",
+  "fr": "Lister les extensions de sa copie",
+  "es": "Listar solo complementos de tu copia"
+ },
+ "body": [
+  {
+   "en": "Later main reads anyps5-entitlements.ini beside the executable, or the ANYPS5_ENTITLEMENTS path: one included add-on label per line, up to 16 characters; # and ; begin comments. Unlisted labels are reported not installed. Some titles wait rather than proceed without an expected add-on. A loading spinner alone does not identify missing data, and declaring a label neither supplies content nor proves a DLC test. Keep this source behavior separate from v0.1.4.",
+   "zh": "后续main读取可执行文件旁anyps5-entitlements.ini或ANYPS5_ENTITLEMENTS路径，每行登记自己副本包含的一个附加内容label、最多16字符，#及;为注释。未列出按未安装报告，部分游戏会等待。加载转圈不能独自证明缺数据，登记label既不提供内容也不证明DLC测试；与v0.1.4分别记录。",
+   "ar": "main يقرأ ملف entitlements بجوار التنفيذي أو المسار المحدد: label واحد لإضافة نسختك/سطر حتى 16 حرفاً،# و; تعليقات. غير المدرج غير مثبت وبعض العناوين تنتظر. الدوران لا يشخص البيانات، وال label لا يوفر محتوى أو يثبت DLC؛ افصله عن v0.1.4.",
+   "pt": "Main lê entitlements junto ao EXE/ou caminho configurado: label de extra incluído/linha até16caracteres;# e; comentários. Não listado=ausente, certos títulos esperam. Spinner não diagnostica dados; label não fornece conteúdo nem valida DLC. Separar dev0.1.4.",
+   "de": "Main liest entitlements neben EXE/konfiguriertem Pfad: ein enthaltenes Add-on-Label/Zeile bis16Zeichen,#/; Kommentare. Ungelistet=nicht installiert, manche Spiele warten. Spinner keine Datendiagnose; Label liefert keinen Inhalt/kein DLC-Test. Vonv0.1.4 trennen.",
+   "fr": "Main lit entitlements près EXE/chemin configuré : label d’extension incluse/ligne jusqu’à16caractères,#/; commentaires. Non listé=non installé, certains titres attendent. Spinner sans diagnostic ; label sans contenu ou validation DLC. Distinct dev0.1.4.",
+   "es": "Main lee entitlements junto EXE/ruta configurada: label de complemento incluido/línea hasta16caracteres,#/; comentarios. No listado=no instalado, algunos esperan. Spinner no diagnostica datos; label no suministra contenido ni valida DLC. Separar dev0.1.4."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · 8ce5134fbd",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8ce5134fbd59338cd4a4d04887539ad2e5677c9f/docs/user/USAGE.md"
+  }
+ ]
+});article.reviewed="2026-11-06";}}
+for(const article of articles){for(const section of article.sections){if(section.id==="main-module-start-boundaries"){section.body=[{
+ "en": "With --module-dir, reviewed main maps required modules at startup. Linux starts extra-directory modules only on explicit load with the title’s arguments. Windows starts a deferred module after its deferred dependencies with the same arguments; dependencies needed from outside those directories initialize at startup, and the first explicit load also starts remaining dependency providers best effort. macOS starts executable/module dependencies eagerly. These rules differ from older builds; converting all files alone does not prove correct initialization.",
+ "zh": "--module-dir下复核main在启动时映射所需模块。Linux额外目录模块仅显式加载时以游戏参数初始化；Windows延迟模块先初始化其延迟依赖并传同参数，目录外模块所需依赖在启动初始化，首次显式加载也尽力启动其余依赖提供者。macOS提前初始化可执行／模块依赖。规则与旧构建不同，文件全转换不证明初始化正确。",
+ "ar": "main يربط الوحدات اللازمة عند البدء. Linux يبدأ وحدات المجلد الإضافي عند التحميل الصريح بمعاملات اللعبة. Windows يبدأ تبعيات الوحدة المؤجلة أولاً بنفس المعاملات، واللازم من خارج المجلد عند البدء، ويحاول باقي المزودين عند أول تحميل. macOS يبدأ التبعيات مبكراً. يختلف عن القديم؛ تحويل الملفات ليس صحة التهيئة.",
+ "pt": "Main mapeia módulos necessários no início. Linux inicia extras ao carregar explicitamente com argumentos do jogo. Windows inicia dependências adiadas primeiro com mesmos argumentos; necessárias fora das pastas iniciam logo, outras por melhor esforço no primeiro load. macOS inicia dependências cedo. Regras mudaram; conversão completa não prova inicialização.",
+ "de": "Main mappt nötige Module beim Start. Linux initialisiert Extras erst explizit mit Spielargumenten. Windows startet verzögerte Abhängigkeiten zuerst mit denselben Argumenten; von außerhalb benötigte starten früh, übrige beim ersten Load best effort. macOS initialisiert Abhängigkeiten früh. Alte Builds anders; vollständige Konvertierung kein Initialisierungsbeleg.",
+ "fr": "Main mappe modules requis au démarrage. Linux initialise extras au chargement explicite avec arguments du jeu. Windows commence par dépendances différées avec mêmes arguments ; requises depuis hors dossiers démarrent tôt, autres au premier load au mieux. macOS initialise dépendances tôt. Règles différentes des anciens builds ; conversion complète sans preuve.",
+ "es": "Main mapea módulos necesarios al inicio. Linux inicia extras al cargar explícitamente con argumentos del juego. Windows inicia dependencias diferidas primero con mismos argumentos; requeridas desde fuera inician temprano, restantes al primer load según posible. macOS inicia dependencias temprano. Reglas distintas de builds viejos; conversión completa no prueba inicialización."
+}];section.links=[{label:"Reviewed main · 8ce5134fbd",url:"https://github.com/boykopovar/AnyPS5/blob/8ce5134fbd59338cd4a4d04887539ad2e5677c9f/docs/user/USAGE.md"}];article.reviewed="2026-11-06";}}}
+
+// Focused build and tracing clarification, 6 November 2026.
+articles.find(a=>a.slug==="requirements")!.sections.find(s=>s.id==="toolchain")!.body=[{
+ "en": "Reviewed main uses Git/submodules, CMake 3.22.1+, Ninja and C++20. Windows runtime builds accept supported POSIX-thread MinGW-w64 DWARF or System-V SEH toolchains; match their runtime DLLs. Python 3.11+ enables the tomllib patch-catalog test. Node 26+ is only for the named memory64 Emscripten tests, not an ordinary Windows/Linux game requirement. v0.1.4 and its attached build instructions retain their own dated scope.",
+ "zh": "复核main需要Git／子模块、CMake 3.22.1+、Ninja及C++20。Windows运行库接受受支持的POSIX线程MinGW-w64 DWARF或System-V SEH工具链，运行DLL须配套。Python 3.11+启用tomllib补丁目录测试；Node 26+仅用于指定memory64 Emscripten测试，不是普通Windows／Linux游戏要求。v0.1.4及附带构建文档保留各自日期范围。",
+ "ar": "main يحتاج Git/submodules و CMake3.22.1+ و Ninja و C++20. Windows يقبل MinGW-w64 POSIX مع DWARF أو System-V SEH المدعوم، مع DLL مطابقة. Python3.11+ لاختبار tomllib؛ Node26+ فقط لاختبارات memory64 Emscripten المحددة، لا متطلب لعب عام. وثائق v0.1.4 تبقى بتاريخها.",
+ "pt": "Main exigeGit/submodules,CMake3.22.1+,Ninja,C++20. Windows aceitaMinGW-w64 POSIX DWARF ouSystem-V SEH suportados comDLL correspondentes. Python3.11+ ativa testetomllib; Node26+ só para testesmemory64 Emscripten, não requisito de jogo comum. v0.1.4/documentos mantêm âmbito datado.",
+ "de": "Main brauchtGit/Submodule,CMake3.22.1+,Ninja,C++20. Windows unterstützt passendePOSIX-MinGW-w64-DWARF/System-V-SEH mit passendenDLLs. Python3.11+ aktivierttomllib-Test; Node26+ nur genannteMemory64-Emscripten-Tests, keine normaleSpielanforderung. v0.1.4-Dokumente behalten Datumsgrenzen.",
+ "fr": "Main exigeGit/sous-modules,CMake3.22.1+,Ninja,C++20. Windows accepteMinGW-w64 POSIX DWARF/System-V SEH pris en charge avecDLL assorties. Python3.11+ active testtomllib ; Node26+ seulement pourmemory64 Emscripten, pas exigence de jeu ordinaire. Documentsv0.1.4 gardent leur portée datée.",
+ "es": "Main exigeGit/submódulos,CMake3.22.1+,Ninja,C++20. Windows aceptaMinGW-w64 POSIX DWARF/System-V SEH compatibles conDLL a juego. Python3.11+ activa testtomllib; Node26+ solo paramemory64 Emscripten, no requisito de juego común. Documentosv0.1.4 conservan alcance fechado."
+}];
+articles.find(a=>a.slug==="requirements")!.reviewed="2026-11-06";
+for(const article of articles){if(["guides/build","guides/windows","guides/linux"].includes(article.slug)){article.sections.push({
+ "id": "main-unlabelled-import-tracing",
+ "title": {
+  "en": "Trace the actual host module name",
+  "zh": "按实际宿主模块名追踪",
+  "ar": "تتبع اسم وحدة المضيف الفعلي",
+  "pt": "Seguir o módulo real do anfitrião",
+  "de": "Tatsächlichen Hostmodulnamen verfolgen",
+  "fr": "Tracer le vrai module hôte",
+  "es": "Trazar el módulo anfitrión real"
+ },
+ "body": [
+  {
+   "en": "With --trace-imports, later main labels an import lacking a library name by the host module containing its function, such as libSceAvPlayer.native. Select that filename in APS5_TRACE_CALLS rather than a guest alias. Trace collection, a clean audit and a missing error are diagnostics; preserve actual build, platform and reached scene before claiming a fix.",
+   "zh": "--trace-imports下，后续main对没有库标签的导入使用其函数所在宿主模块名，例如libSceAvPlayer.native；APS5_TRACE_CALLS须选该文件名，不能用客体别名。追踪、审计通过及未见错误均属诊断，声称修复前仍须记录实际构建、平台及场景。",
+   "ar": "مع trace-imports يسمي main الوارد بلا مكتبة باسم وحدة المضيف مثل libSceAvPlayer.native؛ اختره في APS5_TRACE_CALLS لا الاسم الضيف. التتبع/التدقيق/غياب الخطأ تشخيصات، سجّل البناء والنظام والمشهد قبل إثبات إصلاح.",
+   "pt": "Comtrace-imports, main usa módulo anfitrião para import sem rótulo, ex.libSceAvPlayer.native; selecione esse nome emAPS5_TRACE_CALLS. Trace/auditoria/ausência de erro são diagnósticos; registe build/plataforma/cena antes de afirmar fix.",
+   "de": "Mittrace-imports benenntmain Imports ohne Bibliothekslabel nach Hostmodul, etwa libSceAvPlayer.native; inAPS5_TRACE_CALLS diesen Namen wählen. Trace/Audit/fehlender Fehler nur Diagnose; Build/Plattform/Szene für Fixbeleg behalten.",
+   "fr": "Avectrace-imports, main nomme import sans bibliothèque par module hôte, ex.libSceAvPlayer.native ; le choisir dansAPS5_TRACE_CALLS. Trace/audit/absence d’erreur restent diagnostics ; garder build/plateforme/scène avant fix validé.",
+   "es": "Contrace-imports, main nombra import sin biblioteca por módulo anfitrión, ej.libSceAvPlayer.native; elegirlo enAPS5_TRACE_CALLS. Trace/auditoría/ausencia de fallo son diagnósticos; guardar build/plataforma/escena antes de validar arreglo."
+  }
+ ],
+ "links": [
+  {
+   "label": "Reviewed main · 8ce5134fbd",
+   "url": "https://github.com/boykopovar/AnyPS5/blob/8ce5134fbd59338cd4a4d04887539ad2e5677c9f/docs/user/USAGE.md"
+  }
+ ]
+});article.reviewed="2026-11-06";}}

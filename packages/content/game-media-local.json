@@ -4672,5 +4672,143 @@
   "sfiii-homebrew": {
     "cover": null,
     "screenshots": []
+  },
+  "coffee-talk-episode-2": {
+    "cover": {
+      "file": "coffee-talk-episode-2/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202303/0323/3c38cf213eac50553d35148502c1a9cb9384acb0964732ca.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202303/0323/3c38cf213eac50553d35148502c1a9cb9384acb0964732ca.png",
+      "sourceSha256": "85306237455ddc811d9093bd9edc8e28ba107dfa39af6ba7e4ea2f673ea3081f",
+      "sourceBytes": 492835,
+      "sha256": "d6810dcbe732e672d931a0c290e2d7b9a3042e8a809789a2cdfbcd28c206ab96",
+      "bytes": 58642,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "mandragora-ppsa26917": {
+    "cover": {
+      "file": "mandragora-ppsa26917/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202507/2314/e64e79300664769660cf4ec47a420f31785b3a768381c76a.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202507/2314/e64e79300664769660cf4ec47a420f31785b3a768381c76a.png",
+      "sourceSha256": "670bce65507b4592cc02814eb5c3fbce27649091e11527212e95ba397a587589",
+      "sourceBytes": 208105,
+      "sha256": "4eb4972460bd2015a392d59197848ac05c9627b2b4c6d4c7cb63d503d6af949a",
+      "bytes": 128404,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "7-days-to-die": {
+    "cover": null,
+    "screenshots": []
+  },
+  "poppy-playtime-chapter-1": {
+    "cover": null,
+    "screenshots": []
+  },
+  "hoa": {
+    "cover": {
+      "file": "hoa/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202108/2521/VhcE0KuAY2E9HVpKQHT3Wr6r.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/img/rnd/202108/2521/VhcE0KuAY2E9HVpKQHT3Wr6r.png",
+      "sourceSha256": "9420300f4a2e670a923bfc78113e1bd2af101868ff9a87d3fbfa91350a718956",
+      "sourceBytes": 1414105,
+      "sha256": "e1e5d1bb93b1d3fcc4fbbd8dd8fde21356e19e40b41e5387cc1cf44fbb0512fb",
+      "bytes": 114908,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "platform-8": {
+    "cover": null,
+    "screenshots": []
+  },
+  "the-exit-9": {
+    "cover": null,
+    "screenshots": []
+  },
+  "subnautica": {
+    "cover": {
+      "file": "subnautica/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202009/3006/C76j3lYg8BNBWJRSYtI2ONbo.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/img/rnd/202009/3006/C76j3lYg8BNBWJRSYtI2ONbo.png",
+      "sourceSha256": "7ba611cddd660ccfad976fb0d86ae74b9731eeb6a961e1459a56b1242e9b9e02",
+      "sourceBytes": 203008,
+      "sha256": "333073bf7242cf2205dc62c8fa282116e489598ab16b7f13cae9f936e945cba2",
+      "bytes": 122042,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "fatal-frame-maiden-ppsa04334": {
+    "cover": null,
+    "screenshots": []
+  },
+  "saga-of-sins": {
+    "cover": {
+      "file": "saga-of-sins/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1816/qUwwdeZpz5PlQSJ1qwQ8e5KV.jpg",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1816/qUwwdeZpz5PlQSJ1qwQ8e5KV.jpg",
+      "sourceSha256": "e711e189effd6dc4fb0906f765d93398a32f3074ecd6d74469bdd2d57f945e69",
+      "sourceBytes": 894742,
+      "sha256": "c1bb8c7158d78a2019921c244479d9d4e99d78e3961143dc1baae5db457932bb",
+      "bytes": 78436,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "disney-pixar-up": {
+    "cover": null,
+    "screenshots": []
+  },
+  "dead-of-darkness": {
+    "cover": null,
+    "screenshots": []
+  },
+  "spirit-of-the-island": {
+    "cover": {
+      "file": "spirit-of-the-island/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202310/1323/491120c3fe175d7e09e9a3b26e77e288d9814d94e07f4b37.jpg",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202310/1323/491120c3fe175d7e09e9a3b26e77e288d9814d94e07f4b37.jpg",
+      "sourceSha256": "b8aed2001d322902991e7e01a1c626c2cbfe9ad1db34cff303138ae7e063bd01",
+      "sourceBytes": 806146,
+      "sha256": "450018be80bad3fc0e4f67de1a74beaa5643e306ddbf870433296db526d1fbf1",
+      "bytes": 95226,
+      "width": 1200,
+      "height": 675
+    },
+    "screenshots": []
+  },
+  "age-of-mythology-retold": {
+    "cover": {
+      "file": "age-of-mythology-retold/cover.webp",
+      "source": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2201/cb2cf451fcef9d66d2eeacd25b469bf096a8a9e7912afda8.png",
+      "downloadUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2201/cb2cf451fcef9d66d2eeacd25b469bf096a8a9e7912afda8.png",
+      "sourceSha256": "3d030e88002975544f12abcf4ce28a65bf096c6f7677dac4342dc7e9c29c9f39",
+      "sourceBytes": 294118,
+      "sha256": "922790098ae9403e4047f859a4ec3d0a7b9103a6d87fde2239c859f872e2a1a4",
+      "bytes": 199010,
+      "width": 1024,
+      "height": 1024
+    },
+    "screenshots": []
+  },
+  "vlc-homebrew": {
+    "cover": null,
+    "screenshots": []
+  },
+  "arkanoid-eternal-battle-ppsa06328": {
+    "cover": null,
+    "screenshots": []
+  },
+  "fsr4-showcase-homebrew": {
+    "cover": null,
+    "screenshots": []
   }
 }

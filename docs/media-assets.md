@@ -1,16 +1,16 @@
 # Self-hosted game media
 
-Updated 2026-11-03. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
+Updated 2026-11-06. All page raster images and current OG/Twitter images are served from the site's own origin as WebP. The existing native SVG logo and browser-compatible PNG/ICO favicons retain their formats. Previously public JPEG social-image URLs remain available for old shares.
 
 ## Sources and asset inventory
 
-- 229 game/edition pages have official/publisher artwork: 229 covers and 82 promotional screenshots (311 source assets).
+- 236 game/edition pages have official/publisher artwork: 236 covers and 82 promotional screenshots (318 source assets).
 - `packages/content/game-media.json` retains the original page, provider, image URLs and editorial review date.
 - `packages/content/game-media-local.json` maps each source to its exported file, actual download URL, source/export SHA-256, byte counts and actual dimensions.
 - Committed WebP masters live in `packages/ui/assets/games/<slug>/`. Astro imports them and emits hashed, same-origin images under `/_astro/`, including responsive variants. Production builds do not fetch remote media.
-- 159 entries still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
+- 169 entries still have no verified artwork and retain the existing game icon. Promotional images remain labelled as promotional material, separate from AnyPS5 report evidence. Source links stay available. Report screenshots/videos that are only evidence links remain links rather than being mixed into the promotional gallery.
 
-The downloaded high-resolution source set totals 89.32 MiB; the exported masters total 39.16 MiB, a 56.2% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
+The downloaded high-resolution source set totals 93.43 MiB; the exported masters total 39.92 MiB, a 57.3% reduction at the chosen encoding settings. This compares the fetched source bytes with those same images' WebP masters, not total page-transfer sizes. Some PlayStation endpoints previously returned only a 400px preview; the new fetch requests the same artwork at up to 1920px before optimizing it. That quality improvement is separate from compression savings.
 
 ## Update command
 
@@ -68,3 +68,5 @@ The19 October addition includes five identity-checked covers. The generic EA FC 
 30 October adds four visually reviewed promotional covers: Layers of Fear, Jusant, Forspoken and Ghost Song. Layers artwork08681/report07265 and Forspoken03982/demo05700/report03984 stay explicit in all seven edition/research notes. Fifteen other new homebrew entries retain icons; author console demos are not AnyPS5 screenshots. reSOT retains its tested name/version despite current rePOP branding. The first Bible catalog URL404 and absent RuneScape catalog identity remain documented rather than borrowing another project’s artwork. All294 masters pass the existing decode/hash checks.
 
 3 November adds 17 visually reviewed PlayStation promotional covers (see game-media.json). Asterigos store PPSA08193 differs from tested PPSA08194; Thymesia store PPSA05214 differs from tested PPSA05213. Mortal Kombat 11 artwork is branded Ultimate and does not establish tested DLC. Little Nightmares II’s PS4-labelled publisher page and Spirit of the North’s generic redirect were rejected. Unverified commercial and homebrew art retains icons. No promotional picture is an AnyPS5 execution capture.
+
+6 November adds seven visually reviewed PlayStation promotional covers: Coffee Talk Episode 2, Hoa, Saga of Sins, Spirit of the Island, Subnautica, Age of Mythology: Retold and the separately reported Mandragora edition. Coffee artwork07052/report07053, Spirit13935/13934, Subnautica02452/02453 and shared Mandragora06960/26917 remain explicit in seven languages. Ten new entries retain icons: unavailable/mismatched publisher art, the generic eastasiasoft logo and the PS4-addressed Poppy listing were not substituted as PS5 test images. All318 masters pass decode/hash checks; no execution screenshot was invented.

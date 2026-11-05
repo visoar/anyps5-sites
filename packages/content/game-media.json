@@ -2642,5 +2642,124 @@
     "cover": null,
     "screenshots": [],
     "checked": "2026-11-03"
+  },
+  "coffee-talk-episode-2": {
+    "source": "https://store.playstation.com/en-us/concept/10004780",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202303/0323/3c38cf213eac50553d35148502c1a9cb9384acb0964732ca.png",
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "mandragora-ppsa26917": {
+    "source": "https://www.playstation.com/en-us/games/mandragora/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202507/2314/e64e79300664769660cf4ec47a420f31785b3a768381c76a.png",
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "7-days-to-die": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/15991",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "poppy-playtime-chapter-1": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/15987",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "hoa": {
+    "source": "https://store.playstation.com/en-us/concept/10002508/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/img/rnd/202108/2521/VhcE0KuAY2E9HVpKQHT3Wr6r.png",
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "platform-8": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/15983",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "the-exit-9": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/15980",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "subnautica": {
+    "source": "https://www.playstation.com/en-us/games/subnautica/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/img/rnd/202009/3006/C76j3lYg8BNBWJRSYtI2ONbo.png",
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "fatal-frame-maiden-ppsa04334": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/15968",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "saga-of-sins": {
+    "source": "https://store.playstation.com/en-us/concept/10006028",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1816/qUwwdeZpz5PlQSJ1qwQ8e5KV.jpg",
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "disney-pixar-up": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/15824",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "dead-of-darkness": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/15606",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "spirit-of-the-island": {
+    "source": "https://store.playstation.com/en-us/product/UP1309-PPSA13935_00-0832639392306271/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202310/1323/491120c3fe175d7e09e9a3b26e77e288d9814d94e07f4b37.jpg",
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "age-of-mythology-retold": {
+    "source": "https://www.playstation.com/en-us/games/age-of-mythology-retold/",
+    "provider": "PlayStation",
+    "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2201/cb2cf451fcef9d66d2eeacd25b469bf096a8a9e7912afda8.png",
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "vlc-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/5732",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "arkanoid-eternal-battle-ppsa06328": {
+    "source": "https://github.com/boykopovar/AnyPS5/discussions/9476",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-06"
+  },
+  "fsr4-showcase-homebrew": {
+    "source": "https://github.com/boykopovar/AnyPS5/issues/6118",
+    "provider": "Original report",
+    "cover": null,
+    "screenshots": [],
+    "checked": "2026-11-06"
   }
 }
